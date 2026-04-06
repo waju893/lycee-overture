@@ -1,0 +1,27 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "snow",
+    "flower"
+  ],
+  "attributesList": [
+    "snow",
+    "flower"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "star",
+    "star"
+  ],
+  "ap": 0,
+  "dp": 2,
+  "sp": 2,
+  "dmg": 0,
+  "keyeffects": [
+    7
+  ],
+  "keyEffects": [
+    7
+  ],
+  "leader": false
+}

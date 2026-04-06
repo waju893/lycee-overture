@@ -1,0 +1,7 @@
+public/cards/**/*.png
+public/cards/**/*.webp
+node_modules/
+dist/
+build/
+.vite/
+coverage/

@@ -1,0 +1,13 @@
+{
+  "type": "item",
+  "attributes_list": [
+    "flower"
+  ],
+  "attributesList": [
+    "flower"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "star"
+  ]
+}

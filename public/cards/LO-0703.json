@@ -1,0 +1,17 @@
+{
+  "type": "event",
+  "attributes_list": [
+    "cosmos",
+    "sun"
+  ],
+  "attributesList": [
+    "cosmos",
+    "sun"
+  ],
+  "ex": 1,
+  "useTarget": [
+    "cosmos",
+    "sun",
+    "star"
+  ]
+}

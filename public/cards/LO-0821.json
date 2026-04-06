@@ -1,0 +1,21 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "snow",
+    "flower"
+  ],
+  "attributesList": [
+    "snow",
+    "flower"
+  ],
+  "ex": 1,
+  "useTarget": [
+    "snow",
+    "flower",
+    "star"
+  ],
+  "ap": 4,
+  "dp": 4,
+  "sp": 2,
+  "dmg": 3
+}

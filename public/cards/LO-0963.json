@@ -1,0 +1,18 @@
+{
+  "type": "event",
+  "attributes_list": [
+    "snow"
+  ],
+  "attributesList": [
+    "snow"
+  ],
+  "ex": 1,
+  "useTarget": [
+    "snow",
+    "snow",
+    "snow",
+    "snow",
+    "snow",
+    "snow"
+  ]
+}

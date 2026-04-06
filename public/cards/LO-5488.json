@@ -1,0 +1,26 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "flower"
+  ],
+  "attributesList": [
+    "flower"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "flower"
+  ],
+  "ap": 1,
+  "dp": 5,
+  "sp": 4,
+  "dmg": 0,
+  "keyeffects": [
+    7,
+    12
+  ],
+  "keyEffects": [
+    7,
+    12
+  ],
+  "leader": false
+}

@@ -1,0 +1,17 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "moon"
+  ],
+  "attributesList": [
+    "moon"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "moon"
+  ],
+  "ap": 1,
+  "dp": 1,
+  "sp": 2,
+  "dmg": 0
+}

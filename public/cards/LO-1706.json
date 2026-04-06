@@ -1,0 +1,13 @@
+{
+  "type": "item",
+  "attributes_list": [
+    "moon"
+  ],
+  "attributesList": [
+    "moon"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "moon"
+  ]
+}

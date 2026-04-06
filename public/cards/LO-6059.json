@@ -1,0 +1,15 @@
+{
+  "type": "area",
+  "attributes_list": [
+    "sun"
+  ],
+  "attributesList": [
+    "sun"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "flower",
+    "cosmos",
+    "sun"
+  ]
+}
