@@ -224,6 +224,22 @@ export interface GameEvent {
   payload?: Record<string, unknown>;
 }
 
+export interface ReplayEvent {
+  turnNumber: number;
+  playerId: PlayerID | "SYSTEM";
+  actionType: string;
+  payload: Record<string, unknown>;
+  timestamp: number;
+}
+
+export interface ReplaySnapshot {
+  id: string;
+  savedAt: number;
+  initialState: GameState;
+  events: ReplayEvent[];
+  winner: PlayerID | null;
+}
+
 export interface RulingOverride {
   sourceCardNo: string;
   sourceEffectId: string;
@@ -243,6 +259,7 @@ export interface GameState {
   usageCounters: UsageCounter[];
   logs: string[];
   events: GameEvent[];
+  replayEvents: ReplayEvent[];
   rulingOverrides: RulingOverride[];
   winner: PlayerID | null;
 

@@ -1,10 +1,17 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import { reduceGameState } from "../game/GameEngine";
 import { createInitialGameState } from "../game/GameRules";
 import type { GameAction } from "../game/GameActions";
-import type { CardRef, FieldSlot, GameState, PlayerID } from "../game/GameTypes";
+import type {
+  CardRef,
+  FieldSlot,
+  GameState,
+  PlayerID,
+  ReplaySnapshot,
+} from "../game/GameTypes";
+import PracticeBoardView from "../components/PracticeBoard";
 
 type PlacementMode =
   | {
@@ -139,6 +146,8 @@ export default function PracticeBoard() {
   const [state, setState] = useState<GameState>(() => createPracticeState());
   const [perspective, setPerspective] = useState<PlayerID>("P1");
   const [placementMode, setPlacementMode] = useState<PlacementMode>(null);
+  const initialStateRef = useRef<GameState>(structuredClone(state));
+  const savedWinnerRef = useRef<PlayerID | null>(null);
 
   const opponent = perspective === "P1" ? "P2" : "P1";
   const activePlayer = state.turn.activePlayer;
@@ -153,9 +162,30 @@ export default function PracticeBoard() {
   function resetPractice() {
     const next = createPracticeState();
     setState(next);
+    initialStateRef.current = structuredClone(next);
+    savedWinnerRef.current = null;
     setPerspective(getDefaultPerspective(next));
     setPlacementMode(null);
   }
+
+  useEffect(() => {
+    if (!state.winner || savedWinnerRef.current === state.winner) return;
+
+    const snapshot: ReplaySnapshot = {
+      id: `replay_${Date.now()}`,
+      savedAt: Date.now(),
+      initialState: structuredClone(initialStateRef.current),
+      events: [...state.replayEvents],
+      winner: state.winner,
+    };
+
+    const key = "lycee.replay.snapshots";
+    const prev = localStorage.getItem(key);
+    const parsed = prev ? (JSON.parse(prev) as ReplaySnapshot[]) : [];
+    const next = [snapshot, ...parsed].slice(0, 20);
+    localStorage.setItem(key, JSON.stringify(next));
+    savedWinnerRef.current = state.winner;
+  }, [state]);
 
   function handleStartGame() {
     dispatch({ type: "START_GAME", firstPlayer: "P1", leaderEnabled: false });
@@ -362,25 +392,7 @@ export default function PracticeBoard() {
 
         {topPanel}
 
-        <div style={boardLayoutStyle}>
-          <PlayerArea
-            label={`상단 플레이어 (${opponent})`}
-            playerId={opponent}
-            state={state}
-            isPerspectivePlayer={false}
-            onHandCardClick={handleHandCardClick}
-            onFieldClick={handleFieldClick}
-          />
-
-          <PlayerArea
-            label={`하단 플레이어 (${perspective})`}
-            playerId={perspective}
-            state={state}
-            isPerspectivePlayer
-            onHandCardClick={handleHandCardClick}
-            onFieldClick={handleFieldClick}
-          />
-        </div>
+        <PracticeBoardView state={state} perspective={perspective} />
 
         <div style={logGridStyle}>
           <div style={panelStyle}>

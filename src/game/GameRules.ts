@@ -174,6 +174,7 @@ export function createInitialGameState(params: {
     usageCounters: [],
     logs: [],
     events: [],
+    replayEvents: [],
     rulingOverrides: [],
     winner: null,
     seed: params.seed,
