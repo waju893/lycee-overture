@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { reduceGameState } from "../GameEngine";
 import { createInitialGameState } from "../GameRules";
 import type { CardRef, GameState, PlayerID } from "../GameTypes";
+
 function makeCharacter(
   instanceId: string,
   owner: PlayerID,
@@ -64,7 +65,6 @@ function getFirstHandCharacterId(state: GameState, playerId: PlayerID): string {
   return card.instanceId;
 }
 
-
 function passCurrentMainPhaseToNextTurn(state: GameState): GameState {
   const state1 = reduceGameState(state, { type: "ADVANCE_PHASE" });
   const state2 = reduceGameState(state1, { type: "ADVANCE_PHASE" });
@@ -103,9 +103,7 @@ function buildReadyToMainState(firstPlayer: PlayerID = "P1"): GameState {
 }
 
 describe("MinimalPlayableEngine", () => {
-
   it("START_GAME 후 스타트업 드로우가 정상 적용된다", () => {
-
     const state = createInitialGameState({
       p1Deck: makeDeck("P1", "P1"),
       p2Deck: makeDeck("P2", "P2"),
@@ -124,7 +122,6 @@ describe("MinimalPlayableEngine", () => {
   });
 
   it("양 플레이어 KEEP 후 FINALIZE_STARTUP 하면 턴 준비가 된다", () => {
-
     const state0 = createInitialGameState({
       p1Deck: makeDeck("P1", "P1"),
       p2Deck: makeDeck("P2", "P2"),
@@ -153,19 +150,15 @@ describe("MinimalPlayableEngine", () => {
     expect(state4.turn.phase).toBe("wakeup");
   });
 
-  it("선공 첫 턴 드로우는 1장이다", () => {
-
+  it("선공 첫 턴 메인 진입 시 드로우 1장이 이미 적용된다", () => {
     const state6 = buildReadyToMainState("P1");
 
-    const before = state6.players.P1.hand.length;
-
-    const next = reduceGameState(state6, { type: "ADVANCE_PHASE" });
-
-    expect(next.players.P1.hand.length).toBe(before + 1);
+    expect(state6.turn.activePlayer).toBe("P1");
+    expect(state6.turn.phase).toBe("main");
+    expect(state6.players.P1.hand.length).toBe(8);
   });
 
   it("턴이 돌아오면 캐릭터는 untap 된다", () => {
-
     const state6 = buildReadyToMainState("P1");
     const charId = getFirstHandCharacterId(state6, "P1");
 
@@ -178,8 +171,15 @@ describe("MinimalPlayableEngine", () => {
       targetingMode: "declareTime",
     });
 
-    const state8 = reduceGameState(state7, { type: "PASS_PRIORITY", playerId: "P2" });
-    const state9 = reduceGameState(state8, { type: "PASS_PRIORITY", playerId: "P1" });
+    const state8 = reduceGameState(state7, {
+      type: "PASS_PRIORITY",
+      playerId: "P2",
+    });
+
+    const state9 = reduceGameState(state8, {
+      type: "PASS_PRIORITY",
+      playerId: "P1",
+    });
 
     const state10 = reduceGameState(state9, {
       type: "DECLARE_ACTION",
@@ -188,8 +188,15 @@ describe("MinimalPlayableEngine", () => {
       sourceCardId: charId,
     });
 
-    const state11 = reduceGameState(state10, { type: "PASS_PRIORITY", playerId: "P2" });
-    const state12 = reduceGameState(state11, { type: "PASS_PRIORITY", playerId: "P1" });
+    const state11 = reduceGameState(state10, {
+      type: "PASS_PRIORITY",
+      playerId: "P2",
+    });
+
+    const state12 = reduceGameState(state11, {
+      type: "PASS_PRIORITY",
+      playerId: "P1",
+    });
 
     const state13 = reduceGameState(state12, {
       type: "SET_DEFENDER",
@@ -205,7 +212,6 @@ describe("MinimalPlayableEngine", () => {
   });
 
   it("멀리건 후에는 같은 플레이어가 다시 스타트업 선택을 할 수 없다", () => {
-
     const state0 = createInitialGameState({
       p1Deck: makeDeck("P1", "P1", { includeLeader: true }),
       p2Deck: makeDeck("P2", "P2", { includeLeader: true }),
@@ -231,7 +237,5 @@ describe("MinimalPlayableEngine", () => {
     expect(
       state3.logs.some((log) => log.includes("ALREADY_DECIDED")),
     ).toBe(true);
-
   });
-
 });
