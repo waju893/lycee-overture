@@ -1,5 +1,11 @@
 import { memo } from "react";
+import type { SyntheticEvent } from "react";
 import type { CardMeta } from "../types/card";
+import {
+  getCardImageCandidates,
+  markCardImageFailed,
+  markCardImageResolved,
+} from "../config/cardImage";
 
 type Props = {
   cards: CardMeta[];
@@ -52,16 +58,32 @@ function getFallbackSvg(card: CardMeta): string {
   </svg>`;
 }
 
-function getPrimaryImageSrc(card: CardMeta): string {
-  if (card.imageUrl && card.imageUrl.trim().length > 0) {
-    return card.imageUrl;
-  }
-
-  return `/cards/${card.code}.webp`;
+function getInitialImageSrc(card: CardMeta): string {
+  return getCardImageCandidates(card.code, card.imageUrl)[0] ?? getFallbackSvg(card);
 }
 
-function getFallbackImageSrc(card: CardMeta): string {
-  return `/cards/${card.code}.png`;
+function handleCardImageLoad(event: SyntheticEvent<HTMLImageElement>, card: CardMeta) {
+  markCardImageResolved(card.code, event.currentTarget.currentSrc || event.currentTarget.src);
+}
+
+function handleCardImageError(event: SyntheticEvent<HTMLImageElement>, card: CardMeta) {
+  const target = event.currentTarget;
+  const candidates = getCardImageCandidates(card.code, card.imageUrl);
+
+  const failedUrl = target.currentSrc || target.src;
+  markCardImageFailed(failedUrl);
+
+  const currentAttempt = Number(target.dataset.imageAttempt ?? "0");
+  const nextAttempt = currentAttempt + 1;
+
+  if (nextAttempt < candidates.length) {
+    target.dataset.imageAttempt = String(nextAttempt);
+    target.src = candidates[nextAttempt];
+    return;
+  }
+
+  target.onerror = null;
+  target.src = getFallbackSvg(card);
 }
 
 type CardTileProps = {
@@ -82,28 +104,20 @@ const CardTile = memo(function CardTile({
       type="button"
       className={`card-tile ${isSelected ? "selected" : ""}`}
       onClick={() => onSelect(card)}
+      style={{ contentVisibility: "auto", containIntrinsicSize: "320px 520px" }}
     >
       <div className="card-image-wrap">
         <img
-          src={getPrimaryImageSrc(card)}
+          key={`${card.code}-${card.imageUrl ?? ""}`}
+          src={getInitialImageSrc(card)}
           alt={card.name}
           className="card-image"
           loading={isPriority ? "eager" : "lazy"}
           decoding="async"
           fetchPriority={isPriority ? "high" : "low"}
-          onError={(e) => {
-            const target = e.currentTarget;
-            const fallbackPng = getFallbackImageSrc(card);
-
-            if (!target.dataset.fallbackTried) {
-              target.dataset.fallbackTried = "1";
-              target.src = fallbackPng;
-              return;
-            }
-
-            target.onerror = null;
-            target.src = getFallbackSvg(card);
-          }}
+          data-image-attempt="0"
+          onLoad={(e) => handleCardImageLoad(e, card)}
+          onError={(e) => handleCardImageError(e, card)}
         />
       </div>
 
@@ -122,7 +136,9 @@ const CardTile = memo(function CardTile({
           )}
 
           {card.type && (
-            <span className="card-chip">{getTypeDisplayLabel(card.type)}</span>
+            <span className="card-chip">
+              {getTypeDisplayLabel(card.type)}
+            </span>
           )}
 
           {typeof card.ex === "number" && (
