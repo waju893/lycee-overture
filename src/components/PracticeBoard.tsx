@@ -102,6 +102,21 @@ type CardPileModalState =
     }
   | null;
 
+type PileActionCellProps = {
+  label: string;
+  count: number;
+  onClick: () => void;
+};
+
+function PileActionCell({ label, count, onClick }: PileActionCellProps) {
+  return (
+    <button type="button" style={pileCellButtonStyle} onClick={onClick}>
+      <div style={pileCellTitleStyle}>{label}</div>
+      <div style={pileCellBodyStyle}>{count > 0 ? `${count}장` : "비어 있음"}</div>
+    </button>
+  );
+}
+
 type PlayerAreaProps = {
   label: string;
   playerId: PlayerID;
@@ -139,28 +154,8 @@ function PlayerArea({
         <span>현재 턴 {state.turn.activePlayer === playerId ? "예" : "아니오"}</span>
       </div>
 
-      <div style={pileButtonRowStyle}>
-        <button
-          type="button"
-          style={pileOpenButtonStyle}
-          onClick={() => onOpenPile("deck", playerId, label, player.deck)}
-        >
-          {player.deck.length === 0 ? "덱 보기 (비어 있음)" : `덱 보기 (${player.deck.length}장)`}
-        </button>
-
-        <button
-          type="button"
-          style={pileOpenButtonStyle}
-          onClick={() => onOpenPile("discard", playerId, label, player.discard)}
-        >
-          {player.discard.length === 0
-            ? "쓰레기통 보기 (비어 있음)"
-            : `쓰레기통 보기 (${player.discard.length}장)`}
-        </button>
-      </div>
-
       <div style={fieldGridStyle}>
-        {FIELD_RENDER_ORDER.map((typedSlot) => {
+        {FIELD_RENDER_ORDER.slice(0, 3).map((typedSlot) => {
           const card = player.field[typedSlot].card;
           return (
             <button
@@ -174,6 +169,33 @@ function PlayerArea({
             </button>
           );
         })}
+
+        <PileActionCell
+          label="덱 보기"
+          count={player.deck.length}
+          onClick={() => onOpenPile("deck", playerId, label, player.deck)}
+        />
+
+        {FIELD_RENDER_ORDER.slice(3).map((typedSlot) => {
+          const card = player.field[typedSlot].card;
+          return (
+            <button
+              key={`${playerId}-${typedSlot}`}
+              type="button"
+              style={slotButtonStyle}
+              onClick={() => onFieldClick(playerId, typedSlot)}
+            >
+              <div style={slotTitleStyle}>{typedSlot}</div>
+              <div style={slotBodyStyle}>{card ? getCardLabel(card) : "비어 있음"}</div>
+            </button>
+          );
+        })}
+
+        <PileActionCell
+          label="쓰레기통 보기"
+          count={player.discard.length}
+          onClick={() => onOpenPile("discard", playerId, label, player.discard)}
+        />
       </div>
 
       <div style={sectionMinorTitleStyle}>
@@ -339,29 +361,9 @@ const metaRowStyle: CSSProperties = {
   color: "#b9c3d6",
 };
 
-const pileButtonRowStyle: CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-  gap: 10,
-  marginTop: 12,
-  marginBottom: 16,
-};
-
-const pileOpenButtonStyle: CSSProperties = {
-  background: "#24324a",
-  border: "1px solid #4a7cff",
-  borderRadius: 10,
-  padding: "12px 14px",
-  color: "#ffffff",
-  cursor: "pointer",
-  fontWeight: 700,
-  width: "100%",
-  textAlign: "left",
-};
-
 const fieldGridStyle: CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+  gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
   gap: 10,
   marginTop: 12,
   marginBottom: 16,
@@ -400,6 +402,30 @@ const slotButtonStyle: CSSProperties = {
   textAlign: "left",
   minHeight: 110,
   cursor: "pointer",
+};
+
+const pileCellButtonStyle: CSSProperties = {
+  background: "#24324a",
+  border: "1px solid #4a7cff",
+  borderRadius: 10,
+  padding: 12,
+  color: "#ffffff",
+  textAlign: "left",
+  minHeight: 110,
+  cursor: "pointer",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+};
+
+const pileCellTitleStyle: CSSProperties = {
+  fontSize: 15,
+  fontWeight: 700,
+};
+
+const pileCellBodyStyle: CSSProperties = {
+  fontSize: 13,
+  color: "#dbeafe",
 };
 
 const handGridStyle: CSSProperties = {
