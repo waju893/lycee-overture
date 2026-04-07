@@ -32,6 +32,21 @@ function getCardCode(card: CardRef): string {
   return String(card.cardNo ?? card.sameNameKey ?? "").trim().toUpperCase();
 }
 
+function getPrimaryActionLabel(card: CardRef): string {
+  switch (card.cardType) {
+    case "character":
+      return "등장";
+    case "area":
+      return "배치";
+    case "item":
+      return "장비";
+    case "event":
+      return "사용";
+    default:
+      return "이동";
+  }
+}
+
 type CardActionMenuState =
   | {
       kind: "deck" | "discard";
@@ -106,7 +121,6 @@ type CardPileModalState =
       kind: "discard" | "deck";
       playerId: PlayerID;
       label: string;
-      cards: CardRef[];
     }
   | null;
 
@@ -115,21 +129,6 @@ type DeckMenuState =
       playerId: PlayerID;
     }
   | null;
-
-type PileActionCellProps = {
-  label: string;
-  count: number;
-  onClick: () => void;
-};
-
-function PileActionCell({ label, count, onClick }: PileActionCellProps) {
-  return (
-    <button type="button" style={pileCellButtonStyle} onClick={onClick}>
-      <div style={pileCellTitleStyle}>{label}</div>
-      <div style={pileCellBodyStyle}>{count > 0 ? `${count}장` : "비어 있음"}</div>
-    </button>
-  );
-}
 
 type PlayerAreaProps = {
   label: string;
@@ -143,7 +142,6 @@ type PlayerAreaProps = {
     kind: "discard" | "deck",
     playerId: PlayerID,
     label: string,
-    cards: CardRef[],
   ) => void;
   onToggleDeckMenu: (playerId: PlayerID) => void;
   onDrawFromDeck: (playerId: PlayerID) => void;
@@ -220,7 +218,7 @@ function PlayerArea({
             <button
               type="button"
               style={miniActionButtonStyle}
-              onClick={() => onOpenPile("deck", playerId, label, player.deck)}
+              onClick={() => onOpenPile("deck", playerId, label)}
             >
               덱 보기
             </button>
@@ -255,7 +253,7 @@ function PlayerArea({
         <button
           type="button"
           style={pileCellButtonStyle}
-          onClick={() => onOpenPile("discard", playerId, label, player.discard)}
+          onClick={() => onOpenPile("discard", playerId, label)}
         >
           <div style={pileCellTitleStyle}>쓰레기통 보기</div>
           <div style={pileCellBodyStyle}>
@@ -287,17 +285,17 @@ function PlayerArea({
 }
 
 function CardActionOverlay({
+  card,
   state,
   onClose,
-  onMoveToField,
+  onPrimaryAction,
   onMoveToHand,
-  onMoveToDiscard,
 }: {
+  card: CardRef;
   state: CardActionMenuState;
   onClose: () => void;
-  onMoveToField: (cardId: string, source: "deck" | "discard", playerId: PlayerID) => void;
+  onPrimaryAction: (card: CardRef, source: "deck" | "discard", playerId: PlayerID) => void;
   onMoveToHand: (cardId: string, source: "deck" | "discard", playerId: PlayerID) => void;
-  onMoveToDiscard: (cardId: string, source: "deck" | "discard", playerId: PlayerID) => void;
 }) {
   if (!state) return null;
 
@@ -306,9 +304,9 @@ function CardActionOverlay({
       <button
         type="button"
         style={cardActionButtonStyle}
-        onClick={() => onMoveToField(state.cardId, state.kind, state.playerId)}
+        onClick={() => onPrimaryAction(card, state.kind, state.playerId)}
       >
-        배치
+        {getPrimaryActionLabel(card)}
       </button>
       <button
         type="button"
@@ -316,13 +314,6 @@ function CardActionOverlay({
         onClick={() => onMoveToHand(state.cardId, state.kind, state.playerId)}
       >
         손패로
-      </button>
-      <button
-        type="button"
-        style={cardActionButtonStyle}
-        onClick={() => onMoveToDiscard(state.cardId, state.kind, state.playerId)}
-      >
-        쓰레기통으로
       </button>
       <button
         type="button"
@@ -336,21 +327,21 @@ function CardActionOverlay({
 }
 
 function CardPileModal({
+  gameState,
   state,
   activeCardAction,
   onClose,
   onCardClick,
-  onMoveToField,
+  onPrimaryAction,
   onMoveToHand,
-  onMoveToDiscard,
 }: {
+  gameState: GameState;
   state: CardPileModalState;
   activeCardAction: CardActionMenuState;
   onClose: () => void;
   onCardClick: (kind: "deck" | "discard", playerId: PlayerID, cardId: string) => void;
-  onMoveToField: (cardId: string, source: "deck" | "discard", playerId: PlayerID) => void;
+  onPrimaryAction: (card: CardRef, source: "deck" | "discard", playerId: PlayerID) => void;
   onMoveToHand: (cardId: string, source: "deck" | "discard", playerId: PlayerID) => void;
-  onMoveToDiscard: (cardId: string, source: "deck" | "discard", playerId: PlayerID) => void;
 }) {
   useEffect(() => {
     if (!state) return;
@@ -374,6 +365,10 @@ function CardPileModal({
     state.kind === "deck"
       ? "덱 맨 위부터 아래 방향 순서대로 표시"
       : "카드가 놓인 순서대로 표시";
+  const cards =
+    state.kind === "deck"
+      ? gameState.players[state.playerId].deck
+      : gameState.players[state.playerId].discard;
 
   return (
     <div style={modalOverlayStyle} onClick={onClose}>
@@ -389,11 +384,11 @@ function CardPileModal({
           </button>
         </div>
 
-        {state.cards.length === 0 ? (
+        {cards.length === 0 ? (
           <div style={emptyHintStyle}>{pileTitle}이 비어 있습니다.</div>
         ) : (
           <div style={pileGridStyle}>
-            {state.cards.map((card, index) => {
+            {cards.map((card, index) => {
               const isActionOpen =
                 activeCardAction?.playerId === state.playerId &&
                 activeCardAction?.kind === state.kind &&
@@ -403,7 +398,7 @@ function CardPileModal({
                 <div key={`${state.kind}-${card.instanceId}-${index}`} style={pileItemWrapStyle}>
                   <div style={pileOrderStyle}>{index + 1}</div>
                   <div style={pileCardStackStyle}>
-                    <div style={{ opacity: isActionOpen ? 0.42 : 1, transition: "opacity 0.15s ease" }}>
+                    <div style={{ opacity: isActionOpen ? 0.48 : 1, transition: "opacity 0.15s ease" }}>
                       <CardImage
                         card={card}
                         clickable={true}
@@ -413,11 +408,11 @@ function CardPileModal({
 
                     {isActionOpen ? (
                       <CardActionOverlay
+                        card={card}
                         state={activeCardAction}
                         onClose={() => onCardClick(state.kind, state.playerId, "")}
-                        onMoveToField={onMoveToField}
+                        onPrimaryAction={onPrimaryAction}
                         onMoveToHand={onMoveToHand}
-                        onMoveToDiscard={onMoveToDiscard}
                       />
                     ) : null}
                   </div>
@@ -439,9 +434,8 @@ interface PracticeBoardProps {
   onDrawFromDeck?: (playerId: PlayerID) => void;
   onDamageFromDeck?: (playerId: PlayerID) => void;
   onShuffleDeck?: (playerId: PlayerID) => void;
-  onMoveCardToField?: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
+  onPrimaryCardAction?: (playerId: PlayerID, card: CardRef, source: "deck" | "discard") => void;
   onMoveCardToHand?: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
-  onMoveCardToDiscard?: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
 }
 
 export default function PracticeBoard({
@@ -452,9 +446,8 @@ export default function PracticeBoard({
   onDrawFromDeck,
   onDamageFromDeck,
   onShuffleDeck,
-  onMoveCardToField,
+  onPrimaryCardAction,
   onMoveCardToHand,
-  onMoveCardToDiscard,
 }: PracticeBoardProps) {
   const opponent = perspective === "P1" ? "P2" : "P1";
   const [pileModalState, setPileModalState] = useState<CardPileModalState>(null);
@@ -511,12 +504,11 @@ export default function PracticeBoard({
           isDeckMenuOpen={deckMenuState?.playerId === opponent}
           onHandCardClick={onHandCardClick}
           onFieldClick={onFieldClick}
-          onOpenPile={(kind, playerId, label, cards) => {
+          onOpenPile={(kind, playerId, label) => {
             setPileModalState({
               kind,
               playerId,
               label,
-              cards,
             });
             setCardActionState(null);
           }}
@@ -533,12 +525,11 @@ export default function PracticeBoard({
           isDeckMenuOpen={deckMenuState?.playerId === perspective}
           onHandCardClick={onHandCardClick}
           onFieldClick={onFieldClick}
-          onOpenPile={(kind, playerId, label, cards) => {
+          onOpenPile={(kind, playerId, label) => {
             setPileModalState({
               kind,
               playerId,
               label,
-              cards,
             });
             setCardActionState(null);
           }}
@@ -550,6 +541,7 @@ export default function PracticeBoard({
       </div>
 
       <CardPileModal
+        gameState={state}
         state={pileModalState}
         activeCardAction={cardActionState}
         onClose={() => {
@@ -557,9 +549,14 @@ export default function PracticeBoard({
           setCardActionState(null);
         }}
         onCardClick={handleCardClick}
-        onMoveToField={(cardId, source, playerId) => onMoveCardToField?.(playerId, cardId, source)}
-        onMoveToHand={(cardId, source, playerId) => onMoveCardToHand?.(playerId, cardId, source)}
-        onMoveToDiscard={(cardId, source, playerId) => onMoveCardToDiscard?.(playerId, cardId, source)}
+        onPrimaryAction={(card, source, playerId) => {
+          onPrimaryCardAction?.(playerId, card, source);
+          setCardActionState(null);
+        }}
+        onMoveToHand={(cardId, source, playerId) => {
+          onMoveCardToHand?.(playerId, cardId, source);
+          setCardActionState(null);
+        }}
       />
     </>
   );
@@ -825,7 +822,7 @@ const cardActionOverlayStyle: CSSProperties = {
   position: "absolute",
   inset: 0,
   display: "grid",
-  gridTemplateRows: "repeat(4, auto)",
+  gridTemplateRows: "repeat(3, auto)",
   gap: 8,
   alignContent: "center",
   justifyItems: "stretch",
@@ -834,8 +831,8 @@ const cardActionOverlayStyle: CSSProperties = {
 };
 
 const cardActionButtonStyle: CSSProperties = {
-  background: "rgba(15, 23, 36, 0.86)",
-  border: "1px solid rgba(96, 165, 250, 0.85)",
+  background: "rgba(15, 23, 36, 0.82)",
+  border: "1px solid rgba(96, 165, 250, 0.82)",
   borderRadius: 8,
   color: "#ffffff",
   cursor: "pointer",
@@ -846,8 +843,8 @@ const cardActionButtonStyle: CSSProperties = {
 };
 
 const cardActionCloseButtonStyle: CSSProperties = {
-  background: "rgba(36, 50, 74, 0.82)",
-  border: "1px solid rgba(148, 163, 184, 0.65)",
+  background: "rgba(36, 50, 74, 0.78)",
+  border: "1px solid rgba(148, 163, 184, 0.62)",
   borderRadius: 8,
   color: "#ffffff",
   cursor: "pointer",
