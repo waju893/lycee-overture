@@ -93,11 +93,14 @@ function CardImage({
   );
 }
 
-type DiscardModalState = {
-  playerId: PlayerID;
-  label: string;
-  cards: CardRef[];
-} | null;
+type CardPileModalState =
+  | {
+      kind: "discard" | "deck";
+      playerId: PlayerID;
+      label: string;
+      cards: CardRef[];
+    }
+  | null;
 
 type PlayerAreaProps = {
   label: string;
@@ -106,7 +109,12 @@ type PlayerAreaProps = {
   isPerspectivePlayer: boolean;
   onHandCardClick: (playerId: PlayerID, card: CardRef) => void;
   onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
-  onOpenDiscard: (playerId: PlayerID, label: string, cards: CardRef[]) => void;
+  onOpenPile: (
+    kind: "discard" | "deck",
+    playerId: PlayerID,
+    label: string,
+    cards: CardRef[],
+  ) => void;
 };
 
 function PlayerArea({
@@ -116,7 +124,7 @@ function PlayerArea({
   isPerspectivePlayer,
   onHandCardClick,
   onFieldClick,
-  onOpenDiscard,
+  onOpenPile,
 }: PlayerAreaProps) {
   const player = state.players[playerId];
 
@@ -129,6 +137,26 @@ function PlayerArea({
         <span>패 {player.hand.length}</span>
         <span>쓰레기통 {player.discard.length}</span>
         <span>현재 턴 {state.turn.activePlayer === playerId ? "예" : "아니오"}</span>
+      </div>
+
+      <div style={pileButtonRowStyle}>
+        <button
+          type="button"
+          style={pileOpenButtonStyle}
+          onClick={() => onOpenPile("deck", playerId, label, player.deck)}
+        >
+          {player.deck.length === 0 ? "덱 보기 (비어 있음)" : `덱 보기 (${player.deck.length}장)`}
+        </button>
+
+        <button
+          type="button"
+          style={pileOpenButtonStyle}
+          onClick={() => onOpenPile("discard", playerId, label, player.discard)}
+        >
+          {player.discard.length === 0
+            ? "쓰레기통 보기 (비어 있음)"
+            : `쓰레기통 보기 (${player.discard.length}장)`}
+        </button>
       </div>
 
       <div style={fieldGridStyle}>
@@ -166,26 +194,15 @@ function PlayerArea({
           ))
         )}
       </div>
-
-      <div style={sectionMinorTitleStyle}>쓰레기통</div>
-      <button
-        type="button"
-        style={discardOpenButtonStyle}
-        onClick={() => onOpenDiscard(playerId, label, player.discard)}
-      >
-        {player.discard.length === 0
-          ? "쓰레기통 보기 (비어 있음)"
-          : `쓰레기통 보기 (${player.discard.length}장)`}
-      </button>
     </div>
   );
 }
 
-function DiscardModal({
+function CardPileModal({
   state,
   onClose,
 }: {
-  state: DiscardModalState;
+  state: CardPileModalState;
   onClose: () => void;
 }) {
   useEffect(() => {
@@ -205,15 +222,19 @@ function DiscardModal({
 
   if (!state) return null;
 
+  const pileTitle = state.kind === "deck" ? "덱" : "쓰레기통";
+  const pileSubtitle =
+    state.kind === "deck"
+      ? "덱 맨 위부터 아래 방향 순서대로 표시"
+      : "카드가 놓인 순서대로 표시";
+
   return (
     <div style={modalOverlayStyle} onClick={onClose}>
       <div style={modalCardStyle} onClick={(event) => event.stopPropagation()}>
         <div style={modalHeaderStyle}>
           <div>
-            <div style={modalTitleStyle}>{state.label} 쓰레기통</div>
-            <div style={modalSubTitleStyle}>
-              카드가 놓인 순서대로 표시
-            </div>
+            <div style={modalTitleStyle}>{state.label} {pileTitle}</div>
+            <div style={modalSubTitleStyle}>{pileSubtitle}</div>
           </div>
 
           <button type="button" style={modalCloseButtonStyle} onClick={onClose}>
@@ -222,12 +243,12 @@ function DiscardModal({
         </div>
 
         {state.cards.length === 0 ? (
-          <div style={emptyHintStyle}>쓰레기통이 비어 있습니다.</div>
+          <div style={emptyHintStyle}>{pileTitle}이 비어 있습니다.</div>
         ) : (
-          <div style={discardGridStyle}>
+          <div style={pileGridStyle}>
             {state.cards.map((card, index) => (
-              <div key={`${card.instanceId}-${index}`} style={discardItemWrapStyle}>
-                <div style={discardOrderStyle}>{index + 1}</div>
+              <div key={`${state.kind}-${card.instanceId}-${index}`} style={pileItemWrapStyle}>
+                <div style={pileOrderStyle}>{index + 1}</div>
                 <CardImage card={card} clickable={false} onClick={() => {}} />
               </div>
             ))}
@@ -252,7 +273,7 @@ export default function PracticeBoard({
   onFieldClick,
 }: PracticeBoardProps) {
   const opponent = perspective === "P1" ? "P2" : "P1";
-  const [discardModalState, setDiscardModalState] = useState<DiscardModalState>(null);
+  const [pileModalState, setPileModalState] = useState<CardPileModalState>(null);
 
   return (
     <>
@@ -264,8 +285,9 @@ export default function PracticeBoard({
           isPerspectivePlayer={false}
           onHandCardClick={onHandCardClick}
           onFieldClick={onFieldClick}
-          onOpenDiscard={(playerId, label, cards) =>
-            setDiscardModalState({
+          onOpenPile={(kind, playerId, label, cards) =>
+            setPileModalState({
+              kind,
               playerId,
               label,
               cards,
@@ -279,8 +301,9 @@ export default function PracticeBoard({
           isPerspectivePlayer={true}
           onHandCardClick={onHandCardClick}
           onFieldClick={onFieldClick}
-          onOpenDiscard={(playerId, label, cards) =>
-            setDiscardModalState({
+          onOpenPile={(kind, playerId, label, cards) =>
+            setPileModalState({
+              kind,
               playerId,
               label,
               cards,
@@ -289,9 +312,9 @@ export default function PracticeBoard({
         />
       </div>
 
-      <DiscardModal
-        state={discardModalState}
-        onClose={() => setDiscardModalState(null)}
+      <CardPileModal
+        state={pileModalState}
+        onClose={() => setPileModalState(null)}
       />
     </>
   );
@@ -309,19 +332,39 @@ const panelStyle: CSSProperties = {
   padding: 16,
 };
 
+const metaRowStyle: CSSProperties = {
+  display: "flex",
+  gap: 12,
+  flexWrap: "wrap",
+  color: "#b9c3d6",
+};
+
+const pileButtonRowStyle: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+  gap: 10,
+  marginTop: 12,
+  marginBottom: 16,
+};
+
+const pileOpenButtonStyle: CSSProperties = {
+  background: "#24324a",
+  border: "1px solid #4a7cff",
+  borderRadius: 10,
+  padding: "12px 14px",
+  color: "#ffffff",
+  cursor: "pointer",
+  fontWeight: 700,
+  width: "100%",
+  textAlign: "left",
+};
+
 const fieldGridStyle: CSSProperties = {
   display: "grid",
   gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
   gap: 10,
   marginTop: 12,
   marginBottom: 16,
-};
-
-const metaRowStyle: CSSProperties = {
-  display: "flex",
-  gap: 12,
-  flexWrap: "wrap",
-  color: "#b9c3d6",
 };
 
 const sectionTitleStyle: CSSProperties = {
@@ -426,19 +469,6 @@ const cardCodeStyle: CSSProperties = {
   textOverflow: "ellipsis",
 };
 
-const discardOpenButtonStyle: CSSProperties = {
-  marginTop: 8,
-  background: "#24324a",
-  border: "1px solid #4a7cff",
-  borderRadius: 10,
-  padding: "12px 14px",
-  color: "#ffffff",
-  cursor: "pointer",
-  fontWeight: 700,
-  width: "100%",
-  textAlign: "left",
-};
-
 const emptyHintStyle: CSSProperties = {
   color: "#9fb0ca",
   padding: "6px 2px",
@@ -496,19 +526,19 @@ const modalCloseButtonStyle: CSSProperties = {
   fontWeight: 700,
 };
 
-const discardGridStyle: CSSProperties = {
+const pileGridStyle: CSSProperties = {
   display: "grid",
   gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
   gap: 12,
 };
 
-const discardItemWrapStyle: CSSProperties = {
+const pileItemWrapStyle: CSSProperties = {
   display: "flex",
   flexDirection: "column",
   gap: 6,
 };
 
-const discardOrderStyle: CSSProperties = {
+const pileOrderStyle: CSSProperties = {
   fontSize: 12,
   fontWeight: 700,
   color: "#dbeafe",
