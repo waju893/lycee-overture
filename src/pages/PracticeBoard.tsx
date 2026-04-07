@@ -33,15 +33,6 @@ const ALL_SLOTS: FieldSlot[] = [
 ];
 const CURRENT_DECK_STORAGE_KEY = "lycee-current-deck";
 
-const FIELD_RENDER_ORDER: FieldSlot[] = [
-  "DF_LEFT",
-  "DF_CENTER",
-  "DF_RIGHT",
-  "AF_LEFT",
-  "AF_CENTER",
-  "AF_RIGHT",
-];
-
 function makeCharacter(
   instanceId: string,
   owner: PlayerID,
@@ -165,28 +156,6 @@ function createPracticeState(): GameState {
   });
 }
 
-function getCardLabel(card: CardRef): string {
-  const ap = card.ap ?? card.power ?? 0;
-  const dp = card.dp ?? card.hp ?? card.power ?? 0;
-  const dmg = card.dmg ?? card.damage ?? 0;
-  const flags: string[] = [];
-
-  if (card.isTapped) flags.push("DOWN");
-
-  return `${card.name} AP ${ap} / DP ${dp} / DMG ${dmg}${
-    flags.length ? ` [${flags.join(", ")}]` : ""
-  }`;
-}
-
-function getFirstEmptySlot(state: GameState, playerId: PlayerID): FieldSlot | null {
-  for (const slot of ALL_SLOTS) {
-    if (!state.players[playerId].field[slot].card) {
-      return slot;
-    }
-  }
-  return null;
-}
-
 function getDefaultPerspective(state: GameState): PlayerID {
   if (state.turn.activePlayer === "P1" || state.turn.activePlayer === "P2") {
     return state.turn.activePlayer;
@@ -207,6 +176,15 @@ function getPendingDeclarationSummary(state: GameState): string | null {
   return `${top.playerId} 선언 대기`;
 }
 
+function getFirstEmptySlot(state: GameState, playerId: PlayerID): FieldSlot | null {
+  for (const slot of ALL_SLOTS) {
+    if (!state.players[playerId].field[slot].card) {
+      return slot;
+    }
+  }
+  return null;
+}
+
 export default function PracticeBoard() {
   const [state, setState] = useState<GameState>(() => createPracticeState());
   const [perspective, setPerspective] = useState<PlayerID>("P1");
@@ -214,8 +192,6 @@ export default function PracticeBoard() {
   const initialStateRef = useRef<GameState>(structuredClone(state));
   const savedWinnerRef = useRef<PlayerID | null>(null);
 
-  const opponent = perspective === "P1" ? "P2" : "P1";
-  const activePlayer = state.turn.activePlayer;
   const currentPriority = state.turn.priorityPlayer;
   const pendingDeclaration = state.declarationStack.length > 0;
   const pendingSummary = getPendingDeclarationSummary(state);
@@ -341,24 +317,6 @@ export default function PracticeBoard() {
     setPlacementMode(null);
   }
 
-  const topPanel = useMemo(() => {
-    return (
-      <div style={panelStyle}>
-        <div style={sectionTitleStyle}>게임 상태</div>
-        <div style={statusGridStyle}>
-          <div>승자: {state.winner ?? "없음"}</div>
-          <div>현재 턴 플레이어: {state.turn.activePlayer}</div>
-          <div>현재 페이즈: {state.turn.phase}</div>
-          <div>우선권 플레이어: {state.turn.priorityPlayer}</div>
-          <div>스타트업 진행 중: {state.startup.active ? "예" : "아니오"}</div>
-          <div>배틀 진행 중: {state.battle.isActive ? "예" : "아니오"}</div>
-          <div>배틀 공격자: {state.battle.attackerCardId ?? "없음"}</div>
-          <div>배틀 방어자: {state.battle.defenderCardId ?? "없음"}</div>
-        </div>
-      </div>
-    );
-  }, [state]);
-
   const passButtonLabel = pendingDeclaration
     ? `대응 안 함 / 해결 (${currentPriority})`
     : `PASS_PRIORITY (${currentPriority})`;
@@ -463,9 +421,12 @@ export default function PracticeBoard() {
           </div>
         ) : null}
 
-        {topPanel}
-
-        <PracticeBoardView state={state} perspective={perspective} />
+        <PracticeBoardView
+          state={state}
+          perspective={perspective}
+          onHandCardClick={handleHandCardClick}
+          onFieldClick={handleFieldClick}
+        />
 
         <div style={logGridStyle}>
           <div style={panelStyle}>
@@ -496,80 +457,6 @@ export default function PracticeBoard() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
-
-type PlayerAreaProps = {
-  label: string;
-  playerId: PlayerID;
-  state: GameState;
-  isPerspectivePlayer: boolean;
-  onHandCardClick: (playerId: PlayerID, card: CardRef) => void;
-  onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
-};
-
-function PlayerArea({
-  label,
-  playerId,
-  state,
-  isPerspectivePlayer,
-  onHandCardClick,
-  onFieldClick,
-}: PlayerAreaProps) {
-  const player = state.players[playerId];
-
-  return (
-    <div style={panelStyle}>
-      <div style={sectionTitleStyle}>{label}</div>
-      <div style={metaRowStyle}>
-        <span>덱 {player.deck.length}</span>
-        <span>패 {player.hand.length}</span>
-        <span>버림 {player.discard.length}</span>
-        <span>현재 턴 {state.turn.activePlayer === playerId ? "예" : "아니오"}</span>
-      </div>
-
-      <div style={fieldGridStyle}>
-        {FIELD_RENDER_ORDER.map((typedSlot) => {
-          const card = player.field[typedSlot].card;
-          return (
-            <button
-              key={`${playerId}-${typedSlot}`}
-              type="button"
-              style={slotButtonStyle}
-              onClick={() => onFieldClick(playerId, typedSlot)}
-            >
-              <div style={slotTitleStyle}>{typedSlot}</div>
-              <div style={slotBodyStyle}>{card ? getCardLabel(card) : "비어 있음"}</div>
-            </button>
-          );
-        })}
-      </div>
-
-      <div style={sectionMinorTitleStyle}>
-        손패 {isPerspectivePlayer ? "(클릭으로 사용)" : ""}
-      </div>
-      <div style={handWrapStyle}>
-        {player.hand.map((card) => (
-          <button
-            key={card.instanceId}
-            type="button"
-            style={handCardButtonStyle}
-            onClick={() => onHandCardClick(playerId, card)}
-          >
-            {getCardLabel(card)}
-          </button>
-        ))}
-      </div>
-
-      <div style={sectionMinorTitleStyle}>버림더미 상단 5장</div>
-      <div style={pileStyle}>
-        {player.discard.slice(-5).reverse().map((card) => (
-          <div key={card.instanceId} style={pileItemStyle}>
-            {card.name}
-          </div>
-        ))}
       </div>
     </div>
   );
@@ -630,96 +517,16 @@ const panelStyle: CSSProperties = {
   marginBottom: 16,
 };
 
-const boardLayoutStyle: CSSProperties = {
-  display: "grid",
-  gap: 16,
-};
-
 const statusGridStyle: CSSProperties = {
   display: "grid",
   gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
   gap: 8,
 };
 
-const fieldGridStyle: CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-  gap: 10,
-  marginTop: 12,
-  marginBottom: 16,
-};
-
-const handWrapStyle: CSSProperties = {
-  display: "flex",
-  flexWrap: "wrap",
-  gap: 8,
-  marginTop: 8,
-};
-
-const pileStyle: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  gap: 6,
-  marginTop: 8,
-};
-
-const metaRowStyle: CSSProperties = {
-  display: "flex",
-  gap: 12,
-  flexWrap: "wrap",
-  color: "#b9c3d6",
-};
-
 const sectionTitleStyle: CSSProperties = {
   fontSize: 20,
   fontWeight: 700,
   marginBottom: 10,
-};
-
-const sectionMinorTitleStyle: CSSProperties = {
-  fontSize: 16,
-  fontWeight: 600,
-  marginTop: 10,
-};
-
-const slotTitleStyle: CSSProperties = {
-  fontSize: 13,
-  fontWeight: 700,
-  marginBottom: 6,
-};
-
-const slotBodyStyle: CSSProperties = {
-  fontSize: 13,
-  lineHeight: 1.4,
-  color: "#d9e2f2",
-};
-
-const slotButtonStyle: CSSProperties = {
-  background: "#0f1724",
-  border: "1px solid #33435e",
-  borderRadius: 10,
-  padding: 12,
-  color: "#ffffff",
-  textAlign: "left",
-  minHeight: 110,
-  cursor: "pointer",
-};
-
-const handCardButtonStyle: CSSProperties = {
-  background: "#24324a",
-  border: "1px solid #3e5379",
-  borderRadius: 10,
-  padding: "10px 12px",
-  color: "#ffffff",
-  cursor: "pointer",
-  textAlign: "left",
-};
-
-const pileItemStyle: CSSProperties = {
-  background: "#0f1724",
-  borderRadius: 8,
-  padding: "8px 10px",
-  color: "#d9e2f2",
 };
 
 const primaryButtonStyle: CSSProperties = {
