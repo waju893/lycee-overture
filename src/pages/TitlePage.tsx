@@ -1,67 +1,68 @@
 import { Link } from "react-router-dom";
 
-const buttonStyle: React.CSSProperties = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  minHeight: "68px",
-  borderRadius: "16px",
-  border: "1px solid #374151",
-  background: "#1f2937",
-  color: "#f9fafb",
-  fontSize: "20px",
-  fontWeight: 700,
-  textDecoration: "none",
-  boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
-};
-
 export default function TitlePage() {
+  const buttonStyle: React.CSSProperties = {
+    display: "inline-block",
+    width: "220px",
+    padding: "14px 18px",
+    borderRadius: "12px",
+    background: "#4f7cff",
+    color: "#ffffff",
+    textDecoration: "none",
+    fontWeight: 700,
+    textAlign: "center",
+  };
+
   return (
     <div
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(180deg, #111827 0%, #0f172a 100%)",
-        color: "#f3f4f6",
+        background: "#2f2f2f",
+        color: "#ffffff",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         padding: "24px",
+        boxSizing: "border-box",
       }}
     >
       <div
         style={{
           width: "100%",
-          maxWidth: "720px",
-          background: "rgba(31, 41, 55, 0.92)",
-          border: "1px solid #374151",
-          borderRadius: "24px",
-          padding: "40px 32px",
-          boxShadow: "0 20px 60px rgba(0,0,0,0.35)",
+          maxWidth: "960px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "20px",
         }}
       >
-        <div style={{ textAlign: "center", marginBottom: "32px" }}>
-          <h1 style={{ margin: 0, fontSize: "40px" }}>Lycee Overture</h1>
-          <p style={{ margin: "12px 0 0", color: "#9ca3af", fontSize: "16px" }}>
-            메인 메뉴
-          </p>
-        </div>
+        <h1 style={{ margin: 0, fontSize: "40px" }}>Lycee Overture</h1>
+        <p style={{ margin: 0, opacity: 0.9 }}>
+          덱 편성 / 방 생성 / 방 참가
+        </p>
 
         <div
           style={{
-            display: "grid",
-            gap: "16px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "14px",
+            marginTop: "12px",
           }}
         >
-          <Link to="/deck" style={buttonStyle}>
+          <Link to="/deck-builder" style={buttonStyle}>
             덱 편성
           </Link>
-
-          <Link to="/room/create" style={buttonStyle}>
+          <Link to="/create-room" style={buttonStyle}>
             방 생성
           </Link>
-
-          <Link to="/room/join" style={buttonStyle}>
+          <Link to="/join-room" style={buttonStyle}>
             방 참가
+          </Link>
+          <Link
+            to="/practice"
+            style={{ ...buttonStyle, background: "#2f9e44" }}
+          >
+            연습 모드
           </Link>
         </div>
       </div>
