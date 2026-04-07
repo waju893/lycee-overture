@@ -32,20 +32,17 @@ function getCardCode(card: CardRef): string {
   return String(card.cardNo ?? card.sameNameKey ?? "").trim().toUpperCase();
 }
 
-function HandCardImage({
+function CardImage({
   card,
-  selectable,
+  clickable,
   onClick,
 }: {
   card: CardRef;
-  selectable: boolean;
+  clickable: boolean;
   onClick: () => void;
 }) {
   const cardCode = getCardCode(card);
-  const candidates = useMemo(
-    () => getCardImageCandidates(cardCode),
-    [cardCode]
-  );
+  const candidates = useMemo(() => getCardImageCandidates(cardCode), [cardCode]);
   const [candidateIndex, setCandidateIndex] = useState(0);
 
   useEffect(() => {
@@ -58,15 +55,15 @@ function HandCardImage({
     <button
       type="button"
       onClick={onClick}
-      disabled={!selectable}
+      disabled={!clickable}
       title={getCardLabel(card)}
       style={{
-        ...handImageButtonStyle,
-        cursor: selectable ? "pointer" : "default",
-        opacity: selectable ? 1 : 0.92,
+        ...cardImageButtonStyle,
+        cursor: clickable ? "pointer" : "default",
+        opacity: clickable ? 1 : 0.96,
       }}
     >
-      <div style={handImageFrameStyle}>
+      <div style={cardImageFrameStyle}>
         {currentSrc ? (
           <img
             src={currentSrc}
@@ -81,20 +78,26 @@ function HandCardImage({
               markCardImageFailed(currentSrc);
               setCandidateIndex((prev) => prev + 1);
             }}
-            style={handImageStyle}
+            style={cardImageStyle}
           />
         ) : (
-          <div style={handImageFallbackStyle}>이미지 없음</div>
+          <div style={cardImageFallbackStyle}>이미지 없음</div>
         )}
       </div>
 
-      <div style={handCardTextWrapStyle}>
-        <div style={handCardNameStyle}>{card.name}</div>
-        <div style={handCardCodeStyle}>{cardCode || card.instanceId}</div>
+      <div style={cardTextWrapStyle}>
+        <div style={cardNameStyle}>{card.name}</div>
+        <div style={cardCodeStyle}>{cardCode || card.instanceId}</div>
       </div>
     </button>
   );
 }
+
+type DiscardModalState = {
+  playerId: PlayerID;
+  label: string;
+  cards: CardRef[];
+} | null;
 
 type PlayerAreaProps = {
   label: string;
@@ -103,6 +106,7 @@ type PlayerAreaProps = {
   isPerspectivePlayer: boolean;
   onHandCardClick: (playerId: PlayerID, card: CardRef) => void;
   onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
+  onOpenDiscard: (playerId: PlayerID, label: string, cards: CardRef[]) => void;
 };
 
 function PlayerArea({
@@ -112,6 +116,7 @@ function PlayerArea({
   isPerspectivePlayer,
   onHandCardClick,
   onFieldClick,
+  onOpenDiscard,
 }: PlayerAreaProps) {
   const player = state.players[playerId];
 
@@ -122,7 +127,7 @@ function PlayerArea({
       <div style={metaRowStyle}>
         <span>덱 {player.deck.length}</span>
         <span>패 {player.hand.length}</span>
-        <span>버림 {player.discard.length}</span>
+        <span>쓰레기통 {player.discard.length}</span>
         <span>현재 턴 {state.turn.activePlayer === playerId ? "예" : "아니오"}</span>
       </div>
 
@@ -152,29 +157,81 @@ function PlayerArea({
           <div style={emptyHintStyle}>손패가 없습니다.</div>
         ) : (
           player.hand.map((card) => (
-            <HandCardImage
+            <CardImage
               key={card.instanceId}
               card={card}
-              selectable={isPerspectivePlayer}
+              clickable={isPerspectivePlayer}
               onClick={() => onHandCardClick(playerId, card)}
             />
           ))
         )}
       </div>
 
-      <div style={sectionMinorTitleStyle}>버림더미 상단 5장</div>
-      <div style={pileStyle}>
-        {player.discard.length === 0 ? (
-          <div style={emptyHintStyle}>버림더미가 비어 있습니다.</div>
+      <div style={sectionMinorTitleStyle}>쓰레기통</div>
+      <button
+        type="button"
+        style={discardOpenButtonStyle}
+        onClick={() => onOpenDiscard(playerId, label, player.discard)}
+      >
+        {player.discard.length === 0
+          ? "쓰레기통 보기 (비어 있음)"
+          : `쓰레기통 보기 (${player.discard.length}장)`}
+      </button>
+    </div>
+  );
+}
+
+function DiscardModal({
+  state,
+  onClose,
+}: {
+  state: DiscardModalState;
+  onClose: () => void;
+}) {
+  useEffect(() => {
+    if (!state) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [state, onClose]);
+
+  if (!state) return null;
+
+  return (
+    <div style={modalOverlayStyle} onClick={onClose}>
+      <div style={modalCardStyle} onClick={(event) => event.stopPropagation()}>
+        <div style={modalHeaderStyle}>
+          <div>
+            <div style={modalTitleStyle}>{state.label} 쓰레기통</div>
+            <div style={modalSubTitleStyle}>
+              카드가 놓인 순서대로 표시
+            </div>
+          </div>
+
+          <button type="button" style={modalCloseButtonStyle} onClick={onClose}>
+            닫기
+          </button>
+        </div>
+
+        {state.cards.length === 0 ? (
+          <div style={emptyHintStyle}>쓰레기통이 비어 있습니다.</div>
         ) : (
-          player.discard
-            .slice(-5)
-            .reverse()
-            .map((card) => (
-              <div key={card.instanceId} style={pileItemStyle}>
-                {card.name}
+          <div style={discardGridStyle}>
+            {state.cards.map((card, index) => (
+              <div key={`${card.instanceId}-${index}`} style={discardItemWrapStyle}>
+                <div style={discardOrderStyle}>{index + 1}</div>
+                <CardImage card={card} clickable={false} onClick={() => {}} />
               </div>
-            ))
+            ))}
+          </div>
         )}
       </div>
     </div>
@@ -195,26 +252,48 @@ export default function PracticeBoard({
   onFieldClick,
 }: PracticeBoardProps) {
   const opponent = perspective === "P1" ? "P2" : "P1";
+  const [discardModalState, setDiscardModalState] = useState<DiscardModalState>(null);
 
   return (
-    <div style={boardLayoutStyle}>
-      <PlayerArea
-        label={`상단 플레이어 (${opponent})`}
-        playerId={opponent}
-        state={state}
-        isPerspectivePlayer={false}
-        onHandCardClick={onHandCardClick}
-        onFieldClick={onFieldClick}
+    <>
+      <div style={boardLayoutStyle}>
+        <PlayerArea
+          label={`상단 플레이어 (${opponent})`}
+          playerId={opponent}
+          state={state}
+          isPerspectivePlayer={false}
+          onHandCardClick={onHandCardClick}
+          onFieldClick={onFieldClick}
+          onOpenDiscard={(playerId, label, cards) =>
+            setDiscardModalState({
+              playerId,
+              label,
+              cards,
+            })
+          }
+        />
+        <PlayerArea
+          label={`하단 플레이어 (${perspective})`}
+          playerId={perspective}
+          state={state}
+          isPerspectivePlayer={true}
+          onHandCardClick={onHandCardClick}
+          onFieldClick={onFieldClick}
+          onOpenDiscard={(playerId, label, cards) =>
+            setDiscardModalState({
+              playerId,
+              label,
+              cards,
+            })
+          }
+        />
+      </div>
+
+      <DiscardModal
+        state={discardModalState}
+        onClose={() => setDiscardModalState(null)}
       />
-      <PlayerArea
-        label={`하단 플레이어 (${perspective})`}
-        playerId={perspective}
-        state={state}
-        isPerspectivePlayer={true}
-        onHandCardClick={onHandCardClick}
-        onFieldClick={onFieldClick}
-      />
-    </div>
+    </>
   );
 }
 
@@ -287,7 +366,7 @@ const handGridStyle: CSSProperties = {
   marginTop: 8,
 };
 
-const handImageButtonStyle: CSSProperties = {
+const cardImageButtonStyle: CSSProperties = {
   background: "#111827",
   border: "1px solid #3e5379",
   borderRadius: 10,
@@ -297,7 +376,7 @@ const handImageButtonStyle: CSSProperties = {
   width: "100%",
 };
 
-const handImageFrameStyle: CSSProperties = {
+const cardImageFrameStyle: CSSProperties = {
   width: "100%",
   aspectRatio: "63 / 88",
   borderRadius: 8,
@@ -305,14 +384,14 @@ const handImageFrameStyle: CSSProperties = {
   background: "#0b1220",
 };
 
-const handImageStyle: CSSProperties = {
+const cardImageStyle: CSSProperties = {
   display: "block",
   width: "100%",
   height: "100%",
   objectFit: "cover",
 };
 
-const handImageFallbackStyle: CSSProperties = {
+const cardImageFallbackStyle: CSSProperties = {
   width: "100%",
   height: "100%",
   display: "flex",
@@ -322,11 +401,11 @@ const handImageFallbackStyle: CSSProperties = {
   fontSize: 12,
 };
 
-const handCardTextWrapStyle: CSSProperties = {
+const cardTextWrapStyle: CSSProperties = {
   marginTop: 8,
 };
 
-const handCardNameStyle: CSSProperties = {
+const cardNameStyle: CSSProperties = {
   fontSize: 12,
   fontWeight: 700,
   color: "#f9fafb",
@@ -338,7 +417,7 @@ const handCardNameStyle: CSSProperties = {
   wordBreak: "break-word",
 };
 
-const handCardCodeStyle: CSSProperties = {
+const cardCodeStyle: CSSProperties = {
   marginTop: 4,
   fontSize: 11,
   color: "#9ca3af",
@@ -347,21 +426,91 @@ const handCardCodeStyle: CSSProperties = {
   textOverflow: "ellipsis",
 };
 
-const pileStyle: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  gap: 6,
+const discardOpenButtonStyle: CSSProperties = {
   marginTop: 8,
-};
-
-const pileItemStyle: CSSProperties = {
-  background: "#0f1724",
-  borderRadius: 8,
-  padding: "8px 10px",
-  color: "#d9e2f2",
+  background: "#24324a",
+  border: "1px solid #4a7cff",
+  borderRadius: 10,
+  padding: "12px 14px",
+  color: "#ffffff",
+  cursor: "pointer",
+  fontWeight: 700,
+  width: "100%",
+  textAlign: "left",
 };
 
 const emptyHintStyle: CSSProperties = {
   color: "#9fb0ca",
   padding: "6px 2px",
+};
+
+const modalOverlayStyle: CSSProperties = {
+  position: "fixed",
+  inset: 0,
+  background: "rgba(3, 8, 18, 0.74)",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  padding: 24,
+  zIndex: 1000,
+};
+
+const modalCardStyle: CSSProperties = {
+  width: "min(1200px, 100%)",
+  maxHeight: "min(88vh, 1000px)",
+  overflow: "auto",
+  background: "#182233",
+  border: "1px solid #2a3850",
+  borderRadius: 16,
+  padding: 20,
+  boxSizing: "border-box",
+};
+
+const modalHeaderStyle: CSSProperties = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: 16,
+  marginBottom: 16,
+  flexWrap: "wrap",
+};
+
+const modalTitleStyle: CSSProperties = {
+  fontSize: 22,
+  fontWeight: 700,
+  color: "#ffffff",
+};
+
+const modalSubTitleStyle: CSSProperties = {
+  marginTop: 4,
+  color: "#b9c3d6",
+};
+
+const modalCloseButtonStyle: CSSProperties = {
+  background: "#24324a",
+  color: "#ffffff",
+  border: "1px solid #3e5379",
+  borderRadius: 10,
+  padding: "10px 14px",
+  cursor: "pointer",
+  fontWeight: 700,
+};
+
+const discardGridStyle: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
+  gap: 12,
+};
+
+const discardItemWrapStyle: CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 6,
+};
+
+const discardOrderStyle: CSSProperties = {
+  fontSize: 12,
+  fontWeight: 700,
+  color: "#dbeafe",
+  textAlign: "center",
 };
