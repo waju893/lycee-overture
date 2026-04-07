@@ -5,6 +5,13 @@ type Props = {
   card: CardMeta | null;
   isCollapsed: boolean;
   onToggleCollapse: () => void;
+  quickAdd?: {
+    onAddOne: () => void;
+    onAddFour: () => void;
+    selectedCode?: string;
+    validationMessage?: string;
+    disabled?: boolean;
+  };
 };
 
 const ATTRIBUTE_DISPLAY_LABELS: Record<string, string> = {
@@ -108,7 +115,35 @@ function getFallbackImageSrc(card: CardMeta): string {
   return `/cards/${card.code}.png`;
 }
 
-function CardDetailPanel({ card, isCollapsed, onToggleCollapse }: Props) {
+function QuickAddActions(props: NonNullable<Props["quickAdd"]>) {
+  return (
+    <div
+      style={{
+        marginTop: "10px",
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "8px",
+      }}
+    >
+      <button type="button" className="filter-select" onClick={props.onAddOne} disabled={props.disabled}>
+        선택 카드 +1
+      </button>
+      <button type="button" className="filter-select" onClick={props.onAddFour} disabled={props.disabled}>
+        선택 카드 +4
+      </button>
+      <div style={{ alignSelf: "center", color: "#9ca3af", fontSize: "13px" }}>
+        현재 선택: {props.selectedCode ?? "없음"}
+      </div>
+      {props.validationMessage ? (
+        <div style={{ width: "100%", color: "#fca5a5", fontSize: "13px" }}>
+          {props.validationMessage}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function CardDetailPanel({ card, isCollapsed, onToggleCollapse, quickAdd }: Props) {
   if (!card) {
     return (
       <aside className="detail-panel empty">
@@ -127,6 +162,8 @@ function CardDetailPanel({ card, isCollapsed, onToggleCollapse }: Props) {
           {!isCollapsed && (
             <p>왼쪽에서 카드를 선택하면 이미지와 상세 정보가 표시됩니다.</p>
           )}
+
+          {quickAdd ? <QuickAddActions {...quickAdd} /> : null}
         </div>
       </aside>
     );
@@ -150,6 +187,8 @@ function CardDetailPanel({ card, isCollapsed, onToggleCollapse }: Props) {
             {isCollapsed ? "복원" : "최소화"}
           </button>
         </div>
+
+        {quickAdd ? <QuickAddActions {...quickAdd} /> : null}
 
         {!isCollapsed && (
           <>

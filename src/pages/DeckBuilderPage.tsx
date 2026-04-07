@@ -995,6 +995,16 @@ export default function DeckBuilderPage() {
               card={selectedCard}
               isCollapsed={isDetailCollapsed}
               onToggleCollapse={() => setIsDetailCollapsed((prev) => !prev)}
+              quickAdd={{
+                onAddOne: () => handleAddSelectedCard(1),
+                onAddFour: () => handleAddSelectedCard(4),
+                selectedCode: selectedCard?.code,
+                disabled: !selectedCard,
+                validationMessage:
+                  selectedCardAddPreview && !selectedCardAddPreview.ok
+                    ? selectedCardAddPreview.issues[0]?.message
+                    : undefined,
+              }}
             />
 
             <SelectedCardQuickAddPanel
