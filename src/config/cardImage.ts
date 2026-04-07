@@ -3,12 +3,36 @@ const CARD_IMAGE_BASE_URL = String(import.meta.env.VITE_CARD_IMAGE_BASE_URL ?? "
   .replace(/\/+$/, "");
 
 const resolvedImageUrlCache = new Map<string, string>();
-const failedImageUrlSet = new Set<string>();
 const preloadPromiseCache = new Map<string, Promise<boolean>>();
 const attemptedCodeCache = new Set<string>();
 
 function normalizeCode(cardCode: string): string {
   return String(cardCode ?? "").trim().toUpperCase();
+}
+
+function buildUrl(basePath: string, code: string, extension: "webp" | "png"): string {
+  const trimmedBasePath = String(basePath ?? "").trim().replace(/\/+$/, "");
+  const normalizedCode = normalizeCode(code);
+
+  if (!trimmedBasePath || !normalizedCode) {
+    return "";
+  }
+
+  return `${trimmedBasePath}/${normalizedCode}.${extension}`;
+}
+
+function getDefaultBasePaths(): string[] {
+  const candidates = [
+    CARD_IMAGE_BASE_URL,
+    "/cards",
+    "/cards/webp",
+    "/cards/png",
+    "/public/cards",
+    "/public/cards/webp",
+    "/public/cards/png",
+  ];
+
+  return candidates.filter(Boolean);
 }
 
 export function buildCardImageUrl(code: string, extension: "webp" | "png"): string {
@@ -18,11 +42,8 @@ export function buildCardImageUrl(code: string, extension: "webp" | "png"): stri
     return "";
   }
 
-  if (CARD_IMAGE_BASE_URL) {
-    return `${CARD_IMAGE_BASE_URL}/${normalizedCode}.${extension}`;
-  }
-
-  return `/cards/${normalizedCode}.${extension}`;
+  const primaryBasePath = CARD_IMAGE_BASE_URL || "/cards";
+  return buildUrl(primaryBasePath, normalizedCode, extension);
 }
 
 export function getCardImageCandidates(cardCode: string, imageUrl?: string): string[] {
@@ -34,27 +55,21 @@ export function getCardImageCandidates(cardCode: string, imageUrl?: string): str
   }
 
   const cachedResolvedUrl = resolvedImageUrlCache.get(normalizedCode);
-  if (cachedResolvedUrl && !failedImageUrlSet.has(cachedResolvedUrl)) {
+  if (cachedResolvedUrl && !candidates.includes(cachedResolvedUrl)) {
     candidates.push(cachedResolvedUrl);
   }
 
   const trimmedImageUrl = String(imageUrl ?? "").trim();
-  if (
-    trimmedImageUrl &&
-    !candidates.includes(trimmedImageUrl) &&
-    !failedImageUrlSet.has(trimmedImageUrl)
-  ) {
+  if (trimmedImageUrl && !candidates.includes(trimmedImageUrl)) {
     candidates.push(trimmedImageUrl);
   }
 
-  const webpUrl = buildCardImageUrl(normalizedCode, "webp");
-  const pngUrl = buildCardImageUrl(normalizedCode, "png");
-
-  for (const url of [webpUrl, pngUrl]) {
-    if (!url) continue;
-    if (failedImageUrlSet.has(url)) continue;
-    if (candidates.includes(url)) continue;
-    candidates.push(url);
+  for (const basePath of getDefaultBasePaths()) {
+    for (const extension of ["webp", "png"] as const) {
+      const nextUrl = buildUrl(basePath, normalizedCode, extension);
+      if (!nextUrl || candidates.includes(nextUrl)) continue;
+      candidates.push(nextUrl);
+    }
   }
 
   return candidates;
@@ -67,13 +82,12 @@ export function markCardImageResolved(cardCode: string, resolvedUrl: string) {
   if (!normalizedCode || !normalizedUrl) return;
 
   resolvedImageUrlCache.set(normalizedCode, normalizedUrl);
-  failedImageUrlSet.delete(normalizedUrl);
 }
 
-export function markCardImageFailed(url: string) {
-  const normalizedUrl = String(url ?? "").trim();
-  if (!normalizedUrl) return;
-  failedImageUrlSet.add(normalizedUrl);
+export function markCardImageFailed(_url: string) {
+  // 실패 URL을 전역 차단하지 않는다.
+  // 개발 서버 재시작, 경로 변경, 최초 로딩 타이밍 차이로 한 번 실패한 URL이
+  // 이후에도 계속 막혀 버리면 모든 화면에서 NO IMAGE가 고정될 수 있다.
 }
 
 export function getResolvedCardImageUrl(cardCode: string): string | undefined {
@@ -89,14 +103,12 @@ function loadImage(url: string): Promise<boolean> {
   const nextPromise = new Promise<boolean>((resolve) => {
     const img = new Image();
     img.decoding = "async";
-    img.loading = "eager";
 
     img.onload = () => {
       resolve(true);
     };
 
     img.onerror = () => {
-      markCardImageFailed(url);
       resolve(false);
     };
 
@@ -112,7 +124,7 @@ export async function preloadCardImage(cardCode: string, imageUrl?: string): Pro
   if (!normalizedCode) return null;
 
   const cachedResolvedUrl = resolvedImageUrlCache.get(normalizedCode);
-  if (cachedResolvedUrl && !failedImageUrlSet.has(cachedResolvedUrl)) {
+  if (cachedResolvedUrl) {
     return cachedResolvedUrl;
   }
 
