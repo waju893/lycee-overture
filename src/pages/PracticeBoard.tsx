@@ -1,15 +1,18 @@
 import { useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import { reduceGameState } from "../game/GameEngine";
 import { createInitialGameState } from "../game/GameRules";
 import type { GameAction } from "../game/GameActions";
 import type { CardRef, FieldSlot, GameState, PlayerID } from "../game/GameTypes";
 
-type PlacementMode = {
-  type: "hand_to_field";
-  playerId: PlayerID;
-  cardId: string;
-} | null;
+type PlacementMode =
+  | {
+      type: "hand_to_field";
+      playerId: PlayerID;
+      cardId: string;
+    }
+  | null;
 
 const ALL_SLOTS: FieldSlot[] = [
   "AF_LEFT",
@@ -20,7 +23,14 @@ const ALL_SLOTS: FieldSlot[] = [
   "DF_RIGHT",
 ];
 
-const PLAYER_ORDER: PlayerID[] = ["P1", "P2"];
+const FIELD_RENDER_ORDER: FieldSlot[] = [
+  "DF_LEFT",
+  "DF_CENTER",
+  "DF_RIGHT",
+  "AF_LEFT",
+  "AF_CENTER",
+  "AF_RIGHT",
+];
 
 function makeCharacter(
   instanceId: string,
@@ -91,7 +101,9 @@ function getCardLabel(card: CardRef): string {
 
   if (card.isTapped) flags.push("DOWN");
 
-  return `${card.name}  AP ${ap} / DP ${dp} / DMG ${dmg}${flags.length ? `  [${flags.join(", ")}]` : ""}`;
+  return `${card.name} AP ${ap} / DP ${dp} / DMG ${dmg}${
+    flags.length ? ` [${flags.join(", ")}]` : ""
+  }`;
 }
 
 function getFirstEmptySlot(state: GameState, playerId: PlayerID): FieldSlot | null {
@@ -110,6 +122,19 @@ function getDefaultPerspective(state: GameState): PlayerID {
   return "P1";
 }
 
+function getPendingDeclarationSummary(state: GameState): string | null {
+  const top = state.declarationStack[state.declarationStack.length - 1];
+  if (!top) return null;
+
+  if (top.kind === "useCharacter") {
+    return `${top.playerId} 캐릭터 등장 선언 대기`;
+  }
+  if (top.kind === "attack") {
+    return `${top.playerId} 공격 선언 대기`;
+  }
+  return `${top.playerId} 선언 대기`;
+}
+
 export default function PracticeBoard() {
   const [state, setState] = useState<GameState>(() => createPracticeState());
   const [perspective, setPerspective] = useState<PlayerID>("P1");
@@ -118,6 +143,8 @@ export default function PracticeBoard() {
   const opponent = perspective === "P1" ? "P2" : "P1";
   const activePlayer = state.turn.activePlayer;
   const currentPriority = state.turn.priorityPlayer;
+  const pendingDeclaration = state.declarationStack.length > 0;
+  const pendingSummary = getPendingDeclarationSummary(state);
 
   function dispatch(action: GameAction) {
     setState((prev) => reduceGameState(prev, action));
@@ -131,11 +158,7 @@ export default function PracticeBoard() {
   }
 
   function handleStartGame() {
-    dispatch({
-      type: "START_GAME",
-      firstPlayer: "P1",
-      leaderEnabled: false,
-    });
+    dispatch({ type: "START_GAME", firstPlayer: "P1", leaderEnabled: false });
   }
 
   function handleKeep(playerId: PlayerID) {
@@ -171,6 +194,8 @@ export default function PracticeBoard() {
 
   function handleHandCardClick(playerId: PlayerID, card: CardRef) {
     if (card.cardType !== "character") return;
+    if (pendingDeclaration) return;
+    if (state.turn.priorityPlayer !== playerId) return;
 
     if (placementMode?.type === "hand_to_field" && placementMode.cardId === card.instanceId) {
       setPlacementMode(null);
@@ -190,10 +215,7 @@ export default function PracticeBoard() {
   function handleFieldClick(playerId: PlayerID, slot: FieldSlot) {
     const card = state.players[playerId].field[slot].card;
 
-    if (
-      placementMode?.type === "hand_to_field" &&
-      placementMode.playerId === playerId
-    ) {
+    if (placementMode?.type === "hand_to_field" && placementMode.playerId === playerId) {
       dispatch({
         type: "DECLARE_ACTION",
         playerId,
@@ -207,159 +229,186 @@ export default function PracticeBoard() {
     }
 
     if (!card) return;
+    if (pendingDeclaration) return;
+    if (playerId !== perspective) return;
+    if (!slot.startsWith("AF")) return;
 
-    if (playerId === perspective && slot.startsWith("AF")) {
-      dispatch({
-        type: "DECLARE_ACTION",
-        playerId,
-        kind: "attack",
-        sourceCardId: card.instanceId,
-      });
-      setPlacementMode(null);
-    }
+    dispatch({
+      type: "DECLARE_ACTION",
+      playerId,
+      kind: "attack",
+      sourceCardId: card.instanceId,
+    });
+    setPlacementMode(null);
   }
 
-  const topPanel = useMemo(
-    () => (
+  const topPanel = useMemo(() => {
+    return (
       <div style={panelStyle}>
         <div style={sectionTitleStyle}>게임 상태</div>
-        <div>승자: {state.winner ?? "없음"}</div>
-        <div>현재 턴 플레이어: {state.turn.activePlayer}</div>
-        <div>현재 페이즈: {state.turn.phase}</div>
-        <div>우선권 플레이어: {state.turn.priorityPlayer}</div>
-        <div>연속 패스 수: {state.turn.passedInRow}</div>
-        <div>스타트업 진행 중: {state.startup.active ? "예" : "아니오"}</div>
-        <div>배틀 진행 중: {state.battle.isActive ? "예" : "아니오"}</div>
-        <div>
-          배틀 정보: 공격자 {state.battle.attackerCardId ?? "없음"} / 방어자 {state.battle.defenderCardId ?? "없음"}
+        <div style={statusGridStyle}>
+          <div>승자: {state.winner ?? "없음"}</div>
+          <div>현재 턴 플레이어: {state.turn.activePlayer}</div>
+          <div>현재 페이즈: {state.turn.phase}</div>
+          <div>우선권 플레이어: {state.turn.priorityPlayer}</div>
+          <div>스타트업 진행 중: {state.startup.active ? "예" : "아니오"}</div>
+          <div>배틀 진행 중: {state.battle.isActive ? "예" : "아니오"}</div>
+          <div>배틀 공격자: {state.battle.attackerCardId ?? "없음"}</div>
+          <div>배틀 방어자: {state.battle.defenderCardId ?? "없음"}</div>
         </div>
       </div>
-    ),
-    [state],
-  );
+    );
+  }, [state]);
+
+  const passButtonLabel = pendingDeclaration
+    ? `대응 안 함 / 해결 (${currentPriority})`
+    : `PASS_PRIORITY (${currentPriority})`;
 
   return (
     <div style={pageStyle}>
-      <div style={headerRowStyle}>
-        <div>
-          <div style={pageTitleStyle}>연습 모드</div>
-          <div style={pageSubTitleStyle}>엔진 상태를 바로 보면서 캐릭터 등장, 공격, 자동 방어, 직접 공격을 테스트</div>
-        </div>
-        <div style={headerButtonsStyle}>
-          <Link to="/" style={linkButtonStyle}>
-            타이틀로
-          </Link>
-          <button style={secondaryButtonStyle} onClick={resetPractice}>
-            연습판 초기화
-          </button>
-        </div>
-      </div>
+      <div style={pageInnerStyle}>
+        <div style={headerRowStyle}>
+          <div>
+            <div style={pageTitleStyle}>연습 모드</div>
+            <div style={pageSubTitleStyle}>
+              Lycee 대응 흐름 기준: 선언 후에는 상대만 대응 가능, 상대가 대응하지 않으면 즉시 해결
+            </div>
+          </div>
 
-      <div style={toolbarStyle}>
-        <button style={primaryButtonStyle} onClick={handleStartGame}>
-          START_GAME
-        </button>
-        <button style={secondaryButtonStyle} onClick={handleStartTurn}>
-          START_TURN
-        </button>
-        <button style={secondaryButtonStyle} onClick={handleAdvancePhase}>
-          ADVANCE_PHASE
-        </button>
-        <button style={secondaryButtonStyle} onClick={handlePassPriority}>
-          PASS_PRIORITY ({currentPriority})
-        </button>
-        <button style={dangerButtonStyle} onClick={() => handleConcede(perspective)}>
-          {perspective} 항복
-        </button>
-      </div>
-
-      <div style={toolbarStyle}>
-        <button style={secondaryButtonStyle} onClick={() => handleKeep("P1")}>
-          P1 KEEP
-        </button>
-        <button style={secondaryButtonStyle} onClick={() => handleMulligan("P1")}>
-          P1 MULLIGAN
-        </button>
-        <button style={secondaryButtonStyle} onClick={() => handleKeep("P2")}>
-          P2 KEEP
-        </button>
-        <button style={secondaryButtonStyle} onClick={() => handleMulligan("P2")}>
-          P2 MULLIGAN
-        </button>
-        <button style={primaryButtonStyle} onClick={handleFinalizeStartup}>
-          FINALIZE_STARTUP
-        </button>
-      </div>
-
-      <div style={toolbarStyle}>
-        <button
-          style={perspective === "P1" ? primaryButtonStyle : secondaryButtonStyle}
-          onClick={() => setPerspective("P1")}
-        >
-          P1 시점
-        </button>
-        <button
-          style={perspective === "P2" ? primaryButtonStyle : secondaryButtonStyle}
-          onClick={() => setPerspective("P2")}
-        >
-          P2 시점
-        </button>
-        <div style={hintTextStyle}>
-          현재 조작 시점: {perspective} / 손패 클릭 후 필드 칸 클릭 = 등장 선언 / 자신의 AF 클릭 = 공격 선언
-        </div>
-      </div>
-
-      {placementMode ? (
-        <div style={noticeStyle}>
-          등장 선언 대기 중: {placementMode.playerId} / 카드 {placementMode.cardId} / 원하는 필드 칸을 클릭
-        </div>
-      ) : null}
-
-      {topPanel}
-
-      <div style={boardLayoutStyle}>
-        <PlayerArea
-          label={`상단 플레이어 (${opponent})`}
-          playerId={opponent}
-          state={state}
-          isPerspectivePlayer={false}
-          onHandCardClick={handleHandCardClick}
-          onFieldClick={handleFieldClick}
-        />
-
-        <PlayerArea
-          label={`하단 플레이어 (${perspective})`}
-          playerId={perspective}
-          state={state}
-          isPerspectivePlayer={true}
-          onHandCardClick={handleHandCardClick}
-          onFieldClick={handleFieldClick}
-        />
-      </div>
-
-      <div style={logGridStyle}>
-        <div style={panelStyle}>
-          <div style={sectionTitleStyle}>최근 로그</div>
-          <div style={logListStyle}>
-            {[...state.logs].reverse().map((log, index) => (
-              <div key={`${log}-${index}`} style={logItemStyle}>
-                {log}
-              </div>
-            ))}
+          <div style={headerButtonsStyle}>
+            <Link to="/" style={linkButtonStyle}>
+              타이틀로
+            </Link>
+            <button type="button" style={secondaryButtonStyle} onClick={resetPractice}>
+              연습판 초기화
+            </button>
           </div>
         </div>
 
-        <div style={panelStyle}>
-          <div style={sectionTitleStyle}>최근 이벤트</div>
-          <div style={logListStyle}>
-            {[...state.events].reverse().map((event, index) => (
-              <div key={`${event.type}-${index}`} style={logItemStyle}>
-                {event.type}
-                {event.playerId ? ` / ${event.playerId}` : ""}
-                {event.cardId ? ` / ${event.cardId}` : ""}
-                {typeof event.amount === "number" ? ` / ${event.amount}` : ""}
-              </div>
-            ))}
+        <div style={toolbarStyle}>
+          <button type="button" style={primaryButtonStyle} onClick={handleStartGame}>
+            START_GAME
+          </button>
+          <button type="button" style={secondaryButtonStyle} onClick={handleStartTurn}>
+            START_TURN
+          </button>
+          <button type="button" style={secondaryButtonStyle} onClick={handleAdvancePhase}>
+            ADVANCE_PHASE
+          </button>
+          <button type="button" style={secondaryButtonStyle} onClick={handlePassPriority}>
+            {passButtonLabel}
+          </button>
+          <button
+            type="button"
+            style={dangerButtonStyle}
+            onClick={() => handleConcede(perspective)}
+          >
+            {perspective} 항복
+          </button>
+        </div>
+
+        <div style={toolbarStyle}>
+          <button type="button" style={secondaryButtonStyle} onClick={() => handleKeep("P1")}>
+            P1 KEEP
+          </button>
+          <button type="button" style={secondaryButtonStyle} onClick={() => handleMulligan("P1")}>
+            P1 MULLIGAN
+          </button>
+          <button type="button" style={secondaryButtonStyle} onClick={() => handleKeep("P2")}>
+            P2 KEEP
+          </button>
+          <button type="button" style={secondaryButtonStyle} onClick={() => handleMulligan("P2")}>
+            P2 MULLIGAN
+          </button>
+          <button type="button" style={primaryButtonStyle} onClick={handleFinalizeStartup}>
+            FINALIZE_STARTUP
+          </button>
+        </div>
+
+        <div style={toolbarStyle}>
+          <button
+            type="button"
+            style={perspective === "P1" ? primaryButtonStyle : secondaryButtonStyle}
+            onClick={() => setPerspective("P1")}
+          >
+            P1 시점
+          </button>
+          <button
+            type="button"
+            style={perspective === "P2" ? primaryButtonStyle : secondaryButtonStyle}
+            onClick={() => setPerspective("P2")}
+          >
+            P2 시점
+          </button>
+          <div style={hintTextStyle}>
+            현재 조작 시점: {perspective} / 손패 클릭 후 필드 칸 클릭 = 등장 선언 / 자신의 AF 클릭 = 공격 선언
+          </div>
+        </div>
+
+        {placementMode ? (
+          <div style={noticeStyle}>
+            등장 선언 대기 중: {placementMode.playerId} / 카드 {placementMode.cardId} / 원하는 필드 칸을 클릭
+          </div>
+        ) : null}
+
+        {pendingDeclaration ? (
+          <div style={noticeStyle}>
+            선언 스택 존재: {pendingSummary}
+            <br />
+            현재 우선권 플레이어인 <strong>{currentPriority}</strong>만 대응할 수 있어. 대응이 없으면
+            <strong> {passButtonLabel}</strong> 버튼으로 즉시 해결돼.
+          </div>
+        ) : null}
+
+        {topPanel}
+
+        <div style={boardLayoutStyle}>
+          <PlayerArea
+            label={`상단 플레이어 (${opponent})`}
+            playerId={opponent}
+            state={state}
+            isPerspectivePlayer={false}
+            onHandCardClick={handleHandCardClick}
+            onFieldClick={handleFieldClick}
+          />
+
+          <PlayerArea
+            label={`하단 플레이어 (${perspective})`}
+            playerId={perspective}
+            state={state}
+            isPerspectivePlayer
+            onHandCardClick={handleHandCardClick}
+            onFieldClick={handleFieldClick}
+          />
+        </div>
+
+        <div style={logGridStyle}>
+          <div style={panelStyle}>
+            <div style={sectionTitleStyle}>최근 로그</div>
+            <div style={logListStyle}>
+              {[...state.logs].reverse().map((log, index) => (
+                <div key={`${log}-${index}`} style={logItemStyle}>
+                  {log}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div style={panelStyle}>
+            <div style={sectionTitleStyle}>최근 이벤트</div>
+            <div style={logListStyle}>
+              {[...state.events].reverse().map((event, index) => (
+                <div
+                  key={`${event.type}-${event.cardId ?? "none"}-${index}`}
+                  style={logItemStyle}
+                >
+                  {event.type}
+                  {event.playerId ? ` / ${event.playerId}` : ""}
+                  {event.cardId ? ` / ${event.cardId}` : ""}
+                  {typeof event.amount === "number" ? ` / ${event.amount}` : ""}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -397,12 +446,12 @@ function PlayerArea({
       </div>
 
       <div style={fieldGridStyle}>
-        {PLAYER_ORDER && ["DF_LEFT", "DF_CENTER", "DF_RIGHT", "AF_LEFT", "AF_CENTER", "AF_RIGHT"].map((slot) => {
-          const typedSlot = slot as FieldSlot;
+        {FIELD_RENDER_ORDER.map((typedSlot) => {
           const card = player.field[typedSlot].card;
           return (
             <button
-              key={typedSlot}
+              key={`${playerId}-${typedSlot}`}
+              type="button"
               style={slotButtonStyle}
               onClick={() => onFieldClick(playerId, typedSlot)}
             >
@@ -413,11 +462,14 @@ function PlayerArea({
         })}
       </div>
 
-      <div style={sectionMinorTitleStyle}>손패 {isPerspectivePlayer ? "(클릭으로 사용)" : ""}</div>
+      <div style={sectionMinorTitleStyle}>
+        손패 {isPerspectivePlayer ? "(클릭으로 사용)" : ""}
+      </div>
       <div style={handWrapStyle}>
         {player.hand.map((card) => (
           <button
             key={card.instanceId}
+            type="button"
             style={handCardButtonStyle}
             onClick={() => onHandCardClick(playerId, card)}
           >
@@ -438,46 +490,54 @@ function PlayerArea({
   );
 }
 
-const pageStyle: React.CSSProperties = {
+const pageStyle: CSSProperties = {
   minHeight: "100vh",
+  width: "100%",
   background: "#101722",
   color: "#ffffff",
   padding: 24,
   boxSizing: "border-box",
 };
 
-const headerRowStyle: React.CSSProperties = {
+const pageInnerStyle: CSSProperties = {
+  width: "100%",
+  maxWidth: 1200,
+  margin: "0 auto",
+};
+
+const headerRowStyle: CSSProperties = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "flex-start",
   gap: 16,
   marginBottom: 16,
+  flexWrap: "wrap",
 };
 
-const pageTitleStyle: React.CSSProperties = {
+const pageTitleStyle: CSSProperties = {
   fontSize: 28,
   fontWeight: 700,
   marginBottom: 4,
 };
 
-const pageSubTitleStyle: React.CSSProperties = {
+const pageSubTitleStyle: CSSProperties = {
   color: "#b9c3d6",
 };
 
-const headerButtonsStyle: React.CSSProperties = {
+const headerButtonsStyle: CSSProperties = {
   display: "flex",
   gap: 12,
   flexWrap: "wrap",
 };
 
-const toolbarStyle: React.CSSProperties = {
+const toolbarStyle: CSSProperties = {
   display: "flex",
   gap: 10,
   flexWrap: "wrap",
   marginBottom: 12,
 };
 
-const panelStyle: React.CSSProperties = {
+const panelStyle: CSSProperties = {
   background: "#182233",
   border: "1px solid #2a3850",
   borderRadius: 12,
@@ -485,12 +545,18 @@ const panelStyle: React.CSSProperties = {
   marginBottom: 16,
 };
 
-const boardLayoutStyle: React.CSSProperties = {
+const boardLayoutStyle: CSSProperties = {
   display: "grid",
   gap: 16,
 };
 
-const fieldGridStyle: React.CSSProperties = {
+const statusGridStyle: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+  gap: 8,
+};
+
+const fieldGridStyle: CSSProperties = {
   display: "grid",
   gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
   gap: 10,
@@ -498,52 +564,52 @@ const fieldGridStyle: React.CSSProperties = {
   marginBottom: 16,
 };
 
-const handWrapStyle: React.CSSProperties = {
+const handWrapStyle: CSSProperties = {
   display: "flex",
   flexWrap: "wrap",
   gap: 8,
   marginTop: 8,
 };
 
-const pileStyle: React.CSSProperties = {
+const pileStyle: CSSProperties = {
   display: "flex",
   flexDirection: "column",
   gap: 6,
   marginTop: 8,
 };
 
-const metaRowStyle: React.CSSProperties = {
+const metaRowStyle: CSSProperties = {
   display: "flex",
   gap: 12,
   flexWrap: "wrap",
   color: "#b9c3d6",
 };
 
-const sectionTitleStyle: React.CSSProperties = {
+const sectionTitleStyle: CSSProperties = {
   fontSize: 20,
   fontWeight: 700,
   marginBottom: 10,
 };
 
-const sectionMinorTitleStyle: React.CSSProperties = {
+const sectionMinorTitleStyle: CSSProperties = {
   fontSize: 16,
   fontWeight: 600,
   marginTop: 10,
 };
 
-const slotTitleStyle: React.CSSProperties = {
+const slotTitleStyle: CSSProperties = {
   fontSize: 13,
   fontWeight: 700,
   marginBottom: 6,
 };
 
-const slotBodyStyle: React.CSSProperties = {
+const slotBodyStyle: CSSProperties = {
   fontSize: 13,
   lineHeight: 1.4,
   color: "#d9e2f2",
 };
 
-const slotButtonStyle: React.CSSProperties = {
+const slotButtonStyle: CSSProperties = {
   background: "#0f1724",
   border: "1px solid #33435e",
   borderRadius: 10,
@@ -554,7 +620,7 @@ const slotButtonStyle: React.CSSProperties = {
   cursor: "pointer",
 };
 
-const handCardButtonStyle: React.CSSProperties = {
+const handCardButtonStyle: CSSProperties = {
   background: "#24324a",
   border: "1px solid #3e5379",
   borderRadius: 10,
@@ -564,14 +630,14 @@ const handCardButtonStyle: React.CSSProperties = {
   textAlign: "left",
 };
 
-const pileItemStyle: React.CSSProperties = {
+const pileItemStyle: CSSProperties = {
   background: "#0f1724",
   borderRadius: 8,
   padding: "8px 10px",
   color: "#d9e2f2",
 };
 
-const primaryButtonStyle: React.CSSProperties = {
+const primaryButtonStyle: CSSProperties = {
   background: "#4a7cff",
   color: "#ffffff",
   border: "none",
@@ -581,7 +647,7 @@ const primaryButtonStyle: React.CSSProperties = {
   fontWeight: 700,
 };
 
-const secondaryButtonStyle: React.CSSProperties = {
+const secondaryButtonStyle: CSSProperties = {
   background: "#24324a",
   color: "#ffffff",
   border: "1px solid #3e5379",
@@ -591,7 +657,7 @@ const secondaryButtonStyle: React.CSSProperties = {
   fontWeight: 600,
 };
 
-const dangerButtonStyle: React.CSSProperties = {
+const dangerButtonStyle: CSSProperties = {
   background: "#7a2434",
   color: "#ffffff",
   border: "1px solid #a04a5b",
@@ -601,33 +667,34 @@ const dangerButtonStyle: React.CSSProperties = {
   fontWeight: 700,
 };
 
-const linkButtonStyle: React.CSSProperties = {
+const linkButtonStyle: CSSProperties = {
   ...secondaryButtonStyle,
   textDecoration: "none",
   display: "inline-flex",
   alignItems: "center",
 };
 
-const noticeStyle: React.CSSProperties = {
+const noticeStyle: CSSProperties = {
   background: "#24324a",
   border: "1px solid #4a7cff",
   borderRadius: 10,
   padding: 12,
   marginBottom: 16,
+  lineHeight: 1.5,
 };
 
-const hintTextStyle: React.CSSProperties = {
+const hintTextStyle: CSSProperties = {
   alignSelf: "center",
   color: "#b9c3d6",
 };
 
-const logGridStyle: React.CSSProperties = {
+const logGridStyle: CSSProperties = {
   display: "grid",
   gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
   gap: 16,
 };
 
-const logListStyle: React.CSSProperties = {
+const logListStyle: CSSProperties = {
   display: "flex",
   flexDirection: "column",
   gap: 8,
@@ -635,7 +702,7 @@ const logListStyle: React.CSSProperties = {
   overflowY: "auto",
 };
 
-const logItemStyle: React.CSSProperties = {
+const logItemStyle: CSSProperties = {
   background: "#0f1724",
   borderRadius: 8,
   padding: "8px 10px",

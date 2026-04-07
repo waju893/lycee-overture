@@ -615,6 +615,15 @@ function handlePassPriority(
     return;
   }
 
+  // Lycee 기준: 선언한 플레이어는 자신의 선언에 대응할 수 없다.
+  // 따라서 선언 스택이 있을 때 현재 우선권 플레이어(상대)가 패스하면
+  // 즉시 해당 선언을 해결한다.
+  if (next.declarationStack.length > 0) {
+    next.logs.push(`[PRIORITY] ${action.playerId} 대응 안 함 -> 선언 즉시 해결`);
+    resolveTopDeclarationInternal(next);
+    return;
+  }
+
   next.turn.passedInRow += 1;
   next.logs.push(
     `[PRIORITY] ${action.playerId} 패스 (${next.turn.passedInRow}회 연속)`,
