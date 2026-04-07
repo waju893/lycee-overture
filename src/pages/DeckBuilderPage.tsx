@@ -5,6 +5,7 @@ import { CARD_META } from "../lib/cards";
 import type { CardMeta } from "../types/card";
 import CardGrid from "../components/CardGrid";
 import CardDetailPanel from "../components/CardDetailPanel";
+import SelectedCardQuickAddPanel from "../components/SelectedCardQuickAddPanel";
 import {
   mergeDeckEntries,
   removeCardFromDeck,
@@ -996,6 +997,16 @@ export default function DeckBuilderPage() {
               onToggleCollapse={() => setIsDetailCollapsed((prev) => !prev)}
             />
 
+            <SelectedCardQuickAddPanel
+              selectedCard={selectedCard}
+              onAddOne={() => handleAddSelectedCard(1)}
+              onAddFour={() => handleAddSelectedCard(4)}
+              validationMessage={
+                selectedCardAddPreview && !selectedCardAddPreview.ok
+                  ? selectedCardAddPreview.issues[0]?.message
+                  : undefined
+              }
+            />
             <div
               className="detail-panel"
               style={{
