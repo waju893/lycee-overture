@@ -4,9 +4,15 @@ const CARD_IMAGE_BASE_URL = String(import.meta.env.VITE_CARD_IMAGE_BASE_URL ?? "
 
 const resolvedImageUrlCache = new Map<string, string>();
 const failedImageUrlSet = new Set<string>();
+const preloadPromiseCache = new Map<string, Promise<boolean>>();
+const attemptedCodeCache = new Set<string>();
+
+function normalizeCode(cardCode: string): string {
+  return String(cardCode ?? "").trim().toUpperCase();
+}
 
 export function buildCardImageUrl(code: string, extension: "webp" | "png"): string {
-  const normalizedCode = code.trim().toUpperCase();
+  const normalizedCode = normalizeCode(code);
 
   if (!normalizedCode) {
     return "";
@@ -21,22 +27,24 @@ export function buildCardImageUrl(code: string, extension: "webp" | "png"): stri
 
 export function getCardImageCandidates(cardCode: string, imageUrl?: string): string[] {
   const candidates: string[] = [];
-  const normalizedCode = cardCode.trim().toUpperCase();
+  const normalizedCode = normalizeCode(cardCode);
 
   if (!normalizedCode) {
     return candidates;
   }
 
   const cachedResolvedUrl = resolvedImageUrlCache.get(normalizedCode);
-  if (cachedResolvedUrl) {
+  if (cachedResolvedUrl && !failedImageUrlSet.has(cachedResolvedUrl)) {
     candidates.push(cachedResolvedUrl);
   }
 
-  if (imageUrl && imageUrl.trim().length > 0) {
-    const trimmed = imageUrl.trim();
-    if (!candidates.includes(trimmed) && !failedImageUrlSet.has(trimmed)) {
-      candidates.push(trimmed);
-    }
+  const trimmedImageUrl = String(imageUrl ?? "").trim();
+  if (
+    trimmedImageUrl &&
+    !candidates.includes(trimmedImageUrl) &&
+    !failedImageUrlSet.has(trimmedImageUrl)
+  ) {
+    candidates.push(trimmedImageUrl);
   }
 
   const webpUrl = buildCardImageUrl(normalizedCode, "webp");
@@ -53,40 +61,74 @@ export function getCardImageCandidates(cardCode: string, imageUrl?: string): str
 }
 
 export function markCardImageResolved(cardCode: string, resolvedUrl: string) {
-  const normalizedCode = cardCode.trim().toUpperCase();
-  if (!normalizedCode || !resolvedUrl) return;
-  resolvedImageUrlCache.set(normalizedCode, resolvedUrl);
+  const normalizedCode = normalizeCode(cardCode);
+  const normalizedUrl = String(resolvedUrl ?? "").trim();
+
+  if (!normalizedCode || !normalizedUrl) return;
+
+  resolvedImageUrlCache.set(normalizedCode, normalizedUrl);
+  failedImageUrlSet.delete(normalizedUrl);
 }
 
 export function markCardImageFailed(url: string) {
-  if (!url) return;
-  failedImageUrlSet.add(url);
+  const normalizedUrl = String(url ?? "").trim();
+  if (!normalizedUrl) return;
+  failedImageUrlSet.add(normalizedUrl);
 }
 
-export function preloadCardImage(cardCode: string, imageUrl?: string) {
-  const candidates = getCardImageCandidates(cardCode, imageUrl);
-  if (candidates.length === 0) return;
+export function getResolvedCardImageUrl(cardCode: string): string | undefined {
+  return resolvedImageUrlCache.get(normalizeCode(cardCode));
+}
 
-  const normalizedCode = cardCode.trim().toUpperCase();
-  let attempt = 0;
+function loadImage(url: string): Promise<boolean> {
+  const cachedPromise = preloadPromiseCache.get(url);
+  if (cachedPromise) {
+    return cachedPromise;
+  }
 
-  const tryNext = () => {
-    if (attempt >= candidates.length) return;
-
-    const url = candidates[attempt];
+  const nextPromise = new Promise<boolean>((resolve) => {
     const img = new Image();
     img.decoding = "async";
     img.loading = "eager";
+
     img.onload = () => {
-      markCardImageResolved(normalizedCode, url);
+      resolve(true);
     };
+
     img.onerror = () => {
       markCardImageFailed(url);
-      attempt += 1;
-      tryNext();
+      resolve(false);
     };
-    img.src = url;
-  };
 
-  tryNext();
+    img.src = url;
+  });
+
+  preloadPromiseCache.set(url, nextPromise);
+  return nextPromise;
+}
+
+export async function preloadCardImage(cardCode: string, imageUrl?: string): Promise<string | null> {
+  const normalizedCode = normalizeCode(cardCode);
+  if (!normalizedCode) return null;
+
+  const cachedResolvedUrl = resolvedImageUrlCache.get(normalizedCode);
+  if (cachedResolvedUrl && !failedImageUrlSet.has(cachedResolvedUrl)) {
+    return cachedResolvedUrl;
+  }
+
+  const candidates = getCardImageCandidates(normalizedCode, imageUrl);
+  for (const candidate of candidates) {
+    const ok = await loadImage(candidate);
+    if (!ok) continue;
+
+    markCardImageResolved(normalizedCode, candidate);
+    return candidate;
+  }
+
+  attemptedCodeCache.add(normalizedCode);
+  return null;
+}
+
+export function hasTriedResolvingCardImage(cardCode: string): boolean {
+  return attemptedCodeCache.has(normalizeCode(cardCode));
 }

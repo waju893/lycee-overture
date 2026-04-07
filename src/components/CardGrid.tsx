@@ -6,11 +6,8 @@ import {
   type UIEvent,
 } from "react";
 import type { CardMeta } from "../types/card";
-import {
-  getCardImageCandidates,
-  markCardImageFailed,
-  markCardImageResolved,
-} from "../config/cardImage";
+import { preloadCardImage } from "../config/cardImage";
+import CardImage from "./CardImage";
 
 type CardGridProps = {
   cards: CardMeta[];
@@ -33,69 +30,6 @@ function getCardKey(card: CardMeta, index: number): string {
   const idPart =
     card.id != null ? String(card.id) : card.code != null ? String(card.code) : "";
   return idPart || `card-${index}`;
-}
-
-function CardThumbnail({
-  card,
-  alt,
-}: {
-  card: CardMeta;
-  alt: string;
-}) {
-  const candidates = useMemo(
-    () => getCardImageCandidates(String(card.code ?? ""), card.imageUrl),
-    [card.code, card.imageUrl]
-  );
-  const [candidateIndex, setCandidateIndex] = useState(0);
-
-  useEffect(() => {
-    setCandidateIndex(0);
-  }, [candidates]);
-
-  const currentSrc = candidates[candidateIndex] ?? "";
-
-  if (!currentSrc) {
-    return (
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "#9ca3af",
-          fontSize: 12,
-          padding: 8,
-        }}
-      >
-        이미지 없음
-      </div>
-    );
-  }
-
-  return (
-    <img
-      src={currentSrc}
-      alt={alt}
-      loading="lazy"
-      decoding="async"
-      draggable={false}
-      onLoad={() => {
-        markCardImageResolved(String(card.code ?? ""), currentSrc);
-      }}
-      onError={() => {
-        markCardImageFailed(currentSrc);
-        setCandidateIndex((prev) => prev + 1);
-      }}
-      style={{
-        display: "block",
-        width: "100%",
-        height: "100%",
-        objectFit: "cover",
-        background: "#0b1220",
-      }}
-    />
-  );
 }
 
 export default function CardGrid({
@@ -207,6 +141,13 @@ export default function CardGrid({
     viewportWidth,
   ]);
 
+  useEffect(() => {
+    const targets = visibleCards.slice(0, 18);
+    for (const card of targets) {
+      void preloadCardImage(card.code, card.imageUrl);
+    }
+  }, [visibleCards]);
+
   const handleScroll = (event: UIEvent<HTMLDivElement>) => {
     setScrollTop(event.currentTarget.scrollTop);
   };
@@ -299,7 +240,21 @@ export default function CardGrid({
                   overflow: "hidden",
                 }}
               >
-                <CardThumbnail card={card} alt={card.name} />
+                <CardImage
+                  cardCode={card.code}
+                  imageUrl={card.imageUrl}
+                  alt={card.name}
+                  fallbackLabel={card.code}
+                  loading="lazy"
+                  decoding="async"
+                  style={{
+                    display: "block",
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    background: "#0b1220",
+                  }}
+                />
               </div>
 
               <div

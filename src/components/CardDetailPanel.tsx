@@ -1,11 +1,6 @@
 import { memo } from "react";
-import type { SyntheticEvent } from "react";
 import type { CardMeta } from "../types/card";
-import {
-  getCardImageCandidates,
-  markCardImageFailed,
-  markCardImageResolved,
-} from "../config/cardImage";
+import CardImage from "./CardImage";
 
 type Props = {
   card: CardMeta | null;
@@ -98,44 +93,6 @@ function getTypeDisplayLabel(value?: string): string {
   return TYPE_DISPLAY_LABELS[normalizeTypeValue(value)] ?? value;
 }
 
-function getFallbackSvg(card: CardMeta): string {
-  const label = encodeURIComponent(card.code || card.name || "NO IMAGE");
-
-  return `data:image/svg+xml;utf8,
-  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="500">
-    <rect width="100%" height="100%" fill="%2308171f"/>
-    <text x="50%" y="45%" text-anchor="middle" fill="%23cbd5e1" font-size="28">NO IMAGE</text>
-    <text x="50%" y="55%" text-anchor="middle" fill="%239ca3af" font-size="20">${label}</text>
-  </svg>`;
-}
-
-function getInitialImageSrc(card: CardMeta): string {
-  return getCardImageCandidates(card.code, card.imageUrl)[0] ?? getFallbackSvg(card);
-}
-
-function handleCardImageLoad(event: SyntheticEvent<HTMLImageElement>, card: CardMeta) {
-  markCardImageResolved(card.code, event.currentTarget.currentSrc || event.currentTarget.src);
-}
-
-function handleCardImageError(event: SyntheticEvent<HTMLImageElement>, card: CardMeta) {
-  const target = event.currentTarget;
-  const candidates = getCardImageCandidates(card.code, card.imageUrl);
-  const failedUrl = target.currentSrc || target.src;
-  markCardImageFailed(failedUrl);
-
-  const currentAttempt = Number(target.dataset.imageAttempt ?? "0");
-  const nextAttempt = currentAttempt + 1;
-
-  if (nextAttempt < candidates.length) {
-    target.dataset.imageAttempt = String(nextAttempt);
-    target.src = candidates[nextAttempt];
-    return;
-  }
-
-  target.onerror = null;
-  target.src = getFallbackSvg(card);
-}
-
 function QuickAddActions(props: NonNullable<Props["quickAdd"]>) {
   return (
     <div
@@ -214,17 +171,17 @@ function CardDetailPanel({ card, isCollapsed, onToggleCollapse, quickAdd }: Prop
         {!isCollapsed && (
           <>
             <div className="detail-image-box">
-              <img
-                key={`${card.code}-${card.imageUrl ?? ""}`}
-                src={getInitialImageSrc(card)}
+              <CardImage
+                cardCode={card.code}
+                imageUrl={card.imageUrl}
                 alt={card.name}
-                className="detail-image"
+                fallbackLabel={card.code || card.name}
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
-                data-image-attempt="0"
-                onLoad={(e) => handleCardImageLoad(e, card)}
-                onError={(e) => handleCardImageError(e, card)}
+                eagerResolve
+                className="detail-image"
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
               />
             </div>
 
