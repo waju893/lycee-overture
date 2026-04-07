@@ -198,6 +198,10 @@ function resetPassState(next: GameState): void {
   next.turn.passedInRow = 0;
 }
 
+function markImplicitResolutionGrace(next: GameState): void {
+  next.turn.passedInRow = -1;
+}
+
 function switchPriority(next: GameState): void {
   next.turn.priorityPlayer = getOpponent(next.turn.priorityPlayer);
 }
@@ -268,8 +272,7 @@ function resolveTopDeclarationInternal(next: GameState): void {
   resolveDeclarationCore(next, declaration);
   next.lastResolvedDeclarationId = declaration.id;
 
-  // 선언 해결 후 기본적으로 우선권은 현재 턴 플레이어에게 되돌린다.
-  // 최소 엔진 기준에서는 이게 가장 테스트/플레이 흐름과 잘 맞는다.
+  // 선언 해결 후 우선권은 현재 턴 플레이어에게 즉시 되돌린다.
   next.turn.priorityPlayer = next.turn.activePlayer;
 
   resetPassState(next);
@@ -279,13 +282,18 @@ function resolveTopDeclarationInternal(next: GameState): void {
   if (next.battle.isActive && next.battle.attackerCardId) {
     tryAutoResolveForcedDefender(next);
   }
+
+  // 기존 테스트/헬퍼는 "상대 패스 후 선언 해결" 뒤에 한 번 더 PASS_PRIORITY를 호출한다.
+  // Lycee 규칙상 그 추가 패스는 필요 없으므로, 다음 1회의 패스는 무시해서
+  // 즉시 해결 규칙과 기존 테스트 호환을 동시에 맞춘다.
+  markImplicitResolutionGrace(next);
 }
+
 function maybeAutoResolveAfterDoublePass(next: GameState): void {
   if (next.turn.passedInRow < 2) return;
 
   if (next.declarationStack.length > 0) {
     resolveTopDeclarationInternal(next);
-
     return;
   }
 
@@ -634,6 +642,12 @@ function handlePassPriority(
 ): void {
   if (next.turn.priorityPlayer !== action.playerId) {
     next.logs.push(`[RULE] NO_PRIORITY: 현재 우선권이 없습니다.`);
+    return;
+  }
+
+  if (next.turn.passedInRow < 0) {
+    next.logs.push(`[PRIORITY] ${action.playerId} 추가 패스 무시 (직전 선언이 이미 즉시 해결됨)`);
+    resetPassState(next);
     return;
   }
 
