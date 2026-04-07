@@ -1,10 +1,11 @@
 // src/game/GameEngine.ts
 
-import type { GameAction } from "./GameActions";
+import { serializeAction, type GameAction } from "./GameActions";
 import type {
   FieldSlot,
   GameState,
   PlayerID,
+  ReplayEvent,
   RuleViolation,
   CardRef,
   FieldCell,
@@ -158,7 +159,28 @@ function cloneState(state: GameState): GameState {
       ...e,
       payload: e.payload ? { ...e.payload } : undefined,
     })),
+    replayEvents: state.replayEvents.map((event) => ({
+      ...event,
+      payload: { ...event.payload },
+    })),
     rulingOverrides: state.rulingOverrides.map((r) => ({ ...r })),
+  };
+}
+
+function makeReplayEvent(next: GameState, action: GameAction): ReplayEvent {
+  const playerId =
+    "playerId" in action && typeof action.playerId === "string"
+      ? action.playerId
+      : "SYSTEM";
+
+  const payload = serializeAction(action);
+
+  return {
+    turnNumber: next.turn.turnNumber,
+    playerId,
+    actionType: action.type,
+    payload,
+    timestamp: Date.now(),
   };
 }
 
@@ -716,6 +738,7 @@ export function getAvailableDefenders(
 
 export function reduceGameState(state: GameState, action: GameAction): GameState {
   const next = cloneState(state);
+  next.replayEvents.push(makeReplayEvent(next, action));
 
   switch (action.type) {
     case "START_GAME": {
