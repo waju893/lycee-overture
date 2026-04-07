@@ -1,17 +1,19 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TitlePage from "./pages/TitlePage";
-import DeckBuilderPage from "./pages/DeckBuilderPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CreateRoomPage from "./pages/CreateRoomPage";
+import DeckBuilderPage from "./pages/DeckBuilderPage";
 import JoinRoomPage from "./pages/JoinRoomPage";
+import PracticeBoard from "./pages/PracticeBoard";
+import TitlePage from "./pages/TitlePage";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<TitlePage />} />
-        <Route path="/deck" element={<DeckBuilderPage />} />
-        <Route path="/room/create" element={<CreateRoomPage />} />
-        <Route path="/room/join" element={<JoinRoomPage />} />
+        <Route path="/deck-builder" element={<DeckBuilderPage />} />
+        <Route path="/create-room" element={<CreateRoomPage />} />
+        <Route path="/join-room" element={<JoinRoomPage />} />
+        <Route path="/practice" element={<PracticeBoard />} />
       </Routes>
     </BrowserRouter>
   );
