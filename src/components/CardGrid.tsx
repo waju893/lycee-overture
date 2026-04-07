@@ -6,6 +6,11 @@ import {
   type UIEvent,
 } from "react";
 import type { CardMeta } from "../types/card";
+import {
+  getCardImageCandidates,
+  markCardImageFailed,
+  markCardImageResolved,
+} from "../config/cardImage";
 
 type CardGridProps = {
   cards: CardMeta[];
@@ -28,6 +33,69 @@ function getCardKey(card: CardMeta, index: number): string {
   const idPart =
     card.id != null ? String(card.id) : card.code != null ? String(card.code) : "";
   return idPart || `card-${index}`;
+}
+
+function CardThumbnail({
+  card,
+  alt,
+}: {
+  card: CardMeta;
+  alt: string;
+}) {
+  const candidates = useMemo(
+    () => getCardImageCandidates(String(card.code ?? ""), card.imageUrl),
+    [card.code, card.imageUrl]
+  );
+  const [candidateIndex, setCandidateIndex] = useState(0);
+
+  useEffect(() => {
+    setCandidateIndex(0);
+  }, [candidates]);
+
+  const currentSrc = candidates[candidateIndex] ?? "";
+
+  if (!currentSrc) {
+    return (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#9ca3af",
+          fontSize: 12,
+          padding: 8,
+        }}
+      >
+        이미지 없음
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={currentSrc}
+      alt={alt}
+      loading="lazy"
+      decoding="async"
+      draggable={false}
+      onLoad={() => {
+        markCardImageResolved(String(card.code ?? ""), currentSrc);
+      }}
+      onError={() => {
+        markCardImageFailed(currentSrc);
+        setCandidateIndex((prev) => prev + 1);
+      }}
+      style={{
+        display: "block",
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        background: "#0b1220",
+      }}
+    />
+  );
 }
 
 export default function CardGrid({
@@ -231,37 +299,7 @@ export default function CardGrid({
                   overflow: "hidden",
                 }}
               >
-                {card.imageUrl ? (
-                  <img
-                    src={card.imageUrl}
-                    alt={card.name}
-                    loading="lazy"
-                    decoding="async"
-                    draggable={false}
-                    style={{
-                      display: "block",
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                      background: "#0b1220",
-                    }}
-                  />
-                ) : (
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      color: "#9ca3af",
-                      fontSize: 12,
-                      padding: 8,
-                    }}
-                  >
-                    이미지 없음
-                  </div>
-                )}
+                <CardThumbnail card={card} alt={card.name} />
               </div>
 
               <div

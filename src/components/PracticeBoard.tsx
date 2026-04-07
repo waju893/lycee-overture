@@ -1,5 +1,10 @@
-import type { CSSProperties } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import type { CardRef, FieldSlot, GameState, PlayerID } from "../game/GameTypes";
+import {
+  getCardImageCandidates,
+  markCardImageFailed,
+  markCardImageResolved,
+} from "../config/cardImage";
 
 const FIELD_RENDER_ORDER: FieldSlot[] = [
   "DF_LEFT",
@@ -21,6 +26,74 @@ function getCardLabel(card: CardRef): string {
   return `${card.name} AP ${ap} / DP ${dp} / DMG ${dmg}${
     flags.length ? ` [${flags.join(", ")}]` : ""
   }`;
+}
+
+function getCardCode(card: CardRef): string {
+  return String(card.cardNo ?? card.sameNameKey ?? "").trim().toUpperCase();
+}
+
+function HandCardImage({
+  card,
+  selectable,
+  onClick,
+}: {
+  card: CardRef;
+  selectable: boolean;
+  onClick: () => void;
+}) {
+  const cardCode = getCardCode(card);
+  const candidates = useMemo(
+    () => getCardImageCandidates(cardCode),
+    [cardCode]
+  );
+  const [candidateIndex, setCandidateIndex] = useState(0);
+
+  useEffect(() => {
+    setCandidateIndex(0);
+  }, [cardCode, candidates]);
+
+  const currentSrc = candidates[candidateIndex] ?? "";
+
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={!selectable}
+      title={getCardLabel(card)}
+      style={{
+        ...handImageButtonStyle,
+        cursor: selectable ? "pointer" : "default",
+        opacity: selectable ? 1 : 0.92,
+      }}
+    >
+      <div style={handImageFrameStyle}>
+        {currentSrc ? (
+          <img
+            src={currentSrc}
+            alt={card.name}
+            loading="lazy"
+            decoding="async"
+            draggable={false}
+            onLoad={() => {
+              markCardImageResolved(cardCode, currentSrc);
+            }}
+            onError={() => {
+              markCardImageFailed(currentSrc);
+              setCandidateIndex((prev) => prev + 1);
+            }}
+            style={handImageStyle}
+          />
+        ) : (
+          <div style={handImageFallbackStyle}>이미지 없음</div>
+        )}
+      </div>
+
+      <div style={handCardTextWrapStyle}>
+        <div style={handCardNameStyle}>{card.name}</div>
+        <div style={handCardCodeStyle}>{cardCode || card.instanceId}</div>
+      </div>
+    </button>
+  );
 }
 
 type PlayerAreaProps = {
@@ -71,22 +144,20 @@ function PlayerArea({
       </div>
 
       <div style={sectionMinorTitleStyle}>
-        손패 {isPerspectivePlayer ? "(클릭으로 사용)" : "(연습 모드에서 확인 가능)"}
+        손패 {isPerspectivePlayer ? "(카드 클릭으로 사용)" : "(연습 모드에서 확인 가능)"}
       </div>
 
-      <div style={handWrapStyle}>
+      <div style={handGridStyle}>
         {player.hand.length === 0 ? (
           <div style={emptyHintStyle}>손패가 없습니다.</div>
         ) : (
           player.hand.map((card) => (
-            <button
+            <HandCardImage
               key={card.instanceId}
-              type="button"
-              style={handCardButtonStyle}
+              card={card}
+              selectable={isPerspectivePlayer}
               onClick={() => onHandCardClick(playerId, card)}
-            >
-              {getCardLabel(card)}
-            </button>
+            />
           ))
         )}
       </div>
@@ -209,21 +280,71 @@ const slotButtonStyle: CSSProperties = {
   cursor: "pointer",
 };
 
-const handWrapStyle: CSSProperties = {
-  display: "flex",
-  flexWrap: "wrap",
-  gap: 8,
+const handGridStyle: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
+  gap: 10,
   marginTop: 8,
 };
 
-const handCardButtonStyle: CSSProperties = {
-  background: "#24324a",
+const handImageButtonStyle: CSSProperties = {
+  background: "#111827",
   border: "1px solid #3e5379",
   borderRadius: 10,
-  padding: "10px 12px",
+  padding: 8,
   color: "#ffffff",
-  cursor: "pointer",
   textAlign: "left",
+  width: "100%",
+};
+
+const handImageFrameStyle: CSSProperties = {
+  width: "100%",
+  aspectRatio: "63 / 88",
+  borderRadius: 8,
+  overflow: "hidden",
+  background: "#0b1220",
+};
+
+const handImageStyle: CSSProperties = {
+  display: "block",
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+};
+
+const handImageFallbackStyle: CSSProperties = {
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "#9ca3af",
+  fontSize: 12,
+};
+
+const handCardTextWrapStyle: CSSProperties = {
+  marginTop: 8,
+};
+
+const handCardNameStyle: CSSProperties = {
+  fontSize: 12,
+  fontWeight: 700,
+  color: "#f9fafb",
+  lineHeight: 1.35,
+  display: "-webkit-box",
+  WebkitLineClamp: 2,
+  WebkitBoxOrient: "vertical",
+  overflow: "hidden",
+  wordBreak: "break-word",
+};
+
+const handCardCodeStyle: CSSProperties = {
+  marginTop: 4,
+  fontSize: 11,
+  color: "#9ca3af",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
 };
 
 const pileStyle: CSSProperties = {
