@@ -1,16 +1,15 @@
-import { memo, useEffect, useMemo, useRef, useState } from "react";
-import type { CSSProperties, SyntheticEvent } from "react";
-import { FixedSizeGrid as Grid, type GridChildComponentProps } from "react-window";
-import type { CardMeta } from "../types/card";
 import {
-  getCardImageCandidates,
-  markCardImageFailed,
-  markCardImageResolved,
-} from "../config/cardImage";
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type UIEvent,
+} from "react";
+import type { CardMeta } from "../types/card";
 
-type Props = {
+type CardGridProps = {
   cards: CardMeta[];
-  selectedCardId?: string;
+  selectedCardId?: CardMeta["id"] | null;
   onSelect: (card: CardMeta) => void;
   minColumnWidth?: number;
   columnGap?: number;
@@ -18,306 +17,306 @@ type Props = {
   overscanRowCount?: number;
 };
 
-type ItemData = {
-  cards: CardMeta[];
-  columnCount: number;
-  selectedCardId?: string;
-  onSelect: (card: CardMeta) => void;
-  columnGap: number;
-  rowGap: number;
-};
+const DEFAULT_MIN_COLUMN_WIDTH = 180;
+const DEFAULT_COLUMN_GAP = 14;
+const DEFAULT_ROW_GAP = 14;
+const DEFAULT_OVERSCAN_ROW_COUNT = 3;
+const CARD_CAPTION_HEIGHT = 56;
+const CARD_ASPECT_RATIO = 63 / 88;
 
-const ATTRIBUTE_DISPLAY_LABELS: Record<string, string> = {
-  snow: "설",
-  moon: "월",
-  flower: "화",
-  cosmos: "주",
-  sun: "일",
-  star: "무",
-};
-
-const TYPE_DISPLAY_LABELS: Record<string, string> = {
-  character: "캐릭터",
-  event: "이벤트",
-  item: "아이템",
-  area: "에리어",
-};
-
-const CARD_ASPECT_RATIO = 360 / 500;
-const CARD_TILE_SIDE_PADDING = 20;
-const CARD_TILE_TEXT_HEIGHT = 114;
-const CARD_TILE_BORDER_ADJUST = 2;
-
-function normalizeAttributeValue(value: string): string {
-  return value.trim().toLowerCase();
+function getCardKey(card: CardMeta, index: number): string {
+  const idPart =
+    card.id != null ? String(card.id) : card.code != null ? String(card.code) : "";
+  return idPart || `card-${index}`;
 }
 
-function normalizeTypeValue(value: string): string {
-  return value.trim().toLowerCase();
-}
-
-function getAttributeDisplayLabel(value?: string): string {
-  if (!value) return "-";
-  return ATTRIBUTE_DISPLAY_LABELS[normalizeAttributeValue(value)] ?? value;
-}
-
-function getTypeDisplayLabel(value?: string): string {
-  if (!value) return "-";
-  return TYPE_DISPLAY_LABELS[normalizeTypeValue(value)] ?? value;
-}
-
-function getFallbackSvg(card: CardMeta): string {
-  const label = encodeURIComponent(card.code || card.name || "NO IMAGE");
-
-  return `data:image/svg+xml;utf8,
-  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="500">
-    <rect width="100%" height="100%" fill="%2308171f"/>
-    <text x="50%" y="45%" text-anchor="middle" fill="%23cbd5e1" font-size="28">NO IMAGE</text>
-    <text x="50%" y="55%" text-anchor="middle" fill="%239ca3af" font-size="20">${label}</text>
-  </svg>`;
-}
-
-function getInitialImageSrc(card: CardMeta): string {
-  return getCardImageCandidates(card.code, card.imageUrl)[0] ?? getFallbackSvg(card);
-}
-
-function handleCardImageLoad(event: SyntheticEvent<HTMLImageElement>, card: CardMeta) {
-  markCardImageResolved(card.code, event.currentTarget.currentSrc || event.currentTarget.src);
-}
-
-function handleCardImageError(event: SyntheticEvent<HTMLImageElement>, card: CardMeta) {
-  const target = event.currentTarget;
-  const candidates = getCardImageCandidates(card.code, card.imageUrl);
-
-  const failedUrl = target.currentSrc || target.src;
-  markCardImageFailed(failedUrl);
-
-  const currentAttempt = Number(target.dataset.imageAttempt ?? "0");
-  const nextAttempt = currentAttempt + 1;
-
-  if (nextAttempt < candidates.length) {
-    target.dataset.imageAttempt = String(nextAttempt);
-    target.src = candidates[nextAttempt];
-    return;
-  }
-
-  target.onerror = null;
-  target.src = getFallbackSvg(card);
-}
-
-type CardTileProps = {
-  card: CardMeta;
-  isSelected: boolean;
-  onSelect: (card: CardMeta) => void;
-  isPriority?: boolean;
-};
-
-const CardTile = memo(function CardTile({
-  card,
-  isSelected,
+export default function CardGrid({
+  cards,
+  selectedCardId = null,
   onSelect,
-  isPriority = false,
-}: CardTileProps) {
-  return (
-    <button
-      type="button"
-      className={`card-tile ${isSelected ? "selected" : ""}`}
-      onClick={() => onSelect(card)}
-      style={{ width: "100%", height: "100%" }}
-    >
-      <div className="card-image-wrap">
-        <img
-          key={`${card.code}-${card.imageUrl ?? ""}`}
-          src={getInitialImageSrc(card)}
-          alt={card.name}
-          className="card-image"
-          loading={isPriority ? "eager" : "lazy"}
-          decoding="async"
-          fetchPriority={isPriority ? "high" : "low"}
-          data-image-attempt="0"
-          onLoad={(e) => handleCardImageLoad(e, card)}
-          onError={(e) => handleCardImageError(e, card)}
-        />
-      </div>
+  minColumnWidth = DEFAULT_MIN_COLUMN_WIDTH,
+  columnGap = DEFAULT_COLUMN_GAP,
+  rowGap = DEFAULT_ROW_GAP,
+  overscanRowCount = DEFAULT_OVERSCAN_ROW_COUNT,
+}: CardGridProps) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
-      <div className="card-tile-body">
-        <div className="card-tile-name">{card.name}</div>
-
-        <div className="card-tile-sub">
-          {card.code} · {getTypeDisplayLabel(card.type)}
-        </div>
-
-        <div className="card-chip-row">
-          {card.attribute && (
-            <span className="card-chip">
-              {getAttributeDisplayLabel(card.attribute)}
-            </span>
-          )}
-
-          {card.type && (
-            <span className="card-chip">{getTypeDisplayLabel(card.type)}</span>
-          )}
-
-          {typeof card.ex === "number" && (
-            <span className="card-chip">EX {card.ex}</span>
-          )}
-        </div>
-      </div>
-    </button>
-  );
-});
-
-function estimateCardTileHeight(columnWidth: number): number {
-  const imageWidth = Math.max(0, columnWidth - CARD_TILE_SIDE_PADDING);
-  const imageHeight = imageWidth / CARD_ASPECT_RATIO;
-  return Math.ceil(imageHeight + CARD_TILE_TEXT_HEIGHT + CARD_TILE_BORDER_ADJUST);
-}
-
-function GridCell({ columnIndex, rowIndex, style, data }: GridChildComponentProps<ItemData>) {
-  const { cards, columnCount, selectedCardId, onSelect, columnGap, rowGap } = data;
-  const cardIndex = rowIndex * columnCount + columnIndex;
-  const card = cards[cardIndex];
-
-  if (!card) {
-    return null;
-  }
-
-  const adjustedStyle: CSSProperties = {
-    ...style,
-    left: Number(style.left) + columnGap / 2,
-    top: Number(style.top) + rowGap / 2,
-    width: Number(style.width) - columnGap,
-    height: Number(style.height) - rowGap,
-  };
-
-  const isSelected = selectedCardId === card.id;
-  const isPriority = cardIndex < 4;
-
-  return (
-    <div style={adjustedStyle}>
-      <CardTile
-        card={card}
-        isSelected={isSelected}
-        onSelect={onSelect}
-        isPriority={isPriority}
-      />
-    </div>
-  );
-}
-
-function useElementSize<T extends HTMLElement>() {
-  const ref = useRef<T | null>(null);
-  const [size, setSize] = useState({ width: 0, height: 0 });
+  const [viewportWidth, setViewportWidth] = useState<number>(0);
+  const [viewportHeight, setViewportHeight] = useState<number>(800);
+  const [scrollTop, setScrollTop] = useState<number>(0);
 
   useEffect(() => {
-    const element = ref.current;
+    const element = containerRef.current;
     if (!element) return;
 
-    const update = () => {
-      const nextWidth = Math.floor(element.clientWidth);
-      const nextHeight = Math.floor(element.clientHeight);
-      setSize((prev) => {
-        if (prev.width === nextWidth && prev.height === nextHeight) {
-          return prev;
-        }
-
-        return { width: nextWidth, height: nextHeight };
-      });
+    const updateSize = () => {
+      const nextWidth = Math.max(0, element.clientWidth);
+      const nextHeight = Math.max(320, element.clientHeight || 800);
+      setViewportWidth(nextWidth);
+      setViewportHeight(nextHeight);
     };
 
-    update();
+    updateSize();
 
-    const observer = new ResizeObserver(() => {
-      update();
+    const resizeObserver = new ResizeObserver(() => {
+      updateSize();
     });
 
-    observer.observe(element);
+    resizeObserver.observe(element);
+    window.addEventListener("resize", updateSize);
 
     return () => {
-      observer.disconnect();
+      resizeObserver.disconnect();
+      window.removeEventListener("resize", updateSize);
     };
   }, []);
 
-  return { ref, size, setSize };
-}
+  const {
+    columnCount,
+    totalRows,
+    visibleStartRow,
+    visibleEndRow,
+    topSpacerHeight,
+    bottomSpacerHeight,
+    visibleCards,
+  } = useMemo(() => {
+    const safeWidth = Math.max(1, viewportWidth);
+    const safeColumnWidth = Math.max(120, minColumnWidth);
 
-function CardGrid({
-  cards,
-  selectedCardId,
-  onSelect,
-  minColumnWidth = 180,
-  columnGap = 14,
-  rowGap = 14,
-  overscanRowCount = 2,
-}: Props) {
-  const { ref, size, setSize } = useElementSize<HTMLDivElement>();
+    const nextColumnCount = Math.max(
+      1,
+      Math.floor((safeWidth + columnGap) / (safeColumnWidth + columnGap))
+    );
 
-  useEffect(() => {
-    if (!ref.current) return;
-    setSize({
-      width: Math.floor(ref.current.clientWidth),
-      height: Math.floor(ref.current.clientHeight),
-    });
-  }, [cards.length, ref, setSize]);
+    const totalGapWidth = columnGap * Math.max(0, nextColumnCount - 1);
+    const nextCardWidth = Math.max(
+      100,
+      Math.floor((safeWidth - totalGapWidth) / nextColumnCount)
+    );
 
-  const columnCount = useMemo(() => {
-    if (size.width <= 0) return 1;
-    const estimated = Math.floor(size.width / minColumnWidth);
-    return Math.max(1, estimated);
-  }, [size.width, minColumnWidth]);
+    const imageHeight = Math.ceil(nextCardWidth / CARD_ASPECT_RATIO);
+    const nextRowHeight = imageHeight + CARD_CAPTION_HEIGHT + rowGap;
 
-  const columnWidth = useMemo(() => {
-    if (size.width <= 0) return minColumnWidth;
-    return Math.max(minColumnWidth, Math.floor(size.width / columnCount));
-  }, [size.width, minColumnWidth, columnCount]);
+    const nextTotalRows = Math.ceil(cards.length / nextColumnCount);
 
-  const rowHeight = useMemo(() => {
-    return estimateCardTileHeight(columnWidth);
-  }, [columnWidth]);
+    const startRow = Math.max(
+      0,
+      Math.floor(scrollTop / Math.max(1, nextRowHeight)) - overscanRowCount
+    );
 
-  const rowCount = useMemo(() => {
-    return Math.ceil(cards.length / columnCount);
-  }, [cards.length, columnCount]);
+    const endRow = Math.min(
+      Math.max(0, nextTotalRows - 1),
+      Math.ceil((scrollTop + viewportHeight) / Math.max(1, nextRowHeight)) +
+        overscanRowCount
+    );
 
-  const gridData = useMemo<ItemData>(
-    () => ({
-      cards,
-      columnCount,
-      selectedCardId,
-      onSelect,
-      columnGap,
-      rowGap,
-    }),
-    [cards, columnCount, selectedCardId, onSelect, columnGap, rowGap]
-  );
+    const startIndex = startRow * nextColumnCount;
+    const endIndexExclusive = Math.min(
+      cards.length,
+      (endRow + 1) * nextColumnCount
+    );
+
+    return {
+      columnCount: nextColumnCount,
+      totalRows: nextTotalRows,
+      visibleStartRow: startRow,
+      visibleEndRow: endRow,
+      topSpacerHeight: startRow * nextRowHeight,
+      bottomSpacerHeight: Math.max(
+        0,
+        (nextTotalRows - endRow - 1) * nextRowHeight
+      ),
+      visibleCards: cards.slice(startIndex, endIndexExclusive),
+    };
+  }, [
+    cards,
+    columnGap,
+    minColumnWidth,
+    overscanRowCount,
+    rowGap,
+    scrollTop,
+    viewportHeight,
+    viewportWidth,
+  ]);
+
+  const handleScroll = (event: UIEvent<HTMLDivElement>) => {
+    setScrollTop(event.currentTarget.scrollTop);
+  };
 
   if (cards.length === 0) {
     return (
-      <div className="empty-state">
-        <p>표시할 카드가 없습니다.</p>
+      <div
+        ref={containerRef}
+        onScroll={handleScroll}
+        style={{
+          width: "100%",
+          height: "100%",
+          minHeight: 320,
+          overflowY: "auto",
+          overflowX: "hidden",
+        }}
+      >
+        <div
+          className="empty-state"
+          style={{
+            minHeight: 240,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          조건에 맞는 카드가 없습니다.
+        </div>
       </div>
     );
   }
 
   return (
-    <div ref={ref} style={{ width: "100%", height: "100%" }}>
-      {size.width > 0 && size.height > 0 ? (
-        <Grid
-          width={size.width}
-          height={size.height}
-          columnCount={columnCount}
-          columnWidth={columnWidth}
-          rowCount={rowCount}
-          rowHeight={rowHeight}
-          itemData={gridData}
-          overscanRowCount={overscanRowCount}
-          overscanColumnCount={1}
+    <div
+      ref={containerRef}
+      onScroll={handleScroll}
+      style={{
+        width: "100%",
+        height: "100%",
+        minHeight: 320,
+        overflowY: "auto",
+        overflowX: "hidden",
+        paddingRight: 4,
+      }}
+    >
+      <div style={{ height: topSpacerHeight }} />
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: `repeat(${columnCount}, minmax(0, 1fr))`,
+          columnGap: `${columnGap}px`,
+          rowGap: `${rowGap}px`,
+          alignItems: "start",
+        }}
+      >
+        {visibleCards.map((card, index) => {
+          const isSelected =
+            selectedCardId != null && String(selectedCardId) === String(card.id);
+
+          return (
+            <button
+              key={getCardKey(card, index)}
+              type="button"
+              onClick={() => onSelect(card)}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                width: "100%",
+                minWidth: 0,
+                padding: 0,
+                borderRadius: 14,
+                overflow: "hidden",
+                cursor: "pointer",
+                background: isSelected ? "#1d4ed8" : "#111827",
+                border: isSelected
+                  ? "2px solid #93c5fd"
+                  : "1px solid rgba(75, 85, 99, 0.95)",
+                boxShadow: isSelected
+                  ? "0 0 0 2px rgba(147, 197, 253, 0.18)"
+                  : "none",
+                textAlign: "left",
+              }}
+            >
+              <div
+                style={{
+                  width: "100%",
+                  aspectRatio: "63 / 88",
+                  background: "#0b1220",
+                  overflow: "hidden",
+                }}
+              >
+                {card.imageUrl ? (
+                  <img
+                    src={card.imageUrl}
+                    alt={card.name}
+                    loading="lazy"
+                    decoding="async"
+                    draggable={false}
+                    style={{
+                      display: "block",
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      background: "#0b1220",
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "#9ca3af",
+                      fontSize: 12,
+                      padding: 8,
+                    }}
+                  >
+                    이미지 없음
+                  </div>
+                )}
+              </div>
+
+              <div
+                style={{
+                  minHeight: CARD_CAPTION_HEIGHT,
+                  padding: "8px 10px 10px",
+                  background: isSelected ? "rgba(15, 23, 42, 0.72)" : "#111827",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: 12,
+                    fontWeight: 700,
+                    color: "#f9fafb",
+                    lineHeight: 1.35,
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    wordBreak: "break-word",
+                  }}
+                >
+                  {card.name}
+                </div>
+                <div
+                  style={{
+                    marginTop: 4,
+                    fontSize: 11,
+                    color: isSelected ? "#dbeafe" : "#9ca3af",
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                >
+                  {card.code}
+                </div>
+              </div>
+            </button>
+          );
+        })}
+      </div>
+
+      <div style={{ height: bottomSpacerHeight }} />
+
+      {totalRows > 0 && visibleEndRow < visibleStartRow && (
+        <div
+          style={{
+            padding: "12px 0",
+            color: "#9ca3af",
+            fontSize: 12,
+          }}
         >
-          {GridCell}
-        </Grid>
-      ) : null}
+          카드 계산 중...
+        </div>
+      )}
     </div>
   );
 }
-
-export default memo(CardGrid);
