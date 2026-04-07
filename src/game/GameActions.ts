@@ -285,3 +285,7 @@ export const isSystemAction = (
 ): action is CheckStateBasedRulesAction | ConcedeAction =>
   action.type === "CHECK_STATE_BASED_RULES" ||
   action.type === "CONCEDE";
+
+export function serializeAction(action: GameAction): Record<string, unknown> {
+  return JSON.parse(JSON.stringify(action)) as Record<string, unknown>;
+}
