@@ -64,6 +64,9 @@ export default function TitlePage() {
           >
             연습 모드
           </Link>
+          <Link to="/replay" style={{ ...buttonStyle, background: "#8b5cf6" }}>
+            리플레이
+          </Link>
         </div>
       </div>
     </div>
