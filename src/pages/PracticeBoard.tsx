@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { reduceGameState } from "../game/GameEngine";
 import { createInitialGameState } from "../game/GameRules";
 import type { GameAction } from "../game/GameActions";
+import type { DeckEntry } from "../lib/deck";
+import { CARD_META_BY_CODE } from "../lib/cards";
 import type {
   CardRef,
   FieldSlot,
@@ -29,6 +31,7 @@ const ALL_SLOTS: FieldSlot[] = [
   "DF_CENTER",
   "DF_RIGHT",
 ];
+const CURRENT_DECK_STORAGE_KEY = "lycee-current-deck";
 
 const FIELD_RENDER_ORDER: FieldSlot[] = [
   "DF_LEFT",
@@ -92,9 +95,71 @@ function makeDeck(owner: PlayerID, prefix: string): CardRef[] {
   return deck;
 }
 
+function normalizeDeckCardType(value: string | undefined): CardRef["cardType"] {
+  switch ((value ?? "").toLowerCase()) {
+    case "event":
+      return "event";
+    case "item":
+      return "item";
+    case "area":
+      return "area";
+    default:
+      return "character";
+  }
+}
+
+function readPracticeDeckFromStorage(owner: PlayerID): CardRef[] | null {
+  if (typeof window === "undefined") return null;
+
+  try {
+    const raw = window.localStorage.getItem(CURRENT_DECK_STORAGE_KEY);
+    if (!raw) return null;
+
+    const parsed = JSON.parse(raw) as DeckEntry[];
+    if (!Array.isArray(parsed) || parsed.length === 0) return null;
+
+    const cards: CardRef[] = [];
+    for (const entry of parsed) {
+      const code = String(entry?.code ?? "").trim().toUpperCase();
+      const qty = Number(entry?.qty ?? 0);
+      const meta = CARD_META_BY_CODE[code];
+      if (!meta || !Number.isFinite(qty) || qty <= 0) continue;
+
+      for (let i = 0; i < qty; i += 1) {
+        cards.push({
+          instanceId: `${owner}_${code}_${i + 1}_${cards.length + 1}`,
+          cardNo: code,
+          name: meta.name ?? code,
+          owner,
+          cardType: normalizeDeckCardType(meta.type),
+          sameNameKey: code,
+          ap: meta.ap ?? undefined,
+          dp: meta.dp ?? undefined,
+          dmg: meta.dmg ?? undefined,
+          power: meta.ap ?? undefined,
+          hp: meta.dp ?? undefined,
+          damage: meta.dmg ?? undefined,
+          isTapped: false,
+          canAttack: true,
+          canBlock: true,
+          revealed: false,
+          location: "deck",
+        });
+      }
+    }
+
+    return cards.length > 0 ? cards : null;
+  } catch {
+    return null;
+  }
+}
+
 function createPracticeState(): GameState {
+  const p1DeckFromBuilder = readPracticeDeckFromStorage("P1");
+  const p1Deck = p1DeckFromBuilder ?? makeDeck("P1", "P1");
+
   return createInitialGameState({
-    p1Deck: makeDeck("P1", "P1"),
+    p1Deck,
     p2Deck: makeDeck("P2", "P2"),
     leaderEnabled: false,
   });
@@ -154,6 +219,10 @@ export default function PracticeBoard() {
   const currentPriority = state.turn.priorityPlayer;
   const pendingDeclaration = state.declarationStack.length > 0;
   const pendingSummary = getPendingDeclarationSummary(state);
+  const usingDeckBuilderDeck = useMemo(
+    () => state.players.P1.deck.some((card) => card.cardNo.startsWith("LO-")),
+    [state.players.P1.deck],
+  );
 
   function dispatch(action: GameAction) {
     setState((prev) => reduceGameState(prev, action));
@@ -373,6 +442,10 @@ export default function PracticeBoard() {
           <div style={hintTextStyle}>
             현재 조작 시점: {perspective} / 손패 클릭 후 필드 칸 클릭 = 등장 선언 / 자신의 AF 클릭 = 공격 선언
           </div>
+        </div>
+
+        <div style={noticeStyle}>
+          P1 덱 소스: {usingDeckBuilderDeck ? "덱 편성에서 저장한 현재 덱" : "기본 연습 덱"}
         </div>
 
         {placementMode ? (

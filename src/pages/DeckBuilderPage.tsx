@@ -996,54 +996,52 @@ export default function DeckBuilderPage() {
               onToggleCollapse={() => setIsDetailCollapsed((prev) => !prev)}
             />
 
-            {!isDetailCollapsed && (
+            <div
+              className="detail-panel"
+              style={{
+                padding: "12px",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+              }}
+            >
+              <button
+                type="button"
+                className="filter-select"
+                onClick={() => handleAddSelectedCard(1)}
+                disabled={!selectedCard}
+              >
+                선택 카드 +1
+              </button>
+              <button
+                type="button"
+                className="filter-select"
+                onClick={() => handleAddSelectedCard(4)}
+                disabled={!selectedCard}
+              >
+                선택 카드 +4
+              </button>
               <div
-                className="detail-panel"
                 style={{
-                  padding: "12px",
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: "8px",
+                  alignSelf: "center",
+                  color: "#9ca3af",
+                  fontSize: "13px",
                 }}
               >
-                <button
-                  type="button"
-                  className="filter-select"
-                  onClick={() => handleAddSelectedCard(1)}
-                  disabled={!selectedCard}
-                >
-                  선택 카드 +1
-                </button>
-                <button
-                  type="button"
-                  className="filter-select"
-                  onClick={() => handleAddSelectedCard(4)}
-                  disabled={!selectedCard}
-                >
-                  선택 카드 +4
-                </button>
+                현재 선택: {selectedCard ? selectedCard.code : "없음"}
+              </div>
+              {selectedCardAddPreview && !selectedCardAddPreview.ok && (
                 <div
                   style={{
-                    alignSelf: "center",
-                    color: "#9ca3af",
+                    width: "100%",
+                    color: "#fca5a5",
                     fontSize: "13px",
                   }}
                 >
-                  현재 선택: {selectedCard ? selectedCard.code : "없음"}
+                  {selectedCardAddPreview.issues[0]?.message}
                 </div>
-                {selectedCardAddPreview && !selectedCardAddPreview.ok && (
-                  <div
-                    style={{
-                      width: "100%",
-                      color: "#fca5a5",
-                      fontSize: "13px",
-                    }}
-                  >
-                    {selectedCardAddPreview.issues[0]?.message}
-                  </div>
-                )}
-              </div>
-            )}
+              )}
+            </div>
           </section>
 
           <section
