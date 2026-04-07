@@ -195,6 +195,59 @@ function getFirstEmptySlot(state: GameState, playerId: PlayerID): FieldSlot | nu
   return null;
 }
 
+function moveCardToZone(
+  state: GameState,
+  playerId: PlayerID,
+  cardId: string,
+  source: "deck" | "discard",
+  destination: "hand" | "discard" | "field",
+): GameState {
+  const next = structuredClone(state) as GameState;
+  const player = next.players[playerId];
+  const sourcePile = source === "deck" ? player.deck : player.discard;
+  const index = sourcePile.findIndex((card) => card.instanceId === cardId);
+
+  if (index < 0) {
+    next.logs.push(`[ZONE] 이동 실패: ${playerId} ${source}에서 카드를 찾지 못함 (${cardId})`);
+    return next;
+  }
+
+  const [card] = sourcePile.splice(index, 1);
+  if (!card) {
+    next.logs.push(`[ZONE] 이동 실패: 카드 추출 실패 (${cardId})`);
+    return next;
+  }
+
+  if (destination === "hand") {
+    card.location = "hand";
+    card.revealed = false;
+    player.hand.push(card);
+    next.logs.push(`[ZONE] ${playerId} ${source} → 손패: ${card.name}`);
+    return next;
+  }
+
+  if (destination === "discard") {
+    card.location = "discard";
+    card.revealed = true;
+    player.discard.push(card);
+    next.logs.push(`[ZONE] ${playerId} ${source} → 쓰레기통: ${card.name}`);
+    return next;
+  }
+
+  const emptySlot = getFirstEmptySlot(next, playerId);
+  if (!emptySlot) {
+    sourcePile.splice(index, 0, card);
+    next.logs.push(`[ZONE] ${playerId} 배치 실패: 빈 필드 칸이 없음`);
+    return next;
+  }
+
+  card.location = "field";
+  card.revealed = true;
+  next.players[playerId].field[emptySlot].card = card;
+  next.logs.push(`[ZONE] ${playerId} ${source} → 필드 ${emptySlot}: ${card.name}`);
+  return next;
+}
+
 export default function PracticeBoard() {
   const [state, setState] = useState<GameState>(() => createPracticeState());
   const [perspective, setPerspective] = useState<PlayerID>("P1");
@@ -275,6 +328,77 @@ export default function PracticeBoard() {
 
   function handleConcede(playerId: PlayerID) {
     dispatch({ type: "CONCEDE", playerId });
+  }
+
+  function handleDrawFromDeck(playerId: PlayerID) {
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      const player = next.players[playerId];
+      const topCard = player.deck.shift();
+
+      if (!topCard) {
+        next.logs.push(`[DECK] ${playerId} 드로우 실패: 덱이 비어 있음`);
+        return next;
+      }
+
+      topCard.location = "hand";
+      topCard.revealed = false;
+      player.hand.push(topCard);
+      next.events.push({
+        type: "DRAW",
+        playerId,
+        cardId: topCard.instanceId,
+        amount: 1,
+      });
+      next.logs.push(`[DECK] ${playerId} 덱 맨 위 1장을 패로 이동: ${topCard.name}`);
+      return next;
+    });
+  }
+
+  function handleDamageFromDeck(playerId: PlayerID) {
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      const player = next.players[playerId];
+      const topCard = player.deck.shift();
+
+      if (!topCard) {
+        next.logs.push(`[DECK] ${playerId} 대미지 실패: 덱이 비어 있음`);
+        return next;
+      }
+
+      topCard.location = "discard";
+      topCard.revealed = true;
+      player.discard.push(topCard);
+      next.events.push({
+        type: "MILL",
+        playerId,
+        cardId: topCard.instanceId,
+        amount: 1,
+      });
+      next.logs.push(`[DECK] ${playerId} 덱 맨 위 1장을 쓰레기통으로 이동: ${topCard.name}`);
+      return next;
+    });
+  }
+
+  function handleShuffleDeck(playerId: PlayerID) {
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      next.players[playerId].deck = shuffleCards(next.players[playerId].deck);
+      next.logs.push(`[DECK] ${playerId} 덱 셔플`);
+      return next;
+    });
+  }
+
+  function handleMoveCardToField(playerId: PlayerID, cardId: string, source: "deck" | "discard") {
+    setState((prev) => moveCardToZone(prev, playerId, cardId, source, "field"));
+  }
+
+  function handleMoveCardToHand(playerId: PlayerID, cardId: string, source: "deck" | "discard") {
+    setState((prev) => moveCardToZone(prev, playerId, cardId, source, "hand"));
+  }
+
+  function handleMoveCardToDiscard(playerId: PlayerID, cardId: string, source: "deck" | "discard") {
+    setState((prev) => moveCardToZone(prev, playerId, cardId, source, "discard"));
   }
 
   function handleHandCardClick(playerId: PlayerID, card: CardRef) {
@@ -436,6 +560,12 @@ export default function PracticeBoard() {
           perspective={perspective}
           onHandCardClick={handleHandCardClick}
           onFieldClick={handleFieldClick}
+          onDrawFromDeck={handleDrawFromDeck}
+          onDamageFromDeck={handleDamageFromDeck}
+          onShuffleDeck={handleShuffleDeck}
+          onMoveCardToField={handleMoveCardToField}
+          onMoveCardToHand={handleMoveCardToHand}
+          onMoveCardToDiscard={handleMoveCardToDiscard}
         />
 
         <div style={logGridStyle}>
