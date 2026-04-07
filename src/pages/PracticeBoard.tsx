@@ -86,6 +86,15 @@ function makeDeck(owner: PlayerID, prefix: string): CardRef[] {
   return deck;
 }
 
+function shuffleCards<T>(cards: T[]): T[] {
+  const next = [...cards];
+  for (let i = next.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [next[i], next[j]] = [next[j], next[i]];
+  }
+  return next;
+}
+
 function normalizeDeckCardType(value: string | undefined): CardRef["cardType"] {
   switch ((value ?? "").toLowerCase()) {
     case "event":
@@ -147,11 +156,12 @@ function readPracticeDeckFromStorage(owner: PlayerID): CardRef[] | null {
 
 function createPracticeState(): GameState {
   const p1DeckFromBuilder = readPracticeDeckFromStorage("P1");
-  const p1Deck = p1DeckFromBuilder ?? makeDeck("P1", "P1");
+  const p1Deck = shuffleCards(p1DeckFromBuilder ?? makeDeck("P1", "P1"));
+  const p2Deck = shuffleCards(makeDeck("P2", "P2"));
 
   return createInitialGameState({
     p1Deck,
-    p2Deck: makeDeck("P2", "P2"),
+    p2Deck,
     leaderEnabled: false,
   });
 }
@@ -515,12 +525,6 @@ const panelStyle: CSSProperties = {
   borderRadius: 12,
   padding: 16,
   marginBottom: 16,
-};
-
-const statusGridStyle: CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-  gap: 8,
 };
 
 const sectionTitleStyle: CSSProperties = {
