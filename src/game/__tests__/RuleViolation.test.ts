@@ -17,8 +17,12 @@ function makeCharacter(
     owner,
     cardType: "character",
     sameNameKey: instanceId,
+    ap: power,
+    dp: power,
+    dmg: 1,
     power,
     damage: power,
+    hp: power,
     isTapped: false,
     canAttack: true,
     canBlock: true,
@@ -73,10 +77,6 @@ function getFieldCardId(
   return state.players[playerId].field[slot].card?.instanceId ?? null;
 }
 
-/**
- * 현재 메인페이즈 기준으로 다음 플레이어의 메인페이즈까지 넘긴다.
- * 기존 MinimalPlayableEngine.test.ts의 헬퍼와 동일한 흐름.
- */
 function passCurrentMainPhaseToNextTurn(state: GameState): GameState {
   const state1 = reduceGameState(state, { type: "ADVANCE_PHASE" });
   const state2 = reduceGameState(state1, { type: "ADVANCE_PHASE" });
@@ -155,7 +155,7 @@ function putCharacterOnField(
   return { state: resolved, cardId };
 }
 
-function beginBattleWithoutSelectingDefender(
+function resolveAttackDeclaration(
   state: GameState,
   attackerPlayerId: PlayerID,
   attackerCardId: string,
@@ -303,7 +303,7 @@ describe("RuleViolation", () => {
     expect(next.logs.some((log) => log.includes("FIELD_OCCUPIED"))).toBe(true);
   });
 
-  it("같은 열이 아닌 DF는 방어자로 지정할 수 없다", () => {
+  it("다른 열 DF만 있으면 방어자로 채택되지 않고 직접 공격이 된다", () => {
     const ready = buildReadyToMainState("P1");
     const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
 
@@ -317,28 +317,24 @@ describe("RuleViolation", () => {
     }
 
     const backToP1Main = passCurrentMainPhaseToNextTurn(defenderEntered.state);
+    const beforeDeck = backToP1Main.players.P2.deck.length;
+    const beforeDiscard = backToP1Main.players.P2.discard.length;
 
-    const battleReady = beginBattleWithoutSelectingDefender(
+    const next = resolveAttackDeclaration(
       backToP1Main,
       "P1",
       attackerEntered.cardId,
     );
 
-    expect(battleReady.battle.isActive).toBe(true);
-    expect(battleReady.battle.attackerCardId).toBe(attackerEntered.cardId);
-
-    const next = reduceGameState(battleReady, {
-      type: "SET_DEFENDER",
-      playerId: "P2",
-      defenderCardId: defenderEntered.cardId,
-    });
-
-    expect(next.battle.isActive).toBe(true);
-    expect(next.battle.defenderCardId).toBeUndefined();
-    expect(next.logs.some((log) => log.includes("NOT_SAME_COLUMN"))).toBe(true);
+    expect(next.battle.isActive).toBe(false);
+    expect(next.players.P2.field.DF_RIGHT.card?.instanceId).toBe(defenderEntered.cardId);
+    expect(next.players.P2.field.DF_RIGHT.card?.isTapped).toBe(false);
+    expect(next.players.P2.deck.length).toBe(beforeDeck - 1);
+    expect(next.players.P2.discard.length).toBe(beforeDiscard + 1);
+    expect(next.logs.some((log) => log.includes("직접 공격"))).toBe(true);
   });
 
-  it("행동완료 DF는 방어자로 지정할 수 없다", () => {
+  it("행동완료 같은 열 DF는 방어자로 채택되지 않고 직접 공격이 된다", () => {
     const ready = buildReadyToMainState("P1");
     const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
 
@@ -354,24 +350,20 @@ describe("RuleViolation", () => {
     defenderCard.isTapped = true;
 
     const backToP1Main = passCurrentMainPhaseToNextTurn(defenderEntered.state);
+    const beforeDeck = backToP1Main.players.P2.deck.length;
+    const beforeDiscard = backToP1Main.players.P2.discard.length;
 
-    const battleReady = beginBattleWithoutSelectingDefender(
+    const next = resolveAttackDeclaration(
       backToP1Main,
       "P1",
       attackerEntered.cardId,
     );
 
-    expect(battleReady.battle.isActive).toBe(true);
-    expect(battleReady.battle.attackerCardId).toBe(attackerEntered.cardId);
-
-    const next = reduceGameState(battleReady, {
-      type: "SET_DEFENDER",
-      playerId: "P2",
-      defenderCardId: defenderEntered.cardId,
-    });
-
-    expect(next.battle.isActive).toBe(true);
-    expect(next.battle.defenderCardId).toBeUndefined();
-    expect(next.logs.some((log) => log.includes("DEFENDER_TAPPED"))).toBe(true);
+    expect(next.battle.isActive).toBe(false);
+    expect(next.players.P2.field.DF_LEFT.card?.instanceId).toBe(defenderEntered.cardId);
+    expect(next.players.P2.field.DF_LEFT.card?.isTapped).toBe(true);
+    expect(next.players.P2.deck.length).toBe(beforeDeck - 1);
+    expect(next.players.P2.discard.length).toBe(beforeDiscard + 1);
+    expect(next.logs.some((log) => log.includes("직접 공격"))).toBe(true);
   });
 });
