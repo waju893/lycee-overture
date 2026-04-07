@@ -454,28 +454,133 @@ export default function PracticeBoard() {
         return next;
       }
 
-      next.logs.push(`[RECOVERY] ${playerId} ${recoveredNames.length}장 회복 -> 덱 아래`);
+      next.logs.push(
+        `[RECOVERY] ${playerId} ${recoveredNames.length}장 회복 -> 덱 아래 / 순서: ${recoveredNames.join(" -> ")}`,
+      );
       return next;
     });
   }
 
-  function handleHandCardClick(playerId: PlayerID, card: CardRef) {
-    if (card.cardType !== "character") return;
-    if (pendingDeclaration) return;
-    if (state.turn.priorityPlayer !== playerId) return;
+  function handleHandPrimaryAction(playerId: PlayerID, card: CardRef) {
+    if (card.cardType === "character") {
+      if (pendingDeclaration) return;
+      if (state.turn.priorityPlayer !== playerId) return;
 
-    if (placementMode?.type === "hand_to_field" && placementMode.cardId === card.instanceId) {
-      setPlacementMode(null);
+      if (placementMode?.type === "hand_to_field" && placementMode.cardId === card.instanceId) {
+        setPlacementMode(null);
+        return;
+      }
+
+      const firstEmpty = getFirstEmptySlot(state, playerId);
+      if (!firstEmpty) return;
+
+      setPlacementMode({
+        type: "hand_to_field",
+        playerId,
+        cardId: card.instanceId,
+      });
       return;
     }
 
-    const firstEmpty = getFirstEmptySlot(state, playerId);
-    if (!firstEmpty) return;
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      const player = next.players[playerId];
+      const index = player.hand.findIndex((item) => item.instanceId === card.instanceId);
 
-    setPlacementMode({
-      type: "hand_to_field",
-      playerId,
-      cardId: card.instanceId,
+      if (index < 0) {
+        next.logs.push(`[HAND] ${playerId} 손패 행동 실패: 카드를 찾지 못함 (${card.instanceId})`);
+        return next;
+      }
+
+      const [removed] = player.hand.splice(index, 1);
+      if (!removed) return next;
+
+      if (card.cardType === "event") {
+        removed.location = "discard";
+        removed.revealed = true;
+        player.discard.push(removed);
+        next.logs.push(`[HAND] ${playerId} 손패 사용 -> 쓰레기통: ${removed.name}`);
+        return next;
+      }
+
+      if (!placeCardOnField(next, playerId, removed)) {
+        player.hand.splice(index, 0, removed);
+        return next;
+      }
+
+      next.logs.push(`[HAND] ${playerId} 손패 ${card.cardType === "item" ? "장비" : "배치"} -> 필드: ${removed.name}`);
+      return next;
+    });
+  }
+
+  function handleHandDeclareAction(playerId: PlayerID, cardId: string) {
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      const player = next.players[playerId];
+      const index = player.hand.findIndex((card) => card.instanceId === cardId);
+
+      if (index < 0) {
+        next.logs.push(`[HAND_DECLARE] ${playerId} 패 선언 실패: 카드를 찾지 못함 (${cardId})`);
+        return next;
+      }
+
+      const [card] = player.hand.splice(index, 1);
+      if (!card) return next;
+
+      card.location = "discard";
+      card.revealed = true;
+      player.discard.push(card);
+      next.logs.push(`[HAND_DECLARE] ${playerId} 패 선언: ${card.name} -> 먼저 쓰레기통으로 보낸 뒤 해결`);
+      next.events.push({
+        type: "HAND_DECLARE",
+        playerId,
+        cardId: card.instanceId,
+      });
+      return next;
+    });
+  }
+
+  function handleMoveHandCardToDeckTop(playerId: PlayerID, cardId: string) {
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      const player = next.players[playerId];
+      const index = player.hand.findIndex((card) => card.instanceId === cardId);
+
+      if (index < 0) {
+        next.logs.push(`[HAND] ${playerId} 덱 맨 위 이동 실패: 카드를 찾지 못함 (${cardId})`);
+        return next;
+      }
+
+      const [card] = player.hand.splice(index, 1);
+      if (!card) return next;
+
+      card.location = "deck";
+      card.revealed = false;
+      player.deck.unshift(card);
+      next.logs.push(`[HAND] ${playerId} 손패 -> 덱 맨 위: ${card.name}`);
+      return next;
+    });
+  }
+
+  function handleMoveHandCardToDeckBottom(playerId: PlayerID, cardId: string) {
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      const player = next.players[playerId];
+      const index = player.hand.findIndex((card) => card.instanceId === cardId);
+
+      if (index < 0) {
+        next.logs.push(`[HAND] ${playerId} 덱 맨 아래 이동 실패: 카드를 찾지 못함 (${cardId})`);
+        return next;
+      }
+
+      const [card] = player.hand.splice(index, 1);
+      if (!card) return next;
+
+      card.location = "deck";
+      card.revealed = false;
+      player.deck.push(card);
+      next.logs.push(`[HAND] ${playerId} 손패 -> 덱 맨 아래: ${card.name}`);
+      return next;
     });
   }
 
@@ -590,7 +695,7 @@ export default function PracticeBoard() {
             P2 시점
           </button>
           <div style={hintTextStyle}>
-            현재 조작 시점: {perspective} / 손패 클릭 후 필드 칸 클릭 = 등장 선언 / 자신의 AF 클릭 = 공격 선언
+            현재 조작 시점: {perspective} / 손패 클릭 후 행동 선택 / 캐릭터 등장은 원하는 필드 칸을 클릭
           </div>
         </div>
 
@@ -616,7 +721,10 @@ export default function PracticeBoard() {
         <PracticeBoardView
           state={state}
           perspective={perspective}
-          onHandCardClick={handleHandCardClick}
+          onHandPrimaryAction={handleHandPrimaryAction}
+          onHandDeclareAction={handleHandDeclareAction}
+          onMoveHandCardToDeckTop={handleMoveHandCardToDeckTop}
+          onMoveHandCardToDeckBottom={handleMoveHandCardToDeckBottom}
           onFieldClick={handleFieldClick}
           onDrawFromDeck={handleDrawFromDeck}
           onDamageFromDeck={handleDamageFromDeck}

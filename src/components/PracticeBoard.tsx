@@ -47,11 +47,43 @@ function getPrimaryActionLabel(card: CardRef): string {
   }
 }
 
+function shuffleCards<T>(cards: T[]): T[] {
+  const next = [...cards];
+  for (let i = next.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [next[i], next[j]] = [next[j], next[i]];
+  }
+  return next;
+}
+
 type CardActionMenuState =
   | {
       kind: "deck" | "discard";
       playerId: PlayerID;
       cardId: string;
+    }
+  | null;
+
+type HandCardActionMenuState =
+  | {
+      playerId: PlayerID;
+      cardId: string;
+    }
+  | null;
+
+type RandomRecoveryPromptState =
+  | {
+      playerId: PlayerID;
+      value: string;
+    }
+  | null;
+
+type RandomRecoveryResultState =
+  | {
+      playerId: PlayerID;
+      cards: CardRef[];
+      confirmedBySelf: boolean;
+      confirmedByOpponent: boolean;
     }
   | null;
 
@@ -136,7 +168,13 @@ type PlayerAreaProps = {
   state: GameState;
   isPerspectivePlayer: boolean;
   isDeckMenuOpen: boolean;
-  onHandCardClick: (playerId: PlayerID, card: CardRef) => void;
+  activeHandCardAction: HandCardActionMenuState;
+  onHandCardClick: (playerId: PlayerID, cardId: string) => void;
+  onHandPrimaryAction: (playerId: PlayerID, card: CardRef) => void;
+  onHandDeclareAction: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckTop: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckBottom: (playerId: PlayerID, cardId: string) => void;
+  onCloseHandCardAction: () => void;
   onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
   onOpenPile: (
     kind: "discard" | "deck",
@@ -149,13 +187,55 @@ type PlayerAreaProps = {
   onShuffleDeck: (playerId: PlayerID) => void;
 };
 
+function HandCardActionOverlay({
+  card,
+  onClose,
+  onPrimaryAction,
+  onDeclareAction,
+  onMoveToDeckTop,
+  onMoveToDeckBottom,
+}: {
+  card: CardRef;
+  onClose: () => void;
+  onPrimaryAction: () => void;
+  onDeclareAction: () => void;
+  onMoveToDeckTop: () => void;
+  onMoveToDeckBottom: () => void;
+}) {
+  return (
+    <div style={handCardActionOverlayStyle} data-deck-menu-keep="true">
+      <button type="button" style={cardActionButtonStyle} onClick={onPrimaryAction}>
+        {getPrimaryActionLabel(card)}
+      </button>
+      <button type="button" style={cardActionButtonStyle} onClick={onDeclareAction}>
+        패 선언
+      </button>
+      <button type="button" style={cardActionButtonStyle} onClick={onMoveToDeckTop}>
+        덱 맨 위로
+      </button>
+      <button type="button" style={cardActionButtonStyle} onClick={onMoveToDeckBottom}>
+        덱 맨 아래로
+      </button>
+      <button type="button" style={cardActionCloseButtonStyle} onClick={onClose}>
+        닫기
+      </button>
+    </div>
+  );
+}
+
 function PlayerArea({
   label,
   playerId,
   state,
   isPerspectivePlayer,
   isDeckMenuOpen,
+  activeHandCardAction,
   onHandCardClick,
+  onHandPrimaryAction,
+  onHandDeclareAction,
+  onMoveHandCardToDeckTop,
+  onMoveHandCardToDeckBottom,
+  onCloseHandCardAction,
   onFieldClick,
   onOpenPile,
   onToggleDeckMenu,
@@ -231,7 +311,9 @@ function PlayerArea({
             data-deck-menu-keep="true"
           >
             <div style={pileCellTitleStyle}>덱</div>
-            <div style={pileCellBodyStyle}>{player.deck.length > 0 ? `${player.deck.length}장` : "비어 있음"}</div>
+            <div style={pileCellBodyStyle}>
+              {player.deck.length > 0 ? `${player.deck.length}장` : "비어 있음"}
+            </div>
           </button>
         )}
 
@@ -263,21 +345,50 @@ function PlayerArea({
       </div>
 
       <div style={sectionMinorTitleStyle}>
-        손패 {isPerspectivePlayer ? "(카드 클릭으로 사용)" : "(연습 모드에서 확인 가능)"}
+        손패 {isPerspectivePlayer ? "(카드 클릭으로 행동 선택)" : "(연습 모드에서 확인 가능)"}
       </div>
 
       <div style={handGridStyle}>
         {player.hand.length === 0 ? (
           <div style={emptyHintStyle}>손패가 없습니다.</div>
         ) : (
-          player.hand.map((card) => (
-            <CardImage
-              key={card.instanceId}
-              card={card}
-              clickable={isPerspectivePlayer}
-              onClick={() => onHandCardClick(playerId, card)}
-            />
-          ))
+          player.hand.map((card) => {
+            const isActionOpen =
+              activeHandCardAction?.playerId === playerId &&
+              activeHandCardAction.cardId === card.instanceId;
+
+            return (
+              <div
+                key={card.instanceId}
+                style={pileCardStackStyle}
+                data-deck-menu-keep={isActionOpen ? "true" : undefined}
+              >
+                <div
+                  style={{
+                    opacity: isActionOpen ? 0.42 : 1,
+                    transition: "opacity 0.15s ease",
+                  }}
+                >
+                  <CardImage
+                    card={card}
+                    clickable={isPerspectivePlayer}
+                    onClick={() => onHandCardClick(playerId, card.instanceId)}
+                  />
+                </div>
+
+                {isActionOpen ? (
+                  <HandCardActionOverlay
+                    card={card}
+                    onClose={onCloseHandCardAction}
+                    onPrimaryAction={() => onHandPrimaryAction(playerId, card)}
+                    onDeclareAction={() => onHandDeclareAction(playerId, card.instanceId)}
+                    onMoveToDeckTop={() => onMoveHandCardToDeckTop(playerId, card.instanceId)}
+                    onMoveToDeckBottom={() => onMoveHandCardToDeckBottom(playerId, card.instanceId)}
+                  />
+                ) : null}
+              </div>
+            );
+          })
         )}
       </div>
     </div>
@@ -315,13 +426,130 @@ function CardActionOverlay({
       >
         손패로
       </button>
-      <button
-        type="button"
-        style={cardActionCloseButtonStyle}
-        onClick={onClose}
-      >
+      <button type="button" style={cardActionCloseButtonStyle} onClick={onClose}>
         닫기
       </button>
+    </div>
+  );
+}
+
+function RandomRecoveryPromptModal({
+  isOpen,
+  discardCount,
+  value,
+  onValueChange,
+  onConfirm,
+  onClose,
+}: {
+  isOpen: boolean;
+  discardCount: number;
+  value: string;
+  onValueChange: (value: string) => void;
+  onConfirm: () => void;
+  onClose: () => void;
+}) {
+  if (!isOpen) return null;
+
+  const parsedCount = Number(value);
+  const hasInput = value.trim().length > 0;
+  const exceedsDiscardCount = hasInput && Number.isFinite(parsedCount) && parsedCount > discardCount;
+  const isInvalidCount =
+    !hasInput || !Number.isInteger(parsedCount) || parsedCount <= 0 || exceedsDiscardCount;
+
+  return (
+    <div style={subModalOverlayStyle} onClick={onClose}>
+      <div style={subModalCardStyle} onClick={(event) => event.stopPropagation()}>
+        <div style={subModalTitleStyle}>몇 장을 회복하시겠습니까?</div>
+        <input
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          value={value}
+          onChange={(event) => onValueChange(event.target.value.replace(/\D/g, ""))}
+          style={numberInputStyle}
+          placeholder="숫자만 입력"
+          autoFocus
+        />
+        {exceedsDiscardCount ? (
+          <div style={errorMessageStyle}>
+            회복하려는 카드의 수가 쓰레기통의 매수보다 많습니다.
+          </div>
+        ) : (
+          <div style={subModalHintStyle}>현재 쓰레기통 매수: {discardCount}장</div>
+        )}
+        <div style={subModalButtonRowStyle}>
+          <button
+            type="button"
+            style={isInvalidCount ? disabledConfirmButtonStyle : confirmButtonStyle}
+            onClick={onConfirm}
+            disabled={isInvalidCount}
+          >
+            확인
+          </button>
+          <button type="button" style={modalCloseButtonStyle} onClick={onClose}>
+            닫기
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RandomRecoveryResultModal({
+  isOpen,
+  selfLabel,
+  opponentLabel,
+  result,
+  onConfirmSelf,
+  onConfirmOpponent,
+}: {
+  isOpen: boolean;
+  selfLabel: string;
+  opponentLabel: string;
+  result: RandomRecoveryResultState;
+  onConfirmSelf: () => void;
+  onConfirmOpponent: () => void;
+}) {
+  if (!isOpen || !result) return null;
+
+  return (
+    <div style={modalOverlayStyle}>
+      <div style={resultModalCardStyle}>
+        <div style={modalHeaderStyle}>
+          <div>
+            <div style={modalTitleStyle}>무작위 회복 결과</div>
+            <div style={modalSubTitleStyle}>해당 카드들을 해당 순서대로 회복했습니다.</div>
+          </div>
+        </div>
+
+        <div style={resultGridStyle}>
+          {result.cards.map((card, index) => (
+            <div key={`${card.instanceId}-${index}`} style={pileItemWrapStyle}>
+              <div style={pileOrderStyle}>{index + 1}</div>
+              <CardImage card={card} clickable={false} onClick={() => undefined} />
+            </div>
+          ))}
+        </div>
+
+        <div style={resultConfirmRowStyle}>
+          <button
+            type="button"
+            style={result.confirmedBySelf ? confirmedButtonStyle : confirmButtonStyle}
+            onClick={onConfirmSelf}
+            disabled={result.confirmedBySelf}
+          >
+            {selfLabel} 확인
+          </button>
+          <button
+            type="button"
+            style={result.confirmedByOpponent ? confirmedButtonStyle : confirmButtonStyle}
+            onClick={onConfirmOpponent}
+            disabled={result.confirmedByOpponent}
+          >
+            {opponentLabel} 확인
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
@@ -333,6 +561,7 @@ function CardPileModal({
   recoveryMode,
   recoverySelection,
   onToggleRecoveryMode,
+  onOpenRandomRecoveryPrompt,
   onToggleRecoveryCard,
   onCommitRecovery,
   onClose,
@@ -346,6 +575,7 @@ function CardPileModal({
   recoveryMode: boolean;
   recoverySelection: string[];
   onToggleRecoveryMode: () => void;
+  onOpenRandomRecoveryPrompt: () => void;
   onToggleRecoveryCard: (cardId: string) => void;
   onCommitRecovery: () => void;
   onClose: () => void;
@@ -387,20 +617,32 @@ function CardPileModal({
       <div style={modalCardStyle} onClick={(event) => event.stopPropagation()}>
         <div style={modalHeaderStyle}>
           <div>
-            <div style={modalTitleStyle}>{state.label} {pileTitle}</div>
+            <div style={modalTitleStyle}>
+              {state.label} {pileTitle}
+            </div>
             <div style={modalSubTitleStyle}>{pileSubtitle}</div>
           </div>
 
           <div style={modalHeaderButtonsStyle}>
             {state.kind === "discard" ? (
-              <button
-                type="button"
-                style={recoveryMode ? recoveryToggleActiveButtonStyle : recoveryToggleButtonStyle}
-                onClick={onToggleRecoveryMode}
-                disabled={!recoveryMode && activeCardAction !== null}
-              >
-                {recoveryMode ? `회복 실행 (${recoverySelection.length})` : "회복"}
-              </button>
+              <>
+                <button
+                  type="button"
+                  style={recoveryMode ? recoveryToggleActiveButtonStyle : recoveryToggleButtonStyle}
+                  onClick={onToggleRecoveryMode}
+                  disabled={!recoveryMode && activeCardAction !== null}
+                >
+                  {recoveryMode ? `회복 실행 (${recoverySelection.length})` : "회복"}
+                </button>
+                <button
+                  type="button"
+                  style={randomRecoveryButtonStyle}
+                  onClick={onOpenRandomRecoveryPrompt}
+                  disabled={recoveryMode || activeCardAction !== null || cards.length === 0}
+                >
+                  무작위 회복
+                </button>
+              </>
             ) : null}
             <button type="button" style={modalCloseButtonStyle} onClick={onClose}>
               닫기
@@ -487,7 +729,10 @@ function CardPileModal({
 interface PracticeBoardProps {
   state: GameState;
   perspective: PlayerID;
-  onHandCardClick: (playerId: PlayerID, card: CardRef) => void;
+  onHandPrimaryAction?: (playerId: PlayerID, card: CardRef) => void;
+  onHandDeclareAction?: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckTop?: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckBottom?: (playerId: PlayerID, cardId: string) => void;
   onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
   onDrawFromDeck?: (playerId: PlayerID) => void;
   onDamageFromDeck?: (playerId: PlayerID) => void;
@@ -500,7 +745,10 @@ interface PracticeBoardProps {
 export default function PracticeBoard({
   state,
   perspective,
-  onHandCardClick,
+  onHandPrimaryAction,
+  onHandDeclareAction,
+  onMoveHandCardToDeckTop,
+  onMoveHandCardToDeckBottom,
   onFieldClick,
   onDrawFromDeck,
   onDamageFromDeck,
@@ -513,8 +761,13 @@ export default function PracticeBoard({
   const [pileModalState, setPileModalState] = useState<CardPileModalState>(null);
   const [deckMenuState, setDeckMenuState] = useState<DeckMenuState>(null);
   const [cardActionState, setCardActionState] = useState<CardActionMenuState>(null);
+  const [handCardActionState, setHandCardActionState] = useState<HandCardActionMenuState>(null);
   const [recoverySelection, setRecoverySelection] = useState<string[]>([]);
   const [recoveryMode, setRecoveryMode] = useState(false);
+  const [randomRecoveryPrompt, setRandomRecoveryPrompt] =
+    useState<RandomRecoveryPromptState>(null);
+  const [randomRecoveryResult, setRandomRecoveryResult] =
+    useState<RandomRecoveryResultState>(null);
 
   useEffect(() => {
     const handleGlobalPointerDown = (event: MouseEvent) => {
@@ -522,6 +775,7 @@ export default function PracticeBoard({
       if (target?.closest("[data-deck-menu-keep='true']")) return;
       setDeckMenuState(null);
       setCardActionState(null);
+      setHandCardActionState(null);
     };
 
     window.addEventListener("mousedown", handleGlobalPointerDown);
@@ -537,14 +791,40 @@ export default function PracticeBoard({
       return;
     }
 
-    const discardIds = new Set(state.players[pileModalState.playerId].discard.map((card) => card.instanceId));
+    const discardIds = new Set(
+      state.players[pileModalState.playerId].discard.map((card) => card.instanceId),
+    );
     setRecoverySelection((prev) => prev.filter((id) => discardIds.has(id)));
-  }, [pileModalState, state.players]);
+
+    if (randomRecoveryPrompt?.playerId === pileModalState.playerId) {
+      const discardCount = state.players[pileModalState.playerId].discard.length;
+      const parsedCount = Number(randomRecoveryPrompt.value);
+      if (Number.isFinite(parsedCount) && parsedCount > discardCount) {
+        setRandomRecoveryPrompt((prev) =>
+          prev ? { ...prev, value: String(discardCount) } : prev,
+        );
+      }
+    }
+  }, [pileModalState, randomRecoveryPrompt?.playerId, randomRecoveryPrompt?.value, state.players]);
+
+  useEffect(() => {
+    setHandCardActionState((prev) => {
+      if (!prev) return prev;
+      const stillExists = state.players[prev.playerId].hand.some((card) => card.instanceId === prev.cardId);
+      return stillExists ? prev : null;
+    });
+  }, [state.players]);
+
+  const closePileModal = () => {
+    setPileModalState(null);
+    setCardActionState(null);
+    setRecoveryMode(false);
+    setRecoverySelection([]);
+    setRandomRecoveryPrompt(null);
+  };
 
   const toggleDeckMenu = (playerId: PlayerID) => {
-    setDeckMenuState((prev) =>
-      prev?.playerId === playerId ? null : { playerId }
-    );
+    setDeckMenuState((prev) => (prev?.playerId === playerId ? null : { playerId }));
   };
 
   const handleCardClick = (kind: "deck" | "discard", playerId: PlayerID, cardId: string) => {
@@ -554,16 +834,24 @@ export default function PracticeBoard({
     }
 
     setCardActionState((prev) => {
-      if (
-        prev?.kind === kind &&
-        prev.playerId === playerId &&
-        prev.cardId === cardId
-      ) {
+      if (prev?.kind === kind && prev.playerId === playerId && prev.cardId === cardId) {
         return null;
       }
 
       return { kind, playerId, cardId };
     });
+    setHandCardActionState(null);
+  };
+
+  const handleHandCardClick = (playerId: PlayerID, cardId: string) => {
+    setHandCardActionState((prev) => {
+      if (prev?.playerId === playerId && prev.cardId === cardId) {
+        return null;
+      }
+      return { playerId, cardId };
+    });
+    setCardActionState(null);
+    setDeckMenuState(null);
   };
 
   const toggleRecoveryMode = () => {
@@ -597,6 +885,68 @@ export default function PracticeBoard({
     });
   };
 
+  const openRandomRecoveryPrompt = () => {
+    if (!pileModalState || pileModalState.kind !== "discard") return;
+    if (cardActionState || recoveryMode) return;
+
+    setRandomRecoveryPrompt({
+      playerId: pileModalState.playerId,
+      value: "",
+    });
+  };
+
+  const handleRandomRecoveryConfirm = () => {
+    if (!pileModalState || pileModalState.kind !== "discard" || !randomRecoveryPrompt) return;
+
+    const discardCards = state.players[pileModalState.playerId].discard;
+    const recoverCount = Number(randomRecoveryPrompt.value);
+
+    if (!Number.isInteger(recoverCount) || recoverCount <= 0 || recoverCount > discardCards.length) {
+      return;
+    }
+
+    const recoveredCards = shuffleCards(discardCards).slice(0, recoverCount);
+    if (recoveredCards.length === 0) return;
+
+    onRecoverCardsToDeckBottom?.(
+      pileModalState.playerId,
+      recoveredCards.map((card) => card.instanceId),
+    );
+
+    setRandomRecoveryResult({
+      playerId: pileModalState.playerId,
+      cards: recoveredCards,
+      confirmedBySelf: false,
+      confirmedByOpponent: false,
+    });
+    closePileModal();
+  };
+
+  const confirmRandomRecoveryBySelf = () => {
+    setRandomRecoveryResult((prev) => {
+      if (!prev) return prev;
+      const next = { ...prev, confirmedBySelf: true };
+      if (next.confirmedBySelf && next.confirmedByOpponent) {
+        return null;
+      }
+      return next;
+    });
+  };
+
+  const confirmRandomRecoveryByOpponent = () => {
+    setRandomRecoveryResult((prev) => {
+      if (!prev) return prev;
+      const next = { ...prev, confirmedByOpponent: true };
+      if (next.confirmedBySelf && next.confirmedByOpponent) {
+        return null;
+      }
+      return next;
+    });
+  };
+
+  const discardCountForPrompt =
+    randomRecoveryPrompt ? state.players[randomRecoveryPrompt.playerId].discard.length : 0;
+
   return (
     <>
       <div style={boardLayoutStyle} data-deck-menu-keep="true">
@@ -606,7 +956,25 @@ export default function PracticeBoard({
           state={state}
           isPerspectivePlayer={false}
           isDeckMenuOpen={deckMenuState?.playerId === opponent}
-          onHandCardClick={onHandCardClick}
+          activeHandCardAction={handCardActionState}
+          onHandCardClick={handleHandCardClick}
+          onHandPrimaryAction={(playerId, card) => {
+            onHandPrimaryAction?.(playerId, card);
+            setHandCardActionState(null);
+          }}
+          onHandDeclareAction={(playerId, cardId) => {
+            onHandDeclareAction?.(playerId, cardId);
+            setHandCardActionState(null);
+          }}
+          onMoveHandCardToDeckTop={(playerId, cardId) => {
+            onMoveHandCardToDeckTop?.(playerId, cardId);
+            setHandCardActionState(null);
+          }}
+          onMoveHandCardToDeckBottom={(playerId, cardId) => {
+            onMoveHandCardToDeckBottom?.(playerId, cardId);
+            setHandCardActionState(null);
+          }}
+          onCloseHandCardAction={() => setHandCardActionState(null)}
           onFieldClick={onFieldClick}
           onOpenPile={(kind, playerId, label) => {
             setPileModalState({
@@ -615,8 +983,10 @@ export default function PracticeBoard({
               label,
             });
             setCardActionState(null);
+            setHandCardActionState(null);
             setRecoveryMode(false);
             setRecoverySelection([]);
+            setRandomRecoveryPrompt(null);
           }}
           onToggleDeckMenu={toggleDeckMenu}
           onDrawFromDeck={(playerId) => onDrawFromDeck?.(playerId)}
@@ -629,7 +999,25 @@ export default function PracticeBoard({
           state={state}
           isPerspectivePlayer={true}
           isDeckMenuOpen={deckMenuState?.playerId === perspective}
-          onHandCardClick={onHandCardClick}
+          activeHandCardAction={handCardActionState}
+          onHandCardClick={handleHandCardClick}
+          onHandPrimaryAction={(playerId, card) => {
+            onHandPrimaryAction?.(playerId, card);
+            setHandCardActionState(null);
+          }}
+          onHandDeclareAction={(playerId, cardId) => {
+            onHandDeclareAction?.(playerId, cardId);
+            setHandCardActionState(null);
+          }}
+          onMoveHandCardToDeckTop={(playerId, cardId) => {
+            onMoveHandCardToDeckTop?.(playerId, cardId);
+            setHandCardActionState(null);
+          }}
+          onMoveHandCardToDeckBottom={(playerId, cardId) => {
+            onMoveHandCardToDeckBottom?.(playerId, cardId);
+            setHandCardActionState(null);
+          }}
+          onCloseHandCardAction={() => setHandCardActionState(null)}
           onFieldClick={onFieldClick}
           onOpenPile={(kind, playerId, label) => {
             setPileModalState({
@@ -638,8 +1026,10 @@ export default function PracticeBoard({
               label,
             });
             setCardActionState(null);
+            setHandCardActionState(null);
             setRecoveryMode(false);
             setRecoverySelection([]);
+            setRandomRecoveryPrompt(null);
           }}
           onToggleDeckMenu={toggleDeckMenu}
           onDrawFromDeck={(playerId) => onDrawFromDeck?.(playerId)}
@@ -655,14 +1045,10 @@ export default function PracticeBoard({
         recoveryMode={recoveryMode}
         recoverySelection={recoverySelection}
         onToggleRecoveryMode={toggleRecoveryMode}
+        onOpenRandomRecoveryPrompt={openRandomRecoveryPrompt}
         onToggleRecoveryCard={toggleRecoveryCard}
         onCommitRecovery={toggleRecoveryMode}
-        onClose={() => {
-          setPileModalState(null);
-          setCardActionState(null);
-          setRecoveryMode(false);
-          setRecoverySelection([]);
-        }}
+        onClose={closePileModal}
         onCardClick={handleCardClick}
         onPrimaryAction={(card, source, playerId) => {
           onPrimaryCardAction?.(playerId, card, source);
@@ -672,6 +1058,26 @@ export default function PracticeBoard({
           onMoveCardToHand?.(playerId, cardId, source);
           setCardActionState(null);
         }}
+      />
+
+      <RandomRecoveryPromptModal
+        isOpen={randomRecoveryPrompt !== null}
+        discardCount={discardCountForPrompt}
+        value={randomRecoveryPrompt?.value ?? ""}
+        onValueChange={(value) => {
+          setRandomRecoveryPrompt((prev) => (prev ? { ...prev, value } : prev));
+        }}
+        onConfirm={handleRandomRecoveryConfirm}
+        onClose={() => setRandomRecoveryPrompt(null)}
+      />
+
+      <RandomRecoveryResultModal
+        isOpen={randomRecoveryResult !== null}
+        selfLabel={perspective}
+        opponentLabel={opponent}
+        result={randomRecoveryResult}
+        onConfirmSelf={confirmRandomRecoveryBySelf}
+        onConfirmOpponent={confirmRandomRecoveryByOpponent}
       />
     </>
   );
@@ -869,8 +1275,39 @@ const modalOverlayStyle: CSSProperties = {
   zIndex: 1000,
 };
 
+const subModalOverlayStyle: CSSProperties = {
+  position: "fixed",
+  inset: 0,
+  background: "rgba(3, 8, 18, 0.58)",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  padding: 24,
+  zIndex: 1100,
+};
+
 const modalCardStyle: CSSProperties = {
   width: "min(1200px, 100%)",
+  maxHeight: "min(88vh, 1000px)",
+  overflow: "auto",
+  background: "#182233",
+  border: "1px solid #2a3850",
+  borderRadius: 16,
+  padding: 20,
+  boxSizing: "border-box",
+};
+
+const subModalCardStyle: CSSProperties = {
+  width: "min(420px, 100%)",
+  background: "#182233",
+  border: "1px solid #2a3850",
+  borderRadius: 16,
+  padding: 20,
+  boxSizing: "border-box",
+};
+
+const resultModalCardStyle: CSSProperties = {
+  width: "min(900px, 100%)",
   maxHeight: "min(88vh, 1000px)",
   overflow: "auto",
   background: "#182233",
@@ -907,6 +1344,18 @@ const modalSubTitleStyle: CSSProperties = {
   color: "#b9c3d6",
 };
 
+const subModalTitleStyle: CSSProperties = {
+  fontSize: 20,
+  fontWeight: 700,
+  color: "#ffffff",
+  marginBottom: 14,
+};
+
+const subModalHintStyle: CSSProperties = {
+  color: "#b9c3d6",
+  marginTop: 10,
+};
+
 const modalCloseButtonStyle: CSSProperties = {
   background: "#24324a",
   color: "#ffffff",
@@ -937,9 +1386,77 @@ const recoveryToggleActiveButtonStyle: CSSProperties = {
   fontWeight: 700,
 };
 
+const randomRecoveryButtonStyle: CSSProperties = {
+  background: "#14532d",
+  color: "#ffffff",
+  border: "1px solid #86efac",
+  borderRadius: 10,
+  padding: "10px 14px",
+  cursor: "pointer",
+  fontWeight: 700,
+};
+
+const numberInputStyle: CSSProperties = {
+  width: "100%",
+  background: "#0f1724",
+  color: "#ffffff",
+  border: "1px solid #3e5379",
+  borderRadius: 10,
+  padding: "12px 14px",
+  fontSize: 16,
+  boxSizing: "border-box",
+};
+
+const subModalButtonRowStyle: CSSProperties = {
+  display: "flex",
+  gap: 10,
+  justifyContent: "flex-end",
+  marginTop: 16,
+  flexWrap: "wrap",
+};
+
+const confirmButtonStyle: CSSProperties = {
+  background: "#1d4ed8",
+  color: "#ffffff",
+  border: "1px solid #93c5fd",
+  borderRadius: 10,
+  padding: "10px 14px",
+  cursor: "pointer",
+  fontWeight: 700,
+};
+
+const disabledConfirmButtonStyle: CSSProperties = {
+  ...confirmButtonStyle,
+  opacity: 0.45,
+  cursor: "not-allowed",
+};
+
+const confirmedButtonStyle: CSSProperties = {
+  background: "#374151",
+  color: "#d1d5db",
+  border: "1px solid #6b7280",
+  borderRadius: 10,
+  padding: "10px 14px",
+  cursor: "default",
+  fontWeight: 700,
+};
+
+const errorMessageStyle: CSSProperties = {
+  marginTop: 10,
+  color: "#fca5a5",
+  fontWeight: 700,
+  lineHeight: 1.5,
+};
+
 const pileGridStyle: CSSProperties = {
   display: "grid",
   gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
+  gap: 12,
+};
+
+const resultGridStyle: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))",
   gap: 12,
 };
 
@@ -965,6 +1482,18 @@ const cardActionOverlayStyle: CSSProperties = {
   inset: 0,
   display: "grid",
   gridTemplateRows: "repeat(3, auto)",
+  gap: 8,
+  alignContent: "center",
+  justifyItems: "stretch",
+  padding: 10,
+  boxSizing: "border-box",
+};
+
+const handCardActionOverlayStyle: CSSProperties = {
+  position: "absolute",
+  inset: 0,
+  display: "grid",
+  gridTemplateRows: "repeat(5, auto)",
   gap: 8,
   alignContent: "center",
   justifyItems: "stretch",
@@ -1034,4 +1563,12 @@ const recoveryExecuteButtonStyle: CSSProperties = {
   padding: "10px 14px",
   cursor: "pointer",
   fontWeight: 700,
+};
+
+const resultConfirmRowStyle: CSSProperties = {
+  display: "flex",
+  justifyContent: "flex-end",
+  gap: 10,
+  marginTop: 18,
+  flexWrap: "wrap",
 };
