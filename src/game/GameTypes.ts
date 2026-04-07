@@ -97,9 +97,17 @@ export interface CardRef {
   isTapped?: boolean;
   canAttack?: boolean;
   canBlock?: boolean;
+
+  // Lycee 전투 스탯
+  ap?: number;
+  dp?: number;
+  dmg?: number;
+
+  // 기존 테스트/임시 데이터와의 호환용 필드
   power?: number;
   damage?: number;
   hp?: number;
+
   location?: Zone;
   slot?: FieldSlot;
   revealed?: boolean;

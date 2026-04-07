@@ -1127,6 +1127,39 @@ export function clearBattleState(state: GameState): void {
   state.battle.battleEndedByBothPass = false;
 }
 
+function getCardAp(card: CardRef): number {
+  return card.ap ?? card.power ?? 0;
+}
+
+function getCardDp(card: CardRef): number {
+  return card.dp ?? card.hp ?? card.power ?? 0;
+}
+
+function getCardDmg(card: CardRef): number {
+  return card.dmg ?? card.damage ?? 0;
+}
+
+function millTopDeck(state: GameState, playerId: PlayerID, amount: number): number {
+  let milled = 0;
+
+  for (let i = 0; i < amount; i += 1) {
+    const card = state.players[playerId].deck.shift();
+    if (!card) break;
+
+    moveCardToDiscard(state, playerId, card);
+    milled += 1;
+
+    pushEvent(state, {
+      type: "CARD_MILLED",
+      playerId,
+      cardId: card.instanceId,
+      amount: 1,
+    });
+  }
+
+  return milled;
+}
+
 export function resolveBattleCore(state: GameState): void {
   if (!state.battle.isActive) return;
 
@@ -1152,15 +1185,25 @@ export function resolveBattleCore(state: GameState): void {
     return;
   }
 
+  // 공격자는 배틀 해결 시 기본적으로 행동완료가 된다.
   attacker.isTapped = true;
 
+  // 방어자가 없으면 직접 공격 -> DMG만큼 상대 덱 파기
   if (!defenderCardId) {
-    state.logs.push(`[BATTLE] ${attackerPlayerId}의 ${attacker.name} 직접 공격`);
+    const dmg = getCardDmg(attacker);
+    const milled = millTopDeck(state, defenderPlayerId, dmg);
+
+    state.logs.push(
+      `[BATTLE] ${attackerPlayerId}의 ${attacker.name} 직접 공격, ${defenderPlayerId} 덱 ${milled}장 파기`,
+    );
+
     pushEvent(state, {
       type: "DIRECT_ATTACK_RESOLVED",
       playerId: attackerPlayerId,
       cardId: attacker.instanceId,
+      amount: milled,
     });
+
     clearBattleState(state);
     return;
   }
@@ -1177,67 +1220,54 @@ export function resolveBattleCore(state: GameState): void {
     return;
   }
 
-  defender.isTapped = true;
+  const attackerAp = getCardAp(attacker);
+  const attackerDp = getCardDp(attacker);
+  const defenderAp = getCardAp(defender);
+  const defenderDp = getCardDp(defender);
 
-  const attackerPower = attacker.power ?? attacker.damage ?? 0;
-  const defenderPower = defender.power ?? defender.damage ?? 0;
+  const defenderDown = attackerAp > defenderDp;
+  const attackerDown = defenderAp > attackerDp;
 
-  if (attackerPower > defenderPower) {
-    const removed = removeCardFromAllZones(
-      state.players[defenderPlayerId],
-      defender.instanceId,
-    );
-    if (removed) {
-      moveCardToDiscard(state, defenderPlayerId, removed);
-    }
-    state.logs.push(
-      `[BATTLE] ${attacker.name}(${attackerPower}) 승리, ${defender.name} 격파`,
-    );
+  if (defenderDown) {
+    defender.isTapped = true;
+  }
+
+  if (attackerDown) {
+    attacker.isTapped = true;
+  }
+
+  state.logs.push(
+    `[BATTLE] ${attacker.name} AP:${attackerAp} / DP:${attackerDp} vs ${defender.name} AP:${defenderAp} / DP:${defenderDp}`,
+  );
+
+  if (defenderDown && attackerDown) {
+    state.logs.push("[BATTLE] 결과: 공격자/방어자 둘 다 다운");
     pushEvent(state, {
-      type: "BATTLE_DESTROY",
+      type: "BATTLE_BOTH_DOWN",
       playerId: attackerPlayerId,
       cardId: attacker.instanceId,
       relatedCardId: defender.instanceId,
     });
-  } else if (defenderPower > attackerPower) {
-    const removed = removeCardFromAllZones(
-      state.players[attackerPlayerId],
-      attacker.instanceId,
-    );
-    if (removed) {
-      moveCardToDiscard(state, attackerPlayerId, removed);
-    }
-    state.logs.push(
-      `[BATTLE] ${defender.name}(${defenderPower}) 승리, ${attacker.name} 격파`,
-    );
+  } else if (defenderDown) {
+    state.logs.push("[BATTLE] 결과: 방어자 다운");
     pushEvent(state, {
-      type: "BATTLE_DESTROY",
+      type: "BATTLE_DEFENDER_DOWN",
+      playerId: attackerPlayerId,
+      cardId: attacker.instanceId,
+      relatedCardId: defender.instanceId,
+    });
+  } else if (attackerDown) {
+    state.logs.push("[BATTLE] 결과: 공격자 다운");
+    pushEvent(state, {
+      type: "BATTLE_ATTACKER_DOWN",
       playerId: defenderPlayerId,
       cardId: defender.instanceId,
       relatedCardId: attacker.instanceId,
     });
   } else {
-    const removedAttacker = removeCardFromAllZones(
-      state.players[attackerPlayerId],
-      attacker.instanceId,
-    );
-    if (removedAttacker) {
-      moveCardToDiscard(state, attackerPlayerId, removedAttacker);
-    }
-
-    const removedDefender = removeCardFromAllZones(
-      state.players[defenderPlayerId],
-      defender.instanceId,
-    );
-    if (removedDefender) {
-      moveCardToDiscard(state, defenderPlayerId, removedDefender);
-    }
-
-    state.logs.push(
-      `[BATTLE] 상호 격파: ${attacker.name}(${attackerPower}) vs ${defender.name}(${defenderPower})`,
-    );
+    state.logs.push("[BATTLE] 결과: 양측 모두 다운하지 않음");
     pushEvent(state, {
-      type: "BATTLE_TRADE",
+      type: "BATTLE_NO_DOWN",
       playerId: attackerPlayerId,
       cardId: attacker.instanceId,
       relatedCardId: defender.instanceId,
