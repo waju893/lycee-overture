@@ -195,12 +195,29 @@ function getFirstEmptySlot(state: GameState, playerId: PlayerID): FieldSlot | nu
   return null;
 }
 
-function moveCardToZone(
+function placeCardOnField(
+  next: GameState,
+  playerId: PlayerID,
+  card: CardRef,
+): boolean {
+  const emptySlot = getFirstEmptySlot(next, playerId);
+  if (!emptySlot) {
+    next.logs.push(`[ZONE] ${playerId} 배치 실패: 빈 필드 칸이 없음`);
+    return false;
+  }
+
+  card.location = "field";
+  card.revealed = true;
+  next.players[playerId].field[emptySlot].card = card;
+  return true;
+}
+
+function moveCardFromPile(
   state: GameState,
   playerId: PlayerID,
   cardId: string,
   source: "deck" | "discard",
-  destination: "hand" | "discard" | "field",
+  destination: "hand" | "field",
 ): GameState {
   const next = structuredClone(state) as GameState;
   const player = next.players[playerId];
@@ -226,25 +243,12 @@ function moveCardToZone(
     return next;
   }
 
-  if (destination === "discard") {
-    card.location = "discard";
-    card.revealed = true;
-    player.discard.push(card);
-    next.logs.push(`[ZONE] ${playerId} ${source} → 쓰레기통: ${card.name}`);
-    return next;
-  }
-
-  const emptySlot = getFirstEmptySlot(next, playerId);
-  if (!emptySlot) {
+  if (!placeCardOnField(next, playerId, card)) {
     sourcePile.splice(index, 0, card);
-    next.logs.push(`[ZONE] ${playerId} 배치 실패: 빈 필드 칸이 없음`);
     return next;
   }
 
-  card.location = "field";
-  card.revealed = true;
-  next.players[playerId].field[emptySlot].card = card;
-  next.logs.push(`[ZONE] ${playerId} ${source} → 필드 ${emptySlot}: ${card.name}`);
+  next.logs.push(`[ZONE] ${playerId} ${source} → 필드: ${card.name}`);
   return next;
 }
 
@@ -389,16 +393,70 @@ export default function PracticeBoard() {
     });
   }
 
-  function handleMoveCardToField(playerId: PlayerID, cardId: string, source: "deck" | "discard") {
-    setState((prev) => moveCardToZone(prev, playerId, cardId, source, "field"));
+  function handlePrimaryCardAction(playerId: PlayerID, card: CardRef, source: "deck" | "discard") {
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      const player = next.players[playerId];
+      const sourcePile = source === "deck" ? player.deck : player.discard;
+      const index = sourcePile.findIndex((item) => item.instanceId === card.instanceId);
+
+      if (index < 0) {
+        next.logs.push(`[ZONE] 이동 실패: ${playerId} ${source}에서 카드를 찾지 못함 (${card.instanceId})`);
+        return next;
+      }
+
+      const [removed] = sourcePile.splice(index, 1);
+      if (!removed) return next;
+
+      if (card.cardType === "event") {
+        removed.location = "discard";
+        removed.revealed = true;
+        player.discard.push(removed);
+        next.logs.push(`[ZONE] ${playerId} ${source} → 사용 후 쓰레기통: ${removed.name}`);
+        return next;
+      }
+
+      if (!placeCardOnField(next, playerId, removed)) {
+        sourcePile.splice(index, 0, removed);
+        return next;
+      }
+
+      next.logs.push(`[ZONE] ${playerId} ${source} → 필드: ${removed.name}`);
+      return next;
+    });
   }
 
   function handleMoveCardToHand(playerId: PlayerID, cardId: string, source: "deck" | "discard") {
-    setState((prev) => moveCardToZone(prev, playerId, cardId, source, "hand"));
+    setState((prev) => moveCardFromPile(prev, playerId, cardId, source, "hand"));
   }
 
-  function handleMoveCardToDiscard(playerId: PlayerID, cardId: string, source: "deck" | "discard") {
-    setState((prev) => moveCardToZone(prev, playerId, cardId, source, "discard"));
+  function handleRecoverCardsToDeckBottom(playerId: PlayerID, cardIdsInOrder: string[]) {
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      const player = next.players[playerId];
+      const recoveredNames: string[] = [];
+
+      for (const cardId of cardIdsInOrder) {
+        const index = player.discard.findIndex((card) => card.instanceId === cardId);
+        if (index < 0) continue;
+
+        const [card] = player.discard.splice(index, 1);
+        if (!card) continue;
+
+        card.location = "deck";
+        card.revealed = false;
+        player.deck.push(card);
+        recoveredNames.push(card.name);
+      }
+
+      if (recoveredNames.length === 0) {
+        next.logs.push(`[RECOVERY] ${playerId} 회복 실패: 선택 카드 없음`);
+        return next;
+      }
+
+      next.logs.push(`[RECOVERY] ${playerId} ${recoveredNames.length}장 회복 -> 덱 아래`);
+      return next;
+    });
   }
 
   function handleHandCardClick(playerId: PlayerID, card: CardRef) {
@@ -563,9 +621,9 @@ export default function PracticeBoard() {
           onDrawFromDeck={handleDrawFromDeck}
           onDamageFromDeck={handleDamageFromDeck}
           onShuffleDeck={handleShuffleDeck}
-          onMoveCardToField={handleMoveCardToField}
+          onPrimaryCardAction={handlePrimaryCardAction}
           onMoveCardToHand={handleMoveCardToHand}
-          onMoveCardToDiscard={handleMoveCardToDiscard}
+          onRecoverCardsToDeckBottom={handleRecoverCardsToDeckBottom}
         />
 
         <div style={logGridStyle}>

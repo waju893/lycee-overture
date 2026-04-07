@@ -330,6 +330,11 @@ function CardPileModal({
   gameState,
   state,
   activeCardAction,
+  recoveryMode,
+  recoverySelection,
+  onToggleRecoveryMode,
+  onToggleRecoveryCard,
+  onCommitRecovery,
   onClose,
   onCardClick,
   onPrimaryAction,
@@ -338,6 +343,11 @@ function CardPileModal({
   gameState: GameState;
   state: CardPileModalState;
   activeCardAction: CardActionMenuState;
+  recoveryMode: boolean;
+  recoverySelection: string[];
+  onToggleRecoveryMode: () => void;
+  onToggleRecoveryCard: (cardId: string) => void;
+  onCommitRecovery: () => void;
   onClose: () => void;
   onCardClick: (kind: "deck" | "discard", playerId: PlayerID, cardId: string) => void;
   onPrimaryAction: (card: CardRef, source: "deck" | "discard", playerId: PlayerID) => void;
@@ -364,7 +374,9 @@ function CardPileModal({
   const pileSubtitle =
     state.kind === "deck"
       ? "덱 맨 위부터 아래 방향 순서대로 표시"
-      : "카드가 놓인 순서대로 표시";
+      : recoveryMode
+        ? "회복할 카드를 누른 순서대로 선택"
+        : "카드가 놓인 순서대로 표시";
   const cards =
     state.kind === "deck"
       ? gameState.players[state.playerId].deck
@@ -379,9 +391,21 @@ function CardPileModal({
             <div style={modalSubTitleStyle}>{pileSubtitle}</div>
           </div>
 
-          <button type="button" style={modalCloseButtonStyle} onClick={onClose}>
-            닫기
-          </button>
+          <div style={modalHeaderButtonsStyle}>
+            {state.kind === "discard" ? (
+              <button
+                type="button"
+                style={recoveryMode ? recoveryToggleActiveButtonStyle : recoveryToggleButtonStyle}
+                onClick={onToggleRecoveryMode}
+                disabled={!recoveryMode && activeCardAction !== null}
+              >
+                {recoveryMode ? `회복 실행 (${recoverySelection.length})` : "회복"}
+              </button>
+            ) : null}
+            <button type="button" style={modalCloseButtonStyle} onClick={onClose}>
+              닫기
+            </button>
+          </div>
         </div>
 
         {cards.length === 0 ? (
@@ -393,20 +417,38 @@ function CardPileModal({
                 activeCardAction?.playerId === state.playerId &&
                 activeCardAction?.kind === state.kind &&
                 activeCardAction?.cardId === card.instanceId;
+              const recoveryOrder =
+                recoverySelection.findIndex((id) => id === card.instanceId) + 1;
+              const isRecoverySelected = recoveryOrder > 0;
 
               return (
                 <div key={`${state.kind}-${card.instanceId}-${index}`} style={pileItemWrapStyle}>
                   <div style={pileOrderStyle}>{index + 1}</div>
                   <div style={pileCardStackStyle}>
-                    <div style={{ opacity: isActionOpen ? 0.48 : 1, transition: "opacity 0.15s ease" }}>
+                    <div
+                      style={{
+                        opacity: isActionOpen ? 0.48 : isRecoverySelected ? 0.62 : 1,
+                        transition: "opacity 0.15s ease",
+                      }}
+                    >
                       <CardImage
                         card={card}
                         clickable={true}
-                        onClick={() => onCardClick(state.kind, state.playerId, card.instanceId)}
+                        onClick={() => {
+                          if (recoveryMode && state.kind === "discard") {
+                            onToggleRecoveryCard(card.instanceId);
+                            return;
+                          }
+                          onCardClick(state.kind, state.playerId, card.instanceId);
+                        }}
                       />
                     </div>
 
-                    {isActionOpen ? (
+                    {isRecoverySelected ? (
+                      <div style={recoveryOrderBadgeStyle}>{recoveryOrder}</div>
+                    ) : null}
+
+                    {isActionOpen && !recoveryMode ? (
                       <CardActionOverlay
                         card={card}
                         state={activeCardAction}
@@ -421,6 +463,22 @@ function CardPileModal({
             })}
           </div>
         )}
+
+        {recoveryMode && state.kind === "discard" ? (
+          <div style={recoveryFooterStyle}>
+            <div style={recoveryHintStyle}>
+              선택한 카드 {recoverySelection.length}장을 누른 순서대로 덱 아래로 되돌립니다.
+            </div>
+            <button
+              type="button"
+              style={recoveryExecuteButtonStyle}
+              onClick={onCommitRecovery}
+              disabled={recoverySelection.length === 0}
+            >
+              회복 실행
+            </button>
+          </div>
+        ) : null}
       </div>
     </div>
   );
@@ -436,6 +494,7 @@ interface PracticeBoardProps {
   onShuffleDeck?: (playerId: PlayerID) => void;
   onPrimaryCardAction?: (playerId: PlayerID, card: CardRef, source: "deck" | "discard") => void;
   onMoveCardToHand?: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
+  onRecoverCardsToDeckBottom?: (playerId: PlayerID, cardIdsInOrder: string[]) => void;
 }
 
 export default function PracticeBoard({
@@ -448,11 +507,14 @@ export default function PracticeBoard({
   onShuffleDeck,
   onPrimaryCardAction,
   onMoveCardToHand,
+  onRecoverCardsToDeckBottom,
 }: PracticeBoardProps) {
   const opponent = perspective === "P1" ? "P2" : "P1";
   const [pileModalState, setPileModalState] = useState<CardPileModalState>(null);
   const [deckMenuState, setDeckMenuState] = useState<DeckMenuState>(null);
   const [cardActionState, setCardActionState] = useState<CardActionMenuState>(null);
+  const [recoverySelection, setRecoverySelection] = useState<string[]>([]);
+  const [recoveryMode, setRecoveryMode] = useState(false);
 
   useEffect(() => {
     const handleGlobalPointerDown = (event: MouseEvent) => {
@@ -467,6 +529,17 @@ export default function PracticeBoard({
       window.removeEventListener("mousedown", handleGlobalPointerDown);
     };
   }, []);
+
+  useEffect(() => {
+    if (!pileModalState || pileModalState.kind !== "discard") {
+      setRecoveryMode(false);
+      setRecoverySelection([]);
+      return;
+    }
+
+    const discardIds = new Set(state.players[pileModalState.playerId].discard.map((card) => card.instanceId));
+    setRecoverySelection((prev) => prev.filter((id) => discardIds.has(id)));
+  }, [pileModalState, state.players]);
 
   const toggleDeckMenu = (playerId: PlayerID) => {
     setDeckMenuState((prev) =>
@@ -493,6 +566,37 @@ export default function PracticeBoard({
     });
   };
 
+  const toggleRecoveryMode = () => {
+    if (!pileModalState || pileModalState.kind !== "discard") return;
+
+    if (recoveryMode) {
+      if (recoverySelection.length > 0) {
+        onRecoverCardsToDeckBottom?.(pileModalState.playerId, recoverySelection);
+      }
+      setRecoveryMode(false);
+      setRecoverySelection([]);
+      setCardActionState(null);
+      return;
+    }
+
+    if (cardActionState) return;
+    setRecoveryMode(true);
+    setRecoverySelection([]);
+  };
+
+  const toggleRecoveryCard = (cardId: string) => {
+    if (!recoveryMode) return;
+
+    setRecoverySelection((prev) => {
+      const exists = prev.includes(cardId);
+      if (exists) {
+        return prev.filter((id) => id !== cardId);
+      }
+      if (prev.length >= 60) return prev;
+      return [...prev, cardId];
+    });
+  };
+
   return (
     <>
       <div style={boardLayoutStyle} data-deck-menu-keep="true">
@@ -511,6 +615,8 @@ export default function PracticeBoard({
               label,
             });
             setCardActionState(null);
+            setRecoveryMode(false);
+            setRecoverySelection([]);
           }}
           onToggleDeckMenu={toggleDeckMenu}
           onDrawFromDeck={(playerId) => onDrawFromDeck?.(playerId)}
@@ -532,6 +638,8 @@ export default function PracticeBoard({
               label,
             });
             setCardActionState(null);
+            setRecoveryMode(false);
+            setRecoverySelection([]);
           }}
           onToggleDeckMenu={toggleDeckMenu}
           onDrawFromDeck={(playerId) => onDrawFromDeck?.(playerId)}
@@ -544,9 +652,16 @@ export default function PracticeBoard({
         gameState={state}
         state={pileModalState}
         activeCardAction={cardActionState}
+        recoveryMode={recoveryMode}
+        recoverySelection={recoverySelection}
+        onToggleRecoveryMode={toggleRecoveryMode}
+        onToggleRecoveryCard={toggleRecoveryCard}
+        onCommitRecovery={toggleRecoveryMode}
         onClose={() => {
           setPileModalState(null);
           setCardActionState(null);
+          setRecoveryMode(false);
+          setRecoverySelection([]);
         }}
         onCardClick={handleCardClick}
         onPrimaryAction={(card, source, playerId) => {
@@ -774,6 +889,13 @@ const modalHeaderStyle: CSSProperties = {
   flexWrap: "wrap",
 };
 
+const modalHeaderButtonsStyle: CSSProperties = {
+  display: "flex",
+  gap: 10,
+  alignItems: "center",
+  flexWrap: "wrap",
+};
+
 const modalTitleStyle: CSSProperties = {
   fontSize: 22,
   fontWeight: 700,
@@ -789,6 +911,26 @@ const modalCloseButtonStyle: CSSProperties = {
   background: "#24324a",
   color: "#ffffff",
   border: "1px solid #3e5379",
+  borderRadius: 10,
+  padding: "10px 14px",
+  cursor: "pointer",
+  fontWeight: 700,
+};
+
+const recoveryToggleButtonStyle: CSSProperties = {
+  background: "#24324a",
+  color: "#ffffff",
+  border: "1px solid #60a5fa",
+  borderRadius: 10,
+  padding: "10px 14px",
+  cursor: "pointer",
+  fontWeight: 700,
+};
+
+const recoveryToggleActiveButtonStyle: CSSProperties = {
+  background: "#1d4ed8",
+  color: "#ffffff",
+  border: "1px solid #93c5fd",
   borderRadius: 10,
   padding: "10px 14px",
   cursor: "pointer",
@@ -852,4 +994,44 @@ const cardActionCloseButtonStyle: CSSProperties = {
   fontSize: 12,
   padding: "7px 10px",
   width: "100%",
+};
+
+const recoveryOrderBadgeStyle: CSSProperties = {
+  position: "absolute",
+  top: 8,
+  right: 8,
+  minWidth: 24,
+  height: 24,
+  borderRadius: 9999,
+  background: "rgba(29, 78, 216, 0.92)",
+  color: "#ffffff",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  fontWeight: 800,
+  fontSize: 12,
+  boxShadow: "0 2px 8px rgba(0, 0, 0, 0.35)",
+};
+
+const recoveryFooterStyle: CSSProperties = {
+  marginTop: 16,
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: 12,
+  flexWrap: "wrap",
+};
+
+const recoveryHintStyle: CSSProperties = {
+  color: "#b9c3d6",
+};
+
+const recoveryExecuteButtonStyle: CSSProperties = {
+  background: "#1d4ed8",
+  color: "#ffffff",
+  border: "1px solid #93c5fd",
+  borderRadius: 10,
+  padding: "10px 14px",
+  cursor: "pointer",
+  fontWeight: 700,
 };
