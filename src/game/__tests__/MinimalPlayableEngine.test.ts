@@ -1,8 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { reduceGameState } from "../GameEngine";
 import { createInitialGameState } from "../GameRules";
-import type { CardRef, FieldSlot, GameState, PlayerID } from "../GameTypes";
-
+import type { CardRef, GameState, PlayerID } from "../GameTypes";
 function makeCharacter(
   instanceId: string,
   owner: PlayerID,
@@ -65,13 +64,6 @@ function getFirstHandCharacterId(state: GameState, playerId: PlayerID): string {
   return card.instanceId;
 }
 
-function getFieldCardId(
-  state: GameState,
-  playerId: PlayerID,
-  slot: FieldSlot,
-): string | null {
-  return state.players[playerId].field[slot].card?.instanceId ?? null;
-}
 
 function passCurrentMainPhaseToNextTurn(state: GameState): GameState {
   const state1 = reduceGameState(state, { type: "ADVANCE_PHASE" });
