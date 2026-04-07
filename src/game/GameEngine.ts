@@ -253,16 +253,16 @@ function resolveTopDeclarationInternal(next: GameState): void {
   resetPassState(next);
   applyStateBasedRules(next);
   checkWinner(next);
+
+  if (next.battle.isActive && next.battle.attackerCardId) {
+    tryAutoResolveForcedDefender(next);
+  }
 }
 function maybeAutoResolveAfterDoublePass(next: GameState): void {
   if (next.turn.passedInRow < 2) return;
 
   if (next.declarationStack.length > 0) {
     resolveTopDeclarationInternal(next);
-
-    if (next.battle.isActive && next.battle.attackerCardId) {
-      next.logs.push(`[BATTLE] 방어자 선택 대기`);
-    }
 
     return;
   }
@@ -282,6 +282,38 @@ function maybeAutoResolveAfterDoublePass(next: GameState): void {
       resetPassState(next);
     }
   }
+}
+
+function tryAutoResolveForcedDefender(next: GameState): void {
+  if (!next.battle.isActive || !next.battle.attackerCardId || !next.battle.defenderPlayerId) {
+    return;
+  }
+
+  const eligibleDefenders = findEligibleDefenders(
+    next,
+    next.battle.defenderPlayerId,
+    next.battle.attackerCardId,
+  );
+
+  if (eligibleDefenders.length === 0) {
+    next.battle.defenderCardId = null;
+    next.logs.push(`[BATTLE] 방어 가능 DF 없음 -> 직접 공격 처리`);
+    resolveBattleCore(next);
+    applyStateBasedRules(next);
+    checkWinner(next);
+    return;
+  }
+
+  if (eligibleDefenders.length === 1) {
+    next.battle.defenderCardId = eligibleDefenders[0];
+    next.logs.push(`[BATTLE] 방어자 자동 지정: ${eligibleDefenders[0]}`);
+    resolveBattleCore(next);
+    applyStateBasedRules(next);
+    checkWinner(next);
+    return;
+  }
+
+  next.logs.push(`[BATTLE] 방어자 선택 대기`);
 }
 
 function validateDeclareActionTiming(
