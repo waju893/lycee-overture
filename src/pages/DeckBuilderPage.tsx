@@ -915,7 +915,7 @@ export default function DeckBuilderPage() {
               flex: 1,
               minHeight: 0,
               maxHeight: "1080px",
-              overflowY: "hidden",
+              overflowY: "auto",
               overflowX: "hidden",
               paddingRight: "8px",
             }}
