@@ -1,5 +1,6 @@
-import { memo } from "react";
-import type { SyntheticEvent } from "react";
+import { memo, useEffect, useMemo, useRef, useState } from "react";
+import type { CSSProperties, SyntheticEvent } from "react";
+import { FixedSizeGrid as Grid, type GridChildComponentProps } from "react-window";
 import type { CardMeta } from "../types/card";
 import {
   getCardImageCandidates,
@@ -11,6 +12,19 @@ type Props = {
   cards: CardMeta[];
   selectedCardId?: string;
   onSelect: (card: CardMeta) => void;
+  minColumnWidth?: number;
+  columnGap?: number;
+  rowGap?: number;
+  overscanRowCount?: number;
+};
+
+type ItemData = {
+  cards: CardMeta[];
+  columnCount: number;
+  selectedCardId?: string;
+  onSelect: (card: CardMeta) => void;
+  columnGap: number;
+  rowGap: number;
 };
 
 const ATTRIBUTE_DISPLAY_LABELS: Record<string, string> = {
@@ -28,6 +42,11 @@ const TYPE_DISPLAY_LABELS: Record<string, string> = {
   item: "아이템",
   area: "에리어",
 };
+
+const CARD_ASPECT_RATIO = 360 / 500;
+const CARD_TILE_SIDE_PADDING = 20;
+const CARD_TILE_TEXT_HEIGHT = 114;
+const CARD_TILE_BORDER_ADJUST = 2;
 
 function normalizeAttributeValue(value: string): string {
   return value.trim().toLowerCase();
@@ -104,7 +123,7 @@ const CardTile = memo(function CardTile({
       type="button"
       className={`card-tile ${isSelected ? "selected" : ""}`}
       onClick={() => onSelect(card)}
-      style={{ contentVisibility: "auto", containIntrinsicSize: "320px 520px" }}
+      style={{ width: "100%", height: "100%" }}
     >
       <div className="card-image-wrap">
         <img
@@ -136,9 +155,7 @@ const CardTile = memo(function CardTile({
           )}
 
           {card.type && (
-            <span className="card-chip">
-              {getTypeDisplayLabel(card.type)}
-            </span>
+            <span className="card-chip">{getTypeDisplayLabel(card.type)}</span>
           )}
 
           {typeof card.ex === "number" && (
@@ -150,7 +167,130 @@ const CardTile = memo(function CardTile({
   );
 });
 
-function CardGrid({ cards, selectedCardId, onSelect }: Props) {
+function estimateCardTileHeight(columnWidth: number): number {
+  const imageWidth = Math.max(0, columnWidth - CARD_TILE_SIDE_PADDING);
+  const imageHeight = imageWidth / CARD_ASPECT_RATIO;
+  return Math.ceil(imageHeight + CARD_TILE_TEXT_HEIGHT + CARD_TILE_BORDER_ADJUST);
+}
+
+function GridCell({ columnIndex, rowIndex, style, data }: GridChildComponentProps<ItemData>) {
+  const { cards, columnCount, selectedCardId, onSelect, columnGap, rowGap } = data;
+  const cardIndex = rowIndex * columnCount + columnIndex;
+  const card = cards[cardIndex];
+
+  if (!card) {
+    return null;
+  }
+
+  const adjustedStyle: CSSProperties = {
+    ...style,
+    left: Number(style.left) + columnGap / 2,
+    top: Number(style.top) + rowGap / 2,
+    width: Number(style.width) - columnGap,
+    height: Number(style.height) - rowGap,
+  };
+
+  const isSelected = selectedCardId === card.id;
+  const isPriority = cardIndex < 4;
+
+  return (
+    <div style={adjustedStyle}>
+      <CardTile
+        card={card}
+        isSelected={isSelected}
+        onSelect={onSelect}
+        isPriority={isPriority}
+      />
+    </div>
+  );
+}
+
+function useElementSize<T extends HTMLElement>() {
+  const ref = useRef<T | null>(null);
+  const [size, setSize] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
+    const update = () => {
+      const nextWidth = Math.floor(element.clientWidth);
+      const nextHeight = Math.floor(element.clientHeight);
+      setSize((prev) => {
+        if (prev.width === nextWidth && prev.height === nextHeight) {
+          return prev;
+        }
+
+        return { width: nextWidth, height: nextHeight };
+      });
+    };
+
+    update();
+
+    const observer = new ResizeObserver(() => {
+      update();
+    });
+
+    observer.observe(element);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return { ref, size, setSize };
+}
+
+function CardGrid({
+  cards,
+  selectedCardId,
+  onSelect,
+  minColumnWidth = 180,
+  columnGap = 14,
+  rowGap = 14,
+  overscanRowCount = 2,
+}: Props) {
+  const { ref, size, setSize } = useElementSize<HTMLDivElement>();
+
+  useEffect(() => {
+    if (!ref.current) return;
+    setSize({
+      width: Math.floor(ref.current.clientWidth),
+      height: Math.floor(ref.current.clientHeight),
+    });
+  }, [cards.length, ref, setSize]);
+
+  const columnCount = useMemo(() => {
+    if (size.width <= 0) return 1;
+    const estimated = Math.floor(size.width / minColumnWidth);
+    return Math.max(1, estimated);
+  }, [size.width, minColumnWidth]);
+
+  const columnWidth = useMemo(() => {
+    if (size.width <= 0) return minColumnWidth;
+    return Math.max(minColumnWidth, Math.floor(size.width / columnCount));
+  }, [size.width, minColumnWidth, columnCount]);
+
+  const rowHeight = useMemo(() => {
+    return estimateCardTileHeight(columnWidth);
+  }, [columnWidth]);
+
+  const rowCount = useMemo(() => {
+    return Math.ceil(cards.length / columnCount);
+  }, [cards.length, columnCount]);
+
+  const gridData = useMemo<ItemData>(
+    () => ({
+      cards,
+      columnCount,
+      selectedCardId,
+      onSelect,
+      columnGap,
+      rowGap,
+    }),
+    [cards, columnCount, selectedCardId, onSelect, columnGap, rowGap]
+  );
+
   if (cards.length === 0) {
     return (
       <div className="empty-state">
@@ -160,21 +300,22 @@ function CardGrid({ cards, selectedCardId, onSelect }: Props) {
   }
 
   return (
-    <div className="card-grid">
-      {cards.map((card, index) => {
-        const isSelected = selectedCardId === card.id;
-        const isPriority = index < 4;
-
-        return (
-          <CardTile
-            key={card.id}
-            card={card}
-            isSelected={isSelected}
-            onSelect={onSelect}
-            isPriority={isPriority}
-          />
-        );
-      })}
+    <div ref={ref} style={{ width: "100%", height: "100%" }}>
+      {size.width > 0 && size.height > 0 ? (
+        <Grid
+          width={size.width}
+          height={size.height}
+          columnCount={columnCount}
+          columnWidth={columnWidth}
+          rowCount={rowCount}
+          rowHeight={rowHeight}
+          itemData={gridData}
+          overscanRowCount={overscanRowCount}
+          overscanColumnCount={1}
+        >
+          {GridCell}
+        </Grid>
+      ) : null}
     </div>
   );
 }

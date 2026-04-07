@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import { CARD_META } from "../lib/cards";
 import type { CardMeta } from "../types/card";
 import CardGrid from "../components/CardGrid";
 import CardDetailPanel from "../components/CardDetailPanel";
+import { preloadCardImage } from "../config/cardImage";
 import {
   mergeDeckEntries,
   removeCardFromDeck,
@@ -16,7 +17,7 @@ import { canAddCard, validateDeck } from "../lib/deckRules";
 const ALL_ATTRIBUTES = "ALL";
 const ALL_TYPES = "ALL";
 const ALL_KEYEFFECTS = "ALL";
-const CARDS_PER_PAGE = 24;
+const CARDS_PER_PAGE = 6500;
 
 const DETAIL_FIXED_WIDTH = 500;
 const MAIN_GAP = 20;
@@ -245,17 +246,6 @@ function readDeckNameFromStorage(): string {
   }
 }
 
-function preloadImagePair(code: string) {
-  const img = new Image();
-  img.decoding = "async";
-  img.src = `/cards/${code}.webp`;
-  img.onerror = () => {
-    const pngImg = new Image();
-    pngImg.decoding = "async";
-    pngImg.src = `/cards/${code}.png`;
-  };
-}
-
 type NaturalNumberInputProps = {
   value: string;
   onChange: (value: string) => void;
@@ -466,11 +456,6 @@ export default function DeckBuilderPage() {
     return filteredCards.slice(start, start + CARDS_PER_PAGE);
   }, [filteredCards, currentPage]);
 
-  const nextPageCards = useMemo(() => {
-    const start = currentPage * CARDS_PER_PAGE;
-    return filteredCards.slice(start, start + CARDS_PER_PAGE);
-  }, [filteredCards, currentPage]);
-
   const deckSummary = useMemo(() => summarizeDeck(deckEntries), [deckEntries]);
   const deckValidation = useMemo(() => validateDeck(deckEntries), [deckEntries]);
 
@@ -560,27 +545,17 @@ export default function DeckBuilderPage() {
   }, [deckActionMessage]);
 
   useEffect(() => {
-    const preloadTargets = [...pagedCards, ...nextPageCards];
-    const seen = new Set<string>();
-
-    preloadTargets.forEach((card, index) => {
-      if (!card?.code) return;
-      const code = card.code.toUpperCase();
-      if (seen.has(code)) return;
-      seen.add(code);
-
-      if (index < 16) {
-        preloadImagePair(code);
-      }
+    pagedCards.slice(0, 12).forEach((card) => {
+      preloadCardImage(card.code, card.imageUrl);
     });
-  }, [pagedCards, nextPageCards]);
+  }, [pagedCards]);
 
   useEffect(() => {
     if (!selectedCard?.code) return;
-    preloadImagePair(selectedCard.code.toUpperCase());
+    preloadCardImage(selectedCard.code.toUpperCase(), selectedCard.imageUrl);
   }, [selectedCard]);
 
-  const tryAddCardToDeck = (
+  const tryAddCardToDeck = useCallback((
     code: string,
     qty: number,
     options?: { clearMessageOnSuccess?: boolean }
@@ -601,18 +576,18 @@ export default function DeckBuilderPage() {
     }
 
     return true;
-  };
+  }, [deckEntries]);
 
-  const handleSelectCard = (card: CardMeta) => {
+  const handleSelectCard = useCallback((card: CardMeta) => {
     setSelectedCard(card);
-    preloadImagePair(card.code.toUpperCase());
+    preloadCardImage(card.code.toUpperCase(), card.imageUrl);
 
     if (clickToAddMode) {
       tryAddCardToDeck(card.code, 1, { clearMessageOnSuccess: true });
     }
-  };
+  }, [clickToAddMode, tryAddCardToDeck]);
 
-  const handleResetFilters = () => {
+  const handleResetFilters = useCallback(() => {
     setSearch("");
     setAttributeFilter(ALL_ATTRIBUTES);
     setTypeFilter(ALL_TYPES);
@@ -625,37 +600,37 @@ export default function DeckBuilderPage() {
     setMinUseTargetCost("");
     setMaxUseTargetCost("");
     setCurrentPage(1);
-  };
+  }, []);
 
-  const handleAddSelectedCard = (qty: number) => {
+  const handleAddSelectedCard = useCallback((qty: number) => {
     if (!selectedCard) return;
     tryAddCardToDeck(selectedCard.code, qty, { clearMessageOnSuccess: true });
-  };
+  }, [selectedCard, tryAddCardToDeck]);
 
-  const handleDeckEntryIncrease = (code: string) => {
+  const handleDeckEntryIncrease = useCallback((code: string) => {
     tryAddCardToDeck(code, 1, { clearMessageOnSuccess: true });
-  };
+  }, [tryAddCardToDeck]);
 
-  const handleDeckEntryDecrease = (code: string) => {
+  const handleDeckEntryDecrease = useCallback((code: string) => {
     setDeckEntries((prev) => removeCardFromDeck(prev, code, 1));
     setDeckActionMessage("");
-  };
+  }, []);
 
-  const handleDeckEntryRemove = (code: string) => {
+  const handleDeckEntryRemove = useCallback((code: string) => {
     const target = deckEntries.find(
       (entry) => entry.code.toUpperCase() === code.toUpperCase()
     );
     if (!target) return;
     setDeckEntries((prev) => removeCardFromDeck(prev, code, target.qty));
     setDeckActionMessage("");
-  };
+  }, [deckEntries]);
 
-  const handleClearDeck = () => {
+  const handleClearDeck = useCallback(() => {
     setDeckEntries([]);
     setDeckActionMessage("");
-  };
+  }, []);
 
-  const handleSaveDeck = () => {
+  const handleSaveDeck = useCallback(() => {
     if (!deckValidation.isValid) {
       setDeckActionMessage(
         deckValidation.issues[0]?.message ?? "유효하지 않은 덱은 저장할 수 없습니다."
@@ -671,16 +646,16 @@ export default function DeckBuilderPage() {
     setDeckName(trimmedName);
     setSelectedSavedDeck(trimmedName);
     setDeckActionMessage(`덱 저장 완료: ${trimmedName}`);
-  };
+  }, [deckValidation, deckName, deckEntries]);
 
-  const handleLoadDeck = () => {
+  const handleLoadDeck = useCallback(() => {
     if (!selectedSavedDeck || !savedDecks[selectedSavedDeck]) return;
     setDeckEntries(mergeDeckEntries(savedDecks[selectedSavedDeck]));
     setDeckName(selectedSavedDeck);
     setDeckActionMessage("");
-  };
+  }, [selectedSavedDeck, savedDecks]);
 
-  const handleDeleteSavedDeck = () => {
+  const handleDeleteSavedDeck = useCallback(() => {
     if (!selectedSavedDeck) return;
 
     setSavedDecks((prev) => {
@@ -695,7 +670,7 @@ export default function DeckBuilderPage() {
 
     setSelectedSavedDeck("");
     setDeckActionMessage("");
-  };
+  }, [selectedSavedDeck, deckName]);
 
   return (
     <div
@@ -716,22 +691,6 @@ export default function DeckBuilderPage() {
 
         .main-layout {
           width: 100% !important;
-        }
-
-        .left-panel .card-grid {
-          grid-template-columns: repeat(4, minmax(180px, 1fr)) !important;
-        }
-
-        @media (max-width: 1500px) {
-          .left-panel .card-grid {
-            grid-template-columns: repeat(3, minmax(180px, 1fr)) !important;
-          }
-        }
-
-        @media (max-width: 1180px) {
-          .left-panel .card-grid {
-            grid-template-columns: repeat(2, minmax(180px, 1fr)) !important;
-          }
         }
       `}</style>
 
@@ -956,16 +915,19 @@ export default function DeckBuilderPage() {
               flex: 1,
               minHeight: 0,
               maxHeight: "1080px",
-              overflowY: "scroll",
+              overflowY: "hidden",
               overflowX: "hidden",
               paddingRight: "8px",
-              scrollbarWidth: "auto",
             }}
           >
             <CardGrid
               cards={pagedCards}
               selectedCardId={selectedCard?.id}
               onSelect={handleSelectCard}
+              minColumnWidth={180}
+              columnGap={14}
+              rowGap={14}
+              overscanRowCount={3}
             />
           </div>
         </section>
