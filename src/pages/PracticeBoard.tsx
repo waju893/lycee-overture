@@ -17,9 +17,42 @@ import PracticeBoardView from "../components/PracticeBoard";
 
 type PlacementMode =
   | {
-      type: "hand_to_field";
+      type: "hand_character_to_field";
       playerId: PlayerID;
       cardId: string;
+      costCardIds: string[];
+    }
+  | {
+      type: "pile_character_to_field";
+      playerId: PlayerID;
+      cardId: string;
+      source: "deck" | "discard";
+      costCardIds: string[];
+    }
+  | {
+      type: "hand_area_to_field";
+      playerId: PlayerID;
+      cardId: string;
+      costCardIds: string[];
+    }
+  | {
+      type: "pile_area_to_field";
+      playerId: PlayerID;
+      cardId: string;
+      source: "deck" | "discard";
+      costCardIds: string[];
+    }
+  | {
+      type: "hand_item_to_field";
+      playerId: PlayerID;
+      cardId: string;
+      costCardIds: string[];
+    }
+  | {
+      type: "pile_item_to_field";
+      playerId: PlayerID;
+      cardId: string;
+      source: "deck" | "discard";
       costCardIds: string[];
     }
   | null;
@@ -181,6 +214,12 @@ function getPendingDeclarationSummary(state: GameState): string | null {
   if (top.kind === "useCharacter") {
     return `${top.playerId} 캐릭터 등장 선언 대기`;
   }
+  if (top.kind === "useArea") {
+    return `${top.playerId} 에리어 배치 선언 대기`;
+  }
+  if (top.kind === "useItem") {
+    return `${top.playerId} 아이템 장비 선언 대기`;
+  }
   if (top.kind === "attack") {
     return `${top.playerId} 공격 선언 대기`;
   }
@@ -211,6 +250,60 @@ function placeCardOnField(
   card.revealed = true;
   next.players[playerId].field[emptySlot].card = card;
   return true;
+}
+
+function placeAreaOnField(
+  next: GameState,
+  playerId: PlayerID,
+  slot: FieldSlot,
+  card: CardRef,
+): boolean {
+  const cell = next.players[playerId].field[slot];
+  if (cell.area) {
+    next.logs.push(`[ZONE] ${playerId} 에리어 배치 실패: 해당 칸에 이미 에리어가 있음`);
+    return false;
+  }
+
+  card.location = "field";
+  card.slot = slot;
+  card.revealed = true;
+  cell.area = card;
+  return true;
+}
+
+function attachItemToCharacter(
+  next: GameState,
+  playerId: PlayerID,
+  slot: FieldSlot,
+  card: CardRef,
+): boolean {
+  const cell = next.players[playerId].field[slot];
+  if (!cell.card) {
+    next.logs.push(`[ZONE] ${playerId} 장비 실패: 해당 칸에 캐릭터가 없음`);
+    return false;
+  }
+
+  if (cell.attachedItem) {
+    next.logs.push(`[ZONE] ${playerId} 장비 실패: 해당 캐릭터에는 이미 아이템이 있음`);
+    return false;
+  }
+
+  card.location = "field";
+  card.slot = slot;
+  card.revealed = true;
+  cell.attachedItem = card;
+  return true;
+}
+
+function hasOpenAreaSlot(state: GameState, playerId: PlayerID): boolean {
+  return ALL_SLOTS.some((slot) => !state.players[playerId].field[slot].area);
+}
+
+function hasEquipableCharacterSlot(state: GameState, playerId: PlayerID): boolean {
+  return ALL_SLOTS.some((slot) => {
+    const cell = state.players[playerId].field[slot];
+    return Boolean(cell.card) && !cell.attachedItem;
+  });
 }
 
 function moveCardFromPile(
@@ -415,7 +508,58 @@ export default function PracticeBoard() {
     });
   }
 
-  function handlePrimaryCardAction(playerId: PlayerID, card: CardRef, source: "deck" | "discard") {
+  function handlePrimaryCardAction(
+    playerId: PlayerID,
+    card: CardRef,
+    source: "deck" | "discard",
+    costCardIds: string[] = [],
+  ) {
+    if (card.cardType === "character") {
+      if (pendingDeclaration) return;
+      if (state.turn.priorityPlayer !== playerId) return;
+
+      const firstEmpty = getFirstEmptySlot(state, playerId);
+      if (!firstEmpty) return;
+
+      setPlacementMode({
+        type: "pile_character_to_field",
+        playerId,
+        cardId: card.instanceId,
+        source,
+        costCardIds,
+      });
+      return;
+    }
+
+    if (card.cardType === "area") {
+      if (pendingDeclaration) return;
+      if (state.turn.priorityPlayer !== playerId) return;
+      if (!hasOpenAreaSlot(state, playerId)) return;
+
+      setPlacementMode({
+        type: "pile_area_to_field",
+        playerId,
+        cardId: card.instanceId,
+        source,
+        costCardIds,
+      });
+      return;
+    }
+
+    if (card.cardType === "item") {
+      if (state.turn.priorityPlayer !== playerId) return;
+      if (!hasEquipableCharacterSlot(state, playerId)) return;
+
+      setPlacementMode({
+        type: "pile_item_to_field",
+        playerId,
+        cardId: card.instanceId,
+        source,
+        costCardIds,
+      });
+      return;
+    }
+
     setState((prev) => {
       const next = structuredClone(prev) as GameState;
       const player = next.players[playerId];
@@ -427,23 +571,15 @@ export default function PracticeBoard() {
         return next;
       }
 
+      payHandCosts(next, playerId, costCardIds, card.instanceId);
+
       const [removed] = sourcePile.splice(index, 1);
       if (!removed) return next;
 
-      if (card.cardType === "event") {
-        removed.location = "discard";
-        removed.revealed = true;
-        player.discard.push(removed);
-        next.logs.push(`[ZONE] ${playerId} ${source} → 사용 후 쓰레기통: ${removed.name}`);
-        return next;
-      }
-
-      if (!placeCardOnField(next, playerId, removed)) {
-        sourcePile.splice(index, 0, removed);
-        return next;
-      }
-
-      next.logs.push(`[ZONE] ${playerId} ${source} → 필드: ${removed.name}`);
+      removed.location = "discard";
+      removed.revealed = true;
+      player.discard.push(removed);
+      next.logs.push(`[ZONE] ${playerId} ${source} → 사용 후 쓰레기통: ${removed.name}`);
       return next;
     });
   }
@@ -492,7 +628,34 @@ export default function PracticeBoard() {
       if (!firstEmpty) return;
 
       setPlacementMode({
-        type: "hand_to_field",
+        type: "hand_character_to_field",
+        playerId,
+        cardId: card.instanceId,
+        costCardIds,
+      });
+      return;
+    }
+
+    if (card.cardType === "area") {
+      if (pendingDeclaration) return;
+      if (state.turn.priorityPlayer !== playerId) return;
+      if (!hasOpenAreaSlot(state, playerId)) return;
+
+      setPlacementMode({
+        type: "hand_area_to_field",
+        playerId,
+        cardId: card.instanceId,
+        costCardIds,
+      });
+      return;
+    }
+
+    if (card.cardType === "item") {
+      if (state.turn.priorityPlayer !== playerId) return;
+      if (!hasEquipableCharacterSlot(state, playerId)) return;
+
+      setPlacementMode({
+        type: "hand_item_to_field",
         playerId,
         cardId: card.instanceId,
         costCardIds,
@@ -515,20 +678,10 @@ export default function PracticeBoard() {
       const [removed] = player.hand.splice(index, 1);
       if (!removed) return next;
 
-      if (card.cardType === "event") {
-        removed.location = "discard";
-        removed.revealed = true;
-        player.discard.push(removed);
-        next.logs.push(`[HAND] ${playerId} 손패 사용 -> 쓰레기통: ${removed.name}`);
-        return next;
-      }
-
-      if (!placeCardOnField(next, playerId, removed)) {
-        player.hand.splice(index, 0, removed);
-        return next;
-      }
-
-      next.logs.push(`[HAND] ${playerId} 손패 ${card.cardType === "item" ? "장비" : "배치"} -> 필드: ${removed.name}`);
+      removed.location = "discard";
+      removed.revealed = true;
+      player.discard.push(removed);
+      next.logs.push(`[HAND] ${playerId} 손패 사용 -> 쓰레기통: ${removed.name}`);
       return next;
     });
   }
@@ -605,9 +758,10 @@ export default function PracticeBoard() {
   }
 
   function handleFieldClick(playerId: PlayerID, slot: FieldSlot) {
-    const card = state.players[playerId].field[slot].card;
+    const cell = state.players[playerId].field[slot];
+    const card = cell.card;
 
-    if (placementMode?.type === "hand_to_field" && placementMode.playerId === playerId) {
+    if (placementMode?.type === "hand_character_to_field" && placementMode.playerId === playerId) {
       if (state.players[playerId].field[slot].card) return;
 
       setState((prev) => {
@@ -621,6 +775,172 @@ export default function PracticeBoard() {
           targetSlots: [slot],
           targetingMode: "declareTime",
         });
+      });
+      setPlacementMode(null);
+      return;
+    }
+
+    if (placementMode?.type === "pile_character_to_field" && placementMode.playerId === playerId) {
+      if (state.players[playerId].field[slot].card) return;
+
+      setState((prev) => {
+        const next = structuredClone(prev) as GameState;
+        const player = next.players[playerId];
+        const sourcePile = placementMode.source === "deck" ? player.deck : player.discard;
+        const sourceIndex = sourcePile.findIndex((item) => item.instanceId === placementMode.cardId);
+
+        if (sourceIndex < 0) {
+          next.logs.push(
+            `[PILE_DECLARE] ${playerId} ${placementMode.source} 선언 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
+          );
+          return next;
+        }
+
+        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
+
+        const [sourceCard] = sourcePile.splice(sourceIndex, 1);
+        if (!sourceCard) return next;
+
+        sourceCard.location = "hand";
+        sourceCard.revealed = false;
+        player.hand.push(sourceCard);
+
+        next.logs.push(
+          `[PILE_DECLARE] ${playerId} ${placementMode.source} 등장 선언 준비: ${sourceCard.name} / 대상 슬롯 ${slot}`,
+        );
+
+        return reduceGameState(next, {
+          type: "DECLARE_ACTION",
+          playerId,
+          kind: "useCharacter",
+          sourceCardId: placementMode.cardId,
+          targetSlots: [slot],
+          targetingMode: "declareTime",
+        });
+      });
+      setPlacementMode(null);
+      return;
+    }
+
+    if (placementMode?.type === "hand_area_to_field" && placementMode.playerId === playerId) {
+      if (state.players[playerId].field[slot].area) return;
+
+      setState((prev) => {
+        const next = structuredClone(prev) as GameState;
+        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
+        return reduceGameState(next, {
+          type: "DECLARE_ACTION",
+          playerId,
+          kind: "useArea",
+          sourceCardId: placementMode.cardId,
+          targetSlots: [slot],
+          targetingMode: "declareTime",
+        });
+      });
+      setPlacementMode(null);
+      return;
+    }
+
+    if (placementMode?.type === "pile_area_to_field" && placementMode.playerId === playerId) {
+      if (state.players[playerId].field[slot].area) return;
+
+      setState((prev) => {
+        const next = structuredClone(prev) as GameState;
+        const player = next.players[playerId];
+        const sourcePile = placementMode.source === "deck" ? player.deck : player.discard;
+        const sourceIndex = sourcePile.findIndex((item) => item.instanceId === placementMode.cardId);
+
+        if (sourceIndex < 0) {
+          next.logs.push(
+            `[PILE_DECLARE] ${playerId} ${placementMode.source} 에리어 선언 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
+          );
+          return next;
+        }
+
+        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
+
+        const [sourceCard] = sourcePile.splice(sourceIndex, 1);
+        if (!sourceCard) return next;
+
+        sourceCard.location = "hand";
+        sourceCard.revealed = false;
+        player.hand.push(sourceCard);
+
+        next.logs.push(
+          `[PILE_DECLARE] ${playerId} ${placementMode.source} 에리어 배치 선언 준비: ${sourceCard.name} / 대상 슬롯 ${slot}`,
+        );
+
+        return reduceGameState(next, {
+          type: "DECLARE_ACTION",
+          playerId,
+          kind: "useArea",
+          sourceCardId: placementMode.cardId,
+          targetSlots: [slot],
+          targetingMode: "declareTime",
+        });
+      });
+      setPlacementMode(null);
+      return;
+    }
+
+    if (placementMode?.type === "hand_item_to_field" && placementMode.playerId === playerId) {
+      if (!cell.card || cell.attachedItem) return;
+
+      setState((prev) => {
+        const next = structuredClone(prev) as GameState;
+        const player = next.players[playerId];
+        const index = player.hand.findIndex((item) => item.instanceId === placementMode.cardId);
+
+        if (index < 0) {
+          next.logs.push(`[HAND] ${playerId} 손패 장비 실패: 카드를 찾지 못함 (${placementMode.cardId})`);
+          return next;
+        }
+
+        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
+
+        const [removed] = player.hand.splice(index, 1);
+        if (!removed) return next;
+
+        if (!attachItemToCharacter(next, playerId, slot, removed)) {
+          player.hand.splice(index, 0, removed);
+          return next;
+        }
+
+        next.logs.push(`[HAND] ${playerId} 손패 장비 -> ${slot}: ${removed.name}`);
+        return next;
+      });
+      setPlacementMode(null);
+      return;
+    }
+
+    if (placementMode?.type === "pile_item_to_field" && placementMode.playerId === playerId) {
+      if (!cell.card || cell.attachedItem) return;
+
+      setState((prev) => {
+        const next = structuredClone(prev) as GameState;
+        const player = next.players[playerId];
+        const sourcePile = placementMode.source === "deck" ? player.deck : player.discard;
+        const sourceIndex = sourcePile.findIndex((item) => item.instanceId === placementMode.cardId);
+
+        if (sourceIndex < 0) {
+          next.logs.push(
+            `[PILE_ITEM] ${playerId} ${placementMode.source} 장비 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
+          );
+          return next;
+        }
+
+        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
+
+        const [removed] = sourcePile.splice(sourceIndex, 1);
+        if (!removed) return next;
+
+        if (!attachItemToCharacter(next, playerId, slot, removed)) {
+          sourcePile.splice(sourceIndex, 0, removed);
+          return next;
+        }
+
+        next.logs.push(`[PILE_ITEM] ${playerId} ${placementMode.source} 장비 -> ${slot}: ${removed.name}`);
+        return next;
       });
       setPlacementMode(null);
       return;
@@ -678,11 +998,7 @@ export default function PracticeBoard() {
           <button type="button" style={secondaryButtonStyle} onClick={handlePassPriority}>
             {passButtonLabel}
           </button>
-          <button
-            type="button"
-            style={dangerButtonStyle}
-            onClick={() => handleConcede(perspective)}
-          >
+          <button type="button" style={dangerButtonStyle} onClick={() => handleConcede(perspective)}>
             {perspective} 항복
           </button>
         </div>
@@ -721,7 +1037,7 @@ export default function PracticeBoard() {
             P2 시점
           </button>
           <div style={hintTextStyle}>
-            현재 조작 시점: {perspective} / 손패 클릭 후 행동 선택 / 캐릭터 등장은 원하는 필드 칸을 클릭
+            현재 조작 시점: {perspective} / 손패 클릭 후 행동 선택 / 캐릭터·에리어·아이템은 원하는 필드 칸을 클릭
           </div>
         </div>
 
@@ -731,7 +1047,7 @@ export default function PracticeBoard() {
 
         {placementMode ? (
           <div style={noticeStyle}>
-            등장 선언 대기 중: {placementMode.playerId} / 카드 {placementMode.cardId} / 원하는 필드 칸을 클릭
+            선언/배치 대기 중: {placementMode.playerId} / 카드 {placementMode.cardId} / 원하는 필드 칸을 클릭
           </div>
         ) : null}
 
