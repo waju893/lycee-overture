@@ -136,6 +136,10 @@ function shuffleCards<T>(cards: T[]): T[] {
   return next;
 }
 
+function getBackImageCandidates(): string[] {
+  return ["/cards/LO-BACK.webp", "/cards/LO-BACK.png"];
+}
+
 function expandCompactAttributeString(rawValue: string): string[] {
   const compact = rawValue.replace(/[\s\+＋,\/|，・\(\)\[\]\{\}]+/g, "");
   if (!compact) return [];
@@ -466,7 +470,10 @@ function CardImage({
 }) {
   const cardCode = getCardCode(card);
   const imageCode = forceBack ? "LO-BACK" : cardCode;
-  const candidates = useMemo(() => getCardImageCandidates(imageCode), [imageCode]);
+  const candidates = useMemo(
+    () => (forceBack ? getBackImageCandidates() : getCardImageCandidates(imageCode)),
+    [forceBack, imageCode],
+  );
   const [candidateIndex, setCandidateIndex] = useState(0);
 
   useEffect(() => {
@@ -910,7 +917,9 @@ function DeckPilePreview({
         ) : (
           previewCards.map((card, index) => {
             const code = useBackImage ? "LO-BACK" : getCardCode(card);
-            const src = getCardImageCandidates(code)[0] ?? "";
+            const src = useBackImage
+              ? getBackImageCandidates()[0]
+              : getCardImageCandidates(code)[0] ?? "";
 
             return (
               <div
