@@ -795,6 +795,96 @@ function CostPaymentModal({
   );
 }
 
+
+function FieldSlotImage({
+  cell,
+  slot,
+  onClick,
+}: {
+  cell: GameState["players"]["P1"]["field"][FieldSlot];
+  slot: FieldSlot;
+  onClick: () => void;
+}) {
+  const attachedItems =
+    (cell as any).attachedItems ??
+    (cell.attachedItem ? [cell.attachedItem] : []);
+
+  const itemCount = attachedItems.length;
+
+  const primaryCard = cell.card ?? cell.area ?? cell.attachedItem ?? null;
+  const primaryCode = primaryCard ? getCardCode(primaryCard) : "";
+  const primaryCandidates = useMemo(
+    () => (primaryCode ? getCardImageCandidates(primaryCode) : []),
+    [primaryCode],
+  );
+  const [primaryIndex, setPrimaryIndex] = useState(0);
+
+  useEffect(() => {
+    setPrimaryIndex(0);
+  }, [primaryCode, primaryCandidates]);
+
+  const renderMiniThumb = (card: CardRef, kind: string) => {
+    const code = getCardCode(card);
+    const src = getCardImageCandidates(code)[0] ?? "";
+
+    return (
+      <div key={`${kind}-${card.instanceId}`} style={fieldMiniThumbWrapStyle} title={`${kind}: ${card.name}`}>
+        {src ? (
+          <img
+            src={src}
+            alt={`${kind} ${card.name}`}
+            loading="lazy"
+            decoding="async"
+            draggable={false}
+            style={fieldMiniThumbImageStyle}
+          />
+        ) : (
+          <div style={fieldMiniThumbFallbackStyle}>{kind}</div>
+        )}
+        <div style={fieldMiniThumbLabelStyle}>{kind}</div>
+      </div>
+    );
+  };
+
+  const extraThumbs: JSX.Element[] = [];
+  if (cell.card && cell.area) extraThumbs.push(renderMiniThumb(cell.area, "에리어"));
+  if (cell.card && cell.attachedItem) extraThumbs.push(renderMiniThumb(cell.attachedItem, "아이템"));
+  if (!cell.card && cell.area && cell.attachedItem) extraThumbs.push(renderMiniThumb(cell.attachedItem, "아이템"));
+
+  return (
+    <button
+      type="button"
+      style={fieldSlotImageButtonStyle}
+      onClick={onClick}
+      title={primaryCard ? `${slot} / ${primaryCard.name}` : slot}
+    >
+      <div style={fieldSlotTitleBadgeStyle}>{slot}</div>
+      <div style={fieldSlotImageFrameStyle}>
+        {primaryCard && primaryCandidates[primaryIndex] ? (
+          <img
+            src={primaryCandidates[primaryIndex]}
+            alt={primaryCard.name}
+            loading="lazy"
+            decoding="async"
+            draggable={false}
+            onLoad={() => {
+              markCardImageResolved(primaryCode, primaryCandidates[primaryIndex]);
+            }}
+            onError={() => {
+              markCardImageFailed(primaryCandidates[primaryIndex]);
+              setPrimaryIndex((prev) => prev + 1);
+            }}
+            style={fieldSlotImageStyle}
+          />
+        ) : (
+          <div style={fieldEmptyFrameStyle}>비어 있음</div>
+        )}
+      </div>
+      {extraThumbs.length > 0 ? <div style={fieldMiniThumbTrayStyle}>{extraThumbs}</div> : null}
+    </button>
+  );
+}
+
 type PlayerAreaProps = {
   label: string;
   playerId: PlayerID;
@@ -863,15 +953,12 @@ function PlayerArea({
         {frontSlots.map((typedSlot) => {
           const card = player.field[typedSlot].card;
           return (
-            <button
+            <FieldSlotImage
               key={`${playerId}-${typedSlot}`}
-              type="button"
-              style={slotButtonStyle}
+              cell={player.field[typedSlot]}
+              slot={typedSlot}
               onClick={() => onFieldClick(playerId, typedSlot)}
-            >
-              <div style={slotTitleStyle}>{typedSlot}</div>
-              <div style={slotBodyStyle}>{getFieldCellLabel(player.field[typedSlot])}</div>
-            </button>
+            />
           );
         })}
 
@@ -923,15 +1010,12 @@ function PlayerArea({
         {backSlots.map((typedSlot) => {
           const card = player.field[typedSlot].card;
           return (
-            <button
+            <FieldSlotImage
               key={`${playerId}-${typedSlot}`}
-              type="button"
-              style={slotButtonStyle}
+              cell={player.field[typedSlot]}
+              slot={typedSlot}
               onClick={() => onFieldClick(playerId, typedSlot)}
-            >
-              <div style={slotTitleStyle}>{typedSlot}</div>
-              <div style={slotBodyStyle}>{getFieldCellLabel(player.field[typedSlot])}</div>
-            </button>
+            />
           );
         })}
 
@@ -1934,10 +2018,11 @@ const metaRowStyle: CSSProperties = {
 
 const fieldGridStyle: CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+  gridTemplateColumns: "repeat(4, minmax(120px, 140px))",
   gap: 10,
   marginTop: 12,
   marginBottom: 16,
+  alignItems: "start",
 };
 
 const sectionTitleStyle: CSSProperties = {
@@ -1975,6 +2060,108 @@ const slotButtonStyle: CSSProperties = {
   textAlign: "left",
   minHeight: 110,
   cursor: "pointer",
+};
+
+const fieldSlotImageButtonStyle: CSSProperties = {
+  position: "relative",
+  background: "#0f1724",
+  border: "1px solid #33435e",
+  borderRadius: 10,
+  padding: 6,
+  color: "#ffffff",
+  width: "100%",
+  cursor: "pointer",
+};
+
+const fieldSlotTitleBadgeStyle: CSSProperties = {
+  position: "absolute",
+  top: 8,
+  left: 8,
+  zIndex: 2,
+  background: "rgba(15, 23, 36, 0.86)",
+  border: "1px solid rgba(148, 163, 184, 0.75)",
+  borderRadius: 9999,
+  padding: "3px 7px",
+  fontSize: 10,
+  fontWeight: 800,
+  lineHeight: 1,
+};
+
+const fieldSlotImageFrameStyle: CSSProperties = {
+  width: "100%",
+  aspectRatio: "63 / 88",
+  borderRadius: 8,
+  overflow: "hidden",
+  background: "#0b1220",
+};
+
+const fieldSlotImageStyle: CSSProperties = {
+  display: "block",
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+};
+
+const fieldEmptyFrameStyle: CSSProperties = {
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "#7c8aa5",
+  fontSize: 12,
+  fontWeight: 700,
+};
+
+const fieldMiniThumbTrayStyle: CSSProperties = {
+  position: "absolute",
+  right: 8,
+  bottom: 8,
+  display: "flex",
+  gap: 6,
+  zIndex: 2,
+};
+
+const fieldMiniThumbWrapStyle: CSSProperties = {
+  position: "relative",
+  width: 34,
+  height: 48,
+  borderRadius: 6,
+  overflow: "hidden",
+  border: "1px solid rgba(148, 163, 184, 0.82)",
+  background: "rgba(15, 23, 36, 0.92)",
+};
+
+const fieldMiniThumbImageStyle: CSSProperties = {
+  display: "block",
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+};
+
+const fieldMiniThumbFallbackStyle: CSSProperties = {
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "#e5e7eb",
+  fontSize: 10,
+  fontWeight: 800,
+};
+
+const fieldMiniThumbLabelStyle: CSSProperties = {
+  position: "absolute",
+  left: 0,
+  right: 0,
+  bottom: 0,
+  background: "rgba(15, 23, 36, 0.86)",
+  color: "#ffffff",
+  fontSize: 9,
+  fontWeight: 800,
+  lineHeight: 1.1,
+  textAlign: "center",
+  padding: "2px 0",
 };
 
 const pileCellButtonStyle: CSSProperties = {
