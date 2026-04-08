@@ -462,11 +462,13 @@ function CardImage({
   clickable,
   onClick,
   forceBack = false,
+  hideTextInfo = false,
 }: {
   card: CardRef;
   clickable: boolean;
   onClick: () => void;
   forceBack?: boolean;
+  hideTextInfo?: boolean;
 }) {
   const cardCode = getCardCode(card);
   const imageCode = forceBack ? "LO-BACK" : cardCode;
@@ -487,7 +489,7 @@ function CardImage({
       type="button"
       onClick={onClick}
       disabled={!clickable}
-      title={getCardLabel(card)}
+      title={hideTextInfo ? "비공개 정보" : getCardLabel(card)}
       style={{
         ...cardImageButtonStyle,
         cursor: clickable ? "pointer" : "default",
@@ -516,10 +518,12 @@ function CardImage({
         )}
       </div>
 
-      <div style={cardTextWrapStyle}>
-        <div style={cardNameStyle}>{card.name}</div>
-        <div style={cardCodeStyle}>{cardCode || card.instanceId}</div>
-      </div>
+      {!hideTextInfo ? (
+        <div style={cardTextWrapStyle}>
+          <div style={cardNameStyle}>{card.name}</div>
+          <div style={cardCodeStyle}>{cardCode || card.instanceId}</div>
+        </div>
+      ) : null}
     </button>
   );
 }
@@ -1119,6 +1123,7 @@ function PlayerArea({
                     clickable={isPerspectivePlayer}
                     onClick={() => onHandCardClick(playerId, card.instanceId)}
                     forceBack={!isPerspectivePlayer}
+                    hideTextInfo={!isPerspectivePlayer}
                   />
                 </div>
 
