@@ -57,119 +57,111 @@ function shuffleCards<T>(cards: T[]): T[] {
   return next;
 }
 
+function expandCompactAttributeString(rawValue: string): string[] {
+  const compact = rawValue.replace(/[\s\+＋,\/|，・\(\)\[\]\{\}]+/g, "");
+  if (!compact) return [];
+
+  const directMap: Record<string, string> = {
+    "日": "sun",
+    "일": "sun",
+    "月": "moon",
+    "월": "moon",
+    "花": "flower",
+    "화": "flower",
+    "雪": "snow",
+    "설": "snow",
+    "宙": "cosmos",
+    "주": "cosmos",
+    "無": "star",
+    "무": "star",
+  };
+
+  const chars = Array.from(compact);
+  const directExpanded: string[] = [];
+  let hasUnknownDirectChar = false;
+
+  for (const ch of chars) {
+    const mapped = directMap[ch];
+    if (!mapped) {
+      hasUnknownDirectChar = true;
+      break;
+    }
+    directExpanded.push(mapped);
+  }
+
+  if (!hasUnknownDirectChar && directExpanded.length > 0) {
+    return directExpanded;
+  }
+
+  const englishTokens = ["flower", "cosmos", "space", "moon", "snow", "star", "none", "sun"];
+  const lowered = compact.toLowerCase();
+  const englishExpanded: string[] = [];
+  let cursor = 0;
+  let hasUnknownEnglishChunk = false;
+
+  while (cursor < lowered.length) {
+    let matchedToken = "";
+
+    for (const token of englishTokens) {
+      if (lowered.startsWith(token, cursor)) {
+        matchedToken = token;
+        break;
+      }
+    }
+
+    if (!matchedToken) {
+      hasUnknownEnglishChunk = true;
+      break;
+    }
+
+    englishExpanded.push(normalizeAttributeValue(matchedToken));
+    cursor += matchedToken.length;
+  }
+
+  if (!hasUnknownEnglishChunk && englishExpanded.length > 0) {
+    return englishExpanded;
+  }
+
+  const parsed = Number(lowered);
+  if (Number.isFinite(parsed) && parsed > 0) {
+    return Array.from({ length: Math.trunc(parsed) }, () => "generic");
+  }
+
+  return [normalizeAttributeValue(rawValue)];
+}
+
+function parseAttributeValues(rawValue: unknown): string[] {
+  if (typeof rawValue === "number") {
+    return rawValue > 0 ? Array.from({ length: Math.trunc(rawValue) }, () => "generic") : [];
+  }
+
+  if (typeof rawValue !== "string") return [];
+
+  const trimmed = rawValue.trim();
+  if (!trimmed || trimmed === "0") return [];
+
+  const tokenized = trimmed
+    .split(/[\s\+＋,\/|，・]+/)
+    .map((value) => value.trim())
+    .filter((value) => value.length > 0);
+
+  if (tokenized.length > 1) {
+    return tokenized.flatMap((value) => expandCompactAttributeString(value));
+  }
+
+  return expandCompactAttributeString(trimmed);
+}
+
 function getCardUseTargetRequirements(card: CardRef): string[] {
   const code = getCardCode(card);
   const meta = CARD_META_BY_CODE[code];
   const useTarget = meta?.useTarget;
 
-  const expandCompactAttributeString = (rawValue: string): string[] => {
-    const compact = rawValue.replace(/[\s\+\＋,\/|，・\(\)\[\]\{\}]+/g, "");
-    if (!compact) return [];
-
-    const directMap: Record<string, string> = {
-      "日": "sun",
-      "일": "sun",
-      "月": "moon",
-      "월": "moon",
-      "花": "flower",
-      "화": "flower",
-      "雪": "snow",
-      "설": "snow",
-      "宙": "cosmos",
-      "주": "cosmos",
-      "無": "star",
-      "무": "star",
-    };
-
-    const chars = Array.from(compact);
-    const directExpanded: string[] = [];
-    let hasUnknownDirectChar = false;
-
-    for (const ch of chars) {
-      const mapped = directMap[ch];
-      if (!mapped) {
-        hasUnknownDirectChar = true;
-        break;
-      }
-      directExpanded.push(mapped);
-    }
-
-    if (!hasUnknownDirectChar && directExpanded.length > 0) {
-      return directExpanded;
-    }
-
-    const englishTokens = [
-      "flower",
-      "cosmos",
-      "space",
-      "moon",
-      "snow",
-      "star",
-      "none",
-      "sun",
-    ];
-
-    const lowered = compact.toLowerCase();
-    const englishExpanded: string[] = [];
-    let cursor = 0;
-    let hasUnknownEnglishChunk = false;
-
-    while (cursor < lowered.length) {
-      let matchedToken = "";
-
-      for (const token of englishTokens) {
-        if (lowered.startsWith(token, cursor)) {
-          matchedToken = token;
-          break;
-        }
-      }
-
-      if (!matchedToken) {
-        hasUnknownEnglishChunk = true;
-        break;
-      }
-
-      englishExpanded.push(normalizeAttributeValue(matchedToken));
-      cursor += matchedToken.length;
-    }
-
-    if (!hasUnknownEnglishChunk && englishExpanded.length > 0) {
-      return englishExpanded;
-    }
-
-    const parsed = Number(lowered);
-    if (Number.isFinite(parsed) && parsed > 0) {
-      return Array.from({ length: Math.trunc(parsed) }, () => "generic");
-    }
-
-    return [normalizeAttributeValue(rawValue)];
-  };
-
   if (Array.isArray(useTarget)) {
-    return useTarget.flatMap((value) => expandCompactAttributeString(String(value).trim()));
+    return useTarget.flatMap((value) => parseAttributeValues(value));
   }
 
-  if (typeof useTarget === "number") {
-    return useTarget > 0 ? Array.from({ length: useTarget }, () => "generic") : [];
-  }
-
-  if (typeof useTarget === "string") {
-    const trimmed = useTarget.trim();
-    if (!trimmed || trimmed === "0") return [];
-
-    const tokenized = trimmed
-      .split(/[\s\+\＋,\/|，・]+/)
-      .map((value) => value.trim())
-      .filter((value) => value.length > 0);
-
-    if (tokenized.length > 1) {
-      return tokenized.flatMap((value) => expandCompactAttributeString(value));
-    }
-
-    return expandCompactAttributeString(trimmed);
-  }
-
-  return [];
+  return parseAttributeValues(useTarget);
 }
 
 function getCardUseTargetRequirementMap(card: CardRef): Record<string, number> {
@@ -299,15 +291,13 @@ function getCardCostAttributeOptions(card: CardRef): string[] {
   const result: string[] = [];
 
   for (const rawValue of baseValues) {
-    if (typeof rawValue !== "string") continue;
-    const trimmed = rawValue.trim();
-    if (!trimmed) continue;
+    for (const parsedValue of parseAttributeValues(rawValue)) {
+      const normalized = normalizeAttributeValue(parsedValue);
+      if (!normalized || normalizedSeen.has(normalized)) continue;
 
-    const normalized = normalizeAttributeValue(trimmed);
-    if (normalizedSeen.has(normalized)) continue;
-
-    normalizedSeen.add(normalized);
-    result.push(trimmed);
+      normalizedSeen.add(normalized);
+      result.push(normalized);
+    }
   }
 
   return result;
