@@ -429,6 +429,14 @@ type HandCardActionMenuState =
     }
   | null;
 
+type FieldCardActionMenuState =
+  | {
+      playerId: PlayerID;
+      slot: FieldSlot;
+      cardId: string;
+    }
+  | null;
+
 type CostModalSource = "hand" | "deck" | "discard";
 
 type CostModalState =
@@ -957,6 +965,37 @@ function DeckPilePreview({
   );
 }
 
+
+function FieldCharacterActionOverlay({
+  card,
+  onClose,
+}: {
+  card: CardRef;
+  onClose: () => void;
+}) {
+  const isTapped = Boolean(card.isTapped);
+
+  return (
+    <div style={fieldCharacterActionOverlayStyle} data-deck-menu-keep="true">
+      <button type="button" style={cardActionButtonStyle} onClick={onClose}>
+        공격 선언
+      </button>
+      <button type="button" style={cardActionButtonStyle} onClick={onClose}>
+        {isTapped ? "미행동" : "행동 완료"}
+      </button>
+      <button type="button" style={cardActionButtonStyle} onClick={onClose}>
+        차지
+      </button>
+      <button type="button" style={cardActionButtonStyle} onClick={onClose}>
+        이동
+      </button>
+      <button type="button" style={cardActionCloseButtonStyle} onClick={onClose}>
+        닫기
+      </button>
+    </div>
+  );
+}
+
 type PlayerAreaProps = {
   label: string;
   playerId: PlayerID;
@@ -970,6 +1009,9 @@ type PlayerAreaProps = {
   onMoveHandCardToDeckTop: (playerId: PlayerID, cardId: string) => void;
   onMoveHandCardToDeckBottom: (playerId: PlayerID, cardId: string) => void;
   onCloseHandCardAction: () => void;
+  activeFieldCardAction: FieldCardActionMenuState;
+  onFieldCardClick: (playerId: PlayerID, slot: FieldSlot) => void;
+  onCloseFieldCardAction: () => void;
   onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
   onOpenPile: (
     kind: "discard" | "deck",
@@ -995,6 +1037,9 @@ function PlayerArea({
   onMoveHandCardToDeckTop,
   onMoveHandCardToDeckBottom,
   onCloseHandCardAction,
+  activeFieldCardAction,
+  onFieldCardClick,
+  onCloseFieldCardAction,
   onFieldClick,
   onOpenPile,
   onToggleDeckMenu,
@@ -1023,14 +1068,30 @@ function PlayerArea({
 
       <div style={fieldGridStyle}>
         {frontSlots.map((typedSlot) => {
-          const card = player.field[typedSlot].card;
+          const cell = player.field[typedSlot];
+          const card = cell.card;
+          const isActionOpen =
+            activeFieldCardAction?.playerId === playerId &&
+            activeFieldCardAction.slot === typedSlot &&
+            activeFieldCardAction.cardId === card?.instanceId;
+
           return (
-            <FieldSlotImage
+            <div
               key={`${playerId}-${typedSlot}`}
-              cell={player.field[typedSlot]}
-              slot={typedSlot}
-              onClick={() => onFieldClick(playerId, typedSlot)}
-            />
+              style={fieldSlotWrapStyle}
+              data-deck-menu-keep={isActionOpen ? "true" : undefined}
+            >
+              <FieldSlotImage
+                cell={cell}
+                slot={typedSlot}
+                onClick={() =>
+                  card ? onFieldCardClick(playerId, typedSlot) : onFieldClick(playerId, typedSlot)
+                }
+              />
+              {isActionOpen && card ? (
+                <FieldCharacterActionOverlay card={card} onClose={onCloseFieldCardAction} />
+              ) : null}
+            </div>
           );
         })}
 
@@ -1075,14 +1136,30 @@ function PlayerArea({
         )}
 
         {backSlots.map((typedSlot) => {
-          const card = player.field[typedSlot].card;
+          const cell = player.field[typedSlot];
+          const card = cell.card;
+          const isActionOpen =
+            activeFieldCardAction?.playerId === playerId &&
+            activeFieldCardAction.slot === typedSlot &&
+            activeFieldCardAction.cardId === card?.instanceId;
+
           return (
-            <FieldSlotImage
+            <div
               key={`${playerId}-${typedSlot}`}
-              cell={player.field[typedSlot]}
-              slot={typedSlot}
-              onClick={() => onFieldClick(playerId, typedSlot)}
-            />
+              style={fieldSlotWrapStyle}
+              data-deck-menu-keep={isActionOpen ? "true" : undefined}
+            >
+              <FieldSlotImage
+                cell={cell}
+                slot={typedSlot}
+                onClick={() =>
+                  card ? onFieldCardClick(playerId, typedSlot) : onFieldClick(playerId, typedSlot)
+                }
+              />
+              {isActionOpen && card ? (
+                <FieldCharacterActionOverlay card={card} onClose={onCloseFieldCardAction} />
+              ) : null}
+            </div>
           );
         })}
 
@@ -1525,6 +1602,7 @@ export default function PracticeBoard({
   const [deckMenuState, setDeckMenuState] = useState<DeckMenuState>(null);
   const [cardActionState, setCardActionState] = useState<CardActionMenuState>(null);
   const [handCardActionState, setHandCardActionState] = useState<HandCardActionMenuState>(null);
+  const [fieldCardActionState, setFieldCardActionState] = useState<FieldCardActionMenuState>(null);
   const [costModalState, setCostModalState] = useState<CostModalState>(null);
   const [recoverySelection, setRecoverySelection] = useState<string[]>([]);
   const [recoveryMode, setRecoveryMode] = useState(false);
@@ -1540,6 +1618,7 @@ export default function PracticeBoard({
       setDeckMenuState(null);
       setCardActionState(null);
       setHandCardActionState(null);
+      setFieldCardActionState(null);
     };
 
     window.addEventListener("mousedown", handleGlobalPointerDown);
@@ -1575,6 +1654,13 @@ export default function PracticeBoard({
     setHandCardActionState((prev) => {
       if (!prev) return prev;
       const stillExists = state.players[prev.playerId].hand.some((card) => card.instanceId === prev.cardId);
+      return stillExists ? prev : null;
+    });
+
+    setFieldCardActionState((prev) => {
+      if (!prev) return prev;
+      const cell = state.players[prev.playerId].field[prev.slot];
+      const stillExists = cell.card?.instanceId === prev.cardId;
       return stillExists ? prev : null;
     });
 
@@ -1730,6 +1816,25 @@ export default function PracticeBoard({
     });
   };
 
+  const handleFieldCardClick = (playerId: PlayerID, slot: FieldSlot) => {
+    const card = state.players[playerId].field[slot].card;
+    if (!card) {
+      setFieldCardActionState(null);
+      return;
+    }
+
+    setFieldCardActionState((prev) => {
+      if (prev?.playerId === playerId && prev.slot === slot && prev.cardId === card.instanceId) {
+        return null;
+      }
+      return { playerId, slot, cardId: card.instanceId };
+    });
+
+    setHandCardActionState(null);
+    setCardActionState(null);
+    setDeckMenuState(null);
+  };
+
   const discardCountForPrompt =
     randomRecoveryPrompt ? state.players[randomRecoveryPrompt.playerId].discard.length : 0;
 
@@ -1767,6 +1872,9 @@ export default function PracticeBoard({
             setHandCardActionState(null);
           }}
           onCloseHandCardAction={() => setHandCardActionState(null)}
+          activeFieldCardAction={fieldCardActionState}
+          onFieldCardClick={handleFieldCardClick}
+          onCloseFieldCardAction={() => setFieldCardActionState(null)}
           onFieldClick={onFieldClick}
           onOpenPile={(kind, playerId, label) => {
             setPileModalState({
@@ -1816,6 +1924,9 @@ export default function PracticeBoard({
             setHandCardActionState(null);
           }}
           onCloseHandCardAction={() => setHandCardActionState(null)}
+          activeFieldCardAction={fieldCardActionState}
+          onFieldCardClick={handleFieldCardClick}
+          onCloseFieldCardAction={() => setFieldCardActionState(null)}
           onFieldClick={onFieldClick}
           onOpenPile={(kind, playerId, label) => {
             setPileModalState({
@@ -2204,6 +2315,7 @@ const fieldMiniThumbWrapStyle: CSSProperties = {
   overflow: "hidden",
   border: "1px solid rgba(148, 163, 184, 0.82)",
   background: "rgba(15, 23, 36, 0.92)",
+  opacity: 0.88,
 };
 
 const fieldMiniThumbImageStyle: CSSProperties = {
@@ -2346,6 +2458,26 @@ const handGridStyle: CSSProperties = {
   gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
   gap: 10,
   marginTop: 8,
+};
+
+const fieldSlotWrapStyle: CSSProperties = {
+  position: "relative",
+  width: 138,
+  height: 188,
+};
+
+const fieldCharacterActionOverlayStyle: CSSProperties = {
+  position: "absolute",
+  inset: 0,
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  gap: 6,
+  padding: 10,
+  borderRadius: 10,
+  background: "rgba(15, 23, 36, 0.68)",
+  backdropFilter: "blur(1px)",
+  zIndex: 5,
 };
 
 const cardImageButtonStyle: CSSProperties = {
