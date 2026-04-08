@@ -29,6 +29,24 @@ function getCardLabel(card: CardRef): string {
   }`;
 }
 
+function getFieldCellLabel(cell: GameState["players"]["P1"]["field"][FieldSlot]): string {
+  const lines: string[] = [];
+
+  if (cell.card) {
+    lines.push(`캐릭터: ${getCardLabel(cell.card)}`);
+  }
+
+  if (cell.attachedItem) {
+    lines.push(`아이템: ${cell.attachedItem.name}`);
+  }
+
+  if (cell.area) {
+    lines.push(`에리어: ${cell.area.name}`);
+  }
+
+  return lines.length > 0 ? lines.join("\n") : "비어 있음";
+}
+
 function getCardCodeCandidates(card: CardRef): string[] {
   const rawValues = [
     card.cardNo,
@@ -573,6 +591,7 @@ function CostPaymentModal({
   onChoosePendingAttribute,
   onCancelPendingAttributeSelection,
   onConfirm,
+  onFreeConfirm,
   onCancel,
 }: {
   state: CostModalState;
@@ -581,6 +600,7 @@ function CostPaymentModal({
   onChoosePendingAttribute: (value: string) => void;
   onCancelPendingAttributeSelection: () => void;
   onConfirm: () => void;
+  onFreeConfirm: () => void;
   onCancel: () => void;
 }) {
   if (!state) return null;
@@ -754,13 +774,16 @@ function CostPaymentModal({
             </div>
           </div>
           <div style={costFooterButtonsStyle}>
+            <button type="button" style={freeConfirmButtonStyle} onClick={onFreeConfirm}>
+              무료 {getPrimaryActionLabel(actionCard)}
+            </button>
             <button
               type="button"
               style={canConfirm ? confirmButtonStyle : disabledConfirmButtonStyle}
               onClick={onConfirm}
               disabled={!canConfirm}
             >
-              확인
+              {getPrimaryActionLabel(actionCard)}
             </button>
             <button type="button" style={modalCloseButtonStyle} onClick={onCancel}>
               취소
@@ -847,7 +870,7 @@ function PlayerArea({
               onClick={() => onFieldClick(playerId, typedSlot)}
             >
               <div style={slotTitleStyle}>{typedSlot}</div>
-              <div style={slotBodyStyle}>{card ? getCardLabel(card) : "비어 있음"}</div>
+              <div style={slotBodyStyle}>{getFieldCellLabel(player.field[typedSlot])}</div>
             </button>
           );
         })}
@@ -907,7 +930,7 @@ function PlayerArea({
               onClick={() => onFieldClick(playerId, typedSlot)}
             >
               <div style={slotTitleStyle}>{typedSlot}</div>
-              <div style={slotBodyStyle}>{card ? getCardLabel(card) : "비어 있음"}</div>
+              <div style={slotBodyStyle}>{getFieldCellLabel(player.field[typedSlot])}</div>
             </button>
           );
         })}
@@ -1823,6 +1846,47 @@ export default function PracticeBoard({
 
           setCostModalState(null);
         }}
+        onFreeConfirm={() => {
+          if (!costModalState) return;
+          const actionCard = findSourceCard(
+            state,
+            costModalState.playerId,
+            costModalState.source,
+            costModalState.cardId,
+          );
+          if (!actionCard) return;
+
+          const costCardIds: string[] = [];
+
+          if (costModalState.source === "hand") {
+            onHandPrimaryAction?.(costModalState.playerId, actionCard, costCardIds);
+          } else if (actionCard.cardType === "character") {
+            if (onPileCharacterDeclareAction) {
+              onPileCharacterDeclareAction(
+                costModalState.playerId,
+                actionCard,
+                costModalState.source,
+                costCardIds,
+              );
+            } else {
+              onPrimaryCardAction?.(
+                costModalState.playerId,
+                actionCard,
+                costModalState.source,
+                costCardIds,
+              );
+            }
+          } else {
+            onPrimaryCardAction?.(
+              costModalState.playerId,
+              actionCard,
+              costModalState.source,
+              costCardIds,
+            );
+          }
+
+          setCostModalState(null);
+        }}
         onCancel={() => setCostModalState(null)}
       />
 
@@ -1896,8 +1960,10 @@ const slotTitleStyle: CSSProperties = {
 
 const slotBodyStyle: CSSProperties = {
   fontSize: 13,
-  lineHeight: 1.4,
+  lineHeight: 1.45,
   color: "#d9e2f2",
+  whiteSpace: "pre-wrap",
+  wordBreak: "break-word",
 };
 
 const slotButtonStyle: CSSProperties = {
@@ -2308,6 +2374,16 @@ const modalCloseButtonStyle: CSSProperties = {
   padding: "10px 14px",
   cursor: "pointer",
   fontWeight: 700,
+};
+
+const freeConfirmButtonStyle: CSSProperties = {
+  background: "#0f766e",
+  color: "#ffffff",
+  border: "1px solid #5eead4",
+  borderRadius: 10,
+  padding: "10px 14px",
+  cursor: "pointer",
+  fontWeight: 800,
 };
 
 const recoveryToggleButtonStyle: CSSProperties = {
