@@ -58,7 +58,11 @@ export type DeclarationKind =
   | "useHandAbility"
   | "attack"
   | "support"
-  | "pass";
+  | "pass"
+  | "tapCharacter"
+  | "untapCharacter"
+  | "chargeCharacter"
+  | "moveCharacter";
 
 export type BasicAbilityKeyword =
   | "step"
@@ -92,18 +96,15 @@ export interface CardRef {
   effectTypes?: EffectType[];
   sameNameKey?: string;
 
-  // 최소 엔진 구동용 확장 필드
   isLeader?: boolean;
   isTapped?: boolean;
   canAttack?: boolean;
   canBlock?: boolean;
 
-  // Lycee 전투 스탯
   ap?: number;
   dp?: number;
   dmg?: number;
 
-  // 기존 테스트/임시 데이터와의 호환용 필드
   power?: number;
   damage?: number;
   hp?: number;
@@ -111,6 +112,7 @@ export interface CardRef {
   location?: Zone;
   slot?: FieldSlot;
   revealed?: boolean;
+  chargeCards?: CardRef[];
 }
 
 export interface FieldCell {
@@ -183,8 +185,6 @@ export interface StartupState {
   leaderEnabled: boolean;
   mulliganUsed: Record<PlayerID, boolean>;
   startupFinished: boolean;
-
-  // 최소 엔진용 추가
   keepDecided: Record<PlayerID, boolean>;
   leaderRevealed: Record<PlayerID, string | null>;
   rerollCount: number;
@@ -196,8 +196,6 @@ export interface TurnState {
   phase: Phase;
   priorityPlayer: PlayerID;
   passedInRow: number;
-
-  // 첫 턴 선공 1드로우 / 이후 2드로우 처리 보조
   firstPlayerDrawFixed: boolean;
 }
 
@@ -262,8 +260,6 @@ export interface GameState {
   replayEvents: ReplayEvent[];
   rulingOverrides: RulingOverride[];
   winner: PlayerID | null;
-
-  // 디버깅/테스트용
   seed?: number;
   lastResolvedDeclarationId?: string;
 }

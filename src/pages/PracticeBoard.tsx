@@ -277,18 +277,21 @@ function attachItemToCharacter(
   slot: FieldSlot,
   card: CardRef,
 ): boolean {
-  const cell = next.players[playerId].field[slot] as any;
+  const cell = next.players[playerId].field[slot];
   if (!cell.card) {
     next.logs.push(`[ZONE] ${playerId} 장비 실패: 해당 칸에 캐릭터가 없음`);
     return false;
   }
 
-  cell.attachedItems = Array.isArray(cell.attachedItems) ? cell.attachedItems : [];
+  if (cell.attachedItem) {
+    next.logs.push(`[ZONE] ${playerId} 장비 실패: 해당 캐릭터에는 이미 아이템이 있음`);
+    return false;
+  }
+
   card.location = "field";
   card.slot = slot;
   card.revealed = true;
-  cell.attachedItems.push(card);
-  cell.attachedItem = cell.attachedItems[0] ?? null;
+  cell.attachedItem = card;
   return true;
 }
 
@@ -299,7 +302,7 @@ function hasOpenAreaSlot(state: GameState, playerId: PlayerID): boolean {
 function hasEquipableCharacterSlot(state: GameState, playerId: PlayerID): boolean {
   return ALL_SLOTS.some((slot) => {
     const cell = state.players[playerId].field[slot];
-    return Boolean(cell.card);
+    return Boolean(cell.card) && !cell.attachedItem;
   });
 }
 
@@ -368,6 +371,9 @@ export default function PracticeBoard() {
   const [state, setState] = useState<GameState>(() => createPracticeState());
   const [perspective, setPerspective] = useState<PlayerID>("P1");
   const [placementMode, setPlacementMode] = useState<PlacementMode>(null);
+  const [moveMode, setMoveMode] = useState<{ playerId: PlayerID; cardId: string } | null>(null);
+  const [chargePromptState, setChargePromptState] = useState<{ playerId: PlayerID; cardId: string; deckCount: number; discardCount: number } | null>(null);
+  const [chargeDiscardSelectionState, setChargeDiscardSelectionState] = useState<{ playerId: PlayerID; cardId: string; deckCount: number; discardCount: number; selectedIds: string[] } | null>(null);
   const initialStateRef = useRef<GameState>(structuredClone(state));
   const savedWinnerRef = useRef<PlayerID | null>(null);
 
@@ -754,6 +760,73 @@ export default function PracticeBoard() {
     });
   }
 
+
+  function handleFieldCharacterAction(
+    playerId: PlayerID,
+    slot: FieldSlot,
+    actionKind: "attack" | "tap" | "untap" | "charge" | "move",
+  ) {
+    const card = state.players[playerId].field[slot].card;
+
+    if (moveMode?.playerId === playerId) {
+      if (state.players[playerId].field[slot].card) return;
+      dispatch({
+        type: "DECLARE_ACTION",
+        playerId,
+        kind: "moveCharacter",
+        sourceCardId: moveMode.cardId,
+        targetSlots: [slot],
+        targetingMode: "declareTime",
+      });
+      setMoveMode(null);
+      return;
+    }
+
+    if (!card) return;
+
+    if (actionKind === "attack") {
+      if (pendingDeclaration) return;
+      if (state.turn.priorityPlayer !== playerId) return;
+
+      setState((prev) => {
+        const next = structuredClone(prev) as GameState;
+        const current = next.players[playerId].field[slot].card;
+        if (current) current.isTapped = true;
+        return reduceGameState(next, {
+          type: "DECLARE_ACTION",
+          playerId,
+          kind: "attack",
+          sourceCardId: card.instanceId,
+        });
+      });
+      return;
+    }
+
+    if (actionKind === "tap" || actionKind === "untap") {
+      dispatch({
+        type: "DECLARE_ACTION",
+        playerId,
+        kind: actionKind === "tap" ? "tapCharacter" : "untapCharacter",
+        sourceCardId: card.instanceId,
+      });
+      return;
+    }
+
+    if (actionKind === "move") {
+      setMoveMode({ playerId, cardId: card.instanceId });
+      return;
+    }
+
+    if (actionKind === "charge") {
+      setChargePromptState({
+        playerId,
+        cardId: card.instanceId,
+        deckCount: 0,
+        discardCount: 0,
+      });
+    }
+  }
+
   function handleFieldClick(playerId: PlayerID, slot: FieldSlot) {
     const cell = state.players[playerId].field[slot];
     const card = cell.card;
@@ -877,54 +950,63 @@ export default function PracticeBoard() {
     }
 
     if (placementMode?.type === "hand_item_to_field" && placementMode.playerId === playerId) {
-      if (!cell.card) return;
+      if (!cell.card || cell.attachedItem) return;
 
       setState((prev) => {
         const next = structuredClone(prev) as GameState;
+        const player = next.players[playerId];
+        const index = player.hand.findIndex((item) => item.instanceId === placementMode.cardId);
+
+        if (index < 0) {
+          next.logs.push(`[HAND] ${playerId} 손패 장비 실패: 카드를 찾지 못함 (${placementMode.cardId})`);
+          return next;
+        }
+
         payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-        return reduceGameState(next, {
-          type: "DECLARE_ACTION",
-          playerId,
-          kind: "useItem",
-          sourceCardId: placementMode.cardId,
-          targetSlots: [slot],
-          targetingMode: "declareTime",
-        });
+
+        const [removed] = player.hand.splice(index, 1);
+        if (!removed) return next;
+
+        if (!attachItemToCharacter(next, playerId, slot, removed)) {
+          player.hand.splice(index, 0, removed);
+          return next;
+        }
+
+        next.logs.push(`[HAND] ${playerId} 손패 장비 -> ${slot}: ${removed.name}`);
+        return next;
       });
       setPlacementMode(null);
       return;
     }
 
     if (placementMode?.type === "pile_item_to_field" && placementMode.playerId === playerId) {
-      if (!cell.card) return;
+      if (!cell.card || cell.attachedItem) return;
 
       setState((prev) => {
         const next = structuredClone(prev) as GameState;
         const player = next.players[playerId];
         const sourcePile = placementMode.source === "deck" ? player.deck : player.discard;
-        const sourceCard = sourcePile.find((item) => item.instanceId === placementMode.cardId);
+        const sourceIndex = sourcePile.findIndex((item) => item.instanceId === placementMode.cardId);
 
-        if (!sourceCard) {
+        if (sourceIndex < 0) {
           next.logs.push(
-            `[PILE_ITEM] ${playerId} ${placementMode.source} 장비 선언 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
+            `[PILE_ITEM] ${playerId} ${placementMode.source} 장비 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
           );
           return next;
         }
 
         payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
 
-        next.logs.push(`[PILE_ITEM] ${playerId} ${placementMode.source} 장비 선언 준비 -> ${slot}: ${sourceCard.name}`);
-        return reduceGameState(next, {
-          type: "DECLARE_ACTION",
-          playerId,
-          kind: "useItem",
-          sourceCardId: placementMode.cardId,
-          targetSlots: [slot],
-          targetingMode: "declareTime",
-          payload: {
-            sourceZone: placementMode.source,
-          },
-        });
+        const [removed] = sourcePile.splice(sourceIndex, 1);
+        if (!removed) return next;
+
+        if (!attachItemToCharacter(next, playerId, slot, removed)) {
+          sourcePile.splice(sourceIndex, 0, removed);
+          return next;
+        }
+
+        next.logs.push(`[PILE_ITEM] ${playerId} ${placementMode.source} 장비 -> ${slot}: ${removed.name}`);
+        return next;
       });
       setPlacementMode(null);
       return;
@@ -1035,6 +1117,12 @@ export default function PracticeBoard() {
           </div>
         ) : null}
 
+        {moveMode ? (
+          <div style={noticeStyle}>
+            이동 선언 대기 중: {moveMode.playerId} / 카드 {moveMode.cardId} / 이동할 자신의 빈 필드 칸을 클릭
+          </div>
+        ) : null}
+
         {pendingDeclaration ? (
           <div style={noticeStyle}>
             선언 스택 존재: {pendingSummary}
@@ -1058,7 +1146,168 @@ export default function PracticeBoard() {
           onPrimaryCardAction={handlePrimaryCardAction}
           onMoveCardToHand={handleMoveCardToHand}
           onRecoverCardsToDeckBottom={handleRecoverCardsToDeckBottom}
+          onFieldCharacterAction={handleFieldCharacterAction}
         />
+
+
+        {chargePromptState ? (
+          <div style={noticeStyle}>
+            어느 곳에서 차지하시겠습니까?
+            <div style={{ display: "flex", gap: 12, alignItems: "center", marginTop: 8, flexWrap: "wrap" }}>
+              <span>덱</span>
+              <button
+                type="button"
+                style={secondaryButtonStyle}
+                onClick={() =>
+                  setChargePromptState((prev) =>
+                    prev ? { ...prev, deckCount: Math.max(0, prev.deckCount - 1) } : prev,
+                  )
+                }
+              >
+                -
+              </button>
+              <span>{chargePromptState.deckCount}</span>
+              <button
+                type="button"
+                style={secondaryButtonStyle}
+                onClick={() =>
+                  setChargePromptState((prev) =>
+                    prev ? { ...prev, deckCount: prev.deckCount + 1 } : prev,
+                  )
+                }
+              >
+                +
+              </button>
+              <span>쓰레기통</span>
+              <button
+                type="button"
+                style={secondaryButtonStyle}
+                onClick={() =>
+                  setChargePromptState((prev) =>
+                    prev ? { ...prev, discardCount: Math.max(0, prev.discardCount - 1) } : prev,
+                  )
+                }
+              >
+                -
+              </button>
+              <span>{chargePromptState.discardCount}</span>
+              <button
+                type="button"
+                style={secondaryButtonStyle}
+                onClick={() =>
+                  setChargePromptState((prev) =>
+                    prev ? { ...prev, discardCount: prev.discardCount + 1 } : prev,
+                  )
+                }
+              >
+                +
+              </button>
+            </div>
+            <div style={{ display: "flex", justifyContent: "flex-end", gap: 10, marginTop: 10 }}>
+              <button
+                type="button"
+                style={primaryButtonStyle}
+                onClick={() => {
+                  if (chargePromptState.discardCount > 0) {
+                    setChargeDiscardSelectionState({
+                      playerId: chargePromptState.playerId,
+                      cardId: chargePromptState.cardId,
+                      deckCount: chargePromptState.deckCount,
+                      discardCount: chargePromptState.discardCount,
+                      selectedIds: [],
+                    });
+                    setChargePromptState(null);
+                    return;
+                  }
+
+                  dispatch({
+                    type: "DECLARE_ACTION",
+                    playerId: chargePromptState.playerId,
+                    kind: "chargeCharacter",
+                    sourceCardId: chargePromptState.cardId,
+                    payload: {
+                      deckCount: chargePromptState.deckCount,
+                      discardCardIds: [],
+                    },
+                  });
+                  setChargePromptState(null);
+                }}
+              >
+                확인
+              </button>
+              <button type="button" style={secondaryButtonStyle} onClick={() => setChargePromptState(null)}>
+                취소
+              </button>
+            </div>
+          </div>
+        ) : null}
+
+        {chargeDiscardSelectionState ? (
+          <div style={noticeStyle}>
+            차지할 카드를 n장 골라주세요
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: 10, marginTop: 10 }}>
+              {state.players[chargeDiscardSelectionState.playerId].discard.map((discardCard) => {
+                const selected = chargeDiscardSelectionState.selectedIds.includes(discardCard.instanceId);
+                return (
+                  <button
+                    key={discardCard.instanceId}
+                    type="button"
+                    style={{
+                      ...secondaryButtonStyle,
+                      background: selected ? "#4a7cff" : "#24324a",
+                    }}
+                    onClick={() =>
+                      setChargeDiscardSelectionState((prev) => {
+                        if (!prev) return prev;
+                        const exists = prev.selectedIds.includes(discardCard.instanceId);
+                        if (exists) {
+                          return {
+                            ...prev,
+                            selectedIds: prev.selectedIds.filter((id) => id !== discardCard.instanceId),
+                          };
+                        }
+                        if (prev.selectedIds.length >= prev.discardCount) return prev;
+                        return {
+                          ...prev,
+                          selectedIds: [...prev.selectedIds, discardCard.instanceId],
+                        };
+                      })
+                    }
+                  >
+                    {discardCard.name}
+                  </button>
+                );
+              })}
+            </div>
+            <div style={{ display: "flex", justifyContent: "flex-end", gap: 10, marginTop: 10 }}>
+              <button
+                type="button"
+                style={primaryButtonStyle}
+                onClick={() => {
+                  if (!chargeDiscardSelectionState) return;
+                  if (chargeDiscardSelectionState.selectedIds.length !== chargeDiscardSelectionState.discardCount) return;
+
+                  dispatch({
+                    type: "DECLARE_ACTION",
+                    playerId: chargeDiscardSelectionState.playerId,
+                    kind: "chargeCharacter",
+                    sourceCardId: chargeDiscardSelectionState.cardId,
+                    payload: {
+                      deckCount: chargeDiscardSelectionState.deckCount,
+                      discardCardIds: chargeDiscardSelectionState.selectedIds,
+                    },
+                  });
+                  setChargeDiscardSelectionState(null);
+                }}
+              >
+                확인
+              </button>
+              <button type="button" style={secondaryButtonStyle} onClick={() => setChargeDiscardSelectionState(null)}>
+                취소
+              </button>
+            </div>
+          </div>
+        ) : null}
 
         <div style={logGridStyle}>
           <div style={panelStyle}>

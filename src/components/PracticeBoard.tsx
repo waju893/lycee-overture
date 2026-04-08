@@ -969,24 +969,26 @@ function DeckPilePreview({
 function FieldCharacterActionOverlay({
   card,
   onClose,
+  onAction,
 }: {
   card: CardRef;
   onClose: () => void;
+  onAction: (action: "attack" | "tap" | "untap" | "charge" | "move") => void;
 }) {
   const isTapped = Boolean(card.isTapped);
 
   return (
     <div style={fieldCharacterActionOverlayStyle} data-deck-menu-keep="true">
-      <button type="button" style={cardActionButtonStyle} onClick={onClose}>
+      <button type="button" style={cardActionButtonStyle} onClick={() => onAction("attack")}>
         공격 선언
       </button>
-      <button type="button" style={cardActionButtonStyle} onClick={onClose}>
+      <button type="button" style={cardActionButtonStyle} onClick={() => onAction(isTapped ? "untap" : "tap")}>
         {isTapped ? "미행동" : "행동 완료"}
       </button>
-      <button type="button" style={cardActionButtonStyle} onClick={onClose}>
+      <button type="button" style={cardActionButtonStyle} onClick={() => onAction("charge")}>
         차지
       </button>
-      <button type="button" style={cardActionButtonStyle} onClick={onClose}>
+      <button type="button" style={cardActionButtonStyle} onClick={() => onAction("move")}>
         이동
       </button>
       <button type="button" style={cardActionCloseButtonStyle} onClick={onClose}>
@@ -1012,6 +1014,11 @@ type PlayerAreaProps = {
   activeFieldCardAction: FieldCardActionMenuState;
   onFieldCardClick: (playerId: PlayerID, slot: FieldSlot) => void;
   onCloseFieldCardAction: () => void;
+  onFieldCharacterAction: (
+    playerId: PlayerID,
+    slot: FieldSlot,
+    action: "attack" | "tap" | "untap" | "charge" | "move",
+  ) => void;
   onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
   onOpenPile: (
     kind: "discard" | "deck",
@@ -1040,6 +1047,7 @@ function PlayerArea({
   activeFieldCardAction,
   onFieldCardClick,
   onCloseFieldCardAction,
+  onFieldCharacterAction,
   onFieldClick,
   onOpenPile,
   onToggleDeckMenu,
@@ -1089,7 +1097,11 @@ function PlayerArea({
                 }
               />
               {isActionOpen && card ? (
-                <FieldCharacterActionOverlay card={card} onClose={onCloseFieldCardAction} />
+                <FieldCharacterActionOverlay
+                  card={card}
+                  onClose={onCloseFieldCardAction}
+                  onAction={(action) => onFieldCharacterAction(playerId, typedSlot, action)}
+                />
               ) : null}
             </div>
           );
@@ -1157,7 +1169,11 @@ function PlayerArea({
                 }
               />
               {isActionOpen && card ? (
-                <FieldCharacterActionOverlay card={card} onClose={onCloseFieldCardAction} />
+                <FieldCharacterActionOverlay
+                  card={card}
+                  onClose={onCloseFieldCardAction}
+                  onAction={(action) => onFieldCharacterAction(playerId, typedSlot, action)}
+                />
               ) : null}
             </div>
           );
@@ -1579,6 +1595,11 @@ interface PracticeBoardProps {
   ) => void;
   onMoveCardToHand?: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
   onRecoverCardsToDeckBottom?: (playerId: PlayerID, cardIdsInOrder: string[]) => void;
+  onFieldCharacterAction?: (
+    playerId: PlayerID,
+    slot: FieldSlot,
+    action: "attack" | "tap" | "untap" | "charge" | "move",
+  ) => void;
 }
 
 export default function PracticeBoard({
@@ -1596,6 +1617,7 @@ export default function PracticeBoard({
   onPileCharacterDeclareAction,
   onMoveCardToHand,
   onRecoverCardsToDeckBottom,
+  onFieldCharacterAction,
 }: PracticeBoardProps) {
   const opponent = perspective === "P1" ? "P2" : "P1";
   const [pileModalState, setPileModalState] = useState<CardPileModalState>(null);
@@ -1875,6 +1897,7 @@ export default function PracticeBoard({
           activeFieldCardAction={fieldCardActionState}
           onFieldCardClick={handleFieldCardClick}
           onCloseFieldCardAction={() => setFieldCardActionState(null)}
+          onFieldCharacterAction={onFieldCharacterAction ?? (() => undefined)}
           onFieldClick={onFieldClick}
           onOpenPile={(kind, playerId, label) => {
             setPileModalState({
@@ -1927,6 +1950,7 @@ export default function PracticeBoard({
           activeFieldCardAction={fieldCardActionState}
           onFieldCardClick={handleFieldCardClick}
           onCloseFieldCardAction={() => setFieldCardActionState(null)}
+          onFieldCharacterAction={onFieldCharacterAction ?? (() => undefined)}
           onFieldClick={onFieldClick}
           onOpenPile={(kind, playerId, label) => {
             setPileModalState({

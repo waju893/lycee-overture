@@ -33,6 +33,9 @@ import {
   validateAreaPlace,
   validateAttackDeclaration,
   validateCharacterEntry,
+  validateChargeCharacter,
+  validateMoveCharacter,
+  validateTapUntapCharacter,
   validateDefenderSelection,
   validateItemEquip,
   validateKeepOrMulligan,
@@ -81,7 +84,6 @@ function cloneFieldCell(cell: FieldCell): FieldCell {
     ...cell,
     card: cell.card ? cloneCard(cell.card) : null,
     attachedItem: cell.attachedItem ? cloneCard(cell.attachedItem) : null,
-    attachedItems: ((cell as any).attachedItems ?? []).map(cloneCard),
     area: cell.area ? cloneCard(cell.area) : null,
   };
 }
@@ -325,36 +327,9 @@ function handleDeclareAction(next: GameState, action: Extract<GameAction, { type
     if (!action.sourceCardId) { logViolations(next, fail("장비 선언 카드가 필요합니다.", "CARD_REQUIRED", action.playerId)); return; }
     const slot = action.targetSlots?.[0];
     if (!slot) { logViolations(next, fail("장비 대상 위치가 필요합니다.", "TARGET_SLOT_REQUIRED", action.playerId)); return; }
-
-    const sourceZone = action.payload?.sourceZone;
-    const card =
-      sourceZone === "deck"
-        ? next.players[action.playerId].deck.find((c) => c.instanceId === action.sourceCardId)
-        : sourceZone === "discard"
-          ? next.players[action.playerId].discard.find((c) => c.instanceId === action.sourceCardId)
-          : next.players[action.playerId].hand.find((c) => c.instanceId === action.sourceCardId);
-
-    if (!card) {
-      logViolations(
-        next,
-        fail(
-          sourceZone === "deck"
-            ? "덱에 해당 카드가 없습니다."
-            : sourceZone === "discard"
-              ? "쓰레기통에 해당 카드가 없습니다."
-              : "손패에 해당 카드가 없습니다.",
-          sourceZone === "deck"
-            ? "CARD_NOT_IN_DECK"
-            : sourceZone === "discard"
-              ? "CARD_NOT_IN_DISCARD"
-              : "CARD_NOT_IN_HAND",
-          action.playerId,
-        ),
-      );
-      return;
-    }
-
-    const violations = validateItemEquip(next, action.playerId, card, slot, sourceZone);
+    const card = next.players[action.playerId].hand.find((c) => c.instanceId === action.sourceCardId);
+    if (!card) { logViolations(next, fail("손패에 해당 카드가 없습니다.", "CARD_NOT_IN_HAND", action.playerId)); return; }
+    const violations = validateItemEquip(next, action.playerId, card, slot);
     if (violations.length > 0) { logViolations(next, violations); return; }
     next.declarationStack.push(createDeclaration({
       id: nextDeclarationId(next), playerId: action.playerId, kind: "useItem",
@@ -368,7 +343,113 @@ function handleDeclareAction(next: GameState, action: Extract<GameAction, { type
     return;
   }
 
-  if (action.kind === "attack") {
+
+if (action.kind === "tapCharacter" || action.kind === "untapCharacter") {
+  if (!action.sourceCardId) {
+    logViolations(next, fail("대상 캐릭터가 필요합니다.", "CARD_REQUIRED", action.playerId));
+    return;
+  }
+
+  const violations = validateTapUntapCharacter(next, action.playerId, action.sourceCardId);
+  if (violations.length > 0) {
+    logViolations(next, violations);
+    return;
+  }
+
+  const declaration = createDeclaration({
+    id: nextDeclarationId(next),
+    playerId: action.playerId,
+    kind: action.kind,
+    sourceCardId: action.sourceCardId,
+    sourceEffectId: action.sourceEffectId,
+    targetingMode: action.targetingMode ?? "none",
+    declaredTargets: createDeclaredTargets({}),
+    payload: action.payload,
+    responseToDeclarationId: action.responseToDeclarationId,
+  });
+
+  next.declarationStack.push(declaration);
+  next.turn.priorityPlayer = getOpponent(action.playerId);
+  resetPassState(next);
+  next.logs.push(`[DECLARE] ${action.playerId} ${action.kind === "tapCharacter" ? "행동 완료" : "미행동"} 선언: ${action.sourceCardId}`);
+  return;
+}
+
+if (action.kind === "moveCharacter") {
+  if (!action.sourceCardId) {
+    logViolations(next, fail("이동 대상 캐릭터가 필요합니다.", "CARD_REQUIRED", action.playerId));
+    return;
+  }
+
+  const slot = action.targetSlots?.[0];
+  if (!slot) {
+    logViolations(next, fail("이동 위치가 필요합니다.", "TARGET_SLOT_REQUIRED", action.playerId));
+    return;
+  }
+
+  const violations = validateMoveCharacter(next, action.playerId, action.sourceCardId, slot);
+  if (violations.length > 0) {
+    logViolations(next, violations);
+    return;
+  }
+
+  const declaration = createDeclaration({
+    id: nextDeclarationId(next),
+    playerId: action.playerId,
+    kind: "moveCharacter",
+    sourceCardId: action.sourceCardId,
+    sourceEffectId: action.sourceEffectId,
+    targetingMode: action.targetingMode ?? "declareTime",
+    declaredTargets: createDeclaredTargets({ targetSlots: [slot] }),
+    payload: action.payload,
+    responseToDeclarationId: action.responseToDeclarationId,
+  });
+
+  next.declarationStack.push(declaration);
+  next.turn.priorityPlayer = getOpponent(action.playerId);
+  resetPassState(next);
+  next.logs.push(`[DECLARE] ${action.playerId} 이동 선언: ${action.sourceCardId} -> ${slot}`);
+  return;
+}
+
+if (action.kind === "chargeCharacter") {
+  if (!action.sourceCardId) {
+    logViolations(next, fail("차지 대상 캐릭터가 필요합니다.", "CARD_REQUIRED", action.playerId));
+    return;
+  }
+
+  const deckCount = Math.max(0, Math.trunc(Number(action.payload?.deckCount ?? 0)));
+  const discardCardIds = Array.isArray(action.payload?.discardCardIds)
+    ? action.payload!.discardCardIds.filter((value): value is string => typeof value === "string")
+    : [];
+
+  const violations = validateChargeCharacter(next, action.playerId, action.sourceCardId, deckCount, discardCardIds);
+  if (violations.length > 0) {
+    logViolations(next, violations);
+    return;
+  }
+
+  const declaration = createDeclaration({
+    id: nextDeclarationId(next),
+    playerId: action.playerId,
+    kind: "chargeCharacter",
+    sourceCardId: action.sourceCardId,
+    sourceEffectId: action.sourceEffectId,
+    targetingMode: action.targetingMode ?? "none",
+    declaredTargets: createDeclaredTargets({}),
+    payload: action.payload,
+    responseToDeclarationId: action.responseToDeclarationId,
+  });
+
+  next.declarationStack.push(declaration);
+  next.turn.priorityPlayer = getOpponent(action.playerId);
+  resetPassState(next);
+  next.logs.push(`[DECLARE] ${action.playerId} 차지 선언: ${action.sourceCardId} / deck=${deckCount} discard=${discardCardIds.length}`);
+  return;
+}
+
+if (action.kind === "attack") {
+
     if (!action.sourceCardId) { logViolations(next, fail("공격 캐릭터가 필요합니다.", "ATTACKER_REQUIRED", action.playerId)); return; }
     const violations = validateAttackDeclaration(next, action.playerId, action.sourceCardId);
     if (violations.length > 0) { logViolations(next, violations); return; }
