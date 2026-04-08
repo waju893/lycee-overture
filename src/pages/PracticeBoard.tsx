@@ -848,9 +848,9 @@ export default function PracticeBoard() {
         const next = structuredClone(prev) as GameState;
         const player = next.players[playerId];
         const sourcePile = placementMode.source === "deck" ? player.deck : player.discard;
-        const sourceIndex = sourcePile.findIndex((item) => item.instanceId === placementMode.cardId);
+        const sourceCard = sourcePile.find((item) => item.instanceId === placementMode.cardId);
 
-        if (sourceIndex < 0) {
+        if (!sourceCard) {
           next.logs.push(
             `[PILE_DECLARE] ${playerId} ${placementMode.source} 에리어 선언 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
           );
@@ -858,13 +858,6 @@ export default function PracticeBoard() {
         }
 
         payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-
-        const [sourceCard] = sourcePile.splice(sourceIndex, 1);
-        if (!sourceCard) return next;
-
-        sourceCard.location = "hand";
-        sourceCard.revealed = false;
-        player.hand.push(sourceCard);
 
         next.logs.push(
           `[PILE_DECLARE] ${playerId} ${placementMode.source} 에리어 배치 선언 준비: ${sourceCard.name} / 대상 슬롯 ${slot}`,
@@ -877,6 +870,9 @@ export default function PracticeBoard() {
           sourceCardId: placementMode.cardId,
           targetSlots: [slot],
           targetingMode: "declareTime",
+          payload: {
+            sourceZone: placementMode.source,
+          },
         });
       });
       setPlacementMode(null);

@@ -318,13 +318,52 @@ export function validateItemEquip(state: GameState, playerId: PlayerID, card: Ca
   return violations;
 }
 
-export function validateAreaPlace(state: GameState, playerId: PlayerID, card: CardRef, slot: FieldSlot): RuleViolation[] {
+export function validateAreaPlace(
+  state: GameState,
+  playerId: PlayerID,
+  card: CardRef,
+  slot: FieldSlot,
+  sourceZone: "hand" | "deck" | "discard" = "hand",
+): RuleViolation[] {
   const violations: RuleViolation[] = [];
   const field = state.players[playerId].field[slot];
-  if (state.turn.activePlayer !== playerId || state.turn.phase !== "main") violations.push(fail("에리어 배치는 자기 메인페이즈에만 가능합니다.", "TIMING_INVALID")[0]);
-  if (card.cardType !== "area") violations.push(fail("에리어 카드만 배치 선언할 수 있습니다.", "CARD_TYPE_INVALID")[0]);
-  if (field.area) violations.push(fail("해당 필드에는 이미 에리어가 있습니다.", "AREA_LIMIT")[0]);
-  if (!state.players[playerId].hand.some((c) => c.instanceId === card.instanceId)) violations.push(fail("손패에 있는 카드만 배치 선언할 수 있습니다.", "CARD_NOT_IN_HAND")[0]);
+
+  if (state.turn.activePlayer !== playerId || state.turn.phase !== "main") {
+    violations.push(fail("에리어 배치는 자기 메인페이즈에만 가능합니다.", "TIMING_INVALID")[0]);
+  }
+
+  if (card.cardType !== "area") {
+    violations.push(fail("에리어 카드만 배치 선언할 수 있습니다.", "CARD_TYPE_INVALID")[0]);
+  }
+
+  if (field.area) {
+    violations.push(fail("해당 필드에는 이미 에리어가 있습니다.", "AREA_LIMIT")[0]);
+  }
+
+  const sourceCards =
+    sourceZone === "deck"
+      ? state.players[playerId].deck
+      : sourceZone === "discard"
+        ? state.players[playerId].discard
+        : state.players[playerId].hand;
+
+  if (!sourceCards.some((c) => c.instanceId === card.instanceId)) {
+    violations.push(
+      fail(
+        sourceZone === "deck"
+          ? "덱에 있는 카드만 배치 선언할 수 있습니다."
+          : sourceZone === "discard"
+            ? "쓰레기통에 있는 카드만 배치 선언할 수 있습니다."
+            : "손패에 있는 카드만 배치 선언할 수 있습니다.",
+        sourceZone === "deck"
+          ? "CARD_NOT_IN_DECK"
+          : sourceZone === "discard"
+            ? "CARD_NOT_IN_DISCARD"
+            : "CARD_NOT_IN_HAND",
+      )[0],
+    );
+  }
+
   return violations;
 }
 
@@ -460,9 +499,29 @@ export function resolveDeclarationCore(state: GameState, declaration: Declaratio
   if (declaration.kind === "useArea") {
     const slot = declaration.declaredTargets.find((t) => t.kind === "field")?.slot;
     if (!slot || !declaration.sourceCardId) { state.logs.push(`[RESOLVE] useArea 해결 실패: 대상 슬롯 없음`); declaration.resolved = true; return; }
+
     const player = state.players[declaration.playerId];
-    const card = removeCardFromAllZones(player, declaration.sourceCardId);
+    const sourceZone = declaration.payload?.sourceZone;
+    let card: CardRef | null = null;
+
+    if (sourceZone === "deck") {
+      const index = player.deck.findIndex((c) => c.instanceId === declaration.sourceCardId);
+      if (index >= 0) {
+        const [removed] = player.deck.splice(index, 1);
+        card = removed ?? null;
+      }
+    } else if (sourceZone === "discard") {
+      const index = player.discard.findIndex((c) => c.instanceId === declaration.sourceCardId);
+      if (index >= 0) {
+        const [removed] = player.discard.splice(index, 1);
+        card = removed ?? null;
+      }
+    } else {
+      card = removeCardFromAllZones(player, declaration.sourceCardId);
+    }
+
     if (!card) { state.logs.push(`[RESOLVE] useArea 해결 실패: 카드 없음`); declaration.resolved = true; return; }
+
     placeAreaOnField(state, declaration.playerId, slot, card);
     declaration.resolved = true;
     state.logs.push(`[RESOLVE] ${declaration.playerId} 에리어 배치 해결: ${card.name} -> ${slot}`);

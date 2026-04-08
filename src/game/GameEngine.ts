@@ -276,10 +276,38 @@ function handleDeclareAction(next: GameState, action: Extract<GameAction, { type
     if (!action.sourceCardId) { logViolations(next, fail("배치 선언 카드가 필요합니다.", "CARD_REQUIRED", action.playerId)); return; }
     const slot = action.targetSlots?.[0];
     if (!slot) { logViolations(next, fail("배치 위치가 필요합니다.", "TARGET_SLOT_REQUIRED", action.playerId)); return; }
-    const card = next.players[action.playerId].hand.find((c) => c.instanceId === action.sourceCardId);
-    if (!card) { logViolations(next, fail("손패에 해당 카드가 없습니다.", "CARD_NOT_IN_HAND", action.playerId)); return; }
-    const violations = validateAreaPlace(next, action.playerId, card, slot);
+
+    const sourceZone = action.payload?.sourceZone;
+    const card =
+      sourceZone === "deck"
+        ? next.players[action.playerId].deck.find((c) => c.instanceId === action.sourceCardId)
+        : sourceZone === "discard"
+          ? next.players[action.playerId].discard.find((c) => c.instanceId === action.sourceCardId)
+          : next.players[action.playerId].hand.find((c) => c.instanceId === action.sourceCardId);
+
+    if (!card) {
+      logViolations(
+        next,
+        fail(
+          sourceZone === "deck"
+            ? "덱에 해당 카드가 없습니다."
+            : sourceZone === "discard"
+              ? "쓰레기통에 해당 카드가 없습니다."
+              : "손패에 해당 카드가 없습니다.",
+          sourceZone === "deck"
+            ? "CARD_NOT_IN_DECK"
+            : sourceZone === "discard"
+              ? "CARD_NOT_IN_DISCARD"
+              : "CARD_NOT_IN_HAND",
+          action.playerId,
+        ),
+      );
+      return;
+    }
+
+    const violations = validateAreaPlace(next, action.playerId, card, slot, sourceZone);
     if (violations.length > 0) { logViolations(next, violations); return; }
+
     next.declarationStack.push(createDeclaration({
       id: nextDeclarationId(next), playerId: action.playerId, kind: "useArea",
       sourceCardId: action.sourceCardId, sourceEffectId: action.sourceEffectId,
