@@ -183,7 +183,7 @@ function declareAttackAndResolveAuto(
 }
 
 describe("BattleResolution", () => {
-  it("같은 열 DF가 있으면 그 캐릭터가 자동으로 방어 처리된다", () => {
+  it("같은 열 DF가 있으면 자동 해결하지 않고 방어자 선택 대기로 남는다", () => {
     const p1Deck = makeDeck("P1", "P1", {
       1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
         ap: 4,
@@ -213,10 +213,11 @@ describe("BattleResolution", () => {
       attackerEntered.cardId,
     );
 
-    expect(next.battle.isActive).toBe(false);
-    expect(next.players.P1.field.AF_LEFT.card?.isTapped).toBe(true);
-    expect(next.players.P2.field.DF_LEFT.card?.isTapped).toBe(true);
-    expect(next.logs.some((log) => log.includes("방어자 자동 지정"))).toBe(true);
+    expect(next.battle.isActive).toBe(true);
+    expect(next.battle.defenderCardId).toBeUndefined();
+    expect(next.players.P1.field.AF_LEFT.card?.isTapped).toBe(false);
+    expect(next.players.P2.field.DF_LEFT.card?.isTapped).toBe(false);
+    expect(next.logs.some((log) => log.includes("방어자 선택 대기"))).toBe(true);
   });
 
   it("같은 열 DF가 없으면 직접 공격으로 처리된다", () => {
