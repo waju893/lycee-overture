@@ -1,0 +1,18 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "flower"
+  ],
+  "attributesList": [
+    "flower"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "flower",
+    "flower"
+  ],
+  "ap": 1,
+  "dp": 2,
+  "sp": 2,
+  "dmg": 2
+}

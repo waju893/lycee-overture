@@ -1,0 +1,16 @@
+{
+  "type": "area",
+  "attributes_list": [
+    "flower"
+  ],
+  "attributesList": [
+    "flower"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "moon",
+    "moon",
+    "flower",
+    "flower"
+  ]
+}

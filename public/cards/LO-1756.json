@@ -1,0 +1,23 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "snow",
+    "moon"
+  ],
+  "attributesList": [
+    "snow",
+    "moon"
+  ],
+  "ex": 0,
+  "useTarget": [
+    "star",
+    "star"
+  ],
+  "ap": 1,
+  "dp": 0,
+  "sp": 1,
+  "dmg": 0,
+  "keyeffects": [],
+  "keyEffects": [],
+  "leader": true
+}

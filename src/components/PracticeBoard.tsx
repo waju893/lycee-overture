@@ -896,7 +896,13 @@ function FieldSlotImage({
               markCardImageFailed(primaryCandidates[primaryIndex]);
               setPrimaryIndex((prev) => prev + 1);
             }}
-            style={fieldSlotImageStyle}
+            style={{
+              ...fieldSlotImageStyle,
+              transform:
+                primaryCard?.cardType === "character" && primaryCard?.isTapped
+                  ? "rotate(-90deg)"
+                  : "none",
+            }}
           />
         ) : (
           <div style={fieldEmptyFrameStyle}>비어 있음</div>
@@ -2295,11 +2301,12 @@ const fieldSlotTitleBadgeStyle: CSSProperties = {
 };
 
 const fieldSlotImageFrameStyle: CSSProperties = {
+  position: "relative",
   width: 126,
   height: 176,
   aspectRatio: "63 / 88",
   borderRadius: 8,
-  overflow: "hidden",
+  overflow: "visible",
   background: "#0b1220",
   flexShrink: 0,
 };
@@ -2309,6 +2316,10 @@ const fieldSlotImageStyle: CSSProperties = {
   width: "100%",
   height: "100%",
   objectFit: "cover",
+  transformOrigin: "center center",
+  transition: "transform 0.18s ease",
+  borderRadius: 8,
+  boxShadow: "0 2px 6px rgba(0,0,0,0.28)",
 };
 
 const fieldEmptyFrameStyle: CSSProperties = {

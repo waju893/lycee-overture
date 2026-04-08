@@ -1,0 +1,19 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "snow"
+  ],
+  "attributesList": [
+    "snow"
+  ],
+  "ex": 1,
+  "useTarget": [
+    "snow",
+    "snow",
+    "snow"
+  ],
+  "ap": 4,
+  "dp": 2,
+  "sp": 1,
+  "dmg": 3
+}

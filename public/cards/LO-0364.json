@@ -1,0 +1,28 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "cosmos"
+  ],
+  "attributesList": [
+    "cosmos"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "snow",
+    "moon",
+    "flower",
+    "cosmos",
+    "sun"
+  ],
+  "ap": 5,
+  "dp": 5,
+  "sp": 3,
+  "dmg": 4,
+  "keyeffects": [
+    8
+  ],
+  "keyEffects": [
+    8
+  ],
+  "leader": false
+}

@@ -1,0 +1,18 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "star"
+  ],
+  "attributesList": [
+    "star"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "star",
+    "star"
+  ],
+  "ap": 3,
+  "dp": 1,
+  "sp": 1,
+  "dmg": 1
+}

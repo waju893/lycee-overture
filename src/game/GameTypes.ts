@@ -16,7 +16,8 @@ export type Zone =
   | "leader"
   | "limbo"
   | "declared"
-  | "field";
+  | "field"
+  | "charge";
 
 export type FieldSlot =
   | "AF_LEFT"

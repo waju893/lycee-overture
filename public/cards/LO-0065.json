@@ -1,0 +1,17 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "cosmos"
+  ],
+  "attributesList": [
+    "cosmos"
+  ],
+  "ex": 1,
+  "useTarget": [
+    "cosmos"
+  ],
+  "ap": 3,
+  "dp": 3,
+  "sp": 0,
+  "dmg": 2
+}

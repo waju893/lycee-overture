@@ -1,0 +1,16 @@
+{
+  "type": "event",
+  "attributes_list": [
+    "sun"
+  ],
+  "attributesList": [
+    "sun"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "snow",
+    "snow",
+    "sun",
+    "sun"
+  ]
+}

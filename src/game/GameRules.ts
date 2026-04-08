@@ -134,9 +134,63 @@ export function getCardCurrentSlot(state: GameState, cardId: string): FieldSlot 
   return null;
 }
 
+function normalizeChargeCardForDiscard(card: CardRef): CardRef {
+  return {
+    ...card,
+    location: "discard",
+    slot: undefined,
+    isTapped: false,
+    revealed: true,
+    chargeCards: undefined,
+  };
+}
+
+export function discardAllChargeCardsFromCharacter(player: PlayerState, character: CardRef | null): number {
+  if (!character?.chargeCards || character.chargeCards.length === 0) return 0;
+
+  const removedCharges = character.chargeCards.map(normalizeChargeCardForDiscard);
+  player.discard.push(...removedCharges);
+  character.chargeCards = [];
+  return removedCharges.length;
+}
+
+export function removeChargeCardsFromCharacter(
+  state: GameState,
+  playerId: PlayerID,
+  characterCardId: string,
+  chargeCardIds: string[],
+): CardRef[] {
+  const slot = getCardCurrentSlot(state, characterCardId);
+  if (!slot) return [];
+
+  const character = state.players[playerId].field[slot].card;
+  if (!character?.chargeCards || character.chargeCards.length === 0) return [];
+
+  const removeSet = new Set(chargeCardIds);
+  const kept: CardRef[] = [];
+  const removed: CardRef[] = [];
+
+  for (const chargeCard of character.chargeCards) {
+    if (removeSet.has(chargeCard.instanceId)) {
+      removed.push(normalizeChargeCardForDiscard(chargeCard));
+    } else {
+      kept.push(chargeCard);
+    }
+  }
+
+  character.chargeCards = kept;
+  if (removed.length > 0) {
+    state.players[playerId].discard.push(...removed);
+    state.logs.push(`[CHARGE] ${playerId}의 ${character.name}에서 차지 ${removed.length}장 파기`);
+  }
+
+  return removed;
+}
+
 export function removeCardFromAllZones(player: PlayerState, cardId: string): CardRef | null {
   const zoneLists: Array<keyof Pick<PlayerState, "deck" | "hand" | "discard" | "leaderZone" | "limbo" | "declaredZone">> =
     ["deck","hand","discard","leaderZone","limbo","declaredZone"];
+
   for (const zoneName of zoneLists) {
     const idx = player[zoneName].findIndex((card) => card.instanceId === cardId);
     if (idx >= 0) {
@@ -144,29 +198,66 @@ export function removeCardFromAllZones(player: PlayerState, cardId: string): Car
       return card;
     }
   }
+
   for (const slot of FIELD_SLOTS) {
     const cell = player.field[slot];
-    if (cell.card?.instanceId === cardId) { const card = cell.card; cell.card = null; return card; }
-    if (cell.attachedItem?.instanceId === cardId) { const card = cell.attachedItem; cell.attachedItem = null; return card; }
-    if (cell.area?.instanceId === cardId) { const card = cell.area; cell.area = null; return card; }
+
+    if (cell.card?.instanceId === cardId) {
+      const card = cell.card;
+      discardAllChargeCardsFromCharacter(player, card);
+      cell.card = null;
+      return card;
+    }
+    if (cell.attachedItem?.instanceId === cardId) {
+      const card = cell.attachedItem;
+      cell.attachedItem = null;
+      return card;
+    }
+    if (cell.area?.instanceId === cardId) {
+      const card = cell.area;
+      cell.area = null;
+      return card;
+    }
   }
+
   return null;
 }
 
 export function moveCardToHand(state: GameState, playerId: PlayerID, card: CardRef): void {
-  card.location = "hand"; card.slot = undefined; state.players[playerId].hand.push(card);
+  card.location = "hand";
+  card.slot = undefined;
+  state.players[playerId].hand.push(card);
 }
+
 export function moveCardToDiscard(state: GameState, playerId: PlayerID, card: CardRef): void {
-  card.location = "discard"; card.slot = undefined; card.isTapped = false; state.players[playerId].discard.push(card);
+  card.location = "discard";
+  card.slot = undefined;
+  card.isTapped = false;
+  state.players[playerId].discard.push(card);
 }
+
 export function placeCharacterOnField(state: GameState, playerId: PlayerID, slot: FieldSlot, card: CardRef): void {
-  card.location = "field"; card.slot = slot; card.isTapped = false; card.revealed = true; state.players[playerId].field[slot].card = card;
+  card.location = "field";
+  card.slot = slot;
+  card.isTapped = false;
+  card.revealed = true;
+  state.players[playerId].field[slot].card = card;
 }
+
 export function placeAreaOnField(state: GameState, playerId: PlayerID, slot: FieldSlot, card: CardRef): void {
-  card.location = "field"; card.slot = slot; card.isTapped = false; card.revealed = true; state.players[playerId].field[slot].area = card;
+  card.location = "field";
+  card.slot = slot;
+  card.isTapped = false;
+  card.revealed = true;
+  state.players[playerId].field[slot].area = card;
 }
+
 export function attachItemToField(state: GameState, playerId: PlayerID, slot: FieldSlot, card: CardRef): void {
-  card.location = "field"; card.slot = slot; card.isTapped = false; card.revealed = true; state.players[playerId].field[slot].attachedItem = card;
+  card.location = "field";
+  card.slot = slot;
+  card.isTapped = false;
+  card.revealed = true;
+  state.players[playerId].field[slot].attachedItem = card;
 }
 
 export function canBuildDeck(cards: CardRef[]): RuleViolation[] {
@@ -201,7 +292,9 @@ export function extractLeaderToHand(state: GameState, playerId: PlayerID): CardR
   const leaderIndex = player.deck.findIndex((card) => card.isLeader);
   if (leaderIndex < 0) return null;
   const [leader] = player.deck.splice(leaderIndex, 1);
-  leader.location = "hand"; leader.revealed = true; leader.slot = undefined;
+  leader.location = "hand";
+  leader.revealed = true;
+  leader.slot = undefined;
   player.hand.push(leader);
   state.startup.leaderRevealed[playerId] = leader.instanceId;
   state.logs.push(`[STARTUP] ${playerId} 리더 공개: ${leader.name}`);
@@ -214,13 +307,19 @@ export function drawCards(state: GameState, playerId: PlayerID, amount: number, 
   for (let i = 0; i < Math.max(0, amount); i += 1) {
     const card = player.deck.shift();
     if (!card) break;
-    card.location = "hand"; card.slot = undefined; card.revealed = false; player.hand.push(card); drawn += 1;
+    card.location = "hand";
+    card.slot = undefined;
+    card.revealed = false;
+    player.hand.push(card);
+    drawn += 1;
   }
   if (drawn > 0) {
     state.logs.push(`[DRAW] ${playerId} ${reason}로 ${drawn}장 드로우`);
     pushEvent(state, { type: "DRAW", playerId, amount: drawn, payload: { reason } });
   }
-  if (player.deck.length === 0 && !state.winner) pushEvent(state, { type: "DECK_BECAME_ZERO", playerId, payload: { reason } });
+  if (player.deck.length === 0 && !state.winner) {
+    pushEvent(state, { type: "DECK_BECAME_ZERO", playerId, payload: { reason } });
+  }
   return drawn;
 }
 
@@ -240,8 +339,14 @@ export function performMulligan(state: GameState, playerId: PlayerID): RuleViola
   const mulliganTargets = player.hand.filter((card) => !card.isLeader);
   const redrawCount = mulliganTargets.length;
   player.hand = [...keptLeaders];
-  for (const card of mulliganTargets) { card.location = "deck"; card.slot = undefined; card.revealed = false; player.deck.push(card); }
-  shuffleArray(player.deck); drawCards(state, playerId, redrawCount, "startup");
+  for (const card of mulliganTargets) {
+    card.location = "deck";
+    card.slot = undefined;
+    card.revealed = false;
+    player.deck.push(card);
+  }
+  shuffleArray(player.deck);
+  drawCards(state, playerId, redrawCount, "startup");
   state.startup.mulliganUsed[playerId] = true;
   state.startup.keepDecided[playerId] = true;
   state.logs.push(`[STARTUP] ${playerId} 멀리건 실행 (${redrawCount}장)`);
@@ -254,9 +359,14 @@ export function validateKeepOrMulligan(state: GameState, playerId: PlayerID): Ru
   if (state.startup.keepDecided[playerId]) violations.push(fail("이미 시작 패 결정을 마쳤습니다.", "ALREADY_DECIDED")[0]);
   return violations;
 }
-export function canFinalizeStartup(state: GameState): boolean { return state.startup.keepDecided.P1 && state.startup.keepDecided.P2; }
+
+export function canFinalizeStartup(state: GameState): boolean {
+  return state.startup.keepDecided.P1 && state.startup.keepDecided.P2;
+}
+
 export function finalizeStartupState(state: GameState): void {
-  state.startup.active = false; state.startup.startupFinished = true;
+  state.startup.active = false;
+  state.startup.startupFinished = true;
   for (const playerId of ["P1","P2"] as const) {
     const leaderCardId = state.startup.leaderRevealed[playerId];
     if (!leaderCardId) continue;
@@ -264,9 +374,14 @@ export function finalizeStartupState(state: GameState): void {
     if (leader) leader.revealed = false;
   }
   const firstPlayer = state.startup.firstPlayer ?? "P1";
-  state.turn.turnNumber = 1; state.turn.activePlayer = firstPlayer; state.turn.priorityPlayer = firstPlayer; state.turn.phase = "wakeup"; state.turn.passedInRow = 0;
+  state.turn.turnNumber = 1;
+  state.turn.activePlayer = firstPlayer;
+  state.turn.priorityPlayer = firstPlayer;
+  state.turn.phase = "wakeup";
+  state.turn.passedInRow = 0;
   state.logs.push(`[STARTUP] 스타트업 종료. 선공: ${firstPlayer}`);
 }
+
 export function getWarmupDrawCount(state: GameState): number {
   return state.turn.turnNumber === 1 && state.turn.activePlayer === state.startup.firstPlayer && !state.turn.firstPlayerDrawFixed ? 1 : 2;
 }
@@ -381,7 +496,6 @@ export function validateAttackDeclaration(state: GameState, playerId: PlayerID, 
   return violations;
 }
 
-
 export function validateTapUntapCharacter(
   state: GameState,
   playerId: PlayerID,
@@ -456,7 +570,10 @@ export function validateChargeCharacter(
 }
 
 export function validateDefenderSelection(
-state: GameState, playerId: PlayerID, defenderCardId: string): RuleViolation[] {
+  state: GameState,
+  playerId: PlayerID,
+  defenderCardId: string,
+): RuleViolation[] {
   const violations: RuleViolation[] = [];
   if (!state.battle.isActive || !state.battle.attackerCardId) return fail("현재 배틀 중이 아닙니다.", "NO_BATTLE");
   const attackerSlot = getCardCurrentSlot(state, state.battle.attackerCardId);
@@ -617,126 +734,133 @@ export function resolveDeclarationCore(state: GameState, declaration: Declaratio
     return;
   }
 
-
-if (declaration.kind === "tapCharacter") {
-  if (!declaration.sourceCardId) {
+  if (declaration.kind === "tapCharacter") {
+    if (!declaration.sourceCardId) {
+      declaration.resolved = true;
+      return;
+    }
+    const slot = getCardCurrentSlot(state, declaration.sourceCardId);
+    const card = slot ? state.players[declaration.playerId].field[slot].card : null;
+    if (card) {
+      card.isTapped = true;
+      state.logs.push(`[RESOLVE] ${declaration.playerId} 행동 완료: ${card.name}`);
+      pushEvent(state, {
+        type: "CHARACTER_TAPPED",
+        playerId: declaration.playerId,
+        cardId: card.instanceId,
+        slot: slot ?? undefined,
+      });
+    }
     declaration.resolved = true;
     return;
   }
-  const slot = getCardCurrentSlot(state, declaration.sourceCardId);
-  const card = slot ? state.players[declaration.playerId].field[slot].card : null;
-  if (card) {
-    card.isTapped = true;
-    state.logs.push(`[RESOLVE] ${declaration.playerId} 행동 완료: ${card.name}`);
+
+  if (declaration.kind === "untapCharacter") {
+    if (!declaration.sourceCardId) {
+      declaration.resolved = true;
+      return;
+    }
+    const slot = getCardCurrentSlot(state, declaration.sourceCardId);
+    const card = slot ? state.players[declaration.playerId].field[slot].card : null;
+    if (card) {
+      card.isTapped = false;
+      state.logs.push(`[RESOLVE] ${declaration.playerId} 미행동: ${card.name}`);
+      pushEvent(state, {
+        type: "CHARACTER_UNTAPPED",
+        playerId: declaration.playerId,
+        cardId: card.instanceId,
+        slot: slot ?? undefined,
+      });
+    }
+    declaration.resolved = true;
+    return;
+  }
+
+  if (declaration.kind === "moveCharacter") {
+    const toSlot = declaration.declaredTargets.find((t) => t.kind === "field")?.slot;
+    if (!declaration.sourceCardId || !toSlot) {
+      declaration.resolved = true;
+      return;
+    }
+    const fromSlot = getCardCurrentSlot(state, declaration.sourceCardId);
+    if (!fromSlot) {
+      declaration.resolved = true;
+      return;
+    }
+    const card = state.players[declaration.playerId].field[fromSlot].card;
+    if (!card) {
+      declaration.resolved = true;
+      return;
+    }
+    state.players[declaration.playerId].field[fromSlot].card = null;
+    placeCharacterOnField(state, declaration.playerId, toSlot, card);
+    state.logs.push(`[RESOLVE] ${declaration.playerId} 이동 해결: ${card.name} ${fromSlot} -> ${toSlot}`);
     pushEvent(state, {
-      type: "CHARACTER_TAPPED",
+      type: "CHARACTER_MOVED",
       playerId: declaration.playerId,
       cardId: card.instanceId,
-      slot,
+      slot: toSlot,
+      payload: { fromSlot },
     });
-  }
-  declaration.resolved = true;
-  return;
-}
-
-if (declaration.kind === "untapCharacter") {
-  if (!declaration.sourceCardId) {
     declaration.resolved = true;
     return;
   }
-  const slot = getCardCurrentSlot(state, declaration.sourceCardId);
-  const card = slot ? state.players[declaration.playerId].field[slot].card : null;
-  if (card) {
-    card.isTapped = false;
-    state.logs.push(`[RESOLVE] ${declaration.playerId} 미행동: ${card.name}`);
+
+  if (declaration.kind === "chargeCharacter") {
+    if (!declaration.sourceCardId) {
+      declaration.resolved = true;
+      return;
+    }
+    const slot = getCardCurrentSlot(state, declaration.sourceCardId);
+    const card = slot ? state.players[declaration.playerId].field[slot].card : null;
+    if (!card) {
+      declaration.resolved = true;
+      return;
+    }
+
+    const deckCount = Math.max(0, Math.trunc(Number(declaration.payload?.deckCount ?? 0)));
+    const discardCardIds = Array.isArray(declaration.payload?.discardCardIds)
+      ? declaration.payload!.discardCardIds.filter((value): value is string => typeof value === "string")
+      : [];
+
+    const charged: CardRef[] = [];
+
+    for (let i = 0; i < deckCount; i += 1) {
+      const top = state.players[declaration.playerId].deck.shift();
+      if (!top) break;
+      top.location = "charge";
+      top.revealed = true;
+      top.slot = undefined;
+      top.isTapped = false;
+      charged.push(top);
+    }
+
+    for (const discardCardId of discardCardIds) {
+      const index = state.players[declaration.playerId].discard.findIndex((item) => item.instanceId === discardCardId);
+      if (index < 0) continue;
+      const [picked] = state.players[declaration.playerId].discard.splice(index, 1);
+      if (!picked) continue;
+      picked.location = "charge";
+      picked.revealed = true;
+      picked.slot = undefined;
+      picked.isTapped = false;
+      charged.push(picked);
+    }
+
+    card.chargeCards = [...(card.chargeCards ?? []), ...charged];
+    state.logs.push(`[RESOLVE] ${declaration.playerId} 차지 해결: ${card.name} / ${charged.length}장`);
     pushEvent(state, {
-      type: "CHARACTER_UNTAPPED",
+      type: "CHARACTER_CHARGED",
       playerId: declaration.playerId,
       cardId: card.instanceId,
-      slot,
+      amount: charged.length,
+      slot: slot ?? undefined,
     });
+    declaration.resolved = true;
+    return;
   }
-  declaration.resolved = true;
-  return;
-}
 
-if (declaration.kind === "moveCharacter") {
-  const toSlot = declaration.declaredTargets.find((t) => t.kind === "field")?.slot;
-  if (!declaration.sourceCardId || !toSlot) {
-    declaration.resolved = true;
-    return;
-  }
-  const fromSlot = getCardCurrentSlot(state, declaration.sourceCardId);
-  if (!fromSlot) {
-    declaration.resolved = true;
-    return;
-  }
-  const card = state.players[declaration.playerId].field[fromSlot].card;
-  if (!card) {
-    declaration.resolved = true;
-    return;
-  }
-  state.players[declaration.playerId].field[fromSlot].card = null;
-  placeCharacterOnField(state, declaration.playerId, toSlot, card);
-  state.logs.push(`[RESOLVE] ${declaration.playerId} 이동 해결: ${card.name} ${fromSlot} -> ${toSlot}`);
-  pushEvent(state, {
-    type: "CHARACTER_MOVED",
-    playerId: declaration.playerId,
-    cardId: card.instanceId,
-    slot: toSlot,
-    payload: { fromSlot },
-  });
-  declaration.resolved = true;
-  return;
-}
-
-if (declaration.kind === "chargeCharacter") {
-  if (!declaration.sourceCardId) {
-    declaration.resolved = true;
-    return;
-  }
-  const slot = getCardCurrentSlot(state, declaration.sourceCardId);
-  const card = slot ? state.players[declaration.playerId].field[slot].card : null;
-  if (!card) {
-    declaration.resolved = true;
-    return;
-  }
-  const deckCount = Math.max(0, Math.trunc(Number(declaration.payload?.deckCount ?? 0)));
-  const discardCardIds = Array.isArray(declaration.payload?.discardCardIds)
-    ? declaration.payload!.discardCardIds.filter((value): value is string => typeof value === "string")
-    : [];
-  const charged: CardRef[] = [];
-  for (let i = 0; i < deckCount; i += 1) {
-    const top = state.players[declaration.playerId].deck.shift();
-    if (!top) break;
-    top.location = "limbo";
-    top.revealed = true;
-    charged.push(top);
-  }
-  for (const discardCardId of discardCardIds) {
-    const index = state.players[declaration.playerId].discard.findIndex((item) => item.instanceId === discardCardId);
-    if (index < 0) continue;
-    const [picked] = state.players[declaration.playerId].discard.splice(index, 1);
-    if (!picked) continue;
-    picked.location = "limbo";
-    picked.revealed = true;
-    charged.push(picked);
-  }
-  card.chargeCards = [...(card.chargeCards ?? []), ...charged];
-  state.logs.push(`[RESOLVE] ${declaration.playerId} 차지 해결: ${card.name} / ${charged.length}장`);
-  pushEvent(state, {
-    type: "CHARACTER_CHARGED",
-    playerId: declaration.playerId,
-    cardId: card.instanceId,
-    amount: charged.length,
-    slot,
-  });
-  declaration.resolved = true;
-  return;
-}
-
-if (declaration.kind === "attack") {
-
+  if (declaration.kind === "attack") {
     if (!declaration.sourceCardId) { declaration.resolved = true; return; }
     state.battle.isActive = true;
     state.battle.attackDeclarationId = declaration.id;

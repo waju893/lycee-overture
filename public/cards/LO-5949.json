@@ -1,0 +1,33 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "cosmos"
+  ],
+  "attributesList": [
+    "cosmos"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "cosmos",
+    "cosmos",
+    "cosmos",
+    "cosmos",
+    "cosmos",
+    "cosmos"
+  ],
+  "ap": 6,
+  "dp": 6,
+  "sp": 1,
+  "dmg": 5,
+  "keyeffects": [
+    2,
+    17,
+    19
+  ],
+  "keyEffects": [
+    2,
+    17,
+    19
+  ],
+  "leader": false
+}

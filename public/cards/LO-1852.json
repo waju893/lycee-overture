@@ -1,0 +1,17 @@
+{
+  "type": "event",
+  "attributes_list": [
+    "flower",
+    "sun"
+  ],
+  "attributesList": [
+    "flower",
+    "sun"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "flower",
+    "sun",
+    "star"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "event",
+  "attributes_list": [
+    "moon"
+  ],
+  "attributesList": [
+    "moon"
+  ],
+  "ex": 1,
+  "useTarget": [
+    "star",
+    "star"
+  ]
+}

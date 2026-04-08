@@ -1,0 +1,16 @@
+{
+  "type": "area",
+  "attributes_list": [
+    "snow"
+  ],
+  "attributesList": [
+    "snow"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "snow",
+    "snow",
+    "flower",
+    "flower"
+  ]
+}

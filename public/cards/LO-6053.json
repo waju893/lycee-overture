@@ -1,0 +1,15 @@
+{
+  "type": "area",
+  "attributes_list": [
+    "moon"
+  ],
+  "attributesList": [
+    "moon"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "moon",
+    "moon",
+    "moon"
+  ]
+}

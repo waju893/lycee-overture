@@ -1,0 +1,18 @@
+{
+  "type": "character",
+  "attributes_list": [
+    "sun"
+  ],
+  "attributesList": [
+    "sun"
+  ],
+  "ex": 2,
+  "useTarget": [
+    "sun",
+    "sun"
+  ],
+  "ap": 2,
+  "dp": 1,
+  "sp": 2,
+  "dmg": 1
+}
