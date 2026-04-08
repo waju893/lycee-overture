@@ -77,14 +77,13 @@ function cloneCardArray(cards: CardRef[]): CardRef[] {
 }
 
 function cloneFieldCell(cell: FieldCell): FieldCell {
-  const attachedItems = ((cell as any).attachedItems ?? []) as CardRef[];
   return {
     ...cell,
     card: cell.card ? cloneCard(cell.card) : null,
     attachedItem: cell.attachedItem ? cloneCard(cell.attachedItem) : null,
-    attachedItems: attachedItems.map(cloneCard),
+    attachedItems: ((cell as any).attachedItems ?? []).map(cloneCard),
     area: cell.area ? cloneCard(cell.area) : null,
-  } as FieldCell;
+  };
 }
 
 function clonePlayerState(player: PlayerState): PlayerState {
@@ -354,6 +353,7 @@ function handleDeclareAction(next: GameState, action: Extract<GameAction, { type
       );
       return;
     }
+
     const violations = validateItemEquip(next, action.playerId, card, slot, sourceZone);
     if (violations.length > 0) { logViolations(next, violations); return; }
     next.declarationStack.push(createDeclaration({

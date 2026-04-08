@@ -277,21 +277,18 @@ function attachItemToCharacter(
   slot: FieldSlot,
   card: CardRef,
 ): boolean {
-  const cell = next.players[playerId].field[slot];
+  const cell = next.players[playerId].field[slot] as any;
   if (!cell.card) {
     next.logs.push(`[ZONE] ${playerId} 장비 실패: 해당 칸에 캐릭터가 없음`);
     return false;
   }
 
-  if (cell.attachedItem) {
-    next.logs.push(`[ZONE] ${playerId} 장비 실패: 해당 캐릭터에는 이미 아이템이 있음`);
-    return false;
-  }
-
+  cell.attachedItems = Array.isArray(cell.attachedItems) ? cell.attachedItems : [];
   card.location = "field";
   card.slot = slot;
   card.revealed = true;
-  cell.attachedItem = card;
+  cell.attachedItems.push(card);
+  cell.attachedItem = cell.attachedItems[0] ?? null;
   return true;
 }
 
@@ -916,10 +913,7 @@ export default function PracticeBoard() {
 
         payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
 
-        next.logs.push(
-          `[PILE_ITEM] ${playerId} ${placementMode.source} 장비 선언 준비: ${sourceCard.name} / 대상 슬롯 ${slot}`,
-        );
-
+        next.logs.push(`[PILE_ITEM] ${playerId} ${placementMode.source} 장비 선언 준비 -> ${slot}: ${sourceCard.name}`);
         return reduceGameState(next, {
           type: "DECLARE_ACTION",
           playerId,

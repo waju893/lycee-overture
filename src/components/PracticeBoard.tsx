@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import type { CardRef, FieldSlot, GameState, PlayerID } from "../game/GameTypes";
 import { CARD_META_BY_CODE } from "../lib/cards";
 import {
@@ -797,29 +797,27 @@ function CostPaymentModal({
 
 
 
-function ItemEquipListModal({
-  isOpen,
+function ItemStackModal({
   items,
   onClose,
 }: {
-  isOpen: boolean;
   items: CardRef[];
   onClose: () => void;
 }) {
-  if (!isOpen) return null;
+  if (items.length === 0) return null;
 
   return (
-    <div style={subModalOverlayStyle} onClick={onClose}>
-      <div style={equipListModalCardStyle} onClick={(event) => event.stopPropagation()}>
-        <div style={subModalTitleStyle}>이 캐릭터가 현재 장비중인 아이템입니다</div>
-        <div style={equipListGridStyle}>
+    <div style={itemStackModalOverlayStyle} onClick={onClose}>
+      <div style={itemStackModalCardStyle} onClick={(event) => event.stopPropagation()}>
+        <div style={itemStackModalTitleStyle}>이 캐릭터가 현재 장비중인 아이템입니다</div>
+        <div style={itemStackModalRowStyle}>
           {items.map((item, index) => (
-            <div key={`${item.instanceId}-${index}`} style={equipListItemStyle}>
+            <div key={`${item.instanceId}-${index}`} style={itemStackModalItemStyle}>
               <CardImage card={item} clickable={false} onClick={() => undefined} />
             </div>
           ))}
         </div>
-        <div style={equipListFooterStyle}>
+        <div style={itemStackModalFooterStyle}>
           <button type="button" style={confirmButtonStyle} onClick={onClose}>
             확인
           </button>
@@ -839,23 +837,25 @@ function FieldSlotImage({
   onClick: () => void;
 }) {
   const attachedItems =
-    ((cell as any).attachedItems ?? (cell.attachedItem ? [cell.attachedItem] : [])) as CardRef[];
-  const itemCount = attachedItems.length;
-  const [isEquipListOpen, setIsEquipListOpen] = useState(false);
+    ((cell as any).attachedItems ?? []) as CardRef[];
+  const fallbackAttachedItem = cell.attachedItem ? [cell.attachedItem] : [];
+  const normalizedAttachedItems = attachedItems.length > 0 ? attachedItems : fallbackAttachedItem;
+  const itemCount = normalizedAttachedItems.length;
 
-  const primaryCard = cell.card ?? cell.area ?? (attachedItems[0] ?? null);
+  const primaryCard = cell.card ?? cell.area ?? normalizedAttachedItems[0] ?? null;
   const primaryCode = primaryCard ? getCardCode(primaryCard) : "";
   const primaryCandidates = useMemo(
     () => (primaryCode ? getCardImageCandidates(primaryCode) : []),
     [primaryCode],
   );
   const [primaryIndex, setPrimaryIndex] = useState(0);
+  const [isItemStackOpen, setIsItemStackOpen] = useState(false);
 
   useEffect(() => {
     setPrimaryIndex(0);
   }, [primaryCode, primaryCandidates]);
 
-  const renderMiniThumb = (card: CardRef, kind: string, clickable = false) => {
+  const renderMiniThumb = (card: CardRef, kind: string, badgeText?: string, onThumbClick?: () => void) => {
     const code = getCardCode(card);
     const src = getCardImageCandidates(code)[0] ?? "";
 
@@ -863,13 +863,11 @@ function FieldSlotImage({
       <button
         key={`${kind}-${card.instanceId}`}
         type="button"
-        style={fieldMiniThumbButtonStyle}
+        style={fieldMiniThumbWrapStyle}
         title={`${kind}: ${card.name}`}
         onClick={(event) => {
           event.stopPropagation();
-          if (clickable) {
-            setIsEquipListOpen(true);
-          }
+          onThumbClick?.();
         }}
       >
         {src ? (
@@ -884,21 +882,39 @@ function FieldSlotImage({
         ) : (
           <div style={fieldMiniThumbFallbackStyle}>{kind}</div>
         )}
+        {badgeText ? <div style={fieldMiniThumbCountBadgeStyle}>{badgeText}</div> : null}
         <div style={fieldMiniThumbLabelStyle}>{kind}</div>
-        {clickable && itemCount >= 2 ? (
-          <div style={fieldItemCountBadgeStyle}>x{itemCount}</div>
-        ) : null}
       </button>
     );
   };
 
-  const extraThumbs: React.ReactNode[] = [];
-  if (cell.card && cell.area) extraThumbs.push(renderMiniThumb(cell.area, "에리어"));
-  if (cell.card && attachedItems[0]) extraThumbs.push(renderMiniThumb(attachedItems[0], "아이템", true));
-  if (!cell.card && cell.area && attachedItems[0]) extraThumbs.push(renderMiniThumb(attachedItems[0], "아이템", true));
+  const extraThumbs: ReactNode[] = [];
+  if (cell.card && cell.area) {
+    extraThumbs.push(renderMiniThumb(cell.area, "에리어"));
+  }
+  if (cell.card && normalizedAttachedItems.length > 0) {
+    extraThumbs.push(
+      renderMiniThumb(
+        normalizedAttachedItems[0],
+        "아이템",
+        normalizedAttachedItems.length >= 2 ? `x${normalizedAttachedItems.length}` : undefined,
+        () => setIsItemStackOpen(true),
+      ),
+    );
+  }
+  if (!cell.card && cell.area && normalizedAttachedItems.length > 0) {
+    extraThumbs.push(
+      renderMiniThumb(
+        normalizedAttachedItems[0],
+        "아이템",
+        normalizedAttachedItems.length >= 2 ? `x${normalizedAttachedItems.length}` : undefined,
+        () => setIsItemStackOpen(true),
+      ),
+    );
+  }
 
   return (
-    <>
+    <div style={fieldSlotWrapStyle}>
       <button
         type="button"
         style={fieldSlotImageButtonStyle}
@@ -927,17 +943,15 @@ function FieldSlotImage({
             <div style={fieldEmptyFrameStyle}>비어 있음</div>
           )}
         </div>
-        {extraThumbs.length > 0 ? <div style={fieldMiniThumbTrayStyle}>{extraThumbs}</div> : null}
       </button>
-
-      <ItemEquipListModal
-        isOpen={isEquipListOpen}
-        items={attachedItems}
-        onClose={() => setIsEquipListOpen(false)}
-      />
-    </>
+      {extraThumbs.length > 0 ? <div style={fieldMiniThumbTrayStyle}>{extraThumbs}</div> : null}
+      {isItemStackOpen ? (
+        <ItemStackModal items={normalizedAttachedItems} onClose={() => setIsItemStackOpen(false)} />
+      ) : null}
+    </div>
   );
 }
+
 type PlayerAreaProps = {
   label: string;
   playerId: PlayerID;
@@ -2115,6 +2129,11 @@ const slotButtonStyle: CSSProperties = {
   cursor: "pointer",
 };
 
+const fieldSlotWrapStyle: CSSProperties = {
+  position: "relative",
+  width: "100%",
+};
+
 const fieldSlotImageButtonStyle: CSSProperties = {
   position: "relative",
   background: "#0f1724",
@@ -2175,7 +2194,7 @@ const fieldMiniThumbTrayStyle: CSSProperties = {
   zIndex: 2,
 };
 
-const fieldMiniThumbButtonStyle: CSSProperties = {
+const fieldMiniThumbWrapStyle: CSSProperties = {
   position: "relative",
   width: 34,
   height: 48,
@@ -2206,8 +2225,34 @@ const fieldMiniThumbFallbackStyle: CSSProperties = {
 };
 
 
-const equipListModalCardStyle: CSSProperties = {
-  width: "min(900px, 100%)",
+const fieldMiniThumbCountBadgeStyle: CSSProperties = {
+  position: "absolute",
+  top: 2,
+  right: 2,
+  zIndex: 2,
+  background: "rgba(15, 23, 36, 0.92)",
+  border: "1px solid rgba(148, 163, 184, 0.9)",
+  borderRadius: 6,
+  padding: "1px 4px",
+  fontSize: 10,
+  fontWeight: 900,
+  color: "#ffffff",
+  lineHeight: 1.1,
+};
+
+const itemStackModalOverlayStyle: CSSProperties = {
+  position: "fixed",
+  inset: 0,
+  background: "rgba(3, 8, 18, 0.68)",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  padding: 24,
+  zIndex: 1400,
+};
+
+const itemStackModalCardStyle: CSSProperties = {
+  width: "min(920px, 100%)",
   background: "#182233",
   border: "1px solid #2a3850",
   borderRadius: 16,
@@ -2215,19 +2260,28 @@ const equipListModalCardStyle: CSSProperties = {
   boxSizing: "border-box",
 };
 
-const equipListGridStyle: CSSProperties = {
+const itemStackModalTitleStyle: CSSProperties = {
+  fontSize: 18,
+  fontWeight: 700,
+  color: "#ffffff",
+  marginBottom: 14,
+};
+
+const itemStackModalRowStyle: CSSProperties = {
   display: "flex",
+  flexDirection: "row",
   gap: 12,
   overflowX: "auto",
-  marginTop: 14,
+  alignItems: "stretch",
 };
 
-const equipListItemStyle: CSSProperties = {
+const itemStackModalItemStyle: CSSProperties = {
   minWidth: 140,
   maxWidth: 160,
+  flex: "0 0 auto",
 };
 
-const equipListFooterStyle: CSSProperties = {
+const itemStackModalFooterStyle: CSSProperties = {
   display: "flex",
   justifyContent: "flex-end",
   marginTop: 16,

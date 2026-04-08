@@ -115,6 +115,7 @@ export function findCardController(state: GameState, cardId: string): PlayerID |
     for (const slot of FIELD_SLOTS) {
       const cell = player.field[slot];
       if (cell.card?.instanceId === cardId) return playerId;
+      if ((cell as any).attachedItems?.some((item: CardRef) => item.instanceId === cardId)) return playerId;
       if (cell.attachedItem?.instanceId === cardId) return playerId;
       if (cell.area?.instanceId === cardId) return playerId;
     }
@@ -127,6 +128,7 @@ export function getCardCurrentSlot(state: GameState, cardId: string): FieldSlot 
     for (const slot of FIELD_SLOTS) {
       const cell = state.players[playerId].field[slot];
       if (cell.card?.instanceId === cardId) return slot;
+      if ((cell as any).attachedItems?.some((item: CardRef) => item.instanceId === cardId)) return slot;
       if (cell.attachedItem?.instanceId === cardId) return slot;
       if (cell.area?.instanceId === cardId) return slot;
     }
@@ -147,11 +149,10 @@ export function removeCardFromAllZones(player: PlayerState, cardId: string): Car
   for (const slot of FIELD_SLOTS) {
     const cell = player.field[slot];
     if (cell.card?.instanceId === cardId) { const card = cell.card; cell.card = null; return card; }
-    const attachedItems = (((cell as any).attachedItems ?? []) as CardRef[]);
-    const attachedIndex = attachedItems.findIndex((card) => card.instanceId === cardId);
+    const attachedItems = ((cell as any).attachedItems ?? []) as CardRef[];
+    const attachedIndex = attachedItems.findIndex((item) => item.instanceId === cardId);
     if (attachedIndex >= 0) {
       const [card] = attachedItems.splice(attachedIndex, 1);
-      (cell as any).attachedItems = attachedItems;
       cell.attachedItem = attachedItems[0] ?? null;
       return card ?? null;
     }
@@ -179,10 +180,9 @@ export function attachItemToField(state: GameState, playerId: PlayerID, slot: Fi
   card.isTapped = false;
   card.revealed = true;
   const cell = state.players[playerId].field[slot] as any;
-  const attachedItems = (cell.attachedItems ?? []) as CardRef[];
-  attachedItems.push(card);
-  cell.attachedItems = attachedItems;
-  cell.attachedItem = attachedItems[0] ?? card;
+  cell.attachedItems = Array.isArray(cell.attachedItems) ? cell.attachedItems : [];
+  cell.attachedItems.push(card);
+  cell.attachedItem = cell.attachedItems[0] ?? null;
 }
 
 export function canBuildDeck(cards: CardRef[]): RuleViolation[] {
@@ -335,29 +335,26 @@ export function validateItemEquip(
   if (state.turn.activePlayer !== playerId || state.turn.phase !== "main") violations.push(fail("아이템 장비는 자기 메인페이즈에만 가능합니다.", "TIMING_INVALID")[0]);
   if (card.cardType !== "item") violations.push(fail("아이템 카드만 장비 선언할 수 있습니다.", "CARD_TYPE_INVALID")[0]);
   if (!field.card) violations.push(fail("캐릭터가 있는 필드에만 아이템을 장비할 수 있습니다.", "NO_CHARACTER")[0]);
-
   const sourceCards =
     sourceZone === "deck"
       ? state.players[playerId].deck
       : sourceZone === "discard"
         ? state.players[playerId].discard
         : state.players[playerId].hand;
-  if (!sourceCards.some((c) => c.instanceId === card.instanceId)) {
-    violations.push(
-      fail(
-        sourceZone === "deck"
-          ? "덱에 있는 카드만 장비 선언할 수 있습니다."
-          : sourceZone === "discard"
-            ? "쓰레기통에 있는 카드만 장비 선언할 수 있습니다."
-            : "손패에 있는 카드만 장비 선언할 수 있습니다.",
-        sourceZone === "deck"
-          ? "CARD_NOT_IN_DECK"
-          : sourceZone === "discard"
-            ? "CARD_NOT_IN_DISCARD"
-            : "CARD_NOT_IN_HAND",
-      )[0],
-    );
-  }
+  if (!sourceCards.some((c) => c.instanceId === card.instanceId)) violations.push(
+    fail(
+      sourceZone === "deck"
+        ? "덱에 있는 카드만 장비 선언할 수 있습니다."
+        : sourceZone === "discard"
+          ? "쓰레기통에 있는 카드만 장비 선언할 수 있습니다."
+          : "손패에 있는 카드만 장비 선언할 수 있습니다.",
+      sourceZone === "deck"
+        ? "CARD_NOT_IN_DECK"
+        : sourceZone === "discard"
+          ? "CARD_NOT_IN_DISCARD"
+          : "CARD_NOT_IN_HAND",
+    )[0]
+  );
   return violations;
 }
 
@@ -467,15 +464,15 @@ export function applyStateBasedRules(state: GameState): void {
   for (const playerId of ["P1","P2"] as const) {
     const player = state.players[playerId];
     for (const slot of FIELD_SLOTS) {
-      const cell = player.field[slot] as any;
-      const attachedItems = (cell.attachedItems ?? (cell.attachedItem ? [cell.attachedItem] : [])) as CardRef[];
+      const cell = player.field[slot];
+      const attachedItems = (((cell as any).attachedItems ?? []) as CardRef[]);
       if (!cell.card && attachedItems.length > 0) {
         for (const item of attachedItems) {
           player.discard.push({ ...item, location: "discard", slot: undefined, isTapped: false });
         }
-        cell.attachedItems = [];
+        (cell as any).attachedItems = [];
         cell.attachedItem = null;
-        state.logs.push(`[SBA] ${playerId}의 ${slot}에서 장착 대상이 사라져 아이템 ${attachedItems.length}개를 파기했습니다.`);
+        state.logs.push(`[SBA] ${playerId}의 ${slot}에서 장착 대상이 사라져 아이템을 모두 파기했습니다.`);
       }
     }
     if (player.deck.length === 0 && !state.winner) {
