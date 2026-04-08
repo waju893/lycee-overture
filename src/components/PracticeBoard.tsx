@@ -457,13 +457,16 @@ function CardImage({
   card,
   clickable,
   onClick,
+  forceBack = false,
 }: {
   card: CardRef;
   clickable: boolean;
   onClick: () => void;
+  forceBack?: boolean;
 }) {
   const cardCode = getCardCode(card);
-  const candidates = useMemo(() => getCardImageCandidates(cardCode), [cardCode]);
+  const imageCode = forceBack ? "LO-BACK" : cardCode;
+  const candidates = useMemo(() => getCardImageCandidates(imageCode), [imageCode]);
   const [candidateIndex, setCandidateIndex] = useState(0);
 
   useEffect(() => {
@@ -488,12 +491,12 @@ function CardImage({
         {currentSrc ? (
           <img
             src={currentSrc}
-            alt={card.name}
+            alt={forceBack ? "card back" : card.name}
             loading="lazy"
             decoding="async"
             draggable={false}
             onLoad={() => {
-              markCardImageResolved(cardCode, currentSrc);
+              markCardImageResolved(imageCode, currentSrc);
             }}
             onError={() => {
               markCardImageFailed(currentSrc);
@@ -890,10 +893,12 @@ function DeckPilePreview({
   cards,
   title,
   onClick,
+  useBackImage = false,
 }: {
   cards: CardRef[];
   title: string;
   onClick: () => void;
+  useBackImage?: boolean;
 }) {
   const previewCards = cards.slice(-4);
 
@@ -904,20 +909,19 @@ function DeckPilePreview({
           <div style={deckPileEmptyFrameStyle} />
         ) : (
           previewCards.map((card, index) => {
-            const code = getCardCode(card);
+            const code = useBackImage ? "LO-BACK" : getCardCode(card);
             const src = getCardImageCandidates(code)[0] ?? "";
-            const offset = index * 6;
 
             return (
               <div
                 key={`${title}-${card.instanceId}`}
                 style={{
                   ...deckPilePreviewCardWrapStyle,
-                  top: offset,
-                  left: offset,
+                  top: 0,
+                  left: 0,
                   zIndex: index + 1,
                 }}
-                title={card.name}
+                title={useBackImage ? title : card.name}
               >
                 {src ? (
                   <img
@@ -1053,6 +1057,7 @@ function PlayerArea({
             cards={player.deck}
             title="덱"
             onClick={() => onToggleDeckMenu(playerId)}
+            useBackImage={true}
           />
         )}
 
@@ -1104,6 +1109,7 @@ function PlayerArea({
                     card={card}
                     clickable={isPerspectivePlayer}
                     onClick={() => onHandCardClick(playerId, card.instanceId)}
+                    forceBack={!isPerspectivePlayer}
                   />
                 </div>
 
@@ -2248,12 +2254,13 @@ const deckPilePreviewFrameStyle: CSSProperties = {
   position: "relative",
   width: "100%",
   height: "100%",
+  borderRadius: 8,
+  overflow: "hidden",
 };
 
 const deckPilePreviewCardWrapStyle: CSSProperties = {
   position: "absolute",
-  width: "calc(100% - 18px)",
-  height: "calc(100% - 18px)",
+  inset: 0,
   borderRadius: 8,
   overflow: "hidden",
   boxShadow: "0 2px 6px rgba(0,0,0,0.35)",
