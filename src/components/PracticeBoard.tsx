@@ -29,12 +29,43 @@ function getCardLabel(card: CardRef): string {
   }`;
 }
 
-function getCardCode(card: CardRef): string {
-  return String(card.cardNo ?? card.sameNameKey ?? "").trim().toUpperCase();
+function getCardCodeCandidates(card: CardRef): string[] {
+  const rawValues = [
+    card.cardNo,
+    card.sameNameKey,
+    (card as { code?: string }).code,
+    (card as { baseCode?: string }).baseCode,
+  ];
+
+  const normalized = rawValues
+    .filter((value): value is string => typeof value === "string" && value.trim().length > 0)
+    .map((value) => value.trim().toUpperCase());
+
+  const expanded = new Set<string>();
+
+  for (const value of normalized) {
+    expanded.add(value);
+    expanded.add(value.replace(/\s+/g, ""));
+    expanded.add(value.replace(/_/g, "-"));
+    expanded.add(value.replace(/-/g, ""));
+  }
+
+  return Array.from(expanded);
 }
+
+function getCardCode(card: CardRef): string {
+  return getCardCodeCandidates(card)[0] ?? "";
+}
+
 function getCardMeta(card: CardRef) {
-  const code = getCardCode(card);
-  return CARD_META_BY_CODE[code];
+  const candidates = getCardCodeCandidates(card);
+
+  for (const candidate of candidates) {
+    const found = CARD_META_BY_CODE[candidate];
+    if (found) return found;
+  }
+
+  return undefined;
 }
 
 function getCardMetaAttributeList(card: CardRef): string[] {
@@ -184,7 +215,25 @@ function parseAttributeValues(rawValue: unknown): string[] {
 
 function getCardUseTargetRequirements(card: CardRef): string[] {
   const rawTargets = getCardMetaUseTargetList(card);
-  return rawTargets.flatMap((value) => parseAttributeValues(value));
+
+  return rawTargets.flatMap((value) => {
+    if (typeof value === "string") {
+      const trimmed = value.trim();
+
+      if (trimmed.startsWith("[") && trimmed.endsWith("]")) {
+        const inner = trimmed.slice(1, -1).trim();
+        if (!inner) return [];
+
+        return inner
+          .split(",")
+          .map((part) => part.trim().replace(/^['"]|['"]$/g, ""))
+          .filter((part) => part.length > 0)
+          .flatMap((part) => parseAttributeValues(part));
+      }
+    }
+
+    return parseAttributeValues(value);
+  });
 }
 
 function getCardUseTargetRequirementMap(card: CardRef): Record<string, number> {
