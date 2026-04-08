@@ -407,10 +407,13 @@ type HandCardActionMenuState =
     }
   | null;
 
+type CostModalSource = "hand" | "deck" | "discard";
+
 type CostModalState =
   | {
       playerId: PlayerID;
       cardId: string;
+      source: CostModalSource;
       selectedCostCards: SelectedCostCardState[];
       pendingAttributeSelection: CostAttributeSelectionState | null;
     }
@@ -543,6 +546,26 @@ function HandCardActionOverlay({
   );
 }
 
+function findSourceCard(
+  gameState: GameState,
+  playerId: PlayerID,
+  source: CostModalSource,
+  cardId: string,
+): CardRef | undefined {
+  const player = gameState.players[playerId];
+
+  switch (source) {
+    case "hand":
+      return player.hand.find((card) => card.instanceId === cardId);
+    case "deck":
+      return player.deck.find((card) => card.instanceId === cardId);
+    case "discard":
+      return player.discard.find((card) => card.instanceId === cardId);
+    default:
+      return undefined;
+  }
+}
+
 function CostPaymentModal({
   state,
   gameState,
@@ -563,7 +586,7 @@ function CostPaymentModal({
   if (!state) return null;
 
   const player = gameState.players[state.playerId];
-  const actionCard = player.hand.find((card) => card.instanceId === state.cardId);
+  const actionCard = findSourceCard(gameState, state.playerId, state.source, state.cardId);
   if (!actionCard) return null;
 
   const requiredCount = getCardUseTargetTotalRequired(actionCard);
@@ -596,6 +619,10 @@ function CostPaymentModal({
       <div style={costBackdropDimStyle} />
       <div style={costModalCardStyle} data-deck-menu-keep="true">
         <div style={costModalTitleStyle}>코스트 지불</div>
+        <div style={costModalLineStyle}>
+          사용 카드: {actionCard.name}
+          {state.source === "deck" ? " (덱)" : state.source === "discard" ? " (쓰레기통)" : " (패)"}
+        </div>
         <div style={costModalLineStyle}>요구 코스트: {requiredLabel} (미만 불가, 이상/초과 가능)</div>
 
         <div style={costModalSectionTitleStyle}>코스트로 지불하는 카드</div>
@@ -1290,7 +1317,12 @@ interface PracticeBoardProps {
   onDrawFromDeck?: (playerId: PlayerID) => void;
   onDamageFromDeck?: (playerId: PlayerID) => void;
   onShuffleDeck?: (playerId: PlayerID) => void;
-  onPrimaryCardAction?: (playerId: PlayerID, card: CardRef, source: "deck" | "discard") => void;
+  onPrimaryCardAction?: (
+    playerId: PlayerID,
+    card: CardRef,
+    source: "deck" | "discard",
+    costCardIds: string[],
+  ) => void;
   onMoveCardToHand?: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
   onRecoverCardsToDeckBottom?: (playerId: PlayerID, cardIdsInOrder: string[]) => void;
 }
@@ -1371,7 +1403,9 @@ export default function PracticeBoard({
     setCostModalState((prev) => {
       if (!prev) return prev;
       const player = state.players[prev.playerId];
-      const actionCardExists = player.hand.some((card) => card.instanceId === prev.cardId);
+      const actionCardExists = Boolean(
+        findSourceCard(state, prev.playerId, prev.source, prev.cardId),
+      );
       if (!actionCardExists) return null;
 
       const handIds = new Set(player.hand.map((card) => card.instanceId));
@@ -1536,6 +1570,7 @@ export default function PracticeBoard({
             setCostModalState({
               playerId,
               cardId: card.instanceId,
+              source: "hand",
               selectedCostCards: [],
               pendingAttributeSelection: null,
             });
@@ -1584,6 +1619,7 @@ export default function PracticeBoard({
             setCostModalState({
               playerId,
               cardId: card.instanceId,
+              source: "hand",
               selectedCostCards: [],
               pendingAttributeSelection: null,
             });
@@ -1635,7 +1671,13 @@ export default function PracticeBoard({
         onClose={closePileModal}
         onCardClick={handleCardClick}
         onPrimaryAction={(card, source, playerId) => {
-          onPrimaryCardAction?.(playerId, card, source);
+          setCostModalState({
+            playerId,
+            cardId: card.instanceId,
+            source,
+            selectedCostCards: [],
+            pendingAttributeSelection: null,
+          });
           setCardActionState(null);
         }}
         onMoveToHand={(cardId, source, playerId) => {
@@ -1735,16 +1777,27 @@ export default function PracticeBoard({
         }}
         onConfirm={() => {
           if (!costModalState) return;
-          const actionCard = state.players[costModalState.playerId].hand.find(
-            (card) => card.instanceId === costModalState.cardId,
+          const actionCard = findSourceCard(
+            state,
+            costModalState.playerId,
+            costModalState.source,
+            costModalState.cardId,
           );
           if (!actionCard) return;
 
-          onHandPrimaryAction?.(
-            costModalState.playerId,
-            actionCard,
-            costModalState.selectedCostCards.map((entry) => entry.cardId),
-          );
+          const costCardIds = costModalState.selectedCostCards.map((entry) => entry.cardId);
+
+          if (costModalState.source === "hand") {
+            onHandPrimaryAction?.(costModalState.playerId, actionCard, costCardIds);
+          } else {
+            onPrimaryCardAction?.(
+              costModalState.playerId,
+              actionCard,
+              costModalState.source,
+              costCardIds,
+            );
+          }
+
           setCostModalState(null);
         }}
         onCancel={() => setCostModalState(null)}
