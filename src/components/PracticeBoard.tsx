@@ -91,6 +91,90 @@ function getCardUseTargetLabel(card: CardRef): string {
   return "0";
 }
 
+type CostAttributeSelectionState = {
+  cardId: string;
+  pendingValues: string[];
+  resolvedValues: string[];
+};
+
+type SelectedCostCardState = {
+  cardId: string;
+  attributes: string[];
+};
+
+function normalizeAttributeValue(value: string): string {
+  return value.trim().toLowerCase();
+}
+
+function getAttributeDisplayLabel(value: string): string {
+  const normalized = normalizeAttributeValue(value);
+
+  switch (normalized) {
+    case "snow":
+      return "설";
+    case "moon":
+      return "월";
+    case "flower":
+      return "화";
+    case "cosmos":
+      return "주";
+    case "sun":
+      return "일";
+    case "star":
+    case "space":
+      return "무";
+    default:
+      return value;
+  }
+}
+
+function getCardCostAttributeOptions(card: CardRef): string[] {
+  const code = getCardCode(card);
+  const meta = CARD_META_BY_CODE[code];
+  const baseValues = Array.isArray(meta?.attributesList)
+    ? meta.attributesList
+    : [meta?.attribute, meta?.color].filter(Boolean);
+
+  const normalizedSeen = new Set<string>();
+  const result: string[] = [];
+
+  for (const rawValue of baseValues) {
+    if (typeof rawValue !== "string") continue;
+    const trimmed = rawValue.trim();
+    if (!trimmed) continue;
+
+    const normalized = normalizeAttributeValue(trimmed);
+    if (normalizedSeen.has(normalized)) continue;
+
+    normalizedSeen.add(normalized);
+    result.push(trimmed);
+  }
+
+  return result;
+}
+
+function getCardExValue(card: CardRef): number {
+  const code = getCardCode(card);
+  const meta = CARD_META_BY_CODE[code];
+  const parsed = Number(meta?.ex ?? 0);
+
+  if (!Number.isFinite(parsed)) return 0;
+  return Math.max(0, Math.trunc(parsed));
+}
+
+function buildAutoSelectedCostCardState(cardId: string, card: CardRef): SelectedCostCardState {
+  const options = getCardCostAttributeOptions(card);
+  const exValue = getCardExValue(card);
+  const autoValue = options[0];
+  const attributes =
+    autoValue && exValue > 0 ? Array.from({ length: exValue }, () => autoValue) : [];
+
+  return {
+    cardId,
+    attributes,
+  };
+}
+
 type CardActionMenuState =
   | {
       kind: "deck" | "discard";
@@ -110,7 +194,8 @@ type CostModalState =
   | {
       playerId: PlayerID;
       cardId: string;
-      selectedCostCardIds: string[];
+      selectedCostCards: SelectedCostCardState[];
+      pendingAttributeSelection: CostAttributeSelectionState | null;
     }
   | null;
 
@@ -245,12 +330,16 @@ function CostPaymentModal({
   state,
   gameState,
   onToggleCostCard,
+  onChoosePendingAttribute,
+  onCancelPendingAttributeSelection,
   onConfirm,
   onCancel,
 }: {
   state: CostModalState;
   gameState: GameState;
   onToggleCostCard: (cardId: string) => void;
+  onChoosePendingAttribute: (value: string) => void;
+  onCancelPendingAttributeSelection: () => void;
   onConfirm: () => void;
   onCancel: () => void;
 }) {
@@ -262,11 +351,26 @@ function CostPaymentModal({
 
   const requiredCount = getCardUseTargetCount(actionCard);
   const requiredLabel = getCardUseTargetLabel(actionCard);
-  const selectedCards = state.selectedCostCardIds
-    .map((cardId) => player.hand.find((card) => card.instanceId === cardId))
-    .filter((card): card is CardRef => Boolean(card));
+  const selectedCards = state.selectedCostCards
+    .map((entry) => {
+      const card = player.hand.find((candidate) => candidate.instanceId === entry.cardId);
+      if (!card) return null;
+      return {
+        card,
+        attributes: entry.attributes,
+      };
+    })
+    .filter(
+      (
+        entry,
+      ): entry is {
+        card: CardRef;
+        attributes: string[];
+      } => Boolean(entry),
+    );
+  const selectedCostCardIdSet = new Set(state.selectedCostCards.map((entry) => entry.cardId));
   const availableHandCards = player.hand.filter((card) => card.instanceId !== state.cardId);
-  const canConfirm = selectedCards.length === requiredCount;
+  const canConfirm = selectedCards.length >= requiredCount;
 
   return (
     <div style={costModalOverlayStyle}>
@@ -280,13 +384,23 @@ function CostPaymentModal({
           {selectedCards.length === 0 ? (
             <div style={emptyHintStyle}>선택된 코스트 카드가 없습니다.</div>
           ) : (
-            selectedCards.map((card) => (
-              <CardImage
-                key={`selected-${card.instanceId}`}
-                card={card}
-                clickable={true}
-                onClick={() => onToggleCostCard(card.instanceId)}
-              />
+            selectedCards.map(({ card, attributes }) => (
+              <div key={`selected-${card.instanceId}`} style={costCardStackStyle}>
+                <CardImage
+                  card={card}
+                  clickable={true}
+                  onClick={() => onToggleCostCard(card.instanceId)}
+                />
+                {attributes.length > 0 ? (
+                  <div style={costAttributeBadgeWrapStyle}>
+                    {attributes.map((value, index) => (
+                      <div key={`${card.instanceId}-${value}-${index}`} style={costAttributeBadgeStyle}>
+                        {getAttributeDisplayLabel(value)}
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
             ))
           )}
         </div>
@@ -297,11 +411,17 @@ function CostPaymentModal({
             <div style={emptyHintStyle}>지불할 수 있는 패가 없습니다.</div>
           ) : (
             availableHandCards.map((card) => {
-              const isSelected = state.selectedCostCardIds.includes(card.instanceId);
+              const isSelected = selectedCostCardIdSet.has(card.instanceId);
+              const pendingSelection =
+                state.pendingAttributeSelection?.cardId === card.instanceId
+                  ? state.pendingAttributeSelection
+                  : null;
+
               return (
                 <div
                   key={`available-${card.instanceId}`}
                   style={{
+                    ...costCardStackStyle,
                     opacity: isSelected ? 0.45 : 1,
                     transition: "opacity 0.15s ease",
                   }}
@@ -311,6 +431,35 @@ function CostPaymentModal({
                     clickable={true}
                     onClick={() => onToggleCostCard(card.instanceId)}
                   />
+                  {pendingSelection ? (
+                    <div style={costAttributePromptOverlayStyle}>
+                      <div style={costAttributePromptCardStyle}>
+                        <div style={costAttributePromptTitleStyle}>
+                          EX {pendingSelection.resolvedValues.length + 1} /{" "}
+                          {pendingSelection.resolvedValues.length + pendingSelection.pendingValues.length}
+                        </div>
+                        <div style={costAttributePromptButtonWrapStyle}>
+                          {getCardCostAttributeOptions(card).map((value) => (
+                            <button
+                              key={`${card.instanceId}-${value}`}
+                              type="button"
+                              style={costAttributePromptButtonStyle}
+                              onClick={() => onChoosePendingAttribute(value)}
+                            >
+                              {getAttributeDisplayLabel(value)}
+                            </button>
+                          ))}
+                          <button
+                            type="button"
+                            style={costAttributePromptCancelButtonStyle}
+                            onClick={onCancelPendingAttributeSelection}
+                          >
+                            취소
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
               );
             })
@@ -318,8 +467,25 @@ function CostPaymentModal({
         </div>
 
         <div style={costFooterStyle}>
-          <div style={costFooterHintStyle}>
-            선택 {selectedCards.length} / 필요 {requiredCount}
+          <div style={costFooterInfoWrapStyle}>
+            <div style={costFooterHintStyle}>
+              선택 {selectedCards.length} / 필요 {requiredCount}
+              {selectedCards.length > requiredCount ? " (초과 선택 허용)" : ""}
+            </div>
+            <div style={costFooterSummaryStyle}>
+              {selectedCards.length === 0
+                ? "발생한 attribute 없음"
+                : selectedCards
+                    .map(
+                      ({ card, attributes }) =>
+                        `${card.name}: ${
+                          attributes.length > 0
+                            ? attributes.map((value) => getAttributeDisplayLabel(value)).join(" / ")
+                            : "없음"
+                        }`,
+                    )
+                    .join(" | ")}
+            </div>
           </div>
           <div style={costFooterButtonsStyle}>
             <button
@@ -964,9 +1130,16 @@ export default function PracticeBoard({
       if (!actionCardExists) return null;
 
       const handIds = new Set(player.hand.map((card) => card.instanceId));
+      const selectedCostCards = prev.selectedCostCards.filter((entry) => handIds.has(entry.cardId));
+      const pendingAttributeSelection =
+        prev.pendingAttributeSelection && handIds.has(prev.pendingAttributeSelection.cardId)
+          ? prev.pendingAttributeSelection
+          : null;
+
       return {
         ...prev,
-        selectedCostCardIds: prev.selectedCostCardIds.filter((cardId) => handIds.has(cardId)),
+        selectedCostCards,
+        pendingAttributeSelection,
       };
     });
   }, [state.players]);
@@ -1118,7 +1291,8 @@ export default function PracticeBoard({
             setCostModalState({
               playerId,
               cardId: card.instanceId,
-              selectedCostCardIds: [],
+              selectedCostCards: [],
+              pendingAttributeSelection: null,
             });
             setHandCardActionState(null);
           }}
@@ -1165,7 +1339,8 @@ export default function PracticeBoard({
             setCostModalState({
               playerId,
               cardId: card.instanceId,
-              selectedCostCardIds: [],
+              selectedCostCards: [],
+              pendingAttributeSelection: null,
             });
             setHandCardActionState(null);
           }}
@@ -1230,18 +1405,88 @@ export default function PracticeBoard({
         onToggleCostCard={(cardId) => {
           setCostModalState((prev) => {
             if (!prev) return prev;
-            const exists = prev.selectedCostCardIds.includes(cardId);
+            if (prev.pendingAttributeSelection) return prev;
+
+            const exists = prev.selectedCostCards.some((entry) => entry.cardId === cardId);
             if (exists) {
               return {
                 ...prev,
-                selectedCostCardIds: prev.selectedCostCardIds.filter((id) => id !== cardId),
+                selectedCostCards: prev.selectedCostCards.filter((entry) => entry.cardId !== cardId),
+                pendingAttributeSelection:
+                  prev.pendingAttributeSelection?.cardId === cardId
+                    ? null
+                    : prev.pendingAttributeSelection,
               };
             }
+
+            const player = state.players[prev.playerId];
+            const selectedCard = player.hand.find((card) => card.instanceId === cardId);
+            if (!selectedCard) return prev;
+
+            const attributeOptions = getCardCostAttributeOptions(selectedCard);
+            const exValue = getCardExValue(selectedCard);
+
+            if (attributeOptions.length <= 1 || exValue <= 0) {
+              return {
+                ...prev,
+                selectedCostCards: [
+                  ...prev.selectedCostCards,
+                  buildAutoSelectedCostCardState(cardId, selectedCard),
+                ],
+              };
+            }
+
             return {
               ...prev,
-              selectedCostCardIds: [...prev.selectedCostCardIds, cardId],
+              pendingAttributeSelection: {
+                cardId,
+                pendingValues: Array.from({ length: exValue }, () => ""),
+                resolvedValues: [],
+              },
             };
           });
+        }}
+        onChoosePendingAttribute={(value) => {
+          setCostModalState((prev) => {
+            if (!prev?.pendingAttributeSelection) return prev;
+
+            const pending = prev.pendingAttributeSelection;
+            const nextResolvedValues = [...pending.resolvedValues, value];
+            const remainingCount = Math.max(0, pending.pendingValues.length - 1);
+
+            if (remainingCount === 0) {
+              return {
+                ...prev,
+                selectedCostCards: [
+                  ...prev.selectedCostCards,
+                  {
+                    cardId: pending.cardId,
+                    attributes: nextResolvedValues,
+                  },
+                ],
+                pendingAttributeSelection: null,
+              };
+            }
+
+            return {
+              ...prev,
+              pendingAttributeSelection: {
+                ...pending,
+                resolvedValues: nextResolvedValues,
+                pendingValues: pending.pendingValues.slice(1),
+              },
+            };
+          });
+        }}
+        onCancelPendingAttributeSelection={() => {
+          setCostModalState((prev) =>
+            prev
+              ? {
+                  ...prev,
+                  pendingAttributeSelection: null,
+                }
+              : prev,
+          );
         }}
         onConfirm={() => {
           if (!costModalState) return;
@@ -1253,7 +1498,7 @@ export default function PracticeBoard({
           onHandPrimaryAction?.(
             costModalState.playerId,
             actionCard,
-            costModalState.selectedCostCardIds,
+            costModalState.selectedCostCards.map((entry) => entry.cardId),
           );
           setCostModalState(null);
         }}
@@ -1614,8 +1859,106 @@ const costFooterStyle: CSSProperties = {
   marginTop: 18,
 };
 
+const costFooterInfoWrapStyle: CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 6,
+  minWidth: 0,
+  flex: 1,
+};
+
 const costFooterHintStyle: CSSProperties = {
   color: "#b9c3d6",
+};
+
+const costFooterSummaryStyle: CSSProperties = {
+  color: "#9fb0ca",
+  fontSize: 12,
+  lineHeight: 1.5,
+  wordBreak: "break-word",
+};
+
+const costCardStackStyle: CSSProperties = {
+  position: "relative",
+};
+
+const costAttributeBadgeWrapStyle: CSSProperties = {
+  position: "absolute",
+  left: 8,
+  right: 8,
+  bottom: 8,
+  display: "flex",
+  flexWrap: "wrap",
+  gap: 6,
+  pointerEvents: "none",
+};
+
+const costAttributeBadgeStyle: CSSProperties = {
+  background: "rgba(15, 23, 36, 0.74)",
+  border: "1px solid rgba(147, 197, 253, 0.78)",
+  borderRadius: 9999,
+  color: "#ffffff",
+  fontSize: 11,
+  fontWeight: 700,
+  lineHeight: 1,
+  padding: "5px 8px",
+};
+
+const costAttributePromptOverlayStyle: CSSProperties = {
+  position: "absolute",
+  inset: 0,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  padding: 10,
+  background: "rgba(15, 23, 36, 0.22)",
+};
+
+const costAttributePromptCardStyle: CSSProperties = {
+  width: "100%",
+  background: "rgba(15, 23, 36, 0.82)",
+  border: "1px solid rgba(147, 197, 253, 0.78)",
+  borderRadius: 12,
+  padding: 10,
+  boxSizing: "border-box",
+  backdropFilter: "blur(1px)",
+};
+
+const costAttributePromptTitleStyle: CSSProperties = {
+  color: "#ffffff",
+  fontSize: 12,
+  fontWeight: 800,
+  marginBottom: 8,
+  textAlign: "center",
+};
+
+const costAttributePromptButtonWrapStyle: CSSProperties = {
+  display: "grid",
+  gap: 6,
+};
+
+const costAttributePromptButtonStyle: CSSProperties = {
+  background: "rgba(29, 78, 216, 0.86)",
+  border: "1px solid rgba(147, 197, 253, 0.78)",
+  borderRadius: 8,
+  color: "#ffffff",
+  cursor: "pointer",
+  fontWeight: 700,
+  fontSize: 12,
+  padding: "7px 8px",
+  width: "100%",
+};
+
+const costAttributePromptCancelButtonStyle: CSSProperties = {
+  background: "rgba(55, 65, 81, 0.86)",
+  border: "1px solid rgba(156, 163, 175, 0.78)",
+  borderRadius: 8,
+  color: "#ffffff",
+  cursor: "pointer",
+  fontWeight: 700,
+  fontSize: 12,
+  padding: "7px 8px",
+  width: "100%",
 };
 
 const costFooterButtonsStyle: CSSProperties = {
