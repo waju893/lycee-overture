@@ -57,38 +57,167 @@ function shuffleCards<T>(cards: T[]): T[] {
   return next;
 }
 
-function getCardUseTargetCount(card: CardRef): number {
+function getCardUseTargetRequirements(card: CardRef): string[] {
   const code = getCardCode(card);
   const meta = CARD_META_BY_CODE[code];
   const useTarget = meta?.useTarget;
 
-  if (Array.isArray(useTarget)) return useTarget.length;
-  if (typeof useTarget === "number") return Math.max(0, useTarget);
+  const expandCompactAttributeString = (rawValue: string): string[] => {
+    const compact = rawValue.replace(/[\s\+\＋,\/|，・\(\)\[\]\{\}]+/g, "");
+    if (!compact) return [];
+
+    const directMap: Record<string, string> = {
+      "日": "sun",
+      "일": "sun",
+      "月": "moon",
+      "월": "moon",
+      "花": "flower",
+      "화": "flower",
+      "雪": "snow",
+      "설": "snow",
+      "宙": "cosmos",
+      "주": "cosmos",
+      "無": "star",
+      "무": "star",
+    };
+
+    const chars = Array.from(compact);
+    const directExpanded: string[] = [];
+    let hasUnknownDirectChar = false;
+
+    for (const ch of chars) {
+      const mapped = directMap[ch];
+      if (!mapped) {
+        hasUnknownDirectChar = true;
+        break;
+      }
+      directExpanded.push(mapped);
+    }
+
+    if (!hasUnknownDirectChar && directExpanded.length > 0) {
+      return directExpanded;
+    }
+
+    const englishTokens = [
+      "flower",
+      "cosmos",
+      "space",
+      "moon",
+      "snow",
+      "star",
+      "none",
+      "sun",
+    ];
+
+    const lowered = compact.toLowerCase();
+    const englishExpanded: string[] = [];
+    let cursor = 0;
+    let hasUnknownEnglishChunk = false;
+
+    while (cursor < lowered.length) {
+      let matchedToken = "";
+
+      for (const token of englishTokens) {
+        if (lowered.startsWith(token, cursor)) {
+          matchedToken = token;
+          break;
+        }
+      }
+
+      if (!matchedToken) {
+        hasUnknownEnglishChunk = true;
+        break;
+      }
+
+      englishExpanded.push(normalizeAttributeValue(matchedToken));
+      cursor += matchedToken.length;
+    }
+
+    if (!hasUnknownEnglishChunk && englishExpanded.length > 0) {
+      return englishExpanded;
+    }
+
+    const parsed = Number(lowered);
+    if (Number.isFinite(parsed) && parsed > 0) {
+      return Array.from({ length: Math.trunc(parsed) }, () => "generic");
+    }
+
+    return [normalizeAttributeValue(rawValue)];
+  };
+
+  if (Array.isArray(useTarget)) {
+    return useTarget.flatMap((value) => expandCompactAttributeString(String(value).trim()));
+  }
+
+  if (typeof useTarget === "number") {
+    return useTarget > 0 ? Array.from({ length: useTarget }, () => "generic") : [];
+  }
+
   if (typeof useTarget === "string") {
     const trimmed = useTarget.trim();
-    const parsed = Number(trimmed);
-    if (Number.isFinite(parsed)) return Math.max(0, parsed);
-    if (!trimmed) return 0;
-    return 1;
+    if (!trimmed || trimmed === "0") return [];
+
+    const tokenized = trimmed
+      .split(/[\s\+\＋,\/|，・]+/)
+      .map((value) => value.trim())
+      .filter((value) => value.length > 0);
+
+    if (tokenized.length > 1) {
+      return tokenized.flatMap((value) => expandCompactAttributeString(value));
+    }
+
+    return expandCompactAttributeString(trimmed);
   }
-  return 0;
+
+  return [];
+}
+
+function getCardUseTargetRequirementMap(card: CardRef): Record<string, number> {
+  const requirements = getCardUseTargetRequirements(card);
+  const result: Record<string, number> = {};
+
+  for (const requirement of requirements) {
+    const normalized = normalizeAttributeValue(requirement);
+    result[normalized] = (result[normalized] ?? 0) + 1;
+  }
+
+  return result;
+}
+
+function getCardUseTargetTotalRequired(card: CardRef): number {
+  return getCardUseTargetRequirements(card).length;
 }
 
 function getCardUseTargetLabel(card: CardRef): string {
-  const code = getCardCode(card);
-  const meta = CARD_META_BY_CODE[code];
-  const useTarget = meta?.useTarget;
+  const requirements = getCardUseTargetRequirements(card);
+  return requirements.length > 0 ? requirements.join(" / ") : "0";
+}
 
-  if (Array.isArray(useTarget)) {
-    return useTarget.join(" / ");
+function getResolvedCostAttributeCounts(selectedCostCards: SelectedCostCardState[]): Record<string, number> {
+  const result: Record<string, number> = {};
+
+  for (const entry of selectedCostCards) {
+    for (const rawValue of entry.attributes) {
+      const normalized = normalizeAttributeValue(rawValue);
+      if (!normalized) continue;
+      result[normalized] = (result[normalized] ?? 0) + 1;
+    }
   }
-  if (typeof useTarget === "number") {
-    return String(useTarget);
+
+  return result;
+}
+
+function canPayCardUseTarget(card: CardRef, selectedCostCards: SelectedCostCardState[]): boolean {
+  const requiredMap = getCardUseTargetRequirementMap(card);
+  const resolvedMap = getResolvedCostAttributeCounts(selectedCostCards);
+
+  for (const [attribute, requiredValue] of Object.entries(requiredMap)) {
+    if ((resolvedMap[attribute] ?? 0) < requiredValue) {
+      return false;
+    }
   }
-  if (typeof useTarget === "string") {
-    return useTarget.trim() || "0";
-  }
-  return "0";
+
+  return true;
 }
 
 type CostAttributeSelectionState = {
@@ -103,7 +232,38 @@ type SelectedCostCardState = {
 };
 
 function normalizeAttributeValue(value: string): string {
-  return value.trim().toLowerCase();
+  const normalized = value.trim().toLowerCase();
+
+  switch (normalized) {
+    case "sun":
+    case "日":
+    case "일":
+      return "sun";
+    case "moon":
+    case "月":
+    case "월":
+      return "moon";
+    case "flower":
+    case "花":
+    case "화":
+      return "flower";
+    case "snow":
+    case "雪":
+    case "설":
+      return "snow";
+    case "cosmos":
+    case "space":
+    case "宙":
+    case "주":
+      return "cosmos";
+    case "star":
+    case "none":
+    case "無":
+    case "무":
+      return "star";
+    default:
+      return normalized;
+  }
 }
 
 function getAttributeDisplayLabel(value: string): string {
@@ -349,7 +509,7 @@ function CostPaymentModal({
   const actionCard = player.hand.find((card) => card.instanceId === state.cardId);
   if (!actionCard) return null;
 
-  const requiredCount = getCardUseTargetCount(actionCard);
+  const requiredCount = getCardUseTargetTotalRequired(actionCard);
   const requiredLabel = getCardUseTargetLabel(actionCard);
   const selectedCards = state.selectedCostCards
     .map((entry) => {
@@ -370,7 +530,9 @@ function CostPaymentModal({
     );
   const selectedCostCardIdSet = new Set(state.selectedCostCards.map((entry) => entry.cardId));
   const availableHandCards = player.hand.filter((card) => card.instanceId !== state.cardId);
-  const canConfirm = selectedCards.length >= requiredCount;
+  const requiredAttributeMap = getCardUseTargetRequirementMap(actionCard);
+  const resolvedAttributeMap = getResolvedCostAttributeCounts(state.selectedCostCards);
+  const canConfirm = canPayCardUseTarget(actionCard, state.selectedCostCards);
 
   return (
     <div style={costModalOverlayStyle}>
@@ -469,12 +631,32 @@ function CostPaymentModal({
         <div style={costFooterStyle}>
           <div style={costFooterInfoWrapStyle}>
             <div style={costFooterHintStyle}>
-              선택 {selectedCards.length} / 필요 {requiredCount}
-              {selectedCards.length > requiredCount ? " (초과 선택 허용)" : ""}
+              발생 attribute {Object.values(resolvedAttributeMap).reduce((sum, value) => sum + value, 0)} / 요구 attribute {requiredCount}
             </div>
             <div style={costFooterSummaryStyle}>
+              요구:{" "}
+              {Object.keys(requiredAttributeMap).length === 0
+                ? "없음"
+                : Object.entries(requiredAttributeMap)
+                    .map(
+                      ([attribute, value]) =>
+                        `${getAttributeDisplayLabel(attribute)} ${value}이상`,
+                    )
+                    .join(" / ")}
+              <br />
+              현재 발생:{" "}
+              {Object.keys(resolvedAttributeMap).length === 0
+                ? "없음"
+                : Object.entries(resolvedAttributeMap)
+                    .map(
+                      ([attribute, value]) =>
+                        `${getAttributeDisplayLabel(attribute)} ${value}`,
+                    )
+                    .join(" / ")}
+              <br />
+              선택 카드:{" "}
               {selectedCards.length === 0
-                ? "발생한 attribute 없음"
+                ? "없음"
                 : selectedCards
                     .map(
                       ({ card, attributes }) =>
