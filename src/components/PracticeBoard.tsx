@@ -1323,6 +1323,12 @@ interface PracticeBoardProps {
     source: "deck" | "discard",
     costCardIds: string[],
   ) => void;
+  onPileCharacterDeclareAction?: (
+    playerId: PlayerID,
+    card: CardRef,
+    source: "deck" | "discard",
+    costCardIds: string[],
+  ) => void;
   onMoveCardToHand?: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
   onRecoverCardsToDeckBottom?: (playerId: PlayerID, cardIdsInOrder: string[]) => void;
 }
@@ -1339,6 +1345,7 @@ export default function PracticeBoard({
   onDamageFromDeck,
   onShuffleDeck,
   onPrimaryCardAction,
+  onPileCharacterDeclareAction,
   onMoveCardToHand,
   onRecoverCardsToDeckBottom,
 }: PracticeBoardProps) {
@@ -1789,6 +1796,22 @@ export default function PracticeBoard({
 
           if (costModalState.source === "hand") {
             onHandPrimaryAction?.(costModalState.playerId, actionCard, costCardIds);
+          } else if (actionCard.cardType === "character") {
+            if (onPileCharacterDeclareAction) {
+              onPileCharacterDeclareAction(
+                costModalState.playerId,
+                actionCard,
+                costModalState.source,
+                costCardIds,
+              );
+            } else {
+              onPrimaryCardAction?.(
+                costModalState.playerId,
+                actionCard,
+                costModalState.source,
+                costCardIds,
+              );
+            }
           } else {
             onPrimaryCardAction?.(
               costModalState.playerId,
