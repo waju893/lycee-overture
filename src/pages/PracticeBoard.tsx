@@ -302,7 +302,7 @@ function hasOpenAreaSlot(state: GameState, playerId: PlayerID): boolean {
 function hasEquipableCharacterSlot(state: GameState, playerId: PlayerID): boolean {
   return ALL_SLOTS.some((slot) => {
     const cell = state.players[playerId].field[slot];
-    return Boolean(cell.card) && !cell.attachedItem;
+    return Boolean(cell.card);
   });
 }
 
@@ -880,63 +880,57 @@ export default function PracticeBoard() {
     }
 
     if (placementMode?.type === "hand_item_to_field" && placementMode.playerId === playerId) {
-      if (!cell.card || cell.attachedItem) return;
+      if (!cell.card) return;
 
       setState((prev) => {
         const next = structuredClone(prev) as GameState;
-        const player = next.players[playerId];
-        const index = player.hand.findIndex((item) => item.instanceId === placementMode.cardId);
-
-        if (index < 0) {
-          next.logs.push(`[HAND] ${playerId} 손패 장비 실패: 카드를 찾지 못함 (${placementMode.cardId})`);
-          return next;
-        }
-
         payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-
-        const [removed] = player.hand.splice(index, 1);
-        if (!removed) return next;
-
-        if (!attachItemToCharacter(next, playerId, slot, removed)) {
-          player.hand.splice(index, 0, removed);
-          return next;
-        }
-
-        next.logs.push(`[HAND] ${playerId} 손패 장비 -> ${slot}: ${removed.name}`);
-        return next;
+        return reduceGameState(next, {
+          type: "DECLARE_ACTION",
+          playerId,
+          kind: "useItem",
+          sourceCardId: placementMode.cardId,
+          targetSlots: [slot],
+          targetingMode: "declareTime",
+        });
       });
       setPlacementMode(null);
       return;
     }
 
     if (placementMode?.type === "pile_item_to_field" && placementMode.playerId === playerId) {
-      if (!cell.card || cell.attachedItem) return;
+      if (!cell.card) return;
 
       setState((prev) => {
         const next = structuredClone(prev) as GameState;
         const player = next.players[playerId];
         const sourcePile = placementMode.source === "deck" ? player.deck : player.discard;
-        const sourceIndex = sourcePile.findIndex((item) => item.instanceId === placementMode.cardId);
+        const sourceCard = sourcePile.find((item) => item.instanceId === placementMode.cardId);
 
-        if (sourceIndex < 0) {
+        if (!sourceCard) {
           next.logs.push(
-            `[PILE_ITEM] ${playerId} ${placementMode.source} 장비 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
+            `[PILE_ITEM] ${playerId} ${placementMode.source} 장비 선언 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
           );
           return next;
         }
 
         payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
 
-        const [removed] = sourcePile.splice(sourceIndex, 1);
-        if (!removed) return next;
+        next.logs.push(
+          `[PILE_ITEM] ${playerId} ${placementMode.source} 장비 선언 준비: ${sourceCard.name} / 대상 슬롯 ${slot}`,
+        );
 
-        if (!attachItemToCharacter(next, playerId, slot, removed)) {
-          sourcePile.splice(sourceIndex, 0, removed);
-          return next;
-        }
-
-        next.logs.push(`[PILE_ITEM] ${playerId} ${placementMode.source} 장비 -> ${slot}: ${removed.name}`);
-        return next;
+        return reduceGameState(next, {
+          type: "DECLARE_ACTION",
+          playerId,
+          kind: "useItem",
+          sourceCardId: placementMode.cardId,
+          targetSlots: [slot],
+          targetingMode: "declareTime",
+          payload: {
+            sourceZone: placementMode.source,
+          },
+        });
       });
       setPlacementMode(null);
       return;

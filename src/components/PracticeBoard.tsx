@@ -796,6 +796,39 @@ function CostPaymentModal({
 }
 
 
+
+function ItemEquipListModal({
+  isOpen,
+  items,
+  onClose,
+}: {
+  isOpen: boolean;
+  items: CardRef[];
+  onClose: () => void;
+}) {
+  if (!isOpen) return null;
+
+  return (
+    <div style={subModalOverlayStyle} onClick={onClose}>
+      <div style={equipListModalCardStyle} onClick={(event) => event.stopPropagation()}>
+        <div style={subModalTitleStyle}>이 캐릭터가 현재 장비중인 아이템입니다</div>
+        <div style={equipListGridStyle}>
+          {items.map((item, index) => (
+            <div key={`${item.instanceId}-${index}`} style={equipListItemStyle}>
+              <CardImage card={item} clickable={false} onClick={() => undefined} />
+            </div>
+          ))}
+        </div>
+        <div style={equipListFooterStyle}>
+          <button type="button" style={confirmButtonStyle} onClick={onClose}>
+            확인
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function FieldSlotImage({
   cell,
   slot,
@@ -806,12 +839,11 @@ function FieldSlotImage({
   onClick: () => void;
 }) {
   const attachedItems =
-    (cell as any).attachedItems ??
-    (cell.attachedItem ? [cell.attachedItem] : []);
-
+    ((cell as any).attachedItems ?? (cell.attachedItem ? [cell.attachedItem] : [])) as CardRef[];
   const itemCount = attachedItems.length;
+  const [isEquipListOpen, setIsEquipListOpen] = useState(false);
 
-  const primaryCard = cell.card ?? cell.area ?? cell.attachedItem ?? null;
+  const primaryCard = cell.card ?? cell.area ?? (attachedItems[0] ?? null);
   const primaryCode = primaryCard ? getCardCode(primaryCard) : "";
   const primaryCandidates = useMemo(
     () => (primaryCode ? getCardImageCandidates(primaryCode) : []),
@@ -823,12 +855,23 @@ function FieldSlotImage({
     setPrimaryIndex(0);
   }, [primaryCode, primaryCandidates]);
 
-  const renderMiniThumb = (card: CardRef, kind: string) => {
+  const renderMiniThumb = (card: CardRef, kind: string, clickable = false) => {
     const code = getCardCode(card);
     const src = getCardImageCandidates(code)[0] ?? "";
 
     return (
-      <div key={`${kind}-${card.instanceId}`} style={fieldMiniThumbWrapStyle} title={`${kind}: ${card.name}`}>
+      <button
+        key={`${kind}-${card.instanceId}`}
+        type="button"
+        style={fieldMiniThumbButtonStyle}
+        title={`${kind}: ${card.name}`}
+        onClick={(event) => {
+          event.stopPropagation();
+          if (clickable) {
+            setIsEquipListOpen(true);
+          }
+        }}
+      >
         {src ? (
           <img
             src={src}
@@ -842,49 +885,59 @@ function FieldSlotImage({
           <div style={fieldMiniThumbFallbackStyle}>{kind}</div>
         )}
         <div style={fieldMiniThumbLabelStyle}>{kind}</div>
-      </div>
+        {clickable && itemCount >= 2 ? (
+          <div style={fieldItemCountBadgeStyle}>x{itemCount}</div>
+        ) : null}
+      </button>
     );
   };
 
-  const extraThumbs: JSX.Element[] = [];
+  const extraThumbs: React.ReactNode[] = [];
   if (cell.card && cell.area) extraThumbs.push(renderMiniThumb(cell.area, "에리어"));
-  if (cell.card && cell.attachedItem) extraThumbs.push(renderMiniThumb(cell.attachedItem, "아이템"));
-  if (!cell.card && cell.area && cell.attachedItem) extraThumbs.push(renderMiniThumb(cell.attachedItem, "아이템"));
+  if (cell.card && attachedItems[0]) extraThumbs.push(renderMiniThumb(attachedItems[0], "아이템", true));
+  if (!cell.card && cell.area && attachedItems[0]) extraThumbs.push(renderMiniThumb(attachedItems[0], "아이템", true));
 
   return (
-    <button
-      type="button"
-      style={fieldSlotImageButtonStyle}
-      onClick={onClick}
-      title={primaryCard ? `${slot} / ${primaryCard.name}` : slot}
-    >
-      <div style={fieldSlotTitleBadgeStyle}>{slot}</div>
-      <div style={fieldSlotImageFrameStyle}>
-        {primaryCard && primaryCandidates[primaryIndex] ? (
-          <img
-            src={primaryCandidates[primaryIndex]}
-            alt={primaryCard.name}
-            loading="lazy"
-            decoding="async"
-            draggable={false}
-            onLoad={() => {
-              markCardImageResolved(primaryCode, primaryCandidates[primaryIndex]);
-            }}
-            onError={() => {
-              markCardImageFailed(primaryCandidates[primaryIndex]);
-              setPrimaryIndex((prev) => prev + 1);
-            }}
-            style={fieldSlotImageStyle}
-          />
-        ) : (
-          <div style={fieldEmptyFrameStyle}>비어 있음</div>
-        )}
-      </div>
-      {extraThumbs.length > 0 ? <div style={fieldMiniThumbTrayStyle}>{extraThumbs}</div> : null}
-    </button>
+    <>
+      <button
+        type="button"
+        style={fieldSlotImageButtonStyle}
+        onClick={onClick}
+        title={primaryCard ? `${slot} / ${primaryCard.name}` : slot}
+      >
+        <div style={fieldSlotTitleBadgeStyle}>{slot}</div>
+        <div style={fieldSlotImageFrameStyle}>
+          {primaryCard && primaryCandidates[primaryIndex] ? (
+            <img
+              src={primaryCandidates[primaryIndex]}
+              alt={primaryCard.name}
+              loading="lazy"
+              decoding="async"
+              draggable={false}
+              onLoad={() => {
+                markCardImageResolved(primaryCode, primaryCandidates[primaryIndex]);
+              }}
+              onError={() => {
+                markCardImageFailed(primaryCandidates[primaryIndex]);
+                setPrimaryIndex((prev) => prev + 1);
+              }}
+              style={fieldSlotImageStyle}
+            />
+          ) : (
+            <div style={fieldEmptyFrameStyle}>비어 있음</div>
+          )}
+        </div>
+        {extraThumbs.length > 0 ? <div style={fieldMiniThumbTrayStyle}>{extraThumbs}</div> : null}
+      </button>
+
+      <ItemEquipListModal
+        isOpen={isEquipListOpen}
+        items={attachedItems}
+        onClose={() => setIsEquipListOpen(false)}
+      />
+    </>
   );
 }
-
 type PlayerAreaProps = {
   label: string;
   playerId: PlayerID;
@@ -2122,7 +2175,7 @@ const fieldMiniThumbTrayStyle: CSSProperties = {
   zIndex: 2,
 };
 
-const fieldMiniThumbWrapStyle: CSSProperties = {
+const fieldMiniThumbButtonStyle: CSSProperties = {
   position: "relative",
   width: 34,
   height: 48,
@@ -2130,6 +2183,8 @@ const fieldMiniThumbWrapStyle: CSSProperties = {
   overflow: "hidden",
   border: "1px solid rgba(148, 163, 184, 0.82)",
   background: "rgba(15, 23, 36, 0.92)",
+  padding: 0,
+  cursor: "pointer",
 };
 
 const fieldMiniThumbImageStyle: CSSProperties = {
@@ -2148,6 +2203,34 @@ const fieldMiniThumbFallbackStyle: CSSProperties = {
   color: "#e5e7eb",
   fontSize: 10,
   fontWeight: 800,
+};
+
+
+const equipListModalCardStyle: CSSProperties = {
+  width: "min(900px, 100%)",
+  background: "#182233",
+  border: "1px solid #2a3850",
+  borderRadius: 16,
+  padding: 20,
+  boxSizing: "border-box",
+};
+
+const equipListGridStyle: CSSProperties = {
+  display: "flex",
+  gap: 12,
+  overflowX: "auto",
+  marginTop: 14,
+};
+
+const equipListItemStyle: CSSProperties = {
+  minWidth: 140,
+  maxWidth: 160,
+};
+
+const equipListFooterStyle: CSSProperties = {
+  display: "flex",
+  justifyContent: "flex-end",
+  marginTop: 16,
 };
 
 const fieldMiniThumbLabelStyle: CSSProperties = {
