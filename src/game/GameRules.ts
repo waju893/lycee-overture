@@ -487,12 +487,46 @@ export function validateAttackDeclaration(state: GameState, playerId: PlayerID, 
   if (state.turn.activePlayer !== playerId || state.turn.phase !== "main") violations.push(fail("공격 선언은 자기 메인페이즈에만 가능합니다.", "TIMING_INVALID")[0]);
   const slot = getCardCurrentSlot(state, attackerCardId);
   if (!slot) return fail("공격 캐릭터를 장에서 찾을 수 없습니다.", "CARD_NOT_FOUND");
-  if (!isAF(slot)) violations.push(fail("공격은 AF 캐릭터만 할 수 있습니다.", "ATTACKER_NOT_AF")[0]);
+  if (!isAF(slot)) violations.push(fail("공격은 AF 캐릭터만 할 수 있습니다.", "ATTACKER_NOT_AF\")[0]);
   if (findCardController(state, attackerCardId) !== playerId) violations.push(fail("자신의 캐릭터로만 공격 선언할 수 있습니다.", "NOT_OWN_CARD")[0]);
   const card = state.players[playerId].field[slot].card;
   if (!card) return fail("공격 캐릭터를 장에서 찾을 수 없습니다.", "CARD_NOT_FOUND");
   if (card.isTapped) violations.push(fail("행동 완료 상태의 캐릭터는 공격할 수 없습니다.", "ATTACKER_TAPPED")[0]);
   if (card.canAttack === false) violations.push(fail("이 캐릭터는 현재 공격할 수 없습니다.", "ATTACK_FORBIDDEN")[0]);
+  return violations;
+}
+
+export function validateAbilityUse(
+  state: GameState,
+  playerId: PlayerID,
+  sourceCardId: string,
+): RuleViolation[] {
+  const violations: RuleViolation[] = [];
+
+  if (state.turn.activePlayer !== playerId || state.turn.phase !== "main") {
+    violations.push(fail("능력 사용은 자기 메인페이즈에만 가능합니다.", "TIMING_INVALID")[0]);
+  }
+
+  const slot = getCardCurrentSlot(state, sourceCardId);
+  if (!slot) {
+    violations.push(fail("능력 사용 원본 캐릭터를 장에서 찾을 수 없습니다.", "CARD_NOT_FOUND")[0]);
+    return violations;
+  }
+
+  if (findCardController(state, sourceCardId) !== playerId) {
+    violations.push(fail("자신의 캐릭터 능력만 사용할 수 있습니다.", "NOT_OWN_CARD")[0]);
+  }
+
+  const card = state.players[playerId].field[slot].card;
+  if (!card) {
+    violations.push(fail("능력 사용 원본 캐릭터를 장에서 찾을 수 없습니다.", "CARD_NOT_FOUND")[0]);
+    return violations;
+  }
+
+  if (card.cardType !== "character") {
+    violations.push(fail("현재는 캐릭터 능력만 사용할 수 있습니다.", "CARD_TYPE_INVALID")[0]);
+  }
+
   return violations;
 }
 
@@ -748,7 +782,7 @@ export function resolveDeclarationCore(state: GameState, declaration: Declaratio
         type: "CHARACTER_TAPPED",
         playerId: declaration.playerId,
         cardId: card.instanceId,
-        slot: slot ?? undefined,
+        slot,
       });
     }
     declaration.resolved = true;
@@ -769,7 +803,7 @@ export function resolveDeclarationCore(state: GameState, declaration: Declaratio
         type: "CHARACTER_UNTAPPED",
         playerId: declaration.playerId,
         cardId: card.instanceId,
-        slot: slot ?? undefined,
+        slot,
       });
     }
     declaration.resolved = true;
@@ -854,9 +888,39 @@ export function resolveDeclarationCore(state: GameState, declaration: Declaratio
       playerId: declaration.playerId,
       cardId: card.instanceId,
       amount: charged.length,
-      slot: slot ?? undefined,
+      slot,
     });
     declaration.resolved = true;
+    return;
+  }
+
+  if (declaration.kind === "useAbility") {
+    if (!declaration.sourceCardId) {
+      declaration.resolved = true;
+      return;
+    }
+
+    const slot = getCardCurrentSlot(state, declaration.sourceCardId);
+    const card = slot ? state.players[declaration.playerId].field[slot].card : null;
+
+    declaration.resolved = true;
+
+    if (!card) {
+      state.logs.push(`[RESOLVE] useAbility 해결 실패: 카드 없음`);
+      return;
+    }
+
+    state.logs.push(`[RESOLVE] ${declaration.playerId} 능력 사용 해결: ${card.name}`);
+    pushEvent(state, {
+      type: "ABILITY_USED",
+      playerId: declaration.playerId,
+      cardId: card.instanceId,
+      slot: slot ?? undefined,
+      payload: {
+        sourceEffectId: declaration.sourceEffectId,
+        declaredTargets: declaration.declaredTargets,
+      },
+    });
     return;
   }
 
