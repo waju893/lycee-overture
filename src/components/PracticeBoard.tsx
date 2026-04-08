@@ -32,6 +32,36 @@ function getCardLabel(card: CardRef): string {
 function getCardCode(card: CardRef): string {
   return String(card.cardNo ?? card.sameNameKey ?? "").trim().toUpperCase();
 }
+function getCardMeta(card: CardRef) {
+  const code = getCardCode(card);
+  return CARD_META_BY_CODE[code];
+}
+
+function getCardMetaAttributeList(card: CardRef): string[] {
+  const meta = getCardMeta(card);
+
+  if (Array.isArray(meta?.attributesList)) {
+    return meta.attributesList.map((value) => String(value));
+  }
+
+  if (Array.isArray((meta as { attributes_list?: unknown[] } | undefined)?.attributes_list)) {
+    return ((meta as { attributes_list?: unknown[] }).attributes_list ?? []).map((value) => String(value));
+  }
+
+  return [meta?.attribute, meta?.color]
+    .filter((value): value is string => typeof value === "string" && value.trim().length > 0)
+    .map((value) => String(value));
+}
+
+function getCardMetaUseTargetList(card: CardRef): unknown[] {
+  const meta = getCardMeta(card);
+  if (Array.isArray(meta?.useTarget)) return meta.useTarget;
+  if (typeof meta?.useTarget === "string" || typeof meta?.useTarget === "number") {
+    return [meta.useTarget];
+  }
+  return [];
+}
+
 
 function getPrimaryActionLabel(card: CardRef): string {
   switch (card.cardType) {
@@ -153,15 +183,8 @@ function parseAttributeValues(rawValue: unknown): string[] {
 }
 
 function getCardUseTargetRequirements(card: CardRef): string[] {
-  const code = getCardCode(card);
-  const meta = CARD_META_BY_CODE[code];
-  const useTarget = meta?.useTarget;
-
-  if (Array.isArray(useTarget)) {
-    return useTarget.flatMap((value) => parseAttributeValues(value));
-  }
-
-  return parseAttributeValues(useTarget);
+  const rawTargets = getCardMetaUseTargetList(card);
+  return rawTargets.flatMap((value) => parseAttributeValues(value));
 }
 
 function getCardUseTargetRequirementMap(card: CardRef): Record<string, number> {
@@ -281,11 +304,7 @@ function getAttributeDisplayLabel(value: string): string {
 }
 
 function getCardCostAttributeOptions(card: CardRef): string[] {
-  const code = getCardCode(card);
-  const meta = CARD_META_BY_CODE[code];
-  const baseValues = Array.isArray(meta?.attributesList)
-    ? meta.attributesList
-    : [meta?.attribute, meta?.color].filter(Boolean);
+  const baseValues = getCardMetaAttributeList(card);
 
   const normalizedSeen = new Set<string>();
   const result: string[] = [];
@@ -304,8 +323,7 @@ function getCardCostAttributeOptions(card: CardRef): string[] {
 }
 
 function getCardExValue(card: CardRef): number {
-  const code = getCardCode(card);
-  const meta = CARD_META_BY_CODE[code];
+  const meta = getCardMeta(card);
   const parsed = Number(meta?.ex ?? 0);
 
   if (!Number.isFinite(parsed)) return 0;
@@ -529,7 +547,7 @@ function CostPaymentModal({
       <div style={costBackdropDimStyle} />
       <div style={costModalCardStyle} data-deck-menu-keep="true">
         <div style={costModalTitleStyle}>코스트 지불</div>
-        <div style={costModalLineStyle}>요구 코스트: {requiredLabel}</div>
+        <div style={costModalLineStyle}>요구 코스트: {requiredLabel} (미만 불가, 이상/초과 가능)</div>
 
         <div style={costModalSectionTitleStyle}>코스트로 지불하는 카드</div>
         <div style={costSelectedGridStyle}>
@@ -621,7 +639,7 @@ function CostPaymentModal({
         <div style={costFooterStyle}>
           <div style={costFooterInfoWrapStyle}>
             <div style={costFooterHintStyle}>
-              발생 attribute {Object.values(resolvedAttributeMap).reduce((sum, value) => sum + value, 0)} / 요구 attribute {requiredCount}
+              발생 attribute 총합 {Object.values(resolvedAttributeMap).reduce((sum, value) => sum + value, 0)} / 요구 최소치 {requiredCount}
             </div>
             <div style={costFooterSummaryStyle}>
               요구:{" "}
