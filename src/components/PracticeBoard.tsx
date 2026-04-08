@@ -2082,11 +2082,13 @@ const metaRowStyle: CSSProperties = {
 
 const fieldGridStyle: CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "repeat(4, minmax(120px, 140px))",
-  gap: 10,
+  gridTemplateColumns: "repeat(4, minmax(160px, 190px))",
+  columnGap: 28,
+  rowGap: 10,
   marginTop: 12,
   marginBottom: 16,
   alignItems: "start",
+  justifyContent: "start",
 };
 
 const sectionTitleStyle: CSSProperties = {
@@ -2133,8 +2135,14 @@ const fieldSlotImageButtonStyle: CSSProperties = {
   borderRadius: 10,
   padding: 6,
   color: "#ffffff",
-  width: "100%",
+  width: 138,
+  height: 188,
   cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  overflow: "visible",
+  boxSizing: "border-box",
 };
 
 const fieldSlotTitleBadgeStyle: CSSProperties = {
@@ -2152,11 +2160,13 @@ const fieldSlotTitleBadgeStyle: CSSProperties = {
 };
 
 const fieldSlotImageFrameStyle: CSSProperties = {
-  width: "100%",
+  width: 126,
+  height: 176,
   aspectRatio: "63 / 88",
   borderRadius: 8,
   overflow: "hidden",
   background: "#0b1220",
+  flexShrink: 0,
 };
 
 const fieldSlotImageStyle: CSSProperties = {
@@ -2179,8 +2189,8 @@ const fieldEmptyFrameStyle: CSSProperties = {
 
 const fieldMiniThumbTrayStyle: CSSProperties = {
   position: "absolute",
-  right: 8,
-  bottom: 8,
+  right: 10,
+  bottom: 10,
   display: "flex",
   gap: 6,
   zIndex: 2,
@@ -2258,10 +2268,11 @@ const deckPilePreviewButtonStyle: CSSProperties = {
   border: "1px solid #4a7cff",
   borderRadius: 10,
   padding: 6,
-  width: "100%",
-  aspectRatio: "63 / 88",
+  width: 138,
+  height: 188,
   cursor: "pointer",
   overflow: "hidden",
+  boxSizing: "border-box",
 };
 
 const deckPilePreviewFrameStyle: CSSProperties = {
@@ -2274,7 +2285,10 @@ const deckPilePreviewFrameStyle: CSSProperties = {
 
 const deckPilePreviewCardWrapStyle: CSSProperties = {
   position: "absolute",
-  inset: 0,
+  top: 6,
+  left: 6,
+  width: 126,
+  height: 176,
   borderRadius: 8,
   overflow: "hidden",
   boxShadow: "0 2px 6px rgba(0,0,0,0.35)",
@@ -2305,12 +2319,14 @@ const pileMenuCellStyle: CSSProperties = {
   background: "#24324a",
   border: "1px solid #4a7cff",
   borderRadius: 10,
-  padding: 8,
-  aspectRatio: "63 / 88",
+  padding: 6,
+  width: 138,
+  height: 188,
   minHeight: 0,
   display: "grid",
   gap: 6,
   alignContent: "stretch",
+  boxSizing: "border-box",
 };
 
 const miniActionButtonStyle: CSSProperties = {
