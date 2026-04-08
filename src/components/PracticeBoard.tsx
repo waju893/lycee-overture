@@ -552,6 +552,12 @@ function PlayerArea({
   onShuffleDeck,
 }: PlayerAreaProps) {
   const player = state.players[playerId];
+  const frontSlots: FieldSlot[] = isPerspectivePlayer
+    ? ["AF_LEFT", "AF_CENTER", "AF_RIGHT"]
+    : ["DF_LEFT", "DF_CENTER", "DF_RIGHT"];
+  const backSlots: FieldSlot[] = isPerspectivePlayer
+    ? ["DF_LEFT", "DF_CENTER", "DF_RIGHT"]
+    : ["AF_LEFT", "AF_CENTER", "AF_RIGHT"];
 
   return (
     <div style={panelStyle}>
@@ -565,7 +571,7 @@ function PlayerArea({
       </div>
 
       <div style={fieldGridStyle}>
-        {FIELD_RENDER_ORDER.slice(0, 3).map((typedSlot) => {
+        {frontSlots.map((typedSlot) => {
           const card = player.field[typedSlot].card;
           return (
             <button
@@ -625,7 +631,7 @@ function PlayerArea({
           </button>
         )}
 
-        {FIELD_RENDER_ORDER.slice(3).map((typedSlot) => {
+        {backSlots.map((typedSlot) => {
           const card = player.field[typedSlot].card;
           return (
             <button
