@@ -233,15 +233,64 @@ function tryAutoResolveForcedDefender(next: GameState): void {
     checkWinner(next);
     return;
   }
-  if (eligibleDefenders.length === 1) {
-    next.battle.defenderCardId = eligibleDefenders[0];
-    next.logs.push(`[BATTLE] 방어자 자동 지정: ${eligibleDefenders[0]}`);
-    resolveBattleCore(next);
-    applyStateBasedRules(next);
-    checkWinner(next);
-    return;
+  next.logs.push(`[BATTLE] 방어자 선택 대기 (${eligibleDefenders.length}명 가능)`);
+}
+
+function validateResponseWindow(
+  next: GameState,
+  action: Extract<GameAction, { type: "DECLARE_ACTION" }>,
+): RuleViolation[] {
+  const violations: RuleViolation[] = [];
+  const topDeclaration = next.declarationStack[next.declarationStack.length - 1];
+
+  if (!topDeclaration) {
+    if (action.responseToDeclarationId) {
+      violations.push(
+        ...fail(
+          "대응할 선언이 없는데 responseToDeclarationId가 지정되었습니다.",
+          "INVALID_RESPONSE_TARGET",
+          action.playerId,
+          action.sourceCardId,
+        ),
+      );
+    }
+    return violations;
   }
-  next.logs.push(`[BATTLE] 방어자 선택 대기`);
+
+  if (action.responseToDeclarationId && action.responseToDeclarationId !== topDeclaration.id) {
+    violations.push(
+      ...fail(
+        "현재 최상단 선언에만 대응할 수 있습니다.",
+        "RESPONSE_TARGET_MISMATCH",
+        action.playerId,
+        action.sourceCardId,
+      ),
+    );
+  }
+
+  if (action.playerId === topDeclaration.playerId) {
+    violations.push(
+      ...fail(
+        "자신이 한 선언에는 자신이 대응할 수 없습니다.",
+        "SELF_RESPONSE_FORBIDDEN",
+        action.playerId,
+        action.sourceCardId,
+      ),
+    );
+  }
+
+  if (next.turn.priorityPlayer !== action.playerId) {
+    violations.push(
+      ...fail(
+        "현재 우선권을 가진 플레이어만 대응 선언할 수 있습니다.",
+        "NO_PRIORITY",
+        action.playerId,
+        action.sourceCardId,
+      ),
+    );
+  }
+
+  return violations;
 }
 
 function validateDeclareActionTiming(next: GameState, playerId: PlayerID): RuleViolation[] {
@@ -249,11 +298,17 @@ function validateDeclareActionTiming(next: GameState, playerId: PlayerID): RuleV
   if (next.winner) violations.push(...fail("이미 게임이 종료되었습니다.", "GAME_ENDED", playerId));
   if (next.startup.active) violations.push(...fail("스타트업 중에는 일반 선언을 할 수 없습니다.", "STARTUP_ACTIVE", playerId));
   if (next.turn.priorityPlayer !== playerId) violations.push(...fail("현재 우선권을 가진 플레이어만 선언할 수 있습니다.", "NO_PRIORITY", playerId));
+  if (next.declarationStack.length > 0) {
+    violations.push(...fail("대응 선언이 아니라면 선언 스택이 비어 있을 때만 새 선언을 할 수 있습니다.", "STACK_NOT_EMPTY", playerId));
+  }
   return violations;
 }
 
 function handleDeclareAction(next: GameState, action: Extract<GameAction, { type: "DECLARE_ACTION" }>): void {
-  const timingViolations = validateDeclareActionTiming(next, action.playerId);
+  const isResponse = next.declarationStack.length > 0 || Boolean(action.responseToDeclarationId);
+  const timingViolations = isResponse
+    ? validateResponseWindow(next, action)
+    : validateDeclareActionTiming(next, action.playerId);
   if (timingViolations.length > 0) { logViolations(next, timingViolations); return; }
 
   if (action.kind === "useCharacter") {
@@ -269,7 +324,7 @@ function handleDeclareAction(next: GameState, action: Extract<GameAction, { type
       sourceCardId: action.sourceCardId, sourceEffectId: action.sourceEffectId,
       targetingMode: action.targetingMode ?? "declareTime",
       declaredTargets: createDeclaredTargets({ targetSlots: [slot] }),
-      payload: action.payload, responseToDeclarationId: action.responseToDeclarationId,
+      payload: action.payload, responseToDeclarationId: action.responseToDeclarationId ?? next.declarationStack[next.declarationStack.length - 1]?.id,
     }));
     next.turn.priorityPlayer = getOpponent(action.playerId); resetPassState(next);
     next.logs.push(`[DECLARE] ${action.playerId} 캐릭터 등장 선언: ${card.name} -> ${slot}`);
@@ -317,7 +372,7 @@ function handleDeclareAction(next: GameState, action: Extract<GameAction, { type
       sourceCardId: action.sourceCardId, sourceEffectId: action.sourceEffectId,
       targetingMode: action.targetingMode ?? "declareTime",
       declaredTargets: createDeclaredTargets({ targetSlots: [slot] }),
-      payload: action.payload, responseToDeclarationId: action.responseToDeclarationId,
+      payload: action.payload, responseToDeclarationId: action.responseToDeclarationId ?? next.declarationStack[next.declarationStack.length - 1]?.id,
     }));
     next.turn.priorityPlayer = getOpponent(action.playerId); resetPassState(next);
     next.logs.push(`[DECLARE] ${action.playerId} 에리어 배치 선언: ${card.name} -> ${slot}`);
@@ -337,7 +392,7 @@ function handleDeclareAction(next: GameState, action: Extract<GameAction, { type
       sourceCardId: action.sourceCardId, sourceEffectId: action.sourceEffectId,
       targetingMode: action.targetingMode ?? "declareTime",
       declaredTargets: createDeclaredTargets({ targetSlots: [slot] }),
-      payload: action.payload, responseToDeclarationId: action.responseToDeclarationId,
+      payload: action.payload, responseToDeclarationId: action.responseToDeclarationId ?? next.declarationStack[next.declarationStack.length - 1]?.id,
     }));
     next.turn.priorityPlayer = getOpponent(action.playerId); resetPassState(next);
     next.logs.push(`[DECLARE] ${action.playerId} 아이템 장비 선언: ${card.name} -> ${slot}`);
@@ -362,10 +417,14 @@ function handleDeclareAction(next: GameState, action: Extract<GameAction, { type
       sourceCardId: action.sourceCardId, sourceEffectId: action.sourceEffectId,
       targetingMode: action.targetingMode ?? "none",
       declaredTargets: createDeclaredTargets({ targetCardIds: action.targetCardIds, targetSlots: action.targetSlots }),
-      payload: action.payload, responseToDeclarationId: action.responseToDeclarationId,
+      payload: action.payload,
+      responseToDeclarationId: action.responseToDeclarationId ?? next.declarationStack[next.declarationStack.length - 1]?.id,
     }));
-    next.turn.priorityPlayer = getOpponent(action.playerId); resetPassState(next);
-    next.logs.push(`[DECLARE] ${action.playerId} 능력 사용 선언: ${action.sourceCardId}${action.sourceEffectId ? ` / ${action.sourceEffectId}` : ""}`);
+    next.turn.priorityPlayer = getOpponent(action.playerId);
+    resetPassState(next);
+
+    const effectSuffix = action.sourceEffectId ? ` / ${action.sourceEffectId}` : "";
+    next.logs.push(`[DECLARE] ${action.playerId} 능력 사용 선언: ${action.sourceCardId}${effectSuffix}`);
     return;
   }
 
@@ -390,7 +449,7 @@ if (action.kind === "tapCharacter" || action.kind === "untapCharacter") {
     targetingMode: action.targetingMode ?? "none",
     declaredTargets: createDeclaredTargets({}),
     payload: action.payload,
-    responseToDeclarationId: action.responseToDeclarationId,
+    responseToDeclarationId: action.responseToDeclarationId ?? next.declarationStack[next.declarationStack.length - 1]?.id,
   });
 
   next.declarationStack.push(declaration);
@@ -427,7 +486,7 @@ if (action.kind === "moveCharacter") {
     targetingMode: action.targetingMode ?? "declareTime",
     declaredTargets: createDeclaredTargets({ targetSlots: [slot] }),
     payload: action.payload,
-    responseToDeclarationId: action.responseToDeclarationId,
+    responseToDeclarationId: action.responseToDeclarationId ?? next.declarationStack[next.declarationStack.length - 1]?.id,
   });
 
   next.declarationStack.push(declaration);
@@ -463,7 +522,7 @@ if (action.kind === "chargeCharacter") {
     targetingMode: action.targetingMode ?? "none",
     declaredTargets: createDeclaredTargets({}),
     payload: action.payload,
-    responseToDeclarationId: action.responseToDeclarationId,
+    responseToDeclarationId: action.responseToDeclarationId ?? next.declarationStack[next.declarationStack.length - 1]?.id,
   });
 
   next.declarationStack.push(declaration);
@@ -482,7 +541,7 @@ if (action.kind === "attack") {
       id: nextDeclarationId(next), playerId: action.playerId, kind: "attack",
       sourceCardId: action.sourceCardId, sourceEffectId: action.sourceEffectId,
       targetingMode: action.targetingMode ?? "none", declaredTargets: createDeclaredTargets({}),
-      payload: action.payload, responseToDeclarationId: action.responseToDeclarationId,
+      payload: action.payload, responseToDeclarationId: action.responseToDeclarationId ?? next.declarationStack[next.declarationStack.length - 1]?.id,
     }));
     next.turn.priorityPlayer = getOpponent(action.playerId); resetPassState(next);
     next.logs.push(`[DECLARE] ${action.playerId} 공격 선언: ${action.sourceCardId}`);

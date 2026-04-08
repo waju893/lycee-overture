@@ -487,7 +487,7 @@ export function validateAttackDeclaration(state: GameState, playerId: PlayerID, 
   if (state.turn.activePlayer !== playerId || state.turn.phase !== "main") violations.push(fail("공격 선언은 자기 메인페이즈에만 가능합니다.", "TIMING_INVALID")[0]);
   const slot = getCardCurrentSlot(state, attackerCardId);
   if (!slot) return fail("공격 캐릭터를 장에서 찾을 수 없습니다.", "CARD_NOT_FOUND");
-  if (!isAF(slot)) violations.push(fail("공격은 AF 캐릭터만 할 수 있습니다.", "ATTACKER_NOT_AF\")[0]);
+  if (!isAF(slot)) violations.push(fail("공격은 AF 캐릭터만 할 수 있습니다.", "ATTACKER_NOT_AF")[0]);
   if (findCardController(state, attackerCardId) !== playerId) violations.push(fail("자신의 캐릭터로만 공격 선언할 수 있습니다.", "NOT_OWN_CARD")[0]);
   const card = state.players[playerId].field[slot].card;
   if (!card) return fail("공격 캐릭터를 장에서 찾을 수 없습니다.", "CARD_NOT_FOUND");
@@ -782,7 +782,7 @@ export function resolveDeclarationCore(state: GameState, declaration: Declaratio
         type: "CHARACTER_TAPPED",
         playerId: declaration.playerId,
         cardId: card.instanceId,
-        slot,
+        slot: slot ?? undefined,
       });
     }
     declaration.resolved = true;
@@ -803,7 +803,7 @@ export function resolveDeclarationCore(state: GameState, declaration: Declaratio
         type: "CHARACTER_UNTAPPED",
         playerId: declaration.playerId,
         cardId: card.instanceId,
-        slot,
+        slot: slot ?? undefined,
       });
     }
     declaration.resolved = true;
@@ -888,7 +888,7 @@ export function resolveDeclarationCore(state: GameState, declaration: Declaratio
       playerId: declaration.playerId,
       cardId: card.instanceId,
       amount: charged.length,
-      slot,
+      slot: slot ?? undefined,
     });
     declaration.resolved = true;
     return;
@@ -902,7 +902,6 @@ export function resolveDeclarationCore(state: GameState, declaration: Declaratio
 
     const slot = getCardCurrentSlot(state, declaration.sourceCardId);
     const card = slot ? state.players[declaration.playerId].field[slot].card : null;
-
     declaration.resolved = true;
 
     if (!card) {
