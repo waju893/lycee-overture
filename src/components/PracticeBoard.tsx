@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import type { CardRef, FieldSlot, GameState, PlayerID } from "../game/GameTypes";
 import { CARD_META_BY_CODE } from "../lib/cards";
 import {
@@ -796,37 +796,6 @@ function CostPaymentModal({
 }
 
 
-
-function ItemStackModal({
-  items,
-  onClose,
-}: {
-  items: CardRef[];
-  onClose: () => void;
-}) {
-  if (items.length === 0) return null;
-
-  return (
-    <div style={itemStackModalOverlayStyle} onClick={onClose}>
-      <div style={itemStackModalCardStyle} onClick={(event) => event.stopPropagation()}>
-        <div style={itemStackModalTitleStyle}>이 캐릭터가 현재 장비중인 아이템입니다</div>
-        <div style={itemStackModalRowStyle}>
-          {items.map((item, index) => (
-            <div key={`${item.instanceId}-${index}`} style={itemStackModalItemStyle}>
-              <CardImage card={item} clickable={false} onClick={() => undefined} />
-            </div>
-          ))}
-        </div>
-        <div style={itemStackModalFooterStyle}>
-          <button type="button" style={confirmButtonStyle} onClick={onClose}>
-            확인
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function FieldSlotImage({
   cell,
   slot,
@@ -837,39 +806,29 @@ function FieldSlotImage({
   onClick: () => void;
 }) {
   const attachedItems =
-    ((cell as any).attachedItems ?? []) as CardRef[];
-  const fallbackAttachedItem = cell.attachedItem ? [cell.attachedItem] : [];
-  const normalizedAttachedItems = attachedItems.length > 0 ? attachedItems : fallbackAttachedItem;
-  const itemCount = normalizedAttachedItems.length;
+    (cell as any).attachedItems ??
+    (cell.attachedItem ? [cell.attachedItem] : []);
 
-  const primaryCard = cell.card ?? cell.area ?? normalizedAttachedItems[0] ?? null;
+  const itemCount = attachedItems.length;
+
+  const primaryCard = cell.card ?? cell.area ?? cell.attachedItem ?? null;
   const primaryCode = primaryCard ? getCardCode(primaryCard) : "";
   const primaryCandidates = useMemo(
     () => (primaryCode ? getCardImageCandidates(primaryCode) : []),
     [primaryCode],
   );
   const [primaryIndex, setPrimaryIndex] = useState(0);
-  const [isItemStackOpen, setIsItemStackOpen] = useState(false);
 
   useEffect(() => {
     setPrimaryIndex(0);
   }, [primaryCode, primaryCandidates]);
 
-  const renderMiniThumb = (card: CardRef, kind: string, badgeText?: string, onThumbClick?: () => void) => {
+  const renderMiniThumb = (card: CardRef, kind: string) => {
     const code = getCardCode(card);
     const src = getCardImageCandidates(code)[0] ?? "";
 
     return (
-      <button
-        key={`${kind}-${card.instanceId}`}
-        type="button"
-        style={fieldMiniThumbWrapStyle}
-        title={`${kind}: ${card.name}`}
-        onClick={(event) => {
-          event.stopPropagation();
-          onThumbClick?.();
-        }}
-      >
+      <div key={`${kind}-${card.instanceId}`} style={fieldMiniThumbWrapStyle} title={`${kind}: ${card.name}`}>
         {src ? (
           <img
             src={src}
@@ -882,73 +841,102 @@ function FieldSlotImage({
         ) : (
           <div style={fieldMiniThumbFallbackStyle}>{kind}</div>
         )}
-        {badgeText ? <div style={fieldMiniThumbCountBadgeStyle}>{badgeText}</div> : null}
         <div style={fieldMiniThumbLabelStyle}>{kind}</div>
-      </button>
+      </div>
     );
   };
 
-  const extraThumbs: ReactNode[] = [];
-  if (cell.card && cell.area) {
-    extraThumbs.push(renderMiniThumb(cell.area, "에리어"));
-  }
-  if (cell.card && normalizedAttachedItems.length > 0) {
-    extraThumbs.push(
-      renderMiniThumb(
-        normalizedAttachedItems[0],
-        "아이템",
-        normalizedAttachedItems.length >= 2 ? `x${normalizedAttachedItems.length}` : undefined,
-        () => setIsItemStackOpen(true),
-      ),
-    );
-  }
-  if (!cell.card && cell.area && normalizedAttachedItems.length > 0) {
-    extraThumbs.push(
-      renderMiniThumb(
-        normalizedAttachedItems[0],
-        "아이템",
-        normalizedAttachedItems.length >= 2 ? `x${normalizedAttachedItems.length}` : undefined,
-        () => setIsItemStackOpen(true),
-      ),
-    );
-  }
+  const extraThumbs: JSX.Element[] = [];
+  if (cell.card && cell.area) extraThumbs.push(renderMiniThumb(cell.area, "에리어"));
+  if (cell.card && cell.attachedItem) extraThumbs.push(renderMiniThumb(cell.attachedItem, "아이템"));
+  if (!cell.card && cell.area && cell.attachedItem) extraThumbs.push(renderMiniThumb(cell.attachedItem, "아이템"));
 
   return (
-    <div style={fieldSlotWrapStyle}>
-      <button
-        type="button"
-        style={fieldSlotImageButtonStyle}
-        onClick={onClick}
-        title={primaryCard ? `${slot} / ${primaryCard.name}` : slot}
-      >
-        <div style={fieldSlotTitleBadgeStyle}>{slot}</div>
-        <div style={fieldSlotImageFrameStyle}>
-          {primaryCard && primaryCandidates[primaryIndex] ? (
-            <img
-              src={primaryCandidates[primaryIndex]}
-              alt={primaryCard.name}
-              loading="lazy"
-              decoding="async"
-              draggable={false}
-              onLoad={() => {
-                markCardImageResolved(primaryCode, primaryCandidates[primaryIndex]);
-              }}
-              onError={() => {
-                markCardImageFailed(primaryCandidates[primaryIndex]);
-                setPrimaryIndex((prev) => prev + 1);
-              }}
-              style={fieldSlotImageStyle}
-            />
-          ) : (
-            <div style={fieldEmptyFrameStyle}>비어 있음</div>
-          )}
-        </div>
-      </button>
+    <button
+      type="button"
+      style={fieldSlotImageButtonStyle}
+      onClick={onClick}
+      title={primaryCard ? `${slot} / ${primaryCard.name}` : slot}
+    >
+      <div style={fieldSlotTitleBadgeStyle}>{slot}</div>
+      <div style={fieldSlotImageFrameStyle}>
+        {primaryCard && primaryCandidates[primaryIndex] ? (
+          <img
+            src={primaryCandidates[primaryIndex]}
+            alt={primaryCard.name}
+            loading="lazy"
+            decoding="async"
+            draggable={false}
+            onLoad={() => {
+              markCardImageResolved(primaryCode, primaryCandidates[primaryIndex]);
+            }}
+            onError={() => {
+              markCardImageFailed(primaryCandidates[primaryIndex]);
+              setPrimaryIndex((prev) => prev + 1);
+            }}
+            style={fieldSlotImageStyle}
+          />
+        ) : (
+          <div style={fieldEmptyFrameStyle}>비어 있음</div>
+        )}
+      </div>
       {extraThumbs.length > 0 ? <div style={fieldMiniThumbTrayStyle}>{extraThumbs}</div> : null}
-      {isItemStackOpen ? (
-        <ItemStackModal items={normalizedAttachedItems} onClose={() => setIsItemStackOpen(false)} />
-      ) : null}
-    </div>
+    </button>
+  );
+}
+
+
+function DeckPilePreview({
+  cards,
+  title,
+  onClick,
+}: {
+  cards: CardRef[];
+  title: string;
+  onClick: () => void;
+}) {
+  const previewCards = cards.slice(-4);
+
+  return (
+    <button type="button" style={deckPilePreviewButtonStyle} onClick={onClick}>
+      <div style={deckPilePreviewFrameStyle}>
+        {previewCards.length === 0 ? (
+          <div style={deckPileEmptyFrameStyle} />
+        ) : (
+          previewCards.map((card, index) => {
+            const code = getCardCode(card);
+            const src = getCardImageCandidates(code)[0] ?? "";
+            const offset = index * 6;
+
+            return (
+              <div
+                key={`${title}-${card.instanceId}`}
+                style={{
+                  ...deckPilePreviewCardWrapStyle,
+                  top: offset,
+                  left: offset,
+                  zIndex: index + 1,
+                }}
+                title={card.name}
+              >
+                {src ? (
+                  <img
+                    src={src}
+                    alt={card.name}
+                    loading="lazy"
+                    decoding="async"
+                    draggable={false}
+                    style={deckPilePreviewImageStyle}
+                  />
+                ) : (
+                  <div style={deckPilePreviewFallbackStyle} />
+                )}
+              </div>
+            );
+          })
+        )}
+      </div>
+    </button>
   );
 }
 
@@ -1061,17 +1049,11 @@ function PlayerArea({
             </button>
           </div>
         ) : (
-          <button
-            type="button"
-            style={pileCellButtonStyle}
+          <DeckPilePreview
+            cards={player.deck}
+            title="덱"
             onClick={() => onToggleDeckMenu(playerId)}
-            data-deck-menu-keep="true"
-          >
-            <div style={pileCellTitleStyle}>덱</div>
-            <div style={pileCellBodyStyle}>
-              {player.deck.length > 0 ? `${player.deck.length}장` : "비어 있음"}
-            </div>
-          </button>
+          />
         )}
 
         {backSlots.map((typedSlot) => {
@@ -1086,16 +1068,11 @@ function PlayerArea({
           );
         })}
 
-        <button
-          type="button"
-          style={pileCellButtonStyle}
+        <DeckPilePreview
+          cards={player.discard}
+          title="쓰레기통"
           onClick={() => onOpenPile("discard", playerId, label)}
-        >
-          <div style={pileCellTitleStyle}>쓰레기통 보기</div>
-          <div style={pileCellBodyStyle}>
-            {player.discard.length > 0 ? `${player.discard.length}장` : "비어 있음"}
-          </div>
-        </button>
+        />
       </div>
 
       <div style={sectionMinorTitleStyle}>
@@ -2129,11 +2106,6 @@ const slotButtonStyle: CSSProperties = {
   cursor: "pointer",
 };
 
-const fieldSlotWrapStyle: CSSProperties = {
-  position: "relative",
-  width: "100%",
-};
-
 const fieldSlotImageButtonStyle: CSSProperties = {
   position: "relative",
   background: "#0f1724",
@@ -2202,8 +2174,6 @@ const fieldMiniThumbWrapStyle: CSSProperties = {
   overflow: "hidden",
   border: "1px solid rgba(148, 163, 184, 0.82)",
   background: "rgba(15, 23, 36, 0.92)",
-  padding: 0,
-  cursor: "pointer",
 };
 
 const fieldMiniThumbImageStyle: CSSProperties = {
@@ -2222,69 +2192,6 @@ const fieldMiniThumbFallbackStyle: CSSProperties = {
   color: "#e5e7eb",
   fontSize: 10,
   fontWeight: 800,
-};
-
-
-const fieldMiniThumbCountBadgeStyle: CSSProperties = {
-  position: "absolute",
-  top: 2,
-  right: 2,
-  zIndex: 2,
-  background: "rgba(15, 23, 36, 0.92)",
-  border: "1px solid rgba(148, 163, 184, 0.9)",
-  borderRadius: 6,
-  padding: "1px 4px",
-  fontSize: 10,
-  fontWeight: 900,
-  color: "#ffffff",
-  lineHeight: 1.1,
-};
-
-const itemStackModalOverlayStyle: CSSProperties = {
-  position: "fixed",
-  inset: 0,
-  background: "rgba(3, 8, 18, 0.68)",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  padding: 24,
-  zIndex: 1400,
-};
-
-const itemStackModalCardStyle: CSSProperties = {
-  width: "min(920px, 100%)",
-  background: "#182233",
-  border: "1px solid #2a3850",
-  borderRadius: 16,
-  padding: 20,
-  boxSizing: "border-box",
-};
-
-const itemStackModalTitleStyle: CSSProperties = {
-  fontSize: 18,
-  fontWeight: 700,
-  color: "#ffffff",
-  marginBottom: 14,
-};
-
-const itemStackModalRowStyle: CSSProperties = {
-  display: "flex",
-  flexDirection: "row",
-  gap: 12,
-  overflowX: "auto",
-  alignItems: "stretch",
-};
-
-const itemStackModalItemStyle: CSSProperties = {
-  minWidth: 140,
-  maxWidth: 160,
-  flex: "0 0 auto",
-};
-
-const itemStackModalFooterStyle: CSSProperties = {
-  display: "flex",
-  justifyContent: "flex-end",
-  marginTop: 16,
 };
 
 const fieldMiniThumbLabelStyle: CSSProperties = {
@@ -2325,14 +2232,63 @@ const pileCellBodyStyle: CSSProperties = {
   color: "#dbeafe",
 };
 
+const deckPilePreviewButtonStyle: CSSProperties = {
+  position: "relative",
+  background: "#0f1724",
+  border: "1px solid #4a7cff",
+  borderRadius: 10,
+  padding: 6,
+  width: "100%",
+  aspectRatio: "63 / 88",
+  cursor: "pointer",
+  overflow: "hidden",
+};
+
+const deckPilePreviewFrameStyle: CSSProperties = {
+  position: "relative",
+  width: "100%",
+  height: "100%",
+};
+
+const deckPilePreviewCardWrapStyle: CSSProperties = {
+  position: "absolute",
+  width: "calc(100% - 18px)",
+  height: "calc(100% - 18px)",
+  borderRadius: 8,
+  overflow: "hidden",
+  boxShadow: "0 2px 6px rgba(0,0,0,0.35)",
+  background: "#0b1220",
+};
+
+const deckPilePreviewImageStyle: CSSProperties = {
+  display: "block",
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+};
+
+const deckPilePreviewFallbackStyle: CSSProperties = {
+  width: "100%",
+  height: "100%",
+  background: "#111827",
+};
+
+const deckPileEmptyFrameStyle: CSSProperties = {
+  width: "100%",
+  height: "100%",
+  borderRadius: 8,
+  background: "#111827",
+};
+
 const pileMenuCellStyle: CSSProperties = {
   background: "#24324a",
   border: "1px solid #4a7cff",
   borderRadius: 10,
-  padding: 10,
-  minHeight: 110,
+  padding: 8,
+  aspectRatio: "63 / 88",
+  minHeight: 0,
   display: "grid",
-  gap: 8,
+  gap: 6,
   alignContent: "stretch",
 };
 
