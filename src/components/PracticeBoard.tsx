@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import type { CardRef, FieldSlot, GameState, PlayerID } from "../game/GameTypes";
+import { CARD_META_BY_CODE } from "../lib/cards";
 import {
   getCardImageCandidates,
   markCardImageFailed,
@@ -56,6 +57,40 @@ function shuffleCards<T>(cards: T[]): T[] {
   return next;
 }
 
+function getCardUseTargetCount(card: CardRef): number {
+  const code = getCardCode(card);
+  const meta = CARD_META_BY_CODE[code];
+  const useTarget = meta?.useTarget;
+
+  if (Array.isArray(useTarget)) return useTarget.length;
+  if (typeof useTarget === "number") return Math.max(0, useTarget);
+  if (typeof useTarget === "string") {
+    const trimmed = useTarget.trim();
+    const parsed = Number(trimmed);
+    if (Number.isFinite(parsed)) return Math.max(0, parsed);
+    if (!trimmed) return 0;
+    return 1;
+  }
+  return 0;
+}
+
+function getCardUseTargetLabel(card: CardRef): string {
+  const code = getCardCode(card);
+  const meta = CARD_META_BY_CODE[code];
+  const useTarget = meta?.useTarget;
+
+  if (Array.isArray(useTarget)) {
+    return useTarget.join(" / ");
+  }
+  if (typeof useTarget === "number") {
+    return String(useTarget);
+  }
+  if (typeof useTarget === "string") {
+    return useTarget.trim() || "0";
+  }
+  return "0";
+}
+
 type CardActionMenuState =
   | {
       kind: "deck" | "discard";
@@ -68,6 +103,14 @@ type HandCardActionMenuState =
   | {
       playerId: PlayerID;
       cardId: string;
+    }
+  | null;
+
+type CostModalState =
+  | {
+      playerId: PlayerID;
+      cardId: string;
+      selectedCostCardIds: string[];
     }
   | null;
 
@@ -162,31 +205,6 @@ type DeckMenuState =
     }
   | null;
 
-type PlayerAreaProps = {
-  label: string;
-  playerId: PlayerID;
-  state: GameState;
-  isPerspectivePlayer: boolean;
-  isDeckMenuOpen: boolean;
-  activeHandCardAction: HandCardActionMenuState;
-  onHandCardClick: (playerId: PlayerID, cardId: string) => void;
-  onHandPrimaryAction: (playerId: PlayerID, card: CardRef) => void;
-  onHandDeclareAction: (playerId: PlayerID, cardId: string) => void;
-  onMoveHandCardToDeckTop: (playerId: PlayerID, cardId: string) => void;
-  onMoveHandCardToDeckBottom: (playerId: PlayerID, cardId: string) => void;
-  onCloseHandCardAction: () => void;
-  onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
-  onOpenPile: (
-    kind: "discard" | "deck",
-    playerId: PlayerID,
-    label: string,
-  ) => void;
-  onToggleDeckMenu: (playerId: PlayerID) => void;
-  onDrawFromDeck: (playerId: PlayerID) => void;
-  onDamageFromDeck: (playerId: PlayerID) => void;
-  onShuffleDeck: (playerId: PlayerID) => void;
-};
-
 function HandCardActionOverlay({
   card,
   onClose,
@@ -222,6 +240,130 @@ function HandCardActionOverlay({
     </div>
   );
 }
+
+function CostPaymentModal({
+  state,
+  gameState,
+  onToggleCostCard,
+  onConfirm,
+  onCancel,
+}: {
+  state: CostModalState;
+  gameState: GameState;
+  onToggleCostCard: (cardId: string) => void;
+  onConfirm: () => void;
+  onCancel: () => void;
+}) {
+  if (!state) return null;
+
+  const player = gameState.players[state.playerId];
+  const actionCard = player.hand.find((card) => card.instanceId === state.cardId);
+  if (!actionCard) return null;
+
+  const requiredCount = getCardUseTargetCount(actionCard);
+  const requiredLabel = getCardUseTargetLabel(actionCard);
+  const selectedCards = state.selectedCostCardIds
+    .map((cardId) => player.hand.find((card) => card.instanceId === cardId))
+    .filter((card): card is CardRef => Boolean(card));
+  const availableHandCards = player.hand.filter((card) => card.instanceId !== state.cardId);
+  const canConfirm = selectedCards.length === requiredCount;
+
+  return (
+    <div style={costModalOverlayStyle}>
+      <div style={costBackdropDimStyle} />
+      <div style={costModalCardStyle} data-deck-menu-keep="true">
+        <div style={costModalTitleStyle}>코스트 지불</div>
+        <div style={costModalLineStyle}>요구 코스트: {requiredLabel}</div>
+
+        <div style={costModalSectionTitleStyle}>코스트로 지불하는 카드</div>
+        <div style={costSelectedGridStyle}>
+          {selectedCards.length === 0 ? (
+            <div style={emptyHintStyle}>선택된 코스트 카드가 없습니다.</div>
+          ) : (
+            selectedCards.map((card) => (
+              <CardImage
+                key={`selected-${card.instanceId}`}
+                card={card}
+                clickable={true}
+                onClick={() => onToggleCostCard(card.instanceId)}
+              />
+            ))
+          )}
+        </div>
+
+        <div style={costModalSectionTitleStyle}>현재 보유중인 패</div>
+        <div style={costAvailableGridStyle}>
+          {availableHandCards.length === 0 ? (
+            <div style={emptyHintStyle}>지불할 수 있는 패가 없습니다.</div>
+          ) : (
+            availableHandCards.map((card) => {
+              const isSelected = state.selectedCostCardIds.includes(card.instanceId);
+              return (
+                <div
+                  key={`available-${card.instanceId}`}
+                  style={{
+                    opacity: isSelected ? 0.45 : 1,
+                    transition: "opacity 0.15s ease",
+                  }}
+                >
+                  <CardImage
+                    card={card}
+                    clickable={true}
+                    onClick={() => onToggleCostCard(card.instanceId)}
+                  />
+                </div>
+              );
+            })
+          )}
+        </div>
+
+        <div style={costFooterStyle}>
+          <div style={costFooterHintStyle}>
+            선택 {selectedCards.length} / 필요 {requiredCount}
+          </div>
+          <div style={costFooterButtonsStyle}>
+            <button
+              type="button"
+              style={canConfirm ? confirmButtonStyle : disabledConfirmButtonStyle}
+              onClick={onConfirm}
+              disabled={!canConfirm}
+            >
+              확인
+            </button>
+            <button type="button" style={modalCloseButtonStyle} onClick={onCancel}>
+              취소
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type PlayerAreaProps = {
+  label: string;
+  playerId: PlayerID;
+  state: GameState;
+  isPerspectivePlayer: boolean;
+  isDeckMenuOpen: boolean;
+  activeHandCardAction: HandCardActionMenuState;
+  onHandCardClick: (playerId: PlayerID, cardId: string) => void;
+  onHandPrimaryAction: (playerId: PlayerID, card: CardRef) => void;
+  onHandDeclareAction: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckTop: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckBottom: (playerId: PlayerID, cardId: string) => void;
+  onCloseHandCardAction: () => void;
+  onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
+  onOpenPile: (
+    kind: "discard" | "deck",
+    playerId: PlayerID,
+    label: string,
+  ) => void;
+  onToggleDeckMenu: (playerId: PlayerID) => void;
+  onDrawFromDeck: (playerId: PlayerID) => void;
+  onDamageFromDeck: (playerId: PlayerID) => void;
+  onShuffleDeck: (playerId: PlayerID) => void;
+};
 
 function PlayerArea({
   label,
@@ -729,7 +871,7 @@ function CardPileModal({
 interface PracticeBoardProps {
   state: GameState;
   perspective: PlayerID;
-  onHandPrimaryAction?: (playerId: PlayerID, card: CardRef) => void;
+  onHandPrimaryAction?: (playerId: PlayerID, card: CardRef, costCardIds: string[]) => void;
   onHandDeclareAction?: (playerId: PlayerID, cardId: string) => void;
   onMoveHandCardToDeckTop?: (playerId: PlayerID, cardId: string) => void;
   onMoveHandCardToDeckBottom?: (playerId: PlayerID, cardId: string) => void;
@@ -762,6 +904,7 @@ export default function PracticeBoard({
   const [deckMenuState, setDeckMenuState] = useState<DeckMenuState>(null);
   const [cardActionState, setCardActionState] = useState<CardActionMenuState>(null);
   const [handCardActionState, setHandCardActionState] = useState<HandCardActionMenuState>(null);
+  const [costModalState, setCostModalState] = useState<CostModalState>(null);
   const [recoverySelection, setRecoverySelection] = useState<string[]>([]);
   const [recoveryMode, setRecoveryMode] = useState(false);
   const [randomRecoveryPrompt, setRandomRecoveryPrompt] =
@@ -812,6 +955,19 @@ export default function PracticeBoard({
       if (!prev) return prev;
       const stillExists = state.players[prev.playerId].hand.some((card) => card.instanceId === prev.cardId);
       return stillExists ? prev : null;
+    });
+
+    setCostModalState((prev) => {
+      if (!prev) return prev;
+      const player = state.players[prev.playerId];
+      const actionCardExists = player.hand.some((card) => card.instanceId === prev.cardId);
+      if (!actionCardExists) return null;
+
+      const handIds = new Set(player.hand.map((card) => card.instanceId));
+      return {
+        ...prev,
+        selectedCostCardIds: prev.selectedCostCardIds.filter((cardId) => handIds.has(cardId)),
+      };
     });
   }, [state.players]);
 
@@ -959,7 +1115,11 @@ export default function PracticeBoard({
           activeHandCardAction={handCardActionState}
           onHandCardClick={handleHandCardClick}
           onHandPrimaryAction={(playerId, card) => {
-            onHandPrimaryAction?.(playerId, card);
+            setCostModalState({
+              playerId,
+              cardId: card.instanceId,
+              selectedCostCardIds: [],
+            });
             setHandCardActionState(null);
           }}
           onHandDeclareAction={(playerId, cardId) => {
@@ -1002,7 +1162,11 @@ export default function PracticeBoard({
           activeHandCardAction={handCardActionState}
           onHandCardClick={handleHandCardClick}
           onHandPrimaryAction={(playerId, card) => {
-            onHandPrimaryAction?.(playerId, card);
+            setCostModalState({
+              playerId,
+              cardId: card.instanceId,
+              selectedCostCardIds: [],
+            });
             setHandCardActionState(null);
           }}
           onHandDeclareAction={(playerId, cardId) => {
@@ -1058,6 +1222,42 @@ export default function PracticeBoard({
           onMoveCardToHand?.(playerId, cardId, source);
           setCardActionState(null);
         }}
+      />
+
+      <CostPaymentModal
+        state={costModalState}
+        gameState={state}
+        onToggleCostCard={(cardId) => {
+          setCostModalState((prev) => {
+            if (!prev) return prev;
+            const exists = prev.selectedCostCardIds.includes(cardId);
+            if (exists) {
+              return {
+                ...prev,
+                selectedCostCardIds: prev.selectedCostCardIds.filter((id) => id !== cardId),
+              };
+            }
+            return {
+              ...prev,
+              selectedCostCardIds: [...prev.selectedCostCardIds, cardId],
+            };
+          });
+        }}
+        onConfirm={() => {
+          if (!costModalState) return;
+          const actionCard = state.players[costModalState.playerId].hand.find(
+            (card) => card.instanceId === costModalState.cardId,
+          );
+          if (!actionCard) return;
+
+          onHandPrimaryAction?.(
+            costModalState.playerId,
+            actionCard,
+            costModalState.selectedCostCardIds,
+          );
+          setCostModalState(null);
+        }}
+        onCancel={() => setCostModalState(null)}
       />
 
       <RandomRecoveryPromptModal
@@ -1275,6 +1475,22 @@ const modalOverlayStyle: CSSProperties = {
   zIndex: 1000,
 };
 
+const costModalOverlayStyle: CSSProperties = {
+  position: "fixed",
+  inset: 0,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  padding: 24,
+  zIndex: 1200,
+};
+
+const costBackdropDimStyle: CSSProperties = {
+  position: "absolute",
+  inset: 0,
+  background: "rgba(3, 8, 18, 0.48)",
+};
+
 const subModalOverlayStyle: CSSProperties = {
   position: "fixed",
   inset: 0,
@@ -1288,6 +1504,18 @@ const subModalOverlayStyle: CSSProperties = {
 
 const modalCardStyle: CSSProperties = {
   width: "min(1200px, 100%)",
+  maxHeight: "min(88vh, 1000px)",
+  overflow: "auto",
+  background: "#182233",
+  border: "1px solid #2a3850",
+  borderRadius: 16,
+  padding: 20,
+  boxSizing: "border-box",
+};
+
+const costModalCardStyle: CSSProperties = {
+  position: "relative",
+  width: "min(1100px, 100%)",
   maxHeight: "min(88vh, 1000px)",
   overflow: "auto",
   background: "#182233",
@@ -1342,6 +1570,58 @@ const modalTitleStyle: CSSProperties = {
 const modalSubTitleStyle: CSSProperties = {
   marginTop: 4,
   color: "#b9c3d6",
+};
+
+const costModalTitleStyle: CSSProperties = {
+  fontSize: 22,
+  fontWeight: 700,
+  color: "#ffffff",
+  marginBottom: 10,
+};
+
+const costModalLineStyle: CSSProperties = {
+  color: "#dbeafe",
+  marginBottom: 16,
+};
+
+const costModalSectionTitleStyle: CSSProperties = {
+  fontSize: 16,
+  fontWeight: 700,
+  color: "#ffffff",
+  marginBottom: 10,
+  marginTop: 12,
+};
+
+const costSelectedGridStyle: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
+  gap: 12,
+  minHeight: 120,
+};
+
+const costAvailableGridStyle: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
+  gap: 12,
+};
+
+const costFooterStyle: CSSProperties = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: 12,
+  flexWrap: "wrap",
+  marginTop: 18,
+};
+
+const costFooterHintStyle: CSSProperties = {
+  color: "#b9c3d6",
+};
+
+const costFooterButtonsStyle: CSSProperties = {
+  display: "flex",
+  gap: 10,
+  flexWrap: "wrap",
 };
 
 const subModalTitleStyle: CSSProperties = {

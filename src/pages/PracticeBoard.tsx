@@ -20,6 +20,7 @@ type PlacementMode =
       type: "hand_to_field";
       playerId: PlayerID;
       cardId: string;
+      costCardIds: string[];
     }
   | null;
 
@@ -252,6 +253,27 @@ function moveCardFromPile(
   return next;
 }
 
+function payHandCosts(next: GameState, playerId: PlayerID, costCardIds: string[], actionCardId?: string) {
+  const player = next.players[playerId];
+  const paidNames: string[] = [];
+
+  for (const costCardId of costCardIds) {
+    if (costCardId === actionCardId) continue;
+    const index = player.hand.findIndex((card) => card.instanceId === costCardId);
+    if (index < 0) continue;
+    const [card] = player.hand.splice(index, 1);
+    if (!card) continue;
+    card.location = "discard";
+    card.revealed = true;
+    player.discard.push(card);
+    paidNames.push(card.name);
+  }
+
+  if (paidNames.length > 0) {
+    next.logs.push(`[COST] ${playerId} 코스트 지불: ${paidNames.join(" / ")}`);
+  }
+}
+
 export default function PracticeBoard() {
   const [state, setState] = useState<GameState>(() => createPracticeState());
   const [perspective, setPerspective] = useState<PlayerID>("P1");
@@ -461,15 +483,10 @@ export default function PracticeBoard() {
     });
   }
 
-  function handleHandPrimaryAction(playerId: PlayerID, card: CardRef) {
+  function handleHandPrimaryAction(playerId: PlayerID, card: CardRef, costCardIds: string[]) {
     if (card.cardType === "character") {
       if (pendingDeclaration) return;
       if (state.turn.priorityPlayer !== playerId) return;
-
-      if (placementMode?.type === "hand_to_field" && placementMode.cardId === card.instanceId) {
-        setPlacementMode(null);
-        return;
-      }
 
       const firstEmpty = getFirstEmptySlot(state, playerId);
       if (!firstEmpty) return;
@@ -478,6 +495,7 @@ export default function PracticeBoard() {
         type: "hand_to_field",
         playerId,
         cardId: card.instanceId,
+        costCardIds,
       });
       return;
     }
@@ -491,6 +509,8 @@ export default function PracticeBoard() {
         next.logs.push(`[HAND] ${playerId} 손패 행동 실패: 카드를 찾지 못함 (${card.instanceId})`);
         return next;
       }
+
+      payHandCosts(next, playerId, costCardIds, card.instanceId);
 
       const [removed] = player.hand.splice(index, 1);
       if (!removed) return next;
@@ -588,13 +608,19 @@ export default function PracticeBoard() {
     const card = state.players[playerId].field[slot].card;
 
     if (placementMode?.type === "hand_to_field" && placementMode.playerId === playerId) {
-      dispatch({
-        type: "DECLARE_ACTION",
-        playerId,
-        kind: "useCharacter",
-        sourceCardId: placementMode.cardId,
-        targetSlots: [slot],
-        targetingMode: "declareTime",
+      if (state.players[playerId].field[slot].card) return;
+
+      setState((prev) => {
+        const next = structuredClone(prev) as GameState;
+        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
+        return reduceGameState(next, {
+          type: "DECLARE_ACTION",
+          playerId,
+          kind: "useCharacter",
+          sourceCardId: placementMode.cardId,
+          targetSlots: [slot],
+          targetingMode: "declareTime",
+        });
       });
       setPlacementMode(null);
       return;
