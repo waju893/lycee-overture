@@ -41,7 +41,7 @@ export function enqueueTriggerCandidates(state: GameState, event: EngineEvent): 
 
   for (const card of cards) {
     for (const template of card.triggerTemplates ?? []) {
-      if (matchesTriggerCondition(template.condition, event)) {
+      if (matchesTriggerCondition(event, template.condition, card.owner)) {
         candidates.push({
           triggerId: template.triggerId,
           sourceCardId: card.instanceId,
