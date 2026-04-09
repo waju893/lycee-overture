@@ -1,5 +1,3 @@
-src/game/GameRules.ts
-
 import {
   Declaration,
   GameState,

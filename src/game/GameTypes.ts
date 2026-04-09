@@ -1,5 +1,3 @@
-src/game/GameTypes.ts
-
 // Declaration stack limit for this implementation.
 export const MAX_DECLARATION_STACK_DEPTH = 100;
 

@@ -1,7 +1,3 @@
-
-
-src/game/GameEngine.ts
-
 import {
   DeclareActionInput,
   Declaration,
@@ -115,37 +111,17 @@ function openResponseWindowForTopDeclaration(state: GameState): GameState {
   let responderPlayerId: PlayerId;
 
   if (top.isResponse) {
-    // 대응 선언이면 responder는 "직전 선언자"
     const previous = state.declarationStack.items.find(
       (d) => d.id === top.respondedToDeclarationId,
     );
-    responderPlayerId = previous ? previous.declaredBy : getOpponentPlayerId(top.declaredBy);
+
+    responderPlayerId = previous
+      ? previous.declaredBy
+      : getOpponentPlayerId(top.declaredBy);
   } else {
-    // 최초 선언이면 상대 플레이어
     responderPlayerId = getOpponentPlayerId(top.declaredBy);
   }
 
-  const updatedItems = state.declarationStack.items.map((item, index, array) => {
-    if (index !== array.length - 1) {
-      return { ...item, responseWindowOpen: false };
-    }
-    return { ...item, responseWindowOpen: true, status: 'awaitingResponse' as const };
-  });
-
-  return {
-    ...state,
-    declarationStack: {
-      ...state.declarationStack,
-      items: updatedItems,
-      activeResponseWindow: {
-        topDeclarationId: top.id,
-        responderPlayerId,
-      },
-    },
-  };
-}
-
-  const responderPlayerId = getOpponentPlayerId(top.declaredBy);
   const updatedItems = state.declarationStack.items.map((item, index, array) => {
     if (index !== array.length - 1) {
       return { ...item, responseWindowOpen: false };
