@@ -25,6 +25,7 @@ import {
   validatePassResponse,
   validateResponseDeclarationOpportunity,
 } from './GameRules';
+import { buildCharacterAbilityDescriptor } from './effects/EffectSource';
 
 function appendLog(state: GameState, message: string): GameState {
   state.logs.push(message);
@@ -124,6 +125,15 @@ function resolveUseAbility(state: GameState, declaration: any): void {
     type: 'ABILITY_USED',
     playerId: declaration.playerId,
     cardId: declaration.sourceCardId,
+    cause: buildCharacterAbilityDescriptor({
+      controller: declaration.playerId,
+      sourceCardId: declaration.sourceCardId,
+      effectId: declaration.sourceEffectId,
+      label: 'characterEffect',
+    }),
+    metadata: {
+      declaredKind: declaration.kind,
+    },
   } as EngineEvent);
   appendLog(state, '능력 사용 해결');
 }

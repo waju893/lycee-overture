@@ -1,4 +1,3 @@
-
 export const MAX_DECLARATION_STACK_DEPTH = 100;
 
 export type PlayerID = 'P1' | 'P2';
@@ -29,6 +28,44 @@ export type DeclarationKind =
   | 'useAbility'
   | 'attack'
   | 'chargeCharacter';
+
+export type EffectOwnerKind =
+  | 'character'
+  | 'event'
+  | 'item'
+  | 'area'
+  | 'handDeclaration'
+  | 'rule'
+  | 'unknown';
+
+export type OperationKind =
+  | 'draw'
+  | 'tap'
+  | 'destroy'
+  | 'move'
+  | 'mill'
+  | 'charge'
+  | 'custom';
+
+export interface EffectDescriptor {
+  controller: PlayerID;
+  ownerKind: EffectOwnerKind;
+  sourceCardId?: string;
+  sourceCharacterId?: string;
+  effectId?: string;
+  label?: string;
+  metadata?: Record<string, unknown>;
+  isEffect: true;
+  isAbility: boolean;
+}
+
+export interface OperationDescriptor {
+  kind: OperationKind;
+  source?: EffectDescriptor;
+  targets?: string[];
+  amount?: number;
+  metadata?: Record<string, unknown>;
+}
 
 export interface CardRef {
   instanceId: string;
@@ -74,6 +111,9 @@ export interface EngineEvent {
   type: string;
   playerId?: PlayerID;
   cardId?: string;
+  cause?: EffectDescriptor;
+  operation?: OperationDescriptor;
+  metadata?: Record<string, unknown>;
 }
 
 export interface LegacyDeclaration {
