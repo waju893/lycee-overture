@@ -10,18 +10,18 @@ import {
   getOpponentPlayerId,
 } from './GameTypes';
 
-function attachDeclarationStackHelpers(stack: DeclarationStackArray): DeclarationStackArray {
+function attachDeclarationStackItems(stack: DeclarationStackArray): DeclarationStackArray {
   Object.defineProperty(stack, 'items', {
     value: stack,
+    enumerable: false,
     writable: true,
     configurable: true,
-    enumerable: false,
   });
   return stack;
 }
 
 function makeDeclarationStack(): DeclarationStackArray {
-  const stack = attachDeclarationStackHelpers([] as unknown as DeclarationStackArray);
+  const stack = attachDeclarationStackItems([] as unknown as DeclarationStackArray);
   stack.limit = MAX_DECLARATION_STACK_DEPTH;
   stack.activeResponseWindow = undefined;
   return stack;
@@ -94,10 +94,6 @@ export function createPlayerState(deck: CardRef[] = []): PlayerState {
     discard: [],
     field: createEmptyField(),
   };
-}
-
-export function syncDeclarationStack(stack: DeclarationStackArray): DeclarationStackArray {
-  return attachDeclarationStackHelpers(stack);
 }
 
 export function findCardInField(

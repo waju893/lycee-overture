@@ -10,6 +10,9 @@ export type Zone =
   | 'field'
   | 'discard'
   | 'charge'
+  | 'removed'
+  | 'side'
+  | 'custom'
   | 'unknown';
 
 export type FieldSlot =
@@ -28,44 +31,6 @@ export type DeclarationKind =
   | 'useAbility'
   | 'attack'
   | 'chargeCharacter';
-
-export type EffectOwnerKind =
-  | 'character'
-  | 'event'
-  | 'item'
-  | 'area'
-  | 'handDeclaration'
-  | 'rule'
-  | 'unknown';
-
-export type OperationKind =
-  | 'draw'
-  | 'tap'
-  | 'destroy'
-  | 'move'
-  | 'mill'
-  | 'charge'
-  | 'custom';
-
-export interface EffectDescriptor {
-  controller: PlayerID;
-  ownerKind: EffectOwnerKind;
-  sourceCardId?: string;
-  sourceCharacterId?: string;
-  effectId?: string;
-  label?: string;
-  metadata?: Record<string, unknown>;
-  isEffect: true;
-  isAbility: boolean;
-}
-
-export interface OperationDescriptor {
-  kind: OperationKind;
-  source?: EffectDescriptor;
-  targets?: string[];
-  amount?: number;
-  metadata?: Record<string, unknown>;
-}
 
 export interface CardRef {
   instanceId: string;
@@ -107,11 +72,88 @@ export interface ReplayEvent {
   payload: unknown;
 }
 
+export type EffectOwnerKind =
+  | 'character'
+  | 'event'
+  | 'item'
+  | 'area'
+  | 'handDeclaration'
+  | 'rule'
+  | 'battle'
+  | 'cost';
+
+export type CauseCategory = 'effect' | 'ability' | 'battle' | 'rule' | 'cost';
+
+export type RelationToAffectedPlayer = 'self' | 'opponent' | 'neutral';
+
+export interface EffectDescriptor {
+  ownerKind: EffectOwnerKind;
+  sourceCardId?: string;
+  sourceEffectId?: string;
+  declarationKind?: string;
+  isEffect: boolean;
+  isAbility: boolean;
+}
+
+export interface CauseDescriptor {
+  controllerPlayerId?: PlayerID;
+  relationToAffectedPlayer?: RelationToAffectedPlayer;
+  category: CauseCategory;
+  sourceKind: EffectOwnerKind;
+  sourceCardId?: string;
+  sourceEffectId?: string;
+  declarationKind?: string;
+  isEffect: boolean;
+  isAbility: boolean;
+}
+
+export type OperationKind =
+  | 'destroy'
+  | 'down'
+  | 'leaveField'
+  | 'moveZone'
+  | 'moveToHand'
+  | 'moveToDeckTop'
+  | 'moveToDeckBottom'
+  | 'moveToDiscard'
+  | 'moveToCharge'
+  | 'removeFromGame'
+  | 'moveToSide'
+  | 'moveToCustomSpace'
+  | 'tap'
+  | 'untap'
+  | 'enterFieldByRule'
+  | 'enterFieldByEffect'
+  | 'battleInterrupted'
+  | 'positionMove'
+  | 'swapPosition'
+  | 'draw'
+  | 'putIntoHand'
+  | 'charge'
+  | 'mill'
+  | 'recoverFromTrash'
+  | 'recoverToDeckBottom'
+  | 'statChange'
+  | 'grantEffect'
+  | 'freeUse'
+  | 'warmupDrawChange'
+  | 'abilityUse';
+
+export interface OperationDescriptor {
+  kind: OperationKind;
+  fromZone?: string;
+  toZone?: string;
+  relatedCardIds?: string[];
+  metadata?: Record<string, unknown>;
+}
+
 export interface EngineEvent {
   type: string;
   playerId?: PlayerID;
   cardId?: string;
-  cause?: EffectDescriptor;
+  affectedPlayerId?: PlayerID;
+  affectedCardIds?: string[];
+  cause?: CauseDescriptor;
   operation?: OperationDescriptor;
   metadata?: Record<string, unknown>;
 }
