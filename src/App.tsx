@@ -4,6 +4,7 @@ import DeckBuilderPage from "./pages/DeckBuilderPage";
 import JoinRoomPage from "./pages/JoinRoomPage";
 import PracticeBoard from "./pages/PracticeBoard";
 import ReplayPage from "./pages/ReplayPage";
+import RoomGamePage from "./pages/RoomGamePage";
 import TitlePage from "./pages/TitlePage";
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/create-room" element={<CreateRoomPage />} />
         <Route path="/join-room" element={<JoinRoomPage />} />
         <Route path="/practice" element={<PracticeBoard />} />
+        <Route path="/room/:roomId" element={<RoomGamePage />} />
         <Route path="/replay" element={<ReplayPage />} />
       </Routes>
     </BrowserRouter>
