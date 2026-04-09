@@ -158,6 +158,25 @@ export interface EngineEvent {
   metadata?: Record<string, unknown>;
 }
 
+
+export type TriggerControllerScope = 'self' | 'opponent' | 'any';
+
+export interface TriggerCauseCondition {
+  controller?: TriggerControllerScope;
+  categories?: CauseCategory[];
+  sourceKinds?: EffectOwnerKind[];
+  requireEffect?: boolean;
+  requireAbility?: boolean;
+}
+
+export interface TriggerCondition {
+  operationKinds?: OperationKind[];
+  eventTypes?: string[];
+  cardId?: string;
+  affectedPlayerScope?: TriggerControllerScope;
+  cause?: TriggerCauseCondition;
+}
+
 export interface LegacyDeclaration {
   id: string;
   playerId: PlayerID;
