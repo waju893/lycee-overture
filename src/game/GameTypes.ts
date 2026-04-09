@@ -32,6 +32,98 @@ export type DeclarationKind =
   | 'attack'
   | 'chargeCharacter';
 
+export type CauseRelation = 'self' | 'opponent' | 'neutral' | 'any';
+export type CauseKind = 'effect' | 'ability' | 'battle' | 'rule' | 'cost';
+export type EffectOwnerKind =
+  | 'character'
+  | 'event'
+  | 'item'
+  | 'area'
+  | 'handDeclaration'
+  | 'rule'
+  | 'battle'
+  | 'cost'
+  | 'unknown';
+
+export type OperationKind =
+  | 'destroy'
+  | 'down'
+  | 'leaveField'
+  | 'moveToHand'
+  | 'moveToDeckBottom'
+  | 'moveToDeckTop'
+  | 'moveToDiscard'
+  | 'moveToCharge'
+  | 'tap'
+  | 'untap'
+  | 'enterField'
+  | 'draw'
+  | 'mill'
+  | 'charge'
+  | 'other';
+
+export interface CauseDescriptor {
+  controller?: PlayerID;
+  relationToAffectedPlayer?: CauseRelation;
+  causeKind: CauseKind;
+  sourceOwnerKind: EffectOwnerKind;
+  isEffect: boolean;
+  isAbility: boolean;
+  sourceCardId?: string;
+  sourceEffectId?: string;
+  sourceInstanceId?: string;
+  detail?: string;
+}
+
+export interface OperationDescriptor {
+  kind: OperationKind;
+  cardId?: string;
+  playerId?: PlayerID;
+  fromZone?: Zone | string;
+  toZone?: Zone | string;
+  amount?: number;
+  detail?: string;
+}
+
+export interface TriggerCauseCondition {
+  relationToAffectedPlayer?: Exclude<CauseRelation, 'neutral'>;
+  causeKind?: CauseKind;
+  sourceOwnerKind?: EffectOwnerKind;
+  requireEffect?: boolean;
+  requireAbility?: boolean;
+}
+
+export interface TriggerCondition {
+  eventType: string;
+  cause?: TriggerCauseCondition;
+}
+
+export interface TriggerTemplate {
+  id: string;
+  condition: TriggerCondition;
+  description?: string;
+  effectId?: string;
+  optional?: boolean;
+}
+
+export interface TriggerCandidate {
+  triggerId: string;
+  sourceCardId: string;
+  controller: PlayerID;
+  condition: TriggerCondition;
+  sourceEventType: string;
+  sourceEventIndex: number;
+  effectId?: string;
+  optional?: boolean;
+  description?: string;
+}
+
+export interface TriggerHistoryEntry {
+  triggerId: string;
+  sourceCardId: string;
+  sourceEventIndex: number;
+}
+
 export interface CardRef {
   instanceId: string;
   cardNo: string;
@@ -45,6 +137,7 @@ export interface CardRef {
   power?: number;
   damage?: number;
   hp?: number;
+  sp?: number;
   isTapped?: boolean;
   canAttack?: boolean;
   canBlock?: boolean;
@@ -52,6 +145,8 @@ export interface CardRef {
   location?: Zone | string;
   isLeader?: boolean;
   chargeCards?: CardRef[];
+  triggerTemplates?: TriggerTemplate[];
+  triggerHistory?: TriggerHistoryEntry[];
 }
 
 export interface FieldCell {
@@ -72,109 +167,12 @@ export interface ReplayEvent {
   payload: unknown;
 }
 
-export type EffectOwnerKind =
-  | 'character'
-  | 'event'
-  | 'item'
-  | 'area'
-  | 'handDeclaration'
-  | 'rule'
-  | 'battle'
-  | 'cost';
-
-export type CauseCategory = 'effect' | 'ability' | 'battle' | 'rule' | 'cost';
-
-export type RelationToAffectedPlayer = 'self' | 'opponent' | 'neutral';
-
-export interface EffectDescriptor {
-  ownerKind: EffectOwnerKind;
-  sourceCardId?: string;
-  sourceEffectId?: string;
-  declarationKind?: string;
-  isEffect: boolean;
-  isAbility: boolean;
-}
-
-export interface CauseDescriptor {
-  controllerPlayerId?: PlayerID;
-  relationToAffectedPlayer?: RelationToAffectedPlayer;
-  category: CauseCategory;
-  sourceKind: EffectOwnerKind;
-  sourceCardId?: string;
-  sourceEffectId?: string;
-  declarationKind?: string;
-  isEffect: boolean;
-  isAbility: boolean;
-}
-
-export type OperationKind =
-  | 'destroy'
-  | 'down'
-  | 'leaveField'
-  | 'moveZone'
-  | 'moveToHand'
-  | 'moveToDeckTop'
-  | 'moveToDeckBottom'
-  | 'moveToDiscard'
-  | 'moveToCharge'
-  | 'removeFromGame'
-  | 'moveToSide'
-  | 'moveToCustomSpace'
-  | 'tap'
-  | 'untap'
-  | 'enterFieldByRule'
-  | 'enterFieldByEffect'
-  | 'battleInterrupted'
-  | 'positionMove'
-  | 'swapPosition'
-  | 'draw'
-  | 'putIntoHand'
-  | 'charge'
-  | 'mill'
-  | 'recoverFromTrash'
-  | 'recoverToDeckBottom'
-  | 'statChange'
-  | 'grantEffect'
-  | 'freeUse'
-  | 'warmupDrawChange'
-  | 'abilityUse';
-
-export interface OperationDescriptor {
-  kind: OperationKind;
-  fromZone?: string;
-  toZone?: string;
-  relatedCardIds?: string[];
-  metadata?: Record<string, unknown>;
-}
-
 export interface EngineEvent {
   type: string;
   playerId?: PlayerID;
   cardId?: string;
-  affectedPlayerId?: PlayerID;
-  affectedCardIds?: string[];
   cause?: CauseDescriptor;
   operation?: OperationDescriptor;
-  metadata?: Record<string, unknown>;
-}
-
-
-export type TriggerControllerScope = 'self' | 'opponent' | 'any';
-
-export interface TriggerCauseCondition {
-  controller?: TriggerControllerScope;
-  categories?: CauseCategory[];
-  sourceKinds?: EffectOwnerKind[];
-  requireEffect?: boolean;
-  requireAbility?: boolean;
-}
-
-export interface TriggerCondition {
-  operationKinds?: OperationKind[];
-  eventTypes?: string[];
-  cardId?: string;
-  affectedPlayerScope?: TriggerControllerScope;
-  cause?: TriggerCauseCondition;
 }
 
 export interface LegacyDeclaration {
@@ -305,7 +303,7 @@ export interface ActiveResponseWindow {
 }
 
 export interface TriggerQueueState {
-  pendingGroups: unknown[][];
+  pendingGroups: TriggerCandidate[][];
 }
 
 export type DeclarationStackArray = LegacyDeclaration[] & {

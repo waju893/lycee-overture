@@ -10,18 +10,14 @@ import {
   getOpponentPlayerId,
 } from './GameTypes';
 
-function attachDeclarationStackItems(stack: DeclarationStackArray): DeclarationStackArray {
+function makeDeclarationStack(): DeclarationStackArray {
+  const stack = [] as unknown as DeclarationStackArray;
   Object.defineProperty(stack, 'items', {
     value: stack,
-    enumerable: false,
     writable: true,
     configurable: true,
+    enumerable: false,
   });
-  return stack;
-}
-
-function makeDeclarationStack(): DeclarationStackArray {
-  const stack = attachDeclarationStackItems([] as unknown as DeclarationStackArray);
   stack.limit = MAX_DECLARATION_STACK_DEPTH;
   stack.activeResponseWindow = undefined;
   return stack;
@@ -30,6 +26,12 @@ function makeDeclarationStack(): DeclarationStackArray {
 function cloneCard(card: CardRef): CardRef {
   return {
     ...card,
+    triggerTemplates: card.triggerTemplates
+      ? card.triggerTemplates.map((template) => ({
+          ...template,
+          condition: { ...template.condition },
+        }))
+      : undefined,
     chargeCards: card.chargeCards ? card.chargeCards.map(cloneCard) : undefined,
   };
 }

@@ -8,6 +8,7 @@ import {
   type EngineEvent,
   type FieldSlot,
   type GameState,
+  type OperationDescriptor,
   type PlayerID,
   type PlayerId,
   getOpponentPlayerId,
@@ -25,14 +26,15 @@ import {
   validatePassResponse,
   validateResponseDeclarationOpportunity,
 } from './GameRules';
-import {
-  createBattleCause,
-  createEffectCause,
-  createRuleCause,
-} from './effects/Cause';
+import { enqueueTriggerCandidates } from './triggers/TriggerQueue';
 
 function syncDeclarationStack(stack: DeclarationStackArray): DeclarationStackArray {
-  stack.items = stack;
+  Object.defineProperty(stack, 'items', {
+    value: stack,
+    writable: true,
+    configurable: true,
+    enumerable: false,
+  });
   return stack;
 }
 
@@ -42,15 +44,16 @@ function appendLog(state: GameState, message: string): GameState {
   return state;
 }
 
-function pushEvent(state: GameState, event: EngineEvent): void {
-  state.events.push(event);
-}
-
 function recordReplay(state: GameState, action: unknown): void {
   state.replayEvents.push({
     type: 'ACTION_RECORDED',
     payload: JSON.parse(JSON.stringify(action)),
   });
+}
+
+function pushEngineEvent(state: GameState, event: EngineEvent): void {
+  state.events.push(event);
+  enqueueTriggerCandidates(state, event);
 }
 
 function nextLegacyDeclarationId(state: GameState): string {
@@ -61,40 +64,55 @@ function nextDeclarationId(state: GameState): string {
   return `DECL-${state.declarationStack.length + 1}-${state.replayEvents.length + 1}`;
 }
 
-function moveDeckTopToHand(state: GameState, playerId: PlayerID, count: number, cause?: CauseDescriptor): void {
-  const drawnIds: string[] = [];
+function makeRuleCause(playerId?: PlayerID, detail?: string): CauseDescriptor {
+  return {
+    controller: playerId,
+    relationToAffectedPlayer: 'any',
+    causeKind: 'rule',
+    sourceOwnerKind: 'rule',
+    isEffect: false,
+    isAbility: false,
+    detail,
+  };
+}
+
+function makeCharacterAbilityCause(playerId: PlayerID, sourceCardId?: string, sourceEffectId?: string): CauseDescriptor {
+  return {
+    controller: playerId,
+    relationToAffectedPlayer: 'self',
+    causeKind: 'ability',
+    sourceOwnerKind: 'character',
+    isEffect: true,
+    isAbility: true,
+    sourceCardId,
+    sourceEffectId,
+  };
+}
+
+function makeBattleCause(playerId: PlayerID, sourceCardId?: string): CauseDescriptor {
+  return {
+    controller: playerId,
+    relationToAffectedPlayer: 'self',
+    causeKind: 'battle',
+    sourceOwnerKind: 'battle',
+    isEffect: false,
+    isAbility: false,
+    sourceCardId,
+  };
+}
+
+function drawTopCards(state: GameState, playerId: PlayerID, count: number): void {
   for (let i = 0; i < count; i += 1) {
     const card = state.players[playerId].deck.shift();
     if (!card) break;
     card.location = 'hand';
     state.players[playerId].hand.push(card);
-    drawnIds.push(card.instanceId);
-    pushEvent(state, {
-      type: 'CARD_MOVED',
-      playerId,
-      cardId: card.instanceId,
-      affectedPlayerId: playerId,
-      cause,
-      operation: {
-        kind: 'moveToHand',
-        fromZone: 'deck',
-        toZone: 'hand',
-      },
-    });
-  }
-  if (drawnIds.length > 0) {
-    pushEvent(state, {
+    pushEngineEvent(state, {
       type: 'CARD_DRAWN',
       playerId,
-      affectedPlayerId: playerId,
-      affectedCardIds: drawnIds,
-      cause,
-      operation: {
-        kind: 'draw',
-        fromZone: 'deck',
-        toZone: 'hand',
-        relatedCardIds: drawnIds,
-      },
+      cardId: card.instanceId,
+      cause: makeRuleCause(playerId, 'drawTopCards'),
+      operation: { kind: 'draw', cardId: card.instanceId, playerId, fromZone: 'deck', toZone: 'hand', amount: 1 },
     });
   }
 }
@@ -103,24 +121,14 @@ function untapField(state: GameState, playerId: PlayerID): void {
   const slots = Object.keys(state.players[playerId].field) as FieldSlot[];
   for (const slot of slots) {
     const card = state.players[playerId].field[slot].card;
-    if (!card) continue;
-    if (card.isTapped) {
+    if (card && card.isTapped) {
       card.isTapped = false;
-      pushEvent(state, {
+      pushEngineEvent(state, {
         type: 'CARD_UNTAPPED',
         playerId,
         cardId: card.instanceId,
-        affectedPlayerId: playerId,
-        cause: createRuleCause({
-          controllerPlayerId: playerId,
-          affectedPlayerId: playerId,
-          declarationKind: 'startTurn',
-        }),
-        operation: {
-          kind: 'untap',
-          fromZone: 'field',
-          toZone: 'field',
-        },
+        cause: makeRuleCause(playerId, 'turnStartUntap'),
+        operation: { kind: 'untap', cardId: card.instanceId, playerId },
       });
     }
   }
@@ -133,56 +141,27 @@ function startTurn(state: GameState, playerId: PlayerID): void {
   state.turn.turnNumber += 1;
   untapField(state, playerId);
   const drawCount = state.turn.turnNumber <= 1 && state.turn.firstPlayer === playerId ? 1 : 2;
-  moveDeckTopToHand(
-    state,
-    playerId,
-    drawCount,
-    createRuleCause({
-      controllerPlayerId: playerId,
-      affectedPlayerId: playerId,
-      declarationKind: 'warmupDraw',
-    }),
-  );
+  drawTopCards(state, playerId, drawCount);
 }
 
-function millFromDeckToDiscard(
-  state: GameState,
-  playerId: PlayerID,
-  count: number,
-  cause?: CauseDescriptor,
-): void {
-  const milledIds: string[] = [];
+function millFromDeckToDiscard(state: GameState, playerId: PlayerID, count: number, cause?: CauseDescriptor): void {
   for (let i = 0; i < count; i += 1) {
     const card = state.players[playerId].deck.shift();
     if (!card) break;
     card.location = 'discard';
     state.players[playerId].discard.push(card);
-    milledIds.push(card.instanceId);
-    pushEvent(state, {
-      type: 'CARD_MOVED',
+    pushEngineEvent(state, {
+      type: 'CARD_MOVED_TO_DISCARD',
       playerId,
       cardId: card.instanceId,
-      affectedPlayerId: playerId,
-      cause,
-      operation: {
-        kind: 'moveToDiscard',
-        fromZone: 'deck',
-        toZone: 'discard',
-      },
-    });
-  }
-  if (milledIds.length > 0) {
-    pushEvent(state, {
-      type: 'CARDS_MILLED',
-      playerId,
-      affectedPlayerId: playerId,
-      affectedCardIds: milledIds,
       cause,
       operation: {
         kind: 'mill',
+        cardId: card.instanceId,
+        playerId,
         fromZone: 'deck',
         toZone: 'discard',
-        relatedCardIds: milledIds,
+        amount: 1,
       },
     });
   }
@@ -215,86 +194,28 @@ function fieldHasSameName(state: GameState, playerId: PlayerID, sameNameKey?: st
   return slots.some((slot) => state.players[playerId].field[slot].card?.sameNameKey === sameNameKey);
 }
 
-function removeFieldCardAndRecord(
-  state: GameState,
-  owner: PlayerID,
-  cardId: string,
-  cause: CauseDescriptor,
-): void {
-  const removed = removeCardFromAllZones(state.players[owner], cardId);
-  if (!removed) return;
-  pushEvent(state, {
-    type: 'CARD_DESTROYED',
-    playerId: cause.controllerPlayerId,
-    cardId: removed.instanceId,
-    affectedPlayerId: owner,
-    cause,
-    operation: {
-      kind: 'destroy',
-      fromZone: 'field',
-    },
-  });
-  pushEvent(state, {
-    type: 'CARD_LEFT_FIELD',
-    playerId: cause.controllerPlayerId,
-    cardId: removed.instanceId,
-    affectedPlayerId: owner,
-    cause,
-    operation: {
-      kind: 'leaveField',
-      fromZone: 'field',
-    },
-  });
-}
-
 function resolveUseCharacter(state: GameState, declaration: any): void {
   const slot = declaration.targetSlots?.[0] as FieldSlot | undefined;
   const playerId = declaration.playerId as PlayerID;
   const card = removeCardFromHand(state, playerId, declaration.sourceCardId);
   if (!card || !slot) return;
   placeCharacterOnField(state, playerId, slot, { ...card, location: 'field', isTapped: false });
-  pushEvent(state, {
+  pushEngineEvent(state, {
     type: 'CARD_ENTERED_FIELD',
     playerId,
     cardId: card.instanceId,
-    affectedPlayerId: playerId,
-    cause: createRuleCause({
-      controllerPlayerId: playerId,
-      affectedPlayerId: playerId,
-      declarationKind: 'useCharacter',
-    }),
-    operation: {
-      kind: 'enterFieldByRule',
-      fromZone: 'hand',
-      toZone: 'field',
-    },
-    metadata: {
-      slot,
-    },
+    cause: makeRuleCause(playerId, 'characterDeclarationResolved'),
+    operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
   appendLog(state, '등장 선언 해결');
 }
 
 function resolveUseAbility(state: GameState, declaration: any): void {
-  const playerId = declaration.playerId as PlayerID;
-  pushEvent(state, {
+  pushEngineEvent(state, {
     type: 'ABILITY_USED',
-    playerId,
+    playerId: declaration.playerId,
     cardId: declaration.sourceCardId,
-    affectedPlayerId: playerId,
-    cause: createEffectCause({
-      controllerPlayerId: playerId,
-      affectedPlayerId: playerId,
-      sourceKind: 'character',
-      sourceCardId: declaration.sourceCardId,
-      sourceEffectId: declaration.sourceEffectId,
-      declarationKind: 'useAbility',
-    }),
-    operation: {
-      kind: 'abilityUse',
-      fromZone: 'field',
-      toZone: 'field',
-    },
+    cause: makeCharacterAbilityCause(declaration.playerId, declaration.sourceCardId, declaration.sourceEffectId),
   });
   appendLog(state, '능력 사용 해결');
 }
@@ -307,67 +228,33 @@ function resolveChargeCharacter(state: GameState, declaration: any): void {
   const deckCount = Number(payload.deckCount ?? 0);
   const discardCardIds = Array.isArray(payload.discardCardIds) ? (payload.discardCardIds as string[]) : [];
   const charged: CardRef[] = [];
-  const cause = createRuleCause({
-    controllerPlayerId: owner,
-    affectedPlayerId: owner,
-    declarationKind: 'chargeCharacter',
-  });
-
   for (let i = 0; i < deckCount; i += 1) {
     const card = state.players[owner].deck.shift();
     if (!card) break;
-    const moved = { ...card, location: 'charge' };
-    charged.push(moved);
-    pushEvent(state, {
-      type: 'CARD_MOVED',
+    charged.push({ ...card, location: 'charge' });
+    pushEngineEvent(state, {
+      type: 'CARD_MOVED_TO_CHARGE',
       playerId: owner,
-      cardId: moved.instanceId,
-      affectedPlayerId: owner,
-      cause,
-      operation: {
-        kind: 'moveToCharge',
-        fromZone: 'deck',
-        toZone: 'charge',
-      },
+      cardId: card.instanceId,
+      cause: makeCharacterAbilityCause(owner, declaration.sourceCardId, declaration.sourceEffectId),
+      operation: { kind: 'charge', cardId: card.instanceId, playerId: owner, fromZone: 'deck', toZone: 'charge', amount: 1 },
     });
   }
   for (const chargeId of discardCardIds) {
     const idx = state.players[owner].discard.findIndex((card) => card.instanceId === chargeId);
     if (idx >= 0) {
       const [card] = state.players[owner].discard.splice(idx, 1);
-      const moved = { ...card, location: 'charge' };
-      charged.push(moved);
-      pushEvent(state, {
-        type: 'CARD_MOVED',
+      charged.push({ ...card, location: 'charge' });
+      pushEngineEvent(state, {
+        type: 'CARD_MOVED_TO_CHARGE',
         playerId: owner,
-        cardId: moved.instanceId,
-        affectedPlayerId: owner,
-        cause,
-        operation: {
-          kind: 'moveToCharge',
-          fromZone: 'discard',
-          toZone: 'charge',
-        },
+        cardId: card.instanceId,
+        cause: makeCharacterAbilityCause(owner, declaration.sourceCardId, declaration.sourceEffectId),
+        operation: { kind: 'charge', cardId: card.instanceId, playerId: owner, fromZone: 'discard', toZone: 'charge', amount: 1 },
       });
     }
   }
   found.card.chargeCards = [...(found.card.chargeCards ?? []), ...charged];
-  if (charged.length > 0) {
-    pushEvent(state, {
-      type: 'CARD_CHARGED',
-      playerId: owner,
-      cardId: found.card.instanceId,
-      affectedPlayerId: owner,
-      affectedCardIds: charged.map((card) => card.instanceId),
-      cause,
-      operation: {
-        kind: 'charge',
-        fromZone: 'deck',
-        toZone: 'charge',
-        relatedCardIds: charged.map((card) => card.instanceId),
-      },
-    });
-  }
   appendLog(state, '차지 해결');
 }
 
@@ -379,12 +266,6 @@ function resolveAttack(state: GameState, declaration: any): void {
   const column = getAttackColumnFromSlot(attackerInfo.slot);
   const defenderSlot = getMatchingDefenderSlotForColumn(column);
   const defender = state.players[defenderPlayerId].field[defenderSlot].card;
-  const battleCause = createBattleCause({
-    controllerPlayerId: attackerInfo.playerId,
-    affectedPlayerId: defenderPlayerId,
-    sourceCardId: attacker.instanceId,
-    declarationKind: 'attack',
-  });
 
   if (defender && !defender.isTapped) {
     state.battle = {
@@ -395,35 +276,26 @@ function resolveAttack(state: GameState, declaration: any): void {
       attackColumn: column,
       awaitingDefenderSelection: true,
     };
-    appendLog(state, '방어자 선택 대기');
-    pushEvent(state, {
+    pushEngineEvent(state, {
       type: 'BATTLE_DEFENDER_SELECTION_REQUIRED',
       playerId: attackerInfo.playerId,
       cardId: attacker.instanceId,
-      affectedPlayerId: defenderPlayerId,
-      cause: battleCause,
-      metadata: {
-        defenderSlot,
-      },
+      cause: makeBattleCause(attackerInfo.playerId, attacker.instanceId),
     });
+    appendLog(state, '방어자 선택 대기');
     return;
   }
 
   const dmg = attacker.dmg ?? attacker.damage ?? 1;
   attacker.isTapped = true;
-  pushEvent(state, {
+  pushEngineEvent(state, {
     type: 'CARD_TAPPED',
     playerId: attackerInfo.playerId,
     cardId: attacker.instanceId,
-    affectedPlayerId: attackerInfo.playerId,
-    cause: battleCause,
-    operation: {
-      kind: 'tap',
-      fromZone: 'field',
-      toZone: 'field',
-    },
+    cause: makeBattleCause(attackerInfo.playerId, attacker.instanceId),
+    operation: { kind: 'tap', cardId: attacker.instanceId, playerId: attackerInfo.playerId },
   });
-  millFromDeckToDiscard(state, defenderPlayerId, dmg, battleCause);
+  millFromDeckToDiscard(state, defenderPlayerId, dmg, makeBattleCause(attackerInfo.playerId, attacker.instanceId));
   state.battle = {
     isActive: false,
     awaitingDefenderSelection: false,
@@ -518,50 +390,14 @@ function handleStartGame(state: GameState, action: Extract<GameAction, { type: '
         leader.location = 'hand';
         leader.revealed = true;
         next.players[playerId].hand.push(leader);
-        moveDeckTopToHand(
-          next,
-          playerId,
-          6,
-          createRuleCause({
-            controllerPlayerId: playerId,
-            affectedPlayerId: playerId,
-            declarationKind: 'startupDraw',
-          }),
-        );
+        drawTopCards(next, playerId, 6);
       } else {
-        moveDeckTopToHand(
-          next,
-          playerId,
-          7,
-          createRuleCause({
-            controllerPlayerId: playerId,
-            affectedPlayerId: playerId,
-            declarationKind: 'startupDraw',
-          }),
-        );
+        drawTopCards(next, playerId, 7);
       }
     }
   } else {
-    moveDeckTopToHand(
-      next,
-      'P1',
-      7,
-      createRuleCause({
-        controllerPlayerId: 'P1',
-        affectedPlayerId: 'P1',
-        declarationKind: 'startupDraw',
-      }),
-    );
-    moveDeckTopToHand(
-      next,
-      'P2',
-      7,
-      createRuleCause({
-        controllerPlayerId: 'P2',
-        affectedPlayerId: 'P2',
-        declarationKind: 'startupDraw',
-      }),
-    );
+    drawTopCards(next, 'P1', 7);
+    drawTopCards(next, 'P2', 7);
   }
   appendLog(next, 'START_GAME');
   return next;
@@ -569,9 +405,7 @@ function handleStartGame(state: GameState, action: Extract<GameAction, { type: '
 
 function handlePassPriority(state: GameState, action: Extract<GameAction, { type: 'PASS_PRIORITY' }>): GameState {
   if (state.declarationStack.length > 0) {
-    if (state.turn.priorityPlayer === action.playerId) {
-      resolveLatestLegacyDeclaration(state);
-    }
+    resolveLatestLegacyDeclaration(state);
     return state;
   }
   if (state.turn.priorityPlayer === action.playerId) {
@@ -620,7 +454,7 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
     turn: { ...state.turn },
     battle: { ...state.battle },
     declarationStack: syncDeclarationStack([...state.declarationStack] as unknown as DeclarationStackArray),
-    triggerQueue: { pendingGroups: [...state.triggerQueue.pendingGroups] },
+    triggerQueue: { pendingGroups: state.triggerQueue.pendingGroups.map((group) => [...group]) },
     logs: [...state.logs],
     log: [...state.logs],
     events: [...state.events],
@@ -671,16 +505,7 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         next.turn.turnNumber += 1;
         untapField(next, nextPlayer);
         const drawCount = next.turn.turnNumber <= 1 && next.turn.firstPlayer === nextPlayer ? 1 : 2;
-        moveDeckTopToHand(
-          next,
-          nextPlayer,
-          drawCount,
-          createRuleCause({
-            controllerPlayerId: nextPlayer,
-            affectedPlayerId: nextPlayer,
-            declarationKind: 'warmupDraw',
-          }),
-        );
+        drawTopCards(next, nextPlayer, drawCount);
       }
       return next;
     case 'DECLARE_ACTION': {
@@ -721,53 +546,51 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       }
       const defenderPlayerId = next.battle.defenderPlayerId ?? getOpponentPlayerId(attackerInfo.playerId);
       const dmg = attackerInfo.card.dmg ?? attackerInfo.card.damage ?? 1;
-      const battleCause = createBattleCause({
-        controllerPlayerId: attackerInfo.playerId,
-        affectedPlayerId: defenderPlayerId,
-        sourceCardId: attackerInfo.card.instanceId,
-        declarationKind: 'attack',
-      });
       if (action.defenderCardId) {
         const found = findCardOwnerOnField(next, action.defenderCardId);
         if (found && found.playerId === defenderPlayerId) {
           next.battle.defenderCardId = action.defenderCardId;
           attackerInfo.card.isTapped = true;
-          pushEvent(next, {
+          pushEngineEvent(next, {
             type: 'CARD_TAPPED',
             playerId: attackerInfo.playerId,
             cardId: attackerInfo.card.instanceId,
-            affectedPlayerId: attackerInfo.playerId,
-            cause: battleCause,
-            operation: {
-              kind: 'tap',
-              fromZone: 'field',
-              toZone: 'field',
-            },
+            cause: makeBattleCause(attackerInfo.playerId, attackerInfo.card.instanceId),
+            operation: { kind: 'tap', cardId: attackerInfo.card.instanceId, playerId: attackerInfo.playerId },
           });
           if ((attackerInfo.card.ap ?? attackerInfo.card.power ?? 0) > (found.card.dp ?? found.card.hp ?? 0)) {
-            removeFieldCardAndRecord(next, defenderPlayerId, found.card.instanceId, battleCause);
+            removeCardFromAllZones(next.players[defenderPlayerId], found.card.instanceId);
+            pushEngineEvent(next, {
+              type: 'CARD_LEFT_FIELD',
+              playerId: defenderPlayerId,
+              cardId: found.card.instanceId,
+              cause: makeBattleCause(attackerInfo.playerId, attackerInfo.card.instanceId),
+              operation: { kind: 'leaveField', cardId: found.card.instanceId, playerId: defenderPlayerId, fromZone: 'field', toZone: 'discard' },
+            });
           }
           if ((found.card.ap ?? found.card.power ?? 0) > (attackerInfo.card.dp ?? attackerInfo.card.hp ?? 0)) {
-            removeFieldCardAndRecord(next, attackerInfo.playerId, attackerInfo.card.instanceId, battleCause);
+            removeCardFromAllZones(next.players[attackerInfo.playerId], attackerInfo.card.instanceId);
+            pushEngineEvent(next, {
+              type: 'CARD_LEFT_FIELD',
+              playerId: attackerInfo.playerId,
+              cardId: attackerInfo.card.instanceId,
+              cause: makeBattleCause(defenderPlayerId, found.card.instanceId),
+              operation: { kind: 'leaveField', cardId: attackerInfo.card.instanceId, playerId: attackerInfo.playerId, fromZone: 'field', toZone: 'discard' },
+            });
           }
           next.battle = { isActive: false, awaitingDefenderSelection: false };
           return next;
         }
       }
       attackerInfo.card.isTapped = true;
-      pushEvent(next, {
+      pushEngineEvent(next, {
         type: 'CARD_TAPPED',
         playerId: attackerInfo.playerId,
         cardId: attackerInfo.card.instanceId,
-        affectedPlayerId: attackerInfo.playerId,
-        cause: battleCause,
-        operation: {
-          kind: 'tap',
-          fromZone: 'field',
-          toZone: 'field',
-        },
+        cause: makeBattleCause(attackerInfo.playerId, attackerInfo.card.instanceId),
+        operation: { kind: 'tap', cardId: attackerInfo.card.instanceId, playerId: attackerInfo.playerId },
       });
-      millFromDeckToDiscard(next, defenderPlayerId, dmg, battleCause);
+      millFromDeckToDiscard(next, defenderPlayerId, dmg, makeBattleCause(attackerInfo.playerId, attackerInfo.card.instanceId));
       next.battle = { isActive: false, awaitingDefenderSelection: false };
       appendLog(next, '직접 공격 처리');
       return next;
@@ -843,7 +666,7 @@ export function declare(state: GameState, input: DeclareActionInput): GameState 
 
   const previousEntry = next.declarationStack[next.declarationStack.length - 2] as any | undefined;
   const responderPlayerId = declaration.isResponse
-    ? (previousEntry?.playerId ?? getOpponentPlayerId(declaration.declaredBy))
+    ? previousEntry?.playerId ?? getOpponentPlayerId(declaration.declaredBy)
     : getOpponentPlayerId(declaration.declaredBy);
 
   next.declarationStack.activeResponseWindow = {

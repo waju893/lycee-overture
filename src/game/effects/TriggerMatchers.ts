@@ -1,167 +1,152 @@
 import type {
-  CauseDescriptor,
   EngineEvent,
-  PlayerID,
   TriggerCauseCondition,
   TriggerCondition,
-  TriggerControllerScope,
 } from '../GameTypes';
 
-function matchesControllerScope(
-  scope: TriggerControllerScope | undefined,
-  controllerPlayerId: PlayerID | undefined,
-  perspectivePlayerId: PlayerID,
-): boolean {
-  if (!scope || scope === 'any') return true;
-  if (!controllerPlayerId) return false;
-  if (scope === 'self') return controllerPlayerId === perspectivePlayerId;
-  return controllerPlayerId !== perspectivePlayerId;
-}
-
-function matchesAffectedPlayerScope(
-  scope: TriggerControllerScope | undefined,
-  affectedPlayerId: PlayerID | undefined,
-  perspectivePlayerId: PlayerID,
-): boolean {
-  if (!scope || scope === 'any') return true;
-  if (!affectedPlayerId) return false;
-  if (scope === 'self') return affectedPlayerId === perspectivePlayerId;
-  return affectedPlayerId !== perspectivePlayerId;
-}
-
-export function matchesTriggerCause(
-  cause: CauseDescriptor | undefined,
+function matchesTriggerCause(
   condition: TriggerCauseCondition | undefined,
-  perspectivePlayerId: PlayerID,
+  event: EngineEvent,
 ): boolean {
   if (!condition) return true;
+
+  const cause = event.cause;
   if (!cause) return false;
 
-  if (!matchesControllerScope(condition.controller, cause.controllerPlayerId, perspectivePlayerId)) {
+  if (
+    condition.relationToAffectedPlayer &&
+    cause.relationToAffectedPlayer !== condition.relationToAffectedPlayer
+  ) {
     return false;
   }
 
-  if (condition.categories && condition.categories.length > 0) {
-    if (!condition.categories.includes(cause.category)) return false;
+  if (typeof condition.isEffect === 'boolean' && cause.isEffect !== condition.isEffect) {
+    return false;
   }
 
-  if (condition.sourceKinds && condition.sourceKinds.length > 0) {
-    if (!condition.sourceKinds.includes(cause.sourceKind)) return false;
+  if (typeof condition.isAbility === 'boolean' && cause.isAbility !== condition.isAbility) {
+    return false;
   }
 
-  if (condition.requireEffect === true && !cause.isEffect) return false;
-  if (condition.requireAbility === true && !cause.isAbility) return false;
+  if (condition.sourceType && cause.sourceType !== condition.sourceType) {
+    return false;
+  }
+
+  if (condition.reasonType && cause.reasonType !== condition.reasonType) {
+    return false;
+  }
 
   return true;
 }
 
 export function matchesTriggerCondition(
-  event: EngineEvent,
   condition: TriggerCondition,
-  perspectivePlayerId: PlayerID,
+  event: EngineEvent,
 ): boolean {
-  if (condition.eventTypes && condition.eventTypes.length > 0) {
-    if (!condition.eventTypes.includes(event.type)) return false;
+  switch (condition.kind) {
+    case 'destroyedByOpponentEffect':
+      return (
+        event.type === 'CARD_DESTROYED' &&
+        matchesTriggerCause(
+          {
+            relationToAffectedPlayer: 'opponent',
+            isEffect: true,
+          },
+          event,
+        )
+      );
+
+    case 'destroyedByOpponentAbility':
+      return (
+        event.type === 'CARD_DESTROYED' &&
+        matchesTriggerCause(
+          {
+            relationToAffectedPlayer: 'opponent',
+            isAbility: true,
+          },
+          event,
+        )
+      );
+
+    case 'destroyedByOpponentEventEffect':
+      return (
+        event.type === 'CARD_DESTROYED' &&
+        matchesTriggerCause(
+          {
+            relationToAffectedPlayer: 'opponent',
+            isEffect: true,
+            sourceType: 'event',
+          },
+          event,
+        )
+      );
+
+    case 'leftFieldByOpponentEffect':
+      return (
+        event.type === 'CARD_LEFT_FIELD' &&
+        matchesTriggerCause(
+          {
+            relationToAffectedPlayer: 'opponent',
+            isEffect: true,
+          },
+          event,
+        )
+      );
+
+    case 'movedToHandByEffect':
+      return (
+        event.type === 'CARD_MOVED_TO_HAND' &&
+        matchesTriggerCause(
+          {
+            isEffect: true,
+          },
+          event,
+        )
+      );
+
+    case 'enteredFieldByRule':
+      return (
+        event.type === 'CARD_ENTERED_FIELD' &&
+        matchesTriggerCause(
+          {
+            reasonType: 'rule',
+          },
+          event,
+        )
+      );
+
+    case 'custom':
+      return matchesTriggerCause(condition.cause, event);
+
+    default:
+      return false;
   }
-
-  if (condition.operationKinds && condition.operationKinds.length > 0) {
-    const kind = event.operation?.kind;
-    if (!kind || !condition.operationKinds.includes(kind)) return false;
-  }
-
-  if (condition.cardId && event.cardId !== condition.cardId) {
-    return false;
-  }
-
-  if (!matchesAffectedPlayerScope(condition.affectedPlayerScope, event.affectedPlayerId, perspectivePlayerId)) {
-    return false;
-  }
-
-  return matchesTriggerCause(event.cause, condition.cause, perspectivePlayerId);
 }
 
-export function destroyedByOpponentEffect(cardId: string): TriggerCondition {
-  return {
-    eventTypes: ['CARD_DESTROYED'],
-    operationKinds: ['destroy'],
-    cardId,
-    affectedPlayerScope: 'self',
-    cause: {
-      controller: 'opponent',
-      requireEffect: true,
-    },
-  };
+export {
+  matchesTriggerCause,
+};
+
+export function destroyedByOpponentEffect(event: EngineEvent): boolean {
+  return matchesTriggerCondition({ kind: 'destroyedByOpponentEffect' }, event);
 }
 
-export function destroyedByOpponentAbility(cardId: string): TriggerCondition {
-  return {
-    eventTypes: ['CARD_DESTROYED'],
-    operationKinds: ['destroy'],
-    cardId,
-    affectedPlayerScope: 'self',
-    cause: {
-      controller: 'opponent',
-      requireAbility: true,
-    },
-  };
+export function destroyedByOpponentAbility(event: EngineEvent): boolean {
+  return matchesTriggerCondition({ kind: 'destroyedByOpponentAbility' }, event);
 }
 
-export function destroyedByOpponentEventEffect(cardId: string): TriggerCondition {
-  return {
-    eventTypes: ['CARD_DESTROYED'],
-    operationKinds: ['destroy'],
-    cardId,
-    affectedPlayerScope: 'self',
-    cause: {
-      controller: 'opponent',
-      categories: ['effect'],
-      sourceKinds: ['event'],
-      requireEffect: true,
-    },
-  };
+export function destroyedByOpponentEventEffect(event: EngineEvent): boolean {
+  return matchesTriggerCondition({ kind: 'destroyedByOpponentEventEffect' }, event);
 }
 
-export function leftFieldByOpponentEffect(cardId: string): TriggerCondition {
-  return {
-    eventTypes: ['CARD_LEFT_FIELD'],
-    operationKinds: ['leaveField'],
-    cardId,
-    affectedPlayerScope: 'self',
-    cause: {
-      controller: 'opponent',
-      requireEffect: true,
-    },
-  };
+export function leftFieldByOpponentEffect(event: EngineEvent): boolean {
+  return matchesTriggerCondition({ kind: 'leftFieldByOpponentEffect' }, event);
 }
 
-export function movedToHandByEffect(cardId: string, controller: TriggerControllerScope = 'any'): TriggerCondition {
-  return {
-    eventTypes: ['CARD_MOVED'],
-    operationKinds: ['moveToHand'],
-    cardId,
-    cause: {
-      controller,
-      requireEffect: true,
-    },
-  };
+export function movedToHandByEffect(event: EngineEvent): boolean {
+  return matchesTriggerCondition({ kind: 'movedToHandByEffect' }, event);
 }
 
-export function enteredFieldByRule(cardId: string): TriggerCondition {
-  return {
-    eventTypes: ['CARD_ENTERED_FIELD'],
-    operationKinds: ['enterFieldByRule'],
-    cardId,
-    cause: {
-      categories: ['rule'],
-    },
-  };
-}
-
-export function battleInterrupted(): TriggerCondition {
-  return {
-    operationKinds: ['battleInterrupted'],
-    cause: {
-      categories: ['battle'],
-    },
-  };
+export function enteredFieldByRule(event: EngineEvent): boolean {
+  return matchesTriggerCondition({ kind: 'enteredFieldByRule' }, event);
 }
