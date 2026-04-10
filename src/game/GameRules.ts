@@ -74,7 +74,9 @@ export function createInitialGameState(params: {
     },
     battle: {
       isActive: false,
+      phase: 'none',
       awaitingDefenderSelection: false,
+      passedPlayers: [],
     },
     declarationStack: makeDeclarationStack(),
     triggerQueue: {

@@ -27,6 +27,8 @@ import {
   validateResponseDeclarationOpportunity,
 } from './GameRules';
 import { enqueueTriggerCandidates } from './triggers/TriggerQueue';
+import { BATTLE_FORBIDDEN_KEYEFFECTS } from './BattleRestrictions';
+import { CARD_META_BY_CODE } from '../lib/cards';
 
 function syncDeclarationStack(stack: DeclarationStackArray): DeclarationStackArray {
   Object.defineProperty(stack, 'items', {
@@ -188,6 +190,84 @@ function findCardOwnerOnField(state: GameState, cardId: string): { playerId: Pla
   return null;
 }
 
+
+function cardHasForbiddenBattleKeyeffect(cardNo?: string): boolean {
+  if (!cardNo) return false;
+  const meta = CARD_META_BY_CODE[cardNo.trim().toUpperCase()];
+  if (!meta) return false;
+  const keyeffects = meta.keyEffects ?? meta.keyeffects ?? [];
+  return keyeffects.some((id: number) => BATTLE_FORBIDDEN_KEYEFFECTS.has(id));
+}
+
+function isDuringBattlePriorityWindow(state: GameState): boolean {
+  return state.battle.isActive && state.battle.phase === 'duringBattle';
+}
+
+function resetBattlePassedPlayers(state: GameState): void {
+  if (!state.battle.isActive) return;
+  state.battle.passedPlayers = [];
+}
+
+function resolveCurrentBattle(state: GameState): void {
+  if (!state.battle.isActive || !state.battle.attackerCardId || !state.battle.attackerPlayerId) {
+    state.battle = { isActive: false, phase: 'none', awaitingDefenderSelection: false, passedPlayers: [] };
+    return;
+  }
+
+  const attackerInfo = findCardOwnerOnField(state, state.battle.attackerCardId);
+  if (!attackerInfo) {
+    state.battle = { isActive: false, phase: 'none', awaitingDefenderSelection: false, passedPlayers: [] };
+    return;
+  }
+
+  const attackerPlayerId = attackerInfo.playerId;
+  const defenderPlayerId = state.battle.defenderPlayerId ?? getOpponentPlayerId(attackerPlayerId);
+  const defenderCardId = state.battle.defenderCardId;
+
+  attackerInfo.card.isTapped = true;
+  pushEngineEvent(state, {
+    type: 'CARD_TAPPED',
+    playerId: attackerPlayerId,
+    cardId: attackerInfo.card.instanceId,
+    cause: makeBattleCause(attackerPlayerId, attackerInfo.card.instanceId),
+    operation: { kind: 'tap', cardId: attackerInfo.card.instanceId, playerId: attackerPlayerId },
+  });
+
+  if (defenderCardId) {
+    const found = findCardOwnerOnField(state, defenderCardId);
+    if (found && found.playerId === defenderPlayerId) {
+      if ((attackerInfo.card.ap ?? attackerInfo.card.power ?? 0) > (found.card.dp ?? found.card.hp ?? 0)) {
+        removeCardFromAllZones(state.players[defenderPlayerId], found.card.instanceId);
+        pushEngineEvent(state, {
+          type: 'CARD_LEFT_FIELD',
+          playerId: defenderPlayerId,
+          cardId: found.card.instanceId,
+          cause: makeBattleCause(attackerPlayerId, attackerInfo.card.instanceId),
+          operation: { kind: 'leaveField', cardId: found.card.instanceId, playerId: defenderPlayerId, fromZone: 'field', toZone: 'discard' },
+        });
+      }
+      if ((found.card.ap ?? found.card.power ?? 0) > (attackerInfo.card.dp ?? attackerInfo.card.hp ?? 0)) {
+        removeCardFromAllZones(state.players[attackerPlayerId], attackerInfo.card.instanceId);
+        pushEngineEvent(state, {
+          type: 'CARD_LEFT_FIELD',
+          playerId: attackerPlayerId,
+          cardId: attackerInfo.card.instanceId,
+          cause: makeBattleCause(defenderPlayerId, found.card.instanceId),
+          operation: { kind: 'leaveField', cardId: attackerInfo.card.instanceId, playerId: attackerPlayerId, fromZone: 'field', toZone: 'discard' },
+        });
+      }
+      appendLog(state, '배틀 종료');
+      state.battle = { isActive: false, phase: 'none', awaitingDefenderSelection: false, passedPlayers: [] };
+      return;
+    }
+  }
+
+  const dmg = attackerInfo.card.dmg ?? attackerInfo.card.damage ?? 1;
+  millFromDeckToDiscard(state, defenderPlayerId, dmg, makeBattleCause(attackerPlayerId, attackerInfo.card.instanceId));
+  appendLog(state, `직접 공격 처리 (${dmg})`);
+  state.battle = { isActive: false, phase: 'none', awaitingDefenderSelection: false, passedPlayers: [] };
+}
+
 function fieldHasSameName(state: GameState, playerId: PlayerID, sameNameKey?: string): boolean {
   if (!sameNameKey) return false;
   const slots = Object.keys(state.players[playerId].field) as FieldSlot[];
@@ -264,43 +344,26 @@ function resolveAttack(state: GameState, declaration: any): void {
   const attacker = attackerInfo.card;
   const defenderPlayerId = getOpponent(attackerInfo.playerId);
   const column = getAttackColumnFromSlot(attackerInfo.slot);
-  const defenderSlot = getMatchingDefenderSlotForColumn(column);
-  const defender = state.players[defenderPlayerId].field[defenderSlot].card;
 
-  if (defender && !defender.isTapped) {
-    state.battle = {
-      isActive: true,
-      attackerCardId: attacker.instanceId,
-      attackerPlayerId: attackerInfo.playerId,
-      defenderPlayerId,
-      attackColumn: column,
-      awaitingDefenderSelection: true,
-    };
-    pushEngineEvent(state, {
-      type: 'BATTLE_DEFENDER_SELECTION_REQUIRED',
-      playerId: attackerInfo.playerId,
-      cardId: attacker.instanceId,
-      cause: makeBattleCause(attackerInfo.playerId, attacker.instanceId),
-    });
-    appendLog(state, '방어자 선택 대기');
-    return;
-  }
+  state.battle = {
+    isActive: true,
+    phase: 'awaitingDefenderSelection',
+    attackerCardId: attacker.instanceId,
+    attackerPlayerId: attackerInfo.playerId,
+    defenderPlayerId,
+    attackColumn: column,
+    awaitingDefenderSelection: true,
+    priorityPlayer: attackerInfo.playerId,
+    passedPlayers: [],
+  };
 
-  const dmg = attacker.dmg ?? attacker.damage ?? 1;
-  attacker.isTapped = true;
   pushEngineEvent(state, {
-    type: 'CARD_TAPPED',
+    type: 'BATTLE_DEFENDER_SELECTION_REQUIRED',
     playerId: attackerInfo.playerId,
     cardId: attacker.instanceId,
     cause: makeBattleCause(attackerInfo.playerId, attacker.instanceId),
-    operation: { kind: 'tap', cardId: attacker.instanceId, playerId: attackerInfo.playerId },
   });
-  millFromDeckToDiscard(state, defenderPlayerId, dmg, makeBattleCause(attackerInfo.playerId, attacker.instanceId));
-  state.battle = {
-    isActive: false,
-    awaitingDefenderSelection: false,
-  };
-  appendLog(state, '직접 공격 처리');
+  appendLog(state, '방어자 선택 대기');
 }
 
 function resolveLatestLegacyDeclaration(state: GameState): void {
@@ -323,12 +386,33 @@ function resolveLatestLegacyDeclaration(state: GameState): void {
     default:
       break;
   }
-  state.turn.priorityPlayer = state.turn.activePlayer;
+  if (isDuringBattlePriorityWindow(state)) {
+    state.battle.priorityPlayer = declaration.playerId;
+    resetBattlePassedPlayers(state);
+  } else {
+    state.turn.priorityPlayer = state.turn.activePlayer;
+  }
 }
 
 function validateDeclareAction(state: GameState, action: Extract<GameAction, { type: 'DECLARE_ACTION' }>): string | null {
-  if (state.turn.phase !== 'main') {
+  if (isDuringBattlePriorityWindow(state)) {
+    if (state.battle.priorityPlayer !== action.playerId) {
+      return 'BATTLE_PRIORITY_MISMATCH';
+    }
+    if (action.kind === 'useCharacter') {
+      return 'BATTLE_CHARACTER_DECLARATION_FORBIDDEN';
+    }
+  } else if (state.turn.phase !== 'main') {
     return 'TIMING_INVALID';
+  }
+
+  if (state.battle.isActive && action.sourceCardId) {
+    const fieldFound = findCardOwnerOnField(state, action.sourceCardId);
+    const handFound = findCardInHand(state, action.playerId, action.sourceCardId);
+    const card = fieldFound?.card ?? handFound;
+    if (card && cardHasForbiddenBattleKeyeffect(card.cardNo)) {
+      return 'BATTLE_KEYEFFECT_FORBIDDEN';
+    }
   }
 
   if (action.kind === 'useCharacter') {
@@ -408,6 +492,28 @@ function handlePassPriority(state: GameState, action: Extract<GameAction, { type
     resolveLatestLegacyDeclaration(state);
     return state;
   }
+
+  if (isDuringBattlePriorityWindow(state)) {
+    if (state.battle.priorityPlayer !== action.playerId) {
+      appendLog(state, 'BATTLE_PRIORITY_MISMATCH');
+      return state;
+    }
+    const current = action.playerId;
+    const other = getOpponentPlayerId(current);
+    const passedPlayers = new Set(state.battle.passedPlayers ?? []);
+    passedPlayers.add(current);
+    state.battle.passedPlayers = Array.from(passedPlayers);
+
+    if (passedPlayers.has('P1') && passedPlayers.has('P2')) {
+      resolveCurrentBattle(state);
+      return state;
+    }
+
+    state.battle.priorityPlayer = other;
+    appendLog(state, `[BATTLE PRIORITY] ${current} pass -> ${other}`);
+    return state;
+  }
+
   if (state.turn.priorityPlayer === action.playerId) {
     state.turn.priorityPlayer = getOpponentPlayerId(action.playerId);
   }
@@ -452,7 +558,7 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       decisions: { ...state.startup.decisions },
     },
     turn: { ...state.turn },
-    battle: { ...state.battle },
+    battle: { ...state.battle, passedPlayers: [...(state.battle.passedPlayers ?? [])] },
     declarationStack: syncDeclarationStack([...state.declarationStack] as unknown as DeclarationStackArray),
     triggerQueue: { pendingGroups: state.triggerQueue.pendingGroups.map((group) => [...group]) },
     logs: [...state.logs],
@@ -527,7 +633,12 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       };
       next.declarationStack.push(declaration);
       syncDeclarationStack(next.declarationStack);
-      next.turn.priorityPlayer = getOpponentPlayerId(action.playerId);
+      if (isDuringBattlePriorityWindow(next)) {
+        next.battle.priorityPlayer = getOpponentPlayerId(action.playerId);
+        resetBattlePassedPlayers(next);
+      } else {
+        next.turn.priorityPlayer = getOpponentPlayerId(action.playerId);
+      }
       if (action.kind === 'useCharacter') appendLog(next, '등장 선언');
       if (action.kind === 'useAbility') appendLog(next, '능력 사용 선언');
       if (action.kind === 'attack') appendLog(next, '공격 선언');
@@ -539,60 +650,36 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
     case 'SET_DEFENDER': {
       if (!next.battle.isActive) return next;
       if (!next.battle.attackerCardId || !next.battle.attackerPlayerId) return next;
+
       const attackerInfo = findCardOwnerOnField(next, next.battle.attackerCardId);
       if (!attackerInfo) {
-        next.battle = { isActive: false, awaitingDefenderSelection: false };
+        next.battle = { isActive: false, phase: 'none', awaitingDefenderSelection: false, passedPlayers: [] };
         return next;
       }
+
       const defenderPlayerId = next.battle.defenderPlayerId ?? getOpponentPlayerId(attackerInfo.playerId);
-      const dmg = attackerInfo.card.dmg ?? attackerInfo.card.damage ?? 1;
+      let selectedDefenderId: string | undefined;
+
       if (action.defenderCardId) {
         const found = findCardOwnerOnField(next, action.defenderCardId);
         if (found && found.playerId === defenderPlayerId) {
-          next.battle.defenderCardId = action.defenderCardId;
-          attackerInfo.card.isTapped = true;
-          pushEngineEvent(next, {
-            type: 'CARD_TAPPED',
-            playerId: attackerInfo.playerId,
-            cardId: attackerInfo.card.instanceId,
-            cause: makeBattleCause(attackerInfo.playerId, attackerInfo.card.instanceId),
-            operation: { kind: 'tap', cardId: attackerInfo.card.instanceId, playerId: attackerInfo.playerId },
-          });
-          if ((attackerInfo.card.ap ?? attackerInfo.card.power ?? 0) > (found.card.dp ?? found.card.hp ?? 0)) {
-            removeCardFromAllZones(next.players[defenderPlayerId], found.card.instanceId);
-            pushEngineEvent(next, {
-              type: 'CARD_LEFT_FIELD',
-              playerId: defenderPlayerId,
-              cardId: found.card.instanceId,
-              cause: makeBattleCause(attackerInfo.playerId, attackerInfo.card.instanceId),
-              operation: { kind: 'leaveField', cardId: found.card.instanceId, playerId: defenderPlayerId, fromZone: 'field', toZone: 'discard' },
-            });
-          }
-          if ((found.card.ap ?? found.card.power ?? 0) > (attackerInfo.card.dp ?? attackerInfo.card.hp ?? 0)) {
-            removeCardFromAllZones(next.players[attackerInfo.playerId], attackerInfo.card.instanceId);
-            pushEngineEvent(next, {
-              type: 'CARD_LEFT_FIELD',
-              playerId: attackerInfo.playerId,
-              cardId: attackerInfo.card.instanceId,
-              cause: makeBattleCause(defenderPlayerId, found.card.instanceId),
-              operation: { kind: 'leaveField', cardId: attackerInfo.card.instanceId, playerId: attackerInfo.playerId, fromZone: 'field', toZone: 'discard' },
-            });
-          }
-          next.battle = { isActive: false, awaitingDefenderSelection: false };
-          return next;
+          selectedDefenderId = found.card.instanceId;
         }
       }
-      attackerInfo.card.isTapped = true;
-      pushEngineEvent(next, {
-        type: 'CARD_TAPPED',
-        playerId: attackerInfo.playerId,
-        cardId: attackerInfo.card.instanceId,
-        cause: makeBattleCause(attackerInfo.playerId, attackerInfo.card.instanceId),
-        operation: { kind: 'tap', cardId: attackerInfo.card.instanceId, playerId: attackerInfo.playerId },
-      });
-      millFromDeckToDiscard(next, defenderPlayerId, dmg, makeBattleCause(attackerInfo.playerId, attackerInfo.card.instanceId));
-      next.battle = { isActive: false, awaitingDefenderSelection: false };
-      appendLog(next, '직접 공격 처리');
+
+      next.battle = {
+        ...next.battle,
+        isActive: true,
+        phase: 'duringBattle',
+        awaitingDefenderSelection: false,
+        attackerCardId: attackerInfo.card.instanceId,
+        attackerPlayerId: attackerInfo.playerId,
+        defenderPlayerId,
+        defenderCardId: selectedDefenderId,
+        priorityPlayer: attackerInfo.playerId,
+        passedPlayers: [],
+      };
+      appendLog(next, selectedDefenderId ? '배틀 중 상태 진입 (방어자 지정)' : '배틀 중 상태 진입 (직접 공격 경로)');
       return next;
     }
     default:

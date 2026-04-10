@@ -312,6 +312,8 @@ export type DeclarationStackArray = LegacyDeclaration[] & {
   activeResponseWindow?: ActiveResponseWindow;
 };
 
+export type BattlePhase = 'none' | 'awaitingDefenderSelection' | 'duringBattle';
+
 export interface GameState {
   players: Record<PlayerID, PlayerState>;
   startup: {
@@ -330,12 +332,15 @@ export interface GameState {
   };
   battle: {
     isActive: boolean;
+    phase?: BattlePhase;
     attackerCardId?: string;
     attackerPlayerId?: PlayerID;
     defenderCardId?: string;
     defenderPlayerId?: PlayerID;
     attackColumn?: number;
     awaitingDefenderSelection?: boolean;
+    priorityPlayer?: PlayerID;
+    passedPlayers?: PlayerID[];
   };
   declarationStack: DeclarationStackArray;
   triggerQueue: TriggerQueueState;
