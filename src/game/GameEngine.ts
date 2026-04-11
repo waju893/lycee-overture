@@ -57,6 +57,71 @@ function pushEngineEvent(state: GameState, event: EngineEvent): void {
   enqueueTriggerCandidates(state, event);
 }
 
+function destroyCardToDiscard(
+  state: GameState,
+  destroyedPlayerId: PlayerID,
+  card: CardRef,
+  cause: CauseDescriptor,
+  options?: {
+    isDown?: boolean;
+    destroyReason?: 'battle' | 'effect' | 'rule' | 'other';
+  },
+): void {
+  const metadata = {
+    isDown: Boolean(options?.isDown),
+    destroyReason: options?.destroyReason ?? 'other',
+  };
+
+  removeCardFromAllZones(state.players[destroyedPlayerId], card.instanceId);
+
+  pushEngineEvent(state, {
+    type: 'CARD_DESTROYED',
+    playerId: destroyedPlayerId,
+    cardId: card.instanceId,
+    cause,
+    operation: {
+      kind: 'destroy',
+      cardId: card.instanceId,
+      playerId: destroyedPlayerId,
+      fromZone: 'field',
+      toZone: 'discard',
+    },
+    metadata,
+  });
+
+  if (metadata.isDown) {
+    pushEngineEvent(state, {
+      type: 'CARD_DOWNED',
+      playerId: destroyedPlayerId,
+      cardId: card.instanceId,
+      cause,
+      operation: {
+        kind: 'down',
+        cardId: card.instanceId,
+        playerId: destroyedPlayerId,
+        fromZone: 'field',
+        toZone: 'discard',
+      },
+      metadata,
+    });
+  }
+
+  pushEngineEvent(state, {
+    type: 'CARD_LEFT_FIELD',
+    playerId: destroyedPlayerId,
+    cardId: card.instanceId,
+    cause,
+    operation: {
+      kind: 'leaveField',
+      cardId: card.instanceId,
+      playerId: destroyedPlayerId,
+      fromZone: 'field',
+      toZone: 'discard',
+    },
+    metadata,
+  });
+}
+
 function nextLegacyDeclarationId(state: GameState): string {
   return `D-${state.declarationStack.length + 1}-${state.replayEvents.length + 1}`;
 }
@@ -274,26 +339,24 @@ function resolveCurrentBattle(state: GameState): void {
     const found = findCardOwnerOnField(state, defenderCardId);
     if (found && found.playerId === defenderPlayerId) {
       if ((attackerInfo.card.ap ?? attackerInfo.card.power ?? 0) > (found.card.dp ?? found.card.hp ?? 0)) {
-        removeCardFromAllZones(state.players[defenderPlayerId], found.card.instanceId);
-        pushEngineEvent(state, {
-          type: 'CARD_LEFT_FIELD',
-          playerId: defenderPlayerId,
-          cardId: found.card.instanceId,
-          cause: makeBattleCause(attackerPlayerId, attackerInfo.card.instanceId),
-          operation: { kind: 'leaveField', cardId: found.card.instanceId, playerId: defenderPlayerId, fromZone: 'field', toZone: 'discard' },
-        });
+        destroyCardToDiscard(
+          state,
+          defenderPlayerId,
+          found.card,
+          makeBattleCause(attackerPlayerId, attackerInfo.card.instanceId),
+          { isDown: true, destroyReason: 'battle' },
+        );
       }
       if ((found.card.ap ?? found.card.power ?? 0) > (attackerInfo.card.dp ?? attackerInfo.card.hp ?? 0)) {
-        removeCardFromAllZones(state.players[attackerPlayerId], attackerInfo.card.instanceId);
-        pushEngineEvent(state, {
-          type: 'CARD_LEFT_FIELD',
-          playerId: attackerPlayerId,
-          cardId: attackerInfo.card.instanceId,
-          cause: makeBattleCause(defenderPlayerId, found.card.instanceId),
-          operation: { kind: 'leaveField', cardId: attackerInfo.card.instanceId, playerId: attackerPlayerId, fromZone: 'field', toZone: 'discard' },
-        });
+        destroyCardToDiscard(
+          state,
+          attackerPlayerId,
+          attackerInfo.card,
+          makeBattleCause(defenderPlayerId, found.card.instanceId),
+          { isDown: true, destroyReason: 'battle' },
+        );
       }
-      appendLog(state, '배틀 종료');
+      appendLog(state, '배틀 종료 (down = battle destroy)');
       clearBattleState(state);
       return;
     }

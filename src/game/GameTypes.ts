@@ -30,7 +30,10 @@ export type DeclarationKind =
   | 'useCharacter'
   | 'useAbility'
   | 'attack'
-  | 'chargeCharacter';
+  | 'chargeCharacter'
+  | 'useEvent'
+  | 'useItem'
+  | 'useArea';
 
 export type CauseRelation = 'self' | 'opponent' | 'neutral' | 'any';
 export type CauseKind = 'effect' | 'ability' | 'battle' | 'rule' | 'cost';
@@ -151,6 +154,8 @@ export interface CardRef {
 
 export interface FieldCell {
   card: CardRef | null;
+  area?: CardRef | null;
+  attachedItem?: CardRef | null;
 }
 
 export type PlayerField = Record<FieldSlot, FieldCell>;
@@ -173,6 +178,7 @@ export interface EngineEvent {
   cardId?: string;
   cause?: CauseDescriptor;
   operation?: OperationDescriptor;
+  metadata?: Record<string, unknown>;
 }
 
 export interface LegacyDeclaration {
