@@ -8,7 +8,6 @@ import {
   type EngineEvent,
   type FieldSlot,
   type GameState,
-  type OperationDescriptor,
   type PlayerID,
   type PlayerId,
   getOpponentPlayerId,

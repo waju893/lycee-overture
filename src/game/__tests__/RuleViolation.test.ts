@@ -21,7 +21,7 @@ function makeCharacter(
     dp: power,
     dmg: 1,
     power,
-    damage: power,
+    damage: 1,
     hp: power,
     isTapped: false,
     canAttack: true,
@@ -155,7 +155,7 @@ function putCharacterOnField(
   return { state: resolved, cardId };
 }
 
-function resolveAttackDeclaration(
+function resolveAttackDeclarationIntoBattle(
   state: GameState,
   attackerPlayerId: PlayerID,
   attackerCardId: string,
@@ -178,6 +178,20 @@ function resolveAttackDeclaration(
   });
 
   return state3;
+}
+
+function resolveBattleByDoublePass(state: GameState): GameState {
+  const state1 = reduceGameState(state, {
+    type: "PASS_PRIORITY",
+    playerId: state.battle.priorityPlayer ?? "P1",
+  });
+
+  const state2 = reduceGameState(state1, {
+    type: "PASS_PRIORITY",
+    playerId: state1.battle.priorityPlayer ?? "P2",
+  });
+
+  return state2;
 }
 
 describe("RuleViolation", () => {
@@ -303,7 +317,7 @@ describe("RuleViolation", () => {
     expect(next.logs.some((log) => log.includes("FIELD_OCCUPIED"))).toBe(true);
   });
 
-  it("다른 열 DF만 있으면 방어자로 채택되지 않고 직접 공격이 된다", () => {
+  it("다른 열 DF만 있으면 방어자로 채택되지 않고 방어자 미지정 배틀 중 상태를 거친 뒤 직접 공격이 된다", () => {
     const ready = buildReadyToMainState("P1");
     const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
 
@@ -320,11 +334,16 @@ describe("RuleViolation", () => {
     const beforeDeck = backToP1Main.players.P2.deck.length;
     const beforeDiscard = backToP1Main.players.P2.discard.length;
 
-    const next = resolveAttackDeclaration(
+    const inBattle = resolveAttackDeclarationIntoBattle(
       backToP1Main,
       "P1",
       attackerEntered.cardId,
     );
+
+    expect(inBattle.battle.isActive).toBe(true);
+    expect(inBattle.battle.defenderCardId).toBeUndefined();
+
+    const next = resolveBattleByDoublePass(inBattle);
 
     expect(next.battle.isActive).toBe(false);
     expect(next.players.P2.field.DF_RIGHT.card?.instanceId).toBe(defenderEntered.cardId);
@@ -334,7 +353,7 @@ describe("RuleViolation", () => {
     expect(next.logs.some((log) => log.includes("직접 공격"))).toBe(true);
   });
 
-  it("행동완료 같은 열 DF는 방어자로 채택되지 않고 직접 공격이 된다", () => {
+  it("행동완료 같은 열 DF는 방어자로 채택되지 않고 방어자 미지정 배틀 중 상태를 거친 뒤 직접 공격이 된다", () => {
     const ready = buildReadyToMainState("P1");
     const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
 
@@ -353,11 +372,16 @@ describe("RuleViolation", () => {
     const beforeDeck = backToP1Main.players.P2.deck.length;
     const beforeDiscard = backToP1Main.players.P2.discard.length;
 
-    const next = resolveAttackDeclaration(
+    const inBattle = resolveAttackDeclarationIntoBattle(
       backToP1Main,
       "P1",
       attackerEntered.cardId,
     );
+
+    expect(inBattle.battle.isActive).toBe(true);
+    expect(inBattle.battle.defenderCardId).toBeUndefined();
+
+    const next = resolveBattleByDoublePass(inBattle);
 
     expect(next.battle.isActive).toBe(false);
     expect(next.players.P2.field.DF_LEFT.card?.instanceId).toBe(defenderEntered.cardId);

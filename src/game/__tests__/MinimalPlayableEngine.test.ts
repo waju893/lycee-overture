@@ -102,6 +102,34 @@ function buildReadyToMainState(firstPlayer: PlayerID = "P1"): GameState {
   return state6;
 }
 
+function resolveLatestDeclarationByDoublePass(state: GameState): GameState {
+  const state1 = reduceGameState(state, {
+    type: "PASS_PRIORITY",
+    playerId: state.turn.priorityPlayer,
+  });
+
+  const state2 = reduceGameState(state1, {
+    type: "PASS_PRIORITY",
+    playerId: state1.turn.priorityPlayer,
+  });
+
+  return state2;
+}
+
+function resolveBattleByDoublePass(state: GameState): GameState {
+  const state1 = reduceGameState(state, {
+    type: "PASS_PRIORITY",
+    playerId: state.battle.priorityPlayer ?? "P1",
+  });
+
+  const state2 = reduceGameState(state1, {
+    type: "PASS_PRIORITY",
+    playerId: state1.battle.priorityPlayer ?? "P2",
+  });
+
+  return state2;
+}
+
 describe("MinimalPlayableEngine", () => {
   it("START_GAME 후 스타트업 드로우가 정상 적용된다", () => {
     const state = createInitialGameState({
@@ -158,7 +186,7 @@ describe("MinimalPlayableEngine", () => {
     expect(state6.players.P1.hand.length).toBe(8);
   });
 
-  it("턴이 돌아오면 캐릭터는 untap 된다", () => {
+  it("직접 공격까지 끝난 캐릭터는 턴이 돌아오면 untap 된다", () => {
     const state6 = buildReadyToMainState("P1");
     const charId = getFirstHandCharacterId(state6, "P1");
 
@@ -171,15 +199,7 @@ describe("MinimalPlayableEngine", () => {
       targetingMode: "declareTime",
     });
 
-    const state8 = reduceGameState(state7, {
-      type: "PASS_PRIORITY",
-      playerId: "P2",
-    });
-
-    const state9 = reduceGameState(state8, {
-      type: "PASS_PRIORITY",
-      playerId: "P1",
-    });
+    const state9 = resolveLatestDeclarationByDoublePass(state7);
 
     const state10 = reduceGameState(state9, {
       type: "DECLARE_ACTION",
@@ -188,20 +208,12 @@ describe("MinimalPlayableEngine", () => {
       sourceCardId: charId,
     });
 
-    const state11 = reduceGameState(state10, {
-      type: "PASS_PRIORITY",
-      playerId: "P2",
-    });
+    const state12 = resolveLatestDeclarationByDoublePass(state10);
 
-    const state12 = reduceGameState(state11, {
-      type: "PASS_PRIORITY",
-      playerId: "P1",
-    });
+    expect(state12.battle.isActive).toBe(true);
+    expect(state12.players.P1.field.AF_LEFT.card?.isTapped).toBe(false);
 
-    const state13 = reduceGameState(state12, {
-      type: "SET_DEFENDER",
-      playerId: "P2",
-    });
+    const state13 = resolveBattleByDoublePass(state12);
 
     expect(state13.players.P1.field.AF_LEFT.card?.isTapped).toBe(true);
 
