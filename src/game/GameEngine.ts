@@ -429,9 +429,6 @@ function validateDeclareAction(state: GameState, action: Extract<GameAction, { t
     if (state.battle.priorityPlayer !== action.playerId) {
       return 'BATTLE_PRIORITY_MISMATCH';
     }
-    if (action.kind === 'useCharacter') {
-      return 'BATTLE_CHARACTER_DECLARATION_FORBIDDEN';
-    }
     if (action.kind === 'attack') {
       return 'BATTLE_ATTACK_DECLARATION_FORBIDDEN';
     }
@@ -521,18 +518,20 @@ function handleStartGame(state: GameState, action: Extract<GameAction, { type: '
 }
 
 function handlePassPriority(state: GameState, action: Extract<GameAction, { type: 'PASS_PRIORITY' }>): GameState {
-  if (state.declarationStack.length > 0) {
-    resolveLatestLegacyDeclaration(state);
-    return state;
-  }
-
   if (isAttackResponseWindow(state)) {
     if (state.battle.priorityPlayer !== action.playerId) {
       appendLog(state, 'BATTLE_PRIORITY_MISMATCH');
       return state;
     }
+
     const current = action.playerId;
     const other = getOpponentPlayerId(current);
+
+    if (state.declarationStack.length > 0) {
+      resolveLatestLegacyDeclaration(state);
+      return state;
+    }
+
     const passedPlayers = new Set(state.battle.passedPlayers ?? []);
     passedPlayers.add(current);
     state.battle.passedPlayers = Array.from(passedPlayers);
@@ -544,6 +543,11 @@ function handlePassPriority(state: GameState, action: Extract<GameAction, { type
 
     state.battle.priorityPlayer = other;
     appendLog(state, `[ATTACK RESPONSE] ${current} pass -> ${other}`);
+    return state;
+  }
+
+  if (state.declarationStack.length > 0) {
+    resolveLatestLegacyDeclaration(state);
     return state;
   }
 
