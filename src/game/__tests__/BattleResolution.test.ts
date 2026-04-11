@@ -182,6 +182,14 @@ function declareAttackAndEnterBattle(
   return state3;
 }
 
+function chooseDefender(state: GameState, playerId: PlayerID, defenderCardId?: string): GameState {
+  return reduceGameState(state, {
+    type: "SET_DEFENDER",
+    playerId,
+    defenderCardId,
+  });
+}
+
 function resolveBattleByDoublePass(state: GameState): GameState {
   const state1 = reduceGameState(state, {
     type: "PASS_PRIORITY",
@@ -197,7 +205,7 @@ function resolveBattleByDoublePass(state: GameState): GameState {
 }
 
 describe("BattleResolution", () => {
-  it("같은 열 DF가 있으면 자동 해결하지 않고 방어자 지정된 배틀 중 상태로 남는다", () => {
+  it("같은 열 미행동 DF가 있어도 자동 방어되지 않고 방어자 미지정 배틀 중 상태로 들어간다", () => {
     const p1Deck = makeDeck("P1", "P1", {
       1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
         ap: 4,
@@ -229,10 +237,73 @@ describe("BattleResolution", () => {
 
     expect(next.battle.isActive).toBe(true);
     expect(next.battle.phase).toBe("duringBattle");
-    expect(next.battle.defenderCardId).toBe(defenderEntered.cardId);
-    expect(next.players.P1.field.AF_LEFT.card?.isTapped).toBe(false);
-    expect(next.players.P2.field.DF_LEFT.card?.isTapped).toBe(false);
-    expect(next.logs.some((log) => log.includes("배틀 중 상태 진입 (방어자 지정)"))).toBe(true);
+    expect(next.battle.defenderCardId).toBeUndefined();
+    expect(next.players.P2.field.DF_LEFT.card?.instanceId).toBe(defenderEntered.cardId);
+    expect(next.logs.some((log) => log.includes("배틀 중 상태 진입 (방어자 미지정)"))).toBe(true);
+  });
+
+  it("상대는 같은 열 미행동 DF로 방어하기로 선택할 수 있다", () => {
+    const p1Deck = makeDeck("P1", "P1", {
+      1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
+        ap: 4,
+        dp: 3,
+        dmg: 1,
+      }),
+    });
+
+    const p2Deck = makeDeck("P2", "P2", {
+      1: makeCharacter("P2_DEFENDER", "P2", "P2_DEFENDER", {
+        ap: 2,
+        dp: 3,
+        dmg: 1,
+      }),
+    });
+
+    const ready = buildReadyToMainState("P1", p1Deck, p2Deck);
+    const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
+    const p2Main = passCurrentMainPhaseToNextTurn(attackerEntered.state);
+    const defenderEntered = putCharacterOnField(p2Main, "P2", "DF_LEFT");
+    const backToP1Main = passCurrentMainPhaseToNextTurn(defenderEntered.state);
+
+    const inBattle = declareAttackAndEnterBattle(backToP1Main, "P1", attackerEntered.cardId);
+    const afterChoose = chooseDefender(inBattle, "P2", defenderEntered.cardId);
+
+    expect(afterChoose.battle.isActive).toBe(true);
+    expect(afterChoose.battle.defenderCardId).toBe(defenderEntered.cardId);
+    expect(afterChoose.logs.some((log) => log.includes("배틀 중 상태 진입 (방어자 지정)"))).toBe(true);
+  });
+
+  it("같은 열 미행동 DF가 있어도 상대가 방어하지 않으면 직접 공격으로 처리된다", () => {
+    const p1Deck = makeDeck("P1", "P1", {
+      1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
+        ap: 3,
+        dp: 3,
+        dmg: 2,
+      }),
+    });
+
+    const p2Deck = makeDeck("P2", "P2", {
+      1: makeCharacter("P2_DEFENDER", "P2", "P2_DEFENDER", {
+        ap: 4,
+        dp: 4,
+        dmg: 1,
+      }),
+    });
+
+    const ready = buildReadyToMainState("P1", p1Deck, p2Deck);
+    const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
+    const p2Main = passCurrentMainPhaseToNextTurn(attackerEntered.state);
+    const defenderEntered = putCharacterOnField(p2Main, "P2", "DF_LEFT");
+    const backToP1Main = passCurrentMainPhaseToNextTurn(defenderEntered.state);
+    const beforeDeck = backToP1Main.players.P2.deck.length;
+
+    const inBattle = declareAttackAndEnterBattle(backToP1Main, "P1", attackerEntered.cardId);
+    const next = resolveBattleByDoublePass(inBattle);
+
+    expect(next.battle.isActive).toBe(false);
+    expect(next.players.P2.field.DF_LEFT.card?.instanceId).toBe(defenderEntered.cardId);
+    expect(next.players.P2.deck.length).toBe(beforeDeck - 2);
+    expect(next.logs.some((log) => log.includes("직접 공격 처리"))).toBe(true);
   });
 
   it("같은 열 DF가 없으면 방어자 미지정 배틀 중 상태로 들어간 뒤 직접 공격으로 처리된다", () => {
@@ -260,8 +331,6 @@ describe("BattleResolution", () => {
     expect(inBattle.battle.isActive).toBe(true);
     expect(inBattle.battle.phase).toBe("duringBattle");
     expect(inBattle.battle.defenderCardId).toBeUndefined();
-    expect(inBattle.players.P1.field.AF_LEFT.card?.isTapped).toBe(false);
-    expect(inBattle.logs.some((log) => log.includes("배틀 중 상태 진입 (방어자 미지정)"))).toBe(true);
 
     const next = resolveBattleByDoublePass(inBattle);
 
@@ -269,144 +338,6 @@ describe("BattleResolution", () => {
     expect(next.players.P1.field.AF_LEFT.card?.isTapped).toBe(true);
     expect(next.players.P2.deck.length).toBe(beforeDeck - 2);
     expect(next.players.P2.discard.length).toBe(beforeDiscard + 2);
-    expect(next.logs.some((log) => log.includes("직접 공격 처리"))).toBe(true);
-  });
-
-  it("같은 열 DF가 tapped 상태면 방어자 미지정 배틀 중 상태를 거쳐 직접 공격으로 처리된다", () => {
-    const p1Deck = makeDeck("P1", "P1", {
-      1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
-        ap: 3,
-        dp: 3,
-        dmg: 2,
-      }),
-    });
-
-    const p2Deck = makeDeck("P2", "P2", {
-      1: makeCharacter("P2_DEFENDER", "P2", "P2_DEFENDER", {
-        ap: 4,
-        dp: 4,
-        dmg: 1,
-      }),
-    });
-
-    const ready = buildReadyToMainState("P1", p1Deck, p2Deck);
-    const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
-
-    const p2Main = passCurrentMainPhaseToNextTurn(attackerEntered.state);
-    const defenderEntered = putCharacterOnField(p2Main, "P2", "DF_LEFT");
-
-    const defenderCard = defenderEntered.state.players.P2.field.DF_LEFT.card;
-    if (!defenderCard) {
-      throw new Error("defender should exist");
-    }
-    defenderCard.isTapped = true;
-
-    const backToP1Main = passCurrentMainPhaseToNextTurn(defenderEntered.state);
-    const beforeDeck = backToP1Main.players.P2.deck.length;
-
-    const inBattle = declareAttackAndEnterBattle(
-      backToP1Main,
-      "P1",
-      attackerEntered.cardId,
-    );
-
-    expect(inBattle.battle.isActive).toBe(true);
-    expect(inBattle.battle.phase).toBe("duringBattle");
-    expect(inBattle.battle.defenderCardId).toBeUndefined();
-
-    const next = resolveBattleByDoublePass(inBattle);
-
-    expect(next.battle.isActive).toBe(false);
-    expect(next.players.P2.field.DF_LEFT.card?.isTapped).toBe(true);
-    expect(next.players.P2.deck.length).toBe(beforeDeck - 2);
-    expect(next.logs.some((log) => log.includes("직접 공격 처리"))).toBe(true);
-  });
-
-  it("같은 열에 AF만 있으면 방어 불가이므로 방어자 미지정 배틀 중 상태를 거쳐 직접 공격으로 처리된다", () => {
-    const p1Deck = makeDeck("P1", "P1", {
-      1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
-        ap: 3,
-        dp: 3,
-        dmg: 2,
-      }),
-    });
-
-    const p2Deck = makeDeck("P2", "P2", {
-      1: makeCharacter("P2_AF", "P2", "P2_AF", {
-        ap: 3,
-        dp: 3,
-        dmg: 1,
-      }),
-    });
-
-    const ready = buildReadyToMainState("P1", p1Deck, p2Deck);
-    const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
-
-    const p2Main = passCurrentMainPhaseToNextTurn(attackerEntered.state);
-    const afEntered = putCharacterOnField(p2Main, "P2", "AF_LEFT");
-
-    const backToP1Main = passCurrentMainPhaseToNextTurn(afEntered.state);
-    const beforeDeck = backToP1Main.players.P2.deck.length;
-
-    const inBattle = declareAttackAndEnterBattle(
-      backToP1Main,
-      "P1",
-      attackerEntered.cardId,
-    );
-
-    expect(inBattle.battle.isActive).toBe(true);
-    expect(inBattle.battle.phase).toBe("duringBattle");
-    expect(inBattle.battle.defenderCardId).toBeUndefined();
-
-    const next = resolveBattleByDoublePass(inBattle);
-
-    expect(next.battle.isActive).toBe(false);
-    expect(next.players.P2.field.AF_LEFT.card?.isTapped).toBe(false);
-    expect(next.players.P2.deck.length).toBe(beforeDeck - 2);
-    expect(next.logs.some((log) => log.includes("직접 공격 처리"))).toBe(true);
-  });
-
-  it("다른 열 DF는 방어 불가이므로 방어자 미지정 배틀 중 상태를 거쳐 직접 공격으로 처리된다", () => {
-    const p1Deck = makeDeck("P1", "P1", {
-      1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
-        ap: 3,
-        dp: 3,
-        dmg: 2,
-      }),
-    });
-
-    const p2Deck = makeDeck("P2", "P2", {
-      1: makeCharacter("P2_DEFENDER", "P2", "P2_DEFENDER", {
-        ap: 4,
-        dp: 4,
-        dmg: 1,
-      }),
-    });
-
-    const ready = buildReadyToMainState("P1", p1Deck, p2Deck);
-    const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
-
-    const p2Main = passCurrentMainPhaseToNextTurn(attackerEntered.state);
-    const defenderEntered = putCharacterOnField(p2Main, "P2", "DF_RIGHT");
-
-    const backToP1Main = passCurrentMainPhaseToNextTurn(defenderEntered.state);
-    const beforeDeck = backToP1Main.players.P2.deck.length;
-
-    const inBattle = declareAttackAndEnterBattle(
-      backToP1Main,
-      "P1",
-      attackerEntered.cardId,
-    );
-
-    expect(inBattle.battle.isActive).toBe(true);
-    expect(inBattle.battle.phase).toBe("duringBattle");
-    expect(inBattle.battle.defenderCardId).toBeUndefined();
-
-    const next = resolveBattleByDoublePass(inBattle);
-
-    expect(next.battle.isActive).toBe(false);
-    expect(next.players.P2.field.DF_RIGHT.card?.isTapped).toBe(false);
-    expect(next.players.P2.deck.length).toBe(beforeDeck - 2);
     expect(next.logs.some((log) => log.includes("직접 공격 처리"))).toBe(true);
   });
 });

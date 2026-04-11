@@ -193,18 +193,6 @@ function clearBattleState(state: GameState): void {
   state.battle = { isActive: false, phase: 'none', awaitingDefenderSelection: false, passedPlayers: [] };
 }
 
-function findAutoDefender(
-  state: GameState,
-  defenderPlayerId: PlayerID,
-  column: number,
-): CardRef | undefined {
-  const slot = getMatchingDefenderSlotForColumn(column);
-  const card = state.players[defenderPlayerId].field[slot].card;
-  if (!card) return undefined;
-  if (card.isTapped) return undefined;
-  return card;
-}
-
 function cardHasForbiddenBattleKeyeffect(cardNo?: string): boolean {
   if (!cardNo) return false;
   const meta = CARD_META_BY_CODE[cardNo.trim().toUpperCase()];
@@ -358,7 +346,6 @@ function resolveAttack(state: GameState, declaration: any): void {
   const attacker = attackerInfo.card;
   const defenderPlayerId = getOpponent(attackerInfo.playerId);
   const column = getAttackColumnFromSlot(attackerInfo.slot);
-  const autoDefender = findAutoDefender(state, defenderPlayerId, column);
 
   state.battle = {
     isActive: true,
@@ -366,14 +353,14 @@ function resolveAttack(state: GameState, declaration: any): void {
     attackerCardId: attacker.instanceId,
     attackerPlayerId: attackerInfo.playerId,
     defenderPlayerId,
-    defenderCardId: autoDefender?.instanceId,
+    defenderCardId: undefined,
     attackColumn: column,
     awaitingDefenderSelection: false,
     priorityPlayer: attackerInfo.playerId,
     passedPlayers: [],
   };
 
-  appendLog(state, autoDefender ? '배틀 중 상태 진입 (방어자 지정)' : '배틀 중 상태 진입 (방어자 미지정)');
+  appendLog(state, '배틀 중 상태 진입 (방어자 미지정)');
 }
 
 function resolveLatestLegacyDeclaration(state: GameState): void {
@@ -668,7 +655,7 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       }
 
       const defenderPlayerId = next.battle.defenderPlayerId ?? getOpponentPlayerId(attackerInfo.playerId);
-      let selectedDefenderId: string | undefined = next.battle.defenderCardId;
+      let selectedDefenderId: string | undefined = undefined;
 
       if (action.playerId === attackerInfo.playerId) {
         appendLog(next, 'ATTACKER_CANNOT_SET_DEFENDER');
@@ -703,7 +690,7 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         priorityPlayer: attackerInfo.playerId,
         passedPlayers: [],
       };
-      appendLog(next, selectedDefenderId ? '배틀 중 상태 진입 (방어자 지정)' : '배틀 중 상태 진입 (방어자 미지정)');
+      appendLog(next, selectedDefenderId ? '배틀 중 상태 진입 (방어자 지정)' : '배틀 중 상태 유지 (방어 안 함)');
       return next;
     }
     default:
