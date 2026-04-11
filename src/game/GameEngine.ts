@@ -201,13 +201,48 @@ function cardHasForbiddenBattleKeyeffect(cardNo?: string): boolean {
   return keyeffects.some((id: number) => BATTLE_FORBIDDEN_KEYEFFECTS.has(id));
 }
 
+function isAttackResponseWindow(state: GameState): boolean {
+  return state.battle.isActive && state.battle.phase === 'awaitingDefenderSelection';
+}
+
 function isDuringBattlePriorityWindow(state: GameState): boolean {
   return state.battle.isActive && state.battle.phase === 'duringBattle';
+}
+
+function isAnyBattleWindow(state: GameState): boolean {
+  return isAttackResponseWindow(state) || isDuringBattlePriorityWindow(state);
 }
 
 function resetBattlePassedPlayers(state: GameState): void {
   if (!state.battle.isActive) return;
   state.battle.passedPlayers = [];
+}
+
+function finalizeAttackResponses(state: GameState): void {
+  if (!state.battle.isActive || state.battle.phase !== 'awaitingDefenderSelection') return;
+
+  const attackerPlayerId = state.battle.attackerPlayerId;
+  const defenderPlayerId = state.battle.defenderPlayerId;
+  const attackColumn = state.battle.attackColumn;
+
+  if (!attackerPlayerId || !defenderPlayerId || typeof attackColumn !== 'number') {
+    clearBattleState(state);
+    return;
+  }
+
+  const defenderSlot = getMatchingDefenderSlotForColumn(attackColumn);
+  const defenderCard = state.players[defenderPlayerId].field[defenderSlot].card;
+  const selectableDefenderExists = Boolean(defenderCard && !defenderCard.isTapped);
+
+  state.battle = {
+    ...state.battle,
+    phase: 'duringBattle',
+    defenderCardId: undefined,
+    priorityPlayer: attackerPlayerId,
+    passedPlayers: [],
+  };
+
+  appendLog(state, selectableDefenderExists ? '배틀 중 상태 진입 (방어 선택 가능)' : '배틀 중 상태 진입 (방어자 미지정)');
 }
 
 function resolveCurrentBattle(state: GameState): void {
@@ -340,8 +375,8 @@ function resolveChargeCharacter(state: GameState, declaration: any): void {
   appendLog(state, '차지 해결');
 }
 
-function resolveAttack(state: GameState, declaration: any): void {
-  const attackerInfo = findCardOwnerOnField(state, declaration.sourceCardId);
+function openAttackResponseWindow(state: GameState, action: Extract<GameAction, { type: 'DECLARE_ACTION' }>): void {
+  const attackerInfo = findCardOwnerOnField(state, action.sourceCardId ?? '');
   if (!attackerInfo) return;
   const attacker = attackerInfo.card;
   const defenderPlayerId = getOpponent(attackerInfo.playerId);
@@ -349,18 +384,19 @@ function resolveAttack(state: GameState, declaration: any): void {
 
   state.battle = {
     isActive: true,
-    phase: 'duringBattle',
+    phase: 'awaitingDefenderSelection',
     attackerCardId: attacker.instanceId,
     attackerPlayerId: attackerInfo.playerId,
     defenderPlayerId,
     defenderCardId: undefined,
     attackColumn: column,
     awaitingDefenderSelection: false,
-    priorityPlayer: attackerInfo.playerId,
+    priorityPlayer: defenderPlayerId,
     passedPlayers: [],
   };
 
-  appendLog(state, '배틀 중 상태 진입 (방어자 미지정)');
+  appendLog(state, '공격 선언');
+  appendLog(state, '공격 선언 대응 창 진입');
 }
 
 function resolveLatestLegacyDeclaration(state: GameState): void {
@@ -374,16 +410,13 @@ function resolveLatestLegacyDeclaration(state: GameState): void {
     case 'useAbility':
       resolveUseAbility(state, declaration);
       break;
-    case 'attack':
-      resolveAttack(state, declaration);
-      break;
     case 'chargeCharacter':
       resolveChargeCharacter(state, declaration);
       break;
     default:
       break;
   }
-  if (isDuringBattlePriorityWindow(state)) {
+  if (isAnyBattleWindow(state)) {
     state.battle.priorityPlayer = declaration.playerId;
     resetBattlePassedPlayers(state);
   } else {
@@ -392,12 +425,15 @@ function resolveLatestLegacyDeclaration(state: GameState): void {
 }
 
 function validateDeclareAction(state: GameState, action: Extract<GameAction, { type: 'DECLARE_ACTION' }>): string | null {
-  if (isDuringBattlePriorityWindow(state)) {
+  if (isAnyBattleWindow(state)) {
     if (state.battle.priorityPlayer !== action.playerId) {
       return 'BATTLE_PRIORITY_MISMATCH';
     }
     if (action.kind === 'useCharacter') {
       return 'BATTLE_CHARACTER_DECLARATION_FORBIDDEN';
+    }
+    if (action.kind === 'attack') {
+      return 'BATTLE_ATTACK_DECLARATION_FORBIDDEN';
     }
   } else if (state.turn.phase !== 'main') {
     return 'TIMING_INVALID';
@@ -487,6 +523,27 @@ function handleStartGame(state: GameState, action: Extract<GameAction, { type: '
 function handlePassPriority(state: GameState, action: Extract<GameAction, { type: 'PASS_PRIORITY' }>): GameState {
   if (state.declarationStack.length > 0) {
     resolveLatestLegacyDeclaration(state);
+    return state;
+  }
+
+  if (isAttackResponseWindow(state)) {
+    if (state.battle.priorityPlayer !== action.playerId) {
+      appendLog(state, 'BATTLE_PRIORITY_MISMATCH');
+      return state;
+    }
+    const current = action.playerId;
+    const other = getOpponentPlayerId(current);
+    const passedPlayers = new Set(state.battle.passedPlayers ?? []);
+    passedPlayers.add(current);
+    state.battle.passedPlayers = Array.from(passedPlayers);
+
+    if (passedPlayers.has('P1') && passedPlayers.has('P2')) {
+      finalizeAttackResponses(state);
+      return state;
+    }
+
+    state.battle.priorityPlayer = other;
+    appendLog(state, `[ATTACK RESPONSE] ${current} pass -> ${other}`);
     return state;
   }
 
@@ -617,6 +674,12 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         appendLog(next, violation);
         return next;
       }
+
+      if (!isAnyBattleWindow(next) && action.kind === 'attack') {
+        openAttackResponseWindow(next, action);
+        return next;
+      }
+
       const declaration: any = {
         id: nextLegacyDeclarationId(next),
         playerId: action.playerId,
@@ -630,22 +693,23 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       };
       next.declarationStack.push(declaration);
       syncDeclarationStack(next.declarationStack);
-      if (isDuringBattlePriorityWindow(next)) {
+
+      if (isAnyBattleWindow(next)) {
         next.battle.priorityPlayer = getOpponentPlayerId(action.playerId);
         resetBattlePassedPlayers(next);
       } else {
         next.turn.priorityPlayer = getOpponentPlayerId(action.playerId);
       }
+
       if (action.kind === 'useCharacter') appendLog(next, '등장 선언');
       if (action.kind === 'useAbility') appendLog(next, '능력 사용 선언');
-      if (action.kind === 'attack') appendLog(next, '공격 선언');
       if (action.kind === 'chargeCharacter') appendLog(next, '차지 선언');
       return next;
     }
     case 'PASS_PRIORITY':
       return handlePassPriority(next, action);
     case 'SET_DEFENDER': {
-      if (!next.battle.isActive) return next;
+      if (!next.battle.isActive || next.battle.phase !== 'duringBattle') return next;
       if (!next.battle.attackerCardId || !next.battle.attackerPlayerId) return next;
 
       const attackerInfo = findCardOwnerOnField(next, next.battle.attackerCardId);

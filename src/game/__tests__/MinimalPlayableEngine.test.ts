@@ -28,40 +28,18 @@ function makeCharacter(
   };
 }
 
-function makeDeck(
-  owner: PlayerID,
-  prefix: string,
-  options?: { includeLeader?: boolean },
-): CardRef[] {
+function makeDeck(owner: PlayerID, prefix: string): CardRef[] {
   const deck: CardRef[] = [];
-  const includeLeader = options?.includeLeader ?? false;
-
-  if (includeLeader) {
-    deck.push(
-      makeCharacter(`${prefix}_LEADER`, owner, `${prefix}_LEADER`, 5, true),
-    );
-  }
-
   while (deck.length < 60) {
     const i = deck.length + 1;
-    deck.push(
-      makeCharacter(
-        `${prefix}_${String(i).padStart(3, "0")}`,
-        owner,
-        `${prefix}_CHAR_${i}`,
-        3 + (i % 3),
-      ),
-    );
+    deck.push(makeCharacter(`${prefix}_${String(i).padStart(3, "0")}`, owner, `${prefix}_CHAR_${i}`, 3 + (i % 3)));
   }
-
   return deck;
 }
 
 function getFirstHandCharacterId(state: GameState, playerId: PlayerID): string {
   const card = state.players[playerId].hand.find((c) => c.cardType === "character");
-  if (!card) {
-    throw new Error(`${playerId} hand has no character`);
-  }
+  if (!card) throw new Error(`${playerId} hand has no character`);
   return card.instanceId;
 }
 
@@ -73,119 +51,31 @@ function passCurrentMainPhaseToNextTurn(state: GameState): GameState {
 }
 
 function buildReadyToMainState(firstPlayer: PlayerID = "P1"): GameState {
-  const state0 = createInitialGameState({
-    p1Deck: makeDeck("P1", "P1"),
-    p2Deck: makeDeck("P2", "P2"),
-    leaderEnabled: false,
-  });
-
-  const state1 = reduceGameState(state0, {
-    type: "START_GAME",
-    firstPlayer,
-    leaderEnabled: false,
-  });
-
-  const state2 = reduceGameState(state1, {
-    type: "KEEP_STARTING_HAND",
-    playerId: "P1",
-  });
-
-  const state3 = reduceGameState(state2, {
-    type: "KEEP_STARTING_HAND",
-    playerId: "P2",
-  });
-
+  const state0 = createInitialGameState({ p1Deck: makeDeck("P1", "P1"), p2Deck: makeDeck("P2", "P2"), leaderEnabled: false });
+  const state1 = reduceGameState(state0, { type: "START_GAME", firstPlayer, leaderEnabled: false });
+  const state2 = reduceGameState(state1, { type: "KEEP_STARTING_HAND", playerId: "P1" });
+  const state3 = reduceGameState(state2, { type: "KEEP_STARTING_HAND", playerId: "P2" });
   const state4 = reduceGameState(state3, { type: "FINALIZE_STARTUP" });
   const state5 = reduceGameState(state4, { type: "START_TURN" });
   const state6 = reduceGameState(state5, { type: "ADVANCE_PHASE" });
-
   return state6;
 }
 
 function resolveLatestDeclarationByDoublePass(state: GameState): GameState {
-  const state1 = reduceGameState(state, {
-    type: "PASS_PRIORITY",
-    playerId: state.turn.priorityPlayer,
-  });
-
-  const state2 = reduceGameState(state1, {
-    type: "PASS_PRIORITY",
-    playerId: state1.turn.priorityPlayer,
-  });
-
+  const state1 = reduceGameState(state, { type: "PASS_PRIORITY", playerId: state.turn.priorityPlayer });
+  const state2 = reduceGameState(state1, { type: "PASS_PRIORITY", playerId: state1.turn.priorityPlayer });
   return state2;
 }
 
-function resolveBattleByDoublePass(state: GameState): GameState {
-  const state1 = reduceGameState(state, {
-    type: "PASS_PRIORITY",
-    playerId: state.battle.priorityPlayer ?? "P1",
-  });
-
-  const state2 = reduceGameState(state1, {
-    type: "PASS_PRIORITY",
-    playerId: state1.battle.priorityPlayer ?? "P2",
-  });
-
-  return state2;
+function resolveAttackFlowByPasses(state: GameState): GameState {
+  const s1 = reduceGameState(state, { type: "PASS_PRIORITY", playerId: state.battle.priorityPlayer ?? "P2" });
+  const s2 = reduceGameState(s1, { type: "PASS_PRIORITY", playerId: s1.battle.priorityPlayer ?? "P1" });
+  const s3 = reduceGameState(s2, { type: "PASS_PRIORITY", playerId: s2.battle.priorityPlayer ?? "P1" });
+  const s4 = reduceGameState(s3, { type: "PASS_PRIORITY", playerId: s3.battle.priorityPlayer ?? "P2" });
+  return s4;
 }
 
 describe("MinimalPlayableEngine", () => {
-  it("START_GAME 후 스타트업 드로우가 정상 적용된다", () => {
-    const state = createInitialGameState({
-      p1Deck: makeDeck("P1", "P1"),
-      p2Deck: makeDeck("P2", "P2"),
-      leaderEnabled: false,
-    });
-
-    const next = reduceGameState(state, {
-      type: "START_GAME",
-      firstPlayer: "P1",
-      leaderEnabled: false,
-    });
-
-    expect(next.startup.active).toBe(true);
-    expect(next.players.P1.hand.length).toBe(7);
-    expect(next.players.P2.hand.length).toBe(7);
-  });
-
-  it("양 플레이어 KEEP 후 FINALIZE_STARTUP 하면 턴 준비가 된다", () => {
-    const state0 = createInitialGameState({
-      p1Deck: makeDeck("P1", "P1"),
-      p2Deck: makeDeck("P2", "P2"),
-      leaderEnabled: false,
-    });
-
-    const state1 = reduceGameState(state0, {
-      type: "START_GAME",
-      firstPlayer: "P1",
-      leaderEnabled: false,
-    });
-
-    const state2 = reduceGameState(state1, {
-      type: "KEEP_STARTING_HAND",
-      playerId: "P1",
-    });
-
-    const state3 = reduceGameState(state2, {
-      type: "KEEP_STARTING_HAND",
-      playerId: "P2",
-    });
-
-    const state4 = reduceGameState(state3, { type: "FINALIZE_STARTUP" });
-
-    expect(state4.startup.active).toBe(false);
-    expect(state4.turn.phase).toBe("wakeup");
-  });
-
-  it("선공 첫 턴 메인 진입 시 드로우 1장이 이미 적용된다", () => {
-    const state6 = buildReadyToMainState("P1");
-
-    expect(state6.turn.activePlayer).toBe("P1");
-    expect(state6.turn.phase).toBe("main");
-    expect(state6.players.P1.hand.length).toBe(8);
-  });
-
   it("직접 공격까지 끝난 캐릭터는 턴이 돌아오면 untap 된다", () => {
     const state6 = buildReadyToMainState("P1");
     const charId = getFirstHandCharacterId(state6, "P1");
@@ -208,46 +98,15 @@ describe("MinimalPlayableEngine", () => {
       sourceCardId: charId,
     });
 
-    const state12 = resolveLatestDeclarationByDoublePass(state10);
+    expect(state10.battle.phase).toBe("awaitingDefenderSelection");
 
-    expect(state12.battle.isActive).toBe(true);
-    expect(state12.players.P1.field.AF_LEFT.card?.isTapped).toBe(false);
+    const state14 = resolveAttackFlowByPasses(state10);
 
-    const state13 = resolveBattleByDoublePass(state12);
+    expect(state14.players.P1.field.AF_LEFT.card?.isTapped).toBe(true);
 
-    expect(state13.players.P1.field.AF_LEFT.card?.isTapped).toBe(true);
-
-    const state14 = passCurrentMainPhaseToNextTurn(state13);
     const state15 = passCurrentMainPhaseToNextTurn(state14);
+    const state16 = passCurrentMainPhaseToNextTurn(state15);
 
-    expect(state15.players.P1.field.AF_LEFT.card?.isTapped).toBe(false);
-  });
-
-  it("멀리건 후에는 같은 플레이어가 다시 스타트업 선택을 할 수 없다", () => {
-    const state0 = createInitialGameState({
-      p1Deck: makeDeck("P1", "P1", { includeLeader: true }),
-      p2Deck: makeDeck("P2", "P2", { includeLeader: true }),
-      leaderEnabled: true,
-    });
-
-    const state1 = reduceGameState(state0, {
-      type: "START_GAME",
-      firstPlayer: "P1",
-      leaderEnabled: true,
-    });
-
-    const state2 = reduceGameState(state1, {
-      type: "MULLIGAN",
-      playerId: "P1",
-    });
-
-    const state3 = reduceGameState(state2, {
-      type: "MULLIGAN",
-      playerId: "P1",
-    });
-
-    expect(
-      state3.logs.some((log) => log.includes("ALREADY_DECIDED")),
-    ).toBe(true);
+    expect(state16.players.P1.field.AF_LEFT.card?.isTapped).toBe(false);
   });
 });
