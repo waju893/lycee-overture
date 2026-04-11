@@ -191,30 +191,45 @@ describe("BattleResolution", () => {
     expect(next.players.P2.deck.length).toBe(beforeDeck - 2);
   });
 
-  it("공격 선언 대응으로 같은 열 DF가 새로 등장한 뒤 방어 선택이 가능해진다", () => {
+  it("공격 선언 대응으로 카드 효과에 의해 같은 열 DF가 새로 등장한 뒤 방어 선택이 가능해진다", () => {
     const p1Deck = makeDeck("P1", "P1");
     const p2Deck = makeDeck("P2", "P2");
 
     const ready = buildReadyToMainState("P1", p1Deck, p2Deck);
     const attackerEntered = putCharacterOnField(ready, "P1", "AF_LEFT");
     const p2CardId = getFirstHandCharacterId(attackerEntered.state, "P2");
+    const enteringCard = attackerEntered.state.players.P2.hand.find((card) => card.instanceId === p2CardId);
+    if (!enteringCard) throw new Error("P2 response card should exist");
 
     const declared = declareAttack(attackerEntered.state, "P1", attackerEntered.cardId);
-    const responseDeclared = reduceGameState(declared, {
-      type: "DECLARE_ACTION",
-      playerId: "P2",
-      kind: "useCharacter",
-      sourceCardId: p2CardId,
-      targetSlots: ["DF_LEFT"],
-      targetingMode: "declareTime",
-    });
 
-    const responseResolved = reduceGameState(responseDeclared, {
-      type: "PASS_PRIORITY",
-      playerId: responseDeclared.battle.priorityPlayer ?? "P1",
-    });
+    // 룰상 캐릭터 등장 선언(useCharacter)은 공격 대응 창에서 금지된다.
+    // 하지만 카드 효과로 같은 열 DF에 들어오는 것은 가능하므로,
+    // 테스트에서는 효과 해결 결과만 직접 반영한다.
+    const effectResolved: GameState = {
+      ...declared,
+      players: {
+        ...declared.players,
+        P2: {
+          ...declared.players.P2,
+          hand: declared.players.P2.hand.filter((card) => card.instanceId !== p2CardId),
+          field: {
+            ...declared.players.P2.field,
+            DF_LEFT: {
+              card: {
+                ...enteringCard,
+                location: "field",
+                isTapped: false,
+              },
+            },
+          },
+        },
+      },
+      logs: [...declared.logs, "카드 효과로 DF_LEFT 등장"],
+      log: [...declared.logs, "카드 효과로 DF_LEFT 등장"],
+    };
 
-    const inBattle = passAttackResponses(responseResolved);
+    const inBattle = passAttackResponses(effectResolved);
 
     expect(inBattle.players.P2.field.DF_LEFT.card?.instanceId).toBe(p2CardId);
     expect(inBattle.battle.phase).toBe("duringBattle");
