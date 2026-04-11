@@ -201,13 +201,8 @@ function untapField(state: GameState, playerId: PlayerID): void {
 }
 
 function startTurn(state: GameState, playerId: PlayerID): void {
-  state.turn.activePlayer = playerId;
-  state.turn.priorityPlayer = playerId;
-  state.turn.phase = 'wakeup';
-  state.turn.turnNumber += 1;
-  untapField(state, playerId);
-  const drawCount = state.turn.turnNumber <= 1 && state.turn.firstPlayer === playerId ? 1 : 2;
-  drawTopCards(state, playerId, drawCount);
+  enterWakeupPhase(state, playerId, true);
+  autoResolveWakeupToMain(state);
 }
 
 function millFromDeckToDiscard(state: GameState, playerId: PlayerID, count: number, cause?: CauseDescriptor): void {
@@ -281,6 +276,48 @@ function isAnyBattleWindow(state: GameState): boolean {
 function resetBattlePassedPlayers(state: GameState): void {
   if (!state.battle.isActive) return;
   state.battle.passedPlayers = [];
+}
+
+function resetTurnPassedPlayers(state: GameState): void {
+  state.turn.passedPlayers = [];
+}
+
+function enterWakeupPhase(state: GameState, playerId: PlayerID, incrementTurn = true): void {
+  state.turn.activePlayer = playerId;
+  state.turn.priorityPlayer = playerId;
+  state.turn.phase = 'wakeup';
+  if (incrementTurn) {
+    state.turn.turnNumber += 1;
+  }
+  resetTurnPassedPlayers(state);
+  untapField(state, playerId);
+  const drawCount = state.turn.turnNumber <= 1 && state.turn.firstPlayer === playerId ? 1 : 2;
+  drawTopCards(state, playerId, drawCount);
+  appendLog(state, `${playerId} 턴 개시시`);
+}
+
+function autoResolveWakeupToMain(state: GameState): void {
+  if (state.turn.phase !== 'wakeup') return;
+  appendLog(state, '턴 개시시 유발 효과 처리 완료');
+  state.turn.phase = 'main';
+  state.turn.priorityPlayer = state.turn.activePlayer;
+  resetTurnPassedPlayers(state);
+  appendLog(state, '메인 페이즈');
+}
+
+function enterEndPhase(state: GameState): void {
+  state.turn.phase = 'end';
+  state.turn.priorityPlayer = state.turn.activePlayer;
+  resetTurnPassedPlayers(state);
+  appendLog(state, '턴 종료시');
+}
+
+function autoResolveEndToNextTurn(state: GameState): void {
+  if (state.turn.phase !== 'end') return;
+  appendLog(state, '턴 종료시 유발 효과 처리 완료');
+  const nextPlayer = getOpponentPlayerId(state.turn.activePlayer);
+  enterWakeupPhase(state, nextPlayer, true);
+  autoResolveWakeupToMain(state);
 }
 
 function finalizeAttackResponses(state: GameState): void {
@@ -669,6 +706,7 @@ function handleStartGame(state: GameState, action: Extract<GameAction, { type: '
   next.turn.firstPlayer = action.firstPlayer ?? 'P1';
   next.turn.activePlayer = action.firstPlayer ?? 'P1';
   next.turn.priorityPlayer = action.firstPlayer ?? 'P1';
+  next.turn.passedPlayers = [];
   if (action.leaderEnabled) {
     for (const playerId of ['P1', 'P2'] as PlayerID[]) {
       const leaderIndex = next.players[playerId].deck.findIndex((card) => card.isLeader);
@@ -691,34 +729,6 @@ function handleStartGame(state: GameState, action: Extract<GameAction, { type: '
 }
 
 function handlePassPriority(state: GameState, action: Extract<GameAction, { type: 'PASS_PRIORITY' }>): GameState {
-  if (isAttackResponseWindow(state)) {
-    if (state.battle.priorityPlayer !== action.playerId) {
-      appendLog(state, 'BATTLE_PRIORITY_MISMATCH');
-      return state;
-    }
-
-    const current = action.playerId;
-    const other = getOpponentPlayerId(current);
-
-    if (state.declarationStack.length > 0) {
-      resolveLatestLegacyDeclaration(state);
-      return state;
-    }
-
-    const passedPlayers = new Set(state.battle.passedPlayers ?? []);
-    passedPlayers.add(current);
-    state.battle.passedPlayers = Array.from(passedPlayers);
-
-    if (passedPlayers.has('P1') && passedPlayers.has('P2')) {
-      finalizeAttackResponses(state);
-      return state;
-    }
-
-    state.battle.priorityPlayer = other;
-    appendLog(state, `[ATTACK RESPONSE] ${current} pass -> ${other}`);
-    return state;
-  }
-
   if (state.declarationStack.length > 0) {
     resolveLatestLegacyDeclaration(state);
     return state;
@@ -745,9 +755,35 @@ function handlePassPriority(state: GameState, action: Extract<GameAction, { type
     return state;
   }
 
-  if (state.turn.priorityPlayer === action.playerId) {
-    state.turn.priorityPlayer = getOpponentPlayerId(action.playerId);
+  if (state.turn.priorityPlayer !== action.playerId) {
+    appendLog(state, 'TURN_PRIORITY_MISMATCH');
+    return state;
   }
+
+  const current = action.playerId;
+  const other = getOpponentPlayerId(current);
+  const passedPlayers = new Set(state.turn.passedPlayers ?? []);
+  passedPlayers.add(current);
+  state.turn.passedPlayers = Array.from(passedPlayers);
+
+  if (state.turn.phase === 'main') {
+    if (passedPlayers.has('P1') && passedPlayers.has('P2')) {
+      enterEndPhase(state);
+      autoResolveEndToNextTurn(state);
+      return state;
+    }
+
+    state.turn.priorityPlayer = other;
+    appendLog(state, `[TURN PRIORITY] ${current} pass -> ${other}`);
+    return state;
+  }
+
+  if (state.turn.phase === 'end') {
+    autoResolveEndToNextTurn(state);
+    return state;
+  }
+
+  state.turn.priorityPlayer = other;
   return state;
 }
 
@@ -788,7 +824,7 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       ...state.startup,
       decisions: { ...state.startup.decisions },
     },
-    turn: { ...state.turn },
+    turn: { ...state.turn, passedPlayers: [...(state.turn.passedPlayers ?? [])] },
     battle: { ...state.battle, passedPlayers: [...(state.battle.passedPlayers ?? [])] },
     declarationStack: syncDeclarationStack([...state.declarationStack] as unknown as DeclarationStackArray),
     triggerQueue: { pendingGroups: state.triggerQueue.pendingGroups.map((group) => [...group]) },
@@ -820,29 +856,25 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       next.startup.active = false;
       next.startup.startupFinished = true;
       next.turn.firstPlayer = next.startup.firstPlayer ?? next.turn.firstPlayer ?? 'P1';
-      next.turn.activePlayer = next.turn.firstPlayer;
-      next.turn.priorityPlayer = next.turn.firstPlayer;
-      next.turn.phase = 'wakeup';
+      next.turn.turnNumber = 0;
+      enterWakeupPhase(next, next.turn.firstPlayer, true);
+      autoResolveWakeupToMain(next);
       return next;
     case 'START_TURN':
       startTurn(next, next.turn.activePlayer);
       return next;
     case 'ADVANCE_PHASE':
       if (next.turn.phase === 'wakeup') {
-        next.turn.phase = 'main';
+        autoResolveWakeupToMain(next);
       } else if (next.turn.phase === 'main') {
         next.turn.phase = 'battle';
+        next.turn.priorityPlayer = next.turn.activePlayer;
+        resetTurnPassedPlayers(next);
       } else if (next.turn.phase === 'battle') {
-        next.turn.phase = 'end';
+        enterEndPhase(next);
+        autoResolveEndToNextTurn(next);
       } else if (next.turn.phase === 'end') {
-        const nextPlayer = getOpponentPlayerId(next.turn.activePlayer);
-        next.turn.activePlayer = nextPlayer;
-        next.turn.priorityPlayer = nextPlayer;
-        next.turn.phase = 'main';
-        next.turn.turnNumber += 1;
-        untapField(next, nextPlayer);
-        const drawCount = next.turn.turnNumber <= 1 && next.turn.firstPlayer === nextPlayer ? 1 : 2;
-        drawTopCards(next, nextPlayer, drawCount);
+        autoResolveEndToNextTurn(next);
       }
       return next;
     case 'DECLARE_ACTION': {

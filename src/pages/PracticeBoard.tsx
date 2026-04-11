@@ -765,7 +765,7 @@ export default function PracticeBoardPage() {
     } as any);
   }
 
-  function handleHandDeclareActionfunction handleHandDeclareAction(playerId: PlayerID, cardId: string) {
+  function handleHandDeclareAction(playerId: PlayerID, cardId: string) {
     setState((prev) => {
       const next = structuredClone(prev) as GameState;
       const player = next.players[playerId];
