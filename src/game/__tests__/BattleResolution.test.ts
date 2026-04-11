@@ -157,7 +157,7 @@ function passCurrentMainPhaseToNextTurn(state: GameState): GameState {
   return state3;
 }
 
-function declareAttackAndResolveAuto(
+function declareAttackAndEnterBattle(
   state: GameState,
   attackerPlayerId: PlayerID,
   attackerCardId: string,
@@ -182,8 +182,22 @@ function declareAttackAndResolveAuto(
   return state3;
 }
 
+function resolveBattleByDoublePass(state: GameState): GameState {
+  const state1 = reduceGameState(state, {
+    type: "PASS_PRIORITY",
+    playerId: state.battle.priorityPlayer ?? "P1",
+  });
+
+  const state2 = reduceGameState(state1, {
+    type: "PASS_PRIORITY",
+    playerId: state1.battle.priorityPlayer ?? "P2",
+  });
+
+  return state2;
+}
+
 describe("BattleResolution", () => {
-  it("같은 열 DF가 있으면 자동 해결하지 않고 방어자 선택 대기로 남는다", () => {
+  it("같은 열 DF가 있으면 자동 해결하지 않고 방어자 지정된 배틀 중 상태로 남는다", () => {
     const p1Deck = makeDeck("P1", "P1", {
       1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
         ap: 4,
@@ -207,20 +221,21 @@ describe("BattleResolution", () => {
     const defenderEntered = putCharacterOnField(p2Main, "P2", "DF_LEFT");
 
     const backToP1Main = passCurrentMainPhaseToNextTurn(defenderEntered.state);
-    const next = declareAttackAndResolveAuto(
+    const next = declareAttackAndEnterBattle(
       backToP1Main,
       "P1",
       attackerEntered.cardId,
     );
 
     expect(next.battle.isActive).toBe(true);
-    expect(next.battle.defenderCardId).toBeUndefined();
+    expect(next.battle.phase).toBe("duringBattle");
+    expect(next.battle.defenderCardId).toBe(defenderEntered.cardId);
     expect(next.players.P1.field.AF_LEFT.card?.isTapped).toBe(false);
     expect(next.players.P2.field.DF_LEFT.card?.isTapped).toBe(false);
-    expect(next.logs.some((log) => log.includes("방어자 선택 대기"))).toBe(true);
+    expect(next.logs.some((log) => log.includes("배틀 중 상태 진입 (방어자 지정)"))).toBe(true);
   });
 
-  it("같은 열 DF가 없으면 직접 공격으로 처리된다", () => {
+  it("같은 열 DF가 없으면 방어자 미지정 배틀 중 상태로 들어간 뒤 직접 공격으로 처리된다", () => {
     const p1Deck = makeDeck("P1", "P1", {
       1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
         ap: 3,
@@ -236,11 +251,19 @@ describe("BattleResolution", () => {
     const beforeDeck = attackerEntered.state.players.P2.deck.length;
     const beforeDiscard = attackerEntered.state.players.P2.discard.length;
 
-    const next = declareAttackAndResolveAuto(
+    const inBattle = declareAttackAndEnterBattle(
       attackerEntered.state,
       "P1",
       attackerEntered.cardId,
     );
+
+    expect(inBattle.battle.isActive).toBe(true);
+    expect(inBattle.battle.phase).toBe("duringBattle");
+    expect(inBattle.battle.defenderCardId).toBeUndefined();
+    expect(inBattle.players.P1.field.AF_LEFT.card?.isTapped).toBe(false);
+    expect(inBattle.logs.some((log) => log.includes("배틀 중 상태 진입 (방어자 미지정)"))).toBe(true);
+
+    const next = resolveBattleByDoublePass(inBattle);
 
     expect(next.battle.isActive).toBe(false);
     expect(next.players.P1.field.AF_LEFT.card?.isTapped).toBe(true);
@@ -249,7 +272,7 @@ describe("BattleResolution", () => {
     expect(next.logs.some((log) => log.includes("직접 공격 처리"))).toBe(true);
   });
 
-  it("같은 열 DF가 tapped 상태면 직접 공격으로 처리된다", () => {
+  it("같은 열 DF가 tapped 상태면 방어자 미지정 배틀 중 상태를 거쳐 직접 공격으로 처리된다", () => {
     const p1Deck = makeDeck("P1", "P1", {
       1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
         ap: 3,
@@ -281,11 +304,17 @@ describe("BattleResolution", () => {
     const backToP1Main = passCurrentMainPhaseToNextTurn(defenderEntered.state);
     const beforeDeck = backToP1Main.players.P2.deck.length;
 
-    const next = declareAttackAndResolveAuto(
+    const inBattle = declareAttackAndEnterBattle(
       backToP1Main,
       "P1",
       attackerEntered.cardId,
     );
+
+    expect(inBattle.battle.isActive).toBe(true);
+    expect(inBattle.battle.phase).toBe("duringBattle");
+    expect(inBattle.battle.defenderCardId).toBeUndefined();
+
+    const next = resolveBattleByDoublePass(inBattle);
 
     expect(next.battle.isActive).toBe(false);
     expect(next.players.P2.field.DF_LEFT.card?.isTapped).toBe(true);
@@ -293,7 +322,7 @@ describe("BattleResolution", () => {
     expect(next.logs.some((log) => log.includes("직접 공격 처리"))).toBe(true);
   });
 
-  it("같은 열에 AF만 있으면 방어 불가이므로 직접 공격으로 처리된다", () => {
+  it("같은 열에 AF만 있으면 방어 불가이므로 방어자 미지정 배틀 중 상태를 거쳐 직접 공격으로 처리된다", () => {
     const p1Deck = makeDeck("P1", "P1", {
       1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
         ap: 3,
@@ -319,11 +348,17 @@ describe("BattleResolution", () => {
     const backToP1Main = passCurrentMainPhaseToNextTurn(afEntered.state);
     const beforeDeck = backToP1Main.players.P2.deck.length;
 
-    const next = declareAttackAndResolveAuto(
+    const inBattle = declareAttackAndEnterBattle(
       backToP1Main,
       "P1",
       attackerEntered.cardId,
     );
+
+    expect(inBattle.battle.isActive).toBe(true);
+    expect(inBattle.battle.phase).toBe("duringBattle");
+    expect(inBattle.battle.defenderCardId).toBeUndefined();
+
+    const next = resolveBattleByDoublePass(inBattle);
 
     expect(next.battle.isActive).toBe(false);
     expect(next.players.P2.field.AF_LEFT.card?.isTapped).toBe(false);
@@ -331,7 +366,7 @@ describe("BattleResolution", () => {
     expect(next.logs.some((log) => log.includes("직접 공격 처리"))).toBe(true);
   });
 
-  it("다른 열 DF는 방어 불가이므로 직접 공격으로 처리된다", () => {
+  it("다른 열 DF는 방어 불가이므로 방어자 미지정 배틀 중 상태를 거쳐 직접 공격으로 처리된다", () => {
     const p1Deck = makeDeck("P1", "P1", {
       1: makeCharacter("P1_ATTACKER", "P1", "P1_ATTACKER", {
         ap: 3,
@@ -357,11 +392,17 @@ describe("BattleResolution", () => {
     const backToP1Main = passCurrentMainPhaseToNextTurn(defenderEntered.state);
     const beforeDeck = backToP1Main.players.P2.deck.length;
 
-    const next = declareAttackAndResolveAuto(
+    const inBattle = declareAttackAndEnterBattle(
       backToP1Main,
       "P1",
       attackerEntered.cardId,
     );
+
+    expect(inBattle.battle.isActive).toBe(true);
+    expect(inBattle.battle.phase).toBe("duringBattle");
+    expect(inBattle.battle.defenderCardId).toBeUndefined();
+
+    const next = resolveBattleByDoublePass(inBattle);
 
     expect(next.battle.isActive).toBe(false);
     expect(next.players.P2.field.DF_RIGHT.card?.isTapped).toBe(false);
