@@ -1,61 +1,10 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import type { CSSProperties } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import { Link } from "react-router-dom";
-import { reduceGameState } from "../game/GameEngine";
-import { createInitialGameState } from "../game/GameRules";
-import type { GameAction } from "../game/GameActions";
-import type { DeckEntry } from "../lib/deck";
-import { CARD_META_BY_CODE } from "../lib/cards";
-import type {
-  CardRef,
-  FieldSlot,
-  GameState,
-  PlayerID,
-  ReplaySnapshot,
-} from "../game/GameTypes";
 import PracticeBoardView from "../components/PracticeBoard";
-
-type PlacementMode =
-  | {
-      type: "hand_character_to_field";
-      playerId: PlayerID;
-      cardId: string;
-      costCardIds: string[];
-    }
-  | {
-      type: "pile_character_to_field";
-      playerId: PlayerID;
-      cardId: string;
-      source: "deck" | "discard";
-      costCardIds: string[];
-    }
-  | {
-      type: "hand_area_to_field";
-      playerId: PlayerID;
-      cardId: string;
-      costCardIds: string[];
-    }
-  | {
-      type: "pile_area_to_field";
-      playerId: PlayerID;
-      cardId: string;
-      source: "deck" | "discard";
-      costCardIds: string[];
-    }
-  | {
-      type: "hand_item_to_field";
-      playerId: PlayerID;
-      cardId: string;
-      costCardIds: string[];
-    }
-  | {
-      type: "pile_item_to_field";
-      playerId: PlayerID;
-      cardId: string;
-      source: "deck" | "discard";
-      costCardIds: string[];
-    }
-  | null;
+import { reduceGameState } from "../game/GameEngine";
+import { createInitialGameState, getMatchingDefenderSlotForColumn } from "../game/GameRules";
+import type { GameAction } from "../game/GameActions";
+import type { CardRef, FieldSlot, GameState, PlayerID } from "../game/GameTypes";
 
 const ALL_SLOTS: FieldSlot[] = [
   "AF_LEFT",
@@ -65,7 +14,6 @@ const ALL_SLOTS: FieldSlot[] = [
   "DF_CENTER",
   "DF_RIGHT",
 ];
-const CURRENT_DECK_STORAGE_KEY = "lycee-current-deck";
 
 function makeCharacter(
   instanceId: string,
@@ -100,7 +48,6 @@ function makeCharacter(
 
 function makeDeck(owner: PlayerID, prefix: string): CardRef[] {
   const deck: CardRef[] = [];
-
   while (deck.length < 60) {
     const i = deck.length + 1;
     deck.push(
@@ -108,15 +55,10 @@ function makeDeck(owner: PlayerID, prefix: string): CardRef[] {
         `${prefix}_${String(i).padStart(3, "0")}`,
         owner,
         `${prefix}_CHAR_${i}`,
-        {
-          ap: 2 + (i % 4),
-          dp: 2 + (i % 3),
-          dmg: 1 + (i % 2),
-        },
+        { ap: 2 + (i % 4), dp: 2 + (i % 3), dmg: 1 + (i % 2) },
       ),
     );
   }
-
   return deck;
 }
 
@@ -129,261 +71,66 @@ function shuffleCards<T>(cards: T[]): T[] {
   return next;
 }
 
-function normalizeDeckCardType(value: string | undefined): CardRef["cardType"] {
-  switch ((value ?? "").toLowerCase()) {
-    case "event":
-      return "event";
-    case "item":
-      return "item";
-    case "area":
-      return "area";
-    default:
-      return "character";
-  }
-}
-
-function readPracticeDeckFromStorage(owner: PlayerID): CardRef[] | null {
-  if (typeof window === "undefined") return null;
-
-  try {
-    const raw = window.localStorage.getItem(CURRENT_DECK_STORAGE_KEY);
-    if (!raw) return null;
-
-    const parsed = JSON.parse(raw) as DeckEntry[];
-    if (!Array.isArray(parsed) || parsed.length === 0) return null;
-
-    const cards: CardRef[] = [];
-    for (const entry of parsed) {
-      const code = String(entry?.code ?? "").trim().toUpperCase();
-      const qty = Number(entry?.qty ?? 0);
-      const meta = CARD_META_BY_CODE[code];
-      if (!meta || !Number.isFinite(qty) || qty <= 0) continue;
-
-      for (let i = 0; i < qty; i += 1) {
-        cards.push({
-          instanceId: `${owner}_${code}_${i + 1}_${cards.length + 1}`,
-          cardNo: code,
-          name: meta.name ?? code,
-          owner,
-          cardType: normalizeDeckCardType(meta.type),
-          sameNameKey: code,
-          ap: meta.ap ?? undefined,
-          dp: meta.dp ?? undefined,
-          dmg: meta.dmg ?? undefined,
-          power: meta.ap ?? undefined,
-          hp: meta.dp ?? undefined,
-          damage: meta.dmg ?? undefined,
-          isTapped: false,
-          canAttack: true,
-          canBlock: true,
-          revealed: false,
-          location: "deck",
-        });
-      }
-    }
-
-    return cards.length > 0 ? cards : null;
-  } catch {
-    return null;
-  }
-}
-
 function createPracticeState(): GameState {
-  const p1DeckFromBuilder = readPracticeDeckFromStorage("P1");
-  const p1Deck = shuffleCards(p1DeckFromBuilder ?? makeDeck("P1", "P1"));
-  const p2Deck = shuffleCards(makeDeck("P2", "P2"));
-
   return createInitialGameState({
-    p1Deck,
-    p2Deck,
+    p1Deck: shuffleCards(makeDeck("P1", "P1")),
+    p2Deck: shuffleCards(makeDeck("P2", "P2")),
     leaderEnabled: false,
   });
 }
 
-function getDefaultPerspective(state: GameState): PlayerID {
-  if (state.turn.activePlayer === "P1" || state.turn.activePlayer === "P2") {
-    return state.turn.activePlayer;
+function findFirstEmptySlot(state: GameState, playerId: PlayerID): FieldSlot | null {
+  for (const slot of ALL_SLOTS) {
+    if (!state.players[playerId].field[slot].card) return slot;
   }
-  return "P1";
+  return null;
+}
+
+function findCardInHand(state: GameState, playerId: PlayerID, cardId: string): CardRef | undefined {
+  return state.players[playerId].hand.find((card) => card.instanceId === cardId);
 }
 
 function getPendingDeclarationSummary(state: GameState): string | null {
   const top = state.declarationStack[state.declarationStack.length - 1];
   if (!top) return null;
-
-  if (top.kind === "useCharacter") {
-    return `${top.playerId} 캐릭터 등장 선언 대기`;
-  }
-  if (top.kind === "useArea") {
-    return `${top.playerId} 에리어 배치 선언 대기`;
-  }
-  if (top.kind === "useItem") {
-    return `${top.playerId} 아이템 장비 선언 대기`;
-  }
-  if (top.kind === "attack") {
-    return `${top.playerId} 공격 선언 대기`;
-  }
+  if (top.kind === "useCharacter") return `${top.playerId} 캐릭터 등장 선언 대기`;
+  if (top.kind === "attack") return `${top.playerId} 공격 선언 대기`;
+  if (top.kind === "useAbility") return `${top.playerId} 능력 사용 선언 대기`;
+  if (top.kind === "chargeCharacter") return `${top.playerId} 차지 선언 대기`;
   return `${top.playerId} 선언 대기`;
 }
 
-function getFirstEmptySlot(state: GameState, playerId: PlayerID): FieldSlot | null {
-  for (const slot of ALL_SLOTS) {
-    if (!state.players[playerId].field[slot].card) {
-      return slot;
-    }
-  }
-  return null;
-}
-
-function placeCardOnField(
-  next: GameState,
-  playerId: PlayerID,
-  card: CardRef,
-): boolean {
-  const emptySlot = getFirstEmptySlot(next, playerId);
-  if (!emptySlot) {
-    next.logs.push(`[ZONE] ${playerId} 배치 실패: 빈 필드 칸이 없음`);
-    return false;
-  }
-
-  card.location = "field";
-  card.revealed = true;
-  next.players[playerId].field[emptySlot].card = card;
-  return true;
-}
-
-function placeAreaOnField(
-  next: GameState,
-  playerId: PlayerID,
-  slot: FieldSlot,
-  card: CardRef,
-): boolean {
-  const cell = next.players[playerId].field[slot];
-  if (cell.area) {
-    next.logs.push(`[ZONE] ${playerId} 에리어 배치 실패: 해당 칸에 이미 에리어가 있음`);
-    return false;
-  }
-
-  card.location = "field";
-  card.slot = slot;
-  card.revealed = true;
-  cell.area = card;
-  return true;
-}
-
-function attachItemToCharacter(
-  next: GameState,
-  playerId: PlayerID,
-  slot: FieldSlot,
-  card: CardRef,
-): boolean {
-  const cell = next.players[playerId].field[slot];
-  if (!cell.card) {
-    next.logs.push(`[ZONE] ${playerId} 장비 실패: 해당 칸에 캐릭터가 없음`);
-    return false;
-  }
-
-  if (cell.attachedItem) {
-    next.logs.push(`[ZONE] ${playerId} 장비 실패: 해당 캐릭터에는 이미 아이템이 있음`);
-    return false;
-  }
-
-  card.location = "field";
-  card.slot = slot;
-  card.revealed = true;
-  cell.attachedItem = card;
-  return true;
-}
-
-function hasOpenAreaSlot(state: GameState, playerId: PlayerID): boolean {
-  return ALL_SLOTS.some((slot) => !state.players[playerId].field[slot].area);
-}
-
-function hasEquipableCharacterSlot(state: GameState, playerId: PlayerID): boolean {
-  return ALL_SLOTS.some((slot) => {
-    const cell = state.players[playerId].field[slot];
-    return Boolean(cell.card) && !cell.attachedItem;
-  });
-}
-
-function moveCardFromPile(
-  state: GameState,
-  playerId: PlayerID,
-  cardId: string,
-  source: "deck" | "discard",
-  destination: "hand" | "field",
-): GameState {
-  const next = structuredClone(state) as GameState;
-  const player = next.players[playerId];
-  const sourcePile = source === "deck" ? player.deck : player.discard;
-  const index = sourcePile.findIndex((card) => card.instanceId === cardId);
-
-  if (index < 0) {
-    next.logs.push(`[ZONE] 이동 실패: ${playerId} ${source}에서 카드를 찾지 못함 (${cardId})`);
-    return next;
-  }
-
-  const [card] = sourcePile.splice(index, 1);
-  if (!card) {
-    next.logs.push(`[ZONE] 이동 실패: 카드 추출 실패 (${cardId})`);
-    return next;
-  }
-
-  if (destination === "hand") {
-    card.location = "hand";
-    card.revealed = false;
-    player.hand.push(card);
-    next.logs.push(`[ZONE] ${playerId} ${source} → 손패: ${card.name}`);
-    return next;
-  }
-
-  if (!placeCardOnField(next, playerId, card)) {
-    sourcePile.splice(index, 0, card);
-    return next;
-  }
-
-  next.logs.push(`[ZONE] ${playerId} ${source} → 필드: ${card.name}`);
-  return next;
-}
-
-function payHandCosts(next: GameState, playerId: PlayerID, costCardIds: string[], actionCardId?: string) {
-  const player = next.players[playerId];
-  const paidNames: string[] = [];
-
-  for (const costCardId of costCardIds) {
-    if (costCardId === actionCardId) continue;
-    const index = player.hand.findIndex((card) => card.instanceId === costCardId);
-    if (index < 0) continue;
-    const [card] = player.hand.splice(index, 1);
-    if (!card) continue;
-    card.location = "discard";
-    card.revealed = true;
-    player.discard.push(card);
-    paidNames.push(card.name);
-  }
-
-  if (paidNames.length > 0) {
-    next.logs.push(`[COST] ${playerId} 코스트 지불: ${paidNames.join(" / ")}`);
-  }
-}
-
-export default function PracticeBoard() {
+export default function PracticeBoardPage() {
   const [state, setState] = useState<GameState>(() => createPracticeState());
   const [perspective, setPerspective] = useState<PlayerID>("P1");
-  const [placementMode, setPlacementMode] = useState<PlacementMode>(null);
-  const [moveMode, setMoveMode] = useState<{ playerId: PlayerID; cardId: string } | null>(null);
-  const [chargePromptState, setChargePromptState] = useState<{ playerId: PlayerID; cardId: string; deckCount: number; discardCount: number } | null>(null);
-  const [chargeDiscardSelectionState, setChargeDiscardSelectionState] = useState<{ playerId: PlayerID; cardId: string; deckCount: number; discardCount: number; selectedIds: string[] } | null>(null);
-  const initialStateRef = useRef<GameState>(structuredClone(state));
-  const savedWinnerRef = useRef<PlayerID | null>(null);
+  const [selectedHandCardId, setSelectedHandCardId] = useState<string | null>(null);
+  const [selectedFieldSlot, setSelectedFieldSlot] = useState<FieldSlot | null>(null);
 
-  const currentPriority = state.turn.priorityPlayer;
-  const pendingDeclaration = state.declarationStack.length > 0;
+  const opponent = perspective === "P1" ? "P2" : "P1";
+  const currentPriority = state.battle.isActive
+    ? state.battle.priorityPlayer ?? state.turn.priorityPlayer
+    : state.turn.priorityPlayer;
   const pendingSummary = getPendingDeclarationSummary(state);
-  const usingDeckBuilderDeck = useMemo(
-    () => state.players.P1.deck.some((card) => card.cardNo.startsWith("LO-")),
-    [state.players.P1.deck],
-  );
+
+  const battleDefenderCandidate = useMemo(() => {
+    if (!state.battle.isActive || !state.battle.attackerPlayerId || state.battle.defenderCardId) {
+      return null;
+    }
+    const defenderPlayerId = state.battle.defenderPlayerId;
+    const column = state.battle.attackColumn;
+    if (!defenderPlayerId || typeof column !== "number") return null;
+
+    const slot = getMatchingDefenderSlotForColumn(column);
+    const card = state.players[defenderPlayerId].field[slot].card;
+    if (!card || card.isTapped) return null;
+
+    return {
+      playerId: defenderPlayerId,
+      slot,
+      cardId: card.instanceId,
+      name: card.name,
+    };
+  }, [state]);
 
   function dispatch(action: GameAction) {
     setState((prev) => reduceGameState(prev, action));
@@ -392,33 +139,36 @@ export default function PracticeBoard() {
   function resetPractice() {
     const next = createPracticeState();
     setState(next);
-    initialStateRef.current = structuredClone(next);
-    savedWinnerRef.current = null;
-    setPerspective(getDefaultPerspective(next));
-    setPlacementMode(null);
+    setSelectedHandCardId(null);
+    setSelectedFieldSlot(null);
   }
 
-  useEffect(() => {
-    if (!state.winner || savedWinnerRef.current === state.winner) return;
+  function handleHandCardClick(playerId: PlayerID, cardId: string) {
+    setPerspective(playerId);
+    setSelectedFieldSlot(null);
+    setSelectedHandCardId((prev) => (prev === cardId ? null : cardId));
+  }
 
-    const snapshot: ReplaySnapshot = {
-      id: `replay_${Date.now()}`,
-      savedAt: Date.now(),
-      initialState: structuredClone(initialStateRef.current),
-      events: [...state.replayEvents],
-      winner: state.winner,
-    };
-
-    const key = "lycee.replay.snapshots";
-    const prev = localStorage.getItem(key);
-    const parsed = prev ? (JSON.parse(prev) as ReplaySnapshot[]) : [];
-    const next = [snapshot, ...parsed].slice(0, 20);
-    localStorage.setItem(key, JSON.stringify(next));
-    savedWinnerRef.current = state.winner;
-  }, [state]);
+  function handleFieldCellClick(playerId: PlayerID, slot: FieldSlot) {
+    setPerspective(playerId);
+    setSelectedFieldSlot((prev) => (prev === slot ? null : slot));
+    setSelectedHandCardId(null);
+  }
 
   function handleStartGame() {
     dispatch({ type: "START_GAME", firstPlayer: "P1", leaderEnabled: false });
+  }
+
+  function handleStartTurn() {
+    dispatch({ type: "START_TURN" });
+  }
+
+  function handleAdvancePhase() {
+    dispatch({ type: "ADVANCE_PHASE" });
+  }
+
+  function handlePassPriority() {
+    dispatch({ type: "PASS_PRIORITY", playerId: currentPriority });
   }
 
   function handleKeep(playerId: PlayerID) {
@@ -433,589 +183,31 @@ export default function PracticeBoard() {
     dispatch({ type: "FINALIZE_STARTUP" });
   }
 
-  function handleAdvancePhase() {
-    dispatch({ type: "ADVANCE_PHASE" });
-    setPlacementMode(null);
-  }
+  function handleSpawnSelectedHandCard() {
+    if (!selectedHandCardId) return;
+    const playerId = perspective;
+    const card = findCardInHand(state, playerId, selectedHandCardId);
+    if (!card || card.cardType !== "character") return;
+    const emptySlot = findFirstEmptySlot(state, playerId);
+    if (!emptySlot) return;
 
-  function handleStartTurn() {
-    dispatch({ type: "START_TURN" });
-    setPlacementMode(null);
-  }
-
-  function handlePassPriority() {
-    dispatch({ type: "PASS_PRIORITY", playerId: currentPriority });
-    setPlacementMode(null);
-  }
-
-  function handleConcede(playerId: PlayerID) {
-    dispatch({ type: "CONCEDE", playerId });
-  }
-
-  function handleDrawFromDeck(playerId: PlayerID) {
-    setState((prev) => {
-      const next = structuredClone(prev) as GameState;
-      const player = next.players[playerId];
-      const topCard = player.deck.shift();
-
-      if (!topCard) {
-        next.logs.push(`[DECK] ${playerId} 드로우 실패: 덱이 비어 있음`);
-        return next;
-      }
-
-      topCard.location = "hand";
-      topCard.revealed = false;
-      player.hand.push(topCard);
-      next.events.push({
-        type: "DRAW",
-        playerId,
-        cardId: topCard.instanceId,
-        amount: 1,
-      });
-      next.logs.push(`[DECK] ${playerId} 덱 맨 위 1장을 패로 이동: ${topCard.name}`);
-      return next;
+    dispatch({
+      type: "DECLARE_ACTION",
+      playerId,
+      kind: "useCharacter",
+      sourceCardId: selectedHandCardId,
+      targetSlots: [emptySlot],
+      targetingMode: "declareTime",
     });
+    setSelectedHandCardId(null);
   }
 
-  function handleDamageFromDeck(playerId: PlayerID) {
-    setState((prev) => {
-      const next = structuredClone(prev) as GameState;
-      const player = next.players[playerId];
-      const topCard = player.deck.shift();
-
-      if (!topCard) {
-        next.logs.push(`[DECK] ${playerId} 대미지 실패: 덱이 비어 있음`);
-        return next;
-      }
-
-      topCard.location = "discard";
-      topCard.revealed = true;
-      player.discard.push(topCard);
-      next.events.push({
-        type: "MILL",
-        playerId,
-        cardId: topCard.instanceId,
-        amount: 1,
-      });
-      next.logs.push(`[DECK] ${playerId} 덱 맨 위 1장을 쓰레기통으로 이동: ${topCard.name}`);
-      return next;
-    });
-  }
-
-  function handleShuffleDeck(playerId: PlayerID) {
-    setState((prev) => {
-      const next = structuredClone(prev) as GameState;
-      next.players[playerId].deck = shuffleCards(next.players[playerId].deck);
-      next.logs.push(`[DECK] ${playerId} 덱 셔플`);
-      return next;
-    });
-  }
-
-  function handlePrimaryCardAction(
-    playerId: PlayerID,
-    card: CardRef,
-    source: "deck" | "discard",
-    costCardIds: string[] = [],
-  ) {
-    if (card.cardType === "character") {
-      if (pendingDeclaration) return;
-      if (state.turn.priorityPlayer !== playerId) return;
-
-      const firstEmpty = getFirstEmptySlot(state, playerId);
-      if (!firstEmpty) return;
-
-      setPlacementMode({
-        type: "pile_character_to_field",
-        playerId,
-        cardId: card.instanceId,
-        source,
-        costCardIds,
-      });
-      return;
-    }
-
-    if (card.cardType === "area") {
-      if (pendingDeclaration) return;
-      if (state.turn.priorityPlayer !== playerId) return;
-      if (!hasOpenAreaSlot(state, playerId)) return;
-
-      setPlacementMode({
-        type: "pile_area_to_field",
-        playerId,
-        cardId: card.instanceId,
-        source,
-        costCardIds,
-      });
-      return;
-    }
-
-    if (card.cardType === "item") {
-      if (state.turn.priorityPlayer !== playerId) return;
-      if (!hasEquipableCharacterSlot(state, playerId)) return;
-
-      setPlacementMode({
-        type: "pile_item_to_field",
-        playerId,
-        cardId: card.instanceId,
-        source,
-        costCardIds,
-      });
-      return;
-    }
-
-    setState((prev) => {
-      const next = structuredClone(prev) as GameState;
-      const player = next.players[playerId];
-      const sourcePile = source === "deck" ? player.deck : player.discard;
-      const index = sourcePile.findIndex((item) => item.instanceId === card.instanceId);
-
-      if (index < 0) {
-        next.logs.push(`[ZONE] 이동 실패: ${playerId} ${source}에서 카드를 찾지 못함 (${card.instanceId})`);
-        return next;
-      }
-
-      payHandCosts(next, playerId, costCardIds, card.instanceId);
-
-      const [removed] = sourcePile.splice(index, 1);
-      if (!removed) return next;
-
-      removed.location = "discard";
-      removed.revealed = true;
-      player.discard.push(removed);
-      next.logs.push(`[ZONE] ${playerId} ${source} → 사용 후 쓰레기통: ${removed.name}`);
-      return next;
-    });
-  }
-
-  function handleMoveCardToHand(playerId: PlayerID, cardId: string, source: "deck" | "discard") {
-    setState((prev) => moveCardFromPile(prev, playerId, cardId, source, "hand"));
-  }
-
-  function handleRecoverCardsToDeckBottom(playerId: PlayerID, cardIdsInOrder: string[]) {
-    setState((prev) => {
-      const next = structuredClone(prev) as GameState;
-      const player = next.players[playerId];
-      const recoveredNames: string[] = [];
-
-      for (const cardId of cardIdsInOrder) {
-        const index = player.discard.findIndex((card) => card.instanceId === cardId);
-        if (index < 0) continue;
-
-        const [card] = player.discard.splice(index, 1);
-        if (!card) continue;
-
-        card.location = "deck";
-        card.revealed = false;
-        player.deck.push(card);
-        recoveredNames.push(card.name);
-      }
-
-      if (recoveredNames.length === 0) {
-        next.logs.push(`[RECOVERY] ${playerId} 회복 실패: 선택 카드 없음`);
-        return next;
-      }
-
-      next.logs.push(
-        `[RECOVERY] ${playerId} ${recoveredNames.length}장 회복 -> 덱 아래 / 순서: ${recoveredNames.join(" -> ")}`,
-      );
-      return next;
-    });
-  }
-
-  function handleHandPrimaryAction(playerId: PlayerID, card: CardRef, costCardIds: string[]) {
-    if (card.cardType === "character") {
-      if (pendingDeclaration) return;
-      if (state.turn.priorityPlayer !== playerId) return;
-
-      const firstEmpty = getFirstEmptySlot(state, playerId);
-      if (!firstEmpty) return;
-
-      setPlacementMode({
-        type: "hand_character_to_field",
-        playerId,
-        cardId: card.instanceId,
-        costCardIds,
-      });
-      return;
-    }
-
-    if (card.cardType === "area") {
-      if (pendingDeclaration) return;
-      if (state.turn.priorityPlayer !== playerId) return;
-      if (!hasOpenAreaSlot(state, playerId)) return;
-
-      setPlacementMode({
-        type: "hand_area_to_field",
-        playerId,
-        cardId: card.instanceId,
-        costCardIds,
-      });
-      return;
-    }
-
-    if (card.cardType === "item") {
-      if (state.turn.priorityPlayer !== playerId) return;
-      if (!hasEquipableCharacterSlot(state, playerId)) return;
-
-      setPlacementMode({
-        type: "hand_item_to_field",
-        playerId,
-        cardId: card.instanceId,
-        costCardIds,
-      });
-      return;
-    }
-
-    setState((prev) => {
-      const next = structuredClone(prev) as GameState;
-      const player = next.players[playerId];
-      const index = player.hand.findIndex((item) => item.instanceId === card.instanceId);
-
-      if (index < 0) {
-        next.logs.push(`[HAND] ${playerId} 손패 행동 실패: 카드를 찾지 못함 (${card.instanceId})`);
-        return next;
-      }
-
-      payHandCosts(next, playerId, costCardIds, card.instanceId);
-
-      const [removed] = player.hand.splice(index, 1);
-      if (!removed) return next;
-
-      removed.location = "discard";
-      removed.revealed = true;
-      player.discard.push(removed);
-      next.logs.push(`[HAND] ${playerId} 손패 사용 -> 쓰레기통: ${removed.name}`);
-      return next;
-    });
-  }
-
-  function handleHandDeclareAction(playerId: PlayerID, cardId: string) {
-    setState((prev) => {
-      const next = structuredClone(prev) as GameState;
-      const player = next.players[playerId];
-      const index = player.hand.findIndex((card) => card.instanceId === cardId);
-
-      if (index < 0) {
-        next.logs.push(`[HAND_DECLARE] ${playerId} 패 선언 실패: 카드를 찾지 못함 (${cardId})`);
-        return next;
-      }
-
-      const [card] = player.hand.splice(index, 1);
-      if (!card) return next;
-
-      card.location = "discard";
-      card.revealed = true;
-      player.discard.push(card);
-      next.logs.push(`[HAND_DECLARE] ${playerId} 패 선언: ${card.name} -> 먼저 쓰레기통으로 보낸 뒤 해결`);
-      next.events.push({
-        type: "HAND_DECLARE",
-        playerId,
-        cardId: card.instanceId,
-      });
-      return next;
-    });
-  }
-
-  function handleMoveHandCardToDeckTop(playerId: PlayerID, cardId: string) {
-    setState((prev) => {
-      const next = structuredClone(prev) as GameState;
-      const player = next.players[playerId];
-      const index = player.hand.findIndex((card) => card.instanceId === cardId);
-
-      if (index < 0) {
-        next.logs.push(`[HAND] ${playerId} 덱 맨 위 이동 실패: 카드를 찾지 못함 (${cardId})`);
-        return next;
-      }
-
-      const [card] = player.hand.splice(index, 1);
-      if (!card) return next;
-
-      card.location = "deck";
-      card.revealed = false;
-      player.deck.unshift(card);
-      next.logs.push(`[HAND] ${playerId} 손패 -> 덱 맨 위: ${card.name}`);
-      return next;
-    });
-  }
-
-  function handleMoveHandCardToDeckBottom(playerId: PlayerID, cardId: string) {
-    setState((prev) => {
-      const next = structuredClone(prev) as GameState;
-      const player = next.players[playerId];
-      const index = player.hand.findIndex((card) => card.instanceId === cardId);
-
-      if (index < 0) {
-        next.logs.push(`[HAND] ${playerId} 덱 맨 아래 이동 실패: 카드를 찾지 못함 (${cardId})`);
-        return next;
-      }
-
-      const [card] = player.hand.splice(index, 1);
-      if (!card) return next;
-
-      card.location = "deck";
-      card.revealed = false;
-      player.deck.push(card);
-      next.logs.push(`[HAND] ${playerId} 손패 -> 덱 맨 아래: ${card.name}`);
-      return next;
-    });
-  }
-
-
-  function handleFieldCharacterAction(
-    playerId: PlayerID,
-    slot: FieldSlot,
-    actionKind: "attack" | "tap" | "untap" | "charge" | "move",
-  ) {
-    const card = state.players[playerId].field[slot].card;
-
-    if (moveMode?.playerId === playerId) {
-      if (state.players[playerId].field[slot].card) return;
-      dispatch({
-        type: "DECLARE_ACTION",
-        playerId,
-        kind: "moveCharacter",
-        sourceCardId: moveMode.cardId,
-        targetSlots: [slot],
-        targetingMode: "declareTime",
-      });
-      setMoveMode(null);
-      return;
-    }
-
+  function handleAttackSelectedFieldCard() {
+    if (!selectedFieldSlot) return;
+    const playerId = perspective;
+    const card = state.players[playerId].field[selectedFieldSlot].card;
     if (!card) return;
-
-    if (actionKind === "attack") {
-      if (pendingDeclaration) return;
-      if (state.turn.priorityPlayer !== playerId) return;
-
-      setState((prev) => {
-        const next = structuredClone(prev) as GameState;
-        const current = next.players[playerId].field[slot].card;
-        if (current) current.isTapped = true;
-        return reduceGameState(next, {
-          type: "DECLARE_ACTION",
-          playerId,
-          kind: "attack",
-          sourceCardId: card.instanceId,
-        });
-      });
-      return;
-    }
-
-    if (actionKind === "tap" || actionKind === "untap") {
-      dispatch({
-        type: "DECLARE_ACTION",
-        playerId,
-        kind: actionKind === "tap" ? "tapCharacter" : "untapCharacter",
-        sourceCardId: card.instanceId,
-      });
-      return;
-    }
-
-    if (actionKind === "move") {
-      setMoveMode({ playerId, cardId: card.instanceId });
-      return;
-    }
-
-    if (actionKind === "charge") {
-      setChargePromptState({
-        playerId,
-        cardId: card.instanceId,
-        deckCount: 0,
-        discardCount: 0,
-      });
-    }
-  }
-
-  function handleFieldClick(playerId: PlayerID, slot: FieldSlot) {
-    const cell = state.players[playerId].field[slot];
-    const card = cell.card;
-
-    if (placementMode?.type === "hand_character_to_field" && placementMode.playerId === playerId) {
-      if (state.players[playerId].field[slot].card) return;
-
-      setState((prev) => {
-        const next = structuredClone(prev) as GameState;
-        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-        return reduceGameState(next, {
-          type: "DECLARE_ACTION",
-          playerId,
-          kind: "useCharacter",
-          sourceCardId: placementMode.cardId,
-          targetSlots: [slot],
-          targetingMode: "declareTime",
-        });
-      });
-      setPlacementMode(null);
-      return;
-    }
-
-    if (placementMode?.type === "pile_character_to_field" && placementMode.playerId === playerId) {
-      if (state.players[playerId].field[slot].card) return;
-
-      setState((prev) => {
-        const next = structuredClone(prev) as GameState;
-        const player = next.players[playerId];
-        const sourcePile = placementMode.source === "deck" ? player.deck : player.discard;
-        const sourceIndex = sourcePile.findIndex((item) => item.instanceId === placementMode.cardId);
-
-        if (sourceIndex < 0) {
-          next.logs.push(
-            `[PILE_DECLARE] ${playerId} ${placementMode.source} 선언 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
-          );
-          return next;
-        }
-
-        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-
-        const [sourceCard] = sourcePile.splice(sourceIndex, 1);
-        if (!sourceCard) return next;
-
-        sourceCard.location = "hand";
-        sourceCard.revealed = false;
-        player.hand.push(sourceCard);
-
-        next.logs.push(
-          `[PILE_DECLARE] ${playerId} ${placementMode.source} 등장 선언 준비: ${sourceCard.name} / 대상 슬롯 ${slot}`,
-        );
-
-        return reduceGameState(next, {
-          type: "DECLARE_ACTION",
-          playerId,
-          kind: "useCharacter",
-          sourceCardId: placementMode.cardId,
-          targetSlots: [slot],
-          targetingMode: "declareTime",
-        });
-      });
-      setPlacementMode(null);
-      return;
-    }
-
-    if (placementMode?.type === "hand_area_to_field" && placementMode.playerId === playerId) {
-      if (state.players[playerId].field[slot].area) return;
-
-      setState((prev) => {
-        const next = structuredClone(prev) as GameState;
-        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-        return reduceGameState(next, {
-          type: "DECLARE_ACTION",
-          playerId,
-          kind: "useArea",
-          sourceCardId: placementMode.cardId,
-          targetSlots: [slot],
-          targetingMode: "declareTime",
-        });
-      });
-      setPlacementMode(null);
-      return;
-    }
-
-    if (placementMode?.type === "pile_area_to_field" && placementMode.playerId === playerId) {
-      if (state.players[playerId].field[slot].area) return;
-
-      setState((prev) => {
-        const next = structuredClone(prev) as GameState;
-        const player = next.players[playerId];
-        const sourcePile = placementMode.source === "deck" ? player.deck : player.discard;
-        const sourceCard = sourcePile.find((item) => item.instanceId === placementMode.cardId);
-
-        if (!sourceCard) {
-          next.logs.push(
-            `[PILE_DECLARE] ${playerId} ${placementMode.source} 에리어 선언 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
-          );
-          return next;
-        }
-
-        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-
-        next.logs.push(
-          `[PILE_DECLARE] ${playerId} ${placementMode.source} 에리어 배치 선언 준비: ${sourceCard.name} / 대상 슬롯 ${slot}`,
-        );
-
-        return reduceGameState(next, {
-          type: "DECLARE_ACTION",
-          playerId,
-          kind: "useArea",
-          sourceCardId: placementMode.cardId,
-          targetSlots: [slot],
-          targetingMode: "declareTime",
-          payload: {
-            sourceZone: placementMode.source,
-          },
-        });
-      });
-      setPlacementMode(null);
-      return;
-    }
-
-    if (placementMode?.type === "hand_item_to_field" && placementMode.playerId === playerId) {
-      if (!cell.card || cell.attachedItem) return;
-
-      setState((prev) => {
-        const next = structuredClone(prev) as GameState;
-        const player = next.players[playerId];
-        const index = player.hand.findIndex((item) => item.instanceId === placementMode.cardId);
-
-        if (index < 0) {
-          next.logs.push(`[HAND] ${playerId} 손패 장비 실패: 카드를 찾지 못함 (${placementMode.cardId})`);
-          return next;
-        }
-
-        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-
-        const [removed] = player.hand.splice(index, 1);
-        if (!removed) return next;
-
-        if (!attachItemToCharacter(next, playerId, slot, removed)) {
-          player.hand.splice(index, 0, removed);
-          return next;
-        }
-
-        next.logs.push(`[HAND] ${playerId} 손패 장비 -> ${slot}: ${removed.name}`);
-        return next;
-      });
-      setPlacementMode(null);
-      return;
-    }
-
-    if (placementMode?.type === "pile_item_to_field" && placementMode.playerId === playerId) {
-      if (!cell.card || cell.attachedItem) return;
-
-      setState((prev) => {
-        const next = structuredClone(prev) as GameState;
-        const player = next.players[playerId];
-        const sourcePile = placementMode.source === "deck" ? player.deck : player.discard;
-        const sourceIndex = sourcePile.findIndex((item) => item.instanceId === placementMode.cardId);
-
-        if (sourceIndex < 0) {
-          next.logs.push(
-            `[PILE_ITEM] ${playerId} ${placementMode.source} 장비 실패: 카드를 찾지 못함 (${placementMode.cardId})`,
-          );
-          return next;
-        }
-
-        payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-
-        const [removed] = sourcePile.splice(sourceIndex, 1);
-        if (!removed) return next;
-
-        if (!attachItemToCharacter(next, playerId, slot, removed)) {
-          sourcePile.splice(sourceIndex, 0, removed);
-          return next;
-        }
-
-        next.logs.push(`[PILE_ITEM] ${playerId} ${placementMode.source} 장비 -> ${slot}: ${removed.name}`);
-        return next;
-      });
-      setPlacementMode(null);
-      return;
-    }
-
-    if (!card) return;
-    if (pendingDeclaration) return;
-    if (playerId !== perspective) return;
-    if (!slot.startsWith("AF")) return;
+    if (!selectedFieldSlot.startsWith("AF")) return;
 
     dispatch({
       type: "DECLARE_ACTION",
@@ -1023,12 +215,25 @@ export default function PracticeBoard() {
       kind: "attack",
       sourceCardId: card.instanceId,
     });
-    setPlacementMode(null);
+    setSelectedFieldSlot(null);
   }
 
-  const passButtonLabel = pendingDeclaration
-    ? `대응 안 함 / 해결 (${currentPriority})`
-    : `PASS_PRIORITY (${currentPriority})`;
+  function handleChooseDefender() {
+    if (!battleDefenderCandidate) return;
+    dispatch({
+      type: "SET_DEFENDER",
+      playerId: battleDefenderCandidate.playerId,
+      defenderCardId: battleDefenderCandidate.cardId,
+    });
+  }
+
+  function handleDeclineDefender() {
+    if (!battleDefenderCandidate) return;
+    dispatch({
+      type: "SET_DEFENDER",
+      playerId: battleDefenderCandidate.playerId,
+    });
+  }
 
   return (
     <div style={pageStyle}>
@@ -1037,7 +242,7 @@ export default function PracticeBoard() {
           <div>
             <div style={pageTitleStyle}>연습 모드</div>
             <div style={pageSubTitleStyle}>
-              Lycee 대응 흐름 기준: 선언 후에는 상대만 대응 가능, 상대가 대응하지 않으면 즉시 해결
+              PracticeBoard ↔ GameEngine 연결 버전
             </div>
           </div>
 
@@ -1062,10 +267,7 @@ export default function PracticeBoard() {
             ADVANCE_PHASE
           </button>
           <button type="button" style={secondaryButtonStyle} onClick={handlePassPriority}>
-            {passButtonLabel}
-          </button>
-          <button type="button" style={dangerButtonStyle} onClick={() => handleConcede(perspective)}>
-            {perspective} 항복
+            PASS_PRIORITY ({currentPriority})
           </button>
         </div>
 
@@ -1102,216 +304,80 @@ export default function PracticeBoard() {
           >
             P2 시점
           </button>
-          <div style={hintTextStyle}>
-            현재 조작 시점: {perspective} / 손패 클릭 후 행동 선택 / 캐릭터·에리어·아이템은 원하는 필드 칸을 클릭
-          </div>
+          <div style={hintTextStyle}>현재 조작 시점: {perspective}</div>
         </div>
 
-        <div style={noticeStyle}>
-          P1 덱 소스: {usingDeckBuilderDeck ? "덱 편성에서 저장한 현재 덱" : "기본 연습 덱"}
-        </div>
-
-        {placementMode ? (
+        {selectedHandCardId ? (
           <div style={noticeStyle}>
-            선언/배치 대기 중: {placementMode.playerId} / 카드 {placementMode.cardId} / 원하는 필드 칸을 클릭
+            선택한 손패: {selectedHandCardId}
+            <div style={buttonRowStyle}>
+              <button type="button" style={primaryButtonStyle} onClick={handleSpawnSelectedHandCard}>
+                선택 카드 등장 선언
+              </button>
+              <button type="button" style={secondaryButtonStyle} onClick={() => setSelectedHandCardId(null)}>
+                선택 해제
+              </button>
+            </div>
           </div>
         ) : null}
 
-        {moveMode ? (
+        {selectedFieldSlot ? (
           <div style={noticeStyle}>
-            이동 선언 대기 중: {moveMode.playerId} / 카드 {moveMode.cardId} / 이동할 자신의 빈 필드 칸을 클릭
+            선택한 필드 칸: {selectedFieldSlot}
+            <div style={buttonRowStyle}>
+              <button type="button" style={primaryButtonStyle} onClick={handleAttackSelectedFieldCard}>
+                선택 캐릭터 공격 선언
+              </button>
+              <button type="button" style={secondaryButtonStyle} onClick={() => setSelectedFieldSlot(null)}>
+                선택 해제
+              </button>
+            </div>
           </div>
         ) : null}
 
-        {pendingDeclaration ? (
+        {state.battle.isActive ? (
+          <div style={battleNoticeStyle}>
+            <div style={battleTitleStyle}>배틀 중 상태</div>
+            <div>attacker: {state.battle.attackerCardId ?? "-"}</div>
+            <div>defender: {state.battle.defenderCardId ?? "없음"}</div>
+            <div>priority: {state.battle.priorityPlayer ?? "-"}</div>
+
+            {battleDefenderCandidate ? (
+              <div style={{ marginTop: 10 }}>
+                <div style={{ marginBottom: 8 }}>
+                  {battleDefenderCandidate.playerId}는 {battleDefenderCandidate.slot}의 {battleDefenderCandidate.name}로 방어할 수 있습니다.
+                </div>
+                <div style={buttonRowStyle}>
+                  <button type="button" style={primaryButtonStyle} onClick={handleChooseDefender}>
+                    방어 선택
+                  </button>
+                  <button type="button" style={secondaryButtonStyle} onClick={handleDeclineDefender}>
+                    방어 안 함
+                  </button>
+                </div>
+              </div>
+            ) : null}
+          </div>
+        ) : null}
+
+        {pendingSummary ? (
           <div style={noticeStyle}>
             선언 스택 존재: {pendingSummary}
-            <br />
-            현재 우선권 플레이어인 <strong>{currentPriority}</strong>만 대응할 수 있어. 대응이 없으면
-            <strong> {passButtonLabel}</strong> 버튼으로 즉시 해결돼.
           </div>
         ) : null}
 
         <PracticeBoardView
           state={state}
           perspective={perspective}
-          onHandPrimaryAction={handleHandPrimaryAction}
-          onHandDeclareAction={handleHandDeclareAction}
-          onMoveHandCardToDeckTop={handleMoveHandCardToDeckTop}
-          onMoveHandCardToDeckBottom={handleMoveHandCardToDeckBottom}
-          onFieldClick={handleFieldClick}
-          onDrawFromDeck={handleDrawFromDeck}
-          onDamageFromDeck={handleDamageFromDeck}
-          onShuffleDeck={handleShuffleDeck}
-          onPrimaryCardAction={handlePrimaryCardAction}
-          onMoveCardToHand={handleMoveCardToHand}
-          onRecoverCardsToDeckBottom={handleRecoverCardsToDeckBottom}
-          onFieldCharacterAction={handleFieldCharacterAction}
+          selectedHandCardId={selectedHandCardId}
+          selectedFieldSlot={selectedFieldSlot}
+          onHandCardClick={handleHandCardClick}
+          onFieldCellClick={handleFieldCellClick}
         />
-
-
-        {chargePromptState ? (
-          <div style={noticeStyle}>
-            어느 곳에서 차지하시겠습니까?
-            <div style={{ display: "flex", gap: 12, alignItems: "center", marginTop: 8, flexWrap: "wrap" }}>
-              <span>덱</span>
-              <button
-                type="button"
-                style={secondaryButtonStyle}
-                onClick={() =>
-                  setChargePromptState((prev) =>
-                    prev ? { ...prev, deckCount: Math.max(0, prev.deckCount - 1) } : prev,
-                  )
-                }
-              >
-                -
-              </button>
-              <span>{chargePromptState.deckCount}</span>
-              <button
-                type="button"
-                style={secondaryButtonStyle}
-                onClick={() =>
-                  setChargePromptState((prev) =>
-                    prev ? { ...prev, deckCount: prev.deckCount + 1 } : prev,
-                  )
-                }
-              >
-                +
-              </button>
-              <span>쓰레기통</span>
-              <button
-                type="button"
-                style={secondaryButtonStyle}
-                onClick={() =>
-                  setChargePromptState((prev) =>
-                    prev ? { ...prev, discardCount: Math.max(0, prev.discardCount - 1) } : prev,
-                  )
-                }
-              >
-                -
-              </button>
-              <span>{chargePromptState.discardCount}</span>
-              <button
-                type="button"
-                style={secondaryButtonStyle}
-                onClick={() =>
-                  setChargePromptState((prev) =>
-                    prev ? { ...prev, discardCount: prev.discardCount + 1 } : prev,
-                  )
-                }
-              >
-                +
-              </button>
-            </div>
-            <div style={{ display: "flex", justifyContent: "flex-end", gap: 10, marginTop: 10 }}>
-              <button
-                type="button"
-                style={primaryButtonStyle}
-                onClick={() => {
-                  if (chargePromptState.discardCount > 0) {
-                    setChargeDiscardSelectionState({
-                      playerId: chargePromptState.playerId,
-                      cardId: chargePromptState.cardId,
-                      deckCount: chargePromptState.deckCount,
-                      discardCount: chargePromptState.discardCount,
-                      selectedIds: [],
-                    });
-                    setChargePromptState(null);
-                    return;
-                  }
-
-                  dispatch({
-                    type: "DECLARE_ACTION",
-                    playerId: chargePromptState.playerId,
-                    kind: "chargeCharacter",
-                    sourceCardId: chargePromptState.cardId,
-                    payload: {
-                      deckCount: chargePromptState.deckCount,
-                      discardCardIds: [],
-                    },
-                  });
-                  setChargePromptState(null);
-                }}
-              >
-                확인
-              </button>
-              <button type="button" style={secondaryButtonStyle} onClick={() => setChargePromptState(null)}>
-                취소
-              </button>
-            </div>
-          </div>
-        ) : null}
-
-        {chargeDiscardSelectionState ? (
-          <div style={noticeStyle}>
-            차지할 카드를 n장 골라주세요
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: 10, marginTop: 10 }}>
-              {state.players[chargeDiscardSelectionState.playerId].discard.map((discardCard) => {
-                const selected = chargeDiscardSelectionState.selectedIds.includes(discardCard.instanceId);
-                return (
-                  <button
-                    key={discardCard.instanceId}
-                    type="button"
-                    style={{
-                      ...secondaryButtonStyle,
-                      background: selected ? "#4a7cff" : "#24324a",
-                    }}
-                    onClick={() =>
-                      setChargeDiscardSelectionState((prev) => {
-                        if (!prev) return prev;
-                        const exists = prev.selectedIds.includes(discardCard.instanceId);
-                        if (exists) {
-                          return {
-                            ...prev,
-                            selectedIds: prev.selectedIds.filter((id) => id !== discardCard.instanceId),
-                          };
-                        }
-                        if (prev.selectedIds.length >= prev.discardCount) return prev;
-                        return {
-                          ...prev,
-                          selectedIds: [...prev.selectedIds, discardCard.instanceId],
-                        };
-                      })
-                    }
-                  >
-                    {discardCard.name}
-                  </button>
-                );
-              })}
-            </div>
-            <div style={{ display: "flex", justifyContent: "flex-end", gap: 10, marginTop: 10 }}>
-              <button
-                type="button"
-                style={primaryButtonStyle}
-                onClick={() => {
-                  if (!chargeDiscardSelectionState) return;
-                  if (chargeDiscardSelectionState.selectedIds.length !== chargeDiscardSelectionState.discardCount) return;
-
-                  dispatch({
-                    type: "DECLARE_ACTION",
-                    playerId: chargeDiscardSelectionState.playerId,
-                    kind: "chargeCharacter",
-                    sourceCardId: chargeDiscardSelectionState.cardId,
-                    payload: {
-                      deckCount: chargeDiscardSelectionState.deckCount,
-                      discardCardIds: chargeDiscardSelectionState.selectedIds,
-                    },
-                  });
-                  setChargeDiscardSelectionState(null);
-                }}
-              >
-                확인
-              </button>
-              <button type="button" style={secondaryButtonStyle} onClick={() => setChargeDiscardSelectionState(null)}>
-                취소
-              </button>
-            </div>
-          </div>
-        ) : null}
 
         <div style={logGridStyle}>
           <div style={panelStyle}>
-            <div style={sectionTitleStyle}>최근 로그</div>
+            <div style={panelTitleStyle}>최근 로그</div>
             <div style={logListStyle}>
               {[...state.logs].reverse().map((log, index) => (
                 <div key={`${log}-${index}`} style={logItemStyle}>
@@ -1322,17 +388,13 @@ export default function PracticeBoard() {
           </div>
 
           <div style={panelStyle}>
-            <div style={sectionTitleStyle}>최근 이벤트</div>
+            <div style={panelTitleStyle}>최근 이벤트</div>
             <div style={logListStyle}>
               {[...state.events].reverse().map((event, index) => (
-                <div
-                  key={`${event.type}-${event.cardId ?? "none"}-${index}`}
-                  style={logItemStyle}
-                >
+                <div key={`${event.type}-${event.cardId ?? "none"}-${index}`} style={logItemStyle}>
                   {event.type}
                   {event.playerId ? ` / ${event.playerId}` : ""}
                   {event.cardId ? ` / ${event.cardId}` : ""}
-                  {typeof event.amount === "number" ? ` / ${event.amount}` : ""}
                 </div>
               ))}
             </div>
@@ -1395,11 +457,11 @@ const panelStyle: CSSProperties = {
   border: "1px solid #2a3850",
   borderRadius: 12,
   padding: 16,
-  marginBottom: 16,
+  marginTop: 16,
 };
 
-const sectionTitleStyle: CSSProperties = {
-  fontSize: 20,
+const panelTitleStyle: CSSProperties = {
+  fontSize: 18,
   fontWeight: 700,
   marginBottom: 10,
 };
@@ -1424,16 +486,6 @@ const secondaryButtonStyle: CSSProperties = {
   fontWeight: 600,
 };
 
-const dangerButtonStyle: CSSProperties = {
-  background: "#7a2434",
-  color: "#ffffff",
-  border: "1px solid #a04a5b",
-  borderRadius: 10,
-  padding: "10px 14px",
-  cursor: "pointer",
-  fontWeight: 700,
-};
-
 const linkButtonStyle: CSSProperties = {
   ...secondaryButtonStyle,
   textDecoration: "none",
@@ -1450,15 +502,38 @@ const noticeStyle: CSSProperties = {
   lineHeight: 1.5,
 };
 
+const battleNoticeStyle: CSSProperties = {
+  background: "#3b1d1d",
+  border: "1px solid #f87171",
+  borderRadius: 10,
+  padding: 12,
+  marginBottom: 16,
+  lineHeight: 1.6,
+};
+
+const battleTitleStyle: CSSProperties = {
+  fontSize: 17,
+  fontWeight: 800,
+  marginBottom: 8,
+};
+
 const hintTextStyle: CSSProperties = {
   alignSelf: "center",
   color: "#b9c3d6",
+};
+
+const buttonRowStyle: CSSProperties = {
+  display: "flex",
+  gap: 10,
+  flexWrap: "wrap",
+  marginTop: 10,
 };
 
 const logGridStyle: CSSProperties = {
   display: "grid",
   gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
   gap: 16,
+  marginTop: 16,
 };
 
 const logListStyle: CSSProperties = {
