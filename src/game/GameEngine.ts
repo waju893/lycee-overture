@@ -311,6 +311,77 @@ function fieldHasSameName(state: GameState, playerId: PlayerID, sameNameKey?: st
   return slots.some((slot) => state.players[playerId].field[slot].card?.sameNameKey === sameNameKey);
 }
 
+
+function resolveUseEvent(state: GameState, declaration: any): void {
+  const playerId = declaration.playerId as PlayerID;
+  const card = removeCardFromHand(state, playerId, declaration.sourceCardId);
+  if (!card) return;
+  card.location = 'discard';
+  card.revealed = true;
+  state.players[playerId].discard.push(card);
+  pushEngineEvent(state, {
+    type: 'EVENT_USED',
+    playerId,
+    cardId: card.instanceId,
+    cause: makeRuleCause(playerId, 'eventDeclarationResolved'),
+    operation: { kind: 'moveToDiscard', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'discard' },
+  });
+  appendLog(state, '이벤트 사용 선언 해결');
+}
+
+function resolveUseArea(state: GameState, declaration: any): void {
+  const playerId = declaration.playerId as PlayerID;
+  const slot = declaration.targetSlots?.[0] as FieldSlot | undefined;
+  const card = removeCardFromHand(state, playerId, declaration.sourceCardId);
+  if (!card || !slot) return;
+  const cell = state.players[playerId].field[slot] as any;
+  if (cell.area) {
+    state.players[playerId].hand.push(card);
+    appendLog(state, 'AREA_ALREADY_EXISTS');
+    return;
+  }
+  card.location = 'field';
+  card.revealed = true;
+  cell.area = card;
+  pushEngineEvent(state, {
+    type: 'AREA_ENTERED_FIELD',
+    playerId,
+    cardId: card.instanceId,
+    cause: makeRuleCause(playerId, 'areaDeclarationResolved'),
+    operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
+  });
+  appendLog(state, '에리어 배치 선언 해결');
+}
+
+function resolveUseItem(state: GameState, declaration: any): void {
+  const playerId = declaration.playerId as PlayerID;
+  const slot = declaration.targetSlots?.[0] as FieldSlot | undefined;
+  const card = removeCardFromHand(state, playerId, declaration.sourceCardId);
+  if (!card || !slot) return;
+  const cell = state.players[playerId].field[slot] as any;
+  if (!cell.card) {
+    state.players[playerId].hand.push(card);
+    appendLog(state, 'ITEM_TARGET_MISSING');
+    return;
+  }
+  if (cell.attachedItem) {
+    state.players[playerId].hand.push(card);
+    appendLog(state, 'ITEM_ALREADY_ATTACHED');
+    return;
+  }
+  card.location = 'field';
+  card.revealed = true;
+  cell.attachedItem = card;
+  pushEngineEvent(state, {
+    type: 'ITEM_ATTACHED',
+    playerId,
+    cardId: card.instanceId,
+    cause: makeRuleCause(playerId, 'itemDeclarationResolved'),
+    operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
+  });
+  appendLog(state, '장비 선언 해결');
+}
+
 function resolveUseCharacter(state: GameState, declaration: any): void {
   const slot = declaration.targetSlots?.[0] as FieldSlot | undefined;
   const playerId = declaration.playerId as PlayerID;
@@ -407,6 +478,15 @@ function resolveLatestLegacyDeclaration(state: GameState): void {
     case 'useCharacter':
       resolveUseCharacter(state, declaration);
       break;
+    case 'useEvent':
+      resolveUseEvent(state, declaration);
+      break;
+    case 'useArea':
+      resolveUseArea(state, declaration);
+      break;
+    case 'useItem':
+      resolveUseItem(state, declaration);
+      break;
     case 'useAbility':
       resolveUseAbility(state, declaration);
       break;
@@ -456,6 +536,32 @@ function validateDeclareAction(state: GameState, action: Extract<GameAction, { t
     if (!slot) return 'TARGET_SLOT_MISSING';
     if (state.players[action.playerId].field[slot].card) return 'FIELD_OCCUPIED';
     if (fieldHasSameName(state, action.playerId, card.sameNameKey)) return 'SAME_NAME_ON_FIELD';
+    return null;
+  }
+
+  if (action.kind === 'useEvent') {
+    const card = findCardInHand(state, action.playerId, action.sourceCardId ?? '');
+    if (!card) return 'CARD_NOT_FOUND';
+    return null;
+  }
+
+  if (action.kind === 'useArea') {
+    const card = findCardInHand(state, action.playerId, action.sourceCardId ?? '');
+    if (!card) return 'CARD_NOT_FOUND';
+    const slot = action.targetSlots?.[0];
+    if (!slot) return 'TARGET_SLOT_MISSING';
+    if ((state.players[action.playerId].field[slot] as any).area) return 'AREA_ALREADY_EXISTS';
+    return null;
+  }
+
+  if (action.kind === 'useItem') {
+    const card = findCardInHand(state, action.playerId, action.sourceCardId ?? '');
+    if (!card) return 'CARD_NOT_FOUND';
+    const slot = action.targetSlots?.[0];
+    if (!slot) return 'TARGET_SLOT_MISSING';
+    const cell = state.players[action.playerId].field[slot] as any;
+    if (!cell.card) return 'ITEM_TARGET_MISSING';
+    if (cell.attachedItem) return 'ITEM_ALREADY_ATTACHED';
     return null;
   }
 
@@ -592,12 +698,12 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         hand: [...state.players.P1.hand],
         discard: [...state.players.P1.discard],
         field: {
-          AF_LEFT: { card: state.players.P1.field.AF_LEFT.card ? { ...state.players.P1.field.AF_LEFT.card } : null },
-          AF_CENTER: { card: state.players.P1.field.AF_CENTER.card ? { ...state.players.P1.field.AF_CENTER.card } : null },
-          AF_RIGHT: { card: state.players.P1.field.AF_RIGHT.card ? { ...state.players.P1.field.AF_RIGHT.card } : null },
-          DF_LEFT: { card: state.players.P1.field.DF_LEFT.card ? { ...state.players.P1.field.DF_LEFT.card } : null },
-          DF_CENTER: { card: state.players.P1.field.DF_CENTER.card ? { ...state.players.P1.field.DF_CENTER.card } : null },
-          DF_RIGHT: { card: state.players.P1.field.DF_RIGHT.card ? { ...state.players.P1.field.DF_RIGHT.card } : null },
+          AF_LEFT: { ...state.players.P1.field.AF_LEFT, card: state.players.P1.field.AF_LEFT.card ? { ...state.players.P1.field.AF_LEFT.card } : null, area: (state.players.P1.field.AF_LEFT as any).area ? { ...(state.players.P1.field.AF_LEFT as any).area } : null, attachedItem: (state.players.P1.field.AF_LEFT as any).attachedItem ? { ...(state.players.P1.field.AF_LEFT as any).attachedItem } : null },
+          AF_CENTER: { ...state.players.P1.field.AF_CENTER, card: state.players.P1.field.AF_CENTER.card ? { ...state.players.P1.field.AF_CENTER.card } : null, area: (state.players.P1.field.AF_CENTER as any).area ? { ...(state.players.P1.field.AF_CENTER as any).area } : null, attachedItem: (state.players.P1.field.AF_CENTER as any).attachedItem ? { ...(state.players.P1.field.AF_CENTER as any).attachedItem } : null },
+          AF_RIGHT: { ...state.players.P1.field.AF_RIGHT, card: state.players.P1.field.AF_RIGHT.card ? { ...state.players.P1.field.AF_RIGHT.card } : null, area: (state.players.P1.field.AF_RIGHT as any).area ? { ...(state.players.P1.field.AF_RIGHT as any).area } : null, attachedItem: (state.players.P1.field.AF_RIGHT as any).attachedItem ? { ...(state.players.P1.field.AF_RIGHT as any).attachedItem } : null },
+          DF_LEFT: { ...state.players.P1.field.DF_LEFT, card: state.players.P1.field.DF_LEFT.card ? { ...state.players.P1.field.DF_LEFT.card } : null, area: (state.players.P1.field.DF_LEFT as any).area ? { ...(state.players.P1.field.DF_LEFT as any).area } : null, attachedItem: (state.players.P1.field.DF_LEFT as any).attachedItem ? { ...(state.players.P1.field.DF_LEFT as any).attachedItem } : null },
+          DF_CENTER: { ...state.players.P1.field.DF_CENTER, card: state.players.P1.field.DF_CENTER.card ? { ...state.players.P1.field.DF_CENTER.card } : null, area: (state.players.P1.field.DF_CENTER as any).area ? { ...(state.players.P1.field.DF_CENTER as any).area } : null, attachedItem: (state.players.P1.field.DF_CENTER as any).attachedItem ? { ...(state.players.P1.field.DF_CENTER as any).attachedItem } : null },
+          DF_RIGHT: { ...state.players.P1.field.DF_RIGHT, card: state.players.P1.field.DF_RIGHT.card ? { ...state.players.P1.field.DF_RIGHT.card } : null, area: (state.players.P1.field.DF_RIGHT as any).area ? { ...(state.players.P1.field.DF_RIGHT as any).area } : null, attachedItem: (state.players.P1.field.DF_RIGHT as any).attachedItem ? { ...(state.players.P1.field.DF_RIGHT as any).attachedItem } : null },
         },
       },
       P2: {
@@ -606,12 +712,12 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         hand: [...state.players.P2.hand],
         discard: [...state.players.P2.discard],
         field: {
-          AF_LEFT: { card: state.players.P2.field.AF_LEFT.card ? { ...state.players.P2.field.AF_LEFT.card } : null },
-          AF_CENTER: { card: state.players.P2.field.AF_CENTER.card ? { ...state.players.P2.field.AF_CENTER.card } : null },
-          AF_RIGHT: { card: state.players.P2.field.AF_RIGHT.card ? { ...state.players.P2.field.AF_RIGHT.card } : null },
-          DF_LEFT: { card: state.players.P2.field.DF_LEFT.card ? { ...state.players.P2.field.DF_LEFT.card } : null },
-          DF_CENTER: { card: state.players.P2.field.DF_CENTER.card ? { ...state.players.P2.field.DF_CENTER.card } : null },
-          DF_RIGHT: { card: state.players.P2.field.DF_RIGHT.card ? { ...state.players.P2.field.DF_RIGHT.card } : null },
+          AF_LEFT: { ...state.players.P2.field.AF_LEFT, card: state.players.P2.field.AF_LEFT.card ? { ...state.players.P2.field.AF_LEFT.card } : null, area: (state.players.P2.field.AF_LEFT as any).area ? { ...(state.players.P2.field.AF_LEFT as any).area } : null, attachedItem: (state.players.P2.field.AF_LEFT as any).attachedItem ? { ...(state.players.P2.field.AF_LEFT as any).attachedItem } : null },
+          AF_CENTER: { ...state.players.P2.field.AF_CENTER, card: state.players.P2.field.AF_CENTER.card ? { ...state.players.P2.field.AF_CENTER.card } : null, area: (state.players.P2.field.AF_CENTER as any).area ? { ...(state.players.P2.field.AF_CENTER as any).area } : null, attachedItem: (state.players.P2.field.AF_CENTER as any).attachedItem ? { ...(state.players.P2.field.AF_CENTER as any).attachedItem } : null },
+          AF_RIGHT: { ...state.players.P2.field.AF_RIGHT, card: state.players.P2.field.AF_RIGHT.card ? { ...state.players.P2.field.AF_RIGHT.card } : null, area: (state.players.P2.field.AF_RIGHT as any).area ? { ...(state.players.P2.field.AF_RIGHT as any).area } : null, attachedItem: (state.players.P2.field.AF_RIGHT as any).attachedItem ? { ...(state.players.P2.field.AF_RIGHT as any).attachedItem } : null },
+          DF_LEFT: { ...state.players.P2.field.DF_LEFT, card: state.players.P2.field.DF_LEFT.card ? { ...state.players.P2.field.DF_LEFT.card } : null, area: (state.players.P2.field.DF_LEFT as any).area ? { ...(state.players.P2.field.DF_LEFT as any).area } : null, attachedItem: (state.players.P2.field.DF_LEFT as any).attachedItem ? { ...(state.players.P2.field.DF_LEFT as any).attachedItem } : null },
+          DF_CENTER: { ...state.players.P2.field.DF_CENTER, card: state.players.P2.field.DF_CENTER.card ? { ...state.players.P2.field.DF_CENTER.card } : null, area: (state.players.P2.field.DF_CENTER as any).area ? { ...(state.players.P2.field.DF_CENTER as any).area } : null, attachedItem: (state.players.P2.field.DF_CENTER as any).attachedItem ? { ...(state.players.P2.field.DF_CENTER as any).attachedItem } : null },
+          DF_RIGHT: { ...state.players.P2.field.DF_RIGHT, card: state.players.P2.field.DF_RIGHT.card ? { ...state.players.P2.field.DF_RIGHT.card } : null, area: (state.players.P2.field.DF_RIGHT as any).area ? { ...(state.players.P2.field.DF_RIGHT as any).area } : null, attachedItem: (state.players.P2.field.DF_RIGHT as any).attachedItem ? { ...(state.players.P2.field.DF_RIGHT as any).attachedItem } : null },
         },
       },
     },
@@ -710,6 +816,9 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       }
 
       if (action.kind === 'useCharacter') appendLog(next, '등장 선언');
+      if (action.kind === 'useEvent') appendLog(next, '이벤트 사용 선언');
+      if (action.kind === 'useArea') appendLog(next, '에리어 배치 선언');
+      if (action.kind === 'useItem') appendLog(next, '장비 선언');
       if (action.kind === 'useAbility') appendLog(next, '능력 사용 선언');
       if (action.kind === 'chargeCharacter') appendLog(next, '차지 선언');
       return next;

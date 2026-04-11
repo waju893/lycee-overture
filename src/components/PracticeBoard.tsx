@@ -1,100 +1,249 @@
 import { type CSSProperties } from "react";
 import type { CardRef, FieldSlot, GameState, PlayerID } from "../game/GameTypes";
+import { CARD_META_BY_CODE } from "../lib/cards";
 
 const FIELD_ROWS: FieldSlot[][] = [
   ["DF_LEFT", "DF_CENTER", "DF_RIGHT"],
   ["AF_LEFT", "AF_CENTER", "AF_RIGHT"],
 ];
 
-function getCardStats(card: CardRef): string {
+function cardStats(card: CardRef): string {
   const ap = card.ap ?? card.power ?? 0;
   const dp = card.dp ?? card.hp ?? 0;
   const dmg = card.dmg ?? card.damage ?? 0;
   return `AP ${ap} / DP ${dp} / DMG ${dmg}`;
 }
 
-function CardButton({
+function getMeta(card: CardRef) {
+  return CARD_META_BY_CODE[String(card.cardNo ?? "").trim().toUpperCase()];
+}
+
+function HandCardButton({
+  playerId,
   card,
-  selected,
-  onClick,
+  onUse,
+  onDeclare,
+  onDeckTop,
+  onDeckBottom,
 }: {
+  playerId: PlayerID;
   card: CardRef;
-  selected: boolean;
-  onClick: () => void;
+  onUse: (playerId: PlayerID, card: CardRef, costCardIds: string[]) => void;
+  onDeclare: (playerId: PlayerID, cardId: string) => void;
+  onDeckTop: (playerId: PlayerID, cardId: string) => void;
+  onDeckBottom: (playerId: PlayerID, cardId: string) => void;
 }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      style={{
-        ...cardButtonStyle,
-        borderColor: selected ? "#60a5fa" : "#334155",
-        background: selected ? "#1e3a5f" : "#0f172a",
-      }}
-    >
-      <div style={cardNameStyle}>{card.name}</div>
+    <div style={cardBoxStyle}>
+      <div style={cardTitleStyle}>{card.name}</div>
       <div style={cardMetaStyle}>{card.cardNo}</div>
-      <div style={cardMetaStyle}>{getCardStats(card)}</div>
-      {card.isTapped ? <div style={downBadgeStyle}>DOWN</div> : null}
-    </button>
+      <div style={cardMetaStyle}>{card.cardType}</div>
+      <div style={cardMetaStyle}>{cardStats(card)}</div>
+      {getMeta(card)?.cost ? <div style={cardMetaStyle}>cost {String(getMeta(card)?.cost)}</div> : null}
+      {typeof getMeta(card)?.ex === "number" ? <div style={cardMetaStyle}>ex {String(getMeta(card)?.ex ?? 0)}</div> : null}
+      {(getMeta(card)?.attributesList ?? []).length > 0 ? (
+        <div style={cardMetaStyle}>attr {(getMeta(card)?.attributesList ?? []).join(", ")}</div>
+      ) : null}
+      {String(getMeta(card)?.useTarget ?? "").trim() ? (
+        <div style={cardMetaStyle}>useTarget {String(getMeta(card)?.useTarget ?? "")}</div>
+      ) : null}
+      <div style={buttonWrapStyle}>
+        <button type="button" style={smallPrimaryStyle} onClick={() => onUse(playerId, card, [])}>
+          사용/등장
+        </button>
+        <button type="button" style={smallSecondaryStyle} onClick={() => onDeclare(playerId, card.instanceId)}>
+          패 선언
+        </button>
+        <button type="button" style={smallSecondaryStyle} onClick={() => onDeckTop(playerId, card.instanceId)}>
+          덱 위
+        </button>
+        <button type="button" style={smallSecondaryStyle} onClick={() => onDeckBottom(playerId, card.instanceId)}>
+          덱 아래
+        </button>
+      </div>
+    </div>
   );
 }
 
-function FieldCellButton({
+function FieldCell({
+  playerId,
   slot,
-  card,
-  selected,
+  state,
   onClick,
+  onFieldCharacterAction,
 }: {
+  playerId: PlayerID;
   slot: FieldSlot;
-  card: CardRef | null;
-  selected: boolean;
-  onClick: () => void;
+  state: GameState;
+  onClick: (playerId: PlayerID, slot: FieldSlot) => void;
+  onFieldCharacterAction: (
+    playerId: PlayerID,
+    slot: FieldSlot,
+    actionKind: "attack" | "tap" | "untap" | "charge" | "move",
+  ) => void;
 }) {
+  const cell = state.players[playerId].field[slot] as {
+    card: CardRef | null;
+    area?: CardRef | null;
+    attachedItem?: CardRef | null;
+  };
+  const card = cell.card;
+
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      style={{
-        ...fieldCellStyle,
-        borderColor: selected ? "#60a5fa" : "#334155",
-      }}
-    >
-      <div style={slotLabelStyle}>{slot}</div>
+    <div style={fieldCellStyle}>
+      <button type="button" style={slotHeaderButtonStyle} onClick={() => onClick(playerId, slot)}>
+        {slot}
+      </button>
+
       {card ? (
         <>
-          <div style={cardNameStyle}>{card.name}</div>
-          <div style={cardMetaStyle}>{getCardStats(card)}</div>
-          {card.isTapped ? <div style={downBadgeStyle}>DOWN</div> : null}
+          <div style={cardTitleStyle}>{card.name}</div>
+          <div style={cardMetaStyle}>{cardStats(card)}</div>
+          <div style={cardMetaStyle}>{card.isTapped ? "DOWN" : "READY"}</div>
+          <div style={buttonWrapStyle}>
+            <button
+              type="button"
+              style={smallPrimaryStyle}
+              onClick={() => onFieldCharacterAction(playerId, slot, "attack")}
+            >
+              공격
+            </button>
+            <button
+              type="button"
+              style={smallSecondaryStyle}
+              onClick={() => onFieldCharacterAction(playerId, slot, "tap")}
+            >
+              탭
+            </button>
+            <button
+              type="button"
+              style={smallSecondaryStyle}
+              onClick={() => onFieldCharacterAction(playerId, slot, "untap")}
+            >
+              언탭
+            </button>
+            <button
+              type="button"
+              style={smallSecondaryStyle}
+              onClick={() => onFieldCharacterAction(playerId, slot, "move")}
+            >
+              이동
+            </button>
+            <button
+              type="button"
+              style={smallSecondaryStyle}
+              onClick={() => onFieldCharacterAction(playerId, slot, "charge")}
+            >
+              차지
+            </button>
+          </div>
         </>
       ) : (
-        <div style={emptyTextStyle}>비어 있음</div>
+        <div style={emptyTextStyle}>빈 칸 (클릭해서 배치)</div>
       )}
-    </button>
+
+      {cell.area ? <div style={attachmentTextStyle}>에리어: {cell.area.name}</div> : null}
+      {cell.attachedItem ? <div style={attachmentTextStyle}>아이템: {cell.attachedItem.name}</div> : null}
+    </div>
   );
 }
 
-function PlayerSection({
+function ZoneCardGrid({
+  title,
+  cards,
+  playerId,
+  source,
+  onPrimaryCardAction,
+  onMoveCardToHand,
+}: {
+  title: string;
+  cards: CardRef[];
+  playerId: PlayerID;
+  source: "deck" | "discard";
+  onPrimaryCardAction: (
+    playerId: PlayerID,
+    card: CardRef,
+    source: "deck" | "discard",
+    costCardIds: string[],
+  ) => void;
+  onMoveCardToHand: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
+}) {
+  return (
+    <div style={zonePanelStyle}>
+      <div style={subTitleStyle}>{title}</div>
+      <div style={zoneCountStyle}>{cards.length}장</div>
+      <div style={miniGridStyle}>
+        {cards.slice(0, 10).map((card) => (
+          <div key={card.instanceId} style={miniCardStyle}>
+            <div style={miniCardTitleStyle}>{card.name}</div>
+            <div style={buttonWrapStyle}>
+              <button
+                type="button"
+                style={smallPrimaryStyle}
+                onClick={() => onPrimaryCardAction(playerId, card, source, [])}
+              >
+                사용/배치
+              </button>
+              <button
+                type="button"
+                style={smallSecondaryStyle}
+                onClick={() => onMoveCardToHand(playerId, card.instanceId, source)}
+              >
+                손패
+              </button>
+            </div>
+          </div>
+        ))}
+        {cards.length === 0 ? <div style={emptyTextStyle}>없음</div> : null}
+      </div>
+    </div>
+  );
+}
+
+function PlayerPane({
   label,
   playerId,
   state,
-  selectedHandCardId,
-  selectedFieldSlot,
-  onHandCardClick,
-  onFieldCellClick,
+  onHandPrimaryAction,
+  onHandDeclareAction,
+  onMoveHandCardToDeckTop,
+  onMoveHandCardToDeckBottom,
+  onFieldClick,
+  onDrawFromDeck,
+  onDamageFromDeck,
+  onShuffleDeck,
+  onPrimaryCardAction,
+  onMoveCardToHand,
+  onFieldCharacterAction,
 }: {
   label: string;
   playerId: PlayerID;
   state: GameState;
-  selectedHandCardId: string | null;
-  selectedFieldSlot: FieldSlot | null;
-  onHandCardClick: (cardId: string) => void;
-  onFieldCellClick: (slot: FieldSlot) => void;
+  onHandPrimaryAction: (playerId: PlayerID, card: CardRef, costCardIds: string[]) => void;
+  onHandDeclareAction: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckTop: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckBottom: (playerId: PlayerID, cardId: string) => void;
+  onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
+  onDrawFromDeck: (playerId: PlayerID) => void;
+  onDamageFromDeck: (playerId: PlayerID) => void;
+  onShuffleDeck: (playerId: PlayerID) => void;
+  onPrimaryCardAction: (
+    playerId: PlayerID,
+    card: CardRef,
+    source: "deck" | "discard",
+    costCardIds: string[],
+  ) => void;
+  onMoveCardToHand: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
+  onFieldCharacterAction: (
+    playerId: PlayerID,
+    slot: FieldSlot,
+    actionKind: "attack" | "tap" | "untap" | "charge" | "move",
+  ) => void;
 }) {
   const player = state.players[playerId];
 
   return (
-    <div style={panelStyle}>
+    <section style={panelStyle}>
       <div style={panelTitleStyle}>{label}</div>
       <div style={metaRowStyle}>
         <span>덱 {player.deck.length}</span>
@@ -102,14 +251,28 @@ function PlayerSection({
         <span>쓰레기통 {player.discard.length}</span>
       </div>
 
+      <div style={buttonWrapStyle}>
+        <button type="button" style={smallPrimaryStyle} onClick={() => onDrawFromDeck(playerId)}>
+          드로우 1
+        </button>
+        <button type="button" style={smallSecondaryStyle} onClick={() => onDamageFromDeck(playerId)}>
+          덱 대미지 1
+        </button>
+        <button type="button" style={smallSecondaryStyle} onClick={() => onShuffleDeck(playerId)}>
+          셔플
+        </button>
+      </div>
+
+      <div style={subTitleStyle}>필드</div>
       <div style={fieldGridStyle}>
         {FIELD_ROWS.flat().map((slot) => (
-          <FieldCellButton
+          <FieldCell
             key={`${playerId}-${slot}`}
+            playerId={playerId}
             slot={slot}
-            card={player.field[slot].card}
-            selected={selectedFieldSlot === slot}
-            onClick={() => onFieldCellClick(slot)}
+            state={state}
+            onClick={onFieldClick}
+            onFieldCharacterAction={onFieldCharacterAction}
           />
         ))}
       </div>
@@ -120,55 +283,116 @@ function PlayerSection({
           <div style={emptyTextStyle}>손패가 없습니다.</div>
         ) : (
           player.hand.map((card) => (
-            <CardButton
+            <HandCardButton
               key={card.instanceId}
+              playerId={playerId}
               card={card}
-              selected={selectedHandCardId === card.instanceId}
-              onClick={() => onHandCardClick(card.instanceId)}
+              onUse={onHandPrimaryAction}
+              onDeclare={onHandDeclareAction}
+              onDeckTop={onMoveHandCardToDeckTop}
+              onDeckBottom={onMoveHandCardToDeckBottom}
             />
           ))
         )}
       </div>
-    </div>
+
+      <div style={zoneGridStyle}>
+        <ZoneCardGrid
+          title="덱 상단 보기"
+          cards={player.deck}
+          playerId={playerId}
+          source="deck"
+          onPrimaryCardAction={onPrimaryCardAction}
+          onMoveCardToHand={onMoveCardToHand}
+        />
+        <ZoneCardGrid
+          title="쓰레기통"
+          cards={player.discard}
+          playerId={playerId}
+          source="discard"
+          onPrimaryCardAction={onPrimaryCardAction}
+          onMoveCardToHand={onMoveCardToHand}
+        />
+      </div>
+    </section>
   );
 }
 
 export default function PracticeBoardView({
   state,
   perspective,
-  selectedHandCardId,
-  selectedFieldSlot,
-  onHandCardClick,
-  onFieldCellClick,
+  onHandPrimaryAction,
+  onHandDeclareAction,
+  onMoveHandCardToDeckTop,
+  onMoveHandCardToDeckBottom,
+  onFieldClick,
+  onDrawFromDeck,
+  onDamageFromDeck,
+  onShuffleDeck,
+  onPrimaryCardAction,
+  onMoveCardToHand,
+  onRecoverCardsToDeckBottom,
+  onFieldCharacterAction,
 }: {
   state: GameState;
   perspective: PlayerID;
-  selectedHandCardId: string | null;
-  selectedFieldSlot: FieldSlot | null;
-  onHandCardClick: (playerId: PlayerID, cardId: string) => void;
-  onFieldCellClick: (playerId: PlayerID, slot: FieldSlot) => void;
+  onHandPrimaryAction: (playerId: PlayerID, card: CardRef, costCardIds: string[]) => void;
+  onHandDeclareAction: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckTop: (playerId: PlayerID, cardId: string) => void;
+  onMoveHandCardToDeckBottom: (playerId: PlayerID, cardId: string) => void;
+  onFieldClick: (playerId: PlayerID, slot: FieldSlot) => void;
+  onDrawFromDeck: (playerId: PlayerID) => void;
+  onDamageFromDeck: (playerId: PlayerID) => void;
+  onShuffleDeck: (playerId: PlayerID) => void;
+  onPrimaryCardAction: (
+    playerId: PlayerID,
+    card: CardRef,
+    source: "deck" | "discard",
+    costCardIds: string[],
+  ) => void;
+  onMoveCardToHand: (playerId: PlayerID, cardId: string, source: "deck" | "discard") => void;
+  onRecoverCardsToDeckBottom: (playerId: PlayerID, cardIdsInOrder: string[]) => void;
+  onFieldCharacterAction: (
+    playerId: PlayerID,
+    slot: FieldSlot,
+    actionKind: "attack" | "tap" | "untap" | "charge" | "move",
+  ) => void;
 }) {
   const opponent = perspective === "P1" ? "P2" : "P1";
 
   return (
     <div style={boardStyle}>
-      <PlayerSection
+      <PlayerPane
         label={`상단 플레이어 (${opponent})`}
         playerId={opponent}
         state={state}
-        selectedHandCardId={perspective === opponent ? selectedHandCardId : null}
-        selectedFieldSlot={perspective === opponent ? selectedFieldSlot : null}
-        onHandCardClick={(cardId) => onHandCardClick(opponent, cardId)}
-        onFieldCellClick={(slot) => onFieldCellClick(opponent, slot)}
+        onHandPrimaryAction={onHandPrimaryAction}
+        onHandDeclareAction={onHandDeclareAction}
+        onMoveHandCardToDeckTop={onMoveHandCardToDeckTop}
+        onMoveHandCardToDeckBottom={onMoveHandCardToDeckBottom}
+        onFieldClick={onFieldClick}
+        onDrawFromDeck={onDrawFromDeck}
+        onDamageFromDeck={onDamageFromDeck}
+        onShuffleDeck={onShuffleDeck}
+        onPrimaryCardAction={onPrimaryCardAction}
+        onMoveCardToHand={onMoveCardToHand}
+        onFieldCharacterAction={onFieldCharacterAction}
       />
-      <PlayerSection
+      <PlayerPane
         label={`하단 플레이어 (${perspective})`}
         playerId={perspective}
         state={state}
-        selectedHandCardId={selectedHandCardId}
-        selectedFieldSlot={selectedFieldSlot}
-        onHandCardClick={(cardId) => onHandCardClick(perspective, cardId)}
-        onFieldCellClick={(slot) => onFieldCellClick(perspective, slot)}
+        onHandPrimaryAction={onHandPrimaryAction}
+        onHandDeclareAction={onHandDeclareAction}
+        onMoveHandCardToDeckTop={onMoveHandCardToDeckTop}
+        onMoveHandCardToDeckBottom={onMoveHandCardToDeckBottom}
+        onFieldClick={onFieldClick}
+        onDrawFromDeck={onDrawFromDeck}
+        onDamageFromDeck={onDamageFromDeck}
+        onShuffleDeck={onShuffleDeck}
+        onPrimaryCardAction={onPrimaryCardAction}
+        onMoveCardToHand={onMoveCardToHand}
+        onFieldCharacterAction={onFieldCharacterAction}
       />
     </div>
   );
@@ -177,6 +401,7 @@ export default function PracticeBoardView({
 const boardStyle: CSSProperties = {
   display: "grid",
   gap: 16,
+  marginBottom: 16,
 };
 
 const panelStyle: CSSProperties = {
@@ -218,38 +443,72 @@ const fieldCellStyle: CSSProperties = {
   border: "1px solid #334155",
   borderRadius: 10,
   padding: 10,
-  minHeight: 100,
-  color: "#ffffff",
+  minHeight: 130,
+};
+
+const slotHeaderButtonStyle: CSSProperties = {
+  width: "100%",
   textAlign: "left",
+  background: "#1e293b",
+  color: "#93c5fd",
+  border: "1px solid #334155",
+  borderRadius: 8,
+  padding: "6px 8px",
   cursor: "pointer",
+  fontWeight: 700,
+  marginBottom: 8,
 };
 
 const handGridStyle: CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fill, minmax(170px, 1fr))",
+  gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
   gap: 10,
 };
 
-const cardButtonStyle: CSSProperties = {
+const zoneGridStyle: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+  gap: 12,
+  marginTop: 16,
+};
+
+const zonePanelStyle: CSSProperties = {
   background: "#0f172a",
   border: "1px solid #334155",
   borderRadius: 10,
   padding: 10,
-  color: "#ffffff",
-  textAlign: "left",
-  cursor: "pointer",
-  position: "relative",
-  minHeight: 96,
 };
 
-const slotLabelStyle: CSSProperties = {
+const zoneCountStyle: CSSProperties = {
+  color: "#b9c3d6",
+  marginBottom: 8,
+};
+
+const miniGridStyle: CSSProperties = {
+  display: "grid",
+  gap: 8,
+};
+
+const miniCardStyle: CSSProperties = {
+  background: "#172131",
+  borderRadius: 8,
+  padding: 8,
+};
+
+const miniCardTitleStyle: CSSProperties = {
   fontSize: 12,
   fontWeight: 700,
-  color: "#93c5fd",
   marginBottom: 6,
 };
 
-const cardNameStyle: CSSProperties = {
+const cardBoxStyle: CSSProperties = {
+  background: "#0f172a",
+  border: "1px solid #334155",
+  borderRadius: 10,
+  padding: 10,
+};
+
+const cardTitleStyle: CSSProperties = {
   fontSize: 14,
   fontWeight: 700,
   lineHeight: 1.35,
@@ -261,18 +520,42 @@ const cardMetaStyle: CSSProperties = {
   marginTop: 4,
 };
 
+const attachmentTextStyle: CSSProperties = {
+  fontSize: 12,
+  color: "#fcd34d",
+  marginTop: 6,
+};
+
 const emptyTextStyle: CSSProperties = {
   fontSize: 13,
   color: "#94a3b8",
 };
 
-const downBadgeStyle: CSSProperties = {
+const buttonWrapStyle: CSSProperties = {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: 6,
   marginTop: 8,
-  display: "inline-block",
-  background: "#7f1d1d",
+};
+
+const smallPrimaryStyle: CSSProperties = {
+  background: "#4a7cff",
   color: "#ffffff",
-  borderRadius: 9999,
-  padding: "3px 8px",
-  fontSize: 11,
-  fontWeight: 800,
+  border: "none",
+  borderRadius: 8,
+  padding: "6px 8px",
+  cursor: "pointer",
+  fontSize: 12,
+  fontWeight: 700,
+};
+
+const smallSecondaryStyle: CSSProperties = {
+  background: "#24324a",
+  color: "#ffffff",
+  border: "1px solid #3e5379",
+  borderRadius: 8,
+  padding: "6px 8px",
+  cursor: "pointer",
+  fontSize: 12,
+  fontWeight: 600,
 };
