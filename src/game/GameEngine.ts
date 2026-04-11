@@ -432,7 +432,11 @@ function validateDeclareAction(state: GameState, action: Extract<GameAction, { t
     if (action.kind === 'attack') {
       return 'BATTLE_ATTACK_DECLARATION_FORBIDDEN';
     }
-  } else if (state.turn.phase !== 'main') {
+  }
+  if (isAttackResponseWindow(state) && action.kind === 'useCharacter') {
+    return 'BATTLE_CHARACTER_DECLARATION_FORBIDDEN';
+  }
+  if (!isAnyBattleWindow(state) && state.turn.phase !== 'main') {
     return 'TIMING_INVALID';
   }
 
