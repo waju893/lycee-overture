@@ -424,17 +424,33 @@ function resolveSampleEffectDefinition(definitionOrId: any): any | undefined {
   }
 
   if (typeof definitionOrId === 'object') {
-    if (Array.isArray(definitionOrId.steps) && typeof definitionOrId.id === 'string') {
+    if (Array.isArray(definitionOrId.normalizedSteps)) {
       return definitionOrId;
     }
-    if (definitionOrId.definition && Array.isArray(definitionOrId.definition.steps)) {
+
+    if (Array.isArray(definitionOrId.steps)) {
+      return definitionOrId;
+    }
+
+    if (
+      definitionOrId.definition &&
+      (Array.isArray(definitionOrId.definition.steps) || Array.isArray(definitionOrId.definition.normalizedSteps))
+    ) {
       return definitionOrId.definition;
     }
+
     if (typeof definitionOrId.effectId === 'string') {
-      return resolveSampleEffectDefinition(definitionOrId.effectId);
+      const resolvedByEffectId = resolveSampleEffectDefinition(definitionOrId.effectId);
+      if (resolvedByEffectId) {
+        return resolvedByEffectId;
+      }
     }
+
     if (typeof definitionOrId.id === 'string') {
-      return resolveSampleEffectDefinition(definitionOrId.id) ?? definitionOrId;
+      const resolvedById = resolveSampleEffectDefinition(definitionOrId.id);
+      if (resolvedById) {
+        return resolvedById;
+      }
     }
   }
 
