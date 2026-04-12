@@ -1,20 +1,10 @@
-Lycee Overture Target System Extension Patch
+배틀 계산 확장 v3 적용 방법
 
-포함 내용
-- optionalTarget 지원
-- multiTarget 지원
-- filter 지원 (tapped / untapped)
-- 관련 DSL validation 확장
-- 관련 샘플 카탈로그 추가
-- 관련 테스트 추가
-
-적용 방법
-1. 압축 해제
-2. zip 안의 src 폴더를 프로젝트 루트에 그대로 덮어쓰기
-3. 프로젝트 폴더에서 아래 실행
+1. 이 zip을 프로젝트 루트에 압축 해제
+2. apply_battle_calc_v3.bat 더블클릭
+3. 완료 후 아래 실행
 
 npm test
 
-예상
-- 기존 44개 테스트 유지
-- 새 타겟 시스템 테스트 추가 통과
+이번 방식은 patch 파일이 아니라 PowerShell 정규식 치환 + 테스트 파일 추가 방식이라
+이전 corrupt patch 오류를 피합니다.

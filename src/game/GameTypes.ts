@@ -153,6 +153,8 @@ export interface CardRef {
   damage?: number;
   hp?: number;
   sp?: number;
+  support?: number;
+  bonus?: number;
   isTapped?: boolean;
   canAttack?: boolean;
   canBlock?: boolean;
