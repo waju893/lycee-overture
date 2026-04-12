@@ -13,6 +13,7 @@ import {
   getOpponentPlayerId,
 } from './GameTypes';
 import {
+  areSlotsAdjacent,
   canPlayerRespondToTopDeclaration,
   createInitialGameState as createInitialGameStateFromRules,
   findCardInField,
@@ -66,11 +67,11 @@ function beginTurnAndEnterMain(state: GameState, playerId: PlayerID, incrementTu
   untapField(state, playerId);
   const drawCount = state.turn.turnNumber <= 1 && state.turn.firstPlayer === playerId ? 1 : 2;
   drawTopCards(state, playerId, drawCount);
-  appendLog(state, `${playerId} ??개시??);
-  appendLog(state, '??개시???�발 ?�과 처리 ?�료');
+  appendLog(state, `${playerId} 턴 개시시`);
+  appendLog(state, '턴 개시시 유발 효과 처리 완료');
   state.turn.phase = 'main';
   state.turn.priorityPlayer = playerId;
-  appendLog(state, '메인 ?�이�?);
+  appendLog(state, '메인 페이즈');
 }
 
 function recordReplay(state: GameState, action: unknown): void {
@@ -305,6 +306,7 @@ function resolveDSLTargetPlayer(
   }
 }
 
+
 function findDeclaredTargetsOnField(
   state: GameState,
   targetPlayer: PlayerID,
@@ -392,6 +394,7 @@ function findDSLTargetCards(
 
   return filtered.slice(0, limit).map((card) => ({ playerId: targetPlayer, card }));
 }
+
 
 function executeDSLStepInEngine(
   state: GameState,
@@ -623,7 +626,7 @@ function startTurn(state: GameState, playerId: PlayerID): void {
   state.turn.phase = 'wakeup';
   state.turn.turnNumber += 1;
   state.turn.passedPlayers = [];
-  appendLog(state, `${playerId} ??개시??);
+  appendLog(state, `${playerId} 턴 개시시`);
   untapField(state, playerId);
   const drawCount = state.turn.turnNumber <= 1 && state.turn.firstPlayer === playerId ? 1 : 2;
   drawTopCards(state, playerId, drawCount);
@@ -675,7 +678,15 @@ function findCardOwnerOnField(state: GameState, cardId: string): { playerId: Pla
 }
 
 function clearBattleState(state: GameState): void {
-  state.battle = { isActive: false, phase: 'none', awaitingDefenderSelection: false, passedPlayers: [] };
+  state.battle = {
+    isActive: false,
+    phase: 'none',
+    awaitingDefenderSelection: false,
+    passedPlayers: [],
+    supportAttackBonus: 0,
+    supportDefenseBonus: 0,
+    supportHistory: [],
+  };
 }
 
 function cardHasForbiddenBattleKeyeffect(cardNo?: string): boolean {
@@ -703,6 +714,51 @@ function resetBattlePassedPlayers(state: GameState): void {
   state.battle.passedPlayers = [];
 }
 
+function getSupportAmount(card: CardRef): number {
+  return card.sp ?? 0;
+}
+
+function resolveSupport(state: GameState, declaration: any): void {
+  const supporterCardId = declaration.payload?.supporterCardId as string | undefined;
+  const targetCardId = declaration.payload?.targetCardId as string | undefined;
+  const paidBy: 'tap' | 'supporterCost' =
+    declaration.payload?.payWith === 'supporterCost' ? 'supporterCost' : 'tap';
+
+  if (!supporterCardId || !targetCardId) {
+    appendLog(state, 'SUPPORT_PAYLOAD_INVALID');
+    return;
+  }
+
+  const supporterInfo = findCardOwnerOnField(state, supporterCardId);
+  if (!supporterInfo) {
+    appendLog(state, 'SUPPORTER_NOT_FOUND');
+    return;
+  }
+
+  const amount = getSupportAmount(supporterInfo.card);
+
+  if (targetCardId === state.battle.attackerCardId) {
+    state.battle.supportAttackBonus = (state.battle.supportAttackBonus ?? 0) + amount;
+    appendLog(state, `[SUPPORT] ${supporterCardId} -> ${targetCardId} (+${amount} AP)`);
+  } else if (targetCardId === state.battle.defenderCardId) {
+    state.battle.supportDefenseBonus = (state.battle.supportDefenseBonus ?? 0) + amount;
+    appendLog(state, `[SUPPORT] ${supporterCardId} -> ${targetCardId} (+${amount} DP)`);
+  } else {
+    appendLog(state, 'SUPPORT_TARGET_INVALID');
+    return;
+  }
+
+  state.battle.supportHistory = [
+    ...(state.battle.supportHistory ?? []),
+    {
+      supporterCardId,
+      targetCardId,
+      amount,
+      paidBy,
+    },
+  ];
+}
+
 function finalizeAttackResponses(state: GameState): void {
   if (!state.battle.isActive || state.battle.phase !== 'awaitingDefenderSelection') return;
 
@@ -727,19 +783,7 @@ function finalizeAttackResponses(state: GameState): void {
     passedPlayers: [],
   };
 
-  appendLog(state, selectableDefenderExists ? '배�? �??�태 진입 (방어 ?�택 가??' : '배�? �??�태 진입 (방어??미�???');
-}
-
-function getBattleAttackPower(card: CardRef): number {
-  return (card.ap ?? card.power ?? 0) + (card.support ?? 0) + (card.bonus ?? 0);
-}
-
-function getBattleDefensePower(card: CardRef): number {
-  return (card.dp ?? card.hp ?? 0) + (card.bonus ?? 0);
-}
-
-function buildBattleCalculationLog(label: string, ap: number, dp: number): string {
-  return `[BATTLE CALC] ${label} AP=${ap} vs DP=${dp}`;
+  appendLog(state, selectableDefenderExists ? '배틀 중 상태 진입 (방어 선택 가능)' : '배틀 중 상태 진입 (방어자 미지정)');
 }
 
 function resolveCurrentBattle(state: GameState): void {
@@ -773,13 +817,28 @@ function resolveCurrentBattle(state: GameState): void {
   if (defenderCardId) {
     const found = findCardOwnerOnField(state, defenderCardId);
     if (found && found.playerId === defenderPlayerId) {
-      const attackerBattleAp = getBattleAttackPower(attackerInfo.card);
-      const attackerBattleDp = getBattleDefensePower(attackerInfo.card);
-      const defenderBattleAp = getBattleAttackPower(found.card);
-      const defenderBattleDp = getBattleDefensePower(found.card);
+      const attackerBaseAp = attackerInfo.card.ap ?? attackerInfo.card.power ?? 0;
+      const attackerBaseDp = attackerInfo.card.dp ?? attackerInfo.card.hp ?? 0;
+      const defenderBaseAp = found.card.ap ?? found.card.power ?? 0;
+      const defenderBaseDp = found.card.dp ?? found.card.hp ?? 0;
+      const attackerBonus = attackerInfo.card.bonus ?? 0;
+      const defenderBonus = found.card.bonus ?? 0;
+      const attackerSupport = state.battle.supportAttackBonus ?? 0;
+      const defenderSupport = state.battle.supportDefenseBonus ?? 0;
 
-      appendLog(state, buildBattleCalculationLog('attacker', attackerBattleAp, defenderBattleDp));
-      appendLog(state, buildBattleCalculationLog('defender', defenderBattleAp, attackerBattleDp));
+      const attackerBattleAp = attackerBaseAp + attackerBonus + attackerSupport;
+      const attackerBattleDp = attackerBaseDp + attackerBonus;
+      const defenderBattleAp = defenderBaseAp + defenderBonus;
+      const defenderBattleDp = defenderBaseDp + defenderBonus + defenderSupport;
+
+      appendLog(
+        state,
+        `[BATTLE CALC] attacker AP=${attackerBattleAp} (base=${attackerBaseAp}, bonus=${attackerBonus}, support=${attackerSupport}) vs defender DP=${defenderBattleDp} (base=${defenderBaseDp}, bonus=${defenderBonus}, support=${defenderSupport})`,
+      );
+      appendLog(
+        state,
+        `[BATTLE CALC] defender AP=${defenderBattleAp} (base=${defenderBaseAp}, bonus=${defenderBonus}) vs attacker DP=${attackerBattleDp} (base=${attackerBaseDp}, bonus=${attackerBonus})`,
+      );
 
       if (attackerBattleAp > defenderBattleDp) {
         destroyCardToDiscard(
@@ -799,7 +858,7 @@ function resolveCurrentBattle(state: GameState): void {
           { isDown: true, destroyReason: 'battle' },
         );
       }
-      appendLog(state, '배�? 종료 (down = battle destroy)');
+      appendLog(state, '배틀 종료 (down = battle destroy)');
       clearBattleState(state);
       flushNormalizationAndTriggers(state, eventStartIndex);
       return;
@@ -834,7 +893,7 @@ function resolveUseEvent(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'eventDeclarationResolved'),
     operation: { kind: 'moveToDiscard', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'discard' },
   });
-  appendLog(state, '?�벤???�용 ?�언 ?�결');
+  appendLog(state, '이벤트 사용 선언 해결');
 }
 
 function resolveUseArea(state: GameState, declaration: any): void {
@@ -859,7 +918,7 @@ function resolveUseArea(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'areaDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
-  appendLog(state, '?�리??배치 ?�언 ?�결');
+  appendLog(state, '에리어 배치 선언 해결');
 }
 
 function resolveUseItem(state: GameState, declaration: any): void {
@@ -889,7 +948,7 @@ function resolveUseItem(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'itemDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
-  appendLog(state, '?�비 ?�언 ?�결');
+  appendLog(state, '장비 선언 해결');
 }
 
 function resolveUseCharacter(state: GameState, declaration: any): void {
@@ -906,7 +965,7 @@ function resolveUseCharacter(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'characterDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
-  appendLog(state, '?�장 ?�언 ?�결');
+  appendLog(state, '등장 선언 해결');
 }
 
 function resolveUseAbility(state: GameState, declaration: any): void {
@@ -917,7 +976,7 @@ function resolveUseAbility(state: GameState, declaration: any): void {
     cardId: declaration.sourceCardId,
     cause: makeCharacterAbilityCause(declaration.playerId, declaration.sourceCardId, declaration.sourceEffectId),
   });
-  appendLog(state, '?�력 ?�용 ?�결');
+  appendLog(state, '능력 사용 해결');
 }
 
 function resolveChargeCharacter(state: GameState, declaration: any): void {
@@ -957,7 +1016,7 @@ function resolveChargeCharacter(state: GameState, declaration: any): void {
     }
   }
   found.card.chargeCards = [...(found.card.chargeCards ?? []), ...charged];
-  appendLog(state, '차�? ?�결');
+  appendLog(state, '차지 해결');
 }
 
 function openAttackResponseWindow(state: GameState, action: Extract<GameAction, { type: 'DECLARE_ACTION' }>): void {
@@ -978,10 +1037,13 @@ function openAttackResponseWindow(state: GameState, action: Extract<GameAction, 
     awaitingDefenderSelection: false,
     priorityPlayer: defenderPlayerId,
     passedPlayers: [],
+    supportAttackBonus: 0,
+    supportDefenseBonus: 0,
+    supportHistory: [],
   };
 
-  appendLog(state, '공격 ?�언');
-  appendLog(state, '공격 ?�언 ?�??�?진입');
+  appendLog(state, '공격 선언');
+  appendLog(state, '공격 선언 대응 창 진입');
 }
 
 function resolveLatestLegacyDeclaration(state: GameState): void {
@@ -1007,6 +1069,9 @@ function resolveLatestLegacyDeclaration(state: GameState): void {
       break;
     case 'chargeCharacter':
       resolveChargeCharacter(state, declaration);
+      break;
+    case 'support':
+      resolveSupport(state, declaration);
       break;
     default:
       break;
@@ -1092,6 +1157,50 @@ function validateDeclareAction(state: GameState, action: Extract<GameAction, { t
     if (!found || found.playerId !== action.playerId) return 'CARD_NOT_FOUND';
     if (!found.slot.startsWith('AF')) return 'ATTACKER_NOT_AF';
     if (found.card.isTapped) return 'ATTACKER_TAPPED';
+    return null;
+  }
+
+  if (action.kind === 'support') {
+    if (!state.battle.isActive || state.battle.phase !== 'duringBattle') {
+      return 'SUPPORT_ONLY_DURING_BATTLE';
+    }
+
+    const supporterCardId = action.payload?.supporterCardId as string | undefined;
+    const targetCardId = action.payload?.targetCardId as string | undefined;
+
+    if (!supporterCardId || !targetCardId) {
+      return 'SUPPORT_PAYLOAD_INVALID';
+    }
+
+    const supporterInfo = findCardOwnerOnField(state, supporterCardId);
+    if (!supporterInfo || supporterInfo.playerId !== action.playerId) {
+      return 'SUPPORTER_NOT_FOUND';
+    }
+
+    if (supporterInfo.card.isTapped) {
+      return 'SUPPORTER_TAPPED';
+    }
+
+    if (
+      targetCardId !== state.battle.attackerCardId &&
+      targetCardId !== state.battle.defenderCardId
+    ) {
+      return 'SUPPORT_TARGET_INVALID';
+    }
+
+    const targetInfo = findCardOwnerOnField(state, targetCardId);
+    if (!targetInfo) {
+      return 'SUPPORT_TARGET_NOT_FOUND';
+    }
+
+    if (supporterCardId === targetCardId) {
+      return 'SUPPORT_SELF_INVALID';
+    }
+
+    if (!areSlotsAdjacent(supporterInfo.slot, targetInfo.slot)) {
+      return 'SUPPORTER_NOT_ADJACENT';
+    }
+
     return null;
   }
 
@@ -1207,14 +1316,14 @@ function handlePassPriority(state: GameState, action: Extract<GameAction, { type
     state.turn.passedPlayers = Array.from(passedPlayers);
 
     if (state.turn.phase === 'main' && passedPlayers.has('P1') && passedPlayers.has('P2')) {
-      appendLog(state, '??종료??);
+      appendLog(state, '턴 종료시');
       const nextPlayer = getOpponentPlayerId(state.turn.activePlayer);
       startTurn(state, nextPlayer);
-      appendLog(state, '??개시???�발 ?�과 처리 ?�료');
+      appendLog(state, '턴 개시시 유발 효과 처리 완료');
       state.turn.phase = 'main';
       state.turn.priorityPlayer = state.turn.activePlayer;
       state.turn.passedPlayers = [];
-      appendLog(state, '메인 ?�이�?);
+      appendLog(state, '메인 페이즈');
       return state;
     }
 
@@ -1305,25 +1414,25 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       return next;
     case 'ADVANCE_PHASE':
       if (next.turn.phase === 'wakeup') {
-        appendLog(next, '??개시???�발 ?�과 처리 ?�료');
+        appendLog(next, '턴 개시시 유발 효과 처리 완료');
         next.turn.phase = 'main';
         next.turn.priorityPlayer = next.turn.activePlayer;
         next.turn.passedPlayers = [];
-        appendLog(next, '메인 ?�이�?);
+        appendLog(next, '메인 페이즈');
       } else if (next.turn.phase === 'main') {
         next.turn.phase = 'battle';
       } else if (next.turn.phase === 'battle') {
         next.turn.phase = 'end';
         next.turn.passedPlayers = [];
       } else if (next.turn.phase === 'end') {
-        appendLog(next, '??종료???�발 ?�과 처리 ?�료');
+        appendLog(next, '턴 종료시 유발 효과 처리 완료');
         const nextPlayer = getOpponentPlayerId(next.turn.activePlayer);
         startTurn(next, nextPlayer);
-        appendLog(next, '??개시???�발 ?�과 처리 ?�료');
+        appendLog(next, '턴 개시시 유발 효과 처리 완료');
         next.turn.phase = 'main';
         next.turn.priorityPlayer = next.turn.activePlayer;
         next.turn.passedPlayers = [];
-        appendLog(next, '메인 ?�이�?);
+        appendLog(next, '메인 페이즈');
       }
       return next;
     case 'DECLARE_ACTION': {
@@ -1336,6 +1445,31 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       if (!isAnyBattleWindow(next) && action.kind === 'attack') {
         openAttackResponseWindow(next, action);
         return next;
+      }
+
+      if (action.kind === 'support') {
+        const supporterCardId = action.payload?.supporterCardId as string | undefined;
+        const payWith = action.payload?.payWith as 'tap' | 'supporterCost' | undefined;
+
+        if (supporterCardId && payWith !== 'supporterCost') {
+          const supporterInfo = findCardOwnerOnField(next, supporterCardId);
+          if (supporterInfo?.card) {
+            supporterInfo.card.isTapped = true;
+            pushEngineEvent(next, {
+              type: 'CARD_TAPPED',
+              playerId: supporterInfo.playerId,
+              affectedPlayerId: supporterInfo.playerId,
+              cardId: supporterInfo.card.instanceId,
+              cause: makeBattleCause(action.playerId, supporterInfo.card.instanceId),
+              operation: {
+                kind: 'tap',
+                cardId: supporterInfo.card.instanceId,
+                playerId: supporterInfo.playerId,
+              },
+            });
+            appendLog(next, `[SUPPORT COST] ${supporterInfo.card.instanceId} tapped`);
+          }
+        }
       }
 
       const declaration: any = {
@@ -1360,12 +1494,13 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         next.turn.passedPlayers = [];
       }
 
-      if (action.kind === 'useCharacter') appendLog(next, '?�장 ?�언');
-      if (action.kind === 'useEvent') appendLog(next, '?�벤???�용 ?�언');
-      if (action.kind === 'useArea') appendLog(next, '?�리??배치 ?�언');
-      if (action.kind === 'useItem') appendLog(next, '?�비 ?�언');
-      if (action.kind === 'useAbility') appendLog(next, '?�력 ?�용 ?�언');
-      if (action.kind === 'chargeCharacter') appendLog(next, '차�? ?�언');
+      if (action.kind === 'useCharacter') appendLog(next, '등장 선언');
+      if (action.kind === 'useEvent') appendLog(next, '이벤트 사용 선언');
+      if (action.kind === 'useArea') appendLog(next, '에리어 배치 선언');
+      if (action.kind === 'useItem') appendLog(next, '장비 선언');
+      if (action.kind === 'useAbility') appendLog(next, '능력 사용 선언');
+      if (action.kind === 'support') appendLog(next, '서포트 선언');
+      if (action.kind === 'chargeCharacter') appendLog(next, '차지 선언');
       return next;
     }
     case 'PASS_PRIORITY':
@@ -1416,7 +1551,7 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         priorityPlayer: attackerInfo.playerId,
         passedPlayers: [],
       };
-      appendLog(next, selectedDefenderId ? '배�? �??�태 진입 (방어??지??' : '배�? �??�태 ?��? (방어 ????');
+      appendLog(next, selectedDefenderId ? '배틀 중 상태 진입 (방어자 지정)' : '배틀 중 상태 유지 (방어 안 함)');
       return next;
     }
     default:

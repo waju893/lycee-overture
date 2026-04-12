@@ -273,6 +273,31 @@ export function getMatchingDefenderSlotForColumn(column: number): FieldSlot {
   return (['DF_LEFT', 'DF_CENTER', 'DF_RIGHT'] as FieldSlot[])[column];
 }
 
+
+
+export function getAdjacentSlots(slot: FieldSlot): FieldSlot[] {
+  switch (slot) {
+    case 'AF_LEFT':
+      return ['AF_CENTER', 'DF_LEFT'];
+    case 'AF_CENTER':
+      return ['AF_LEFT', 'AF_RIGHT', 'DF_CENTER'];
+    case 'AF_RIGHT':
+      return ['AF_CENTER', 'DF_RIGHT'];
+    case 'DF_LEFT':
+      return ['DF_CENTER', 'AF_LEFT'];
+    case 'DF_CENTER':
+      return ['DF_LEFT', 'DF_RIGHT', 'AF_CENTER'];
+    case 'DF_RIGHT':
+      return ['DF_CENTER', 'AF_RIGHT'];
+    default:
+      return [];
+  }
+}
+
+export function areSlotsAdjacent(a: FieldSlot, b: FieldSlot): boolean {
+  return getAdjacentSlots(a).includes(b);
+}
+
 export function getOpponent(playerId: PlayerID): PlayerID {
   return getOpponentPlayerId(playerId);
 }

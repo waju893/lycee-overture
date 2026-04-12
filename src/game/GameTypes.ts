@@ -30,6 +30,7 @@ export type DeclarationKind =
   | 'useCharacter'
   | 'useAbility'
   | 'attack'
+  | 'support'
   | 'chargeCharacter'
   | 'useEvent'
   | 'useItem'
@@ -364,6 +365,14 @@ export interface GameState {
     awaitingDefenderSelection?: boolean;
     priorityPlayer?: PlayerID;
     passedPlayers?: PlayerID[];
+    supportAttackBonus?: number;
+    supportDefenseBonus?: number;
+    supportHistory?: Array<{
+      supporterCardId: string;
+      targetCardId: string;
+      amount: number;
+      paidBy: 'tap' | 'supporterCost';
+    }>;
   };
   declarationStack: DeclarationStackArray;
   triggerQueue: TriggerQueueState;
