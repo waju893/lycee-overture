@@ -79,7 +79,7 @@ export const SAMPLE_EFFECT_DSL_CATALOG: Record<string, EffectDSLDefinition> = {
       },
       {
         type: 'log',
-        message: 'after destroy',
+        message: 'after destroy step',
       },
     ],
   },
@@ -111,4 +111,134 @@ export const SAMPLE_EFFECT_DSL_CATALOG: Record<string, EffectDSLDefinition> = {
       },
     ],
   },
+
+  sample_destroy_declared_target: {
+    id: 'sample_destroy_declared_target',
+    text: '선언 시 선택된 상대 캐릭터를 그대로 파기한다.',
+    triggerTiming: 'manual',
+    steps: [
+      {
+        type: 'destroy',
+        target: 'opponent_character',
+        count: 1,
+        targetTiming: 'declareTime',
+      },
+    ],
+  },
+
+  sample_destroy_resolution_target: {
+    id: 'sample_destroy_resolution_target',
+    text: '해결 시 현재 존재하는 상대 캐릭터를 파기한다.',
+    triggerTiming: 'manual',
+    steps: [
+      {
+        type: 'destroy',
+        target: 'opponent_character',
+        count: 1,
+        targetTiming: 'resolutionTime',
+      },
+    ],
+  },
+
+  sample_mill_opponent_two: {
+    id: 'sample_mill_opponent_two',
+    text: '상대 덱 위에서 2장을 버린다.',
+    triggerTiming: 'manual',
+    steps: [
+      {
+        type: 'mill',
+        player: 'opponent',
+        count: 2,
+      },
+    ],
+  },
+
+  sample_move_opponent_to_hand: {
+    id: 'sample_move_opponent_to_hand',
+    text: '상대 캐릭터 1체를 패로 되돌린다.',
+    triggerTiming: 'manual',
+    steps: [
+      {
+        type: 'move',
+        target: 'opponent_character',
+        count: 1,
+        targetTiming: 'resolutionTime',
+        destination: 'hand',
+      },
+    ],
+  },
+
+  sample_tap_opponent_character: {
+    id: 'sample_tap_opponent_character',
+    text: '상대 캐릭터 1체를 행동 완료 상태로 한다.',
+    triggerTiming: 'manual',
+    steps: [
+      {
+        type: 'tap',
+        target: 'opponent_character',
+        count: 1,
+        targetTiming: 'resolutionTime',
+      },
+    ],
+  },
+
+  sample_untap_opponent_character: {
+    id: 'sample_untap_opponent_character',
+    text: '상대 캐릭터 1체를 미행동 상태로 한다.',
+    triggerTiming: 'manual',
+    steps: [
+      {
+        type: 'untap',
+        target: 'opponent_character',
+        count: 1,
+        targetTiming: 'resolutionTime',
+      },
+    ],
+  },
+
+  sample_optional_destroy_opponent: {
+    id: 'sample_optional_destroy_opponent',
+    text: '가능하면 상대 캐릭터 1체를 파기한다.',
+    triggerTiming: 'manual',
+    steps: [
+      {
+        type: 'destroy',
+        target: 'opponent_character',
+        count: 1,
+        targetTiming: 'resolutionTime',
+        optionalTarget: true,
+      },
+    ],
+  },
+
+  sample_multi_destroy_two_opponents: {
+    id: 'sample_multi_destroy_two_opponents',
+    text: '상대 캐릭터를 최대 2체 파기한다.',
+    triggerTiming: 'manual',
+    steps: [
+      {
+        type: 'destroy',
+        target: 'opponent_character',
+        count: 2,
+        targetTiming: 'resolutionTime',
+        multiTarget: true,
+      },
+    ],
+  },
+
+  sample_filter_untapped_tap: {
+    id: 'sample_filter_untapped_tap',
+    text: '미행동 상태의 상대 캐릭터 1체를 행동 완료 상태로 한다.',
+    triggerTiming: 'manual',
+    steps: [
+      {
+        type: 'tap',
+        target: 'opponent_character',
+        count: 1,
+        targetTiming: 'resolutionTime',
+        filter: 'untapped',
+      },
+    ],
+  },
+
 };

@@ -305,35 +305,92 @@ function resolveDSLTargetPlayer(
   }
 }
 
-function findDeclaredTargetOnField(
+function findDeclaredTargetsOnField(
   state: GameState,
   targetPlayer: PlayerID,
   declaredTargetCardIds: string[] | undefined,
-): CardRef | null {
+): CardRef[] {
   if (!declaredTargetCardIds || declaredTargetCardIds.length === 0) {
-    return null;
+    return [];
   }
 
+  const results: CardRef[] = [];
   for (const cardId of declaredTargetCardIds) {
     const found = findCardInField(state, targetPlayer, cardId);
     if (found?.card) {
-      return found.card;
+      results.push(found.card);
     }
   }
 
-  return null;
+  return results;
 }
 
-function findResolutionTargetOnField(
+function findResolutionTargetsOnField(
   state: GameState,
   targetPlayer: PlayerID,
-): CardRef | null {
+): CardRef[] {
   const slots = Object.keys(state.players[targetPlayer].field) as FieldSlot[];
-  const found = slots
-    .map((slot) => ({ slot, card: state.players[targetPlayer].field[slot].card }))
-    .find((entry) => entry.card);
+  return slots
+    .map((slot) => state.players[targetPlayer].field[slot].card)
+    .filter((card): card is CardRef => Boolean(card));
+}
 
-  return found?.card ?? null;
+function cardMatchesDSLFilter(step: EffectDSLStep, card: CardRef): boolean {
+  if (!('filter' in step) || !step.filter) {
+    return true;
+  }
+
+  switch (step.filter) {
+    case 'tapped':
+      return Boolean(card.isTapped);
+    case 'untapped':
+      return !card.isTapped;
+    default:
+      return true;
+  }
+}
+
+function buildDSLEffectCause(
+  context: EffectDSLExecutionContext,
+  targetPlayer: PlayerID,
+  detail: string,
+): CauseDescriptor {
+  return {
+    controller: context.controller,
+    controllerPlayerId: context.controller,
+    relationToAffectedPlayer: context.controller === targetPlayer ? 'self' : 'opponent',
+    causeKind: 'effect',
+    category: 'effect',
+    sourceOwnerKind: 'character',
+    sourceKind: 'character',
+    sourceType: 'character',
+    isEffect: true,
+    isAbility: false,
+    sourceCardId: context.sourceCardId,
+    sourceEffectId: context.sourceEffectId,
+    detail,
+  };
+}
+
+function findDSLTargetCards(
+  state: GameState,
+  step: EffectDSLStep,
+  context: EffectDSLExecutionContext,
+): Array<{ playerId: PlayerID; card: CardRef }> {
+  if (!('target' in step)) return [];
+
+  const targetPlayer = resolveDSLTargetPlayer(step, context);
+  if (!targetPlayer) return [];
+
+  const candidates =
+    'targetTiming' in step && step.targetTiming === 'declareTime'
+      ? findDeclaredTargetsOnField(state, targetPlayer, context.declaredTargetCardIds)
+      : findResolutionTargetsOnField(state, targetPlayer);
+
+  const filtered = candidates.filter((card) => cardMatchesDSLFilter(step, card));
+  const limit = 'multiTarget' in step && step.multiTarget ? step.count : 1;
+
+  return filtered.slice(0, limit).map((card) => ({ playerId: targetPlayer, card }));
 }
 
 function executeDSLStepInEngine(
@@ -351,56 +408,110 @@ function executeDSLStepInEngine(
       appendLog(state, `[EFFECT STEP] draw ${step.count} for ${targetPlayer}`);
       return;
     }
-    case 'destroy':
-    case 'battleDestroy': {
-      const targetPlayer = resolveDSLTargetPlayer(step, context);
-      if (!targetPlayer) {
-        appendLog(state, `[EFFECT STEP] could not resolve target player for ${step.type}`);
-        return;
-      }
-
-      const targetCard =
-        step.targetTiming === 'declareTime'
-          ? findDeclaredTargetOnField(state, targetPlayer, context.declaredTargetCardIds)
-          : findResolutionTargetOnField(state, targetPlayer);
-
-      if (!targetCard) {
+    case 'mill': {
+      const targetPlayer = step.player === 'self' ? context.controller : context.opponent;
+      millFromDeckToDiscard(
+        state,
+        targetPlayer,
+        step.count,
+        buildDSLEffectCause(context, targetPlayer, 'dsl:mill'),
+      );
+      appendLog(state, `[EFFECT STEP] mill ${step.count} for ${targetPlayer}`);
+      return;
+    }
+    case 'tap':
+    case 'untap': {
+      const targetInfos = findDSLTargetCards(state, step, context);
+      if (targetInfos.length === 0) {
         appendLog(
           state,
-          step.targetTiming === 'declareTime'
-            ? `[EFFECT STEP] declared target missing for ${step.type}`
-            : `[EFFECT STEP] no resolution target for ${step.type}`,
+          step.optionalTarget
+            ? `[EFFECT STEP] optional target missing for ${step.type}`
+            : step.targetTiming === 'declareTime'
+              ? `[EFFECT STEP] declared target missing for ${step.type}`
+              : `[EFFECT STEP] no resolution target for ${step.type}`,
         );
         return;
       }
 
-      const cause: CauseDescriptor = {
-        controller: context.controller,
-        controllerPlayerId: context.controller,
-        relationToAffectedPlayer: context.controller === targetPlayer ? 'self' : 'opponent',
-        causeKind: 'effect',
-        category: 'effect',
-        sourceOwnerKind: 'character',
-        sourceKind: 'character',
-        sourceType: 'character',
-        isEffect: true,
-        isAbility: false,
-        sourceCardId: context.sourceCardId,
-        sourceEffectId: context.sourceEffectId,
-        detail: `dsl:${step.type}:${step.targetTiming}`,
-      };
+      for (const targetInfo of targetInfos) {
+        targetInfo.card.isTapped = step.type === 'tap';
+        pushEngineEvent(state, {
+          type: step.type === 'tap' ? 'CARD_TAPPED' : 'CARD_UNTAPPED',
+          playerId: targetInfo.playerId,
+          affectedPlayerId: targetInfo.playerId,
+          cardId: targetInfo.card.instanceId,
+          cause: buildDSLEffectCause(context, targetInfo.playerId, `dsl:${step.type}:${step.targetTiming}`),
+          operation: {
+            kind: step.type,
+            cardId: targetInfo.card.instanceId,
+            playerId: targetInfo.playerId,
+          },
+        } as any);
+        appendLog(state, `[EFFECT STEP] ${step.type} ${targetInfo.card.instanceId} (${step.targetTiming})`);
+      }
+      return;
+    }
+    case 'move': {
+      const targetInfos = findDSLTargetCards(state, step, context);
+      if (targetInfos.length === 0) {
+        appendLog(
+          state,
+          step.optionalTarget
+            ? `[EFFECT STEP] optional target missing for ${step.type}`
+            : step.targetTiming === 'declareTime'
+              ? `[EFFECT STEP] declared target missing for ${step.type}`
+              : `[EFFECT STEP] no resolution target for ${step.type}`,
+        );
+        return;
+      }
 
-      destroyCardToDiscard(
-        state,
-        targetPlayer,
-        targetCard,
-        cause,
-        {
-          isDown: step.type === 'battleDestroy',
-          destroyReason: 'effect',
-        },
-      );
-      appendLog(state, `[EFFECT STEP] ${step.type} ${targetCard.instanceId} (${step.targetTiming})`);
+      for (const targetInfo of targetInfos) {
+        const removed = removeCardFromAllZones(state.players[targetInfo.playerId], targetInfo.card.instanceId);
+        const movedCard = removed ?? { ...targetInfo.card };
+        movedCard.location = step.destination === 'hand' ? 'hand' : 'discard';
+        movedCard.revealed = step.destination !== 'hand';
+
+        if (step.destination === 'hand') {
+          state.players[targetInfo.playerId].hand.push(movedCard);
+        } else {
+          state.players[targetInfo.playerId].discard.push(movedCard);
+        }
+
+        appendLog(state, `[EFFECT STEP] move ${movedCard.instanceId} -> ${step.destination} (${step.targetTiming})`);
+      }
+      return;
+    }
+    case 'destroy':
+    case 'battleDestroy': {
+      const targetInfos = findDSLTargetCards(state, step, context);
+      if (targetInfos.length === 0) {
+        appendLog(
+          state,
+          step.optionalTarget
+            ? `[EFFECT STEP] optional target missing for ${step.type}`
+            : step.targetTiming === 'declareTime'
+              ? `[EFFECT STEP] declared target missing for ${step.type}`
+              : `[EFFECT STEP] no resolution target for ${step.type}`,
+        );
+        return;
+      }
+
+      for (const targetInfo of targetInfos) {
+        const cause = buildDSLEffectCause(context, targetInfo.playerId, `dsl:${step.type}:${step.targetTiming}`);
+
+        destroyCardToDiscard(
+          state,
+          targetInfo.playerId,
+          targetInfo.card,
+          cause,
+          {
+            isDown: step.type === 'battleDestroy',
+            destroyReason: 'effect',
+          },
+        );
+        appendLog(state, `[EFFECT STEP] ${step.type} ${targetInfo.card.instanceId} (${step.targetTiming})`);
+      }
       return;
     }
     default:
@@ -408,7 +519,6 @@ function executeDSLStepInEngine(
       return;
   }
 }
-
 
 function resolveSampleEffectDefinition(definitionOrId: any): any | undefined {
   if (!definitionOrId) return undefined;

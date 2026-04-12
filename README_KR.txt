@@ -1,11 +1,20 @@
+Lycee Overture Target System Extension Patch
+
+포함 내용
+- optionalTarget 지원
+- multiTarget 지원
+- filter 지원 (tapped / untapped)
+- 관련 DSL validation 확장
+- 관련 샘플 카탈로그 추가
+- 관련 테스트 추가
+
 적용 방법
+1. 압축 해제
+2. zip 안의 src 폴더를 프로젝트 루트에 그대로 덮어쓰기
+3. 프로젝트 폴더에서 아래 실행
 
-1. 이 zip의 GameEngine.ts를 프로젝트의 src/game/GameEngine.ts에 덮어쓰기
-2. 프로젝트 루트에서 npm test 실행
+npm test
 
-이번 수정 핵심
-- Effect DSL resolver가 id 없는 raw DSL({ steps: [...] })도 허용
-- compiled DSL({ normalizedSteps: [...] })도 허용
-- wrapper.definition 안의 raw DSL도 허용
-
-즉, executeEffectDefinitionInEngine()에 전달되는 DSL 형태가 달라도 definition undefined로 죽지 않도록 보강한 패치입니다.
+예상
+- 기존 44개 테스트 유지
+- 새 타겟 시스템 테스트 추가 통과

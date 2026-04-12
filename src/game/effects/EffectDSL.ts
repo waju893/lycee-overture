@@ -10,6 +10,17 @@ export type EffectDSLTargetScope =
 
 export type EffectDSLTargetTiming = 'declareTime' | 'resolutionTime' | 'none';
 
+export type EffectDSLTargetFilter = 'tapped' | 'untapped';
+
+type CountedTargetStepBase = {
+  target: EffectDSLTargetScope;
+  count: number;
+  targetTiming: Exclude<EffectDSLTargetTiming, 'none'>;
+  optionalTarget?: boolean;
+  multiTarget?: boolean;
+  filter?: EffectDSLTargetFilter;
+};
+
 export type EffectDSLStep =
   | {
       type: 'draw';
@@ -17,19 +28,28 @@ export type EffectDSLStep =
       count: number;
     }
   | {
+      type: 'mill';
+      player: 'self' | 'opponent';
+      count: number;
+    }
+  | ({
       type: 'destroy';
-      target: EffectDSLTargetScope;
-      count: number;
-      targetTiming: Exclude<EffectDSLTargetTiming, 'none'>;
       isDown?: false;
-    }
-  | {
+    } & CountedTargetStepBase)
+  | ({
       type: 'battleDestroy';
-      target: EffectDSLTargetScope;
-      count: number;
-      targetTiming: Exclude<EffectDSLTargetTiming, 'none'>;
       isDown: true;
-    }
+    } & CountedTargetStepBase)
+  | ({
+      type: 'move';
+      destination: 'hand' | 'discard';
+    } & CountedTargetStepBase)
+  | ({
+      type: 'tap';
+    } & CountedTargetStepBase)
+  | ({
+      type: 'untap';
+    } & CountedTargetStepBase)
   | {
       type: 'discard';
       player: 'self' | 'opponent';

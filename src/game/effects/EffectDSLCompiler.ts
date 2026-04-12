@@ -9,18 +9,41 @@ function isPositiveInt(value: unknown): boolean {
   return typeof value === 'number' && Number.isInteger(value) && value > 0;
 }
 
+function validateTargetTiming(step: Extract<EffectDSLStep, { targetTiming: any }>, index: number, errors: string[]): void {
+  if (step.targetTiming === 'none') {
+    errors.push(`steps[${index}].targetTiming cannot be none for ${step.type}`);
+  }
+}
+
+function validateTargetOptions(step: Extract<EffectDSLStep, { count: number }>, index: number, errors: string[]): void {
+  if (step.multiTarget && step.count < 2) {
+    errors.push(`steps[${index}].multiTarget requires count >= 2 for ${step.type}`);
+  }
+}
+
 function validateStep(step: EffectDSLStep, index: number, errors: string[]): void {
   switch (step.type) {
     case 'draw':
-      if (!isPositiveInt(step.count)) errors.push(`steps[${index}].count must be positive for draw`);
+    case 'mill':
+      if (!isPositiveInt(step.count)) errors.push(`steps[${index}].count must be positive for ${step.type}`);
       return;
     case 'destroy':
       if (!isPositiveInt(step.count)) errors.push(`steps[${index}].count must be positive for destroy`);
-      if (step.targetTiming === 'none') errors.push(`steps[${index}].targetTiming cannot be none for destroy`);
+      validateTargetTiming(step, index, errors);
+      validateTargetOptions(step, index, errors);
       return;
     case 'battleDestroy':
       if (!isPositiveInt(step.count)) errors.push(`steps[${index}].count must be positive for battleDestroy`);
       if (step.isDown !== true) errors.push(`steps[${index}].isDown must be true for battleDestroy`);
+      validateTargetTiming(step, index, errors);
+      validateTargetOptions(step, index, errors);
+      return;
+    case 'move':
+    case 'tap':
+    case 'untap':
+      if (!isPositiveInt(step.count)) errors.push(`steps[${index}].count must be positive for ${step.type}`);
+      validateTargetTiming(step, index, errors);
+      validateTargetOptions(step, index, errors);
       return;
     case 'discard':
     case 'moveToHand':

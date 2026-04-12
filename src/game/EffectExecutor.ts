@@ -22,23 +22,11 @@ function defaultExecuteStep(
     case 'draw':
       state.logs.push(`[EFFECT] draw ${step.count}`);
       return;
-    case 'mill':
-      state.logs.push(`[EFFECT] mill ${step.count}`);
-      return;
     case 'destroy':
       state.logs.push(`[EFFECT] destroy ${step.count}`);
       return;
     case 'battleDestroy':
       state.logs.push(`[EFFECT] battleDestroy ${step.count}`);
-      return;
-    case 'move':
-      state.logs.push(`[EFFECT] move ${step.destination}`);
-      return;
-    case 'tap':
-      state.logs.push('[EFFECT] tap');
-      return;
-    case 'untap':
-      state.logs.push('[EFFECT] untap');
       return;
     default:
       state.logs.push(`[EFFECT] step ${step.type}`);
