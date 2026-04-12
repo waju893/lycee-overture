@@ -1,39 +1,27 @@
-import type { GameState, PlayerID, TriggerCandidate } from '../GameTypes';
-
-export interface ResolveTriggerOptions {
-  chooseOrder?: (group: TriggerCandidate[], activePlayer: PlayerID) => TriggerCandidate[];
-}
+import type { GameState, TriggerCandidate } from '../GameTypes';
 
 /**
- * Lycee-specific trigger ordering:
- * 1. simultaneous triggers are grouped together
- * 2. turn player chooses order
- * 3. if new triggers appear during trigger resolution, they must resolve first
+ * Returns the next simultaneous trigger group as-is.
  *
- * Queue strategy:
- * - pendingGroups[0] is always the next simultaneous trigger batch
- * - nested triggers should be unshifted by the event producer
+ * Lycee semantics are NOT:
+ * "all active player's triggers first".
+ *
+ * Instead, the turn player chooses ONE trigger from the simultaneous group,
+ * resolves it completely, then chooses again from the remaining unresolved
+ * triggers if no nested triggers were generated.
+ *
+ * So this resolver only surfaces the group and leaves one-by-one selection
+ * to the engine loop.
  */
-export function resolveNextTriggerGroup(
-  state: GameState,
-  options?: ResolveTriggerOptions,
-): TriggerCandidate[] {
+export function resolveNextTriggerGroup(state: GameState): TriggerCandidate[] {
   const group = state.triggerQueue.pendingGroups.shift();
   if (!group || group.length === 0) {
     return [];
   }
 
   const activePlayer = state.turn.activePlayer;
-  const ordered = options?.chooseOrder ? options.chooseOrder(group, activePlayer) : defaultOrder(group, activePlayer);
-
-  state.logs.push(`[TRIGGER] resolve group size=${ordered.length} active=${activePlayer}`);
+  state.logs.push(`[TRIGGER RESOLVE] group size=${group.length} active=${activePlayer}`);
   state.log = state.logs;
 
-  return ordered;
-}
-
-function defaultOrder(group: TriggerCandidate[], activePlayer: PlayerID): TriggerCandidate[] {
-  const mine = group.filter((candidate) => candidate.controller === activePlayer);
-  const others = group.filter((candidate) => candidate.controller !== activePlayer);
-  return [...mine, ...others];
+  return [...group];
 }

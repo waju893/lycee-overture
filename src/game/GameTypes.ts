@@ -67,9 +67,13 @@ export type OperationKind =
 
 export interface CauseDescriptor {
   controller?: PlayerID;
+  controllerPlayerId?: PlayerID;
   relationToAffectedPlayer?: CauseRelation;
   causeKind: CauseKind;
+  category?: CauseKind;
   sourceOwnerKind: EffectOwnerKind;
+  sourceKind?: EffectOwnerKind;
+  sourceType?: EffectOwnerKind;
   isEffect: boolean;
   isAbility: boolean;
   sourceCardId?: string;
@@ -97,8 +101,14 @@ export interface TriggerCauseCondition {
 }
 
 export interface TriggerCondition {
-  eventType: string;
+  eventType?: string;
   cause?: TriggerCauseCondition;
+  kind?: string;
+  cardId?: string;
+  relation?: 'self' | 'opponent' | 'any';
+  category?: string;
+  sourceKind?: string;
+  operationKind?: string;
 }
 
 export interface TriggerTemplate {
@@ -119,6 +129,8 @@ export interface TriggerCandidate {
   effectId?: string;
   optional?: boolean;
   description?: string;
+  event?: EngineEvent;
+  template?: TriggerTemplate;
 }
 
 export interface TriggerHistoryEntry {
@@ -175,6 +187,7 @@ export interface ReplayEvent {
 export interface EngineEvent {
   type: string;
   playerId?: PlayerID;
+  affectedPlayerId?: PlayerID;
   cardId?: string;
   cause?: CauseDescriptor;
   operation?: OperationDescriptor;
@@ -310,6 +323,7 @@ export interface ActiveResponseWindow {
 
 export interface TriggerQueueState {
   pendingGroups: TriggerCandidate[][];
+  isResolving?: boolean;
 }
 
 export type DeclarationStackArray = LegacyDeclaration[] & {
@@ -335,6 +349,7 @@ export interface GameState {
     priorityPlayer: PlayerID;
     phase: TurnPhase;
     firstPlayer?: PlayerID;
+    passedPlayers: PlayerID[];
   };
   battle: {
     isActive: boolean;

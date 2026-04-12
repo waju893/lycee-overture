@@ -71,6 +71,7 @@ export function createInitialGameState(params: {
       activePlayer: 'P1',
       priorityPlayer: 'P1',
       phase: 'startup',
+      passedPlayers: [],
     },
     battle: {
       isActive: false,
@@ -81,6 +82,7 @@ export function createInitialGameState(params: {
     declarationStack: makeDeclarationStack(),
     triggerQueue: {
       pendingGroups: [],
+      isResolving: false,
     },
     logs: [],
     log: [],

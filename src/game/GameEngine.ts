@@ -26,6 +26,9 @@ import {
   validateResponseDeclarationOpportunity,
 } from './GameRules';
 import { enqueueTriggerCandidates } from './triggers/TriggerQueue';
+import { resolveNextTriggerGroup } from './triggers/TriggerResolver';
+import { resolveTriggeredEffect } from './effects/EffectEngine';
+import { normalizeLyceeStateEvents } from './state/LyceeStateNormalizer';
 import { BATTLE_FORBIDDEN_KEYEFFECTS } from './BattleRestrictions';
 import { CARD_META_BY_CODE } from '../lib/cards';
 
@@ -67,18 +70,68 @@ function beginTurnAndEnterMain(state: GameState, playerId: PlayerID, incrementTu
   appendLog(state, '메인 페이즈');
 }
 
-function endTurnAndPassToOpponent(state: GameState): void {
-  appendLog(state, '턴 종료시');
-  appendLog(state, '턴 종료시 유발 효과 처리 완료');
-  const nextPlayer = getOpponentPlayerId(state.turn.activePlayer);
-  beginTurnAndEnterMain(state, nextPlayer, true);
-}
-
 function recordReplay(state: GameState, action: unknown): void {
   state.replayEvents.push({
     type: 'ACTION_RECORDED',
     payload: JSON.parse(JSON.stringify(action)),
   });
+}
+
+function flushNormalizationAndTriggers(state: GameState, startEventIndex: number): void {
+  const beforeNormalize = state.events.length;
+  const produced = normalizeLyceeStateEvents(state, startEventIndex);
+
+  for (let i = beforeNormalize; i < state.events.length; i += 1) {
+    enqueueTriggerCandidates(state, state.events[i]);
+  }
+
+  if (state.declarationStack.length > 0) {
+    return;
+  }
+
+  while (state.declarationStack.length === 0 && state.triggerQueue.pendingGroups.length > 0) {
+    const currentGroup = resolveNextTriggerGroup(state);
+    if (currentGroup.length === 0) break;
+
+    state.triggerQueue.isResolving = true;
+    try {
+      const remaining = [...currentGroup];
+
+      while (remaining.length > 0) {
+        // Lycee semantics:
+        // the turn player chooses ONE trigger from the simultaneous group,
+        // resolves it completely, then chooses again from the remaining group
+        // if no newer nested triggers were created.
+        const trigger = remaining.shift()!;
+        appendLog(state, `[TRIGGER PICK] ${trigger.triggerId} (${trigger.sourceCardId})`);
+
+        const triggerEventStart = state.events.length;
+        resolveTriggeredEffect(state, trigger);
+        const newlyProduced = normalizeLyceeStateEvents(state, triggerEventStart);
+
+        for (let i = triggerEventStart; i < state.events.length; i += 1) {
+          enqueueTriggerCandidates(state, state.events[i]);
+        }
+
+        if (newlyProduced > 0) {
+          appendLog(state, `[STATE] normalized ${newlyProduced} follow-up event(s)`);
+        }
+
+        // Nested triggers must resolve first.
+        if (state.triggerQueue.pendingGroups.length > 0) {
+          state.triggerQueue.pendingGroups.unshift([...remaining]);
+          appendLog(state, `[TRIGGER QUEUE] suspend remaining group size=${remaining.length}`);
+          break;
+        }
+      }
+    } finally {
+      state.triggerQueue.isResolving = false;
+    }
+  }
+
+  if (produced > 0) {
+    appendLog(state, `[STATE] normalized ${produced} event(s)`);
+  }
 }
 
 function pushEngineEvent(state: GameState, event: EngineEvent): void {
@@ -101,16 +154,20 @@ function destroyCardToDiscard(
     destroyReason: options?.destroyReason ?? 'other',
   };
 
-  removeCardFromAllZones(state.players[destroyedPlayerId], card.instanceId);
+  const removed = removeCardFromAllZones(state.players[destroyedPlayerId], card.instanceId);
+  const removedCard = removed ?? { ...card };
+  removedCard.location = 'discard';
+  state.players[destroyedPlayerId].discard.push(removedCard);
 
   pushEngineEvent(state, {
     type: 'CARD_DESTROYED',
     playerId: destroyedPlayerId,
-    cardId: card.instanceId,
+    affectedPlayerId: destroyedPlayerId,
+    cardId: removedCard.instanceId,
     cause,
     operation: {
       kind: 'destroy',
-      cardId: card.instanceId,
+      cardId: removedCard.instanceId,
       playerId: destroyedPlayerId,
       fromZone: 'field',
       toZone: 'discard',
@@ -122,11 +179,12 @@ function destroyCardToDiscard(
     pushEngineEvent(state, {
       type: 'CARD_DOWNED',
       playerId: destroyedPlayerId,
-      cardId: card.instanceId,
+      affectedPlayerId: destroyedPlayerId,
+      cardId: removedCard.instanceId,
       cause,
       operation: {
         kind: 'down',
-        cardId: card.instanceId,
+        cardId: removedCard.instanceId,
         playerId: destroyedPlayerId,
         fromZone: 'field',
         toZone: 'discard',
@@ -138,11 +196,12 @@ function destroyCardToDiscard(
   pushEngineEvent(state, {
     type: 'CARD_LEFT_FIELD',
     playerId: destroyedPlayerId,
-    cardId: card.instanceId,
+    affectedPlayerId: destroyedPlayerId,
+    cardId: removedCard.instanceId,
     cause,
     operation: {
       kind: 'leaveField',
-      cardId: card.instanceId,
+      cardId: removedCard.instanceId,
       playerId: destroyedPlayerId,
       fromZone: 'field',
       toZone: 'discard',
@@ -162,9 +221,13 @@ function nextDeclarationId(state: GameState): string {
 function makeRuleCause(playerId?: PlayerID, detail?: string): CauseDescriptor {
   return {
     controller: playerId,
+    controllerPlayerId: playerId,
     relationToAffectedPlayer: 'any',
     causeKind: 'rule',
+    category: 'rule',
     sourceOwnerKind: 'rule',
+    sourceKind: 'rule',
+    sourceType: 'rule',
     isEffect: false,
     isAbility: false,
     detail,
@@ -174,9 +237,13 @@ function makeRuleCause(playerId?: PlayerID, detail?: string): CauseDescriptor {
 function makeCharacterAbilityCause(playerId: PlayerID, sourceCardId?: string, sourceEffectId?: string): CauseDescriptor {
   return {
     controller: playerId,
+    controllerPlayerId: playerId,
     relationToAffectedPlayer: 'self',
     causeKind: 'ability',
+    category: 'ability',
     sourceOwnerKind: 'character',
+    sourceKind: 'character',
+    sourceType: 'character',
     isEffect: true,
     isAbility: true,
     sourceCardId,
@@ -187,9 +254,13 @@ function makeCharacterAbilityCause(playerId: PlayerID, sourceCardId?: string, so
 function makeBattleCause(playerId: PlayerID, sourceCardId?: string): CauseDescriptor {
   return {
     controller: playerId,
+    controllerPlayerId: playerId,
     relationToAffectedPlayer: 'self',
     causeKind: 'battle',
+    category: 'battle',
     sourceOwnerKind: 'battle',
+    sourceKind: 'battle',
+    sourceType: 'battle',
     isEffect: false,
     isAbility: false,
     sourceCardId,
@@ -205,6 +276,7 @@ function drawTopCards(state: GameState, playerId: PlayerID, count: number): void
     pushEngineEvent(state, {
       type: 'CARD_DRAWN',
       playerId,
+      affectedPlayerId: playerId,
       cardId: card.instanceId,
       cause: makeRuleCause(playerId, 'drawTopCards'),
       operation: { kind: 'draw', cardId: card.instanceId, playerId, fromZone: 'deck', toZone: 'hand', amount: 1 },
@@ -221,6 +293,7 @@ function untapField(state: GameState, playerId: PlayerID): void {
       pushEngineEvent(state, {
         type: 'CARD_UNTAPPED',
         playerId,
+        affectedPlayerId: playerId,
         cardId: card.instanceId,
         cause: makeRuleCause(playerId, 'turnStartUntap'),
         operation: { kind: 'untap', cardId: card.instanceId, playerId },
@@ -250,6 +323,7 @@ function millFromDeckToDiscard(state: GameState, playerId: PlayerID, count: numb
     pushEngineEvent(state, {
       type: 'CARD_MOVED_TO_DISCARD',
       playerId,
+      affectedPlayerId: playerId,
       cardId: card.instanceId,
       cause,
       operation: {
@@ -293,7 +367,7 @@ function cardHasForbiddenBattleKeyeffect(cardNo?: string): boolean {
   if (!cardNo) return false;
   const meta = CARD_META_BY_CODE[cardNo.trim().toUpperCase()];
   if (!meta) return false;
-  const keyeffects = meta.keyEffects ?? meta.keyeffects ?? [];
+  const keyeffects = (meta as any).keyEffects ?? (meta as any).keyeffects ?? [];
   return keyeffects.some((id: number) => BATTLE_FORBIDDEN_KEYEFFECTS.has(id));
 }
 
@@ -342,6 +416,8 @@ function finalizeAttackResponses(state: GameState): void {
 }
 
 function resolveCurrentBattle(state: GameState): void {
+  const eventStartIndex = state.events.length;
+
   if (!state.battle.isActive || !state.battle.attackerCardId || !state.battle.attackerPlayerId) {
     clearBattleState(state);
     return;
@@ -361,6 +437,7 @@ function resolveCurrentBattle(state: GameState): void {
   pushEngineEvent(state, {
     type: 'CARD_TAPPED',
     playerId: attackerPlayerId,
+    affectedPlayerId: attackerPlayerId,
     cardId: attackerInfo.card.instanceId,
     cause: makeBattleCause(attackerPlayerId, attackerInfo.card.instanceId),
     operation: { kind: 'tap', cardId: attackerInfo.card.instanceId, playerId: attackerPlayerId },
@@ -389,6 +466,7 @@ function resolveCurrentBattle(state: GameState): void {
       }
       appendLog(state, '배틀 종료 (down = battle destroy)');
       clearBattleState(state);
+      flushNormalizationAndTriggers(state, eventStartIndex);
       return;
     }
   }
@@ -397,6 +475,7 @@ function resolveCurrentBattle(state: GameState): void {
   millFromDeckToDiscard(state, defenderPlayerId, dmg, makeBattleCause(attackerPlayerId, attackerInfo.card.instanceId));
   appendLog(state, `직접 공격 처리 (${dmg})`);
   clearBattleState(state);
+  flushNormalizationAndTriggers(state, eventStartIndex);
 }
 
 function fieldHasSameName(state: GameState, playerId: PlayerID, sameNameKey?: string): boolean {
@@ -404,7 +483,6 @@ function fieldHasSameName(state: GameState, playerId: PlayerID, sameNameKey?: st
   const slots = Object.keys(state.players[playerId].field) as FieldSlot[];
   return slots.some((slot) => state.players[playerId].field[slot].card?.sameNameKey === sameNameKey);
 }
-
 
 function resolveUseEvent(state: GameState, declaration: any): void {
   const playerId = declaration.playerId as PlayerID;
@@ -416,6 +494,7 @@ function resolveUseEvent(state: GameState, declaration: any): void {
   pushEngineEvent(state, {
     type: 'EVENT_USED',
     playerId,
+    affectedPlayerId: playerId,
     cardId: card.instanceId,
     cause: makeRuleCause(playerId, 'eventDeclarationResolved'),
     operation: { kind: 'moveToDiscard', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'discard' },
@@ -440,6 +519,7 @@ function resolveUseArea(state: GameState, declaration: any): void {
   pushEngineEvent(state, {
     type: 'AREA_ENTERED_FIELD',
     playerId,
+    affectedPlayerId: playerId,
     cardId: card.instanceId,
     cause: makeRuleCause(playerId, 'areaDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
@@ -469,6 +549,7 @@ function resolveUseItem(state: GameState, declaration: any): void {
   pushEngineEvent(state, {
     type: 'ITEM_ATTACHED',
     playerId,
+    affectedPlayerId: playerId,
     cardId: card.instanceId,
     cause: makeRuleCause(playerId, 'itemDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
@@ -485,6 +566,7 @@ function resolveUseCharacter(state: GameState, declaration: any): void {
   pushEngineEvent(state, {
     type: 'CARD_ENTERED_FIELD',
     playerId,
+    affectedPlayerId: playerId,
     cardId: card.instanceId,
     cause: makeRuleCause(playerId, 'characterDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
@@ -496,6 +578,7 @@ function resolveUseAbility(state: GameState, declaration: any): void {
   pushEngineEvent(state, {
     type: 'ABILITY_USED',
     playerId: declaration.playerId,
+    affectedPlayerId: declaration.playerId,
     cardId: declaration.sourceCardId,
     cause: makeCharacterAbilityCause(declaration.playerId, declaration.sourceCardId, declaration.sourceEffectId),
   });
@@ -517,6 +600,7 @@ function resolveChargeCharacter(state: GameState, declaration: any): void {
     pushEngineEvent(state, {
       type: 'CARD_MOVED_TO_CHARGE',
       playerId: owner,
+      affectedPlayerId: owner,
       cardId: card.instanceId,
       cause: makeCharacterAbilityCause(owner, declaration.sourceCardId, declaration.sourceEffectId),
       operation: { kind: 'charge', cardId: card.instanceId, playerId: owner, fromZone: 'deck', toZone: 'charge', amount: 1 },
@@ -530,6 +614,7 @@ function resolveChargeCharacter(state: GameState, declaration: any): void {
       pushEngineEvent(state, {
         type: 'CARD_MOVED_TO_CHARGE',
         playerId: owner,
+        affectedPlayerId: owner,
         cardId: card.instanceId,
         cause: makeCharacterAbilityCause(owner, declaration.sourceCardId, declaration.sourceEffectId),
         operation: { kind: 'charge', cardId: card.instanceId, playerId: owner, fromZone: 'discard', toZone: 'charge', amount: 1 },
@@ -565,6 +650,7 @@ function openAttackResponseWindow(state: GameState, action: Extract<GameAction, 
 }
 
 function resolveLatestLegacyDeclaration(state: GameState): void {
+  const eventStartIndex = state.events.length;
   const declaration = state.declarationStack.pop();
   syncDeclarationStack(state.declarationStack);
   if (!declaration) return;
@@ -596,6 +682,7 @@ function resolveLatestLegacyDeclaration(state: GameState): void {
   } else {
     state.turn.priorityPlayer = state.turn.activePlayer;
   }
+  flushNormalizationAndTriggers(state, eventStartIndex);
 }
 
 function validateDeclareAction(state: GameState, action: Extract<GameAction, { type: 'DECLARE_ACTION' }>): string | null {
@@ -700,7 +787,6 @@ function handleStartGame(state: GameState, action: Extract<GameAction, { type: '
   next.turn.firstPlayer = action.firstPlayer ?? 'P1';
   next.turn.activePlayer = action.firstPlayer ?? 'P1';
   next.turn.priorityPlayer = action.firstPlayer ?? 'P1';
-  next.turn.passedPlayers = [];
   next.turn.passedPlayers = [];
   if (action.leaderEnabled) {
     for (const playerId of ['P1', 'P2'] as PlayerID[]) {
@@ -842,7 +928,7 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
     turn: { ...state.turn, passedPlayers: [...(state.turn.passedPlayers ?? [])] },
     battle: { ...state.battle, passedPlayers: [...(state.battle.passedPlayers ?? [])] },
     declarationStack: syncDeclarationStack([...state.declarationStack] as unknown as DeclarationStackArray),
-    triggerQueue: { pendingGroups: state.triggerQueue.pendingGroups.map((group) => [...group]) },
+    triggerQueue: { pendingGroups: state.triggerQueue.pendingGroups.map((group) => [...group]), isResolving: state.triggerQueue.isResolving },
     logs: [...state.logs],
     log: [...state.logs],
     events: [...state.events],
@@ -1117,3 +1203,97 @@ export function canCurrentPlayerRespond(state: GameState, playerId: PlayerId): b
 }
 
 export { createInitialGameStateFromRules as createInitialGameState };
+
+
+export function applyEffectDestroyToFieldCard(
+  state: GameState,
+  params: {
+    affectedPlayerId: PlayerID;
+    cardId: string;
+    sourcePlayerId?: PlayerID;
+    sourceCardId?: string;
+    sourceEffectId?: string;
+  },
+): GameState {
+  const next: GameState = {
+    ...state,
+    players: {
+      P1: {
+        ...state.players.P1,
+        deck: [...state.players.P1.deck],
+        hand: [...state.players.P1.hand],
+        discard: [...state.players.P1.discard],
+        field: {
+          AF_LEFT: { ...state.players.P1.field.AF_LEFT, card: state.players.P1.field.AF_LEFT.card ? { ...state.players.P1.field.AF_LEFT.card } : null, area: (state.players.P1.field.AF_LEFT as any).area ? { ...(state.players.P1.field.AF_LEFT as any).area } : null, attachedItem: (state.players.P1.field.AF_LEFT as any).attachedItem ? { ...(state.players.P1.field.AF_LEFT as any).attachedItem } : null },
+          AF_CENTER: { ...state.players.P1.field.AF_CENTER, card: state.players.P1.field.AF_CENTER.card ? { ...state.players.P1.field.AF_CENTER.card } : null, area: (state.players.P1.field.AF_CENTER as any).area ? { ...(state.players.P1.field.AF_CENTER as any).area } : null, attachedItem: (state.players.P1.field.AF_CENTER as any).attachedItem ? { ...(state.players.P1.field.AF_CENTER as any).attachedItem } : null },
+          AF_RIGHT: { ...state.players.P1.field.AF_RIGHT, card: state.players.P1.field.AF_RIGHT.card ? { ...state.players.P1.field.AF_RIGHT.card } : null, area: (state.players.P1.field.AF_RIGHT as any).area ? { ...(state.players.P1.field.AF_RIGHT as any).area } : null, attachedItem: (state.players.P1.field.AF_RIGHT as any).attachedItem ? { ...(state.players.P1.field.AF_RIGHT as any).attachedItem } : null },
+          DF_LEFT: { ...state.players.P1.field.DF_LEFT, card: state.players.P1.field.DF_LEFT.card ? { ...state.players.P1.field.DF_LEFT.card } : null, area: (state.players.P1.field.DF_LEFT as any).area ? { ...(state.players.P1.field.DF_LEFT as any).area } : null, attachedItem: (state.players.P1.field.DF_LEFT as any).attachedItem ? { ...(state.players.P1.field.DF_LEFT as any).attachedItem } : null },
+          DF_CENTER: { ...state.players.P1.field.DF_CENTER, card: state.players.P1.field.DF_CENTER.card ? { ...state.players.P1.field.DF_CENTER.card } : null, area: (state.players.P1.field.DF_CENTER as any).area ? { ...(state.players.P1.field.DF_CENTER as any).area } : null, attachedItem: (state.players.P1.field.DF_CENTER as any).attachedItem ? { ...(state.players.P1.field.DF_CENTER as any).attachedItem } : null },
+          DF_RIGHT: { ...state.players.P1.field.DF_RIGHT, card: state.players.P1.field.DF_RIGHT.card ? { ...state.players.P1.field.DF_RIGHT.card } : null, area: (state.players.P1.field.DF_RIGHT as any).area ? { ...(state.players.P1.field.DF_RIGHT as any).area } : null, attachedItem: (state.players.P1.field.DF_RIGHT as any).attachedItem ? { ...(state.players.P1.field.DF_RIGHT as any).attachedItem } : null },
+        },
+      },
+      P2: {
+        ...state.players.P2,
+        deck: [...state.players.P2.deck],
+        hand: [...state.players.P2.hand],
+        discard: [...state.players.P2.discard],
+        field: {
+          AF_LEFT: { ...state.players.P2.field.AF_LEFT, card: state.players.P2.field.AF_LEFT.card ? { ...state.players.P2.field.AF_LEFT.card } : null, area: (state.players.P2.field.AF_LEFT as any).area ? { ...(state.players.P2.field.AF_LEFT as any).area } : null, attachedItem: (state.players.P2.field.AF_LEFT as any).attachedItem ? { ...(state.players.P2.field.AF_LEFT as any).attachedItem } : null },
+          AF_CENTER: { ...state.players.P2.field.AF_CENTER, card: state.players.P2.field.AF_CENTER.card ? { ...state.players.P2.field.AF_CENTER.card } : null, area: (state.players.P2.field.AF_CENTER as any).area ? { ...(state.players.P2.field.AF_CENTER as any).area } : null, attachedItem: (state.players.P2.field.AF_CENTER as any).attachedItem ? { ...(state.players.P2.field.AF_CENTER as any).attachedItem } : null },
+          AF_RIGHT: { ...state.players.P2.field.AF_RIGHT, card: state.players.P2.field.AF_RIGHT.card ? { ...state.players.P2.field.AF_RIGHT.card } : null, area: (state.players.P2.field.AF_RIGHT as any).area ? { ...(state.players.P2.field.AF_RIGHT as any).area } : null, attachedItem: (state.players.P2.field.AF_RIGHT as any).attachedItem ? { ...(state.players.P2.field.AF_RIGHT as any).attachedItem } : null },
+          DF_LEFT: { ...state.players.P2.field.DF_LEFT, card: state.players.P2.field.DF_LEFT.card ? { ...state.players.P2.field.DF_LEFT.card } : null, area: (state.players.P2.field.DF_LEFT as any).area ? { ...(state.players.P2.field.DF_LEFT as any).area } : null, attachedItem: (state.players.P2.field.DF_LEFT as any).attachedItem ? { ...(state.players.P2.field.DF_LEFT as any).attachedItem } : null },
+          DF_CENTER: { ...state.players.P2.field.DF_CENTER, card: state.players.P2.field.DF_CENTER.card ? { ...state.players.P2.field.DF_CENTER.card } : null, area: (state.players.P2.field.DF_CENTER as any).area ? { ...(state.players.P2.field.DF_CENTER as any).area } : null, attachedItem: (state.players.P2.field.DF_CENTER as any).attachedItem ? { ...(state.players.P2.field.DF_CENTER as any).attachedItem } : null },
+          DF_RIGHT: { ...state.players.P2.field.DF_RIGHT, card: state.players.P2.field.DF_RIGHT.card ? { ...state.players.P2.field.DF_RIGHT.card } : null, area: (state.players.P2.field.DF_RIGHT as any).area ? { ...(state.players.P2.field.DF_RIGHT as any).area } : null, attachedItem: (state.players.P2.field.DF_RIGHT as any).attachedItem ? { ...(state.players.P2.field.DF_RIGHT as any).attachedItem } : null },
+        },
+      },
+    },
+    startup: {
+      ...state.startup,
+      decisions: { ...state.startup.decisions },
+    },
+    turn: { ...state.turn, passedPlayers: [...(state.turn.passedPlayers ?? [])] },
+    battle: { ...state.battle, passedPlayers: [...(state.battle.passedPlayers ?? [])] },
+    declarationStack: syncDeclarationStack([...state.declarationStack] as unknown as DeclarationStackArray),
+    triggerQueue: { pendingGroups: state.triggerQueue.pendingGroups.map((group) => [...group]), isResolving: state.triggerQueue.isResolving },
+    logs: [...state.logs],
+    log: [...state.logs],
+    events: [...state.events],
+    replayEvents: [...state.replayEvents],
+  };
+
+  const found = findCardInField(next, params.affectedPlayerId, params.cardId);
+  if (!found) {
+    appendLog(next, 'EFFECT_DESTROY_TARGET_NOT_FOUND');
+    return next;
+  }
+
+  const sourcePlayerId = params.sourcePlayerId ?? params.affectedPlayerId;
+  const cause: CauseDescriptor = {
+    controller: sourcePlayerId,
+    controllerPlayerId: sourcePlayerId,
+    relationToAffectedPlayer: sourcePlayerId === params.affectedPlayerId ? 'self' : 'opponent',
+    causeKind: 'effect',
+    category: 'effect',
+    sourceOwnerKind: 'character',
+    sourceKind: 'character',
+    sourceType: 'character',
+    isEffect: true,
+    isAbility: false,
+    sourceCardId: params.sourceCardId,
+    sourceEffectId: params.sourceEffectId,
+    detail: 'applyEffectDestroyToFieldCard',
+  };
+
+  const eventStartIndex = next.events.length;
+  destroyCardToDiscard(
+    next,
+    params.affectedPlayerId,
+    found.card,
+    cause,
+    { isDown: false, destroyReason: 'effect' },
+  );
+  flushNormalizationAndTriggers(next, eventStartIndex);
+  appendLog(next, `[EFFECT DESTROY] ${params.affectedPlayerId} ${params.cardId}`);
+
+  return next;
+}

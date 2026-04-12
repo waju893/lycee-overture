@@ -21,10 +21,10 @@ function relationMatches(
     return cause.relationToAffectedPlayer === expectedRelation;
   }
 
-  if (!viewer || !event.affectedPlayerId || !cause.controllerPlayerId) return false;
+  if (!viewer || !event.affectedPlayerId || !(cause.controllerPlayerId ?? cause.controller)) return false;
 
-  const actual =
-    cause.controllerPlayerId === event.affectedPlayerId ? 'self' : 'opponent';
+  const controller = cause.controllerPlayerId ?? cause.controller;
+  const actual = controller === event.affectedPlayerId ? 'self' : 'opponent';
   return actual === expectedRelation;
 }
 
@@ -35,7 +35,7 @@ function sourceKindMatches(
   if (!expectedSourceKind) return true;
   const cause = event.cause;
   if (!cause) return false;
-  const actual = cause.sourceKind ?? cause.sourceType;
+  const actual = cause.sourceKind ?? cause.sourceType ?? cause.sourceOwnerKind;
   return actual === expectedSourceKind;
 }
 
@@ -47,7 +47,7 @@ function categoryMatches(
   const cause = event.cause;
   if (!cause) return false;
 
-  const actual = cause.category ?? cause.reasonType;
+  const actual = cause.category ?? cause.causeKind;
 
   if (expectedCategory === 'effect') {
     return actual === 'effect' || actual === 'ability' || cause.isEffect === true;
@@ -56,7 +56,7 @@ function categoryMatches(
   if (expectedCategory === 'ability') {
     return (
       actual === 'ability' ||
-      (cause.isAbility === true && (cause.sourceKind ?? cause.sourceType) === 'character')
+      (cause.isAbility === true && (cause.sourceKind ?? cause.sourceType ?? cause.sourceOwnerKind) === 'character')
     );
   }
 
@@ -77,15 +77,10 @@ function operationKindMatches(
 
 function internalMatches(
   event: EngineEvent,
-  condition: TriggerCondition & {
-    cardId?: string;
-    relation?: 'self' | 'opponent' | 'any';
-    category?: string;
-    sourceKind?: string;
-    operationKind?: string;
-  },
+  condition: TriggerCondition,
   viewer?: Viewer,
 ): boolean {
+  if (condition.eventType && event.type !== condition.eventType) return false;
   if (!eventMatchesCard(event, condition.cardId)) return false;
   if (!relationMatches(event, condition.relation, viewer)) return false;
   if (!categoryMatches(event, condition.category)) return false;
@@ -93,30 +88,25 @@ function internalMatches(
   if (!operationKindMatches(event, condition.operationKind)) return false;
 
   switch (condition.kind) {
+    case undefined:
+      return true;
     case 'destroyedByOpponentEffect':
       return event.type === 'CARD_DESTROYED';
-
     case 'destroyedByOpponentAbility':
       return event.type === 'CARD_DESTROYED';
-
     case 'destroyedByOpponentEventEffect':
       return event.type === 'CARD_DESTROYED';
-
     case 'leftFieldByOpponentEffect':
       return event.type === 'CARD_LEFT_FIELD';
-
     case 'movedToHandByEffect':
       return (
         event.type === 'CARD_MOVED' &&
         (event.operation?.kind === 'moveToHand' || event.operation?.toZone === 'hand')
       );
-
     case 'enteredFieldByRule':
       return event.type === 'CARD_ENTERED_FIELD';
-
     case 'custom':
       return true;
-
     default:
       return false;
   }
@@ -127,17 +117,7 @@ export function matchesTriggerCondition(
   condition: TriggerCondition,
   viewer?: Viewer,
 ): boolean {
-  return internalMatches(
-    event,
-    condition as TriggerCondition & {
-      cardId?: string;
-      relation?: 'self' | 'opponent' | 'any';
-      category?: string;
-      sourceKind?: string;
-      operationKind?: string;
-    },
-    viewer,
-  );
+  return internalMatches(event, condition, viewer);
 }
 
 export function destroyedByOpponentEffect(cardId?: string): TriggerCondition {
@@ -146,7 +126,7 @@ export function destroyedByOpponentEffect(cardId?: string): TriggerCondition {
     cardId,
     relation: 'opponent',
     category: 'effect',
-  } as TriggerCondition;
+  };
 }
 
 export function destroyedByOpponentAbility(cardId?: string): TriggerCondition {
@@ -156,7 +136,7 @@ export function destroyedByOpponentAbility(cardId?: string): TriggerCondition {
     relation: 'opponent',
     category: 'ability',
     sourceKind: 'character',
-  } as TriggerCondition;
+  };
 }
 
 export function destroyedByOpponentEventEffect(cardId?: string): TriggerCondition {
@@ -166,7 +146,7 @@ export function destroyedByOpponentEventEffect(cardId?: string): TriggerConditio
     relation: 'opponent',
     category: 'effect',
     sourceKind: 'event',
-  } as TriggerCondition;
+  };
 }
 
 export function leftFieldByOpponentEffect(cardId?: string): TriggerCondition {
@@ -175,7 +155,7 @@ export function leftFieldByOpponentEffect(cardId?: string): TriggerCondition {
     cardId,
     relation: 'opponent',
     category: 'effect',
-  } as TriggerCondition;
+  };
 }
 
 export function movedToHandByEffect(
@@ -188,7 +168,7 @@ export function movedToHandByEffect(
     relation,
     category: 'effect',
     operationKind: 'moveToHand',
-  } as TriggerCondition;
+  };
 }
 
 export function enteredFieldByRule(cardId?: string): TriggerCondition {
@@ -197,5 +177,5 @@ export function enteredFieldByRule(cardId?: string): TriggerCondition {
     cardId,
     category: 'rule',
     sourceKind: 'rule',
-  } as TriggerCondition;
+  };
 }

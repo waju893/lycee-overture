@@ -9,7 +9,7 @@ export function registerEffectResolver(effectId: string, resolver: EffectResolve
 }
 
 export function resolveTriggeredEffect(state: GameState, trigger: TriggerCandidate): void {
-  const effectId = trigger.effectId ?? (trigger as any).template?.effectId;
+  const effectId = trigger.effectId ?? trigger.template?.effectId;
   if (!effectId) {
     state.logs.push(`[EFFECT] missing effectId for trigger ${trigger.triggerId}`);
     state.log = state.logs;
@@ -23,16 +23,31 @@ export function resolveTriggeredEffect(state: GameState, trigger: TriggerCandida
     return;
   }
 
+  state.logs.push(`[TRIGGER EFFECT] ${trigger.triggerId} -> ${effectId}`);
+  state.log = state.logs;
+
   resolver(state, trigger);
+
   state.logs.push(`[EFFECT] resolved ${effectId}`);
   state.log = state.logs;
 }
 
-/**
- * Example no-op resolver to keep the pipeline test-safe before real card text
- * implementations land.
- */
 registerEffectResolver('noop', (state) => {
   state.logs.push('[EFFECT] noop');
+  state.log = state.logs;
+});
+
+registerEffectResolver('emit_nested_destroy', (state) => {
+  state.events.push({
+    type: 'CARD_DESTROYED',
+    playerId: 'P2',
+    affectedPlayerId: 'P2',
+    cardId: 'NESTED_VICTIM',
+    metadata: {
+      destroyReason: 'effect',
+      synthetic: true,
+    },
+  });
+  state.logs.push('[EFFECT] emit_nested_destroy');
   state.log = state.logs;
 });

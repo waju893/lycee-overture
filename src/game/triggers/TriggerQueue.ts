@@ -58,9 +58,8 @@ function matchesLegacyCondition(event: EngineEvent, condition: any): boolean {
 
     if (expectedCause.causeKind) {
       const actualCauseKind =
-        (eventCause as any).causeKind ??
-        (eventCause as any).category ??
-        (eventCause as any).reasonType;
+        eventCause.causeKind ??
+        (eventCause as any).category;
       if (actualCauseKind !== expectedCause.causeKind) {
         return false;
       }
@@ -68,7 +67,7 @@ function matchesLegacyCondition(event: EngineEvent, condition: any): boolean {
 
     if (expectedCause.sourceOwnerKind) {
       const actualSourceOwnerKind =
-        (eventCause as any).sourceOwnerKind ??
+        eventCause.sourceOwnerKind ??
         (eventCause as any).sourceKind ??
         (eventCause as any).sourceType;
       if (actualSourceOwnerKind !== expectedCause.sourceOwnerKind) {
@@ -78,14 +77,14 @@ function matchesLegacyCondition(event: EngineEvent, condition: any): boolean {
 
     if (
       typeof expectedCause.requireAbility === 'boolean' &&
-      Boolean((eventCause as any).isAbility) !== expectedCause.requireAbility
+      Boolean(eventCause.isAbility) !== expectedCause.requireAbility
     ) {
       return false;
     }
 
     if (
       typeof expectedCause.requireEffect === 'boolean' &&
-      Boolean((eventCause as any).isEffect) !== expectedCause.requireEffect
+      Boolean(eventCause.isEffect) !== expectedCause.requireEffect
     ) {
       return false;
     }
@@ -99,10 +98,10 @@ function matchesTemplate(
   template: TriggerTemplate,
   viewer: 'P1' | 'P2',
 ): boolean {
-  const condition = (template as any)?.condition;
+  const condition = template?.condition;
   if (!condition) return false;
 
-  if (typeof condition.kind === 'string') {
+  if (typeof condition.kind === 'string' || condition.cardId || condition.relation || condition.category) {
     return matchesTriggerCondition(event, condition, viewer);
   }
 
@@ -115,18 +114,19 @@ function buildTriggerCandidate(
   event: EngineEvent,
   eventIndex: number,
 ): TriggerCandidate {
-  const anyTemplate = template as any;
-
   return {
-    triggerId: anyTemplate.triggerId ?? anyTemplate.id,
+    triggerId: template.id,
     sourceCardId: card.instanceId,
-    controller: (card as any).controller ?? card.owner,
-    condition: anyTemplate.condition,
+    controller: card.owner,
+    condition: template.condition,
     sourceEventType: event.type,
     sourceEventIndex: eventIndex,
+    effectId: template.effectId,
+    optional: template.optional,
+    description: template.description,
     event,
     template,
-  } as TriggerCandidate;
+  };
 }
 
 export function enqueueTriggerCandidates(state: GameState, event: EngineEvent): void {
@@ -143,6 +143,14 @@ export function enqueueTriggerCandidates(state: GameState, event: EngineEvent): 
   }
 
   if (candidates.length > 0) {
-    state.triggerQueue.pendingGroups.push(candidates);
+    if (state.triggerQueue.isResolving) {
+      state.triggerQueue.pendingGroups.unshift(candidates);
+      state.logs.push(`[TRIGGER QUEUE] nested push group size=${candidates.length}`);
+      state.log = state.logs;
+    } else {
+      state.triggerQueue.pendingGroups.push(candidates);
+      state.logs.push(`[TRIGGER QUEUE] push group size=${candidates.length}`);
+      state.log = state.logs;
+    }
   }
 }
