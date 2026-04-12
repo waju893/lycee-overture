@@ -295,13 +295,6 @@ function getCardEx(card: CardRef): number {
   return Math.max(0, Number(meta?.ex ?? 0) || 0);
 }
 
-function declarationKindFromCardType(cardType: CardRef["cardType"]): "useCharacter" | "useEvent" | "useItem" | "useArea" {
-  if (cardType === "event") return "useEvent";
-  if (cardType === "item") return "useItem";
-  if (cardType === "area") return "useArea";
-  return "useCharacter";
-}
-
 function placeCardOnField(next: GameState, playerId: PlayerID, card: CardRef): boolean {
   const emptySlot = getFirstEmptySlot(next, playerId);
   if (!emptySlot) {
@@ -425,8 +418,6 @@ export default function PracticeBoardPage() {
   const [characterCostSelectionState, setCharacterCostSelectionState] = useState<{
     playerId: PlayerID;
     cardId: string;
-    cardType: "character" | "event" | "item" | "area";
-    declarationKind: "useCharacter" | "useEvent" | "useItem" | "useArea";
     requiredCost: number;
     parsedCost: number;
     useTargetText: string;
@@ -496,6 +487,8 @@ export default function PracticeBoardPage() {
 
   function handleFinalizeStartup() {
     dispatch({ type: "FINALIZE_STARTUP" });
+    dispatch({ type: "START_TURN" });
+    dispatch({ type: "ADVANCE_PHASE" });
   }
 
   function handleAdvancePhase() {
@@ -687,82 +680,114 @@ export default function PracticeBoardPage() {
   }
 
   function handleHandPrimaryAction(playerId: PlayerID, card: CardRef, costCardIds: string[]) {
-    if (pendingDeclaration) return;
-    if (currentPriority !== playerId) return;
+    if (card.cardType === "character") {
+      if (pendingDeclaration) return;
+      if (currentPriority !== playerId) return;
+      if (!getFirstEmptySlot(state, playerId)) return;
 
-    if (card.cardType === "character" && !getFirstEmptySlot(state, playerId)) return;
-    if (card.cardType === "area" && !hasOpenAreaSlot(state, playerId)) return;
-    if (card.cardType === "item" && !hasEquipableCharacterSlot(state, playerId)) return;
+      const meta = getCardMeta(card.cardNo);
+      const parsedCost = Math.max(0, Number(meta?.cost ?? 0) || 0);
+      const useTargetText = String(meta?.useTarget ?? "").trim();
+      const useTargetSequence = parseUseTargetSequence(meta?.useTarget);
+      const requiredAttributes = Array.from(new Set(useTargetSequence));
+      const needsCostSelection = parsedCost > 0 || useTargetText !== "" || useTargetSequence.length > 0;
+      const requiredCost = parsedCost > 0 ? parsedCost : Math.max(useTargetSequence.length, useTargetText ? 1 : 0);
 
-    const meta = getCardMeta(card.cardNo);
-    const parsedCost = Math.max(0, Number(meta?.cost ?? 0) || 0);
-    const useTargetText = String(meta?.useTarget ?? "").trim();
-    const useTargetSequence = parseUseTargetSequence(meta?.useTarget);
-    const requiredAttributes = Array.from(new Set(useTargetSequence));
-    const needsCostSelection = parsedCost > 0 || useTargetText !== "" || useTargetSequence.length > 0;
-    const requiredCost = parsedCost > 0 ? parsedCost : Math.max(useTargetSequence.length, useTargetText ? 1 : 0);
-    const declarationKind = declarationKindFromCardType(card.cardType);
+      if (needsCostSelection) {
+        const availableCostCards = state.players[playerId].hand.filter((handCard) => {
+          if (handCard.instanceId === card.instanceId) return false;
+          if (requiredAttributes.length === 0) return true;
+          const attrs = getCardAttributes(handCard);
+          return requiredAttributes.some((attr) => attrs.includes(attr));
+        });
 
-    if (needsCostSelection) {
-      const availableCostCards = state.players[playerId].hand.filter((handCard) => {
-        if (handCard.instanceId === card.instanceId) return false;
-        if (requiredAttributes.length === 0) return true;
-        const attrs = getCardAttributes(handCard);
-        return requiredAttributes.some((attr) => attrs.includes(attr));
-      });
+        const availableEx = availableCostCards.reduce((sum, handCard) => sum + getCardEx(handCard), 0);
 
-      const availableEx = availableCostCards.reduce((sum, handCard) => sum + getCardEx(handCard), 0);
+        if (availableEx < requiredCost) {
+          setState((prev) => {
+            const next = structuredClone(prev) as GameState;
+            next.logs.push(`[COST] ${playerId} ${card.name} 등장 실패: parsedCost=${parsedCost}, useTarget=${useTargetText || "none"}, 필요 코스트=${requiredCost}, 지불 가능 EX=${availableEx}`);
+            return next;
+          });
+          return;
+        }
 
-      if (availableEx < requiredCost) {
         setState((prev) => {
           const next = structuredClone(prev) as GameState;
-          next.logs.push(`[COST] ${playerId} ${card.name} 사용 실패: parsedCost=${parsedCost}, useTarget=${useTargetText || "none"}, 필요 코스트=${requiredCost}, 지불 가능 EX=${availableEx}`);
+          next.logs.push(`[USECHARACTER] ${playerId} ${card.name} costUI 진입 / parsedCost=${parsedCost} / useTarget=${useTargetText || "none"} / requiredCost=${requiredCost}`);
           return next;
+        });
+
+        setCharacterCostSelectionState({
+          playerId,
+          cardId: card.instanceId,
+          requiredCost,
+          parsedCost,
+          useTargetText,
+          requiredAttributes,
+          useTargetSequence,
+          selectedIds: [],
         });
         return;
       }
 
-      setState((prev) => {
-        const next = structuredClone(prev) as GameState;
-        next.logs.push(`[CARDUSE] ${playerId} ${card.name} costUI 진입 / kind=${declarationKind} / parsedCost=${parsedCost} / useTarget=${useTargetText || "none"} / requiredCost=${requiredCost}`);
-        return next;
-      });
-
-      setCharacterCostSelectionState({
+      setPlacementMode({
+        type: "hand_character_to_field",
         playerId,
         cardId: card.instanceId,
-        cardType: card.cardType,
-        declarationKind,
-        requiredCost,
-        parsedCost,
-        useTargetText,
-        requiredAttributes,
-        useTargetSequence,
-        selectedIds: [],
+        costCardIds,
       });
       return;
     }
 
-    if (card.cardType === "character") {
-      setPlacementMode({ type: "hand_character_to_field", playerId, cardId: card.instanceId, costCardIds });
-      return;
-    }
     if (card.cardType === "area") {
-      setPlacementMode({ type: "hand_area_to_field", playerId, cardId: card.instanceId, costCardIds });
-      return;
-    }
-    if (card.cardType === "item") {
-      setPlacementMode({ type: "hand_item_to_field", playerId, cardId: card.instanceId, costCardIds });
+      if (pendingDeclaration) return;
+      if (currentPriority !== playerId) return;
+      if (!hasOpenAreaSlot(state, playerId)) return;
+
+      setPlacementMode({
+        type: "hand_area_to_field",
+        playerId,
+        cardId: card.instanceId,
+        costCardIds,
+      });
       return;
     }
 
-    dispatch({
-      type: "DECLARE_ACTION",
-      playerId,
-      kind: "useEvent" as any,
-      sourceCardId: card.instanceId,
-      targetingMode: "declareTime",
-    } as any);
+    if (card.cardType === "item") {
+      if (currentPriority !== playerId) return;
+      if (!hasEquipableCharacterSlot(state, playerId)) return;
+
+      setPlacementMode({
+        type: "hand_item_to_field",
+        playerId,
+        cardId: card.instanceId,
+        costCardIds,
+      });
+      return;
+    }
+
+    setState((prev) => {
+      const next = structuredClone(prev) as GameState;
+      const player = next.players[playerId];
+      const index = player.hand.findIndex((item) => item.instanceId === card.instanceId);
+
+      if (index < 0) {
+        next.logs.push(`[HAND] ${playerId} 손패 행동 실패: 카드를 찾지 못함 (${card.instanceId})`);
+        return next;
+      }
+
+      payHandCosts(next, playerId, costCardIds, card.instanceId);
+
+      const [removed] = player.hand.splice(index, 1);
+      if (!removed) return next;
+
+      removed.location = "discard";
+      removed.revealed = true;
+      player.discard.push(removed);
+      next.logs.push(`[HAND] ${playerId} 손패 사용 -> 쓰레기통: ${removed.name}`);
+      return next;
+    });
   }
 
   function handleHandDeclareAction(playerId: PlayerID, cardId: string) {
@@ -948,15 +973,15 @@ export default function PracticeBoardPage() {
       if (cell.area) return;
       setState((prev) => {
         const next = structuredClone(prev) as GameState;
+        const player = next.players[playerId];
+        const index = player.hand.findIndex((item) => item.instanceId === placementMode.cardId);
+        if (index < 0) return next;
         payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-        return reduceGameState(next, {
-          type: "DECLARE_ACTION",
-          playerId,
-          kind: "useArea" as any,
-          sourceCardId: placementMode.cardId,
-          targetSlots: [slot],
-          targetingMode: "declareTime",
-        } as any);
+        const [removed] = player.hand.splice(index, 1);
+        if (!removed) return next;
+        placeAreaOnField(next, playerId, slot, removed);
+        next.logs.push(`[AREA] ${playerId} ${slot} 에리어 배치: ${removed.name}`);
+        return next;
       });
       setPlacementMode(null);
       return;
@@ -985,15 +1010,15 @@ export default function PracticeBoardPage() {
       if (!cell.card || cell.attachedItem) return;
       setState((prev) => {
         const next = structuredClone(prev) as GameState;
+        const player = next.players[playerId];
+        const index = player.hand.findIndex((item) => item.instanceId === placementMode.cardId);
+        if (index < 0) return next;
         payHandCosts(next, playerId, placementMode.costCardIds, placementMode.cardId);
-        return reduceGameState(next, {
-          type: "DECLARE_ACTION",
-          playerId,
-          kind: "useItem" as any,
-          sourceCardId: placementMode.cardId,
-          targetSlots: [slot],
-          targetingMode: "declareTime",
-        } as any);
+        const [removed] = player.hand.splice(index, 1);
+        if (!removed) return next;
+        if (!attachItemToCharacter(next, playerId, slot, removed)) return prev;
+        next.logs.push(`[ITEM] ${playerId} ${slot} 장비: ${removed.name}`);
+        return next;
       });
       setPlacementMode(null);
       return;
@@ -1215,7 +1240,7 @@ export default function PracticeBoardPage() {
 
                 {characterCostSelectionState ? (
           <div style={noticeStyle}>
-            <div style={battlePanelTitleStyle}>{characterCostSelectionState.declarationKind} 코스트 지불</div>
+            <div style={battlePanelTitleStyle}>useCharacter 코스트 지불</div>
             <div>플레이어: {characterCostSelectionState.playerId}</div>
             <div>
               카드: {
@@ -1301,48 +1326,16 @@ export default function PracticeBoardPage() {
                   const totalEx = selectedCards.reduce((sum, card) => sum + getCardEx(card), 0);
                   if (totalEx < characterCostSelectionState.requiredCost) return;
 
-                  if (characterCostSelectionState.cardType === "character") {
-                    setPlacementMode({
-                      type: "hand_character_to_field",
-                      playerId: characterCostSelectionState.playerId,
-                      cardId: characterCostSelectionState.cardId,
-                      costCardIds: characterCostSelectionState.selectedIds,
-                    });
-                    setCharacterCostSelectionState(null);
-                    return;
-                  }
-                  if (characterCostSelectionState.cardType === "area") {
-                    setPlacementMode({
-                      type: "hand_area_to_field",
-                      playerId: characterCostSelectionState.playerId,
-                      cardId: characterCostSelectionState.cardId,
-                      costCardIds: characterCostSelectionState.selectedIds,
-                    });
-                    setCharacterCostSelectionState(null);
-                    return;
-                  }
-                  if (characterCostSelectionState.cardType === "item") {
-                    setPlacementMode({
-                      type: "hand_item_to_field",
-                      playerId: characterCostSelectionState.playerId,
-                      cardId: characterCostSelectionState.cardId,
-                      costCardIds: characterCostSelectionState.selectedIds,
-                    });
-                    setCharacterCostSelectionState(null);
-                    return;
-                  }
-                  dispatch({
-                    type: "DECLARE_ACTION",
+                  setPlacementMode({
+                    type: "hand_character_to_field",
                     playerId: characterCostSelectionState.playerId,
-                    kind: "useEvent" as any,
-                    sourceCardId: characterCostSelectionState.cardId,
-                    targetingMode: "declareTime",
-                    payload: { costCardIds: characterCostSelectionState.selectedIds },
-                  } as any);
+                    cardId: characterCostSelectionState.cardId,
+                    costCardIds: characterCostSelectionState.selectedIds,
+                  });
                   setCharacterCostSelectionState(null);
                 }}
               >
-                코스트 확정
+                코스트 확정 후 배치 칸 선택
               </button>
               <button
                 type="button"
