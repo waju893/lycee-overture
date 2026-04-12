@@ -27,7 +27,10 @@ import {
 } from './GameRules';
 import { enqueueTriggerCandidates } from './triggers/TriggerQueue';
 import { resolveNextTriggerGroup } from './triggers/TriggerResolver';
-import { resolveTriggeredEffect } from './effects/EffectEngine';
+import { resolveTriggeredEffect as resolveRegisteredTriggeredEffect } from './effects/EffectEngine';
+import { executeEffectDSLDefinition } from './effects/EffectExecutor';
+import { SAMPLE_EFFECT_DSL_CATALOG } from './effects/SampleEffectCatalog';
+import type { EffectDSLStep, EffectDSLExecutionContext } from './effects/EffectDSL';
 import { normalizeLyceeStateEvents } from './state/LyceeStateNormalizer';
 import { BATTLE_FORBIDDEN_KEYEFFECTS } from './BattleRestrictions';
 import { CARD_META_BY_CODE } from '../lib/cards';
@@ -78,60 +81,13 @@ function recordReplay(state: GameState, action: unknown): void {
 }
 
 function flushNormalizationAndTriggers(state: GameState, startEventIndex: number): void {
-  const beforeNormalize = state.events.length;
-  const produced = normalizeLyceeStateEvents(state, startEventIndex);
-
-  for (let i = beforeNormalize; i < state.events.length; i += 1) {
-    enqueueTriggerCandidates(state, state.events[i]);
-  }
+  normalizeRecentEventsOnly(state, startEventIndex);
 
   if (state.declarationStack.length > 0) {
     return;
   }
 
-  while (state.declarationStack.length === 0 && state.triggerQueue.pendingGroups.length > 0) {
-    const currentGroup = resolveNextTriggerGroup(state);
-    if (currentGroup.length === 0) break;
-
-    state.triggerQueue.isResolving = true;
-    try {
-      const remaining = [...currentGroup];
-
-      while (remaining.length > 0) {
-        // Lycee semantics:
-        // the turn player chooses ONE trigger from the simultaneous group,
-        // resolves it completely, then chooses again from the remaining group
-        // if no newer nested triggers were created.
-        const trigger = remaining.shift()!;
-        appendLog(state, `[TRIGGER PICK] ${trigger.triggerId} (${trigger.sourceCardId})`);
-
-        const triggerEventStart = state.events.length;
-        resolveTriggeredEffect(state, trigger);
-        const newlyProduced = normalizeLyceeStateEvents(state, triggerEventStart);
-
-        for (let i = triggerEventStart; i < state.events.length; i += 1) {
-          enqueueTriggerCandidates(state, state.events[i]);
-        }
-
-        if (newlyProduced > 0) {
-          appendLog(state, `[STATE] normalized ${newlyProduced} follow-up event(s)`);
-        }
-
-        // Nested triggers must resolve first.
-        if (state.triggerQueue.pendingGroups.length > 0) {
-          state.triggerQueue.pendingGroups.unshift([...remaining]);
-          appendLog(state, `[TRIGGER QUEUE] suspend remaining group size=${remaining.length}`);
-          break;
-        }
-      }
-    } finally {
-      state.triggerQueue.isResolving = false;
-    }
-  }
-
-  if (produced > 0) {
-    appendLog(state, `[STATE] normalized ${produced} event(s)`);
-  }
+  flushPendingTriggersOnly(state);
 }
 
 function pushEngineEvent(state: GameState, event: EngineEvent): void {
@@ -282,6 +238,239 @@ function drawTopCards(state: GameState, playerId: PlayerID, count: number): void
       operation: { kind: 'draw', cardId: card.instanceId, playerId, fromZone: 'deck', toZone: 'hand', amount: 1 },
     });
   }
+}
+
+
+function normalizeRecentEventsOnly(state: GameState, startEventIndex: number): void {
+  const beforeNormalize = state.events.length;
+  const produced = normalizeLyceeStateEvents(state, startEventIndex);
+
+  for (let i = beforeNormalize; i < state.events.length; i += 1) {
+    enqueueTriggerCandidates(state, state.events[i]);
+  }
+
+  if (produced > 0) {
+    appendLog(state, `[STATE] normalized ${produced} event(s)`);
+  }
+}
+
+function flushPendingTriggersOnly(state: GameState): void {
+  while (state.declarationStack.length === 0 && state.triggerQueue.pendingGroups.length > 0) {
+    const currentGroup = resolveNextTriggerGroup(state);
+    if (currentGroup.length === 0) break;
+
+    state.triggerQueue.isResolving = true;
+    try {
+      const remaining = [...currentGroup];
+
+      while (remaining.length > 0) {
+        const trigger = remaining.shift()!;
+        appendLog(state, `[TRIGGER PICK] ${trigger.triggerId} (${trigger.sourceCardId})`);
+
+        const triggerEventStart = state.events.length;
+        invokeTriggeredEffect(state, trigger);
+
+        normalizeRecentEventsOnly(state, triggerEventStart);
+
+        if (state.triggerQueue.pendingGroups.length > 0) {
+          state.triggerQueue.pendingGroups.unshift([...remaining]);
+          appendLog(state, `[TRIGGER QUEUE] suspend remaining group size=${remaining.length}`);
+          break;
+        }
+      }
+    } finally {
+      state.triggerQueue.isResolving = false;
+    }
+  }
+}
+
+function resolveDSLTargetPlayer(
+  step: EffectDSLStep,
+  context: EffectDSLExecutionContext,
+): PlayerID | null {
+  if (!('target' in step)) return null;
+
+  switch (step.target) {
+    case 'self':
+    case 'self_character':
+      return context.controller;
+    case 'opponent':
+    case 'opponent_character':
+      return context.opponent;
+    case 'either':
+    case 'any_character':
+      return context.opponent;
+    default:
+      return context.opponent;
+  }
+}
+
+function findDeclaredTargetOnField(
+  state: GameState,
+  targetPlayer: PlayerID,
+  declaredTargetCardIds: string[] | undefined,
+): CardRef | null {
+  if (!declaredTargetCardIds || declaredTargetCardIds.length === 0) {
+    return null;
+  }
+
+  for (const cardId of declaredTargetCardIds) {
+    const found = findCardInField(state, targetPlayer, cardId);
+    if (found?.card) {
+      return found.card;
+    }
+  }
+
+  return null;
+}
+
+function findResolutionTargetOnField(
+  state: GameState,
+  targetPlayer: PlayerID,
+): CardRef | null {
+  const slots = Object.keys(state.players[targetPlayer].field) as FieldSlot[];
+  const found = slots
+    .map((slot) => ({ slot, card: state.players[targetPlayer].field[slot].card }))
+    .find((entry) => entry.card);
+
+  return found?.card ?? null;
+}
+
+function executeDSLStepInEngine(
+  state: GameState,
+  step: EffectDSLStep,
+  context: EffectDSLExecutionContext,
+): void {
+  switch (step.type) {
+    case 'log':
+      appendLog(state, `[EFFECT STEP] ${step.message}`);
+      return;
+    case 'draw': {
+      const targetPlayer = step.player === 'self' ? context.controller : context.opponent;
+      drawTopCards(state, targetPlayer, step.count);
+      appendLog(state, `[EFFECT STEP] draw ${step.count} for ${targetPlayer}`);
+      return;
+    }
+    case 'destroy':
+    case 'battleDestroy': {
+      const targetPlayer = resolveDSLTargetPlayer(step, context);
+      if (!targetPlayer) {
+        appendLog(state, `[EFFECT STEP] could not resolve target player for ${step.type}`);
+        return;
+      }
+
+      const targetCard =
+        step.targetTiming === 'declareTime'
+          ? findDeclaredTargetOnField(state, targetPlayer, context.declaredTargetCardIds)
+          : findResolutionTargetOnField(state, targetPlayer);
+
+      if (!targetCard) {
+        appendLog(
+          state,
+          step.targetTiming === 'declareTime'
+            ? `[EFFECT STEP] declared target missing for ${step.type}`
+            : `[EFFECT STEP] no resolution target for ${step.type}`,
+        );
+        return;
+      }
+
+      const cause: CauseDescriptor = {
+        controller: context.controller,
+        controllerPlayerId: context.controller,
+        relationToAffectedPlayer: context.controller === targetPlayer ? 'self' : 'opponent',
+        causeKind: 'effect',
+        category: 'effect',
+        sourceOwnerKind: 'character',
+        sourceKind: 'character',
+        sourceType: 'character',
+        isEffect: true,
+        isAbility: false,
+        sourceCardId: context.sourceCardId,
+        sourceEffectId: context.sourceEffectId,
+        detail: `dsl:${step.type}:${step.targetTiming}`,
+      };
+
+      destroyCardToDiscard(
+        state,
+        targetPlayer,
+        targetCard,
+        cause,
+        {
+          isDown: step.type === 'battleDestroy',
+          destroyReason: 'effect',
+        },
+      );
+      appendLog(state, `[EFFECT STEP] ${step.type} ${targetCard.instanceId} (${step.targetTiming})`);
+      return;
+    }
+    default:
+      appendLog(state, `[EFFECT STEP] unsupported ${step.type}`);
+      return;
+  }
+}
+
+
+function resolveSampleEffectDefinition(definitionOrId: any): any | undefined {
+  if (!definitionOrId) return undefined;
+
+  if (typeof definitionOrId === 'string') {
+    return (
+      SAMPLE_EFFECT_DSL_CATALOG[definitionOrId] ??
+      SAMPLE_EFFECT_DSL_CATALOG[`sample_${definitionOrId}`] ??
+      (definitionOrId.startsWith('sample_')
+        ? SAMPLE_EFFECT_DSL_CATALOG[definitionOrId.replace(/^sample_/, '')]
+        : undefined)
+    );
+  }
+
+  if (typeof definitionOrId === 'object') {
+    if (Array.isArray(definitionOrId.steps) && typeof definitionOrId.id === 'string') {
+      return definitionOrId;
+    }
+    if (definitionOrId.definition && Array.isArray(definitionOrId.definition.steps)) {
+      return definitionOrId.definition;
+    }
+    if (typeof definitionOrId.effectId === 'string') {
+      return resolveSampleEffectDefinition(definitionOrId.effectId);
+    }
+    if (typeof definitionOrId.id === 'string') {
+      return resolveSampleEffectDefinition(definitionOrId.id) ?? definitionOrId;
+    }
+  }
+
+  return undefined;
+}
+
+function invokeTriggeredEffect(state: GameState, trigger: any): void {
+  const effectId = trigger.effectId ?? trigger.template?.effectId;
+  const definition = resolveSampleEffectDefinition(
+    trigger.definition ??
+    effectId ??
+    trigger.template ??
+    trigger
+  );
+
+  if (definition) {
+    appendLog(state, `[DSL EFFECT] ${definition.id ?? effectId ?? 'unknown'}`);
+    executeEffectDefinitionInEngine(
+      state,
+      definition,
+      {
+        controller: trigger.controller ?? state.turn.activePlayer,
+        opponent: getOpponentPlayerId(trigger.controller ?? state.turn.activePlayer),
+        sourceCardId: trigger.sourceCardId,
+        sourceEffectId: effectId,
+        declaredTargetCardIds:
+          trigger.declaredTargetCardIds ??
+          trigger.targetCardIds ??
+          trigger.targets ??
+          trigger.event?.metadata?.declaredTargetCardIds,
+      } as any,
+    );
+    return;
+  }
+
+  resolveRegisteredTriggeredEffect(state, trigger);
 }
 
 function untapField(state: GameState, playerId: PlayerID): void {
@@ -1203,6 +1392,41 @@ export function canCurrentPlayerRespond(state: GameState, playerId: PlayerId): b
 }
 
 export { createInitialGameStateFromRules as createInitialGameState };
+
+
+
+
+export function executeEffectDefinitionInEngine(
+  state: GameState,
+  definitionOrId: any,
+  context: EffectDSLExecutionContext & { declaredTargetCardIds?: string[] },
+): GameState {
+  const resolvedDefinition = resolveSampleEffectDefinition(definitionOrId);
+
+  if (!resolvedDefinition) {
+    appendLog(
+      state,
+      `[DSL EFFECT] missing definition: ${
+        typeof definitionOrId === 'string'
+          ? definitionOrId
+          : definitionOrId?.effectId ?? definitionOrId?.id ?? definitionOrId?.definition?.id ?? 'unknown'
+      }`,
+    );
+    throw new Error('Invalid Effect DSL: definition is undefined');
+  }
+
+  executeEffectDSLDefinition(
+    state,
+    resolvedDefinition,
+    context,
+    {
+      executeStep: executeDSLStepInEngine,
+      runStateNormalization: (innerState, startEventIndex) => normalizeRecentEventsOnly(innerState, startEventIndex),
+      flushTriggers: (innerState) => flushPendingTriggersOnly(innerState),
+    },
+  );
+  return state;
+}
 
 
 export function applyEffectDestroyToFieldCard(

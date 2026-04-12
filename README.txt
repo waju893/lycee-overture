@@ -1,15 +1,28 @@
 설치 루트:
 C:\Users\DESKTOP\Desktop\lycee-overture
 
-이번 ZIP 내용:
-- src/game/GameEngine.ts 전체 교체본
-- src/game/__tests__/EffectDestroySemantics.test.ts 추가
+교체 파일:
+- src/game/GameEngine.ts
+- src/game/effects/EffectDSLRuntime.ts
+- src/game/effects/EffectExecutor.ts
 
-목적:
-- effect destroy 전용 엔진 진입점 추가
-- effect destroy = destroy only / left field / discard 이동 / DOWN 없음 검증
+이번 최종 DSL 안정화 패치에서 고친 것:
+1. step에서 생긴 이벤트를 같은 step의 normalize 대상으로 넘기도록 Runtime 수정
+2. DSL definition lookup 완전 보강
+   - string id
+   - sample_ alias
+   - object.effectId
+   - object.id
+   - object.definition
+   - full definition object
+3. trigger 경유 DSL 실행 복구
+4. queue 기반 trigger loop 유지
 
-적용 후 테스트:
+적용 후:
 cd C:\Users\DESKTOP\Desktop\lycee-overture
 npm test
 npx vitest run --config vitest.config.ts
+
+목표:
+Test Files 20 passed
+Tests 41 passed
