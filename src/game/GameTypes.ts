@@ -33,7 +33,8 @@ export type DeclarationKind =
   | 'chargeCharacter'
   | 'useEvent'
   | 'useItem'
-  | 'useArea';
+  | 'useArea'
+  | 'support';
 
 export type CauseRelation = 'self' | 'opponent' | 'neutral' | 'any';
 export type CauseKind = 'effect' | 'ability' | 'battle' | 'rule' | 'cost';
