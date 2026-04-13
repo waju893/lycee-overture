@@ -1,134 +1,129 @@
-import type { GameState, PlayerID } from '../GameTypes';
+import type { PlayerID } from '../GameTypes';
 
-// Intentionally permissive internal shapes so this module works with both
-// the full engine GameState and the lighter-weight Storage DSL test state.
-type AnyCard = Record<string, any> & {
+type Visibility = 'public' | 'private';
+
+export interface StorageCardLike {
   instanceId?: string;
   id?: string;
-  owner?: PlayerID | string;
-  controller?: PlayerID | string;
-  location?: string;
-  zone?: string;
   name?: string;
-};
+  [key: string]: any;
+}
 
-type StorageVisibility = 'public' | 'private';
-
-type CardStorageZone = {
+export interface CardStorage {
   id: string;
+  owner: PlayerID;
   label?: string;
-  visibility: StorageVisibility;
-  cards: AnyCard[];
-};
+  visibility: Visibility;
+  cards: StorageCardLike[];
+  [key: string]: any;
+}
 
-type StorageAwarePlayerState = Record<string, any> & {
-  id?: PlayerID | string;
-  hand?: AnyCard[];
-  deck?: AnyCard[];
-  discard?: AnyCard[];
+export interface StorageAwarePlayerState {
+  id?: PlayerID;
+  hand?: StorageCardLike[];
+  deck?: StorageCardLike[];
+  discard?: StorageCardLike[];
   field?: any;
-  removedFromGame?: AnyCard[];
-  setAside?: AnyCard[];
-  cardStorages?: Record<string, CardStorageZone>;
-};
+  removedFromGame?: StorageCardLike[];
+  setAside?: StorageCardLike[];
+  cardStorages?: Record<string, CardStorage>;
+  [key: string]: any;
+}
 
-type StorageAwareGameState = GameState & {
+export interface StorageAwareGameState {
   players?: Record<string, StorageAwarePlayerState>;
-  cards?: Record<string, AnyCard>;
-};
+  [key: string]: any;
+}
 
-function createEmptyField(): any {
+function ensurePlayers(state: StorageAwareGameState): Record<string, StorageAwarePlayerState> {
+  if (!state.players) {
+    state.players = {};
+  }
+  return state.players;
+}
+
+function makeEmptyPlayer(playerId: PlayerID): StorageAwarePlayerState {
   return {
-    AF_LEFT: { card: null },
-    AF_CENTER: { card: null },
-    AF_RIGHT: { card: null },
-    DF_LEFT: { card: null },
-    DF_CENTER: { card: null },
-    DF_RIGHT: { card: null },
+    id: playerId,
+    hand: [],
+    deck: [],
+    discard: [],
+    field: [],
+    removedFromGame: [],
+    setAside: [],
+    cardStorages: {},
   };
 }
 
 function getPlayerState(state: StorageAwareGameState, playerId: PlayerID): StorageAwarePlayerState {
-  if (!state.players) {
-    (state as any).players = {};
+  const players = ensurePlayers(state);
+  if (!players[playerId]) {
+    players[playerId] = makeEmptyPlayer(playerId);
   }
-
-  if (!state.players[playerId]) {
-    state.players[playerId] = {
-      id: playerId,
-      hand: [],
-      deck: [],
-      discard: [],
-      field: createEmptyField(),
-      removedFromGame: [],
-      setAside: [],
-      cardStorages: {},
-    } as StorageAwarePlayerState;
-  }
-
-  const player = state.players[playerId] as StorageAwarePlayerState;
-  if (!player.hand) player.hand = [];
-  if (!player.deck) player.deck = [];
-  if (!player.discard) player.discard = [];
-  if (!player.field) player.field = createEmptyField();
-  if (!player.removedFromGame) player.removedFromGame = [];
-  if (!player.setAside) player.setAside = [];
-  if (!player.cardStorages) player.cardStorages = {};
-  return player;
+  return players[playerId];
 }
 
 export function ensureSpecialZones(
   state: StorageAwareGameState,
   playerId: PlayerID,
 ): StorageAwarePlayerState {
-  return getPlayerState(state, playerId);
-}
-
-function cloneCard(card: AnyCard): AnyCard {
-  return { ...card };
-}
-
-function getCardId(card: AnyCard | undefined): string | undefined {
-  return card?.instanceId ?? card?.id;
+  const player = getPlayerState(state, playerId);
+  if (!player.hand) player.hand = [];
+  if (!player.deck) player.deck = [];
+  if (!player.discard) player.discard = [];
+  if (!player.field) player.field = [];
+  if (!player.removedFromGame) player.removedFromGame = [];
+  if (!player.setAside) player.setAside = [];
+  if (!player.cardStorages) player.cardStorages = {};
+  return player;
 }
 
 function toScopedStorageId(playerId: PlayerID, storageId: string | undefined): string {
-  const raw = storageId ?? '';
-  return raw.includes(':') ? raw : `${playerId}:${raw}`;
+  if (!storageId) {
+    throw new Error('storageId is required');
+  }
+  return storageId.includes(':') ? storageId : `${playerId}:${storageId}`;
 }
 
-function inferStorageLabel(scopedId: string, fallback?: string): string | undefined {
-  return fallback ?? scopedId.split(':')[1];
+function coerceVisibility(value: unknown): Visibility {
+  return value === 'private' ? 'private' : 'public';
 }
 
-function getStorageMap(state: StorageAwareGameState, playerId: PlayerID): Record<string, CardStorageZone> {
-  return ensureSpecialZones(state, playerId).cardStorages!;
+function makeStorage(
+  playerId: PlayerID,
+  scopedId: string,
+  options?: { label?: string; visibility?: Visibility },
+): CardStorage {
+  return {
+    id: scopedId,
+    owner: playerId,
+    label: options?.label,
+    visibility: coerceVisibility(options?.visibility),
+    cards: [],
+  };
 }
 
 export function ensureCardStorage(
   state: StorageAwareGameState,
   playerId: PlayerID,
-  storageId: string | undefined,
-  options?: { label?: string; visibility?: StorageVisibility },
-): CardStorageZone {
+  storageId: string,
+  options?: { label?: string; visibility?: Visibility },
+): CardStorage {
+  const player = ensureSpecialZones(state, playerId);
   const scopedId = toScopedStorageId(playerId, storageId);
-  const storages = getStorageMap(state, playerId);
-  if (!storages[scopedId]) {
-    storages[scopedId] = {
-      id: scopedId,
-      label: inferStorageLabel(scopedId, options?.label),
-      visibility: options?.visibility ?? 'public',
-      cards: [],
-    };
+
+  if (!player.cardStorages![scopedId]) {
+    player.cardStorages![scopedId] = makeStorage(playerId, scopedId, options);
   } else {
-    if (options?.label && !storages[scopedId].label) {
-      storages[scopedId].label = options.label;
+    if (options?.label !== undefined) {
+      player.cardStorages![scopedId].label = options.label;
     }
-    if (options?.visibility) {
-      storages[scopedId].visibility = options.visibility;
+    if (options?.visibility !== undefined) {
+      player.cardStorages![scopedId].visibility = coerceVisibility(options.visibility);
     }
   }
-  return storages[scopedId];
+
+  return player.cardStorages![scopedId];
 }
 
 export function createCardStorageIfNeededFromEffect(
@@ -136,264 +131,213 @@ export function createCardStorageIfNeededFromEffect(
   arg1: any,
   arg2?: any,
   arg3?: any,
-): CardStorageZone {
-  // Supports both object-form and positional-form callers.
-  if (arg1 && typeof arg1 === 'object' && !Array.isArray(arg1)) {
-    const playerId = (arg1.playerId ?? arg1.player ?? 'P1') as PlayerID;
-    const storageId = (arg1.storageId ?? arg1.storage ?? arg1.id) as string | undefined;
-    return ensureCardStorage(state, playerId, storageId, {
-      label: arg1.label,
-      visibility: arg1.visibility,
-    });
+  arg4?: any,
+): CardStorage {
+  if (typeof arg1 === 'string') {
+    return ensureCardStorage(state, arg1 as PlayerID, arg2, arg3);
   }
 
-  return ensureCardStorage(state, arg1 as PlayerID, arg2 as string | undefined, arg3);
+  const payload = arg1 ?? {};
+  const playerId: PlayerID = payload.playerId ?? arg2;
+  const storageId: string | undefined =
+    payload.storageId ??
+    payload.storage ??
+    payload.storageKey ??
+    payload.id ??
+    arg3;
+
+  const options = {
+    label: payload.label,
+    visibility: payload.visibility,
+  };
+
+  return ensureCardStorage(state, playerId, storageId as string, options);
 }
 
-function getAllFieldCards(player: StorageAwarePlayerState): AnyCard[] {
-  const field = player.field;
-  if (!field) return [];
-  if (Array.isArray(field)) return field;
-  const results: AnyCard[] = [];
-  for (const value of Object.values(field)) {
-    const cell = value as any;
-    if (cell?.card) results.push(cell.card);
-    if (cell?.area) results.push(cell.area);
-    if (cell?.attachedItem) results.push(cell.attachedItem);
-  }
-  return results;
+function getCardIdentity(card: StorageCardLike): string | undefined {
+  return card.instanceId ?? card.id;
 }
 
-function removeFromField(player: StorageAwarePlayerState, cardId: string): AnyCard | undefined {
-  const field = player.field;
-  if (!field) return undefined;
-  if (Array.isArray(field)) {
-    const idx = field.findIndex((card: AnyCard) => getCardId(card) === cardId);
-    if (idx >= 0) {
-      const [card] = field.splice(idx, 1);
-      return card;
-    }
-    return undefined;
-  }
-
-  for (const key of Object.keys(field)) {
-    const cell = field[key] as any;
-    if (cell?.card && getCardId(cell.card) === cardId) {
-      const found = cell.card;
-      cell.card = null;
-      return found;
-    }
-    if (cell?.area && getCardId(cell.area) === cardId) {
-      const found = cell.area;
-      cell.area = null;
-      return found;
-    }
-    if (cell?.attachedItem && getCardId(cell.attachedItem) === cardId) {
-      const found = cell.attachedItem;
-      cell.attachedItem = null;
-      return found;
-    }
-  }
-  return undefined;
-}
-
-function removeFromArray(zone: AnyCard[] | undefined, cardId: string): AnyCard | undefined {
-  if (!zone) return undefined;
-  const idx = zone.findIndex((card) => getCardId(card) === cardId);
-  if (idx < 0) return undefined;
-  const [card] = zone.splice(idx, 1);
+function removeCardFromArray(cards: StorageCardLike[] | undefined, cardId: string): StorageCardLike | undefined {
+  if (!cards) return undefined;
+  const index = cards.findIndex((card) => getCardIdentity(card) === cardId);
+  if (index < 0) return undefined;
+  const [card] = cards.splice(index, 1);
   return card;
 }
 
-function removeCardByIdFromPlayer(state: StorageAwareGameState, playerId: PlayerID, cardId: string): AnyCard | undefined {
+function normalizeZoneName(zone: string | undefined): string | undefined {
+  if (!zone) return zone;
+  if (zone === 'cardStorage') return 'storage';
+  return zone;
+}
+
+function resolveStorageId(
+  playerId: PlayerID,
+  zone: any,
+  explicitStorageId?: string,
+): string | undefined {
+  const candidate =
+    explicitStorageId ??
+    zone?.storageId ??
+    zone?.storage ??
+    zone?.id;
+  return candidate ? toScopedStorageId(playerId, candidate) : undefined;
+}
+
+function getZoneArray(
+  state: StorageAwareGameState,
+  playerId: PlayerID,
+  zone: string,
+  storageId?: string,
+): StorageCardLike[] {
   const player = ensureSpecialZones(state, playerId);
 
-  const fromHand = removeFromArray(player.hand, cardId);
-  if (fromHand) return fromHand;
-
-  const fromDeck = removeFromArray(player.deck, cardId);
-  if (fromDeck) return fromDeck;
-
-  const fromDiscard = removeFromArray(player.discard, cardId);
-  if (fromDiscard) return fromDiscard;
-
-  const fromRemoved = removeFromArray(player.removedFromGame, cardId);
-  if (fromRemoved) return fromRemoved;
-
-  const fromSetAside = removeFromArray(player.setAside, cardId);
-  if (fromSetAside) return fromSetAside;
-
-  for (const storage of Object.values(player.cardStorages ?? {})) {
-    const fromStorage = removeFromArray(storage.cards, cardId);
-    if (fromStorage) return fromStorage;
+  if (zone === 'storage') {
+    const scopedId = resolveStorageId(playerId, undefined, storageId);
+    const storage = ensureCardStorage(state, playerId, scopedId as string);
+    return storage.cards;
   }
 
-  const fromField = removeFromField(player, cardId);
-  if (fromField) return fromField;
+  if (zone === 'removedFromGame') return player.removedFromGame!;
+  if (zone === 'setAside') return player.setAside!;
+  if (zone === 'hand') return player.hand!;
+  if (zone === 'discard') return player.discard!;
+  if (zone === 'deck' || zone === 'deckTop' || zone === 'deckBottom') return player.deck!;
+
+  throw new Error(`Unsupported zone: ${zone}`);
+}
+
+function moveKnownCard(
+  state: StorageAwareGameState,
+  playerId: PlayerID,
+  card: StorageCardLike,
+  to: any,
+): void {
+  const toZone = normalizeZoneName(typeof to === 'string' ? to : to?.kind);
+  const toStorageId = resolveStorageId(playerId, to);
+  const destination = getZoneArray(state, playerId, toZone as string, toStorageId);
+
+  if (toZone === 'deckBottom') {
+    destination.push(card);
+    return;
+  }
+
+  if (toZone === 'deckTop') {
+    destination.unshift(card);
+    return;
+  }
+
+  destination.push(card);
+}
+
+function removeFromNamedZone(
+  state: StorageAwareGameState,
+  playerId: PlayerID,
+  from: any,
+  cardId?: string,
+): StorageCardLike | undefined {
+  if (!from) return undefined;
+
+  const fromZone = normalizeZoneName(typeof from === 'string' ? from : from.kind);
+  const fromStorageId = resolveStorageId(playerId, from);
+  const source = getZoneArray(state, playerId, fromZone as string, fromStorageId);
+
+  if (cardId) {
+    return removeCardFromArray(source, cardId);
+  }
+
+  if (fromZone === 'deckBottom') {
+    return source.pop();
+  }
+
+  return source.shift();
+}
+
+function findAndRemoveCardAnywhere(
+  state: StorageAwareGameState,
+  playerId: PlayerID,
+  cardId: string,
+): StorageCardLike | undefined {
+  const player = ensureSpecialZones(state, playerId);
+  const directZones = [
+    player.hand!,
+    player.deck!,
+    player.discard!,
+    player.removedFromGame!,
+    player.setAside!,
+  ];
+
+  for (const zone of directZones) {
+    const found = removeCardFromArray(zone, cardId);
+    if (found) return found;
+  }
+
+  for (const storage of Object.values(player.cardStorages ?? {})) {
+    const found = removeCardFromArray(storage.cards, cardId);
+    if (found) return found;
+  }
 
   return undefined;
 }
 
-function removeCardByIdAnyPlayer(state: StorageAwareGameState, cardId: string): { playerId: PlayerID; card: AnyCard } | null {
-  for (const playerId of Object.keys(state.players ?? {}) as PlayerID[]) {
-    const removed = removeCardByIdFromPlayer(state, playerId, cardId);
-    if (removed) {
-      return { playerId, card: removed };
+export function moveCardBetweenZones(state: StorageAwareGameState, params: any): StorageAwareGameState {
+  const playerId: PlayerID =
+    params?.playerId ??
+    params?.from?.playerId ??
+    params?.to?.playerId ??
+    'P1';
+
+  ensureSpecialZones(state, playerId);
+
+  let card: StorageCardLike | undefined;
+
+  if (params?.card) {
+    card = params.card;
+  } else if (params?.cardId) {
+    if (params?.from) {
+      card = removeFromNamedZone(state, playerId, params.from, params.cardId);
+    } else {
+      card = findAndRemoveCardAnywhere(state, playerId, params.cardId);
     }
-  }
-
-  const fromMap = state.cards?.[cardId];
-  if (fromMap) {
-    return {
-      playerId: (fromMap.owner ?? fromMap.controller ?? 'P1') as PlayerID,
-      card: cloneCard(fromMap),
-    };
-  }
-
-  return null;
-}
-
-function pullFromZone(
-  state: StorageAwareGameState,
-  zone: any,
-  amount: number,
-): { playerId: PlayerID; cards: AnyCard[] } {
-  const playerId = (zone?.playerId ?? 'P1') as PlayerID;
-  const player = ensureSpecialZones(state, playerId);
-  const cards: AnyCard[] = [];
-  const count = Math.max(1, amount || 1);
-
-  const kind = zone?.kind ?? zone;
-  if (kind === 'setAside') {
-    while (player.setAside!.length > 0 && cards.length < count) {
-      cards.push(player.setAside!.shift()!);
+  } else if (params?.from) {
+    const amount = params.amount ?? 1;
+    for (let i = 0; i < amount; i += 1) {
+      const nextCard = removeFromNamedZone(state, playerId, params.from);
+      if (!nextCard) break;
+      moveKnownCard(state, playerId, nextCard, params.to);
     }
-    return { playerId, cards };
-  }
-
-  if (kind === 'removedFromGame') {
-    while (player.removedFromGame!.length > 0 && cards.length < count) {
-      cards.push(player.removedFromGame!.shift()!);
-    }
-    return { playerId, cards };
-  }
-
-  if (kind === 'discard') {
-    while (player.discard!.length > 0 && cards.length < count) {
-      cards.push(player.discard!.shift()!);
-    }
-    return { playerId, cards };
-  }
-
-  if (kind === 'hand') {
-    while (player.hand!.length > 0 && cards.length < count) {
-      cards.push(player.hand!.shift()!);
-    }
-    return { playerId, cards };
-  }
-
-  if (kind === 'deck' || kind === 'deckTop') {
-    while (player.deck!.length > 0 && cards.length < count) {
-      cards.push(player.deck!.shift()!);
-    }
-    return { playerId, cards };
-  }
-
-  if (kind === 'deckBottom') {
-    while (player.deck!.length > 0 && cards.length < count) {
-      cards.push(player.deck!.pop()!);
-    }
-    return { playerId, cards };
-  }
-
-  if (kind === 'storage') {
-    const storage = ensureCardStorage(state, playerId, zone?.storageId ?? zone?.storage);
-    while (storage.cards.length > 0 && cards.length < count) {
-      cards.push(storage.cards.shift()!);
-    }
-    return { playerId, cards };
-  }
-
-  return { playerId, cards };
-}
-
-function pushIntoZone(state: StorageAwareGameState, zone: any, playerId: PlayerID, cards: AnyCard[]): void {
-  const targetPlayerId = (zone?.playerId ?? playerId) as PlayerID;
-  const player = ensureSpecialZones(state, targetPlayerId);
-  const kind = zone?.kind ?? zone;
-
-  if (kind === 'setAside') {
-    for (const card of cards) {
-      card.location = 'setAside';
-      player.setAside!.push(card);
-    }
-    return;
-  }
-
-  if (kind === 'removedFromGame') {
-    for (const card of cards) {
-      card.location = 'removedFromGame';
-      player.removedFromGame!.push(card);
-    }
-    return;
-  }
-
-  if (kind === 'discard') {
-    for (const card of cards) {
-      card.location = 'discard';
-      player.discard!.push(card);
-    }
-    return;
-  }
-
-  if (kind === 'hand') {
-    for (const card of cards) {
-      card.location = 'hand';
-      player.hand!.push(card);
-    }
-    return;
-  }
-
-  if (kind === 'storage') {
-    const storage = ensureCardStorage(state, targetPlayerId, zone?.storageId ?? zone?.storage);
-    for (const card of cards) {
-      card.location = 'storage';
-      storage.cards.push(card);
-    }
-  }
-}
-
-export function moveCardBetweenZones(state: StorageAwareGameState, spec: any): StorageAwareGameState {
-  if (spec?.cardId) {
-    const removed = removeCardByIdAnyPlayer(state, spec.cardId);
-    if (!removed) return state;
-    pushIntoZone(state, spec.to, removed.playerId, [removed.card]);
     return state;
   }
 
-  const pulled = pullFromZone(state, spec?.from, spec?.amount ?? 1);
-  if (pulled.cards.length === 0) return state;
-  pushIntoZone(state, spec?.to, pulled.playerId, pulled.cards);
+  if (!card) {
+    return state;
+  }
+
+  moveKnownCard(state, playerId, card, params.to);
   return state;
 }
 
 export function getVisibleCardStorages(
   state: StorageAwareGameState,
-  ownerPlayerId: PlayerID,
   viewerPlayerId: PlayerID,
-): CardStorageZone[] {
+  ownerPlayerId: PlayerID,
+): CardStorage[] {
   const player = ensureSpecialZones(state, ownerPlayerId);
+
   return Object.values(player.cardStorages ?? {}).map((storage) => {
     if (storage.visibility !== 'private' || ownerPlayerId === viewerPlayerId) {
       return {
         ...storage,
-        cards: storage.cards.map((card) => ({ ...card })),
+        cards: [...storage.cards],
       };
     }
 
     return {
       ...storage,
-      cards: storage.cards.map(() => ({ name: 'HIDDEN' } as AnyCard)),
+      cards: storage.cards.map(() => ({
+        name: 'HIDDEN',
+      })),
     };
   });
 }
