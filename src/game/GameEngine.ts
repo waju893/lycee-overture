@@ -51,6 +51,25 @@ function appendLog(state: GameState, message: string): GameState {
   return state;
 }
 
+function ensurePlayerSpecialZones(state: GameState, playerId: PlayerID): void {
+  const player = state.players[playerId] as any;
+  if (!player.removedFromGame) player.removedFromGame = [];
+  if (!player.setAside) player.setAside = [];
+  if (!player.cardStorages) player.cardStorages = {};
+}
+
+function cloneCardStorages(storages: Record<string, any> | undefined): Record<string, any> {
+  const result: Record<string, any> = {};
+  for (const [key, storage] of Object.entries(storages ?? {})) {
+    result[key] = {
+      ...storage,
+      cards: Array.isArray((storage as any).cards) ? (storage as any).cards.map((card: any) => ({ ...card })) : [],
+    };
+  }
+  return result;
+}
+
+
 function resetTurnPassedPlayers(state: GameState): void {
   state.turn.passedPlayers = [];
 }
@@ -66,11 +85,11 @@ function beginTurnAndEnterMain(state: GameState, playerId: PlayerID, incrementTu
   untapField(state, playerId);
   const drawCount = state.turn.turnNumber <= 1 && state.turn.firstPlayer === playerId ? 1 : 2;
   drawTopCards(state, playerId, drawCount);
-  appendLog(state, `${playerId} 턴 개시시`);
-  appendLog(state, '턴 개시시 유발 효과 처리 완료');
+  appendLog(state, `${playerId} ??개시??);
+  appendLog(state, '??개시???�발 ?�과 처리 ?�료');
   state.turn.phase = 'main';
   state.turn.priorityPlayer = playerId;
-  appendLog(state, '메인 페이즈');
+  appendLog(state, '메인 ?�이�?);
 }
 
 function recordReplay(state: GameState, action: unknown): void {
@@ -623,7 +642,7 @@ function startTurn(state: GameState, playerId: PlayerID): void {
   state.turn.phase = 'wakeup';
   state.turn.turnNumber += 1;
   state.turn.passedPlayers = [];
-  appendLog(state, `${playerId} 턴 개시시`);
+  appendLog(state, `${playerId} ??개시??);
   untapField(state, playerId);
   const drawCount = state.turn.turnNumber <= 1 && state.turn.firstPlayer === playerId ? 1 : 2;
   drawTopCards(state, playerId, drawCount);
@@ -790,7 +809,7 @@ function finalizeAttackResponses(state: GameState): void {
     supportHistory: [],
   } as any;
 
-  appendLog(state, selectableDefenderExists ? '배틀 중 상태 진입 (방어 선택 가능)' : '배틀 중 상태 진입 (방어자 미지정)');
+  appendLog(state, selectableDefenderExists ? '배�? �??�태 진입 (방어 ?�택 가??' : '배�? �??�태 진입 (방어??미�???');
 }
 
 function getBattleAttackPower(card: CardRef): number {
@@ -877,7 +896,7 @@ function resolveCurrentBattle(state: GameState): void {
           { isDown: true, destroyReason: 'battle' },
         );
       }
-      appendLog(state, '배틀 종료 (down = battle destroy)');
+      appendLog(state, '배�? 종료 (down = battle destroy)');
       clearBattleState(state);
       flushNormalizationAndTriggers(state, eventStartIndex);
       return;
@@ -912,7 +931,7 @@ function resolveUseEvent(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'eventDeclarationResolved'),
     operation: { kind: 'moveToDiscard', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'discard' },
   });
-  appendLog(state, '이벤트 사용 선언 해결');
+  appendLog(state, '?�벤???�용 ?�언 ?�결');
 }
 
 function resolveUseArea(state: GameState, declaration: any): void {
@@ -937,7 +956,7 @@ function resolveUseArea(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'areaDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
-  appendLog(state, '에리어 배치 선언 해결');
+  appendLog(state, '?�리??배치 ?�언 ?�결');
 }
 
 function resolveUseItem(state: GameState, declaration: any): void {
@@ -967,7 +986,7 @@ function resolveUseItem(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'itemDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
-  appendLog(state, '장비 선언 해결');
+  appendLog(state, '?�비 ?�언 ?�결');
 }
 
 function resolveUseCharacter(state: GameState, declaration: any): void {
@@ -984,7 +1003,7 @@ function resolveUseCharacter(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'characterDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
-  appendLog(state, '등장 선언 해결');
+  appendLog(state, '?�장 ?�언 ?�결');
 }
 
 function resolveUseAbility(state: GameState, declaration: any): void {
@@ -995,7 +1014,7 @@ function resolveUseAbility(state: GameState, declaration: any): void {
     cardId: declaration.sourceCardId,
     cause: makeCharacterAbilityCause(declaration.playerId, declaration.sourceCardId, declaration.sourceEffectId),
   });
-  appendLog(state, '능력 사용 해결');
+  appendLog(state, '?�력 ?�용 ?�결');
 }
 
 function resolveChargeCharacter(state: GameState, declaration: any): void {
@@ -1058,8 +1077,8 @@ function openAttackResponseWindow(state: GameState, action: Extract<GameAction, 
     passedPlayers: [],
   };
 
-  appendLog(state, '공격 선언');
-  appendLog(state, '공격 선언 대응 창 진입');
+  appendLog(state, '공격 ?�언');
+  appendLog(state, '공격 ?�언 ?�??�?진입');
 }
 
 function resolveLatestLegacyDeclaration(state: GameState): void {
@@ -1103,7 +1122,7 @@ function resolveLatestLegacyDeclaration(state: GameState): void {
 
 function validateDeclareAction(state: GameState, action: Extract<GameAction, { type: 'DECLARE_ACTION' }>): string | null {
   if (isAnyBattleWindow(state)) {
-    if (action.kind !== 'support' && state.battle.priorityPlayer !== action.playerId) {
+    if (state.battle.priorityPlayer !== action.playerId) {
       return 'BATTLE_PRIORITY_MISMATCH';
     }
     if (action.kind === 'attack') {
@@ -1263,6 +1282,8 @@ function handleStartGame(state: GameState, action: Extract<GameAction, { type: '
     drawTopCards(next, 'P1', 7);
     drawTopCards(next, 'P2', 7);
   }
+  ensurePlayerSpecialZones(next, 'P1');
+  ensurePlayerSpecialZones(next, 'P2');
   appendLog(next, 'START_GAME');
   return next;
 }
@@ -1330,14 +1351,14 @@ function handlePassPriority(state: GameState, action: Extract<GameAction, { type
     state.turn.passedPlayers = Array.from(passedPlayers);
 
     if (state.turn.phase === 'main' && passedPlayers.has('P1') && passedPlayers.has('P2')) {
-      appendLog(state, '턴 종료시');
+      appendLog(state, '??종료??);
       const nextPlayer = getOpponentPlayerId(state.turn.activePlayer);
       startTurn(state, nextPlayer);
-      appendLog(state, '턴 개시시 유발 효과 처리 완료');
+      appendLog(state, '??개시???�발 ?�과 처리 ?�료');
       state.turn.phase = 'main';
       state.turn.priorityPlayer = state.turn.activePlayer;
       state.turn.passedPlayers = [];
-      appendLog(state, '메인 페이즈');
+      appendLog(state, '메인 ?�이�?);
       return state;
     }
 
@@ -1355,6 +1376,9 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         deck: [...state.players.P1.deck],
         hand: [...state.players.P1.hand],
         discard: [...state.players.P1.discard],
+        removedFromGame: [...(((state.players.P1 as any).removedFromGame) ?? [])],
+        setAside: [...(((state.players.P1 as any).setAside) ?? [])],
+        cardStorages: cloneCardStorages(((state.players.P1 as any).cardStorages) ?? {}),
         field: {
           AF_LEFT: { ...state.players.P1.field.AF_LEFT, card: state.players.P1.field.AF_LEFT.card ? { ...state.players.P1.field.AF_LEFT.card } : null, area: (state.players.P1.field.AF_LEFT as any).area ? { ...(state.players.P1.field.AF_LEFT as any).area } : null, attachedItem: (state.players.P1.field.AF_LEFT as any).attachedItem ? { ...(state.players.P1.field.AF_LEFT as any).attachedItem } : null },
           AF_CENTER: { ...state.players.P1.field.AF_CENTER, card: state.players.P1.field.AF_CENTER.card ? { ...state.players.P1.field.AF_CENTER.card } : null, area: (state.players.P1.field.AF_CENTER as any).area ? { ...(state.players.P1.field.AF_CENTER as any).area } : null, attachedItem: (state.players.P1.field.AF_CENTER as any).attachedItem ? { ...(state.players.P1.field.AF_CENTER as any).attachedItem } : null },
@@ -1369,6 +1393,9 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         deck: [...state.players.P2.deck],
         hand: [...state.players.P2.hand],
         discard: [...state.players.P2.discard],
+        removedFromGame: [...(((state.players.P2 as any).removedFromGame) ?? [])],
+        setAside: [...(((state.players.P2 as any).setAside) ?? [])],
+        cardStorages: cloneCardStorages(((state.players.P2 as any).cardStorages) ?? {}),
         field: {
           AF_LEFT: { ...state.players.P2.field.AF_LEFT, card: state.players.P2.field.AF_LEFT.card ? { ...state.players.P2.field.AF_LEFT.card } : null, area: (state.players.P2.field.AF_LEFT as any).area ? { ...(state.players.P2.field.AF_LEFT as any).area } : null, attachedItem: (state.players.P2.field.AF_LEFT as any).attachedItem ? { ...(state.players.P2.field.AF_LEFT as any).attachedItem } : null },
           AF_CENTER: { ...state.players.P2.field.AF_CENTER, card: state.players.P2.field.AF_CENTER.card ? { ...state.players.P2.field.AF_CENTER.card } : null, area: (state.players.P2.field.AF_CENTER as any).area ? { ...(state.players.P2.field.AF_CENTER as any).area } : null, attachedItem: (state.players.P2.field.AF_CENTER as any).attachedItem ? { ...(state.players.P2.field.AF_CENTER as any).attachedItem } : null },
@@ -1392,6 +1419,8 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
     events: [...state.events],
     replayEvents: [...state.replayEvents],
   };
+  ensurePlayerSpecialZones(next, 'P1');
+  ensurePlayerSpecialZones(next, 'P2');
   recordReplay(next, action);
 
   switch (action.type) {
@@ -1428,25 +1457,25 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
       return next;
     case 'ADVANCE_PHASE':
       if (next.turn.phase === 'wakeup') {
-        appendLog(next, '턴 개시시 유발 효과 처리 완료');
+        appendLog(next, '??개시???�발 ?�과 처리 ?�료');
         next.turn.phase = 'main';
         next.turn.priorityPlayer = next.turn.activePlayer;
         next.turn.passedPlayers = [];
-        appendLog(next, '메인 페이즈');
+        appendLog(next, '메인 ?�이�?);
       } else if (next.turn.phase === 'main') {
         next.turn.phase = 'battle';
       } else if (next.turn.phase === 'battle') {
         next.turn.phase = 'end';
         next.turn.passedPlayers = [];
       } else if (next.turn.phase === 'end') {
-        appendLog(next, '턴 종료시 유발 효과 처리 완료');
+        appendLog(next, '??종료???�발 ?�과 처리 ?�료');
         const nextPlayer = getOpponentPlayerId(next.turn.activePlayer);
         startTurn(next, nextPlayer);
-        appendLog(next, '턴 개시시 유발 효과 처리 완료');
+        appendLog(next, '??개시???�발 ?�과 처리 ?�료');
         next.turn.phase = 'main';
         next.turn.priorityPlayer = next.turn.activePlayer;
         next.turn.passedPlayers = [];
-        appendLog(next, '메인 페이즈');
+        appendLog(next, '메인 ?�이�?);
       }
       return next;
     case 'DECLARE_ACTION': {
@@ -1508,13 +1537,12 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         next.turn.passedPlayers = [];
       }
 
-      if (action.kind === 'useCharacter') appendLog(next, '등장 선언');
-      if (action.kind === 'useEvent') appendLog(next, '이벤트 사용 선언');
-      if (action.kind === 'useArea') appendLog(next, '에리어 배치 선언');
-      if (action.kind === 'useItem') appendLog(next, '장비 선언');
-      if (action.kind === 'useAbility') appendLog(next, '능력 사용 선언');
-      if (action.kind === 'chargeCharacter') appendLog(next, '차지 선언');
-      if (action.kind === 'support') appendLog(next, '서포트 선언');
+      if (action.kind === 'useCharacter') appendLog(next, '?�장 ?�언');
+      if (action.kind === 'useEvent') appendLog(next, '?�벤???�용 ?�언');
+      if (action.kind === 'useArea') appendLog(next, '?�리??배치 ?�언');
+      if (action.kind === 'useItem') appendLog(next, '?�비 ?�언');
+      if (action.kind === 'useAbility') appendLog(next, '?�력 ?�용 ?�언');
+      if (action.kind === 'chargeCharacter') appendLog(next, '차�? ?�언');
       return next;
     }
     case 'PASS_PRIORITY':
@@ -1581,6 +1609,8 @@ function makeDeclarationState(): GameState {
   });
   base.logs = [];
   base.log = base.logs;
+  ensurePlayerSpecialZones(base, 'P1');
+  ensurePlayerSpecialZones(base, 'P2');
   return base;
 }
 
@@ -1745,6 +1775,9 @@ export function applyEffectDestroyToFieldCard(
         deck: [...state.players.P1.deck],
         hand: [...state.players.P1.hand],
         discard: [...state.players.P1.discard],
+        removedFromGame: [...(((state.players.P1 as any).removedFromGame) ?? [])],
+        setAside: [...(((state.players.P1 as any).setAside) ?? [])],
+        cardStorages: cloneCardStorages(((state.players.P1 as any).cardStorages) ?? {}),
         field: {
           AF_LEFT: { ...state.players.P1.field.AF_LEFT, card: state.players.P1.field.AF_LEFT.card ? { ...state.players.P1.field.AF_LEFT.card } : null, area: (state.players.P1.field.AF_LEFT as any).area ? { ...(state.players.P1.field.AF_LEFT as any).area } : null, attachedItem: (state.players.P1.field.AF_LEFT as any).attachedItem ? { ...(state.players.P1.field.AF_LEFT as any).attachedItem } : null },
           AF_CENTER: { ...state.players.P1.field.AF_CENTER, card: state.players.P1.field.AF_CENTER.card ? { ...state.players.P1.field.AF_CENTER.card } : null, area: (state.players.P1.field.AF_CENTER as any).area ? { ...(state.players.P1.field.AF_CENTER as any).area } : null, attachedItem: (state.players.P1.field.AF_CENTER as any).attachedItem ? { ...(state.players.P1.field.AF_CENTER as any).attachedItem } : null },
@@ -1759,6 +1792,9 @@ export function applyEffectDestroyToFieldCard(
         deck: [...state.players.P2.deck],
         hand: [...state.players.P2.hand],
         discard: [...state.players.P2.discard],
+        removedFromGame: [...(((state.players.P2 as any).removedFromGame) ?? [])],
+        setAside: [...(((state.players.P2 as any).setAside) ?? [])],
+        cardStorages: cloneCardStorages(((state.players.P2 as any).cardStorages) ?? {}),
         field: {
           AF_LEFT: { ...state.players.P2.field.AF_LEFT, card: state.players.P2.field.AF_LEFT.card ? { ...state.players.P2.field.AF_LEFT.card } : null, area: (state.players.P2.field.AF_LEFT as any).area ? { ...(state.players.P2.field.AF_LEFT as any).area } : null, attachedItem: (state.players.P2.field.AF_LEFT as any).attachedItem ? { ...(state.players.P2.field.AF_LEFT as any).attachedItem } : null },
           AF_CENTER: { ...state.players.P2.field.AF_CENTER, card: state.players.P2.field.AF_CENTER.card ? { ...state.players.P2.field.AF_CENTER.card } : null, area: (state.players.P2.field.AF_CENTER as any).area ? { ...(state.players.P2.field.AF_CENTER as any).area } : null, attachedItem: (state.players.P2.field.AF_CENTER as any).attachedItem ? { ...(state.players.P2.field.AF_CENTER as any).attachedItem } : null },

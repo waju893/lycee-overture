@@ -30,7 +30,6 @@ export type DeclarationKind =
   | 'useCharacter'
   | 'useAbility'
   | 'attack'
-  | 'support'
   | 'chargeCharacter'
   | 'useEvent'
   | 'useItem'
@@ -174,12 +173,29 @@ export interface FieldCell {
 }
 
 export type PlayerField = Record<FieldSlot, FieldCell>;
+export type StorageVisibility = 'public' | 'private';
+
+export interface CardStorageZone {
+  id: string;
+  ownerPlayerId: PlayerID;
+  key: string;
+  label: string;
+  visibility: StorageVisibility;
+  cards: CardRef[];
+  sharedKey?: string;
+  createdByCardId?: string;
+  createdByCardNo?: string;
+}
+
 
 export interface PlayerState {
   deck: CardRef[];
   hand: CardRef[];
   discard: CardRef[];
   field: PlayerField;
+  removedFromGame: CardRef[];
+  setAside: CardRef[];
+  cardStorages: Record<string, CardStorageZone>;
 }
 
 export interface ReplayEvent {
