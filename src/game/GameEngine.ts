@@ -790,7 +790,7 @@ function finalizeAttackResponses(state: GameState): void {
     supportHistory: [],
   } as any;
 
-  appendLog(state, selectableDefenderExists ? '배�? �??�태 진입 (방어 ?�택 가??' : '배�? �??�태 진입 (방어??미�???');
+  appendLog(state, selectableDefenderExists ? '배틀 중 상태 진입 (방어 선택 가능)' : '배틀 중 상태 진입 (방어자 미지정)');
 }
 
 function getBattleAttackPower(card: CardRef): number {
@@ -877,7 +877,7 @@ function resolveCurrentBattle(state: GameState): void {
           { isDown: true, destroyReason: 'battle' },
         );
       }
-      appendLog(state, '배�? 종료 (down = battle destroy)');
+      appendLog(state, '배틀 종료 (down = battle destroy)');
       clearBattleState(state);
       flushNormalizationAndTriggers(state, eventStartIndex);
       return;
@@ -912,7 +912,7 @@ function resolveUseEvent(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'eventDeclarationResolved'),
     operation: { kind: 'moveToDiscard', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'discard' },
   });
-  appendLog(state, '?�벤???�용 ?�언 ?�결');
+  appendLog(state, '이벤트 사용 선언 해결');
 }
 
 function resolveUseArea(state: GameState, declaration: any): void {
@@ -937,7 +937,7 @@ function resolveUseArea(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'areaDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
-  appendLog(state, '?�리??배치 ?�언 ?�결');
+  appendLog(state, '에리어 배치 선언 해결');
 }
 
 function resolveUseItem(state: GameState, declaration: any): void {
@@ -967,7 +967,7 @@ function resolveUseItem(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'itemDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
-  appendLog(state, '?�비 ?�언 ?�결');
+  appendLog(state, '장비 선언 해결');
 }
 
 function resolveUseCharacter(state: GameState, declaration: any): void {
@@ -984,7 +984,7 @@ function resolveUseCharacter(state: GameState, declaration: any): void {
     cause: makeRuleCause(playerId, 'characterDeclarationResolved'),
     operation: { kind: 'enterField', cardId: card.instanceId, playerId, fromZone: 'hand', toZone: 'field' },
   });
-  appendLog(state, '?�장 ?�언 ?�결');
+  appendLog(state, '등장 선언 해결');
 }
 
 function resolveUseAbility(state: GameState, declaration: any): void {
@@ -995,7 +995,7 @@ function resolveUseAbility(state: GameState, declaration: any): void {
     cardId: declaration.sourceCardId,
     cause: makeCharacterAbilityCause(declaration.playerId, declaration.sourceCardId, declaration.sourceEffectId),
   });
-  appendLog(state, '?�력 ?�용 ?�결');
+  appendLog(state, '능력 사용 해결');
 }
 
 function resolveChargeCharacter(state: GameState, declaration: any): void {
@@ -1058,8 +1058,8 @@ function openAttackResponseWindow(state: GameState, action: Extract<GameAction, 
     passedPlayers: [],
   };
 
-  appendLog(state, '공격 ?�언');
-  appendLog(state, '공격 ?�언 ?�??�?진입');
+  appendLog(state, '공격 선언');
+  appendLog(state, '공격 선언 대응 창 진입');
 }
 
 function resolveLatestLegacyDeclaration(state: GameState): void {
@@ -1103,7 +1103,7 @@ function resolveLatestLegacyDeclaration(state: GameState): void {
 
 function validateDeclareAction(state: GameState, action: Extract<GameAction, { type: 'DECLARE_ACTION' }>): string | null {
   if (isAnyBattleWindow(state)) {
-    if (state.battle.priorityPlayer !== action.playerId) {
+    if (action.kind !== 'support' && state.battle.priorityPlayer !== action.playerId) {
       return 'BATTLE_PRIORITY_MISMATCH';
     }
     if (action.kind === 'attack') {
@@ -1508,12 +1508,13 @@ export function reduceGameState(state: GameState, action: GameAction): GameState
         next.turn.passedPlayers = [];
       }
 
-      if (action.kind === 'useCharacter') appendLog(next, '?�장 ?�언');
-      if (action.kind === 'useEvent') appendLog(next, '?�벤???�용 ?�언');
-      if (action.kind === 'useArea') appendLog(next, '?�리??배치 ?�언');
-      if (action.kind === 'useItem') appendLog(next, '?�비 ?�언');
-      if (action.kind === 'useAbility') appendLog(next, '?�력 ?�용 ?�언');
-      if (action.kind === 'chargeCharacter') appendLog(next, '차�? ?�언');
+      if (action.kind === 'useCharacter') appendLog(next, '등장 선언');
+      if (action.kind === 'useEvent') appendLog(next, '이벤트 사용 선언');
+      if (action.kind === 'useArea') appendLog(next, '에리어 배치 선언');
+      if (action.kind === 'useItem') appendLog(next, '장비 선언');
+      if (action.kind === 'useAbility') appendLog(next, '능력 사용 선언');
+      if (action.kind === 'chargeCharacter') appendLog(next, '차지 선언');
+      if (action.kind === 'support') appendLog(next, '서포트 선언');
       return next;
     }
     case 'PASS_PRIORITY':
