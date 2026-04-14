@@ -128,3 +128,6 @@ export class CardScriptPromptBuilder {
     }
   }
 }
+
+
+export default CardScriptPromptBuilder;

@@ -645,3 +645,6 @@ export class CardScriptRunner {
     };
   }
 }
+
+
+export default CardScriptRunner;

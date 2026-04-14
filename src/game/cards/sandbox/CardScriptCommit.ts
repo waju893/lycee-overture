@@ -173,3 +173,6 @@ export function commitCardScriptIntents(
     skippedIntents,
   };
 }
+
+
+export default commitCardScriptIntents;
