@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3139",
+  "title": "マッドサイエンティスト",
+  "subName": "木原 幻生",
+  "name": "マッドサイエンティスト 木原 幻生",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから[月]「御坂美琴」または「御坂美琴(PHASE-NEXT)」１体を探し公開して手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから[月]「御坂美琴」または「御坂美琴(PHASE-NEXT)」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3139"
 }

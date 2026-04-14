@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2603",
+  "title": "皇国随一の人気歌手",
+  "subName": "菜摘",
+  "name": "皇国随一の人気歌手 菜摘",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。{味方ＡＦ[花]キャラ１体}にＳＰ＋１する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。{味方ＡＦ[花]キャラ１体}にＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2603"
 }

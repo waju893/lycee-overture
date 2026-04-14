@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0205",
+  "title": "不完全世界ファーヴニル",
+  "subName": "魔劍グラム＝オルタ",
+  "name": "不完全世界ファーヴニル 魔劍グラム＝オルタ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -20,11 +23,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [0]:味方[宙]キャラ全てにＡＰ＋１する。",
+  "textKr": "[エンゲージ]\n[宣言] [0]:味方[宙]キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0205"
 }

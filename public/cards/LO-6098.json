@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6098",
+  "title": "商店街にある何でも屋",
+  "subName": "店長",
+  "name": "商店街にある何でも屋 店長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "star",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] キャラの登場に支払えない[雪雪]を発生する。この能力は失われる。",
+  "textKr": "[コスト] キャラの登場に支払えない[雪雪]を発生する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6098"
 }

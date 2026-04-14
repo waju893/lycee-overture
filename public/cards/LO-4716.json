@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4716",
+  "title": "大地に芽吹く精霊",
+  "subName": "ファム",
+  "name": "大地に芽吹く精霊 ファム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "textKr": "[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4716"
 }

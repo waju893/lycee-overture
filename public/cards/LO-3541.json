@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3541",
+  "title": "大和撫子",
+  "subName": "真田 設子",
+  "name": "大和撫子 真田 設子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが３点以上の味方[雪]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [雪雪雪]:相手の宣言に対応して使用できない。味方「山田妙子」が登場している場合、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが３点以上の味方[雪]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [雪雪雪]:相手の宣言に対応して使用できない。味方「山田妙子」が登場している場合、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3541"
 }

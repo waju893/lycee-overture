@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2502",
+  "title": "歌姫",
+  "subName": "御園 千莉",
+  "name": "歌姫 御園 千莉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果でこのキャラが場を離れたとき、相手のデッキを２枚破棄する。",
+  "textKr": "[誘発] 自分の効果でこのキャラが場を離れたとき、相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2502"
 }

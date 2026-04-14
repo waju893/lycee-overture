@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0472",
+  "title": "妄想毒身",
+  "subName": "アサシン／静謐のハサン",
+  "name": "妄想毒身 アサシン／静謐のハサン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[雪]]\n[誘発] このキャラのバトル終了時、対戦キャラを破棄する。",
+  "textKr": "[オーダーチェンジ:[雪]]\n[誘発] このキャラのバトル終了時、対戦キャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0472"
 }

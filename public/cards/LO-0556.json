@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-0556",
+  "title": "紳士的な愛",
+  "subName": "",
+  "name": "紳士的な愛",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ－３・ＤＰ－３・ＳＰ＋３する。",
+  "textKr": "[常時] このキャラにＡＰ－３・ＤＰ－３・ＳＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0556"
 }

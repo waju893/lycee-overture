@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0327",
+  "title": "継続高校",
+  "subName": "アキ",
+  "name": "継続高校 アキ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[宣言] [D1]: 味方＜継続＞キャラ全てにＳＰ＋１する。",
+  "textKr": "[宣言] [D1]: 味方＜継続＞キャラ全てにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0327"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5769",
+  "title": "心は乙女な男の子",
+  "subName": "八雲 はまじ",
+  "name": "心は乙女な男の子 八雲 はまじ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6,
-    10
-  ],
-  "keyEffects": [
-    6,
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ][リカバリー:[味方キャラが１体の場合、１枚ドローする。]]\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [日日日]:バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「お兄ちゃん大好きっ娘 八雲雪路」１体を探し無償で登場する。この能力は失われる。",
+  "textKr": "[アグレッシブ][リカバリー:[味方キャラが１体の場合、１枚ドローする。]]\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [日日日]:バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「お兄ちゃん大好きっ娘 八雲雪路」１体を探し無償で登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5769"
 }

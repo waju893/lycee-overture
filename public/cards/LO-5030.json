@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5030",
+  "title": "トゥスクルの心得",
+  "subName": "クオン",
+  "name": "トゥスクルの心得 クオン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n[誘発] 自ターン中、このキャラが登場したとき、２枚ドローする。自分にシールド＋２する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「わが道しるべとなりて」または「記憶喪失の青年 ハク」１枚を探し公開して手札に入れる。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n[誘発] 自ターン中、このキャラが登場したとき、２枚ドローする。自分にシールド＋２する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「わが道しるべとなりて」または「記憶喪失の青年 ハク」１枚を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5030"
 }

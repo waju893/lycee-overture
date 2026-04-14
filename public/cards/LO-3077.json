@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-3077",
+  "title": "激辛ラーメン",
+  "subName": "",
+  "name": "激辛ラーメン",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:自ターン中に使用する。{相手キャラ１体}はターン終了時まで相手のエリアの効果で能力値修正を得ない。",
+  "textKr": "[常時] このキャラにＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:自ターン中に使用する。{相手キャラ１体}はターン終了時まで相手のエリアの効果で能力値修正を得ない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3077"
 }

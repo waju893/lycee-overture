@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3357",
+  "title": "ストーキング",
+  "subName": "林田 美咲",
+  "name": "ストーキング 林田 美咲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが２点以下の味方キャラが４体以上登場している場合、１枚ドローする。\n[宣言] [無無]:{コストが２点以下の味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが２点以下の味方キャラが４体以上登場している場合、１枚ドローする。\n[宣言] [無無]:{コストが２点以下の味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3357"
 }

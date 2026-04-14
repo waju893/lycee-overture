@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1917",
+  "title": "殲滅白書の最終兵器",
+  "subName": "ワシリーサ",
+  "name": "殲滅白書の最終兵器 ワシリーサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][雪雪雪雪雪]:バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[宣言] [T][雪雪雪雪雪]:バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1917"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2384",
+  "title": "天衣無縫",
+  "subName": "太史慈・梨晏",
+  "name": "天衣無縫 太史慈・梨晏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,13 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4,
-    13
-  ],
-  "keyEffects": [
-    4,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "呉",
+  "text": "[オーダーステップ:[月月]][ペナルティ:[１枚ドローする。]]\n[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、相手キャラ１体にＤＭＧ－１し、自ターン終了時までこのキャラにＤＭＧ＋１する。\n[宣言] [月]:{相手キャラ１体}は元の基本能力１つを失う。この能力は失われる。",
+  "textKr": "[オーダーステップ:[月月]][ペナルティ:[１枚ドローする。]]\n[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、相手キャラ１体にＤＭＧ－１し、自ターン終了時までこのキャラにＤＭＧ＋１する。\n[宣言] [月]:{相手キャラ１体}は元の基本能力１つを失う。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2384"
 }

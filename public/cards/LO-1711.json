@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-1711",
+  "title": "胸パッド",
+  "subName": "",
+  "name": "胸パッド",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ＋２する。このアイテムを破棄する。",
+  "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ＋２する。このアイテムを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1711"
 }

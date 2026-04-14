@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0484",
+  "title": "常夏日光・日除傘寵愛一神",
+  "subName": "ランサー／玉藻の前",
+  "name": "常夏日光・日除傘寵愛一神 ランサー／玉藻の前",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]",
+  "textKr": "[オーダーチェンジ:[0]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0484"
 }

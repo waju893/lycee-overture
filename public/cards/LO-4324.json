@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4324",
+  "title": "アクティブでスポーティ",
+  "subName": "柳 明日香",
+  "name": "アクティブでスポーティ 柳 明日香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花]:{味方キャラ１体}にＤＰ＋３する。この能力は失われる。",
+  "textKr": "[宣言] [花]:{味方キャラ１体}にＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4324"
 }

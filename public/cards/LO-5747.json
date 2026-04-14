@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5747",
+  "title": "やす子の兄",
+  "subName": "横山 きよし",
+  "name": "やす子の兄 横山 きよし",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 6,
   "dp": 4,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「横山やす子」が登場している場合、そのキャラとこのキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:味方「横山やす子」が登場している場合、そのキャラとこのキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5747"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0776",
+  "title": "シャイニングサマナー",
+  "subName": "ドゥルガー",
+  "name": "シャイニングサマナー ドゥルガー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [月]:相手キャラの数より味方キャラの数が少ない場合、このキャラにＡＰ＋２する。",
+  "textKr": "[宣言] [月]:相手キャラの数より味方キャラの数が少ない場合、このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0776"
 }

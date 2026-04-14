@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1312",
+  "title": "ガルデモの新ボーカル担当",
+  "subName": "ユイ",
+  "name": "ガルデモの新ボーカル担当 ユイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[宣言] [0]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、相手は相手の手札を１枚破棄する。",
+  "textKr": "[アシスト]\n[宣言] [0]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、相手は相手の手札を１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1312"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3138",
+  "title": "0号",
+  "subName": "ドリー",
+  "name": "0号 ドリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[TOA]キャラ１体を手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[TOA]キャラ１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3138"
 }

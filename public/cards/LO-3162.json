@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3162",
+  "title": "『スクール』",
+  "subName": "弓箭 猟虎",
+  "name": "『スクール』 弓箭 猟虎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体を行動済みにする。そのキャラのコストが２点以下の場合、１枚ドローできる。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体を行動済みにする。そのキャラのコストが２点以下の場合、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3162"
 }

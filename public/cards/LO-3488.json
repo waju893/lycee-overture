@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3488",
+  "title": "グリムバフォメット",
+  "subName": "六条 クリス",
+  "name": "グリムバフォメット 六条 クリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方『BALDR SKY』キャラ１体}にＡＰ＋１またはＤＰ＋１する。そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方『BALDR SKY』キャラ１体}にＡＰ＋１またはＤＰ＋１する。そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3488"
 }

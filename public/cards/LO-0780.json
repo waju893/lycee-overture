@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0780",
+  "title": "妖精の誘惑",
+  "subName": "ルサルカ",
+  "name": "妖精の誘惑 ルサルカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] 能力の使用代償で味方キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 能力の使用代償で味方キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0780"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4668",
+  "title": "うそおおかみ",
+  "subName": "風見 陽鞠",
+  "name": "うそおおかみ 風見 陽鞠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手は相手の手札を公開する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手は相手の手札を公開する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4668"
 }

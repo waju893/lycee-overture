@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1913",
+  "title": "アニェーゼ部隊",
+  "subName": "アニェーゼ＝サンクティス",
+  "name": "アニェーゼ部隊 アニェーゼ＝サンクティス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [このキャラを破棄する]:ターン終了時まで、{コストが４点以下の味方[雪]キャラ１体}を相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "textKr": "[宣言] [このキャラを破棄する]:ターン終了時まで、{コストが４点以下の味方[雪]キャラ１体}を相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1913"
 }

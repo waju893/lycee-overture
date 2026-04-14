@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-0245",
+  "title": "もちひつじ",
+  "subName": "",
+  "name": "もちひつじ",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0245"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0006",
+  "title": "我が神はここにありて",
+  "subName": "ルーラー／ジャンヌ・ダルク",
+  "name": "我が神はここにありて ルーラー／ジャンヌ・ダルク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [月月]:相手キャラ全てにＤＭＧ－２する。（ゲーム中１回まで使用可能）",
+  "textKr": "[宣言] [月月]:相手キャラ全てにＤＭＧ－２する。（ゲーム中１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0006"
 }

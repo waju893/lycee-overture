@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6426",
+  "title": "斎野家現当主",
+  "subName": "斎野 尚哉",
+  "name": "斎野家現当主 斎野 尚哉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:味方ＡＦ[雪]キャラ１体にＡＰ＋４または味方[雪]キャラ１体にＤＰ＋４する。味方「斎野九花」または「斎野透花」が登場している場合、その能力値に＋２する。",
+  "textKr": "[宣言] [T]:味方ＡＦ[雪]キャラ１体にＡＰ＋４または味方[雪]キャラ１体にＤＰ＋４する。味方「斎野九花」または「斎野透花」が登場している場合、その能力値に＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6426"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0511",
+  "title": "聖者の数字",
+  "subName": "セイバー／ガウェイン",
+  "name": "聖者の数字 セイバー／ガウェイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[D1]]\n[誘発] 自ターン開始時、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[オーダーチェンジ:[D1]]\n[誘発] 自ターン開始時、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0511"
 }

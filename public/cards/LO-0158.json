@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0158",
+  "title": "欲も願いも大きくなあれ",
+  "subName": "打ち出の小鎚",
+  "name": "欲も願いも大きくなあれ 打ち出の小鎚",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [0]:{味方「打ち出の小鎚=原罪」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[エンゲージ]\n[宣言] [0]:{味方「打ち出の小鎚=原罪」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0158"
 }

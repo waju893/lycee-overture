@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0765",
+  "title": "絶対零度",
+  "subName": "フェンリル",
+  "name": "絶対零度 フェンリル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "幻獣",
+  "text": "[誘発] このキャラが登場したとき、相手ＡＦキャラ１体を行動済みにする。",
+  "textKr": "[誘発] このキャラが登場したとき、相手ＡＦキャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0765"
 }

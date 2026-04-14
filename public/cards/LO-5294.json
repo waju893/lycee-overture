@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5294",
+  "title": "足利姉妹の側近",
+  "subName": "細川 幽 藤孝",
+  "name": "足利姉妹の側近 細川 幽 藤孝",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。そのキャラがキャラ名に「足利」を含む場合、そのキャラにＡＰ＋２する。（１回まで使用可能）",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。そのキャラがキャラ名に「足利」を含む場合、そのキャラにＡＰ＋２する。（１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5294"
 }

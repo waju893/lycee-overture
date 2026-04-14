@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3969",
+  "title": "天然金髪ツインテール",
+  "subName": "花鳥 玲愛",
+  "name": "天然金髪ツインテール 花鳥 玲愛",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、相手は相手の手札のＥＸが１のカード１枚を破棄できる。破棄しない場合、相手のデッキを２枚破棄する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、相手は相手の手札のＥＸが１のカード１枚を破棄できる。破棄しない場合、相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3969"
 }

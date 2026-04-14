@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0909",
+  "title": "シスター",
+  "subName": "天池 志津子",
+  "name": "シスター 天池 志津子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0909"
 }

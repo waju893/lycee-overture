@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5331",
+  "title": "鉄の女",
+  "subName": "関羽・愛紗",
+  "name": "鉄の女 関羽・愛紗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,13 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7,
-    16
-  ],
-  "keyEffects": [
-    7,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[チャージ:２][エンゲージ:[自分にシールド＋１できる。]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [C1][月月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[手札宣言] [月月]:相手攻撃キャラ１体にＤＭＧ－４または相手防御キャラ１体にＡＰ－４またはＤＰ－４する。",
+  "textKr": "[チャージ:２][エンゲージ:[自分にシールド＋１できる。]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [C1][月月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[手札宣言] [月月]:相手攻撃キャラ１体にＤＭＧ－４または相手防御キャラ１体にＡＰ－４またはＤＰ－４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5331"
 }

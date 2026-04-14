@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-0561",
+  "title": "ロイヤルブランド",
+  "subName": "",
+  "name": "ロイヤルブランド",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＳＰ＋１する。\n[誘発] このキャラでサポートをしたとき、このキャラを未行動にする。",
+  "textKr": "[常時] このキャラにＳＰ＋１する。\n[誘発] このキャラでサポートをしたとき、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0561"
 }

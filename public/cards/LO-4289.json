@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4289",
+  "title": "セレブリティな貴族の娘",
+  "subName": "シャルローネ",
+  "name": "セレブリティな貴族の娘 シャルローネ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。コストが３点以上の味方[雪]キャラが３体以上登場している場合、{相手キャラ１体}を破棄する。",
+  "textKr": "[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。コストが３点以上の味方[雪]キャラが３体以上登場している場合、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4289"
 }

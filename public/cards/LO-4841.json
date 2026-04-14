@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4841",
+  "title": "九浄 ヴィーナス",
+  "subName": "",
+  "name": "九浄 ヴィーナス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 5,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [日]:{味方『ティンクルスターナイツ』キャラ１体}にＡＰ＋１する。",
+  "textKr": "[宣言] [日]:{味方『ティンクルスターナイツ』キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4841"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4067",
+  "title": "ケイブリス派魔人",
+  "subName": "魔人ワーグ",
+  "name": "ケイブリス派魔人 魔人ワーグ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,5 +22,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが効果以外で登場したとき、コストが３～６点の味方キャラが登場していない場合、自分の手札を２枚破棄できる。破棄したとき、相手ＡＦキャラ全てを行動済みにする。そのキャラは次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[誘発] このキャラが効果以外で登場したとき、コストが３～６点の味方キャラが登場していない場合、自分の手札を２枚破棄できる。破棄したとき、相手ＡＦキャラ全てを行動済みにする。そのキャラは次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4067"
 }

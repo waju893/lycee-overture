@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2033",
+  "title": "素直じゃない",
+  "subName": "朱鷺坂 七緒",
+  "name": "素直じゃない 朱鷺坂 七緒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] 相手ターン開始時、味方キャラの数が２体以下または相手キャラの数より少ない場合、自分のゴミ箱のカード１枚を自分の「お菓子作り」置き場に置ける。置いたとき、その置き場の枚数が４枚以下の場合、１枚ドローする。\n[誘発] 相手の効果でこのキャラを破棄したとき、相手は相手の手札を１枚破棄する。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] 相手ターン開始時、味方キャラの数が２体以下または相手キャラの数より少ない場合、自分のゴミ箱のカード１枚を自分の「お菓子作り」置き場に置ける。置いたとき、その置き場の枚数が４枚以下の場合、１枚ドローする。\n[誘発] 相手の効果でこのキャラを破棄したとき、相手は相手の手札を１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2033"
 }

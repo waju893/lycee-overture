@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2284",
+  "title": "南無八幡大菩薩",
+  "subName": "鎌倉城",
+  "name": "南無八幡大菩薩 鎌倉城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [宙宙宙]:自ターン中に使用する。{相手キャラ１体}を行動済みにする。この能力は失われる。",
+  "textKr": "[宣言] [宙宙宙]:自ターン中に使用する。{相手キャラ１体}を行動済みにする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2284"
 }

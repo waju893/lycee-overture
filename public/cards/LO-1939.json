@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1939",
+  "title": "風紀委員",
+  "subName": "初春 飾利",
+  "name": "風紀委員 初春 飾利",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[誘発] 相手の効果で相手キャラが登場したとき、自分のデッキを２枚回復できる。\n[宣言] [0]:{ＤＭＧが３以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[サポーター:[花]]\n[誘発] 相手の効果で相手キャラが登場したとき、自分のデッキを２枚回復できる。\n[宣言] [0]:{ＤＭＧが３以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1939"
 }

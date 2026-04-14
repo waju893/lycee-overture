@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1413",
+  "title": "出航の助言",
+  "subName": "オケアノスのキャスター",
+  "name": "出航の助言 オケアノスのキャスター",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1413"
 }

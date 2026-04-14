@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4764",
+  "title": "エルフィンの森における最も古い存在",
+  "subName": "大精霊",
+  "name": "エルフィンの森における最も古い存在 大精霊",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「精霊召喚」を配置している場合、１枚ドローする。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「精霊召喚」を配置している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4764"
 }

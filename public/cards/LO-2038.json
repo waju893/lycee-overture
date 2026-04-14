@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2038",
+  "title": "暴食の魔可",
+  "subName": "朝比奈 晴",
+  "name": "暴食の魔可 朝比奈 晴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{未行動の味方キャラ１体}を{味方ＤＦ}に移動する。\n[宣言] [0]:バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{未行動の味方キャラ１体}を{味方ＤＦ}に移動する。\n[宣言] [0]:バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2038"
 }

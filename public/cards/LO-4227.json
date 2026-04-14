@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4227",
+  "title": "自由奔放",
+  "subName": "朝比奈 晴",
+  "name": "自由奔放 朝比奈 晴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、このキャラを除くコストが３点以上の味方キャラが登場している場合、１枚ドローする。\n[宣言] [D1]:{このキャラを除く元のＤＭＧが２以上の味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、このキャラを除くコストが３点以上の味方キャラが登場している場合、１枚ドローする。\n[宣言] [D1]:{このキャラを除く元のＤＭＧが２以上の味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4227"
 }

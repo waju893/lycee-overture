@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-1712",
+  "title": "料理がおいしくなる能力",
+  "subName": "",
+  "name": "料理がおいしくなる能力",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:このキャラを{味方ＡＦ}に移動する。",
+  "textKr": "[宣言] [D1]:このキャラを{味方ＡＦ}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1712"
 }

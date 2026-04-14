@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4254",
+  "title": "読者モデル",
+  "subName": "本郷 虹夢",
+  "name": "読者モデル 本郷 虹夢",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、[月]でない味方キャラが登場している場合、１枚ドローする。\n[宣言] [無無]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、[月]でない味方キャラが登場している場合、１枚ドローする。\n[宣言] [無無]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4254"
 }

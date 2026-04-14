@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0302",
+  "title": "プラウダ高校",
+  "subName": "カチューシャ",
+  "name": "プラウダ高校 カチューシャ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "プラウダ",
+  "text": "[アシスト]\n[誘発] 味方＜プラウダ＞キャラが場を離れたとき、このキャラにＤＭＧ＋２する。",
+  "textKr": "[アシスト]\n[誘発] 味方＜プラウダ＞キャラが場を離れたとき、このキャラにＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0302"
 }

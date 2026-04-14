@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2670",
+  "title": "庶民派なごみ系お嬢様",
+  "subName": "羽鳥 詩",
+  "name": "庶民派なごみ系お嬢様 羽鳥 詩",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{このターン中にサポートをしたコストが２点以下の味方ＤＦ[花]キャラ１体}を未行動にする。この能力は失われる。\n[宣言] [花]:自ターン中に使用する。{味方[花]キャラ１体}にＤＰ＋３する。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{このターン中にサポートをしたコストが２点以下の味方ＤＦ[花]キャラ１体}を未行動にする。この能力は失われる。\n[宣言] [花]:自ターン中に使用する。{味方[花]キャラ１体}にＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2670"
 }

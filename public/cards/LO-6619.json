@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6619",
+  "title": "チーム『怒烈弩』の一員",
+  "subName": "コージ",
+  "name": "チーム『怒烈弩』の一員 コージ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラを破棄したとき、自分のゴミ箱またはデッキから「『雨紋会』の幹部 東雲」１体を探し登場できる。",
+  "textKr": "[誘発] このキャラを破棄したとき、自分のゴミ箱またはデッキから「『雨紋会』の幹部 東雲」１体を探し登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6619"
 }

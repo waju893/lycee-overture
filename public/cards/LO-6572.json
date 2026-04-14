@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6572",
+  "title": "霊感がある巫女",
+  "subName": "朝比奈 響子",
+  "name": "霊感がある巫女 朝比奈 響子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6572"
 }

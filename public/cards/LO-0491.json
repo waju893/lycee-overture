@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0491",
+  "title": "神明裁決",
+  "subName": "ルーラー／天草四郎",
+  "name": "神明裁決 ルーラー／天草四郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D1]:バトル中に使用できない。{相手キャラ１体}のＤＭＧを３にする。",
+  "textKr": "[宣言] [D1]:バトル中に使用できない。{相手キャラ１体}のＤＭＧを３にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0491"
 }

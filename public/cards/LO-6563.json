@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6563",
+  "title": "“八剣” 五之神",
+  "subName": "冬人",
+  "name": "“八剣” 五之神 冬人",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 4,
   "dp": 5,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪雪雪]:対応・バトル中を除く自ターン中に使用する。このキャラをデッキの下に置く。置いたとき、{相手キャラ１体}を破棄する。",
+  "textKr": "[宣言] [雪雪雪]:対応・バトル中を除く自ターン中に使用する。このキャラをデッキの下に置く。置いたとき、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6563"
 }

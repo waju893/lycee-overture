@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3658",
+  "title": "３バカ",
+  "subName": "エマ＝グラディウス",
+  "name": "３バカ エマ＝グラディウス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [日]:{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "textKr": "[アグレッシブ]\n[宣言] [日]:{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3658"
 }

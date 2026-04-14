@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0579",
+  "title": "鋼鉄の決意",
+  "subName": "アヴェンジャー／巌窟王 エドモン・ダンテス",
+  "name": "鋼鉄の決意 アヴェンジャー／巌窟王 エドモン・ダンテス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラでサポートをしたとき、相手キャラ１体にＳＰ－１する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、相手キャラ１体にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0579"
 }

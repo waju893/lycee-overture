@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0485",
+  "title": "死がふたりを分断つまで",
+  "subName": "ランサー／ブリュンヒルデ",
+  "name": "死がふたりを分断つまで ランサー／ブリュンヒルデ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 3,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T無]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[宣言] [T無]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0485"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3287",
+  "title": "プリンセス・ダヴ",
+  "subName": "羽田 小鳩",
+  "name": "プリンセス・ダヴ 羽田 小鳩",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 0,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[誘発] 自分の能力で自分のデッキを回復したとき、自分のデッキを１枚破棄する。\n[宣言] [0]:バトル中に使用できない。このキャラを横に置く。次の自ターン開始時、横のこのキャラを無償で登場する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[誘発] 自分の能力で自分のデッキを回復したとき、自分のデッキを１枚破棄する。\n[宣言] [0]:バトル中に使用できない。このキャラを横に置く。次の自ターン開始時、横のこのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3287"
 }

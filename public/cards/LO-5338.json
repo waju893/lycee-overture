@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5338",
+  "title": "メモリアルガール",
+  "subName": "可憐＆ソフィーヤ",
+  "name": "メモリアルガール 可憐＆ソフィーヤ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラにＡＰ＋[味方[SME]キャラの数]する。この能力は失われる。",
+  "textKr": "[宣言] [0]:このキャラにＡＰ＋[味方[SME]キャラの数]する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5338"
 }

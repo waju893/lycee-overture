@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3584",
+  "title": "管理人見習い",
+  "subName": "シャルルル＝ファルティシア",
+  "name": "管理人見習い シャルルル＝ファルティシア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。この能力は失われる。",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3584"
 }

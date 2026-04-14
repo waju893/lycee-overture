@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4390",
+  "title": "スーパー通い妻",
+  "subName": "栗山 兎鞠",
+  "name": "スーパー通い妻 栗山 兎鞠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] [月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。",
+  "textKr": "[コスト] [月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4390"
 }

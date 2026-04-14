@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6599",
+  "title": "成仏できない特殊な幽霊",
+  "subName": "マリア・ベルナール",
+  "name": "成仏できない特殊な幽霊 マリア・ベルナール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 0,
   "sp": 0,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方「ムーン・ベース13 ≪庭園≫」を配置している場合、{味方キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方「ムーン・ベース13 ≪庭園≫」を配置している場合、{味方キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6599"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4159",
+  "title": "娘の幸福",
+  "subName": "朝比奈 譲",
+  "name": "娘の幸福 朝比奈 譲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:[雪]でない味方キャラが登場している場合、このキャラにＤＰ＋１する。",
+  "textKr": "[宣言] [0]:[雪]でない味方キャラが登場している場合、このキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4159"
 }

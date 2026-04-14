@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2256",
+  "title": "八重桜乱",
+  "subName": "会津若松城",
+  "name": "八重桜乱 会津若松城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [月]:このキャラにＤＰ＋２する。",
+  "textKr": "[宣言] [月]:このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2256"
 }

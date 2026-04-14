@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4885",
+  "title": "闇の住人",
+  "subName": "ニコラ・ケフェウス",
+  "name": "闇の住人 ニコラ・ケフェウス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "textKr": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4885"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0358",
+  "title": "歴女",
+  "subName": "エルヴィン",
+  "name": "歴女 エルヴィン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 0,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [0]:コストが５点以上の味方キャラが登場している場合、このキャラにＤＰ＋４する。",
+  "textKr": "[宣言] [0]:コストが５点以上の味方キャラが登場している場合、このキャラにＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0358"
 }

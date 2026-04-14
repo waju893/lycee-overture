@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1870",
+  "title": "エヴェンクルガの御側付",
+  "subName": "トウカ",
+  "name": "エヴェンクルガの御側付 トウカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "トゥスクル",
+  "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ２体を自分の「契約」置き場に置ける。\n[宣言] [0]:相手ターン中に使用する。{味方＜トゥスクル＞キャラ１体}にＤＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ２体を自分の「契約」置き場に置ける。\n[宣言] [0]:相手ターン中に使用する。{味方＜トゥスクル＞キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1870"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6325",
+  "title": "新米エトワール",
+  "subName": "吐 美咲",
+  "name": "新米エトワール 吐 美咲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方「吐有馬」が登場している場合、自分にシールド＋１できる。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方「吐有馬」が登場している場合、自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6325"
 }

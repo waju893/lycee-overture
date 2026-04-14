@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1361",
+  "title": "C.C.C.",
+  "subName": "ムーンキャンサー／BB",
+  "name": "C.C.C. ムーンキャンサー／BB",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D1]:{このキャラと同列の相手キャラ１体}にＡＰ－１する。",
+  "textKr": "[宣言] [D1]:{このキャラと同列の相手キャラ１体}にＡＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1361"
 }

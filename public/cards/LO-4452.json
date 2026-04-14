@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4452",
+  "title": "人を引っ張るリーダータイプ",
+  "subName": "城一",
+  "name": "人を引っ張るリーダータイプ 城一",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラのＡＰとＤＰとＤＭＧに＋[味方『あくまで、これは～の物語』キャラの数]する。",
+  "textKr": "[宣言] [0]:このキャラのＡＰとＤＰとＤＭＧに＋[味方『あくまで、これは～の物語』キャラの数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4452"
 }

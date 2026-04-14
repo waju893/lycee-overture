@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0356",
+  "title": "聖グロリアーナ女学院隊長",
+  "subName": "ダージリン",
+  "name": "聖グロリアーナ女学院隊長 ダージリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月花日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[誘発] 相手ターン開始時、味方＜聖グロリアーナ＞キャラ１体を未行動にする。",
+  "textKr": "[誘発] 相手ターン開始時、味方＜聖グロリアーナ＞キャラ１体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0356"
 }

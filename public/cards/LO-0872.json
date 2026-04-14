@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0872",
+  "title": "月のお姫様",
+  "subName": "フィーナ・ファム・アーシュライト",
+  "name": "月のお姫様 フィーナ・ファム・アーシュライト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[コスト] 相手ターン中に使用する。自分のデッキを２枚破棄する。破棄したとき、[月]を発生する。",
+  "textKr": "[コスト] 相手ターン中に使用する。自分のデッキを２枚破棄する。破棄したとき、[月]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0872"
 }

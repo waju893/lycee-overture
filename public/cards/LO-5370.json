@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5370",
+  "title": "科学部副部長",
+  "subName": "一ノ瀬 七",
+  "name": "科学部副部長 一ノ瀬 七",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、持ち主が自分の味方アイテムが１枚以上の場合、１枚ドローする。\n[宣言] [0]:味方「夜刀くくる」が登場している場合、このキャラにＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、持ち主が自分の味方アイテムが１枚以上の場合、１枚ドローする。\n[宣言] [0]:味方「夜刀くくる」が登場している場合、このキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5370"
 }

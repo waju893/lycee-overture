@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3719",
+  "title": "紅の魔術師",
+  "subName": "フローガ",
+  "name": "紅の魔術師 フローガ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 5,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪雪無]:味方キャラの防御中に使用する。{対戦キャラ}を破棄する。",
+  "textKr": "[手札宣言] [雪雪無]:味方キャラの防御中に使用する。{対戦キャラ}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3719"
 }

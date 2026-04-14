@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0198",
+  "title": "ハルデルタ★スピカ",
+  "subName": "ヴァルゴ",
+  "name": "ハルデルタ★スピカ ヴァルゴ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]",
+  "textKr": "[エンゲージ]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0198"
 }

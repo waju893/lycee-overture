@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5874",
+  "title": "重度のメカオタク",
+  "subName": "クリス・クロフォード",
+  "name": "重度のメカオタク クリス・クロフォード",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙]:自分のゴミ箱のＥＸが２の[宙]アイテム１枚を手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [宙]:自分のゴミ箱のＥＸが２の[宙]アイテム１枚を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5874"
 }

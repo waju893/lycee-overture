@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4657",
+  "title": "“氷”の魔女",
+  "subName": "氷室 舞生",
+  "name": "“氷”の魔女 氷室 舞生",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [日]:自ターン中に使用する。バトル中に使用できない。元の基本能力に[アグレッシブ]を持つ味方キャラが３体以上登場している場合、自分のゴミ箱のキャラ１体をキャラ「氷の魔像」として、味方フィールドに登場する。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [日]:自ターン中に使用する。バトル中に使用できない。元の基本能力に[アグレッシブ]を持つ味方キャラが３体以上登場している場合、自分のゴミ箱のキャラ１体をキャラ「氷の魔像」として、味方フィールドに登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4657"
 }

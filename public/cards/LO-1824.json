@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1824",
+  "title": "世を忍ぶ仮の姿",
+  "subName": "ウコン",
+  "name": "世を忍ぶ仮の姿 ウコン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体を味方フィールドに移動する。",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体を味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1824"
 }

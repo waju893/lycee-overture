@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3967",
+  "title": "南の島の小覇王",
+  "subName": "孫策・雪蓮",
+  "name": "南の島の小覇王 孫策・雪蓮",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3967"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0178",
+  "title": "無名…しいて言えば、殲滅",
+  "subName": "ぎんいろ",
+  "name": "無名…しいて言えば、殲滅 ぎんいろ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[エンゲージ]\n[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0178"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4561",
+  "title": "覇王の影武者",
+  "subName": "曹仁・華侖",
+  "name": "覇王の影武者 曹仁・華侖",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[誘発] 相手ターン開始時、コストが４点以下の味方ＡＦ＜魏＞キャラ１体をそのキャラと同列の味方ＤＦに移動できる。移動したとき、そのキャラを未行動にする。この能力は失われる。",
+  "textKr": "[誘発] 相手ターン開始時、コストが４点以下の味方ＡＦ＜魏＞キャラ１体をそのキャラと同列の味方ＤＦに移動できる。移動したとき、そのキャラを未行動にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4561"
 }

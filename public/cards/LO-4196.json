@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4196",
+  "title": "保護者兼担任教師",
+  "subName": "草壁 亮一",
+  "name": "保護者兼担任教師 草壁 亮一",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:[花]でない味方キャラが登場している場合、このキャラにＤＰ＋１する。",
+  "textKr": "[宣言] [0]:[花]でない味方キャラが登場している場合、このキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4196"
 }

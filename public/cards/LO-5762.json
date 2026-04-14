@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5762",
+  "title": "仲違いした幼馴染み",
+  "subName": "湊 向日葵",
+  "name": "仲違いした幼馴染み 湊 向日葵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方『しゅぷれ〜むキャンディ』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方『しゅぷれ〜むキャンディ』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5762"
 }

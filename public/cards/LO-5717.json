@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5717",
+  "title": "直哉に執着する元同級生",
+  "subName": "長山 香奈",
+  "name": "直哉に執着する元同級生 長山 香奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [花]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "textKr": "[手札宣言] [花]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5717"
 }

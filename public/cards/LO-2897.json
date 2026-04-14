@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2897",
+  "title": "翔の悪友",
+  "subName": "深沢 与一",
+  "name": "翔の悪友 深沢 与一",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:このキャラがアイテムを装備している場合、{相手キャラ１体}にＤＰ－３する。この能力は失われる。",
+  "textKr": "[宣言] [無]:このキャラがアイテムを装備している場合、{相手キャラ１体}にＤＰ－３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2897"
 }

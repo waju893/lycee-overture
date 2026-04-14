@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2486",
+  "title": "一途な恋の誓約者",
+  "subName": "セシル",
+  "name": "一途な恋の誓約者 セシル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 0,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 0,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。\n[手札宣言] [月]:元のＤＭＧが４以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ１体を探し{味方フィールド}に登場する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。\n[手札宣言] [月]:元のＤＭＧが４以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ１体を探し{味方フィールド}に登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2486"
 }

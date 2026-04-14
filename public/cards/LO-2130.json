@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2130",
+  "title": "妖精王",
+  "subName": "大場 音々",
+  "name": "妖精王 大場 音々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体は[ペナルティ:[１枚ドローする。]]を得る。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体は[ペナルティ:[１枚ドローする。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2130"
 }

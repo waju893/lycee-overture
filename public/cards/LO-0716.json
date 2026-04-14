@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0716",
+  "title": "異国少女",
+  "subName": "レナ・リヒテナウアー",
+  "name": "異国少女 レナ・リヒテナウアー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[アグレッシブ]\n[宣言] [日]:自ターン中に使用する。このキャラにＡＰ＋２する。",
+  "textKr": "[アグレッシブ]\n[宣言] [日]:自ターン中に使用する。このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0716"
 }

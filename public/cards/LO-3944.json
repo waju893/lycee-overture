@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-3944",
+  "title": "お化け屋敷",
+  "subName": "",
+  "name": "お化け屋敷",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3944"
 }

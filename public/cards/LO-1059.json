@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1059",
+  "title": "アヒルさんチームの通信手",
+  "subName": "近藤 妙子",
+  "name": "アヒルさんチームの通信手 近藤 妙子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[サポーター:[花花]]\n[宣言] [D1]:味方[花]＜大洗女子＞キャラ全てにＳＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [D1]:味方[花]＜大洗女子＞キャラ全てにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1059"
 }

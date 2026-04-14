@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4871",
+  "title": "コスプレ巫女",
+  "subName": "墨染 希",
+  "name": "コスプレ巫女 墨染 希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果で相手キャラが場を離れたとき、１枚ドローできる。この能力は失われる。",
+  "textKr": "[誘発] 自分の効果で相手キャラが場を離れたとき、１枚ドローできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4871"
 }

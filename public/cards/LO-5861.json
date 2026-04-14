@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5861",
+  "title": "筋肉を愛する月華会書記",
+  "subName": "敷島 秀彦",
+  "name": "筋肉を愛する月華会書記 敷島 秀彦",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "月華会",
+  "text": "[誘発] このキャラが登場したとき、味方＜月華会＞キャラが２体以上の場合、１枚ドローする。味方＜月華会＞キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方＜月華会＞キャラが２体以上の場合、１枚ドローする。味方＜月華会＞キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5861"
 }

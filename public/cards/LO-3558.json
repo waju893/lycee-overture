@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3558",
+  "title": "Blue,Summertime Blue.",
+  "subName": "向坂 海希",
+  "name": "Blue,Summertime Blue. 向坂 海希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:{味方キャラ１体}にＤＭＧ＋１する。この能力は失われる。",
+  "textKr": "[宣言] [T]:{味方キャラ１体}にＤＭＧ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3558"
 }

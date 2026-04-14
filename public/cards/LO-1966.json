@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1966",
+  "title": "天草式十字凄教教皇代理",
+  "subName": "建宮 斎字",
+  "name": "天草式十字凄教教皇代理 建宮 斎字",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙]:アイテムを装備している味方キャラの防御中に使用する。バトルを中断する。",
+  "textKr": "[手札宣言] [宙]:アイテムを装備している味方キャラの防御中に使用する。バトルを中断する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1966"
 }

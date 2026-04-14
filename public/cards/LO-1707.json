@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-1707",
+  "title": "天女の舞",
+  "subName": "",
+  "name": "天女の舞",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このアイテムを装備したとき、自分のデッキから[月]キャラ１体または[月]アイテム１枚を探し公開して手札に入れる。\n[宣言] [0]:バトル中に使用する。このキャラにバトル終了時までＤＭＧ＋１する。",
+  "textKr": "[誘発] このアイテムを装備したとき、自分のデッキから[月]キャラ１体または[月]アイテム１枚を探し公開して手札に入れる。\n[宣言] [0]:バトル中に使用する。このキャラにバトル終了時までＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1707"
 }

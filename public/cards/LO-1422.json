@@ -1,20 +1,19 @@
 {
+  "cardNo": "LO-1422",
+  "title": "Dr.ロマン",
+  "subName": "ロマニ・アーキマン",
+  "name": "Dr.ロマン ロマニ・アーキマン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star"
@@ -22,5 +21,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][無]:自ターン中に使用する。バトル中に使用できない。{味方＜サーヴァント＞キャラ１体}を{味方フィールド}に移動する。",
+  "textKr": "[宣言] [T][無]:自ターン中に使用する。バトル中に使用できない。{味方＜サーヴァント＞キャラ１体}を{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1422"
 }

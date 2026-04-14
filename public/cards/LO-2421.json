@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2421",
+  "title": "突撃狂",
+  "subName": "華雄",
+  "name": "突撃狂 華雄",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙宙宙]:このキャラにＡＰ＋３する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙宙]:このキャラにＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2421"
 }

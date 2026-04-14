@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0265",
+  "title": "散花･血擂残月【艶麗】",
+  "subName": "三日月宗近",
+  "name": "散花･血擂残月【艶麗】 三日月宗近",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] このキャラを破棄したとき、相手は相手の手札を１枚破棄する。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラを破棄したとき、相手は相手の手札を１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0265"
 }

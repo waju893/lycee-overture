@@ -1,11 +1,25 @@
 {
+  "cardNo": "LO-3199",
+  "title": "風紀委員",
+  "subName": "",
+  "name": "風紀委員",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3199"
 }

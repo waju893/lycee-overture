@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3920",
+  "title": "「一発屋」の看板娘",
+  "subName": "きよ",
+  "name": "「一発屋」の看板娘 きよ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。そのキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+  "textKr": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。そのキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3920"
 }

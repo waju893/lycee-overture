@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3910",
+  "title": "剣丞隊第二号",
+  "subName": "蜂須賀 転子 正勝",
+  "name": "剣丞隊第二号 蜂須賀 転子 正勝",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3910"
 }

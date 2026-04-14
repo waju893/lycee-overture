@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5183",
+  "title": "正確無比な剣技",
+  "subName": "オクタヴィア",
+  "name": "正確無比な剣技 オクタヴィア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 6,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、またはターン開始時、コストが５～６点の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[誘発] コストが５点以上の味方キャラがダウンしたとき、そのキャラをデッキの下に置ける。この能力は相手ターン終了時まで失われる。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、またはターン開始時、コストが５～６点の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[誘発] コストが５点以上の味方キャラがダウンしたとき、そのキャラをデッキの下に置ける。この能力は相手ターン終了時まで失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5183"
 }

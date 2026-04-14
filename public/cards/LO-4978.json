@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4978",
+  "title": "喫茶ステラ",
+  "subName": "墨染 希",
+  "name": "喫茶ステラ 墨染 希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:バトル中に使用できない。{味方[YUZ]キャラ1体}にＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "textKr": "[宣言] [T]:バトル中に使用できない。{味方[YUZ]キャラ1体}にＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4978"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5524",
+  "title": "剛毅なパワーファイター",
+  "subName": "千石 葵",
+  "name": "剛毅なパワーファイター 千石 葵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:このキャラの攻撃中に使用する。このキャラの持つアイテム１枚を破棄する。破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:このキャラの攻撃中に使用する。このキャラの持つアイテム１枚を破棄する。破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5524"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3265",
+  "title": "年上の従姉",
+  "subName": "安場 琥珀",
+  "name": "年上の従姉 安場 琥珀",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、このキャラに隣接したコストが３～４点の味方キャラ１体を未行動にする。そのキャラはＤＭＧの能力値修正を失う。\n[誘発] 自ターン中、相手の効果で相手のデッキを回復したとき、相手のデッキを１枚破棄する。\n[宣言] [無]:このキャラにＡＰ＋３する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、このキャラに隣接したコストが３～４点の味方キャラ１体を未行動にする。そのキャラはＤＭＧの能力値修正を失う。\n[誘発] 自ターン中、相手の効果で相手のデッキを回復したとき、相手のデッキを１枚破棄する。\n[宣言] [無]:このキャラにＡＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3265"
 }

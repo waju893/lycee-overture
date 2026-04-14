@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2748",
+  "title": "おかーさん役",
+  "subName": "鳴瀬 しろは",
+  "name": "おかーさん役 鳴瀬 しろは",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－●－－●－",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[D1]]\n[手札宣言] [D1]:{味方[花]キャラ１体}にＤＰ＋２できる。しないとき、そのキャラがＡＦキャラの場合、そのキャラにＡＰ＋２する。\n[手札宣言] [花花花]:相手キャラの攻撃中に使用する。そのキャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。",
+  "textKr": "[サポーター:[D1]]\n[手札宣言] [D1]:{味方[花]キャラ１体}にＤＰ＋２できる。しないとき、そのキャラがＡＦキャラの場合、そのキャラにＡＰ＋２する。\n[手札宣言] [花花花]:相手キャラの攻撃中に使用する。そのキャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2748"
 }

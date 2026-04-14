@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1341",
+  "title": "洗礼詠唱",
+  "subName": "ルーラー／天草四郎",
+  "name": "洗礼詠唱 ルーラー／天草四郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:相手キャラの能力の宣言に対応して使用する。そのキャラは[ペナルティ:[自分のデッキを２枚破棄する。]]を得る。",
+  "textKr": "[宣言] [0]:相手キャラの能力の宣言に対応して使用する。そのキャラは[ペナルティ:[自分のデッキを２枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1341"
 }

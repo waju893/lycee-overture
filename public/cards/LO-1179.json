@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1179",
+  "title": "凄腕ハッカー",
+  "subName": "竹山",
+  "name": "凄腕ハッカー 竹山",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[宣言] [0]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、相手のデッキの上のカード３枚を見て、そのうち１枚を破棄する。",
+  "textKr": "[アシスト]\n[宣言] [0]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、相手のデッキの上のカード３枚を見て、そのうち１枚を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1179"
 }

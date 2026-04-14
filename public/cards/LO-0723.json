@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0723",
+  "title": "体育祭",
+  "subName": "千歳 佐奈",
+  "name": "体育祭 千歳 佐奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] 相手の効果によって味方キャラを行動済みにしたとき、そのキャラを未行動にできる。",
+  "textKr": "[誘発] 相手の効果によって味方キャラを行動済みにしたとき、そのキャラを未行動にできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0723"
 }

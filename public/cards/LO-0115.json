@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0115",
+  "title": "いらっしゃいませ♥",
+  "subName": "めろんちゃん",
+  "name": "いらっしゃいませ♥ めろんちゃん",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "なし",
+  "text": "[宣言] [0]:{味方「メロンブックス」キャラ１体}にＳＰ＋１する。",
+  "textKr": "[宣言] [0]:{味方「メロンブックス」キャラ１体}にＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0115"
 }

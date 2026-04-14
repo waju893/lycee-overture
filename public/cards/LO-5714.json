@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5714",
+  "title": "弓張学園副生徒会長",
+  "subName": "明石 小沙智",
+  "name": "弓張学園副生徒会長 明石 小沙智",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園生徒会長 明石小牧」１体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
+  "textKr": "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園生徒会長 明石小牧」１体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5714"
 }

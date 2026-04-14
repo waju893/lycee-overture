@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0530",
+  "title": "紅顔の美少年",
+  "subName": "アーチャー／子ギル",
+  "name": "紅顔の美少年 アーチャー／子ギル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T日]:{味方キャラ１体}は[オーダーチェンジ:[0]]を得る。",
+  "textKr": "[宣言] [T日]:{味方キャラ１体}は[オーダーチェンジ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0530"
 }

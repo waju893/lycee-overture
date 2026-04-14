@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4876",
+  "title": "人付き合いが上手くない同士",
+  "subName": "因幡 めぐる",
+  "name": "人付き合いが上手くない同士 因幡 めぐる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが３点以上の味方[雪]キャラが登場している場合、このキャラにＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:コストが３点以上の味方[雪]キャラが登場している場合、このキャラにＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4876"
 }

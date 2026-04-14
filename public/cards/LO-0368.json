@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0368",
+  "title": "副キャプテン",
+  "subName": "カルパッチョ",
+  "name": "副キャプテン カルパッチョ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,13 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    8
-  ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:{味方「カエサル」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:{味方「カエサル」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0368"
 }

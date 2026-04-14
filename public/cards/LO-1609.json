@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1609",
+  "title": "魔女の契約",
+  "subName": "綾地 寧々",
+  "name": "魔女の契約 綾地 寧々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを１枚破棄する。自分のゴミ箱にイベントまたはアイテムが置かれている場合、[月月]を発生する。この能力は失われる。",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。自分のゴミ箱にイベントまたはアイテムが置かれている場合、[月月]を発生する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1609"
 }

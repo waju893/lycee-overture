@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3313",
+  "title": "マッチョメイド",
+  "subName": "八十島 壱与",
+  "name": "マッチョメイド 八十島 壱与",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラがアイテムを装備している場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [0]:このキャラがアイテムを装備している場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3313"
 }

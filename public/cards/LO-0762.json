@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0762",
+  "title": "スカハチャージ",
+  "subName": "スカアハ",
+  "name": "スカハチャージ スカアハ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0762"
 }

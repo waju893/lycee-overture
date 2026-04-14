@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3233",
+  "title": "無限軌道杯",
+  "subName": "武部 沙織",
+  "name": "無限軌道杯 武部 沙織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    8,
-    12
-  ],
-  "keyEffects": [
-    8,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方[花]または＜大洗女子＞キャラが４体以上登場している場合、１枚ドローする。\n[誘発] 味方キャラを相手の効果で破棄したとき、１枚ドローできる。この能力は失われる。\n[宣言] [無]:自ターン中に使用する。以下から１つを選び処理する。(同じ効果は２回選べない。)",
+  "textKr": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方[花]または＜大洗女子＞キャラが４体以上登場している場合、１枚ドローする。\n[誘発] 味方キャラを相手の効果で破棄したとき、１枚ドローできる。この能力は失われる。\n[宣言] [無]:自ターン中に使用する。以下から１つを選び処理する。(同じ効果は２回選べない。)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3233"
 }

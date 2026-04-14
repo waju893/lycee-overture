@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2939",
+  "title": "ナインボール制服",
+  "subName": "九條 都",
+  "name": "ナインボール制服 九條 都",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無無無]:自ターン中に使用する。バトル中に使用できない。{アイテム１枚}をこのキャラに無償で装備する。この能力は失われる。",
+  "textKr": "[宣言] [無無無]:自ターン中に使用する。バトル中に使用できない。{アイテム１枚}をこのキャラに無償で装備する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2939"
 }

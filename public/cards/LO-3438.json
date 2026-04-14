@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3438",
+  "title": "聖竜騎士団『スケイルドラゴン』",
+  "subName": "ナッシュ＝ジグムント",
+  "name": "聖竜騎士団『スケイルドラゴン』 ナッシュ＝ジグムント",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:サブネームに「聖竜騎士団」を含む味方キャラ全てにＤＰ＋１する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:サブネームに「聖竜騎士団」を含む味方キャラ全てにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3438"
 }

@@ -1,11 +1,25 @@
 {
+  "cardNo": "LO-3213",
+  "title": "常盤台の双璧",
+  "subName": "",
+  "name": "常盤台の双璧",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※デッキ構築時、このカードは「LO-1429」と同番号として扱う。",
+  "textKr": "※デッキ構築時、このカードは「LO-1429」と同番号として扱う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3213"
 }

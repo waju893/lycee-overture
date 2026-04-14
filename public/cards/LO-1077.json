@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1077",
+  "title": "生しらす丼のカトラス",
+  "subName": "カトラス",
+  "name": "生しらす丼のカトラス カトラス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [宙]:このキャラにＡＰ＋２する。",
+  "textKr": "[宣言] [宙]:このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1077"
 }

@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-1706",
+  "title": "愛用の傘",
+  "subName": "",
+  "name": "愛用の傘",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＤＭＧ＋１する。\n[宣言] [月月月][このアイテムを破棄する]:相手の宣言に対応して使用する。その宣言がキャラの登場でない場合、その解決は失敗する。",
+  "textKr": "[常時] このキャラにＤＭＧ＋１する。\n[宣言] [月月月][このアイテムを破棄する]:相手の宣言に対応して使用する。その宣言がキャラの登場でない場合、その解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1706"
 }

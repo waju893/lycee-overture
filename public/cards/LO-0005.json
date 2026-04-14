@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0005",
+  "title": "修補すべき全ての疵",
+  "subName": "キャスター／メディア〔リリィ〕",
+  "name": "修補すべき全ての疵 キャスター／メディア〔リリィ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 3,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] キャラがダウンしたバトル終了時、キャラ１体にＡＰ－３・ＤＰ－３する。",
+  "textKr": "[誘発] キャラがダウンしたバトル終了時、キャラ１体にＡＰ－３・ＤＰ－３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0005"
 }

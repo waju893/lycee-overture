@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4461",
+  "title": "さくらと同じ顔の転校生",
+  "subName": "清川 ひかり",
+  "name": "さくらと同じ顔の転校生 清川 ひかり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 5,
   "sp": 1,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「深層」を配置している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。コストが４点以下の味方ＡＦキャラが登場していない場合、そのキャラにＤＭＧ－１する。",
+  "textKr": "[宣言] [0]:味方「深層」を配置している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。コストが４点以下の味方ＡＦキャラが登場していない場合、そのキャラにＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4461"
 }

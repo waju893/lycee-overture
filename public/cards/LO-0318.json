@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0318",
+  "title": "カモさんチーム",
+  "subName": "金春 希美",
+  "name": "カモさんチーム 金春 希美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[誘発] ターン開始時、自分のデッキを１枚破棄できる。破棄したとき、キャラ１体にＳＰー１する。",
+  "textKr": "[アシスト]\n[誘発] ターン開始時、自分のデッキを１枚破棄できる。破棄したとき、キャラ１体にＳＰー１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0318"
 }

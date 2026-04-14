@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-0104",
+  "title": "ダ・ヴィンチ工房",
+  "subName": "",
+  "name": "ダ・ヴィンチ工房",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを２枚破棄する。破棄したとき、[宙宙]を発生する。",
+  "textKr": "[コスト] 自分のデッキを２枚破棄する。破棄したとき、[宙宙]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0104"
 }

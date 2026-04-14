@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2069",
+  "title": "ブラックモード",
+  "subName": "羽音々 翼",
+  "name": "ブラックモード 羽音々 翼",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2069"
 }

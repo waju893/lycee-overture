@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5158",
+  "title": "恋多き少女",
+  "subName": "アトゥイ",
+  "name": "恋多き少女 アトゥイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラが３体以上の場合、味方キャラ１体にＡＰ＋２する。このキャラがＤＦキャラの場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラが３体以上の場合、味方キャラ１体にＡＰ＋２する。このキャラがＤＦキャラの場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5158"
 }

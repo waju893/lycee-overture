@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3312",
+  "title": "ルナの新たな付き人",
+  "subName": "樅山 紅葉",
+  "name": "ルナの新たな付き人 樅山 紅葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [花]:味方「桜小路ルナ」が登場している場合、{自分のゴミ箱のＥＸが２のアイテム１枚}を手札に入れる。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [花]:味方「桜小路ルナ」が登場している場合、{自分のゴミ箱のＥＸが２のアイテム１枚}を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3312"
 }

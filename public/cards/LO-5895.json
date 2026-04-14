@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5895",
+  "title": "ハンドレッド家の従者",
+  "subName": "九十九",
+  "name": "ハンドレッド家の従者 九十九",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:味方「リセリシアス・H・霧ヶ崎」が登場している場合、このキャラにＡＰ＋３する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:味方「リセリシアス・H・霧ヶ崎」が登場している場合、このキャラにＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5895"
 }

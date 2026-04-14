@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2302",
+  "title": "南部鉄器",
+  "subName": "盛岡城",
+  "name": "南部鉄器 盛岡城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [0]:このキャラにＤＰ＋３する。この能力は失われる。",
+  "textKr": "[宣言] [0]:このキャラにＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2302"
 }

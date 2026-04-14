@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1396",
+  "title": "魔力放出（雷）",
+  "subName": "バーサーカー／源頼光",
+  "name": "魔力放出（雷） バーサーカー／源頼光",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,5 +21,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 0,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "宙宙宙宙無無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [宙宙宙]:このキャラにＡＰ＋２・ＤＭＧ＋１する。",
+  "textKr": "[宣言] [宙宙宙]:このキャラにＡＰ＋２・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1396"
 }

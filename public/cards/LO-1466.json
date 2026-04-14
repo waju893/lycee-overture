@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1466",
+  "title": "聖銀竜の騎士",
+  "subName": "ティファ",
+  "name": "聖銀竜の騎士 ティファ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]\n[宣言] [D1]:バトル中に使用する。{味方ＡＦキャラ１体}にＤＰ＋１する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]\n[宣言] [D1]:バトル中に使用する。{味方ＡＦキャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1466"
 }

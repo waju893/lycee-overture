@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2277",
+  "title": "天意八極",
+  "subName": "紫禁城",
+  "name": "天意八極 紫禁城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [宙宙宙]:ターン終了時まで、{味方キャラ１体}の攻撃で相手は可能なら防御キャラを指定する。この能力は失われる。",
+  "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [宙宙宙]:ターン終了時まで、{味方キャラ１体}の攻撃で相手は可能なら防御キャラを指定する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2277"
 }

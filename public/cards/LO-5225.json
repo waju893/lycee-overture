@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5225",
+  "title": "嫌がらせ",
+  "subName": "広瀬 真希",
+  "name": "嫌がらせ 広瀬 真希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。味方「七瀬留美」１体を破棄する。破棄したとき、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。味方「七瀬留美」１体を破棄する。破棄したとき、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5225"
 }

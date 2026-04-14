@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0147",
+  "title": "デフラワリングガール",
+  "subName": "アルストロメリア",
+  "name": "デフラワリングガール アルストロメリア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -19,11 +22,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手キャラ１体を破棄する。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0147"
 }

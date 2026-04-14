@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4968",
+  "title": "悪戯な笑み",
+  "subName": "明月 栞那",
+  "name": "悪戯な笑み 明月 栞那",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード１枚を味方「喫茶ステラ」の下に置ける。\n[誘発] 味方[花]キャラを破棄したとき、味方[花]キャラ１体にＤＰ＋２する。\n[宣言] [0]:{コストが５点以上の相手キャラ１体}にＡＰ－１・ＤＰ－１する。そのキャラのコストが７点以上の場合、そのキャラにＡＰ－１・ＤＰ－１・ＤＭＧ－１する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード１枚を味方「喫茶ステラ」の下に置ける。\n[誘発] 味方[花]キャラを破棄したとき、味方[花]キャラ１体にＤＰ＋２する。\n[宣言] [0]:{コストが５点以上の相手キャラ１体}にＡＰ－１・ＤＰ－１する。そのキャラのコストが７点以上の場合、そのキャラにＡＰ－１・ＤＰ－１・ＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4968"
 }

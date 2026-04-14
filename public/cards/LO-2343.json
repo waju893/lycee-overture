@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2343",
+  "title": "あざらしライブ",
+  "subName": "星川 こはる",
+  "name": "あざらしライブ 星川 こはる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] [日日]を発生する。このコストはコストが３点以上のキャラの登場にのみ支払える。この能力は失われる。",
+  "textKr": "[コスト] [日日]を発生する。このコストはコストが３点以上のキャラの登場にのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2343"
 }

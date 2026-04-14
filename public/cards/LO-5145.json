@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5145",
+  "title": "会心の笑み",
+  "subName": "ヤクトワルト",
+  "name": "会心の笑み ヤクトワルト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札のコストが２点以下の『うたわれるもの シリーズ』キャラ１体を無償で登場できる。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札のコストが２点以下の『うたわれるもの シリーズ』キャラ１体を無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5145"
 }

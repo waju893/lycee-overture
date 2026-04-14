@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0714",
+  "title": "陰陽",
+  "subName": "真咲・ガイヤール",
+  "name": "陰陽 真咲・ガイヤール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙日無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "-",
+  "text": "[アグレッシブ]\n[誘発] 自ターン開始時、自分の手札が１枚以下の場合、このキャラにＤＭＧ＋２する。",
+  "textKr": "[アグレッシブ]\n[誘発] 自ターン開始時、自分の手札が１枚以下の場合、このキャラにＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0714"
 }

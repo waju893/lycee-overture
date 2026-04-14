@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5935",
+  "title": "紅茶神",
+  "subName": "春日部 花音",
+  "name": "紅茶神 春日部 花音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがＤＦに登場したとき、１枚ドローする。\n[誘発] 自分の効果で相手キャラが場を離れたとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。未行動の味方ＡＦ[雪]キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] このキャラがＤＦに登場したとき、１枚ドローする。\n[誘発] 自分の効果で相手キャラが場を離れたとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。未行動の味方ＡＦ[雪]キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5935"
 }

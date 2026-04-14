@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-3215",
+  "title": "浸紙念力",
+  "subName": "",
+  "name": "浸紙念力",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[宣言] [0]:このキャラのバトル中に使用する。バトル終了時まで、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。このアイテムを破棄できる。破棄したとき、対戦キャラにＡＰ－１またはＤＰ－１する。\n※デッキ構築時、このカードは「LO-2191」と同番号として扱う。",
+  "textKr": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[宣言] [0]:このキャラのバトル中に使用する。バトル終了時まで、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。このアイテムを破棄できる。破棄したとき、対戦キャラにＡＰ－１またはＤＰ－１する。\n※デッキ構築時、このカードは「LO-2191」と同番号として扱う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3215"
 }

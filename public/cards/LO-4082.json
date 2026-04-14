@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4082",
+  "title": "ほどほど不可視",
+  "subName": "闇の奉輪こもり",
+  "name": "ほどほど不可視 闇の奉輪こもり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [C1][日]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+  "textKr": "[チャージ:２]\n[宣言] [C1][日]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4082"
 }

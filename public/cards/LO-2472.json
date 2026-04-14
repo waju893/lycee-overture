@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2472",
+  "title": "告白・結灯",
+  "subName": "黒姫 結灯",
+  "name": "告白・結灯 黒姫 結灯",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月月]:自分の手札の「黒姫 結灯」を好きな枚数公開する。このキャラにＤＭＧ＋[公開した枚数]する。この能力は失われる。",
+  "textKr": "[宣言] [月月]:自分の手札の「黒姫 結灯」を好きな枚数公開する。このキャラにＤＭＧ＋[公開した枚数]する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2472"
 }

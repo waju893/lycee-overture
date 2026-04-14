@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2787",
+  "title": "再会を”やくそく”した幼なじみ",
+  "subName": "篠崎 真里花",
+  "name": "再会を”やくそく”した幼なじみ 篠崎 真里花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方[月]キャラが４体以上の場合、１枚ドローする。\n[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方[月]キャラが４体以上の場合、１枚ドローする。\n[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2787"
 }

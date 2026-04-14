@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5020",
+  "title": "年下×元気系×ウザかわ",
+  "subName": "仲野 愛",
+  "name": "年下×元気系×ウザかわ 仲野 愛",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D2]:このキャラは[アグレッシブ]を得る。",
+  "textKr": "[宣言] [D2]:このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5020"
 }

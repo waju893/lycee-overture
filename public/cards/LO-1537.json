@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1537",
+  "title": "叛逆の騎士",
+  "subName": "コーネリア",
+  "name": "叛逆の騎士 コーネリア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[手札宣言] [宙]:防御中の味方キャラ１体にＤＰ＋２する。",
+  "textKr": "[オーダーステップ:[0]]\n[手札宣言] [宙]:防御中の味方キャラ１体にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1537"
 }

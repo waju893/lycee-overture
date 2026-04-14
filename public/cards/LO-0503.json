@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0503",
+  "title": "狐の嫁入り",
+  "subName": "キャスター／玉藻の前",
+  "name": "狐の嫁入り キャスター／玉藻の前",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,5 +20,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 5,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "花花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルでキャラがダウンしたとき、このキャラを未行動にする。",
+  "textKr": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルでキャラがダウンしたとき、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0503"
 }

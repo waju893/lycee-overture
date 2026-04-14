@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1556",
+  "title": "爆砲の新兵",
+  "subName": "カノン",
+  "name": "爆砲の新兵 カノン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体にＤＰ－２する",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体にＤＰ－２する",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1556"
 }

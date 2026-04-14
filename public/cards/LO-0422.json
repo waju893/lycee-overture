@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0422",
+  "title": "Go ahead！",
+  "subName": "ケイ",
+  "name": "Go ahead！ ケイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サンダース",
+  "text": "[アシスト]\n[宣言] [自分の手札の＜サンダース＞キャラ１体を破棄する。]:{味方キャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[アシスト]\n[宣言] [自分の手札の＜サンダース＞キャラ１体を破棄する。]:{味方キャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0422"
 }

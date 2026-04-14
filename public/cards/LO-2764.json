@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2764",
+  "title": "やる気のない教育実習生",
+  "subName": "西園 百々花",
+  "name": "やる気のない教育実習生 西園 百々花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2764"
 }

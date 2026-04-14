@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5402",
+  "title": "生徒会新メンバー",
+  "subName": "神田 柑凪",
+  "name": "生徒会新メンバー 神田 柑凪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[コスト] [宙宙]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]]\n[コスト] [宙宙]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5402"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1539",
+  "title": "紅血の皇女",
+  "subName": "シルヴィア",
+  "name": "紅血の皇女 シルヴィア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 6,
   "dp": 2,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラはサポートの対象に指定できない。",
+  "textKr": "[常時] このキャラはサポートの対象に指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1539"
 }

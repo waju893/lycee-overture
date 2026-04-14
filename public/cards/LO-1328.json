@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1328",
+  "title": "プロフェッサーM",
+  "subName": "新宿のアーチャー",
+  "name": "プロフェッサーM 新宿のアーチャー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [無無][このキャラを破棄する]:このキャラのバトル中に使用できない。{味方[日]キャラ１体に隣接した相手キャラ１体}を破棄する。",
+  "textKr": "[宣言] [無無][このキャラを破棄する]:このキャラのバトル中に使用できない。{味方[日]キャラ１体に隣接した相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1328"
 }

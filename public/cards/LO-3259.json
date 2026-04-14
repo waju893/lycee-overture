@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3259",
+  "title": "家族愛",
+  "subName": "大蔵 りそな",
+  "name": "家族愛 大蔵 りそな",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手の効果でカードを相手の手札に入れたとき、または相手がコスト効果を使用したとき、以下から１つを選び処理する。この能力は相手ターン終了時まで失われる。\n[宣言] [D1]:{元のＤＰが３以下の味方キャラ１体}は[ペナルティ:[１枚ドローする。]]を得る。この能力は失われる。",
+  "textKr": "[誘発] 相手の効果でカードを相手の手札に入れたとき、または相手がコスト効果を使用したとき、以下から１つを選び処理する。この能力は相手ターン終了時まで失われる。\n[宣言] [D1]:{元のＤＰが３以下の味方キャラ１体}は[ペナルティ:[１枚ドローする。]]を得る。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3259"
 }

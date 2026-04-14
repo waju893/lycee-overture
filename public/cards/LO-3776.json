@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3776",
+  "title": "帝国魔神副団長",
+  "subName": "マレブランケ",
+  "name": "帝国魔神副団長 マレブランケ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分の手札の「帝国魔神団長 メフィスト」１体を無償で登場する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分の手札の「帝国魔神団長 メフィスト」１体を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3776"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5731",
+  "title": "Bar\"白州峡\"のオカマ店主",
+  "subName": "マスター",
+  "name": "Bar\"白州峡\"のオカマ店主 マスター",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 6,
   "dp": 6,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したときまたはターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+  "textKr": "[誘発] このキャラが手札から登場したときまたはターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5731"
 }

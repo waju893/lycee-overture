@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1294",
+  "title": "Angel Player",
+  "subName": "立華 かなで",
+  "name": "Angel Player 立華 かなで",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[誘発] 自分の[雪]イベントを使用したとき、自分のゴミ箱の「立華かなで」１体をデッキの下に置く。",
+  "textKr": "[アシスト]\n[誘発] 自分の[雪]イベントを使用したとき、自分のゴミ箱の「立華かなで」１体をデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1294"
 }

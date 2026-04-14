@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5416",
+  "title": "生徒会顧問のギャル教師",
+  "subName": "和泉 里",
+  "name": "生徒会顧問のギャル教師 和泉 里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5416"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4007",
+  "title": "ガロウスペシャル",
+  "subName": "虎太郎",
+  "name": "ガロウスペシャル 虎太郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方『ドーナドーナ』キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}は[ペナルティ:[相手は相手キャラ１体にＡＰ＋１・ＤＰ＋１する。]]を得る。",
+  "textKr": "[誘発] このキャラが登場したとき、味方『ドーナドーナ』キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}は[ペナルティ:[相手は相手キャラ１体にＡＰ＋１・ＤＰ＋１する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4007"
 }

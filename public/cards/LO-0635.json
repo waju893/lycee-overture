@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0635",
+  "title": "名物店主",
+  "subName": "馬庭 芦花",
+  "name": "名物店主 馬庭 芦花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラが登場したとき、コストが２点以下の味方キャラ１体にＳＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが２点以下の味方キャラ１体にＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0635"
 }

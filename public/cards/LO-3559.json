@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3559",
+  "title": "学園のアイドル",
+  "subName": "芦川 ゆきの",
+  "name": "学園のアイドル 芦川 ゆきの",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花]:このキャラにＡＰ＋２する。",
+  "textKr": "[宣言] [花]:このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3559"
 }

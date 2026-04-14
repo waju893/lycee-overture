@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0069",
+  "title": "第六天魔王",
+  "subName": "アーチャー／織田信長",
+  "name": "第六天魔王 アーチャー／織田信長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[アグレッシブ]",
+  "textKr": "[アグレッシブ]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0069"
 }

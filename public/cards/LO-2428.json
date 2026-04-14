@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2428",
+  "title": "豪天砲",
+  "subName": "厳顔・桔梗",
+  "name": "豪天砲 厳顔・桔梗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[宣言] [D2]:このキャラにＡＰ＋２する。",
+  "textKr": "[宣言] [D2]:このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2428"
 }

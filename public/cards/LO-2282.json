@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2282",
+  "title": "能鷹隠爪",
+  "subName": "駿府城",
+  "name": "能鷹隠爪 駿府城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [宙]:このキャラにＤＰ＋２する。",
+  "textKr": "[宣言] [宙]:このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2282"
 }

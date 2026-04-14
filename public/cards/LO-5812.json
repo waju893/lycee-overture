@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5812",
+  "title": "あまりにも胡散臭い天使",
+  "subName": "天使ちゃん",
+  "name": "あまりにも胡散臭い天使 天使ちゃん",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、コストが２点以下の味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] ターン開始時、コストが２点以下の味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5812"
 }

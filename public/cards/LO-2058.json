@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2058",
+  "title": "幼馴染",
+  "subName": "高遠 鈴香",
+  "name": "幼馴染 高遠 鈴香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2058"
 }

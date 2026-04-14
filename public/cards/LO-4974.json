@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4974",
+  "title": "無防備な恰好",
+  "subName": "星河 かぐ耶",
+  "name": "無防備な恰好 星河 かぐ耶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{コストが３点以上で元のＤＭＧが３以上の味方[日]キャラ１体}にＡＰ＋１する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを４枚までデッキの下に置きシャッフルする。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{コストが３点以上で元のＤＭＧが３以上の味方[日]キャラ１体}にＡＰ＋１する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを４枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4974"
 }

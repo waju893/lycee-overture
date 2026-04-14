@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1450",
+  "title": "冷血メイド",
+  "subName": "ライダー／アルトリア・ペンドラゴン〔オルタ〕",
+  "name": "冷血メイド ライダー／アルトリア・ペンドラゴン〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙宙]:自ターン中に使用する。未行動のこのキャラを中央列の味方ＤＦに移動する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙]:自ターン中に使用する。未行動のこのキャラを中央列の味方ＤＦに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1450"
 }

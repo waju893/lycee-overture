@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3675",
+  "title": "好奇心旺盛",
+  "subName": "涼",
+  "name": "好奇心旺盛 涼",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。この能力は失われる。",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3675"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5751",
+  "title": "駄菓子屋『鮎ヶ瀬堂』の娘",
+  "subName": "鮎ヶ瀬 月子",
+  "name": "駄菓子屋『鮎ヶ瀬堂』の娘 鮎ヶ瀬 月子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[常時] 味方『向日葵の教会と長い夏休み』キャラ全てにＡＰ＋１する。",
+  "textKr": "[ジャンプ:[0]]\n[常時] 味方『向日葵の教会と長い夏休み』キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5751"
 }

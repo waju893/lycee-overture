@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0144",
+  "title": "恋のブレイズドライブRemix",
+  "subName": "戦杖ベローナ",
+  "name": "恋のブレイズドライブRemix 戦杖ベローナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}を破棄する。",
+  "textKr": "[エンゲージ]\n[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0144"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3751",
+  "title": "宮廷槍斧術",
+  "subName": "セーラ",
+  "name": "宮廷槍斧術 セーラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n[誘発] 相手キャラが相手の効果で場を離れたとき、自分のデッキを１枚回復できる。この能力は相手ターン終了時まで失われる。\n[宣言] [0]:{このターン中サポートをされた味方[花]キャラ１体}にＤＰ＋１する。",
+  "textKr": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n[誘発] 相手キャラが相手の効果で場を離れたとき、自分のデッキを１枚回復できる。この能力は相手ターン終了時まで失われる。\n[宣言] [0]:{このターン中サポートをされた味方[花]キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3751"
 }

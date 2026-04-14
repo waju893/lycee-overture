@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-1992",
+  "title": "白い翼",
+  "subName": "",
+  "name": "白い翼",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラを相手のイベントで破棄したとき、ゴミ箱のこのキャラを無償で登場する。",
+  "textKr": "[誘発] このキャラを相手のイベントで破棄したとき、ゴミ箱のこのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1992"
 }

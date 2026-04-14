@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1381",
+  "title": "輝ける路",
+  "subName": "セイバー／アルトリア・ペンドラゴン",
+  "name": "輝ける路 セイバー／アルトリア・ペンドラゴン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙宙宙]:このキャラの防御中に使用する。このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙宙]:このキャラの防御中に使用する。このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1381"
 }

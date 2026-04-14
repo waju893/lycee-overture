@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1408",
+  "title": "麗しの姫君",
+  "subName": "ライダー／マリー・アントワネット",
+  "name": "麗しの姫君 ライダー／マリー・アントワネット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [日日]:{味方キャラ１体}をデッキの下に置く。",
+  "textKr": "[宣言] [日日]:{味方キャラ１体}をデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1408"
 }

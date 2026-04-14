@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0326",
+  "title": "参加することに意義がある",
+  "subName": "アキ",
+  "name": "参加することに意義がある アキ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0326"
 }

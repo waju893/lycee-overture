@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2809",
+  "title": "クラス委員長",
+  "subName": "藤林 椋",
+  "name": "クラス委員長 藤林 椋",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] 味方[花]キャラがダウンしたとき、自分のゴミ箱のカード１枚を自分の「願いが叶う場所」置き場に置ける。\n[誘発] 味方[花]キャラがダウンしたとき、自分の「願いが叶う場所」置き場のカード２枚を破棄できる。破棄したとき、コストが２点以下の味方[花]キャラ１体を未行動にし、そのキャラにＤＭＧ－２する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] 味方[花]キャラがダウンしたとき、自分のゴミ箱のカード１枚を自分の「願いが叶う場所」置き場に置ける。\n[誘発] 味方[花]キャラがダウンしたとき、自分の「願いが叶う場所」置き場のカード２枚を破棄できる。破棄したとき、コストが２点以下の味方[花]キャラ１体を未行動にし、そのキャラにＤＭＧ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2809"
 }

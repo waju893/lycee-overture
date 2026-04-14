@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0529",
+  "title": "授かりの英雄",
+  "subName": "アーチャー／アルジュナ",
+  "name": "授かりの英雄 アーチャー／アルジュナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]",
+  "textKr": "[オーダーチェンジ:[0]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0529"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0902",
+  "title": "汐美学園生徒会副会長",
+  "subName": "多岐川 葵",
+  "name": "汐美学園生徒会副会長 多岐川 葵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体にＤＰ－１する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0902"
 }

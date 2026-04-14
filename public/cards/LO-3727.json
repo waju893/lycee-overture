@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3727",
+  "title": "翠森の弓騎兵",
+  "subName": "エメルダ",
+  "name": "翠森の弓騎兵 エメルダ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[月月]を発生する。このコストは手札宣言能力を持つ[月]キャラの登場にのみ支払える。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[月月]を発生する。このコストは手札宣言能力を持つ[月]キャラの登場にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3727"
 }

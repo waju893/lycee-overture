@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0918",
+  "title": "新入生",
+  "subName": "白崎 さより",
+  "name": "新入生 白崎 さより",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花]:このキャラにＡＰ＋[このキャラのＳＰ]する。",
+  "textKr": "[宣言] [花]:このキャラにＡＰ＋[このキャラのＳＰ]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0918"
 }

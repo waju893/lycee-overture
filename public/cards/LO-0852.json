@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0852",
+  "title": "パーティクルフラッシュ",
+  "subName": "ラファエル",
+  "name": "パーティクルフラッシュ ラファエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [花]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[宣言] [花]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0852"
 }

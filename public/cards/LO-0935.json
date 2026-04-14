@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0935",
+  "title": "共和国軍中尉",
+  "subName": "ロシェル・エリオット",
+  "name": "共和国軍中尉 ロシェル・エリオット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{自分のゴミ箱の「ロシェル・エリオット」１体}を除外する。このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "textKr": "[宣言] [0]:{自分のゴミ箱の「ロシェル・エリオット」１体}を除外する。このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0935"
 }

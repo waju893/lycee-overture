@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1186",
+  "title": "日傘を差した物静かな天然素材",
+  "subName": "西園 美魚",
+  "name": "日傘を差した物静かな天然素材 西園 美魚",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[宣言] [T][無無無][このキャラを破棄する]:{相手ＡＦキャラ１体}を破棄する。",
+  "textKr": "[アシスト]\n[宣言] [T][無無無][このキャラを破棄する]:{相手ＡＦキャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1186"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5396",
+  "title": "支配者の風格",
+  "subName": "一色 奏命",
+  "name": "支配者の風格 一色 奏命",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 7,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[常時] 味方『セレクトオブリージュ』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[ステップ:[0]]\n[常時] 味方『セレクトオブリージュ』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5396"
 }

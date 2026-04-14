@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4548",
+  "title": "可愛い水着",
+  "subName": "テイル",
+  "name": "可愛い水着 テイル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが３点以上の味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [日]:{コストが３点以上の味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが３点以上の味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [日]:{コストが３点以上の味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4548"
 }

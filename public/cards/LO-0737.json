@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0737",
+  "title": "高慢なる美",
+  "subName": "カシオペア",
+  "name": "高慢なる美 カシオペア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ER",
+  "attributes": [
     "snow",
     "flower"
   ],
-  "attributesList": [
-    "snow",
-    "flower"
-  ],
-  "ex": 0,
   "useTarget": [
     "snow",
     "snow",
@@ -19,7 +21,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [],
-  "keyEffects": [],
-  "leader": true
+  "ex": 0,
+  "costRaw": "雪雪花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー]\n[宣言] [無]:このキャラがサポートをしたバトル中に使用する。{自分のゴミ箱のイベント１枚}を手札に入れる。このバトル終了時、そのイベントと同番号のカード１枚を自分のゴミ箱または手札から除外できる。除外しなかった場合、自分の手札を全て破棄する。",
+  "textKr": "[リーダー]\n[宣言] [無]:このキャラがサポートをしたバトル中に使用する。{自分のゴミ箱のイベント１枚}を手札に入れる。このバトル終了時、そのイベントと同番号のカード１枚を自分のゴミ箱または手札から除外できる。除外しなかった場合、自分の手札を全て破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0737"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5549",
+  "title": "昼の世界の学生",
+  "subName": "黒谷 真弥 ＆ 吉田 そあら",
+  "name": "昼の世界の学生 黒谷 真弥 ＆ 吉田 そあら",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「夜の世界の学生 七番雛＆射場久美子＆春日真由美」１体を探し無償で登場できる。登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。",
+  "textKr": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「夜の世界の学生 七番雛＆射場久美子＆春日真由美」１体を探し無償で登場できる。登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5549"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0432",
+  "title": "アンツィオの流儀",
+  "subName": "アンチョビ",
+  "name": "アンツィオの流儀 アンチョビ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト]\n[宣言] [0]:味方＜アンツィオ＞キャラが３体の場合、このキャラは[ステップ:[0]]を得る。",
+  "textKr": "[アシスト]\n[宣言] [0]:味方＜アンツィオ＞キャラが３体の場合、このキャラは[ステップ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0432"
 }

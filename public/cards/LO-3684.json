@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3684",
+  "title": "要領を得ない",
+  "subName": "くぅ",
+  "name": "要領を得ない くぅ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、元のＡＰが１以下の味方キャラが登場していない場合、１枚ドローする。\n[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。元のＡＰが１以下の味方キャラが登場していない場合、{相手キャラ１体}を破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、元のＡＰが１以下の味方キャラが登場していない場合、１枚ドローする。\n[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。元のＡＰが１以下の味方キャラが登場していない場合、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3684"
 }

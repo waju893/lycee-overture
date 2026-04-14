@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3994",
+  "title": "薬屋",
+  "subName": "ミル・ヨークス",
+  "name": "薬屋 ミル・ヨークス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果で相手キャラを破棄したとき、相手ターン終了時までこのキャラにＤＰ＋２する。",
+  "textKr": "[誘発] 自分の効果で相手キャラを破棄したとき、相手ターン終了時までこのキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3994"
 }

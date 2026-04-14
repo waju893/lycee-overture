@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4446",
+  "title": "由岐奈の唯一の友人",
+  "subName": "神掛 蒔奈",
+  "name": "由岐奈の唯一の友人 神掛 蒔奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、味方「神掛由岐奈」が登場している場合、相手キャラ１体にＡＰ－２またはＤＰ－２する。１枚ドローする。自分にシールド＋１する。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、味方「神掛由岐奈」が登場している場合、相手キャラ１体にＡＰ－２またはＤＰ－２する。１枚ドローする。自分にシールド＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4446"
 }

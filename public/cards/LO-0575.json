@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0575",
+  "title": "神秘殺し",
+  "subName": "バーサーカー／源頼光",
+  "name": "神秘殺し バーサーカー／源頼光",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自分の効果によって相手キャラを破棄したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 自分の効果によって相手キャラを破棄したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0575"
 }

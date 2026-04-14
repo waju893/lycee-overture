@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-6651",
+  "title": "言霊",
+  "subName": "",
+  "name": "言霊",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n※「言霊」は持ち主の場にのみ１枚まで配置可能",
+  "textKr": "[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n※「言霊」は持ち主の場にのみ１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6651"
 }

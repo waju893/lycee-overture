@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2159",
+  "title": "仕分け委員会",
+  "subName": "空森 若葉",
+  "name": "仕分け委員会 空森 若葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラを破棄したとき、このキャラにＡＰ＋１する。",
+  "textKr": "[誘発] 味方キャラを破棄したとき、このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2159"
 }

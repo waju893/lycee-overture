@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1363",
+  "title": "勝利すべき黄金の剣",
+  "subName": "セイバー／アルトリア・ペンドラゴン〔リリィ〕",
+  "name": "勝利すべき黄金の剣 セイバー／アルトリア・ペンドラゴン〔リリィ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方＜サーヴァント＞キャラ１体にＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方＜サーヴァント＞キャラ１体にＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1363"
 }

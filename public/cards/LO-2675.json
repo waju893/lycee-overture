@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2675",
+  "title": "年のわりにしっかりしている",
+  "subName": "美大和 やよい",
+  "name": "年のわりにしっかりしている 美大和 やよい",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「美大和咲月」１体または「メイ」１体を手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「美大和咲月」１体または「メイ」１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2675"
 }

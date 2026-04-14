@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0375",
+  "title": "ブリッツクリーク",
+  "subName": "西住 まほ",
+  "name": "ブリッツクリーク 西住 まほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "黒森峰",
+  "text": "[オーダーステップ:[0]]\n[誘発] ＳＰが２以上のキャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] ＳＰが２以上のキャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0375"
 }

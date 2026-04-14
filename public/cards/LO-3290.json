@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3290",
+  "title": "恋するリンダ",
+  "subName": "林田 美咲",
+  "name": "恋するリンダ 林田 美咲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローできる。しない場合、このキャラと同列の相手ＡＦキャラ１体にＤＰ－３する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言] [D1]:味方[月]キャラの防御中に使用する。対戦キャラにＡＰ－２またはＤＰ－２する。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローできる。しない場合、このキャラと同列の相手ＡＦキャラ１体にＤＰ－３する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言] [D1]:味方[月]キャラの防御中に使用する。対戦キャラにＡＰ－２またはＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3290"
 }

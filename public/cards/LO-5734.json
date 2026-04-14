@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5734",
+  "title": "赤坂めぐの親友",
+  "subName": "北見 聡子",
+  "name": "赤坂めぐの親友 北見 聡子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラまたは味方「赤坂めぐ」が自分の効果で場を離れたとき、相手のデッキを１枚破棄できる。",
+  "textKr": "[誘発] このキャラまたは味方「赤坂めぐ」が自分の効果で場を離れたとき、相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5734"
 }

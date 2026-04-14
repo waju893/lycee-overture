@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3782",
+  "title": "盗賊",
+  "subName": "セブン",
+  "name": "盗賊 セブン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:{味方キャラ１体}にＡＰ＋１する。コストが５点以上の味方キャラが登場している場合、そのキャラにＡＰ＋１する。（１回まで使用可能）",
+  "textKr": "[宣言] [D1]:{味方キャラ１体}にＡＰ＋１する。コストが５点以上の味方キャラが登場している場合、そのキャラにＡＰ＋１する。（１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3782"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1244",
+  "title": "あらゆる日常をミッションにするリーダー",
+  "subName": "棗 恭介",
+  "name": "あらゆる日常をミッションにするリーダー 棗 恭介",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪月花日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く味方＜リトルバスターズ＞キャラ１体}を未行動にし、そのキャラにＤＭＧ－３する。",
+  "textKr": "[アシスト]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く味方＜リトルバスターズ＞キャラ１体}を未行動にし、そのキャラにＤＭＧ－３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1244"
 }

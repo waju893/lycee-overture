@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3852",
+  "title": "魔界の商人",
+  "subName": "フウ",
+  "name": "魔界の商人 フウ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:味方『巣作りカリンちゃん』キャラが５体以上登場している場合、自分の手札を１枚自分の「迷宮」置き場に置く。置いたとき、{味方『巣作りカリンちゃん』キャラ１体}にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:味方『巣作りカリンちゃん』キャラが５体以上登場している場合、自分の手札を１枚自分の「迷宮」置き場に置く。置いたとき、{味方『巣作りカリンちゃん』キャラ１体}にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3852"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5701",
+  "title": "気弱げな寧の母親",
+  "subName": "恩田 霧乃",
+  "name": "気弱げな寧の母親 恩田 霧乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが１点以上の手札宣言能力を持つ味方キャラが２体以上の場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが１点以上の手札宣言能力を持つ味方キャラが２体以上の場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5701"
 }

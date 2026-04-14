@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3391",
+  "title": "おやすみのキス",
+  "subName": "月ヶ瀬 杏奈",
+  "name": "おやすみのキス 月ヶ瀬 杏奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][無無無]:自ターン中に使用する。{相手キャラ１体}を行動済みにする。この能力は失われる。",
+  "textKr": "[宣言] [T][無無無]:自ターン中に使用する。{相手キャラ１体}を行動済みにする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3391"
 }

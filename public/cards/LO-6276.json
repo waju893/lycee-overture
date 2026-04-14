@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6276",
+  "title": "鎌倉警察署署長",
+  "subName": "菊池 明堯",
+  "name": "鎌倉警察署署長 菊池 明堯",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、コストが５点以上の味方キャラが登場している場合、１枚ドローする。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、コストが５点以上の味方キャラが登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6276"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3557",
+  "title": "お嬢様というよりお姫様",
+  "subName": "狩野 ひじり",
+  "name": "お嬢様というよりお姫様 狩野 ひじり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D2]:このキャラにＤＭＧ＋２する。この能力は失われる。",
+  "textKr": "[宣言] [D2]:このキャラにＤＭＧ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3557"
 }

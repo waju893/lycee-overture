@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1047",
+  "title": "継続高校チーム隊長",
+  "subName": "ミカ",
+  "name": "継続高校チーム隊長 ミカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[誘発] このキャラで攻撃宣言をしたとき、このキャラを除く味方＜継続＞キャラ１体にＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラで攻撃宣言をしたとき、このキャラを除く味方＜継続＞キャラ１体にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1047"
 }

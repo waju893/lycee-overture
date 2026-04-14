@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1841",
+  "title": "桜っ子",
+  "subName": "小牧 郁乃",
+  "name": "桜っ子 小牧 郁乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[誘発] このキャラが登場したとき、コストが１点以下のアイテム１枚を破棄できる。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラが登場したとき、コストが１点以下のアイテム１枚を破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1841"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4250",
+  "title": "一匹狼少女",
+  "subName": "不知火 祈",
+  "name": "一匹狼少女 不知火 祈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、[宙]でない味方キャラが登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。[宙]でない味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、[宙]でない味方キャラが登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。[宙]でない味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4250"
 }

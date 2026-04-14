@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0988",
+  "title": "学院の生徒会長",
+  "subName": "エルザ・ヴァレンタイン",
+  "name": "学院の生徒会長 エルザ・ヴァレンタイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:{相手キャラ１体}のＤＭＧを３にする。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:{相手キャラ１体}のＤＭＧを３にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0988"
 }

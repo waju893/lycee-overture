@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0380",
+  "title": "戦車道",
+  "subName": "秋山 優花里",
+  "name": "戦車道 秋山 優花里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -18,13 +21,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    8
-  ],
-  "keyEffects": [
-    2,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが２点以下の味方キャラ１体}にＡＰ＋２する。",
+  "textKr": "[アシスト][ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが２点以下の味方キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0380"
 }

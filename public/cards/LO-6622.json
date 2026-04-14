@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6622",
+  "title": "『雨紋会』組長",
+  "subName": "勅使河原 吾郎",
+  "name": "『雨紋会』組長 勅使河原 吾郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 9,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方キャラ１体を破棄する。自分のゴミ箱またはデッキから「海外マフィアの幹部 ルカ」１体を探し無償で登場できる。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方キャラ１体を破棄する。自分のゴミ箱またはデッキから「海外マフィアの幹部 ルカ」１体を探し無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6622"
 }

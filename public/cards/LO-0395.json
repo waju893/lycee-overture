@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0395",
+  "title": "聖グロ一の俊足",
+  "subName": "ローズヒップ",
+  "name": "聖グロ一の俊足 ローズヒップ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -19,11 +22,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[アシスト]",
+  "textKr": "[アシスト]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0395"
 }

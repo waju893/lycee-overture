@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-1853",
+  "title": "本命チョコ",
+  "subName": "",
+  "name": "本命チョコ",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このアイテムを除外する。除外したとき、[雪雪雪雪]または[月月月月]または[雪雪月月]を発生する。",
+  "textKr": "[コスト] このアイテムを除外する。除外したとき、[雪雪雪雪]または[月月月月]または[雪雪月月]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1853"
 }

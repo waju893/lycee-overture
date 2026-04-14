@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1524",
+  "title": "紅輪の道士",
+  "subName": "ナタク",
+  "name": "紅輪の道士 ナタク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
+  "textKr": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1524"
 }

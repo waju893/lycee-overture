@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1941",
+  "title": "生きる学園七不思議",
+  "subName": "月詠 小萌",
+  "name": "生きる学園七不思議 月詠 小萌",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[宣言] [0]:{ＤＭＧが２以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[サポーター:[花]]\n[宣言] [0]:{ＤＭＧが２以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1941"
 }

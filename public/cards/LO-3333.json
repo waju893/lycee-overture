@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3333",
+  "title": "柳木原フレイムバーズ",
+  "subName": "森里 和馬",
+  "name": "柳木原フレイムバーズ 森里 和馬",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方『俺たちに翼はない』キャラが３体以上登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方『俺たちに翼はない』キャラが３体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3333"
 }

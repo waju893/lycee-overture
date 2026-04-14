@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1352",
+  "title": "乙女の花園",
+  "subName": "キャスター／メディア",
+  "name": "乙女の花園 キャスター／メディア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [月月]:{自分のゴミ箱のキャラ１体}を登場する。この能力は失われる。このターン終了時、そのキャラを破棄する。",
+  "textKr": "[宣言] [月月]:{自分のゴミ箱のキャラ１体}を登場する。この能力は失われる。このターン終了時、そのキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1352"
 }

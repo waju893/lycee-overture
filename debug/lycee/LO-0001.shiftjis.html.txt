@@ -1,0 +1,225 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:mixi="http://mixi-platform.com/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta name="viewport" content="width=1050" />
+<WebView  setMediaPlaybackRequiresUserAction:NO />
+<link rel="icon" href="/favicon.ico" /> 
+<title>繧ｫ繝ｼ繝峨Μ繧ｹ繝� || 繝ｪ繧ｻ 繧ｪ繝ｼ繝舌�ｼ繝√Η繧｢ 繝医Ξ繝ｼ繝�繧｣繝ｳ繧ｰ繧ｫ繝ｼ繝峨ご繝ｼ繝�</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta property="og:title" content="繝ｪ繧ｻ 繧ｪ繝ｼ繝舌�ｼ繝√Η繧｢ 繝医Ξ繝ｼ繝�繧｣繝ｳ繧ｰ繧ｫ繝ｼ繝峨ご繝ｼ繝�" />
+<meta property="og:type" content="縲弱Μ繧ｻ 繧ｪ繝ｼ繝舌�ｼ繝√Η繧｢ 繝医Ξ繝ｼ繝�繧｣繝ｳ繧ｰ繧ｫ繝ｼ繝峨ご繝ｼ繝�縲上が繝輔ぅ繧ｷ繝｣繝ｫ繝帙�ｼ繝�繝壹�ｼ繧ｸ縺ｧ縺吶�" />
+<meta property="og:url" content="https://www.lycee-tcg.com/" />
+<meta property="og:image" content="https://www.lycee-tcg.com/images/logo.png" />
+<meta property="og:site_name" content="縲鮫YCEE OVERTURE TRADING CARD GAME縲上が繝輔ぅ繧ｷ繝｣繝ｫ繝帙�ｼ繝�繝壹�ｼ繧ｸ縺ｧ縺吶�" />
+<meta property="og:description" content="窶弱鮫YCEE OVERTURE TRADING CARD GAME縲上が繝輔ぅ繧ｷ繝｣繝ｫ繝帙�ｼ繝�繝壹�ｼ繧ｸ縺ｧ縺吶�" />
+<meta name="keywords" content="繝ｪ繧ｻ,繧ｪ繝ｼ繝舌�ｼ繝√Η繧｢,SILVEBLITZ,Lycﾃｩe,LYCEE OVERTURE TRADING CARD GAME">
+<meta name="description" content="縲鮫YCEE OVERTURE TRADING CARD GAME縲上が繝輔ぅ繧ｷ繝｣繝ｫ繝帙�ｼ繝�繝壹�ｼ繧ｸ縺ｧ縺吶�">
+<meta name="author" content="">
+<meta name="Copyright" content="Copyright movic co.,LTD. 2005-2016" />
+<link href="../lib/format.css?20220916" rel="stylesheet" type="text/css">
+<link href="../lib/event.css" rel="stylesheet" type="text/css">
+<link href="../lib/pages.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../Scripts/vendor/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../Scripts/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="../Scripts/format.js"></script>
+<script type="text/javascript" src="../Scripts/event.js"></script>
+<script src="../blog/Scripts/vendor/css_browser_selector.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="./Scripts/vendor/selectivizr.js"></script>
+<![endif]-->
+
+</head>
+<body ontouchstart="">
+
+<h1>繧ｫ繝ｼ繝峨Μ繧ｹ繝� || 繝ｪ繧ｻ 繧ｪ繝ｼ繝舌�ｼ繝√Η繧｢ 繝医Ξ繝ｼ繝�繧｣繝ｳ繧ｰ繧ｫ繝ｼ繝峨ご繝ｼ繝�</h1>
+<!-----------------------------------------header--->
+<div id="header_line_b">
+<div class="inner">
+<div class="nav">
+</div><!--"nav"-->
+</div><!--"inner"-->
+</div><!--"header_line"-->
+<div id="header">
+�ｻｿ	<div class="header_inner">
+ 		<ul class="menu">
+ 			<li class="start index_hover">
+ 				<a href="/product/" class="header_icon"><img src="/images/icon_ap.png" alt="蛻昴ａ縺ｦ縺ｮ譁ｹ縺ｸ" width="83" /></a>
+ 				<ul class="index_hover_menu">
+ 					<li><a href="/product/#product">縲蛻昴ａ縺ｦ縺ｮ譁ｹ縺ｸ</a></li>
+ 					<li><a href="/rule/">縲繝ｫ繝ｼ繝ｫ</a></li>
+ 					<li><a href="/product/#product">縲蝠�蜩∽ｸ隕ｧ</a></li>
+ 				</ul>
+ 			</li>
+ 			<li class="cardlist index_hover">
+ 				<a href="/card/" class="header_icon"><img src="/images/icon_cardlist.png" alt="繧ｫ繝ｼ繝峨Μ繧ｹ繝�" width="83" /></a>
+ 				<ul class="index_hover_menu">
+ 					<li><a href="/card/">縲繧ｫ繝ｼ繝峨Μ繧ｹ繝�</a></li>
+ 					<li><a href="/card/?f_deckon=1">縲繝�繝�繧ｭ繝薙Ν繝繝ｼ</a></li>
+ 				</ul>
+ 			</li>
+ 			<li class="product index_hover">
+ 				<a href="/deck/" class="header_icon"><img src="/images/icon_deck.png" alt="繝�繝�繧ｭ繝ｻ謾ｻ逡･" width="83" /></a>
+ 				<ul class="index_hover_menu">
+ 					<li><a href="/deck/">縲繝�繝�繧ｭ讀懃ｴ｢</a></li>
+ 					<li><a href="/blog/">縲謾ｻ逡･險倅ｺ�</a></li>
+ 					<li><a href="https://ch.nicovideo.jp/lycee" target="_brank">縲逕滓叛騾√�ｻ蜍慕判</a></li>
+ 					<li><a href="https://www.youtube.com/channel/UCQ2muL6dmOz6AgrOLaCDHVA" target="_brank">縲蜍慕判繧｢繝ｼ繧ｫ繧､繝�</a></li>
+ 				</ul>
+ 			</li>
+ 			<li class="rule index_hover">
+ 				<a href="/rule/" class="header_icon"><img src="/images/icon_rule.png" alt="繝ｫ繝ｼ繝ｫ�ｼ�Q&A" width="83" /></a>
+ 				<ul class="index_hover_menu">
+ 					<li><a href="/rule/">縲繝ｫ繝ｼ繝ｫ</a></li>
+ 					<li><a href="/faq/">縲FAQ / 繧医￥縺ゅｋ雉ｪ蝠�</a></li>
+ 				</ul>
+ 			</li>
+ 			<li class="event index_hover">
+ 				<a href="/event/" class="header_icon"><img src="/images/icon_event.png" alt="繧､繝吶Φ繝域ュ蝣ｱ" width="83" /></a>
+ 				<ul class="index_hover_menu">
+ 					<li><a href="/event/">縲蠎苓�励う繝吶Φ繝�</a></li>
+ 					<li><a href="/lycee_festa/">縲蜈ｬ蠑上う繝吶Φ繝�</a></li>
+ 					<li><a href="/web/">縲縺翫≧縺｡縺ｧ繝ｪ繧ｻ</a></li>
+ 				</ul>		
+ 			</li>
+ 		</ul>
+ 		<a href="/"><img src="/images/logo.png" width="263" alt="Lycee overture"  class="logo"/></a> <br clear="all" />
+ 	</div><!--"header_inner"-->
+</div><!--"header"-->
+<!-----------------------------------------header--->
+
+	<div id="title">
+	<div class="pan_kuzu">
+	<div class="inner">
+	<div>
+	<b><a href="/">&nbsp;TOP&nbsp;</a></b>
+	<img src="../images/yazirushi.png" width="15" /><b>繧ｫ繝ｼ繝峨Μ繧ｹ繝�</b>
+	<!-- -----blog_pankuzu-->
+	</div>
+	<br clear="all" />
+
+	</div>
+	</div>
+	<div class="title_inner">
+	<h2>繧ｫ繝ｼ繝峨Μ繧ｹ繝�</h2>
+	</div><!--title_inner-->
+	</div><!--title-->
+
+
+
+
+
+<div id="contents">
+
+	
+	<table border="1" cellpadding="3" cellspacing="0" style="font-size:13px;margin:10px;width:100%">
+	<tr>
+		<td rowspan="5" width="120"><img src="./image/LO-0001.png" width="274px"></td>
+		<td width="80" style="text-align:center">LO-0001</td>
+		<td colspan="6">鬨主｣ｫ邇� <br /> 繧ｻ繧､繝舌�ｼ�ｼ上い繝ｫ繝医Μ繧｢繝ｻ繝壹Φ繝峨Λ繧ｴ繝ｳ</td>
+		<td style="text-align:center" width="100">繧ｭ繝｣繝ｩ繧ｯ繧ｿ繝ｼ</td>
+		<td style="text-align:center">R</td>
+	</tr>
+	<tr style="background:#000000;color:#ffffff;font-weight:bold;font-size:11px">
+		<td style="text-align:center" width="80">螻樊ｧ</td>
+		<td width="30px" style="text-align:center">EX</td>
+		<td style="text-align:center" width="140">繧ｳ繧ｹ繝�</td>
+		<td style="text-align:center" width="60">蛻ｶ髯�</td>
+		<td width="30px" style="text-align:center">AP</td>
+		<td width="30px" style="text-align:center">DP</td>
+		<td width="30px" style="text-align:center">SP</td>
+		<td width="30px" style="text-align:center">DMG</td>
+		<td colspan="2" style="text-align:center" width="120">繧ｿ繧､繝�</td>
+	</tr>
+	<tr>
+		<td style="text-align:center">螳�</td>
+		<td style="text-align:center">2</td>
+		<td style="text-align:center">螳吝ｮ吝ｮ�</td>
+		<td style="text-align:center;font-size:9px;"></td>
+		<td style="text-align:center">3</td>
+		<td style="text-align:center">3</td>
+		<td style="text-align:center">1</td>
+		<td style="text-align:center">3</td>
+		<td colspan="2" style="text-align:center">繧ｵ繝ｼ繝ｴ繧｡繝ｳ繝�</td>
+	</tr>
+	<tr>
+		<td colspan="10" height="200px" valign="center"> [隱倡匱] 縺薙�ｮ繧ｭ繝｣繝ｩ縺ｧ謾ｻ謦�螳｣險繧偵＠縺溘→縺阪∫嶌謇九く繝｣繝ｩ�ｼ台ｽ薙↓�ｼｳ�ｼｰ�ｼ搾ｼ偵☆繧九�<br /><br />
+			<DIV style="text-align:right;font-size:13px;"><a href="/card/deck_search.pl?word=LO-0001">[縺薙�ｮ繧ｫ繝ｼ繝峨ｒ菴ｿ逕ｨ縺励◆繝�繝�繧ｭ繧呈､懃ｴ｢縺吶ｋ]</a></td>
+	</tr>
+	<tr>
+		<td colspan="5" style="text-align:right">Version : Fate/Grand Order 1.0</td>
+		<td colspan="1" style="text-align:center">TM</td>
+		<td colspan="4" style="text-align:right">illust : 辟｡譛幄除蠢�</td>
+	</tr>
+	</table>
+
+
+	<div style="border:1px solid #000000;margin:20px 10px 5px 10px;font-weight:bold;font-size:13px;width:100%;clear:both;">縲繧医￥荳邱偵↓謗｡逕ｨ縺輔ｌ縺ｦ縺�繧九き繝ｼ繝�</div>
+			<a href="/card/card_detail.pl?cardno=LO-0009" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0009.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0062" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0062.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0057" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0057.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0063" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0063.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0108" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0108.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0068" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0068.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0059" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0059.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0064" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0064.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0055" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0055.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0105" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0105.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0067" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0067.png" width="145px" class="cardzoom"></a>
+		<a href="/card/card_detail.pl?cardno=LO-0114" style="float:left;margin:0 0 10px 13px;"><img src="/card/image/LO-0114.png" width="145px" class="cardzoom"></a>
+
+	<div style="border:1px solid #000000;margin:20px 10px 5px 10px;font-weight:bold;font-size:13px;width:100%;clear:both;">縲髢｢騾｣�ｼｦ�ｼ｡�ｼｱ</div>
+	    <div style="border:1px solid;font-size:13px;margin:10px;width:100%">
+	<div style="color:#ffffff;font-weight:bold;padding:5px;height:20px;background:#000000;">
+		<div style="float:left";>繝ｫ繝ｼ繝ｫ - 繧ｫ繝ｼ繝�</div>
+		<div style="float:right";>譖ｴ譁ｰ : 2017/02/26</div>
+	</div>
+	<div style="padding:5px;">
+	Q. 繝帙Ο繧ｫ繝ｼ繝峨ｄ繝励Ο繝｢繧ｫ繝ｼ繝臥ｭ峨∝酔縺倡分蜿ｷ縺ｧ蜉�蟾･繧�繧､繝ｩ繧ｹ繝医�ｮ逡ｰ縺ｪ繧九ｂ縺ｮ�ｼ域忰蟆ｾ縺ｮ繧｢繝ｫ繝輔ぃ繝吶ャ繝医�ｮ縺ｿ縺檎焚縺ｪ繧九き繝ｼ繝会ｼ峨�ｯ蜷檎分蜿ｷ縺ｨ縺励※謇ｱ繧上ｌ縺ｾ縺吶°�ｼ�<br />
+	<br />
+	A. 縺ｯ縺�縲∫分蜿ｷ縺ｮ縺ｿ繧呈ｯ碑ｼ�縺励※荳九＆縺�縲�LO-0001縺ｨLO-0001K縺ｯ繧ｲ繝ｼ繝�荳翫�ｯ蜷檎分蜿ｷ縺ｨ縺励※謇ｱ繧上ｌ縺ｾ縺吶�<br />
+	</div>
+	</div>
+
+
+    <div style="border:1px solid;font-size:13px;margin:10px;width:100%">
+	<div style="color:#ffffff;font-weight:bold;padding:5px;height:20px;background:#000000;">
+		<div style="float:left";>繧ｫ繝ｼ繝� - LO-0410</div>
+		<div style="float:right";>譖ｴ譁ｰ : 2017/08/31</div>
+	</div>
+	<div style="padding:5px;">
+	Q. 縲伸O-0001 鬨主｣ｫ邇� 繧ｻ繧､繝舌�ｼ�ｼ上い繝ｫ繝医Μ繧｢繝ｻ繝壹Φ繝峨Λ繧ｴ繝ｳ縲代�ｮ謾ｻ謦�螳｣險縺ｫ蟇ｾ蠢懊＠縺ｦ縲伸O-0410 譬ｼ險縲代ｒ菴ｿ逕ｨ縺励∪縺励◆縲ゅ％縺ｮ縺ｨ縺阪∵判謦�螳｣險縺ｮ隗｣豎ｺ縺ｯ螟ｱ謨励＠縺ｾ縺吶′縲√そ繧､繝舌�ｼ�ｼ上い繝ｫ繝医Μ繧｢繝ｻ繝壹Φ繝峨Λ繧ｴ繝ｳ縺ｮ閭ｽ蜉帙�ｯ隱倡匱縺励∪縺吶°�ｼ�<br />
+	<br />
+	A. 縺ｯ縺�縲∬ｪ倡匱縺励∪縺吶ゅ伸O-0001 鬨主｣ｫ邇� 繧ｻ繧､繝舌�ｼ�ｼ上い繝ｫ繝医Μ繧｢繝ｻ繝壹Φ繝峨Λ繧ｴ繝ｳ縲代�ｮ閭ｽ蜉帙�ｯ縲∝ｮ｣險繧定｡後▲縺滓凾轤ｹ縺ｧ隱倡匱縺励∪縺吶ゅ％繧後�ｯ縲伸O-0410 譬ｼ險縲代�ｮ菴ｿ逕ｨ繧貞ｮ｣險縺吶ｋ蜑阪〒縺吶�<br />
+	</div>
+	</div>
+
+
+
+
+	
+
+
+
+</div><!--contents-->
+
+<script type="text/javascript">$(function() {$("#footer").load("../format/footer_2.html");});</script>
+<div id="footer">footer</div>
+<!---------------------------------------footer-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131277548-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131277548-1');
+</script>
+
+
+<!-- #EndLibraryItem --></body>
+</html>

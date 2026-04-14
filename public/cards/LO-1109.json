@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1109",
+  "title": "優花里の母親",
+  "subName": "秋山 好子",
+  "name": "優花里の母親 秋山 好子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方「秋山優花里」１体}にＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{味方「秋山優花里」１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1109"
 }

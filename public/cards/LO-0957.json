@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0957",
+  "title": "暴力的な従妹",
+  "subName": "渋垣 茉理",
+  "name": "暴力的な従妹 渋垣 茉理",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:バトル中に使用する。{味方攻撃キャラ１体}にバトル終了時までＤＭＧ＋１する。",
+  "textKr": "[宣言] [D1]:バトル中に使用する。{味方攻撃キャラ１体}にバトル終了時までＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0957"
 }

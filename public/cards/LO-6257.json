@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6257",
+  "title": "ヴァンパイア三銃士",
+  "subName": "ナハツェーラー",
+  "name": "ヴァンパイア三銃士 ナハツェーラー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[誘発] このキャラが登場したとき、味方『吸血殲鬼ヴェドゴニア』キャラが４体以上の場合、自分の手札１枚または味方キャラ１体を破棄できる。したとき、相手キャラ１体を破棄する。",
+  "textKr": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[誘発] このキャラが登場したとき、味方『吸血殲鬼ヴェドゴニア』キャラが４体以上の場合、自分の手札１枚または味方キャラ１体を破棄できる。したとき、相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6257"
 }

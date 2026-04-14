@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2492",
+  "title": "いばらの姫",
+  "subName": "ユー",
+  "name": "いばらの姫 ユー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。相手はこの宣言に対応して宣言できない。このキャラを行動済みにする。自分のデッキを１枚または自分の「世界樹の種」置き場のカード１枚を破棄する。破棄したとき、このキャラは次の能力を得る。\n[コスト] [宙]を発生する。このコストはコストが２点以上のキャラの登場にのみ支払える。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。相手はこの宣言に対応して宣言できない。このキャラを行動済みにする。自分のデッキを１枚または自分の「世界樹の種」置き場のカード１枚を破棄する。破棄したとき、このキャラは次の能力を得る。\n[コスト] [宙]を発生する。このコストはコストが２点以上のキャラの登場にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2492"
 }

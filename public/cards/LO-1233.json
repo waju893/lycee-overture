@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1233",
+  "title": "町の雑貨屋の店主",
+  "subName": "マッド",
+  "name": "町の雑貨屋の店主 マッド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラのサポートはコストが４点以上のキャラのみを対象に指定できる。",
+  "textKr": "[常時] このキャラのサポートはコストが４点以上のキャラのみを対象に指定できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1233"
 }

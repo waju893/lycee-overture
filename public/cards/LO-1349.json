@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1349",
+  "title": "サマー・バケーション！",
+  "subName": "アーチャー／エレナ・ブラヴァツキー",
+  "name": "サマー・バケーション！ アーチャー／エレナ・ブラヴァツキー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [月]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[宣言] [月]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1349"
 }

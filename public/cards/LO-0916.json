@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0916",
+  "title": "翡翠帝",
+  "subName": "鴇田 奏海",
+  "name": "翡翠帝 鴇田 奏海",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花花]:このキャラのバトル中に使用する。対戦キャラのＳＰがこのキャラのＳＰ未満の場合、対戦キャラのＤＰを０にする。",
+  "textKr": "[宣言] [花花]:このキャラのバトル中に使用する。対戦キャラのＳＰがこのキャラのＳＰ未満の場合、対戦キャラのＤＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0916"
 }

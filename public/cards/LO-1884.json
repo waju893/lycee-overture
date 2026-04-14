@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1884",
+  "title": "純粋な愛",
+  "subName": "小木曽 雪菜",
+  "name": "純粋な愛 小木曽 雪菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「WHITE ALBUM2」イベント１枚を手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「WHITE ALBUM2」イベント１枚を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1884"
 }

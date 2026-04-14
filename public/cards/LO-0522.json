@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0522",
+  "title": "局中法度",
+  "subName": "バーサーカー／土方歳三",
+  "name": "局中法度 バーサーカー／土方歳三",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[宙]]\n[誘発] 自分のデッキを破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[オーダーチェンジ:[宙]]\n[誘発] 自分のデッキを破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0522"
 }

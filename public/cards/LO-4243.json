@@ -1,16 +1,30 @@
 {
+  "cardNo": "LO-4243",
+  "title": "ヒミツの時間",
+  "subName": "",
+  "name": "ヒミツの時間",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "flower",
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] アイテムを持つ味方キャラがダメージを与えたとき、自分にシールド＋１する。\n[宣言] [0]:相手はこの宣言に対応して宣言できない。自分の手札を１枚破棄する。破棄したとき、以下から１つを選び処理する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。\n※「ヒミツの時間」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] アイテムを持つ味方キャラがダメージを与えたとき、自分にシールド＋１する。\n[宣言] [0]:相手はこの宣言に対応して宣言できない。自分の手札を１枚破棄する。破棄したとき、以下から１つを選び処理する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。\n※「ヒミツの時間」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4243"
 }

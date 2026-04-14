@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0648",
+  "title": "土地神",
+  "subName": "卯花之佐久夜姫",
+  "name": "土地神 卯花之佐久夜姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[常時] 味方キャラ全ては相手の効果によってＤＭＧに能力値修正を得ない。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[常時] 味方キャラ全ては相手の効果によってＤＭＧに能力値修正を得ない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0648"
 }

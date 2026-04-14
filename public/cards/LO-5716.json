@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5716",
+  "title": "草薙健一郎の管財人",
+  "subName": "マーティ・フリッドマン",
+  "name": "草薙健一郎の管財人 マーティ・フリッドマン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [花]:バトル中を除く自ターン中に使用する。ゴミ箱のこのキャラをデッキの下に置く。１枚ドローする。{味方[花]キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
+  "textKr": "[手札宣言] [花]:バトル中を除く自ターン中に使用する。ゴミ箱のこのキャラをデッキの下に置く。１枚ドローする。{味方[花]キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5716"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1325",
+  "title": "死なずのマグス",
+  "subName": "キャスター／ネロ・クラウディウス",
+  "name": "死なずのマグス キャスター／ネロ・クラウディウス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[ステップ:[0]]\n[宣言] [D1]:{このキャラを除く味方[日]キャラ１体}にＡＰ＋１する。そのキャラは[ガッツ:[このキャラの使用代償]]を得る。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [D1]:{このキャラを除く味方[日]キャラ１体}にＡＰ＋１する。そのキャラは[ガッツ:[このキャラの使用代償]]を得る。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1325"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2785",
+  "title": "我が道を行く女流作家",
+  "subName": "月ヶ洞 きらり",
+  "name": "我が道を行く女流作家 月ヶ洞 きらり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手ＤＦキャラ１体}を手札に入れる。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手ＤＦキャラ１体}を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2785"
 }

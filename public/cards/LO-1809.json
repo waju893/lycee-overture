@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1809",
+  "title": "アクルトゥルカ",
+  "subName": "ミカヅチ",
+  "name": "アクルトゥルカ ミカヅチ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -26,15 +29,11 @@
   "dp": 6,
   "sp": 0,
   "dmg": 6,
-  "keyeffects": [
-    4,
-    13,
-    15
-  ],
-  "keyEffects": [
-    4,
-    13,
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[オーダーステップ:[0]][ボーナス:[相手のデッキを２枚破棄する。]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:{味方[宙]キャラ１体}にＡＰ＋２する。",
+  "textKr": "[オーダーステップ:[0]][ボーナス:[相手のデッキを２枚破棄する。]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:{味方[宙]キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1809"
 }

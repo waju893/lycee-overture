@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2032",
+  "title": "理想の黒髪ロング",
+  "subName": "城ヶ崎 絢華",
+  "name": "理想の黒髪ロング 城ヶ崎 絢華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n[宣言] [0]:{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[ステップ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n[宣言] [0]:{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2032"
 }

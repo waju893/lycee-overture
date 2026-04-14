@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4849",
+  "title": "厄介ママティーチャー",
+  "subName": "遙 未来",
+  "name": "厄介ママティーチャー 遙 未来",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[誘発] このキャラが登場したとき、未行動の味方キャラ１体を行動済みにする。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラが登場したとき、未行動の味方キャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4849"
 }

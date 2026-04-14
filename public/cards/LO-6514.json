@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-6514",
+  "title": "ノーブル",
+  "subName": "",
+  "name": "ノーブル",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋４・ＤＰ＋４する。\n[誘発] このキャラが場を離れたとき、１枚ドローできる。このキャラが相手の効果で場を離れた場合、自分の手札のコストが４点以下のキャラ１体を無償で行動済みで登場できる。",
+  "textKr": "[常時] このキャラにＡＰ＋４・ＤＰ＋４する。\n[誘発] このキャラが場を離れたとき、１枚ドローできる。このキャラが相手の効果で場を離れた場合、自分の手札のコストが４点以下のキャラ１体を無償で行動済みで登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6514"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3258",
+  "title": "ルナ様の付き人",
+  "subName": "小倉 朝日",
+  "name": "ルナ様の付き人 小倉 朝日",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、元のＤＰが３以下の味方キャラが４体以上登場している場合、自分のゴミ箱または自分のデッキから「主と従者」１枚を探し無償で味方フィールドに配置する。１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、元のＤＰが３以下の味方キャラが４体以上登場している場合、自分のゴミ箱または自分のデッキから「主と従者」１枚を探し無償で味方フィールドに配置する。１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3258"
 }

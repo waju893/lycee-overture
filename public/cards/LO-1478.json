@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1478",
+  "title": "一角獣騎士",
+  "subName": "クリッサ",
+  "name": "一角獣騎士 クリッサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [D1]:このキャラがＡＦに登場している場合、このキャラにＡＰ＋２する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [D1]:このキャラがＡＦに登場している場合、このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1478"
 }

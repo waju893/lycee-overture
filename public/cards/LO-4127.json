@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4127",
+  "title": "天下いちの傾き者",
+  "subName": "前田 仁虎 慶次郎",
+  "name": "天下いちの傾き者 前田 仁虎 慶次郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分の手札を全て破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[誘発] このキャラが登場したとき、自分の手札を全て破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4127"
 }

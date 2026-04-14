@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5799",
+  "title": "ガチャに大金をつぎ込む",
+  "subName": "梁染 汐音",
+  "name": "ガチャに大金をつぎ込む 梁染 汐音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。自分のデッキの上のカード１枚を公開する。そのカードが[SP]の場合、そのカードを手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。自分のデッキの上のカード１枚を公開する。そのカードが[SP]の場合、そのカードを手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5799"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0495",
+  "title": "比翼にして連理",
+  "subName": "アーチャー／アン・ボニー＆メアリー・リード",
+  "name": "比翼にして連理 アーチャー／アン・ボニー＆メアリー・リード",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0495"
 }

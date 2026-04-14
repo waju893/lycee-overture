@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0165",
+  "title": "キミの命をうばいとる！",
+  "subName": "アイスブランド",
+  "name": "キミの命をうばいとる！ アイスブランド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[２枚ドローする。]]",
+  "textKr": "[エンゲージ:[２枚ドローする。]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0165"
 }

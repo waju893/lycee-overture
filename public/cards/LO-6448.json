@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6448",
+  "title": "フロスト中立特区人民警察局長",
+  "subName": "ヤーコフ・ドルゴフ",
+  "name": "フロスト中立特区人民警察局長 ヤーコフ・ドルゴフ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:味方『アンラベル・トリガー』キャラが３体以上で、サブネームに「連邦」を含む味方キャラが登場していない場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:味方『アンラベル・トリガー』キャラが３体以上で、サブネームに「連邦」を含む味方キャラが登場していない場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6448"
 }

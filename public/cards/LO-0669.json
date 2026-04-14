@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0669",
+  "title": "研究者",
+  "subName": "伏見 鈴乃",
+  "name": "研究者 伏見 鈴乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 0,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [自分の手札を１枚デッキの上に置く]:このターン終了時、１枚ドローする。",
+  "textKr": "[宣言] [自分の手札を１枚デッキの上に置く]:このターン終了時、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0669"
 }

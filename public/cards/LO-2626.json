@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2626",
+  "title": "海外出身の魔法使い",
+  "subName": "リズ・メイサース",
+  "name": "海外出身の魔法使い リズ・メイサース",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2626"
 }

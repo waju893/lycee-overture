@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0513",
+  "title": "無窮の武練",
+  "subName": "セイバー／ランスロット",
+  "name": "無窮の武練 セイバー／ランスロット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[宙]]\n[宣言] [D1]:このキャラにＡＰ－４・ＤＰ＋４する。",
+  "textKr": "[オーダーチェンジ:[宙]]\n[宣言] [D1]:このキャラにＡＰ－４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0513"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0954",
+  "title": "修智館学院生徒会長",
+  "subName": "千堂 伊織",
+  "name": "修智館学院生徒会長 千堂 伊織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[D1]]\n[宣言] [日日]:このキャラにＡＰ＋４する。",
+  "textKr": "[オーダーステップ:[D1]]\n[宣言] [日日]:このキャラにＡＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0954"
 }

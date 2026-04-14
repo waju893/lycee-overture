@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3938",
+  "title": "茶の湯の大家",
+  "subName": "千 茶々良 宗易",
+  "name": "茶の湯の大家 千 茶々良 宗易",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3938"
 }

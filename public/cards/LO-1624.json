@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1624",
+  "title": "記憶喪失",
+  "subName": "火宮 木乃香",
+  "name": "記憶喪失 火宮 木乃香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[雪雪]を発生する。この能力は失われる。",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[雪雪]を発生する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1624"
 }

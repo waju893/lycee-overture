@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1256",
+  "title": "明るく無邪気な人気アイドル",
+  "subName": "西森 柚咲",
+  "name": "明るく無邪気な人気アイドル 西森 柚咲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。このキャラを破棄する。破棄したとき、{自分のゴミ箱の「黒羽美砂」１体}をこのキャラが登場していたフィールドに無償で登場する。",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。このキャラを破棄する。破棄したとき、{自分のゴミ箱の「黒羽美砂」１体}をこのキャラが登場していたフィールドに無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1256"
 }

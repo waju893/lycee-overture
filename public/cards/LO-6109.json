@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6109",
+  "title": "特殊趣向の変態神主",
+  "subName": "織紙 誠司",
+  "name": "特殊趣向の変態神主 織紙 誠司",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "star",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪無無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[コスト] このキャラのチャージ１枚を破棄する。したとき、『星恋＊ティンクル』キャラの能力にのみ支払える[雪雪]を発生する。",
+  "textKr": "[チャージ:２]\n[コスト] このキャラのチャージ１枚を破棄する。したとき、『星恋＊ティンクル』キャラの能力にのみ支払える[雪雪]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6109"
 }

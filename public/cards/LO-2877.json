@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2877",
+  "title": "学食ウェイトレス",
+  "subName": "月嶋 夕莉",
+  "name": "学食ウェイトレス 月嶋 夕莉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。この能力は相手ターン終了時まで失われる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが４点以下の味方キャラ１体}を未行動にし、そのキャラを味方フィールドに移動する。そのキャラにＤＭＧ－４する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。この能力は相手ターン終了時まで失われる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが４点以下の味方キャラ１体}を未行動にし、そのキャラを味方フィールドに移動する。そのキャラにＤＭＧ－４する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2877"
 }

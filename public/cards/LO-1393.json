@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1393",
+  "title": "黄金律（富＆体）",
+  "subName": "アサシン／クレオパトラ",
+  "name": "黄金律（富＆体） アサシン／クレオパトラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,13 +21,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4,
-    10
-  ],
-  "keyEffects": [
-    4,
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[リカバリー:[相手のデッキを２枚破棄する。]][オーダーステップ:[0]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄する。",
+  "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]][オーダーステップ:[0]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1393"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1335",
+  "title": "密やかなる罪の遊戯",
+  "subName": "アサシン／ヘンリー・ジキル＆ハイド",
+  "name": "密やかなる罪の遊戯 アサシン／ヘンリー・ジキル＆ハイド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、味方キャラ１体のＤＭＧを０にし、そのキャラは[アグレッシブ]を得る。",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、味方キャラ１体のＤＭＧを０にし、そのキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1335"
 }

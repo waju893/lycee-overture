@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5410",
+  "title": "グータラ教師",
+  "subName": "初瀬 湊",
+  "name": "グータラ教師 初瀬 湊",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のイベントが２枚以上の場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のイベントが２枚以上の場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5410"
 }

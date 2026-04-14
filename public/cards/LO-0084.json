@@ -1,16 +1,30 @@
 {
+  "cardNo": "LO-0084",
+  "title": "カルデアス",
+  "subName": "",
+  "name": "カルデアス",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 0,
   "useTarget": [
     "star",
     "star",
     "star",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 0,
+  "costRaw": "無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0084"
 }

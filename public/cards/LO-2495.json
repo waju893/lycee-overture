@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2495",
+  "title": "真理を探究する魔術師",
+  "subName": "ラディス",
+  "name": "真理を探究する魔術師 ラディス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,5 +20,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、相手キャラ１体を破棄する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2495"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3493",
+  "title": "マッドな思考を持つ研究者",
+  "subName": "エルミ・エコー",
+  "name": "マッドな思考を持つ研究者 エルミ・エコー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3493"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4694",
+  "title": "猫のような素振り",
+  "subName": "アヴリル",
+  "name": "猫のような素振り アヴリル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」１枚を探しこのキャラに無償で装備できる。しない場合、１枚ドローする。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」１枚を探しこのキャラに無償で装備できる。しない場合、１枚ドローする。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4694"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4064",
+  "title": "ホーネット派魔人",
+  "subName": "魔人シルキィ・リトルレーズン",
+  "name": "ホーネット派魔人 魔人シルキィ・リトルレーズン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -20,15 +23,11 @@
   "dp": 7,
   "sp": 1,
   "dmg": 6,
-  "keyeffects": [
-    5,
-    13,
-    15
-  ],
-  "keyEffects": [
-    5,
-    13,
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][ボーナス:[相手のデッキを２枚破棄する。]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:このキャラのＡＰとＤＰに＋[コストが２点以下の味方[宙]キャラの数]する。コストが２点以下の味方[宙]キャラ全ては[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置ける。]]を得る。",
+  "textKr": "[ジャンプ:[0]][ボーナス:[相手のデッキを２枚破棄する。]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:このキャラのＡＰとＤＰに＋[コストが２点以下の味方[宙]キャラの数]する。コストが２点以下の味方[宙]キャラ全ては[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置ける。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4064"
 }

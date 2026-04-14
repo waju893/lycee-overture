@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0387",
+  "title": "アンツィオ高校",
+  "subName": "アンチョビ",
+  "name": "アンツィオ高校 アンチョビ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    8
-  ],
-  "keyEffects": [
-    2,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト][ステップ:[0]]\n[常時] 味方＜アンツィオ＞キャラが１体以下の場合、このキャラはバトル参加キャラに指定できない。",
+  "textKr": "[アシスト][ステップ:[0]]\n[常時] 味方＜アンツィオ＞キャラが１体以下の場合、このキャラはバトル参加キャラに指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0387"
 }

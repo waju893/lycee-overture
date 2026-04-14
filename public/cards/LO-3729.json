@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3729",
+  "title": "プリンセス",
+  "subName": "オリヴィエ",
+  "name": "プリンセス オリヴィエ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ]\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。登場したとき、相手のゴミ箱のＥＸが２で２つ以上の属性を持つカード１枚を除外できる。除外したとき、２枚ドローする。",
+  "textKr": "[エンゲージ]\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。登場したとき、相手のゴミ箱のＥＸが２で２つ以上の属性を持つカード１枚を除外できる。除外したとき、２枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3729"
 }

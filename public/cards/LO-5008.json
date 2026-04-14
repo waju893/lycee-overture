@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-5008",
+  "title": "オカルト研究部",
+  "subName": "",
+  "name": "オカルト研究部",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このエリアを配置したとき、１枚ドローできる。\n[宣言] [0]:この[YUZ]キャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] このエリアを配置したとき、１枚ドローできる。\n[宣言] [0]:この[YUZ]キャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5008"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6162",
+  "title": "天眼を持つヴァンパイア",
+  "subName": "セシリア・クランルージュ",
+  "name": "天眼を持つヴァンパイア セシリア・クランルージュ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 0,
   "sp": 0,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。このキャラを味方「《メデューサ》の首魁 ギメル・ロードベイン」１体にチャージとして置く。置いたとき、自分のゴミ箱または自分のデッキから「『意志』」１枚を探し、そのキャラに無償で装備する。",
+  "textKr": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。このキャラを味方「《メデューサ》の首魁 ギメル・ロードベイン」１体にチャージとして置く。置いたとき、自分のゴミ箱または自分のデッキから「『意志』」１枚を探し、そのキャラに無償で装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6162"
 }

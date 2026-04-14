@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2975",
+  "title": "チョロく惚れてくれる英国淑女",
+  "subName": "イライザ＝ローゼス＝クロフォード",
+  "name": "チョロく惚れてくれる英国淑女 イライザ＝ローゼス＝クロフォード",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手ターン開始時、コストが２点以下の味方[雪]キャラ１体にＤＰ＋１する。\n[宣言] [T][雪]:自ターン中に使用する。{相手キャラ１体}を行動済みにする。この能力は失われる。",
+  "textKr": "[誘発] 相手ターン開始時、コストが２点以下の味方[雪]キャラ１体にＤＰ＋１する。\n[宣言] [T][雪]:自ターン中に使用する。{相手キャラ１体}を行動済みにする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2975"
 }

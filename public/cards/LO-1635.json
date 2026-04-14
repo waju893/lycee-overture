@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1635",
+  "title": "担任教師",
+  "subName": "柿本 香里",
+  "name": "担任教師 柿本 香里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方[月]アイテム１枚を味方キャラ１体に無償で装備する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方[月]アイテム１枚を味方キャラ１体に無償で装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1635"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6252",
+  "title": "奥手な軽音楽部員",
+  "subName": "白柳 弥沙子",
+  "name": "奥手な軽音楽部員 白柳 弥沙子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラを味方『吸血殲鬼ヴェドゴニア』キャラの能力で破棄したとき、相手キャラ１体を破棄する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラを味方『吸血殲鬼ヴェドゴニア』キャラの能力で破棄したとき、相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6252"
 }

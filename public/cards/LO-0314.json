@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0314",
+  "title": "一年生",
+  "subName": "宇津木 優季",
+  "name": "一年生 宇津木 優季",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 0,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [T雪雪][このキャラを破棄する。]:{相手キャラ１体}を破棄する。",
+  "textKr": "[アシスト]\n[宣言] [T雪雪][このキャラを破棄する。]:{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0314"
 }

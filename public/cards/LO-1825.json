@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1825",
+  "title": "ヤマト八柱将『溟海のソヤンケクル』",
+  "subName": "ソヤンケクル",
+  "name": "ヤマト八柱将『溟海のソヤンケクル』 ソヤンケクル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1825"
 }

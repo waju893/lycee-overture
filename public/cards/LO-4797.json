@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4797",
+  "title": "真理探求の大魔術師",
+  "subName": "ナジャ",
+  "name": "真理探求の大魔術師 ナジャ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが５点以上の味方[日]キャラが登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [D1]:コストが５点以上の味方[日]キャラが登場している場合、{味方[日]キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。",
+  "textKr": "[宣言] [0]:コストが５点以上の味方[日]キャラが登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [D1]:コストが５点以上の味方[日]キャラが登場している場合、{味方[日]キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4797"
 }

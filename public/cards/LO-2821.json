@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2821",
+  "title": "コンパニオンロボット",
+  "subName": "ほしの ゆめみ",
+  "name": "コンパニオンロボット ほしの ゆめみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [D1]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[手札宣言] [0]:相手の攻撃宣言に対応して使用する。味方キャラ１体または自分の手札１枚を破棄する。破棄したとき、{コストが６点以下の味方[宙]キャラ１体}を未行動にし、{味方フィールド}に移動する。",
+  "textKr": "[手札宣言] [D1]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[手札宣言] [0]:相手の攻撃宣言に対応して使用する。味方キャラ１体または自分の手札１枚を破棄する。破棄したとき、{コストが６点以下の味方[宙]キャラ１体}を未行動にし、{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2821"
 }

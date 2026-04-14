@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1544",
+  "title": "帝国魔神団長",
+  "subName": "メフィスト",
+  "name": "帝国魔神団長 メフィスト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    14
-  ],
-  "keyEffects": [
-    14
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ガッツ:[宙宙宙宙宙]]\n[誘発] サブネームに「帝国」を含む味方キャラを防御キャラに指定したとき、そのキャラにＤＰ＋１する。",
+  "textKr": "[ガッツ:[宙宙宙宙宙]]\n[誘発] サブネームに「帝国」を含む味方キャラを防御キャラに指定したとき、そのキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1544"
 }

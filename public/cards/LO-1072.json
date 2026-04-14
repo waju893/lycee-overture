@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1072",
+  "title": "大洗女子学園チーム隊長",
+  "subName": "西住 みほ",
+  "name": "大洗女子学園チーム隊長 西住 みほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [無][このキャラを破棄する]:{味方ＡＦキャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[アシスト]\n[宣言] [無][このキャラを破棄する]:{味方ＡＦキャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1072"
 }

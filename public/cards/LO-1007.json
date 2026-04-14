@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1007",
+  "title": "聖グロリアーナ女学院？",
+  "subName": "西住 みほ",
+  "name": "聖グロリアーナ女学院？ 西住 みほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 1,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    8,
-    12
-  ],
-  "keyEffects": [
-    8,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[アシスト][サポーター:[D1]]\n[誘発] ターン開始時、味方キャラが６体以上の場合、味方キャラ１体にＡＰ＋１できる。",
+  "textKr": "[アシスト][サポーター:[D1]]\n[誘発] ターン開始時、味方キャラが６体以上の場合、味方キャラ１体にＡＰ＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1007"
 }

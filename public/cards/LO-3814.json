@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3814",
+  "title": "翠花の領主",
+  "subName": "メアリ",
+  "name": "翠花の領主 メアリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにＤＰ＋２する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3814"
 }

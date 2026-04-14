@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0126",
+  "title": "約束された黄金の頂点",
+  "subName": "オーア＝ドラグ",
+  "name": "約束された黄金の頂点 オーア＝ドラグ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[相手キャラ全てにＤＰ－２する。]]\n[誘発] このキャラが攻撃したとき、相手キャラ全てにＤＰ－１する。",
+  "textKr": "[エンゲージ:[相手キャラ全てにＤＰ－２する。]]\n[誘発] このキャラが攻撃したとき、相手キャラ全てにＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0126"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1900",
+  "title": "天草式十字凄教の聖人",
+  "subName": "神裂 火織",
+  "name": "天草式十字凄教の聖人 神裂 火織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙][D2]:相手ターン中に使用する。ターン終了時まで{味方[宙]キャラ１体}はダウンしない。この能力は失われる。\n[手札宣言] [宙][D2]:相手ターン中に使用する。ターン終了時まで{味方[宙]キャラ１体}はダウンしない。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙][D2]:相手ターン中に使用する。ターン終了時まで{味方[宙]キャラ１体}はダウンしない。この能力は失われる。\n[手札宣言] [宙][D2]:相手ターン中に使用する。ターン終了時まで{味方[宙]キャラ１体}はダウンしない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1900"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6469",
+  "title": "なんでも興味津々な食いしん坊",
+  "subName": "御所院 冬樺",
+  "name": "なんでも興味津々な食いしん坊 御所院 冬樺",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方[花]キャラ１体}のＡＰまたはＤＰに＋[味方『アマカノ３』キャラのキャラ名の種類数]する。",
+  "textKr": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方[花]キャラ１体}のＡＰまたはＤＰに＋[味方『アマカノ３』キャラのキャラ名の種類数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6469"
 }

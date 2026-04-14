@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1175",
+  "title": "能力者グループのメンバー",
+  "subName": "前泊",
+  "name": "能力者グループのメンバー 前泊",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:このキャラのバトル中に使用する。対戦キャラは能力値修正を失う。",
+  "textKr": "[宣言] [雪]:このキャラのバトル中に使用する。対戦キャラは能力値修正を失う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1175"
 }

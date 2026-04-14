@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3446",
+  "title": "メルJ",
+  "subName": "メシェイル・イ・ハーン",
+  "name": "メルJ メシェイル・イ・ハーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] 自ターン中、このキャラが手札から登場したとき、コストが５点以上の味方ＡＦキャラが２体以上登場している場合、自分のゴミ箱または自分のデッキから「人機」１枚を探しこのキャラに無償で装備できる。相手キャラ１体にＡＰ－３またはＤＰ－３する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] 自ターン中、このキャラが手札から登場したとき、コストが５点以上の味方ＡＦキャラが２体以上登場している場合、自分のゴミ箱または自分のデッキから「人機」１枚を探しこのキャラに無償で装備できる。相手キャラ１体にＡＰ－３またはＤＰ－３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3446"
 }

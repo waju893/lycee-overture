@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2369",
+  "title": "可憐で小悪魔な妹系同居人",
+  "subName": "沓野 奏",
+  "name": "可憐で小悪魔な妹系同居人 沓野 奏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪雪]:味方[雪]キャラの防御中に使用する。バトルを中断する。この能力は失われる。\n[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
+  "textKr": "[宣言] [雪雪]:味方[雪]キャラの防御中に使用する。バトルを中断する。この能力は失われる。\n[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2369"
 }

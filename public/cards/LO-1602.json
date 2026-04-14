@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1602",
+  "title": "いつでもハイテンション",
+  "subName": "遠山 翠",
+  "name": "いつでもハイテンション 遠山 翠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [D1]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋１する。\n[誘発] 自ターン中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
+  "textKr": "[アグレッシブ]\n[宣言] [D1]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋１する。\n[誘発] 自ターン中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1602"
 }

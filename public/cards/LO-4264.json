@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4264",
+  "title": "NEXTON LIVE 2022",
+  "subName": "曹操・華琳",
+  "name": "NEXTON LIVE 2022 曹操・華琳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、このキャラが手札から登場したとき、味方[NEX]キャラが６体以上の場合、相手キャラ１体を行動済みにする。（ゲーム中１回まで処理可能）",
+  "textKr": "[誘発] 自ターン中、このキャラが手札から登場したとき、味方[NEX]キャラが６体以上の場合、相手キャラ１体を行動済みにする。（ゲーム中１回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4264"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4122",
+  "title": "April Fools' Day",
+  "subName": "天沢郁未",
+  "name": "April Fools' Day 天沢郁未",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:今日が４月１日の場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:今日が４月１日の場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4122"
 }

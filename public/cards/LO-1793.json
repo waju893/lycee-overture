@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1793",
+  "title": "らぶらぶ",
+  "subName": "姫百合 珊瑚",
+  "name": "らぶらぶ 姫百合 珊瑚",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「姫百合瑠璃」が登場している場合、１枚ドローできる。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「姫百合瑠璃」が登場している場合、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1793"
 }

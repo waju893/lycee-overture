@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6125",
+  "title": "流浪の絵描き",
+  "subName": "真霧 影虎",
+  "name": "流浪の絵描き 真霧 影虎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、相手の手札の枚数が増減した自分の効果を処理したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[誘発] 自ターン中、相手の手札の枚数が増減した自分の効果を処理したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6125"
 }

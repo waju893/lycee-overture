@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6494",
+  "title": "母性あふれる義母",
+  "subName": "遊佐 幸歩",
+  "name": "母性あふれる義母 遊佐 幸歩",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[常時] このキャラは味方「ティルナノーグ」の効果の対象に指定できない。\n[誘発] 元のＤＭＧが３以上の味方キャラが味方「ティルナノーグ」の効果で場を離れたとき、このキャラに１枚チャージできる。このキャラのチャージ２枚を破棄できる。したとき、自分にシールド＋１できる。（１ターンに６回まで処理可能）",
+  "textKr": "[ジャンプ:[0]]\n[常時] このキャラは味方「ティルナノーグ」の効果の対象に指定できない。\n[誘発] 元のＤＭＧが３以上の味方キャラが味方「ティルナノーグ」の効果で場を離れたとき、このキャラに１枚チャージできる。このキャラのチャージ２枚を破棄できる。したとき、自分にシールド＋１できる。（１ターンに６回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6494"
 }

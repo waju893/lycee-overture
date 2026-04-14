@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1395",
+  "title": "ストーキング",
+  "subName": "バーサーカー／清姫",
+  "name": "ストーキング バーサーカー／清姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
+  "textKr": "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1395"
 }

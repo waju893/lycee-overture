@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2660",
+  "title": "有名な舞台俳優",
+  "subName": "真深 円香",
+  "name": "有名な舞台俳優 真深 円香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方キャラ１体}にＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2660"
 }

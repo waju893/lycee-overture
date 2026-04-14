@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6246",
+  "title": "左道鉗子",
+  "subName": "謝 逸達",
+  "name": "左道鉗子 謝 逸達",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:味方「魂の器」１枚の下のカードが５枚以上の場合、自分のゴミ箱の「孔濤羅」１体を味方「瑞麗」１体にチャージとして置く。そのキャラにＡＰ＋６・ＤＰ＋５・ＤＭＧ＋３する。この能力値修正はターン終了時に失われない。（ゲーム中１回まで使用可能）",
+  "textKr": "[宣言] [雪]:味方「魂の器」１枚の下のカードが５枚以上の場合、自分のゴミ箱の「孔濤羅」１体を味方「瑞麗」１体にチャージとして置く。そのキャラにＡＰ＋６・ＤＰ＋５・ＤＭＧ＋３する。この能力値修正はターン終了時に失われない。（ゲーム中１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6246"
 }

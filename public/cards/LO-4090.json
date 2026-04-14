@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4090",
+  "title": "正義の瞳",
+  "subName": "神騎キリエル",
+  "name": "正義の瞳 神騎キリエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [C1]:自ターン中に使用する。このキャラは[ペナルティ:[１枚ドローする。]]を得る。\n[宣言] [C1]:{味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [C1][日]:{味方[日]キャラ１体}にＡＰ＋２する。",
+  "textKr": "[チャージ:２]\n[宣言] [C1]:自ターン中に使用する。このキャラは[ペナルティ:[１枚ドローする。]]を得る。\n[宣言] [C1]:{味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [C1][日]:{味方[日]キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4090"
 }

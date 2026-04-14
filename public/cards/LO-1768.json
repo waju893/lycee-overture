@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1768",
+  "title": "ヤマト八柱将『鎮守のムネチカ』",
+  "subName": "ムネチカ",
+  "name": "ヤマト八柱将『鎮守のムネチカ』 ムネチカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,13 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    8
-  ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1768"
 }

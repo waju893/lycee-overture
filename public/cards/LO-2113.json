@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2113",
+  "title": "転校生",
+  "subName": "芝山 美海",
+  "name": "転校生 芝山 美海",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手のゴミ箱のカード１枚を除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "textKr": "[誘発] このキャラが登場したとき、相手のゴミ箱のカード１枚を除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2113"
 }

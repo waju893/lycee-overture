@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1517",
+  "title": "近衛騎士",
+  "subName": "アリシア",
+  "name": "近衛騎士 アリシア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:このキャラの防御中に使用する。このキャラを手札に入れる。",
+  "textKr": "[宣言] [D1]:このキャラの防御中に使用する。このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1517"
 }

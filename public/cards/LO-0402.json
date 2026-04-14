@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0402",
+  "title": "知波単学園",
+  "subName": "細見",
+  "name": "知波単学園 細見",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[誘発] 味方＜知波単＞キャラで攻撃宣言をしたとき、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[誘発] 味方＜知波単＞キャラで攻撃宣言をしたとき、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0402"
 }

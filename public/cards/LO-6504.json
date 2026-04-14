@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6504",
+  "title": "空回りな新人編集",
+  "subName": "勘解由小路 静里",
+  "name": "空回りな新人編集 勘解由小路 静里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。味方「波羽若奈」が登場している場合、自分にシールド＋２できる。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。味方「波羽若奈」が登場している場合、自分にシールド＋２できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6504"
 }

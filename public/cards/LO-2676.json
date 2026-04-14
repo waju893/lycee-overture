@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2676",
+  "title": "アカイトリ",
+  "subName": "メアリー・ハーカー",
+  "name": "アカイトリ メアリー・ハーカー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。{味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [宙宙]:自ターン中に使用する。{このキャラと同列の相手キャラ１体}を行動済みにする。この能力は失われる。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。{味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [宙宙]:自ターン中に使用する。{このキャラと同列の相手キャラ１体}を行動済みにする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2676"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0332",
+  "title": "継続高校",
+  "subName": "ミッコ",
+  "name": "継続高校 ミッコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[ステップ:[0]]\n[宣言] [月月]:{味方キャラ１体}を破棄する。このキャラをそのキャラの登場していたフィールドに移動する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [月月]:{味方キャラ１体}を破棄する。このキャラをそのキャラの登場していたフィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0332"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0321",
+  "title": "サンダース大学付属高校",
+  "subName": "アリサ",
+  "name": "サンダース大学付属高校 アリサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サンダース",
+  "text": "[誘発] このキャラを自分の能力の対象に指定したとき、相手キャラ１体にＤＭＧ－１する。",
+  "textKr": "[誘発] このキャラを自分の能力の対象に指定したとき、相手キャラ１体にＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0321"
 }

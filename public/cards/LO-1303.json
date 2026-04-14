@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1303",
+  "title": "秘密のスーツケース",
+  "subName": "久島 鴎",
+  "name": "秘密のスーツケース 久島 鴎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月月月]:{自分のゴミ箱のキャラ１体}を{味方フィールド}に登場する。この能力は失われる。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月月月]:{自分のゴミ箱のキャラ１体}を{味方フィールド}に登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1303"
 }

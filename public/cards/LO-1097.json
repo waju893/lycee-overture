@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1097",
+  "title": "ドゥーチェ",
+  "subName": "アンチョビ",
+  "name": "ドゥーチェ アンチョビ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3,
-    8
-  ],
-  "keyEffects": [
-    3,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト][サイドステップ:[0]]\n[誘発] 味方キャラが移動したとき、そのキャラにＡＰ＋１する。",
+  "textKr": "[アシスト][サイドステップ:[0]]\n[誘発] 味方キャラが移動したとき、そのキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1097"
 }

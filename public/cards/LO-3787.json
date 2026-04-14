@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3787",
+  "title": "千両かぶき姫",
+  "subName": "紅牡丹",
+  "name": "千両かぶき姫 紅牡丹",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "textKr": "[宣言] [0]:このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3787"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0843",
+  "title": "乙女の献身",
+  "subName": "クシナダ",
+  "name": "乙女の献身 クシナダ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [D1]:[味方キャラ１体]にＳＰ＋１する。",
+  "textKr": "[宣言] [D1]:[味方キャラ１体]にＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0843"
 }

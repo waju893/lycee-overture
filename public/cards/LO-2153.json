@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2153",
+  "title": "クラックラ",
+  "subName": "天ヶ瀬 奈月",
+  "name": "クラックラ 天ヶ瀬 奈月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] コストが３点以上の味方キャラを相手の能力で破棄したとき、１枚ドローできる。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] コストが３点以上の味方キャラを相手の能力で破棄したとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2153"
 }

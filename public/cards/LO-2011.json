@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2011",
+  "title": "はらぺこシスター",
+  "subName": "インデックス",
+  "name": "はらぺこシスター インデックス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のコストが１点以上の能力を使用したとき、自分のデッキを２枚回復する。この能力は失われる。",
+  "textKr": "[誘発] 自分のコストが１点以上の能力を使用したとき、自分のデッキを２枚回復する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2011"
 }

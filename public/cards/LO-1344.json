@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1344",
+  "title": "プレラーティの激励",
+  "subName": "セイバー／ジル・ド・レェ",
+  "name": "プレラーティの激励 セイバー／ジル・ド・レェ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラのＡＰまたはＤＰが元の値より低い場合、相手のデッキを１枚破棄する。",
+  "textKr": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラのＡＰまたはＤＰが元の値より低い場合、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1344"
 }

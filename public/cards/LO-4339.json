@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4339",
+  "title": "実は甘えたがりなお姉ちゃん",
+  "subName": "泉 ちなつ",
+  "name": "実は甘えたがりなお姉ちゃん 泉 ちなつ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「どスケベ変態妹 泉こなつ」１体を探し無償で登場する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「どスケベ変態妹 泉こなつ」１体を探し無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4339"
 }

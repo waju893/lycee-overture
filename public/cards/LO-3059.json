@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3059",
+  "title": "金髪碧眼なロリータボディ",
+  "subName": "アイノ＝テア＝クーヴルール",
+  "name": "金髪碧眼なロリータボディ アイノ＝テア＝クーヴルール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラがダウンしたとき、このキャラにＡＰ＋２する。",
+  "textKr": "[誘発] 味方キャラがダウンしたとき、このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3059"
 }

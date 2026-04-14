@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4020",
+  "title": "正義の戦い",
+  "subName": "嶽見 かのの",
+  "name": "正義の戦い 嶽見 かのの",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:{相手キャラ１体}にＤＰ－２する。この能力は失われる。",
+  "textKr": "[宣言] [月]:{相手キャラ１体}にＤＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4020"
 }

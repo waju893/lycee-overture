@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0227",
+  "title": "天焔《大地が朱に染まる理由》",
+  "subName": "セクメト＝イブ",
+  "name": "天焔《大地が朱に染まる理由》 セクメト＝イブ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -17,13 +20,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2,
-    7
-  ],
-  "keyEffects": [
-    2,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]][ステップ:[0]]\n[誘発] 味方キャラがエンゲージ登場したとき、そのキャラは[アグレッシブ]を得る。",
+  "textKr": "[エンゲージ:[１枚ドローする。]][ステップ:[0]]\n[誘発] 味方キャラがエンゲージ登場したとき、そのキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0227"
 }

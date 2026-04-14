@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3617",
+  "title": "魔術部・賢者科",
+  "subName": "神威 みかる",
+  "name": "魔術部・賢者科 神威 みかる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが５体以上登場している場合、１枚ドローし、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが５体以上登場している場合、１枚ドローし、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3617"
 }

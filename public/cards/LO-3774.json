@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3774",
+  "title": "亡国の女皇",
+  "subName": "ハリナ",
+  "name": "亡国の女皇 ハリナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、自分のデッキを１枚破棄し、[宙]を発生する。このコストはキャラの能力にのみ支払える。",
+  "textKr": "[チャージ:２]\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、自分のデッキを１枚破棄し、[宙]を発生する。このコストはキャラの能力にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3774"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6251",
+  "title": "世話焼きな幼なじみ",
+  "subName": "来栖 香織",
+  "name": "世話焼きな幼なじみ 来栖 香織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:{味方『吸血殲鬼ヴェドゴニア』キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:{味方『吸血殲鬼ヴェドゴニア』キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6251"
 }

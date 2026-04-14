@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5792",
+  "title": "本間一族の娘",
+  "subName": "本間 心鈴",
+  "name": "本間一族の娘 本間 心鈴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] 手札宣言能力の使用にのみ支払える[月月]を発生する。この能力は失われる。\n[誘発] コストが１点以上の手札宣言能力を使用したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[コスト] 手札宣言能力の使用にのみ支払える[月月]を発生する。この能力は失われる。\n[誘発] コストが１点以上の手札宣言能力を使用したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5792"
 }

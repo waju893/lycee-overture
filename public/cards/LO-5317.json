@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-5317",
+  "title": "覇王の影武者",
+  "subName": "",
+  "name": "覇王の影武者",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[宣言] [0]:{味方「曹操・華琳」または「曹仁・華侖」}１体にＡＰ＋１・ＤＰ＋１する。\n[誘発] 自分の効果以外で味方「曹操・華琳」１体が場を離れたとき、このエリアを破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「魏王の代理 曹仁・華侖」１体を探し無償で登場する。\n※「覇王の影武者」は自分の場に１枚まで配置可能",
+  "textKr": "[宣言] [0]:{味方「曹操・華琳」または「曹仁・華侖」}１体にＡＰ＋１・ＤＰ＋１する。\n[誘発] 自分の効果以外で味方「曹操・華琳」１体が場を離れたとき、このエリアを破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「魏王の代理 曹仁・華侖」１体を探し無償で登場する。\n※「覇王の影武者」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5317"
 }

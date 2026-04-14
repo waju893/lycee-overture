@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2695",
+  "title": "ズ抜けた正直者",
+  "subName": "石田 秀二",
+  "name": "ズ抜けた正直者 石田 秀二",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方エリアを配置している場合、このキャラにＡＰ＋１する。",
+  "textKr": "[宣言] [0]:味方エリアを配置している場合、このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2695"
 }

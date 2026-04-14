@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4362",
+  "title": "一目惚れした先輩",
+  "subName": "木須 志衣菜",
+  "name": "一目惚れした先輩 木須 志衣菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:元の宣言型の基本能力を持つ元のＤＭＧが２以上の味方キャラが登場していない場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:元の宣言型の基本能力を持つ元のＤＭＧが２以上の味方キャラが登場していない場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4362"
 }

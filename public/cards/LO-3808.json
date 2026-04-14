@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3808",
+  "title": "水龍騎士",
+  "subName": "スイレン",
+  "name": "水龍騎士 スイレン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{このターン中サポートをされた味方[花]キャラ１体}にＤＰ＋１する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分の手札のコストが[花]または[無]のみで４点以下のキャラ１体を無償で登場する。",
+  "textKr": "[宣言] [0]:{このターン中サポートをされた味方[花]キャラ１体}にＤＰ＋１する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分の手札のコストが[花]または[無]のみで４点以下のキャラ１体を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3808"
 }

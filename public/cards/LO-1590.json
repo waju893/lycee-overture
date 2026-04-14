@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1590",
+  "title": "無双の海賊",
+  "subName": "デューオ",
+  "name": "無双の海賊 デューオ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 0,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラで攻撃したバトル終了時、このキャラを未行動にする。",
+  "textKr": "[誘発] このキャラで攻撃したバトル終了時、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1590"
 }

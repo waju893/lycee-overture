@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2286",
+  "title": "ゲオルギウスの加護",
+  "subName": "ウィンザー城",
+  "name": "ゲオルギウスの加護 ウィンザー城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [宙宙宙]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[宣言] [宙宙宙]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2286"
 }

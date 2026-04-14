@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4542",
+  "title": "押しかけ秘書",
+  "subName": "水晶石 みだり",
+  "name": "押しかけ秘書 水晶石 みだり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが効果以外で登場したとき、味方ＡＦキャラ全てがコストが５点以上の[月]キャラの場合、自分にシールド＋３する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが効果以外で登場したとき、味方ＡＦキャラ全てがコストが５点以上の[月]キャラの場合、自分にシールド＋３する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4542"
 }

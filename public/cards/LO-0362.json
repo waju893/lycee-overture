@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0362",
+  "title": "カメさんチーム",
+  "subName": "河嶋 桃",
+  "name": "カメさんチーム 河嶋 桃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 0,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]",
+  "textKr": "[アシスト]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0362"
 }

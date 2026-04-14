@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3638",
+  "title": "力の塔 星の巫女",
+  "subName": "ステラ",
+  "name": "力の塔 星の巫女 ステラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラが[宙]アイテムを装備している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラが[宙]アイテムを装備している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3638"
 }

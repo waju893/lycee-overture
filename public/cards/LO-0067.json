@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0067",
+  "title": "天狗の兵法",
+  "subName": "ライダー／牛若丸",
+  "name": "天狗の兵法 ライダー／牛若丸",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体にＳＰ－１する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0067"
 }

@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-2703",
+  "title": "墜落",
+  "subName": "",
+  "name": "墜落",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "textKr": "※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2703"
 }

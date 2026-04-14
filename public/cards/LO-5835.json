@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5835",
+  "title": "商店街の肝っ玉母ちゃん",
+  "subName": "所沢 まりん",
+  "name": "商店街の肝っ玉母ちゃん 所沢 まりん",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。味方『お家に帰るまでがましまろです』キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。味方『お家に帰るまでがましまろです』キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5835"
 }

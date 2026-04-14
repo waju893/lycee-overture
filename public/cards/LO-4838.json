@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4838",
+  "title": "マチ★アソビ 2023",
+  "subName": "ミネット＆アニエス",
+  "name": "マチ★アソビ 2023 ミネット＆アニエス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "star"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、キャラ全てにＳＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、キャラ全てにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4838"
 }

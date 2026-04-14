@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5875",
+  "title": "銀星学園の教師",
+  "subName": "兵藤 響",
+  "name": "銀星学園の教師 兵藤 響",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 6,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:{味方『星ノ音サンクチュアリ』キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「アルマドライブ」を持つ場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:{味方『星ノ音サンクチュアリ』キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「アルマドライブ」を持つ場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5875"
 }

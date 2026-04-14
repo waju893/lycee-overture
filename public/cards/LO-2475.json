@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2475",
+  "title": "仮面の向こう側",
+  "subName": "硯川・e・涙香",
+  "name": "仮面の向こう側 硯川・e・涙香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラの防御中に使用する。自分の手札の「硯川・e・涙香」１枚を除外する。除外したとき、バトルを中断する。",
+  "textKr": "[宣言] [0]:このキャラの防御中に使用する。自分の手札の「硯川・e・涙香」１枚を除外する。除外したとき、バトルを中断する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2475"
 }

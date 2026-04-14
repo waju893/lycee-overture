@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-0709",
+  "title": "叢雨丸",
+  "subName": "",
+  "name": "叢雨丸",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "star",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0709"
 }

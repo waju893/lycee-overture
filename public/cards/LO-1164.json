@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1164",
+  "title": "way to the mile high",
+  "subName": "能美 クドリャフカ",
+  "name": "way to the mile high 能美 クドリャフカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{自分のゴミ箱のキャラ１体}を自分の「いぐにっしょん」置き場に置く。その置き場の枚数が５枚以上の場合、その置き場のカード全てを破棄し、このキャラにＤＰ＋２し、このキャラを未行動にする。",
+  "textKr": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{自分のゴミ箱のキャラ１体}を自分の「いぐにっしょん」置き場に置く。その置き場の枚数が５枚以上の場合、その置き場のカード全てを破棄し、このキャラにＤＰ＋２し、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1164"
 }

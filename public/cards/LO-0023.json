@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0023",
+  "title": "オペラ座の怪人",
+  "subName": "アサシン／ファントム・オブ・ジ・オペラ",
+  "name": "オペラ座の怪人 アサシン／ファントム・オブ・ジ・オペラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D1]:このキャラを手札に入れる。",
+  "textKr": "[宣言] [D1]:このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0023"
 }

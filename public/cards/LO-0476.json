@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0476",
+  "title": "荒れ狂う哀しき竜よ",
+  "subName": "ルーラー／マルタ",
+  "name": "荒れ狂う哀しき竜よ ルーラー／マルタ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[宣言] [雪]:このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[オーダーチェンジ:[0]]\n[宣言] [雪]:このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0476"
 }

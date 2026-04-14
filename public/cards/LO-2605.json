@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2605",
+  "title": "修智館学院創設者",
+  "subName": "千堂 伽耶",
+  "name": "修智館学院創設者 千堂 伽耶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。{自分のゴミ箱の「千堂伽耶」１体}を除外する。このキャラは[オーダーステップ:[0]]を得る。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。{自分のゴミ箱の「千堂伽耶」１体}を除外する。このキャラは[オーダーステップ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2605"
 }

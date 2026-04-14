@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-2704",
+  "title": "エアガン",
+  "subName": "",
+  "name": "エアガン",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このアイテムを破棄する。破棄したとき、{相手キャラ１体}のＤＰを０にする。",
+  "textKr": "[宣言] [0]:このアイテムを破棄する。破棄したとき、{相手キャラ１体}のＤＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2704"
 }

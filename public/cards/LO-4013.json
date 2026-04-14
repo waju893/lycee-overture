@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4013",
+  "title": "東雲派の新頭領",
+  "subName": "終名",
+  "name": "東雲派の新頭領 終名",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 0,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが効果以外で登場したとき、自分のゴミ箱のカード１枚を自分の「わるいこと」置き場に置ける。自分の「わるいこと」置き場の枚数が６枚以上の場合、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[誘発] このキャラが効果以外で登場したとき、自分のゴミ箱のカード１枚を自分の「わるいこと」置き場に置ける。自分の「わるいこと」置き場の枚数が６枚以上の場合、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4013"
 }

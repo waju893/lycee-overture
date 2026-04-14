@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6269",
+  "title": "梧桐の舎弟",
+  "subName": "志賀 透",
+  "name": "梧桐の舎弟 志賀 透",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１]\n[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
+  "textKr": "[チャージ:１]\n[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6269"
 }

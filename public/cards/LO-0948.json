@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0948",
+  "title": "斎巫女",
+  "subName": "椎葉 古杜音",
+  "name": "斎巫女 椎葉 古杜音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D2]:{未行動の味方キャラ２体}を行動済みにする。行動済みにしたとき、相手ターン終了時まで{相手キャラ１体}のＤＭＧを０にする。",
+  "textKr": "[宣言] [D2]:{未行動の味方キャラ２体}を行動済みにする。行動済みにしたとき、相手ターン終了時まで{相手キャラ１体}のＤＭＧを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0948"
 }

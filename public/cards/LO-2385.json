@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2385",
+  "title": "刮目相待",
+  "subName": "呂蒙・亞莎",
+  "name": "刮目相待 呂蒙・亞莎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "呉",
+  "text": "[手札宣言] [D1][月]:コストが５点以上の味方[月]キャラが登場している場合、{相手キャラ１体}にＡＰ－２・ＤＰ－２する。\n[手札宣言] [0]:バトル中に使用できない。{コストが５点以上の味方[月]キャラ１体}を手札に入れる。１枚ドローする。",
+  "textKr": "[手札宣言] [D1][月]:コストが５点以上の味方[月]キャラが登場している場合、{相手キャラ１体}にＡＰ－２・ＤＰ－２する。\n[手札宣言] [0]:バトル中に使用できない。{コストが５点以上の味方[月]キャラ１体}を手札に入れる。１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2385"
 }

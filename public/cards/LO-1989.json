@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1989",
+  "title": "学園都市統括理事長",
+  "subName": "アレイスター＝クロウリー",
+  "name": "学園都市統括理事長 アレイスター＝クロウリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 0,
   "useTarget": [
     "star",
     "star",
@@ -17,5 +20,12 @@
   "ap": 0,
   "dp": 0,
   "sp": 0,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 0,
+  "costRaw": "無無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、相手[TOA]キャラ１体を破棄する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、相手[TOA]キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1989"
 }

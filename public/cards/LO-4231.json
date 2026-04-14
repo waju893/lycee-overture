@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4231",
+  "title": "なのはな育英舎",
+  "subName": "直江 順平",
+  "name": "なのはな育英舎 直江 順平",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:[日]でない味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "textKr": "[宣言] [0]:[日]でない味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4231"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5390",
+  "title": "サル",
+  "subName": "沙流川 金次郎",
+  "name": "サル 沙流川 金次郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラがアイテムを持つ場合、このキャラはＡＰ＋２・ＤＰ＋２を得る。",
+  "textKr": "[常時] このキャラがアイテムを持つ場合、このキャラはＡＰ＋２・ＤＰ＋２を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5390"
 }

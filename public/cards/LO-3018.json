@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3018",
+  "title": "オーブンの擬人化",
+  "subName": "レゾナ",
+  "name": "オーブンの擬人化 レゾナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [花花花]:{手札宣言能力を持つ味方キャラ１体}を未行動にする。",
+  "textKr": "[手札宣言] [花花花]:{手札宣言能力を持つ味方キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3018"
 }

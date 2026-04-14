@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-5438",
+  "title": "猫耳",
+  "subName": "",
+  "name": "猫耳",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このアイテムを装備したとき、このアイテムの持ち主は１枚ドローし、シールド＋１する。\n[誘発] このキャラをバトル参加キャラに指定したとき、バトル終了時までこのキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[誘発] このアイテムを装備したとき、このアイテムの持ち主は１枚ドローし、シールド＋１する。\n[誘発] このキャラをバトル参加キャラに指定したとき、バトル終了時までこのキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5438"
 }

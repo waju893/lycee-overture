@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0761",
+  "title": "元メイド長の手管",
+  "subName": "サタナキア",
+  "name": "元メイド長の手管 サタナキア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [0]:味方「ディアボロス」全てと味方「アモン」全てにＤＰ＋１する。",
+  "textKr": "[宣言] [0]:味方「ディアボロス」全てと味方「アモン」全てにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0761"
 }

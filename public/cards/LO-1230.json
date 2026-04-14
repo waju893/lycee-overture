@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1230",
+  "title": "再会のお祝い",
+  "subName": "水瀬 名雪",
+  "name": "再会のお祝い 水瀬 名雪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラがダウンしたバトル終了時、味方キャラ１体にＤＰ＋１する。",
+  "textKr": "[誘発] 味方キャラがダウンしたバトル終了時、味方キャラ１体にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1230"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1308",
+  "title": "少女の姿をした天使",
+  "subName": "立華 かなで",
+  "name": "少女の姿をした天使 立華 かなで",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[宣言] [0]:{相手キャラ１体}は[ペナルティ:[自分のデッキを１枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。",
+  "textKr": "[アシスト]\n[宣言] [0]:{相手キャラ１体}は[ペナルティ:[自分のデッキを１枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1308"
 }

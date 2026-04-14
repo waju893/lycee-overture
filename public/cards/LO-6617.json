@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6617",
+  "title": "チーム『怒烈弩』のリーダー",
+  "subName": "萬屋 辰也",
+  "name": "チーム『怒烈弩』のリーダー 萬屋 辰也",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 6,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[常時] アイテムを持つこのキャラにＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:{アイテムを持つ味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n[手札宣言] [0]:自分のゴミ箱またはデッキから「人懐こい凛のパートナー 萬屋ひな」１体を探し公開して手札に入れる。",
+  "textKr": "[オーダーステップ:[0]]\n[常時] アイテムを持つこのキャラにＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:{アイテムを持つ味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n[手札宣言] [0]:自分のゴミ箱またはデッキから「人懐こい凛のパートナー 萬屋ひな」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6617"
 }

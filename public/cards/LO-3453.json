@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3453",
+  "title": "お嬢様系口下手クール女子",
+  "subName": "鳥栖 十和子",
+  "name": "お嬢様系口下手クール女子 鳥栖 十和子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無無]]\n[宣言] [0]:コストが３点以上の味方ＤＦキャラが３体以上登場している場合、このキャラにＤＰ＋２する。",
+  "textKr": "[サポーター:[無無]]\n[宣言] [0]:コストが３点以上の味方ＤＦキャラが３体以上登場している場合、このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3453"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2025",
+  "title": "甦りし魔王",
+  "subName": "魔王カリン",
+  "name": "甦りし魔王 魔王カリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,5 +21,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "宙宙無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方キャラ２体}を行動済みにする。行動済みにしたとき、このキャラにＤＭＧ＋２する。",
+  "textKr": "[宣言] [0]:{味方キャラ２体}を行動済みにする。行動済みにしたとき、このキャラにＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2025"
 }

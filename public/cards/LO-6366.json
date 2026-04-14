@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6366",
+  "title": "神鷹の秘書",
+  "subName": "希羽 友恵",
+  "name": "神鷹の秘書 希羽 友恵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、１枚ドローする。コストが５点以上の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、１枚ドローする。コストが５点以上の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6366"
 }

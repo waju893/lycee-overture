@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4447",
+  "title": "貫禄がある妹",
+  "subName": "小伯 紅",
+  "name": "貫禄がある妹 小伯 紅",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「夜羽睦季」が登場している場合、このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
+  "textKr": "[宣言] [0]:味方「夜羽睦季」が登場している場合、このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4447"
 }

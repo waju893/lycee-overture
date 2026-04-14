@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2242",
+  "title": "守護者の加護",
+  "subName": "サンタンジェロ城",
+  "name": "守護者の加護 サンタンジェロ城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の[雪]キャラ１体を手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の[雪]キャラ１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2242"
 }

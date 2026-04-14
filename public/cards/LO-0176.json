@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0176",
+  "title": "連迅葬破衝",
+  "subName": "ガ・ジャルグ",
+  "name": "連迅葬破衝 ガ・ジャルグ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0176"
 }

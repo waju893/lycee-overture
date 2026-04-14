@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1373",
+  "title": "トゥリファスでの思い出",
+  "subName": "ライダー／アストルフォ",
+  "name": "トゥリファスでの思い出 ライダー／アストルフォ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、味方ＡＦキャラ１体にＡＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方ＡＦキャラ１体にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1373"
 }

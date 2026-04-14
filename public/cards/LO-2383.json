@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2383",
+  "title": "闇夜駆け",
+  "subName": "周泰・明命",
+  "name": "闇夜駆け 周泰・明命",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "呉",
+  "text": "[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、このキャラにＡＰ＋３する。",
+  "textKr": "[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、このキャラにＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2383"
 }

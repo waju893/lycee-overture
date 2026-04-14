@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4497",
+  "title": "魔法学院の統括者",
+  "subName": "学院長",
+  "name": "魔法学院の統括者 学院長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「折見公輝」１体を探し無償で登場する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「折見公輝」１体を探し無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4497"
 }

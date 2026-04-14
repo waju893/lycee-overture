@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3869",
+  "title": "長尾家の親衛隊長",
+  "subName": "甘粕 松葉 景持",
+  "name": "長尾家の親衛隊長 甘粕 松葉 景持",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方「長尾美空景虎」または「柿崎柘榴景家」が登場している場合、{相手キャラ１体}にＡＰ－２する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方「長尾美空景虎」または「柿崎柘榴景家」が登場している場合、{相手キャラ１体}にＡＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3869"
 }

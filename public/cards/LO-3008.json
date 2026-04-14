@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3008",
+  "title": "人間マイナスイオン発生装置",
+  "subName": "七緒 日向子",
+  "name": "人間マイナスイオン発生装置 七緒 日向子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが登場している場合、相手キャラ１体にＡＰ－２する。",
+  "textKr": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが登場している場合、相手キャラ１体にＡＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3008"
 }

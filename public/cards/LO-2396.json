@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2396",
+  "title": "斬山刀斬山斬",
+  "subName": "文醜・猪々子",
+  "name": "斬山刀斬山斬 文醜・猪々子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自分の手札が０枚の場合、このキャラにＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:自分の手札が０枚の場合、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2396"
 }

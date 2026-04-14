@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3499",
+  "title": "優しく柔和、従属的な娼婦",
+  "subName": "フェリシー・フラヴィニー",
+  "name": "優しく柔和、従属的な娼婦 フェリシー・フラヴィニー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが効果以外で登場したとき、味方『BALDR BRINGER』キャラが３体以上登場している場合、自分の手札からコストが６点以下の『BALDR BRINGER』キャラ１体を無償で登場する。",
+  "textKr": "[誘発] このキャラが効果以外で登場したとき、味方『BALDR BRINGER』キャラが３体以上登場している場合、自分の手札からコストが６点以下の『BALDR BRINGER』キャラ１体を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3499"
 }

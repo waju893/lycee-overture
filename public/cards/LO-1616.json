@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1616",
+  "title": "やんちゃな後輩",
+  "subName": "因幡 めぐる",
+  "name": "やんちゃな後輩 因幡 めぐる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6,
-    10
-  ],
-  "keyEffects": [
-    6,
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[このキャラは[アグレッシブ]を得る。]\n[宣言] [0]:バトル中に使用する。{このキャラを除く味方[日]キャラ１体}にバトル終了時までＤＭＧ＋１する。",
+  "textKr": "[リカバリー:[このキャラは[アグレッシブ]を得る。]\n[宣言] [0]:バトル中に使用する。{このキャラを除く味方[日]キャラ１体}にバトル終了時までＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1616"
 }

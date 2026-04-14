@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2429",
+  "title": "我を倒す者無し",
+  "subName": "魏延・焔耶",
+  "name": "我を倒す者無し 魏延・焔耶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,5 +19,12 @@
   "ap": 6,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体にＤＰ－２する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体にＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2429"
 }

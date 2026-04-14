@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2786",
+  "title": "雨音の愛娘",
+  "subName": "黒野 つきこ",
+  "name": "雨音の愛娘 黒野 つきこ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分の「盟約」置き場の枚数が２枚以下の場合、このキャラを除外する。\n[宣言] [0]:自分のデッキを３枚回復する。自分のデッキをシャッフルする。（ゲーム中１回まで使用可能）",
+  "textKr": "[誘発] このキャラが登場したとき、自分の「盟約」置き場の枚数が２枚以下の場合、このキャラを除外する。\n[宣言] [0]:自分のデッキを３枚回復する。自分のデッキをシャッフルする。（ゲーム中１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2786"
 }

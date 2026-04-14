@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2510",
+  "title": "園芸部１年",
+  "subName": "橘 ちひろ",
+  "name": "園芸部１年 橘 ちひろ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキを１枚回復する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2510"
 }

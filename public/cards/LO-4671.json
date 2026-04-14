@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4671",
+  "title": "パン屋になるための修行",
+  "subName": "鈴枝 小町",
+  "name": "パン屋になるための修行 鈴枝 小町",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、[アグレッシブ]を持つ味方キャラがダウンしたとき、自分にシールド＋１する。",
+  "textKr": "[誘発] 自ターン中、[アグレッシブ]を持つ味方キャラがダウンしたとき、自分にシールド＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4671"
 }

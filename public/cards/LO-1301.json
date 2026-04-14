@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1301",
+  "title": "神なるノーコン",
+  "subName": "棗 鈴",
+  "name": "神なるノーコン 棗 鈴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8,
-    13
-  ],
-  "keyEffects": [
-    8,
-    13
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [0]:このキャラは[ステップ:[0]]を得る。この能力は失われる。",
+  "textKr": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [0]:このキャラは[ステップ:[0]]を得る。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1301"
 }

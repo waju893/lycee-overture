@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1922",
+  "title": "鉄壁の実行委員",
+  "subName": "吹寄 制理",
+  "name": "鉄壁の実行委員 吹寄 制理",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1922"
 }

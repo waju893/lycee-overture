@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0273",
+  "title": "未完世界ホーリーランド",
+  "subName": "偽剣グラム×サンタ",
+  "name": "未完世界ホーリーランド 偽剣グラム×サンタ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、このキャラを味方フィールドに移動できる。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、このキャラを味方フィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0273"
 }

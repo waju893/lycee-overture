@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4018",
+  "title": "面倒見の良いスポーツ少女",
+  "subName": "清水 千晴",
+  "name": "面倒見の良いスポーツ少女 清水 千晴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4018"
 }

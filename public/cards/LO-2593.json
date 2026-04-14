@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2593",
+  "title": "沈思する聖女",
+  "subName": "クリス",
+  "name": "沈思する聖女 クリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。１枚ドローする。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラの下のカード１枚を破棄する。破棄したとき、{味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。１枚ドローする。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラの下のカード１枚を破棄する。破棄したとき、{味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2593"
 }

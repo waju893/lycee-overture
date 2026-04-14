@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1157",
+  "title": "夏休みを忘れた少女",
+  "subName": "鳴瀬 しろは",
+  "name": "夏休みを忘れた少女 鳴瀬 しろは",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを１枚破棄する。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1157"
 }

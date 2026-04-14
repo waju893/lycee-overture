@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2213",
+  "title": "偶然の再会",
+  "subName": "黒姫 結灯",
+  "name": "偶然の再会 黒姫 結灯",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方ＡＦキャラ全てにＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方ＡＦキャラ全てにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2213"
 }

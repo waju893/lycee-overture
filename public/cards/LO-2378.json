@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2378",
+  "title": "講義",
+  "subName": "張昭・雷火",
+  "name": "講義 張昭・雷火",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "呉",
+  "text": "[手札宣言] [月月月月]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "[手札宣言] [月月月月]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2378"
 }

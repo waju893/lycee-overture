@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2782",
+  "title": "卒業制作期間",
+  "subName": "倉橋 聖衣良",
+  "name": "卒業制作期間 倉橋 聖衣良",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、相手キャラ１体にＤＭＧ－１し、自ターン終了時までこのキャラにＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、相手キャラ１体にＤＭＧ－１し、自ターン終了時までこのキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2782"
 }

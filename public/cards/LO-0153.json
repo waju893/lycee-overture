@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0153",
+  "title": "ブルーマジック",
+  "subName": "ルーンブレード",
+  "name": "ブルーマジック ルーンブレード",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]]\n[宣言] [T]:{キャラ１体}にＳＰー１する。",
+  "textKr": "[エンゲージ:[１枚ドローする。]]\n[宣言] [T]:{キャラ１体}にＳＰー１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0153"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3970",
+  "title": "アリスの館",
+  "subName": "アリス",
+  "name": "アリスの館 アリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキからＥＸが２の[AL][花]キャラ１体を探しこのキャラが登場していたフィールドに登場する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキからＥＸが２の[AL][花]キャラ１体を探しこのキャラが登場していたフィールドに登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3970"
 }

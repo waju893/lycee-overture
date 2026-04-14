@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0167",
+  "title": "神罰セイクリッドネメシス",
+  "subName": "ロンギヌス＝カース",
+  "name": "神罰セイクリッドネメシス ロンギヌス＝カース",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 5,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] 対戦キャラがダウンしたこのキャラのバトル終了時、相手は相手の手札を１枚破棄する。",
+  "textKr": "[エンゲージ]\n[誘発] 対戦キャラがダウンしたこのキャラのバトル終了時、相手は相手の手札を１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0167"
 }

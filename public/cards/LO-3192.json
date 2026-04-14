@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3192",
+  "title": "常盤台中学学生寮",
+  "subName": "寮監",
+  "name": "常盤台中学学生寮 寮監",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:味方「御坂美琴」または「白井黒子」が登場している場合、このキャラにＡＰ＋１する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:味方「御坂美琴」または「白井黒子」が登場している場合、このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3192"
 }

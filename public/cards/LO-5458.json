@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-5458",
+  "title": "風呂上がり",
+  "subName": "",
+  "name": "風呂上がり",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※デッキ構築時、このカードは「LO-0699」と同番号として扱う。",
+  "textKr": "※デッキ構築時、このカードは「LO-0699」と同番号として扱う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5458"
 }

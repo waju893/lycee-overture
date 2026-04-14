@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2016",
+  "title": "ミサカネットワーク",
+  "subName": "ラストオーダー",
+  "name": "ミサカネットワーク ラストオーダー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:「アクセラレータ」１体を自分のゴミ箱から選べる。選ばない場合、自分のデッキから探す。そのキャラを公開して手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [T]:「アクセラレータ」１体を自分のゴミ箱から選べる。選ばない場合、自分のデッキから探す。そのキャラを公開して手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2016"
 }

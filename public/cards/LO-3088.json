@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3088",
+  "title": "弓道部",
+  "subName": "桧山 璃子",
+  "name": "弓道部 桧山 璃子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。",
+  "textKr": "[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3088"
 }

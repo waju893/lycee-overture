@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3033",
+  "title": "容姿端麗なハイスペック後輩",
+  "subName": "藤堂 望希",
+  "name": "容姿端麗なハイスペック後輩 藤堂 望希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、１枚ドローできる。この能力は失われる。",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、１枚ドローできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3033"
 }

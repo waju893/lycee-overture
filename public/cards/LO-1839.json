@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1839",
+  "title": "キツネっ子",
+  "subName": "山田 ミチル",
+  "name": "キツネっ子 山田 ミチル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[花花]または[日日]を発生する。この能力は失われる。",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[花花]または[日日]を発生する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1839"
 }

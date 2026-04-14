@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1952",
+  "title": "ローマ教皇",
+  "subName": "マタイ＝リース",
+  "name": "ローマ教皇 マタイ＝リース",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したターン終了時、元のＤＭＧが２以下の味方キャラ１体を未行動にする。",
+  "textKr": "[誘発] このキャラが登場したターン終了時、元のＤＭＧが２以下の味方キャラ１体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1952"
 }

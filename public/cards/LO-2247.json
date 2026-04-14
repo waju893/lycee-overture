@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2247",
+  "title": "カルカスの鐘",
+  "subName": "城塞都市カルカソンヌ",
+  "name": "カルカスの鐘 城塞都市カルカソンヌ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] 味方キャラを相手の能力で破棄したとき、１枚ドローできる。",
+  "textKr": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] 味方キャラを相手の能力で破棄したとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2247"
 }

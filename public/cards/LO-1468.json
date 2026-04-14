@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1468",
+  "title": "プリンセス",
+  "subName": "シビラ",
+  "name": "プリンセス シビラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    4,
-    10
-  ],
-  "keyEffects": [
-    4,
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]][オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＭＧ－１する。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]][オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1468"
 }

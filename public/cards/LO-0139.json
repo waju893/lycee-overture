@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0139",
+  "title": "木天のツヴァイク×魔剣ジュビテリア",
+  "subName": "",
+  "name": "木天のツヴァイク×魔剣ジュビテリア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[エンゲージ]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0139"
 }

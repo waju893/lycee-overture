@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3732",
+  "title": "犬神",
+  "subName": "シロ",
+  "name": "犬神 シロ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[月月月月]を発生する。このコストは手札宣言能力を持つ[月]キャラの登場にのみ支払える。",
+  "textKr": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[月月月月]を発生する。このコストは手札宣言能力を持つ[月]キャラの登場にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3732"
 }

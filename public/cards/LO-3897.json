@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3897",
+  "title": "へっぽこだけど好きでいっぱい",
+  "subName": "硯川・e・涙香",
+  "name": "へっぽこだけど好きでいっぱい 硯川・e・涙香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] コストが２点以下の味方キャラが登場したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[誘発] コストが２点以下の味方キャラが登場したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3897"
 }

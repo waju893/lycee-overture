@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0865",
+  "title": "橘花学院学生会長",
+  "subName": "三司 あやせ",
+  "name": "橘花学院学生会長 三司 あやせ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [無無無]:このキャラにＡＰ＋２する。",
+  "textKr": "[宣言] [無無無]:このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0865"
 }

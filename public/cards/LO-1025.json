@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1025",
+  "title": "大学選抜チーム隊長",
+  "subName": "島田 愛里寿",
+  "name": "大学選抜チーム隊長 島田 愛里寿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪月宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[アシスト]\n[宣言] [このキャラを除外する]:バトル中に使用できない。{自分のゴミ箱の＜大学選抜＞キャラ２体}を手札に入れる。",
+  "textKr": "[アシスト]\n[宣言] [このキャラを除外する]:バトル中に使用できない。{自分のゴミ箱の＜大学選抜＞キャラ２体}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1025"
 }

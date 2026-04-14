@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2595",
+  "title": "博愛の制服",
+  "subName": "ルージェニア",
+  "name": "博愛の制服 ルージェニア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。\n[宣言] [宙宙]:相手ターン中に使用する。このキャラの下のカード１枚を破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。",
+  "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。\n[宣言] [宙宙]:相手ターン中に使用する。このキャラの下のカード１枚を破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2595"
 }

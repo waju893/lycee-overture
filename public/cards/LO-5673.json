@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5673",
+  "title": "稀代のペテン師にして天才芸術家",
+  "subName": "草薙 健一郎",
+  "name": "稀代のペテン師にして天才芸術家 草薙 健一郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪雪雪雪]:味方「草薙直哉」が登場している場合、{相手キャラ１体}にＡＰ－３・ＤＰ－３する。１枚ドローする。このキャラと同キャラ名のキャラが自分の「永遠の相」置き場に置かれていない場合、ゴミ箱のこのキャラをその置き場に置ける。",
+  "textKr": "[手札宣言] [雪雪雪雪]:味方「草薙直哉」が登場している場合、{相手キャラ１体}にＡＰ－３・ＤＰ－３する。１枚ドローする。このキャラと同キャラ名のキャラが自分の「永遠の相」置き場に置かれていない場合、ゴミ箱のこのキャラをその置き場に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5673"
 }

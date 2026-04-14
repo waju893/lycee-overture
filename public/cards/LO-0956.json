@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0956",
+  "title": "空から降ってきた転校生",
+  "subName": "天ヶ崎 美琴",
+  "name": "空から降ってきた転校生 天ヶ崎 美琴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[誘発] 自ターン中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
+  "textKr": "[アグレッシブ]\n[誘発] 自ターン中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0956"
 }

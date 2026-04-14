@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0879",
+  "title": "図書部のムードメーカー",
+  "subName": "鈴木 佳奈",
+  "name": "図書部のムードメーカー 鈴木 佳奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
+  "textKr": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0879"
 }

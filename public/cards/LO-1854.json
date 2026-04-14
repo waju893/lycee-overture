@@ -1,16 +1,30 @@
 {
+  "cardNo": "LO-1854",
+  "title": "不倶戴天",
+  "subName": "",
+  "name": "不倶戴天",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "star",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＤＭＧ－３する。このキャラは自分の効果で味方ＤＦに移動する場合、移動しない。\n[宣言] [無無無無無]:相手ターン中に使用する。このアイテムを除外する。",
+  "textKr": "[常時] このキャラにＤＭＧ－３する。このキャラは自分の効果で味方ＤＦに移動する場合、移動しない。\n[宣言] [無無無無無]:相手ターン中に使用する。このアイテムを除外する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1854"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4820",
+  "title": "有頂天ファンファーレ",
+  "subName": "リディア",
+  "name": "有頂天ファンファーレ リディア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが５点以上の味方[日]キャラが登場している場合、このキャラにＡＰ＋１・ＤＰ＋３する。",
+  "textKr": "[宣言] [0]:コストが５点以上の味方[日]キャラが登場している場合、このキャラにＡＰ＋１・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4820"
 }

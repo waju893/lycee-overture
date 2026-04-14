@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3940",
+  "title": "朝倉家一門衆筆頭",
+  "subName": "朝倉 和泉 景鏡",
+  "name": "朝倉家一門衆筆頭 朝倉 和泉 景鏡",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:{コストが３点以上の味方[日]キャラ１体}を破棄する。破棄したとき、味方[日]キャラ１体にＡＰ＋３する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:{コストが３点以上の味方[日]キャラ１体}を破棄する。破棄したとき、味方[日]キャラ１体にＡＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3940"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1078",
+  "title": "船舶科",
+  "subName": "トカタ＆ババ",
+  "name": "船舶科 トカタ＆ババ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[オーダーステップ:[0]]\n[誘発] ＥＸが１の味方[宙]キャラが登場したとき、このキャラにＤＭＧ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] ＥＸが１の味方[宙]キャラが登場したとき、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1078"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0162",
+  "title": "水天のアクア×魔槍マーキュリー",
+  "subName": "",
+  "name": "水天のアクア×魔槍マーキュリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "star",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0162"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0405",
+  "title": "後退的突撃",
+  "subName": "西 絹代",
+  "name": "後退的突撃 西 絹代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。",
+  "textKr": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0405"
 }

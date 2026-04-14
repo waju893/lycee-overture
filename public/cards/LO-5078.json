@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5078",
+  "title": "残忍で狡猾な帝国司令官",
+  "subName": "イゼベル",
+  "name": "残忍で狡猾な帝国司令官 イゼベル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 6,
   "dp": 5,
   "sp": 1,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラを破棄する。破棄したとき、{相手キャラ１体}のＡＰとＤＰを０にする。",
+  "textKr": "[宣言] [0]:このキャラを破棄する。破棄したとき、{相手キャラ１体}のＡＰとＤＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5078"
 }

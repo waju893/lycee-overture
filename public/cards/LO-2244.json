@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2244",
+  "title": "鎮安守護神",
+  "subName": "多賀城",
+  "name": "鎮安守護神 多賀城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[手札宣言] [D1][雪雪雪無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。",
+  "textKr": "[手札宣言] [D1][雪雪雪無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2244"
 }

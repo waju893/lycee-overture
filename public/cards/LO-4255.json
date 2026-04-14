@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4255",
+  "title": "乙女の秘密",
+  "subName": "聖 橘花",
+  "name": "乙女の秘密 聖 橘花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、[花]でない味方キャラが登場している場合、１枚ドローする。\n[誘発] 自ターン中、持ち主が自分のコストが１点以上のイベント・アイテム・手札宣言能力を使用したとき、味方キャラ１体は[ボーナス:[自分にシールド＋１する。]]を得る。",
+  "textKr": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、[花]でない味方キャラが登場している場合、１枚ドローする。\n[誘発] 自ターン中、持ち主が自分のコストが１点以上のイベント・アイテム・手札宣言能力を使用したとき、味方キャラ１体は[ボーナス:[自分にシールド＋１する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4255"
 }

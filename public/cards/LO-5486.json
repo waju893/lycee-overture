@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5486",
+  "title": "隠しきれない照れくささ",
+  "subName": "高社 紗雪",
+  "name": "隠しきれない照れくささ 高社 紗雪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    7,
-    12
-  ],
-  "keyEffects": [
-    7,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ][サポーター:[花花]]\n[宣言] [0]:自分のゴミ箱のキャラ名に「紗雪」を含むキャラ１体を除外する。除外したとき、このキャラにＤＰ＋２・ＳＰ＋２する。\n[誘発] このキャラをエンゲージ登場で破棄したとき、１枚ドローできる。",
+  "textKr": "[エンゲージ][サポーター:[花花]]\n[宣言] [0]:自分のゴミ箱のキャラ名に「紗雪」を含むキャラ１体を除外する。除外したとき、このキャラにＤＰ＋２・ＳＰ＋２する。\n[誘発] このキャラをエンゲージ登場で破棄したとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5486"
 }

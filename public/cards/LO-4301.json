@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4301",
+  "title": "不思議な雰囲気",
+  "subName": "窓川 芹香",
+  "name": "不思議な雰囲気 窓川 芹香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] [月月]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "textKr": "[コスト] [月月]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4301"
 }

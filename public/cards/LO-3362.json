@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-3362",
+  "title": "ドレスアップ",
+  "subName": "",
+  "name": "ドレスアップ",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラを相手の効果で破棄したとき、ゴミ箱のこのアイテムを手札に入れる。\n[宣言] [0]:このキャラにＤＰ＋２する。このキャラがＡＦに登場している場合、このキャラにＡＰ＋２・ＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラを相手の効果で破棄したとき、ゴミ箱のこのアイテムを手札に入れる。\n[宣言] [0]:このキャラにＤＰ＋２する。このキャラがＡＦに登場している場合、このキャラにＡＰ＋２・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3362"
 }

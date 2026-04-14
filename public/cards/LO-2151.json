@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2151",
+  "title": "偶然の再会",
+  "subName": "玉樹 桜",
+  "name": "偶然の再会 玉樹 桜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、このキャラに隣接した味方キャラが登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラに隣接した味方キャラが登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2151"
 }

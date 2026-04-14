@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-0705",
+  "title": "契約の代償",
+  "subName": "",
+  "name": "契約の代償",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このアイテムを装備したとき、このキャラを行動済みにする。",
+  "textKr": "[誘発] このアイテムを装備したとき、このキャラを行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0705"
 }

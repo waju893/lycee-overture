@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3332",
+  "title": "柳木原フレイムバーズの皇帝",
+  "subName": "鳳 翔",
+  "name": "柳木原フレイムバーズの皇帝 鳳 翔",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -22,11 +25,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:味方[NAV][宙]キャラ全てにＡＰ＋１・ＤＰ＋１する。サブネームに「柳木原フレイムバーズ」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言][切札] [無]:味方[NAV][宙]キャラの数だけ相手のデッキを１枚破棄する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:味方[NAV][宙]キャラ全てにＡＰ＋１・ＤＰ＋１する。サブネームに「柳木原フレイムバーズ」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言][切札] [無]:味方[NAV][宙]キャラの数だけ相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3332"
 }

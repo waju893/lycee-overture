@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1388",
+  "title": "「影の国」の女王",
+  "subName": "ランサー／スカサハ",
+  "name": "「影の国」の女王 ランサー／スカサハ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[誘発] 相手の効果で相手のデッキが回復したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 相手の効果で相手のデッキが回復したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1388"
 }

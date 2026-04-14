@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3589",
+  "title": "メイド夢魔",
+  "subName": "メリス",
+  "name": "メイド夢魔 メリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[手札宣言] [雪雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。元のＡＰが１以下の味方キャラが登場していない場合、{相手キャラ１体}を破棄する。ゴミ箱のこのキャラを無償で登場できる。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[手札宣言] [雪雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。元のＡＰが１以下の味方キャラが登場していない場合、{相手キャラ１体}を破棄する。ゴミ箱のこのキャラを無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3589"
 }

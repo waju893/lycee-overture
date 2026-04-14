@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0033",
+  "title": "高速神言",
+  "subName": "キャスター／メディア",
+  "name": "高速神言 キャスター／メディア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[月]]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[オーダーステップ:[月]]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0033"
 }

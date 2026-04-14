@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1814",
+  "title": "ヤマト八柱将『調弦のトキフサ』",
+  "subName": "トキフサ",
+  "name": "ヤマト八柱将『調弦のトキフサ』 トキフサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[宣言] [0]:バトル中に使用できない。コストが５点以上の味方キャラが登場している場合、{相手キャラ１体}にＳＰ－１する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。コストが５点以上の味方キャラが登場している場合、{相手キャラ１体}にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1814"
 }

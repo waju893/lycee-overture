@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5934",
+  "title": "学園長の孫娘",
+  "subName": "神領寺 姫翠",
+  "name": "学園長の孫娘 神領寺 姫翠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。\n[誘発] このキャラが登場したときまたはターン開始時、コストが３点以上の味方[宙]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを４枚までデッキの下に置きシャッフルする。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。\n[誘発] このキャラが登場したときまたはターン開始時、コストが３点以上の味方[宙]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを４枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5934"
 }

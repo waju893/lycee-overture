@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0295",
+  "title": "カバさんチーム",
+  "subName": "おりょう",
+  "name": "カバさんチーム おりょう",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[誘発] このキャラがダウンしたとき、１枚ドローする。",
+  "textKr": "[誘発] このキャラがダウンしたとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0295"
 }

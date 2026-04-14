@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5647",
+  "title": "DD-mod保有者",
+  "subName": "ユニカ・ラスペランツァ",
+  "name": "DD-mod保有者 ユニカ・ラスペランツァ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、コストが３～４点の味方キャラが３体以上の場合、１枚ドローする。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{コストが３～４点の味方キャラ１体}にＡＰ＋２する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、コストが３～４点の味方キャラが３体以上の場合、１枚ドローする。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{コストが３～４点の味方キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5647"
 }

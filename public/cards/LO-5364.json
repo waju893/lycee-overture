@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5364",
+  "title": "日本男児（自称）",
+  "subName": "佐藤 虎太郎",
+  "name": "日本男児（自称） 佐藤 虎太郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分のイベントを使用したとき、自分にシールド＋１できる。",
+  "textKr": "[誘発] 自ターン中、自分のイベントを使用したとき、自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5364"
 }

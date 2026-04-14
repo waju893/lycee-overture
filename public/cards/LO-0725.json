@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0725",
+  "title": "見習い召喚士",
+  "subName": "ニャーン",
+  "name": "見習い召喚士 ニャーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][日日日無無]:自ターン中に使用する。{自分のゴミ箱のキャラ１体}を登場する。",
+  "textKr": "[宣言] [T][日日日無無]:自ターン中に使用する。{自分のゴミ箱のキャラ１体}を登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0725"
 }

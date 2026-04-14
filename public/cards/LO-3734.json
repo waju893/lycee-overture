@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3734",
+  "title": "神森の守護妖精",
+  "subName": "スプラ",
+  "name": "神森の守護妖精 スプラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "textKr": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3734"
 }

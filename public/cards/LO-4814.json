@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-4814",
+  "title": "時間の檻",
+  "subName": "",
+  "name": "時間の檻",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分の効果で相手キャラが場を離れたとき、このエリアと同列の相手キャラ全てに相手ターン終了時までＡＰ－１・ＤＰ－１・ＤＭＧ－１する。\n※「時間の檻」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] 自ターン中、自分の効果で相手キャラが場を離れたとき、このエリアと同列の相手キャラ全てに相手ターン終了時までＡＰ－１・ＤＰ－１・ＤＭＧ－１する。\n※「時間の檻」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4814"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0129",
+  "title": "ディヴァインフロート",
+  "subName": "ジャガーノート",
+  "name": "ディヴァインフロート ジャガーノート",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,13 +21,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    6,
-    7
-  ],
-  "keyEffects": [
-    6,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
+  "textKr": "[エンゲージ:[１枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0129"
 }

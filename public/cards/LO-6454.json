@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6454",
+  "title": "ギャング集団『レイブン』の若きボス",
+  "subName": "オレグ・コルサコフ",
+  "name": "ギャング集団『レイブン』の若きボス オレグ・コルサコフ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 6,
   "dp": 6,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [月]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6454"
 }

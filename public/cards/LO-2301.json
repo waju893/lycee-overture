@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2301",
+  "title": "カッパドキア・バルーン",
+  "subName": "ウチヒサル城",
+  "name": "カッパドキア・バルーン ウチヒサル城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [0]:{このキャラを除く味方キャラ１体}は[ペナルティ:[１枚ドローする。]]を得る。この能力は失われる。",
+  "textKr": "[宣言] [0]:{このキャラを除く味方キャラ１体}は[ペナルティ:[１枚ドローする。]]を得る。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2301"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1141",
+  "title": "アリクイさんチームの砲手兼装填手",
+  "subName": "ぴよたん",
+  "name": "アリクイさんチームの砲手兼装填手 ぴよたん",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [T]:味方＜大洗女子＞キャラの属性が４種類以上の場合、{味方キャラ１体}を{味方フィールド}に移動する。このキャラを手札に入れる。",
+  "textKr": "[アシスト]\n[宣言] [T]:味方＜大洗女子＞キャラの属性が４種類以上の場合、{味方キャラ１体}を{味方フィールド}に移動する。このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1141"
 }

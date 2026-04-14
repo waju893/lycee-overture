@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2566",
+  "title": "火力第一主義のちっちゃな義勇兵",
+  "subName": "イリーナ",
+  "name": "火力第一主義のちっちゃな義勇兵 イリーナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [0]:このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、{味方[日]キャラ１体}にＡＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [0]:このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、{味方[日]キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2566"
 }

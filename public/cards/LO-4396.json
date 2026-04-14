@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4396",
+  "title": "『クラブネクストン』桃色†恋姫 桃香編 限定公開中！",
+  "subName": "桃香",
+  "name": "『クラブネクストン』桃色†恋姫 桃香編 限定公開中！ 桃香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花]:味方[NEX]キャラ全てにＳＰ＋１する。",
+  "textKr": "[宣言] [花]:味方[NEX]キャラ全てにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4396"
 }

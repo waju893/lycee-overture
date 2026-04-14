@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2812",
+  "title": "魅せるプレイ",
+  "subName": "椎名",
+  "name": "魅せるプレイ 椎名",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -19,13 +22,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    8
-  ],
-  "keyEffects": [
-    2,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪宙宙日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][ステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のコストが４点以下の「椎名」１体}を無償で登場する。",
+  "textKr": "[アシスト][ステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のコストが４点以下の「椎名」１体}を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2812"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0179",
+  "title": "霊獣姫クレオパトラ",
+  "subName": "",
+  "name": "霊獣姫クレオパトラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "エネミー",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0179"
 }

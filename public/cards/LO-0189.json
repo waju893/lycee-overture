@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0189",
+  "title": "瞑狂死酔スレイゴッド",
+  "subName": "バールのようなもの神殺",
+  "name": "瞑狂死酔スレイゴッド バールのようなもの神殺",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[２枚ドローする。]]",
+  "textKr": "[エンゲージ:[２枚ドローする。]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0189"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1372",
+  "title": "ゴルゴン三姉妹",
+  "subName": "ライダー／メドゥーサ",
+  "name": "ゴルゴン三姉妹 ライダー／メドゥーサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:味方「アサシン／ステンノ」と味方「アーチャー／エウリュアレ」が登場している場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:味方「アサシン／ステンノ」と味方「アーチャー／エウリュアレ」が登場している場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1372"
 }

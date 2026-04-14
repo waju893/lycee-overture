@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2436",
+  "title": "天真爛漫",
+  "subName": "璃々",
+  "name": "天真爛漫 璃々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「黄忠・紫苑」１体を登場できる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「黄忠・紫苑」１体を登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2436"
 }

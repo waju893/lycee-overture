@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5414",
+  "title": "純真無垢なクラスメイト",
+  "subName": "成宮 帝雄",
+  "name": "純真無垢なクラスメイト 成宮 帝雄",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [日]:{味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "textKr": "[宣言] [日]:{味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5414"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0430",
+  "title": "戦いの後は宴会っす！",
+  "subName": "ペパロニ",
+  "name": "戦いの後は宴会っす！ ペパロニ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    3,
-    8
-  ],
-  "keyEffects": [
-    3,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト][サイドステップ:[0]]\n[宣言] [D1]:このキャラを手札に入れる。",
+  "textKr": "[アシスト][サイドステップ:[0]]\n[宣言] [D1]:このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0430"
 }

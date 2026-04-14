@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2459",
+  "title": "孫呉の未来",
+  "subName": "孫権・蓮華",
+  "name": "孫呉の未来 孫権・蓮華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "呉",
+  "text": "[リカバリー:[１枚ドローする。]]\n[誘発] 自ターン中、このキャラが手札から登場したとき、相手ＤＦキャラ１体を相手ＤＦに移動する。",
+  "textKr": "[リカバリー:[１枚ドローする。]]\n[誘発] 自ターン中、このキャラが手札から登場したとき、相手ＤＦキャラ１体を相手ＤＦに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2459"
 }

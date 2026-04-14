@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0464",
+  "title": "支援砲撃",
+  "subName": "アサシン／謎のヒロインX",
+  "name": "支援砲撃 アサシン／謎のヒロインX",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自ターン中、味方キャラがダウンしたバトル終了時、１枚ドローする。",
+  "textKr": "[誘発] 自ターン中、味方キャラがダウンしたバトル終了時、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0464"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4130",
+  "title": "カフェ・フルーティア店長",
+  "subName": "店長",
+  "name": "カフェ・フルーティア店長 店長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、味方『ラブラブル』キャラが３体以下の場合、このキャラを破棄する。",
+  "textKr": "[誘発] ターン開始時、味方『ラブラブル』キャラが３体以下の場合、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4130"
 }

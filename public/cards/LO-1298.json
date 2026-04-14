@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1298",
+  "title": "「鍵」と呼ばれる少女",
+  "subName": "篝",
+  "name": "「鍵」と呼ばれる少女 篝",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[１枚ドローする。]]\n[宣言] [0]:{味方キャラ１体}を破棄する。破棄したとき、{自分のゴミ箱のキャラ１体}を手札に入れる。この能力は失われる。",
+  "textKr": "[リカバリー:[１枚ドローする。]]\n[宣言] [0]:{味方キャラ１体}を破棄する。破棄したとき、{自分のゴミ箱のキャラ１体}を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1298"
 }

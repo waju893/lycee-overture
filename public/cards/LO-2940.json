@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2940",
+  "title": "無表情な妹",
+  "subName": "瓜生 桜乃",
+  "name": "無表情な妹 瓜生 桜乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [無無無]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [無無無]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2940"
 }

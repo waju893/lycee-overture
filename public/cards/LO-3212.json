@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-3212",
+  "title": "悪党の流儀",
+  "subName": "",
+  "name": "悪党の流儀",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※デッキ構築時、このカードは「LO-1110」と同番号として扱う。",
+  "textKr": "※デッキ構築時、このカードは「LO-1110」と同番号として扱う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3212"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3141",
+  "title": "念話",
+  "subName": "口囃子 早鳥",
+  "name": "念話 口囃子 早鳥",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 5,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。相手は相手の手札を公開する。この能力は失われる。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。相手は相手の手札を公開する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3141"
 }

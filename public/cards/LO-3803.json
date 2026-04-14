@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-3803",
+  "title": "王国軍の慰安旅行",
+  "subName": "",
+  "name": "王国軍の慰安旅行",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手の効果で味方[AIG][花]キャラを破棄したとき、１枚ドローできる。\n※「王国軍の慰安旅行」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] 相手の効果で味方[AIG][花]キャラを破棄したとき、１枚ドローできる。\n※「王国軍の慰安旅行」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3803"
 }

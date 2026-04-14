@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4163",
+  "title": "白咲学園の教師",
+  "subName": "来栖 三木",
+  "name": "白咲学園の教師 来栖 三木",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:[雪]でない味方キャラが登場している場合、このキャラにＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:[雪]でない味方キャラが登場している場合、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4163"
 }

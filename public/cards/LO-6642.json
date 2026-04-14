@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6642",
+  "title": "腐れ縁",
+  "subName": "結城 隼人",
+  "name": "腐れ縁 結城 隼人",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,13 +17,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:１]\n[宣言] [C1][日]:{コストが３点以上の味方キャラ１体}にＡＰ＋４する。",
+  "textKr": "[ジャンプ:[0]][チャージ:１]\n[宣言] [C1][日]:{コストが３点以上の味方キャラ１体}にＡＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6642"
 }

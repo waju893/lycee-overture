@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0571",
+  "title": "信仰の加護",
+  "subName": "アサシン／”山の翁”",
+  "name": "信仰の加護 アサシン／”山の翁”",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[常時] このキャラは行動済みでも防御キャラに指定できる。",
+  "textKr": "[オーダーチェンジ:[0]]\n[常時] このキャラは行動済みでも防御キャラに指定できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0571"
 }

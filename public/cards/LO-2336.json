@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2336",
+  "title": "風林火山",
+  "subName": "躑躅ヶ崎館",
+  "name": "風林火山 躑躅ヶ崎館",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] このキャラが登場したとき、コストが２点以下の味方[日]キャラが４体以上登場している場合、１枚ドローできる。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが２点以下の味方[日]キャラが４体以上登場している場合、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2336"
 }

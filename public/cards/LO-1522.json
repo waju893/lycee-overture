@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1522",
+  "title": "秘刃の暗殺者",
+  "subName": "ジュノン",
+  "name": "秘刃の暗殺者 ジュノン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [花花花]:{アイテム１枚}を破棄する。",
+  "textKr": "[手札宣言] [花花花]:{アイテム１枚}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1522"
 }

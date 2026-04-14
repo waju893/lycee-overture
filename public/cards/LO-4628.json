@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4628",
+  "title": "魔法講師",
+  "subName": "弥篝 珠洲子",
+  "name": "魔法講師 弥篝 珠洲子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[手札宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "textKr": "[サポーター:[花花]]\n[手札宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4628"
 }

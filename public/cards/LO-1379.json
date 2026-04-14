@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1379",
+  "title": "変化（ランチ）",
+  "subName": "バーサーカー／タマモキャット",
+  "name": "変化（ランチ） バーサーカー／タマモキャット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、味方ＤＦキャラ１体を未行動にする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方ＤＦキャラ１体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1379"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4788",
+  "title": "栄光競う熱戦",
+  "subName": "クリス",
+  "name": "栄光競う熱戦 クリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:コストが５点以上の味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:コストが５点以上の味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4788"
 }

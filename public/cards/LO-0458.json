@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0458",
+  "title": "鮮血竜巻魔嬢",
+  "subName": "セイバー／エリザベート・バートリー〔ブレイブ〕",
+  "name": "鮮血竜巻魔嬢 セイバー／エリザベート・バートリー〔ブレイブ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 0,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:このキャラと同列の味方キャラが２体の場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [0]:このキャラと同列の味方キャラが２体の場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0458"
 }

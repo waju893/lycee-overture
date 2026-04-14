@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1245",
+  "title": "最強の男児にして真人のライバル",
+  "subName": "宮沢 謙吾",
+  "name": "最強の男児にして真人のライバル 宮沢 謙吾",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,13 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4,
-    8
-  ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１する。",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1245"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4829",
+  "title": "着替え中にドッキリ",
+  "subName": "華野 椎名",
+  "name": "着替え中にドッキリ 華野 椎名",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 3,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手ターン終了時までこのキャラのＤＰを５、ＳＰを４にする。",
+  "textKr": "[誘発] このキャラが登場したとき、相手ターン終了時までこのキャラのＤＰを５、ＳＰを４にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4829"
 }

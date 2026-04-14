@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0860",
+  "title": "叛逆神の胎動",
+  "subName": "バハムート",
+  "name": "叛逆神の胎動 バハムート",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを２枚破棄する。",
+  "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0860"
 }

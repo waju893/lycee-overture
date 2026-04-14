@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0943",
+  "title": "不蝕金鎖",
+  "subName": "ジークフリード・グラード",
+  "name": "不蝕金鎖 ジークフリード・グラード",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{自分のゴミ箱の「ジークフリード・グラード」１体}を除外する。このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{自分のゴミ箱の「ジークフリード・グラード」１体}を除外する。このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0943"
 }

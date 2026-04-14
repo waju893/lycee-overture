@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3154",
+  "title": "『風紀委員』",
+  "subName": "固法 美偉",
+  "name": "『風紀委員』 固法 美偉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:味方「白井黒子」または「初春飾利」または「柳迫碧美」が登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:味方「白井黒子」または「初春飾利」または「柳迫碧美」が登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3154"
 }

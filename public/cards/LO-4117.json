@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4117",
+  "title": "両刀女",
+  "subName": "ミリ・ヨークス",
+  "name": "両刀女 ミリ・ヨークス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが７点以上の味方キャラが登場している場合、このキャラにＡＰ＋１し、このキャラは[ジャンプ:[0]]を得る。",
+  "textKr": "[宣言] [0]:コストが７点以上の味方キャラが登場している場合、このキャラにＡＰ＋１し、このキャラは[ジャンプ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4117"
 }

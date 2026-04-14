@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2487",
+  "title": "隙がある魅力",
+  "subName": "小太刀 凪",
+  "name": "隙がある魅力 小太刀 凪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したターン中、相手キャラが登場したとき、そのキャラは元の能力１つを失う。\n[手札宣言] [D2]:元のＤＭＧが４以上の味方キャラが登場していない場合、ゴミ箱のこのキャラを登場する。",
+  "textKr": "[誘発] このキャラが登場したターン中、相手キャラが登場したとき、そのキャラは元の能力１つを失う。\n[手札宣言] [D2]:元のＤＭＧが４以上の味方キャラが登場していない場合、ゴミ箱のこのキャラを登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2487"
 }

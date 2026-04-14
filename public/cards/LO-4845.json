@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4845",
+  "title": "剣丞隊筆頭軍師",
+  "subName": "竹中 詩乃 重治",
+  "name": "剣丞隊筆頭軍師 竹中 詩乃 重治",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 0,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙]:このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋４する。",
+  "textKr": "[宣言] [宙]:このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4845"
 }

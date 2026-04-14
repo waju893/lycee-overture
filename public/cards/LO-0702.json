@@ -1,19 +1,32 @@
 {
+  "cardNo": "LO-0702",
+  "title": "輪廻転生",
+  "subName": "",
+  "name": "輪廻転生",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow",
     "moon"
   ],
-  "attributesList": [
-    "snow",
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
     "moon",
     "moon",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "雪雪月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0702"
 }

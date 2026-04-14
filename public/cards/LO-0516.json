@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0516",
+  "title": "最果てにて輝ける槍",
+  "subName": "ランサー／アルトリア・ペンドラゴン〔オルタ〕",
+  "name": "最果てにて輝ける槍 ランサー／アルトリア・ペンドラゴン〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[宣言] [宙]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[オーダーチェンジ:[0]]\n[宣言] [宙]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0516"
 }

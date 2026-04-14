@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3492",
+  "title": "警戒心と道徳意識の強い生真面目委員長",
+  "subName": "十彩・デ・ヴィータ",
+  "name": "警戒心と道徳意識の強い生真面目委員長 十彩・デ・ヴィータ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、コストが５点以上の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[宣言] [D1]:コストが５点以上の味方キャラのバトル中に使用する。バトルを中断する。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、コストが５点以上の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[宣言] [D1]:コストが５点以上の味方キャラのバトル中に使用する。バトルを中断する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3492"
 }

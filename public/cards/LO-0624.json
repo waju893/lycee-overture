@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0624",
+  "title": "憧れの存在",
+  "subName": "常盤 まひろ",
+  "name": "憧れの存在 常盤 まひろ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] 自ターン開始時、キャラ１体にＤＭＧ＋１できる。",
+  "textKr": "[誘発] 自ターン開始時、キャラ１体にＤＭＧ＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0624"
 }

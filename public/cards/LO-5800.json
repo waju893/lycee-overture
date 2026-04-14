@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5800",
+  "title": "メイク上手な人気者",
+  "subName": "本郷 虹夢",
+  "name": "メイク上手な人気者 本郷 虹夢",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無無]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからＥＸが２のアイテム１枚を探し味方[HOK]キャラ１体に装備する。この能力は失われる。",
+  "textKr": "[サポーター:[無無]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからＥＸが２のアイテム１枚を探し味方[HOK]キャラ１体に装備する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5800"
 }

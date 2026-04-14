@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5582",
+  "title": "チーム白狼のマネジメント担当",
+  "subName": "風嶺 初乃",
+  "name": "チーム白狼のマネジメント担当 風嶺 初乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、味方[宙]アイテムを配置している場合、２枚ドローする。自分にシールド＋２する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、味方[宙]アイテムを配置している場合、２枚ドローする。自分にシールド＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5582"
 }

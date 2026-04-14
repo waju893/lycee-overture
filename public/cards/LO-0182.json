@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0182",
+  "title": "レザレクトアージェント",
+  "subName": "アガートラーム",
+  "name": "レザレクトアージェント アガートラーム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0182"
 }

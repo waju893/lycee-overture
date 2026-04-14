@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0580",
+  "title": "妖狐",
+  "subName": "エリナ・オレゴヴナ・アヴェーン",
+  "name": "妖狐 エリナ・オレゴヴナ・アヴェーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [0]:未行動のこのキャラを{味方フィールド}に移動する。",
+  "textKr": "[宣言] [0]:未行動のこのキャラを{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0580"
 }

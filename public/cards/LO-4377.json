@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-4377",
+  "title": "インタビュー",
+  "subName": "",
+  "name": "インタビュー",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。\n※「インタビュー」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] 味方キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。\n※「インタビュー」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4377"
 }

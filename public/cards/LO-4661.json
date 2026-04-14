@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4661",
+  "title": "精霊界からの留学生",
+  "subName": "宮月 ハルカ",
+  "name": "精霊界からの留学生 宮月 ハルカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6,
-    10
-  ],
-  "keyEffects": [
-    6,
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]][アグレッシブ]\n[宣言] [日]:{味方キャラ１体}にＡＰ＋２する。この能力は失われる。\n[誘発] 相手の効果で自分のデッキを破棄したとき、自分にシールド＋１する。",
+  "textKr": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]][アグレッシブ]\n[宣言] [日]:{味方キャラ１体}にＡＰ＋２する。この能力は失われる。\n[誘発] 相手の効果で自分のデッキを破棄したとき、自分にシールド＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4661"
 }

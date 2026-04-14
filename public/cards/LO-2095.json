@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2095",
+  "title": "豊穣を司る主神",
+  "subName": "吉乃姫",
+  "name": "豊穣を司る主神 吉乃姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [花]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2095"
 }

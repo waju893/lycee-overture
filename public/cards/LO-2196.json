@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2196",
+  "title": "口だけ番長",
+  "subName": "十波 由真",
+  "name": "口だけ番長 十波 由真",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。\n[手札宣言] [無無]:{味方キャラ１体}にＡＰ＋２・ＤＰ－２する。",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。\n[手札宣言] [無無]:{味方キャラ１体}にＡＰ＋２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2196"
 }

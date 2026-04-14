@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5649",
+  "title": "編入生",
+  "subName": "上和泉 桜夜",
+  "name": "編入生 上和泉 桜夜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。\n[宣言] [T]:自ターン中に使用する。相手のデッキを１枚破棄する。このキャラを未行動にできる。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。\n[宣言] [T]:自ターン中に使用する。相手のデッキを１枚破棄する。このキャラを未行動にできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5649"
 }

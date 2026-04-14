@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5825",
+  "title": "新進気鋭の学生画家",
+  "subName": "ルリアスティス・T・御厨",
+  "name": "新進気鋭の学生画家 ルリアスティス・T・御厨",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、以下から１つを選び処理する。\n[宣言] [日]:{味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、以下から１つを選び処理する。\n[宣言] [日]:{味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5825"
 }

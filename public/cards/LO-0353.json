@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0353",
+  "title": "装填手",
+  "subName": "オレンジペコ",
+  "name": "装填手 オレンジペコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[宣言] [無無]:相手ターン中に使用する。味方「ダージリン」が登場している場合、このキャラを未行動にする。",
+  "textKr": "[宣言] [無無]:相手ターン中に使用する。味方「ダージリン」が登場している場合、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0353"
 }

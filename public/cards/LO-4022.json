@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4022",
+  "title": "わがまま放題",
+  "subName": "春夏秋 ノエル",
+  "name": "わがまま放題 春夏秋 ノエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＤＰ－１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4022"
 }

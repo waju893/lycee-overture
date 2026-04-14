@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6626",
+  "title": "内気で健気な天然娘",
+  "subName": "夕霧 瑠璃子",
+  "name": "内気で健気な天然娘 夕霧 瑠璃子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:２]\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２する。（１ターンに２回まで使用可能）\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「最後の神様が住む島」１枚を探し無償で配置できる。しない場合、１枚ドローする。\n[手札宣言] [日日]:{味方キャラ１体}にＡＰ＋６・ＤＰ－６する。",
+  "textKr": "[ジャンプ:[0]][チャージ:２]\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２する。（１ターンに２回まで使用可能）\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「最後の神様が住む島」１枚を探し無償で配置できる。しない場合、１枚ドローする。\n[手札宣言] [日日]:{味方キャラ１体}にＡＰ＋６・ＤＰ－６する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6626"
 }

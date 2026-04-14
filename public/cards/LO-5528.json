@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5528",
+  "title": "神所霊庁の退魔師",
+  "subName": "東雲 ひばり",
+  "name": "神所霊庁の退魔師 東雲 ひばり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{アイテムを持つ味方キャラ１体}にＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{アイテムを持つ味方キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5528"
 }

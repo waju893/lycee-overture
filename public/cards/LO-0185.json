@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0185",
+  "title": "聖光重爪牙",
+  "subName": "アークチャリオッツ",
+  "name": "聖光重爪牙 アークチャリオッツ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    4,
-    7
-  ],
-  "keyEffects": [
-    4,
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][オーダーステップ:[0]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、２枚ドローする。",
+  "textKr": "[エンゲージ][オーダーステップ:[0]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、２枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0185"
 }

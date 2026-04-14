@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3222",
+  "title": "LEVEL5 第四位",
+  "subName": "麦野 沈利",
+  "name": "LEVEL5 第四位 麦野 沈利",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:{[ステップ]または[サイドステップ]を持つ味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:{[ステップ]または[サイドステップ]を持つ味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3222"
 }

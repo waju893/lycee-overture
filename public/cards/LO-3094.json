@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3094",
+  "title": "ノリがいい明朗快活なバイト学生",
+  "subName": "桜坂 悠月",
+  "name": "ノリがいい明朗快活なバイト学生 桜坂 悠月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花花]: {このキャラの前後の味方キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１する。",
+  "textKr": "[宣言] [花花]: {このキャラの前後の味方キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3094"
 }

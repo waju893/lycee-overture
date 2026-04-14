@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3604",
+  "title": "“教会”の一員",
+  "subName": "古都春 花音",
+  "name": "“教会”の一員 古都春 花音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:コストが３点以上の味方[月]キャラが５体以上登場している場合、{相手キャラ１体}にＡＰ－２・ＤＰ－２する。この能力は失われる。",
+  "textKr": "[宣言] [月]:コストが３点以上の味方[月]キャラが５体以上登場している場合、{相手キャラ１体}にＡＰ－２・ＤＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3604"
 }

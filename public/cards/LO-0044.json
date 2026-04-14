@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0044",
+  "title": "魅惑の美声",
+  "subName": "ライダー／マリー・アントワネット",
+  "name": "魅惑の美声 ライダー／マリー・アントワネット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0044"
 }

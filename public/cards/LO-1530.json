@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1530",
+  "title": "背反の癒し手",
+  "subName": "ユーノ",
+  "name": "背反の癒し手 ユーノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがダウンしたとき、「ユーノ」を除く自分のゴミ箱の[花]キャラ１体を手札に入れる。",
+  "textKr": "[誘発] このキャラがダウンしたとき、「ユーノ」を除く自分のゴミ箱の[花]キャラ１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1530"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2888",
+  "title": "白泉学園2年生",
+  "subName": "新海 翔",
+  "name": "白泉学園2年生 新海 翔",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2888"
 }

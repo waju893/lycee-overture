@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3243",
+  "title": "清楚な幼馴染み",
+  "subName": "園池 桜子",
+  "name": "清楚な幼馴染み 園池 桜子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "star",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言][T]:このキャラと同オーダーのキャラ全てにＳＰ＋１する。",
+  "textKr": "[宣言][T]:このキャラと同オーダーのキャラ全てにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3243"
 }

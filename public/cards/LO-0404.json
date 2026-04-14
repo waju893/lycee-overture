@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0404",
+  "title": "知波単学園",
+  "subName": "西 絹代",
+  "name": "知波単学園 西 絹代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[誘発] このキャラを除く味方＜知波単＞キャラが登場したとき、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[誘発] このキャラを除く味方＜知波単＞キャラが登場したとき、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0404"
 }

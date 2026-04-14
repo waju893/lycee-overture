@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0778",
+  "title": "ジェノサイドフローズン",
+  "subName": "メリュジーヌ",
+  "name": "ジェノサイドフローズン メリュジーヌ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "幻獣",
+  "text": "[誘発] このキャラが登場したとき、相手のゴミ箱のカード１枚を除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "textKr": "[誘発] このキャラが登場したとき、相手のゴミ箱のカード１枚を除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0778"
 }

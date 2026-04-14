@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1911",
+  "title": "死角移動",
+  "subName": "査楽",
+  "name": "死角移動 査楽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][雪]:このキャラを{味方フィールド}に移動する。",
+  "textKr": "[宣言] [T][雪]:このキャラを{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1911"
 }

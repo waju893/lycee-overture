@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3679",
+  "title": "エリート的な存在",
+  "subName": "小野瀬 真奈",
+  "name": "エリート的な存在 小野瀬 真奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:このキャラが[宙]アイテムを装備している場合、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。\n[宣言] [0]:{[宙]アイテムを装備している味方キャラ１体}は[ペナルティ:[１枚ドローする。]]を得る。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:このキャラが[宙]アイテムを装備している場合、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。\n[宣言] [0]:{[宙]アイテムを装備している味方キャラ１体}は[ペナルティ:[１枚ドローする。]]を得る。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3679"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0379",
+  "title": "バミューダトリオ",
+  "subName": "アズミ",
+  "name": "バミューダトリオ アズミ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、味方「ルミ」と味方「メグミ」が登場している場合、自分のデッキを２枚回復する。",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、味方「ルミ」と味方「メグミ」が登場している場合、自分のデッキを２枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0379"
 }

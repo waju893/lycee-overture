@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3681",
+  "title": "優等生の風格",
+  "subName": "天川 湊月",
+  "name": "優等生の風格 天川 湊月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。コストが３点以上の味方[月]キャラが６体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。コストが３点以上の味方[月]キャラが６体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3681"
 }

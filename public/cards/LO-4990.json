@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4990",
+  "title": "新入生応援",
+  "subName": "真咲・ガイヤール",
+  "name": "新入生応援 真咲・ガイヤール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [0]:味方[YUZ]キャラが３体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ステップ:[0]]を得る。",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:味方[YUZ]キャラが３体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ステップ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4990"
 }

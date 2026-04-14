@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4386",
+  "title": "ＢＬ好き",
+  "subName": "岡田 とみ子",
+  "name": "ＢＬ好き 岡田 とみ子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花]:コストが２点以下の味方キャラが登場している場合、{味方キャラ１体}にＤＰ＋３する。この能力は失われる。",
+  "textKr": "[宣言] [花]:コストが２点以下の味方キャラが登場している場合、{味方キャラ１体}にＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4386"
 }

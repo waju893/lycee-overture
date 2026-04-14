@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3871",
+  "title": "越後の後継者候補",
+  "subName": "長尾 空 景勝",
+  "name": "越後の後継者候補 長尾 空 景勝",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 2,
   "dp": 5,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが効果以外で登場したとき、自分のゴミ箱の「樋口愛菜兼続」または「北条名月景虎」１体を無償で登場できる。",
+  "textKr": "[誘発] このキャラが効果以外で登場したとき、自分のゴミ箱の「樋口愛菜兼続」または「北条名月景虎」１体を無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3871"
 }

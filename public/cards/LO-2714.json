@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-2714",
+  "title": "ロキ・ノ・クロック",
+  "subName": "",
+  "name": "ロキ・ノ・クロック",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このエリアを配置したとき、１枚ドローできる。\n[誘発] 自ターン終了時、コストが４点以下の味方[宙]キャラ１体をこのフィールドに移動できる。移動したとき、そのキャラを未行動にする。",
+  "textKr": "[誘発] このエリアを配置したとき、１枚ドローできる。\n[誘発] 自ターン終了時、コストが４点以下の味方[宙]キャラ１体をこのフィールドに移動できる。移動したとき、そのキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2714"
 }

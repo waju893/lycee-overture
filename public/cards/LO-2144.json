@@ -1,16 +1,30 @@
 {
+  "cardNo": "LO-2144",
+  "title": "ティータイム",
+  "subName": "",
+  "name": "ティータイム",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "flower",
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用する。バトル終了時までこのキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１し、このキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+  "textKr": "[宣言] [0]:バトル中に使用する。バトル終了時までこのキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１し、このキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2144"
 }

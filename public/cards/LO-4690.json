@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4690",
+  "title": "凛とした雰囲気のお嬢様",
+  "subName": "雪村 涼乃",
+  "name": "凛とした雰囲気のお嬢様 雪村 涼乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方[雪]キャラが３体以上登場している場合、１枚ドローする。\n[手札宣言] [雪雪雪雪雪]:バトル中に使用できない。{相手キャラ１体}をデッキの下に置く。",
+  "textKr": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方[雪]キャラが３体以上登場している場合、１枚ドローする。\n[手札宣言] [雪雪雪雪雪]:バトル中に使用できない。{相手キャラ１体}をデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4690"
 }

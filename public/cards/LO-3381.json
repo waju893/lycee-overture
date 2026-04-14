@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3381",
+  "title": "人見知り",
+  "subName": "大蔵 りそな",
+  "name": "人見知り 大蔵 りそな",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][このキャラを破棄する]:バトル中に使用できない。相手の宣言に対応して使用できない。{味方[雪]キャラ１体}を破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "textKr": "[宣言] [T][このキャラを破棄する]:バトル中に使用できない。相手の宣言に対応して使用できない。{味方[雪]キャラ１体}を破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3381"
 }

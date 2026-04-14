@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2556",
+  "title": "伊那家当主",
+  "subName": "伊那 子柚",
+  "name": "伊那家当主 伊那 子柚",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱の「伊那子柚」１体}を除外する。{未行動の味方ＤＦ[宙]キャラ１体}を{味方フィールド}に移動する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱の「伊那子柚」１体}を除外する。{未行動の味方ＤＦ[宙]キャラ１体}を{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2556"
 }

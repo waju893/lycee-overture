@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0536",
+  "title": "燕の早業",
+  "subName": "ライダー／牛若丸",
+  "name": "燕の早業 ライダー／牛若丸",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[ステップ:[0]]",
+  "textKr": "[ステップ:[0]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0536"
 }

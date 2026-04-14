@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1685",
+  "title": "旅の相方",
+  "subName": "倉端 直太",
+  "name": "旅の相方 倉端 直太",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラが移動したとき、このキャラにＡＰ＋１する。",
+  "textKr": "[誘発] 味方キャラが移動したとき、このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1685"
 }

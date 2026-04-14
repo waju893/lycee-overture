@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0442",
+  "title": "初心者応援",
+  "subName": "西住 みほ",
+  "name": "初心者応援 西住 みほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [このキャラを破棄する]: {キャラ１体}にＤＭＧ－２する。",
+  "textKr": "[宣言] [このキャラを破棄する]: {キャラ１体}にＤＭＧ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0442"
 }

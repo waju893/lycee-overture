@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1865",
+  "title": "調停者",
+  "subName": "ウルトリィ",
+  "name": "調停者 ウルトリィ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "トゥスクル",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を自分の「契約」置き場に置ける。\n[手札宣言] [宙]:防御中の味方＜トゥスクル＞キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を自分の「契約」置き場に置ける。\n[手札宣言] [宙]:防御中の味方＜トゥスクル＞キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1865"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2858",
+  "title": "天才フィギュア少女",
+  "subName": "如月 瑞羽",
+  "name": "天才フィギュア少女 如月 瑞羽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、味方[雪]キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、味方[雪]キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2858"
 }

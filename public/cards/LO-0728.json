@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0728",
+  "title": "正反対だけど仲良し！",
+  "subName": "アマリリス＆大包平",
+  "name": "正反対だけど仲良し！ アマリリス＆大包平",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon",
     "cosmos"
   ],
-  "attributesList": [
-    "moon",
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star"
@@ -17,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [月宙]:このキャラにＡＰ＋２またはＤＰ＋２する。",
+  "textKr": "[エンゲージ]\n[宣言] [月宙]:このキャラにＡＰ＋２またはＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0728"
 }

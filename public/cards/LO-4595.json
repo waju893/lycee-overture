@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4595",
+  "title": "生真面目だけどおっちょこちょい",
+  "subName": "アリア・セレスティア",
+  "name": "生真面目だけどおっちょこちょい アリア・セレスティア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪雪雪雪][味方キャラ１体を行動済みにする]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を破棄する。",
+  "textKr": "[手札宣言] [雪雪雪雪][味方キャラ１体を行動済みにする]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4595"
 }

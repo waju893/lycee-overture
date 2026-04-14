@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3104",
+  "title": "無能力者",
+  "subName": "佐天 涙子",
+  "name": "無能力者 佐天 涙子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、味方[花]キャラ１体をデッキの下に置く。１枚ドローする。\n[宣言] [0]:バトル中に使用できない。{味方[花]キャラ１体}にＤＰ＋１・ＤＭＧ＋１する。\n[誘発] 自ターン終了時、このターン中味方キャラが３回以上バトルに参加した場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、味方[花]キャラ１体をデッキの下に置く。１枚ドローする。\n[宣言] [0]:バトル中に使用できない。{味方[花]キャラ１体}にＤＰ＋１・ＤＭＧ＋１する。\n[誘発] 自ターン終了時、このターン中味方キャラが３回以上バトルに参加した場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3104"
 }

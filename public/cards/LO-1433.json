@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-1433",
+  "title": "月の裏側の記憶",
+  "subName": "",
+  "name": "月の裏側の記憶",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがバトルに参加したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[誘発] このキャラがバトルに参加したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1433"
 }

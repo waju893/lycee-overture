@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1196",
+  "title": "ZHIENDのボーカル",
+  "subName": "サラ・シェーン",
+  "name": "ZHIENDのボーカル サラ・シェーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手ＤＦキャラ１体を行動済みにする。",
+  "textKr": "[誘発] このキャラが登場したとき、相手ＤＦキャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1196"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3097",
+  "title": "大覇星祭",
+  "subName": "食蜂 操祈",
+  "name": "大覇星祭 食蜂 操祈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のＡＰまたは元のＤＰが４以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１し、そのキャラにＤＭＧ＋１する。",
+  "textKr": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のＡＰまたは元のＤＰが４以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１し、そのキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3097"
 }

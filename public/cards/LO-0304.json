@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0304",
+  "title": "小さな暴君",
+  "subName": "カチューシャ",
+  "name": "小さな暴君 カチューシャ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "プラウダ",
+  "text": "[アシスト]",
+  "textKr": "[アシスト]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0304"
 }

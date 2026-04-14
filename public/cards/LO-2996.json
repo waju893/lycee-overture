@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2996",
+  "title": "破天荒なムードメーカー",
+  "subName": "二宮 青葉",
+  "name": "破天荒なムードメーカー 二宮 青葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [月]:{相手キャラ１体}にＤＭＧ－３する。",
+  "textKr": "[手札宣言] [月]:{相手キャラ１体}にＤＭＧ－３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2996"
 }

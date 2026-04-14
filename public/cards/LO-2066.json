@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2066",
+  "title": "時羽神社の巫女",
+  "subName": "笹倉 未来",
+  "name": "時羽神社の巫女 笹倉 未来",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この能力は失われる。",
+  "textKr": "[宣言] [月]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2066"
 }

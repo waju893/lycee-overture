@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4093",
+  "title": "超動体視力",
+  "subName": "光のシリカ",
+  "name": "超動体視力 光のシリカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    16
-  ],
-  "keyEffects": [
-    2,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２][ステップ:[0]]\n[宣言] [C1]:このキャラにＤＰ＋２する。",
+  "textKr": "[チャージ:２][ステップ:[0]]\n[宣言] [C1]:このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4093"
 }

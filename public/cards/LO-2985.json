@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2985",
+  "title": "占い同好会",
+  "subName": "天野 千輪",
+  "name": "占い同好会 天野 千輪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。１枚ドローする。自分の手札を１枚デッキの上に置く。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。１枚ドローする。自分の手札を１枚デッキの上に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2985"
 }

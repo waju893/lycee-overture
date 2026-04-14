@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4650",
+  "title": "修正天使・論理回路・鋼鉄乙女",
+  "subName": "サリー・霧宮",
+  "name": "修正天使・論理回路・鋼鉄乙女 サリー・霧宮",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙宙宙]:以下から１つを選び処理する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙宙]:以下から１つを選び処理する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4650"
 }

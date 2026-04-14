@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5339",
+  "title": "ネクストン統括P",
+  "subName": "まついさん",
+  "name": "ネクストン統括P まついさん",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無無無]:このキャラのＡＰとＤＰに＋[味方[NEX]キャラの数]する。この能力は失われる。",
+  "textKr": "[宣言] [無無無]:このキャラのＡＰとＤＰに＋[味方[NEX]キャラの数]する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5339"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2878",
+  "title": "学園理事長の娘",
+  "subName": "瀬名 愛理",
+  "name": "学園理事長の娘 瀬名 愛理",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、元のＡＰまたは元のＤＰが４以上の味方キャラ１体にＡＰ＋１する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからＥＸが２で元のＤＭＧが１以下のキャラ１体を探し登場する。（ゲーム中１回まで使用可能）",
+  "textKr": "[誘発] ターン開始時、元のＡＰまたは元のＤＰが４以上の味方キャラ１体にＡＰ＋１する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからＥＸが２で元のＤＭＧが１以下のキャラ１体を探し登場する。（ゲーム中１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2878"
 }

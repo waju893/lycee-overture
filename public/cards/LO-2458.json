@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2458",
+  "title": "恥ずかしがり屋なお嫁さん",
+  "subName": "高社 雪静",
+  "name": "恥ずかしがり屋なお嫁さん 高社 雪静",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2458"
 }

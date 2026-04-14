@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0961",
+  "title": "勝気な後輩",
+  "subName": "川中島 里美",
+  "name": "勝気な後輩 川中島 里美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のデッキを破棄したとき、このキャラにＤＭＧ＋１する。",
+  "textKr": "[誘発] 自分のデッキを破棄したとき、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0961"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3396",
+  "title": "妹で恋人",
+  "subName": "桧山 璃子",
+  "name": "妹で恋人 桧山 璃子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [無無無]:{自分のゴミ箱の[HOK]キャラ１体}を登場する。",
+  "textKr": "[手札宣言] [無無無]:{自分のゴミ箱の[HOK]キャラ１体}を登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3396"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0452",
+  "title": "いまは遙か理想の城",
+  "subName": "シールダー／マシュ・キリエライト",
+  "name": "いまは遙か理想の城 シールダー／マシュ・キリエライト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[宣言] [雪雪雪]:バトル中に使用できない。味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[オーダーチェンジ:[0]]\n[宣言] [雪雪雪]:バトル中に使用できない。味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0452"
 }

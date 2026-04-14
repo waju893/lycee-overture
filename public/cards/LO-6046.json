@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6046",
+  "title": "神王",
+  "subName": "ユーストマ",
+  "name": "神王 ユーストマ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "star",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日無無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方「リシアンサス」}１体を未行動にする。この能力は失われる。",
+  "textKr": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方「リシアンサス」}１体を未行動にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6046"
 }

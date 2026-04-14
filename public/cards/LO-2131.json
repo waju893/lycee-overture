@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2131",
+  "title": "ゆーみん先輩",
+  "subName": "山口 夕実",
+  "name": "ゆーみん先輩 山口 夕実",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無無]:このキャラにＡＰ＋２する。",
+  "textKr": "[宣言] [無無]:このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2131"
 }

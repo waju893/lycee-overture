@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4616",
+  "title": "お茶目な破天荒お母様",
+  "subName": "シェリー・メイクラフト",
+  "name": "お茶目な破天荒お母様 シェリー・メイクラフト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、持ち主が自分のアイテムが２枚以上の場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、持ち主が自分のアイテムが２枚以上の場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4616"
 }

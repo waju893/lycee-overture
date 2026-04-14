@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0913",
+  "title": "宰相令嬢",
+  "subName": "ディアナ・ペシュカ・ホリー・エリンギ",
+  "name": "宰相令嬢 ディアナ・ペシュカ・ホリー・エリンギ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体はターン終了時まで相手のイベント・能力の対象に指定できない。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体はターン終了時まで相手のイベント・能力の対象に指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0913"
 }

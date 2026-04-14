@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4593",
+  "title": "召喚士の女の子",
+  "subName": "エリス・エレノアール",
+  "name": "召喚士の女の子 エリス・エレノアール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪無無]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のＥＸが２のキャラ１体を登場する。",
+  "textKr": "[手札宣言] [雪無無]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のＥＸが２のキャラ１体を登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4593"
 }

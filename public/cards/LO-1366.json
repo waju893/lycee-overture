@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1366",
+  "title": "ゴルゴン三姉妹",
+  "subName": "アーチャー／エウリュアレ",
+  "name": "ゴルゴン三姉妹 アーチャー／エウリュアレ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:バトル中に使用する。バトル終了時まで{このキャラを除く、サブネームが「ゴルゴン三姉妹」の味方キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:バトル中に使用する。バトル終了時まで{このキャラを除く、サブネームが「ゴルゴン三姉妹」の味方キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1366"
 }

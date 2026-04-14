@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2494",
+  "title": "人生に迷う勝ち気な堕天使",
+  "subName": "リディア",
+  "name": "人生に迷う勝ち気な堕天使 リディア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、{味方キャラ１体}を味方フィールドに移動する。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、{味方キャラ１体}を味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2494"
 }

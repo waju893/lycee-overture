@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0384",
+  "title": "一年生",
+  "subName": "澤 梓",
+  "name": "一年生 澤 梓",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    3,
-    8
-  ],
-  "keyEffects": [
-    3,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][サイドステップ:[0]]\n[宣言] [無]:このキャラにＡＰ＋２する。",
+  "textKr": "[アシスト][サイドステップ:[0]]\n[宣言] [無]:このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0384"
 }

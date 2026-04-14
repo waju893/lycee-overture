@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3689",
+  "title": "奥州の独眼竜",
+  "subName": "伊達 龍巳 政宗",
+  "name": "奥州の独眼竜 伊達 龍巳 政宗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、このキャラと同列の相手ＡＦキャラ１体を行動済みにする。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、このキャラと同列の相手ＡＦキャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3689"
 }

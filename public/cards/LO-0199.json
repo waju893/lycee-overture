@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0199",
+  "title": "斬虐なる屠竜の王女",
+  "subName": "アスカロン",
+  "name": "斬虐なる屠竜の王女 アスカロン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[宣言] [D4]:このキャラにＡＰ＋４する。",
+  "textKr": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[宣言] [D4]:このキャラにＡＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0199"
 }

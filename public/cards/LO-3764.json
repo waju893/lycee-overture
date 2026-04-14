@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3764",
+  "title": "冥闇の剣士",
+  "subName": "アンブレ",
+  "name": "冥闇の剣士 アンブレ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]]\n[常時] コストが３点以上の味方キャラ全ては自分の元の基本能力で移動する場合、移動しない。\n[宣言] [0]:コストが３点以上の味方[宙]キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [宙]:{コストが３点以上の味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "textKr": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]]\n[常時] コストが３点以上の味方キャラ全ては自分の元の基本能力で移動する場合、移動しない。\n[宣言] [0]:コストが３点以上の味方[宙]キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [宙]:{コストが３点以上の味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3764"
 }

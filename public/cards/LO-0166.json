@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0166",
+  "title": "神々屠りし法師の原罪",
+  "subName": "打ち出の小鎚＝原罪",
+  "name": "神々屠りし法師の原罪 打ち出の小鎚＝原罪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [0]:{味方「打ち出の小鎚」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[エンゲージ]\n[宣言] [0]:{味方「打ち出の小鎚」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0166"
 }

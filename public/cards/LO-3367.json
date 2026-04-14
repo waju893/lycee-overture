@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-3367",
+  "title": "自転車探し",
+  "subName": "",
+  "name": "自転車探し",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 味方キャラの攻撃中、または相手ターン中に使用する。自分のデッキを１枚破棄する。このエリアを破棄する。破棄したとき、[月月]を発生する。このコストは手札宣言能力を持つキャラの登場にのみ支払える。\n※「自転車探し」は自分の場に１枚まで配置可能",
+  "textKr": "[コスト] 味方キャラの攻撃中、または相手ターン中に使用する。自分のデッキを１枚破棄する。このエリアを破棄する。破棄したとき、[月月]を発生する。このコストは手札宣言能力を持つキャラの登場にのみ支払える。\n※「自転車探し」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3367"
 }

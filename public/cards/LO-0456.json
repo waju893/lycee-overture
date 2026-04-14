@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0456",
+  "title": "今は脆き雪花の壁",
+  "subName": "シールダー／マシュ・キリエライト",
+  "name": "今は脆き雪花の壁 シールダー／マシュ・キリエライト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[コスト] 自分のデッキを１枚破棄する。このキャラを行動済みにする。行動済みにしたとき、[月月]を発生する。",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。このキャラを行動済みにする。行動済みにしたとき、[月月]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0456"
 }

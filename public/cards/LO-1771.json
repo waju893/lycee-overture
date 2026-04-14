@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1771",
+  "title": "ヤマト八柱将『影光のウォシス』",
+  "subName": "ウォシス",
+  "name": "ヤマト八柱将『影光のウォシス』 ウォシス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[宣言] [0]:バトル中に使用できない。{味方「シチーリヤ」１体または味方「ミルージュ」１体}を破棄する。破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２し、このキャラは[ボーナス:[自分のデッキを２枚回復する。]]を得る。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。{味方「シチーリヤ」１体または味方「ミルージュ」１体}を破棄する。破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２し、このキャラは[ボーナス:[自分のデッキを２枚回復する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1771"
 }

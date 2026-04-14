@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2255",
+  "title": "愛の前立",
+  "subName": "米沢城",
+  "name": "愛の前立 米沢城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体にＤＰ－１する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2255"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3591",
+  "title": "全てにおいてミニマム",
+  "subName": "九条 優花",
+  "name": "全てにおいてミニマム 九条 優花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]]\n[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
+  "textKr": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]]\n[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3591"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0507",
+  "title": "蹴り穿つ死翔の槍",
+  "subName": "アサシン／スカサハ",
+  "name": "蹴り穿つ死翔の槍 アサシン／スカサハ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D1]:自ターン中に使用する。このキャラにＡＰ＋１する。",
+  "textKr": "[宣言] [D1]:自ターン中に使用する。このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0507"
 }

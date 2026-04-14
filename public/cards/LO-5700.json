@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5700",
+  "title": "南部グループ副総裁",
+  "subName": "本間 礼次郎",
+  "name": "南部グループ副総裁 本間 礼次郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [月]:相手攻撃キャラ１体にＤＭＧ－４または相手防御キャラ１体にＡＰ－４またはＤＰ－４する。",
+  "textKr": "[手札宣言] [月]:相手攻撃キャラ１体にＤＭＧ－４または相手防御キャラ１体にＡＰ－４またはＤＰ－４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5700"
 }

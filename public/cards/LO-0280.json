@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0280",
+  "title": "風と一緒に流れてきたのさ",
+  "subName": "ミカ",
+  "name": "風と一緒に流れてきたのさ ミカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:相手キャラの登場の宣言に対応して使用する。ターン終了時まで、そのキャラでサポートを宣言できない。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:相手キャラの登場の宣言に対応して使用する。ターン終了時まで、そのキャラでサポートを宣言できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0280"
 }

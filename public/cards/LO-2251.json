@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2251",
+  "title": "フランスの庭",
+  "subName": "シャンボール城",
+  "name": "フランスの庭 シャンボール城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [月月月]:{相手キャラ１体}のＤＭＧを０にする。この能力は失われる。",
+  "textKr": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [月月月]:{相手キャラ１体}のＤＭＧを０にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2251"
 }

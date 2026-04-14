@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5215",
+  "title": "社交的で前向き",
+  "subName": "川名 みさき",
+  "name": "社交的で前向き 川名 みさき",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手の宣言に対応して使用できない。味方『ONE.』キャラが３体以上の場合、このキャラを破棄する。破棄したとき、自分のデッキの上のカード３枚を見て、そのうち１枚を手札に入れる。残りの２枚を好きな順番でデッキの下に置く。",
+  "textKr": "[宣言] [0]:相手の宣言に対応して使用できない。味方『ONE.』キャラが３体以上の場合、このキャラを破棄する。破棄したとき、自分のデッキの上のカード３枚を見て、そのうち１枚を手札に入れる。残りの２枚を好きな順番でデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5215"
 }

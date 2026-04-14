@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0017",
+  "title": "幻想の鉄処女",
+  "subName": "アサシン／カーミラ",
+  "name": "幻想の鉄処女 アサシン／カーミラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T雪雪無]:キャラ１体を破棄する。この能力は失われる。",
+  "textKr": "[宣言] [T雪雪無]:キャラ１体を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0017"
 }

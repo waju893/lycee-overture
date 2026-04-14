@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5483",
+  "title": "お兄ちゃん至上主義",
+  "subName": "涼花",
+  "name": "お兄ちゃん至上主義 涼花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方キャラがこのキャラの前後に登場している場合、このキャラにＳＰ＋２する。",
+  "textKr": "[宣言] [0]:味方キャラがこのキャラの前後に登場している場合、このキャラにＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5483"
 }

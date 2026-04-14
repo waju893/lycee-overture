@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-1435",
+  "title": "イシュタルカップ",
+  "subName": "",
+  "name": "イシュタルカップ",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[装備制限] コストが４点以下の＜サーヴァント＞キャラ\n[宣言] [0]:バトル中に使用する。バトル終了時まで、このキャラにＤＭＧ＋１する。このキャラは[ガッツ:[0]]を得る。",
+  "textKr": "[装備制限] コストが４点以下の＜サーヴァント＞キャラ\n[宣言] [0]:バトル中に使用する。バトル終了時まで、このキャラにＤＭＧ＋１する。このキャラは[ガッツ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1435"
 }

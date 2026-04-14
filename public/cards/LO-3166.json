@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3166",
+  "title": "『屍食部隊』",
+  "subName": "リーダー",
+  "name": "『屍食部隊』 リーダー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 1,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:{コストが５点以上の味方キャラ１体または味方「リーダー」または「ナル」または「清ヶ」または「薬丸」１体}にＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:{コストが５点以上の味方キャラ１体または味方「リーダー」または「ナル」または「清ヶ」または「薬丸」１体}にＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3166"
 }

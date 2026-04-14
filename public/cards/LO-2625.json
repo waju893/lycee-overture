@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2625",
+  "title": "頼りになるけど困った先輩",
+  "subName": "弥生・B・ルートウィッジ",
+  "name": "頼りになるけど困った先輩 弥生・B・ルートウィッジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「夢の主」１枚を探し味方フィールドに配置できる。\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、このキャラを{味方フィールド}に移動する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「夢の主」１枚を探し味方フィールドに配置できる。\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、このキャラを{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2625"
 }

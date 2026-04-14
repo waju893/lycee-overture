@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4949",
+  "title": "数学担当",
+  "subName": "ティア・ホーエンヴェルフェン",
+  "name": "数学担当 ティア・ホーエンヴェルフェン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラがダウンしたとき、１枚ドローできる。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラがダウンしたとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4949"
 }

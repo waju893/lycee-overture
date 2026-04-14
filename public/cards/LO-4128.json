@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4128",
+  "title": "全てを知る者",
+  "subName": "ジュリエット・ジルベール",
+  "name": "全てを知る者 ジュリエット・ジルベール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花花]:味方『悠久のカンパネラ』キャラ全てにＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "textKr": "[宣言] [花花]:味方『悠久のカンパネラ』キャラ全てにＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4128"
 }

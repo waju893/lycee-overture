@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5365",
+  "title": "可愛くても男の子",
+  "subName": "笹山 一馬",
+  "name": "可愛くても男の子 笹山 一馬",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪雪]:自分のゴミ箱または自分のデッキからＥＸが２の[MAD][雪]イベント１枚を探し公開して手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [雪雪]:自分のゴミ箱または自分のデッキからＥＸが２の[MAD][雪]イベント１枚を探し公開して手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5365"
 }

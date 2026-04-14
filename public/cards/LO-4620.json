@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4620",
+  "title": "伝説の人形師",
+  "subName": "ミゼ・アルトワーズ",
+  "name": "伝説の人形師 ミゼ・アルトワーズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 5,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}のＡＰまたはＤＰに－[持ち主が自分のアイテムの数]する。この能力は失われる。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}のＡＰまたはＤＰに－[持ち主が自分のアイテムの数]する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4620"
 }

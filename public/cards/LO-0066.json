@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0066",
+  "title": "射殺す百頭",
+  "subName": "バーサーカー／ヘラクレス",
+  "name": "射殺す百頭 バーサーカー／ヘラクレス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,5 +21,12 @@
   "ap": 6,
   "dp": 6,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0066"
 }

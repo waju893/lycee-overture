@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2483",
+  "title": "花の聖神官",
+  "subName": "クリス",
+  "name": "花の聖神官 クリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラが登場したターン中に使用する。自分のデッキを１枚破棄する。[雪雪]を発生する。このコストはコストが２点以下のキャラの登場にのみ支払える。\n[誘発] 自分の効果で味方キャラが場を離れたとき、自分のデッキを２枚回復し、シャッフルする。この能力は失われる。",
+  "textKr": "[コスト] このキャラが登場したターン中に使用する。自分のデッキを１枚破棄する。[雪雪]を発生する。このコストはコストが２点以下のキャラの登場にのみ支払える。\n[誘発] 自分の効果で味方キャラが場を離れたとき、自分のデッキを２枚回復し、シャッフルする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2483"
 }

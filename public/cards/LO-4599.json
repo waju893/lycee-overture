@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4599",
+  "title": "天眼通",
+  "subName": "汐崎 聖",
+  "name": "天眼通 汐崎 聖",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分のコストが１点以上のイベント・手札宣言能力を使用したとき、自分のデッキの上のカード２枚を見て、そのうち１枚を手札に入れる。入れたとき、自分の手札を１枚デッキの上に置く。",
+  "textKr": "[誘発] 自ターン中、自分のコストが１点以上のイベント・手札宣言能力を使用したとき、自分のデッキの上のカード２枚を見て、そのうち１枚を手札に入れる。入れたとき、自分の手札を１枚デッキの上に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4599"
 }

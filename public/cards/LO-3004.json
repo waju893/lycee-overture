@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3004",
+  "title": "本物の沢渡弓月",
+  "subName": "松田 直子",
+  "name": "本物の沢渡弓月 松田 直子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＡＰ＋１する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3004"
 }

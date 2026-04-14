@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2061",
+  "title": "実り豊かな聖山",
+  "subName": "椿姫 こはね",
+  "name": "実り豊かな聖山 椿姫 こはね",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:バトル中に使用できない。このキャラを手札に入れる。",
+  "textKr": "[宣言] [D1]:バトル中に使用できない。このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2061"
 }

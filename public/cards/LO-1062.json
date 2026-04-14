@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1062",
+  "title": "ウサギさんチームの車長",
+  "subName": "澤 梓",
+  "name": "ウサギさんチームの車長 澤 梓",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキからサブネームに「ウサギさんチーム」を含むキャラ１体を探し公開して手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキからサブネームに「ウサギさんチーム」を含むキャラ１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1062"
 }

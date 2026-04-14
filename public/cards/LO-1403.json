@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1403",
+  "title": "移り気への楔",
+  "subName": "アーチャー／オリオン",
+  "name": "移り気への楔 アーチャー／オリオン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:{このキャラに隣接した味方キャラ１体}は[オーダーチェンジ:[0]]を得る。",
+  "textKr": "[宣言] [0]:{このキャラに隣接した味方キャラ１体}は[オーダーチェンジ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1403"
 }

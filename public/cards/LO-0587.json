@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0587",
+  "title": "囁く声が聞きたくて",
+  "subName": "卯花之佐久夜姫",
+  "name": "囁く声が聞きたくて 卯花之佐久夜姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[リカバリー:[１枚ドローする。]]\n[宣言] [花無無]:{味方キャラ１体}を行動済みにする。行動済みにしたとき、{コストが２点以下の味方キャラ１体}を未行動にする。",
+  "textKr": "[リカバリー:[１枚ドローする。]]\n[宣言] [花無無]:{味方キャラ１体}を行動済みにする。行動済みにしたとき、{コストが２点以下の味方キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0587"
 }

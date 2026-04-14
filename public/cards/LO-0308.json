@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0308",
+  "title": "プラウダ高校",
+  "subName": "ノンナ",
+  "name": "プラウダ高校 ノンナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "プラウダ",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「カチューシャ」１体を手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「カチューシャ」１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0308"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0746",
+  "title": "龍の息吹",
+  "subName": "龍王",
+  "name": "龍の息吹 龍王",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [このキャラを破棄する]:{相手キャラ１体}のＡＰとＤＰを０にする。",
+  "textKr": "[宣言] [このキャラを破棄する]:{相手キャラ１体}のＡＰとＤＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0746"
 }

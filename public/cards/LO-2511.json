@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2511",
+  "title": "佳麗なる踊り子",
+  "subName": "フランチェスカ",
+  "name": "佳麗なる踊り子 フランチェスカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果でこのキャラが登場したとき、１枚ドローできる。",
+  "textKr": "[誘発] 自分の効果でこのキャラが登場したとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2511"
 }

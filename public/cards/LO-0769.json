@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0769",
+  "title": "波乱への招待",
+  "subName": "エリス",
+  "name": "波乱への招待 エリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [このキャラを破棄する]:相手の能力の宣言に対応して使用する。その宣言の解決は失敗する。１枚ドローする。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [このキャラを破棄する]:相手の能力の宣言に対応して使用する。その宣言の解決は失敗する。１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0769"
 }

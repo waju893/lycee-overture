@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1613",
+  "title": "偽りの学生会長",
+  "subName": "三司 あやせ",
+  "name": "偽りの学生会長 三司 あやせ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "－●－－●－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:相手はこの宣言に対応して宣言できない。{味方キャラ１体}を行動済みにする。行動済みにしたとき、このキャラは次の能力を得る。\n[コスト] [宙]を発生する。このコストはコストが２点以上のキャラの登場にのみ支払える。",
+  "textKr": "[宣言] [D1]:相手はこの宣言に対応して宣言できない。{味方キャラ１体}を行動済みにする。行動済みにしたとき、このキャラは次の能力を得る。\n[コスト] [宙]を発生する。このコストはコストが２点以上のキャラの登場にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1613"
 }

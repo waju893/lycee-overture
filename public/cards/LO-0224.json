@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0224",
+  "title": "ワールドエンドブレイズ",
+  "subName": "レヴァンテイン＝ヘル",
+  "name": "ワールドエンドブレイズ レヴァンテイン＝ヘル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    7
-  ],
-  "keyEffects": [
-    2,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][ステップ:[0]]\n[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。",
+  "textKr": "[エンゲージ][ステップ:[0]]\n[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0224"
 }

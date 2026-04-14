@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3218",
+  "title": "LEVEL5 第三位",
+  "subName": "御坂 美琴",
+  "name": "LEVEL5 第三位 御坂 美琴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{ＤＭＧが２以下の味方キャラ１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{ＤＭＧが２以下の味方キャラ１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3218"
 }

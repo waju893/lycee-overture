@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3720",
+  "title": "錬金技工士",
+  "subName": "マキナ",
+  "name": "錬金技工士 マキナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:自ターン中に使用する。{相手キャラ１体}にＤＰ－２する。この能力は失われる。",
+  "textKr": "[宣言] [雪]:自ターン中に使用する。{相手キャラ１体}にＤＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3720"
 }

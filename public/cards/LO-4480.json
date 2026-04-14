@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4480",
+  "title": "まじめでお堅い担任教師",
+  "subName": "芹沢 よしこ",
+  "name": "まじめでお堅い担任教師 芹沢 よしこ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分にシールド＋１する。味方ＡＦキャラ１体にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分にシールド＋１する。味方ＡＦキャラ１体にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4480"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3388",
+  "title": "ハッピーウェディング",
+  "subName": "寿々苗 穂海",
+  "name": "ハッピーウェディング 寿々苗 穂海",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ]\n[手札宣言] [無無無]:相手ターン中に使用する。{味方[HOK]キャラ１体}を未行動にする。",
+  "textKr": "[エンゲージ]\n[手札宣言] [無無無]:相手ターン中に使用する。{味方[HOK]キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3388"
 }

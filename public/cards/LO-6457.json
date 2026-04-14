@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6457",
+  "title": "正体不明の連続殺人犯",
+  "subName": "ディザスター",
+  "name": "正体不明の連続殺人犯 ディザスター",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 6,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが場を離れたとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し公開して手札に入れることができる。",
+  "textKr": "[誘発] このキャラが場を離れたとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し公開して手札に入れることができる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6457"
 }

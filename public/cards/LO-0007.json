@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0007",
+  "title": "百合の王冠に栄光あれ",
+  "subName": "ライダー／マリー・アントワネット",
+  "name": "百合の王冠に栄光あれ ライダー／マリー・アントワネット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0007"
 }

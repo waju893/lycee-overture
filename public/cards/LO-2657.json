@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2657",
+  "title": "夢を覚えている体質",
+  "subName": "真深 眠",
+  "name": "夢を覚えている体質 真深 眠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のＤＰが４以上の味方[花]キャラ１体}にＤＭＧ＋１し、ＡＰ＋１またはＤＰ＋１する。\n[宣言] [花]:{味方[花]キャラ１体}にＤＰ＋３する。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のＤＰが４以上の味方[花]キャラ１体}にＤＭＧ＋１し、ＡＰ＋１またはＤＰ＋１する。\n[宣言] [花]:{味方[花]キャラ１体}にＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2657"
 }

@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-2720",
+  "title": "夢の主",
+  "subName": "",
+  "name": "夢の主",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手の効果以外で味方[日]キャラが場を離れたとき、自分のゴミ箱のカード１枚をこのエリアの下に置ける。\n[宣言] [0]:このエリアの下のカード全てを破棄する。２枚以上破棄した場合、１枚ドローする。\n※「夢の主」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] 相手の効果以外で味方[日]キャラが場を離れたとき、自分のゴミ箱のカード１枚をこのエリアの下に置ける。\n[宣言] [0]:このエリアの下のカード全てを破棄する。２枚以上破棄した場合、１枚ドローする。\n※「夢の主」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2720"
 }

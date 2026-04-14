@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2083",
+  "title": "未来の形",
+  "subName": "乙音 ニコル",
+  "name": "未来の形 乙音 ニコル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+  "textKr": "[誘発] 味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2083"
 }

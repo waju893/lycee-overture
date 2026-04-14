@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3540",
+  "title": "天才ピアニスト",
+  "subName": "風美 由飛",
+  "name": "天才ピアニスト 風美 由飛",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、元のＤＰが１以上の味方[日]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。{元のＤＰが１以上の味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、元のＤＰが１以上の味方[日]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。{元のＤＰが１以上の味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3540"
 }

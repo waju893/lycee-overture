@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1226",
+  "title": "お見舞い",
+  "subName": "伊吹 公子",
+  "name": "お見舞い 伊吹 公子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    7,
-    12
-  ],
-  "keyEffects": [
-    7,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ][サポーター:[花花]]\n[宣言] [0]:自分の「願いが叶う場所」置き場のカード２枚を破棄する。破棄したとき、味方攻撃キャラ１体にバトル終了時までＤＭＧ＋１する。",
+  "textKr": "[エンゲージ][サポーター:[花花]]\n[宣言] [0]:自分の「願いが叶う場所」置き場のカード２枚を破棄する。破棄したとき、味方攻撃キャラ１体にバトル終了時までＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1226"
 }

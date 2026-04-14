@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0493",
+  "title": "剣を摂れ、銀色の腕",
+  "subName": "セイバー／ベディヴィエール",
+  "name": "剣を摂れ、銀色の腕 セイバー／ベディヴィエール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T花花][このキャラを破棄する]:{味方＜サーヴァント＞キャラ１体}を未行動にする。",
+  "textKr": "[宣言] [T花花][このキャラを破棄する]:{味方＜サーヴァント＞キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0493"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2456",
+  "title": "桃園の誓い・張",
+  "subName": "張飛・鈴々",
+  "name": "桃園の誓い・張 張飛・鈴々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[ステップ:[0]]\n[宣言] [D1]:{味方＜蜀＞キャラ１体}にＡＰ＋１する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [D1]:{味方＜蜀＞キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2456"
 }

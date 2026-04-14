@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6327",
+  "title": "自衛軍の指令官",
+  "subName": "沖 央軌",
+  "name": "自衛軍の指令官 沖 央軌",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 4,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。味方『スマガ シリーズ』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。味方『スマガ シリーズ』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6327"
 }

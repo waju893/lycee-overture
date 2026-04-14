@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1357",
+  "title": "ダブルクロス",
+  "subName": "アサシン／マタ・ハリ",
+  "name": "ダブルクロス アサシン／マタ・ハリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、ＡＰまたはＤＰが元の値より低い相手キャラが登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、ＡＰまたはＤＰが元の値より低い相手キャラが登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1357"
 }

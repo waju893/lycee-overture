@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0309",
+  "title": "大学選抜",
+  "subName": "島田 愛里寿",
+  "name": "大学選抜 島田 愛里寿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「ボコ」１枚を無償でこのキャラに装備する。",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「ボコ」１枚を無償でこのキャラに装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0309"
 }

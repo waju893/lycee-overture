@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3340",
+  "title": "R-ウィング",
+  "subName": "大司教",
+  "name": "R-ウィング 大司教",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:サブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」全てにＡＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:サブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3340"
 }

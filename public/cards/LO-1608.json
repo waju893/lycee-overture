@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1608",
+  "title": "世のため人のため",
+  "subName": "二条院 羽月",
+  "name": "世のため人のため 二条院 羽月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「愛用の傘」１枚をこのキャラに無償で装備できる。装備しない場合、自分のデッキから「愛用の傘」１枚を探しこのキャラに無償で装備できる。\n[常時] このキャラが「愛用の傘」を装備している場合、このキャラはアイテムを２枚まで装備できる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「愛用の傘」１枚をこのキャラに無償で装備できる。装備しない場合、自分のデッキから「愛用の傘」１枚を探しこのキャラに無償で装備できる。\n[常時] このキャラが「愛用の傘」を装備している場合、このキャラはアイテムを２枚まで装備できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1608"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0046",
+  "title": "麗しの風貌",
+  "subName": "セイバー／シュヴァリエ・デオン",
+  "name": "麗しの風貌 セイバー／シュヴァリエ・デオン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [花花花][このキャラを破棄する]:味方ＡＦキャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [花花花][このキャラを破棄する]:味方ＡＦキャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0046"
 }

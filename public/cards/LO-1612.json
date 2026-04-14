@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1612",
+  "title": "意外と強引",
+  "subName": "天霧 夕音",
+  "name": "意外と強引 天霧 夕音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。このバトル終了時、このキャラを未行動にする。",
+  "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。このバトル終了時、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1612"
 }

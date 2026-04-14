@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0690",
+  "title": "元気全開",
+  "subName": "三好 双葉",
+  "name": "元気全開 三好 双葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[アグレッシブ]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体を行動済みにする。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0690"
 }

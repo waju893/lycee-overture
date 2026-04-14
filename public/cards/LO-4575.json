@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4575",
+  "title": "“光”の魔女",
+  "subName": "アイリス・ラインフェルト",
+  "name": "“光”の魔女 アイリス・ラインフェルト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てがコストが２点以下の場合、１枚ドローする。\n[宣言] [0]:以下から１つを選び処理する。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てがコストが２点以下の場合、１枚ドローする。\n[宣言] [0]:以下から１つを選び処理する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4575"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2559",
+  "title": "洗濯板",
+  "subName": "ラディス",
+  "name": "洗濯板 ラディス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [0]:このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [0]:このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2559"
 }

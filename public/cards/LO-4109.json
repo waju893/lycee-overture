@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4109",
+  "title": "支配の玖光",
+  "subName": "",
+  "name": "支配の玖光",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "L",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star",
@@ -21,5 +24,12 @@
   "ap": 6,
   "dp": 6,
   "sp": 0,
-  "dmg": 6
+  "dmg": 6,
+  "ex": 2,
+  "costRaw": "無無無無無無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。\n※このカードは能力を持たないキャラとしてゲームで使用できます。",
+  "textKr": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。\n※このカードは能力を持たないキャラとしてゲームで使用できます。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4109"
 }

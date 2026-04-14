@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1451",
+  "title": "うつけ殺法",
+  "subName": "バーサーカー／織田信長",
+  "name": "うつけ殺法 バーサーカー／織田信長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D2]:このキャラの防御中に使用する。このキャラを{このキャラに隣接した味方フィールド}に移動する。",
+  "textKr": "[宣言] [D2]:このキャラの防御中に使用する。このキャラを{このキャラに隣接した味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1451"
 }

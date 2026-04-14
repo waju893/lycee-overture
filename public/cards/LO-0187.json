@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0187",
+  "title": "リトルレイジープレイヤー",
+  "subName": "ロイヤルクラウン",
+  "name": "リトルレイジープレイヤー ロイヤルクラウン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[２枚ドローする。]]",
+  "textKr": "[エンゲージ:[２枚ドローする。]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0187"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3136",
+  "title": "知的傭兵",
+  "subName": "カイツ＝ノックレーベン",
+  "name": "知的傭兵 カイツ＝ノックレーベン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「食蜂操祈」が登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方「食蜂操祈」が登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3136"
 }

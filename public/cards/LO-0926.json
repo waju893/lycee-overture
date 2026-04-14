@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0926",
+  "title": "ちっちゃな担任教師",
+  "subName": "野乃原 結",
+  "name": "ちっちゃな担任教師 野乃原 結",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラのＳＰが３以上の場合、{味方キャラ１体}にＳＰ＋１する。",
+  "textKr": "[宣言] [0]:このキャラのＳＰが３以上の場合、{味方キャラ１体}にＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0926"
 }

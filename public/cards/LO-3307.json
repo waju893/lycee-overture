@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3307",
+  "title": "誇り高きブラックホーク族の一員",
+  "subName": "杉村 北斗",
+  "name": "誇り高きブラックホーク族の一員 杉村 北斗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{アイテムを装備している味方キャラ１体}にＤＰ＋１する。そのキャラが「花之宮瑞穂」の場合、そのキャラにＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{アイテムを装備している味方キャラ１体}にＤＰ＋１する。そのキャラが「花之宮瑞穂」の場合、そのキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3307"
 }

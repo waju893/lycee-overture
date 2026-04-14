@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5181",
+  "title": "双影無双",
+  "subName": "ウルゥル&サラァナ",
+  "name": "双影無双 ウルゥル&サラァナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方[日]または『うたわれるもの シリーズ』キャラが４体以上の場合、１枚ドローする。\n[宣言] [0]:味方キャラ１体にＡＰ＋２または味方『うたわれるもの シリーズ』キャラ１体にＤＰ＋２する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方[日]または『うたわれるもの シリーズ』キャラが４体以上の場合、１枚ドローする。\n[宣言] [0]:味方キャラ１体にＡＰ＋２または味方『うたわれるもの シリーズ』キャラ１体にＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5181"
 }

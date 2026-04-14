@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0900",
+  "title": "汐美学園生徒会長",
+  "subName": "望月 真帆",
+  "name": "汐美学園生徒会長 望月 真帆",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:相手の宣言に対応して使用できない。{自分のゴミ箱の「多岐川葵」１体}を登場する。この能力は失われる。",
+  "textKr": "[宣言] [月]:相手の宣言に対応して使用できない。{自分のゴミ箱の「多岐川葵」１体}を登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0900"
 }

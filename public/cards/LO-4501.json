@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4501",
+  "title": "エーリュシオの貴族の娘",
+  "subName": "ニコ",
+  "name": "エーリュシオの貴族の娘 ニコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「折見公輝」が登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「折見公輝」が登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4501"
 }

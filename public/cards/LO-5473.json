@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5473",
+  "title": "性指導員の助手",
+  "subName": "結城 愛莉",
+  "name": "性指導員の助手 結城 愛莉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラで『催眠性指導』キャラにサポートをしたとき、対象のキャラにＡＰ－１・ＤＰ＋１する。",
+  "textKr": "[誘発] このキャラで『催眠性指導』キャラにサポートをしたとき、対象のキャラにＡＰ－１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5473"
 }

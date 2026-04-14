@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1371",
+  "title": "少女の捜し物",
+  "subName": "ランサー／パールヴァティー",
+  "name": "少女の捜し物 ランサー／パールヴァティー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 1,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[サポーター:[D1]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[サポーター:[D1]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1371"
 }

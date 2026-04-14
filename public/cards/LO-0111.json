@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0111",
+  "title": "非情なる暴君",
+  "subName": "セイバー／アルトリア・ペンドラゴン〔オルタ〕",
+  "name": "非情なる暴君 セイバー／アルトリア・ペンドラゴン〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 2,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方キャラ１体を未行動にする。",
+  "textKr": "[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方キャラ１体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0111"
 }

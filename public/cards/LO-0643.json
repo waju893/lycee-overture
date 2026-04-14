@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0643",
+  "title": "パワフルガール",
+  "subName": "稲叢 莉音",
+  "name": "パワフルガール 稲叢 莉音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 3,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0643"
 }

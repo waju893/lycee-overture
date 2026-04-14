@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3932",
+  "title": "甲斐の片目",
+  "subName": "山本 湖衣 晴幸",
+  "name": "甲斐の片目 山本 湖衣 晴幸",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[日]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方[日]キャラが３体以上登場している場合、１枚ドローする。",
+  "textKr": "[サイドステップ:[日]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方[日]キャラが３体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3932"
 }

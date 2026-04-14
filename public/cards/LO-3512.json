@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3512",
+  "title": "和菓子処すゞなみ十七代目当主",
+  "subName": "涼波 紬",
+  "name": "和菓子処すゞなみ十七代目当主 涼波 紬",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:{味方「涼波かすり」１体}にＡＰ＋２する。この能力は失われる。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:{味方「涼波かすり」１体}にＡＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3512"
 }

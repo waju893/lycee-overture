@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4092",
+  "title": "斬・凍牙疾風",
+  "subName": "閃忍スバル",
+  "name": "斬・凍牙疾風 閃忍スバル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [C2]:{[チャージ]を持つ味方[日]キャラ１体}にＡＰ＋２する。",
+  "textKr": "[チャージ:２]\n[宣言] [C2]:{[チャージ]を持つ味方[日]キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4092"
 }

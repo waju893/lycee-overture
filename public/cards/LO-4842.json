@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4842",
+  "title": "アポロ",
+  "subName": "",
+  "name": "アポロ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙]:{味方『ティンクルスターナイツ』キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[宣言] [宙]:{味方『ティンクルスターナイツ』キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4842"
 }

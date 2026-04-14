@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0815",
+  "title": "サンスプレッド",
+  "subName": "スヴァローグ",
+  "name": "サンスプレッド スヴァローグ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -19,11 +22,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日無無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "神姫",
+  "text": "[サイドステップ:[0]]\n[宣言] [日日]:{味方ＤＦキャラ１体}にＡＰ＋２する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [日日]:{味方ＤＦキャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0815"
 }

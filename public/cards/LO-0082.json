@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0082",
+  "title": "血斧王",
+  "subName": "バーサーカー／エイリーク・ブラッドアクス",
+  "name": "血斧王 バーサーカー／エイリーク・ブラッドアクス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキを３枚破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキを３枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0082"
 }

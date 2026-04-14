@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1027",
+  "title": "日本戦車道連盟審判員",
+  "subName": "篠川 香音",
+  "name": "日本戦車道連盟審判員 篠川 香音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "日本戦車道連盟",
+  "text": "[誘発] 自分の効果で相手キャラを破棄したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 自分の効果で相手キャラを破棄したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1027"
 }

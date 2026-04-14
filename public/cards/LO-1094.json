@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1094",
+  "title": "スピード大好き",
+  "subName": "ローズヒップ",
+  "name": "スピード大好き ローズヒップ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[アシスト]\n[宣言] [無]:このキャラにＡＰ＋[味方＜聖グロリアーナ＞キャラの数]する。",
+  "textKr": "[アシスト]\n[宣言] [無]:このキャラにＡＰ＋[味方＜聖グロリアーナ＞キャラの数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1094"
 }

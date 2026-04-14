@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0679",
+  "title": "学園デビュー",
+  "subName": "因幡 めぐる",
+  "name": "学園デビュー 因幡 めぐる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [0]:自分の手札が０枚の場合、このキャラにＡＰ＋１する。",
+  "textKr": "[宣言] [0]:自分の手札が０枚の場合、このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0679"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0541",
+  "title": "天巧星",
+  "subName": "アサシン／新宿のアサシン",
+  "name": "天巧星 アサシン／新宿のアサシン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[ステップ:[0]]\n[宣言] [T日]:{味方キャラ１体}にＤＭＧ＋２する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [T日]:{味方キャラ１体}にＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0541"
 }

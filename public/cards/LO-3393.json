@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3393",
+  "title": "恋愛解禁",
+  "subName": "山吹 芳乃",
+  "name": "恋愛解禁 山吹 芳乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ]\n[誘発] このキャラがダウンしたとき、味方[HOK]キャラ１体にＡＰ＋２する。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラがダウンしたとき、味方[HOK]キャラ１体にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3393"
 }

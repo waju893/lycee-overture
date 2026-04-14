@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3227",
+  "title": "性格はお子さま",
+  "subName": "ラストオーダー",
+  "name": "性格はお子さま ラストオーダー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。{コストが３点以上の味方[雪]キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。{コストが３点以上の味方[雪]キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3227"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0893",
+  "title": "ロストテクノロジー",
+  "subName": "フィアッカ・マルグリット",
+  "name": "ロストテクノロジー フィアッカ・マルグリット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。このキャラをデッキの下に置く。{自分のゴミ箱の「リースリット・ノエル」１体}を無償で登場する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。このキャラをデッキの下に置く。{自分のゴミ箱の「リースリット・ノエル」１体}を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0893"
 }

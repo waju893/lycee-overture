@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3657",
+  "title": "おちついている双子の妹",
+  "subName": "ニナ＝ジェミニス",
+  "name": "おちついている双子の妹 ニナ＝ジェミニス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方「レナ＝ジェミニス」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方「レナ＝ジェミニス」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3657"
 }

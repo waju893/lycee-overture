@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2570",
+  "title": "パルヴィンの太陽",
+  "subName": "ルージェニア",
+  "name": "パルヴィンの太陽 ルージェニア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。\n[宣言] [D1]:このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、{味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。\n[宣言] [D1]:このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、{味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2570"
 }

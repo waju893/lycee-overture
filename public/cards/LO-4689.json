@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4689",
+  "title": "「前の世界」の相棒",
+  "subName": "メフィスト",
+  "name": "「前の世界」の相棒 メフィスト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方[宙]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [宙]:このキャラにＡＰ＋４・ＤＰ＋４・ＤＭＧ＋４する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方[宙]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [宙]:このキャラにＡＰ＋４・ＤＰ＋４・ＤＭＧ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4689"
 }

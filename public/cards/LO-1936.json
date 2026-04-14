@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1936",
+  "title": "魔神になりそこねた男",
+  "subName": "オッレルス",
+  "name": "魔神になりそこねた男 オッレルス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「右方のフィアンマ」１体を手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「右方のフィアンマ」１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1936"
 }

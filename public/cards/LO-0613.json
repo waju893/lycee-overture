@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0613",
+  "title": "冷静でクールな女医",
+  "subName": "駒川 みづは",
+  "name": "冷静でクールな女医 駒川 みづは",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "star",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] キャラがアイテムを装備したとき、自分のデッキを１枚回復できる。",
+  "textKr": "[誘発] キャラがアイテムを装備したとき、自分のデッキを１枚回復できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0613"
 }

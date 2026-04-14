@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2765",
+  "title": "主人公の実母",
+  "subName": "桧崎 まりあ",
+  "name": "主人公の実母 桧崎 まりあ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [0]:{味方防御[雪]キャラ１体}にＤＰ＋２する。",
+  "textKr": "[手札宣言] [0]:{味方防御[雪]キャラ１体}にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2765"
 }

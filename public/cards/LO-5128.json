@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5128",
+  "title": "蹂躙せし覇王",
+  "subName": "リンネ",
+  "name": "蹂躙せし覇王 リンネ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,11 +22,11 @@
   "dp": 7,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [宙宙宙]:このキャラのＡＰとＤＰに＋[味方『うたわれるもの ロストフラグ』キャラの数]する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [宙宙宙]:このキャラのＡＰとＤＰに＋[味方『うたわれるもの ロストフラグ』キャラの数]する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5128"
 }

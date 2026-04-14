@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6556",
+  "title": "ツインテールの悪魔",
+  "subName": "月野 舞",
+  "name": "ツインテールの悪魔 月野 舞",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [C1]:{味方[日]キャラ１体}にＡＰ＋２・ＤＰ－２する。（１ターンに２回まで使用可能）\n[誘発] このキャラが手札から登場したとき、このキャラに２枚チャージできる。しない場合、相手は相手の手札を１枚デッキの下に置く。\n[誘発] 自ターン開始時、このキャラに１枚チャージできる。",
+  "textKr": "[宣言] [C1]:{味方[日]キャラ１体}にＡＰ＋２・ＤＰ－２する。（１ターンに２回まで使用可能）\n[誘発] このキャラが手札から登場したとき、このキャラに２枚チャージできる。しない場合、相手は相手の手札を１枚デッキの下に置く。\n[誘発] 自ターン開始時、このキャラに１枚チャージできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6556"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3535",
+  "title": "黒髪のヴァルキリー",
+  "subName": "津崎 青葉",
+  "name": "黒髪のヴァルキリー 津崎 青葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [月月月]:コストが５点以上の味方[月]キャラの攻撃中に使用する。対戦キャラにＡＰ－５・ＤＰ－５する。",
+  "textKr": "[手札宣言] [月月月]:コストが５点以上の味方[月]キャラの攻撃中に使用する。対戦キャラにＡＰ－５・ＤＰ－５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3535"
 }

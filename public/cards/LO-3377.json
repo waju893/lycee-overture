@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3377",
+  "title": "パタンナー",
+  "subName": "小倉 朝日",
+  "name": "パタンナー 小倉 朝日",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方[雪]キャラがこのキャラの前後に登場している場合、１枚ドローする。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方[雪]キャラがこのキャラの前後に登場している場合、１枚ドローする。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3377"
 }

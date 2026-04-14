@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6171",
+  "title": "過去の縛鎖から解き放たれた才媛",
+  "subName": "メア・アシュリーペッカー",
+  "name": "過去の縛鎖から解き放たれた才媛 メア・アシュリーペッカー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,13 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:２]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[宣言] [C1][日日]:以下から１つを選び処理する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「『意志』」１枚を探し公開して手札に入れる。",
+  "textKr": "[ジャンプ:[0]][チャージ:２]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[宣言] [C1][日日]:以下から１つを選び処理する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「『意志』」１枚を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6171"
 }

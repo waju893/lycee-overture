@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-1120",
+  "title": "巨大モンブラン",
+  "subName": "",
+  "name": "巨大モンブラン",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "BC自由",
+  "text": "[誘発] このキャラをエンゲージ登場によって破棄したとき、相手キャラ１体を手札に入れる。",
+  "textKr": "[誘発] このキャラをエンゲージ登場によって破棄したとき、相手キャラ１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1120"
 }

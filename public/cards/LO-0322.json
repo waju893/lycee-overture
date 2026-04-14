@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0322",
+  "title": "完璧な情報網？",
+  "subName": "アリサ",
+  "name": "完璧な情報網？ アリサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サンダース",
+  "text": "[アシスト]\n[宣言] [T無無無無]:このターン中、このキャラを自分の能力の対象に指定している場合、{キャラ１体}を行動済みにする。",
+  "textKr": "[アシスト]\n[宣言] [T無無無無]:このターン中、このキャラを自分の能力の対象に指定している場合、{キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0322"
 }

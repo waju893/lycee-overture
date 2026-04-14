@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6323",
+  "title": "異邦人",
+  "subName": "佐草 陽水",
+  "name": "異邦人 佐草 陽水",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:{味方「アリデッド」１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:{味方「アリデッド」１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6323"
 }

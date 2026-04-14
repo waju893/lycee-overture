@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2828",
+  "title": "Girls Dead Monster",
+  "subName": "ひさ子",
+  "name": "Girls Dead Monster ひさ子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+  "textKr": "[アシスト]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2828"
 }

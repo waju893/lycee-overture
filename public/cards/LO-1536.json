@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1536",
+  "title": "帝国重装砲兵",
+  "subName": "エルミラ",
+  "name": "帝国重装砲兵 エルミラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [このキャラを破棄する]:{味方ＡＦキャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [このキャラを破棄する]:{味方ＡＦキャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1536"
 }

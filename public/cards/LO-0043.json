@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0043",
+  "title": "流星一条",
+  "subName": "アーチャー／アーラシュ",
+  "name": "流星一条 アーチャー／アーラシュ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラでサポートをしたとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0043"
 }

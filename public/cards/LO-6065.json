@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6065",
+  "title": "行動する乙女",
+  "subName": "雪村 小町",
+  "name": "行動する乙女 雪村 小町",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,13 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    18
-  ],
-  "keyEffects": [
-    5,
-    18
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サプライズ][ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローできる。しない場合、相手キャラ１体にＡＰ－４またはＤＰ－４する。\n[誘発] 自ターン中、相手がコストが１点以上のイベント・手札宣言能力を使用したとき、このキャラが登場したバトル中でない場合、味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[サプライズ][ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローできる。しない場合、相手キャラ１体にＡＰ－４またはＤＰ－４する。\n[誘発] 自ターン中、相手がコストが１点以上のイベント・手札宣言能力を使用したとき、このキャラが登場したバトル中でない場合、味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6065"
 }

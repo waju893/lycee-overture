@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0849",
+  "title": "これが愛なのねっ！",
+  "subName": "ティターニア",
+  "name": "これが愛なのねっ！ ティターニア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にし、ＡＰ＋１・ＤＰ＋１・ＳＰ－２する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にし、ＡＰ＋１・ＤＰ＋１・ＳＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0849"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2081",
+  "title": "ちびっ子教師",
+  "subName": "山下 久美",
+  "name": "ちびっ子教師 山下 久美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。{元のＤＰが２以下の味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。{元のＤＰが２以下の味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2081"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1456",
+  "title": "この世ならざる幻馬",
+  "subName": "ライダー／アストルフォ",
+  "name": "この世ならざる幻馬 ライダー／アストルフォ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自ターン中、このキャラを行動済みにしたとき、自分のゴミ箱のカード全てが[花]の場合、このキャラを未行動にする。",
+  "textKr": "[誘発] 自ターン中、このキャラを行動済みにしたとき、自分のゴミ箱のカード全てが[花]の場合、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1456"
 }

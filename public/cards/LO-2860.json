@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2860",
+  "title": "死んでたまるか戦線",
+  "subName": "仲村 ゆり",
+  "name": "死んでたまるか戦線 仲村 ゆり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,13 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4,
-    8
-  ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のアイテム「死んだ世界戦線」１枚}を手札に入れる。",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のアイテム「死んだ世界戦線」１枚}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2860"
 }

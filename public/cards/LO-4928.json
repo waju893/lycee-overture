@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4928",
+  "title": "天音のクラスメイト",
+  "subName": "三国 彩里",
+  "name": "天音のクラスメイト 三国 彩里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,13 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１][ジャンプ:[0]]\n[宣言] [0]:持ち主が自分の味方[宙]アイテムが３枚以上の場合、このキャラにＡＰ＋１・ＤＰ＋２する。このキャラのチャージ１枚を破棄できる。破棄したとき、１枚ドローする。",
+  "textKr": "[チャージ:１][ジャンプ:[0]]\n[宣言] [0]:持ち主が自分の味方[宙]アイテムが３枚以上の場合、このキャラにＡＰ＋１・ＤＰ＋２する。このキャラのチャージ１枚を破棄できる。破棄したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4928"
 }

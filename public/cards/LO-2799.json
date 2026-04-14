@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2799",
+  "title": "七つの海を越えて",
+  "subName": "七海",
+  "name": "七つの海を越えて 七海",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:自ターン中に使用する。{コストが２点以下の味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[誘発] このキャラが相手の効果で場を離れたとき、１枚ドローできる。",
+  "textKr": "[宣言] [D1]:自ターン中に使用する。{コストが２点以下の味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[誘発] このキャラが相手の効果で場を離れたとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2799"
 }

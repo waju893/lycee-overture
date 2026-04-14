@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2386",
+  "title": "同盟の慧眼",
+  "subName": "魯粛・包",
+  "name": "同盟の慧眼 魯粛・包",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "呉",
+  "text": "[手札宣言] [月月]:相手のコストが２点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "[手札宣言] [月月]:相手のコストが２点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2386"
 }

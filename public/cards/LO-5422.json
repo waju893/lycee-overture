@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5422",
+  "title": "年の離れた双子の妹",
+  "subName": "四月一日 奏音",
+  "name": "年の離れた双子の妹 四月一日 奏音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [日]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「年の離れた双子の妹 四月一日奏歩」１体を探し元の能力全てを失い登場する。この能力は失われる。",
+  "textKr": "[宣言] [日]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「年の離れた双子の妹 四月一日奏歩」１体を探し元の能力全てを失い登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5422"
 }

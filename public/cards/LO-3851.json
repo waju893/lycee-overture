@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3851",
+  "title": "甲斐の虎",
+  "subName": "武田 光璃 晴信",
+  "name": "甲斐の虎 武田 光璃 晴信",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "－－－●－●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[日]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風林火山」１枚を探しこのキャラと同列の味方ＡＦに無償で配置する。\n[誘発] 自ターン中、このキャラの前後に手札からコストが３点以上の味方[日]キャラが登場したとき、１枚ドローする。",
+  "textKr": "[サイドステップ:[日]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風林火山」１枚を探しこのキャラと同列の味方ＡＦに無償で配置する。\n[誘発] 自ターン中、このキャラの前後に手札からコストが３点以上の味方[日]キャラが登場したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3851"
 }

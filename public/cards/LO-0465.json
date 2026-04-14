@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0465",
+  "title": "破魔の紅薔薇、必滅の黄薔薇",
+  "subName": "ランサー／ディルムッド・オディナ",
+  "name": "破魔の紅薔薇、必滅の黄薔薇 ランサー／ディルムッド・オディナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[無]]\n[宣言] [雪雪無]:このキャラの防御中に使用する。対戦キャラを破棄する。",
+  "textKr": "[オーダーチェンジ:[無]]\n[宣言] [雪雪無]:このキャラの防御中に使用する。対戦キャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0465"
 }

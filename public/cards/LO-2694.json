@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2694",
+  "title": "許婚メイド",
+  "subName": "ドロシー・ダヴェンポート",
+  "name": "許婚メイド ドロシー・ダヴェンポート",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが２点以下の味方[日]キャラが３体以上登場している場合、このキャラにＡＰ＋１する。\n[手札宣言] [D1]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋２・ＤＰ－２する。",
+  "textKr": "[宣言] [0]:コストが２点以下の味方[日]キャラが３体以上登場している場合、このキャラにＡＰ＋１する。\n[手札宣言] [D1]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2694"
 }

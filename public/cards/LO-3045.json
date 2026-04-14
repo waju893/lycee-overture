@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3045",
+  "title": "転校生の犬使い",
+  "subName": "五味 優",
+  "name": "転校生の犬使い 五味 優",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙宙無]:{自分のゴミ箱のＥＸが２の手札宣言能力を持つキャラ１体}を手札に入れる。",
+  "textKr": "[手札宣言] [宙宙無]:{自分のゴミ箱のＥＸが２の手札宣言能力を持つキャラ１体}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3045"
 }

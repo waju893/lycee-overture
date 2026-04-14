@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6239",
+  "title": "脳神経外科医",
+  "subName": "丹保 凉子",
+  "name": "脳神経外科医 丹保 凉子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪雪雪]:対応・バトル中を除く自ターン中に使用する。{相手キャラ１体}を破棄する。そのキャラのコストが２点以下の場合、相手のデッキを１枚破棄できる。（１回まで使用可能）",
+  "textKr": "[宣言] [雪雪雪]:対応・バトル中を除く自ターン中に使用する。{相手キャラ１体}を破棄する。そのキャラのコストが２点以下の場合、相手のデッキを１枚破棄できる。（１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6239"
 }

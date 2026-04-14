@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0741",
+  "title": "円卓の誓い",
+  "subName": "ガウェイン",
+  "name": "円卓の誓い ガウェイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ER",
+  "attributes": [
     "flower",
     "cosmos"
   ],
-  "attributesList": [
-    "flower",
-    "cosmos"
-  ],
-  "ex": 0,
   "useTarget": [
     "flower",
     "flower",
@@ -19,11 +21,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": true
+  "ex": 0,
+  "costRaw": "花花宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー][オーダーステップ:[0]]\n[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２する。",
+  "textKr": "[リーダー][オーダーステップ:[0]]\n[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0741"
 }

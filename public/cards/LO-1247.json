@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1247",
+  "title": "巨大な猫",
+  "subName": "ドルジ",
+  "name": "巨大な猫 ドルジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[誘発] 味方＜リトルバスターズ＞キャラが登場したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[アシスト]\n[誘発] 味方＜リトルバスターズ＞キャラが登場したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1247"
 }

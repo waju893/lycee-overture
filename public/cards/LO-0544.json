@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0544",
+  "title": "日輪の寵姫",
+  "subName": "バーサーカー／茶々",
+  "name": "日輪の寵姫 バーサーカー／茶々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 0,
   "dmg": 2,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。このキャラにＤＭＧ＋１する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0544"
 }

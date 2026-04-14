@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3223",
+  "title": "LEVEL5 第七位",
+  "subName": "削板 軍覇",
+  "name": "LEVEL5 第七位 削板 軍覇",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [無]:{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [無]:{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3223"
 }

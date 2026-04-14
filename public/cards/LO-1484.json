@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1484",
+  "title": "蛇霊の呪術師",
+  "subName": "オロチヒメ",
+  "name": "蛇霊の呪術師 オロチヒメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:相手ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－２する。",
+  "textKr": "[宣言] [雪]:相手ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1484"
 }

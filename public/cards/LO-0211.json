@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0211",
+  "title": "紅霊零式｢豊布都之神雷｣",
+  "subName": "霊刀フツノミタマ",
+  "name": "紅霊零式｢豊布都之神雷｣ 霊刀フツノミタマ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2,
-    7
-  ],
-  "keyEffects": [
-    2,
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][ステップ:[日]]",
+  "textKr": "[エンゲージ][ステップ:[日]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0211"
 }

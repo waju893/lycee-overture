@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2548",
+  "title": "流水の私服",
+  "subName": "ウィル",
+  "name": "流水の私服 ウィル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [宙]:このキャラの下のカード１枚を破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [宙]:このキャラの下のカード１枚を破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2548"
 }

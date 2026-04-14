@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2882",
+  "title": "私立各務台学園生徒会長",
+  "subName": "椋梨 隼太",
+  "name": "私立各務台学園生徒会長 椋梨 隼太",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2882"
 }

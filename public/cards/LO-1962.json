@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1962",
+  "title": "黒鴉部隊の隊長",
+  "subName": "シャットアウラ＝セクウェンツィア",
+  "name": "黒鴉部隊の隊長 シャットアウラ＝セクウェンツィア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙]:{味方[宙]アイテム１枚}を破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
+  "textKr": "[手札宣言] [宙]:{味方[宙]アイテム１枚}を破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1962"
 }

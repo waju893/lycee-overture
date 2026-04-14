@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4651",
+  "title": "明鏡止水 -ミラーシェイド-",
+  "subName": "西九条 綾媛",
+  "name": "明鏡止水 -ミラーシェイド- 西九条 綾媛",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙宙宙]:相手の能力の宣言に対応して使用する。その宣言の解決は失敗する。相手のデッキを[その能力のコストの数]枚破棄する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙宙]:相手の能力の宣言に対応して使用する。その宣言の解決は失敗する。相手のデッキを[その能力のコストの数]枚破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4651"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2496",
+  "title": "孤高の錬金術師",
+  "subName": "ポリン",
+  "name": "孤高の錬金術師 ポリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを２枚破棄する。破棄したとき、[雪]を発生する。このコストは[雪]キャラの能力にのみ支払える。この能力は失われる。",
+  "textKr": "[コスト] 自分のデッキを２枚破棄する。破棄したとき、[雪]を発生する。このコストは[雪]キャラの能力にのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2496"
 }

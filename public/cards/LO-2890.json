@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2890",
+  "title": "ぽちゃ専",
+  "subName": "肥田 爽",
+  "name": "ぽちゃ専 肥田 爽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自分のゴミ箱に[花]でないカードが置かれている場合、このキャラにＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[宣言] [0]:自分のゴミ箱に[花]でないカードが置かれている場合、このキャラにＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2890"
 }

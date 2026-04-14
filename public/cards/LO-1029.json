@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1029",
+  "title": "日本戦車道連盟審判員",
+  "subName": "稲富 ひびき",
+  "name": "日本戦車道連盟審判員 稲富 ひびき",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "日本戦車道連盟",
+  "text": "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを１枚回復する。",
+  "textKr": "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1029"
 }

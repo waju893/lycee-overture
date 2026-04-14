@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4069",
+  "title": "モンスターハンター",
+  "subName": "アームズ・アーク",
+  "name": "モンスターハンター アームズ・アーク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -20,15 +23,11 @@
   "dp": 7,
   "sp": 1,
   "dmg": 6,
-  "keyeffects": [
-    5,
-    13,
-    15
-  ],
-  "keyEffects": [
-    5,
-    13,
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][ボーナス:[相手のデッキを２枚破棄する。]][ペナルティ:[１枚ドローする。]]\n[宣言] [宙]:味方キャラが３体以下の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[ジャンプ:[0]][ボーナス:[相手のデッキを２枚破棄する。]][ペナルティ:[１枚ドローする。]]\n[宣言] [宙]:味方キャラが３体以下の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4069"
 }

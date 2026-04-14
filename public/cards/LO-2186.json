@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2186",
+  "title": "サイティングエンスネア",
+  "subName": "セベク",
+  "name": "サイティングエンスネア セベク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [雪雪雪]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+  "textKr": "[宣言] [雪雪雪]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2186"
 }

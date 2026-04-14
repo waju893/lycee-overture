@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3699",
+  "title": "妖精賢者",
+  "subName": "テュト",
+  "name": "妖精賢者 テュト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[誘発] 相手ターン開始時、このキャラのチャージ１枚を破棄できる。破棄したとき、１枚ドローする。\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。このキャラをデッキの下に置く。置いたとき、１枚ドローする。自分の手札のコストが[月]または[無]のみで４点以下のキャラ１体を無償で登場する。（ゲーム中１回まで使用可能）",
+  "textKr": "[チャージ:２]\n[誘発] 相手ターン開始時、このキャラのチャージ１枚を破棄できる。破棄したとき、１枚ドローする。\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。このキャラをデッキの下に置く。置いたとき、１枚ドローする。自分の手札のコストが[月]または[無]のみで４点以下のキャラ１体を無償で登場する。（ゲーム中１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3699"
 }

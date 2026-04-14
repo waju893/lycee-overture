@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1394",
+  "title": "戦闘続行",
+  "subName": "バーサーカー／ヘラクレス",
+  "name": "戦闘続行 バーサーカー／ヘラクレス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 6,
   "dp": 0,
   "sp": 0,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D1]:自ターン中に使用する。このキャラは[ガッツ:[宙宙宙宙]]を得る。",
+  "textKr": "[宣言] [D1]:自ターン中に使用する。このキャラは[ガッツ:[宙宙宙宙]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1394"
 }

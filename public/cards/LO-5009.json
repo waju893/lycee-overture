@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5009",
+  "title": "It's my ミラクル☆",
+  "subName": "柊 杏璃",
+  "name": "It's my ミラクル☆ 柊 杏璃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花]:自ターン中に使用する。{味方[WM]キャラ１体}にＡＰ＋１・ＳＰ＋１する。",
+  "textKr": "[宣言] [花]:自ターン中に使用する。{味方[WM]キャラ１体}にＡＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5009"
 }

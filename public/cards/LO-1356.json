@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1356",
+  "title": "ムッシュ・ド・パリ",
+  "subName": "アサシン／シャルル＝アンリ・サンソン",
+  "name": "ムッシュ・ド・パリ アサシン／シャルル＝アンリ・サンソン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、ＡＰまたはＤＰが元の値より低い相手キャラが登場している場合、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、ＡＰまたはＤＰが元の値より低い相手キャラが登場している場合、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1356"
 }

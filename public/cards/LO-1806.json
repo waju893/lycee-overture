@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1806",
+  "title": "アクルトゥルカ",
+  "subName": "オシュトル（ハク）",
+  "name": "アクルトゥルカ オシュトル（ハク）",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -27,17 +30,11 @@
   "dp": 7,
   "sp": 0,
   "dmg": 7,
-  "keyeffects": [
-    4,
-    8,
-    13,
-    15
-  ],
-  "keyEffects": [
-    4,
-    8,
-    13,
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙宙宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アシスト][オーダーステップ:[0]][ボーナス:[１枚ドローする。]][ペナルティ:[１枚ドローする。]]\n[常時] 味方キャラの攻撃中、相手はイベント・能力・手札宣言能力を宣言できない。",
+  "textKr": "[アシスト][オーダーステップ:[0]][ボーナス:[１枚ドローする。]][ペナルティ:[１枚ドローする。]]\n[常時] 味方キャラの攻撃中、相手はイベント・能力・手札宣言能力を宣言できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1806"
 }

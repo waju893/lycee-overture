@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4590",
+  "title": "ロシアからの留学生",
+  "subName": "エミリア＝カリモフ",
+  "name": "ロシアからの留学生 エミリア＝カリモフ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分のコストが１点以上のイベント・手札宣言能力を使用したとき、味方[雪]キャラ１体にＤＭＧ＋１する。",
+  "textKr": "[誘発] 自ターン中、自分のコストが１点以上のイベント・手札宣言能力を使用したとき、味方[雪]キャラ１体にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4590"
 }

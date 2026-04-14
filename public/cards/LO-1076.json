@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1076",
+  "title": "大波のフリント",
+  "subName": "フリント",
+  "name": "大波のフリント フリント",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [D2]:このキャラにＤＰ＋２する。",
+  "textKr": "[宣言] [D2]:このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1076"
 }

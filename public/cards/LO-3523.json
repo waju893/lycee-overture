@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-3523",
+  "title": "守護の楯",
+  "subName": "",
+  "name": "守護の楯",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用する。このキャラにＤＰ＋２する。このキャラがＡＦに登場している場合、このキャラにバトル終了時までＡＰ＋２・ＤＭＧ＋１する。\n[手札宣言] [雪]:ゴミ箱のこのアイテムを{コストが３点以上の味方防御[雪]キャラ１体}に無償で装備する。そのキャラにＤＰ＋２する。",
+  "textKr": "[宣言] [0]:バトル中に使用する。このキャラにＤＰ＋２する。このキャラがＡＦに登場している場合、このキャラにバトル終了時までＡＰ＋２・ＤＭＧ＋１する。\n[手札宣言] [雪]:ゴミ箱のこのアイテムを{コストが３点以上の味方防御[雪]キャラ１体}に無償で装備する。そのキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3523"
 }

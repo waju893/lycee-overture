@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0348",
+  "title": "ウサギさんチーム",
+  "subName": "阪口 桂利奈",
+  "name": "ウサギさんチーム 阪口 桂利奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[誘発] 相手ターン開始時、このキャラにＤＰ＋１・ＳＰ－２する。",
+  "textKr": "[誘発] 相手ターン開始時、このキャラにＤＰ＋１・ＳＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0348"
 }

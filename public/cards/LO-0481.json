@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0481",
+  "title": "皐月の王",
+  "subName": "アーチャー／ロビンフッド",
+  "name": "皐月の王 アーチャー／ロビンフッド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[月]]\n[誘発] このキャラのバトル終了時、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
+  "textKr": "[オーダーチェンジ:[月]]\n[誘発] このキャラのバトル終了時、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0481"
 }

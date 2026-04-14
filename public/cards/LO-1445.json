@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1445",
+  "title": "より迅き雷となるために",
+  "subName": "ランサー／源頼光",
+  "name": "より迅き雷となるために ランサー／源頼光",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、ＡＰまたはＤＰが元の値より２以上低い相手キャラが登場している場合、１枚ドローできる。",
+  "textKr": "[誘発] このキャラが登場したとき、ＡＰまたはＤＰが元の値より２以上低い相手キャラが登場している場合、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1445"
 }

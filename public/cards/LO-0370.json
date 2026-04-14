@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0370",
+  "title": "副隊長",
+  "subName": "ナオミ",
+  "name": "副隊長 ナオミ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サンダース",
+  "text": "[アシスト]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラは[オーダーステップ:[0]]を得る。",
+  "textKr": "[アシスト]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラは[オーダーステップ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0370"
 }

@@ -1,16 +1,29 @@
 {
+  "cardNo": "LO-2019",
+  "title": "Beautiful Harmony",
+  "subName": "",
+  "name": "Beautiful Harmony",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon",
     "flower"
   ],
-  "attributesList": [
-    "moon",
-    "flower"
-  ],
-  "ex": 0,
   "useTarget": [
     "moon",
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 0,
+  "costRaw": "月花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※このカードは元号が「令和」の間にのみ使用可能",
+  "textKr": "※このカードは元号が「令和」の間にのみ使用可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2019"
 }

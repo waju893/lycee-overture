@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0193",
+  "title": "絶体絶命致命傷エンド",
+  "subName": "バールのようなもの",
+  "name": "絶体絶命致命傷エンド バールのようなもの",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[自分のデッキを２枚回復する。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。",
+  "textKr": "[エンゲージ:[自分のデッキを２枚回復する。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0193"
 }

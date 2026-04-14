@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4549",
+  "title": "マイペースな後輩",
+  "subName": "月ヶ丘 蘭",
+  "name": "マイペースな後輩 月ヶ丘 蘭",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月月]:このキャラがアイテムを持つ場合、{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[宣言] [月月]:このキャラがアイテムを持つ場合、{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4549"
 }

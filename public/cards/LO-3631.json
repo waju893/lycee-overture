@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3631",
+  "title": "姉御扱い",
+  "subName": "ファウラ＝リィナンス",
+  "name": "姉御扱い ファウラ＝リィナンス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラが[宙]アイテムを装備している場合、このキャラにＡＰ＋１・ＤＰ＋１し、{[宙]アイテムを装備している味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラが[宙]アイテムを装備している場合、このキャラにＡＰ＋１・ＤＰ＋１し、{[宙]アイテムを装備している味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3631"
 }

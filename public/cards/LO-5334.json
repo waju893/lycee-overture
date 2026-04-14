@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5334",
+  "title": "プレゼントは私？ リボンに包まれた",
+  "subName": "コレット・カルリーニ",
+  "name": "プレゼントは私？ リボンに包まれた コレット・カルリーニ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "star",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。",
+  "textKr": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5334"
 }

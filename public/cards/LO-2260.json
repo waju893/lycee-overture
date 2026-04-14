@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2260",
+  "title": "雲耀蜻蛉",
+  "subName": "鶴丸城",
+  "name": "雲耀蜻蛉 鶴丸城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [月]:{このキャラと同列の相手キャラ１体}にＤＰ－２する。",
+  "textKr": "[宣言] [月]:{このキャラと同列の相手キャラ１体}にＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2260"
 }

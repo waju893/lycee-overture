@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2065",
+  "title": "天文講座",
+  "subName": "天ヶ瀬 奈月",
+  "name": "天文講座 天ヶ瀬 奈月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手の効果で相手キャラを未行動にしたとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 相手の効果で相手キャラを未行動にしたとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2065"
 }

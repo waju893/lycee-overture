@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0209",
+  "title": "アルデバランの赫い星",
+  "subName": "タウロシア",
+  "name": "アルデバランの赫い星 タウロシア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]",
+  "textKr": "[エンゲージ]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0209"
 }

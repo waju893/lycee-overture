@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3065",
+  "title": "活発で押しが強い",
+  "subName": "海老塚 信乃",
+  "name": "活発で押しが強い 海老塚 信乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [日]:このキャラにＡＰ＋１する。このキャラは[アグレッシブ]を得る。",
+  "textKr": "[宣言] [日]:このキャラにＡＰ＋１する。このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3065"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5594",
+  "title": "朱雀院家四女",
+  "subName": "朱雀院 椿",
+  "name": "朱雀院家四女 朱雀院 椿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "star",
@@ -16,11 +19,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:キャラ名に「朱雀院」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:キャラ名に「朱雀院」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5594"
 }

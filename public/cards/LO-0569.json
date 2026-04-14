@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0569",
+  "title": "人間観察",
+  "subName": "キャスター／ハンス・クリスチャン・アンデルセン",
+  "name": "人間観察 キャスター／ハンス・クリスチャン・アンデルセン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、相手は相手の手札を１枚破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手は相手の手札を１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0569"
 }

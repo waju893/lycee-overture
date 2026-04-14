@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3511",
+  "title": "キュリオ3号店の新人店員",
+  "subName": "長谷川 ひかり",
+  "name": "キュリオ3号店の新人店員 長谷川 ひかり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:{サブネームに「キュリオ3号店」を含む味方キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:{サブネームに「キュリオ3号店」を含む味方キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3511"
 }

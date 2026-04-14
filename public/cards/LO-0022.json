@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0022",
+  "title": "貴方のための物語",
+  "subName": "キャスター／ハンス・クリスチャン・アンデルセン",
+  "name": "貴方のための物語 キャスター／ハンス・クリスチャン・アンデルセン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体にＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0022"
 }

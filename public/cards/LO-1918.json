@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1918",
+  "title": "エリザリーナ独立国同盟の聖女",
+  "subName": "エリザリーナ",
+  "name": "エリザリーナ独立国同盟の聖女 エリザリーナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [T]:１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1918"
 }

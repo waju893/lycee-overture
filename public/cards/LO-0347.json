@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0347",
+  "title": "ウサギさんチーム",
+  "subName": "丸山 沙希",
+  "name": "ウサギさんチーム 丸山 沙希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
+  "textKr": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0347"
 }

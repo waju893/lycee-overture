@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0313",
+  "title": "戦車道",
+  "subName": "冷泉 麻子",
+  "name": "戦車道 冷泉 麻子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -18,13 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    8
-  ],
-  "keyEffects": [
-    2,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][ステップ:[月]]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[アシスト][ステップ:[月]]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0313"
 }

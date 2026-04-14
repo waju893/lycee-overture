@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6627",
+  "title": "マイペースな自称マスコット",
+  "subName": "藤崎 あさひ",
+  "name": "マイペースな自称マスコット 藤崎 あさひ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１]\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。自分のゴミ箱のカード１枚を味方「最後の神様が住む島」１枚の下に置ける。\n[手札宣言] [0]:自分のゴミ箱またはデッキから「世界で最後の神様 りん」１体を探し公開して手札に入れる。",
+  "textKr": "[チャージ:１]\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。自分のゴミ箱のカード１枚を味方「最後の神様が住む島」１枚の下に置ける。\n[手札宣言] [0]:自分のゴミ箱またはデッキから「世界で最後の神様 りん」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6627"
 }

@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-3799",
+  "title": "麗しき水着の悪魔",
+  "subName": "",
+  "name": "麗しき水着の悪魔",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラにＡＰ＋４・ＤＰ－２する。",
+  "textKr": "[宣言] [0]:このキャラにＡＰ＋４・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3799"
 }

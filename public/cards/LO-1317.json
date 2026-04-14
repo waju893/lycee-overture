@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1317",
+  "title": "白鷺城の百鬼八天堂様",
+  "subName": "アサシン／刑部姫",
+  "name": "白鷺城の百鬼八天堂様 アサシン／刑部姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D1]:{相手キャラ１体}にＡＰ－２する。この能力は失われる。",
+  "textKr": "[宣言] [D1]:{相手キャラ１体}にＡＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1317"
 }

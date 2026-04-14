@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-0704",
+  "title": "心の欠片",
+  "subName": "",
+  "name": "心の欠片",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このアイテムを除外する。除外したとき、[雪雪]を発生する。",
+  "textKr": "[コスト] このアイテムを除外する。除外したとき、[雪雪]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0704"
 }

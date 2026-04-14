@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0791",
+  "title": "テストゥド",
+  "subName": "ペルーン",
+  "name": "テストゥド ペルーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [花花花]:相手キャラ全てにＤＭＧ－１する。",
+  "textKr": "[宣言] [花花花]:相手キャラ全てにＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0791"
 }

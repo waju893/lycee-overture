@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4823",
+  "title": "陽気に輝く夜の血族",
+  "subName": "ヴァレリア",
+  "name": "陽気に輝く夜の血族 ヴァレリア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果で相手キャラが場を離れたとき、味方ＡＦ[雪]キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] 自分の効果で相手キャラが場を離れたとき、味方ＡＦ[雪]キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4823"
 }

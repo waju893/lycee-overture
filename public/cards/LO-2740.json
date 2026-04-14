@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2740",
+  "title": "寄り道大好き",
+  "subName": "田寄 多乃実",
+  "name": "寄り道大好き 田寄 多乃実",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花花花]:自ターン中に使用する。このキャラを{味方フィールド}に移動する。",
+  "textKr": "[宣言] [花花花]:自ターン中に使用する。このキャラを{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2740"
 }

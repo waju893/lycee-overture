@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3586",
+  "title": "日常最速理論",
+  "subName": "恋ノ河 リイナ",
+  "name": "日常最速理論 恋ノ河 リイナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}に相手ターン終了時までＡＰ－２・ＤＰ－２する。ゴミ箱のこのキャラを無償で登場できる。",
+  "textKr": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}に相手ターン終了時までＡＰ－２・ＤＰ－２する。ゴミ箱のこのキャラを無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3586"
 }

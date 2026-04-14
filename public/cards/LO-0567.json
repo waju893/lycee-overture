@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0567",
+  "title": "一方その頃",
+  "subName": "キャスター／ナーサリー・ライム",
+  "name": "一方その頃 キャスター／ナーサリー・ライム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言][T無]:{味方キャラ１体}を破棄する。破棄したとき、自分のデッキを２枚回復する。",
+  "textKr": "[宣言][T無]:{味方キャラ１体}を破棄する。破棄したとき、自分のデッキを２枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0567"
 }

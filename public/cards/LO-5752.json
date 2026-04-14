@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5752",
+  "title": "朧白家メイド長",
+  "subName": "二階堂 麗奈",
+  "name": "朧白家メイド長 二階堂 麗奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:味方『向日葵の教会と長い夏休み』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:味方『向日葵の教会と長い夏休み』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5752"
 }

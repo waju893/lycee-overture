@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0201",
+  "title": "ヘヴン†オア†ヘル",
+  "subName": "アルカード",
+  "name": "ヘヴン†オア†ヘル アルカード",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,13 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    4,
-    7
-  ],
-  "keyEffects": [
-    4,
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][オーダーステップ:[0]]",
+  "textKr": "[エンゲージ][オーダーステップ:[0]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0201"
 }

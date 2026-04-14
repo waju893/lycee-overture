@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0369",
+  "title": "カチコミ",
+  "subName": "ペパロニ",
+  "name": "カチコミ ペパロニ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 0,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト]\n[誘発] ターン開始時、味方＜アンツィオ＞キャラ１体を味方フィールドに移動できる。",
+  "textKr": "[アシスト]\n[誘発] ターン開始時、味方＜アンツィオ＞キャラ１体を味方フィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0369"
 }

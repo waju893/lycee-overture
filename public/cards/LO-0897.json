@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0897",
+  "title": "人を癒やさずにはいられないダークエルフィン",
+  "subName": "ソフィ",
+  "name": "人を癒やさずにはいられないダークエルフィン ソフィ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 手札以外から味方キャラが登場したとき、このキャラを味方フィールドに移動する。",
+  "textKr": "[誘発] 手札以外から味方キャラが登場したとき、このキャラを味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0897"
 }

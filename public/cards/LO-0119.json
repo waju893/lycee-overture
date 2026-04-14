@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0119",
+  "title": "魔剣を冠するモノ",
+  "subName": "魔剣グラム＆魔劍グラム＝オルタ",
+  "name": "魔剣を冠するモノ 魔剣グラム＆魔劍グラム＝オルタ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [このキャラを手札に入れる。]:バトル中に使用できない。{味方キャラ１体}にＤＰ＋１する。\n※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2026/01/09施行)",
+  "textKr": "[エンゲージ]\n[宣言] [このキャラを手札に入れる。]:バトル中に使用できない。{味方キャラ１体}にＤＰ＋１する。\n※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0119"
 }

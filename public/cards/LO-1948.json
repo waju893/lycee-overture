@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1948",
+  "title": "天草式十字凄教",
+  "subName": "諫早",
+  "name": "天草式十字凄教 諫早",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 1,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のサブネームに「天草式」を含むキャラ１体を手札に入れる。",
+  "textKr": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のサブネームに「天草式」を含むキャラ１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1948"
 }

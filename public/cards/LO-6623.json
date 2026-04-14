@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6623",
+  "title": "海外マフィアの幹部",
+  "subName": "ルカ",
+  "name": "海外マフィアの幹部 ルカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 0,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:対応・味方キャラの攻撃中に使用できない。味方アイテムが１枚以上の場合、このキャラをデッキの下に置く。{味方キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:対応・味方キャラの攻撃中に使用できない。味方アイテムが１枚以上の場合、このキャラをデッキの下に置く。{味方キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6623"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1896",
+  "title": "打ち止め",
+  "subName": "ラストオーダー",
+  "name": "打ち止め ラストオーダー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[常時] このキャラはこのキャラに隣接していないキャラにもサポートを使用できる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{ＤＭＧが３以下の味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[常時] このキャラはこのキャラに隣接していないキャラにもサポートを使用できる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{ＤＭＧが３以下の味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1896"
 }

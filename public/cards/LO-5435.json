@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-5435",
+  "title": "理不尽女王",
+  "subName": "",
+  "name": "理不尽女王",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[宣言] [月]:対応・バトル中を除く自ターン中に使用する。アイテム１枚を破棄する。そのアイテムのコストが３点以上の場合、相手は１枚ドローできる。（１回まで使用可能）\n※「理不尽女王」は自分の場に１枚まで配置可能",
+  "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[宣言] [月]:対応・バトル中を除く自ターン中に使用する。アイテム１枚を破棄する。そのアイテムのコストが３点以上の場合、相手は１枚ドローできる。（１回まで使用可能）\n※「理不尽女王」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5435"
 }

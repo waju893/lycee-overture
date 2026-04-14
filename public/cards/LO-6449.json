@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6449",
+  "title": "ジーミイル共和国連邦書記長",
+  "subName": "ヴィクトリア・ギローイ",
+  "name": "ジーミイル共和国連邦書記長 ヴィクトリア・ギローイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手の宣言に対応して宣言できない。{味方キャラ１体}を破棄する。したとき、{相手キャラ１体}にＡＰ－２・ＤＰ－２する。",
+  "textKr": "[宣言] [0]:相手の宣言に対応して宣言できない。{味方キャラ１体}を破棄する。したとき、{相手キャラ１体}にＡＰ－２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6449"
 }

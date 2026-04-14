@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0351",
+  "title": "ウサギさんチーム",
+  "subName": "澤 梓",
+  "name": "ウサギさんチーム 澤 梓",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [0]:味方「ウサギさんチーム」キャラが３体以上の場合、このキャラにＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:味方「ウサギさんチーム」キャラが３体以上の場合、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0351"
 }

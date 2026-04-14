@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2107",
+  "title": "精霊",
+  "subName": "コノハサクヤ",
+  "name": "精霊 コノハサクヤ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] 相手の効果でこのキャラを除く味方キャラを破棄したとき、相手キャラ１体を破棄できる。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 相手の効果でこのキャラを除く味方キャラを破棄したとき、相手キャラ１体を破棄できる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2107"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2464",
+  "title": "期間限定の同棲",
+  "subName": "小鳥遊 汐栞",
+  "name": "期間限定の同棲 小鳥遊 汐栞",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のＥＸが１のカード１枚}を除外する。",
+  "textKr": "[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のＥＸが１のカード１枚}を除外する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2464"
 }

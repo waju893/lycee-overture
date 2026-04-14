@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3249",
+  "title": "第一回『ネクフェス』キャンペーンガール",
+  "subName": "織田 久遠 信長",
+  "name": "第一回『ネクフェス』キャンペーンガール 織田 久遠 信長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:味方[NEX]キャラのバトル中に使用する。対戦キャラのＤＭＧを０にする。この能力は失われる。",
+  "textKr": "[宣言] [T]:味方[NEX]キャラのバトル中に使用する。対戦キャラのＤＭＧを０にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3249"
 }

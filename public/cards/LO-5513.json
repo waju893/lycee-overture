@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5513",
+  "title": "知的で優雅な完璧副会長",
+  "subName": "白鷺 茉百合",
+  "name": "知的で優雅な完璧副会長 白鷺 茉百合",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] ＤＦのこのキャラにＡＰ－３・ＤＰ＋２する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n[誘発] 自ターン終了時、以下から１つを選び処理する。(同じ効果は２回選べない。)\n※このカードは正誤訂正の対象となっています。(2024/09/27)",
+  "textKr": "[常時] ＤＦのこのキャラにＡＰ－３・ＤＰ＋２する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n[誘発] 自ターン終了時、以下から１つを選び処理する。(同じ効果は２回選べない。)\n※このカードは正誤訂正の対象となっています。(2024/09/27)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5513"
 }

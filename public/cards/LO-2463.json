@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2463",
+  "title": "あざらしライブ",
+  "subName": "上林 聖",
+  "name": "あざらしライブ 上林 聖",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[１枚ドローする。]]\n[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[リカバリー:[１枚ドローする。]]\n[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2463"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4524",
+  "title": "『白雪姫』のプリマ",
+  "subName": "白雪",
+  "name": "『白雪姫』のプリマ 白雪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:味方「グリム」が登場している場合、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:味方「グリム」が登場している場合、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4524"
 }

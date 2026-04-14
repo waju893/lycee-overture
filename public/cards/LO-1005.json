@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1005",
+  "title": "エスカレーター組のリーダー",
+  "subName": "押田",
+  "name": "エスカレーター組のリーダー 押田",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,13 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    7,
-    8
-  ],
-  "keyEffects": [
-    7,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "BC自由",
+  "text": "[アシスト][エンゲージ]\n[コスト] 自分のデッキを２枚破棄する。破棄したとき、[月月]または[日日]を発生する。この能力は失われる。",
+  "textKr": "[アシスト][エンゲージ]\n[コスト] 自分のデッキを２枚破棄する。破棄したとき、[月月]または[日日]を発生する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1005"
 }

@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-0563",
+  "title": "神の鞭",
+  "subName": "",
+  "name": "神の鞭",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋２・ＤＰ＋２する。このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+  "textKr": "[常時] このキャラにＡＰ＋２・ＤＰ＋２する。このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0563"
 }

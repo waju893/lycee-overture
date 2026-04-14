@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5256",
+  "title": "穏やかな巫女さん",
+  "subName": "雪静",
+  "name": "穏やかな巫女さん 雪静",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,13 +17,11 @@
   "dp": 6,
   "sp": 4,
   "dmg": 0,
-  "keyeffects": [
-    7,
-    12
-  ],
-  "keyEffects": [
-    7,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ][サポーター:[花]]\n[誘発] このキャラが「高社雪静」を破棄したエンゲージ登場以外で登場したとき、このキャラを破棄する。味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "textKr": "[エンゲージ][サポーター:[花]]\n[誘発] このキャラが「高社雪静」を破棄したエンゲージ登場以外で登場したとき、このキャラを破棄する。味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5256"
 }

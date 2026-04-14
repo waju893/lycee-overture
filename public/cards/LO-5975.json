@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5975",
+  "title": "忠義をつらぬく正義漢",
+  "subName": "牧島 麦兵衛",
+  "name": "忠義をつらぬく正義漢 牧島 麦兵衛",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[手札宣言] [月]:味方「桜井舞人」または「雪村小町」が登場している場合、相手キャラ１体にＡＰ－３・ＤＰ－３できる。しない場合、ゴミ箱のこのキャラを無償で登場する。",
+  "textKr": "[ジャンプ:[0]]\n[手札宣言] [月]:味方「桜井舞人」または「雪村小町」が登場している場合、相手キャラ１体にＡＰ－３・ＤＰ－３できる。しない場合、ゴミ箱のこのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5975"
 }

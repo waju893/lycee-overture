@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5466",
+  "title": "古参ファン",
+  "subName": "常磐 華乃",
+  "name": "古参ファン 常磐 華乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のイベントが２枚以上の場合、１枚ドローする。\n[誘発] 自分のイベントで味方キャラが能力値修正を得たとき、そのキャラにＡＰ＋１・ＤＰ＋１する。このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のイベントが２枚以上の場合、１枚ドローする。\n[誘発] 自分のイベントで味方キャラが能力値修正を得たとき、そのキャラにＡＰ＋１・ＤＰ＋１する。このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5466"
 }

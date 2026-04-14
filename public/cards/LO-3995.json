@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3995",
+  "title": "ランスのストーカー",
+  "subName": "ヌヌハラ・キャベツ",
+  "name": "ランスのストーカー ヌヌハラ・キャベツ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果で相手キャラを破棄したとき、相手は相手の手札を公開する。",
+  "textKr": "[誘発] 自分の効果で相手キャラを破棄したとき、相手は相手の手札を公開する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3995"
 }

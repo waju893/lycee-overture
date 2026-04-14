@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1762",
+  "title": "ニワカ親友",
+  "subName": "早坂 親志",
+  "name": "ニワカ親友 早坂 親志",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方「北原春希」１体}にＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{味方「北原春希」１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1762"
 }

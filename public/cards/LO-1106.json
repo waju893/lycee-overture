@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1106",
+  "title": "知波単学園戦車道チーム",
+  "subName": "細見",
+  "name": "知波単学園戦車道チーム 細見",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、このキャラにＤＭＧ＋１する。",
+  "textKr": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1106"
 }

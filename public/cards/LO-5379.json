@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5379",
+  "title": "ほんわかお母さん",
+  "subName": "霧島 しずく",
+  "name": "ほんわかお母さん 霧島 しずく",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5379"
 }

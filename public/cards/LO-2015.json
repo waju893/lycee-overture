@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2015",
+  "title": "卓越した剣技",
+  "subName": "神裂 火織",
+  "name": "卓越した剣技 神裂 火織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の[宙]アイテム１枚を手札に入れる。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の[宙]アイテム１枚を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2015"
 }

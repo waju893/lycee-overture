@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5908",
+  "title": "帰国子女",
+  "subName": "南野 七海",
+  "name": "帰国子女 南野 七海",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方『こんねこ』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方『こんねこ』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5908"
 }

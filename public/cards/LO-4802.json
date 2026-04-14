@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4802",
+  "title": "煩悩を封印する器",
+  "subName": "ゴルミナ",
+  "name": "煩悩を封印する器 ゴルミナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -18,11 +21,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方「自由なる創造主 エルミナ」１体をデッキの下に置く。置かない場合、このキャラを破棄する。\n[宣言] [0]:このキャラのＡＰとＤＰに＋[コストが２点以下の味方キャラの数]する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方「自由なる創造主 エルミナ」１体をデッキの下に置く。置かない場合、このキャラを破棄する。\n[宣言] [0]:このキャラのＡＰとＤＰに＋[コストが２点以下の味方キャラの数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4802"
 }

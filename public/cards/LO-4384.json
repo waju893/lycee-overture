@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4384",
+  "title": "目で殺す",
+  "subName": "世計 丸",
+  "name": "目で殺す 世計 丸",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、このキャラがダウンしたとき、１枚ドローできる。\n[宣言] [D1]:このキャラにＡＰ＋１・ＤＰ－１する。",
+  "textKr": "[誘発] 自ターン中、このキャラがダウンしたとき、１枚ドローできる。\n[宣言] [D1]:このキャラにＡＰ＋１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4384"
 }

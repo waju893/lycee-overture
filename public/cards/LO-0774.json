@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0774",
+  "title": "骸龍の魔風",
+  "subName": "ジャバウォック",
+  "name": "骸龍の魔風 ジャバウォック",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "幻獣",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄できる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0774"
 }

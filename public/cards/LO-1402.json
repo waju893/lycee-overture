@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1402",
+  "title": "不貞隠しの兜",
+  "subName": "セイバー／モードレッド",
+  "name": "不貞隠しの兜 セイバー／モードレッド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [無無無]:{自分のゴミ箱のカード１枚}を自分の「不貞隠しの兜」置き場に置く。\n[常時] 自分の「不貞隠しの兜」置き場にカードがある場合、このキャラにＡＰ＋１・ＤＰ＋２する。",
+  "textKr": "[宣言] [無無無]:{自分のゴミ箱のカード１枚}を自分の「不貞隠しの兜」置き場に置く。\n[常時] 自分の「不貞隠しの兜」置き場にカードがある場合、このキャラにＡＰ＋１・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1402"
 }

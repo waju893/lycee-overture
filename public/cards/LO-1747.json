@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1747",
+  "title": "トゥスクルのおてんば皇女",
+  "subName": "クオン",
+  "name": "トゥスクルのおてんば皇女 クオン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト／トゥスクル",
+  "text": "[アシスト]\n[誘発] 自ターン開始時、このキャラを味方フィールドに移動する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。",
+  "textKr": "[アシスト]\n[誘発] 自ターン開始時、このキャラを味方フィールドに移動する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1747"
 }

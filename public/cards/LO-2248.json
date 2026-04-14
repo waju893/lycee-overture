@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2248",
+  "title": "難攻不落",
+  "subName": "小田原城",
+  "name": "難攻不落 小田原城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] 自ターン中、このキャラが登場したとき、ＤＰが０以下の相手キャラ１体を行動済みにする。",
+  "textKr": "[誘発] 自ターン中、このキャラが登場したとき、ＤＰが０以下の相手キャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2248"
 }

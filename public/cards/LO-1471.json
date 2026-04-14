@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1471",
+  "title": "時の調停者",
+  "subName": "トワ",
+  "name": "時の調停者 トワ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    7
-  ],
-  "keyEffects": [
-    4,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ:[１枚ドローする。]][オーダーステップ:[0]]\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "textKr": "[エンゲージ:[１枚ドローする。]][オーダーステップ:[0]]\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1471"
 }

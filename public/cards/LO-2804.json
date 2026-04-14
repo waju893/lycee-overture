@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2804",
+  "title": "星守歌",
+  "subName": "能美 クドリャフカ",
+  "name": "星守歌 能美 クドリャフカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[宣言] [0]:コストが５点以上の相手キャラとのバトル中に使用する。{味方バトル参加キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D1]:味方キャラの攻撃中、相手の能力の宣言に対応して使用する。その能力のコストが０点以下の場合、その宣言の解決は失敗する。",
+  "textKr": "[アシスト]\n[宣言] [0]:コストが５点以上の相手キャラとのバトル中に使用する。{味方バトル参加キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D1]:味方キャラの攻撃中、相手の能力の宣言に対応して使用する。その能力のコストが０点以下の場合、その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2804"
 }

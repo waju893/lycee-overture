@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6247",
+  "title": "魂魄転写されたガイノイド",
+  "subName": "媽祖 ＆ ベネトナシュ ＆ ペトルーシュカ ＆ ラースヤ ＆ 瑞麗",
+  "name": "魂魄転写されたガイノイド 媽祖 ＆ ベネトナシュ ＆ ペトルーシュカ ＆ ラースヤ ＆ 瑞麗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:相手の宣言に対応して宣言できない。このキャラを破棄する。したとき、１枚ドローする。自分のゴミ箱のカード１枚を下のカードが４枚以下の味方「魂の器」１枚の下に置ける。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:相手の宣言に対応して宣言できない。このキャラを破棄する。したとき、１枚ドローする。自分のゴミ箱のカード１枚を下のカードが４枚以下の味方「魂の器」１枚の下に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6247"
 }

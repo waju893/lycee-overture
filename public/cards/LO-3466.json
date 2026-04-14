@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3466",
+  "title": "前生徒会副会長",
+  "subName": "月見 若菜",
+  "name": "前生徒会副会長 月見 若菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:コストが２点以下の味方ＡＦキャラが２体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:コストが２点以下の味方ＡＦキャラが２体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3466"
 }

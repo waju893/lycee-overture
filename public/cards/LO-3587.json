@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3587",
+  "title": "ウィザード部・魔界魔道士科",
+  "subName": "加賀美 響",
+  "name": "ウィザード部・魔界魔道士科 加賀美 響",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪雪雪雪無無無]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を破棄する。ゴミ箱のこのキャラを無償で登場できる。",
+  "textKr": "[手札宣言] [雪雪雪雪無無無]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を破棄する。ゴミ箱のこのキャラを無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3587"
 }

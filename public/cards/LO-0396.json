@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0396",
+  "title": "聖グロリアーナ女学院",
+  "subName": "ローズヒップ",
+  "name": "聖グロリアーナ女学院 ローズヒップ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[アシスト]\n[宣言] [0]:味方「ダージリン」が登場している場合、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[アシスト]\n[宣言] [0]:味方「ダージリン」が登場している場合、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0396"
 }

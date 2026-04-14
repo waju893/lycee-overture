@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5506",
+  "title": "学園最強の年上幼馴染",
+  "subName": "朱雀院 椿",
+  "name": "学園最強の年上幼馴染 朱雀院 椿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。\n[宣言] [T]:バトル中を除く自ターン中に使用する。{コストが３点以上の味方[雪]キャラ１体}にＡＰ＋２・ＤＰ＋２する。このキャラを未行動にできる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。\n[宣言] [T]:バトル中を除く自ターン中に使用する。{コストが３点以上の味方[雪]キャラ１体}にＡＰ＋２・ＤＰ＋２する。このキャラを未行動にできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5506"
 }

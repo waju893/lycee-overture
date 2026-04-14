@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4448",
+  "title": "深野の魔法使い",
+  "subName": "夜羽 睦季",
+  "name": "深野の魔法使い 夜羽 睦季",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分と相手にシールド＋３する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分と相手にシールド＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4448"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3183",
+  "title": "流体反発",
+  "subName": "泡浮 万彬",
+  "name": "流体反発 泡浮 万彬",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「湾内絹保」１体を探し登場できる。\n[宣言] [0]:バトル中に使用できない。{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}を{味方フィールド}に移動する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「湾内絹保」１体を探し登場できる。\n[宣言] [0]:バトル中に使用できない。{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}を{味方フィールド}に移動する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3183"
 }

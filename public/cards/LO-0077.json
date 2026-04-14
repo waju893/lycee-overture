@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0077",
+  "title": "無辜の怪物",
+  "subName": "キャスター／メフィストフェレス",
+  "name": "無辜の怪物 キャスター／メフィストフェレス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自ターン終了時、自分のデッキを１枚破棄する。",
+  "textKr": "[誘発] 自ターン終了時、自分のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0077"
 }

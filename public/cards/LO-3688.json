@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3688",
+  "title": "マッドサイエンティスト",
+  "subName": "アマミヤ",
+  "name": "マッドサイエンティスト アマミヤ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月月月]:このキャラのＡＰを５、ＤＰを９、ＳＰを６、ＤＭＧを３にする。このターン終了時、このキャラを破棄する。",
+  "textKr": "[宣言] [月月月]:このキャラのＡＰを５、ＤＰを９、ＳＰを６、ＤＭＧを３にする。このターン終了時、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3688"
 }

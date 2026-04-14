@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1216",
+  "title": "元気いっぱいな妹",
+  "subName": "乙坂 歩未",
+  "name": "元気いっぱいな妹 乙坂 歩未",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラがダウンしたバトル終了時、自分のゴミ箱の[花]キャラ１体を手札に入れる。この能力は失われる。",
+  "textKr": "[誘発] 味方キャラがダウンしたバトル終了時、自分のゴミ箱の[花]キャラ１体を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1216"
 }

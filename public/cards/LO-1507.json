@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1507",
+  "title": "妖精郷の射手",
+  "subName": "スピカ",
+  "name": "妖精郷の射手 スピカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラがゴミ箱から登場したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 味方キャラがゴミ箱から登場したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1507"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1012",
+  "title": "外部生組のリーダー",
+  "subName": "安藤",
+  "name": "外部生組のリーダー 安藤",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7,
-    8
-  ],
-  "keyEffects": [
-    7,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "BC自由",
+  "text": "[アシスト][エンゲージ]\n[宣言] [0]:バトル中に使用できない。相手のデッキを２枚破棄する。このターン終了時、このキャラを破棄する。",
+  "textKr": "[アシスト][エンゲージ]\n[宣言] [0]:バトル中に使用できない。相手のデッキを２枚破棄する。このターン終了時、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1012"
 }

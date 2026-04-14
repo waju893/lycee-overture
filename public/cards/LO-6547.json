@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6547",
+  "title": "金髪美人な帰国子女",
+  "subName": "弥生・B・ルートウィッジ",
+  "name": "金髪美人な帰国子女 弥生・B・ルートウィッジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 6,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１]\n[宣言] [0]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[宣言] [C1][月]:{相手攻撃キャラ１体}にＡＰ－３またはＤＰ－３またはＤＭＧ－３する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。",
+  "textKr": "[チャージ:１]\n[宣言] [0]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[宣言] [C1][月]:{相手攻撃キャラ１体}にＡＰ－３またはＤＰ－３またはＤＭＧ－３する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6547"
 }

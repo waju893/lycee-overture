@@ -1,19 +1,32 @@
 {
+  "cardNo": "LO-3209",
+  "title": "神に等しき存在",
+  "subName": "",
+  "name": "神に等しき存在",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow",
     "moon"
   ],
-  "attributesList": [
-    "snow",
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
     "moon",
     "moon",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "雪雪月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※デッキ構築時、このカードは「LO-0702」と同番号として扱う。",
+  "textKr": "※デッキ構築時、このカードは「LO-0702」と同番号として扱う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3209"
 }

@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-4238",
+  "title": "怪盗衣装",
+  "subName": "",
+  "name": "怪盗衣装",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:このアイテムを破棄する。破棄したとき、{相手キャラ１体}のＤＰを０にする。",
+  "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:このアイテムを破棄する。破棄したとき、{相手キャラ１体}のＤＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4238"
 }

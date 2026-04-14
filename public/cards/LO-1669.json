@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1669",
+  "title": "ドＳな女の子",
+  "subName": "矢来 美羽",
+  "name": "ドＳな女の子 矢来 美羽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [このキャラを破棄する]:ターン終了時まで、{コストが４点以下の味方[宙]キャラ１体}を相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "textKr": "[宣言] [このキャラを破棄する]:ターン終了時まで、{コストが４点以下の味方[宙]キャラ１体}を相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1669"
 }

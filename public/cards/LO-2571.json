@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2571",
+  "title": "人間界の正義のヒーローおっさん",
+  "subName": "ゼクト",
+  "name": "人間界の正義のヒーローおっさん ゼクト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「あいりすミスティリア！」キャラ１体にＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「あいりすミスティリア！」キャラ１体にＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2571"
 }

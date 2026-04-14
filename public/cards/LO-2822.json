@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2822",
+  "title": "ふたりで過ごしてきた記念",
+  "subName": "坂上 智代",
+  "name": "ふたりで過ごしてきた記念 坂上 智代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [宙宙]:相手の攻撃宣言に対応して使用する。{コストが６点以下の味方[宙]キャラ１体}を未行動にし、{味方フィールド}に移動する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [宙宙]:相手の攻撃宣言に対応して使用する。{コストが６点以下の味方[宙]キャラ１体}を未行動にし、{味方フィールド}に移動する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2822"
 }

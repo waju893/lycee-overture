@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5592",
+  "title": "風嶺家次期当主候補",
+  "subName": "風嶺 蛍雪",
+  "name": "風嶺家次期当主候補 風嶺 蛍雪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探し{味方キャラ１体}に装備する。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探し{味方キャラ１体}に装備する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5592"
 }

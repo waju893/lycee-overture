@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1563",
+  "title": "技工兵",
+  "subName": "ドリー",
+  "name": "技工兵 ドリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手の能力で自分のデッキを破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 相手の能力で自分のデッキを破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1563"
 }

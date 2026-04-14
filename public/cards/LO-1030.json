@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1030",
+  "title": "日本戦車道連盟理事長",
+  "subName": "児玉 七郎",
+  "name": "日本戦車道連盟理事長 児玉 七郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -19,5 +22,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 3,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "雪雪雪雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "日本戦車道連盟",
+  "text": "[宣言] [0]:味方[GUP]キャラ全てにＤＰ＋１する。",
+  "textKr": "[宣言] [0]:味方[GUP]キャラ全てにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1030"
 }

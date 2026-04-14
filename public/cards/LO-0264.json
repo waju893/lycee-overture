@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0264",
+  "title": "鋭角45度の不器用な愛情表現",
+  "subName": "アロンダイト",
+  "name": "鋭角45度の不器用な愛情表現 アロンダイト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6,
-    7
-  ],
-  "keyEffects": [
-    6,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]",
+  "textKr": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0264"
 }

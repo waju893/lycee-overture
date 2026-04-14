@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1617",
+  "title": "ちっちゃな巫女さん",
+  "subName": "布良 梓",
+  "name": "ちっちゃな巫女さん 布良 梓",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:このキャラを破棄する。破棄したとき、自分の手札のコストが４点以下の[日]キャラ１体を、このキャラが登場していたフィールドと同列の味方フィールドに無償で行動済みで登場する。",
+  "textKr": "[宣言] [D1]:このキャラを破棄する。破棄したとき、自分の手札のコストが４点以下の[日]キャラ１体を、このキャラが登場していたフィールドと同列の味方フィールドに無償で行動済みで登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1617"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1074",
+  "title": "爆弾低気圧のラム",
+  "subName": "ラム",
+  "name": "爆弾低気圧のラム ラム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[ステップ:[0]]\n[常時] このキャラのサポートは[GUP]キャラのみを対象に指定できる。",
+  "textKr": "[ステップ:[0]]\n[常時] このキャラのサポートは[GUP]キャラのみを対象に指定できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1074"
 }

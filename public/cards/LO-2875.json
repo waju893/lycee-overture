@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2875",
+  "title": "自称恋の妖精",
+  "subName": "ティナ",
+  "name": "自称恋の妖精 ティナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。自分のゴミ箱のカード１枚をこのキャラの下に置く。置いたとき、このキャラの下のカードが３枚以下の場合、このキャラは次の能力を得る。\n[コスト] [花花]または[宙宙]を発生する。このコストはコストが３点以上のキャラの登場にのみ支払える。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。自分のゴミ箱のカード１枚をこのキャラの下に置く。置いたとき、このキャラの下のカードが３枚以下の場合、このキャラは次の能力を得る。\n[コスト] [花花]または[宙宙]を発生する。このコストはコストが３点以上のキャラの登場にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2875"
 }

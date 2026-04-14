@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-4961",
+  "title": "死神の少女",
+  "subName": "",
+  "name": "死神の少女",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このターン中、自分の効果で場を離れた相手キャラの数（３体まで）だけ、自分のゴミ箱のカード１枚をこのエリアの下に置く。\n[宣言] [0]:このエリアの下のカード２枚を破棄する。破棄したとき、１枚ドローする。自分にシールド＋１する。（１ターンに２回まで使用可能）\n※「死神の少女」は自分の場に１枚まで配置可能",
+  "textKr": "[宣言] [0]:このターン中、自分の効果で場を離れた相手キャラの数（３体まで）だけ、自分のゴミ箱のカード１枚をこのエリアの下に置く。\n[宣言] [0]:このエリアの下のカード２枚を破棄する。破棄したとき、１枚ドローする。自分にシールド＋１する。（１ターンに２回まで使用可能）\n※「死神の少女」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4961"
 }

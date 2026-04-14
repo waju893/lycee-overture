@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0572",
+  "title": "妖惹の紅顔",
+  "subName": "キャスター／玄奘三蔵",
+  "name": "妖惹の紅顔 キャスター／玄奘三蔵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、このキャラを行動済みにする。",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラを行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0572"
 }

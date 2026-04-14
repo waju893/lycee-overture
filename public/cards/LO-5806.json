@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5806",
+  "title": "波打ち際の人鬼",
+  "subName": "佐竹 鳳蝶 義重",
+  "name": "波打ち際の人鬼 佐竹 鳳蝶 義重",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、次の相手ターン終了時までこのキャラにＤＰ＋２・ＳＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、次の相手ターン終了時までこのキャラにＤＰ＋２・ＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5806"
 }

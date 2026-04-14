@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0329",
+  "title": "Panssari eteen",
+  "subName": "ミカ",
+  "name": "Panssari eteen ミカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[宣言] [0]:{味方＜継続＞キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:{味方＜継続＞キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0329"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1273",
+  "title": "ちるちるチョップ",
+  "subName": "みちる",
+  "name": "ちるちるチョップ みちる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6,
-    13
-  ],
-  "keyEffects": [
-    6,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]",
+  "textKr": "[アグレッシブ][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1273"
 }

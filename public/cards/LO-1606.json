@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1606",
+  "title": "学生兼研究者",
+  "subName": "式部 茉優",
+  "name": "学生兼研究者 式部 茉優",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪雪",
+  "restrictionRaw": "－●－－●－",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] このキャラで攻撃宣言をしたとき、相手キャラ１体に相手ターン終了時までＤＰ－２する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] このキャラで攻撃宣言をしたとき、相手キャラ１体に相手ターン終了時までＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1606"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2679",
+  "title": "戦闘力高め",
+  "subName": "城之内 真琴",
+  "name": "戦闘力高め 城之内 真琴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ロキ・ノ・クロック」１枚を探し味方フィールドに配置できる。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ロキ・ノ・クロック」１枚を探し味方フィールドに配置できる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2679"
 }

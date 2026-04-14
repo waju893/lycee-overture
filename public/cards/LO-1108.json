@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1108",
+  "title": "優花里の父親",
+  "subName": "秋山 淳五郎",
+  "name": "優花里の父親 秋山 淳五郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方「秋山優花里」１体}にＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:{味方「秋山優花里」１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1108"
 }

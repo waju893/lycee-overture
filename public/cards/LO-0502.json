@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0502",
+  "title": "未知への探求",
+  "subName": "キャスター／エレナ・ブラヴァツキー",
+  "name": "未知への探求 キャスター／エレナ・ブラヴァツキー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [花]:{このキャラと同列の味方キャラ１体}にＤＰ＋２する。",
+  "textKr": "[宣言] [花]:{このキャラと同列の味方キャラ１体}にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0502"
 }

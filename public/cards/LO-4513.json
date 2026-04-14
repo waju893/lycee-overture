@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4513",
+  "title": "『怪盗紳士ルパン』のプリマ",
+  "subName": "ガニマール",
+  "name": "『怪盗紳士ルパン』のプリマ ガニマール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:サブネームに「怪盗紳士ルパン」を含む味方キャラが２体以上登場している場合、{コストが３点以上の味方[日]キャラ１体}にＡＰ＋１する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:サブネームに「怪盗紳士ルパン」を含む味方キャラが２体以上登場している場合、{コストが３点以上の味方[日]キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4513"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0808",
+  "title": "太陽光極充填",
+  "subName": "アテン",
+  "name": "太陽光極充填 アテン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [D1]:このキャラにＤＰ－２・ＤＭＧ＋２する。",
+  "textKr": "[宣言] [D1]:このキャラにＤＰ－２・ＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0808"
 }

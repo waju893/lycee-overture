@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-3951",
+  "title": "風林火山",
+  "subName": "",
+  "name": "風林火山",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。コストが３～６点のこのキャラが宣言型の基本能力を持つ場合、以下から１つを選び処理する。\n※「風林火山」は自分の場に１枚まで配置可能",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。コストが３～６点のこのキャラが宣言型の基本能力を持つ場合、以下から１つを選び処理する。\n※「風林火山」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3951"
 }

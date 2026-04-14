@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-3525",
+  "title": "クラリアス",
+  "subName": "",
+  "name": "クラリアス",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[誘発] 相手ターン開始時、味方キャラ全てがコストが５点以上で、味方ＤＦキャラが１体以下の場合、相手キャラ１体にＤＭＧ－１する。\n[宣言] [月]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を相手ＤＦに移動する。この効果は失われる。",
+  "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[誘発] 相手ターン開始時、味方キャラ全てがコストが５点以上で、味方ＤＦキャラが１体以下の場合、相手キャラ１体にＤＭＧ－１する。\n[宣言] [月]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を相手ＤＦに移動する。この効果は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3525"
 }

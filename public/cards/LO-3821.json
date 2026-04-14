@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3821",
+  "title": "暁雲（ドーンクラウド）",
+  "subName": "天ヶ瀬 茉緒",
+  "name": "暁雲（ドーンクラウド） 天ヶ瀬 茉緒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] ターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。コストが５～６点の味方[宙]キャラが４体以上登場している場合、{コストが５～６点の味方ＡＦ[宙]キャラ１体}を未行動にする。そのキャラのＤＭＧを０にする。",
+  "textKr": "[ステップ:[0]]\n[誘発] ターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。コストが５～６点の味方[宙]キャラが４体以上登場している場合、{コストが５～６点の味方ＡＦ[宙]キャラ１体}を未行動にする。そのキャラのＤＭＧを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3821"
 }

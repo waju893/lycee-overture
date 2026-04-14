@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0034",
+  "title": "我が心を喰らえ、月の光",
+  "subName": "バーサーカー／カリギュラ",
+  "name": "我が心を喰らえ、月の光 バーサーカー／カリギュラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D2]:このキャラのバトル中に使用する。対戦キャラにＤＰ－２する。",
+  "textKr": "[宣言] [D2]:このキャラのバトル中に使用する。対戦キャラにＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0034"
 }

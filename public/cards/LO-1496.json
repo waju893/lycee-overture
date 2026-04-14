@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1496",
+  "title": "プリンセス",
+  "subName": "メルヴィナ",
+  "name": "プリンセス メルヴィナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがダウンしたとき、対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[誘発] このキャラがダウンしたとき、対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1496"
 }

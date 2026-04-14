@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0337",
+  "title": "大学選抜",
+  "subName": "ルミ",
+  "name": "大学選抜 ルミ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "star",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方「島田愛里寿」１体}を味方フィールドに移動する。",
+  "textKr": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方「島田愛里寿」１体}を味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0337"
 }

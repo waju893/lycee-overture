@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2935",
+  "title": "よくできた妹",
+  "subName": "新海 天",
+  "name": "よくできた妹 新海 天",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手の宣言に対応して使用できない。このキャラを破棄する。破棄したとき、{自分のゴミ箱のアイテム１枚}を{キャラ１体}に装備する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手の宣言に対応して使用できない。このキャラを破棄する。破棄したとき、{自分のゴミ箱のアイテム１枚}を{キャラ１体}に装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2935"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0651",
+  "title": "追憶夏空娘",
+  "subName": "上坂 茅羽耶",
+  "name": "追憶夏空娘 上坂 茅羽耶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [D1][このキャラを除外する]:{自分のゴミ箱の「上坂茅羽耶」１体}を手札に入れる。",
+  "textKr": "[宣言] [D1][このキャラを除外する]:{自分のゴミ箱の「上坂茅羽耶」１体}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0651"
 }

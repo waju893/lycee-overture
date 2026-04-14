@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0319",
+  "title": "カモさんチーム",
+  "subName": "後藤 モヨ子",
+  "name": "カモさんチーム 後藤 モヨ子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、キャラ１体にＡＰ－２する。",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、キャラ１体にＡＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0319"
 }

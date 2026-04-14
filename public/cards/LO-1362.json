@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1362",
+  "title": "祭祀長",
+  "subName": "シドゥリ",
+  "name": "祭祀長 シドゥリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、カード名に「ギルガメッシュ」を含む味方＜サーヴァント＞キャラ１体を未行動にする。",
+  "textKr": "[誘発] ターン開始時、カード名に「ギルガメッシュ」を含む味方＜サーヴァント＞キャラ１体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1362"
 }

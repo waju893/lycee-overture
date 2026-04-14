@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2084",
+  "title": "海くんの幼馴染",
+  "subName": "成海 杏",
+  "name": "海くんの幼馴染 成海 杏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 1,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[宣言] [花花]:{このキャラと同列の味方キャラ１体}にＤＰ＋２する。",
+  "textKr": "[サポーター:[花]]\n[宣言] [花花]:{このキャラと同列の味方キャラ１体}にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2084"
 }

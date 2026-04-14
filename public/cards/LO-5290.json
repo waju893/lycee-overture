@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5290",
+  "title": "千成行軍歌",
+  "subName": "木下 ひよ子 秀吉",
+  "name": "千成行軍歌 木下 ひよ子 秀吉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:味方『戦国†恋姫』キャラ全てにＡＰ＋１する。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:味方『戦国†恋姫』キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5290"
 }

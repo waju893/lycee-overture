@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0367",
+  "title": "生徒会副会長",
+  "subName": "小山 柚子",
+  "name": "生徒会副会長 小山 柚子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキを２枚破棄する。",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0367"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1385",
+  "title": "破壊神の手翳",
+  "subName": "アーチャー／アルジュナ",
+  "name": "破壊神の手翳 アーチャー／アルジュナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[誘発] 相手ターン中、味方キャラが登場したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 相手ターン中、味方キャラが登場したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1385"
 }

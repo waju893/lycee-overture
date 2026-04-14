@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1018",
+  "title": "カバさんチームの操縦手",
+  "subName": "おりょう",
+  "name": "カバさんチームの操縦手 おりょう",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [T]:{自分のゴミ箱のサブネームに「カバさんチーム」を含むキャラ１体}を行動済みで登場する。この能力は失われる。",
+  "textKr": "[宣言] [T]:{自分のゴミ箱のサブネームに「カバさんチーム」を含むキャラ１体}を行動済みで登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1018"
 }

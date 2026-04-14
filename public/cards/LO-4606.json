@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4606",
+  "title": "自称『謎の忍者』",
+  "subName": "カエデ・メープル",
+  "name": "自称『謎の忍者』 カエデ・メープル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{持ち主が自分のアイテムを持つ味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "textKr": "[宣言] [0]:{持ち主が自分のアイテムを持つ味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4606"
 }

@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-0562",
+  "title": "アニバーサリーブロンド",
+  "subName": "",
+  "name": "アニバーサリーブロンド",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラと同列の味方キャラ全ては[オーダーチェンジ:[0]]を得る。",
+  "textKr": "[常時] このキャラと同列の味方キャラ全ては[オーダーチェンジ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0562"
 }

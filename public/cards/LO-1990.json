@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1990",
+  "title": "ドラゴン",
+  "subName": "エイワス",
+  "name": "ドラゴン エイワス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 0,
   "useTarget": [
     "star",
     "star",
@@ -19,5 +22,12 @@
   "ap": 0,
   "dp": 0,
   "sp": 0,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 0,
+  "costRaw": "無無無無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラのＡＰとＤＰとＳＰとＤＭＧに＋[このキャラを除く味方[TOA]キャラの数]する。",
+  "textKr": "[宣言] [0]:このキャラのＡＰとＤＰとＳＰとＤＭＧに＋[このキャラを除く味方[TOA]キャラの数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1990"
 }

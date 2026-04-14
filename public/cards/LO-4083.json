@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4083",
+  "title": "元気満開ドタバタ花盛り仔犬系忍者",
+  "subName": "花のチルカ",
+  "name": "元気満開ドタバタ花盛り仔犬系忍者 花のチルカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [C2]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラが３体以上登場している場合、１枚ドローする。",
+  "textKr": "[チャージ:２]\n[宣言] [C2]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラが３体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4083"
 }

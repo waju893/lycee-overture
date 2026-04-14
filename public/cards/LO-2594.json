@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2594",
+  "title": "優美の制服",
+  "subName": "フランチェスカ",
+  "name": "優美の制服 フランチェスカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [0]:このキャラの下のカード１枚を破棄する。破棄したとき、{相手キャラ１体}にＳＰ－１する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [0]:このキャラの下のカード１枚を破棄する。破棄したとき、{相手キャラ１体}にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2594"
 }

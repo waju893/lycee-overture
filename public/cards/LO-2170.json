@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2170",
+  "title": "恋する歌姫",
+  "subName": "曹操・華琳",
+  "name": "恋する歌姫 曹操・華琳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2170"
 }

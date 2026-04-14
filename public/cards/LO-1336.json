@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1336",
+  "title": "生まれながらの頭目",
+  "subName": "アサシン／風魔小太郎",
+  "name": "生まれながらの頭目 アサシン／風魔小太郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自分の能力で相手キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 自分の能力で相手キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1336"
 }

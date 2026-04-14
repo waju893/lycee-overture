@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2330",
+  "title": "ゾンターク",
+  "subName": "福岡城",
+  "name": "ゾンターク 福岡城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[サポーター:[花花]]\n[手札宣言] [花花]:{相手キャラ１体}にＤＭＧ－２する。",
+  "textKr": "[サポーター:[花花]]\n[手札宣言] [花花]:{相手キャラ１体}にＤＭＧ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2330"
 }

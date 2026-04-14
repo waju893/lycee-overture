@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4801",
+  "title": "ミニ世界樹から生まれた精霊",
+  "subName": "ちびリリィ",
+  "name": "ミニ世界樹から生まれた精霊 ちびリリィ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。コストが５点以上の味方[日]キャラが登場している場合、味方[日]キャラ全てにＡＰ＋１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。コストが５点以上の味方[日]キャラが登場している場合、味方[日]キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4801"
 }

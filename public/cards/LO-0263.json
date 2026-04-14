@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0263",
+  "title": "トリックオブエクレア",
+  "subName": "神菓エクレアンヌ",
+  "name": "トリックオブエクレア 神菓エクレアンヌ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、２枚ドローする。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、２枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0263"
 }

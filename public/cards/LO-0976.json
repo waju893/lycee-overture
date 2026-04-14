@@ -1,11 +1,25 @@
 {
+  "cardNo": "LO-0976",
+  "title": "イタリアンズ",
+  "subName": "",
+  "name": "イタリアンズ",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] この[花]キャラにＳＰ＋１する。",
+  "textKr": "[常時] この[花]キャラにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0976"
 }

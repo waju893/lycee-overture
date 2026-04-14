@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0520",
+  "title": "夜狼死九・黄金疾走",
+  "subName": "ライダー／坂田金時",
+  "name": "夜狼死九・黄金疾走 ライダー／坂田金時",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、味方＜サーヴァント＞キャラが３体以上の場合、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[誘発] このキャラが登場したとき、味方＜サーヴァント＞キャラが３体以上の場合、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0520"
 }

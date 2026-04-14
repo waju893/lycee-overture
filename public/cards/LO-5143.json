@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5143",
+  "title": "豪快で偉丈夫な任侠者",
+  "subName": "ウコン",
+  "name": "豪快で偉丈夫な任侠者 ウコン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラ１体を味方フィールドに移動する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラ１体を味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5143"
 }

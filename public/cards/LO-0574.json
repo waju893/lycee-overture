@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0574",
+  "title": "精霊の狂騒",
+  "subName": "バーサーカー／クー・フーリン〔オルタ〕",
+  "name": "精霊の狂騒 バーサーカー／クー・フーリン〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 0,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [日日無]: このキャラはターン終了時までダウンしない。",
+  "textKr": "[宣言] [日日無]: このキャラはターン終了時までダウンしない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0574"
 }

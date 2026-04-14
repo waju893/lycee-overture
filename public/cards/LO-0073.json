@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0073",
+  "title": "燦々日光午睡宮酒池肉林",
+  "subName": "バーサーカー／タマモキャット",
+  "name": "燦々日光午睡宮酒池肉林 バーサーカー／タマモキャット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:このキャラの攻撃中に使用する。このキャラを手札に入れる。",
+  "textKr": "[宣言] [0]:このキャラの攻撃中に使用する。このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0073"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2352",
+  "title": "王佐の才",
+  "subName": "荀彧・桂花",
+  "name": "王佐の才 荀彧・桂花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[手札宣言] [D1]:{コストが３点以上の味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[手札宣言] [D1][宙]:ターン終了時まで、次にコストが４点以下の味方[宙]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で行動済みで登場する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[手札宣言] [D1]:{コストが３点以上の味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[手札宣言] [D1][宙]:ターン終了時まで、次にコストが４点以下の味方[宙]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で行動済みで登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2352"
 }

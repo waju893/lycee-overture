@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4437",
+  "title": "特殊部隊の隊長",
+  "subName": "鮫郭 浩輔",
+  "name": "特殊部隊の隊長 鮫郭 浩輔",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄する。このキャラを味方フィールドに移動する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄する。このキャラを味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4437"
 }

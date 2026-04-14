@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1242",
+  "title": "最強の魔物",
+  "subName": "鳳 咲夜",
+  "name": "最強の魔物 鳳 咲夜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[常時] このキャラは相手の効果によって能力値修正を得ない。",
+  "textKr": "[オーダーステップ:[0]]\n[常時] このキャラは相手の効果によって能力値修正を得ない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1242"
 }

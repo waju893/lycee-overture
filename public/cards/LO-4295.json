@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4295",
+  "title": "いつも一歩上手な大人のお姉さん",
+  "subName": "牧原 志帆",
+  "name": "いつも一歩上手な大人のお姉さん 牧原 志帆",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが３点以上の味方[雪]キャラが３体以上登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが３点以上の味方[雪]キャラが３体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4295"
 }

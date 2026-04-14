@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0285",
+  "title": "お姉ちゃん",
+  "subName": "西住 まほ",
+  "name": "お姉ちゃん 西住 まほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,5 +21,12 @@
   "ap": 6,
   "dp": 6,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "黒森峰",
+  "text": "[誘発] 相手キャラがダウンしたバトル終了時、このキャラを未行動にする。",
+  "textKr": "[誘発] 相手キャラがダウンしたバトル終了時、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0285"
 }

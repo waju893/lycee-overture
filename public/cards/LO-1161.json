@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1161",
+  "title": "ミステリアスな生徒会長",
+  "subName": "友利 奈緒",
+  "name": "ミステリアスな生徒会長 友利 奈緒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。このキャラを横に置く。次の相手ターン終了時、横のこのキャラを無償で登場できる。登場しない場合、横のこのキャラを手札に入れる。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。このキャラを横に置く。次の相手ターン終了時、横のこのキャラを無償で登場できる。登場しない場合、横のこのキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1161"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3055",
+  "title": "素直になれない友達の妹",
+  "subName": "香山 菜瑠",
+  "name": "素直になれない友達の妹 香山 菜瑠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがダウンしたとき、味方キャラ１体にＡＰ＋２する。",
+  "textKr": "[誘発] このキャラがダウンしたとき、味方キャラ１体にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3055"
 }

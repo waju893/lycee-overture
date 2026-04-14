@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3297",
+  "title": "パルクレープ",
+  "subName": "春日 春恵",
+  "name": "パルクレープ 春日 春恵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:{相手キャラ１体}にＤＰ－２する。この能力は失われる。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "textKr": "[宣言] [月]:{相手キャラ１体}にＤＰ－２する。この能力は失われる。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3297"
 }

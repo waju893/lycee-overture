@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1406",
+  "title": "朧裏月十一式",
+  "subName": "ランサー／宝蔵院胤舜",
+  "name": "朧裏月十一式 ランサー／宝蔵院胤舜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[日日日]]\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ＋１する。",
+  "textKr": "[オーダーチェンジ:[日日日]]\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1406"
 }

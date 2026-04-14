@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5247",
+  "title": "傳役にして腹心",
+  "subName": "張勲・七乃",
+  "name": "傳役にして腹心 張勲・七乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「汝南袁氏の当主 袁術・美羽」１体を探し登場できる。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「汝南袁氏の当主 袁術・美羽」１体を探し登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5247"
 }

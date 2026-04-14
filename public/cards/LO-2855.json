@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2855",
+  "title": "島一番のチャーハン",
+  "subName": "加藤 うみ",
+  "name": "島一番のチャーハン 加藤 うみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花]:{このキャラを除くコストが２点以下の味方[花]キャラ１体}は[ガッツ:[花]]を得る。この能力は失われる。",
+  "textKr": "[宣言] [花]:{このキャラを除くコストが２点以下の味方[花]キャラ１体}は[ガッツ:[花]]を得る。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2855"
 }

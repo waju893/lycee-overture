@@ -1,18 +1,18 @@
 {
+  "cardNo": "LO-5804",
+  "title": "メイド大集結！",
+  "subName": "ミナ＆満留＆キキ＆蒼",
+  "name": "メイド大集結！ ミナ＆満留＆キキ＆蒼",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "moon",
@@ -23,11 +23,11 @@
   "dp": 4,
   "sp": 4,
   "dmg": 4,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪月花日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[雪月花日]]\n[宣言] [0]:このキャラを除くサブネームに「メイド」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[サポーター:[雪月花日]]\n[宣言] [0]:このキャラを除くサブネームに「メイド」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5804"
 }

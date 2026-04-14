@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2438",
+  "title": "もふもふの大遊戯",
+  "subName": "ミケ＆トラ＆シャム",
+  "name": "もふもふの大遊戯 ミケ＆トラ＆シャム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。このキャラを手札に入れる。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2438"
 }

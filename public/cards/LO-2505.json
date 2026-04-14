@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2505",
+  "title": "お兄ちゃんっ子",
+  "subName": "東儀 白",
+  "name": "お兄ちゃんっ子 東儀 白",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 1,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] 自ターン開始時、このキャラをデッキの下に置く。置いたとき、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] 自ターン開始時、このキャラをデッキの下に置く。置いたとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2505"
 }

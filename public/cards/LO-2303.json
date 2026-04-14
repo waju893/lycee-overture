@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2303",
+  "title": "城内下之嶽",
+  "subName": "今帰仁城",
+  "name": "城内下之嶽 今帰仁城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [日]:このキャラにＤＰ＋２する。",
+  "textKr": "[宣言] [日]:このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2303"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0731",
+  "title": "アンティシペイト・アイ",
+  "subName": "クー・フーリン",
+  "name": "アンティシペイト・アイ クー・フーリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] ターン開始時、相手キャラの数より味方キャラの数が少ない場合、このキャラにＡＰ＋２する。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] ターン開始時、相手キャラの数より味方キャラの数が少ない場合、このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0731"
 }

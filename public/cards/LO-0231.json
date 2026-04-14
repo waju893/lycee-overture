@@ -1,20 +1,19 @@
 {
+  "cardNo": "LO-0231",
+  "title": "白リディ＆黒リディ",
+  "subName": "",
+  "name": "白リディ＆黒リディ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star",
@@ -25,11 +24,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ－２・ＤＰ＋２する。",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ－２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0231"
 }

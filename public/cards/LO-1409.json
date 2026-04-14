@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1409",
+  "title": "黄金律（体）",
+  "subName": "ライダー／女王メイヴ",
+  "name": "黄金律（体） ライダー／女王メイヴ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラがダウンしたとき、味方キャラ１体を味方フィールドに移動する。",
+  "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラがダウンしたとき、味方キャラ１体を味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1409"
 }

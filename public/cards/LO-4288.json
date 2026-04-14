@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4288",
+  "title": "悲運な奴隷少女",
+  "subName": "キキ",
+  "name": "悲運な奴隷少女 キキ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 5,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:コストが３点以上の味方[雪]キャラが３体以上登場している場合、このキャラにＤＰ＋３する。この能力は失われる。",
+  "textKr": "[宣言] [雪]:コストが３点以上の味方[雪]キャラが３体以上登場している場合、このキャラにＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4288"
 }

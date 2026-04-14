@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0881",
+  "title": "錬金術で貧乳克服を夢見るお嬢様",
+  "subName": "ポリン",
+  "name": "錬金術で貧乳克服を夢見るお嬢様 ポリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。相手のデッキを１枚破棄する。このキャラを破棄する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。相手のデッキを１枚破棄する。このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0881"
 }

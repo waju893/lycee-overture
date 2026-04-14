@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3163",
+  "title": "観測者であり被験者",
+  "subName": "操歯 涼子",
+  "name": "観測者であり被験者 操歯 涼子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のゴミ箱の「ドッペルゲンガー」１体を手札に入れる。（同番号の能力は１ターンに１回まで使用可能）",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のゴミ箱の「ドッペルゲンガー」１体を手札に入れる。（同番号の能力は１ターンに１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3163"
 }

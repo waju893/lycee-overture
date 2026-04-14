@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0512",
+  "title": "第五勢",
+  "subName": "セイバー／宮本武蔵",
+  "name": "第五勢 セイバー／宮本武蔵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 6,
   "dp": 5,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [宙無無]:このキャラのバトル中に使用する。このキャラにＤＭＧ－１する。このキャラを未行動にする。",
+  "textKr": "[宣言] [宙無無]:このキャラのバトル中に使用する。このキャラにＤＭＧ－１する。このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0512"
 }

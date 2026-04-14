@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4364",
+  "title": "木ノ本家次女",
+  "subName": "木ノ本 咲耶",
+  "name": "木ノ本家次女 木ノ本 咲耶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、このキャラを除くキャラ名に「木ノ本」を含む味方キャラが登場している場合、１枚ドローできる。しない場合、相手は相手の手札を１枚破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラを除くキャラ名に「木ノ本」を含む味方キャラが登場している場合、１枚ドローできる。しない場合、相手は相手の手札を１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4364"
 }

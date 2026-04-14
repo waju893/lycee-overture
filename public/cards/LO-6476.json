@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6476",
+  "title": "劉邦軍の軍師",
+  "subName": "張良・雪",
+  "name": "劉邦軍の軍師 張良・雪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:カード名に「劉邦」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:カード名に「劉邦」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6476"
 }

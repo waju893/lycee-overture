@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2937",
+  "title": "動物好き",
+  "subName": "天羽 みう",
+  "name": "動物好き 天羽 みう",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2937"
 }

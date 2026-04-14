@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1367",
+  "title": "鷹の瞳",
+  "subName": "アーチャー／エミヤ",
+  "name": "鷹の瞳 アーチャー／エミヤ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラを対象にサポートを使用したとき、このキャラがアイテムを装備している場合、このキャラを未行動にする。",
+  "textKr": "[誘発] このキャラを対象にサポートを使用したとき、このキャラがアイテムを装備している場合、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1367"
 }

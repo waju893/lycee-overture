@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1334",
+  "title": "血の伯爵夫人",
+  "subName": "アサシン／カーミラ",
+  "name": "血の伯爵夫人 アサシン／カーミラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] ダウン以外で味方キャラを破棄したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] ダウン以外で味方キャラを破棄したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1334"
 }

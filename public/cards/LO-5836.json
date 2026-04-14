@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5836",
+  "title": "仕事と銭湯を愛するいぶし銀",
+  "subName": "狭山 寛三郎",
+  "name": "仕事と銭湯を愛するいぶし銀 狭山 寛三郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。味方『お家に帰るまでがましまろです』キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。味方『お家に帰るまでがましまろです』キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5836"
 }

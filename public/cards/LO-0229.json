@@ -1,20 +1,19 @@
 {
+  "cardNo": "LO-0229",
+  "title": "主人公＋リディ",
+  "subName": "",
+  "name": "主人公＋リディ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star"
@@ -22,5 +21,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。",
+  "textKr": "[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0229"
 }

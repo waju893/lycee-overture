@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2238",
+  "title": "大蛇霞",
+  "subName": "丸岡城",
+  "name": "大蛇霞 丸岡城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ１体}を味方フィールドに移動する。\n[手札宣言] [雪雪雪]:ターン終了時まで、次にコストが６点以下の味方[雪]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "textKr": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ１体}を味方フィールドに移動する。\n[手札宣言] [雪雪雪]:ターン終了時まで、次にコストが６点以下の味方[雪]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2238"
 }

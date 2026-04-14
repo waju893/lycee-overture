@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3592",
+  "title": "魔法時間予測",
+  "subName": "セシル＝アベセンティア",
+  "name": "魔法時間予測 セシル＝アベセンティア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3592"
 }

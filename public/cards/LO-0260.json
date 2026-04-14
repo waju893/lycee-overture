@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-0260",
+  "title": "投げっぱなしでミッドナイト♪",
+  "subName": "",
+  "name": "投げっぱなしでミッドナイト♪",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [日日無]:このキャラの攻撃中に使用する。このキャラにバトル終了時までＡＰ＋３・ＤＭＧ＋３する。",
+  "textKr": "[宣言] [日日無]:このキャラの攻撃中に使用する。このキャラにバトル終了時までＡＰ＋３・ＤＭＧ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0260"
 }

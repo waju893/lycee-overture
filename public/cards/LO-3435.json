@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3435",
+  "title": "コワモテ刑事",
+  "subName": "グレン＝アルバート",
+  "name": "コワモテ刑事 グレン＝アルバート",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [月]:{「クラリアス」を装備している味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。",
+  "textKr": "[手札宣言] [月]:{「クラリアス」を装備している味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3435"
 }

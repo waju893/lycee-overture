@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2337",
+  "title": "弘前ねぷた",
+  "subName": "弘前城",
+  "name": "弘前ねぷた 弘前城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [このキャラを破棄する]:コストが２点以下の味方キャラ全てにＡＰ＋１する。",
+  "textKr": "[宣言] [このキャラを破棄する]:コストが２点以下の味方キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2337"
 }

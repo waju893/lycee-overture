@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-0414",
+  "title": "ボコ",
+  "subName": "",
+  "name": "ボコ",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アイテム",
+  "text": "[誘発] 味方キャラがダウンしたバトル終了時、ゴミ箱のそのキャラを手札に入れる。このアイテムを破棄する。",
+  "textKr": "[誘発] 味方キャラがダウンしたバトル終了時、ゴミ箱のそのキャラを手札に入れる。このアイテムを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0414"
 }

@@ -1,17 +1,31 @@
 {
+  "cardNo": "LO-3208",
+  "title": "超電磁砲",
+  "subName": "",
+  "name": "超電磁砲",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
     "cosmos",
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※デッキ構築時、このカードは「LO-0552」と同番号として扱う。",
+  "textKr": "※デッキ構築時、このカードは「LO-0552」と同番号として扱う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3208"
 }

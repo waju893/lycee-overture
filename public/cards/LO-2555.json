@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2555",
+  "title": "武人の棟梁",
+  "subName": "稲生 滸",
+  "name": "武人の棟梁 稲生 滸",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱の「稲生滸」１体}を除外する。{味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱の「稲生滸」１体}を除外する。{味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2555"
 }

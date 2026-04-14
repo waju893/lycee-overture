@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0216",
+  "title": "メガヒュージインパクト",
+  "subName": "エッケザックス",
+  "name": "メガヒュージインパクト エッケザックス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0216"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0274",
+  "title": "ディスティニードロウ",
+  "subName": "ラストリゾート×デュエル",
+  "name": "ディスティニードロウ ラストリゾート×デュエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [0]:自分のデッキを１枚破棄する。このキャラにＤＭＧ＋[破棄したカードのＥＸ]する。",
+  "textKr": "[エンゲージ]\n[宣言] [0]:自分のデッキを１枚破棄する。このキャラにＤＭＧ＋[破棄したカードのＥＸ]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0274"
 }

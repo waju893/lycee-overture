@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-3203",
+  "title": "新たな魂",
+  "subName": "",
+  "name": "新たな魂",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラが未行動の場合、このアイテムを{味方キャラ１体}に移動する。",
+  "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラが未行動の場合、このアイテムを{味方キャラ１体}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3203"
 }

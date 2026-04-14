@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5149",
+  "title": "聖賢の腹心",
+  "subName": "シチーリヤ",
+  "name": "聖賢の腹心 シチーリヤ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、味方『うたわれるもの ロストフラグ』キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置ける。",
+  "textKr": "[誘発] 自ターン中、味方『うたわれるもの ロストフラグ』キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5149"
 }

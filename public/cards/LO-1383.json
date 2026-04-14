@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1383",
+  "title": "王の財宝",
+  "subName": "アーチャー／ギルガメッシュ",
+  "name": "王の財宝 アーチャー／ギルガメッシュ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,13 +21,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    10
-  ],
-  "keyEffects": [
-    4,
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[リカバリー:[相手のデッキを２枚破棄する。]][オーダーステップ:[0]]\n[誘発] 味方キャラが登場したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]][オーダーステップ:[0]]\n[誘発] 味方キャラが登場したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1383"
 }

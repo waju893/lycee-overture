@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1879",
+  "title": "わたし達の存在意義",
+  "subName": "ウルゥル&サラァナ",
+  "name": "わたし達の存在意義 ウルゥル&サラァナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、１枚ドローする。",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1879"
 }

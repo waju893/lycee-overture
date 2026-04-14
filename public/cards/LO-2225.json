@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2225",
+  "title": "招福 招き猫",
+  "subName": "彦根城",
+  "name": "招福 招き猫 彦根城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[サポーター:[花花]]\n[宣言] [花花]:自ターン中に使用する。{コストが２点以下の味方キャラ１体}にＤＰ＋２する。\n[宣言] [花花花]:バトル中に使用できない。コストが３点以上の味方キャラが登場していない場合、{未行動の味方キャラ１体}を行動済みにし、{味方キャラ１体}を未行動にする。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [花花]:自ターン中に使用する。{コストが２点以下の味方キャラ１体}にＤＰ＋２する。\n[宣言] [花花花]:バトル中に使用できない。コストが３点以上の味方キャラが登場していない場合、{未行動の味方キャラ１体}を行動済みにし、{味方キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2225"
 }

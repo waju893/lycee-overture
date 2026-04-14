@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2157",
+  "title": "地上の鎖",
+  "subName": "美鳩 夏乃",
+  "name": "地上の鎖 美鳩 夏乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:{このキャラを除く味方キャラ１体}は[ガッツ:[このキャラの使用代償]]を得る。この能力は失われる。",
+  "textKr": "[宣言] [無]:{このキャラを除く味方キャラ１体}は[ガッツ:[このキャラの使用代償]]を得る。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2157"
 }

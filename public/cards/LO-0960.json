@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0960",
+  "title": "転がるりんご亭の看板娘",
+  "subName": "レイチェル・ハーベスト",
+  "name": "転がるりんご亭の看板娘 レイチェル・ハーベスト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] 自ターン中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 自ターン中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0960"
 }

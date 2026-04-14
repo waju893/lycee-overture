@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1056",
+  "title": "前生徒会副会長",
+  "subName": "小山 柚子",
+  "name": "前生徒会副会長 小山 柚子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    8,
-    12
-  ],
-  "keyEffects": [
-    8,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][サポーター:[D1]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
+  "textKr": "[アシスト][サポーター:[D1]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1056"
 }

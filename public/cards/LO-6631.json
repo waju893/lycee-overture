@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6631",
+  "title": "御風島唯一の医者",
+  "subName": "夕霧 直輝",
+  "name": "御風島唯一の医者 夕霧 直輝",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] 味方「夕霧瑠璃子」を破棄したとき、ゴミ箱のそのキャラをデッキの下に置ける。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] 味方「夕霧瑠璃子」を破棄したとき、ゴミ箱のそのキャラをデッキの下に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6631"
 }

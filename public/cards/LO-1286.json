@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-1286",
+  "title": "アサヒハルカの呪い",
+  "subName": "",
+  "name": "アサヒハルカの呪い",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが相手のデッキにダメージを与えたとき、相手キャラ１体に相手ターン終了時までＤＭＧ－２する。",
+  "textKr": "[誘発] このキャラが相手のデッキにダメージを与えたとき、相手キャラ１体に相手ターン終了時までＤＭＧ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1286"
 }

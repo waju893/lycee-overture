@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0775",
+  "title": "ムーンアロー",
+  "subName": "ディアナ",
+  "name": "ムーンアロー ディアナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [このキャラを破棄する]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[宣言] [このキャラを破棄する]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0775"
 }

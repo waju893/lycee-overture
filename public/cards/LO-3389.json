@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3389",
+  "title": "特別な女の子",
+  "subName": "安芸 かのこ",
+  "name": "特別な女の子 安芸 かのこ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ]\n[手札宣言] [無無無]:味方[HOK]キャラのバトル中に使用する。対戦キャラにＡＰ－２・ＤＰ－２する。",
+  "textKr": "[エンゲージ]\n[手札宣言] [無無無]:味方[HOK]キャラのバトル中に使用する。対戦キャラにＡＰ－２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3389"
 }

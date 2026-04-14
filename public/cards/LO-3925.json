@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3925",
+  "title": "武田家親族筆頭",
+  "subName": "武田 夕霧 信繁",
+  "name": "武田家親族筆頭 武田 夕霧 信繁",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [D1]:味方「武田光璃晴信」または「武田薫信廉」１体にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [D1]:味方「武田光璃晴信」または「武田薫信廉」１体にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3925"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1171",
+  "title": "鳥白島少年団治安維持執行部",
+  "subName": "野村 美希",
+  "name": "鳥白島少年団治安維持執行部 野村 美希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントで相手キャラを破棄したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－１する。",
+  "textKr": "[誘発] 自分のイベントで相手キャラを破棄したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1171"
 }

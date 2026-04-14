@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3352",
+  "title": "双子の妹",
+  "subName": "木下 マイカ",
+  "name": "双子の妹 木下 マイカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:味方「木下きらら」が登場している場合、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:味方「木下きらら」が登場している場合、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3352"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4866",
+  "title": "幼刀",
+  "subName": "ムラサメ",
+  "name": "幼刀 ムラサメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。自分にシールド＋１する。以下から１つを選び処理する。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。自分にシールド＋１する。以下から１つを選び処理する。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4866"
 }

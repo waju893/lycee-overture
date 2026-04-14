@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1877",
+  "title": "はちみつ採り",
+  "subName": "アルルゥ",
+  "name": "はちみつ採り アルルゥ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "トゥスクル",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を自分の「契約」置き場に置ける。\n[コスト] 自分のデッキを１枚破棄する。このキャラを破棄する。破棄したとき、[宙宙宙宙]を発生する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を自分の「契約」置き場に置ける。\n[コスト] 自分のデッキを１枚破棄する。このキャラを破棄する。破棄したとき、[宙宙宙宙]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1877"
 }

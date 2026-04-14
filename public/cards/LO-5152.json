@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5152",
+  "title": "誠実な皇子",
+  "subName": "イタク",
+  "name": "誠実な皇子 イタク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが登場している場合、自分にシールド＋１する。このキャラがＤＦキャラの場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが登場している場合、自分にシールド＋１する。このキャラがＤＦキャラの場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5152"
 }

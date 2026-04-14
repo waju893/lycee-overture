@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0509",
+  "title": "王の見えざる手",
+  "subName": "バーサーカー／謎のヒロインⅩ〔オルタ〕",
+  "name": "王の見えざる手 バーサーカー／謎のヒロインⅩ〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。{味方キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。{味方キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0509"
 }

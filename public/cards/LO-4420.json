@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4420",
+  "title": "『大図書館』の司書",
+  "subName": "テイル",
+  "name": "『大図書館』の司書 テイル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、コストが３点以上の味方[日]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。コストが３点以上の味方[日]キャラが３体以上登場している場合、以下から１つを選び処理する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、コストが３点以上の味方[日]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。コストが３点以上の味方[日]キャラが３体以上登場している場合、以下から１つを選び処理する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4420"
 }

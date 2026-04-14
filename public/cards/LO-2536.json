@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2536",
+  "title": "風紀委員長",
+  "subName": "悠木 かなで",
+  "name": "風紀委員長 悠木 かなで",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、ＳＰが５以上の味方[花]キャラ１体を未行動にする。",
+  "textKr": "[誘発] このキャラが登場したとき、ＳＰが５以上の味方[花]キャラ１体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2536"
 }

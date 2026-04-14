@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4012",
+  "title": "\"死なず\"の品須",
+  "subName": "品須",
+  "name": "\"死なず\"の品須 品須",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置ける。]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [D1]:自分のゴミ箱のカード１枚を自分の「わるいこと」置き場に置ける。自分の「わるいこと」置き場の枚数が４枚以上の場合、このキャラは[ガッツ:[0]]を得る。（ゲーム中１回まで使用可能）",
+  "textKr": "[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置ける。]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [D1]:自分のゴミ箱のカード１枚を自分の「わるいこと」置き場に置ける。自分の「わるいこと」置き場の枚数が４枚以上の場合、このキャラは[ガッツ:[0]]を得る。（ゲーム中１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4012"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5026",
+  "title": "愛嬌たっぷりコミカル亡者",
+  "subName": "灯",
+  "name": "愛嬌たっぷりコミカル亡者 灯",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:このキャラは [ボーナス:[１枚ドローする。相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[宣言] [無]:このキャラは [ボーナス:[１枚ドローする。相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5026"
 }

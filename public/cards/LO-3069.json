@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3069",
+  "title": "神出鬼没のミニ災害？",
+  "subName": "綾瀬 ユーキ",
+  "name": "神出鬼没のミニ災害？ 綾瀬 ユーキ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [日]:このキャラにＡＰ＋２する。",
+  "textKr": "[アグレッシブ]\n[宣言] [日]:このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3069"
 }

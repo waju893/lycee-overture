@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1013",
+  "title": "サンダース大学付属高校？",
+  "subName": "五十鈴 華",
+  "name": "サンダース大学付属高校？ 五十鈴 華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2,
-    8
-  ],
-  "keyEffects": [
-    2,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サンダース",
+  "text": "[アシスト][ステップ:[0]]\n[宣言] [0]:バトル中に使用する。{コストが３点以上の味方キャラ１体}にバトル終了時までＤＭＧ＋１する。（１バトルに１回、１ターンに２回まで使用可能）",
+  "textKr": "[アシスト][ステップ:[0]]\n[宣言] [0]:バトル中に使用する。{コストが３点以上の味方キャラ１体}にバトル終了時までＤＭＧ＋１する。（１バトルに１回、１ターンに２回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1013"
 }

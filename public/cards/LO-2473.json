@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2473",
+  "title": "告白・玲",
+  "subName": "氷見山 玲",
+  "name": "告白・玲 氷見山 玲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪雪]:自分の手札の「氷見山 玲」を好きな枚数公開する。このキャラにＤＭＧ＋[公開した枚数]する。この能力は失われる。",
+  "textKr": "[宣言] [雪雪]:自分の手札の「氷見山 玲」を好きな枚数公開する。このキャラにＤＭＧ＋[公開した枚数]する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2473"
 }

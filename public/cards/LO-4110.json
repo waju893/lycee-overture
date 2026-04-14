@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4110",
+  "title": "壬生の精神",
+  "subName": "菊千代",
+  "name": "壬生の精神 菊千代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手キャラ全てにＡＰ－１・ＤＰ－１する。自分のゴミ箱のカード１枚を自分の「わるいこと」置き場に置ける。この能力は失われる。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手キャラ全てにＡＰ－１・ＤＰ－１する。自分のゴミ箱のカード１枚を自分の「わるいこと」置き場に置ける。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4110"
 }

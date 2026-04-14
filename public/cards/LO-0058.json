@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0058",
+  "title": "騎士は徒手にて死せず",
+  "subName": "バーサーカー／ランスロット",
+  "name": "騎士は徒手にて死せず バーサーカー／ランスロット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D1]:このキャラにＡＰ－４・ＤＰ＋４する。",
+  "textKr": "[宣言] [D1]:このキャラにＡＰ－４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0058"
 }

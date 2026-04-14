@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1139",
+  "title": "アリクイさんチームの車長兼通信手",
+  "subName": "ねこにゃー",
+  "name": "アリクイさんチームの車長兼通信手 ねこにゃー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [D1]:このキャラのバトル中に使用する。味方＜大洗女子＞キャラの属性が４種類以上の場合、１枚ドローする。このターン終了時、このキャラを破棄する。",
+  "textKr": "[アシスト]\n[宣言] [D1]:このキャラのバトル中に使用する。味方＜大洗女子＞キャラの属性が４種類以上の場合、１枚ドローする。このターン終了時、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1139"
 }

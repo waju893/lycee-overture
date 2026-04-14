@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1260",
+  "title": "メンバーいち謎に満ちた男",
+  "subName": "TK",
+  "name": "メンバーいち謎に満ちた男 TK",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,13 +17,11 @@
   "dp": 1,
   "sp": 0,
   "dmg": 2,
-  "keyeffects": [
-    6,
-    8
-  ],
-  "keyEffects": [
-    6,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+  "textKr": "[アシスト][アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1260"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0981",
+  "title": "白銀の疾風",
+  "subName": "アシュリー",
+  "name": "白銀の疾風 アシュリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 手札以外から味方キャラが登場したとき、自ターン終了時までこのキャラのＤＭＧを４にする。",
+  "textKr": "[誘発] 手札以外から味方キャラが登場したとき、自ターン終了時までこのキャラのＤＭＧを４にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0981"
 }

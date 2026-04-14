@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2221",
+  "title": "月に叢雲 花に風",
+  "subName": "指月伏見城",
+  "name": "月に叢雲 花に風 指月伏見城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [月]:バトル中に使用できない。相手の宣言に対応して使用できない。{ＡＰまたはＤＰが０以下の相手ＡＦキャラ１体}を相手フィールドに移動する。この能力は失われる。",
+  "textKr": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [月]:バトル中に使用できない。相手の宣言に対応して使用できない。{ＡＰまたはＤＰが０以下の相手ＡＦキャラ１体}を相手フィールドに移動する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2221"
 }

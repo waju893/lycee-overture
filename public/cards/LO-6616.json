@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6616",
+  "title": "裏社会に身を投じた少年",
+  "subName": "一 樹",
+  "name": "裏社会に身を投じた少年 一 樹",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,13 +20,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    19
-  ],
-  "keyEffects": [
-    5,
-    19
-  ],
-  "leader": true
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リーダー][プリンシパル][ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「ひなの笑顔」１枚を探し無償で配置できる。１枚ドローする。\n[宣言] [0]:自分の「復讐」置き場の枚数が１枚以上の場合、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋４する。",
+  "textKr": "[リーダー][プリンシパル][ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「ひなの笑顔」１枚を探し無償で配置できる。１枚ドローする。\n[宣言] [0]:自分の「復讐」置き場の枚数が１枚以上の場合、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6616"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4929",
+  "title": "共働きの母親",
+  "subName": "谷風 由月",
+  "name": "共働きの母親 谷風 由月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙]:{持ち主が自分の[宙]アイテムを持つ味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "textKr": "[宣言] [宙]:{持ち主が自分の[宙]アイテムを持つ味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4929"
 }

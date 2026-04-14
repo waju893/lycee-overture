@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2047",
+  "title": "怠惰の魔可",
+  "subName": "夏目 暦",
+  "name": "怠惰の魔可 夏目 暦",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがＡＦに登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラがＡＦに登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2047"
 }

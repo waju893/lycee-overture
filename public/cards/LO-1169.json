@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1169",
+  "title": "なかなか人に懐かない気高き仔猫",
+  "subName": "棗 鈴",
+  "name": "なかなか人に懐かない気高き仔猫 棗 鈴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8,
-    13
-  ],
-  "keyEffects": [
-    8,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [無]:このキャラのバトル中に使用する。対戦キャラのコストが２点以下の場合、対戦キャラを破棄する。この能力は失われる。",
+  "textKr": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [無]:このキャラのバトル中に使用する。対戦キャラのコストが２点以下の場合、対戦キャラを破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1169"
 }

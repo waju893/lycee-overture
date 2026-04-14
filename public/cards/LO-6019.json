@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6019",
+  "title": "菜子を溺愛する陸上国防隊一佐",
+  "subName": "八十島 虎鮫",
+  "name": "菜子を溺愛する陸上国防隊一佐 八十島 虎鮫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 6,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋３・ＤＰ＋３する。味方「古奈菜子」または「咲上参式」１体にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋３・ＤＰ＋３する。味方「古奈菜子」または「咲上参式」１体にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6019"
 }

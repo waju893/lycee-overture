@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0764",
+  "title": "混沌からの顕現",
+  "subName": "ニャルラトホテプ",
+  "name": "混沌からの顕現 ニャルラトホテプ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[エンゲージ]\n[宣言] [T][雪雪無無]:{相手キャラ１体}を行動済みにする。",
+  "textKr": "[エンゲージ]\n[宣言] [T][雪雪無無]:{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0764"
 }

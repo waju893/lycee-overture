@@ -1,0 +1,19 @@
+{
+  "mode": "lycee_final_parser_v4",
+  "startPage": 1,
+  "delayMs": 350,
+  "concurrency": 1,
+  "discovered": 5343,
+  "saved": 5343,
+  "failed": 0,
+  "allowedSuffixes": [
+    "",
+    "-A",
+    "-B",
+    "-C",
+    "-D",
+    "-K",
+    "-S",
+    "-V"
+  ]
+}

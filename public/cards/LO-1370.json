@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1370",
+  "title": "恋見てせざるは愛無きなり",
+  "subName": "ランサー／パールヴァティー",
+  "name": "恋見てせざるは愛無きなり ランサー／パールヴァティー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、このキャラと同列の味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラと同列の味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1370"
 }

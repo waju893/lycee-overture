@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-6373",
+  "title": "魂の器",
+  "subName": "",
+  "name": "魂の器",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分の効果で相手キャラが場を離れたとき、自分のゴミ箱のカード１枚を下のカードが４枚以下のこのエリアの下に置ける。（１ターンに５回まで処理可能）\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。以下から１つを選び処理する。（同じ効果は２回選べない）\n※「魂の器」は持ち主の場にのみ１枚まで配置可能",
+  "textKr": "[誘発] 自ターン中、自分の効果で相手キャラが場を離れたとき、自分のゴミ箱のカード１枚を下のカードが４枚以下のこのエリアの下に置ける。（１ターンに５回まで処理可能）\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。以下から１つを選び処理する。（同じ効果は２回選べない）\n※「魂の器」は持ち主の場にのみ１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6373"
 }

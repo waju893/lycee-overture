@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0779",
+  "title": "死滅の海流",
+  "subName": "ヨルムンガンド",
+  "name": "死滅の海流 ヨルムンガンド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "幻獣",
+  "text": "[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0779"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1469",
+  "title": "白き射手",
+  "subName": "ナナリー",
+  "name": "白き射手 ナナリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [D1][雪雪雪雪]:相手の宣言に対応して使用できない。{行動済みの相手キャラ１体}を破棄する。",
+  "textKr": "[手札宣言] [D1][雪雪雪雪]:相手の宣言に対応して使用できない。{行動済みの相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1469"
 }

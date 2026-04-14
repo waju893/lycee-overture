@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2651",
+  "title": "プチ毒舌",
+  "subName": "鈴木 みう",
+  "name": "プチ毒舌 鈴木 みう",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]エリア１枚を味方フィールドに配置する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]エリア１枚を味方フィールドに配置する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2651"
 }

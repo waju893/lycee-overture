@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0331",
+  "title": "天下のクリスティ式",
+  "subName": "ミッコ",
+  "name": "天下のクリスティ式 ミッコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[ステップ:[0]]\n[宣言] [D1]:{味方＜継続＞キャラ１体}は[サイドステップ:[0]]を得る。",
+  "textKr": "[ステップ:[0]]\n[宣言] [D1]:{味方＜継続＞キャラ１体}は[サイドステップ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0331"
 }

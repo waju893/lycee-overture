@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0890",
+  "title": "毒舌",
+  "subName": "アイリス",
+  "name": "毒舌 アイリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが相手のデッキにダメージを与えたとき、自分のゴミ箱の「アイリス」１体をデッキの下に置くことができる。",
+  "textKr": "[誘発] このキャラが相手のデッキにダメージを与えたとき、自分のゴミ箱の「アイリス」１体をデッキの下に置くことができる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0890"
 }

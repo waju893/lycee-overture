@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2198",
+  "title": "聖☆まーりゃん帝国",
+  "subName": "まーりゃん先輩",
+  "name": "聖☆まーりゃん帝国 まーりゃん先輩",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[手札宣言] [日日無]:味方攻撃キャラ１体を破棄する。破棄したとき、ゴミ箱のこのキャラをそのキャラが登場していたフィールドに無償で登場する。",
+  "textKr": "[アグレッシブ]\n[手札宣言] [日日無]:味方攻撃キャラ１体を破棄する。破棄したとき、ゴミ箱のこのキャラをそのキャラが登場していたフィールドに無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2198"
 }

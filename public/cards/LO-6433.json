@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6433",
+  "title": "元人狩一座《陰翳礼讃》",
+  "subName": "泡沫 夜仔",
+  "name": "元人狩一座《陰翳礼讃》 泡沫 夜仔",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:１]\n[宣言] [C1][雪雪雪]:相手の宣言に対応して使用できない。{相手キャラ１体}を破棄する。味方「文示宮篤」が登場している場合、相手のデッキを１枚破棄できる。",
+  "textKr": "[ジャンプ:[0]][チャージ:１]\n[宣言] [C1][雪雪雪]:相手の宣言に対応して使用できない。{相手キャラ１体}を破棄する。味方「文示宮篤」が登場している場合、相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6433"
 }

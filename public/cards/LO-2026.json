@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2026",
+  "title": "夏の聖夜",
+  "subName": "上林 聖",
+  "name": "夏の聖夜 上林 聖",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、このキャラに隣接した味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラに隣接した味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2026"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3415",
+  "title": "難攻不落のツンデレラ",
+  "subName": "ベルナデッド・ヘンリエッタ・アイゼルストン",
+  "name": "難攻不落のツンデレラ ベルナデッド・ヘンリエッタ・アイゼルストン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方キャラと自分のゴミ箱のカード全てがコストが３点以上の場合、味方キャラ全てにＤＰ＋１する。\n[宣言] [雪]:このキャラの防御中に使用する。バトルを中断する。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方キャラと自分のゴミ箱のカード全てがコストが３点以上の場合、味方キャラ全てにＤＰ＋１する。\n[宣言] [雪]:このキャラの防御中に使用する。バトルを中断する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3415"
 }

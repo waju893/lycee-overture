@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3095",
+  "title": "白泉学園2年生",
+  "subName": "九條 都",
+  "name": "白泉学園2年生 九條 都",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無無]:このキャラを行動済みにする。行動済みにしたとき、{味方キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[宣言] [無無]:このキャラを行動済みにする。行動済みにしたとき、{味方キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3095"
 }

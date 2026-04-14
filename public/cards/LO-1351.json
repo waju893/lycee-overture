@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1351",
+  "title": "人よ、神を繋ぎとめよう",
+  "subName": "ランサー／エルキドゥ",
+  "name": "人よ、神を繋ぎとめよう ランサー／エルキドゥ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラがバトルに参加したとき、このキャラと同列の相手ＡＦキャラ１体にＡＰ－１、またはこのキャラと同列の相手ＤＦキャラ１体にＤＰ－１する。",
+  "textKr": "[誘発] このキャラがバトルに参加したとき、このキャラと同列の相手ＡＦキャラ１体にＡＰ－１、またはこのキャラと同列の相手ＤＦキャラ１体にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1351"
 }

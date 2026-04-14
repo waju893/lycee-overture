@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6265",
+  "title": "心優しい同級生",
+  "subName": "藤枝 美緒",
+  "name": "心優しい同級生 藤枝 美緒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
+  "textKr": "[チャージ:１]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6265"
 }

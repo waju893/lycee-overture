@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5791",
+  "title": "ブルバギの紅一点",
+  "subName": "長山 香奈",
+  "name": "ブルバギの紅一点 長山 香奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「芸術の頂点」を配置している場合、自分のゴミ箱のカード１枚をそのエリアの下に置ける。１枚ドローする。\n[誘発] 相手ターン中、コストが１点以上の手札宣言能力を使用したとき、味方キャラ１体にＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「芸術の頂点」を配置している場合、自分のゴミ箱のカード１枚をそのエリアの下に置ける。１枚ドローする。\n[誘発] 相手ターン中、コストが１点以上の手札宣言能力を使用したとき、味方キャラ１体にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5791"
 }

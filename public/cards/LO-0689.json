@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0689",
+  "title": "バランス・オブ・パワー",
+  "subName": "三好 由比子",
+  "name": "バランス・オブ・パワー 三好 由比子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [T無無無]:自ターン中に使用する。[自分のゴミ箱のキャラ１体]を 登場する。",
+  "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [T無無無]:自ターン中に使用する。[自分のゴミ箱のキャラ１体]を 登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0689"
 }

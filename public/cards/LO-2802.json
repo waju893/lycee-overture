@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2802",
+  "title": "純真無垢で兄想い",
+  "subName": "乙坂 歩未",
+  "name": "純真無垢で兄想い 乙坂 歩未",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラがダウンしたとき、このキャラと同列の味方キャラ１体にＤＰ＋２する。",
+  "textKr": "[誘発] 味方キャラがダウンしたとき、このキャラと同列の味方キャラ１体にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2802"
 }

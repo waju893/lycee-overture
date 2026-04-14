@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0532",
+  "title": "逃れ得ぬ死の鉤爪",
+  "subName": "ランサー／ジャガーマン",
+  "name": "逃れ得ぬ死の鉤爪 ランサー／ジャガーマン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:自分のデッキを１枚破棄する。破棄したカードのＥＸが１以下の場合、このキャラにＤＭＧ＋２する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:自分のデッキを１枚破棄する。破棄したカードのＥＸが１以下の場合、このキャラにＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0532"
 }

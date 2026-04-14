@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3721",
+  "title": "死霊魔術師",
+  "subName": "メメント",
+  "name": "死霊魔術師 メメント",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２のキャラ１体を登場できる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２のキャラ１体を登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3721"
 }

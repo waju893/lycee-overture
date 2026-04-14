@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-2705",
+  "title": "雪の呪い",
+  "subName": "",
+  "name": "雪の呪い",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このエリアを「恋塚愛」の能力で配置したとき、１枚ドローできる。\n[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、相手のデッキを１枚破棄する。この効果は相手ターン終了時まで失われる。\n※「雪の呪い」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] このエリアを「恋塚愛」の能力で配置したとき、１枚ドローできる。\n[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、相手のデッキを１枚破棄する。この効果は相手ターン終了時まで失われる。\n※「雪の呪い」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2705"
 }

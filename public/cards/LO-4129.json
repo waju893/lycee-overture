@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4129",
+  "title": "神宮家の三女ご愛用minakoブランドTシャツ",
+  "subName": "神宮実乃璃の着ているポニーTシャツ",
+  "name": "神宮家の三女ご愛用minakoブランドTシャツ 神宮実乃璃の着ているポニーTシャツ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "minako",
+  "text": "[誘発] このキャラのバトル終了時、このキャラを除外する。",
+  "textKr": "[誘発] このキャラのバトル終了時、このキャラを除外する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4129"
 }

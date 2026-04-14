@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3564",
+  "title": "人間に心惹かれて",
+  "subName": "涼",
+  "name": "人間に心惹かれて 涼",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{元のＤＰが４以上の味方キャラ１体}にＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{元のＤＰが４以上の味方キャラ１体}にＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3564"
 }

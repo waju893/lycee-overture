@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2819",
+  "title": "新人寮長",
+  "subName": "二木 佳奈多",
+  "name": "新人寮長 二木 佳奈多",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[宣言] [0]:{味方＜リトルバスターズ＞キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[アシスト]\n[宣言] [0]:{味方＜リトルバスターズ＞キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2819"
 }

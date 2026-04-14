@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1898",
+  "title": "超電磁砲",
+  "subName": "御坂 美琴",
+  "name": "超電磁砲 御坂 美琴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] ターン開始時、コストが３点以上の味方[宙]キャラ１体にＡＰ＋１する。\n[誘発] このキャラが登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のデッキからＥＸが２の[宙]キャラ１体またはＥＸが２の[宙]アイテム１枚を探し公開して手札に入れる。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] ターン開始時、コストが３点以上の味方[宙]キャラ１体にＡＰ＋１する。\n[誘発] このキャラが登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のデッキからＥＸが２の[宙]キャラ１体またはＥＸが２の[宙]アイテム１枚を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1898"
 }

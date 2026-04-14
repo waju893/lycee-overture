@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3062",
+  "title": "お兄ちゃんLOVEな実妹",
+  "subName": "白咲 ひな",
+  "name": "お兄ちゃんLOVEな実妹 白咲 ひな",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがダウンしたとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] このキャラがダウンしたとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3062"
 }

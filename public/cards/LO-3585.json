@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3585",
+  "title": "箒の精霊",
+  "subName": "サライラ",
+  "name": "箒の精霊 サライラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}を味方フィールドに移動する。ゴミ箱のこのキャラを無償で登場できる。",
+  "textKr": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}を味方フィールドに移動する。ゴミ箱のこのキャラを無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3585"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4089",
+  "title": "コミュ力おばけ",
+  "subName": "死神のストナ",
+  "name": "コミュ力おばけ 死神のストナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [C1]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラ全てにＡＰ＋１する。",
+  "textKr": "[チャージ:２]\n[宣言] [C1]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4089"
 }

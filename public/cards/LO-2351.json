@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2351",
+  "title": "魏武の大号令",
+  "subName": "曹操・華琳",
+  "name": "魏武の大号令 曹操・華琳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "－●－－●－",
+  "typeTagsRaw": "魏",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[誘発] 相手ターン開始時、コストが４点以下の味方ＡＦキャラ１体をそのキャラと同列の味方ＤＦに移動できる。移動したとき、そのキャラを未行動にする。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[誘発] 相手ターン開始時、コストが４点以下の味方ＡＦキャラ１体をそのキャラと同列の味方ＤＦに移動できる。移動したとき、そのキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2351"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2183",
+  "title": "スランバーアピアランス",
+  "subName": "ヒュプノス",
+  "name": "スランバーアピアランス ヒュプノス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラが手札から登場したとき、相手キャラ１体を行動済みにできる。しない場合、そのキャラは次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、相手キャラ１体を行動済みにできる。しない場合、そのキャラは次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2183"
 }

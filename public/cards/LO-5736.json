@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5736",
+  "title": "蒼き閃光エンジェルナイト",
+  "subName": "瑞緒 亜由美",
+  "name": "蒼き閃光エンジェルナイト 瑞緒 亜由美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが自分の効果で場を離れたとき、１枚ドローする。自分のゴミ箱の「築川宇佐美」１体をデッキの下に置ける。",
+  "textKr": "[誘発] このキャラが自分の効果で場を離れたとき、１枚ドローする。自分のゴミ箱の「築川宇佐美」１体をデッキの下に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5736"
 }

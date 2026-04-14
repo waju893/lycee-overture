@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4462",
+  "title": "謎の少年",
+  "subName": "八雲 千草",
+  "name": "謎の少年 八雲 千草",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,5 +21,12 @@
   "ap": 6,
   "dp": 6,
   "sp": 0,
-  "dmg": 6
+  "dmg": 6,
+  "ex": 2,
+  "costRaw": "月月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「受信探偵」の下のカード全てを破棄する。破棄した枚数が２枚以下の場合、このキャラを破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「受信探偵」の下のカード全てを破棄する。破棄した枚数が２枚以下の場合、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4462"
 }

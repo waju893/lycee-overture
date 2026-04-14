@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4998",
+  "title": "新入生応援",
+  "subName": "三司 あやせ",
+  "name": "新入生応援 三司 あやせ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,13 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    16
-  ],
-  "keyEffects": [
-    4,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２][オーダーステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ１体}にＤＰ＋２する。",
+  "textKr": "[チャージ:２][オーダーステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ１体}にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4998"
 }

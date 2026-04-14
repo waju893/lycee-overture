@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5185",
+  "title": "烟師",
+  "subName": "スズリ",
+  "name": "烟師 スズリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [花]:このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [花]:このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5185"
 }

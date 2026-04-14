@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1650",
+  "title": "幼なじみのお姉さん",
+  "subName": "馬庭 芦花",
+  "name": "幼なじみのお姉さん 馬庭 芦花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたバトル終了時、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたバトル終了時、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1650"
 }

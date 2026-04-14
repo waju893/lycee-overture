@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3277",
+  "title": "管理至上主義",
+  "subName": "大蔵 駿我",
+  "name": "管理至上主義 大蔵 駿我",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体を破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「小倉朝日」１体を探し登場できる。\n[宣言] [0]:{カード名に「大蔵」を含む味方キャラまたは味方「小倉朝日」または味方「メリル・リンチ」１体}にＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体を破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「小倉朝日」１体を探し登場できる。\n[宣言] [0]:{カード名に「大蔵」を含む味方キャラまたは味方「小倉朝日」または味方「メリル・リンチ」１体}にＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3277"
 }

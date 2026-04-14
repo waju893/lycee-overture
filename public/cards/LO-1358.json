@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1358",
+  "title": "神明裁決",
+  "subName": "ルーラー／ジャンヌ・ダルク",
+  "name": "神明裁決 ルーラー／ジャンヌ・ダルク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[月月]]\n[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[オーダーチェンジ:[月月]]\n[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1358"
 }

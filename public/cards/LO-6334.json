@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6334",
+  "title": "治安警察の凸凹コンビ",
+  "subName": "ネス ＆ ストーン",
+  "name": "治安警察の凸凹コンビ ネス ＆ ストーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{このキャラを除くコストが２点以下の味方防御キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{このキャラを除くコストが２点以下の味方防御キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6334"
 }

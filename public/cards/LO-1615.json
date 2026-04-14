@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1615",
+  "title": "お茶目な護衛役",
+  "subName": "常陸 茉子",
+  "name": "お茶目な護衛役 常陸 茉子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。自分のゴミ箱のカード全てが[日]の場合、このキャラを横に置く。次の相手ターン終了時、横のこのキャラを無償で登場する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。自分のゴミ箱のカード全てが[日]の場合、このキャラを横に置く。次の相手ターン終了時、横のこのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1615"
 }

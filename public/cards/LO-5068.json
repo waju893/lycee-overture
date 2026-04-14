@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5068",
+  "title": "将来の編集長筆頭候補",
+  "subName": "風岡 麻理",
+  "name": "将来の編集長筆頭候補 風岡 麻理",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方『WHITE ALBUM シリーズ』キャラが３体以上の場合、１枚ドローする。\n[宣言] [0]:コストが５点以上の味方ＡＦキャラが登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方『WHITE ALBUM シリーズ』キャラが３体以上の場合、１枚ドローする。\n[宣言] [0]:コストが５点以上の味方ＡＦキャラが登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5068"
 }

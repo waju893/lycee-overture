@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4124",
+  "title": "隣に住んでいる世話好きな先輩",
+  "subName": "小瀬 葉月",
+  "name": "隣に住んでいる世話好きな先輩 小瀬 葉月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラが登場したとき、このキャラにＳＰ＋２する。",
+  "textKr": "[誘発] 味方キャラが登場したとき、このキャラにＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4124"
 }

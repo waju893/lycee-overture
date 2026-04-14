@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0124",
+  "title": "神領次元霊子分解理論",
+  "subName": "ミョルニル",
+  "name": "神領次元霊子分解理論 ミョルニル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0124"
 }

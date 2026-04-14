@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2415",
+  "title": "海兵隊式戦闘法",
+  "subName": "于禁・沙和",
+  "name": "海兵隊式戦闘法 于禁・沙和",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[宣言] [0]:{相手キャラ１体}にＳＰ－１する。この能力は失われる。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}にＳＰ－１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2415"
 }

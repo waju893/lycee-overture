@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3455",
+  "title": "ストリート系オタク女子校生",
+  "subName": "桜田 杏",
+  "name": "ストリート系オタク女子校生 桜田 杏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが３点以上の味方キャラと同列の味方キャラ１体}にＡＰ＋１・ＤＰ＋１し、そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが３点以上の味方キャラと同列の味方キャラ１体}にＡＰ＋１・ＤＰ＋１し、そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3455"
 }

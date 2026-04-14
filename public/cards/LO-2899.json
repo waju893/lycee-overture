@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2899",
+  "title": "幻体",
+  "subName": "ゴースト",
+  "name": "幻体 ゴースト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、１枚ドローできる。しない場合、相手は相手の手札を１枚破棄する。\n[宣言] [0]:{アイテムを装備しているキャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ－１する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、１枚ドローできる。しない場合、相手は相手の手札を１枚破棄する。\n[宣言] [0]:{アイテムを装備しているキャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2899"
 }

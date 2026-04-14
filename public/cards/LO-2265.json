@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2265",
+  "title": "出羽柵",
+  "subName": "秋田城",
+  "name": "出羽柵 秋田城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [花][このキャラを破棄する]:{コストが２点以下の味方[花]キャラ２体}は以下の能力を得る。\n[誘発] このキャラを相手の効果で破棄したとき、ゴミ箱のこのキャラを無償で登場する。",
+  "textKr": "[宣言] [花][このキャラを破棄する]:{コストが２点以下の味方[花]キャラ２体}は以下の能力を得る。\n[誘発] このキャラを相手の効果で破棄したとき、ゴミ箱のこのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2265"
 }

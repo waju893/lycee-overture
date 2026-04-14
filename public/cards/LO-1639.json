@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1639",
+  "title": "同僚教師",
+  "subName": "虎倉 博巳",
+  "name": "同僚教師 虎倉 博巳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにＡＰ＋２する。",
+  "textKr": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1639"
 }

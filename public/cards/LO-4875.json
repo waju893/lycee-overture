@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4875",
+  "title": "オナニーマスター",
+  "subName": "綾地 寧々",
+  "name": "オナニーマスター 綾地 寧々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4875"
 }

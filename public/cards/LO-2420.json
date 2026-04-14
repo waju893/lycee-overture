@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2420",
+  "title": "神速の大号令",
+  "subName": "張遼・霞",
+  "name": "神速の大号令 張遼・霞",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "魏",
+  "text": "[オーダーステップ:[0]]\n[誘発] 味方[宙]キャラを自分のイベントまたは手札宣言能力の対象に指定したとき、そのキャラにＡＰ＋１またはＤＰ＋１する。\n[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のＥＸが１のカード１枚}を除外する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 味方[宙]キャラを自分のイベントまたは手札宣言能力の対象に指定したとき、そのキャラにＡＰ＋１またはＤＰ＋１する。\n[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のＥＸが１のカード１枚}を除外する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2420"
 }

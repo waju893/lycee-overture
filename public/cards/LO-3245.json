@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3245",
+  "title": "実はいたずら好きの先輩",
+  "subName": "二上 陽子",
+  "name": "実はいたずら好きの先輩 二上 陽子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、相手が能力を使用したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 自ターン中、相手が能力を使用したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3245"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3164",
+  "title": "魂の憑依",
+  "subName": "ドッペルゲンガー",
+  "name": "魂の憑依 ドッペルゲンガー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「新たな魂」１枚を探しこのキャラに無償で装備する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「新たな魂」１枚を探しこのキャラに無償で装備する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3164"
 }

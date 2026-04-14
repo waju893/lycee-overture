@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5360",
+  "title": "パントマイマー",
+  "subName": "POWさん",
+  "name": "パントマイマー POWさん",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラを破棄する。破棄したとき、自分のゴミ箱のＥＸが２の[MAD][雪]イベント１枚をデッキの下に置く。",
+  "textKr": "[宣言] [0]:このキャラを破棄する。破棄したとき、自分のゴミ箱のＥＸが２の[MAD][雪]イベント１枚をデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5360"
 }

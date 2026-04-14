@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1017",
+  "title": "カバさんチームの砲手",
+  "subName": "左衛門佐",
+  "name": "カバさんチームの砲手 左衛門佐",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "雪雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [T][雪]:相手ターン中に使用する。{コストが２点以下の相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[宣言] [T][雪]:相手ターン中に使用する。{コストが２点以下の相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1017"
 }

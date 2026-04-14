@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0064",
+  "title": "疵獣の咆吼",
+  "subName": "バーサーカー／スパルタクス",
+  "name": "疵獣の咆吼 バーサーカー／スパルタクス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [宙宙宙宙宙]:このキャラにＡＰ＋４・ＤＰ＋４する。",
+  "textKr": "[宣言] [宙宙宙宙宙]:このキャラにＡＰ＋４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0064"
 }

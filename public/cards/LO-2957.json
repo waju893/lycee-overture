@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2957",
+  "title": "好奇心旺盛",
+  "subName": "田寄 多乃実",
+  "name": "好奇心旺盛 田寄 多乃実",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [日]:味方キャラ全てがコストが２点以下の場合、{味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。\n[手札宣言] [日日日]:コストが２点以下の味方[日]キャラ２体は次の能力を得る。\n[誘発] このキャラを相手の効果で破棄したとき、ゴミ箱のこのキャラを無償で登場する。",
+  "textKr": "[宣言] [日]:味方キャラ全てがコストが２点以下の場合、{味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。\n[手札宣言] [日日日]:コストが２点以下の味方[日]キャラ２体は次の能力を得る。\n[誘発] このキャラを相手の効果で破棄したとき、ゴミ箱のこのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2957"
 }

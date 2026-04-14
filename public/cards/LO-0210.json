@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0210",
+  "title": "我流忍術奥義血祭",
+  "subName": "紅因幡",
+  "name": "我流忍術奥義血祭 紅因幡",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 1,
   "sp": 0,
   "dmg": 2,
-  "keyeffects": [
-    6,
-    7
-  ],
-  "keyEffects": [
-    6,
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]][アグレッシブ]",
+  "textKr": "[エンゲージ:[１枚ドローする。]][アグレッシブ]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0210"
 }

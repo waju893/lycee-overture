@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0053",
+  "title": "トロージャン・ガーディアン",
+  "subName": "ランサー／ヘクトール",
+  "name": "トロージャン・ガーディアン ランサー／ヘクトール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D1]:キャラ１体にＳＰ＋１する。",
+  "textKr": "[宣言] [D1]:キャラ１体にＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0053"
 }

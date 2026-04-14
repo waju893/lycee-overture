@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4433",
+  "title": "冴えない十三課の係長",
+  "subName": "山田係長",
+  "name": "冴えない十三課の係長 山田係長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「第七共和国警察庁」が配置されている場合、このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方「第七共和国警察庁」が配置されている場合、このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4433"
 }

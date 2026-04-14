@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0819",
+  "title": "エナジーチャージ",
+  "subName": "ヘルモーズ",
+  "name": "エナジーチャージ ヘルモーズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[アグレッシブ]\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにＤＭＧ＋１する。このバトル終了時、このキャラを破棄する。",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにＤＭＧ＋１する。このバトル終了時、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0819"
 }

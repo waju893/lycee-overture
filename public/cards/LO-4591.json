@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4591",
+  "title": "気配り上手なしっかり者",
+  "subName": "柳木原 翠",
+  "name": "気配り上手なしっかり者 柳木原 翠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のコストが１点以上のイベント・手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 自分のコストが１点以上のイベント・手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4591"
 }

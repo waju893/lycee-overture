@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5884",
+  "title": "軍事オタク",
+  "subName": "溝口 誠次",
+  "name": "軍事オタク 溝口 誠次",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『らぶ2Quad』キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『らぶ2Quad』キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5884"
 }

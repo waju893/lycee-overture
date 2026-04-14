@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6138",
+  "title": "お姉ちゃんのお手伝い",
+  "subName": "百々瀬 かぐや",
+  "name": "お姉ちゃんのお手伝い 百々瀬 かぐや",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「百々瀬かぐや」または「百々瀬みつき」全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:味方「百々瀬かぐや」または「百々瀬みつき」全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6138"
 }

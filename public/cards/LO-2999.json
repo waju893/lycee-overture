@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2999",
+  "title": "占い部の占い師さん",
+  "subName": "伊林 いろり",
+  "name": "占い部の占い師さん 伊林 いろり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方[月]キャラがこのキャラの前後に登場している場合、相手キャラ１体にＤＰ－２する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方[月]キャラがこのキャラの前後に登場している場合、相手キャラ１体にＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2999"
 }

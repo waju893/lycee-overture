@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6478",
+  "title": "劉邦軍の大将軍",
+  "subName": "韓信・綺羅",
+  "name": "劉邦軍の大将軍 韓信・綺羅",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 6,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[手札宣言] [宙宙]:{味方『双天†恋姫』キャラ１体}にＡＰ＋３・ＤＰ＋３する。カード名に「劉邦」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[手札宣言] [宙宙]:{味方『双天†恋姫』キャラ１体}にＡＰ＋３・ＤＰ＋３する。カード名に「劉邦」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6478"
 }

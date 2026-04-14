@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2258",
+  "title": "小倉祇園太鼓",
+  "subName": "小倉城",
+  "name": "小倉祇園太鼓 小倉城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [0]:{味方キャラ１体}は[ボーナス:[１枚ドローする。]]を得る。この能力は失われる。",
+  "textKr": "[宣言] [0]:{味方キャラ１体}は[ボーナス:[１枚ドローする。]]を得る。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2258"
 }

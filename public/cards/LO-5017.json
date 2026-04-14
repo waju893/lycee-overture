@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5017",
+  "title": "憂国の士",
+  "subName": "董卓・月",
+  "name": "憂国の士 董卓・月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪雪雪雪雪]:このキャラの防御中に使用する。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[宣言] [雪雪雪雪雪]:このキャラの防御中に使用する。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5017"
 }

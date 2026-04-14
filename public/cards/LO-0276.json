@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0276",
+  "title": "突撃準備",
+  "subName": "西 絹代",
+  "name": "突撃準備 西 絹代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[宣言] [日]:このキャラは[アグレッシブ]を得る。",
+  "textKr": "[宣言] [日]:このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0276"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0261",
+  "title": "タイダルウェイブ",
+  "subName": "リヴァイアサン",
+  "name": "タイダルウェイブ リヴァイアサン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [T]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}は次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[エンゲージ]\n[宣言] [T]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}は次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0261"
 }

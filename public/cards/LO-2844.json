@@ -1,17 +1,31 @@
 {
+  "cardNo": "LO-2844",
+  "title": "月の彼方",
+  "subName": "",
+  "name": "月の彼方",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon",
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このエリアは相手の効果の対象に指定できない。\n[誘発] ターン開始時、自分のゴミ箱のカード１枚をこのエリアの下に置ける。\n[宣言] [月]:このカードの下のカードが８枚以上の場合、{味方「運命の選択」１枚}は元の効果全てを失う。\n※「月の彼方」は自分の場に１枚まで配置可能",
+  "textKr": "[常時] このエリアは相手の効果の対象に指定できない。\n[誘発] ターン開始時、自分のゴミ箱のカード１枚をこのエリアの下に置ける。\n[宣言] [月]:このカードの下のカードが８枚以上の場合、{味方「運命の選択」１枚}は元の効果全てを失う。\n※「月の彼方」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2844"
 }

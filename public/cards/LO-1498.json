@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1498",
+  "title": "妖狐",
+  "subName": "イナリ",
+  "name": "妖狐 イナリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 1,
   "sp": 0,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがダウンしたとき、１枚ドローする。",
+  "textKr": "[誘発] このキャラがダウンしたとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1498"
 }

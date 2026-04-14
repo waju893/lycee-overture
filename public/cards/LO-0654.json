@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0654",
+  "title": "元気妹",
+  "subName": "伏見 真姫奈",
+  "name": "元気妹 伏見 真姫奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[アグレッシブ]\n[誘発] このキャラが場を離れたとき、自分のデッキを１枚回復する。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラが場を離れたとき、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0654"
 }

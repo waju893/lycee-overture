@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5741",
+  "title": "冷静で合理的な少年",
+  "subName": "水上 行人",
+  "name": "冷静で合理的な少年 水上 行人",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] 味方『終ノ空remake』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[常時] 味方『終ノ空remake』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5741"
 }

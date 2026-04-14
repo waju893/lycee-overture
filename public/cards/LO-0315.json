@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0315",
+  "title": "一年生",
+  "subName": "阪口 桂利奈",
+  "name": "一年生 阪口 桂利奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    3,
-    8
-  ],
-  "keyEffects": [
-    3,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][サイドステップ:[無無]]\n[誘発] このキャラが移動したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[アシスト][サイドステップ:[無無]]\n[誘発] このキャラが移動したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0315"
 }

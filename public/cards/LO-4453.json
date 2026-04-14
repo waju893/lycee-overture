@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4453",
+  "title": "ゲーマーな親友",
+  "subName": "ユウジ",
+  "name": "ゲーマーな親友 ユウジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 6,
   "sp": 1,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方『あくまで、これは～の物語』キャラが登場したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] 味方『あくまで、これは～の物語』キャラが登場したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4453"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2037",
+  "title": "近衛騎士",
+  "subName": "エロイナ・ディ・カバリェロ・イスタ",
+  "name": "近衛騎士 エロイナ・ディ・カバリェロ・イスタ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [D2]:このキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}を行動済みにする。行動済みにしたとき、{味方キャラ１体}にＡＰ＋２する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [D2]:このキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}を行動済みにする。行動済みにしたとき、{味方キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2037"
 }

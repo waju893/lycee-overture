@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0750",
+  "title": "ライトニングチャージ",
+  "subName": "バアル",
+  "name": "ライトニングチャージ バアル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] コストが５点以上の味方[宙]キャラが登場したとき、１枚ドローできる。",
+  "textKr": "[誘発] コストが５点以上の味方[宙]キャラが登場したとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0750"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5465",
+  "title": "カリスマ",
+  "subName": "鎌倉 詩桜",
+  "name": "カリスマ 鎌倉 詩桜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラがアイテムを持つ場合、このキャラにＤＰ＋１する。\n[宣言] [0]:{持ち主が自分のアイテムを持つキャラ１体}のＡＰまたはＤＰに＋１または－１する。",
+  "textKr": "[常時] このキャラがアイテムを持つ場合、このキャラにＤＰ＋１する。\n[宣言] [0]:{持ち主が自分のアイテムを持つキャラ１体}のＡＰまたはＤＰに＋１または－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5465"
 }

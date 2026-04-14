@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6205",
+  "title": "星夜部部長",
+  "subName": "鳴瀬川 凪",
+  "name": "星夜部部長 鳴瀬川 凪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[誘発] 自分のコストが１点以上の能力・エリアの効果を使用したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n[宣言] [C1][雪]:味方『星恋＊ティンクル』キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[チャージ:２]\n[誘発] 自分のコストが１点以上の能力・エリアの効果を使用したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n[宣言] [C1][雪]:味方『星恋＊ティンクル』キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6205"
 }

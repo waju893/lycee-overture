@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0267",
+  "title": "エースオブインフェルノ",
+  "subName": "ラストリゾート＝ジョーカー",
+  "name": "エースオブインフェルノ ラストリゾート＝ジョーカー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体は[アグレッシブ]を得る。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体は[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0267"
 }

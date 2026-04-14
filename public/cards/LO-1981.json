@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1981",
+  "title": "清教派の魔女",
+  "subName": "スマートヴェリー",
+  "name": "清教派の魔女 スマートヴェリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。未行動のこのキャラを{味方フィールド}に移動する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。未行動のこのキャラを{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1981"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3013",
+  "title": "黒歴史がある妹系幼馴染",
+  "subName": "花園 瑛美",
+  "name": "黒歴史がある妹系幼馴染 花園 瑛美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:{相手キャラ１体}はターン終了時まで相手のエリアの効果で能力値修正を得ない。この能力は失われる。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。\n[手札宣言] [花花]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [D1]:{相手キャラ１体}はターン終了時まで相手のエリアの効果で能力値修正を得ない。この能力は失われる。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。\n[手札宣言] [花花]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3013"
 }

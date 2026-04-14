@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4214",
+  "title": "学園の理事",
+  "subName": "神楽坂 弦十郎",
+  "name": "学園の理事 神楽坂 弦十郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:[宙]でない味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "textKr": "[宣言] [0]:[宙]でない味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4214"
 }

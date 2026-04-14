@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1838",
+  "title": "ダーリンのメイド（押しかけ）",
+  "subName": "河野 はるみ",
+  "name": "ダーリンのメイド（押しかけ） 河野 はるみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [0]:バトル中に使用できない。{味方「ToHeart2」キャラ１体}にＡＰ＋１する。",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:バトル中に使用できない。{味方「ToHeart2」キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1838"
 }

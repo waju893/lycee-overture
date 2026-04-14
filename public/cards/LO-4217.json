@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4217",
+  "title": "メリーゴーランドをぶっ壊せ",
+  "subName": "竹田 直子",
+  "name": "メリーゴーランドをぶっ壊せ 竹田 直子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] [宙]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] [宙]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4217"
 }

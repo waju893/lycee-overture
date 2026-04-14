@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2525",
+  "title": "園芸部顧問",
+  "subName": "仁科 恭子",
+  "name": "園芸部顧問 仁科 恭子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[雪]キャラの場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[雪]キャラの場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2525"
 }

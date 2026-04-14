@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2309",
+  "title": "敦盛",
+  "subName": "織田信長",
+  "name": "敦盛 織田信長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 0,
   "useTarget": [
     "star",
     "star",
@@ -21,5 +24,12 @@
   "ap": 6,
   "dp": 5,
   "sp": 0,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 0,
+  "costRaw": "無無無無無無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[宣言] [無]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2309"
 }

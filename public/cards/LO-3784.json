@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3784",
+  "title": "くノ一",
+  "subName": "チヨメ",
+  "name": "くノ一 チヨメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [0]:コストが２点以下の味方キャラが３体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [日][C1]:{味方[日]キャラ１体}にＡＰ＋２する。\n[宣言] [0]:{相手のゴミ箱のＥＸが２で２つ以上の属性を持つカード１枚}を除外する。除外したとき、２枚ドローする。この能力は失われる。",
+  "textKr": "[チャージ:２]\n[宣言] [0]:コストが２点以下の味方キャラが３体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [日][C1]:{味方[日]キャラ１体}にＡＰ＋２する。\n[宣言] [0]:{相手のゴミ箱のＥＸが２で２つ以上の属性を持つカード１枚}を除外する。除外したとき、２枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3784"
 }

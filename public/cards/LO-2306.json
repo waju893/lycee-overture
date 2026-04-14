@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2306",
+  "title": "甲斐姫斬",
+  "subName": "忍城",
+  "name": "甲斐姫斬 忍城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[アグレッシブ]\n[宣言] [D1]:このキャラにＡＰ＋１する。",
+  "textKr": "[アグレッシブ]\n[宣言] [D1]:このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2306"
 }

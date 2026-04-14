@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3252",
+  "title": "月下美人",
+  "subName": "桜小路 ルナ",
+  "name": "月下美人 桜小路 ルナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラが登場していない場合、このキャラを破棄する。\n[宣言] [0]:自ターン中に使用する。このキャラが登場したターン中に使用できない。このキャラを行動済みにする。行動済みにしたとき、以下から１つを選び処理する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラが登場していない場合、このキャラを破棄する。\n[宣言] [0]:自ターン中に使用する。このキャラが登場したターン中に使用できない。このキャラを行動済みにする。行動済みにしたとき、以下から１つを選び処理する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3252"
 }

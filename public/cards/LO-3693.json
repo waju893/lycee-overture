@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3693",
+  "title": "学園のマドンナ",
+  "subName": "藤ヶ谷 えいみ",
+  "name": "学園のマドンナ 藤ヶ谷 えいみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「清宮千津」または「コレット・カルリーニ」１体を手札に入れることができる。",
+  "textKr": "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「清宮千津」または「コレット・カルリーニ」１体を手札に入れることができる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3693"
 }

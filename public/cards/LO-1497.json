@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1497",
+  "title": "道化師",
+  "subName": "ワンダーハート",
+  "name": "道化師 ワンダーハート",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪雪雪]:味方キャラの防御中に使用する。対戦キャラのＡＰとＤＰを０にする。",
+  "textKr": "[手札宣言] [雪雪雪]:味方キャラの防御中に使用する。対戦キャラのＡＰとＤＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1497"
 }

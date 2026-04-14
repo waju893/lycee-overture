@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1332",
+  "title": "論理の帝王",
+  "subName": "キャスター／チャールズ・バベッジ",
+  "name": "論理の帝王 キャスター／チャールズ・バベッジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:バトル中に使用できない。このキャラを{味方[日]キャラと同列の味方ＤＦ}に移動する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。このキャラを{味方[日]キャラと同列の味方ＤＦ}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1332"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1228",
+  "title": "お邪魔虫",
+  "subName": "坂上 鷹文",
+  "name": "お邪魔虫 坂上 鷹文",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手の宣言に対応して使用できない。{相手のゴミ箱のキャラ以外のカード２枚}を除外する。除外したとき、自分のデッキを１枚回復する。この能力は失われる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "textKr": "[宣言] [0]:相手の宣言に対応して使用できない。{相手のゴミ箱のキャラ以外のカード２枚}を除外する。除外したとき、自分のデッキを１枚回復する。この能力は失われる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1228"
 }

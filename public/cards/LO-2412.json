@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2412",
+  "title": "曹家の金庫番",
+  "subName": "曹洪・栄華",
+  "name": "曹家の金庫番 曹洪・栄華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[宣言] [0]:{コストが３点以上の味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "textKr": "[宣言] [0]:{コストが３点以上の味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2412"
 }

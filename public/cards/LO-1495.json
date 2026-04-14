@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1495",
+  "title": "反魂の死霊術師",
+  "subName": "メトゥス",
+  "name": "反魂の死霊術師 メトゥス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、このキャラが登場したとき、自分のゴミ箱の[雪]キャラ１体を登場できる。",
+  "textKr": "[誘発] 自ターン中、このキャラが登場したとき、自分のゴミ箱の[雪]キャラ１体を登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1495"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0220",
+  "title": "十握叢雲・神機久沙凪",
+  "subName": "神剣アマノムラクモ",
+  "name": "十握叢雲・神機久沙凪 神剣アマノムラクモ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [0]:味方「神皇天叢雲=アマテラス」が登場している場合、このキャラにＡＰ＋４・ＤＰ＋４する。",
+  "textKr": "[エンゲージ]\n[宣言] [0]:味方「神皇天叢雲=アマテラス」が登場している場合、このキャラにＡＰ＋４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0220"
 }

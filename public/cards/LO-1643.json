@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1643",
+  "title": "セクハラ発言",
+  "subName": "千歳 眞一郎",
+  "name": "セクハラ発言 千歳 眞一郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ場のアイテム１枚をデッキの下に置く。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ場のアイテム１枚をデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1643"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3462",
+  "title": "次代の新生徒会長",
+  "subName": "高幡 ちはる",
+  "name": "次代の新生徒会長 高幡 ちはる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[花花]を発生する。このコストはコストが３点以上でＤＭＧが１以下のキャラの登場にのみ支払える。この能力は失われる。\n[宣言] [0]:味方ＤＦキャラ全てのコストが３点以上の場合、味方キャラ全てにＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[花花]を発生する。このコストはコストが３点以上でＤＭＧが１以下のキャラの登場にのみ支払える。この能力は失われる。\n[宣言] [0]:味方ＤＦキャラ全てのコストが３点以上の場合、味方キャラ全てにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3462"
 }

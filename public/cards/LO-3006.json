@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3006",
+  "title": "友達思いの女の子",
+  "subName": "皇城 椋子",
+  "name": "友達思いの女の子 皇城 椋子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "textKr": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3006"
 }

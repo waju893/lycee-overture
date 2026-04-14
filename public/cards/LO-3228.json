@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-3228",
+  "title": "冒険者クラン「Oasis」",
+  "subName": "ミネット＆カリーナ",
+  "name": "冒険者クラン「Oasis」 ミネット＆カリーナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower",
     "moon"
   ],
-  "attributesList": [
-    "flower",
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "moon",
@@ -17,5 +19,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "花月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ全てにＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ全てにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3228"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4631",
+  "title": "人畜無害？",
+  "subName": "小日向 すもも",
+  "name": "人畜無害？ 小日向 すもも",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、手札宣言能力を持つ味方[花]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:バトル中に使用できない。{手札宣言能力を持つ味方[花]キャラ１体}にＤＰ＋１・ＳＰ＋１する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[花]カードを４枚までデッキの下に置きシャッフルする。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、手札宣言能力を持つ味方[花]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:バトル中に使用できない。{手札宣言能力を持つ味方[花]キャラ１体}にＤＰ＋１・ＳＰ＋１する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[花]カードを４枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4631"
 }

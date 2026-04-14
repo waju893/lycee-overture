@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0011",
+  "title": "時に煙る白亜の壁",
+  "subName": "シールダー／マシュ・キリエライト",
+  "name": "時に煙る白亜の壁 シールダー／マシュ・キリエライト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。バトルを中断する。",
+  "textKr": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。バトルを中断する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0011"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3292",
+  "title": "学級副委員長",
+  "subName": "高内 昌子",
+  "name": "学級副委員長 高内 昌子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「羽田鷹志」が登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方「羽田鷹志」が登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3292"
 }

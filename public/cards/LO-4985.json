@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4985",
+  "title": "新入生応援",
+  "subName": "ムラサメ",
+  "name": "新入生応援 ムラサメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 4,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [日日]:{味方[YUZ]キャラ１体}にＡＰ＋２する。",
+  "textKr": "[手札宣言] [日日]:{味方[YUZ]キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4985"
 }

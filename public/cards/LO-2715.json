@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-2715",
+  "title": "決別",
+  "subName": "",
+  "name": "決別",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このエリアを「蓮乃咲」の能力で配置したとき、１枚ドローできる。\n[宣言] [0]:{このフィールドと同列の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D2]:自ターン中に使用する。バトル中に使用できない。このエリアを{味方フィールド}に移動する。\n※「決別」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] このエリアを「蓮乃咲」の能力で配置したとき、１枚ドローできる。\n[宣言] [0]:{このフィールドと同列の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D2]:自ターン中に使用する。バトル中に使用できない。このエリアを{味方フィールド}に移動する。\n※「決別」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2715"
 }

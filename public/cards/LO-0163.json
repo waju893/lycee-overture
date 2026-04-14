@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0163",
+  "title": "断罪エンドレスコート",
+  "subName": "ロンギヌス",
+  "name": "断罪エンドレスコート ロンギヌス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,13 +18,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    7
-  ],
-  "keyEffects": [
-    2,
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][ステップ:[月]]\n[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。",
+  "textKr": "[エンゲージ][ステップ:[月]]\n[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0163"
 }

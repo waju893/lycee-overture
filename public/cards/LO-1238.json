@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1238",
+  "title": "寡黙な柔道の達人",
+  "subName": "松下 護騨",
+  "name": "寡黙な柔道の達人 松下 護騨",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,13 +22,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4,
-    8
-  ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、ターン終了時まで、味方＜死んだ世界戦線＞キャラ全てはダウンしない。",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、ターン終了時まで、味方＜死んだ世界戦線＞キャラ全てはダウンしない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1238"
 }

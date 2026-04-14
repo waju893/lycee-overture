@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1046",
+  "title": "カンテレを嗜む",
+  "subName": "ミカ",
+  "name": "カンテレを嗜む ミカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[ステップ:[0]]\n[宣言] [0]:{味方＜継続＞キャラ１体}を破棄する。破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:{味方＜継続＞キャラ１体}を破棄する。破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1046"
 }

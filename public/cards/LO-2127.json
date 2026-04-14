@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2127",
+  "title": "エロトーク",
+  "subName": "金崎 恵",
+  "name": "エロトーク 金崎 恵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにＤＭＧ＋１する。",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2127"
 }

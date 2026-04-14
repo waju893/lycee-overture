@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1910",
+  "title": "メンバー",
+  "subName": "馬場 芳郎",
+  "name": "メンバー 馬場 芳郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:相手ターン中に使用する。{味方[雪]キャラ１体}を未行動にする。",
+  "textKr": "[宣言] [T]:相手ターン中に使用する。{味方[雪]キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1910"
 }

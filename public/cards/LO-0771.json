@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0771",
+  "title": "アドバースウィンド",
+  "subName": "カスピエル",
+  "name": "アドバースウィンド カスピエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [D1]:このキャラの防御中に使用する。対戦キャラは次のウェイクアップで未行動に戻らない。",
+  "textKr": "[宣言] [D1]:このキャラの防御中に使用する。対戦キャラは次のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0771"
 }

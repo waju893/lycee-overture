@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-2928",
+  "title": "存在感操作",
+  "subName": "",
+  "name": "存在感操作",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。移動したとき、このキャラを未行動にし、味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "textKr": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。移動したとき、このキャラを未行動にし、味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2928"
 }

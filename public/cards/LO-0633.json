@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0633",
+  "title": "未来からやって来た魔法使い",
+  "subName": "マーリン",
+  "name": "未来からやって来た魔法使い マーリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のデッキからアイテム１枚を探し公開して手札に入れる。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のデッキからアイテム１枚を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0633"
 }

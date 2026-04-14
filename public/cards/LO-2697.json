@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2697",
+  "title": "癒し系だけどバカップル彼女",
+  "subName": "朝日・D・ルートウィッジ",
+  "name": "癒し系だけどバカップル彼女 朝日・D・ルートウィッジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方「根津哲也」１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{味方「根津哲也」１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2697"
 }

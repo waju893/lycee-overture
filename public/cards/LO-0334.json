@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0334",
+  "title": "データ主義",
+  "subName": "アッサム",
+  "name": "データ主義 アッサム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[アシスト]\n[宣言] [無無]:バトル中に使用できない。このキャラと{味方＜聖グロリアーナ＞キャラ１体}を入れ替える。",
+  "textKr": "[アシスト]\n[宣言] [無無]:バトル中に使用できない。このキャラと{味方＜聖グロリアーナ＞キャラ１体}を入れ替える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0334"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0842",
+  "title": "騎士道精神",
+  "subName": "ランスロット",
+  "name": "騎士道精神 ランスロット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 0,
   "useTarget": [
     "flower",
     "flower",
@@ -17,7 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [],
-  "keyEffects": [],
-  "leader": true
+  "ex": 0,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー]\n[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[リーダー]\n[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0842"
 }

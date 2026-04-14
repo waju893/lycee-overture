@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0275",
+  "title": "ノリと勢い",
+  "subName": "アンチョビ",
+  "name": "ノリと勢い アンチョビ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト]\n[宣言] [日日無]:ターン終了時まで{コストが２点以下の味方キャラ１体}はダウンしない。この能力は失われる。",
+  "textKr": "[アシスト]\n[宣言] [日日無]:ターン終了時まで{コストが２点以下の味方キャラ１体}はダウンしない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0275"
 }

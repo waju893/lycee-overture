@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0382",
+  "title": "一年生",
+  "subName": "丸山 紗希",
+  "name": "一年生 丸山 紗希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [宙宙]:{キャラ１体}にＳＰ－２する。",
+  "textKr": "[アシスト]\n[宣言] [宙宙]:{キャラ１体}にＳＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0382"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0146",
+  "title": "ディープカーネイジ",
+  "subName": "ゲイボルグ＝ゼロ",
+  "name": "ディープカーネイジ ゲイボルグ＝ゼロ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにＤＭＧ＋１する。",
+  "textKr": "[エンゲージ]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0146"
 }

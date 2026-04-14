@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2526",
+  "title": "弓道部２年",
+  "subName": "秋山 文緒",
+  "name": "弓道部２年 秋山 文緒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月][このキャラを破棄する]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "[宣言] [月][このキャラを破棄する]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2526"
 }

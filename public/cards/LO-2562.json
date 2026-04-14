@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2562",
+  "title": "紅茶の制服",
+  "subName": "ポリン",
+  "name": "紅茶の制服 ポリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [0]:バトル中に使用できない。このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、{相手キャラ１体}にＤＰ－１する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキの上のカード１枚と自分のゴミ箱のカード１枚をこのキャラの下に置く。\n[宣言] [0]:バトル中に使用できない。このキャラの下のカード１枚を自分の「世界樹の種」置き場に置く。置いたとき、{相手キャラ１体}にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2562"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2500",
+  "title": "暴走を止める防波堤",
+  "subName": "閑倉 五十鈴",
+  "name": "暴走を止める防波堤 閑倉 五十鈴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－３する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2500"
 }

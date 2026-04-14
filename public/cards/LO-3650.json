@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3650",
+  "title": "UFO研究会",
+  "subName": "音無 宙美",
+  "name": "UFO研究会 音無 宙美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [0]:{相手のゴミ箱のＥＸが２で２つ以上の属性を持つカード１枚}を除外する。除外したとき、２枚ドローする。この能力は失われる。",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:{相手のゴミ箱のＥＸが２で２つ以上の属性を持つカード１枚}を除外する。除外したとき、２枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3650"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1560",
+  "title": "魔法剣士",
+  "subName": "シャルロット",
+  "name": "魔法剣士 シャルロット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラをバトル参加キャラに指定したとき、このキャラにＡＰ＋１・ＤＰ－１する。",
+  "textKr": "[誘発] このキャラをバトル参加キャラに指定したとき、このキャラにＡＰ＋１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1560"
 }

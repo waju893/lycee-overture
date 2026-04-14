@@ -1,19 +1,29 @@
 {
+  "cardNo": "LO-0974",
+  "title": "ペットショップ",
+  "subName": "",
+  "name": "ペットショップ",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 1,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0974"
 }

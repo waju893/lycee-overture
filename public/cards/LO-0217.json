@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0217",
+  "title": "ディープ・ラヴ・スイート・ダーリン",
+  "subName": "フライパン",
+  "name": "ディープ・ラヴ・スイート・ダーリン フライパン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "star",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[２枚ドローする。]]",
+  "textKr": "[エンゲージ:[２枚ドローする。]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0217"
 }

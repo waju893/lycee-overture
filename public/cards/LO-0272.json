@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0272",
+  "title": "約束された終焉《ﾌﾟﾛﾐｽﾁｪｲﾝ†ﾃﾞｨｱﾎﾞﾘｶ》",
+  "subName": "災厄の黒い牙ジエンド",
+  "name": "約束された終焉《ﾌﾟﾛﾐｽﾁｪｲﾝ†ﾃﾞｨｱﾎﾞﾘｶ》 災厄の黒い牙ジエンド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    7
-  ],
-  "keyEffects": [
-    4,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[２枚ドローする。]][オーダーステップ:[0]]",
+  "textKr": "[エンゲージ:[２枚ドローする。]][オーダーステップ:[0]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0272"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2853",
+  "title": "北の国からの転校生",
+  "subName": "ベスリー・ローズ・ディズリー",
+  "name": "北の国からの転校生 ベスリー・ローズ・ディズリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。味方[雪]キャラ１体を破棄する。破棄したとき、{相手キャラ１体}を破棄する。破棄した味方キャラのＡＰが２以上の場合、１枚ドローできる。",
+  "textKr": "[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。味方[雪]キャラ１体を破棄する。破棄したとき、{相手キャラ１体}を破棄する。破棄した味方キャラのＡＰが２以上の場合、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2853"
 }

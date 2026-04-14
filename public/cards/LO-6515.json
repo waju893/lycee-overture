@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-6515",
+  "title": "齋宮の花姫",
+  "subName": "",
+  "name": "齋宮の花姫",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] 味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n※「齋宮の花姫」は持ち主の場にのみ１枚まで配置可能",
+  "textKr": "[常時] 味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n※「齋宮の花姫」は持ち主の場にのみ１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6515"
 }

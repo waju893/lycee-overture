@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1011",
+  "title": "BC自由学園？",
+  "subName": "秋山 優花里",
+  "name": "BC自由学園？ 秋山 優花里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,15 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6,
-    7,
-    8
-  ],
-  "keyEffects": [
-    6,
-    7,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "BC自由",
+  "text": "[アシスト][エンゲージ:[このキャラは[アグレッシブ]を得る。]]\n[誘発] 自ターン中、 味方キャラを破棄したとき、相手のデッキを１枚破棄する。このキャラを味方フィールドに移動できる。",
+  "textKr": "[アシスト][エンゲージ:[このキャラは[アグレッシブ]を得る。]]\n[誘発] 自ターン中、 味方キャラを破棄したとき、相手のデッキを１枚破棄する。このキャラを味方フィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1011"
 }

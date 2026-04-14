@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3044",
+  "title": "正義の人工衛星",
+  "subName": "高岡 あさがお",
+  "name": "正義の人工衛星 高岡 あさがお",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[手札宣言] [宙]:自ターン中に使用する。バトル中に使用できない。{味方[宙]キャラ１体}を味方フィールドに移動する。",
+  "textKr": "[オーダーステップ:[0]]\n[手札宣言] [宙]:自ターン中に使用する。バトル中に使用できない。{味方[宙]キャラ１体}を味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3044"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5608",
+  "title": "白羊教聖教会司祭",
+  "subName": "ヘルマン・ミュラー",
+  "name": "白羊教聖教会司祭 ヘルマン・ミュラー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5608"
 }

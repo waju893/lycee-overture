@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0225",
+  "title": "紅霊絶式｢焔神軻遇突智｣",
+  "subName": "神刀フツノミタマ＝カグツチ",
+  "name": "紅霊絶式｢焔神軻遇突智｣ 神刀フツノミタマ＝カグツチ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -19,11 +22,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[２枚ドローする。]]",
+  "textKr": "[エンゲージ:[２枚ドローする。]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0225"
 }

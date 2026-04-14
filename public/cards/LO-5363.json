@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5363",
+  "title": "過去の思い出",
+  "subName": "鷹司 千歳",
+  "name": "過去の思い出 鷹司 千歳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 0,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントの使用にのみ支払える。",
+  "textKr": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントの使用にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5363"
 }

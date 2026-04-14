@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-4953",
+  "title": "ハリボテ",
+  "subName": "",
+  "name": "ハリボテ",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが相手の効果で場を離れたとき、１枚ドローできる。このキャラが「学院のアイドル 三司あやせ」の場合、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し登場できる。",
+  "textKr": "[誘発] このキャラが相手の効果で場を離れたとき、１枚ドローできる。このキャラが「学院のアイドル 三司あやせ」の場合、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4953"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2530",
+  "title": "すれ違いの辞書",
+  "subName": "土岐 のぞみ",
+  "name": "すれ違いの辞書 土岐 のぞみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{ＳＰが３以上の味方[花]キャラ１体}にＳＰ＋１する。\n[宣言] [0]:自ターン中に使用する。{相手キャラ１体}は[ペナルティ]１つを失う。この能力は失われる。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{ＳＰが３以上の味方[花]キャラ１体}にＳＰ＋１する。\n[宣言] [0]:自ターン中に使用する。{相手キャラ１体}は[ペナルティ]１つを失う。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2530"
 }

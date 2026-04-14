@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0869",
+  "title": "ターミナルの管理人",
+  "subName": "シンシア・マルグリット",
+  "name": "ターミナルの管理人 シンシア・マルグリット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:このキャラを横に置く。次のターン開始時、横のこのキャラを無償で登場する。",
+  "textKr": "[宣言] [雪]:このキャラを横に置く。次のターン開始時、横のこのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0869"
 }

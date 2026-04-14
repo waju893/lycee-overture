@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1315",
+  "title": "サマー・スイーパー！",
+  "subName": "ライダー／アルトリア・ペンドラゴン〔オルタ〕",
+  "name": "サマー・スイーパー！ ライダー／アルトリア・ペンドラゴン〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 相手キャラが登場したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 相手キャラが登場したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1315"
 }

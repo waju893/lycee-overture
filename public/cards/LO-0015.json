@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0015",
+  "title": "フィオナ騎士団長",
+  "subName": "ランサー／フィン・マックール",
+  "name": "フィオナ騎士団長 ランサー／フィン・マックール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体をデッキの一番下に置くことができる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体をデッキの一番下に置くことができる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0015"
 }

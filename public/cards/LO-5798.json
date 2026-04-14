@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5798",
+  "title": "ガチャガチャ大好き",
+  "subName": "鹿島 理々",
+  "name": "ガチャガチャ大好き 鹿島 理々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 5,
   "sp": 3,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。自分のデッキの上のカード１枚を公開する。そのカードが[ASA]の場合、そのカードを手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。自分のデッキの上のカード１枚を公開する。そのカードが[ASA]の場合、そのカードを手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5798"
 }

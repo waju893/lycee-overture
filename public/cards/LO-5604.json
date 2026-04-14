@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5604",
+  "title": "レッド・レイン",
+  "subName": "ミラルカ",
+  "name": "レッド・レイン ミラルカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5,
-    13
-  ],
-  "keyEffects": [
-    5,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、{味方[AMC]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、{味方[AMC]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5604"
 }

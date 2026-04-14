@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4459",
+  "title": "精悍で残念なスポーツ少年",
+  "subName": "北上 陽一",
+  "name": "精悍で残念なスポーツ少年 北上 陽一",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 6,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚までを味方「受信探偵」の下に置ける。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚までを味方「受信探偵」の下に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4459"
 }

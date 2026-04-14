@@ -1,20 +1,19 @@
 {
+  "cardNo": "LO-0233",
+  "title": "ユグドラシル防衛システム",
+  "subName": "",
+  "name": "ユグドラシル防衛システム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star",
@@ -27,5 +26,12 @@
   "ap": 6,
   "dp": 5,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "無無無無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "エネミー",
+  "text": "[宣言] [0]:{キャラ１体}にＤＭＧ－１する。",
+  "textKr": "[宣言] [0]:{キャラ１体}にＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0233"
 }

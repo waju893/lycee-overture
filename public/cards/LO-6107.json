@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6107",
+  "title": "ノリの良いモブ親友",
+  "subName": "桐生 一平",
+  "name": "ノリの良いモブ親友 桐生 一平",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "star",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のコストが１点以上の能力・エリアの効果を使用したとき、味方『星恋＊ティンクル』キャラ１体にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] 自分のコストが１点以上の能力・エリアの効果を使用したとき、味方『星恋＊ティンクル』キャラ１体にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6107"
 }

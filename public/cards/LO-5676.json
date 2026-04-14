@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5676",
+  "title": "美への覚悟",
+  "subName": "中村 麗華",
+  "name": "美への覚悟 中村 麗華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、このキャラと同キャラ名のキャラが自分の「永遠の相」置き場に置かれていない場合、自分のゴミ箱またはデッキからこのキャラと同名のキャラ１体を探しその置き場に置ける。１枚ドローできる。",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラと同キャラ名のキャラが自分の「永遠の相」置き場に置かれていない場合、自分のゴミ箱またはデッキからこのキャラと同名のキャラ１体を探しその置き場に置ける。１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5676"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5748",
+  "title": "高次元世界の住人",
+  "subName": "リルル",
+  "name": "高次元世界の住人 リルル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 0,
   "sp": 0,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙宙宙]:味方「間宮卓司」が登場している場合、このキャラにＡＰ＋６・ＤＰ＋６・ＤＭＧ＋６する。",
+  "textKr": "[宣言] [宙宙宙]:味方「間宮卓司」が登場している場合、このキャラにＡＰ＋６・ＤＰ＋６・ＤＭＧ＋６する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5748"
 }

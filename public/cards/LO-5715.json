@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5715",
+  "title": "弓張学園美術部顧問",
+  "subName": "若田 清二郎",
+  "name": "弓張学園美術部顧問 若田 清二郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [花]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "textKr": "[手札宣言] [花]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5715"
 }

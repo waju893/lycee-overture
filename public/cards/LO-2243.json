@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2243",
+  "title": "鉄狛召喚",
+  "subName": "宇都宮城",
+  "name": "鉄狛召喚 宇都宮城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[手札宣言] [雪雪]:味方キャラの攻撃中に使用する。そのキャラにＡＰ＋２する。",
+  "textKr": "[手札宣言] [雪雪]:味方キャラの攻撃中に使用する。そのキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2243"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3655",
+  "title": "知の塔 星の巫女",
+  "subName": "常葉 美紀",
+  "name": "知の塔 星の巫女 常葉 美紀",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、[アグレッシブ]を持つ味方キャラが２体以上登場している場合、１枚ドローし、[アグレッシブ]を持つ味方キャラ全てにＡＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、[アグレッシブ]を持つ味方キャラが２体以上登場している場合、１枚ドローし、[アグレッシブ]を持つ味方キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3655"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1051",
+  "title": "大学選抜チーム中隊長",
+  "subName": "ルミ",
+  "name": "大学選抜チーム中隊長 ルミ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「島田愛里寿」１体}はターン終了時まで相手のイベント・能力の対象に指定できない。",
+  "textKr": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「島田愛里寿」１体}はターン終了時まで相手のイベント・能力の対象に指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1051"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0526",
+  "title": "遥かなる者への斬罪",
+  "subName": "アヴェンジャー／新宿のアヴェンジャー",
+  "name": "遥かなる者への斬罪 アヴェンジャー／新宿のアヴェンジャー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[常時] このキャラはイベント・能力の対象に指定できない。",
+  "textKr": "[オーダーステップ:[0]]\n[常時] このキャラはイベント・能力の対象に指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0526"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2434",
+  "title": "電々応援団",
+  "subName": "麋芳・電々",
+  "name": "電々応援団 麋芳・電々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキから「麋竺・雷々」１枚を探し公開して手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキから「麋竺・雷々」１枚を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2434"
 }

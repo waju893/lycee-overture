@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0527",
+  "title": "反骨の相",
+  "subName": "セイバー／フェルグス・マック・ロイ",
+  "name": "反骨の相 セイバー／フェルグス・マック・ロイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラがバトルに参加したとき、自分のデッキを１枚破棄する。",
+  "textKr": "[誘発] このキャラがバトルに参加したとき、自分のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0527"
 }

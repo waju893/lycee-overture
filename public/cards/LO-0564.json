@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-0564",
+  "title": "光の階段",
+  "subName": "",
+  "name": "光の階段",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、自分のゴミ箱のカード１枚をこのアイテムの下に置く。\n[宣言] [このアイテムの下に置かれたカード５枚を除外する]:キャラ全てを破棄する。",
+  "textKr": "[誘発] ターン開始時、自分のゴミ箱のカード１枚をこのアイテムの下に置く。\n[宣言] [このアイテムの下に置かれたカード５枚を除外する]:キャラ全てを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0564"
 }

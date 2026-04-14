@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1511",
+  "title": "白百合騎士",
+  "subName": "テティス",
+  "name": "白百合騎士 テティス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラを破棄する。破棄したとき、[月月]を発生する。",
+  "textKr": "[コスト] このキャラを破棄する。破棄したとき、[月月]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1511"
 }

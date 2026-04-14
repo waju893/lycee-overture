@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2398",
+  "title": "獄水封渦",
+  "subName": "田豊・真直",
+  "name": "獄水封渦 田豊・真直",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [このキャラを破棄する]:このキャラのバトル中に使用できない。{味方「袁紹・麗羽」または「文醜・猪々子」または「顔良・斗詩」１体}を横に置く。このターン終了時、横のそのキャラを無償で登場する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [このキャラを破棄する]:このキャラのバトル中に使用できない。{味方「袁紹・麗羽」または「文醜・猪々子」または「顔良・斗詩」１体}を横に置く。このターン終了時、横のそのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2398"
 }

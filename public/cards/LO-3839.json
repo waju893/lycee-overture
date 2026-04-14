@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3839",
+  "title": "Coincidence Girl",
+  "subName": "黒姫 結灯",
+  "name": "Coincidence Girl 黒姫 結灯",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [花]:自ターン中に使用する。バトル中に使用できない。自分の手札のコストが[花]または[無]のみで４点以下のキャラ１体を無償で登場できる。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [花]:自ターン中に使用する。バトル中に使用できない。自分の手札のコストが[花]または[無]のみで４点以下のキャラ１体を無償で登場できる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3839"
 }

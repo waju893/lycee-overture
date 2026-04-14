@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2075",
+  "title": "神隠し",
+  "subName": "持田 しおり",
+  "name": "神隠し 持田 しおり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:バトル中に使用できない。このキャラを除外する。{自分のゴミ箱の「笹部しおり」１体}を登場する。",
+  "textKr": "[宣言] [D1]:バトル中に使用できない。このキャラを除外する。{自分のゴミ箱の「笹部しおり」１体}を登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2075"
 }

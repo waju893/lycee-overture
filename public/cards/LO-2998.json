@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2998",
+  "title": "しっかり者の後輩",
+  "subName": "比古咲 花蓮",
+  "name": "しっかり者の後輩 比古咲 花蓮",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2998"
 }

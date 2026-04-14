@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3987",
+  "title": "ゼス国王 アイスフレーム現リーダー",
+  "subName": "ラグナロックアーク・スーパー・ガンジー",
+  "name": "ゼス国王 アイスフレーム現リーダー ラグナロックアーク・スーパー・ガンジー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分の手札を３枚破棄する。破棄したとき、相手キャラ１体を破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分の手札を３枚破棄する。破棄したとき、相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3987"
 }

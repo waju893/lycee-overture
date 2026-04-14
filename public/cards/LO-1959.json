@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1959",
+  "title": "凄腕のスナイパー",
+  "subName": "砂皿 緻密",
+  "name": "凄腕のスナイパー 砂皿 緻密",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙宙宙]:{味方[宙]アイテム１枚}を破棄する。破棄したとき、{相手キャラ１体}を行動済みにする。",
+  "textKr": "[手札宣言] [宙宙宙]:{味方[宙]アイテム１枚}を破棄する。破棄したとき、{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1959"
 }

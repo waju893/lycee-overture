@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0474",
+  "title": "死告天使",
+  "subName": "アサシン／”山の翁”",
+  "name": "死告天使 アサシン／”山の翁”",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -20,11 +23,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[雪雪]]\n[誘発] このキャラが登場したとき、相手キャラ１体を破棄する。",
+  "textKr": "[オーダーチェンジ:[雪雪]]\n[誘発] このキャラが登場したとき、相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0474"
 }

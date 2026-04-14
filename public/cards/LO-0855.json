@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0855",
+  "title": "ニーラカンタ",
+  "subName": "シヴァ",
+  "name": "ニーラカンタ シヴァ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] 味方キャラを破棄したとき、このキャラにＤＭＧ＋１する。",
+  "textKr": "[誘発] 味方キャラを破棄したとき、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0855"
 }

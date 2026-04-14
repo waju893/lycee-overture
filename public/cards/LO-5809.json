@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5809",
+  "title": "セクシーで大胆なカノジョ",
+  "subName": "八尋 実桜",
+  "name": "セクシーで大胆なカノジョ 八尋 実桜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントを使用したとき、このキャラにＤＰ＋２する。",
+  "textKr": "[誘発] 自分のイベントを使用したとき、このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5809"
 }

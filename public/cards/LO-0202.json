@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0202",
+  "title": "神核を穿く咱夫藍の花",
+  "subName": "サフラン色の死",
+  "name": "神核を穿く咱夫藍の花 サフラン色の死",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[味方キャラ１体にＤＭＧ＋２する。]]\n[宣言] [T]: バトル中に使用する。このバトルで対戦キャラがダウンしたとき、相手のデッキを２枚破棄する。",
+  "textKr": "[エンゲージ:[味方キャラ１体にＤＭＧ＋２する。]]\n[宣言] [T]: バトル中に使用する。このバトルで対戦キャラがダウンしたとき、相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0202"
 }

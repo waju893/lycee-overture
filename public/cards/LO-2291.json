@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2291",
+  "title": "多聞天王の化生",
+  "subName": "千早城",
+  "name": "多聞天王の化生 千早城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [宙宙]:{相手キャラ１体}にＳＰ－２する。この能力は失われる。",
+  "textKr": "[宣言] [宙宙]:{相手キャラ１体}にＳＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2291"
 }

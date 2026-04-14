@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3971",
+  "title": "ダイビート副官",
+  "subName": "ユーノ",
+  "name": "ダイビート副官 ユーノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[誘発] このキャラが登場したとき、[チャージ]を持つ味方キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[チャージ:２]\n[誘発] このキャラが登場したとき、[チャージ]を持つ味方キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3971"
 }

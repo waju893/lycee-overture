@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0920",
+  "title": "ローレル・リング",
+  "subName": "東儀 白",
+  "name": "ローレル・リング 東儀 白",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:このキャラのＳＰが５以上の場合、このキャラを未行動にする。",
+  "textKr": "[宣言] [D1]:このキャラのＳＰが５以上の場合、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0920"
 }

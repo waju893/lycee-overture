@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3731",
+  "title": "邪仙",
+  "subName": "胡喜美",
+  "name": "邪仙 胡喜美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "textKr": "[オーダーステップ:[0]]\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3731"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4582",
+  "title": "外国人観光客",
+  "subName": "マーシャ・マクレラン",
+  "name": "外国人観光客 マーシャ・マクレラン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分にシールド＋１する。１枚ドローする。{味方[WM][雪]キャラ１体}に相手ターン終了時までＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分にシールド＋１する。１枚ドローする。{味方[WM][雪]キャラ１体}に相手ターン終了時までＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4582"
 }

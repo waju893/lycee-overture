@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1984",
+  "title": "新たなる光",
+  "subName": "ベイロープ",
+  "name": "新たなる光 ベイロープ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。このキャラを{味方ＤＦ}に移動する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。このキャラを{味方ＤＦ}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1984"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6106",
+  "title": "聖母のような天然お姉さん",
+  "subName": "群雲 真千",
+  "name": "聖母のような天然お姉さん 群雲 真千",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "star",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 5,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪無無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:味方『星恋＊ティンクル』キャラ１体にＡＰ＋３・ＤＰ＋３する。この能力は失われる。",
+  "textKr": "[宣言] [雪]:味方『星恋＊ティンクル』キャラ１体にＡＰ＋３・ＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6106"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5476",
+  "title": "エクスティア・シュヴァリエ",
+  "subName": "リースヴェルヌ＝シュゼット＝パラディル",
+  "name": "エクスティア・シュヴァリエ リースヴェルヌ＝シュゼット＝パラディル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]: {このキャラと同列の相手キャラ１体}にＤＰ－２する。",
+  "textKr": "[宣言] [無]: {このキャラと同列の相手キャラ１体}にＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5476"
 }

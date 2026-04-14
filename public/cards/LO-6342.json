@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6342",
+  "title": "粗暴な少年",
+  "subName": "クラウディウス ＆ ロードビヤーキー",
+  "name": "粗暴な少年 クラウディウス ＆ ロードビヤーキー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -20,11 +23,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [宙]:このキャラを味方フィールドに移動する。この能力は失われる。\n[手札宣言] [0]:ゴミ箱のこのキャラをデッキの下に置く。自分のゴミ箱または自分のデッキから「アーカムシティ」１枚を探し無償で配置する。したとき、１枚ドローする。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [宙]:このキャラを味方フィールドに移動する。この能力は失われる。\n[手札宣言] [0]:ゴミ箱のこのキャラをデッキの下に置く。自分のゴミ箱または自分のデッキから「アーカムシティ」１枚を探し無償で配置する。したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6342"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1050",
+  "title": "BT-42の操縦手",
+  "subName": "ミッコ",
+  "name": "BT-42の操縦手 ミッコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[誘発] このキャラを自分の効果で破棄したとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+  "textKr": "[誘発] このキャラを自分の効果で破棄したとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1050"
 }

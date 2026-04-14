@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0999",
+  "title": "カードラボ",
+  "subName": "ららみ＆ぼたん",
+  "name": "カードラボ ららみ＆ぼたん",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon",
     "sun"
   ],
-  "attributesList": [
-    "moon",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star"
@@ -16,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月日]:このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[宣言] [月日]:このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0999"
 }

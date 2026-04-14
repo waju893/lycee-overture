@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0490",
+  "title": "風声鶴唳",
+  "subName": "アサシン／風魔小太郎",
+  "name": "風声鶴唳 アサシン／風魔小太郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [このキャラを破棄する]:相手の能力の宣言に対応して使用する。その能力のコストが１点以下の場合、その宣言の解決は失敗する。",
+  "textKr": "[宣言] [このキャラを破棄する]:相手の能力の宣言に対応して使用する。その能力のコストが１点以下の場合、その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0490"
 }

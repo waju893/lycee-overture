@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5257",
+  "title": "銀髪碧眼の美人",
+  "subName": "涙香",
+  "name": "銀髪碧眼の美人 涙香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 4,
   "sp": 3,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ]\n[誘発] このキャラが「硯川・e・涙香」を破棄したエンゲージ登場以外で登場したとき、このキャラを破棄する。味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラが「硯川・e・涙香」を破棄したエンゲージ登場以外で登場したとき、このキャラを破棄する。味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5257"
 }

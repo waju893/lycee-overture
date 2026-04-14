@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1516",
+  "title": "伏龍の軍師",
+  "subName": "アイシャ",
+  "name": "伏龍の軍師 アイシャ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[手札宣言] [D1]:相手の攻撃宣言に対応して使用する。{味方[花]キャラ１体}を未行動にする。",
+  "textKr": "[サポーター:[花花]]\n[手札宣言] [D1]:相手の攻撃宣言に対応して使用する。{味方[花]キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1516"
 }

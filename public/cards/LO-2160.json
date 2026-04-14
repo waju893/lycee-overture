@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2160",
+  "title": "天才少女",
+  "subName": "夏目 暦",
+  "name": "天才少女 夏目 暦",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラを破棄する。破棄したとき、{相手キャラ１体}にＤＭＧ－２する。",
+  "textKr": "[宣言] [0]:このキャラを破棄する。破棄したとき、{相手キャラ１体}にＤＭＧ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2160"
 }

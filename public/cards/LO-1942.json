@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1942",
+  "title": "吸血殺し",
+  "subName": "姫神 秋沙",
+  "name": "吸血殺し 姫神 秋沙",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラの前後の味方[花]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを手札に入れる。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラの前後の味方[花]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1942"
 }

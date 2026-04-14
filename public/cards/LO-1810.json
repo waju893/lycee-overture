@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1810",
+  "title": "ヤマト八柱将『聖賢のライコウ』",
+  "subName": "ライコウ",
+  "name": "ヤマト八柱将『聖賢のライコウ』 ライコウ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "ヤマト",
+  "text": "[宣言] [宙]:自ターン中に使用する。相手の宣言に対応して使用できない。自分の場と自分のゴミ箱のキャラ全てが＜ヤマト＞[宙]の場合、このキャラを破棄する。破棄したとき、自分の手札の「アクルトゥルカ ライコウ」１体をこのキャラが登場していたフィールドに無償で登場する。",
+  "textKr": "[宣言] [宙]:自ターン中に使用する。相手の宣言に対応して使用できない。自分の場と自分のゴミ箱のキャラ全てが＜ヤマト＞[宙]の場合、このキャラを破棄する。破棄したとき、自分の手札の「アクルトゥルカ ライコウ」１体をこのキャラが登場していたフィールドに無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1810"
 }

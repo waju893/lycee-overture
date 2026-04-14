@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4778",
+  "title": "忠義に生きるサムライ",
+  "subName": "ハルカゼ",
+  "name": "忠義に生きるサムライ ハルカゼ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方「コト」１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方「コト」１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4778"
 }

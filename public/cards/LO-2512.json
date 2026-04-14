@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2512",
+  "title": "どこかミステリアスな不思議お姉さん",
+  "subName": "エルミナ",
+  "name": "どこかミステリアスな不思議お姉さん エルミナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月]:相手ターン中に使用する。{自分のゴミ箱の[月]キャラ１体}を登場する。この能力は失われる。\n[誘発] 相手の効果で味方キャラが移動したとき、そのキャラを破棄できる。破棄したとき、相手キャラ１体を破棄し、１枚ドローする。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月]:相手ターン中に使用する。{自分のゴミ箱の[月]キャラ１体}を登場する。この能力は失われる。\n[誘発] 相手の効果で味方キャラが移動したとき、そのキャラを破棄できる。破棄したとき、相手キャラ１体を破棄し、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2512"
 }

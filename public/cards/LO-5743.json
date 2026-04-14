@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5743",
+  "title": "目立たない優等生",
+  "subName": "高島 ざくろ",
+  "name": "目立たない優等生 高島 ざくろ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、味方『終ノ空remake』キャラが３体以上の場合、２枚ドローする。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、味方『終ノ空remake』キャラが３体以上の場合、２枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5743"
 }

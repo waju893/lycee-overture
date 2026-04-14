@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2553",
+  "title": "正義を司る天使",
+  "subName": "マリエラ",
+  "name": "正義を司る天使 マリエラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -21,5 +24,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、このキャラが手札から登場したとき、相手「あいりすミスティリア！」キャラ１体を破棄する。",
+  "textKr": "[誘発] 自ターン中、このキャラが手札から登場したとき、相手「あいりすミスティリア！」キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2553"
 }

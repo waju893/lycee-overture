@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6392",
+  "title": "才色兼備なお嬢様",
+  "subName": "覇道 瑠璃",
+  "name": "才色兼備なお嬢様 覇道 瑠璃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
@@ -14,13 +17,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:１]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [宙][C1]:{コストが７点以上の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[ジャンプ:[0]][チャージ:１]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [宙][C1]:{コストが７点以上の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6392"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0620",
+  "title": "監督班",
+  "subName": "淡路 萌香",
+  "name": "監督班 淡路 萌香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [月]:味方キャラがアイテムを装備している場合、このキャラにＡＰ＋３する。",
+  "textKr": "[宣言] [月]:味方キャラがアイテムを装備している場合、このキャラにＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0620"
 }

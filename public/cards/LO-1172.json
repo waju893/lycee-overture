@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1172",
+  "title": "図書館の青い少女",
+  "subName": "ティピィ",
+  "name": "図書館の青い少女 ティピィ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分がイベントを使用したとき、自分のデッキを１枚回復する。",
+  "textKr": "[誘発] 自ターン中、自分がイベントを使用したとき、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1172"
 }

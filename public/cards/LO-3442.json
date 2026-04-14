@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3442",
+  "title": "華麗なる猫剣士",
+  "subName": "ランスロット",
+  "name": "華麗なる猫剣士 ランスロット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:{味方「シェリー＝ラインスタッド」または「長井永羽」１体}にＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:{味方「シェリー＝ラインスタッド」または「長井永羽」１体}にＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3442"
 }

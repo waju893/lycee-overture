@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4780",
+  "title": "幼き女王を愛した使用人",
+  "subName": "イルマ",
+  "name": "幼き女王を愛した使用人 イルマ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 5,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [0]:自分のデッキから「深淵を纏いし女王 ギゼリック」１体を探し公開して手札に入れる。",
+  "textKr": "[手札宣言] [0]:自分のデッキから「深淵を纏いし女王 ギゼリック」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4780"
 }

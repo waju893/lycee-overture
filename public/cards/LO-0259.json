@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-0259",
+  "title": "共食い",
+  "subName": "",
+  "name": "共食い",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [味方キャラ１体を破棄する。]:このキャラにＡＰ＋３・ＤＰ＋３する。\n※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2026/01/09施行)",
+  "textKr": "[宣言] [味方キャラ１体を破棄する。]:このキャラにＡＰ＋３・ＤＰ＋３する。\n※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0259"
 }

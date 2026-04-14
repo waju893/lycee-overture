@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2355",
+  "title": "青龍逆鱗陣",
+  "subName": "関羽・愛紗",
+  "name": "青龍逆鱗陣 関羽・愛紗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、味方[日]キャラ１体をデッキの下に置く。１枚ドローする。そのキャラのコストが３点以上の場合、１枚ドローできる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが３点以上の味方[日]キャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、味方[日]キャラ１体をデッキの下に置く。１枚ドローする。そのキャラのコストが３点以上の場合、１枚ドローできる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが３点以上の味方[日]キャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2355"
 }

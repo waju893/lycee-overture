@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5144",
+  "title": "闇討ち",
+  "subName": "オウギ",
+  "name": "闇討ち オウギ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ全てが『うたわれるもの シリーズ』キャラの場合、自分のゴミ箱または自分のデッキから「ノスリ」１体を探し登場できる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ全てが『うたわれるもの シリーズ』キャラの場合、自分のゴミ箱または自分のデッキから「ノスリ」１体を探し登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5144"
 }

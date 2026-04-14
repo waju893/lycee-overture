@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2240",
+  "title": "塔の巨人召喚",
+  "subName": "フランケンシュタイン城",
+  "name": "塔の巨人召喚 フランケンシュタイン城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラを未行動にできる。未行動にしたとき、この能力は失われる。",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラを未行動にできる。未行動にしたとき、この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2240"
 }

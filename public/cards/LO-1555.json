@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1555",
+  "title": "魔戦団長",
+  "subName": "イングリッド",
+  "name": "魔戦団長 イングリッド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [日]:相手攻撃キャラ１体にＤＰ－２する。",
+  "textKr": "[手札宣言] [日]:相手攻撃キャラ１体にＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1555"
 }

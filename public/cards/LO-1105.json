@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1105",
+  "title": "九七式中戦車の車長",
+  "subName": "細見",
+  "name": "九七式中戦車の車長 細見",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、相手キャラ１体にＤＰ－１できる。",
+  "textKr": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、相手キャラ１体にＤＰ－１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1105"
 }

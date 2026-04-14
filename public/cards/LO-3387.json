@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3387",
+  "title": "作業着フェチ",
+  "subName": "鳳 鳴",
+  "name": "作業着フェチ 鳳 鳴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3387"
 }

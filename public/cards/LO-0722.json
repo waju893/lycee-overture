@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0722",
+  "title": "財閥令嬢",
+  "subName": "兼元 灯里",
+  "name": "財閥令嬢 兼元 灯里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラにサポートをしたとき、味方キャラ１体にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラにサポートをしたとき、味方キャラ１体にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0722"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1963",
+  "title": "必要悪の教会",
+  "subName": "ステイル＝マグヌス",
+  "name": "必要悪の教会 ステイル＝マグヌス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙宙宙]:相手の攻撃宣言に対応して使用する。{アイテムを装備している味方[宙]キャラ１体}を未行動にし、そのキャラにＤＰ＋２し、{味方フィールド}に移動する。",
+  "textKr": "[手札宣言] [宙宙宙]:相手の攻撃宣言に対応して使用する。{アイテムを装備している味方[宙]キャラ１体}を未行動にし、そのキャラにＤＰ＋２し、{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1963"
 }

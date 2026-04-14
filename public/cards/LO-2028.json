@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2028",
+  "title": "稀代の天才ピアニスト",
+  "subName": "シルヴィア・ル・クルスクラウン・ソルティレージュ・シスア",
+  "name": "稀代の天才ピアニスト シルヴィア・ル・クルスクラウン・ソルティレージュ・シスア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 0,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、このキャラがＡＦに登場している場合、このキャラにＡＰ＋３する。ＤＦに登場している場合、このキャラにＤＰ＋３する。",
+  "textKr": "[誘発] ターン開始時、このキャラがＡＦに登場している場合、このキャラにＡＰ＋３する。ＤＦに登場している場合、このキャラにＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2028"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4197",
+  "title": "恋と性欲の葛藤",
+  "subName": "金崎 恵",
+  "name": "恋と性欲の葛藤 金崎 恵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] [花]でない味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] [花]でない味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4197"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0531",
+  "title": "壊音の霹靂",
+  "subName": "アーチャー／ビリー・ザ・キッド",
+  "name": "壊音の霹靂 アーチャー／ビリー・ザ・キッド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[日]]",
+  "textKr": "[オーダーチェンジ:[日]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0531"
 }

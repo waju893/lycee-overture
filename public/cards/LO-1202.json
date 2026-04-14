@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1202",
+  "title": "夢を追ったリアリスト",
+  "subName": "有月 初",
+  "name": "夢を追ったリアリスト 有月 初",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月][このキャラを破棄する]:{相手ＤＦキャラ１体}にＡＰ－２・ＤＰ－２する。",
+  "textKr": "[宣言] [月][このキャラを破棄する]:{相手ＤＦキャラ１体}にＡＰ－２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1202"
 }

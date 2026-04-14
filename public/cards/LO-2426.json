@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2426",
+  "title": "伏竜",
+  "subName": "諸葛亮・朱里",
+  "name": "伏竜 諸葛亮・朱里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "蜀",
+  "text": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱のＥＸが２のキャラ１体を手札に入れる。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱のＥＸが２のキャラ１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2426"
 }

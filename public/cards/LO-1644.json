@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1644",
+  "title": "怠惰な神様",
+  "subName": "市杵宍姫命",
+  "name": "怠惰な神様 市杵宍姫命",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。味方キャラがアイテムを装備している場合、{味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。味方キャラがアイテムを装備している場合、{味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1644"
 }

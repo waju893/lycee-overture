@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0029",
+  "title": "訴状の矢文",
+  "subName": "アーチャー／アタランテ",
+  "name": "訴状の矢文 アーチャー／アタランテ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[サイドステップ:[月]]\n[宣言] [T月月月]:相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[サイドステップ:[月]]\n[宣言] [T月月月]:相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0029"
 }

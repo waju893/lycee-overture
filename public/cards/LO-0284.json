@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0284",
+  "title": "西住流",
+  "subName": "西住 みほ",
+  "name": "西住流 西住 みほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 0,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラの同列の味方フィールドに移動できる。",
+  "textKr": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラの同列の味方フィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0284"
 }

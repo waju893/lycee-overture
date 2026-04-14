@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6579",
+  "title": "家出好きの家猫",
+  "subName": "平坂 景子",
+  "name": "家出好きの家猫 平坂 景子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 6,
   "dp": 6,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。相手のデッキを１枚破棄できる。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6579"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0345",
+  "title": "アヒルさんチーム",
+  "subName": "佐々木 あけび",
+  "name": "アヒルさんチーム 佐々木 あけび",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [0]:このキャラにＤＰ＋[味方「アヒルさんチーム」キャラの数]する。",
+  "textKr": "[宣言] [0]:このキャラにＤＰ＋[味方「アヒルさんチーム」キャラの数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0345"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3733",
+  "title": "妖狸",
+  "subName": "スズネ",
+  "name": "妖狸 スズネ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、{自分のゴミ箱のコストが２点以下の手札宣言能力を持つＥＸが２の[月]キャラ１体}を登場できる。",
+  "textKr": "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、{自分のゴミ箱のコストが２点以下の手札宣言能力を持つＥＸが２の[月]キャラ１体}を登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3733"
 }

@@ -1,11 +1,25 @@
 {
+  "cardNo": "LO-1998",
+  "title": "体晶",
+  "subName": "",
+  "name": "体晶",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "-",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] 相手ターン中、このキャラにＤＰ＋１する。\n[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
+  "textKr": "[常時] 相手ターン中、このキャラにＤＰ＋１する。\n[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1998"
 }

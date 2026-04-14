@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6315",
+  "title": "宮本のツンデレ幼馴染み",
+  "subName": "樋ヶ 結花",
+  "name": "宮本のツンデレ幼馴染み 樋ヶ 結花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「女体の神秘のパイオツニア 宮本武」１体を探し無償で登場できる。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「女体の神秘のパイオツニア 宮本武」１体を探し無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6315"
 }

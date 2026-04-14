@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1400",
+  "title": "オリンピアの体操服",
+  "subName": "セイバー／ネロ・クラウディウス",
+  "name": "オリンピアの体操服 セイバー／ネロ・クラウディウス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D2]:自ターン中に使用する。このキャラにＡＰ＋１し、このキャラは[ガッツ:[日日]]を得る。",
+  "textKr": "[宣言] [D2]:自ターン中に使用する。このキャラにＡＰ＋１し、このキャラは[ガッツ:[日日]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1400"
 }

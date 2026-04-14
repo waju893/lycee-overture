@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4048",
+  "title": "聖刀",
+  "subName": "日光",
+  "name": "聖刀 日光",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが味方[AL][花]キャラの能力で登場したとき、自分のデッキの上のカード５枚を見て、そのうち１枚を手札に入れる。デッキをシャッフルする。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが味方[AL][花]キャラの能力で登場したとき、自分のデッキの上のカード５枚を見て、そのうち１枚を手札に入れる。デッキをシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4048"
 }

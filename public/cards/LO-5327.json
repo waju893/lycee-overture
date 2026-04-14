@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5327",
+  "title": "実質的な支配者",
+  "subName": "董卓・月",
+  "name": "実質的な支配者 董卓・月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    9
-  ],
-  "keyEffects": [
-    5,
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][オーダーチェンジ:[0]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] 味方[宙]キャラを対象に自分の手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[ジャンプ:[0]][オーダーチェンジ:[0]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] 味方[宙]キャラを対象に自分の手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5327"
 }

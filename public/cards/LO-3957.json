@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3957",
+  "title": "長尾家当主",
+  "subName": "長尾 美空 景虎",
+  "name": "長尾家当主 長尾 美空 景虎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがＤＦに登場したとき、１枚ドローする。\n[誘発] 相手ターン開始時、味方ＡＦキャラ全てがコストが５点以上の[月]キャラの場合、相手キャラ１体にＤＭＧ－１する。\n[宣言] [0]:自ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[誘発] このキャラがＤＦに登場したとき、１枚ドローする。\n[誘発] 相手ターン開始時、味方ＡＦキャラ全てがコストが５点以上の[月]キャラの場合、相手キャラ１体にＤＭＧ－１する。\n[宣言] [0]:自ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3957"
 }

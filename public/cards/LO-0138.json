@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0138",
+  "title": "慈悲深き女王陛下に栄光を",
+  "subName": "セイブザクイーン",
+  "name": "慈悲深き女王陛下に栄光を セイブザクイーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    7
-  ],
-  "keyEffects": [
-    4,
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[２枚ドローする。]][オーダーステップ:[D1]]",
+  "textKr": "[エンゲージ:[２枚ドローする。]][オーダーステップ:[D1]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0138"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5803",
+  "title": "重度のブラコン同盟",
+  "subName": "涼花",
+  "name": "重度のブラコン同盟 涼花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[宣言] [0]:サブネームに「兄」または「妹」または「ブラコン」を含む味方キャラ全てにＤＰ＋１する。",
+  "textKr": "[サポーター:[花]]\n[宣言] [0]:サブネームに「兄」または「妹」または「ブラコン」を含む味方キャラ全てにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5803"
 }

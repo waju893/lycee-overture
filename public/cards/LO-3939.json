@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3939",
+  "title": "摂津有岡城の城主",
+  "subName": "荒木 弥耶 村重",
+  "name": "摂津有岡城の城主 荒木 弥耶 村重",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが３点以上の味方[日]キャラ１体}にＡＰ＋１する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが３点以上の味方[日]キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3939"
 }

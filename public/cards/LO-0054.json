@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0054",
+  "title": "串刺し公",
+  "subName": "バーサーカー／ヴラド三世",
+  "name": "串刺し公 バーサーカー／ヴラド三世",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 6,
   "dp": 2,
   "sp": 2,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [宙宙宙]:このキャラのバトル中に使用する。対戦キャラを破棄する。",
+  "textKr": "[宣言] [宙宙宙]:このキャラのバトル中に使用する。対戦キャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0054"
 }

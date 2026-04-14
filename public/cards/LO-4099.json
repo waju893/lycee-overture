@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4099",
+  "title": "治癒の奇跡",
+  "subName": "六の法杖セラフィール",
+  "name": "治癒の奇跡 六の法杖セラフィール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,13 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3,
-    16
-  ],
-  "keyEffects": [
-    3,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２][サイドステップ:[0]]\n[宣言] [C1]:自ターン中に使用する。自分のデッキを１枚回復しシャッフルする。",
+  "textKr": "[チャージ:２][サイドステップ:[0]]\n[宣言] [C1]:自ターン中に使用する。自分のデッキを１枚回復しシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4099"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0013",
+  "title": "約束された勝利の剣",
+  "subName": "セイバー／アルトリア・ペンドラゴン〔オルタ〕",
+  "name": "約束された勝利の剣 セイバー／アルトリア・ペンドラゴン〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T雪雪雪雪雪雪無無無]:このキャラと同列の相手キャラ全てを破棄する。",
+  "textKr": "[宣言] [T雪雪雪雪雪雪無無無]:このキャラと同列の相手キャラ全てを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0013"
 }

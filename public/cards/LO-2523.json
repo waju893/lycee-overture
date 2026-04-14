@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2523",
+  "title": "一家の大黒柱",
+  "subName": "穂積 さやか",
+  "name": "一家の大黒柱 穂積 さやか",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[月]キャラの場合、このキャラにＡＰ＋２する。",
+  "textKr": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[月]キャラの場合、このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2523"
 }

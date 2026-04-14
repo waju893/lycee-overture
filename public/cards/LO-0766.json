@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0766",
+  "title": "癒しの聖滴",
+  "subName": "アプスー",
+  "name": "癒しの聖滴 アプスー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [このキャラを破棄する]:{相手キャラ１体}にＤＭＧ－２する。",
+  "textKr": "[宣言] [このキャラを破棄する]:{相手キャラ１体}にＤＭＧ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0766"
 }

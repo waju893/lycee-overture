@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1239",
+  "title": "ギルドのリーダー",
+  "subName": "チャー",
+  "name": "ギルドのリーダー チャー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 0,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[宣言] [0]:自ターン中に使用する。このキャラを自分の「卒業」置き場に置く。置いたとき、{味方キャラ１体}にＡＰ＋２する。",
+  "textKr": "[アシスト]\n[宣言] [0]:自ターン中に使用する。このキャラを自分の「卒業」置き場に置く。置いたとき、{味方キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1239"
 }

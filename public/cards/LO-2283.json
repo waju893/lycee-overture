@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2283",
+  "title": "ノビシャド",
+  "subName": "臼杵城",
+  "name": "ノビシャド 臼杵城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 6,
   "dp": 2,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2283"
 }

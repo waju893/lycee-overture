@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-5442",
+  "title": "ヤンデレブラコン妹",
+  "subName": "",
+  "name": "ヤンデレブラコン妹",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラは[ペナルティ:[１枚ドローできる。]]を得る。ＡＦのこのキャラにＡＰ＋２・ＤＰ＋２する。ＤＦのこのキャラにＤＰ＋３・ＳＰ＋１する。\n[常時] 自ターン中、アイテムを持つ味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[常時] このキャラは[ペナルティ:[１枚ドローできる。]]を得る。ＡＦのこのキャラにＡＰ＋２・ＤＰ＋２する。ＤＦのこのキャラにＤＰ＋３・ＳＰ＋１する。\n[常時] 自ターン中、アイテムを持つ味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5442"
 }

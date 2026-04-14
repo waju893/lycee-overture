@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5764",
+  "title": "転校してきた少女",
+  "subName": "七星 朱里",
+  "name": "転校してきた少女 七星 朱里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラにＡＰ＋[味方『しゅぷれ〜むキャンディ』キャラの数]する。",
+  "textKr": "[宣言] [0]:このキャラにＡＰ＋[味方『しゅぷれ〜むキャンディ』キャラの数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5764"
 }

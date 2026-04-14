@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6206",
+  "title": "ポジティブが服着て飛び跳ねてる",
+  "subName": "アリアンナ・ハートベル",
+  "name": "ポジティブが服着て飛び跳ねてる アリアンナ・ハートベル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:２]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。味方[日]キャラ全てにＡＰ＋１する。\n[宣言] [C1][日]:{味方キャラ１体}にＡＰ＋３する。",
+  "textKr": "[ジャンプ:[0]][チャージ:２]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。味方[日]キャラ全てにＡＰ＋１する。\n[宣言] [C1][日]:{味方キャラ１体}にＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6206"
 }

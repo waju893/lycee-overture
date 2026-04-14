@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5016",
+  "title": "好きなものはハンバーガー",
+  "subName": "椎名 繭",
+  "name": "好きなものはハンバーガー 椎名 繭",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手ターン開始時、このキャラが行動済みの場合、自分のデッキを１枚破棄する。",
+  "textKr": "[誘発] 相手ターン開始時、このキャラが行動済みの場合、自分のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5016"
 }

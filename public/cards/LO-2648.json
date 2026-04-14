@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2648",
+  "title": "『折り紙』の店長",
+  "subName": "織部 あずき",
+  "name": "『折り紙』の店長 織部 あずき",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2648"
 }

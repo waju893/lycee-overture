@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1048",
+  "title": "ミカと仲が良い",
+  "subName": "アキ",
+  "name": "ミカと仲が良い アキ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[ステップ:[0]]\n[誘発] 自ターン中、このキャラを除く味方＜継続＞キャラを破棄したとき、１枚ドローできる。",
+  "textKr": "[ステップ:[0]]\n[誘発] 自ターン中、このキャラを除く味方＜継続＞キャラを破棄したとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1048"
 }

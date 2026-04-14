@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1620",
+  "title": "理事長の娘",
+  "subName": "伊勢 琴里",
+  "name": "理事長の娘 伊勢 琴里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体を味方ＤＦに移動できる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を味方ＤＦに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1620"
 }

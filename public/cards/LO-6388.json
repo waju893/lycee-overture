@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6388",
+  "title": "倣岸不遜なパートナー",
+  "subName": "アル・アジフ",
+  "name": "倣岸不遜なパートナー アル・アジフ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] このキャラが登場したときまたはターン開始時、味方[宙]キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[宣言][切札] [0]:自分のデッキが２０枚以下の場合、自分のデッキをランダムに６枚まで回復しシャッフルする。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] このキャラが登場したときまたはターン開始時、味方[宙]キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[宣言][切札] [0]:自分のデッキが２０枚以下の場合、自分のデッキをランダムに６枚まで回復しシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6388"
 }

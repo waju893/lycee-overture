@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1670",
+  "title": "風紀班主任",
+  "subName": "升形 兵馬",
+  "name": "風紀班主任 升形 兵馬",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、相手のゴミ箱のカード１枚を除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "textKr": "[誘発] このキャラが手札から登場したとき、相手のゴミ箱のカード１枚を除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1670"
 }

@@ -1,20 +1,19 @@
 {
+  "cardNo": "LO-0450",
+  "title": "魔剣機関魔術局長",
+  "subName": "ラルルＰ局長",
+  "name": "魔剣機関魔術局長 ラルルＰ局長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 0,
   "useTarget": [
     "snow",
     "snow",
@@ -30,5 +29,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 5,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 0,
+  "costRaw": "雪雪月月花花宙宙日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無無無]:自分のゴミ箱の「ブキダスさん」１枚を手札に入れる。",
+  "textKr": "[宣言] [無無無]:自分のゴミ箱の「ブキダスさん」１枚を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0450"
 }

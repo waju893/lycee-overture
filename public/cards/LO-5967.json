@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5967",
+  "title": "一流の技術を持つ美容師科のイケメン",
+  "subName": "大蔵 アンソニー Jr",
+  "name": "一流の技術を持つ美容師科のイケメン 大蔵 アンソニー Jr",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:自ターン中に使用する。１枚ドローする。このキャラを未行動にできる。カード名に「小倉朝陽」を含む味方キャラが登場している場合、相手のデッキを１枚破棄できる。（１回まで使用可能）",
+  "textKr": "[宣言] [T]:自ターン中に使用する。１枚ドローする。このキャラを未行動にできる。カード名に「小倉朝陽」を含む味方キャラが登場している場合、相手のデッキを１枚破棄できる。（１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5967"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1259",
+  "title": "戦線の切り込み隊長",
+  "subName": "野田",
+  "name": "戦線の切り込み隊長 野田",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+  "textKr": "[アシスト]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1259"
 }

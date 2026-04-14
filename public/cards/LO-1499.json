@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1499",
+  "title": "天才機甲士",
+  "subName": "ウェンディ",
+  "name": "天才機甲士 ウェンディ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    14
-  ],
-  "keyEffects": [
-    14
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ガッツ:[月月月月]]\n[手札宣言] [月月月]:ターン終了時まで、次に味方[月]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "textKr": "[ガッツ:[月月月月]]\n[手札宣言] [月月月]:ターン終了時まで、次に味方[月]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1499"
 }

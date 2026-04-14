@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6595",
+  "title": "猟奇に走った父",
+  "subName": "喜納 岳斗",
+  "name": "猟奇に走った父 喜納 岳斗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方「蝶舞翠」が自分の効果で場を離れたとき、自分にシールド＋１できる。",
+  "textKr": "[誘発] 味方「蝶舞翠」が自分の効果で場を離れたとき、自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6595"
 }

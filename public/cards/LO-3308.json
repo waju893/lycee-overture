@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3308",
+  "title": "フィリア女学院理事長",
+  "subName": "ジャン・ピエール・スタンレー",
+  "name": "フィリア女学院理事長 ジャン・ピエール・スタンレー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。{アイテムを装備している味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。{アイテムを装備している味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3308"
 }

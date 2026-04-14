@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0623",
+  "title": "ハロウィンウィッチ",
+  "subName": "市杵宍姫命",
+  "name": "ハロウィンウィッチ 市杵宍姫命",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[常時] このキャラは相手の効果によって能力値修正を得ない。",
+  "textKr": "[常時] このキャラは相手の効果によって能力値修正を得ない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0623"
 }

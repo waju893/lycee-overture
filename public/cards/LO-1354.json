@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1354",
+  "title": "天空神の寵愛",
+  "subName": "キャスター／ニトクリス",
+  "name": "天空神の寵愛 キャスター／ニトクリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    14
-  ],
-  "keyEffects": [
-    14
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[ガッツ:[月月月月]]\n[誘発] バトルに参加していない味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+  "textKr": "[ガッツ:[月月月月]]\n[誘発] バトルに参加していない味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1354"
 }

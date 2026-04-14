@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2671",
+  "title": "洋食屋の看板娘",
+  "subName": "真田 かなた",
+  "name": "洋食屋の看板娘 真田 かなた",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方エリアを配置している場合、このキャラは[ステップ:[0]]を得る。\n[誘発] コストが３点以上の味方[花]キャラを相手の効果で破棄したとき、１枚ドローできる。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方エリアを配置している場合、このキャラは[ステップ:[0]]を得る。\n[誘発] コストが３点以上の味方[花]キャラを相手の効果で破棄したとき、１枚ドローできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2671"
 }

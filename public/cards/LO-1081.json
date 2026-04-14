@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1081",
+  "title": "P40の車長",
+  "subName": "アンチョビ",
+  "name": "P40の車長 アンチョビ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト]\n[宣言] [無]:自ターン中に使用する。このキャラと{このキャラに隣接した味方＜アンツィオ＞キャラ１体}を入れ替える。",
+  "textKr": "[アシスト]\n[宣言] [無]:自ターン中に使用する。このキャラと{このキャラに隣接した味方＜アンツィオ＞キャラ１体}を入れ替える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1081"
 }

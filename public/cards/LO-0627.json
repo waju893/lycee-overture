@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0627",
+  "title": "女性記者",
+  "subName": "仁木 夕張",
+  "name": "女性記者 仁木 夕張",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [0]:自ターン中に使用する。相手の手札が０枚の場合、相手のデッキを１枚破棄する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。相手の手札が０枚の場合、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0627"
 }

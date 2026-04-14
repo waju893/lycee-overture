@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1096",
+  "title": "開放的で明るい性格",
+  "subName": "ケイ",
+  "name": "開放的で明るい性格 ケイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サンダース",
+  "text": "[誘発] このキャラを味方＜サンダース＞キャラの能力の対象に指定したとき、相手キャラ２体にＤＭＧ－１する。",
+  "textKr": "[誘発] このキャラを味方＜サンダース＞キャラの能力の対象に指定したとき、相手キャラ２体にＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1096"
 }

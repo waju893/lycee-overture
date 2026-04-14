@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3810",
+  "title": "光闇の騎士",
+  "subName": "ヘイオス",
+  "name": "光闇の騎士 ヘイオス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [宙][C1]:{コストが３点以上の味方キャラ１体}にＤＰ＋３する。",
+  "textKr": "[チャージ:２]\n[宣言] [宙][C1]:{コストが３点以上の味方キャラ１体}にＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3810"
 }

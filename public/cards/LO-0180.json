@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0180",
+  "title": "ププッピマリー",
+  "subName": "",
+  "name": "ププッピマリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] ターン終了時、このターン中、このキャラでサポートをしている場合、このキャラを未行動にする。",
+  "textKr": "[誘発] ターン終了時、このターン中、このキャラでサポートをしている場合、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0180"
 }

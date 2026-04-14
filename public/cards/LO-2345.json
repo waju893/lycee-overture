@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2345",
+  "title": "身も心も癒やす年上メイド",
+  "subName": "イヴ",
+  "name": "身も心も癒やす年上メイド イヴ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    10
-  ],
-  "keyEffects": [
-    4,
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]][オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方キャラ１体}にＤＰ＋１する。\n[宣言] [D1]:相手の宣言に対応して使用できない。{味方[雪]キャラ１体}を手札に入れる。この能力は失われる。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]][オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方キャラ１体}にＤＰ＋１する。\n[宣言] [D1]:相手の宣言に対応して使用できない。{味方[雪]キャラ１体}を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2345"
 }

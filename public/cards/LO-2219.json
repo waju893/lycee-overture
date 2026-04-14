@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2219",
+  "title": "剣の楽劇",
+  "subName": "ノイシュヴァンシュタイン城",
+  "name": "剣の楽劇 ノイシュヴァンシュタイン城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪雪",
+  "restrictionRaw": "－●－－●－",
+  "typeTagsRaw": "城娘",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] 自分のコストが３点以上のイベントまたは手札宣言能力で相手キャラを破棄したとき、元のＡＰが１以下の味方キャラが登場していない場合、ゴミ箱のその自分のカードをデッキの下に置き、１枚ドローできる。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] 自分のコストが３点以上のイベントまたは手札宣言能力で相手キャラを破棄したとき、元のＡＰが１以下の味方キャラが登場していない場合、ゴミ箱のその自分のカードをデッキの下に置き、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2219"
 }

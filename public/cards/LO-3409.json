@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3409",
+  "title": "冷静沈着なお嬢様傭兵",
+  "subName": "桐島 レイン",
+  "name": "冷静沈着なお嬢様傭兵 桐島 レイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手キャラが登場していて、コストが４点以下の味方ＡＦキャラが登場していない場合、以下から１つを選び処理する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手キャラが登場していて、コストが４点以下の味方ＡＦキャラが登場していない場合、以下から１つを選び処理する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3409"
 }

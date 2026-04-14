@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3337",
+  "title": "R-ウィング",
+  "subName": "咲夜",
+  "name": "R-ウィング 咲夜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラを除くサブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:このキャラを除くサブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3337"
 }

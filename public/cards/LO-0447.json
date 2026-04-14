@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0447",
+  "title": "新進気鋭の魔界アイドルユニット",
+  "subName": "ソードガールズ",
+  "name": "新進気鋭の魔界アイドルユニット ソードガールズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower",
     "sun"
   ],
-  "attributesList": [
-    "flower",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -21,11 +23,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [花花日日無無]:このキャラにＡＰ＋３・ＤＰ＋３・ＳＰ＋３する。",
+  "textKr": "[エンゲージ]\n[宣言] [花花日日無無]:このキャラにＡＰ＋３・ＤＰ＋３・ＳＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0447"
 }

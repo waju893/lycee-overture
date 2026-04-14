@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4267",
+  "title": "暗殺者",
+  "subName": "桧垣 英子",
+  "name": "暗殺者 桧垣 英子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手のデッキが４枚以下の場合、このキャラにＤＭＧ＋２する。",
+  "textKr": "[宣言] [0]:相手のデッキが４枚以下の場合、このキャラにＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4267"
 }

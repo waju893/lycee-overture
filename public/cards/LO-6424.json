@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6424",
+  "title": "お調子者のクラスメイト",
+  "subName": "八戸 莢貴",
+  "name": "お調子者のクラスメイト 八戸 莢貴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
@@ -14,13 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１][ジャンプ:[0]]\n[宣言][C1][雪雪雪]:このキャラにＡＰ＋８・ＤＰ＋８する。",
+  "textKr": "[チャージ:１][ジャンプ:[0]]\n[宣言][C1][雪雪雪]:このキャラにＡＰ＋８・ＤＰ＋８する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6424"
 }

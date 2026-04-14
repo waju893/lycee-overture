@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6096",
+  "title": "損な役回り",
+  "subName": "ヨウジ",
+  "name": "損な役回り ヨウジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 5,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [D1]:対応・バトル中を除く自ターン中に使用する。味方『アメイジング・グレイス』キャラが２体以上の場合、ゴミ箱のこのキャラを無償で登場する。",
+  "textKr": "[手札宣言] [D1]:対応・バトル中を除く自ターン中に使用する。味方『アメイジング・グレイス』キャラが２体以上の場合、ゴミ箱のこのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6096"
 }

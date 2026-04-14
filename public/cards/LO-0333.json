@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0333",
+  "title": "聖グロリアーナ女学院",
+  "subName": "アッサム",
+  "name": "聖グロリアーナ女学院 アッサム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[アシスト]",
+  "textKr": "[アシスト]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0333"
 }

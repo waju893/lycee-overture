@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5968",
+  "title": "フィリア学院日本校の総学院長",
+  "subName": "ラフォーレ・ハンデルスバンケン",
+  "name": "フィリア学院日本校の総学院長 ラフォーレ・ハンデルスバンケン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 4,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。このキャラを未行動にできる。",
+  "textKr": "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。このキャラを未行動にできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5968"
 }

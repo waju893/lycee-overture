@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2484",
+  "title": "浄化の力",
+  "subName": "ユースティア・アストレア",
+  "name": "浄化の力 ユースティア・アストレア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][雪雪雪雪雪]:自ターン中に使用する。このキャラを除外する。キャラ全てをデッキの下に置く。お互いのデッキをシャッフルする。",
+  "textKr": "[宣言] [T][雪雪雪雪雪]:自ターン中に使用する。このキャラを除外する。キャラ全てをデッキの下に置く。お互いのデッキをシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2484"
 }

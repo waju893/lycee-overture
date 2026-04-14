@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3150",
+  "title": "素直でおおらか",
+  "subName": "湾内 絹保",
+  "name": "素直でおおらか 湾内 絹保",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:{味方「婚后光子」または「泡浮万彬」１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:{味方「婚后光子」または「泡浮万彬」１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3150"
 }

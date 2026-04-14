@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5474",
+  "title": "重度のマニア",
+  "subName": "伊達 龍巳 政宗",
+  "name": "重度のマニア 伊達 龍巳 政宗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、次の相手ターン終了時までこのキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、次の相手ターン終了時までこのキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5474"
 }

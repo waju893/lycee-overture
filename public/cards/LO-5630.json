@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-5630",
+  "title": "ヒノトリ",
+  "subName": "",
+  "name": "ヒノトリ",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] ＤＦのこのキャラは[アグレッシブ]を得る。\n[常時] このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。相手ターン中の場合、このキャラを未行動にできる。\n[誘発] このアイテムを破棄したとき、１枚ドローできる。\n※「ヒノトリ」は自分の場に１枚まで配置可能",
+  "textKr": "[常時] ＤＦのこのキャラは[アグレッシブ]を得る。\n[常時] このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。相手ターン中の場合、このキャラを未行動にできる。\n[誘発] このアイテムを破棄したとき、１枚ドローできる。\n※「ヒノトリ」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5630"
 }

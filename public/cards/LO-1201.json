@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1201",
+  "title": "退屈を持て余す天才○○？",
+  "subName": "氷室 憂希",
+  "name": "退屈を持て余す天才○○？ 氷室 憂希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、このキャラが登場したとき、相手キャラ１体を相手ＤＦに移動する。",
+  "textKr": "[誘発] 自ターン中、このキャラが登場したとき、相手キャラ１体を相手ＤＦに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1201"
 }

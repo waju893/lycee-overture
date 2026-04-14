@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0751",
+  "title": "天照日輪",
+  "subName": "アマテラス",
+  "name": "天照日輪 アマテラス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [D1]:このキャラのバトル中に使用する。相手は１枚ドローできる。対戦キャラのコストが４点以下の場合、このキャラにＡＰ＋３する。",
+  "textKr": "[宣言] [D1]:このキャラのバトル中に使用する。相手は１枚ドローできる。対戦キャラのコストが４点以下の場合、このキャラにＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0751"
 }

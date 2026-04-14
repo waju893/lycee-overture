@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0884",
+  "title": "伊瀬野の敵",
+  "subName": "八岐 雪花",
+  "name": "伊瀬野の敵 八岐 雪花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:{このキャラと同列の相手キャラ１体}を破棄する。このキャラを破棄する。",
+  "textKr": "[宣言] [T]:{このキャラと同列の相手キャラ１体}を破棄する。このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0884"
 }

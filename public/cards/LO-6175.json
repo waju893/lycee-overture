@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6175",
+  "title": "フリギア王家の第四王子",
+  "subName": "マークス・フォン・レオンシュタイン",
+  "name": "フリギア王家の第四王子 マークス・フォン・レオンシュタイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:２]\n[宣言] [0]:味方[日]キャラ全てにＡＰ＋１する。\n[宣言] [C1][日日]:味方[日]キャラ全てにＡＰ＋２する。",
+  "textKr": "[ジャンプ:[0]][チャージ:２]\n[宣言] [0]:味方[日]キャラ全てにＡＰ＋１する。\n[宣言] [C1][日日]:味方[日]キャラ全てにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6175"
 }

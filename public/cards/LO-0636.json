@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0636",
+  "title": "罪魔",
+  "subName": "椎葉 紬",
+  "name": "罪魔 椎葉 紬",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [D1]:味方キャラの攻撃中に使用する。バトル参加キャラ全てにＡＰ＋１する。",
+  "textKr": "[宣言] [D1]:味方キャラの攻撃中に使用する。バトル参加キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0636"
 }

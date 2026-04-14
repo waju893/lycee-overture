@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2119",
+  "title": "不運の負債",
+  "subName": "美鳩 夏乃",
+  "name": "不運の負債 美鳩 夏乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、このキャラがダウンしたとき、自分のデッキを２枚破棄できる。破棄したとき、このキャラを手札に入れる。",
+  "textKr": "[誘発] 自ターン中、このキャラがダウンしたとき、自分のデッキを２枚破棄できる。破棄したとき、このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2119"
 }

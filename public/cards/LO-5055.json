@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5055",
+  "title": "人工知能原型機",
+  "subName": "アマテラス",
+  "name": "人工知能原型機 アマテラス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3,
-    7
-  ],
-  "keyEffects": [
-    3,
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ:[自分のデッキを２枚回復しシャッフルする。]][サイドステップ:[0]]\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。味方「サヨリ」が登場している場合、以下から１つを選び処理する。この能力は失われる。",
+  "textKr": "[エンゲージ:[自分のデッキを２枚回復しシャッフルする。]][サイドステップ:[0]]\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。味方「サヨリ」が登場している場合、以下から１つを選び処理する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5055"
 }

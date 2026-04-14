@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0346",
+  "title": "ウサギさんチーム",
+  "subName": "宇津木 優季",
+  "name": "ウサギさんチーム 宇津木 優季",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[常時] このキャラのサポートは＜大洗女子＞キャラのみを対象に指定できる。",
+  "textKr": "[常時] このキャラのサポートは＜大洗女子＞キャラのみを対象に指定できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0346"
 }

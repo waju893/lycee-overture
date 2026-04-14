@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1323",
+  "title": "邪竜の魔女ver新宿1999",
+  "subName": "アヴェンジャー／ジャンヌ・ダルク〔オルタ〕",
+  "name": "邪竜の魔女ver新宿1999 アヴェンジャー／ジャンヌ・ダルク〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 2,
   "sp": 0,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1323"
 }

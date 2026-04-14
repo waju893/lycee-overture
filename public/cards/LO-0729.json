@@ -1,20 +1,19 @@
 {
+  "cardNo": "LO-0729",
+  "title": "brave sword × blaze soul",
+  "subName": "主人公×リディ",
+  "name": "brave sword × blaze soul 主人公×リディ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star"
@@ -22,5 +21,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラをエンゲージ登場によって破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] このキャラをエンゲージ登場によって破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0729"
 }

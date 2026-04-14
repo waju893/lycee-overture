@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3293",
+  "title": "アレキサンダーの下ネタマスター",
+  "subName": "軽部 狩男",
+  "name": "アレキサンダーの下ネタマスター 軽部 狩男",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方[宙]キャラが２体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。ターン終了時まで、このキャラの属性を[宙]にする。",
+  "textKr": "[宣言] [0]:味方[宙]キャラが２体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。ターン終了時まで、このキャラの属性を[宙]にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3293"
 }

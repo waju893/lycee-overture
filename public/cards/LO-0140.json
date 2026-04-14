@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0140",
+  "title": "魔天竜刃嵐獄衝",
+  "subName": "ゲイボルグ",
+  "name": "魔天竜刃嵐獄衝 ゲイボルグ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [雪雪雪雪雪雪雪]:味方キャラのバトル中に使用する。対戦キャラを破棄する。",
+  "textKr": "[エンゲージ]\n[宣言] [雪雪雪雪雪雪雪]:味方キャラのバトル中に使用する。対戦キャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0140"
 }

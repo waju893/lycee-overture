@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2178",
+  "title": "アクトアービタリィ",
+  "subName": "ベリト",
+  "name": "アクトアービタリィ ベリト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[オーダーステップ:[0]]\n[誘発] ターン開始時、コストが３点以上の味方[宙]キャラ１体にＡＰ＋１またはＤＰ＋１する。\n[誘発] 味方キャラを相手の能力で破棄したとき、２枚ドローできる。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] ターン開始時、コストが３点以上の味方[宙]キャラ１体にＡＰ＋１またはＤＰ＋１する。\n[誘発] 味方キャラを相手の能力で破棄したとき、２枚ドローできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2178"
 }

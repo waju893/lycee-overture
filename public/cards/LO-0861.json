@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0861",
+  "title": "今日は、ありがとう",
+  "subName": "島田 愛里寿",
+  "name": "今日は、ありがとう 島田 愛里寿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ１体にＤＭＧ－２する。",
+  "textKr": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ１体にＤＭＧ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0861"
 }

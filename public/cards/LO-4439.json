@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4439",
+  "title": "元鑑識課の人見知り刑事",
+  "subName": "朝倉 ながれ",
+  "name": "元鑑識課の人見知り刑事 朝倉 ながれ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「第七共和国警察庁」を配置している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方「第七共和国警察庁」を配置している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4439"
 }

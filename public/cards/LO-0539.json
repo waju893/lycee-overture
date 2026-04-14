@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0539",
+  "title": "五行山・釈迦如来掌",
+  "subName": "キャスター／玄奘三蔵",
+  "name": "五行山・釈迦如来掌 キャスター／玄奘三蔵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[サイドステップ:[0]]\n[宣言] [日日]:このキャラの攻撃中に使用する。対戦キャラを{相手フィールド}に移動する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [日日]:このキャラの攻撃中に使用する。対戦キャラを{相手フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0539"
 }

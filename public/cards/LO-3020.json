@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3020",
+  "title": "気心の知れた幼馴染",
+  "subName": "安芸 かのこ",
+  "name": "気心の知れた幼馴染 安芸 かのこ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] 能力以外の相手の効果で自分のデッキを破棄したとき、自分のデッキを１枚回復する。\n[手札宣言] [D1]:相手の攻撃宣言に対応して使用する。{味方[花]キャラ１体}を未行動にする。",
+  "textKr": "[誘発] 能力以外の相手の効果で自分のデッキを破棄したとき、自分のデッキを１枚回復する。\n[手札宣言] [D1]:相手の攻撃宣言に対応して使用する。{味方[花]キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3020"
 }

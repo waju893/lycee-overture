@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1953",
+  "title": "イギリスの第三王女",
+  "subName": "ヴィリアン",
+  "name": "イギリスの第三王女 ヴィリアン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:{ＤＭＧが２以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:{ＤＭＧが２以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1953"
 }

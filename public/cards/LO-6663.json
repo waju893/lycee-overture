@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6663",
+  "title": "真理のラプラ",
+  "subName": "",
+  "name": "真理のラプラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "L",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 2,
   "useTarget": [
     "star"
   ],
   "ap": 0,
   "dp": 0,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。\n※このカードは能力を持たないキャラとしてゲームで使用できます。",
+  "textKr": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。\n※このカードは能力を持たないキャラとしてゲームで使用できます。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6663"
 }

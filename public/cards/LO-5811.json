@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5811",
+  "title": "強気でツン要素多めなカノジョ",
+  "subName": "桃尻 芹香",
+  "name": "強気でツン要素多めなカノジョ 桃尻 芹香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントを使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] 自分のイベントを使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5811"
 }

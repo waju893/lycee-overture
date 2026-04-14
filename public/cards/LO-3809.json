@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3809",
+  "title": "ねこみみ商人",
+  "subName": "ミネット",
+  "name": "ねこみみ商人 ミネット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 0,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] コストが２点以下の味方キャラが３体以上登場している場合、自分のデッキを１枚破棄する。破棄したとき、[日日]を発生する。この能力は失われる。",
+  "textKr": "[コスト] コストが２点以下の味方キャラが３体以上登場している場合、自分のデッキを１枚破棄する。破棄したとき、[日日]を発生する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3809"
 }

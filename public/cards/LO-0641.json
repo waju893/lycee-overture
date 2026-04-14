@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0641",
+  "title": "小さな先輩",
+  "subName": "布良 梓",
+  "name": "小さな先輩 布良 梓",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [花花][自分のゴミ箱の「リラックス」１枚を除外する]:{キャラ１体}にＤＭＧ－２する。",
+  "textKr": "[宣言] [花花][自分のゴミ箱の「リラックス」１枚を除外する]:{キャラ１体}にＤＭＧ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0641"
 }

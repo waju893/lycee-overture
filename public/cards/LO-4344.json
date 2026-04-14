@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4344",
+  "title": "欲まみれで性悪",
+  "subName": "神宮 巴",
+  "name": "欲まみれで性悪 神宮 巴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,13 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2,
-    10
-  ],
-  "keyEffects": [
-    2,
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]][ステップ:[0]]\n[誘発] ターン開始時、コストが３～６点の味方[宙]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:自ターン中に使用する。{コストが３～６点の味方[宙]キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]][ステップ:[0]]\n[誘発] ターン開始時、コストが３～６点の味方[宙]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:自ターン中に使用する。{コストが３～６点の味方[宙]キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4344"
 }

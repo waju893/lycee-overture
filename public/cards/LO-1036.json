@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1036",
+  "title": "BC自由学園",
+  "subName": "マリー",
+  "name": "BC自由学園 マリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7,
-    8
-  ],
-  "keyEffects": [
-    7,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "BC自由",
+  "text": "[アシスト][エンゲージ:[１枚ドローする。]]\n[誘発] このキャラを＜BC自由＞キャラのエンゲージ登場によって破棄したとき、自分のゴミ箱の「巨大モンブラン」１枚を手札に入れる。",
+  "textKr": "[アシスト][エンゲージ:[１枚ドローする。]]\n[誘発] このキャラを＜BC自由＞キャラのエンゲージ登場によって破棄したとき、自分のゴミ箱の「巨大モンブラン」１枚を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1036"
 }

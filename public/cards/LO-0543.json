@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0543",
+  "title": "動物会話",
+  "subName": "バーサーカー／坂田金時",
+  "name": "動物会話 バーサーカー／坂田金時",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[日]]\n[誘発] このキャラが登場したとき、相手キャラが４体以上の場合、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[オーダーチェンジ:[日]]\n[誘発] このキャラが登場したとき、相手キャラが４体以上の場合、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0543"
 }

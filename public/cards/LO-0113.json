@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0113",
+  "title": "太陽を落とした女",
+  "subName": "ライダー／フランシス・ドレイク",
+  "name": "太陽を落とした女 ライダー／フランシス・ドレイク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[サイドステップ:[日日]]\n[宣言] [日]:味方キャラ１体にＡＰ＋１する。",
+  "textKr": "[サイドステップ:[日日]]\n[宣言] [日]:味方キャラ１体にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0113"
 }

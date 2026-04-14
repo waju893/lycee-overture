@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-2005",
+  "title": "ゲコ太ストラップ",
+  "subName": "",
+  "name": "ゲコ太ストラップ",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[誘発] ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方フィールドに移動できる。",
+  "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[誘発] ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方フィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2005"
 }

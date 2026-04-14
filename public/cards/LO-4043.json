@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4043",
+  "title": "AL教法王",
+  "subName": "クルックー・モフス",
+  "name": "AL教法王 クルックー・モフス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方キャラ全てがコストが２点以下で相手[日]キャラが２体以上登場している場合、１枚ドローする。自分のゴミ箱のカード１枚を自分の「決戦」置き場に置ける。この能力は失われる。\n[宣言] [花]:自ターン中に使用する。{味方[花]キャラ１体}にＤＰ＋３する。",
+  "textKr": "[宣言] [0]:味方キャラ全てがコストが２点以下で相手[日]キャラが２体以上登場している場合、１枚ドローする。自分のゴミ箱のカード１枚を自分の「決戦」置き場に置ける。この能力は失われる。\n[宣言] [花]:自ターン中に使用する。{味方[花]キャラ１体}にＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4043"
 }

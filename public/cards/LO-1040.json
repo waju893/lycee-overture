@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1040",
+  "title": "聖グロリアーナ女学院3年生",
+  "subName": "ダージリン",
+  "name": "聖グロリアーナ女学院3年生 ダージリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月花日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[アシスト]\n[宣言] [無無無]:{味方＜聖グロリアーナ＞キャラ１体}を行動済みにする。行動済みにしたとき、{味方＜聖グロリアーナ＞キャラ１体}を未行動にする。",
+  "textKr": "[アシスト]\n[宣言] [無無無]:{味方＜聖グロリアーナ＞キャラ１体}を行動済みにする。行動済みにしたとき、{味方＜聖グロリアーナ＞キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1040"
 }

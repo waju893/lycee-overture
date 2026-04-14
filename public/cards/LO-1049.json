@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1049",
+  "title": "BT-42の乗員",
+  "subName": "アキ",
+  "name": "BT-42の乗員 アキ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[宣言] [0]:味方＜継続＞キャラが３体以上登場している場合、このキャラを手札に入れる。",
+  "textKr": "[宣言] [0]:味方＜継続＞キャラが３体以上登場している場合、このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1049"
 }

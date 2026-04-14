@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1924",
+  "title": "冥土帰し",
+  "subName": "カエル顔の医師",
+  "name": "冥土帰し カエル顔の医師",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月][このキャラを破棄する]:ターン終了時まで{コストが４点以下の味方キャラ１体}はダウンしない。",
+  "textKr": "[宣言] [月][このキャラを破棄する]:ターン終了時まで{コストが４点以下の味方キャラ１体}はダウンしない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1924"
 }

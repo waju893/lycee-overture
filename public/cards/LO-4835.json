@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4835",
+  "title": "ホワッ？水着でお風呂",
+  "subName": "十色 煌",
+  "name": "ホワッ？水着でお風呂 十色 煌",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:このキャラは[ペナルティ:[相手のデッキを２枚破棄する。]]を得る。この基本能力はターン終了時に失われない。この能力は失われる。",
+  "textKr": "[宣言] [無]:このキャラは[ペナルティ:[相手のデッキを２枚破棄する。]]を得る。この基本能力はターン終了時に失われない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4835"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2780",
+  "title": "リスクコンサルティング",
+  "subName": "佐倉 雨音",
+  "name": "リスクコンサルティング 佐倉 雨音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[宣言] [0]:以下から１つを選び処理する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[宣言] [0]:以下から１つを選び処理する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2780"
 }

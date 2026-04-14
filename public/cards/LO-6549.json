@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6549",
+  "title": "何度目かのはじめまして",
+  "subName": "蝶舞 翠",
+  "name": "何度目かのはじめまして 蝶舞 翠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。\n[誘発] 自ターン開始時、このキャラに１枚チャージできる。\n[宣言] [C2]:対応・バトル中を除く自ターン中に使用する。１枚ドローできる。しない場合、以下から１つを選び処理する。",
+  "textKr": "[チャージ:２]\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。\n[誘発] 自ターン開始時、このキャラに１枚チャージできる。\n[宣言] [C2]:対応・バトル中を除く自ターン中に使用する。１枚ドローできる。しない場合、以下から１つを選び処理する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6549"
 }

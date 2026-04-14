@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6575",
+  "title": "イン・ワンダーランド",
+  "subName": "鳥海 有栖",
+  "name": "イン・ワンダーランド 鳥海 有栖",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 6,
   "dp": 6,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。自分のデッキを１枚回復できる。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。自分のデッキを１枚回復できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6575"
 }

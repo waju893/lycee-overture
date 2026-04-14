@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1417",
+  "title": "鋼鉄天空魔嬢",
+  "subName": "アルターエゴ／メカエリチャン",
+  "name": "鋼鉄天空魔嬢 アルターエゴ／メカエリチャン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[誘発] ターン開始時、このキャラを味方フィールドに移動する。",
+  "textKr": "[オーダーチェンジ:[0]]\n[誘発] ターン開始時、このキャラを味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1417"
 }

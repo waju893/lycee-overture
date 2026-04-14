@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1003",
+  "title": "プラウダ高校？",
+  "subName": "武部 沙織",
+  "name": "プラウダ高校？ 武部 沙織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "プラウダ",
+  "text": "[アシスト]\n[宣言] [T][雪雪][このキャラを破棄する]:相手の宣言に対応して使用できない。{相手キャラ１体}を破棄する。",
+  "textKr": "[アシスト]\n[宣言] [T][雪雪][このキャラを破棄する]:相手の宣言に対応して使用できない。{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1003"
 }

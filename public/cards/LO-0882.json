@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0882",
+  "title": "運命の旦那さまに出会ったハイエルフィン",
+  "subName": "セシル",
+  "name": "運命の旦那さまに出会ったハイエルフィン セシル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ]\n[誘発] このキャラが登場したとき、自分のデッキを１枚回復する。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラが登場したとき、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0882"
 }

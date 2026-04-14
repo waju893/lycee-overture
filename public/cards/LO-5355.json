@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5355",
+  "title": "学生寮の管理人",
+  "subName": "葦華 真智",
+  "name": "学生寮の管理人 葦華 真智",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] [雪雪]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。",
+  "textKr": "[コスト] [雪雪]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5355"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6201",
+  "title": "夕渚町へ誘うもの",
+  "subName": "コハナ",
+  "name": "夕渚町へ誘うもの コハナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方[花]キャラ１体}にＳＰ＋１する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『あまいろショコラータ』キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [0]:{味方[花]キャラ１体}にＳＰ＋１する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『あまいろショコラータ』キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6201"
 }

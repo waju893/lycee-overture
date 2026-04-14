@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3515",
+  "title": "真性のお嬢様",
+  "subName": "六条 宮穂",
+  "name": "真性のお嬢様 六条 宮穂",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「藤村静」１体を探し無償で登場する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「藤村静」１体を探し無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3515"
 }

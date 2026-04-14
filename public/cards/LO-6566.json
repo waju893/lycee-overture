@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6566",
+  "title": "古代技術の研究者",
+  "subName": "識",
+  "name": "古代技術の研究者 識",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 4,
   "sp": 3,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果でキャラを破棄または除外またはデッキに置いたとき、このキャラにＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[誘発] 自分の効果でキャラを破棄または除外またはデッキに置いたとき、このキャラにＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6566"
 }

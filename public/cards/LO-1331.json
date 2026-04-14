@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1331",
+  "title": "小さな夜の曲",
+  "subName": "キャスター／ヴォルフガング・アマデウス・モーツァルト",
+  "name": "小さな夜の曲 キャスター／ヴォルフガング・アマデウス・モーツァルト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体にＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1331"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2771",
+  "title": "女子力向上中？の新入学生",
+  "subName": "藤川 瑠奈",
+  "name": "女子力向上中？の新入学生 藤川 瑠奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [0]:{味方防御[雪]キャラ１体}にＤＰ＋１する。\n[手札宣言] [雪雪雪]:バトル中に使用できない。{コストが２点以下の相手キャラ１体}を破棄する。",
+  "textKr": "[手札宣言] [0]:{味方防御[雪]キャラ１体}にＤＰ＋１する。\n[手札宣言] [雪雪雪]:バトル中に使用できない。{コストが２点以下の相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2771"
 }

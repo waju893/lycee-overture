@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2683",
+  "title": "過保護な咲のお目付役",
+  "subName": "高原 みあ",
+  "name": "過保護な咲のお目付役 高原 みあ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方エリアを配置している場合、このキャラは[オーダーステップ:[0]]を得る。",
+  "textKr": "[宣言] [0]:味方エリアを配置している場合、このキャラは[オーダーステップ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2683"
 }

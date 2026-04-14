@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1411",
+  "title": "善神の智慧",
+  "subName": "ライダー／ケツァル・コアトル",
+  "name": "善神の智慧 ライダー／ケツァル・コアトル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T]:バトル中に使用する。味方攻撃キャラ１体は[ガッツ:[このキャラの使用代償]]を得る。",
+  "textKr": "[宣言] [T]:バトル中に使用する。味方攻撃キャラ１体は[ガッツ:[このキャラの使用代償]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1411"
 }

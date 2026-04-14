@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1758",
+  "title": "真面目でおせっかい焼き",
+  "subName": "杉浦 小春",
+  "name": "真面目でおせっかい焼き 杉浦 小春",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [このキャラを破棄する]:ターン終了時まで、{コストが２点以下の味方[雪]キャラ１体}を相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "textKr": "[宣言] [このキャラを破棄する]:ターン終了時まで、{コストが２点以下の味方[雪]キャラ１体}を相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1758"
 }

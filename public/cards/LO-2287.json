@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2287",
+  "title": "沈勇の士",
+  "subName": "伊予松山城",
+  "name": "沈勇の士 伊予松山城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [宙宙宙]:自ターン中に使用する。味方キャラ全てにＡＰ＋２・ＤＰ＋１する。この能力は失われる。",
+  "textKr": "[宣言] [宙宙宙]:自ターン中に使用する。味方キャラ全てにＡＰ＋２・ＤＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2287"
 }

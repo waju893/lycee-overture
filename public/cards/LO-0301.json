@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0301",
+  "title": "レオポンさんチーム",
+  "subName": "ホシノ",
+  "name": "レオポンさんチーム ホシノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0301"
 }

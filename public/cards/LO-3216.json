@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3216",
+  "title": "都市伝説探し",
+  "subName": "佐天 涙子",
+  "name": "都市伝説探し 佐天 涙子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この能力は失われる。\n[宣言] [月]:バトル中に使用できない。{自分のゴミ箱のＥＸが２の[月]キャラ１体}を手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この能力は失われる。\n[宣言] [月]:バトル中に使用できない。{自分のゴミ箱のＥＸが２の[月]キャラ１体}を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3216"
 }

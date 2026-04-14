@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5855",
+  "title": "男友だちライク",
+  "subName": "掛川 葉月",
+  "name": "男友だちライク 掛川 葉月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方エリアが２枚以上の場合、{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[宣言] [0]:味方エリアが２枚以上の場合、{相手キャラ１体}にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5855"
 }

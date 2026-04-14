@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4945",
+  "title": "同人作家",
+  "subName": "シャーリィ・ウォリック",
+  "name": "同人作家 シャーリィ・ウォリック",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [0]:味方ＤＦ[日]キャラ１体を行動済みにする。行動済みにしたとき、味方防御[日]キャラ１体にＡＰ＋３できる。しない場合、相手キャラ１体にＤＭＧ－１する。\n[コスト] [日日]を発生する。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [0]:味方ＤＦ[日]キャラ１体を行動済みにする。行動済みにしたとき、味方防御[日]キャラ１体にＡＰ＋３できる。しない場合、相手キャラ１体にＤＭＧ－１する。\n[コスト] [日日]を発生する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4945"
 }

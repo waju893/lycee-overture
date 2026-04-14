@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2575",
+  "title": "エルフィンの女王",
+  "subName": "アナスチガル",
+  "name": "エルフィンの女王 アナスチガル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキから「セシル」１体を探し公開して手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキから「セシル」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2575"
 }

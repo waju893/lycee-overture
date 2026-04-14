@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3189",
+  "title": "『メンバー』の作戦指揮担当",
+  "subName": "馬場 芳郎",
+  "name": "『メンバー』の作戦指揮担当 馬場 芳郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [日]:{相手キャラ１体}は[ステップ]または[サイドステップ]または[オーダーステップ]１つを失う。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [日]:{相手キャラ１体}は[ステップ]または[サイドステップ]または[オーダーステップ]１つを失う。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3189"
 }

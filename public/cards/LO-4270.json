@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4270",
+  "title": "恋に落ちなかった幼馴染",
+  "subName": "一ノ瀬 空",
+  "name": "恋に落ちなかった幼馴染 一ノ瀬 空",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが３点以上の味方[雪]キャラ１体}にＤＰ＋１する。そのキャラがＡＦキャラの場合、そのキャラにＡＰ＋１する。\n[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。コストが３点以上の味方[雪]キャラが３体以上登場している場合、{相手キャラ１体}を破棄する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが３点以上の味方[雪]キャラ１体}にＤＰ＋１する。そのキャラがＡＦキャラの場合、そのキャラにＡＰ＋１する。\n[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。コストが３点以上の味方[雪]キャラが３体以上登場している場合、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4270"
 }

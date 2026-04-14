@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0394",
+  "title": "フェアプレイ",
+  "subName": "ケイ",
+  "name": "フェアプレイ ケイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サンダース",
+  "text": "[アシスト]\n[宣言] [T]:{味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[アシスト]\n[宣言] [T]:{味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0394"
 }

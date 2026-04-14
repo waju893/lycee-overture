@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5525",
+  "title": "お調子者ファイター",
+  "subName": "銀杏田 萌生菜",
+  "name": "お調子者ファイター 銀杏田 萌生菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5525"
 }

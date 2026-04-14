@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1968",
+  "title": "天草式十字凄教",
+  "subName": "野母崎",
+  "name": "天草式十字凄教 野母崎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙]:相手ターン中に使用する。{アイテムを装備している味方キャラ１体}にＤＰ＋２する。",
+  "textKr": "[手札宣言] [宙]:相手ターン中に使用する。{アイテムを装備している味方キャラ１体}にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1968"
 }

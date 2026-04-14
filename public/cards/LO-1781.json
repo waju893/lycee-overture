@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1781",
+  "title": "世界的ピアニスト",
+  "subName": "冬馬 曜子",
+  "name": "世界的ピアニスト 冬馬 曜子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「冬馬かずさ」が登場している場合、１枚ドローできる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「冬馬かずさ」が登場している場合、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1781"
 }

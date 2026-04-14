@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-2930",
+  "title": "喫茶ナインボール",
+  "subName": "",
+  "name": "喫茶ナインボール",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラがアイテムを装備したとき、自分のデッキを１枚回復する。\n※「喫茶ナインボール」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] 味方キャラがアイテムを装備したとき、自分のデッキを１枚回復する。\n※「喫茶ナインボール」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2930"
 }

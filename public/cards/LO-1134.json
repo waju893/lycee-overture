@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1134",
+  "title": "カモさんチームの主砲砲手兼通信手",
+  "subName": "金春 希美",
+  "name": "カモさんチームの主砲砲手兼通信手 金春 希美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [0]:味方＜大洗女子＞キャラの属性が４種類以上の場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[アシスト]\n[宣言] [0]:味方＜大洗女子＞キャラの属性が４種類以上の場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1134"
 }

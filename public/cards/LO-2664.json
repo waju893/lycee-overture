@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2664",
+  "title": "やや天然気味",
+  "subName": "織部 こころ",
+  "name": "やや天然気味 織部 こころ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方[花]キャラ１体}にＤＰ＋１する。\n[誘発] 相手の効果で自分のデッキを破棄したとき、その効果で破棄したカードのうち１枚をデッキの下に置く。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方[花]キャラ１体}にＤＰ＋１する。\n[誘発] 相手の効果で自分のデッキを破棄したとき、その効果で破棄したカードのうち１枚をデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2664"
 }

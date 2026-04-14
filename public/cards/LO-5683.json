@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5683",
+  "title": "宮崎絵画学校教師",
+  "subName": "恩田 放哉",
+  "name": "宮崎絵画学校教師 恩田 放哉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中を除く自ターン中に使用する。{コストが１点以上の手札宣言能力を持つ味方[雪]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:バトル中を除く自ターン中に使用する。{コストが１点以上の手札宣言能力を持つ味方[雪]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5683"
 }

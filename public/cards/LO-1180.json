@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1180",
+  "title": "生徒会副会長",
+  "subName": "直井 文人",
+  "name": "生徒会副会長 直井 文人",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[宣言] [0]:このキャラのバトル中に使用する。コストが２点以下の対戦キャラを破棄する。このキャラを自分の「卒業」置き場に置く。",
+  "textKr": "[アシスト]\n[宣言] [0]:このキャラのバトル中に使用する。コストが２点以下の対戦キャラを破棄する。このキャラを自分の「卒業」置き場に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1180"
 }

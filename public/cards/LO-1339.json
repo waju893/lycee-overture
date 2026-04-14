@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1339",
+  "title": "絡繰幻法",
+  "subName": "アサシン／加藤段蔵",
+  "name": "絡繰幻法 アサシン／加藤段蔵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱のコストが４点以下の＜サーヴァント＞キャラ１体}を無償で行動済みで登場する。",
+  "textKr": "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱のコストが４点以下の＜サーヴァント＞キャラ１体}を無償で行動済みで登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1339"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5624",
+  "title": "歌を奪う呪い",
+  "subName": "ディーバ",
+  "name": "歌を奪う呪い ディーバ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:コストが５点以上の味方キャラ・エリアを配置している場合、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:コストが５点以上の味方キャラ・エリアを配置している場合、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5624"
 }

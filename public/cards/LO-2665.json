@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2665",
+  "title": "コミュ障",
+  "subName": "朝比奈 響子",
+  "name": "コミュ障 朝比奈 響子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[宣言] [D1]:味方エリアを配置している場合、このキャラを未行動にする。この能力は失われる。",
+  "textKr": "[サポーター:[花]]\n[宣言] [D1]:味方エリアを配置している場合、このキャラを未行動にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2665"
 }

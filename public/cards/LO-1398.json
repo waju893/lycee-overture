@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1398",
+  "title": "敦盛ビート",
+  "subName": "バーサーカー／織田信長",
+  "name": "敦盛ビート バーサーカー／織田信長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＤＰ＋１する。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1398"
 }

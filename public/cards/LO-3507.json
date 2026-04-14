@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3507",
+  "title": "義姉",
+  "subName": "杉澤 恵麻",
+  "name": "義姉 杉澤 恵麻",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{元のＤＰが１以上の味方[日]キャラ１体}にＤＭＧ＋１する。\n[コスト] [日日]を発生する。このコストは元のＤＰが１以上のキャラの登場にのみ支払える。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{元のＤＰが１以上の味方[日]キャラ１体}にＤＭＧ＋１する。\n[コスト] [日日]を発生する。このコストは元のＤＰが１以上のキャラの登場にのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3507"
 }

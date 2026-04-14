@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1787",
+  "title": "ヤマト八柱将『楽土のオーゼン』",
+  "subName": "オーゼン",
+  "name": "ヤマト八柱将『楽土のオーゼン』 オーゼン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[ボーナス:[自分のデッキを１枚回復する。]]\n[宣言] [0]:味方「ルルティエ」が登場している場合、このキャラにＡＰ＋１・ＳＰ＋１する。",
+  "textKr": "[ボーナス:[自分のデッキを１枚回復する。]]\n[宣言] [0]:味方「ルルティエ」が登場している場合、このキャラにＡＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1787"
 }

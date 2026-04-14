@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2477",
+  "title": "REFLECTION BLUE",
+  "subName": "野村 美希",
+  "name": "REFLECTION BLUE 野村 美希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラを自分のデッキの下に置く。置いたとき、{相手キャラ１体}にＤＰ－１する。",
+  "textKr": "[宣言] [0]:このキャラを自分のデッキの下に置く。置いたとき、{相手キャラ１体}にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2477"
 }

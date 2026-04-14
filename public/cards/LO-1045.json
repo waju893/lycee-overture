@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1045",
+  "title": "ロシアからの留学生",
+  "subName": "クラーラ",
+  "name": "ロシアからの留学生 クラーラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "プラウダ",
+  "text": "[アシスト]\n[宣言] [T][このキャラを破棄する]:{相手キャラ１体}を行動済みにする。",
+  "textKr": "[アシスト]\n[宣言] [T][このキャラを破棄する]:{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1045"
 }

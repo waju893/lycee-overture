@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3383",
+  "title": "仮面恋人",
+  "subName": "渡来 明日香",
+  "name": "仮面恋人 渡来 明日香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。味方キャラの属性が２種類以上の場合、{味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。味方キャラの属性が２種類以上の場合、{味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3383"
 }

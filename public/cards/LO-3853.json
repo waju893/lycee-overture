@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3853",
+  "title": "迷宮で迷子",
+  "subName": "カロン",
+  "name": "迷宮で迷子 カロン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、以下から１つを選び処理する。\n[宣言] [0]:このキャラを自分の「迷宮」置き場に置く。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
+  "textKr": "[誘発] このキャラが登場したとき、以下から１つを選び処理する。\n[宣言] [0]:このキャラを自分の「迷宮」置き場に置く。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3853"
 }

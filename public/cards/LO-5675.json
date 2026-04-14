@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5675",
+  "title": "夏目圭の弟子",
+  "subName": "本間 心鈴",
+  "name": "夏目圭の弟子 本間 心鈴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] キャラの登場に支払えない[雪雪]を発生する。この効果は失われる。",
+  "textKr": "[コスト] キャラの登場に支払えない[雪雪]を発生する。この効果は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5675"
 }

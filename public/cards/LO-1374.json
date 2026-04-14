@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1374",
+  "title": "輝ける水の衣",
+  "subName": "ライダー／イシュタル",
+  "name": "輝ける水の衣 ライダー／イシュタル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 味方キャラが場を離れたとき、味方ＡＦキャラ１体にＡＰ＋１または味方ＤＦキャラ１体にＤＰ＋１する。",
+  "textKr": "[誘発] 味方キャラが場を離れたとき、味方ＡＦキャラ１体にＡＰ＋１または味方ＤＦキャラ１体にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1374"
 }

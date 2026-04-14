@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1061",
+  "title": "アヒルさんチームの砲手",
+  "subName": "佐々木 あけび",
+  "name": "アヒルさんチームの砲手 佐々木 あけび",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [D1]:味方[花]＜大洗女子＞キャラ全てにＤＰ＋１する。",
+  "textKr": "[宣言] [D1]:味方[花]＜大洗女子＞キャラ全てにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1061"
 }

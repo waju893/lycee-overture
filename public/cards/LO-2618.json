@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2618",
+  "title": "血統書付きロックンローラー猫",
+  "subName": "平坂 景子",
+  "name": "血統書付きロックンローラー猫 平坂 景子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、コストが３点以上の味方[月]キャラが手札から登場したとき、１枚ドローする。",
+  "textKr": "[誘発] 自ターン中、コストが３点以上の味方[月]キャラが手札から登場したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2618"
 }

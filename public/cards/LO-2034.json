@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2034",
+  "title": "凄腕くの一",
+  "subName": "不知火 祈",
+  "name": "凄腕くの一 不知火 祈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月月]:このキャラを破棄する。破棄したとき、{自分のゴミ箱のＥＸが２のキャラ１体}を登場する。\n[手札宣言] [月月]:{自分のゴミ箱のＥＸが２のキャラ１体}を登場する。",
+  "textKr": "[宣言] [月月]:このキャラを破棄する。破棄したとき、{自分のゴミ箱のＥＸが２のキャラ１体}を登場する。\n[手札宣言] [月月]:{自分のゴミ箱のＥＸが２のキャラ１体}を登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2034"
 }

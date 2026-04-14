@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-3361",
+  "title": "アレキサンダー旧制服",
+  "subName": "",
+  "name": "アレキサンダー旧制服",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:このアイテムを破棄する。破棄したとき、{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
+  "textKr": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:このアイテムを破棄する。破棄したとき、{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3361"
 }

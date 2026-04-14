@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5111",
+  "title": "エルルゥの幼馴染",
+  "subName": "ヌワンギ",
+  "name": "エルルゥの幼馴染 ヌワンギ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方『うたわれるもの ロストフラグ』キャラが３体以上の場合、１枚ドローする。\n[誘発] 自ターン中、相手キャラがダウンしたとき、相手のデッキを１枚破棄できる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方『うたわれるもの ロストフラグ』キャラが３体以上の場合、１枚ドローする。\n[誘発] 自ターン中、相手キャラがダウンしたとき、相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5111"
 }

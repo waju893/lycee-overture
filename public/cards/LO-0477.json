@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0477",
+  "title": "偽り写し記す万象",
+  "subName": "アヴェンジャー／アンリマユ",
+  "name": "偽り写し記す万象 アヴェンジャー／アンリマユ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "star"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:相手ターン中に使用する。相手のデッキを[このターン中、{このキャラと対戦したキャラ１体}のＤＭＧ]枚破棄する。",
+  "textKr": "[宣言] [0]:相手ターン中に使用する。相手のデッキを[このターン中、{このキャラと対戦したキャラ１体}のＤＭＧ]枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0477"
 }

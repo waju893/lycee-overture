@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5850",
+  "title": "隣の席のクラスメイト",
+  "subName": "来宮 なのか",
+  "name": "隣の席のクラスメイト 来宮 なのか",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] エリアの配置にのみ支払える[月月]を発生する。この能力は失われる。",
+  "textKr": "[コスト] エリアの配置にのみ支払える[月月]を発生する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5850"
 }

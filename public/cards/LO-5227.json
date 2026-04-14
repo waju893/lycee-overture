@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5227",
+  "title": "変則的な邂逅",
+  "subName": "氷上 シュン",
+  "name": "変則的な邂逅 氷上 シュン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:このキャラを除外する。除外したとき、{味方「折原浩平」}１体はターン終了時までダウンしない。",
+  "textKr": "[宣言] [雪]:このキャラを除外する。除外したとき、{味方「折原浩平」}１体はターン終了時までダウンしない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5227"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0065",
+  "title": "反骨の相",
+  "subName": "バーサーカー／呂布奉先",
+  "name": "反骨の相 バーサーカー／呂布奉先",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos"
   ],
   "ap": 3,
   "dp": 3,
   "sp": 0,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "",
+  "textKr": "",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0065"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3147",
+  "title": "セクハラ中学生",
+  "subName": "佐天 涙子",
+  "name": "セクハラ中学生 佐天 涙子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラのＤＭＧが４以下の場合、このキャラにＤＭＧ－１し、このキャラを未行動にする。\n[宣言] [D1]:味方[花]キャラ２体までは次の能力を得る。この能力は失われる。\n[誘発] このキャラが相手の効果で場を離れたとき、１枚ドローする。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラのＤＭＧが４以下の場合、このキャラにＤＭＧ－１し、このキャラを未行動にする。\n[宣言] [D1]:味方[花]キャラ２体までは次の能力を得る。この能力は失われる。\n[誘発] このキャラが相手の効果で場を離れたとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3147"
 }

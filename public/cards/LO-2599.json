@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2599",
+  "title": "孤高の聖者",
+  "subName": "コレット＝アナスタシア",
+  "name": "孤高の聖者 コレット＝アナスタシア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、元のＤＭＧが３以下の味方[月]キャラ１体は次の能力を得る。\n[誘発] 相手の効果でこのキャラを破棄したとき、ゴミ箱のこのキャラを無償で登場する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、元のＤＭＧが３以下の味方[月]キャラ１体は次の能力を得る。\n[誘発] 相手の効果でこのキャラを破棄したとき、ゴミ箱のこのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2599"
 }

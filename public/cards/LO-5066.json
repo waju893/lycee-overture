@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5066",
+  "title": "小学校からの親友",
+  "subName": "七瀬 彰",
+  "name": "小学校からの親友 七瀬 彰",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [T]:自ターン中に使用する。１枚ドローする。この能力は失われる。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」１枚を探し味方フィールドに無償で配置する。",
+  "textKr": "[アグレッシブ]\n[宣言] [T]:自ターン中に使用する。１枚ドローする。この能力は失われる。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」１枚を探し味方フィールドに無償で配置する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5066"
 }

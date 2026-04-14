@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3501",
+  "title": "Dusk Bringer Sower of Huge",
+  "subName": "不二",
+  "name": "Dusk Bringer Sower of Huge 不二",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] コストが５点以上の味方キャラを相手の効果で破棄したとき、１枚ドローできる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。未行動のこのキャラと味方「エリス」１体を入れ替える。",
+  "textKr": "[ステップ:[0]]\n[誘発] コストが５点以上の味方キャラを相手の効果で破棄したとき、１枚ドローできる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。未行動のこのキャラと味方「エリス」１体を入れ替える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3501"
 }

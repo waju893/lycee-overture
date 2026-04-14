@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5894",
+  "title": "れっきとした男子",
+  "subName": "三条寺 忍",
+  "name": "れっきとした男子 三条寺 忍",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:味方『キスと魔王と紅茶』キャラが４体以上の場合、味方キャラ全てにＡＰ＋１する。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:味方『キスと魔王と紅茶』キャラが４体以上の場合、味方キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5894"
 }

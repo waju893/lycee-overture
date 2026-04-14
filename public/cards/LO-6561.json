@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6561",
+  "title": "カントの英雄",
+  "subName": "夏姫",
+  "name": "カントの英雄 夏姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:対応で使用できない。このキャラを破棄する。したとき、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:対応で使用できない。このキャラを破棄する。したとき、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6561"
 }

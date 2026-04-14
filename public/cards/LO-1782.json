@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1782",
+  "title": "麻理の十年来の親友",
+  "subName": "雨宮 佐和子",
+  "name": "麻理の十年来の親友 雨宮 佐和子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [このキャラを破棄する]:{味方「風岡麻理」１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [このキャラを破棄する]:{味方「風岡麻理」１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1782"
 }

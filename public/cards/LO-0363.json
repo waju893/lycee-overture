@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0363",
+  "title": "生徒会広報",
+  "subName": "河嶋 桃",
+  "name": "生徒会広報 河嶋 桃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [T]:相手の宣言に対応して使用できない。{自分のゴミ箱の「干しいも」１枚}を{キャラ１体}に装備する。",
+  "textKr": "[アシスト]\n[宣言] [T]:相手の宣言に対応して使用できない。{自分のゴミ箱の「干しいも」１枚}を{キャラ１体}に装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0363"
 }

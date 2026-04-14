@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5963",
+  "title": "元メイドのフィリア学院服飾科講師",
+  "subName": "樅山 紅葉",
+  "name": "元メイドのフィリア学院服飾科講師 樅山 紅葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。このキャラを未行動にできる。",
+  "textKr": "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。このキャラを未行動にできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5963"
 }

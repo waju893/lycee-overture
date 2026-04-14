@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0157",
+  "title": "双魚狂宴アルレシア",
+  "subName": "パイ＆シーズ",
+  "name": "双魚狂宴アルレシア パイ＆シーズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[味方キャラ１体にＤＭＧ＋１する。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は未行動の相手ＤＦキャラ１体を行動済みにする。",
+  "textKr": "[エンゲージ:[味方キャラ１体にＤＭＧ＋１する。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は未行動の相手ＤＦキャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0157"
 }

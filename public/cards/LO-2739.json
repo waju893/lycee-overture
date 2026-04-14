@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2739",
+  "title": "本当はお嬢様",
+  "subName": "平坂 景子",
+  "name": "本当はお嬢様 平坂 景子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2739"
 }

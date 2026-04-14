@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0578",
+  "title": "魔境の智慧",
+  "subName": "ランサー／スカサハ",
+  "name": "魔境の智慧 ランサー／スカサハ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 0,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0578"
 }

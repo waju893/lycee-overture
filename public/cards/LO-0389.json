@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0389",
+  "title": "アンツィオ高校",
+  "subName": "カルパッチョ",
+  "name": "アンツィオ高校 カルパッチョ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    3,
-    8
-  ],
-  "keyEffects": [
-    3,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト][サイドステップ:[0]]\n[宣言] [T]:{キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[アシスト][サイドステップ:[0]]\n[宣言] [T]:{キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0389"
 }

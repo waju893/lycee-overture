@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4896",
+  "title": "賀陽署 生活安全部 BMI犯罪対策課",
+  "subName": "阿久 直比古",
+  "name": "賀陽署 生活安全部 BMI犯罪対策課 阿久 直比古",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントを使用したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 自分のイベントを使用したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4896"
 }

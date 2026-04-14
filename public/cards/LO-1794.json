@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1794",
+  "title": "さんちゃんの妹",
+  "subName": "姫百合 瑠璃",
+  "name": "さんちゃんの妹 姫百合 瑠璃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキから「姫百合珊瑚」１体を探し公開して手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキから「姫百合珊瑚」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1794"
 }

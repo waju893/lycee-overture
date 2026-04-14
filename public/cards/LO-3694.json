@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3694",
+  "title": "アイドル政務官",
+  "subName": "アンナ",
+  "name": "アイドル政務官 アンナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n[宣言] [0]:自ターン中に使用する。このキャラにＡＰ＋２する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n[宣言] [0]:自ターン中に使用する。このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3694"
 }

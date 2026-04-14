@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1345",
+  "title": "百合の花舞う百花繚乱",
+  "subName": "セイバー／シュヴァリエ・デオン",
+  "name": "百合の花舞う百花繚乱 セイバー／シュヴァリエ・デオン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 相手ターン開始時、相手キャラ１体にＡＰ－１する。",
+  "textKr": "[誘発] 相手ターン開始時、相手キャラ１体にＡＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1345"
 }

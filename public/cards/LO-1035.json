@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1035",
+  "title": "FT-17の車長",
+  "subName": "マリー",
+  "name": "FT-17の車長 マリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2,
-    8
-  ],
-  "keyEffects": [
-    2,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "BC自由",
+  "text": "[アシスト][ステップ:[0]]\n[誘発] 味方＜BC自由＞キャラがエンゲージ登場したとき、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
+  "textKr": "[アシスト][ステップ:[0]]\n[誘発] 味方＜BC自由＞キャラがエンゲージ登場したとき、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1035"
 }

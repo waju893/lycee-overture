@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4234",
+  "title": "恋のダンクシュート",
+  "subName": "室屋 透",
+  "name": "恋のダンクシュート 室屋 透",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:[日]でない味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。",
+  "textKr": "[宣言] [無]:[日]でない味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4234"
 }

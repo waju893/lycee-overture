@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0311",
+  "title": "天才少女",
+  "subName": "島田 愛里寿",
+  "name": "天才少女 島田 愛里寿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[アシスト]\n[誘発] 相手キャラが登場したとき、自分のデッキを１枚破棄する。",
+  "textKr": "[アシスト]\n[誘発] 相手キャラが登場したとき、自分のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0311"
 }

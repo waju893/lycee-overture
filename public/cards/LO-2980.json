@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2980",
+  "title": "生徒会副会長",
+  "subName": "仁科 綾花",
+  "name": "生徒会副会長 仁科 綾花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:このキャラのバトル中に使用する。バトルを中断する。この能力は失われる。",
+  "textKr": "[宣言] [D1]:このキャラのバトル中に使用する。バトルを中断する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2980"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2504",
+  "title": "一人の立派な人間",
+  "subName": "エリス・フローラリア",
+  "name": "一人の立派な人間 エリス・フローラリア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、自分のゴミ箱の[雪]キャラ１体を登場する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、自分のゴミ箱の[雪]キャラ１体を登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2504"
 }

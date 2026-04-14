@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4586",
+  "title": "掴みどころがない性格",
+  "subName": "曽原 静音",
+  "name": "掴みどころがない性格 曽原 静音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが２体以上登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが２体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4586"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0200",
+  "title": "狡猥に響け全能の歌声",
+  "subName": "イステの歌",
+  "name": "狡猥に響け全能の歌声 イステの歌",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,13 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    7
-  ],
-  "keyEffects": [
-    2,
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]][ステップ:[宙]]",
+  "textKr": "[エンゲージ:[１枚ドローする。]][ステップ:[宙]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0200"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5746",
+  "title": "琴美を慕う剣道部の後輩",
+  "subName": "横山 やす子",
+  "name": "琴美を慕う剣道部の後輩 横山 やす子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方『終ノ空remake』キャラが３体以上の場合、自分のゴミ箱または自分のデッキから「やす子の兄 横山きよし」１体を探し登場する。この能力は失われる。",
+  "textKr": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方『終ノ空remake』キャラが３体以上の場合、自分のゴミ箱または自分のデッキから「やす子の兄 横山きよし」１体を探し登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5746"
 }

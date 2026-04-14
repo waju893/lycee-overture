@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0500",
+  "title": "愛しき私の鉄戦車",
+  "subName": "ライダー／女王メイヴ",
+  "name": "愛しき私の鉄戦車 ライダー／女王メイヴ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルで味方キャラがダウンしたとき、ゴミ箱のそのキャラを手札に入れる。",
+  "textKr": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルで味方キャラがダウンしたとき、ゴミ箱のそのキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0500"
 }

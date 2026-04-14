@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1567",
+  "title": "見習い召喚士",
+  "subName": "リノ",
+  "name": "見習い召喚士 リノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、このキャラが登場したとき、自分のゴミ箱の[日]キャラ１体を登場できる。",
+  "textKr": "[誘発] 自ターン中、このキャラが登場したとき、自分のゴミ箱の[日]キャラ１体を登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1567"
 }

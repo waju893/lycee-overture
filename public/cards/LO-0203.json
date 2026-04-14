@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0203",
+  "title": "リインカーネイト・ネロ",
+  "subName": "アガートラーム＝スカー",
+  "name": "リインカーネイト・ネロ アガートラーム＝スカー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,13 +22,11 @@
   "dp": 6,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4,
-    7
-  ],
-  "keyEffects": [
-    4,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][オーダーステップ:[0]]",
+  "textKr": "[エンゲージ][オーダーステップ:[0]]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0203"
 }

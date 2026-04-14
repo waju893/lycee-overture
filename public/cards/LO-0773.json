@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0773",
+  "title": "レイルディファー",
+  "subName": "ジェフティ",
+  "name": "レイルディファー ジェフティ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [このキャラを破棄する]:{相手キャラ１体}を行動済みにする。",
+  "textKr": "[宣言] [このキャラを破棄する]:{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0773"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0010",
+  "title": "童女謳う華の帝政",
+  "subName": "セイバー／ネロ・クラウディウス",
+  "name": "童女謳う華の帝政 セイバー／ネロ・クラウディウス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:バトル中に使用できない。このキャラを味方フィールドに移動する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。このキャラを味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0010"
 }

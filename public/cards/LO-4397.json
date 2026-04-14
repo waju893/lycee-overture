@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4397",
+  "title": "メガネをかけていないヒロインなどいない",
+  "subName": "星野 優羽姫",
+  "name": "メガネをかけていないヒロインなどいない 星野 優羽姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:バトル中に使用できない。自分のゴミ箱のカード名に「メガネ」または「眼鏡」を含むＥＸが２のカード１枚を手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [月]:バトル中に使用できない。自分のゴミ箱のカード名に「メガネ」または「眼鏡」を含むＥＸが２のカード１枚を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4397"
 }

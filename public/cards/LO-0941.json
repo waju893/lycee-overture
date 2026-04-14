@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0941",
+  "title": "牢獄の何でも屋",
+  "subName": "カイム・アストレア",
+  "name": "牢獄の何でも屋 カイム・アストレア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが相手のデッキにダメージを与えたとき、ゴミ箱のカード１枚を除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "textKr": "[誘発] このキャラが相手のデッキにダメージを与えたとき、ゴミ箱のカード１枚を除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0941"
 }

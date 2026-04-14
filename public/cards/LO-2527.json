@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2527",
+  "title": "桃花帝",
+  "subName": "宮国 朱璃",
+  "name": "桃花帝 宮国 朱璃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン開始時、味方[花]キャラ１体にＳＰ＋１する。\n[宣言] [0]:相手ターン中に使用する。このキャラは次の能力を得る。\n[誘発] キャラが相手の効果で移動したとき、自分の手札を１枚破棄できる。破棄したとき、そのキャラを移動元フィールドに移動する。",
+  "textKr": "[誘発] 自ターン開始時、味方[花]キャラ１体にＳＰ＋１する。\n[宣言] [0]:相手ターン中に使用する。このキャラは次の能力を得る。\n[誘発] キャラが相手の効果で移動したとき、自分の手札を１枚破棄できる。破棄したとき、そのキャラを移動元フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2527"
 }

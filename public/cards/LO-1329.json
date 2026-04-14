@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1329",
+  "title": "不屈の意志",
+  "subName": "レジスタンスのライダー",
+  "name": "不屈の意志 レジスタンスのライダー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 0,
   "dmg": 2,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[ペナルティ:[自分の手札を１枚破棄する。]]\n[誘発] このキャラが登場したとき、１枚ドローする。",
+  "textKr": "[ペナルティ:[自分の手札を１枚破棄する。]]\n[誘発] このキャラが登場したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1329"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1330",
+  "title": "国王一座",
+  "subName": "キャスター／ウィリアム・シェイクスピア",
+  "name": "国王一座 キャスター／ウィリアム・シェイクスピア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [無]:このキャラの防御中に使用する。相手は相手の手札を１枚破棄する。",
+  "textKr": "[宣言] [無]:このキャラの防御中に使用する。相手は相手の手札を１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1330"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0497",
+  "title": "無尽俵",
+  "subName": "アーチャー／俵藤太",
+  "name": "無尽俵 アーチャー／俵藤太",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラでサポートをしたとき、対象の＜サーヴァント＞キャラ１体にＤＰ＋１する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象の＜サーヴァント＞キャラ１体にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0497"
 }

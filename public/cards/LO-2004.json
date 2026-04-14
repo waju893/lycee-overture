@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-2004",
+  "title": "七天七刀",
+  "subName": "",
+  "name": "七天七刀",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋２・ＤＭＧ＋１する。\n[手札宣言] [宙宙宙]:味方キャラの防御中に使用する。そのキャラにＤＰ＋３する。ゴミ箱のこのアイテムをそのキャラに無償で装備できる。",
+  "textKr": "[常時] このキャラにＡＰ＋２・ＤＭＧ＋１する。\n[手札宣言] [宙宙宙]:味方キャラの防御中に使用する。そのキャラにＤＰ＋３する。ゴミ箱のこのアイテムをそのキャラに無償で装備できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2004"
 }

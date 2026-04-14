@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1026",
+  "title": "島田流家元",
+  "subName": "島田 千代",
+  "name": "島田流家元 島田 千代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから＜大学選抜＞キャラ１体を探し公開して手札に入れる。",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから＜大学選抜＞キャラ１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1026"
 }

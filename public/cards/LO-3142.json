@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3142",
+  "title": "LEVEL5 第一位",
+  "subName": "アクセラレータ",
+  "name": "LEVEL5 第一位 アクセラレータ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが３点以上の味方キャラが４体以上登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[宣言] [0]:コストが３点以上の味方キャラが４体以上登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3142"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6236",
+  "title": "郁紀の親友",
+  "subName": "戸尾 耕司",
+  "name": "郁紀の親友 戸尾 耕司",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手の宣言に対応して使用できない。このキャラを破棄する。したとき、１枚ドローする。自分にシールド＋１できる。",
+  "textKr": "[宣言] [0]:相手の宣言に対応して使用できない。このキャラを破棄する。したとき、１枚ドローする。自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6236"
 }

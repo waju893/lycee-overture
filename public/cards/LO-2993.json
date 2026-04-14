@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2993",
+  "title": "羽生学園のメデューサ",
+  "subName": "吉村 凜",
+  "name": "羽生学園のメデューサ 吉村 凜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。",
+  "textKr": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2993"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3481",
+  "title": "カゲロウ・鎧",
+  "subName": "須藤 雅",
+  "name": "カゲロウ・鎧 須藤 雅",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、味方「門倉甲」が登場している場合、自分のデッキの上のカード３枚を見て、そのうち１枚を手札に入れる。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、味方「門倉甲」が登場している場合、自分のデッキの上のカード３枚を見て、そのうち１枚を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3481"
 }

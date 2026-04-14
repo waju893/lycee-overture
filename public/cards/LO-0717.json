@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0717",
+  "title": "叢雨丸の管理者",
+  "subName": "ムラサメ",
+  "name": "叢雨丸の管理者 ムラサメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T宙]:バトル中に使用できない。{自分のゴミ箱のアイテム１枚}を{味方キャラ１体}に装備する。",
+  "textKr": "[宣言] [T宙]:バトル中に使用できない。{自分のゴミ箱のアイテム１枚}を{味方キャラ１体}に装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0717"
 }

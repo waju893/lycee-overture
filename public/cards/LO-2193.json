@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2193",
+  "title": "委員長特権",
+  "subName": "小牧 愛佳",
+  "name": "委員長特権 小牧 愛佳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}は[ボーナス:[自分のデッキを１枚回復する。]]を得る。そのキャラにＡＰ＋１またはＤＰ＋１する。\n[手札宣言] [D1]:相手の攻撃宣言に対応して使用する。{味方[花]または「ToHeart2」キャラ１体}を未行動にする。",
+  "textKr": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}は[ボーナス:[自分のデッキを１枚回復する。]]を得る。そのキャラにＡＰ＋１またはＤＰ＋１する。\n[手札宣言] [D1]:相手の攻撃宣言に対応して使用する。{味方[花]または「ToHeart2」キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2193"
 }

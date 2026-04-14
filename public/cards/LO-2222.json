@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2222",
+  "title": "白鳳蝶",
+  "subName": "姫路城",
+  "name": "白鳳蝶 姫路城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] 相手ターン中、味方キャラがダウンしたとき、そのキャラをデッキの下に置く。",
+  "textKr": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] 相手ターン中、味方キャラがダウンしたとき、そのキャラをデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2222"
 }

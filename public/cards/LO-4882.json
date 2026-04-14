@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4882",
+  "title": "困ったときのまとめ役",
+  "subName": "布良 梓",
+  "name": "困ったときのまとめ役 布良 梓",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 0,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベント・手札宣言能力にのみ支払える。",
+  "textKr": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベント・手札宣言能力にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4882"
 }

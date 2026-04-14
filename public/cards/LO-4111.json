@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4111",
+  "title": "頭脳はこども",
+  "subName": "ALyCE",
+  "name": "頭脳はこども ALyCE",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:このターン中、相手キャラを対象に味方[月]キャラの能力を５回以上使用している場合、１枚ドローする。自分のゴミ箱のカード１枚を自分の「わるいこと」置き場に置ける。この能力は失われる。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:このターン中、相手キャラを対象に味方[月]キャラの能力を５回以上使用している場合、１枚ドローする。自分のゴミ箱のカード１枚を自分の「わるいこと」置き場に置ける。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4111"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2112",
+  "title": "ライバル意識",
+  "subName": "稲垣 梅子",
+  "name": "ライバル意識 稲垣 梅子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン開始時、相手キャラ１体にＤＰ－１する。",
+  "textKr": "[誘発] 自ターン開始時、相手キャラ１体にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2112"
 }

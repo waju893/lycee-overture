@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3217",
+  "title": "第一七七支部所属",
+  "subName": "白井 黒子",
+  "name": "第一七七支部所属 白井 黒子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風紀委員」１枚を探し公開して手札に入れる。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風紀委員」１枚を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3217"
 }

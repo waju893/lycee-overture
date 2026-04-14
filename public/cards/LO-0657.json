@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0657",
+  "title": "純愛マーチ",
+  "subName": "中ノ島 妙",
+  "name": "純愛マーチ 中ノ島 妙",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、味方ＤＦキャラ１体を未行動にする。",
+  "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、味方ＤＦキャラ１体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0657"
 }

@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0738",
+  "title": "薔薇十字の誓い",
+  "subName": "ローゼンクロイツ",
+  "name": "薔薇十字の誓い ローゼンクロイツ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ER",
+  "attributes": [
     "snow",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "sun"
-  ],
-  "ex": 0,
   "useTarget": [
     "snow",
     "snow",
@@ -19,11 +21,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": true
+  "ex": 0,
+  "costRaw": "雪雪日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー][サイドステップ:[0]]\n[誘発] 自分の効果によって相手キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[リーダー][サイドステップ:[0]]\n[誘発] 自分の効果によって相手キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0738"
 }

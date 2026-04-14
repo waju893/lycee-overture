@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2506",
+  "title": "激辛党",
+  "subName": "紅瀬 桐葉",
+  "name": "激辛党 紅瀬 桐葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果でこのキャラを破棄したとき、ゴミ箱のこのキャラを登場できる。",
+  "textKr": "[誘発] 自分の効果でこのキャラを破棄したとき、ゴミ箱のこのキャラを登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2506"
 }

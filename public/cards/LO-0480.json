@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0480",
+  "title": "痛哭の幻奏",
+  "subName": "アーチャー／トリスタン",
+  "name": "痛哭の幻奏 アーチャー／トリスタン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[誘発] 相手が能力を使用したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[オーダーチェンジ:[0]]\n[誘発] 相手が能力を使用したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0480"
 }

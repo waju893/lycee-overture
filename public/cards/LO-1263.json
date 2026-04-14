@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1263",
+  "title": "新聞部",
+  "subName": "井上 晶",
+  "name": "新聞部 井上 晶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:相手の宣言に対応して使用できない。{相手のゴミ箱のキャラ以外のカード２枚}を除外する。除外したとき、相手のデッキを１枚破棄する。この能力は失われる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:相手の宣言に対応して使用できない。{相手のゴミ箱のキャラ以外のカード２枚}を除外する。除外したとき、相手のデッキを１枚破棄する。この能力は失われる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1263"
 }

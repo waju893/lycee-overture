@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0586",
+  "title": "太陽の小町",
+  "subName": "兼元 灯里",
+  "name": "太陽の小町 兼元 灯里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。このキャラを未行動にする。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0586"
 }

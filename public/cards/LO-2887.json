@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2887",
+  "title": "白蛇九十九神社の巫女",
+  "subName": "成瀬 沙月",
+  "name": "白蛇九十九神社の巫女 成瀬 沙月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]または[日日]を発生する。このコストはアイテムの装備にのみ支払える。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]または[日日]を発生する。このコストはアイテムの装備にのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2887"
 }

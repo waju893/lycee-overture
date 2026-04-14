@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5189",
+  "title": "和装姿",
+  "subName": "冬馬 かずさ",
+  "name": "和装姿 冬馬 かずさ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ:[１枚ドローできる。]]\n[宣言] [0]:このキャラがＤＦキャラの場合、このキャラはＤＭＧ－３・[アグレッシブ]を得る。\n[宣言] [0]:{味方「小木曽雪菜」１体}にＤＰ＋１する。\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。\n[宣言] [T]:自ターン中に使用する。１枚ドローする。この能力は失われる。",
+  "textKr": "[エンゲージ:[１枚ドローできる。]]\n[宣言] [0]:このキャラがＤＦキャラの場合、このキャラはＤＭＧ－３・[アグレッシブ]を得る。\n[宣言] [0]:{味方「小木曽雪菜」１体}にＤＰ＋１する。\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。\n[宣言] [T]:自ターン中に使用する。１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5189"
 }

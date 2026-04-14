@@ -1,11 +1,25 @@
 {
+  "cardNo": "LO-0559",
+  "title": "冥界の門",
+  "subName": "",
+  "name": "冥界の門",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが移動したとき、このキャラを行動済みにする。",
+  "textKr": "[誘発] このキャラが移動したとき、このキャラを行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0559"
 }

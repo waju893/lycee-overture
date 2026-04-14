@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0619",
+  "title": "吸血鬼の代表",
+  "subName": "アンナ・レティクル",
+  "name": "吸血鬼の代表 アンナ・レティクル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [月]:{味方ＤＦキャラ１体}にＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "textKr": "[宣言] [月]:{味方ＤＦキャラ１体}にＡＰ＋１・ＤＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0619"
 }

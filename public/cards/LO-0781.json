@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0781",
+  "title": "アクティブエレキ",
+  "subName": "インドラ",
+  "name": "アクティブエレキ インドラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0781"
 }

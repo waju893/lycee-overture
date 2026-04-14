@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4192",
+  "title": "学園四大天使",
+  "subName": "椿姫 こはね",
+  "name": "学園四大天使 椿姫 こはね",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無無]]\n[宣言] [0]:[花]でない味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "textKr": "[サポーター:[無無]]\n[宣言] [0]:[花]でない味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4192"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1773",
+  "title": "ミカヅチの副官",
+  "subName": "ミルージュ",
+  "name": "ミカヅチの副官 ミルージュ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[宣言] [0]:{味方「ウォシス」１体}にＡＰ＋１する。",
+  "textKr": "[宣言] [0]:{味方「ウォシス」１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1773"
 }

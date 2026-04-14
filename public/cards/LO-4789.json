@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4789",
+  "title": "闇を照破す連射弓",
+  "subName": "パトリシア",
+  "name": "闇を照破す連射弓 パトリシア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。コストが５点以上の味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。コストが５点以上の味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4789"
 }

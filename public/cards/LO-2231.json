@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2231",
+  "title": "ホワイト・タワー",
+  "subName": "ロンドン塔",
+  "name": "ホワイト・タワー ロンドン塔",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[コスト] このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。",
+  "textKr": "[コスト] このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2231"
 }

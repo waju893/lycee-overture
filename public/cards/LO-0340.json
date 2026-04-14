@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0340",
+  "title": "大洗女子学園",
+  "subName": "武部 沙織",
+  "name": "大洗女子学園 武部 沙織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 4,
   "dmg": 4,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]",
+  "textKr": "[アシスト]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0340"
 }

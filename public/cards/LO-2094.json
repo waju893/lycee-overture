@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2094",
+  "title": "神様の端くれ",
+  "subName": "芝山 ひなた",
+  "name": "神様の端くれ 芝山 ひなた",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱に[花]でないカードが置かれている場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱に[花]でないカードが置かれている場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2094"
 }

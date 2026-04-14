@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4265",
+  "title": "JINKI-UNLIMITED-",
+  "subName": "織部 碧",
+  "name": "JINKI-UNLIMITED- 織部 碧",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラを防御キャラに指定したとき、このキャラにＤＰ＋１する。",
+  "textKr": "[誘発] このキャラを防御キャラに指定したとき、このキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4265"
 }

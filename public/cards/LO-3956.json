@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3956",
+  "title": "連合のリーダー",
+  "subName": "織田 久遠 信長",
+  "name": "連合のリーダー 織田 久遠 信長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] コストが３～４点の味方[宙]キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに２回まで処理可能）\n[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] コストが３～４点の味方[宙]キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに２回まで処理可能）\n[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3956"
 }

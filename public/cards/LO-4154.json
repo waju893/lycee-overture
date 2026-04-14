@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4154",
+  "title": "根本主義者",
+  "subName": "ヨブ",
+  "name": "根本主義者 ヨブ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][無無]:バトル中に使用できない。このキャラを破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "textKr": "[宣言] [T][無無]:バトル中に使用できない。このキャラを破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4154"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4115",
+  "title": "AL教の神官",
+  "subName": "セル・カーチゴルフ",
+  "name": "AL教の神官 セル・カーチゴルフ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の手札を１枚デッキの下に置く。置いたとき、自分のデッキの上のカード５枚を見て、そのうち１枚を手札に入れる。デッキをシャッフルする。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の手札を１枚デッキの下に置く。置いたとき、自分のデッキの上のカード５枚を見て、そのうち１枚を手札に入れる。デッキをシャッフルする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4115"
 }

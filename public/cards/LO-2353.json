@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2353",
+  "title": "天下無双",
+  "subName": "呂布・恋",
+  "name": "天下無双 呂布・恋",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[常時] このキャラはサポートの対象に指定できない。\n[宣言] [0]:バトル中に使用する。[オーダーステップ]を持つ味方バトル参加[宙]キャラ１体は[ペナルティ:[１枚ドローする。]]または[ペナルティ:[相手のデッキを１枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[常時] このキャラはサポートの対象に指定できない。\n[宣言] [0]:バトル中に使用する。[オーダーステップ]を持つ味方バトル参加[宙]キャラ１体は[ペナルティ:[１枚ドローする。]]または[ペナルティ:[相手のデッキを１枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2353"
 }

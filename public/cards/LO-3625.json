@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3625",
+  "title": "運命の塔 星の巫女",
+  "subName": "風舞 さくら",
+  "name": "運命の塔 星の巫女 風舞 さくら",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが３点以上の味方キャラが５体以上登場している場合、{味方キャラ１体}にＤＰ＋１し、そのキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+  "textKr": "[宣言] [0]:コストが３点以上の味方キャラが５体以上登場している場合、{味方キャラ１体}にＤＰ＋１し、そのキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3625"
 }

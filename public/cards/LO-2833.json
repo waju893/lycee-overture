@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2833",
+  "title": "トラブルメーカー",
+  "subName": "三枝 葉留佳",
+  "name": "トラブルメーカー 三枝 葉留佳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを除外する。除外したとき、自分のゴミ箱のコストが２点以上の「三枝葉留佳」または「二木佳奈多」１体を無償で登場する。",
+  "textKr": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを除外する。除外したとき、自分のゴミ箱のコストが２点以上の「三枝葉留佳」または「二木佳奈多」１体を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2833"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0499",
+  "title": "自由なる闘争",
+  "subName": "ライダー／ケツァル・コアトル",
+  "name": "自由なる闘争 ライダー／ケツァル・コアトル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0499"
 }

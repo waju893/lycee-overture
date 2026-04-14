@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2089",
+  "title": "恋多きお年頃",
+  "subName": "田辺 葉月",
+  "name": "恋多きお年頃 田辺 葉月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のイベントまたはアイテム１枚をデッキの下に置く。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のイベントまたはアイテム１枚をデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2089"
 }

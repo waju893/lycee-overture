@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-2929",
+  "title": "この手のぬくもり",
+  "subName": "",
+  "name": "この手のぬくもり",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [このアイテムを破棄する]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[宣言] [無][このアイテムを破棄する]:{キャラ１体}はターン終了時まで相手のイベント・能力・手札宣言能力の対象に指定できない。",
+  "textKr": "[宣言] [このアイテムを破棄する]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[宣言] [無][このアイテムを破棄する]:{キャラ１体}はターン終了時まで相手のイベント・能力・手札宣言能力の対象に指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2929"
 }

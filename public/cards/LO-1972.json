@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1972",
+  "title": "風紀委員",
+  "subName": "白井 黒子",
+  "name": "風紀委員 白井 黒子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。\n[宣言] [0]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。\n[宣言] [0]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1972"
 }

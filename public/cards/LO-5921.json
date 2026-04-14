@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-5921",
+  "title": "プライマルツリー",
+  "subName": "",
+  "name": "プライマルツリー",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このエリアを配置したとき、１枚ドローする。自分のゴミ箱のカード全てを横に置き、そのうちランダムに３枚をデッキの下に置きシャッフルし、残りを破棄する。\n※「プライマルツリー」は持ち主の場にのみ配置可能",
+  "textKr": "[誘発] このエリアを配置したとき、１枚ドローする。自分のゴミ箱のカード全てを横に置き、そのうちランダムに３枚をデッキの下に置きシャッフルし、残りを破棄する。\n※「プライマルツリー」は持ち主の場にのみ配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5921"
 }

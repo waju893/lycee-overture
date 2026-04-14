@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5621",
+  "title": "万里プロの社長",
+  "subName": "万里 ちさと",
+  "name": "万里プロの社長 万里 ちさと",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが５点以上の味方キャラ・エリアを配置している場合、このキャラにＤＰ＋２する。",
+  "textKr": "[宣言] [0]:コストが５点以上の味方キャラ・エリアを配置している場合、このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5621"
 }

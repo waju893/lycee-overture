@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1207",
+  "title": "人形使い",
+  "subName": "国崎 往人",
+  "name": "人形使い 国崎 往人",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] 自ターン中、このキャラが登場したとき、自分のゴミ箱の[月]キャラ１体を登場できる。このターン終了時、そのキャラを破棄する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 自ターン中、このキャラが登場したとき、自分のゴミ箱の[月]キャラ１体を登場できる。このターン終了時、そのキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1207"
 }

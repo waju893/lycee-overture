@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1645",
+  "title": "キング・オブ・委員長",
+  "subName": "今宮 紀子",
+  "name": "キング・オブ・委員長 今宮 紀子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1][このキャラを破棄する]:{自分のゴミ箱のアイテム１枚}を手札に入れる。",
+  "textKr": "[宣言] [D1][このキャラを破棄する]:{自分のゴミ箱のアイテム１枚}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1645"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0083",
+  "title": "嵐の航海者",
+  "subName": "ライダー／フランシス・ドレイク",
+  "name": "嵐の航海者 ライダー／フランシス・ドレイク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[誘発] 味方キャラがダウンしたバトル終了時、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 味方キャラがダウンしたバトル終了時、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0083"
 }

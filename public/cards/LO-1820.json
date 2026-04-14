@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1820",
+  "title": "白楼閣の女子衆",
+  "subName": "トウカ",
+  "name": "白楼閣の女子衆 トウカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "トゥスクル",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を自分の「契約」置き場に置ける。味方キャラ全てが＜トゥスクル＞の場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を自分の「契約」置き場に置ける。味方キャラ全てが＜トゥスクル＞の場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1820"
 }

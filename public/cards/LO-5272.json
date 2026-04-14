@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5272",
+  "title": "夏侯淵配下の勇将",
+  "subName": "典韋・流琉",
+  "name": "夏侯淵配下の勇将 典韋・流琉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    13
-  ],
-  "keyEffects": [
-    4,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[オーダーステップ:[0]][ペナルティ:[１枚ドローできる。]]\n[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[宙宙]を発生する。このコストは手札宣言能力の使用にのみ支払える。",
+  "textKr": "[オーダーステップ:[0]][ペナルティ:[１枚ドローできる。]]\n[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[宙宙]を発生する。このコストは手札宣言能力の使用にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5272"
 }

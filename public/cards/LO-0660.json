@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0660",
+  "title": "妖狐",
+  "subName": "ムラサメ",
+  "name": "妖狐 ムラサメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [このキャラを破棄する]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}に{自分のゴミ箱の「叢雨丸」１枚}を無償で装備する。",
+  "textKr": "[宣言] [このキャラを破棄する]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}に{自分のゴミ箱の「叢雨丸」１枚}を無償で装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0660"
 }

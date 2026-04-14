@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0055",
+  "title": "仁王立ち",
+  "subName": "ランサー／武蔵坊弁慶",
+  "name": "仁王立ち ランサー／武蔵坊弁慶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 対戦キャラがダウンしたバトル終了時、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 対戦キャラがダウンしたバトル終了時、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0055"
 }

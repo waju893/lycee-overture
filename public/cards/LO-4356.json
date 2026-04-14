@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4356",
+  "title": "姉御肌の幼馴染",
+  "subName": "荒波 杏",
+  "name": "姉御肌の幼馴染 荒波 杏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 2,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、元の宣言型の基本能力を持つ元のＤＭＧが２以上の味方キャラが登場していない場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、元の宣言型の基本能力を持つ元のＤＭＧが２以上の味方キャラが登場していない場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4356"
 }

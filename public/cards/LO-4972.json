@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4972",
+  "title": "競泳水着",
+  "subName": "火打谷 愛衣",
+  "name": "競泳水着 火打谷 愛衣",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分のコストが１点以上のイベント・手札宣言能力を使用したとき、味方[雪]キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:自分のゴミ箱にＥＸが１のキャラが２体以上置かれている場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 自ターン中、自分のコストが１点以上のイベント・手札宣言能力を使用したとき、味方[雪]キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:自分のゴミ箱にＥＸが１のキャラが２体以上置かれている場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4972"
 }

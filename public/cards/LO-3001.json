@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3001",
+  "title": "どこかで見かけたかもしれない",
+  "subName": "上級生女子Ｃ",
+  "name": "どこかで見かけたかもしれない 上級生女子Ｃ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [月月月]:相手のコストが４点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "[手札宣言] [月月月]:相手のコストが４点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3001"
 }

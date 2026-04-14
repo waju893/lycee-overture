@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1377",
+  "title": "ゴルゴン三姉妹",
+  "subName": "アサシン／ステンノ",
+  "name": "ゴルゴン三姉妹 アサシン／ステンノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{このキャラを除く、サブネームが「ゴルゴン三姉妹」の味方キャラ１体}を{味方フィールド}に移動する。",
+  "textKr": "[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{このキャラを除く、サブネームが「ゴルゴン三姉妹」の味方キャラ１体}を{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1377"
 }

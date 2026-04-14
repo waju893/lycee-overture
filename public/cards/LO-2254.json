@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2254",
+  "title": "一乗滝の燕返し！",
+  "subName": "一乗谷城",
+  "name": "一乗滝の燕返し！ 一乗谷城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [D1]:{このキャラと同列の相手キャラ１体}にＤＰ－１する。",
+  "textKr": "[宣言] [D1]:{このキャラと同列の相手キャラ１体}にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2254"
 }

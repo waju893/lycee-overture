@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5015",
+  "title": "スケッチブック",
+  "subName": "上月 澪",
+  "name": "スケッチブック 上月 澪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手の効果で相手のデッキを回復したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 相手の効果で相手のデッキを回復したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5015"
 }

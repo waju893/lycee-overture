@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3256",
+  "title": "悩める新人作家",
+  "subName": "玉泉 日和子",
+  "name": "悩める新人作家 玉泉 日和子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが登場したとき、以下から１つを選び処理する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが登場したとき、以下から１つを選び処理する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3256"
 }

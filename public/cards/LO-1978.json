@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1978",
+  "title": "アステカの魔術師",
+  "subName": "ショチトル",
+  "name": "アステカの魔術師 ショチトル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、手札からこのキャラが登場したとき、相手のゴミ箱のキャラ２体までを除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "textKr": "[誘発] 自ターン中、手札からこのキャラが登場したとき、相手のゴミ箱のキャラ２体までを除外できる。\n※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1978"
 }

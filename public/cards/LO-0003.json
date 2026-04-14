@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0003",
+  "title": "仮想宝具 擬似展開／人理の礎",
+  "subName": "シールダー／マシュ・キリエライト",
+  "name": "仮想宝具 擬似展開／人理の礎 シールダー／マシュ・キリエライト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:味方ＤＦキャラ全てにＤＰ＋１する。",
+  "textKr": "[宣言] [0]:味方ＤＦキャラ全てにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0003"
 }

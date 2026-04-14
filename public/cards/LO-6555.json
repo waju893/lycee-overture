@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6555",
+  "title": "無駄に美人で巨乳でハイテンション",
+  "subName": "七海 美菜",
+  "name": "無駄に美人で巨乳でハイテンション 七海 美菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラにＤＰ－１する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。自分のゴミ箱またはデッキから「シスコンな七海の妹 七海真奈美」１体を探し無償で登場できる。",
+  "textKr": "[宣言] [0]:このキャラにＤＰ－１する。\n[誘発] このキャラが手札から登場したとき、以下から１つを選び処理する。自分のゴミ箱またはデッキから「シスコンな七海の妹 七海真奈美」１体を探し無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6555"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1521",
+  "title": "姫侍",
+  "subName": "シズカ",
+  "name": "姫侍 シズカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手ターン中、味方キャラを未行動にしたとき、このキャラを未行動にする。",
+  "textKr": "[誘発] 相手ターン中、味方キャラを未行動にしたとき、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1521"
 }

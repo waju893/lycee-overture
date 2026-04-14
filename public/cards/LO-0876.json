@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0876",
+  "title": "奉刀会会長代行",
+  "subName": "稲生 滸",
+  "name": "奉刀会会長代行 稲生 滸",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーチェンジ:[0]]\n[宣言] [宙]:{自分のゴミ箱の「稲生滸」１体}を除外する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[オーダーチェンジ:[0]]\n[宣言] [宙]:{自分のゴミ箱の「稲生滸」１体}を除外する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0876"
 }

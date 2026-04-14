@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2027",
+  "title": "勇者の末裔",
+  "subName": "レンファ",
+  "name": "勇者の末裔 レンファ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:自分のゴミ箱のカード１枚を除外する。除外したとき、このキャラにＤＭＧ＋１する。",
+  "textKr": "[宣言] [月]:自分のゴミ箱のカード１枚を除外する。除外したとき、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2027"
 }

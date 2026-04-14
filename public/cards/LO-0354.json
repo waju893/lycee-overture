@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0354",
+  "title": "お茶の時間",
+  "subName": "オレンジペコ",
+  "name": "お茶の時間 オレンジペコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[宣言] [0]: バトル中に使用できない。このキャラを味方「ダージリン」に隣接した味方フィールドに移動する。",
+  "textKr": "[宣言] [0]: バトル中に使用できない。このキャラを味方「ダージリン」に隣接した味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0354"
 }

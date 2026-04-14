@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1647",
+  "title": "小さき武士",
+  "subName": "一寸法師",
+  "name": "小さき武士 一寸法師",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自分の手札１枚または味方アイテム１枚を破棄する。破棄したとき、味方キャラがアイテムを装備している場合、このキャラにＡＰ＋２する。",
+  "textKr": "[宣言] [0]:自分の手札１枚または味方アイテム１枚を破棄する。破棄したとき、味方キャラがアイテムを装備している場合、このキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1647"
 }

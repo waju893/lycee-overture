@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4025",
+  "title": "代わりの父親",
+  "subName": "三うら しゅ子",
+  "name": "代わりの父親 三うら しゅ子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:{相手キャラ１体}にＤＰ－２する。この能力は失われる。",
+  "textKr": "[宣言] [月]:{相手キャラ１体}にＤＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4025"
 }

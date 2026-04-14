@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0521",
+  "title": "噛み砕く死牙の獣",
+  "subName": "バーサーカー／クー・フーリン〔オルタ〕",
+  "name": "噛み砕く死牙の獣 バーサーカー／クー・フーリン〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,5 +21,12 @@
   "ap": 7,
   "dp": 4,
   "sp": 0,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [宙宙]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [宙宙]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0521"
 }

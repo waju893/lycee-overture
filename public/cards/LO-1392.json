@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1392",
+  "title": "鬼種の魔",
+  "subName": "アサシン／酒呑童子",
+  "name": "鬼種の魔 アサシン／酒呑童子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    14
-  ],
-  "keyEffects": [
-    14
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[ガッツ:[宙宙宙宙宙]]\n[宣言] [0]:このキャラのバトル中に使用する。相手は未行動の相手キャラ１体を行動済みにする。",
+  "textKr": "[ガッツ:[宙宙宙宙宙]]\n[宣言] [0]:このキャラのバトル中に使用する。相手は未行動の相手キャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1392"
 }

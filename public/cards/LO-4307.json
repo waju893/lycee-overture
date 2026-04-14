@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4307",
+  "title": "人懐こい年下幼馴染",
+  "subName": "所沢 郁",
+  "name": "人懐こい年下幼馴染 所沢 郁",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＤＭＧ＋２する。",
+  "textKr": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4307"
 }

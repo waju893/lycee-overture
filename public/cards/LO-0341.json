@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0341",
+  "title": "戦車道",
+  "subName": "武部 沙織",
+  "name": "戦車道 武部 沙織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -17,13 +20,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    8
-  ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [月]:このキャラにＤＰ＋３する。",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [月]:このキャラにＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0341"
 }

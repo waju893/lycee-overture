@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0160",
+  "title": "パーフェクトカリキュレイト",
+  "subName": "アルスマグナ",
+  "name": "パーフェクトカリキュレイト アルスマグナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[相手キャラ１体にＤＰ－２する。]]\n[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}を行動済みにする。",
+  "textKr": "[エンゲージ:[相手キャラ１体にＤＰ－２する。]]\n[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0160"
 }

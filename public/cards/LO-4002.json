@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4002",
+  "title": "カラー防衛隊長",
+  "subName": "イージス・カラー",
+  "name": "カラー防衛隊長 イージス・カラー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果で相手キャラを破棄したとき、コストが２点以下の味方[雪]キャラが３体以上登場している場合、味方ＡＦ[雪]キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] 自分の効果で相手キャラを破棄したとき、コストが２点以下の味方[雪]キャラが３体以上登場している場合、味方ＡＦ[雪]キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4002"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4095",
+  "title": "鋭・紅破旋空",
+  "subName": "閃忍ナリカ",
+  "name": "鋭・紅破旋空 閃忍ナリカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3,
-    16
-  ],
-  "keyEffects": [
-    3,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２][サイドステップ:[0]]\n[誘発] コストが２点以下の味方[日]キャラがダウンしたとき、味方[日]キャラ１体にＡＰ＋１する。\n[誘発] 味方[日]キャラがダウンしたとき、１枚ドローする。この能力は失われる。\n[宣言] [C2]:{味方[日]キャラ１体}にＡＰ＋２する。",
+  "textKr": "[チャージ:２][サイドステップ:[0]]\n[誘発] コストが２点以下の味方[日]キャラがダウンしたとき、味方[日]キャラ１体にＡＰ＋１する。\n[誘発] 味方[日]キャラがダウンしたとき、１枚ドローする。この能力は失われる。\n[宣言] [C2]:{味方[日]キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4095"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2667",
+  "title": "心優しい少女",
+  "subName": "ミチル",
+  "name": "心優しい少女 ミチル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [このキャラを破棄する]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、自分の手札のコストが[花]または[無]のみで４点以下のキャラ１体を無償で登場する。",
+  "textKr": "[宣言] [このキャラを破棄する]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、自分の手札のコストが[花]または[無]のみで４点以下のキャラ１体を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2667"
 }

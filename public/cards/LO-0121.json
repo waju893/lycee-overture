@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0121",
+  "title": "デジャヴワールド",
+  "subName": "デジャヴ",
+  "name": "デジャヴワールド デジャヴ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [雪雪雪雪]:このキャラの攻撃中に使用する。対戦キャラを破棄する。",
+  "textKr": "[エンゲージ]\n[宣言] [雪雪雪雪]:このキャラの攻撃中に使用する。対戦キャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0121"
 }

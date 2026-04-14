@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1937",
+  "title": "オッレルスのパートナー",
+  "subName": "シルビア",
+  "name": "オッレルスのパートナー シルビア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「オッレルス」が登場している場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:味方「オッレルス」が登場している場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1937"
 }

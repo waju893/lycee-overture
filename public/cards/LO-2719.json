@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-2719",
+  "title": "行き倒れ",
+  "subName": "",
+  "name": "行き倒れ",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このエリアを配置したとき、１枚ドローできる。\n[宣言] [0]:このキャラにＡＰ＋１・ＤＰ－１する。",
+  "textKr": "[誘発] このエリアを配置したとき、１枚ドローできる。\n[宣言] [0]:このキャラにＡＰ＋１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2719"
 }

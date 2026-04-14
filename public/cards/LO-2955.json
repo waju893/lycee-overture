@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2955",
+  "title": "堅物チーフ",
+  "subName": "花鳥 玲愛",
+  "name": "堅物チーフ 花鳥 玲愛",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手ターン開始時、このキャラは[ペナルティ:[１枚ドローする。]]を得る。",
+  "textKr": "[誘発] 相手ターン開始時、このキャラは[ペナルティ:[１枚ドローする。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2955"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4348",
+  "title": "幼なじみの幼馴染",
+  "subName": "玉森 桜",
+  "name": "幼なじみの幼馴染 玉森 桜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 5,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが５点以上の味方[宙]キャラが登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが５点以上の味方[宙]キャラが登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4348"
 }

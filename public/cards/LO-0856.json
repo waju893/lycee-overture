@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0856",
+  "title": "ディールエネルゲイア",
+  "subName": "アイテール",
+  "name": "ディールエネルゲイア アイテール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにＡＰ＋１する。",
+  "textKr": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0856"
 }

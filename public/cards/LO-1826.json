@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1826",
+  "title": "ヤマト八柱将『七光のデコポンポ』",
+  "subName": "デコポンポ",
+  "name": "ヤマト八柱将『七光のデコポンポ』 デコポンポ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[宣言] [D1]:このキャラを手札に入れる。",
+  "textKr": "[宣言] [D1]:このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1826"
 }

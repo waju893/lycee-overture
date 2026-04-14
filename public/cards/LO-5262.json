@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5262",
+  "title": "目指せ大人の女性！",
+  "subName": "沓野 奏",
+  "name": "目指せ大人の女性！ 沓野 奏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    7,
-    12
-  ],
-  "keyEffects": [
-    7,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが２点以下の味方キャラが３体以上の場合、１枚ドローする。味方キャラ１体は[ボーナス:[相手のデッキを１枚破棄できる。]]を得る。",
+  "textKr": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが２点以下の味方キャラが３体以上の場合、１枚ドローする。味方キャラ１体は[ボーナス:[相手のデッキを１枚破棄できる。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5262"
 }

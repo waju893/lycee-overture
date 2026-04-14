@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2772",
+  "title": "ピザに情熱を注ぐクラスメイト",
+  "subName": "月島 叶",
+  "name": "ピザに情熱を注ぐクラスメイト 月島 叶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力で相手ＤＦキャラを破棄したとき、１枚ドローする。この能力は失われる。\n[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手ＤＦキャラ１体}を破棄する。",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力で相手ＤＦキャラを破棄したとき、１枚ドローする。この能力は失われる。\n[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手ＤＦキャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2772"
 }

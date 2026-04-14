@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2649",
+  "title": "御曹司",
+  "subName": "沢渡 澪",
+  "name": "御曹司 沢渡 澪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:味方エリアを配置している場合、このキャラを手札に入れる。",
+  "textKr": "[宣言] [D1]:味方エリアを配置している場合、このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2649"
 }

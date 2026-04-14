@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0401",
+  "title": "突撃",
+  "subName": "玉田",
+  "name": "突撃 玉田",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[アグレッシブ]",
+  "textKr": "[アグレッシブ]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0401"
 }

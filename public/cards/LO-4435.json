@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4435",
+  "title": "不死身の教団幹部",
+  "subName": "シュバルト",
+  "name": "不死身の教団幹部 シュバルト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラを除外する。このターン終了時、自分のゴミ箱の「シュバルト」１体を登場できる。",
+  "textKr": "[宣言] [0]:このキャラを除外する。このターン終了時、自分のゴミ箱の「シュバルト」１体を登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4435"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0638",
+  "title": "マーメイドライン",
+  "subName": "白鹿 愛莉",
+  "name": "マーメイドライン 白鹿 愛莉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、このキャラを未行動にする。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0638"
 }

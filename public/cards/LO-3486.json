@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3486",
+  "title": "震機狼",
+  "subName": "久利原 直樹",
+  "name": "震機狼 久利原 直樹",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の「記憶遡行」置き場の枚数が５枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。自分の手札を２枚破棄できる。破棄したとき、相手キャラ１体を破棄する。（１回まで使用可能）",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の「記憶遡行」置き場の枚数が５枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。自分の手札を２枚破棄できる。破棄したとき、相手キャラ１体を破棄する。（１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3486"
 }

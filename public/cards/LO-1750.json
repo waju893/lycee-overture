@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1750",
+  "title": "戦慄のお仕置きタイム",
+  "subName": "向坂 環",
+  "name": "戦慄のお仕置きタイム 向坂 環",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [D1]:自ターン中に使用する。このキャラが登場したターン中に使用できない。このキャラを{味方フィールド}に移動する。この能力は失われる。",
+  "textKr": "[アグレッシブ]\n[宣言] [D1]:自ターン中に使用する。このキャラが登場したターン中に使用できない。このキャラを{味方フィールド}に移動する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1750"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6450",
+  "title": "喫茶店『雨水』の常連",
+  "subName": "杏野 雲",
+  "name": "喫茶店『雨水』の常連 杏野 雲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「正体不明の連続殺人犯 ディザスター」１体を探し無償で登場する。この能力は失われる。",
+  "textKr": "[宣言] [月]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「正体不明の連続殺人犯 ディザスター」１体を探し無償で登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6450"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2832",
+  "title": "猫使い",
+  "subName": "棗 鈴",
+  "name": "猫使い 棗 鈴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8,
-    13
-  ],
-  "keyEffects": [
-    8,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [0]:このキャラのバトル中に使用できない。このキャラを手札に入れる。\n[宣言] [D1]:{ＡＰが２以上の味方キャラ１体}にＡＰ＋１する。この能力は失われる。",
+  "textKr": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [0]:このキャラのバトル中に使用できない。このキャラを手札に入れる。\n[宣言] [D1]:{ＡＰが２以上の味方キャラ１体}にＡＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2832"
 }

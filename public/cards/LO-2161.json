@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2161",
+  "title": "温かなぬくもり",
+  "subName": "椿姫 こはね",
+  "name": "温かなぬくもり 椿姫 こはね",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラがサポートをしたとき、このキャラを除く味方キャラ１体にＳＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラがサポートをしたとき、このキャラを除く味方キャラ１体にＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2161"
 }

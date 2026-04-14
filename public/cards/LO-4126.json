@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4126",
+  "title": "鉄の城",
+  "subName": "桜井柚季",
+  "name": "鉄の城 桜井柚季",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:このキャラにＤＰ＋４する。この能力は失われる。",
+  "textKr": "[宣言] [無]:このキャラにＤＰ＋４する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4126"
 }

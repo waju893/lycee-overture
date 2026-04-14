@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0068",
+  "title": "貫き穿つ死翔の槍",
+  "subName": "ランサー／スカサハ",
+  "name": "貫き穿つ死翔の槍 ランサー／スカサハ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [宙宙宙]:このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [宙宙宙]:このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0068"
 }

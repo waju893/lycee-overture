@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2188",
+  "title": "凱旋公演",
+  "subName": "冬馬 かずさ",
+  "name": "凱旋公演 冬馬 かずさ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚を装備できる。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚を装備できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2188"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2184",
+  "title": "サーヴェイランスデコイ",
+  "subName": "アルゴス",
+  "name": "サーヴェイランスデコイ アルゴス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    14
-  ],
-  "keyEffects": [
-    14
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[ガッツ:[日日日]]\n[宣言] [このキャラを破棄する]:ターン終了時まで、{コストが４点以下の味方[日]キャラ１体}を相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "textKr": "[ガッツ:[日日日]]\n[宣言] [このキャラを破棄する]:ターン終了時まで、{コストが４点以下の味方[日]キャラ１体}を相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2184"
 }

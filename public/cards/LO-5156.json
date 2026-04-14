@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5156",
+  "title": "コルンエペリ",
+  "subName": "ムネチカ",
+  "name": "コルンエペリ ムネチカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:味方キャラ１体にＡＰ＋３または味方『うたわれるもの シリーズ』キャラ１体にＤＰ＋３する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:味方キャラ１体にＡＰ＋３または味方『うたわれるもの シリーズ』キャラ１体にＤＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5156"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5051",
+  "title": "オンカミヤリュー",
+  "subName": "カリーティ",
+  "name": "オンカミヤリュー カリーティ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3,
-    6
-  ],
-  "keyEffects": [
-    3,
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ][サイドステップ:[0]]\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ１体}にＡＰ＋３・ＤＰ＋３する。１枚ドローする。この能力は失われる。",
+  "textKr": "[アグレッシブ][サイドステップ:[0]]\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ１体}にＡＰ＋３・ＤＰ＋３する。１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5051"
 }

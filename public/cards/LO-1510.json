@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1510",
+  "title": "鉄腕乙女",
+  "subName": "ディーネ",
+  "name": "鉄腕乙女 ディーネ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 1,
   "dp": 5,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを{空き味方フィールド}に移動する。",
+  "textKr": "[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを{空き味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1510"
 }

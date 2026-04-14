@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1006",
+  "title": "前生徒会広報",
+  "subName": "河嶋 桃",
+  "name": "前生徒会広報 河嶋 桃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから[花]または＜大洗女子＞のＥＸが２のキャラ１体を探し公開して手札に入れる。",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから[花]または＜大洗女子＞のＥＸが２のキャラ１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1006"
 }

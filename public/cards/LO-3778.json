@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3778",
+  "title": "守護者の神盾",
+  "subName": "アルティア",
+  "name": "守護者の神盾 アルティア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] [日日]を発生する。このコストはキャラの能力にのみ支払える。この能力は失われる。",
+  "textKr": "[コスト] [日日]を発生する。このコストはキャラの能力にのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3778"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3283",
+  "title": "インテリ眼鏡",
+  "subName": "ギルティ",
+  "name": "インテリ眼鏡 ギルティ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。ターン終了時まで、このキャラの属性を[宙]にする。",
+  "textKr": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。ターン終了時まで、このキャラの属性を[宙]にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3283"
 }

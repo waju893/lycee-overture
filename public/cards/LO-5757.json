@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5757",
+  "title": "専属メイド",
+  "subName": "養老 紡",
+  "name": "専属メイド 養老 紡",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、味方『いきなりあなたに恋している』キャラが３体以上の場合、２枚ドローする。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、味方『いきなりあなたに恋している』キャラが３体以上の場合、２枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5757"
 }

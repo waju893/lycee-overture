@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3712",
+  "title": "可憐な吸血姫",
+  "subName": "エストリエ",
+  "name": "可憐な吸血姫 エストリエ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[自分のデッキを１枚回復する。]]\n[宣言] [雪]:バトル中に使用できない。このキャラを未行動にする。このキャラはＤＭＧの能力値修正を失う。",
+  "textKr": "[ボーナス:[自分のデッキを１枚回復する。]]\n[宣言] [雪]:バトル中に使用できない。このキャラを未行動にする。このキャラはＤＭＧの能力値修正を失う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3712"
 }

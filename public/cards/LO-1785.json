@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1785",
+  "title": "傾国の美女",
+  "subName": "フミルィル",
+  "name": "傾国の美女 フミルィル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    8,
-    12
-  ],
-  "keyEffects": [
-    8,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト／トゥスクル",
+  "text": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、コストが１点以下のアイテム１枚を破棄できる。",
+  "textKr": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、コストが１点以下のアイテム１枚を破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1785"
 }

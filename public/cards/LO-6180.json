@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6180",
+  "title": "ミリアのお供たち",
+  "subName": "ハミハミ ＆ ゴードン",
+  "name": "ミリアのお供たち ハミハミ ＆ ゴードン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [日]:このキャラを破棄する。したとき、１枚ドローする。自分にシールド＋１する。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [日]:このキャラを破棄する。したとき、１枚ドローする。自分にシールド＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6180"
 }

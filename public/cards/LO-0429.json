@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0429",
+  "title": "低血圧",
+  "subName": "冷泉 麻子",
+  "name": "低血圧 冷泉 麻子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    8
-  ],
-  "keyEffects": [
-    2,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][ステップ:[0]]\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ－１する。",
+  "textKr": "[アシスト][ステップ:[0]]\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0429"
 }

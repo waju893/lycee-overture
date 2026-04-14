@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2245",
+  "title": "高床倉庫",
+  "subName": "吉野ヶ里",
+  "name": "高床倉庫 吉野ヶ里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[手札宣言] [雪雪]:味方キャラの防御中に使用する。そのキャラにＤＰ＋２する。",
+  "textKr": "[手札宣言] [雪雪]:味方キャラの防御中に使用する。そのキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2245"
 }

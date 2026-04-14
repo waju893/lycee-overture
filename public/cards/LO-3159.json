@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3159",
+  "title": "学園都市の小学生",
+  "subName": "硲舎 佳茄",
+  "name": "学園都市の小学生 硲舎 佳茄",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「御坂美琴」１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「御坂美琴」１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3159"
 }

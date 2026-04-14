@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5818",
+  "title": "学園のプリンセス",
+  "subName": "墹之上 由乃",
+  "name": "学園のプリンセス 墹之上 由乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3,
-    16
-  ],
-  "keyEffects": [
-    3,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]][チャージ:２]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、[月月]を発生する。この能力は相手ターン終了時まで失われる。\n[宣言] [0]:自ターン中に使用する。以下から１つを選び処理する。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]][チャージ:２]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、[月月]を発生する。この能力は相手ターン終了時まで失われる。\n[宣言] [0]:自ターン中に使用する。以下から１つを選び処理する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5818"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4263",
+  "title": "NEXTON LIVE 2022",
+  "subName": "伊達 龍巳 政宗",
+  "name": "NEXTON LIVE 2022 伊達 龍巳 政宗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、サブネームに「NEXTON LIVE」を含む味方キャラ１体にＤＰ＋２・ＳＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、サブネームに「NEXTON LIVE」を含む味方キャラ１体にＤＰ＋２・ＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4263"
 }

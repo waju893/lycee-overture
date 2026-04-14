@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0626",
+  "title": "ペンション経営",
+  "subName": "三好 ミホ",
+  "name": "ペンション経営 三好 ミホ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにＤＰ＋２・ＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにＤＰ＋２・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0626"
 }

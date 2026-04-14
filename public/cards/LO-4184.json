@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4184",
+  "title": "有瀬家の従者",
+  "subName": "小林 つばめ",
+  "name": "有瀬家の従者 小林 つばめ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無無]]\n[宣言] [0]:味方キャラが「怪盗衣装」を持つ場合、{味方キャラ１体}にＤＰ＋１する。",
+  "textKr": "[サポーター:[無無]]\n[宣言] [0]:味方キャラが「怪盗衣装」を持つ場合、{味方キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4184"
 }

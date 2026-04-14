@@ -1,11 +1,25 @@
 {
+  "cardNo": "LO-3360",
+  "title": "制服デビュー",
+  "subName": "",
+  "name": "制服デビュー",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "-",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2026/01/09施行)",
+  "textKr": "※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3360"
 }

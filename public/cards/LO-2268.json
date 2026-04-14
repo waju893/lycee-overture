@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2268",
+  "title": "ラ・メルヴェイユ",
+  "subName": "モン・サン＝ミッシェル",
+  "name": "ラ・メルヴェイユ モン・サン＝ミッシェル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[サポーター:[花花]]\n[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード１枚を置く。２枚以上置かれている場合、このキャラの下のカード全てを破棄し、コストが２点以下の味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード１枚を置く。２枚以上置かれている場合、このキャラの下のカード全てを破棄し、コストが２点以下の味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2268"
 }

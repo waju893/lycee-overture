@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1667",
+  "title": "仕事人間",
+  "subName": "保科 太一",
+  "name": "仕事人間 保科 太一",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラが登場したターン中に使用する。[宙]を発生する。",
+  "textKr": "[コスト] このキャラが登場したターン中に使用する。[宙]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1667"
 }

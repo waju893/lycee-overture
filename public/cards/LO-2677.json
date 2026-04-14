@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2677",
+  "title": "完全記憶",
+  "subName": "赤錆 美果子",
+  "name": "完全記憶 赤錆 美果子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:味方キャラのバトル中に使用する。{バトルに参加していない味方キャラ１体}を破棄する。破棄したとき、味方バトル参加キャラ１体にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:味方キャラのバトル中に使用する。{バトルに参加していない味方キャラ１体}を破棄する。破棄したとき、味方バトル参加キャラ１体にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2677"
 }

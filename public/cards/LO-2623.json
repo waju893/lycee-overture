@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2623",
+  "title": "容姿端麗。ただし、ストーカー",
+  "subName": "鳥羽 せつな",
+  "name": "容姿端麗。ただし、ストーカー 鳥羽 せつな",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分の手札のコストが２点以下でＡＰが３以上のキャラ１体を無償で登場する。\n[誘発] 自ターン中、味方キャラが場を離れたとき、このキャラをそのキャラが登場していたフィールドに移動できる。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分の手札のコストが２点以下でＡＰが３以上のキャラ１体を無償で登場する。\n[誘発] 自ターン中、味方キャラが場を離れたとき、このキャラをそのキャラが登場していたフィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2623"
 }

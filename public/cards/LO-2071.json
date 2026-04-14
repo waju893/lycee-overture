@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2071",
+  "title": "生徒会長権限",
+  "subName": "青山 つかさ",
+  "name": "生徒会長権限 青山 つかさ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱に[月]でないカードが置かれている場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱に[月]でないカードが置かれている場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2071"
 }

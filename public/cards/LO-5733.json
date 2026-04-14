@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5733",
+  "title": "気性の荒い問題児",
+  "subName": "赤坂 めぐ",
+  "name": "気性の荒い問題児 赤坂 めぐ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 5,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラまたは味方「北見聡子」が自分の効果で場を離れたとき、相手のデッキを１枚破棄できる。",
+  "textKr": "[誘発] このキャラまたは味方「北見聡子」が自分の効果で場を離れたとき、相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5733"
 }

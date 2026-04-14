@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0752",
+  "title": "熟練の倹約術",
+  "subName": "アリサ",
+  "name": "熟練の倹約術 アリサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "-",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。相手の手札が４枚以上の場合、相手のデッキを１枚破棄する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。相手の手札が４枚以上の場合、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0752"
 }

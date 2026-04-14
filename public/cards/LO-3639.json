@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3639",
+  "title": "力の塔 星の巫女",
+  "subName": "古清水 凛",
+  "name": "力の塔 星の巫女 古清水 凛",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:このキャラが[宙]アイテムを装備している場合、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:このキャラが[宙]アイテムを装備している場合、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3639"
 }

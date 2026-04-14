@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0681",
+  "title": "若手教師",
+  "subName": "久島 佳苗",
+  "name": "若手教師 久島 佳苗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＭＧ＋１できる。",
+  "textKr": "[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＭＧ＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0681"
 }

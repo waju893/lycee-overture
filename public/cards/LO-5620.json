@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5620",
+  "title": "ブラコン新人アイドル",
+  "subName": "牛山 サキ",
+  "name": "ブラコン新人アイドル 牛山 サキ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが５点以上の味方キャラ・エリアを配置している場合、{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "textKr": "[宣言] [0]:コストが５点以上の味方キャラ・エリアを配置している場合、{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5620"
 }

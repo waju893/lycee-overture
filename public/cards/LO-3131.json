@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3131",
+  "title": "心理掌握",
+  "subName": "食蜂 操祈",
+  "name": "心理掌握 食蜂 操祈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]キャラ１体を手札に入れる。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]キャラ１体を手札に入れる。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3131"
 }

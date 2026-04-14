@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1604",
+  "title": "乙女の秘密",
+  "subName": "三司 あやせ",
+  "name": "乙女の秘密 三司 あやせ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「胸パッド」１枚を手札に入れる。入れない場合、自分のデッキから「胸パッド」１枚を探し公開して手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「胸パッド」１枚を手札に入れる。入れない場合、自分のデッキから「胸パッド」１枚を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1604"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1649",
+  "title": "中性的",
+  "subName": "周防 恭平",
+  "name": "中性的 周防 恭平",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラは[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]を得る。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラは[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1649"
 }

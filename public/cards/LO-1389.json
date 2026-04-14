@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1389",
+  "title": "無冠の武芸",
+  "subName": "ランサー／カルナ",
+  "name": "無冠の武芸 ランサー／カルナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[宣言] [D1]:このキャラがＡＦに登場している場合、このキャラにＡＰ＋２する。このキャラがＤＦに登場している場合、このキャラにＤＰ＋２する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [D1]:このキャラがＡＦに登場している場合、このキャラにＡＰ＋２する。このキャラがＤＦに登場している場合、このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1389"
 }

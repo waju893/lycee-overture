@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3813",
+  "title": "狛犬",
+  "subName": "コマ",
+  "name": "狛犬 コマ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果で手札宣言能力を持つ味方[月]キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[誘発] 自分の効果で手札宣言能力を持つ味方[月]キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3813"
 }

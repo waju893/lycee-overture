@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1019",
+  "title": "いつも上から目線",
+  "subName": "カチューシャ",
+  "name": "いつも上から目線 カチューシャ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "プラウダ",
+  "text": "[アシスト]\n[誘発] 自ターン中、能力の使用代償で味方キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[アシスト]\n[誘発] 自ターン中、能力の使用代償で味方キャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1019"
 }

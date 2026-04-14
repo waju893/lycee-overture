@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1800",
+  "title": "パワフル家族",
+  "subName": "柚原 春夏",
+  "name": "パワフル家族 柚原 春夏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 1,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方「河野貴明」または味方「柚原このみ」が登場している場合、１枚ドローできる。",
+  "textKr": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方「河野貴明」または味方「柚原このみ」が登場している場合、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1800"
 }

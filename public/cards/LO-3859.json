@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3859",
+  "title": "勇者の血統",
+  "subName": "シャオレン",
+  "name": "勇者の血統 シャオレン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分の「迷宮」置き場のカード１枚を破棄できる。破棄したとき、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、自分の「迷宮」置き場のカード１枚を破棄できる。破棄したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3859"
 }

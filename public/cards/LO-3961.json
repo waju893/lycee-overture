@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3961",
+  "title": "Sweetie Cat",
+  "subName": "氷見山 玲",
+  "name": "Sweetie Cat 氷見山 玲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラと同列にコストが２点以下の味方[花]キャラが登場している場合、このキャラにＤＭＧ＋１する。\n[宣言] [0]:{このキャラと同列の味方ＤＦ[花]キャラ１体}にＳＰ＋１する。",
+  "textKr": "[宣言] [0]:このキャラと同列にコストが２点以下の味方[花]キャラが登場している場合、このキャラにＤＭＧ＋１する。\n[宣言] [0]:{このキャラと同列の味方ＤＦ[花]キャラ１体}にＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3961"
 }

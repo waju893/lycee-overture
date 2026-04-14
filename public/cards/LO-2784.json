@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2784",
+  "title": "恋も仕事も妥協しない敏腕編集長",
+  "subName": "松宮 霧子",
+  "name": "恋も仕事も妥協しない敏腕編集長 松宮 霧子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を相手ＤＦに移動する。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を相手ＤＦに移動する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2784"
 }

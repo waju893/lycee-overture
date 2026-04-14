@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3565",
+  "title": "リーダーでツッコミ担当",
+  "subName": "皇 はねる",
+  "name": "リーダーでツッコミ担当 皇 はねる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[コスト] 自ターン中に使用する。このキャラのチャージ１枚を破棄する。破棄したとき、自分のデッキを１枚破棄する。[雪雪]を発生する。このコストはキャラの登場には支払えない。\n[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、味方キャラ１体にＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[チャージ:２]\n[コスト] 自ターン中に使用する。このキャラのチャージ１枚を破棄する。破棄したとき、自分のデッキを１枚破棄する。[雪雪]を発生する。このコストはキャラの登場には支払えない。\n[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、味方キャラ１体にＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3565"
 }

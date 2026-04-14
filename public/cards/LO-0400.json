@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0400",
+  "title": "知波単学園",
+  "subName": "玉田",
+  "name": "知波単学園 玉田",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 0,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、味方＜知波単＞キャラ１体にＤＭＧ＋１する。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、味方＜知波単＞キャラ１体にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0400"
 }

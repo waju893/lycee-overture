@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2538",
+  "title": "窓越しの幼なじみ",
+  "subName": "鷹見沢 菜月",
+  "name": "窓越しの幼なじみ 鷹見沢 菜月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{バトルに参加していない味方キャラ１体}を破棄する。破棄したとき、{味方キャラ１体}にＳＰ＋２する。",
+  "textKr": "[宣言] [0]:{バトルに参加していない味方キャラ１体}を破棄する。破棄したとき、{味方キャラ１体}にＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2538"
 }

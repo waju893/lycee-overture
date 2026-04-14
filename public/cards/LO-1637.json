@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1637",
+  "title": "創作活動",
+  "subName": "シャーリィ・ウォリック",
+  "name": "創作活動 シャーリィ・ウォリック",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:{自分のゴミ箱のアイテム１枚}を手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [月]:{自分のゴミ箱のアイテム１枚}を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1637"
 }

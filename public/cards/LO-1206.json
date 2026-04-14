@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1206",
+  "title": "伝説のＭＣ",
+  "subName": "芳野 祐介",
+  "name": "伝説のＭＣ 芳野 祐介",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [このキャラを破棄する]:{相手キャラ１体}にＡＰ－４・ＤＰ－４する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [このキャラを破棄する]:{相手キャラ１体}にＡＰ－４・ＤＰ－４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1206"
 }

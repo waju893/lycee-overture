@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1680",
+  "title": "いつも元気な留学生",
+  "subName": "レナ・リヒテナウアー",
+  "name": "いつも元気な留学生 レナ・リヒテナウアー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,13 +20,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3,
-    10
-  ],
-  "keyEffects": [
-    3,
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[１枚ドローする。]][サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。相手のゴミ箱のコストが０点のイベント２枚を除外する。除外したとき、相手のデッキを２枚破棄する。",
+  "textKr": "[リカバリー:[１枚ドローする。]][サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。相手のゴミ箱のコストが０点のイベント２枚を除外する。除外したとき、相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1680"
 }

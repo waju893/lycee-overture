@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6326",
+  "title": "勇ましい少女",
+  "subName": "沖 姫々",
+  "name": "勇ましい少女 沖 姫々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方「沖央軌」が登場している場合、自分にシールド＋１できる。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方「沖央軌」が登場している場合、自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6326"
 }

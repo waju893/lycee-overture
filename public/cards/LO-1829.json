@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1829",
+  "title": "ルルティエの兄",
+  "subName": "ヤシュマ",
+  "name": "ルルティエの兄 ヤシュマ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1829"
 }

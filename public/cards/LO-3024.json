@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3024",
+  "title": "マスコット的存在",
+  "subName": "たんぽぽ",
+  "name": "マスコット的存在 たんぽぽ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [花花]:{味方キャラ１体}にＳＰ＋３する。",
+  "textKr": "[手札宣言] [花花]:{味方キャラ１体}にＳＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3024"
 }

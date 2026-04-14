@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2427",
+  "title": "連環の計",
+  "subName": "鳳統・雛里",
+  "name": "連環の計 鳳統・雛里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "蜀",
+  "text": "[誘発] このキャラが手札から登場したとき、２枚ドローする。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、２枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2427"
 }

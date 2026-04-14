@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4996",
+  "title": "新入生応援",
+  "subName": "墨染 希",
+  "name": "新入生応援 墨染 希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、味方[YUZ]キャラが３体以上登場している場合、１枚ドローする。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、味方[YUZ]キャラが３体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4996"
 }

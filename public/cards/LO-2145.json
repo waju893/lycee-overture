@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-2145",
+  "title": "手作り弁当",
+  "subName": "",
+  "name": "手作り弁当",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＳＰ＋１する。\n[宣言] [花花花花]:このアイテムを破棄する。破棄したとき、{ＤＭＧが３以下の味方キャラ１体}を未行動にする。",
+  "textKr": "[常時] このキャラにＳＰ＋１する。\n[宣言] [花花花花]:このアイテムを破棄する。破棄したとき、{ＤＭＧが３以下の味方キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2145"
 }

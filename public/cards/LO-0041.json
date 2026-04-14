@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0041",
+  "title": "魔眼",
+  "subName": "ライダー／メドゥーサ",
+  "name": "魔眼 ライダー／メドゥーサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[アグレッシブ]",
+  "textKr": "[アグレッシブ]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0041"
 }

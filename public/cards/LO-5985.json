@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5985",
+  "title": "熱血な独身体育教師",
+  "subName": "浅間 弥太郎",
+  "name": "熱血な独身体育教師 浅間 弥太郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,13 +17,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3,
-    13
-  ],
-  "keyEffects": [
-    3,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[手札宣言] [月月月]:相手のイベント・手札宣言能力に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "[サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[手札宣言] [月月月]:相手のイベント・手札宣言能力に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5985"
 }

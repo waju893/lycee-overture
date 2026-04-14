@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3683",
+  "title": "実は超が付くほどの音痴",
+  "subName": "美城 ありす",
+  "name": "実は超が付くほどの音痴 美城 ありす",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3683"
 }

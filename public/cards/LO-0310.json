@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0310",
+  "title": "大隊長",
+  "subName": "島田 愛里寿",
+  "name": "大隊長 島田 愛里寿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪月花宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[宣言] [0]:味方＜大学選抜＞キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:味方＜大学選抜＞キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0310"
 }

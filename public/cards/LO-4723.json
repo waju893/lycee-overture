@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4723",
+  "title": "『時の山』の案内役",
+  "subName": "ウサりん",
+  "name": "『時の山』の案内役 ウサりん",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「天庭より来たる幼馴染 フリッカ」１体に１枚チャージできる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「天庭より来たる幼馴染 フリッカ」１体に１枚チャージできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4723"
 }

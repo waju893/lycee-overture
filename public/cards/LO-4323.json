@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4323",
+  "title": "控えめで文系の女の子",
+  "subName": "如月 のえ",
+  "name": "控えめで文系の女の子 如月 のえ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方[花]キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。コストが３点以上の味方[花]キャラが４体以上登場している場合、１枚ドローする。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方[花]キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。コストが３点以上の味方[花]キャラが４体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4323"
 }

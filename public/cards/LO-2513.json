@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2513",
+  "title": "誇り高き森のエルフィン",
+  "subName": "ティセ",
+  "name": "誇り高き森のエルフィン ティセ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場した時、元のＤＭＧが４以上の味方キャラが登場していない場合、相手ＡＦキャラ１体を相手ＡＦに移動する。",
+  "textKr": "[誘発] このキャラが登場した時、元のＤＭＧが４以上の味方キャラが登場していない場合、相手ＡＦキャラ１体を相手ＡＦに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2513"
 }

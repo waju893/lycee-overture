@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0517",
+  "title": "串刺城塞",
+  "subName": "ランサー／ヴラド三世〔EXTRA〕",
+  "name": "串刺城塞 ランサー／ヴラド三世〔EXTRA〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [宙宙宙]:このキャラにＡＰ＋２・ＤＰ＋１する。",
+  "textKr": "[宣言] [宙宙宙]:このキャラにＡＰ＋２・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0517"
 }

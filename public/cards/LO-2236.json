@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2236",
+  "title": "銀虎",
+  "subName": "竹田城",
+  "name": "銀虎 竹田城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2236"
 }

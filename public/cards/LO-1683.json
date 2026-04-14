@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1683",
+  "title": "玉石の女神",
+  "subName": "叢雲",
+  "name": "玉石の女神 叢雲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[１枚ドローする。]]\n[宣言] [日]:このキャラにＡＰ＋３する。",
+  "textKr": "[リカバリー:[１枚ドローする。]]\n[宣言] [日]:このキャラにＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1683"
 }

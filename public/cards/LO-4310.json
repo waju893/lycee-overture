@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4310",
+  "title": "ずっと放課後",
+  "subName": "田寄 多乃実",
+  "name": "ずっと放課後 田寄 多乃実",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。\n[手札宣言] [月月]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を相手ＤＦに移動する。そのキャラは元の基本能力１つを失う。味方キャラ全てのＤＭＧを０にする。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。\n[手札宣言] [月月]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を相手ＤＦに移動する。そのキャラは元の基本能力１つを失う。味方キャラ全てのＤＭＧを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4310"
 }

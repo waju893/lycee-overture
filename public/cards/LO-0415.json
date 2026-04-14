@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-0415",
+  "title": "肩車",
+  "subName": "",
+  "name": "肩車",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アイテム",
+  "text": "[宣言] [0]:{このキャラの前後の味方キャラ１体}にＤＰ＋２する。",
+  "textKr": "[宣言] [0]:{このキャラの前後の味方キャラ１体}にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0415"
 }

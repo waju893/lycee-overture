@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1894",
+  "title": "幻想殺し",
+  "subName": "上条 当麻",
+  "name": "幻想殺し 上条 当麻",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [月]:{相手キャラ１体}は元の能力１つを失う。この能力は失われる。\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [月]:{相手キャラ１体}は元の能力１つを失う。この能力は失われる。\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1894"
 }

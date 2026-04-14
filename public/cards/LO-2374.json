@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2374",
+  "title": "一流の冒険者",
+  "subName": "シシュン",
+  "name": "一流の冒険者 シシュン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[１枚ドローする。]]\n[宣言] [月月月]:相手防御キャラ１体にＡＰ－４・ＤＰ－４する。この能力は失われる。",
+  "textKr": "[リカバリー:[１枚ドローする。]]\n[宣言] [月月月]:相手防御キャラ１体にＡＰ－４・ＤＰ－４する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2374"
 }

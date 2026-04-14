@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1474",
+  "title": "聖女",
+  "subName": "イリス",
+  "name": "聖女 イリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 3,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手ターン開始時、味方[花]キャラ１体にＤＰ＋１できる。しないとき、そのキャラを未行動にできる。",
+  "textKr": "[誘発] 相手ターン開始時、味方[花]キャラ１体にＤＰ＋１できる。しないとき、そのキャラを未行動にできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1474"
 }

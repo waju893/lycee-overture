@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0453",
+  "title": "優雅に歌え、かの聖誕を",
+  "subName": "ランサー／ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+  "name": "優雅に歌え、かの聖誕を ランサー／ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自分のイベントによって相手キャラを破棄したとき、１枚ドローする。",
+  "textKr": "[誘発] 自分のイベントによって相手キャラを破棄したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0453"
 }

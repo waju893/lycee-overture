@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5122",
+  "title": "天心無影斬",
+  "subName": "ゲンジマル",
+  "name": "天心無影斬 ゲンジマル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,11 +22,11 @@
   "dp": 7,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [宙]:味方『うたわれるもの ロストフラグ』[宙]キャラが３体以上の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [宙]:味方『うたわれるもの ロストフラグ』[宙]キャラが３体以上の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5122"
 }

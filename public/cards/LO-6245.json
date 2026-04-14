@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6245",
+  "title": "百綜手",
+  "subName": "斌 偉信",
+  "name": "百綜手 斌 偉信",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「魂魄転写されたガイノイド 媽祖 ＆ ベネトナシュ ＆ ペトルーシュカ ＆ ラースヤ ＆ 瑞麗」１体を探し無償で登場できる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「魂魄転写されたガイノイド 媽祖 ＆ ベネトナシュ ＆ ペトルーシュカ ＆ ラースヤ ＆ 瑞麗」１体を探し無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6245"
 }

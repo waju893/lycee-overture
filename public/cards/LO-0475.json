@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0475",
+  "title": "磔刑の雷樹",
+  "subName": "バーサーカー／フランケンシュタイン",
+  "name": "磔刑の雷樹 バーサーカー／フランケンシュタイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラで攻撃宣言をしたとき、このキャラは次の自分のウェイクアップで未行動に戻らない。",
+  "textKr": "[誘発] このキャラで攻撃宣言をしたとき、このキャラは次の自分のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0475"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5467",
+  "title": "負けず嫌いの努力家",
+  "subName": "桜木・R・アーシェ",
+  "name": "負けず嫌いの努力家 桜木・R・アーシェ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２][ジャンプ:[0]]\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２する。\n[宣言] [C1][日]:{味方キャラ１体}にＡＰ＋３する。",
+  "textKr": "[チャージ:２][ジャンプ:[0]]\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２する。\n[宣言] [C1][日]:{味方キャラ１体}にＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5467"
 }

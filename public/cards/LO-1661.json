@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1661",
+  "title": "知る権利",
+  "subName": "七条 沙々羅",
+  "name": "知る権利 七条 沙々羅",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラにサポートをしたとき、味方キャラ１体にＡＰ＋１する。",
+  "textKr": "[誘発] このキャラにサポートをしたとき、味方キャラ１体にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1661"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0060",
+  "title": "天地乖離す開闢の星",
+  "subName": "アーチャー／ギルガメッシュ",
+  "name": "天地乖離す開闢の星 アーチャー／ギルガメッシュ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T]:自分のゴミ箱のアイテム１枚をこのキャラに装備する。",
+  "textKr": "[宣言] [T]:自分のゴミ箱のアイテム１枚をこのキャラに装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0060"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6045",
+  "title": "親友であり悪友",
+  "subName": "緑葉 樹",
+  "name": "親友であり悪友 緑葉 樹",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "star",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:１]\n[宣言] [C1]:相手ターン中に使用する。{味方「土見稟」１体}とこのキャラを未行動にする。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]][チャージ:１]\n[宣言] [C1]:相手ターン中に使用する。{味方「土見稟」１体}とこのキャラを未行動にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6045"
 }

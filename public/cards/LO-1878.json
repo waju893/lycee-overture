@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1878",
+  "title": "誰かを愛する気持ち",
+  "subName": "河野 はるみ",
+  "name": "誰かを愛する気持ち 河野 はるみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、１枚ドローできる。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1878"
 }

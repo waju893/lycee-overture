@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1605",
+  "title": "年上のお姉さん",
+  "subName": "式部 茉優",
+  "name": "年上のお姉さん 式部 茉優",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラで攻撃宣言をしたとき、相手キャラ１体にＤＰ－１する。",
+  "textKr": "[誘発] このキャラで攻撃宣言をしたとき、相手キャラ１体にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1605"
 }

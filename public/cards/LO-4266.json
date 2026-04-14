@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4266",
+  "title": "JINKI-INFINITY-",
+  "subName": "津崎 青葉",
+  "name": "JINKI-INFINITY- 津崎 青葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自分の手札の「人機」１枚を破棄する。破棄したとき、このキャラにＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:自分の手札の「人機」１枚を破棄する。破棄したとき、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4266"
 }

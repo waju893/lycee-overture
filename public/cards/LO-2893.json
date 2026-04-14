@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2893",
+  "title": "ツンデレ死神",
+  "subName": "エレオノーラ",
+  "name": "ツンデレ死神 エレオノーラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキから「神鳳杏」１体を探しこのキャラが登場していたフィールドに無償で登場する。１枚ドローする。",
+  "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキから「神鳳杏」１体を探しこのキャラが登場していたフィールドに無償で登場する。１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2893"
 }

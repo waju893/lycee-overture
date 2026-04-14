@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5260",
+  "title": "明るいお姉さん",
+  "subName": "こはる",
+  "name": "明るいお姉さん こはる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 4,
   "sp": 3,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ]\n[誘発] このキャラが「星川こはる」を破棄したエンゲージ登場以外で登場したとき、このキャラを破棄する。味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "textKr": "[エンゲージ]\n[誘発] このキャラが「星川こはる」を破棄したエンゲージ登場以外で登場したとき、このキャラを破棄する。味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5260"
 }

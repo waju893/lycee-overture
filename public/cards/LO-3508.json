@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3508",
+  "title": "キュリオ3号店サブチーフ",
+  "subName": "川端 瑞奈",
+  "name": "キュリオ3号店サブチーフ 川端 瑞奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:自ターン中に使用する。相手の手札が２枚以上で、このキャラを除くサブネームに「キュリオ3号店」を含む味方キャラが登場している場合、相手は相手の手札を１枚破棄する。この能力は失われる。",
+  "textKr": "[宣言] [D1]:自ターン中に使用する。相手の手札が２枚以上で、このキャラを除くサブネームに「キュリオ3号店」を含む味方キャラが登場している場合、相手は相手の手札を１枚破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3508"
 }

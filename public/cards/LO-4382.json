@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4382",
+  "title": "小唄ママ",
+  "subName": "篠原 小唄",
+  "name": "小唄ママ 篠原 小唄",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方ＡＦキャラが登場している場合、１枚ドローする。コストが３点以上の味方ＡＦキャラ１体にＤＭＧ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方ＡＦキャラが登場している場合、１枚ドローする。コストが３点以上の味方ＡＦキャラ１体にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4382"
 }

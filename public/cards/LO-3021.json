@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3021",
+  "title": "学園で噂の美少女な妹",
+  "subName": "桜庭 水穂",
+  "name": "学園で噂の美少女な妹 桜庭 水穂",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [花花無]:{自分のゴミ箱のＥＸが２の手札宣言能力を持つキャラ１体}を手札に入れる。",
+  "textKr": "[手札宣言] [花花無]:{自分のゴミ箱のＥＸが２の手札宣言能力を持つキャラ１体}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3021"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1863",
+  "title": "純粋無垢",
+  "subName": "ユズハ",
+  "name": "純粋無垢 ユズハ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "トゥスクル",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を自分の「契約」置き場に置ける。味方キャラ全てが＜トゥスクル＞の場合、自分のゴミ箱の＜トゥスクル＞キャラ１体を手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を自分の「契約」置き場に置ける。味方キャラ全てが＜トゥスクル＞の場合、自分のゴミ箱の＜トゥスクル＞キャラ１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1863"
 }

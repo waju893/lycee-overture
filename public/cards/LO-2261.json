@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2261",
+  "title": "時鐘楼",
+  "subName": "島原城",
+  "name": "時鐘楼 島原城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [月月]:{相手キャラ１体}にＤＰ－１する。",
+  "textKr": "[宣言] [月月]:{相手キャラ１体}にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2261"
 }

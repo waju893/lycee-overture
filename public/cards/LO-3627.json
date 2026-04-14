@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3627",
+  "title": "高飛車で思い込みが激しい",
+  "subName": "伊集院 貴美香",
+  "name": "高飛車で思い込みが激しい 伊集院 貴美香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] 相手ターン中、相手キャラを相手の効果で破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 相手ターン中、相手キャラを相手の効果で破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3627"
 }

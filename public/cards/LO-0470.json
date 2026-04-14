@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0470",
+  "title": "暁の時を終える蛇よ、此処に",
+  "subName": "アサシン／クレオパトラ",
+  "name": "暁の時を終える蛇よ、此処に アサシン／クレオパトラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラを未行動にする。",
+  "textKr": "[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0470"
 }

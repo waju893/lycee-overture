@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1365",
+  "title": "ホワイトローズ",
+  "subName": "セイバー／アーサー・ペンドラゴン〔プロトタイプ〕",
+  "name": "ホワイトローズ セイバー／アーサー・ペンドラゴン〔プロトタイプ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1365"
 }

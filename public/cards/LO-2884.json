@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2884",
+  "title": "みうの母親",
+  "subName": "天羽 結子",
+  "name": "みうの母親 天羽 結子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:バトル中に使用できない。このキャラを破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "textKr": "[宣言] [T]:バトル中に使用できない。このキャラを破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2884"
 }

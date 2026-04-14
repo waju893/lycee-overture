@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1060",
+  "title": "アヒルさんチームの操縦手",
+  "subName": "河西 忍",
+  "name": "アヒルさんチームの操縦手 河西 忍",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [D1]:味方[花]＜大洗女子＞キャラ全てにＡＰ＋１する。",
+  "textKr": "[宣言] [D1]:味方[花]＜大洗女子＞キャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1060"
 }

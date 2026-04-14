@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1167",
+  "title": "永遠の愛",
+  "subName": "坂上 智代",
+  "name": "永遠の愛 坂上 智代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:コストが４点以上の味方[宙]キャラの防御中に使用する。そのキャラがアイテムを装備していない場合、バトルを中断する。このキャラを行動済みにする。",
+  "textKr": "[宣言] [D1]:コストが４点以上の味方[宙]キャラの防御中に使用する。そのキャラがアイテムを装備していない場合、バトルを中断する。このキャラを行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1167"
 }

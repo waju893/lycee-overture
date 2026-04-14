@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3608",
+  "title": "フォーティア魔法学園の講師",
+  "subName": "ミレーヌ＝サーヴィス",
+  "name": "フォーティア魔法学園の講師 ミレーヌ＝サーヴィス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。コストが３点以上の味方[月]キャラが５体以上登場している場合、そのキャラは[ペナルティ:[自分のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[宣言] [月]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。コストが３点以上の味方[月]キャラが５体以上登場している場合、そのキャラは[ペナルティ:[自分のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3608"
 }

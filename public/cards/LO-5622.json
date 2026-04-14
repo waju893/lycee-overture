@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5622",
+  "title": "万里プロのアイドル",
+  "subName": "ベルゼ",
+  "name": "万里プロのアイドル ベルゼ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが５点以上の味方キャラ・エリアを配置している場合、このキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "textKr": "[宣言] [0]:コストが５点以上の味方キャラ・エリアを配置している場合、このキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5622"
 }

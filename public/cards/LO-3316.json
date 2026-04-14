@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3316",
+  "title": "ブルボンヌ冴子",
+  "subName": "沢井 冴子",
+  "name": "ブルボンヌ冴子 沢井 冴子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自分のデッキの上のカード１枚を見る。自分の手札を１枚デッキの下に置ける。置いたとき、１枚ドローする。（１回まで使用可能）",
+  "textKr": "[宣言] [0]:自分のデッキの上のカード１枚を見る。自分の手札を１枚デッキの下に置ける。置いたとき、１枚ドローする。（１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3316"
 }

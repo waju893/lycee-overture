@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0747",
+  "title": "母なる大地",
+  "subName": "ガイア",
+  "name": "母なる大地 ガイア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラにサポートをしたとき、相手キャラ１体に相手ターン終了時までＤＭＧ－１する。",
+  "textKr": "[誘発] このキャラにサポートをしたとき、相手キャラ１体に相手ターン終了時までＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0747"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0851",
+  "title": "ルーンティール",
+  "subName": "テュール",
+  "name": "ルーンティール テュール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[オーダーステップ:[0]]\n[宣言] [日日]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [日日]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0851"
 }

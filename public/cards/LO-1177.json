@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1177",
+  "title": "神出鬼没の通信士",
+  "subName": "遊佐",
+  "name": "神出鬼没の通信士 遊佐",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、{相手キャラ１体}を破棄する。",
+  "textKr": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1177"
 }

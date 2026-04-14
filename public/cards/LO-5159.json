@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5159",
+  "title": "艶麗な頬笑み",
+  "subName": "フミルィル",
+  "name": "艶麗な頬笑み フミルィル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが登場している場合、１枚ドローする。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5159"
 }

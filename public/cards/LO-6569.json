@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6569",
+  "title": "はじまりの彼女",
+  "subName": "赤錆 理沙",
+  "name": "はじまりの彼女 赤錆 理沙",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+  "textKr": "[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6569"
 }

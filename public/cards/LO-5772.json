@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5772",
+  "title": "お兄ちゃん大好きっ娘",
+  "subName": "八雲 雪路",
+  "name": "お兄ちゃん大好きっ娘 八雲 雪路",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:自ターン中または味方「八雲はまじ」が登場している場合、{味方[日]キャラ１体}にＡＰ＋１する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:自ターン中または味方「八雲はまじ」が登場している場合、{味方[日]キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5772"
 }

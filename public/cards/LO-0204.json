@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0204",
+  "title": "完全世界エイヴィヒカイト",
+  "subName": "魔剣グラム",
+  "name": "完全世界エイヴィヒカイト 魔剣グラム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[常時] このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+  "textKr": "[エンゲージ]\n[常時] このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0204"
 }

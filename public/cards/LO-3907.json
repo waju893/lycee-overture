@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3907",
+  "title": "森一家の人修羅",
+  "subName": "森 小夜叉 長可",
+  "name": "森一家の人修羅 森 小夜叉 長可",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] 自分のイベント・手札宣言能力を使用したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 自分のイベント・手札宣言能力を使用したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3907"
 }

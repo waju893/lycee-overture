@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0933",
+  "title": "東の国からやってきた、のんびりサムライ",
+  "subName": "コト",
+  "name": "東の国からやってきた、のんびりサムライ コト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:ゲーム中、除外された自分のキャラが５体以上の場合、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[宣言] [0]:ゲーム中、除外された自分のキャラが５体以上の場合、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0933"
 }

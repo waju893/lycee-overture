@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6598",
+  "title": "100億人の地球人類の総意",
+  "subName": "人類代表",
+  "name": "100億人の地球人類の総意 人類代表",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 0,
   "sp": 6,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [0]:自分のゴミ箱またはデッキから「魂を救済するアンドロイド セフィラ・ビナー」１体を探し公開して手札に入れる。\n[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。{相手キャラ１体}を行動済みにする。そのキャラと同列の味方キャラ全てにＤＭＧ－１する。",
+  "textKr": "[手札宣言] [0]:自分のゴミ箱またはデッキから「魂を救済するアンドロイド セフィラ・ビナー」１体を探し公開して手札に入れる。\n[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。{相手キャラ１体}を行動済みにする。そのキャラと同列の味方キャラ全てにＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6598"
 }

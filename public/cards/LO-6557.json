@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6557",
+  "title": "無口なバイト学生",
+  "subName": "戸倉 真由",
+  "name": "無口なバイト学生 戸倉 真由",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,13 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:２]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。\n[宣言] [C1]:自ターン中に使用する。１枚ドローする。\n[宣言] [C2]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱またはデッキから「元気一杯な真由の妹 戸倉翼」１体を探し無償で登場する。",
+  "textKr": "[ジャンプ:[0]][チャージ:２]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。\n[宣言] [C1]:自ターン中に使用する。１枚ドローする。\n[宣言] [C2]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱またはデッキから「元気一杯な真由の妹 戸倉翼」１体を探し無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6557"
 }

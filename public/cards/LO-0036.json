@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0036",
+  "title": "音楽神の加護（偽）",
+  "subName": "キャスター／ヴォルフガング・アマデウス・モーツァルト",
+  "name": "音楽神の加護（偽） キャスター／ヴォルフガング・アマデウス・モーツァルト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 0,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0036"
 }

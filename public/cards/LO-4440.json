@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4440",
+  "title": "子供を操るキーパー",
+  "subName": "リンダ",
+  "name": "子供を操るキーパー リンダ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラがサブネームに「警」または「刑」を含む場合、このキャラを手札に入れる。",
+  "textKr": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラがサブネームに「警」または「刑」を含む場合、このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4440"
 }

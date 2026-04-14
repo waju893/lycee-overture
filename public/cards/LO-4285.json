@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4285",
+  "title": "癒やし系お姉さん",
+  "subName": "泉 多恵子",
+  "name": "癒やし系お姉さん 泉 多恵子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4285"
 }

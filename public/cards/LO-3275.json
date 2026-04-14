@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3275",
+  "title": "駿我の部下",
+  "subName": "カリン・ボニリン・クロンメリン",
+  "name": "駿我の部下 カリン・ボニリン・クロンメリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「小倉朝日」または「大蔵遊星」または「大蔵駿我」が登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「小倉朝日」または「大蔵遊星」または「大蔵駿我」が登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3275"
 }

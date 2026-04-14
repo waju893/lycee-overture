@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6641",
+  "title": "自称・伊吹のコーチ",
+  "subName": "生方 蘭子",
+  "name": "自称・伊吹のコーチ 生方 蘭子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{味方「南条伊吹」１体}にＡＰ＋２する。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{味方「南条伊吹」１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6641"
 }

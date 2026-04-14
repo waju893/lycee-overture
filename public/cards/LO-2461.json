@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2461",
+  "title": "オモテもウラも好きでいっぱい",
+  "subName": "硯川・e・涙香",
+  "name": "オモテもウラも好きでいっぱい 硯川・e・涙香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [D1][雪雪雪]:味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。",
+  "textKr": "[手札宣言] [D1][雪雪雪]:味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2461"
 }

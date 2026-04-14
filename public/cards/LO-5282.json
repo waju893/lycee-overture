@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5282",
+  "title": "重大な秘密",
+  "subName": "華雄・猫",
+  "name": "重大な秘密 華雄・猫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] 味方[宙]キャラを対象に自分の手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。そのキャラがタイプを持たない『真・恋姫†夢想』キャラの場合、そのキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 味方[宙]キャラを対象に自分の手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。そのキャラがタイプを持たない『真・恋姫†夢想』キャラの場合、そのキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5282"
 }

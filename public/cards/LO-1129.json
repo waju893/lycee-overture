@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1129",
+  "title": "カメさんチームの車長",
+  "subName": "角谷 杏",
+  "name": "カメさんチームの車長 角谷 杏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、味方＜大洗女子＞キャラの属性が４種類以上の場合、相手のデッキを１枚破棄できる。",
+  "textKr": "[アシスト]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、味方＜大洗女子＞キャラの属性が４種類以上の場合、相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1129"
 }

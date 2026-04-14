@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5011",
+  "title": "幼馴染でクラスメイト",
+  "subName": "長森 瑞佳",
+  "name": "幼馴染でクラスメイト 長森 瑞佳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラのサポートを使用したとき、対象のキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "textKr": "[誘発] このキャラのサポートを使用したとき、対象のキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5011"
 }

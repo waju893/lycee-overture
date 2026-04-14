@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4880",
+  "title": "数少ない異性の友人",
+  "subName": "仮屋 和奏",
+  "name": "数少ない異性の友人 仮屋 和奏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "textKr": "[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4880"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1300",
+  "title": "死んだ世界戦線のリーダー",
+  "subName": "仲村 ゆり",
+  "name": "死んだ世界戦線のリーダー 仲村 ゆり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,13 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4,
-    8
-  ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、自分の手札のコストが４点以下の[宙]キャラ１体を無償で登場する。",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、自分の手札のコストが４点以下の[宙]キャラ１体を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1300"
 }

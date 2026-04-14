@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0664",
+  "title": "三刀屋商会",
+  "subName": "三刀屋 実里",
+  "name": "三刀屋商会 三刀屋 実里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラが相手の効果によって破棄されたとき、相手キャラ１体を破棄する。",
+  "textKr": "[誘発] このキャラが相手の効果によって破棄されたとき、相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0664"
 }

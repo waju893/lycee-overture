@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-3670",
+  "title": "他人の悪夢",
+  "subName": "",
+  "name": "他人の悪夢",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自ターン中に使用する。このエリアを配置したターン中には使用できない。このエリアを破棄する。破棄したとき、自分のデッキを１枚破棄し、[月月月月]を発生する。\n※「他人の悪夢」は自分の場に１枚まで配置可能",
+  "textKr": "[コスト] 自ターン中に使用する。このエリアを配置したターン中には使用できない。このエリアを破棄する。破棄したとき、自分のデッキを１枚破棄し、[月月月月]を発生する。\n※「他人の悪夢」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3670"
 }

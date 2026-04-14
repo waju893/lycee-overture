@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-5441",
+  "title": "宮瀬スペシャル",
+  "subName": "",
+  "name": "宮瀬スペシャル",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] ＤＦのこのキャラにＤＰ＋３・ＳＰ＋１する。\n[誘発] このアイテムを装備したとき、このアイテムの持ち主は１枚ドローし、シールド＋１する。\n[誘発] このキャラを攻撃キャラに指定したとき、バトル終了時までこのキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋１する。\n[手札宣言] [0]:自分のデッキから「料理上手な小悪魔系後輩 宮瀬未尋」１体を探し公開して手札に入れる。",
+  "textKr": "[常時] ＤＦのこのキャラにＤＰ＋３・ＳＰ＋１する。\n[誘発] このアイテムを装備したとき、このアイテムの持ち主は１枚ドローし、シールド＋１する。\n[誘発] このキャラを攻撃キャラに指定したとき、バトル終了時までこのキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋１する。\n[手札宣言] [0]:自分のデッキから「料理上手な小悪魔系後輩 宮瀬未尋」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5441"
 }

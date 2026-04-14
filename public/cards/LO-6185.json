@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-6185",
+  "title": "『意志』",
+  "subName": "",
+  "name": "『意志』",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋３・ＤＰ＋３する。\n[誘発] このアイテムを装備したとき、味方『ジュエリー・ハーツ・アカデミア』キャラ全てに１枚チャージできる。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを４枚までデッキの下に置きシャッフルする。",
+  "textKr": "[常時] このキャラにＡＰ＋３・ＤＰ＋３する。\n[誘発] このアイテムを装備したとき、味方『ジュエリー・ハーツ・アカデミア』キャラ全てに１枚チャージできる。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを４枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6185"
 }

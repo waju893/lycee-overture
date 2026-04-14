@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6250",
+  "title": "ベテラン吸血鬼ハンター",
+  "subName": "フリッツ・ハールマン",
+  "name": "ベテラン吸血鬼ハンター フリッツ・ハールマン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:３]\n[誘発] 自ターン中、味方『吸血殲鬼ヴェドゴニア』キャラ・イベントの効果で相手キャラを破棄したとき、味方『吸血殲鬼ヴェドゴニア』キャラが３体以上の場合、未行動の味方キャラ１体にＡＰ＋３・ＤＰ＋３する。このキャラのチャージ１枚を破棄できる。したとき、１枚ドローする。",
+  "textKr": "[チャージ:３]\n[誘発] 自ターン中、味方『吸血殲鬼ヴェドゴニア』キャラ・イベントの効果で相手キャラを破棄したとき、味方『吸血殲鬼ヴェドゴニア』キャラが３体以上の場合、未行動の味方キャラ１体にＡＰ＋３・ＤＰ＋３する。このキャラのチャージ１枚を破棄できる。したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6250"
 }

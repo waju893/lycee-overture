@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1780",
+  "title": "仕事中毒な編集者",
+  "subName": "風岡 麻理",
+  "name": "仕事中毒な編集者 風岡 麻理",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [D2]:{味方キャラ１体}を破棄する。破棄したとき、自分のゴミ箱のＥＸが２のアイテム１枚を手札に入れる。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [D2]:{味方キャラ１体}を破棄する。破棄したとき、自分のゴミ箱のＥＸが２のアイテム１枚を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1780"
 }

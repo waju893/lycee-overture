@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1415",
+  "title": "刹那無影剣",
+  "subName": "バーサーカー／謎のヒロインⅩ〔オルタ〕",
+  "name": "刹那無影剣 バーサーカー／謎のヒロインⅩ〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:バトル中に使用する。このキャラを行動済みにする。バトル終了時まで味方攻撃キャラ１体にＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:バトル中に使用する。このキャラを行動済みにする。バトル終了時まで味方攻撃キャラ１体にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1415"
 }

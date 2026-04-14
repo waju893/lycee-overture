@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1788",
+  "title": "エンナカムイの皇",
+  "subName": "イラワジ",
+  "name": "エンナカムイの皇 イラワジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 4,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[誘発] 味方「キウル」が登場したとき、１枚ドローできる。この能力は失われる。",
+  "textKr": "[誘発] 味方「キウル」が登場したとき、１枚ドローできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1788"
 }

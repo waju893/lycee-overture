@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0772",
+  "title": "フィーネ・マリーツィア",
+  "subName": "カーマ",
+  "name": "フィーネ・マリーツィア カーマ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[リカバリー:[１枚ドローする。]]\n[誘発] 相手ターン開始時、相手キャラの数より味方キャラの数が少ない場合、相手のデッキを２枚破棄する。",
+  "textKr": "[リカバリー:[１枚ドローする。]]\n[誘発] 相手ターン開始時、相手キャラの数より味方キャラの数が少ない場合、相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0772"
 }

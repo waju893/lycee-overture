@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3346",
+  "title": "神王",
+  "subName": "クンツァイト",
+  "name": "神王 クンツァイト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。このキャラと{味方「リシア」１体}にＡＰ＋１する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。このキャラと{味方「リシア」１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3346"
 }

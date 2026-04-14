@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6347",
+  "title": "禁断の魔導書",
+  "subName": "ルルイエ異本",
+  "name": "禁断の魔導書 ルルイエ異本",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが７点以上の味方キャラが登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが７点以上の味方キャラが登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6347"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5246",
+  "title": "汝南袁氏の当主",
+  "subName": "袁術・美羽",
+  "name": "汝南袁氏の当主 袁術・美羽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「傳役にして腹心 張勲・七乃」１体を探し登場できる。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「傳役にして腹心 張勲・七乃」１体を探し登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5246"
 }

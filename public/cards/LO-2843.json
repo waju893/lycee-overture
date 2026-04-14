@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-2843",
+  "title": "立ち入り禁止",
+  "subName": "",
+  "name": "立ち入り禁止",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＤＭＧ－３する。このキャラは自分の効果で味方フィールドに移動する場合、移動しない。\n[誘発] このアイテムを破棄したとき、このアイテムの持ち主は１枚ドローできる。\n[宣言] [無無無無無]:相手ターン中に使用する。このアイテムを除外する。",
+  "textKr": "[常時] このキャラにＤＭＧ－３する。このキャラは自分の効果で味方フィールドに移動する場合、移動しない。\n[誘発] このアイテムを破棄したとき、このアイテムの持ち主は１枚ドローできる。\n[宣言] [無無無無無]:相手ターン中に使用する。このアイテムを除外する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2843"
 }

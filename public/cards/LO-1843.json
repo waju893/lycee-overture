@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1843",
+  "title": "アテにならない親友",
+  "subName": "向坂 雄二",
+  "name": "アテにならない親友 向坂 雄二",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「河野貴明」または味方「向坂環」が登場している場合、１枚ドローできる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「河野貴明」または味方「向坂環」が登場している場合、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1843"
 }

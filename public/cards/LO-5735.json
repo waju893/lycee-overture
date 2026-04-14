@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5735",
+  "title": "黄金の光エンジェルリムーバー",
+  "subName": "築川 宇佐美",
+  "name": "黄金の光エンジェルリムーバー 築川 宇佐美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが自分の効果で場を離れたとき、１枚ドローする。自分のゴミ箱の「瑞緒亜由美」１体をデッキの下に置ける。",
+  "textKr": "[誘発] このキャラが自分の効果で場を離れたとき、１枚ドローする。自分のゴミ箱の「瑞緒亜由美」１体をデッキの下に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5735"
 }

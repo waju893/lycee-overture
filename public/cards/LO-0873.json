@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0873",
+  "title": "邪神に一目惚れした優等生聖神官",
+  "subName": "クリス",
+  "name": "邪神に一目惚れした優等生聖神官 クリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:このキャラにＳＰ＋２する。",
+  "textKr": "[宣言] [D1]:このキャラにＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0873"
 }

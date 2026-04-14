@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0466",
+  "title": "彼方への想い",
+  "subName": "ランサー／メドゥーサ",
+  "name": "彼方への想い ランサー／メドゥーサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自分の効果によって相手キャラを破棄したとき、自分のデッキを１枚回復する。",
+  "textKr": "[誘発] 自分の効果によって相手キャラを破棄したとき、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0466"
 }

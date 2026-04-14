@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2051",
+  "title": "カスガの総代",
+  "subName": "宮棟 閑",
+  "name": "カスガの総代 宮棟 閑",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "star",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:バトル中に使用できない。このキャラを破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "textKr": "[宣言] [T]:バトル中に使用できない。このキャラを破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2051"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4585",
+  "title": "自称恋愛マスター",
+  "subName": "広橋 るな",
+  "name": "自称恋愛マスター 広橋 るな",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のコストが１点以上のイベント・手札宣言能力を使用したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 自分のコストが１点以上のイベント・手札宣言能力を使用したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4585"
 }

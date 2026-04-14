@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5559",
+  "title": "ぐーたら遊び人生徒会長",
+  "subName": "皇 奏龍",
+  "name": "ぐーたら遊び人生徒会長 皇 奏龍",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにＤＭＧ＋１する。",
+  "textKr": "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5559"
 }

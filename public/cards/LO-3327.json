@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3327",
+  "title": "担任教師",
+  "subName": "石竹 瑪瑙",
+  "name": "担任教師 石竹 瑪瑙",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3327"
 }

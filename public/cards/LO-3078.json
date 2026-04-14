@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-3078",
+  "title": "原付",
+  "subName": "",
+  "name": "原付",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[誘発] 相手ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方ＤＦに移動できる。\n[宣言] [0]:このキャラにＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[誘発] 相手ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方ＤＦに移動できる。\n[宣言] [0]:このキャラにＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3078"
 }

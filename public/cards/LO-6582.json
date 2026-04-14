@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6582",
+  "title": "夢見がちなリアリスト",
+  "subName": "内藤 透",
+  "name": "夢見がちなリアリスト 内藤 透",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,13 +20,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    17,
-    19
-  ],
-  "keyEffects": [
-    17,
-    19
-  ],
-  "leader": true
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "－●－－－－",
+  "typeTagsRaw": "",
+  "text": "[リーダー][プリンシパル][ターンリカバリー:[１枚ドローする。]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「甘くて幸せな悪い夢」１枚を探し無償で配置できる。１枚ドローする。",
+  "textKr": "[リーダー][プリンシパル][ターンリカバリー:[１枚ドローする。]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「甘くて幸せな悪い夢」１枚を探し無償で配置できる。１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6582"
 }

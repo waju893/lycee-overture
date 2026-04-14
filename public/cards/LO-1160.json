@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1160",
+  "title": "海賊船を探すお嬢様",
+  "subName": "久島 鴎",
+  "name": "海賊船を探すお嬢様 久島 鴎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] ターン開始時、自分のゴミ箱のキャラ１体を自分の「宝物」置き場に置く。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の「宝物」置き場のカード全てを破棄する。４枚以上破棄したとき、{相手キャラ１体}を相手ＤＦに移動する。そのキャラにＡＰ－２・ＤＰ－２する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] ターン開始時、自分のゴミ箱のキャラ１体を自分の「宝物」置き場に置く。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の「宝物」置き場のカード全てを破棄する。４枚以上破棄したとき、{相手キャラ１体}を相手ＤＦに移動する。そのキャラにＡＰ－２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1160"
 }

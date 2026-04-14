@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3179",
+  "title": "液比転換",
+  "subName": "薬丸",
+  "name": "液比転換 薬丸",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:味方「リーダー」または「ナル」または「清ヶ」が登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:味方「リーダー」または「ナル」または「清ヶ」が登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3179"
 }

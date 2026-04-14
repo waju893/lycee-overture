@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2365",
+  "title": "白馬長史",
+  "subName": "公孫賛・白蓮",
+  "name": "白馬長史 公孫賛・白蓮",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ１体}にＤＰ＋１する。\n[宣言] [0]:自ターン中に使用する。相手キャラの属性が３種類以上の場合、１枚ドローする。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ１体}にＤＰ＋１する。\n[宣言] [0]:自ターン中に使用する。相手キャラの属性が３種類以上の場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2365"
 }

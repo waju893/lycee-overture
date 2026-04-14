@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3390",
+  "title": "恋愛授業",
+  "subName": "前園･Clarissa･皐",
+  "name": "恋愛授業 前園･Clarissa･皐",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:自ターン中に使用する。バトル中に使用できない。{味方[HOK]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [無]:自ターン中に使用する。バトル中に使用できない。{味方[HOK]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3390"
 }

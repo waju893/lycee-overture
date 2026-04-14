@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3263",
+  "title": "神界の姫君",
+  "subName": "リシア",
+  "name": "神界の姫君 リシア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「リシアのホンネ」１枚を探し味方ＡＦに無償で配置できる。配置しない場合、１枚ドローできる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラをデッキの下に置く。置いたとき、１枚ドローする。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「リシアのホンネ」１枚を探し味方ＡＦに無償で配置できる。配置しない場合、１枚ドローできる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラをデッキの下に置く。置いたとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3263"
 }

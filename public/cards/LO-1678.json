@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1678",
+  "title": "有翼の守護者",
+  "subName": "ガーゴイル",
+  "name": "有翼の守護者 ガーゴイル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙]:自ターン中に使用する。このキャラを{味方ＡＦ}に移動する。\n[誘発] このキャラの攻撃バトル終了時、このキャラを空き味方ＤＦに移動する。移動したとき、このキャラを未行動にする。",
+  "textKr": "[宣言] [宙]:自ターン中に使用する。このキャラを{味方ＡＦ}に移動する。\n[誘発] このキャラの攻撃バトル終了時、このキャラを空き味方ＤＦに移動する。移動したとき、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1678"
 }

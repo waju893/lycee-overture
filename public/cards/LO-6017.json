@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6017",
+  "title": "湘西学園長にして正体は内閣総理大臣",
+  "subName": "伊勢 新十郎",
+  "name": "湘西学園長にして正体は内閣総理大臣 伊勢 新十郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、味方『世界征服彼女』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、味方『世界征服彼女』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6017"
 }

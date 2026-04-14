@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0668",
+  "title": "Happy Valentine",
+  "subName": "貴船 未緒",
+  "name": "Happy Valentine 貴船 未緒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[誘発] 相手ＡＦキャラがダウンしたとき、このキャラを味方フィールドに移動できる。",
+  "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[誘発] 相手ＡＦキャラがダウンしたとき、このキャラを味方フィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0668"
 }

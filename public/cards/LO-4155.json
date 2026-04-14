@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4155",
+  "title": "“カケオチ”",
+  "subName": "美鳩 夏乃",
+  "name": "“カケオチ” 美鳩 夏乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] [雪]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] [雪]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4155"
 }

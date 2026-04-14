@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5625",
+  "title": "どくろラビット会長",
+  "subName": "エミル・メイビー",
+  "name": "どくろラビット会長 エミル・メイビー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが５点以上の味方キャラ・エリアを配置している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが５点以上の味方キャラ・エリアを配置している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5625"
 }

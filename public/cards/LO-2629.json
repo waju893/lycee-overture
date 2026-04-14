@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2629",
+  "title": "お嬢さま然とした先輩",
+  "subName": "皇 歌夜",
+  "name": "お嬢さま然とした先輩 皇 歌夜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、自分のデッキを１枚回復する。\n[宣言] [雪雪雪]:相手の宣言に対応して使用できない。{味方[雪]キャラ１体}を破棄する。破棄したとき、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、自分のデッキを１枚回復する。\n[宣言] [雪雪雪]:相手の宣言に対応して使用できない。{味方[雪]キャラ１体}を破棄する。破棄したとき、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2629"
 }

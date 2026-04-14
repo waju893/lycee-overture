@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1200",
+  "title": "素っ気無し 愛想無し 配慮無しの風紀委員",
+  "subName": "二木 佳奈多",
+  "name": "素っ気無し 愛想無し 配慮無しの風紀委員 二木 佳奈多",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[宣言] [このキャラを破棄する]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}を行動済みにし、{味方フィールド}に移動する。",
+  "textKr": "[宣言] [このキャラを破棄する]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}を行動済みにし、{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1200"
 }

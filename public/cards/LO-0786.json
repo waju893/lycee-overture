@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0786",
+  "title": "豊穣の風",
+  "subName": "ゼピュロス",
+  "name": "豊穣の風 ゼピュロス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [花花]:バトル中に使用できない。{味方ＤＦキャラ１体}にＤＰ＋１する。",
+  "textKr": "[宣言] [花花]:バトル中に使用できない。{味方ＤＦキャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0786"
 }

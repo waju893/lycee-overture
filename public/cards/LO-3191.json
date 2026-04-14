@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3191",
+  "title": "常盤台中学教師",
+  "subName": "綿辺",
+  "name": "常盤台中学教師 綿辺",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [日日]:{[ステップ]または[サイドステップ]を持つ味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [日日]:{[ステップ]または[サイドステップ]を持つ味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3191"
 }

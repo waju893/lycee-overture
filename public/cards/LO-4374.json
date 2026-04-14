@@ -1,16 +1,30 @@
 {
+  "cardNo": "LO-4374",
+  "title": "反省の念",
+  "subName": "",
+  "name": "反省の念",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
     "snow",
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:自ターン中に使用する。バトル中に使用できない。このアイテムを破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "textKr": "[宣言] [T]:自ターン中に使用する。バトル中に使用できない。このアイテムを破棄する。破棄したとき、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4374"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5480",
+  "title": "有瀬姉妹",
+  "subName": "有瀬 あてな",
+  "name": "有瀬姉妹 有瀬 あてな",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「有瀬かぐや」１体にＡＰ＋２・ＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「有瀬かぐや」１体にＡＰ＋２・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5480"
 }

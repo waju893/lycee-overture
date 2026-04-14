@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3116",
+  "title": "シュレディンガーの猫",
+  "subName": "菱形 蛭魅",
+  "name": "シュレディンガーの猫 菱形 蛭魅",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手ターン中に使用する。{コストが３点以上の味方キャラ１体}にＤＰ＋１する。\n[宣言] [T][雪雪]:バトル中に使用できない。味方キャラと自分のゴミ箱のカード全てがコストが３点以上の場合、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[宣言] [0]:相手ターン中に使用する。{コストが３点以上の味方キャラ１体}にＤＰ＋１する。\n[宣言] [T][雪雪]:バトル中に使用できない。味方キャラと自分のゴミ箱のカード全てがコストが３点以上の場合、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3116"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2994",
+  "title": "生徒思いな担任の先生",
+  "subName": "狭山 恵梨奈",
+  "name": "生徒思いな担任の先生 狭山 恵梨奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、自分のデッキを１枚回復する。この能力は失われる。",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、自分のデッキを１枚回復する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2994"
 }

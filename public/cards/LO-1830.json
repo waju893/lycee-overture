@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1830",
+  "title": "ナコクの皇子",
+  "subName": "イタク",
+  "name": "ナコクの皇子 イタク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[宣言] [日日]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにＡＰ＋３する。",
+  "textKr": "[宣言] [日日]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1830"
 }

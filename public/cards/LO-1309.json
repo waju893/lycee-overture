@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1309",
+  "title": "学園の風紀委員長",
+  "subName": "二木 佳奈多",
+  "name": "学園の風紀委員長 二木 佳奈多",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[誘発] 相手ターン中、相手の効果で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
+  "textKr": "[アシスト]\n[誘発] 相手ターン中、相手の効果で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1309"
 }

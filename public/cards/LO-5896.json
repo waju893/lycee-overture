@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5896",
+  "title": "幼馴染で天敵(？)",
+  "subName": "浅倉 七音",
+  "name": "幼馴染で天敵(？) 浅倉 七音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方キャラ１体}にＡＰ＋[このキャラを除く味方『リリカル♪りりっく』キャラの数]する。",
+  "textKr": "[宣言] [0]:{味方キャラ１体}にＡＰ＋[このキャラを除く味方『リリカル♪りりっく』キャラの数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5896"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1316",
+  "title": "偽りのセイレム",
+  "subName": "フォーリナー／アビゲイル・ウィリアムズ",
+  "name": "偽りのセイレム フォーリナー／アビゲイル・ウィリアムズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[宣言] [雪雪雪]:相手の宣言に対応して使用できない。{味方キャラ１体}を破棄する。破棄したとき、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [雪雪雪]:相手の宣言に対応して使用できない。{味方キャラ１体}を破棄する。破棄したとき、{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1316"
 }

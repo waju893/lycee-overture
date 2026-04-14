@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3260",
+  "title": "隣人愛",
+  "subName": "メリル・リンチ",
+  "name": "隣人愛 メリル・リンチ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,13 +20,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    7,
-    12
-  ],
-  "keyEffects": [
-    7,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ:[１枚ドローする。]][サポーター:[無無]]\n[宣言] [0]:味方キャラ全てにＤＰ＋１する。\n[宣言] [D1]:自分のゴミ箱のカード１枚をこのキャラの下に置く。置いたとき、下のカードが３枚以下の場合、このキャラは次の能力を得る。\n[コスト] [雪雪]または[花花]を発生する。このコストはキャラの登場には支払えない。",
+  "textKr": "[エンゲージ:[１枚ドローする。]][サポーター:[無無]]\n[宣言] [0]:味方キャラ全てにＤＰ＋１する。\n[宣言] [D1]:自分のゴミ箱のカード１枚をこのキャラの下に置く。置いたとき、下のカードが３枚以下の場合、このキャラは次の能力を得る。\n[コスト] [雪雪]または[花花]を発生する。このコストはキャラの登場には支払えない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3260"
 }

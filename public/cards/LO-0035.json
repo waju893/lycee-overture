@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0035",
+  "title": "殉教者の魂",
+  "subName": "ライダー／ゲオルギウス",
+  "name": "殉教者の魂 ライダー／ゲオルギウス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T月月月月]:相手キャラ１体にＡＰ－２する。",
+  "textKr": "[宣言] [T月月月月]:相手キャラ１体にＡＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0035"
 }

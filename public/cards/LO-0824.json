@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0824",
+  "title": "ラウンチアウト",
+  "subName": "メタトロン",
+  "name": "ラウンチアウト メタトロン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon",
     "sun"
   ],
-  "attributesList": [
-    "moon",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "sun",
@@ -18,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "月日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[アグレッシブ]\n[宣言] [無]:自ターン中に使用する。{味方キャラ１体}を破棄する。このキャラをそのキャラが登場していたフィールドに移動できる。",
+  "textKr": "[アグレッシブ]\n[宣言] [無]:自ターン中に使用する。{味方キャラ１体}を破棄する。このキャラをそのキャラが登場していたフィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0824"
 }

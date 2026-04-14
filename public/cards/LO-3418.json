@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3418",
+  "title": "地味で控えめな恋するメイド",
+  "subName": "城釜 奈緒美",
+  "name": "地味で控えめな恋するメイド 城釜 奈緒美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。このキャラのＤＰが５以上の場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。このキャラのＤＰが５以上の場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3418"
 }

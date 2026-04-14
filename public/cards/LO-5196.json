@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5196",
+  "title": "戦国乱世の華嫁 【祝宴】",
+  "subName": "織田 久遠 信長",
+  "name": "戦国乱世の華嫁 【祝宴】 織田 久遠 信長",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方[NEX]キャラ全てにＳＰ＋１する。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方[NEX]キャラ全てにＳＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5196"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0080",
+  "title": "勝利の女王",
+  "subName": "ライダー／ブーディカ",
+  "name": "勝利の女王 ライダー／ブーディカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0080"
 }

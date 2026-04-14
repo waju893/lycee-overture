@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3124",
+  "title": "寡黙な巨漢",
+  "subName": "名荷原 弘見",
+  "name": "寡黙な巨漢 名荷原 弘見",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「鷹田杳子」または「木寺実莉」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:味方「鷹田杳子」または「木寺実莉」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3124"
 }

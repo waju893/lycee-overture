@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2834",
+  "title": "ソフトボール部",
+  "subName": "笹瀬川 佐々美",
+  "name": "ソフトボール部 笹瀬川 佐々美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１する。",
+  "textKr": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2834"
 }

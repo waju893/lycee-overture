@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0498",
+  "title": "恋の追跡者",
+  "subName": "ランサー／清姫",
+  "name": "恋の追跡者 ランサー／清姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [花花]:{相手キャラ１体}にＡＰ＋１・ＤＰ－２する。",
+  "textKr": "[宣言] [花花]:{相手キャラ１体}にＡＰ＋１・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0498"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2339",
+  "title": "万雷",
+  "subName": "和歌山城",
+  "name": "万雷 和歌山城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [月月月]:{相手ＡＦキャラ１体}のＤＰを０にする。この能力は失われる。",
+  "textKr": "[宣言] [月月月]:{相手ＡＦキャラ１体}のＤＰを０にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2339"
 }

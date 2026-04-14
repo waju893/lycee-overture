@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1627",
+  "title": "大企業のご令嬢",
+  "subName": "正宗 静流",
+  "name": "大企業のご令嬢 正宗 静流",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][雪雪]:バトル中に使用できない。{ＤＰが２以下の相手キャラ１体}を破棄する。このキャラを破棄する。",
+  "textKr": "[宣言] [T][雪雪]:バトル中に使用できない。{ＤＰが２以下の相手キャラ１体}を破棄する。このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1627"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3783",
+  "title": "鬼刃忍",
+  "subName": "タチバナ",
+  "name": "鬼刃忍 タチバナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -18,13 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    5,
-    13
-  ],
-  "keyEffects": [
-    5,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:コストが２点以下の味方[日]キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[ジャンプ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:コストが２点以下の味方[日]キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3783"
 }

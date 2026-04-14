@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6001",
+  "title": "王女の護衛兼バーベナ学園生徒会長",
+  "subName": "瑠璃＝マツリ",
+  "name": "王女の護衛兼バーベナ学園生徒会長 瑠璃＝マツリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "star",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋３・ＤＰ＋３・ＤＭＧ＋１する。味方「リシアンサス」１体にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋３・ＤＰ＋３・ＤＭＧ＋１する。味方「リシアンサス」１体にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6001"
 }

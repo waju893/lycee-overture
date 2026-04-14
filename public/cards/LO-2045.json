@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2045",
+  "title": "あーちゃん",
+  "subName": "アーデルハイト・フォン・ベルクシュトラーセ",
+  "name": "あーちゃん アーデルハイト・フォン・ベルクシュトラーセ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2045"
 }

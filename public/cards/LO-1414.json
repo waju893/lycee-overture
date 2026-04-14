@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1414",
+  "title": "白き御衣",
+  "subName": "アサシン／ニトクリス",
+  "name": "白き御衣 アサシン／ニトクリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラが移動したとき、このキャラは[アグレッシブ]を得る。このキャラにＤＭＧ－１する。",
+  "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラが移動したとき、このキャラは[アグレッシブ]を得る。このキャラにＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1414"
 }

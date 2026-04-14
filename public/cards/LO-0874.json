@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0874",
+  "title": "桃花染の皇姫",
+  "subName": "宮国 朱璃",
+  "name": "桃花染の皇姫 宮国 朱璃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１・ＤＭＧ＋２する。",
+  "textKr": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１・ＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0874"
 }

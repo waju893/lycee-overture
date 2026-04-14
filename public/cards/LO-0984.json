@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0984",
+  "title": "巫女一族の末裔",
+  "subName": "椎葉 古杜音",
+  "name": "巫女一族の末裔 椎葉 古杜音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが自分のデッキから破棄されたとき、１枚ドローできる。ドローしたとき、自分の手札を１枚デッキの上に置く。（同番号の能力は１ターンに１回まで処理可能）",
+  "textKr": "[誘発] このキャラが自分のデッキから破棄されたとき、１枚ドローできる。ドローしたとき、自分の手札を１枚デッキの上に置く。（同番号の能力は１ターンに１回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0984"
 }

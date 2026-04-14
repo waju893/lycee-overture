@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0634",
+  "title": "発明家",
+  "subName": "天道千鳥",
+  "name": "発明家 天道千鳥",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [月]:{アイテムを装備している味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
+  "textKr": "[宣言] [月]:{アイテムを装備している味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0634"
 }

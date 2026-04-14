@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0945",
+  "title": "月の王国の秘書官",
+  "subName": "カレン・クラヴィウス",
+  "name": "月の王国の秘書官 カレン・クラヴィウス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「カレン・クラヴィウス」１体を除外する。除外したとき、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「カレン・クラヴィウス」１体を除外する。除外したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0945"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0365",
+  "title": "生徒会長",
+  "subName": "角谷 杏",
+  "name": "生徒会長 角谷 杏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [0]: {「干しいも」１枚}を破棄する。このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
+  "textKr": "[アシスト]\n[宣言] [0]: {「干しいも」１枚}を破棄する。このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0365"
 }

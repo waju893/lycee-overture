@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5561",
+  "title": "白鷺家長女",
+  "subName": "白鷺 小百合",
+  "name": "白鷺家長女 白鷺 小百合",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 6,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにＳＰ＋２する。",
+  "textKr": "[サポーター:[花]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5561"
 }

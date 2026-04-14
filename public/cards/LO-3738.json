@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3738",
+  "title": "犬神",
+  "subName": "ツムジ",
+  "name": "犬神 ツムジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[月月月月]を発生する。このコストは手札宣言能力を持つ[月]キャラの登場にのみ支払える。",
+  "textKr": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[月月月月]を発生する。このコストは手札宣言能力を持つ[月]キャラの登場にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3738"
 }

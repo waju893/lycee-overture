@@ -1,18 +1,18 @@
 {
+  "cardNo": "LO-6210",
+  "title": "NavPA!!2025",
+  "subName": "楓 ＆ ルナ ＆ 亜沙 ＆ 明日香",
+  "name": "NavPA!!2025 楓 ＆ ルナ ＆ 亜沙 ＆ 明日香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "moon",
@@ -22,5 +22,12 @@
   "ap": 2,
   "dp": 5,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 1,
+  "costRaw": "雪月花日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無無無無]:味方[NAV]キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[宣言] [無無無無]:味方[NAV]キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6210"
 }

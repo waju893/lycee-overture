@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0303",
+  "title": "偉大なるカチューシャ戦術",
+  "subName": "カチューシャ",
+  "name": "偉大なるカチューシャ戦術 カチューシャ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 2,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "雪月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "プラウダ",
+  "text": "[誘発] 味方＜プラウダ＞キャラが場を離れたとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[誘発] 味方＜プラウダ＞キャラが場を離れたとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0303"
 }

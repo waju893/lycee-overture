@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3049",
+  "title": "小生意気な先輩",
+  "subName": "前原 羽弥",
+  "name": "小生意気な先輩 前原 羽弥",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラを対象に自分のイベントまたは手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 味方キャラを対象に自分のイベントまたは手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3049"
 }

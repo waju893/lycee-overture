@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4613",
+  "title": "クランハウスの管理人",
+  "subName": "ニナ・リンドベルイ",
+  "name": "クランハウスの管理人 ニナ・リンドベルイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２のアイテム１枚を手札に入れる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２のアイテム１枚を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4613"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4057",
+  "title": "ランスの下僕",
+  "subName": "ロッキー・バンク",
+  "name": "ランスの下僕 ロッキー・バンク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「ランス」が登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「ランス」が登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4057"
 }

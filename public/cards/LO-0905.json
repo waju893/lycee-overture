@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0905",
+  "title": "リリウムの稼ぎ頭",
+  "subName": "クローディア",
+  "name": "リリウムの稼ぎ頭 クローディア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラが登場したとき、相手キャラ１体にＳＰ－１する。",
+  "textKr": "[誘発] 味方キャラが登場したとき、相手キャラ１体にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0905"
 }

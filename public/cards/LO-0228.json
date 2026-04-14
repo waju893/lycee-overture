@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0228",
+  "title": "桃色に染まれ永遠の幼き月",
+  "subName": "終焉の桃幻リーゼ＝ペシェ",
+  "name": "桃色に染まれ永遠の幼き月 終焉の桃幻リーゼ＝ペシェ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -17,13 +20,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    3,
-    7
-  ],
-  "keyEffects": [
-    3,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][サイドステップ:[0]]\n[宣言] [日日日]:このキャラにＤＭＧ＋２する。",
+  "textKr": "[エンゲージ][サイドステップ:[0]]\n[宣言] [日日日]:このキャラにＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0228"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0867",
+  "title": "皇国の遺児",
+  "subName": "宮国 朱璃",
+  "name": "皇国の遺児 宮国 朱璃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラを行動済みにしたとき、このキャラを除く味方キャラ１体にＳＰ＋１する。",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラを行動済みにしたとき、このキャラを除く味方キャラ１体にＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0867"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5684",
+  "title": "日本画壇の重鎮",
+  "subName": "宮崎 破戒",
+  "name": "日本画壇の重鎮 宮崎 破戒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のコストが１点以上の手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] 自分のコストが１点以上の手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5684"
 }

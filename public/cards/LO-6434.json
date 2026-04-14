@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6434",
+  "title": "斎野家の後見人",
+  "subName": "一葉",
+  "name": "斎野家の後見人 一葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 6,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:{味方「斎野尚哉」または「斎野九花」１体}とこのキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [雪]:{味方「斎野尚哉」または「斎野九花」１体}とこのキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6434"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4868",
+  "title": "クールな美人メイド",
+  "subName": "四季 ナツメ",
+  "name": "クールな美人メイド 四季 ナツメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] [雪雪雪雪]を発生する。このコストはイベント・手札宣言能力にのみ支払える。この能力は失われる。\n[手札宣言] [0]:自分のデッキから「明月栞那」１体を探し公開して手札に入れる。\n[手札宣言] [雪雪雪雪]:相手の宣言に対応して使用できない。以下から１つを選び処理する。",
+  "textKr": "[コスト] [雪雪雪雪]を発生する。このコストはイベント・手札宣言能力にのみ支払える。この能力は失われる。\n[手札宣言] [0]:自分のデッキから「明月栞那」１体を探し公開して手札に入れる。\n[手札宣言] [雪雪雪雪]:相手の宣言に対応して使用できない。以下から１つを選び処理する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4868"
 }

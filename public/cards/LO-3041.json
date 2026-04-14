@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3041",
+  "title": "どう見てもツンデレ",
+  "subName": "六角 すずめ",
+  "name": "どう見てもツンデレ 六角 すずめ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[手札宣言] [宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3041"
 }

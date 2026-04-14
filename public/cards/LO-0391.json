@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0391",
+  "title": "アンツィオ高校",
+  "subName": "ペパロニ",
+  "name": "アンツィオ高校 ペパロニ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト]\n[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
+  "textKr": "[アシスト]\n[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0391"
 }

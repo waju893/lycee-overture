@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1313",
+  "title": "魔女裁判",
+  "subName": "フォーリナー／アビゲイル・ウィリアムズ",
+  "name": "魔女裁判 フォーリナー／アビゲイル・ウィリアムズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:自分のデッキから「魔女裁判」１枚を探し公開して手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [0]:自分のデッキから「魔女裁判」１枚を探し公開して手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1313"
 }

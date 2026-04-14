@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3156",
+  "title": "『風紀委員』",
+  "subName": "柳迫 碧美",
+  "name": "『風紀委員』 柳迫 碧美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{味方「白井黒子」または「初春飾利」または「固法美偉」１体}にＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{味方「白井黒子」または「初春飾利」または「固法美偉」１体}にＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3156"
 }

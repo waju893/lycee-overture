@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4467",
+  "title": "ティンクマニアのクラスメイト",
+  "subName": "蒲生 建晴",
+  "name": "ティンクマニアのクラスメイト 蒲生 建晴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方「ティンクの女王」を配置している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方「ティンクの女王」を配置している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4467"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0419",
+  "title": "あんこうチーム",
+  "subName": "西住 みほ",
+  "name": "あんこうチーム 西住 みほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 3,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [T]:自ターン中に使用する。味方「あんこうチーム」キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[アシスト]\n[宣言] [T]:自ターン中に使用する。味方「あんこうチーム」キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0419"
 }

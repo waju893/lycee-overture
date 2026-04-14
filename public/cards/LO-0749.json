@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0749",
+  "title": "ヘイトスマッシュ",
+  "subName": "トール",
+  "name": "ヘイトスマッシュ トール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,5 +21,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[宣言] [0]:このターン中、自分のデッキが６枚以上破棄されている場合、相手のデッキを１枚破棄し、自分のデッキを１枚回復する。",
+  "textKr": "[宣言] [0]:このターン中、自分のデッキが６枚以上破棄されている場合、相手のデッキを１枚破棄し、自分のデッキを１枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0749"
 }

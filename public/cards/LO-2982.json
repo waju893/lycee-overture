@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2982",
+  "title": "恋咲き乙女",
+  "subName": "室戸 鼎",
+  "name": "恋咲き乙女 室戸 鼎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手ターン中に使用する。{味方キャラ１体}にＤＰ＋１する。この能力は失われる。",
+  "textKr": "[宣言] [0]:相手ターン中に使用する。{味方キャラ１体}にＤＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2982"
 }

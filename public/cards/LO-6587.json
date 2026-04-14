@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6587",
+  "title": "家庭を顧みない景子の父親",
+  "subName": "平坂 義康",
+  "name": "家庭を顧みない景子の父親 平坂 義康",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「平坂景子」が登場している場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [0]:味方「平坂景子」が登場している場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6587"
 }

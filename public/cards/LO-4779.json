@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4779",
+  "title": "南海を股にかける海賊",
+  "subName": "ロジャー",
+  "name": "南海を股にかける海賊 ロジャー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 6,
   "dp": 6,
   "sp": 0,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラのバトル終了時、このキャラを破棄する。破棄したとき、味方[宙]キャラ１体にＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[誘発] このキャラのバトル終了時、このキャラを破棄する。破棄したとき、味方[宙]キャラ１体にＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4779"
 }

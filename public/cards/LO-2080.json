@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2080",
+  "title": "愚兄を世話する賢妹",
+  "subName": "花咲 ののか",
+  "name": "愚兄を世話する賢妹 花咲 ののか",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ－１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2080"
 }

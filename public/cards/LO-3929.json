@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3929",
+  "title": "武田四天王",
+  "subName": "内藤 心 昌秀",
+  "name": "武田四天王 内藤 心 昌秀",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:宣言型の基本能力を持つ味方[日]キャラが３体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:宣言型の基本能力を持つ味方[日]キャラが３体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3929"
 }

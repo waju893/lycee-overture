@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5562",
+  "title": "白鷺家次女",
+  "subName": "錦小路 霞織",
+  "name": "白鷺家次女 錦小路 霞織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 5,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] カード名に「白鷺」を含む味方キャラ全てにＡＰ＋２する。",
+  "textKr": "[常時] カード名に「白鷺」を含む味方キャラ全てにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5562"
 }

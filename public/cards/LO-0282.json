@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0282",
+  "title": "あくまで優雅に",
+  "subName": "ダージリン",
+  "name": "あくまで優雅に ダージリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[アシスト]\n[誘発] 自ターン中、味方ＤＦキャラがサポートをしたとき、そのキャラを未行動にする。",
+  "textKr": "[アシスト]\n[誘発] 自ターン中、味方ＤＦキャラがサポートをしたとき、そのキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0282"
 }

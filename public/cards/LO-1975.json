@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1975",
+  "title": "マルチスパイ",
+  "subName": "土御門 元春",
+  "name": "マルチスパイ 土御門 元春",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [D1]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[手札宣言] [D1]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1975"
 }

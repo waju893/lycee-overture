@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5150",
+  "title": "調弦の強弓",
+  "subName": "トキフサ",
+  "name": "調弦の強弓 トキフサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [日]:味方キャラ１体にＡＰ＋３またはこのキャラの対戦キャラにＡＰ－３する。この能力は失われる。",
+  "textKr": "[宣言] [日]:味方キャラ１体にＡＰ＋３またはこのキャラの対戦キャラにＡＰ－３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5150"
 }

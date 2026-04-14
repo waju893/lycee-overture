@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5900",
+  "title": "七音の親友",
+  "subName": "萩原 ともえ",
+  "name": "七音の親友 萩原 ともえ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「幼馴染で天敵(？) 浅倉七音」１体までと「七音の親友 大道寺涼子」１体までを探し登場できる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「幼馴染で天敵(？) 浅倉七音」１体までと「七音の親友 大道寺涼子」１体までを探し登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5900"
 }

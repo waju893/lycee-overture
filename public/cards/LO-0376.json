@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0376",
+  "title": "西住流",
+  "subName": "西住 まほ",
+  "name": "西住流 西住 まほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "黒森峰",
+  "text": "[オーダーステップ:[0]]\n[常時] このキャラにＡＰ＋[味方＜黒森峰＞キャラの数]・ＤＰ＋[味方＜黒森峰＞キャラの数]する。",
+  "textKr": "[オーダーステップ:[0]]\n[常時] このキャラにＡＰ＋[味方＜黒森峰＞キャラの数]・ＤＰ＋[味方＜黒森峰＞キャラの数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0376"
 }

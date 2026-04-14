@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2895",
+  "title": "猫かぶり",
+  "subName": "乾 紗凪",
+  "name": "猫かぶり 乾 紗凪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [T]:バトル中に使用できない。このキャラを破棄する。破棄したとき、{相手ＡＦキャラ１体}を破棄する。\n[誘発] コストが３点以上の味方キャラを相手の効果で破棄したとき、１枚ドローできる。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [T]:バトル中に使用できない。このキャラを破棄する。破棄したとき、{相手ＡＦキャラ１体}を破棄する。\n[誘発] コストが３点以上の味方キャラを相手の効果で破棄したとき、１枚ドローできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2895"
 }

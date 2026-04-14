@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-5439",
+  "title": "お兄を甘やかし隊",
+  "subName": "",
+  "name": "お兄を甘やかし隊",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] ＡＦのこのキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。ＤＦのこのキャラにＤＰ＋３・ＳＰ＋１する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが場を離れたとき、１枚ドローできる。このキャラが相手の効果で場を離れた場合、自分の手札のキャラ１体を行動済みで登場できる。",
+  "textKr": "[常時] ＡＦのこのキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。ＤＦのこのキャラにＤＰ＋３・ＳＰ＋１する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが場を離れたとき、１枚ドローできる。このキャラが相手の効果で場を離れた場合、自分の手札のキャラ１体を行動済みで登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5439"
 }

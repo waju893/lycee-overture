@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3806",
+  "title": "呪刀付喪神",
+  "subName": "ユキザクラ",
+  "name": "呪刀付喪神 ユキザクラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方[宙]キャラが６体以上登場している場合、コストが３点以上の味方ＡＦ[宙]キャラ全てにＡＰ＋１する。\n[宣言] [0]:このキャラがＤＦに登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[宣言] [0]:味方[宙]キャラが６体以上登場している場合、コストが３点以上の味方ＡＦ[宙]キャラ全てにＡＰ＋１する。\n[宣言] [0]:このキャラがＤＦに登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3806"
 }

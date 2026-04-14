@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4233",
+  "title": "白咲ヤンキース",
+  "subName": "久保 完",
+  "name": "白咲ヤンキース 久保 完",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。[日]でない味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋１・ＤＰ－１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。[日]でない味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4233"
 }

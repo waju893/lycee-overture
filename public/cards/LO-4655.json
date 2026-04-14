@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4655",
+  "title": "“風”の魔女",
+  "subName": "真名鶴 一葉",
+  "name": "“風”の魔女 真名鶴 一葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[誘発] このキャラがＤＦに登場したとき、元の基本能力に[アグレッシブ]を持つ味方キャラが４体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラがＤＦに登場したとき、元の基本能力に[アグレッシブ]を持つ味方キャラが４体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4655"
 }

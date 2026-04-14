@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4313",
+  "title": "浪人生",
+  "subName": "宇佐川 雪子",
+  "name": "浪人生 宇佐川 雪子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4313"
 }

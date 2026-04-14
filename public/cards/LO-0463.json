@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0463",
+  "title": "陽光煌めく勝利の剣",
+  "subName": "アーチャー／アルトリア・ペンドラゴン",
+  "name": "陽光煌めく勝利の剣 アーチャー／アルトリア・ペンドラゴン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを味方フィールドに移動できる。",
+  "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを味方フィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0463"
 }

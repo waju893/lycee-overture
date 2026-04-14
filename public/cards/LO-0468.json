@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0468",
+  "title": "絢爛なりし灰燼世界",
+  "subName": "キャスター／チャールズ・バベッジ",
+  "name": "絢爛なりし灰燼世界 キャスター／チャールズ・バベッジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "star",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] キャラがアイテムを装備したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] キャラがアイテムを装備したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0468"
 }

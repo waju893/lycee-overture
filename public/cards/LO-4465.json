@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4465",
+  "title": "小型の人型ティンク",
+  "subName": "マルル",
+  "name": "小型の人型ティンク マルル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 0,
   "sp": 4,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラはバトル参加キャラに指定できない。\n[宣言] [0]:自ターン中に使用する。味方「有瀬莉子」が登場している場合、このキャラを手札に入れる。",
+  "textKr": "[常時] このキャラはバトル参加キャラに指定できない。\n[宣言] [0]:自ターン中に使用する。味方「有瀬莉子」が登場している場合、このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4465"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0420",
+  "title": "あんこうチーム",
+  "subName": "武部 沙織",
+  "name": "あんこうチーム 武部 沙織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[コスト] [花花]を発生する。このコストは「あんこうチーム」キャラの登場にのみ支払える。",
+  "textKr": "[アシスト]\n[コスト] [花花]を発生する。このコストは「あんこうチーム」キャラの登場にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0420"
 }

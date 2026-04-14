@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6008",
+  "title": "世界中を飛び回る母親",
+  "subName": "相生 燐葉",
+  "name": "世界中を飛び回る母親 相生 燐葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:味方「相生頼斗」が登場している場合、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:味方「相生頼斗」が登場している場合、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6008"
 }

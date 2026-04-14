@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4481",
+  "title": "寂しさが滲む近所のご婦人",
+  "subName": "真行司 麗子",
+  "name": "寂しさが滲む近所のご婦人 真行司 麗子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋２またはＤＰ＋２する。自分にシールド＋１する。この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋２またはＤＰ＋２する。自分にシールド＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4481"
 }

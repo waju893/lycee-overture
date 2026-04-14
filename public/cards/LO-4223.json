@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4223",
+  "title": "重度の女性不信",
+  "subName": "神楽坂 慎二",
+  "name": "重度の女性不信 神楽坂 慎二",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:[日]でない味方キャラが登場している場合、このキャラにＤＰ＋１する。",
+  "textKr": "[宣言] [0]:[日]でない味方キャラが登場している場合、このキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4223"
 }

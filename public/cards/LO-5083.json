@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5083",
+  "title": "さすらいの吟遊詩人",
+  "subName": "タリエシン",
+  "name": "さすらいの吟遊詩人 タリエシン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5083"
 }

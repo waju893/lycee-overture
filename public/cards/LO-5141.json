@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5141",
+  "title": "軍略に長けた帝国総司令官",
+  "subName": "ガイウス",
+  "name": "軍略に長けた帝国総司令官 ガイウス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 6,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [無]:{コストが３点以上の味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [無]:{コストが３点以上の味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5141"
 }

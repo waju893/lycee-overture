@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4172",
+  "title": "音楽プロデューサー",
+  "subName": "沢城 唯道",
+  "name": "音楽プロデューサー 沢城 唯道",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:[月]でない味方キャラが登場している場合、このキャラにＤＰ＋１する。",
+  "textKr": "[宣言] [0]:[月]でない味方キャラが登場している場合、このキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4172"
 }

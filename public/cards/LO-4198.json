@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4198",
+  "title": "ミクのお願い",
+  "subName": "藤枝 ミク",
+  "name": "ミクのお願い 藤枝 ミク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:[花]でない味方キャラが登場している場合、このキャラにＡＰ＋１する。",
+  "textKr": "[宣言] [0]:[花]でない味方キャラが登場している場合、このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4198"
 }

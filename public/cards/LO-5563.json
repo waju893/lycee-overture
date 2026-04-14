@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5563",
+  "title": "白鷺家三女",
+  "subName": "白鷺 詩織",
+  "name": "白鷺家三女 白鷺 詩織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] カード名に「白鷺」を含む味方キャラ全てにＤＰ＋２する。",
+  "textKr": "[常時] カード名に「白鷺」を含む味方キャラ全てにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5563"
 }

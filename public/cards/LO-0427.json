@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0427",
+  "title": "厚い皮膚より速い脚",
+  "subName": "西住 まほ",
+  "name": "厚い皮膚より速い脚 西住 まほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "黒森峰",
+  "text": "[オーダーステップ:[0]]\n[宣言] [D2]:味方＜黒森峰＞キャラ全てにＳＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [D2]:味方＜黒森峰＞キャラ全てにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0427"
 }

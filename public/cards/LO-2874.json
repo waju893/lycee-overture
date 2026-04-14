@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2874",
+  "title": "無防備な妹",
+  "subName": "浅葉 こなみ",
+  "name": "無防備な妹 浅葉 こなみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「桜並木」１枚を探し味方フィールドに無償で配置する。\n[宣言] [0]:相手ターン中に使用する。{味方キャラ１体}にＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「桜並木」１枚を探し味方フィールドに無償で配置する。\n[宣言] [0]:相手ターン中に使用する。{味方キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2874"
 }

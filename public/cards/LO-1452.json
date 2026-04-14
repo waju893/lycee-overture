@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1452",
+  "title": "ラストスパート",
+  "subName": "セイバー／フランケンシュタイン",
+  "name": "ラストスパート セイバー／フランケンシュタイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [日]:このキャラのバトル中に使用する。このキャラにＡＰ＋２する。このバトル終了時、このキャラを破棄する。",
+  "textKr": "[宣言] [日]:このキャラのバトル中に使用する。このキャラにＡＰ＋２する。このバトル終了時、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1452"
 }

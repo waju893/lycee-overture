@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6237",
+  "title": "耕司の彼女",
+  "subName": "高畠 青海",
+  "name": "耕司の彼女 高畠 青海",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手の宣言に対応して使用できない。このキャラを破棄する。したとき、１枚ドローする。自分にシールド＋１できる。",
+  "textKr": "[宣言] [0]:相手の宣言に対応して使用できない。このキャラを破棄する。したとき、１枚ドローする。自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6237"
 }

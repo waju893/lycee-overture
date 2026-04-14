@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3280",
+  "title": "フリーのスカウトマン",
+  "subName": "プラチナ",
+  "name": "フリーのスカウトマン プラチナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方キャラの属性が５種類以上の場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方キャラの属性が５種類以上の場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3280"
 }

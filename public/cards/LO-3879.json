@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3879",
+  "title": "氏康の三女",
+  "subName": "北条 三日月 氏照",
+  "name": "氏康の三女 北条 三日月 氏照",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:カード名に「北条」を含む味方キャラのバトル中に使用する。対戦キャラにＡＰ－２・ＤＰ－２する。この能力は失われる。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:カード名に「北条」を含む味方キャラのバトル中に使用する。対戦キャラにＡＰ－２・ＤＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3879"
 }

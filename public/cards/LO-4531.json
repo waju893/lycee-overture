@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-4531",
+  "title": "架橋",
+  "subName": "",
+  "name": "架橋",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[宣言] [0]:{アイテムを持つ味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[宣言] [0]:{アイテムを持つ味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4531"
 }

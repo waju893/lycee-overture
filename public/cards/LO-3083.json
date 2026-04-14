@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3083",
+  "title": "学園の女神",
+  "subName": "寿々苗 穂海",
+  "name": "学園の女神 寿々苗 穂海",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{手札宣言能力を持つ味方キャラ１体}にＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{手札宣言能力を持つ味方キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3083"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2171",
+  "title": "恋する歌姫",
+  "subName": "孫権・蓮華",
+  "name": "恋する歌姫 孫権・蓮華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＰ＋１する。",
+  "textKr": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2171"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1173",
+  "title": "生徒会の協力者",
+  "subName": "熊耳",
+  "name": "生徒会の協力者 熊耳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱の[雪]キャラ１体}を手札に入れる。",
+  "textKr": "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱の[雪]キャラ１体}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1173"
 }

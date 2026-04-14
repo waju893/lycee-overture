@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4605",
+  "title": "シュヴァリエ王家の王女",
+  "subName": "クロエ・シュヴァリエ",
+  "name": "シュヴァリエ王家の王女 クロエ・シュヴァリエ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１]\n[宣言] [0]:このキャラが持ち主が自分のアイテムを持つ場合、このキャラにＤＭＧ＋１する。このキャラのチャージ１枚を破棄できる。破棄したとき、１枚ドローする。",
+  "textKr": "[チャージ:１]\n[宣言] [0]:このキャラが持ち主が自分のアイテムを持つ場合、このキャラにＤＭＧ＋１する。このキャラのチャージ１枚を破棄できる。破棄したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4605"
 }

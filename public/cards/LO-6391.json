@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6391",
+  "title": "最高の暗殺者",
+  "subName": "アイン",
+  "name": "最高の暗殺者 アイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] 相手がコストが１点以上の能力を使用したとき、味方キャラ１体にＡＰ＋１またはＤＰ＋１する。自分にシールド＋１できる。（１ターンに３回まで処理可能）\n[宣言][切札] [0]:自分のデッキが２０枚以下の場合、自分のデッキをランダムに６枚まで回復しシャッフルする。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] 相手がコストが１点以上の能力を使用したとき、味方キャラ１体にＡＰ＋１またはＤＰ＋１する。自分にシールド＋１できる。（１ターンに３回まで処理可能）\n[宣言][切札] [0]:自分のデッキが２０枚以下の場合、自分のデッキをランダムに６枚まで回復しシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6391"
 }

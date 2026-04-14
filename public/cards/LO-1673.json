@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1673",
+  "title": "デートの誘い",
+  "subName": "烏羽 紫",
+  "name": "デートの誘い 烏羽 紫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [このキャラを破棄する]:{コストが３点以下の味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [このキャラを破棄する]:{コストが３点以下の味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1673"
 }

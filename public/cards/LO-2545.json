@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2545",
+  "title": "仲間を守る鉄壁の騎士(ただしドM)",
+  "subName": "クレア",
+  "name": "仲間を守る鉄壁の騎士(ただしドM) クレア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。\n[宣言] [0]:このキャラの下のカード１枚を破棄する。破棄したとき、{味方防御キャラ１体}にＤＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚をこのキャラの下に置く。\n[宣言] [0]:このキャラの下のカード１枚を破棄する。破棄したとき、{味方防御キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2545"
 }

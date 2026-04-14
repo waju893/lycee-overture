@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3467",
+  "title": "放送部員の１年生",
+  "subName": "渋谷 みつば",
+  "name": "放送部員の１年生 渋谷 みつば",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラと同列にコストが３点以上の味方キャラが登場している場合、このキャラにＡＰ＋１・ＤＰ＋２する。",
+  "textKr": "[宣言] [0]:このキャラと同列にコストが３点以上の味方キャラが登場している場合、このキャラにＡＰ＋１・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3467"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1310",
+  "title": "ガーデニング",
+  "subName": "神戸 小鳥",
+  "name": "ガーデニング 神戸 小鳥",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] 相手キャラが相手の効果で移動したとき、相手キャラ１体にＤＭＧ－１する。",
+  "textKr": "[サポーター:[花花]]\n[誘発] 相手キャラが相手の効果で移動したとき、相手キャラ１体にＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1310"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0588",
+  "title": "妹のぬくもり",
+  "subName": "千歳 佐奈",
+  "name": "妹のぬくもり 千歳 佐奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラがダウンしたとき、自分のデッキを２枚破棄できる。破棄したとき、ゴミ箱のこのキャラを手札に入れる。",
+  "textKr": "[誘発] このキャラがダウンしたとき、自分のデッキを２枚破棄できる。破棄したとき、ゴミ箱のこのキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0588"
 }

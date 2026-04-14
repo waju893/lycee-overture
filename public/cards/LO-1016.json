@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1016",
+  "title": "カバさんチームの車長兼通信手",
+  "subName": "エルヴィン",
+  "name": "カバさんチームの車長兼通信手 エルヴィン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [T][雪雪雪]:相手ターン中に使用する。{コストが４点以下の相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[宣言] [T][雪雪雪]:相手ターン中に使用する。{コストが４点以下の相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1016"
 }

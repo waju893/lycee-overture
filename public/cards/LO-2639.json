@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2639",
+  "title": "睡眠不足系主人公",
+  "subName": "内藤 透",
+  "name": "睡眠不足系主人公 内藤 透",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:{自分のゴミ箱の「内藤舞亜」１体}を手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [雪]:{自分のゴミ箱の「内藤舞亜」１体}を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2639"
 }

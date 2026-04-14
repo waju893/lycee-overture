@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0407",
+  "title": "知波単学園",
+  "subName": "福田",
+  "name": "知波単学園 福田",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[アグレッシブ]\n[宣言] [T]: バトル中に使用できない。{味方＜知波単＞キャラ１体}にＤＭＧ＋２する。",
+  "textKr": "[アグレッシブ]\n[宣言] [T]: バトル中に使用できない。{味方＜知波単＞キャラ１体}にＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0407"
 }

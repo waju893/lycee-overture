@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0132",
+  "title": "剛王緋天絶焔陣",
+  "subName": "グラーシーザ",
+  "name": "剛王緋天絶焔陣 グラーシーザ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [0]: 味方「ミストルテイン」が登場している場合、このキャラは[アグレッシブ][ステップ:[無]]を得る。",
+  "textKr": "[エンゲージ]\n[宣言] [0]: 味方「ミストルテイン」が登場している場合、このキャラは[アグレッシブ][ステップ:[無]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0132"
 }

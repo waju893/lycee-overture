@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-3371",
+  "title": "リシアのホンネ",
+  "subName": "",
+  "name": "リシアのホンネ",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、このフィールドに手札からコストが３点以上の味方キャラが登場したとき、自分のゴミ箱のカード１枚をこのエリアの下に置く。置いたとき、１枚ドローできる。このエリアの下のカードが３枚以上の場合、このエリアを破棄する。\n※「リシアのホンネ」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] 自ターン中、このフィールドに手札からコストが３点以上の味方キャラが登場したとき、自分のゴミ箱のカード１枚をこのエリアの下に置く。置いたとき、１枚ドローできる。このエリアの下のカードが３枚以上の場合、このエリアを破棄する。\n※「リシアのホンネ」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3371"
 }

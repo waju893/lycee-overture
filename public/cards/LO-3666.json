@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-3666",
+  "title": "アトリア",
+  "subName": "",
+  "name": "アトリア",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋２・ＤＰ＋２する。このキャラは[ペナルティ:[１枚ドローする。]]を得る。\n[誘発] [宙]アイテムを装備している味方キャラが相手の効果で場を離れたとき、１枚ドローできる。この効果は失われる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[宙]アイテムを装備している味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[常時] このキャラにＡＰ＋２・ＤＰ＋２する。このキャラは[ペナルティ:[１枚ドローする。]]を得る。\n[誘発] [宙]アイテムを装備している味方キャラが相手の効果で場を離れたとき、１枚ドローできる。この効果は失われる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[宙]アイテムを装備している味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3666"
 }

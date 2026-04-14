@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0448",
+  "title": "ブラッドマール†ソルフェスタ",
+  "subName": "ダインスレイフ＝ソル",
+  "name": "ブラッドマール†ソルフェスタ ダインスレイフ＝ソル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [宙宙宙宙]:このキャラにＤＰ＋２する。",
+  "textKr": "[エンゲージ]\n[宣言] [宙宙宙宙]:このキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0448"
 }

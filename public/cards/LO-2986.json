@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2986",
+  "title": "拒否オーラ搭載型転校生",
+  "subName": "有川 あとり",
+  "name": "拒否オーラ搭載型転校生 有川 あとり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＰ＋１する。",
+  "textKr": "[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2986"
 }

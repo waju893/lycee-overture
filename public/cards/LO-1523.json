@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1523",
+  "title": "行商人",
+  "subName": "トトノ",
+  "name": "行商人 トトノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果で味方キャラを未行動にしたとき、自分のデッキから[AIG]キャラ１体を探し公開して手札に入れる。この能力は失われる。",
+  "textKr": "[誘発] 自分の効果で味方キャラを未行動にしたとき、自分のデッキから[AIG]キャラ１体を探し公開して手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1523"
 }

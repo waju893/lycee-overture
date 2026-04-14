@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0425",
+  "title": "オットボール三等軍曹",
+  "subName": "秋山 優花里",
+  "name": "オットボール三等軍曹 秋山 優花里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、コストが２点以下の味方キャラ１体にＡＰ＋２する。",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、コストが２点以下の味方キャラ１体にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0425"
 }

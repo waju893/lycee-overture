@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1653",
+  "title": "素直な従妹",
+  "subName": "白鹿 愛莉",
+  "name": "素直な従妹 白鹿 愛莉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "textKr": "[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1653"
 }

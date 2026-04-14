@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0461",
+  "title": "最果てにて輝ける槍",
+  "subName": "ランサー／アルトリア・ペンドラゴン",
+  "name": "最果てにて輝ける槍 ランサー／アルトリア・ペンドラゴン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,11 +22,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙]:このキャラと同列のキャラ全てを破棄する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙]:このキャラと同列のキャラ全てを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0461"
 }

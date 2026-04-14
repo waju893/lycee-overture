@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5863",
+  "title": "弟想いのエロかわお姉さん",
+  "subName": "幸塚 美智",
+  "name": "弟想いのエロかわお姉さん 幸塚 美智",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラのＡＰとＤＰに＋[味方＜月華会＞または＜天道会＞キャラの数]する。",
+  "textKr": "[宣言] [0]:このキャラのＡＰとＤＰに＋[味方＜月華会＞または＜天道会＞キャラの数]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5863"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4080",
+  "title": "美剣流操刃術",
+  "subName": "ビートスラッシャー・ショウコ",
+  "name": "美剣流操刃術 ビートスラッシャー・ショウコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [C1]:このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[チャージ:２]\n[宣言] [C1]:このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4080"
 }

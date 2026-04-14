@@ -1,15 +1,29 @@
 {
+  "cardNo": "LO-6655",
+  "title": "甘くて幸せな悪い夢",
+  "subName": "",
+  "name": "甘くて幸せな悪い夢",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 以下のいずれかを行った自分の効果を処理したとき、自分のゴミ箱のカード１枚をこのエリアの下に置ける。（１ターンに３回まで処理可能）\n[宣言] [このエリアの下のカード２枚を破棄する]:１枚ドローする。自分にシールド＋１できる。\n※「甘くて幸せな悪い夢」は持ち主の場にのみ１枚まで配置可能",
+  "textKr": "[誘発] 以下のいずれかを行った自分の効果を処理したとき、自分のゴミ箱のカード１枚をこのエリアの下に置ける。（１ターンに３回まで処理可能）\n[宣言] [このエリアの下のカード２枚を破棄する]:１枚ドローする。自分にシールド＋１できる。\n※「甘くて幸せな悪い夢」は持ち主の場にのみ１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6655"
 }

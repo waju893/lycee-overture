@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5685",
+  "title": "気さくな有名芸術家",
+  "subName": "坂本 彰三",
+  "name": "気さくな有名芸術家 坂本 彰三",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のコストが１点以上の手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] 自分のコストが１点以上の手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5685"
 }

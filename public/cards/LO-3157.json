@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3157",
+  "title": "予知された未来",
+  "subName": "大川内 巡観",
+  "name": "予知された未来 大川内 巡観",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「美山写影」１体を登場できる。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「美山写影」１体を登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3157"
 }

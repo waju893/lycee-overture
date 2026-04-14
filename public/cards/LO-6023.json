@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6023",
+  "title": "にわか沖縄ファン",
+  "subName": "海咲",
+  "name": "にわか沖縄ファン 海咲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:１]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。自分にシールド＋１できる。\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２する。\n[手札宣言] [0]:先攻後攻１ターン目に使用する。自分のデッキから「ニライカナイを探す家出少女 海咲」１体を探し公開して手札に入れる。",
+  "textKr": "[ジャンプ:[0]][チャージ:１]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。自分にシールド＋１できる。\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２する。\n[手札宣言] [0]:先攻後攻１ターン目に使用する。自分のデッキから「ニライカナイを探す家出少女 海咲」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6023"
 }

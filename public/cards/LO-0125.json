@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0125",
+  "title": "天獄朧",
+  "subName": "天刀ムラマサ＝オボロ",
+  "name": "天獄朧 天刀ムラマサ＝オボロ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [月月]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[エンゲージ]\n[宣言] [月月]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0125"
 }

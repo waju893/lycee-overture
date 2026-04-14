@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-4376",
+  "title": "オーセンティックバー",
+  "subName": "",
+  "name": "オーセンティックバー",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 持ち主が自分のコストが１点以上の能力・イベント・アイテム・手札宣言能力を使用したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n※「オーセンティックバー」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] 持ち主が自分のコストが１点以上の能力・イベント・アイテム・手札宣言能力を使用したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n※「オーセンティックバー」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4376"
 }

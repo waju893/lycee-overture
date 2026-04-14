@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4216",
+  "title": "バイトの依頼",
+  "subName": "小坂井 アキラ",
+  "name": "バイトの依頼 小坂井 アキラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:[宙]でない味方キャラが登場している場合、このキャラにＡＰ＋１・ＳＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:[宙]でない味方キャラが登場している場合、このキャラにＡＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4216"
 }

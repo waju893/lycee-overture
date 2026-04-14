@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0949",
+  "title": "ミツルギの花嫁",
+  "subName": "椎葉 千波矢",
+  "name": "ミツルギの花嫁 椎葉 千波矢",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。自分の手札を１枚デッキの上に置く。",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。自分の手札を１枚デッキの上に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0949"
 }

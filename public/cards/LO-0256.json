@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-0256",
+  "title": "魔剣強化",
+  "subName": "",
+  "name": "魔剣強化",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] この＜魔剣＞キャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[常時] この＜魔剣＞キャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0256"
 }

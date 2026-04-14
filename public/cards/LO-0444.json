@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0444",
+  "title": "初心者応援",
+  "subName": "五十鈴 華",
+  "name": "初心者応援 五十鈴 華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 0,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0444"
 }

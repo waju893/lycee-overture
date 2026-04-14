@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0143",
+  "title": "剣王カレドヴルフの凱旋",
+  "subName": "カラドボルグ",
+  "name": "剣王カレドヴルフの凱旋 カラドボルグ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[誘発] このキャラがダウンしたとき、対戦キャラを破棄する。",
+  "textKr": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[誘発] このキャラがダウンしたとき、対戦キャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0143"
 }

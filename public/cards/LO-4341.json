@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4341",
+  "title": "独り身生活が楽しい美人な先生",
+  "subName": "空路 椿",
+  "name": "独り身生活が楽しい美人な先生 空路 椿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+  "textKr": "[誘発] ターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4341"
 }

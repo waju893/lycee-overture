@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5325",
+  "title": "千成行軍歌",
+  "subName": "木下 ひよ子 秀吉",
+  "name": "千成行軍歌 木下 ひよ子 秀吉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    5,
-    13
-  ],
-  "keyEffects": [
-    5,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][ペナルティ:[１枚ドローできる。]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋３する。この能力は失われる。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを４枚までデッキの下に置きシャッフルする。",
+  "textKr": "[ジャンプ:[0]][ペナルティ:[１枚ドローできる。]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋３する。この能力は失われる。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを４枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5325"
 }

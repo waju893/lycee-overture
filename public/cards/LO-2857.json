@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2857",
+  "title": "リトルバスターズ",
+  "subName": "棗 鈴",
+  "name": "リトルバスターズ 棗 鈴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8,
-    13
-  ],
-  "keyEffects": [
-    8,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [無]:自分のゴミ箱のＥＸが０または２の＜リトルバスターズ＞キャラ１体を手札に入れる。この能力は失われる。",
+  "textKr": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [無]:自分のゴミ箱のＥＸが０または２の＜リトルバスターズ＞キャラ１体を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2857"
 }

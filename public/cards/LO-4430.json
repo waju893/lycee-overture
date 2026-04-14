@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4430",
+  "title": "脳筋なセグイットの刑事",
+  "subName": "ヴァース",
+  "name": "脳筋なセグイットの刑事 ヴァース",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4430"
 }

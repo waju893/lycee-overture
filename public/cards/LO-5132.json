@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5132",
+  "title": "質実剛健な武術師範",
+  "subName": "モノマク",
+  "name": "質実剛健な武術師範 モノマク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 6,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] ターン開始時、味方『ティアーズ・トゥ・ティアラ シリーズ』キャラ１体にＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[ステップ:[0]]\n[誘発] ターン開始時、味方『ティアーズ・トゥ・ティアラ シリーズ』キャラ１体にＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5132"
 }

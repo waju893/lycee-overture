@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4302",
+  "title": "可愛い笑顔",
+  "subName": "桜坂 悠月",
+  "name": "可愛い笑顔 桜坂 悠月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが３体以上登場している場合、１枚ドローする。\n[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。\n[手札宣言] [月月月月月]:相手の宣言に対応して使用する。手札宣言能力を持つ味方キャラが登場している場合、その宣言の解決は失敗する。",
+  "textKr": "[誘発] このキャラが登場したとき、手札宣言能力を持つ味方キャラが３体以上登場している場合、１枚ドローする。\n[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。\n[手札宣言] [月月月月月]:相手の宣言に対応して使用する。手札宣言能力を持つ味方キャラが登場している場合、その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4302"
 }

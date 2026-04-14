@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1928",
+  "title": "心理定規",
+  "subName": "ドレスの少女",
+  "name": "心理定規 ドレスの少女",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [月月月]:{相手キャラ１体}にＤＭＧ－４する。そのキャラは次の相手のウェイクアップで未行動に戻らない。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [月月月]:{相手キャラ１体}にＤＭＧ－４する。そのキャラは次の相手のウェイクアップで未行動に戻らない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1928"
 }

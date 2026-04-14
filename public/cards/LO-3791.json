@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3791",
+  "title": "百獣の魔術師",
+  "subName": "リエーフ",
+  "name": "百獣の魔術師 リエーフ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが５点以上の味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋１する。\n[宣言] [日日日日日]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のキャラ１体をキャラ「ガオレオン」として、{味方ＤＦ}に無償で登場する。この能力は失われる。",
+  "textKr": "[宣言] [0]:コストが５点以上の味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋１する。\n[宣言] [日日日日日]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のキャラ１体をキャラ「ガオレオン」として、{味方ＤＦ}に無償で登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3791"
 }

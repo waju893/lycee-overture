@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0727",
+  "title": "全てを染めよ禁忌の白",
+  "subName": "#ffffff",
+  "name": "全てを染めよ禁忌の白 #ffffff",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [無無無無無]:{相手キャラ１体}のＡＰまたはＤＰまたはＳＰを０にする。",
+  "textKr": "[エンゲージ]\n[宣言] [無無無無無]:{相手キャラ１体}のＡＰまたはＤＰまたはＳＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0727"
 }

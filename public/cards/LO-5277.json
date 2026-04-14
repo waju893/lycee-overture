@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5277",
+  "title": "生真面目でカタブツ",
+  "subName": "郭嘉・稟",
+  "name": "生真面目でカタブツ 郭嘉・稟",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[手札宣言] [宙宙]:{コストが３～４点の味方キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
+  "textKr": "[手札宣言] [宙宙]:{コストが３～４点の味方キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5277"
 }

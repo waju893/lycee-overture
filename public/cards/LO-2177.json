@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2177",
+  "title": "ターゲットエンゲージ",
+  "subName": "サマエル",
+  "name": "ターゲットエンゲージ サマエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:{相手キャラ１体}は[ペナルティ:[自分のデッキを１枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。\n[宣言] [宙]:自ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:{相手キャラ１体}は[ペナルティ:[自分のデッキを１枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。\n[宣言] [宙]:自ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2177"
 }

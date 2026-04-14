@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0127",
+  "title": "ニャルラトホテプ",
+  "subName": "ネクロノミコン",
+  "name": "ニャルラトホテプ ネクロノミコン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] 対戦キャラがダウンしたバトル終了時、味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[エンゲージ]\n[誘発] 対戦キャラがダウンしたバトル終了時、味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0127"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1739",
+  "title": "鎖の巫",
+  "subName": "ウルゥル&サラァナ",
+  "name": "鎖の巫 ウルゥル&サラァナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "textKr": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1739"
 }

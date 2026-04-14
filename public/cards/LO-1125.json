@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1125",
+  "title": "あんこうチームの通信手",
+  "subName": "武部 沙織",
+  "name": "あんこうチームの通信手 武部 沙織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 1,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    8,
-    12
-  ],
-  "keyEffects": [
-    8,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][サポーター:[無無]]\n[宣言] [0]:味方＜大洗女子＞キャラの属性が４種類以上の場合、このキャラにＳＰ＋１する。",
+  "textKr": "[アシスト][サポーター:[無無]]\n[宣言] [0]:味方＜大洗女子＞キャラの属性が４種類以上の場合、このキャラにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1125"
 }

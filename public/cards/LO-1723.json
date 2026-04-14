@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1723",
+  "title": "溺愛チェシャ",
+  "subName": "中ノ島 妙",
+  "name": "溺愛チェシャ 中ノ島 妙",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。このバトル終了時、このキャラを未行動にする。",
+  "textKr": "[誘発] 自ターン中、このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。このバトル終了時、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1723"
 }

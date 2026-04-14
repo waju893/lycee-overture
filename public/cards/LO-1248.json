@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1248",
+  "title": "お節介焼き",
+  "subName": "藤林 杏",
+  "name": "お節介焼き 藤林 杏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[コスト] 自分の手札を１枚破棄する。破棄したとき、[宙宙]を発生する。このコストはキャラの登場にのみ支払える。",
+  "textKr": "[オーダーステップ:[0]]\n[コスト] 自分の手札を１枚破棄する。破棄したとき、[宙宙]を発生する。このコストはキャラの登場にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1248"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5477",
+  "title": "無防備すぎるクラスメイト",
+  "subName": "赤塚 ハル",
+  "name": "無防備すぎるクラスメイト 赤塚 ハル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、このキャラに隣接した味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラに隣接した味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5477"
 }

@@ -1,20 +1,19 @@
 {
+  "cardNo": "LO-0230",
+  "title": "鍛冶医クランベリー",
+  "subName": "",
+  "name": "鍛冶医クランベリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star"
@@ -22,5 +21,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [T]: バトル中に使用できない。{＜魔剣＞キャラ１体}にＤＰ＋１する。",
+  "textKr": "[宣言] [T]: バトル中に使用できない。{＜魔剣＞キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0230"
 }

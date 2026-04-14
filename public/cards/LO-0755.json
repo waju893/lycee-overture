@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0755",
+  "title": "黙示録の再来",
+  "subName": "アポカリプス",
+  "name": "黙示録の再来 アポカリプス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "幻獣",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0755"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1221",
+  "title": "夢を追うサテライト少女",
+  "subName": "有月 椎菜",
+  "name": "夢を追うサテライト少女 有月 椎菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 1,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたバトル終了時、自分のゴミ箱の「ペットボトルロケット」１枚を味方キャラに装備できる。装備したとき、この能力は失われる。",
+  "textKr": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたバトル終了時、自分のゴミ箱の「ペットボトルロケット」１枚を味方キャラに装備できる。装備したとき、この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1221"
 }

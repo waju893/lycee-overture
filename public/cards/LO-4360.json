@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4360",
+  "title": "幼少期を一緒に過ごした元妹",
+  "subName": "小森江 すず",
+  "name": "幼少期を一緒に過ごした元妹 小森江 すず",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、元の宣言型の基本能力を持つ元のＤＭＧが２以上の味方キャラが登場していない場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、元の宣言型の基本能力を持つ元のＤＭＧが２以上の味方キャラが登場していない場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4360"
 }

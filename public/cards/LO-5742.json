@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5742",
+  "title": "正義感が強い幼なじみ",
+  "subName": "若槻 琴美",
+  "name": "正義感が強い幼なじみ 若槻 琴美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方『終ノ空remake』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方『終ノ空remake』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5742"
 }

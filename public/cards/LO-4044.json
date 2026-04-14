@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4044",
+  "title": "応用学生",
+  "subName": "サチコ・センターズ",
+  "name": "応用学生 サチコ・センターズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12,
-    16
-  ],
-  "keyEffects": [
-    12,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１][サポーター:[花花]]\n[宣言] [0]:相手[雪]または[日]キャラが２体以上登場している場合、{コストが２点以下の味方[花]キャラ１体}にＤＰ＋１・ＳＰ＋１する。このキャラのチャージ１枚を破棄する。破棄したとき、自分のゴミ箱のカード１枚を自分の「決戦」置き場に置ける。",
+  "textKr": "[チャージ:１][サポーター:[花花]]\n[宣言] [0]:相手[雪]または[日]キャラが２体以上登場している場合、{コストが２点以下の味方[花]キャラ１体}にＤＰ＋１・ＳＰ＋１する。このキャラのチャージ１枚を破棄する。破棄したとき、自分のゴミ箱のカード１枚を自分の「決戦」置き場に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4044"
 }

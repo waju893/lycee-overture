@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3999",
+  "title": "山本家 当主の母",
+  "subName": "山本 五十六",
+  "name": "山本家 当主の母 山本 五十六",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果で相手キャラを破棄したとき、コストが２点以下の味方[雪]キャラが３体以上登場している場合、１枚ドローできる。この能力は失われる。",
+  "textKr": "[誘発] 自分の効果で相手キャラを破棄したとき、コストが２点以下の味方[雪]キャラが３体以上登場している場合、１枚ドローできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3999"
 }

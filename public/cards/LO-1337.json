@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1337",
+  "title": "女帝のカリスマ",
+  "subName": "不夜城のアサシン",
+  "name": "女帝のカリスマ 不夜城のアサシン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [雪雪]:このキャラのバトル中に使用する。コストが２点以下の対戦キャラを破棄する。この能力は失われる。",
+  "textKr": "[宣言] [雪雪]:このキャラのバトル中に使用する。コストが２点以下の対戦キャラを破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1337"
 }

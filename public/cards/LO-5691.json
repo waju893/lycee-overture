@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5691",
+  "title": "キマイラのオーナー兼マスター",
+  "subName": "鳥谷 静流",
+  "name": "キマイラのオーナー兼マスター 鳥谷 静流",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが１点以上の手札宣言能力を持つ味方キャラが２体以上の場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが１点以上の手札宣言能力を持つ味方キャラが２体以上の場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5691"
 }

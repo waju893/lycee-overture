@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0789",
+  "title": "バグバグ粒子砲",
+  "subName": "バグベア",
+  "name": "バグバグ粒子砲 バグベア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "幻獣",
+  "text": "[誘発] このキャラが登場したとき、相手のアイテム１枚を破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、相手のアイテム１枚を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0789"
 }

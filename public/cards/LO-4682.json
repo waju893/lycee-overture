@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-4682",
+  "title": "悪魔図書館",
+  "subName": "",
+  "name": "悪魔図書館",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。自分のデッキの上のカード１枚をこのエリアの下に置く。\n[宣言] [0]:自分の手札を１枚このエリアの下に置く。置いたとき、下のカード１枚を手札に入れる。\n[宣言] [0]:以下から１つを選び処理する。（ゲーム中同じ効果は２回選べない。）\n※「悪魔図書館」は自分の場に１枚まで配置可能\n※このエリアの下のカードは自分のみに公開",
+  "textKr": "[宣言] [0]:自ターン中に使用する。自分のデッキの上のカード１枚をこのエリアの下に置く。\n[宣言] [0]:自分の手札を１枚このエリアの下に置く。置いたとき、下のカード１枚を手札に入れる。\n[宣言] [0]:以下から１つを選び処理する。（ゲーム中同じ効果は２回選べない。）\n※「悪魔図書館」は自分の場に１枚まで配置可能\n※このエリアの下のカードは自分のみに公開",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4682"
 }

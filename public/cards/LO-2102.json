@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2102",
+  "title": "元荒くれメイド",
+  "subName": "上月 柑南",
+  "name": "元荒くれメイド 上月 柑南",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2102"
 }

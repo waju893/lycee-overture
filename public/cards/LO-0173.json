@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0173",
+  "title": "陽天のアーク×太陽剣ソエル",
+  "subName": "",
+  "name": "陽天のアーク×太陽剣ソエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体にＤＭＧ＋２する。",
+  "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体にＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0173"
 }

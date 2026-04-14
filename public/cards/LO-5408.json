@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5408",
+  "title": "萌え系イラストレーター",
+  "subName": "雪倉 睦月",
+  "name": "萌え系イラストレーター 雪倉 睦月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [宙]:バトル中を除く自ターン中に使用する。自分のゴミ箱のＥＸが２の[MAD]イベント１枚を手札に入れる。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [宙]:バトル中を除く自ターン中に使用する。自分のゴミ箱のＥＸが２の[MAD]イベント１枚を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5408"
 }

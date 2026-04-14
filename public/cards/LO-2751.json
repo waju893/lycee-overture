@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2751",
+  "title": "鬼を追う少女",
+  "subName": "神山 識",
+  "name": "鬼を追う少女 神山 識",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、[ステップ]または[オーダーステップ]を持つ味方[宙]キャラ１体にＤＰ＋２する。\n[宣言] [0]:[ステップ]または[オーダーステップ]を持つ味方[宙]キャラが３体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、[ステップ]または[オーダーステップ]を持つ味方[宙]キャラ１体にＤＰ＋２する。\n[宣言] [0]:[ステップ]または[オーダーステップ]を持つ味方[宙]キャラが３体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2751"
 }

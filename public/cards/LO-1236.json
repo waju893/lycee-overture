@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1236",
+  "title": "くノ一のような戦闘員",
+  "subName": "椎名",
+  "name": "くノ一のような戦闘員 椎名",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "cosmos",
@@ -17,13 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    8
-  ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪宙日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [無]:自ターン中に使用する。このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱の「椎名」１体}を無償で登場する。",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [無]:自ターン中に使用する。このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱の「椎名」１体}を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1236"
 }

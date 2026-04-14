@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0959",
+  "title": "天文部期待の1年生",
+  "subName": "広瀬 柚香",
+  "name": "天文部期待の1年生 広瀬 柚香",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが自分のデッキから破棄されたとき、味方キャラ１体は[オーダーチェンジ:[0]]を得る。（同番号の能力は１ターンに１回まで処理可能）",
+  "textKr": "[誘発] このキャラが自分のデッキから破棄されたとき、味方キャラ１体は[オーダーチェンジ:[0]]を得る。（同番号の能力は１ターンに１回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0959"
 }

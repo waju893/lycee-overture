@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3289",
+  "title": "コーダイン",
+  "subName": "香田 亜衣",
+  "name": "コーダイン 香田 亜衣",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言] [月]:味方[月]キャラの防御中に使用する。対戦キャラにＡＰ－２・ＤＰ－２する。",
+  "textKr": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言] [月]:味方[月]キャラの防御中に使用する。対戦キャラにＡＰ－２・ＤＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3289"
 }

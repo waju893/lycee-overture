@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0134",
+  "title": "アンコールいくよー★",
+  "subName": "風魔手裏剣",
+  "name": "アンコールいくよー★ 風魔手裏剣",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 2,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [このキャラを破棄する。]:バトル中に使用できない。相手のデッキを２枚破棄する。",
+  "textKr": "[エンゲージ]\n[宣言] [このキャラを破棄する。]:バトル中に使用できない。相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0134"
 }

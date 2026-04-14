@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3306",
+  "title": "愛読書は三島由紀夫",
+  "subName": "名波 七愛",
+  "name": "愛読書は三島由紀夫 名波 七愛",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。{アイテムを装備している味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「柳ヶ瀬湊」の場合、そのキャラにＤＭＧ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。{アイテムを装備している味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「柳ヶ瀬湊」の場合、そのキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3306"
 }

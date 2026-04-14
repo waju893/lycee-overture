@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5025",
+  "title": "人気モデルの上級生",
+  "subName": "八尋 実桜",
+  "name": "人気モデルの上級生 八尋 実桜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体のDＰを３にする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体のDＰを３にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5025"
 }

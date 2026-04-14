@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4833",
+  "title": "ベッドで投げキス",
+  "subName": "木須 志衣菜",
+  "name": "ベッドで投げキス 木須 志衣菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、このキャラのＡＰを４にする。この能力値修正はターン終了時に失われない。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、このキャラのＡＰを４にする。この能力値修正はターン終了時に失われない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4833"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4821",
+  "title": "学園の教師役",
+  "subName": "ベアトリーチェ",
+  "name": "学園の教師役 ベアトリーチェ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方[花]キャラ１体}にＳＰ＋１する。\n[宣言] [花]:相手ターン中に使用する。このキャラを未行動にする。この能力は失われる。",
+  "textKr": "[宣言] [0]:{味方[花]キャラ１体}にＳＰ＋１する。\n[宣言] [花]:相手ターン中に使用する。このキャラを未行動にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4821"
 }

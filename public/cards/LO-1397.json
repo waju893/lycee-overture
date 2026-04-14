@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1397",
+  "title": "軍神咆哮",
+  "subName": "エルドラドのバーサーカー",
+  "name": "軍神咆哮 エルドラドのバーサーカー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 6,
   "dp": 0,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:バトル中に使用できない。このキャラを未行動にし、{ＡＰが５以上の相手キャラと同列の味方ＤＦ}に移動する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。このキャラを未行動にし、{ＡＰが５以上の相手キャラと同列の味方ＤＦ}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1397"
 }

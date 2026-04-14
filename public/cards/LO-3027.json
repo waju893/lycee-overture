@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3027",
+  "title": "生徒会のコピー機",
+  "subName": "頼子",
+  "name": "生徒会のコピー機 頼子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3027"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4189",
+  "title": "チェッカ",
+  "subName": "市松 千恵華",
+  "name": "チェッカ 市松 千恵華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] [花]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] [花]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4189"
 }

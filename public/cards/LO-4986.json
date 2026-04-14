@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4986",
+  "title": "新入生応援",
+  "subName": "レナ・リヒテナウアー",
+  "name": "新入生応援 レナ・リヒテナウアー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを４枚までデッキの下に置きシャッフルする。",
+  "textKr": "[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを４枚までデッキの下に置きシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4986"
 }

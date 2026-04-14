@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0019",
+  "title": "不還匕首",
+  "subName": "アサシン／荊軻",
+  "name": "不還匕首 アサシン／荊軻",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T][このキャラを破棄する]:アイテムを装備していない相手キャラ１体を破棄する。",
+  "textKr": "[宣言] [T][このキャラを破棄する]:アイテムを装備していない相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0019"
 }

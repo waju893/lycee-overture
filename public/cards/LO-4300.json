@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4300",
+  "title": "生意気で好戦的",
+  "subName": "渡良瀬 寧々",
+  "name": "生意気で好戦的 渡良瀬 寧々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [月月月月月]:相手の宣言に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "[手札宣言] [月月月月月]:相手の宣言に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4300"
 }

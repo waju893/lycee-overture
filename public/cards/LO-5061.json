@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5061",
+  "title": "HALU",
+  "subName": "ハル",
+  "name": "HALU ハル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:コストが３点以上の味方ＡＦ[雪]キャラ１体にＡＰ＋２または味方[雪]キャラ１体にＤＰ＋２する。",
+  "textKr": "[宣言] [T]:コストが３点以上の味方ＡＦ[雪]キャラ１体にＡＰ＋２または味方[雪]キャラ１体にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5061"
 }

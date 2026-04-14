@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0328",
+  "title": "Tulta！",
+  "subName": "ミカ",
+  "name": "Tulta！ ミカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[誘発] このキャラが登場したとき、味方＜継続＞キャラが３体以上の場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方＜継続＞キャラが３体以上の場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0328"
 }

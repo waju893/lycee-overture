@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1347",
+  "title": "水月",
+  "subName": "セイバー／柳生但馬守宗矩",
+  "name": "水月 セイバー／柳生但馬守宗矩",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:自ターン中、相手の宣言に対応して使用する。{相手キャラ１体}にＡＰ－１する。",
+  "textKr": "[宣言] [0]:自ターン中、相手の宣言に対応して使用する。{相手キャラ１体}にＡＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1347"
 }

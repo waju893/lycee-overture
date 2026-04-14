@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5087",
+  "title": "商人根性たくましい行商妖精",
+  "subName": "エポナ",
+  "name": "商人根性たくましい行商妖精 エポナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手が相手の能力・基本能力・イベント・手札宣言能力を宣言したとき、相手は相手の手札を１枚破棄できる。破棄しない場合、その宣言の解決は失敗する。（１回まで処理可能）",
+  "textKr": "[誘発] 相手が相手の能力・基本能力・イベント・手札宣言能力を宣言したとき、相手は相手の手札を１枚破棄できる。破棄しない場合、その宣言の解決は失敗する。（１回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5087"
 }

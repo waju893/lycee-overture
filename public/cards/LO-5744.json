@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5744",
+  "title": "クラスのいじめられっ子",
+  "subName": "間宮 卓司",
+  "name": "クラスのいじめられっ子 間宮 卓司",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 0,
   "sp": 0,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [宙宙]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「高次元世界の住人 リルル」１体を探し無償で登場する。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [宙宙]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「高次元世界の住人 リルル」１体を探し無償で登場する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5744"
 }

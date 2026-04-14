@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3864",
+  "title": "シオンの娘",
+  "subName": "リリ",
+  "name": "シオンの娘 リリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [自分の「迷宮」置き場のカード１枚を破棄する]:{味方「シオン」または「リリ」１体}にＤＰ＋２する。この能力は失われる。",
+  "textKr": "[宣言] [自分の「迷宮」置き場のカード１枚を破棄する]:{味方「シオン」または「リリ」１体}にＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3864"
 }

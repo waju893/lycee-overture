@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3048",
+  "title": "薙刀部の顧問",
+  "subName": "雷堂 苺",
+  "name": "薙刀部の顧問 雷堂 苺",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＡＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3048"
 }

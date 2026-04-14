@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2053",
+  "title": "一番しっかりしてる風",
+  "subName": "藤丸 命",
+  "name": "一番しっかりしてる風 藤丸 命",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自分のゴミ箱に[雪]でないカードが置かれている場合、このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "textKr": "[宣言] [0]:自分のゴミ箱に[雪]でないカードが置かれている場合、このキャラはターン終了時までダウンしない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2053"
 }

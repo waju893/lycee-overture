@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0788",
+  "title": "リファインヒエリ",
+  "subName": "ダプネー",
+  "name": "リファインヒエリ ダプネー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラにサポートをしたとき、このキャラにＤＭＧ＋２する。",
+  "textKr": "[誘発] このキャラにサポートをしたとき、このキャラにＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0788"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6431",
+  "title": "文示宮家次期当主",
+  "subName": "文示宮 篤",
+  "name": "文示宮家次期当主 文示宮 篤",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 6,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「斎野尚哉」が登場している場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [0]:味方「斎野尚哉」が登場している場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6431"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0997",
+  "title": "Summer Pockets",
+  "subName": "久島 鴎",
+  "name": "Summer Pockets 久島 鴎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][月月月月月]:{相手キャラ１体}を行動済みにする。",
+  "textKr": "[宣言] [T][月月月月月]:{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0997"
 }

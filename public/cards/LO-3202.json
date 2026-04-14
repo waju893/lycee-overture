@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-3202",
+  "title": "心理掌握",
+  "subName": "",
+  "name": "心理掌握",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ－４・ＤＰ－４・ＤＭＧ－１する。このキャラは自分の効果で味方フィールドに移動する場合、移動しない。\n[宣言] [無無無]:相手ターン中に使用する。このアイテムを除外する。",
+  "textKr": "[常時] このキャラにＡＰ－４・ＤＰ－４・ＤＭＧ－１する。このキャラは自分の効果で味方フィールドに移動する場合、移動しない。\n[宣言] [無無無]:相手ターン中に使用する。このアイテムを除外する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3202"
 }

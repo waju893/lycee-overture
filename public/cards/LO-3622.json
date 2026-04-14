@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3622",
+  "title": "もうひとつの人格",
+  "subName": "風",
+  "name": "もうひとつの人格 風",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "cosmos"
@@ -15,11 +18,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１]\n[誘発] このキャラのバトル終了時、このキャラのチャージ１枚を破棄できる。破棄しない場合、このキャラを破棄する。破棄したとき、１枚ドローできる。ゴミ箱のこのキャラを味方「土地神 涼」１体にチャージとして置ける。",
+  "textKr": "[チャージ:１]\n[誘発] このキャラのバトル終了時、このキャラのチャージ１枚を破棄できる。破棄しない場合、このキャラを破棄する。破棄したとき、１枚ドローできる。ゴミ箱のこのキャラを味方「土地神 涼」１体にチャージとして置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3622"
 }

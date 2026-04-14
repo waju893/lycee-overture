@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5862",
+  "title": "寡黙でロックな天道会会計",
+  "subName": "八斗島 清司",
+  "name": "寡黙でロックな天道会会計 八斗島 清司",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "天道会",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方＜天道会＞キャラが２体以上の場合、１枚ドローする。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方＜天道会＞キャラが２体以上の場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5862"
 }

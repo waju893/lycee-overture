@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6073",
+  "title": "相性抜群以心伝心な元カノ",
+  "subName": "椎名 雪",
+  "name": "相性抜群以心伝心な元カノ 椎名 雪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自分のゴミ箱の「椎名雪」１体を除外する。したとき、このキャラにＳＰ＋２する。",
+  "textKr": "[宣言] [0]:自分のゴミ箱の「椎名雪」１体を除外する。したとき、このキャラにＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6073"
 }

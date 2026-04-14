@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0048",
+  "title": "理想の女性",
+  "subName": "アサシン／ステンノ",
+  "name": "理想の女性 アサシン／ステンノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:バトル中に使用できない。このキャラと味方「アーチャー／エウリュアレ」１体を入れ替える。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。このキャラと味方「アーチャー／エウリュアレ」１体を入れ替える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0048"
 }

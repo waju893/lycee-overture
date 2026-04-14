@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1534",
+  "title": "オークの英雄",
+  "subName": "アナトリア",
+  "name": "オークの英雄 アナトリア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 2,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙宙宙]:このキャラがＡＦに登場している場合、このキャラはターン終了時までダウンしない。このキャラは次の自分のウェイクアップで未行動に戻らない。",
+  "textKr": "[宣言] [宙宙宙]:このキャラがＡＦに登場している場合、このキャラはターン終了時までダウンしない。このキャラは次の自分のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1534"
 }

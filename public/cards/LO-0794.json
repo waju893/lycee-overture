@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0794",
+  "title": "混沌の黒霧",
+  "subName": "アスタロト",
+  "name": "混沌の黒霧 アスタロト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,13 +21,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    10
-  ],
-  "keyEffects": [
-    4,
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[オーダーステップ:[0]][リカバリー:[１枚ドローする。]]\n[宣言] [宙宙]:このキャラにＡＰ＋２・ＤＰ＋２する。このキャラは次の自分のウェイクアップで未行動に戻らない。",
+  "textKr": "[オーダーステップ:[0]][リカバリー:[１枚ドローする。]]\n[宣言] [宙宙]:このキャラにＡＰ＋２・ＤＰ＋２する。このキャラは次の自分のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0794"
 }

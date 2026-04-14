@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0492",
+  "title": "窮地の智慧",
+  "subName": "アヴェンジャー／巌窟王 エドモン・ダンテス",
+  "name": "窮地の智慧 アヴェンジャー／巌窟王 エドモン・ダンテス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,5 +21,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 味方キャラがダウンしたバトル終了時、対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[誘発] 味方キャラがダウンしたバトル終了時、対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0492"
 }

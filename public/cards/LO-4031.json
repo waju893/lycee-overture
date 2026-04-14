@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4031",
+  "title": "リーザス軍総大将 第1軍将軍",
+  "subName": "バレス・プロヴァンス",
+  "name": "リーザス軍総大将 第1軍将軍 バレス・プロヴァンス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12,
-    16
-  ],
-  "keyEffects": [
-    12,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１][サポーター:[花花]]\n[宣言] [D1]:相手[花]または[宙]キャラが２体以上登場している場合、{コストが２点以下の味方[花]キャラ１体}にＤＰ＋２する。このキャラのチャージ１枚を破棄する。破棄したとき、自分のゴミ箱のカード１枚を自分の「決戦」置き場に置ける。",
+  "textKr": "[チャージ:１][サポーター:[花花]]\n[宣言] [D1]:相手[花]または[宙]キャラが２体以上登場している場合、{コストが２点以下の味方[花]キャラ１体}にＤＰ＋２する。このキャラのチャージ１枚を破棄する。破棄したとき、自分のゴミ箱のカード１枚を自分の「決戦」置き場に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4031"
 }

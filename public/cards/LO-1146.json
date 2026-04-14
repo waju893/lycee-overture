@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1146",
+  "title": "みほの姉",
+  "subName": "西住 まほ",
+  "name": "みほの姉 西住 まほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,11 +22,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "黒森峰",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{相手キャラ１体}にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1146"
 }

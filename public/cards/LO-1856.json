@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-1856",
+  "title": "スク水メイド",
+  "subName": "",
+  "name": "スク水メイド",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このアイテムを除外する。除外したとき、[花花花花]または[日日日日]または[花花日日]を発生する。",
+  "textKr": "[コスト] このアイテムを除外する。除外したとき、[花花花花]または[日日日日]または[花花日日]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1856"
 }

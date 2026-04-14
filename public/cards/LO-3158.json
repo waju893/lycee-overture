@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3158",
+  "title": "買い物客",
+  "subName": "姫神 秋沙",
+  "name": "買い物客 姫神 秋沙",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、元のＤＰが４以上の味方[花]キャラが２体以上登場している場合、味方[花]キャラ１体にＤＭＧ＋１し、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、元のＤＰが４以上の味方[花]キャラが２体以上登場している場合、味方[花]キャラ１体にＤＭＧ＋１し、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3158"
 }

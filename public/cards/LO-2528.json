@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2528",
+  "title": "武人の繋がり",
+  "subName": "更科 睦美",
+  "name": "武人の繋がり 更科 睦美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方ＡＦ[花]キャラ１体}にＳＰ＋１する。\n[宣言] [0]:{ＤＭＧが元のＤＭＧより低い味方キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方ＡＦ[花]キャラ１体}にＳＰ＋１する。\n[宣言] [0]:{ＤＭＧが元のＤＭＧより低い味方キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2528"
 }

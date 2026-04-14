@@ -1,14 +1,28 @@
 {
+  "cardNo": "LO-2847",
+  "title": "ひげ猫団",
+  "subName": "",
+  "name": "ひげ猫団",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] コストが５点以上で元のＤＭＧが２以上の味方[宙]キャラが手札から登場したとき、元のＤＭＧが２以上の味方キャラが２体以下の場合、１枚ドローできる。\n[宣言] [0]:相手ターン中に使用する。{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n※「ひげ猫団」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] コストが５点以上で元のＤＭＧが２以上の味方[宙]キャラが手札から登場したとき、元のＤＭＧが２以上の味方キャラが２体以下の場合、１枚ドローできる。\n[宣言] [0]:相手ターン中に使用する。{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n※「ひげ猫団」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2847"
 }

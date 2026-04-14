@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0996",
+  "title": "Summer Pockets",
+  "subName": "空門 蒼",
+  "name": "Summer Pockets 空門 蒼",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [日日日日日]:このキャラにＡＰ＋４する。",
+  "textKr": "[宣言] [日日日日日]:このキャラにＡＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0996"
 }

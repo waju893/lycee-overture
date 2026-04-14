@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2176",
+  "title": "セルフリヴァイバル",
+  "subName": "アトゥム",
+  "name": "セルフリヴァイバル アトゥム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 4,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "神姫",
+  "text": "[サポーター:[花花無]]\n[誘発] このキャラでＡＦ[花]キャラにサポートをしたとき、対象のキャラにバトル終了時までＤＰ＋２・ＤＭＧ＋３する。\n[誘発] 相手の効果で相手キャラが手札から登場したとき、相手のデッキを２枚破棄する。",
+  "textKr": "[サポーター:[花花無]]\n[誘発] このキャラでＡＦ[花]キャラにサポートをしたとき、対象のキャラにバトル終了時までＤＰ＋２・ＤＭＧ＋３する。\n[誘発] 相手の効果で相手キャラが手札から登場したとき、相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2176"
 }

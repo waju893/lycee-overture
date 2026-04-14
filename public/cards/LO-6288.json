@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6288",
+  "title": "GHQ少佐",
+  "subName": "ジョージ・ガーゲット",
+  "name": "GHQ少佐 ジョージ・ガーゲット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラを手札から登場または自分の効果で破棄したとき、１枚ドローする。自分にシールド＋１できる。（１ターンに２回まで処理可能）",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラを手札から登場または自分の効果で破棄したとき、１枚ドローする。自分にシールド＋１できる。（１ターンに２回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6288"
 }

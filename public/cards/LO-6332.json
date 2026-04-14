@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6332",
+  "title": "覇道家のメイド",
+  "subName": "チアキ ＆ ソーニャ ＆ マコト",
+  "name": "覇道家のメイド チアキ ＆ ソーニャ ＆ マコト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方「デモンベイン」または「覇道瑠璃」または「ウィンフィールド」１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{味方「デモンベイン」または「覇道瑠璃」または「ウィンフィールド」１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6332"
 }

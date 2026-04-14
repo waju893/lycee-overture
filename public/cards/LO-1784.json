@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1784",
+  "title": "エンナカムイの皇子",
+  "subName": "キウル",
+  "name": "エンナカムイの皇子 キウル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    8,
-    12
-  ],
-  "keyEffects": [
-    8,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体に相手ターン終了時までＡＰ＋２する。",
+  "textKr": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体に相手ターン終了時までＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1784"
 }

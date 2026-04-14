@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4869",
+  "title": "男子の憧れ",
+  "subName": "四季 ナツメ",
+  "name": "男子の憧れ 四季 ナツメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベント・手札宣言能力にのみ支払える。",
+  "textKr": "[コスト] このキャラのバトル中に使用できない。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベント・手札宣言能力にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4869"
 }

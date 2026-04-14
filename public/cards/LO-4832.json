@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4832",
+  "title": "ビーチでハァハァ",
+  "subName": "神宮 藍咲",
+  "name": "ビーチでハァハァ 神宮 藍咲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:[3]]\n[誘発] ターン開始時、このキャラのチャージ１枚を破棄する。このキャラのチャージが１枚以上の場合、このキャラは[ステップ:[0]]を得る。",
+  "textKr": "[チャージ:[3]]\n[誘発] ターン開始時、このキャラのチャージ１枚を破棄する。このキャラのチャージが１枚以上の場合、このキャラは[ステップ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4832"
 }

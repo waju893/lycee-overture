@@ -1,20 +1,19 @@
 {
+  "cardNo": "LO-1421",
+  "title": "所長",
+  "subName": "オルガマリー・アニムスフィア",
+  "name": "所長 オルガマリー・アニムスフィア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star"
@@ -22,5 +21,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方＜サーヴァント＞キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[誘発] 味方＜サーヴァント＞キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1421"
 }

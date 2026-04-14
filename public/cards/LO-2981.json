@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2981",
+  "title": "小柄なクラスメイト",
+  "subName": "楠 耶央",
+  "name": "小柄なクラスメイト 楠 耶央",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:相手ターン中に使用する。{味方キャラ１体}にＡＰ－２・ＤＰ＋２する。この能力は失われる。",
+  "textKr": "[宣言] [D1]:相手ターン中に使用する。{味方キャラ１体}にＡＰ－２・ＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2981"
 }

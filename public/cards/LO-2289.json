@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2289",
+  "title": "亀甲積",
+  "subName": "松前城",
+  "name": "亀甲積 松前城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [宙宙]:自ターン中に使用する。このキャラと{同列の味方キャラ１体}にＤＰ＋２する。",
+  "textKr": "[宣言] [宙宙]:自ターン中に使用する。このキャラと{同列の味方キャラ１体}にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2289"
 }

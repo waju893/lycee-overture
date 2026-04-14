@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0393",
+  "title": "サンダース大学付属高校",
+  "subName": "ケイ",
+  "name": "サンダース大学付属高校 ケイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 6,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サンダース",
+  "text": "[宣言] [無無]: {味方＜サンダース＞キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [無無]: {味方＜サンダース＞キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0393"
 }

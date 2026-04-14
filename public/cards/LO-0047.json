@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0047",
+  "title": "うたかたの恋",
+  "subName": "キャスター／メディア〔リリィ〕",
+  "name": "うたかたの恋 キャスター／メディア〔リリィ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にする。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0047"
 }

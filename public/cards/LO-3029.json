@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3029",
+  "title": "お兄ちゃんのお目付役",
+  "subName": "黒崎 恵留",
+  "name": "お兄ちゃんのお目付役 黒崎 恵留",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラは[サポーター:[花花]]を得る。",
+  "textKr": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラは[サポーター:[花花]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3029"
 }

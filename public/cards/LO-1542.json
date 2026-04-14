@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1542",
+  "title": "闇エルフの女王",
+  "subName": "ドロテア",
+  "name": "闇エルフの女王 ドロテア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙]:防御中の味方キャラ１体にＡＰ－４・ＤＰ＋４する。",
+  "textKr": "[手札宣言] [宙]:防御中の味方キャラ１体にＡＰ－４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1542"
 }

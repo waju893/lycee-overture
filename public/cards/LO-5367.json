@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5367",
+  "title": "同級生の男友達",
+  "subName": "日向 真",
+  "name": "同級生の男友達 日向 真",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分のイベントを使用したとき、未行動の味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] 自ターン中、自分のイベントを使用したとき、未行動の味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5367"
 }

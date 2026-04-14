@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3244",
+  "title": "不幸を呼び寄せる才能",
+  "subName": "青兎 みかも",
+  "name": "不幸を呼び寄せる才能 青兎 みかも",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自分の手札のＥＸが１以下のカード１枚を公開しデッキの下に置く。置いたとき、２枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:自分の手札のＥＸが１以下のカード１枚を公開しデッキの下に置く。置いたとき、２枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3244"
 }

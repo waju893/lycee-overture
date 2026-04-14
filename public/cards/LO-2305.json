@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2305",
+  "title": "丸亀うちわ旋風",
+  "subName": "丸亀城",
+  "name": "丸亀うちわ旋風 丸亀城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [0]:{このキャラと同列の相手キャラ１体}にＤＰ－１する。",
+  "textKr": "[宣言] [0]:{このキャラと同列の相手キャラ１体}にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2305"
 }

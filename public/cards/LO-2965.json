@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2965",
+  "title": "ギャル系幼馴染",
+  "subName": "長南 陽佳",
+  "name": "ギャル系幼馴染 長南 陽佳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:{相手キャラ１体}にＳＰ－１する。\n[誘発] コストが３～４点の味方キャラを対象に自分のイベントまたは手札宣言能力を使用したとき、１枚ドローできる。\n[手札宣言] [D1]:{コストが３～４点の味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:{相手キャラ１体}にＳＰ－１する。\n[誘発] コストが３～４点の味方キャラを対象に自分のイベントまたは手札宣言能力を使用したとき、１枚ドローできる。\n[手札宣言] [D1]:{コストが３～４点の味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2965"
 }

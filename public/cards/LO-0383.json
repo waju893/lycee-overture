@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0383",
+  "title": "一年生",
+  "subName": "大野 あや",
+  "name": "一年生 大野 あや",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -19,13 +22,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    6,
-    8
-  ],
-  "keyEffects": [
-    6,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト][アグレッシブ]",
+  "textKr": "[アシスト][アグレッシブ]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0383"
 }

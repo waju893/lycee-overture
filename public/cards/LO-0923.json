@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0923",
+  "title": "秘めた想い",
+  "subName": "朝霧 麻衣",
+  "name": "秘めた想い 朝霧 麻衣",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用する。このキャラのＳＰが４以上の場合、このキャラにバトル終了時までＤＭＧ＋１する。",
+  "textKr": "[宣言] [0]:バトル中に使用する。このキャラのＳＰが４以上の場合、このキャラにバトル終了時までＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0923"
 }

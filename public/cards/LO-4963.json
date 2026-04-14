@@ -1,16 +1,30 @@
 {
+  "cardNo": "LO-4963",
+  "title": "ブラコン妹",
+  "subName": "",
+  "name": "ブラコン妹",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このエリアの下のカードが３枚以下の場合、自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。この効果は相手ターン終了時まで失われる。\n[誘発] 上のコスト型の効果を使用したとき、自分のゴミ箱のカード１枚をこのエリアの下に置く。\n※「ブラコン妹」は自分の場に１枚まで配置可能",
+  "textKr": "[コスト] このエリアの下のカードが３枚以下の場合、自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。この効果は相手ターン終了時まで失われる。\n[誘発] 上のコスト型の効果を使用したとき、自分のゴミ箱のカード１枚をこのエリアの下に置く。\n※「ブラコン妹」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4963"
 }

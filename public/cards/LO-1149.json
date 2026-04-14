@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1149",
+  "title": "思わせぶりなセリフ",
+  "subName": "ミカ",
+  "name": "思わせぶりなセリフ ミカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "継続",
+  "text": "[誘発] 自ターン中、このキャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 自ターン中、このキャラを破棄したとき、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1149"
 }

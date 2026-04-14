@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0611",
+  "title": "天性のリズム感",
+  "subName": "御影 須美",
+  "name": "天性のリズム感 御影 須美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [T]:{相手キャラ１体}にＤＰ－１する。",
+  "textKr": "[宣言] [T]:{相手キャラ１体}にＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0611"
 }

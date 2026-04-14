@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5039",
+  "title": "押しかけ秘書の代理人形",
+  "subName": "ナトリイトリ",
+  "name": "押しかけ秘書の代理人形 ナトリイトリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12,
-    16
-  ],
-  "keyEffects": [
-    12,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２][サポーター:[花花]]\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、自分のデッキを１枚破棄し、[花花]を発生する。\n[宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}はＡＰ＋２・ＤＰ＋２・[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[チャージ:２][サポーター:[花花]]\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、自分のデッキを１枚破棄し、[花花]を発生する。\n[宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}はＡＰ＋２・ＤＰ＋２・[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5039"
 }

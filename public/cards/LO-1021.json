@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1021",
+  "title": "カチューシャのフォロー役",
+  "subName": "ノンナ",
+  "name": "カチューシャのフォロー役 ノンナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "プラウダ",
+  "text": "[アシスト]\n[宣言] [このキャラを破棄する]:１枚ドローする。",
+  "textKr": "[アシスト]\n[宣言] [このキャラを破棄する]:１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1021"
 }

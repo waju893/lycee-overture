@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4697",
+  "title": "黎明に澄む騎士道",
+  "subName": "アシュリー",
+  "name": "黎明に澄む騎士道 アシュリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{コストが２点以下または５点以上の味方[日]キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:コストが２点以下の味方[日]キャラが３体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{コストが２点以下または５点以上の味方[日]キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:コストが２点以下の味方[日]キャラが３体以上登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4697"
 }

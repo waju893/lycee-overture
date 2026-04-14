@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5045",
+  "title": "才気溢れる呪法使いの少女",
+  "subName": "ネコネ",
+  "name": "才気溢れる呪法使いの少女 ネコネ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、以下から１つを選び処理する。(同じ効果はゲーム中２回選べない。)\n[誘発] このキャラが自分の効果で場を離れたとき、自分のデッキを３枚破棄する。",
+  "textKr": "[誘発] このキャラが登場したとき、以下から１つを選び処理する。(同じ効果はゲーム中２回選べない。)\n[誘発] このキャラが自分の効果で場を離れたとき、自分のデッキを３枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5045"
 }

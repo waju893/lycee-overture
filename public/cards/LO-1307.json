@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1307",
+  "title": "姉御",
+  "subName": "来ヶ谷 唯湖",
+  "name": "姉御 来ヶ谷 唯湖",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[宣言] [0]:元のＤＭＧが４以上の味方キャラが登場している場合、このキャラにＤＭＧ＋１する。",
+  "textKr": "[アシスト]\n[宣言] [0]:元のＤＭＧが４以上の味方キャラが登場している場合、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1307"
 }

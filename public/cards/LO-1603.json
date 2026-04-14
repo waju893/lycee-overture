@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1603",
+  "title": "メイド",
+  "subName": "シルヴィア・ル・クルスクラウン・ソルティレージュ・シスア",
+  "name": "メイド シルヴィア・ル・クルスクラウン・ソルティレージュ・シスア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ全てにＳＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ全てにＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1603"
 }

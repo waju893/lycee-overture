@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1195",
+  "title": "能力者グループのメンバー",
+  "subName": "七野",
+  "name": "能力者グループのメンバー 七野",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月月月]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。このキャラは次の自分のウェイクアップで未行動に戻らない。",
+  "textKr": "[宣言] [月月月]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。このキャラは次の自分のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1195"
 }

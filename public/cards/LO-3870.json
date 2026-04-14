@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3870",
+  "title": "長尾家の家老",
+  "subName": "直江 秋子 景綱",
+  "name": "長尾家の家老 直江 秋子 景綱",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、味方ＡＦキャラ全てがコストが５点以上の[月]キャラの場合、自分の手札のコストが[月]または[無]のみで６点以下のキャラ１体を無償で登場できる。",
+  "textKr": "[誘発] このキャラが手札から登場したとき、味方ＡＦキャラ全てがコストが５点以上の[月]キャラの場合、自分の手札のコストが[月]または[無]のみで６点以下のキャラ１体を無償で登場できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3870"
 }

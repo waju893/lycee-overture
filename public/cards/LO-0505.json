@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0505",
+  "title": "英雄作成",
+  "subName": "キャスター／マーリン",
+  "name": "英雄作成 キャスター／マーリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -18,11 +21,11 @@
   "dp": 2,
   "sp": 3,
   "dmg": 2,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[常時] このキャラのサポートはＡＰとＤＰに足す。",
+  "textKr": "[オーダーチェンジ:[0]]\n[常時] このキャラのサポートはＡＰとＤＰに足す。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0505"
 }

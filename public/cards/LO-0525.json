@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0525",
+  "title": "吠え立てよ、我が憤怒",
+  "subName": "アヴェンジャー／ジャンヌ・ダルク〔オルタ〕",
+  "name": "吠え立てよ、我が憤怒 アヴェンジャー／ジャンヌ・ダルク〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [D3]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [D3]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0525"
 }

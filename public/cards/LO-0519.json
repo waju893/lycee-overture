@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0519",
+  "title": "殿の矜持",
+  "subName": "ランサー／レオニダス一世",
+  "name": "殿の矜持 ランサー／レオニダス一世",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 0,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [このキャラを破棄する]:{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [このキャラを破棄する]:{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0519"
 }

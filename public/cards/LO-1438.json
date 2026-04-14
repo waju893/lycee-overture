@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1438",
+  "title": "聖夜のサンタオルタ",
+  "subName": "",
+  "name": "聖夜のサンタオルタ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "L",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star",
@@ -18,5 +21,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "無無無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。\n※このカードは能力を持たないキャラとしてゲームで使用できます。",
+  "textKr": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。\n※このカードは能力を持たないキャラとしてゲームで使用できます。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1438"
 }

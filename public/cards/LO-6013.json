@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6013",
+  "title": "たった一人の友人である変人",
+  "subName": "矢式 百春",
+  "name": "たった一人の友人である変人 矢式 百春",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、味方『世界征服彼女』キャラが３体以上の場合、１枚ドローできる。しない場合、自分のゴミ箱または自分のデッキから「事なかれ主義者 服部征人」１体を探し無償で登場する。",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、味方『世界征服彼女』キャラが３体以上の場合、１枚ドローできる。しない場合、自分のゴミ箱または自分のデッキから「事なかれ主義者 服部征人」１体を探し無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6013"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2105",
+  "title": "ゴーストダンス",
+  "subName": "あずま 夜",
+  "name": "ゴーストダンス あずま 夜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、このキャラを除く未行動の味方キャラ１体を行動済みにできる。行動済みにしたとき、１枚ドローする。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、このキャラを除く未行動の味方キャラ１体を行動済みにできる。行動済みにしたとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2105"
 }

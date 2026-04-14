@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0471",
+  "title": "妄想心音",
+  "subName": "アサシン／呪腕のハサン",
+  "name": "妄想心音 アサシン／呪腕のハサン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[雪雪]]\n[誘発] このキャラで攻撃宣言をしたとき、味方キャラ１体にＤＭＧ＋１する。",
+  "textKr": "[オーダーチェンジ:[雪雪]]\n[誘発] このキャラで攻撃宣言をしたとき、味方キャラ１体にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0471"
 }

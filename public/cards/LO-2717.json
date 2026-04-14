@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-2717",
+  "title": "悪夢の花",
+  "subName": "",
+  "name": "悪夢の花",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 味方エリアが３枚以上の場合、[宙宙]を発生する。この能力は失われる。\n[宣言] [0]:この[宙]キャラにＤＭＧ＋１し、そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[コスト] 味方エリアが３枚以上の場合、[宙宙]を発生する。この能力は失われる。\n[宣言] [0]:この[宙]キャラにＤＭＧ＋１し、そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2717"
 }

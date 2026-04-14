@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4438",
+  "title": "十三課を嫌悪する刑事",
+  "subName": "アレックス",
+  "name": "十三課を嫌悪する刑事 アレックス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラを除くサブネームに「十三課」を含む味方キャラが登場している場合、このキャラにＡＰ＋１する。",
+  "textKr": "[宣言] [0]:このキャラを除くサブネームに「十三課」を含む味方キャラが登場している場合、このキャラにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4438"
 }

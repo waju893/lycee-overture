@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5598",
+  "title": "豪腕の暴食漢ダニー",
+  "subName": "ダニエル・マッケンジー",
+  "name": "豪腕の暴食漢ダニー ダニエル・マッケンジー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 5,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方キャラ全てのコストが３～４点の場合、味方ＡＦキャラ全てにＡＰ＋１する。",
+  "textKr": "[宣言] [0]:味方キャラ全てのコストが３～４点の場合、味方ＡＦキャラ全てにＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5598"
 }

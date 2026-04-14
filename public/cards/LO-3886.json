@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3886",
+  "title": "学園随一の才女",
+  "subName": "来栖 桜綾",
+  "name": "学園随一の才女 来栖 桜綾",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    7,
-    12
-  ],
-  "keyEffects": [
-    7,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方[花]キャラが登場していない場合、このキャラを破棄する。\n[宣言] [D1]:{コストが３点以上の味方[花]キャラと同列の味方キャラ１体}にＤＰ＋２する。この能力は失われる。",
+  "textKr": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方[花]キャラが登場していない場合、このキャラを破棄する。\n[宣言] [D1]:{コストが３点以上の味方[花]キャラと同列の味方キャラ１体}にＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3886"
 }

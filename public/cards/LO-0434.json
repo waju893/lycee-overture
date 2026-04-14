@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0434",
+  "title": "ボコみたいに素敵ね",
+  "subName": "島田 愛里寿",
+  "name": "ボコみたいに素敵ね 島田 愛里寿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大学選抜",
+  "text": "[アシスト]\n[宣言] [0]:味方キャラが「ボコ」を装備している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[アシスト]\n[宣言] [0]:味方キャラが「ボコ」を装備している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0434"
 }

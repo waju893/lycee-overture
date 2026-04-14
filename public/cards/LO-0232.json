@@ -1,25 +1,31 @@
 {
+  "cardNo": "LO-0232",
+  "title": "魔女王アリス",
+  "subName": "",
+  "name": "魔女王アリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star"
   ],
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 1,
+  "costRaw": "無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] 味方キャラがエンゲージ登場したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＳＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[誘発] 味方キャラがエンゲージ登場したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＳＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0232"
 }

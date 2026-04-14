@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0130",
+  "title": "轟覇・雷霆舞塵",
+  "subName": "雷斧ペルーン",
+  "name": "轟覇・雷霆舞塵 雷斧ペルーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[自分のデッキを２枚回復する。]]\n[宣言] [D2]:味方キャラ全ては[オーダーステップ:[0]]を得る。",
+  "textKr": "[エンゲージ:[自分のデッキを２枚回復する。]]\n[宣言] [D2]:味方キャラ全ては[オーダーステップ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0130"
 }

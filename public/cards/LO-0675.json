@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0675",
+  "title": "人造悪衣",
+  "subName": "オズ",
+  "name": "人造悪衣 オズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] 味方キャラが移動したとき、相手キャラ１体にＳＰ－１できる。",
+  "textKr": "[誘発] 味方キャラが移動したとき、相手キャラ１体にＳＰ－１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0675"
 }

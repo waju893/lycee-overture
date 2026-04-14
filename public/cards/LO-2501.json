@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2501",
+  "title": "皇祖",
+  "subName": "緋彌之命",
+  "name": "皇祖 緋彌之命",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:{味方[雪]キャラ１体}を破棄する。このターン終了時、自分のゴミ箱のキャラ１体をキャラ「ミツルギ」として、{味方フィールド}に登場できる。この能力は失われる。",
+  "textKr": "[宣言] [雪]:{味方[雪]キャラ１体}を破棄する。このターン終了時、自分のゴミ箱のキャラ１体をキャラ「ミツルギ」として、{味方フィールド}に登場できる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2501"
 }

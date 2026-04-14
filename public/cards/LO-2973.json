@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2973",
+  "title": "どこかミステリアスな転校生",
+  "subName": "板野 奏",
+  "name": "どこかミステリアスな転校生 板野 奏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。このキャラにＡＰ－３・ＤＰ＋３する。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。このキャラにＡＰ－３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2973"
 }

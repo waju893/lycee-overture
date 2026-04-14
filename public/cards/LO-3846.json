@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3846",
+  "title": "偶然と謎に満ちた転校生",
+  "subName": "黒姫 結灯",
+  "name": "偶然と謎に満ちた転校生 黒姫 結灯",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[コスト] [花花]を発生する。このコストは基本能力またはコストが２点以下のキャラの使用にのみ支払える。この能力は失われる。\n[誘発] このキャラのバトル終了時、このキャラのチャージ１枚を破棄する。１枚ドローできる。このキャラのチャージが０枚の場合、このキャラを破棄する。",
+  "textKr": "[チャージ:２]\n[コスト] [花花]を発生する。このコストは基本能力またはコストが２点以下のキャラの使用にのみ支払える。この能力は失われる。\n[誘発] このキャラのバトル終了時、このキャラのチャージ１枚を破棄する。１枚ドローできる。このキャラのチャージが０枚の場合、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3846"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1182",
+  "title": "ガルデモのリードギター担当",
+  "subName": "ひさ子",
+  "name": "ガルデモのリードギター担当 ひさ子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,13 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8,
-    13
-  ],
-  "keyEffects": [
-    8,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][ペナルティ:[１枚ドローする。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+  "textKr": "[アシスト][ペナルティ:[１枚ドローする。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1182"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2172",
+  "title": "拍動律志",
+  "subName": "女禍",
+  "name": "拍動律志 女禍",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにバトル終了時までＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [花]:{味方[花]キャラ１体}は、ターン終了時まで行動済みでも防御キャラに指定できる。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにバトル終了時までＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [花]:{味方[花]キャラ１体}は、ターン終了時まで行動済みでも防御キャラに指定できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2172"
 }

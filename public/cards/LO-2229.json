@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2229",
+  "title": "天下泰砲",
+  "subName": "名古屋城",
+  "name": "天下泰砲 名古屋城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[アグレッシブ]\n[宣言] [日]:このキャラにＡＰ＋３・ＤＰ－１する。",
+  "textKr": "[アグレッシブ]\n[宣言] [日]:このキャラにＡＰ＋３・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2229"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4541",
+  "title": "警視監の娘",
+  "subName": "四ノ宮 小町",
+  "name": "警視監の娘 四ノ宮 小町",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [D1]:味方「第七共和国警察庁」を配置している場合、このキャラをデッキの下に置く。置いたとき、１枚ドローする。\n[宣言] [D1]:相手の攻撃宣言に対応して使用する。このキャラと{味方ＤＦ[雪]キャラ１体}を入れ替える。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [D1]:味方「第七共和国警察庁」を配置している場合、このキャラをデッキの下に置く。置いたとき、１枚ドローする。\n[宣言] [D1]:相手の攻撃宣言に対応して使用する。このキャラと{味方ＤＦ[雪]キャラ１体}を入れ替える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4541"
 }

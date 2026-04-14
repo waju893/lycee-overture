@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2295",
+  "title": "鬼十河",
+  "subName": "十河城",
+  "name": "鬼十河 十河城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{このキャラを除くコストが２点以下の味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [日]:このキャラは[アグレッシブ]を得る。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{このキャラを除くコストが２点以下の味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [日]:このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2295"
 }

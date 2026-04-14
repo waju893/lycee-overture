@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3531",
+  "title": "潜入護衛任務",
+  "subName": "山田 妙子",
+  "name": "潜入護衛任務 山田 妙子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:{味方ＤＦキャラ１体}にＤＰ＋１する。\n[宣言] [雪]:自分のゴミ箱または自分のデッキから「守護の楯」１枚を探し公開して手札に入れる。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:{味方ＤＦキャラ１体}にＤＰ＋１する。\n[宣言] [雪]:自分のゴミ箱または自分のデッキから「守護の楯」１枚を探し公開して手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3531"
 }

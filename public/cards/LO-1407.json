@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1407",
+  "title": "霊珠子",
+  "subName": "ランサー／哪吒",
+  "name": "霊珠子 ランサー／哪吒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    14
-  ],
-  "keyEffects": [
-    14
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[ガッツ:[日日日]]\n[誘発] 手札以外からこのキャラが登場したとき、このキャラは[アグレッシブ]を得る。",
+  "textKr": "[ガッツ:[日日日]]\n[誘発] 手札以外からこのキャラが登場したとき、このキャラは[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1407"
 }

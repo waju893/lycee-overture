@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2111",
+  "title": "クラス担任",
+  "subName": "岡部 早苗",
+  "name": "クラス担任 岡部 早苗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。{味方キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[宣言] [0]:バトル中に使用できない。{味方キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2111"
 }

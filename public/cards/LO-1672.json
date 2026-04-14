@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1672",
+  "title": "お嬢の心の友",
+  "subName": "長曽祢 虎鉄",
+  "name": "お嬢の心の友 長曽祢 虎鉄",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 1,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが３点以下の味方キャラ１体にＡＰ＋２する。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが３点以下の味方キャラ１体にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1672"
 }

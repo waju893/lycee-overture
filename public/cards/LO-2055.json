@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2055",
+  "title": "病弱な剣道部1年",
+  "subName": "藤堂 桂子",
+  "name": "病弱な剣道部1年 藤堂 桂子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラを破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[誘発] 味方キャラを破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2055"
 }

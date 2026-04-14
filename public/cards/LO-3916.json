@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3916",
+  "title": "松平家の謀臣",
+  "subName": "本多 悠季 正信",
+  "name": "松平家の謀臣 本多 悠季 正信",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。そのキャラが「松平葵元康」の場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。そのキャラが「松平葵元康」の場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3916"
 }

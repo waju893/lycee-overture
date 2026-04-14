@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2070",
+  "title": "喫茶店のおねーさん",
+  "subName": "蓬田 奈々子",
+  "name": "喫茶店のおねーさん 蓬田 奈々子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手ターン中に使用する。このキャラを破棄する。破棄したとき、{相手キャラ１体}にＡＰ－２する。",
+  "textKr": "[宣言] [0]:相手ターン中に使用する。このキャラを破棄する。破棄したとき、{相手キャラ１体}にＡＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2070"
 }

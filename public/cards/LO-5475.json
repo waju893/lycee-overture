@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5475",
+  "title": "凶王と赤龍の乙女",
+  "subName": "項羽＆劉邦",
+  "name": "凶王と赤龍の乙女 項羽＆劉邦",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙宙]:バトル中に使用する。バトル終了時まで、{味方『双天†恋姫』キャラ１体}にＤＭＧ＋１する。",
+  "textKr": "[宣言] [宙宙]:バトル中に使用する。バトル終了時まで、{味方『双天†恋姫』キャラ１体}にＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5475"
 }

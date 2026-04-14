@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0672",
+  "title": "優秀な軍人",
+  "subName": "皇之宮 八雲",
+  "name": "優秀な軍人 皇之宮 八雲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [D1]:{コストが２点以下のＡＦキャラ１体}にＡＰ－１する。",
+  "textKr": "[宣言] [D1]:{コストが２点以下のＡＦキャラ１体}にＡＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0672"
 }

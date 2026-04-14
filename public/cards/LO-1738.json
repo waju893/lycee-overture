@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1738",
+  "title": "第二音楽室の主",
+  "subName": "冬馬 かずさ",
+  "name": "第二音楽室の主 冬馬 かずさ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベント・アイテム・手札宣言能力を使用したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "textKr": "[誘発] 自分のイベント・アイテム・手札宣言能力を使用したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1738"
 }

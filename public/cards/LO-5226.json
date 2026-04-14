@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5226",
+  "title": "気の知れた男友達",
+  "subName": "住井 護",
+  "name": "気の知れた男友達 住井 護",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方『ONE.』キャラ１体と同キャラ名の自分のゴミ箱のキャラ１体をデッキの下に置ける。",
+  "textKr": "[誘発] このキャラが登場したとき、味方『ONE.』キャラ１体と同キャラ名の自分のゴミ箱のキャラ１体をデッキの下に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5226"
 }

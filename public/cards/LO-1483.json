@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1483",
+  "title": "吸血鬼",
+  "subName": "エデン",
+  "name": "吸血鬼 エデン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "[宣言] [雪]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1483"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4059",
+  "title": "ムシ使い",
+  "subName": "カロリア・クリケット",
+  "name": "ムシ使い カロリア・クリケット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:自ターン中に使用する。コストが７点以上の味方キャラが登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:自ターン中に使用する。コストが７点以上の味方キャラが登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4059"
 }

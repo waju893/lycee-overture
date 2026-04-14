@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0208",
+  "title": "淡紅色に染りる天戒剣閃",
+  "subName": "リーゼ",
+  "name": "淡紅色に染りる天戒剣閃 リーゼ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[このキャラを味方フィールドに移動できる。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体を味方フィールドに移動できる。",
+  "textKr": "[エンゲージ:[このキャラを味方フィールドに移動できる。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体を味方フィールドに移動できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0208"
 }

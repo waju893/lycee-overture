@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4451",
+  "title": "超慎重派なお姉さん",
+  "subName": "ゆかり",
+  "name": "超慎重派なお姉さん ゆかり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月無無",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、コストが５点以上の味方[月]キャラが２体以上登場している場合、相手キャラ１体にＡＰ－２・ＤＰ－２する。自分にシールド＋２する。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、コストが５点以上の味方[月]キャラが２体以上登場している場合、相手キャラ１体にＡＰ－２・ＤＰ－２する。自分にシールド＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4451"
 }

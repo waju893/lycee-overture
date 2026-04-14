@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2435",
+  "title": "特級メイドの矜持",
+  "subName": "孫乾・美花",
+  "name": "特級メイドの矜持 孫乾・美花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体を味方フィールドに移動する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2435"
 }

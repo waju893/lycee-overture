@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0287",
+  "title": "統帥",
+  "subName": "アンチョビ",
+  "name": "統帥 アンチョビ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,13 +20,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2,
-    8
-  ],
-  "keyEffects": [
-    2,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "アンツィオ",
+  "text": "[アシスト][ステップ:[0]]\n[宣言] [0]:{このターン中移動したキャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
+  "textKr": "[アシスト][ステップ:[0]]\n[宣言] [0]:{このターン中移動したキャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0287"
 }

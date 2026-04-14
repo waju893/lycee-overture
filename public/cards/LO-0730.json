@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0730",
+  "title": "イクォールタリオニス",
+  "subName": "シャマシュ",
+  "name": "イクォールタリオニス シャマシュ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] 相手ターン中、味方キャラのダウンしていないバトル終了時、相手のデッキを１枚破棄する。",
+  "textKr": "[誘発] 相手ターン中、味方キャラのダウンしていないバトル終了時、相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0730"
 }

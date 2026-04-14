@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3583",
+  "title": "宇宙人の少女",
+  "subName": "エリーゼ・ヴァレンシュタイン",
+  "name": "宇宙人の少女 エリーゼ・ヴァレンシュタイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "textKr": "[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3583"
 }

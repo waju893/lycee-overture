@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4401",
+  "title": "氷の姫君",
+  "subName": "獅子堂 飛鳥",
+  "name": "氷の姫君 獅子堂 飛鳥",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 効果以外でこのキャラが登場したとき、このキャラに隣接した相手キャラ１体を行動済みにできる。",
+  "textKr": "[誘発] 効果以外でこのキャラが登場したとき、このキャラに隣接した相手キャラ１体を行動済みにできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4401"
 }

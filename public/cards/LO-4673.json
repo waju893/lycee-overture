@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4673",
+  "title": "ペンギン愛好家",
+  "subName": "楓 柚菜",
+  "name": "ペンギン愛好家 楓 柚菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、[アグレッシブ]を持つ味方キャラが２体以上登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、[アグレッシブ]を持つ味方キャラが２体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4673"
 }

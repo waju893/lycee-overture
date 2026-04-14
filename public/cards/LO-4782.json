@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4782",
+  "title": "全ての竜を統べるドラゴニアの始祖",
+  "subName": "ガルガンチュア",
+  "name": "全ての竜を統べるドラゴニアの始祖 ガルガンチュア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,13 +19,11 @@
   "dp": 6,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    14,
-    15
-  ],
-  "keyEffects": [
-    14,
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[相手のデッキを１枚破棄する。]][ガッツ:[宙宙宙]]\n[誘発] このキャラが登場したとき、元のＤＭＧが３以上でコストが３点以上の味方[宙]キャラ１体を破棄する。",
+  "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]][ガッツ:[宙宙宙]]\n[誘発] このキャラが登場したとき、元のＤＭＧが３以上でコストが３点以上の味方[宙]キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4782"
 }

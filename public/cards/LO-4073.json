@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4073",
+  "title": "”恋人”のお願い",
+  "subName": "エスカ・アメイズ",
+  "name": "”恋人”のお願い エスカ・アメイズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3,
-    16
-  ],
-  "keyEffects": [
-    3,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２][サイドステップ:[0]]\n[誘発] このキャラが登場したとき、味方[日]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。{味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [C2]:{味方[日]キャラ１体]}にＡＰ＋３する。",
+  "textKr": "[チャージ:２][サイドステップ:[0]]\n[誘発] このキャラが登場したとき、味方[日]キャラが３体以上登場している場合、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。{味方[日]キャラ１体}にＡＰ＋１する。\n[宣言] [C2]:{味方[日]キャラ１体]}にＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4073"
 }

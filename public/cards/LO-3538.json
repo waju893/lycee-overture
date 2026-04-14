@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3538",
+  "title": "アイゼルストン公国第二公女",
+  "subName": "ベルナデッド・ヘンリエッタ・アイゼルストン",
+  "name": "アイゼルストン公国第二公女 ベルナデッド・ヘンリエッタ・アイゼルストン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "star",
@@ -15,5 +18,12 @@
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが２体以上登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが２体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3538"
 }

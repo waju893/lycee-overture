@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5839",
+  "title": "お兄ちゃん好き好き小悪魔妹",
+  "subName": "綾瀬 玲奈",
+  "name": "お兄ちゃん好き好き小悪魔妹 綾瀬 玲奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}のＡＰまたはＤＰに－[このキャラを除く味方『バカップルサプリメント』キャラの数（３体まで）]する。\n[コスト] 味方『バカップルサプリメント』キャラが２体以上の場合、エリアの配置にのみ支払える[月月]を発生する。この能力は失われる。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}のＡＰまたはＤＰに－[このキャラを除く味方『バカップルサプリメント』キャラの数（３体まで）]する。\n[コスト] 味方『バカップルサプリメント』キャラが２体以上の場合、エリアの配置にのみ支払える[月月]を発生する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5839"
 }

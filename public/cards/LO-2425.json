@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2425",
+  "title": "穿弓遠陣",
+  "subName": "黄忠・紫苑",
+  "name": "穿弓遠陣 黄忠・紫苑",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[宣言] [D1]:味方キャラの防御中に使用する。バトルを中断する。この能力は失われる。",
+  "textKr": "[宣言] [D1]:味方キャラの防御中に使用する。バトルを中断する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2425"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3579",
+  "title": "鈴木彩は世を忍ぶ仮の姿",
+  "subName": "彩羽",
+  "name": "鈴木彩は世を忍ぶ仮の姿 彩羽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。",
+  "textKr": "[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3579"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5050",
+  "title": "小姓",
+  "subName": "ディコトマ",
+  "name": "小姓 ディコトマ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 使用代償に[T]を含む味方キャラの能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）",
+  "textKr": "[誘発] 使用代償に[T]を含む味方キャラの能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5050"
 }

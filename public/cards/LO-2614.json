@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2614",
+  "title": "幼馴染で許婚",
+  "subName": "恋塚 愛",
+  "name": "幼馴染で許婚 恋塚 愛",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがＡＦに登場したとき、以下から１つを選び処理する。\n[誘発] このキャラがダメージを与えたとき、このキャラを除外する。除外したとき、自分のデッキから元のＡＰが２以下の[雪]キャラ１体を探し公開して手札に入れる。",
+  "textKr": "[誘発] このキャラがＡＦに登場したとき、以下から１つを選び処理する。\n[誘発] このキャラがダメージを与えたとき、このキャラを除外する。除外したとき、自分のデッキから元のＡＰが２以下の[雪]キャラ１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2614"
 }

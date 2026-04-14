@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5488",
+  "title": "裸のご奉仕",
+  "subName": "氷見山 玲",
+  "name": "裸のご奉仕 氷見山 玲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
@@ -14,13 +17,11 @@
   "dp": 5,
   "sp": 4,
   "dmg": 0,
-  "keyeffects": [
-    7,
-    12
-  ],
-  "keyEffects": [
-    7,
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、エンゲージ登場または自分の効果で登場していない場合、このキャラを破棄する。味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "textKr": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、エンゲージ登場または自分の効果で登場していない場合、このキャラを破棄する。味方キャラ全ては、ターン終了時まで攻撃キャラに指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5488"
 }

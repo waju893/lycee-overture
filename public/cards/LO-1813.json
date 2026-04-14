@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1813",
+  "title": "アクルトゥルカ",
+  "subName": "ヴライ",
+  "name": "アクルトゥルカ ヴライ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -26,13 +29,11 @@
   "dp": 6,
   "sp": 0,
   "dmg": 6,
-  "keyeffects": [
-    4,
-    15
-  ],
-  "keyEffects": [
-    4,
-    15
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[オーダーステップ:[0]][ボーナス:[相手のデッキを４枚破棄する。]]\n[誘発] このキャラがダウンしたとき、またはこのキャラを相手の効果で破棄したとき、自分のゴミ箱の「ヤマト八柱将『豪腕のヴライ』 ヴライ」１体を無償で登場する。",
+  "textKr": "[オーダーステップ:[0]][ボーナス:[相手のデッキを４枚破棄する。]]\n[誘発] このキャラがダウンしたとき、またはこのキャラを相手の効果で破棄したとき、自分のゴミ箱の「ヤマト八柱将『豪腕のヴライ』 ヴライ」１体を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1813"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-6238",
+  "title": "郁紀のサークル友達",
+  "subName": "津久葉 瑶",
+  "name": "郁紀のサークル友達 津久葉 瑶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手の宣言に対応して使用できない。このキャラを破棄する。したとき、１枚ドローする。自分にシールド＋１できる。",
+  "textKr": "[宣言] [0]:相手の宣言に対応して使用できない。このキャラを破棄する。したとき、１枚ドローする。自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6238"
 }

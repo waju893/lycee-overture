@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6577",
+  "title": "科学部部長の先輩",
+  "subName": "弥生・B・ルートウィッジ",
+  "name": "科学部部長の先輩 弥生・B・ルートウィッジ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、１枚ドローできる。しない場合、相手キャラ１体を行動済みにできる。しない場合、そのキャラは次の相手のウェイクアップで未行動に戻らない。\n[手札宣言] [0]:自分のゴミ箱またはデッキから「金髪美人な帰国子女 弥生・B・ルートウィッジ」１体を探し公開して手札に入れる。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、１枚ドローできる。しない場合、相手キャラ１体を行動済みにできる。しない場合、そのキャラは次の相手のウェイクアップで未行動に戻らない。\n[手札宣言] [0]:自分のゴミ箱またはデッキから「金髪美人な帰国子女 弥生・B・ルートウィッジ」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6577"
 }

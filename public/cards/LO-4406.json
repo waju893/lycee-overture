@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4406",
+  "title": "ティンク開発業界の若き鬼才",
+  "subName": "月ヶ丘 蘭",
+  "name": "ティンク開発業界の若き鬼才 月ヶ丘 蘭",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12,
-    16
-  ],
-  "keyEffects": [
-    12,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２][サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方エリアを配置している場合、１枚ドローする。\n[宣言] [C1]:バトル中に使用できない。{味方[花]キャラ１体}にＤＰ＋２する。\n[誘発] 相手のエリアの効果で相手キャラを破棄したとき、相手は相手の手札を１枚デッキの下に置く。相手のデッキを１枚破棄する。",
+  "textKr": "[チャージ:２][サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方エリアを配置している場合、１枚ドローする。\n[宣言] [C1]:バトル中に使用できない。{味方[花]キャラ１体}にＤＰ＋２する。\n[誘発] 相手のエリアの効果で相手キャラを破棄したとき、相手は相手の手札を１枚デッキの下に置く。相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4406"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0896",
+  "title": "無口な常連客",
+  "subName": "小津 千歳",
+  "name": "無口な常連客 小津 千歳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T][無無]:このキャラまたは自分の手札の「小津千歳」１体を破棄する。破棄したとき、{相手キャラ１体}を行動済みにする。",
+  "textKr": "[宣言] [T][無無]:このキャラまたは自分の手札の「小津千歳」１体を破棄する。破棄したとき、{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0896"
 }

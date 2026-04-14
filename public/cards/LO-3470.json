@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3470",
+  "title": "理屈と感覚のハイブリッド",
+  "subName": "小鳥遊 まどか",
+  "name": "理屈と感覚のハイブリッド 小鳥遊 まどか",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが３点以上の味方ＤＦ[花]キャラが登場している場合、１枚ドローする。この能力は失われる。",
+  "textKr": "[宣言] [0]:コストが３点以上の味方ＤＦ[花]キャラが登場している場合、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3470"
 }

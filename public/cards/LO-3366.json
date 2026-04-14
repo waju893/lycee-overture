@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-3366",
+  "title": "黄金色の時間",
+  "subName": "",
+  "name": "黄金色の時間",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n※「黄金色の時間」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n※「黄金色の時間」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3366"
 }

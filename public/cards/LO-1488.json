@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1488",
+  "title": "堕天使",
+  "subName": "ソフィ―",
+  "name": "堕天使 ソフィ―",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 6,
   "dp": 5,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:このキャラにＤＭＧ＋４する。",
+  "textKr": "[宣言] [雪]:このキャラにＤＭＧ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1488"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1920",
+  "title": "天才ゴスロリ美少女社長",
+  "subName": "レディリー＝タングルロード",
+  "name": "天才ゴスロリ美少女社長 レディリー＝タングルロード",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,12 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:自分のゴミ箱の[雪]キャラ１体を手札に入れる。この能力は失われる。",
+  "textKr": "[宣言] [T]:自分のゴミ箱の[雪]キャラ１体を手札に入れる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1920"
 }

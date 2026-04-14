@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1463",
+  "title": "ヴォーパルシュトラーレン",
+  "subName": "フレイ",
+  "name": "ヴォーパルシュトラーレン フレイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:相手キャラの数が味方キャラの数より少ない場合、このキャラにＤＭＧ＋１する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:相手キャラの数が味方キャラの数より少ない場合、このキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1463"
 }

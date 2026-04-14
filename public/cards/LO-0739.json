@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0739",
+  "title": "十二勇士",
+  "subName": "ローラン",
+  "name": "十二勇士 ローラン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ER",
+  "attributes": [
     "moon",
     "cosmos"
   ],
-  "attributesList": [
-    "moon",
-    "cosmos"
-  ],
-  "ex": 0,
   "useTarget": [
     "moon",
     "moon",
@@ -19,11 +21,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": true
+  "ex": 0,
+  "costRaw": "月月宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー][サイドステップ:[0]]\n[誘発] キャラが登場したとき、キャラ１体にＳＰ－１する。",
+  "textKr": "[リーダー][サイドステップ:[0]]\n[誘発] キャラが登場したとき、キャラ１体にＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0739"
 }

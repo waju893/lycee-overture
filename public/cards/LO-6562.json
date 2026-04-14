@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6562",
+  "title": "時の旅人",
+  "subName": "信",
+  "name": "時の旅人 信",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    19
-  ],
-  "keyEffects": [
-    19
-  ],
-  "leader": true
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "－●－－－－",
+  "typeTagsRaw": "",
+  "text": "[リーダー][プリンシパル]\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキからコストが３点の「言霊」１枚を探し無償で配置できる。\n[誘発] 自ターン開始時、このキャラに１枚チャージできる。\n[宣言] [C3][雪]:対応・バトル中を除く自ターン中に使用する。このキャラを破棄する。したとき、{相手キャラ１体}を破棄する。",
+  "textKr": "[リーダー][プリンシパル]\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキからコストが３点の「言霊」１枚を探し無償で配置できる。\n[誘発] 自ターン開始時、このキャラに１枚チャージできる。\n[宣言] [C3][雪]:対応・バトル中を除く自ターン中に使用する。このキャラを破棄する。したとき、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6562"
 }

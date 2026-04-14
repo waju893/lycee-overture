@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1923",
+  "title": "優しくなれない研究者",
+  "subName": "芳川 桔梗",
+  "name": "優しくなれない研究者 芳川 桔梗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のコストが１点以上の能力を使用したとき、このキャラと同列の相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[誘発] 自分のコストが１点以上の能力を使用したとき、このキャラと同列の相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1923"
 }

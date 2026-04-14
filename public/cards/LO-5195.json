@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5195",
+  "title": "上級生カノジョ",
+  "subName": "八尋 実桜",
+  "name": "上級生カノジョ 八尋 実桜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDＰ＋２する。",
+  "textKr": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5195"
 }

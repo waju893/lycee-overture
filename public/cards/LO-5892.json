@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5892",
+  "title": "ちょこ先生",
+  "subName": "柊 千夜子",
+  "name": "ちょこ先生 柊 千夜子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方『キスと魔王と紅茶』キャラが２体以上の場合、自分にシールド＋１できる。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方『キスと魔王と紅茶』キャラが２体以上の場合、自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5892"
 }

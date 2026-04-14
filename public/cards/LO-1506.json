@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1506",
+  "title": "ぬらりひょんの娘",
+  "subName": "シノ",
+  "name": "ぬらりひょんの娘 シノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月月月]:{相手ＡＦキャラ１体}のＤＰを０にする。この能力は失われる。",
+  "textKr": "[宣言] [月月月]:{相手ＡＦキャラ１体}のＤＰを０にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1506"
 }

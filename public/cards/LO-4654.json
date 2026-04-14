@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4654",
+  "title": "高速思考 -ハイパーハイスピード-",
+  "subName": "零月",
+  "name": "高速思考 -ハイパーハイスピード- 零月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙]:このキャラにＡＰ＋３またはＤＰ＋３またはＳＰ＋３する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙]:このキャラにＡＰ＋３またはＤＰ＋３またはＳＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4654"
 }

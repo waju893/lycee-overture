@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0883",
+  "title": "財閥総帥",
+  "subName": "来嶌・マクスウェル・紫乃",
+  "name": "財閥総帥 来嶌・マクスウェル・紫乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用する。このキャラにＡＰ＋１・ＤＰ＋１する。このバトル終了時、このキャラを破棄する。",
+  "textKr": "[宣言] [0]:バトル中に使用する。このキャラにＡＰ＋１・ＤＰ＋１する。このバトル終了時、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0883"
 }

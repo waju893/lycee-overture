@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5335",
+  "title": "小悪魔な貴族の娘に迫られて",
+  "subName": "シャルローネ",
+  "name": "小悪魔な貴族の娘に迫られて シャルローネ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体を未行動にする。そのキャラのＤＭＧを０にする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を未行動にする。そのキャラのＤＭＧを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5335"
 }

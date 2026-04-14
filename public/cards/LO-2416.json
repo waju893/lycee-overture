@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2416",
+  "title": "十面埋伏の計",
+  "subName": "程昱・風",
+  "name": "十面埋伏の計 程昱・風",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[手札宣言] [D1][宙]:{コストが４点以下の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[手札宣言] [宙]:自ターン中に使用する。バトル中に使用できない。{味方[宙]キャラ１体}を味方フィールドに移動する。",
+  "textKr": "[手札宣言] [D1][宙]:{コストが４点以下の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[手札宣言] [宙]:自ターン中に使用する。バトル中に使用できない。{味方[宙]キャラ１体}を味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2416"
 }

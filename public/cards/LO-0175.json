@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0175",
+  "title": "終末の白《エンデヴァイスタブー》",
+  "subName": "レールガン＝タブー",
+  "name": "終末の白《エンデヴァイスタブー》 レールガン＝タブー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[味方キャラ全てにＳＰ＋１する。]]\n[宣言] [0]:このターン中、味方キャラがエンゲージ登場している場合、このキャラを未行動にする。",
+  "textKr": "[エンゲージ:[味方キャラ全てにＳＰ＋１する。]]\n[宣言] [0]:このターン中、味方キャラがエンゲージ登場している場合、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0175"
 }

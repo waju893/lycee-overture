@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0537",
+  "title": "光輝の大複合神殿",
+  "subName": "ライダー／オジマンディアス",
+  "name": "光輝の大複合神殿 ライダー／オジマンディアス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:バトル中に使用できない。このキャラにＡＰ＋１・ＤＰ－１する。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:バトル中に使用できない。このキャラにＡＰ＋１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0537"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5284",
+  "title": "背伸びしたいお年頃",
+  "subName": "献帝・白湯",
+  "name": "背伸びしたいお年頃 献帝・白湯",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
@@ -14,13 +17,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    9
-  ],
-  "keyEffects": [
-    5,
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][オーダーチェンジ:[0]\n[誘発] 味方[宙]キャラを対象に自分の手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。味方「霊帝・空丹」１体にＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）",
+  "textKr": "[ジャンプ:[0]][オーダーチェンジ:[0]\n[誘発] 味方[宙]キャラを対象に自分の手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。味方「霊帝・空丹」１体にＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5284"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0025",
+  "title": "神聖たる旗に集いて吼えよ",
+  "subName": "セイバー／ジル・ド・レェ",
+  "name": "神聖たる旗に集いて吼えよ セイバー／ジル・ド・レェ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [月月月月]:アイテムを装備している相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "textKr": "[宣言] [月月月月]:アイテムを装備している相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0025"
 }

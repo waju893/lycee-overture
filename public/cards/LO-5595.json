@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5595",
+  "title": "スラム出身の野生児ガンマン",
+  "subName": "デスペラード",
+  "name": "スラム出身の野生児ガンマン デスペラード",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5,
-    10
-  ],
-  "keyEffects": [
-    5,
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][リカバリー:[味方キャラが１体の場合、１枚ドローする。]]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋３する。この能力は失われる。\n[誘発] このキャラの対戦キャラがダウンしたとき、相手のデッキを１枚破棄できる。",
+  "textKr": "[ジャンプ:[0]][リカバリー:[味方キャラが１体の場合、１枚ドローする。]]\n[誘発] このキャラが手札から登場したとき、１枚ドローする。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋３する。この能力は失われる。\n[誘発] このキャラの対戦キャラがダウンしたとき、相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5595"
 }

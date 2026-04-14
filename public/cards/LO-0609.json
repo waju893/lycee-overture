@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0609",
+  "title": "悪い悪い魔術師",
+  "subName": "日向 紅葉",
+  "name": "悪い悪い魔術師 日向 紅葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,5 +20,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "雪雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラが破棄されたとき、ゴミ箱のこのキャラを手札に入れる。",
+  "textKr": "[誘発] このキャラが破棄されたとき、ゴミ箱のこのキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0609"
 }

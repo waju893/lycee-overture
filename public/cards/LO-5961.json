@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5961",
+  "title": "先代より桜小路家に仕えるメイド",
+  "subName": "山吹 九千代",
+  "name": "先代より桜小路家に仕えるメイド 山吹 九千代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:自ターン中に使用する。１枚ドローする。このキャラを未行動にできる。この能力は失われる。",
+  "textKr": "[宣言] [T]:自ターン中に使用する。１枚ドローする。このキャラを未行動にできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5961"
 }

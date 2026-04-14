@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3037",
+  "title": "従者兼護衛",
+  "subName": "木倉 汐路",
+  "name": "従者兼護衛 木倉 汐路",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3037"
 }

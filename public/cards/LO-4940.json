@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4940",
+  "title": "一人の女の子",
+  "subName": "ムラサメ",
+  "name": "一人の女の子 ムラサメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4940"
 }

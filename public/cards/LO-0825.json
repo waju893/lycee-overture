@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0825",
+  "title": "セイクリッドコンビクト",
+  "subName": "ミカエル",
+  "name": "セイクリッドコンビクト ミカエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower",
     "cosmos"
   ],
-  "attributesList": [
-    "flower",
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "cosmos",
@@ -18,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、味方ＡＦキャラ１体をそのキャラと同列の味方ＤＦに移動できる。移動したとき、そのキャラを未行動にする。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、味方ＡＦキャラ１体をそのキャラと同列の味方ＤＦに移動できる。移動したとき、そのキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0825"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1002",
+  "title": "名誉風紀委員長",
+  "subName": "園 みどり子",
+  "name": "名誉風紀委員長 園 みどり子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ１体}は[アグレッシブ]を得る。",
+  "textKr": "[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ１体}は[アグレッシブ]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1002"
 }

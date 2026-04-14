@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4228",
+  "title": "エコ少女",
+  "subName": "高坂 夕姫羽",
+  "name": "エコ少女 高坂 夕姫羽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] [日]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[誘発] [日]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4228"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5883",
+  "title": "特殊執行機関クレイドル司令官",
+  "subName": "関ケ原・ローエングラム・奉先",
+  "name": "特殊執行機関クレイドル司令官 関ケ原・ローエングラム・奉先",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙]:{味方『らぶ2Quad』キャラ１体}にＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "textKr": "[宣言] [宙]:{味方『らぶ2Quad』キャラ１体}にＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5883"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5503",
+  "title": "最強の祖竜",
+  "subName": "マルマリディア・ドット・フィアバーン",
+  "name": "最強の祖竜 マルマリディア・ドット・フィアバーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:{このキャラに隣接したキャラ１体}にＤＰ＋１・ＳＰ－１する。",
+  "textKr": "[宣言] [D1]:{このキャラに隣接したキャラ１体}にＤＰ＋１・ＳＰ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5503"
 }

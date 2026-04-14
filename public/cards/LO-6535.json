@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6535",
+  "title": "表は優しく裏は計算高い寮のリーダー",
+  "subName": "鴻 さゆみ",
+  "name": "表は優しく裏は計算高い寮のリーダー 鴻 さゆみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。自分のデッキの上のカード１枚を見る。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。自分のデッキの上のカード１枚を見る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6535"
 }

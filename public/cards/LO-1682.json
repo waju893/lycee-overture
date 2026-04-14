@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1682",
+  "title": "従兄弟兼親友",
+  "subName": "鞍馬 廉太郎",
+  "name": "従兄弟兼親友 鞍馬 廉太郎",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[相手のデッキを１枚破棄する。]]\n[宣言] [このキャラを破棄する]:{自分のゴミ箱のアイテム１枚}を手札に入れる。",
+  "textKr": "[リカバリー:[相手のデッキを１枚破棄する。]]\n[宣言] [このキャラを破棄する]:{自分のゴミ箱のアイテム１枚}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1682"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1254",
+  "title": "無意味に半裸",
+  "subName": "三谷 良一",
+  "name": "無意味に半裸 三谷 良一",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,5 +19,12 @@
   "ap": 6,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、ＤＰが０の味方キャラ１体にＡＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、ＤＰが０の味方キャラ１体にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1254"
 }

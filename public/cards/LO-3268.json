@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3268",
+  "title": "桜小路家のメイド長",
+  "subName": "山吹 八千代",
+  "name": "桜小路家のメイド長 山吹 八千代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄する。破棄したとき、自分のデッキを２枚回復しシャッフルする。\n※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2026/01/09施行)",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄する。破棄したとき、自分のデッキを２枚回復しシャッフルする。\n※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2026/01/09施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3268"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2783",
+  "title": "恋愛経験皆無の少女漫画家",
+  "subName": "岬 栞菜",
+  "name": "恋愛経験皆無の少女漫画家 岬 栞菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[宣言] [0]:自ターン中に使用する。{相手ＡＦキャラ１体}は次の相手のウェイクアップで未行動に戻らない。この能力は失われる。",
+  "textKr": "[誘発] このキャラが登場したとき、下にカードが８枚以上置かれた味方「月の彼方」を配置していない場合、このキャラを破棄する。\n[宣言] [0]:自ターン中に使用する。{相手ＡＦキャラ１体}は次の相手のウェイクアップで未行動に戻らない。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2783"
 }

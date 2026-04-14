@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1550",
+  "title": "砂漠の戦士",
+  "subName": "アサル",
+  "name": "砂漠の戦士 アサル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラが登場したターン中に使用する。[日日]を発生する。",
+  "textKr": "[コスト] このキャラが登場したターン中に使用する。[日日]を発生する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1550"
 }

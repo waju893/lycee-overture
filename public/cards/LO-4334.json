@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4334",
+  "title": "表裏のない純粋な同級生",
+  "subName": "柳瀬 さつき",
+  "name": "表裏のない純粋な同級生 柳瀬 さつき",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4334"
 }

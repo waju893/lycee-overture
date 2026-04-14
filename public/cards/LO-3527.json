@@ -1,13 +1,27 @@
 {
+  "cardNo": "LO-3527",
+  "title": "坂道姉妹",
+  "subName": "",
+  "name": "坂道姉妹",
+  "rawTypeJa": "エリア",
+  "rawTypeKr": "에리어",
   "type": "area",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン開始時、味方ＡＦキャラ全てがコストが２点以下の場合、味方キャラ１体にＤＭＧ＋１する。この能力値修正はターン終了時とそのキャラのバトル終了時に失われる。\n[宣言] [花]:{コストが３点以上の味方防御キャラ１体}にＤＰ＋２する。\n※「坂道姉妹」は自分の場に１枚まで配置可能",
+  "textKr": "[誘発] 自ターン開始時、味方ＡＦキャラ全てがコストが２点以下の場合、味方キャラ１体にＤＭＧ＋１する。この能力値修正はターン終了時とそのキャラのバトル終了時に失われる。\n[宣言] [花]:{コストが３点以上の味方防御キャラ１体}にＤＰ＋２する。\n※「坂道姉妹」は自分の場に１枚まで配置可能",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3527"
 }

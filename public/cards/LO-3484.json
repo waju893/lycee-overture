@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3484",
+  "title": "フレスベルグ",
+  "subName": "シゼル・ステインブレッシェル",
+  "name": "フレスベルグ シゼル・ステインブレッシェル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が３枚以上の場合、１枚ドローできる。自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。この能力は失われる。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が３枚以上の場合、１枚ドローできる。自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3484"
 }

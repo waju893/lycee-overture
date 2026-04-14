@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0030",
+  "title": "石兵八陣",
+  "subName": "キャスター／諸葛孔明〔エルメロイⅡ世〕",
+  "name": "石兵八陣 キャスター／諸葛孔明〔エルメロイⅡ世〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [T月月月無無]:相手キャラ１体を行動済みにする。",
+  "textKr": "[宣言] [T月月月無無]:相手キャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0030"
 }

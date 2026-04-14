@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2612",
+  "title": "1st.Live",
+  "subName": "内藤 舞亜",
+  "name": "1st.Live 内藤 舞亜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方エリアを配置している場合、１枚ドローする。",
+  "textKr": "[誘発] このキャラが登場したとき、味方エリアを配置している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2612"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2312",
+  "title": "巨大兜",
+  "subName": "黒田長政",
+  "name": "巨大兜 黒田長政",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 0,
   "useTarget": [
     "star",
     "star",
@@ -21,5 +24,12 @@
   "ap": 5,
   "dp": 6,
   "sp": 0,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 0,
+  "costRaw": "無無無無無無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無無無]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[宣言] [無無無]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2312"
 }

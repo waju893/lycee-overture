@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1320",
+  "title": "タマモ七変幻",
+  "subName": "キャスター／玉藻の前",
+  "name": "タマモ七変幻 キャスター／玉藻の前",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象のキャラにＤＭＧ＋１する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象のキャラにＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1320"
 }

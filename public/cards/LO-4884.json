@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4884",
+  "title": "ちょっと特殊な留学生",
+  "subName": "エリナ・オレゴヴナ・アヴェーン",
+  "name": "ちょっと特殊な留学生 エリナ・オレゴヴナ・アヴェーン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    15
-  ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[コスト] [雪雪雪雪]を発生する。このコストはイベント・手札宣言能力にのみ支払える。この能力は失われる。\n[手札宣言] [雪雪雪雪]:相手の宣言に対応して使用できない。以下から１つを選び処理する。",
+  "textKr": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[コスト] [雪雪雪雪]を発生する。このコストはイベント・手札宣言能力にのみ支払える。この能力は失われる。\n[手札宣言] [雪雪雪雪]:相手の宣言に対応して使用できない。以下から１つを選び処理する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4884"
 }

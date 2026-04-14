@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3087",
+  "title": "夢見る妄想乙女",
+  "subName": "八束 愛姫",
+  "name": "夢見る妄想乙女 八束 愛姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] このキャラを対象に自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラを対象に自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3087"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3763",
+  "title": "帝国のプリンセス",
+  "subName": "アンジェリーネ",
+  "name": "帝国のプリンセス アンジェリーネ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 5,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{コストが３点以上の味方ＡＦキャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[宣言] [0]:{コストが３点以上の味方ＡＦキャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3763"
 }

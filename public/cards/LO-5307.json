@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5307",
+  "title": "生意気盛り",
+  "subName": "毛利 樅 輝元",
+  "name": "生意気盛り 毛利 樅 輝元",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、このキャラを除くカード名に「毛利」を含む味方キャラが登場している場合、１枚ドローする。",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、このキャラを除くカード名に「毛利」を含む味方キャラが登場している場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5307"
 }

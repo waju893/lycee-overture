@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0570",
+  "title": "乙女の貞節",
+  "subName": "バーサーカー／フランケンシュタイン",
+  "name": "乙女の貞節 バーサーカー／フランケンシュタイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 2,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:{このキャラに隣接した未行動の味方キャラ１体}を行動済みにする。相手のデッキを１枚破棄する。",
+  "textKr": "[宣言] [0]:{このキャラに隣接した未行動の味方キャラ１体}を行動済みにする。相手のデッキを１枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0570"
 }

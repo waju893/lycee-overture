@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5909",
+  "title": "学園始まって以来の才女",
+  "subName": "桜井 真奈",
+  "name": "学園始まって以来の才女 桜井 真奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
-  ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:２]\n[コスト] このキャラのチャージ１枚を破棄する。 破棄したとき、[日日]を発生する。このコストは『こんねこ』キャラの登場にのみ支払える。",
+  "textKr": "[ジャンプ:[0]][チャージ:２]\n[コスト] このキャラのチャージ１枚を破棄する。 破棄したとき、[日日]を発生する。このコストは『こんねこ』キャラの登場にのみ支払える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5909"
 }

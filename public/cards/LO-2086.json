@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2086",
+  "title": "ホワイトグラデュエーション",
+  "subName": "東雲 希",
+  "name": "ホワイトグラデュエーション 東雲 希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}はターン終了時まで相手の効果でＤＭＧを＋する能力値修正を得ない。",
+  "textKr": "[宣言] [0]:{相手キャラ１体}はターン終了時まで相手の効果でＤＭＧを＋する能力値修正を得ない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2086"
 }

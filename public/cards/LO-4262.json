@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4262",
+  "title": "凶悪なる看護師長",
+  "subName": "テンドウ マコ",
+  "name": "凶悪なる看護師長 テンドウ マコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。対戦キャラのＡＰを０にする。このターン終了時、このキャラを破棄する。",
+  "textKr": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。対戦キャラのＡＰを０にする。このターン終了時、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4262"
 }

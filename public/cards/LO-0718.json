@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0718",
+  "title": "魔女の正装",
+  "subName": "綾地 寧々",
+  "name": "魔女の正装 綾地 寧々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] 自分の効果によって相手キャラを破棄したとき、自分のゴミ箱のアイテム１枚を自分のデッキの下に置くことができる。",
+  "textKr": "[誘発] 自分の効果によって相手キャラを破棄したとき、自分のゴミ箱のアイテム１枚を自分のデッキの下に置くことができる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0718"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3497",
+  "title": "ちっちゃな体でも有能な歴戦の軍人",
+  "subName": "バルトロメウス・ベルゲングリューン",
+  "name": "ちっちゃな体でも有能な歴戦の軍人 バルトロメウス・ベルゲングリューン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,5 +21,12 @@
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方『BALDR BRINGER』キャラが２体以上登場している場合、１枚ドローできる。",
+  "textKr": "[誘発] このキャラが登場したとき、味方『BALDR BRINGER』キャラが２体以上登場している場合、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3497"
 }

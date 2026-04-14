@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4658",
+  "title": "“鉄”の魔女",
+  "subName": "メリッサ・マスタング",
+  "name": "“鉄”の魔女 メリッサ・マスタング",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [日]:元の基本能力に[アグレッシブ]を持つ味方キャラが３体以上登場している場合、{味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "textKr": "[アグレッシブ]\n[宣言] [日]:元の基本能力に[アグレッシブ]を持つ味方キャラが３体以上登場している場合、{味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4658"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1591",
+  "title": "鷲獅騎兵",
+  "subName": "リュクス",
+  "name": "鷲獅騎兵 リュクス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    14
-  ],
-  "keyEffects": [
-    14
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[ガッツ:[日日日]]\n[宣言] [0]:{味方ＡＦキャラ１体}にＡＰ＋１する。この能力は失われる。",
+  "textKr": "[ガッツ:[日日日]]\n[宣言] [0]:{味方ＡＦキャラ１体}にＡＰ＋１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1591"
 }

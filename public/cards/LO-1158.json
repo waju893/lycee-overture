@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1158",
+  "title": "学園の秩序を守る生徒会長",
+  "subName": "立華 かなで",
+  "name": "学園の秩序を守る生徒会長 立華 かなで",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,11 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト]\n[宣言] [0]:このキャラがＡＦに登場している場合、以下から１つを選び処理する。(同じ効果は２回選べない。)",
+  "textKr": "[アシスト]\n[宣言] [0]:このキャラがＡＦに登場している場合、以下から１つを選び処理する。(同じ効果は２回選べない。)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1158"
 }

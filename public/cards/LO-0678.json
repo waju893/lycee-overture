@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0678",
+  "title": "看板娘",
+  "subName": "鞍馬 小春",
+  "name": "看板娘 鞍馬 小春",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋１する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0678"
 }

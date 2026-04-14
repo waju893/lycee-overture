@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0128",
+  "title": "スターライトメテオ",
+  "subName": "サジタリア",
+  "name": "スターライトメテオ サジタリア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,11 +22,11 @@
   "dp": 4,
   "sp": 2,
   "dmg": 5,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [T]:自ターン中に使用する。相手のデッキを２枚破棄する。",
+  "textKr": "[エンゲージ]\n[宣言] [T]:自ターン中に使用する。相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0128"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2334",
+  "title": "征服王",
+  "subName": "ウォリック城",
+  "name": "征服王 ウォリック城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [宙宙]:このキャラにＡＰ＋２し、このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "textKr": "[宣言] [宙宙]:このキャラにＡＰ＋２し、このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2334"
 }

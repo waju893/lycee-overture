@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1246",
+  "title": "ちょっぴりお茶目な姉御肌",
+  "subName": "来ヶ谷 唯湖",
+  "name": "ちょっぴりお茶目な姉御肌 来ヶ谷 唯湖",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,13 +20,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4,
-    8
-  ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト][オーダーステップ:[0]]\n[誘発] コストが４点以上の味方[宙]キャラが相手の能力で破棄されたとき、１枚ドローできる。",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[誘発] コストが４点以上の味方[宙]キャラが相手の能力で破棄されたとき、１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1246"
 }

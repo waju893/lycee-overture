@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4076",
+  "title": "お姉さまのあるところに参上",
+  "subName": "FM77",
+  "name": "お姉さまのあるところに参上 FM77",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,11 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [C2]:味方「エスカレイヤー」が登場している場合、{味方[日]キャラ１体}にＡＰ＋２する。",
+  "textKr": "[チャージ:２]\n[宣言] [C2]:味方「エスカレイヤー」が登場している場合、{味方[日]キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4076"
 }

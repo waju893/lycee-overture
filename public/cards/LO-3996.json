@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3996",
+  "title": "コパ・ホールディングス会長 CITY都市長",
+  "subName": "コパンドン・ドット",
+  "name": "コパ・ホールディングス会長 CITY都市長 コパンドン・ドット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分の効果で相手キャラを破棄したとき、自分のデッキの上のカード１枚を公開する。そのカードのＥＸが１の場合、相手のデッキを２枚破棄する。この能力は失われる。",
+  "textKr": "[誘発] 自ターン中、自分の効果で相手キャラを破棄したとき、自分のデッキの上のカード１枚を公開する。そのカードのＥＸが１の場合、相手のデッキを２枚破棄する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3996"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0784",
+  "title": "龍鱗障壁",
+  "subName": "乙姫",
+  "name": "龍鱗障壁 乙姫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラがサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラにＤＰ＋１する。",
+  "textKr": "[誘発] このキャラがサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0784"
 }

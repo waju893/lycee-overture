@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1218",
+  "title": "謎の生物",
+  "subName": "ちびもす",
+  "name": "謎の生物 ちびもす",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方「神戸小鳥」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "textKr": "[宣言] [0]:味方「神戸小鳥」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1218"
 }

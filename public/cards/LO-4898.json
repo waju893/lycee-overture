@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4898",
+  "title": "人見知り",
+  "subName": "在原 七海",
+  "name": "人見知り 在原 七海",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]イベント１枚をデッキの下に置ける。",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]イベント１枚をデッキの下に置ける。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4898"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4892",
+  "title": "『フラワーショップ熊童』オーナー",
+  "subName": "熊童 亜弥",
+  "name": "『フラワーショップ熊童』オーナー 熊童 亜弥",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[コスト] [月月]を発生する。このコストはイベントにのみ支払える。この能力は失われる。",
+  "textKr": "[コスト] [月月]を発生する。このコストはイベントにのみ支払える。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4892"
 }

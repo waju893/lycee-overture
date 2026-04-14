@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3767",
+  "title": "悪魔妖術師",
+  "subName": "エフネ",
+  "name": "悪魔妖術師 エフネ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラを破棄する。破棄したとき、ゴミ箱のこのキャラを無償で登場できる。（ゲーム中１回まで使用可能）",
+  "textKr": "[宣言] [0]:このキャラを破棄する。破棄したとき、ゴミ箱のこのキャラを無償で登場できる。（ゲーム中１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3767"
 }

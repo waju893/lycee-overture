@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3646",
+  "title": "里見八忍の筆頭",
+  "subName": "猫飼 律",
+  "name": "里見八忍の筆頭 猫飼 律",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方[日]キャラ１体をデッキの下に置く。１枚ドローする。このキャラを味方フィールドに移動する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方[日]キャラ１体をデッキの下に置く。１枚ドローする。このキャラを味方フィールドに移動する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3646"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2090",
+  "title": "声楽科１年",
+  "subName": "久遠 三日",
+  "name": "声楽科１年 久遠 三日",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [無無無][このキャラを破棄する]:{相手キャラ１体}を行動済みにする。",
+  "textKr": "[宣言] [無無無][このキャラを破棄する]:{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2090"
 }

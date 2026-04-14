@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-0931",
+  "title": "サポートキャラクター",
+  "subName": "ミリィ",
+  "name": "サポートキャラクター ミリィ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラのＳＰが４以上の場合、このキャラを手札に入れる。",
+  "textKr": "[宣言] [0]:このキャラのＳＰが４以上の場合、このキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0931"
 }

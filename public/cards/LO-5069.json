@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5069",
+  "title": "マイペースな幼馴染み",
+  "subName": "河島 はるか",
+  "name": "マイペースな幼馴染み 河島 はるか",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方『WHITE ALBUM シリーズ』キャラが３体以上の場合、１枚ドローする。\n[宣言] [0]:コストが５点以上の味方ＡＦキャラが登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」１枚を探し味方フィールドに無償で配置する。",
+  "textKr": "[誘発] このキャラが登場したとき、味方『WHITE ALBUM シリーズ』キャラが３体以上の場合、１枚ドローする。\n[宣言] [0]:コストが５点以上の味方ＡＦキャラが登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」１枚を探し味方フィールドに無償で配置する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5069"
 }

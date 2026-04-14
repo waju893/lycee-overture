@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-1889",
+  "title": "一〇万三〇〇〇冊の魔道書",
+  "subName": "インデックス",
+  "name": "一〇万三〇〇〇冊の魔道書 インデックス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月月月][このキャラを破棄する]:相手の宣言に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "[宣言] [月月月][このキャラを破棄する]:相手の宣言に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1889"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2017",
+  "title": "海軍用船上槍",
+  "subName": "五和",
+  "name": "海軍用船上槍 五和",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラでサポートをしたとき、対象がＤＭＧが３以下の[花]キャラの場合、そのキャラにＤＭＧ＋１し、そのキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。このバトル終了時、このキャラを未行動にする。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象がＤＭＧが３以下の[花]キャラの場合、そのキャラにＤＭＧ＋１し、そのキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。このバトル終了時、このキャラを未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2017"
 }

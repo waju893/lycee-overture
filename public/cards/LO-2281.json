@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2281",
+  "title": "円卓の騎士",
+  "subName": "キャメロット城",
+  "name": "円卓の騎士 キャメロット城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 5,
   "dp": 3,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "●－●●－●",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [宙]:自ターン中に使用する。{コストが３点以上の味方[宙]キャラ１体}にＡＰ＋１する。",
+  "textKr": "[宣言] [宙]:自ターン中に使用する。{コストが３点以上の味方[宙]キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2281"
 }

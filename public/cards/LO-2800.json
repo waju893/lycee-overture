@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2800",
+  "title": "灯台に囚われてる",
+  "subName": "ツムギ",
+  "name": "灯台に囚われてる ツムギ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラがダウンしたとき、自分のゴミ箱の「紬ヴェンダース」１体を手札に入れる。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラがダウンしたとき、自分のゴミ箱の「紬ヴェンダース」１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2800"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0406",
+  "title": "突撃",
+  "subName": "西 絹代",
+  "name": "突撃 西 絹代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "知波単",
+  "text": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが２体以上の場合、このキャラは[ステップ:[0]]を得る。",
+  "textKr": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが２体以上の場合、このキャラは[ステップ:[0]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0406"
 }

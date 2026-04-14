@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5013",
+  "title": "視力を失った先輩",
+  "subName": "川名 みさき",
+  "name": "視力を失った先輩 川名 みさき",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、このキャラがエリアを持つ場合、このキャラにＤＭＧ＋３する。",
+  "textKr": "[誘発] ターン開始時、このキャラがエリアを持つ場合、このキャラにＤＭＧ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5013"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2410",
+  "title": "疾風怒濤",
+  "subName": "曹仁・華侖",
+  "name": "疾風怒濤 曹仁・華侖",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙]:自ターン中に使用する。バトル中に使用できない。{未行動の味方[宙]キャラ１体}を{味方フィールド}に移動する。この能力は失われる。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙]:自ターン中に使用する。バトル中に使用できない。{未行動の味方[宙]キャラ１体}を{味方フィールド}に移動する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2410"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0721",
+  "title": "小さな寮長",
+  "subName": "布良 梓",
+  "name": "小さな寮長 布良 梓",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "star",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0721"
 }

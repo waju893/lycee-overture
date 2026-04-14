@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0534",
+  "title": "白紙の勧進帳",
+  "subName": "ランサー／武蔵坊弁慶",
+  "name": "白紙の勧進帳 ランサー／武蔵坊弁慶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [0]:自ターン中に使用する。このターン中、味方キャラが移動している場合、{味方キャラ１体}にＡＰ＋１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。このターン中、味方キャラが移動している場合、{味方キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0534"
 }

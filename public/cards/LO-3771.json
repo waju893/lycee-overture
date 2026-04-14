@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3771",
+  "title": "帝国の彷徨の幻獣使い",
+  "subName": "ツキコ",
+  "name": "帝国の彷徨の幻獣使い ツキコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 0,
   "dp": 1,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラはターン終了時までダウンしない。この能力は失われる。\n[宣言] [宙]:{このキャラを除く味方[宙]キャラ１体}は[ペナルティ:[ゴミ箱のこのキャラを手札に入れる。]]を得る。この能力は失われる。",
+  "textKr": "[宣言] [0]:このキャラはターン終了時までダウンしない。この能力は失われる。\n[宣言] [宙]:{このキャラを除く味方[宙]キャラ１体}は[ペナルティ:[ゴミ箱のこのキャラを手札に入れる。]]を得る。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3771"
 }

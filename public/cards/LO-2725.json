@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2725",
+  "title": "ただの面倒くさがり",
+  "subName": "黒崎 小夜",
+  "name": "ただの面倒くさがり 黒崎 小夜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:味方エリアを配置している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この能力は失われる。",
+  "textKr": "[宣言] [0]:味方エリアを配置している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2725"
 }

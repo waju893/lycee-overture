@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3899",
+  "title": "からかい好きの同居人先輩",
+  "subName": "上林 聖",
+  "name": "からかい好きの同居人先輩 上林 聖",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,12 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花無無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{コストが２点以下の味方ＤＦキャラ１体}にＳＰ＋１する。",
+  "textKr": "[宣言] [0]:{コストが２点以下の味方ＤＦキャラ１体}にＳＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3899"
 }

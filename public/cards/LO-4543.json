@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4543",
+  "title": "陸上部のエース",
+  "subName": "田中 美沙",
+  "name": "陸上部のエース 田中 美沙",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラは[ボーナス:[自分にシールド＋１する。]]を得る。\n[宣言] [0]:{コストが３点以上の味方ＤＦ[花]キャラ１体}にＤＰ＋１する。",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラは[ボーナス:[自分にシールド＋１する。]]を得る。\n[宣言] [0]:{コストが３点以上の味方ＤＦ[花]キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4543"
 }

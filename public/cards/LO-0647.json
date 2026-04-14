@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0647",
+  "title": "妄想メイド",
+  "subName": "月山 瀬奈",
+  "name": "妄想メイド 月山 瀬奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,12 @@
   "ap": 2,
   "dp": 3,
   "sp": 3,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラでサポートをしたとき、相手キャラ１体に相手ターン終了時までＤＭＧ－１する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、相手キャラ１体に相手ターン終了時までＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0647"
 }

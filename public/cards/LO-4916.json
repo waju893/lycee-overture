@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4916",
+  "title": "入院患者",
+  "subName": "染井 志津華",
+  "name": "入院患者 染井 志津華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方『喫茶ステラと死神の蝶』キャラが４体以上の場合、１枚ドローする。",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方『喫茶ステラと死神の蝶』キャラが４体以上の場合、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4916"
 }

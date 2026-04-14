@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5964",
+  "title": "乙女を自負する桜屋敷のメイド長",
+  "subName": "八十島 壱与",
+  "name": "乙女を自負する桜屋敷のメイド長 八十島 壱与",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:自ターン中に使用する。１枚ドローする。このキャラを未行動にできる。この能力は失われる。",
+  "textKr": "[宣言] [T]:自ターン中に使用する。１枚ドローする。このキャラを未行動にできる。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5964"
 }

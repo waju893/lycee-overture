@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2014",
+  "title": "電撃使い",
+  "subName": "御坂 美琴",
+  "name": "電撃使い 御坂 美琴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。この能力は失われる。",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2014"
 }

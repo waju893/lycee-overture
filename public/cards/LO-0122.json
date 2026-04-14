@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0122",
+  "title": "神壊烈風アヴァロンエッジ",
+  "subName": "アヴァロン",
+  "name": "神壊烈風アヴァロンエッジ アヴァロン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [0]:{ＤＭＧが２以下の味方キャラ１体}は[アグレッシブ]を得る。\n※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2017/08/31施行)",
+  "textKr": "[エンゲージ]\n[宣言] [0]:{ＤＭＧが２以下の味方キャラ１体}は[アグレッシブ]を得る。\n※このカードは大会における禁止・制限の対象となっています。同ブランドのカードのみで構築されたデッキに限り入れることができます。(2017/08/31施行)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0122"
 }

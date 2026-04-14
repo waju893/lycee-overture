@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3517",
+  "title": "さえちゃん",
+  "subName": "桐島 沙衣里",
+  "name": "さえちゃん 桐島 沙衣里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [D1]:{味方『この青空に約束を―』キャラ１体}にＡＰ＋１する。",
+  "textKr": "[宣言] [D1]:{味方『この青空に約束を―』キャラ１体}にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3517"
 }

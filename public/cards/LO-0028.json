@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0028",
+  "title": "騎士の武略",
+  "subName": "ランサー／ディルムッド・オディナ",
+  "name": "騎士の武略 ランサー／ディルムッド・オディナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [月月月]:このキャラのバトル中に使用する。対戦キャラにＡＰ－２する。",
+  "textKr": "[宣言] [月月月]:このキャラのバトル中に使用する。対戦キャラにＡＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0028"
 }

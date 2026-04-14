@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0667",
+  "title": "ドS教師",
+  "subName": "烏羽 紫",
+  "name": "ドS教師 烏羽 紫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 4,
   "dp": 3,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] 相手キャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
+  "textKr": "[誘発] 相手キャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0667"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1442",
+  "title": "うたかたの夢",
+  "subName": "アヴェンジャー／ジャンヌ・ダルク〔オルタ〕",
+  "name": "うたかたの夢 アヴェンジャー／ジャンヌ・ダルク〔オルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙宙宙宙宙]:このキャラにＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙宙宙宙]:このキャラにＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1442"
 }

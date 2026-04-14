@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5281",
+  "title": "呂布軍の参謀格",
+  "subName": "陳宮・音々音",
+  "name": "呂布軍の参謀格 陳宮・音々音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [宙宙]:{味方「呂布・恋」１体}にＡＰ＋３・ＤＰ＋３する。相手ターン中の場合、そのキャラを未行動にできる。",
+  "textKr": "[手札宣言] [宙宙]:{味方「呂布・恋」１体}にＡＰ＋３・ＤＰ＋３する。相手ターン中の場合、そのキャラを未行動にできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5281"
 }

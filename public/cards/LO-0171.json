@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0171",
+  "title": "アブソリュートルール",
+  "subName": "ルールメイカー",
+  "name": "アブソリュートルール ルールメイカー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラがダウンしたバトル終了時、ゴミ箱のそのキャラをデッキの下に置く。",
+  "textKr": "[エンゲージ:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラがダウンしたバトル終了時、ゴミ箱のそのキャラをデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0171"
 }

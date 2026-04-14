@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0219",
+  "title": "ブレイズインブレイス",
+  "subName": "フレイムタン",
+  "name": "ブレイズインブレイス フレイムタン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 2,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    6,
-    7
-  ],
-  "keyEffects": [
-    6,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][アグレッシブ]",
+  "textKr": "[エンゲージ][アグレッシブ]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0219"
 }

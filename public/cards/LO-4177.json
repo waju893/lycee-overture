@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4177",
+  "title": "消防士",
+  "subName": "高坂 隆信",
+  "name": "消防士 高坂 隆信",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,12 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] [月]でない味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[誘発] [月]でない味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4177"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5139",
+  "title": "泰然自若な辺境随一の賢者",
+  "subName": "オガム",
+  "name": "泰然自若な辺境随一の賢者 オガム",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－３・ＤＰ－３する。この能力は失われる。",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－３・ＤＰ－３する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5139"
 }

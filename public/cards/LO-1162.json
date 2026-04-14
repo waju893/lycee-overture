@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1162",
+  "title": "学園の魔女",
+  "subName": "千里 朱音",
+  "name": "学園の魔女 千里 朱音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    13
-  ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:相手ターン中に使用する。味方キャラの数が相手キャラの数より少ない場合、{相手キャラ２体}にＤＭＧ－１する。",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:相手ターン中に使用する。味方キャラの数が相手キャラの数より少ない場合、{相手キャラ２体}にＤＭＧ－１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1162"
 }

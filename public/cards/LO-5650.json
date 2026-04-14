@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5650",
+  "title": "朱雀院家次女",
+  "subName": "朱雀院 撫子",
+  "name": "朱雀院家次女 朱雀院 撫子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 5,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[常時] 味方アイテム全てのコストの合計が３点以上の場合、このキャラにＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{アイテムを持つ味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[オーダーステップ:[0]]\n[常時] 味方アイテム全てのコストの合計が３点以上の場合、このキャラにＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{アイテムを持つ味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5650"
 }

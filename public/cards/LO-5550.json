@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-5550",
+  "title": "夜の世界の学生",
+  "subName": "七番 雛 ＆ 射場 久美子 ＆ 春日 真由美",
+  "name": "夜の世界の学生 七番 雛 ＆ 射場 久美子 ＆ 春日 真由美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「昼の世界の学生 黒谷真弥＆吉田そあら」１体を探し無償で登場できる。登場したとき、自分にシールド＋１できる。",
+  "textKr": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「昼の世界の学生 黒谷真弥＆吉田そあら」１体を探し無償で登場できる。登場したとき、自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5550"
 }

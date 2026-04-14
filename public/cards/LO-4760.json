@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4760",
+  "title": "水晶を擁せし占術師",
+  "subName": "ウィル",
+  "name": "水晶を擁せし占術師 ウィル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:ＳＰが５以上の味方キャラが登場している場合、このキャラにＳＰ＋１する。未行動の味方ＡＦキャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:ＳＰが５以上の味方キャラが登場している場合、このキャラにＳＰ＋１する。未行動の味方ＡＦキャラ１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4760"
 }

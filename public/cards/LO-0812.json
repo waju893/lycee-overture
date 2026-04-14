@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0812",
+  "title": "ジャッジメントアクセル",
+  "subName": "ウリエル",
+  "name": "ジャッジメントアクセル ウリエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,11 @@
   "dp": 2,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[オーダーステップ:[0]]\n[宣言] [T][日日]:{味方キャラ１体}を{味方フィールド}に移動する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [T][日日]:{味方キャラ１体}を{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0812"
 }

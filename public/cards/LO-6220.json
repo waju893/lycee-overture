@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6220",
+  "title": "世界を侵す恋",
+  "subName": "沙耶",
+  "name": "世界を侵す恋 沙耶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    19
-  ],
-  "keyEffects": [
-    19
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[プリンシパル]\n[誘発] このキャラが効果以外で登場したとき、１枚ドローできる。しない場合、以下から１つを選び処理する。\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。このキャラを破棄する。自分にシールド＋１できる。",
+  "textKr": "[プリンシパル]\n[誘発] このキャラが効果以外で登場したとき、１枚ドローできる。しない場合、以下から１つを選び処理する。\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。このキャラを破棄する。自分にシールド＋１できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6220"
 }

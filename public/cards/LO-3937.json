@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-3937",
+  "title": "南朝の亡霊",
+  "subName": "吉野の御方",
+  "name": "南朝の亡霊 吉野の御方",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方[日]キャラを破棄したとき、味方[日]キャラ１体にＡＰ＋１する。",
+  "textKr": "[誘発] 味方[日]キャラを破棄したとき、味方[日]キャラ１体にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3937"
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4502",
+  "title": "ランドール家当主",
+  "subName": "エレナ・ランドール",
+  "name": "ランドール家当主 エレナ・ランドール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 5,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:味方「アキナ・ランドール」が登場している場合、そのキャラとこのキャラにＤＰ＋２する。",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:味方「アキナ・ランドール」が登場している場合、そのキャラとこのキャラにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4502"
 }

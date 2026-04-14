@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2274",
+  "title": "内助の功",
+  "subName": "高知城",
+  "name": "内助の功 高知城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
   ],
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにＤＰ＋１する。",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2274"
 }

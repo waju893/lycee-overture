@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5541",
+  "title": "体力ゼロのへっぽこ泣き虫風紀委員長",
+  "subName": "聖護院 百花",
+  "name": "体力ゼロのへっぽこ泣き虫風紀委員長 聖護院 百花",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,11 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
-  ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:相手の切札・キャラの登場でないコストが０点の宣言に対応して使用する。先攻後攻１ターン目でない場合、その宣言の解決は失敗する。その宣言が能力またはアイテム・エリアの効果でない場合、このキャラを破棄する。（１回まで使用可能）",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:相手の切札・キャラの登場でないコストが０点の宣言に対応して使用する。先攻後攻１ターン目でない場合、その宣言の解決は失敗する。その宣言が能力またはアイテム・エリアの効果でない場合、このキャラを破棄する。（１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5541"
 }

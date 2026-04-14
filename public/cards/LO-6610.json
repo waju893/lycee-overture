@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6610",
+  "title": "ドカ盛りドカ食いドンと恋",
+  "subName": "ルナ",
+  "name": "ドカ盛りドカ食いドンと恋 ルナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 6,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[常時] アイテムを持つこのキャラにＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:{アイテムを持つ味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n[手札宣言] [0]:自分のゴミ箱またはデッキから「今日も明日も発情期 マツリ」１体を探し公開して手札に入れる。",
+  "textKr": "[オーダーステップ:[0]]\n[常時] アイテムを持つこのキャラにＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:{アイテムを持つ味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n[手札宣言] [0]:自分のゴミ箱またはデッキから「今日も明日も発情期 マツリ」１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6610"
 }

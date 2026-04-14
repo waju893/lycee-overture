@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3169",
+  "title": "『屍食部隊』",
+  "subName": "薬丸",
+  "name": "『屍食部隊』 薬丸",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,11 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体をデッキの下に置く。１枚ドローする。",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体をデッキの下に置く。１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3169"
 }

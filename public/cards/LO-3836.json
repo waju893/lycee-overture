@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3836",
+  "title": "超サイコパスナース",
+  "subName": "テンドウ",
+  "name": "超サイコパスナース テンドウ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,12 @@
   "ap": 1,
   "dp": 1,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [宙宙宙]:このキャラのバトル中に使用する。このキャラのＡＰまたはＤＰを９にする。このターン終了時、このキャラを破棄する。",
+  "textKr": "[宣言] [宙宙宙]:このキャラのバトル中に使用する。このキャラのＡＰまたはＤＰを９にする。このターン終了時、このキャラを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3836"
 }

@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-2628",
+  "title": "魔法使いの末裔",
+  "subName": "士紀 優人",
+  "name": "魔法使いの末裔 士紀 優人",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [雪]:自ターン中に使用する。味方エリアを配置している場合、このキャラを破棄する。破棄したとき、{相手キャラ１体}を行動済みにする。",
+  "textKr": "[宣言] [雪]:自ターン中に使用する。味方エリアを配置している場合、このキャラを破棄する。破棄したとき、{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2628"
 }

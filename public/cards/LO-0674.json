@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0674",
+  "title": "余白の師匠",
+  "subName": "センリ",
+  "name": "余白の師匠 センリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{味方ＤＦキャラ1体}にＤＰ＋２する。",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{味方ＤＦキャラ1体}にＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0674"
 }

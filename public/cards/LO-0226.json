@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0226",
+  "title": "陽劔御神楽・天照皇神戯",
+  "subName": "神皇天叢雲＝アマテラス",
+  "name": "陽劔御神楽・天照皇神戯 神皇天叢雲＝アマテラス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -20,13 +23,11 @@
   "dp": 6,
   "sp": 2,
   "dmg": 4,
-  "keyeffects": [
-    2,
-    7
-  ],
-  "keyEffects": [
-    2,
-    7
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "日日日日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][ステップ:[日日]]\n[誘発] このキャラが登場したとき、味方キャラ全てを並べ替える。",
+  "textKr": "[エンゲージ][ステップ:[日日]]\n[誘発] このキャラが登場したとき、味方キャラ全てを並べ替える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0226"
 }

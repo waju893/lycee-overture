@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0583",
+  "title": "幻魔",
+  "subName": "綾地 寧々",
+  "name": "幻魔 綾地 寧々",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,12 @@
   "ap": 1,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [T]:自分のデッキから「心の欠片」１枚を探し無償で{このキャラ}に装備する。",
+  "textKr": "[宣言] [T]:自分のデッキから「心の欠片」１枚を探し無償で{このキャラ}に装備する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0583"
 }

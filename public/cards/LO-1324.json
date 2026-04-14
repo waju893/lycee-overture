@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1324",
+  "title": "串刺の雷刃",
+  "subName": "セイバー／フランケンシュタイン",
+  "name": "串刺の雷刃 セイバー／フランケンシュタイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,12 @@
   "ap": 4,
   "dp": 0,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [無]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。",
+  "textKr": "[宣言] [無]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1324"
 }

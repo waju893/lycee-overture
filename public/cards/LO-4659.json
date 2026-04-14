@@ -1,17 +1,27 @@
 {
+  "cardNo": "LO-4659",
+  "title": "“闇”の魔女",
+  "subName": "タチアナ・Ｍ・パブロワ",
+  "name": "“闇”の魔女 タチアナ・Ｍ・パブロワ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
   "ap": 1,
   "dp": 3,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが登場している場合、{相手キャラ１体}にＤＰ－２する。この能力は失われる。",
+  "textKr": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが登場している場合、{相手キャラ１体}にＤＰ－２する。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4659"
 }

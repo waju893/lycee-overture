@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4688",
+  "title": "幼馴染の美人なお姉さん",
+  "subName": "九重 楓子",
+  "name": "幼馴染の美人なお姉さん 九重 楓子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,11 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。味方ＤＦ[花]キャラ１体または手札宣言能力を持つ味方ＡＦ[花]キャラ１体にＤＰ＋２する。\n[誘発] 相手の効果で自分のデッキを破棄したとき、自分にシールド＋１する。",
+  "textKr": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。味方ＤＦ[花]キャラ１体または手札宣言能力を持つ味方ＡＦ[花]キャラ１体にＤＰ＋２する。\n[誘発] 相手の効果で自分のデッキを破棄したとき、自分にシールド＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4688"
 }

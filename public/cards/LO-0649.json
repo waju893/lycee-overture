@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0649",
+  "title": "暴走妹",
+  "subName": "千歳 佐奈",
+  "name": "暴走妹 千歳 佐奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,12 @@
   "ap": 2,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [花花無無]:{味方[YUZ]キャラ１体}を未行動にする。この能力は失われる。",
+  "textKr": "[宣言] [花花無無]:{味方[YUZ]キャラ１体}を未行動にする。この能力は失われる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0649"
 }

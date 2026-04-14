@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4827",
+  "title": "ラブリーショコラ",
+  "subName": "クリス",
+  "name": "ラブリーショコラ クリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,11 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    16
-  ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１]\n[宣言] [C1][月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。",
+  "textKr": "[チャージ:１]\n[宣言] [C1][月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4827"
 }

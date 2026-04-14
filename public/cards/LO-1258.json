@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1258",
+  "title": "戦線唯一の参謀役",
+  "subName": "高松",
+  "name": "戦線唯一の参謀役 高松",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8,
-    13
-  ],
-  "keyEffects": [
-    8,
-    13
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][ペナルティ:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、味方攻撃＜死んだ世界戦線＞キャラ１体にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "[アシスト][ペナルティ:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、味方攻撃＜死んだ世界戦線＞キャラ１体にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1258"
 }

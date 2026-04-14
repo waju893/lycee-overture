@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4094",
+  "title": "天使長",
+  "subName": "一の神鍵アズエル",
+  "name": "天使長 一の神鍵アズエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,11 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    16
-  ],
-  "keyEffects": [
-    2,
-    16
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:１][ステップ:[0]]\n[宣言] [D1][C1][日]:[チャージ]を持つ味方[日]キャラの防御中に使用する。バトルを中断する。",
+  "textKr": "[チャージ:１][ステップ:[0]]\n[宣言] [D1][C1][日]:[チャージ]を持つ味方[日]キャラの防御中に使用する。バトルを中断する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4094"
 }

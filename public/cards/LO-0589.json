@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0589",
+  "title": "常在戦場",
+  "subName": "常陸 茉子",
+  "name": "常在戦場 常陸 茉子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "SR",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,11 @@
   "dp": 4,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    9
-  ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[オーダーチェンジ:[宙]]\n[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを未行動にし、{空き味方フィールド}に移動する。",
+  "textKr": "[オーダーチェンジ:[宙]]\n[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを未行動にし、{空き味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0589"
 }
