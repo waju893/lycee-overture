@@ -2,6 +2,7 @@ import type {
   CardScriptPrompt,
   CardScriptPromptSelection,
   ChooseCardsPrompt,
+  ChooseOnePrompt,
   OptionalBranchPrompt,
   PromptBuildContext,
   PromptBuildResult,
@@ -17,7 +18,11 @@ export class CardScriptPromptBuilder {
     intents.forEach((intent, index) => {
       switch (intent.kind) {
         case "prompt":
-          prompts.push(this.toOptionalBranchPrompt(intent, context, index));
+          if (intent.promptType === "chooseOne") {
+            prompts.push(this.toChooseOnePrompt(intent, context, index));
+          } else {
+            prompts.push(this.toOptionalBranchPrompt(intent, context, index));
+          }
           break;
         case "choose":
           prompts.push(this.toChoosePrompt(intent, context, index));
@@ -67,6 +72,17 @@ export class CardScriptPromptBuilder {
           resolvedIntents: prompt.destinationIntents,
           selectedIds: [...selection.selectedIds],
         };
+
+      case "chooseOne":
+        if (selection.kind !== "chooseOne") {
+          throw new Error(`Prompt kind mismatch for ${prompt.promptId}`);
+        }
+        if (!(selection.choiceIndex in prompt.choiceIntents)) {
+          throw new Error(`ChooseOne prompt ${prompt.promptId} does not have branch ${selection.choiceIndex}`);
+        }
+        return {
+          resolvedIntents: [...prompt.choiceIntents[selection.choiceIndex]],
+        };
     }
   }
 
@@ -83,8 +99,8 @@ export class CardScriptPromptBuilder {
       sourceCardNo: intent.sourceCardNo,
       timing: intent.timing,
       prompt: intent.prompt,
-      optionalIntents: [...intent.optionalIntents],
-      elseIntents: [...intent.elseIntents],
+      optionalIntents: [...(intent.optionalIntents ?? [])],
+      elseIntents: [...(intent.elseIntents ?? [])],
     };
   }
 
@@ -104,6 +120,33 @@ export class CardScriptPromptBuilder {
       amount: intent.amount,
       upTo: intent.upTo,
       destinationIntents: [...intent.destinationIntents],
+    };
+  }
+
+  private toChooseOnePrompt(
+    intent: PromptIntent,
+    context: PromptBuildContext,
+    index: number,
+  ): ChooseOnePrompt {
+    const choices = intent.choices ?? [];
+    const choiceIntents: Record<number, RunnerIntent[]> = {};
+    choices.forEach((choice) => {
+      choiceIntents[choice.index] = [...choice.intents];
+    });
+
+    return {
+      kind: "chooseOne",
+      promptId: this.makePromptId(intent, index),
+      playerId: context.actingPlayerId,
+      sourceCardId: intent.sourceCardId,
+      sourceCardNo: intent.sourceCardNo,
+      timing: intent.timing,
+      prompt: intent.prompt,
+      choices: choices.map((choice) => ({
+        index: choice.index,
+        label: choice.label,
+      })),
+      choiceIntents,
     };
   }
 
@@ -128,6 +171,5 @@ export class CardScriptPromptBuilder {
     }
   }
 }
-
 
 export default CardScriptPromptBuilder;

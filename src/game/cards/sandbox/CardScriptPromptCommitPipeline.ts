@@ -7,8 +7,10 @@ import type {
 } from '../CardScriptPromptTypes';
 import type {
   ApplyStateIntent,
+  FreeUseIntent,
   RevealIntent,
   RunnerIntent,
+  SearchCardIntent,
 } from '../CardScriptRunner';
 import { commitCardScriptIntents, type CardScriptCommitResult } from './CardScriptCommit';
 import type { CardScriptIntent } from './CardScriptIntent';
@@ -56,6 +58,12 @@ function toSandboxIntent(intent: RunnerIntent): CardScriptIntent[] {
     case 'reveal':
       return convertReveal(intent);
 
+    case 'searchCard':
+      return convertSearchCard(intent);
+
+    case 'freeUse':
+      return convertFreeUse(intent);
+
     default:
       throw new Error(`Unsupported runner intent for sandbox commit: ${intent.kind}`);
   }
@@ -94,6 +102,52 @@ function convertReveal(intent: RevealIntent): CardScriptIntent[] {
       kind: 'revealTopCard',
       playerId,
       count: intent.amount ?? 1,
+      sourceCardId: intent.sourceCardId,
+      sourceEffectId: intent.timing,
+    },
+  ];
+}
+
+function convertSearchCard(intent: SearchCardIntent): CardScriptIntent[] {
+  const playerId = intent.playerId;
+  if (playerId !== 'P1' && playerId !== 'P2') {
+    throw new Error(`Sandbox search commit expects player target, got: ${playerId}`);
+  }
+
+  return [
+    {
+      kind: 'searchCard',
+      playerId,
+      zones: [...intent.zones],
+      count: intent.count,
+      resultSlot: intent.resultSlot,
+      match: { ...intent.match },
+      revealToOpponent: intent.revealToOpponent,
+      shuffleAfterSearch: intent.shuffleAfterSearch,
+      sourceCardId: intent.sourceCardId,
+      sourceEffectId: intent.timing,
+    },
+  ];
+}
+
+function convertFreeUse(intent: FreeUseIntent): CardScriptIntent[] {
+  const playerId = intent.playerId;
+  if (playerId !== 'P1' && playerId !== 'P2') {
+    throw new Error(`Sandbox freeUse commit expects player target, got: ${playerId}`);
+  }
+  if (intent.source !== 'searchResult') {
+    throw new Error(`Unsupported freeUse source for sandbox commit: ${intent.source}`);
+  }
+  if (intent.usageKind !== 'area') {
+    throw new Error(`Sandbox freeUse commit only supports area, got: ${intent.usageKind}`);
+  }
+
+  return [
+    {
+      kind: 'freeUseAreaFromSearchResult',
+      playerId,
+      resultSlot: intent.resultSlot,
+      ignoreCost: true,
       sourceCardId: intent.sourceCardId,
       sourceEffectId: intent.timing,
     },

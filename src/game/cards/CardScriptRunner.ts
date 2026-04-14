@@ -28,21 +28,7 @@ import type {
   TargetSelector,
 } from "./CardScriptTypes";
 
-type ExtraAction =
-  | {
-      type: "charge";
-      target: TargetSelector;
-      amount: number;
-      mode?: "must" | "may" | "cannot";
-    }
-  | {
-      type: "optionalElse";
-      optionalActions: AnyAction[];
-      elseActions: AnyAction[];
-      prompt?: string;
-    };
-
-type AnyAction = Action | ExtraAction;
+type AnyAction = Action;
 
 export type RunnerTimingContext =
   | "onUse"
@@ -104,6 +90,8 @@ export type RunnerIntent =
   | RevealIntent
   | PreventIntent
   | ChargeIntent
+  | SearchCardIntent
+  | FreeUseIntent
   | PromptIntent;
 
 export interface BaseIntent {
@@ -235,11 +223,44 @@ export interface ChargeIntent extends BaseIntent {
   amount: number;
 }
 
+export interface SearchCardIntent extends BaseIntent {
+  kind: "searchCard";
+  playerId: string;
+  zones: ("deck" | "trash" | "hand" | "field" | "removed")[];
+  count: number;
+  resultSlot: string;
+  match: {
+    exactCardNo?: string;
+    exactName?: string;
+    nameIncludes?: string;
+    type?: "character" | "event" | "item" | "area";
+    kind?: "character" | "event" | "item" | "area";
+    owner?: "self" | "opponent" | "any";
+  };
+  revealToOpponent?: boolean;
+  shuffleAfterSearch?: boolean;
+}
+
+export interface FreeUseIntent extends BaseIntent {
+  kind: "freeUse";
+  playerId: string;
+  source: "searchResult";
+  resultSlot: string;
+  usageKind: "character" | "event" | "item" | "area";
+  ignoreCost: true;
+}
+
 export interface PromptIntent extends BaseIntent {
   kind: "prompt";
+  promptType?: "optionalBranch" | "chooseOne";
   prompt: string;
-  optionalIntents: RunnerIntent[];
-  elseIntents: RunnerIntent[];
+  optionalIntents?: RunnerIntent[];
+  elseIntents?: RunnerIntent[];
+  choices?: Array<{
+    index: number;
+    label: string;
+    intents: RunnerIntent[];
+  }>;
 }
 
 export interface RunnerResult {
@@ -374,6 +395,12 @@ export class CardScriptRunner {
         return this.runPrevent(action, state, context);
       case "sequence":
         return this.runSequence(action, state, context);
+      case "searchCard":
+        return this.runSearchCard(action, state, context);
+      case "chooseOne":
+        return this.runChooseOne(action, state, context);
+      case "freeUse":
+        return this.runFreeUse(action, state, context);
       case "charge":
         return this.runCharge(action, state, context);
       case "optionalElse":
@@ -615,6 +642,86 @@ export class CardScriptRunner {
     return this.runActions(action.actions as AnyAction[], state, context);
   }
 
+  private runSearchCard(
+    action: Extract<AnyAction, { type: "searchCard" }>,
+    state: RunnerStateView,
+    context: RunnerContext,
+  ): RunnerResult {
+    const count = action.count ?? action.max ?? 1;
+    const resultSlot = action.resultSlot ?? action.storeAs ?? "lastSearchResult";
+
+    return {
+      ok: true,
+      intents: [{
+        ...this.makeBase(context),
+        kind: "searchCard",
+        playerId: state.resolvePlayer(action.owner === "self" ? "self" : "opponent", context),
+        zones: [...action.zones],
+        count,
+        resultSlot,
+        match: { ...action.match },
+        revealToOpponent: action.revealToOpponent,
+        shuffleAfterSearch: action.shuffleAfterSearch,
+      }],
+      errors: [],
+    };
+  }
+
+  private runChooseOne(
+    action: Extract<AnyAction, { type: "chooseOne" }>,
+    state: RunnerStateView,
+    context: RunnerContext,
+  ): RunnerResult {
+    const choices: Array<{ index: number; label: string; intents: RunnerIntent[] }> = [];
+    const errors: string[] = [];
+
+    action.choices.forEach((choice, index) => {
+      const normalized = Array.isArray(choice)
+        ? { label: `choice-${index + 1}`, actions: choice }
+        : { label: choice.label ?? `choice-${index + 1}`, actions: choice.actions };
+
+      const result = this.runActions(normalized.actions as AnyAction[], state, context);
+      choices.push({
+        index,
+        label: normalized.label,
+        intents: result.intents,
+      });
+      errors.push(...result.errors);
+    });
+
+    return {
+      ok: errors.length === 0,
+      intents: [{
+        ...this.makeBase(context),
+        kind: "prompt",
+        promptType: "chooseOne",
+        prompt: action.prompt,
+        choices,
+      }],
+      errors,
+    };
+  }
+
+  private runFreeUse(
+    action: Extract<AnyAction, { type: "freeUse" }>,
+    state: RunnerStateView,
+    context: RunnerContext,
+  ): RunnerResult {
+    return {
+      ok: true,
+      intents: [{
+        ...this.makeBase(context),
+        kind: "freeUse",
+        playerId: context.actingPlayerId,
+        source: "searchResult",
+        resultSlot: action.resultSlot ?? action.sourceRef ?? "lastSearchResult",
+        usageKind: action.usageKind ?? action.useKind ?? "area",
+        ignoreCost: true,
+      }],
+      errors: [],
+    };
+  }
+
   private runCharge(action: Extract<AnyAction, { type: "charge" }>, state: RunnerStateView, context: RunnerContext): RunnerResult {
     return {
       ok: true,
@@ -637,6 +744,7 @@ export class CardScriptRunner {
       intents: [{
         ...this.makeBase(context),
         kind: "prompt",
+        promptType: "optionalBranch",
         prompt: action.prompt ?? "optionalElse",
         optionalIntents: optionalResult.intents,
         elseIntents: elseResult.intents,

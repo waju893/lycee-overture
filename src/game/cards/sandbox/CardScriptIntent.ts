@@ -1,5 +1,15 @@
 import type { PlayerID } from '../../GameTypes';
 import type { EffectDSLStep } from '../../effects/EffectDSL';
+import type { SearchZone, UsageKind } from '../CardScriptTypes';
+
+export type CardMatchRule = {
+  exactCardNo?: string;
+  exactName?: string;
+  nameIncludes?: string;
+  type?: UsageKind;
+  kind?: UsageKind;
+  owner?: 'self' | 'opponent' | 'any';
+};
 
 export type CardScriptIntent =
   | {
@@ -33,6 +43,26 @@ export type CardScriptIntent =
   | {
       kind: 'log';
       message: string;
+      sourceCardId?: string;
+      sourceEffectId?: string;
+    }
+  | {
+      kind: 'searchCard';
+      playerId: PlayerID;
+      zones: SearchZone[];
+      count: number;
+      resultSlot: string;
+      match: CardMatchRule;
+      revealToOpponent?: boolean;
+      shuffleAfterSearch?: boolean;
+      sourceCardId?: string;
+      sourceEffectId?: string;
+    }
+  | {
+      kind: 'freeUseAreaFromSearchResult';
+      playerId: PlayerID;
+      resultSlot: string;
+      ignoreCost: true;
       sourceCardId?: string;
       sourceEffectId?: string;
     };
