@@ -23,7 +23,22 @@
   "costRaw": "雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1844"
+  "text": "バトル中に使用できない。味方キャラ１体を行動済みにする。行動済みにしたとき、{相手キャラ１体}を破棄する。",
+  "textKr": "バトル中に使用できない。味方キャラ１体を行動済みにする。行動済みにしたとき、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1844",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。味方キャラ１体を行動済みにする。行動済みにしたとき、{相手キャラ１体}を破棄する。",
+    "normalizedText": "バトル中に使用できない。味方キャラ1体を行動済みにする。行動済みにしたとき、{相手キャラ1体}を破棄する。",
+    "lines": [
+      "バトル中に使用できない。味方キャラ1体を行動済みにする。行動済みにしたとき、{相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用できない。味方キャラ1体を行動済みにする。行動済みにしたとき、{相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

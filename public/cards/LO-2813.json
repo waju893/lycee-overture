@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2813",
+  "title": "他者を蝕む毒",
+  "subName": "此花 ルチア",
+  "name": "他者を蝕む毒 此花 ルチア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,52 @@
   "dp": 5,
   "sp": 0,
   "dmg": 5,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ひまわり畑」１枚を探し味方フィールドに配置する。この能力は失われる。\n[誘発] コストが５点以上の味方キャラを相手の効果で破棄したとき、１枚ドローできる。\n構築制限:[VA]かつ[宙]",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ひまわり畑」１枚を探し味方フィールドに配置する。この能力は失われる。\n[誘発] コストが５点以上の味方キャラを相手の効果で破棄したとき、１枚ドローできる。\n構築制限:[VA]かつ[宙]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2813",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ひまわり畑」1枚を探し味方フィールドに配置する。この能力は失われる。[誘発] コストが5点以上の味方キャラを相手の効果で破棄したとき、1枚ドローできる。構築制限:[VA]かつ[宙]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "ひまわり畑"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ひまわり畑」１枚を探し味方フィールドに配置する。この能力は失われる。\n[誘発] コストが５点以上の味方キャラを相手の効果で破棄したとき、１枚ドローできる。\n構築制限:[VA]かつ[宙]",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ひまわり畑」1枚を探し味方フィールドに配置する。この能力は失われる。[誘発] コストが5点以上の味方キャラを相手の効果で破棄したとき、1枚ドローできる。構築制限:[VA]かつ[宙]",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ひまわり畑」1枚を探し味方フィールドに配置する。この能力は失われる。[誘発] コストが5点以上の味方キャラを相手の効果で破棄したとき、1枚ドローできる。構築制限:[VA]かつ[宙]"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

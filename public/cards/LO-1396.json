@@ -28,5 +28,30 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [宙宙宙]:このキャラにＡＰ＋２・ＤＭＧ＋１する。",
   "textKr": "[宣言] [宙宙宙]:このキャラにＡＰ＋２・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1396"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1396",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙宙宙]:このキャラにAP+2・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [宙宙宙]:このキャラにＡＰ＋２・ＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [宙宙宙]:このキャラにAP+2・DMG+1する。",
+    "lines": [
+      "[宣言] [宙宙宙]:このキャラにAP+2・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

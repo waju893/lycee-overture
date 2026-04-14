@@ -26,5 +26,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[自分のデッキを２枚回復する。]]\n[宣言] [D2]:味方キャラ全ては[オーダーステップ:[0]]を得る。",
   "textKr": "[エンゲージ:[自分のデッキを２枚回復する。]]\n[宣言] [D2]:味方キャラ全ては[オーダーステップ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0130"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0130",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[自分のデッキを２枚回復する。]]\n[宣言] [D2]:味方キャラ全ては[オーダーステップ:[0]]を得る。",
+    "normalizedText": "[エンゲージ:[自分のデッキを2枚回復する。]]\n[宣言] [D2]:味方キャラ全ては[オーダーステップ:[0]]を得る。",
+    "lines": [
+      "[エンゲージ:[自分のデッキを2枚回復する。]]",
+      "[宣言] [D2]:味方キャラ全ては[オーダーステップ:[0]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D2]:味方キャラ全ては[オーダーステップ:[0]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

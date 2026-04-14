@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラを破棄した時、自分のゴミ箱の「春原コンボ」１枚を味方キャラ１体に装備できる。",
   "textKr": "[誘発] このキャラを破棄した時、自分のゴミ箱の「春原コンボ」１枚を味方キャラ１体に装備できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1269"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1269",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラを破棄した時、自分のゴミ箱の「春原コンボ」１枚を味方キャラ１体に装備できる。",
+    "normalizedText": "[誘発] このキャラを破棄した時、自分のゴミ箱の「春原コンボ」1枚を味方キャラ1体に装備できる。",
+    "lines": [
+      "[誘発] このキャラを破棄した時、自分のゴミ箱の「春原コンボ」1枚を味方キャラ1体に装備できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラを破棄した時、自分のゴミ箱の「春原コンボ」1枚を味方キャラ1体に装備できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

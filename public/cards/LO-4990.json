@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]\n[宣言] [0]:味方[YUZ]キャラが３体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ステップ:[0]]を得る。",
   "textKr": "[アグレッシブ]\n[宣言] [0]:味方[YUZ]キャラが３体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ステップ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4990"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4990",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方[YUZ]キャラが3体以上登場している場合、このキャラにAP+1・DP+1し、このキャラは[ステップ:[0]]を得る。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [0]:味方[YUZ]キャラが３体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１し、このキャラは[ステップ:[0]]を得る。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:味方[YUZ]キャラが3体以上登場している場合、このキャラにAP+1・DP+1し、このキャラは[ステップ:[0]]を得る。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [0]:味方[YUZ]キャラが3体以上登場している場合、このキャラにAP+1・DP+1し、このキャラは[ステップ:[0]]を得る。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

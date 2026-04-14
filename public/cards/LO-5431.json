@@ -1,13 +1,52 @@
 {
+  "cardNo": "LO-5431",
+  "title": "水泳の特訓",
+  "subName": "",
+  "name": "水泳の特訓",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{コストが３点以上の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。\n構築制限:[MAD]",
+  "textKr": "{コストが３点以上の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。\n構築制限:[MAD]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5431",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが3点以上の味方[宙]キャラ1体}にAP+3・DP+3する。構築制限:[MAD]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが３点以上の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。\n構築制限:[MAD]",
+    "normalizedText": "{コストが3点以上の味方[宙]キャラ1体}にAP+3・DP+3する。構築制限:[MAD]",
+    "lines": [
+      "{コストが3点以上の味方[宙]キャラ1体}にAP+3・DP+3する。構築制限:[MAD]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

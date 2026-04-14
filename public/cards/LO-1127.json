@@ -24,5 +24,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][サポーター:[無無]]\n[宣言] [0]:味方＜大洗女子＞キャラの属性が４種類以上の場合、このキャラにＡＰ＋１する。",
   "textKr": "[アシスト][サポーター:[無無]]\n[宣言] [0]:味方＜大洗女子＞キャラの属性が４種類以上の場合、このキャラにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1127"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1127",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方<大洗女子>キャラの属性が4種類以上の場合、このキャラにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][サポーター:[無無]]\n[宣言] [0]:味方＜大洗女子＞キャラの属性が４種類以上の場合、このキャラにＡＰ＋１する。",
+    "normalizedText": "[アシスト][サポーター:[無無]]\n[宣言] [0]:味方<大洗女子>キャラの属性が4種類以上の場合、このキャラにAP+1する。",
+    "lines": [
+      "[アシスト][サポーター:[無無]]",
+      "[宣言] [0]:味方<大洗女子>キャラの属性が4種類以上の場合、このキャラにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

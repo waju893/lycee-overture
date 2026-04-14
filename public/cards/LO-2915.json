@@ -21,7 +21,32 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2915"
+  "text": "{アイテムを装備している味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "{アイテムを装備している味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2915",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{アイテムを装備している味方キャラ1体}にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{アイテムを装備している味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "{アイテムを装備している味方キャラ1体}にAP+2・DP+2する。",
+    "lines": [
+      "{アイテムを装備している味方キャラ1体}にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

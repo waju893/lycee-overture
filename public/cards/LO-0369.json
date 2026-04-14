@@ -23,5 +23,25 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト]\n[誘発] ターン開始時、味方＜アンツィオ＞キャラ１体を味方フィールドに移動できる。",
   "textKr": "[アシスト]\n[誘発] ターン開始時、味方＜アンツィオ＞キャラ１体を味方フィールドに移動できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0369"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0369",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] ターン開始時、味方＜アンツィオ＞キャラ１体を味方フィールドに移動できる。",
+    "normalizedText": "[アシスト]\n[誘発] ターン開始時、味方<アンツィオ>キャラ1体を味方フィールドに移動できる。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] ターン開始時、味方<アンツィオ>キャラ1体を味方フィールドに移動できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] ターン開始時、味方<アンツィオ>キャラ1体を味方フィールドに移動できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,30 @@
   "typeTagsRaw": "-",
   "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。このキャラを未行動にする。",
   "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0586"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0586",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1する。このキャラを未行動にする。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。このキャラを未行動にする。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1する。このキャラを未行動にする。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1する。このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

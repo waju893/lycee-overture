@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2393",
+  "title": "憂国の英知",
+  "subName": "皇甫嵩・楼杏",
+  "name": "憂国の英知 皇甫嵩・楼杏",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,58 @@
   "ap": 3,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の手札が０枚の場合、味方[花]キャラ全てにＡＰ＋１またはＤＰ＋１する。\n[宣言] [花花花]:バトル中に使用できない。{味方[花]キャラ２体}を入れ替える。\n構築制限:[NEX]",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の手札が０枚の場合、味方[花]キャラ全てにＡＰ＋１またはＤＰ＋１する。\n[宣言] [花花花]:バトル中に使用できない。{味方[花]キャラ２体}を入れ替える。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2393",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の手札が0枚の場合、味方[花]キャラ全てにAP+1またはDP+1する。[宣言] [花花花]:バトル中に使用できない。{味方[花]キャラ2体}を入れ替える。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の手札が０枚の場合、味方[花]キャラ全てにＡＰ＋１またはＤＰ＋１する。\n[宣言] [花花花]:バトル中に使用できない。{味方[花]キャラ２体}を入れ替える。\n構築制限:[NEX]",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の手札が0枚の場合、味方[花]キャラ全てにAP+1またはDP+1する。[宣言] [花花花]:バトル中に使用できない。{味方[花]キャラ2体}を入れ替える。構築制限:[NEX]",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分の手札が0枚の場合、味方[花]キャラ全てにAP+1またはDP+1する。[宣言] [花花花]:バトル中に使用できない。{味方[花]キャラ2体}を入れ替える。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

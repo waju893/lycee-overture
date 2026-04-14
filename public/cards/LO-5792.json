@@ -23,5 +23,51 @@
   "typeTagsRaw": "",
   "text": "[コスト] 手札宣言能力の使用にのみ支払える[月月]を発生する。この能力は失われる。\n[誘発] コストが１点以上の手札宣言能力を使用したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
   "textKr": "[コスト] 手札宣言能力の使用にのみ支払える[月月]を発生する。この能力は失われる。\n[誘発] コストが１点以上の手札宣言能力を使用したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5792"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5792",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[コスト] 手札宣言能力の使用にのみ支払える[月月]を発生する。この能力は失われる。[誘発] コストが1点以上の手札宣言能力を使用したとき、相手キャラ1体にAP-1またはDP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[コスト] 手札宣言能力の使用にのみ支払える[月月]を発生する。この能力は失われる。\n[誘発] コストが１点以上の手札宣言能力を使用したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+    "normalizedText": "[コスト] 手札宣言能力の使用にのみ支払える[月月]を発生する。この能力は失われる。[誘発] コストが1点以上の手札宣言能力を使用したとき、相手キャラ1体にAP-1またはDP-1する。",
+    "lines": [
+      "[コスト] 手札宣言能力の使用にのみ支払える[月月]を発生する。この能力は失われる。[誘発] コストが1点以上の手札宣言能力を使用したとき、相手キャラ1体にAP-1またはDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

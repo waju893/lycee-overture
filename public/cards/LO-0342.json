@@ -26,5 +26,30 @@
   "typeTagsRaw": "大洗女子",
   "text": "[宣言] [T]:{このキャラに隣接した味方「アヒルさんチーム」キャラ１体}にＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２する。",
   "textKr": "[宣言] [T]:{このキャラに隣接した味方「アヒルさんチーム」キャラ１体}にＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0342"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0342",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:{このキャラに隣接した味方「アヒルさんチーム」キャラ1体}にAP+2・DP+2・DMG+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:{このキャラに隣接した味方「アヒルさんチーム」キャラ１体}にＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２する。",
+    "normalizedText": "[宣言] [T]:{このキャラに隣接した味方「アヒルさんチーム」キャラ1体}にAP+2・DP+2・DMG+2する。",
+    "lines": [
+      "[宣言] [T]:{このキャラに隣接した味方「アヒルさんチーム」キャラ1体}にAP+2・DP+2・DMG+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

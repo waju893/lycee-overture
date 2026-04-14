@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体をキャラ「ノンポリ」として、味方ＤＦに登場できる。",
   "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体をキャラ「ノンポリ」として、味方ＤＦに登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2129"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2129",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体をキャラ「ノンポリ」として、味方ＤＦに登場できる。",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体をキャラ「ノンポリ」として、味方DFに登場できる。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体をキャラ「ノンポリ」として、味方DFに登場できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体をキャラ「ノンポリ」として、味方DFに登場できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

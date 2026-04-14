@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:１]\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋３する。\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを味方「最後の神様が住む島」１枚の下に置ける。",
   "textKr": "[チャージ:１]\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋３する。\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを味方「最後の神様が住む島」１枚の下に置ける。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6633"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6633",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1]:{味方キャラ1体}にAP+3する。[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを味方「最後の神様が住む島」1枚の下に置ける。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:１]\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋３する。\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを味方「最後の神様が住む島」１枚の下に置ける。",
+    "normalizedText": "[チャージ:1]\n[宣言] [C1]:{味方キャラ1体}にAP+3する。[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを味方「最後の神様が住む島」1枚の下に置ける。",
+    "lines": [
+      "[チャージ:1]",
+      "[宣言] [C1]:{味方キャラ1体}にAP+3する。[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを味方「最後の神様が住む島」1枚の下に置ける。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:1]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

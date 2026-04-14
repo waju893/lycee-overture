@@ -24,5 +24,25 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト]\n[宣言] [0]:このキャラのバトル中に使用する。コストが２点以下の対戦キャラを破棄する。このキャラを自分の「卒業」置き場に置く。",
   "textKr": "[アシスト]\n[宣言] [0]:このキャラのバトル中に使用する。コストが２点以下の対戦キャラを破棄する。このキャラを自分の「卒業」置き場に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1180"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1180",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:このキャラのバトル中に使用する。コストが２点以下の対戦キャラを破棄する。このキャラを自分の「卒業」置き場に置く。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:このキャラのバトル中に使用する。コストが2点以下の対戦キャラを破棄する。このキャラを自分の「卒業」置き場に置く。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:このキャラのバトル中に使用する。コストが2点以下の対戦キャラを破棄する。このキャラを自分の「卒業」置き場に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラのバトル中に使用する。コストが2点以下の対戦キャラを破棄する。このキャラを自分の「卒業」置き場に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

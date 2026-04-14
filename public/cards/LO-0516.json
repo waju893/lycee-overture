@@ -25,5 +25,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[0]]\n[宣言] [宙]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[オーダーチェンジ:[0]]\n[宣言] [宙]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0516"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0516",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:このキャラにAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[宣言] [宙]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[宣言] [宙]:このキャラにAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[宣言] [宙]:このキャラにAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

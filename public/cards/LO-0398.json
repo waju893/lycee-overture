@@ -26,5 +26,25 @@
   "typeTagsRaw": "大学選抜",
   "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札の「島田愛里寿」１体を無償で登場する。",
   "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札の「島田愛里寿」１体を無償で登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0398"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0398",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札の「島田愛里寿」１体を無償で登場する。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札の「島田愛里寿」1体を無償で登場する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分の手札の「島田愛里寿」1体を無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分の手札の「島田愛里寿」1体を無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

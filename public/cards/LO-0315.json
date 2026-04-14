@@ -25,5 +25,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][サイドステップ:[無無]]\n[誘発] このキャラが移動したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
   "textKr": "[アシスト][サイドステップ:[無無]]\n[誘発] このキャラが移動したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0315"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0315",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラが移動したとき、相手キャラ1体にAP-1・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][サイドステップ:[無無]]\n[誘発] このキャラが移動したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+    "normalizedText": "[アシスト][サイドステップ:[無無]]\n[誘発] このキャラが移動したとき、相手キャラ1体にAP-1・DP-1する。",
+    "lines": [
+      "[アシスト][サイドステップ:[無無]]",
+      "[誘発] このキャラが移動したとき、相手キャラ1体にAP-1・DP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サイドステップ:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-2904",
+  "title": "存在感の操作",
+  "subName": "新海 天",
+  "name": "存在感の操作 新海 天",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon",
     "sun"
   ],
-  "attributesList": [
-    "moon",
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -16,5 +18,54 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラがアイテムを装備したとき、相手のデッキを１枚破棄する。\n[宣言] [0]:自分のゴミ箱または自分のデッキから「この手のぬくもり」１枚を探しこのキャラに無償で装備できる。この能力は失われる。\n構築制限:『9-nine-』",
+  "textKr": "[誘発] 味方キャラがアイテムを装備したとき、相手のデッキを１枚破棄する。\n[宣言] [0]:自分のゴミ箱または自分のデッキから「この手のぬくもり」１枚を探しこのキャラに無償で装備できる。この能力は失われる。\n構築制限:『9-nine-』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2904",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方キャラがアイテムを装備したとき、相手のデッキを1枚破棄する。[宣言] [0]:自分のゴミ箱または自分のデッキから「この手のぬくもり」1枚を探しこのキャラに無償で装備できる。この能力は失われる。構築制限:『9-nine-』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "この手のぬくもり",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラがアイテムを装備したとき、相手のデッキを１枚破棄する。\n[宣言] [0]:自分のゴミ箱または自分のデッキから「この手のぬくもり」１枚を探しこのキャラに無償で装備できる。この能力は失われる。\n構築制限:『9-nine-』",
+    "normalizedText": "[誘発] 味方キャラがアイテムを装備したとき、相手のデッキを1枚破棄する。[宣言] [0]:自分のゴミ箱または自分のデッキから「この手のぬくもり」1枚を探しこのキャラに無償で装備できる。この能力は失われる。構築制限:『9-nine-』",
+    "lines": [
+      "[誘発] 味方キャラがアイテムを装備したとき、相手のデッキを1枚破棄する。[宣言] [0]:自分のゴミ箱または自分のデッキから「この手のぬくもり」1枚を探しこのキャラに無償で装備できる。この能力は失われる。構築制限:『9-nine-』"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

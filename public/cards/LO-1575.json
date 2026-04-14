@@ -1,11 +1,50 @@
 {
+  "cardNo": "LO-1575",
+  "title": "竜姫の復活",
+  "subName": "",
+  "name": "竜姫の復活",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 1,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{味方[日]キャラ１体}にＡＰ＋２する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "{味方[日]キャラ１体}にＡＰ＋２する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1575",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方[日]キャラ1体}にAP+2する。構築制限:千年戦争アイギス([AIG])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方[日]キャラ１体}にＡＰ＋２する。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "{味方[日]キャラ1体}にAP+2する。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "{味方[日]キャラ1体}にAP+2する。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

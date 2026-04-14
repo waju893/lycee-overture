@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2531",
+  "title": "旅館の娘",
+  "subName": "藤宮 朔夜",
+  "name": "旅館の娘 藤宮 朔夜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,79 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。{ＳＰが３以上の味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１する。\n構築制限:[AUG]",
+  "textKr": "[宣言] [0]:自ターン中に使用する。{ＳＰが３以上の味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１する。\n構築制限:[AUG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2531",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。{SPが3以上の味方[花]キャラ1体}にAP+1またはDP+1またはSP+1する。構築制限:[AUG]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "sp",
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。{ＳＰが３以上の味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１する。\n構築制限:[AUG]",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。{SPが3以上の味方[花]キャラ1体}にAP+1またはDP+1またはSP+1する。構築制限:[AUG]",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。{SPが3以上の味方[花]キャラ1体}にAP+1またはDP+1またはSP+1する。構築制限:[AUG]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

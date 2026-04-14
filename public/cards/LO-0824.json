@@ -26,5 +26,25 @@
   "typeTagsRaw": "神姫",
   "text": "[アグレッシブ]\n[宣言] [無]:自ターン中に使用する。{味方キャラ１体}を破棄する。このキャラをそのキャラが登場していたフィールドに移動できる。",
   "textKr": "[アグレッシブ]\n[宣言] [無]:自ターン中に使用する。{味方キャラ１体}を破棄する。このキャラをそのキャラが登場していたフィールドに移動できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0824"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0824",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [無]:自ターン中に使用する。{味方キャラ１体}を破棄する。このキャラをそのキャラが登場していたフィールドに移動できる。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [無]:自ターン中に使用する。{味方キャラ1体}を破棄する。このキャラをそのキャラが登場していたフィールドに移動できる。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [無]:自ターン中に使用する。{味方キャラ1体}を破棄する。このキャラをそのキャラが登場していたフィールドに移動できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [無]:自ターン中に使用する。{味方キャラ1体}を破棄する。このキャラをそのキャラが登場していたフィールドに移動できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

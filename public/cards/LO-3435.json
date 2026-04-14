@@ -23,5 +23,51 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [月]:{「クラリアス」を装備している味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。",
   "textKr": "[手札宣言] [月]:{「クラリアス」を装備している味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3435"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3435",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [月]:{「クラリアス」を装備している味方キャラ1体}にAP+3またはDP+3する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [月]:{「クラリアス」を装備している味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。",
+    "normalizedText": "[手札宣言] [月]:{「クラリアス」を装備している味方キャラ1体}にAP+3またはDP+3する。",
+    "lines": [
+      "[手札宣言] [月]:{「クラリアス」を装備している味方キャラ1体}にAP+3またはDP+3する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

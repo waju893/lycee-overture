@@ -21,7 +21,22 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4530"
+  "text": "{味方キャラ１体}はＤＭＧ以外の能力値修正を失う。",
+  "textKr": "{味方キャラ１体}はＤＭＧ以外の能力値修正を失う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4530",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}はＤＭＧ以外の能力値修正を失う。",
+    "normalizedText": "{味方キャラ1体}はDMG以外の能力値修正を失う。",
+    "lines": [
+      "{味方キャラ1体}はDMG以外の能力値修正を失う。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方キャラ1体}はDMG以外の能力値修正を失う。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

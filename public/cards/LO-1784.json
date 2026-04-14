@@ -24,5 +24,38 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体に相手ターン終了時までＡＰ＋２する。",
   "textKr": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体に相手ターン終了時までＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1784"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1784",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体に相手ターン終了時までAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2,
+          "duration": "endOfTurn"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体に相手ターン終了時までＡＰ＋２する。",
+    "normalizedText": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体に相手ターン終了時までAP+2する。",
+    "lines": [
+      "[アシスト][サポーター:[無無]]",
+      "[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体に相手ターン終了時までAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat:endOfTurn"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

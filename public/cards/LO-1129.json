@@ -23,5 +23,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、味方＜大洗女子＞キャラの属性が４種類以上の場合、相手のデッキを１枚破棄できる。",
   "textKr": "[アシスト]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、味方＜大洗女子＞キャラの属性が４種類以上の場合、相手のデッキを１枚破棄できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1129"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1129",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、味方＜大洗女子＞キャラの属性が４種類以上の場合、相手のデッキを１枚破棄できる。",
+    "normalizedText": "[アシスト]\n[誘発] 相手DFキャラがダウンしたバトル終了時、味方<大洗女子>キャラの属性が4種類以上の場合、相手のデッキを1枚破棄できる。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 相手DFキャラがダウンしたバトル終了時、味方<大洗女子>キャラの属性が4種類以上の場合、相手のデッキを1枚破棄できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手DFキャラがダウンしたバトル終了時、味方<大洗女子>キャラの属性が4種類以上の場合、相手のデッキを1枚破棄できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

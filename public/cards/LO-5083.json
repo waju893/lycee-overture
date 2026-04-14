@@ -27,5 +27,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5083"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5083",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、味方キャラ全てにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、味方キャラ全てにAP+2・DP+2する。",
+    "lines": [
+      "[宣言] [0]:このキャラをデッキの下に置く。置いたとき、味方キャラ全てにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

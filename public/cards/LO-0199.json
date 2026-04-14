@@ -26,5 +26,44 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[宣言] [D4]:このキャラにＡＰ＋４する。",
   "textKr": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[宣言] [D4]:このキャラにＡＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0199"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0199",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[味方キャラ1体にDP+2する。]]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D4]:このキャラにAP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[宣言] [D4]:このキャラにＡＰ＋４する。",
+    "normalizedText": "[エンゲージ:[味方キャラ1体にDP+2する。]]\n[宣言] [D4]:このキャラにAP+4する。",
+    "lines": [
+      "[エンゲージ:[味方キャラ1体にDP+2する。]]",
+      "[宣言] [D4]:このキャラにAP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

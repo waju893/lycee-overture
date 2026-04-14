@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0799",
+  "title": "ミーレスホプリゾン",
+  "subName": "ゼルエル",
+  "name": "ミーレスホプリゾン ゼルエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,27 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[コスト] このキャラを破棄する。破棄したとき、[宙宙宙宙宙宙]を発生する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[コスト] このキャラを破棄する。破棄したとき、[宙宙宙宙宙宙]を発生する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0799",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] このキャラを破棄する。破棄したとき、[宙宙宙宙宙宙]を発生する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[コスト] このキャラを破棄する。破棄したとき、[宙宙宙宙宙宙]を発生する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[コスト] このキャラを破棄する。破棄したとき、[宙宙宙宙宙宙]を発生する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] このキャラを破棄する。破棄したとき、[宙宙宙宙宙宙]を発生する。構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0818",
+  "title": "蠅王の威厳",
+  "subName": "ベルゼブブ",
+  "name": "蠅王の威厳 ベルゼブブ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,42 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3
+  "ex": 1,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[サイドステップ:[0]]\n[宣言] [D1]:{味方キャラ１体}にＡＰ＋１・ＤＰ－１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[サイドステップ:[0]]\n[宣言] [D1]:{味方キャラ１体}にＡＰ＋１・ＤＰ－１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0818",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{味方キャラ1体}にAP+1・DP-1する。構築制限:神姫PROJECT([KHP])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[宣言] [D1]:{味方キャラ１体}にＡＰ＋１・ＤＰ－１する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[サイドステップ:[0]]\n[宣言] [D1]:{味方キャラ1体}にAP+1・DP-1する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[宣言] [D1]:{味方キャラ1体}にAP+1・DP-1する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

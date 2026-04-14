@@ -27,5 +27,54 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備する。\n[宣言] [0]:味方「ランスロット」が登場している場合、自分のデッキを２枚回復しシャッフルする。この能力は失われる。",
   "textKr": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備する。\n[宣言] [0]:味方「ランスロット」が登場している場合、自分のデッキを２枚回復しシャッフルする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3536"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3536",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備する。[宣言] [0]:味方「ランスロット」が登場している場合、自分のデッキを2枚回復しシャッフルする。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "クラリアス",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備する。\n[宣言] [0]:味方「ランスロット」が登場している場合、自分のデッキを２枚回復しシャッフルする。この能力は失われる。",
+    "normalizedText": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備する。[宣言] [0]:味方「ランスロット」が登場している場合、自分のデッキを2枚回復しシャッフルする。この能力は失われる。",
+    "lines": [
+      "[ジャンプ:[月月月]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備する。[宣言] [0]:味方「ランスロット」が登場している場合、自分のデッキを2枚回復しシャッフルする。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[月月月]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

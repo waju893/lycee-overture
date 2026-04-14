@@ -25,5 +25,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[宙]]\n[宣言] [D1]:このキャラにＡＰ－４・ＤＰ＋４する。",
   "textKr": "[オーダーチェンジ:[宙]]\n[宣言] [D1]:このキャラにＡＰ－４・ＤＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0513"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0513",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラにAP-4・DP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[宙]]\n[宣言] [D1]:このキャラにＡＰ－４・ＤＰ＋４する。",
+    "normalizedText": "[オーダーチェンジ:[宙]]\n[宣言] [D1]:このキャラにAP-4・DP+4する。",
+    "lines": [
+      "[オーダーチェンジ:[宙]]",
+      "[宣言] [D1]:このキャラにAP-4・DP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[宙]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

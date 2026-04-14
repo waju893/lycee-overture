@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:カード名に「劉邦」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:カード名に「劉邦」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6476"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6476",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:カード名に「劉邦」を含む味方キャラ全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:カード名に「劉邦」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:カード名に「劉邦」を含む味方キャラ全てにAP+1・DP+1する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:カード名に「劉邦」を含む味方キャラ全てにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

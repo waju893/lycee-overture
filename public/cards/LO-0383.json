@@ -28,5 +28,20 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][アグレッシブ]",
   "textKr": "[アシスト][アグレッシブ]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0383"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0383",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][アグレッシブ]",
+    "normalizedText": "[アシスト][アグレッシブ]",
+    "lines": [
+      "[アシスト][アグレッシブ]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

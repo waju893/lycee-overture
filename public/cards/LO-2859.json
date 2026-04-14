@@ -27,5 +27,39 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]のアイテムまたはエリア１枚を手札に入れる。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]のアイテムまたはエリア１枚を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2859"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2859",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]のアイテムまたはエリア1枚を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]のアイテムまたはエリア１枚を手札に入れる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]のアイテムまたはエリア1枚を手札に入れる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]のアイテムまたはエリア1枚を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

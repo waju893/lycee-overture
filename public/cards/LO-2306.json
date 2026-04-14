@@ -24,5 +24,36 @@
   "typeTagsRaw": "城娘",
   "text": "[アグレッシブ]\n[宣言] [D1]:このキャラにＡＰ＋１する。",
   "textKr": "[アグレッシブ]\n[宣言] [D1]:このキャラにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2306"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2306",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [D1]:このキャラにＡＰ＋１する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [D1]:このキャラにAP+1する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [D1]:このキャラにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

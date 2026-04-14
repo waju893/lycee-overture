@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラにＤＰ＋１する。",
   "textKr": "[常時] このキャラにＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0101"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0101",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラにＤＰ＋１する。",
+    "normalizedText": "[常時] このキャラにDP+1する。",
+    "lines": [
+      "[常時] このキャラにDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

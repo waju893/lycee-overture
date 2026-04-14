@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3933",
+  "title": "今川家のお姫さま",
+  "subName": "今川 鞠 氏真",
+  "name": "今川家のお姫さま 今川 鞠 氏真",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -18,15 +21,76 @@
   "dp": 4,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    5,
-    13,
-    16
+  "ex": 2,
+  "costRaw": "日日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:３][ジャンプ:[0]]\n[ペナルティ:[１枚ドローする。]]\n[宣言] [C1]:{コストが３点以上の味方[日]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[誘発] 自ターン中、相手が相手のイベント・手札宣言能力を使用したとき、味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n構築制限:『戦国†恋姫』",
+  "textKr": "[チャージ:３][ジャンプ:[0]]\n[ペナルティ:[１枚ドローする。]]\n[宣言] [C1]:{コストが３点以上の味方[日]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[誘発] 自ターン中、相手が相手のイベント・手札宣言能力を使用したとき、味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n構築制限:『戦国†恋姫』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3933",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1]:{コストが3点以上の味方[日]キャラ1体}にAP+2またはDP+2する。[誘発] 自ターン中、相手が相手のイベント・手札宣言能力を使用したとき、味方キャラ1体にAP+2・DP+2する。構築制限:『戦国†恋姫』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5,
-    13,
-    16
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[チャージ:３][ジャンプ:[0]]\n[ペナルティ:[１枚ドローする。]]\n[宣言] [C1]:{コストが３点以上の味方[日]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[誘発] 自ターン中、相手が相手のイベント・手札宣言能力を使用したとき、味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n構築制限:『戦国†恋姫』",
+    "normalizedText": "[チャージ:3][ジャンプ:[0]]\n[ペナルティ:[1枚ドローする。]]\n[宣言] [C1]:{コストが3点以上の味方[日]キャラ1体}にAP+2またはDP+2する。[誘発] 自ターン中、相手が相手のイベント・手札宣言能力を使用したとき、味方キャラ1体にAP+2・DP+2する。構築制限:『戦国†恋姫』",
+    "lines": [
+      "[チャージ:3][ジャンプ:[0]]",
+      "[ペナルティ:[1枚ドローする。]]",
+      "[宣言] [C1]:{コストが3点以上の味方[日]キャラ1体}にAP+2またはDP+2する。[誘発] 自ターン中、相手が相手のイベント・手札宣言能力を使用したとき、味方キャラ1体にAP+2・DP+2する。構築制限:『戦国†恋姫』"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:3][ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

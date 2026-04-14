@@ -23,5 +23,30 @@
   "typeTagsRaw": "魏",
   "text": "[宣言] [0]:{相手キャラ１体}にＳＰ－１する。この能力は失われる。",
   "textKr": "[宣言] [0]:{相手キャラ１体}にＳＰ－１する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2415"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2415",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にSP-1する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{相手キャラ１体}にＳＰ－１する。この能力は失われる。",
+    "normalizedText": "[宣言] [0]:{相手キャラ1体}にSP-1する。この能力は失われる。",
+    "lines": [
+      "[宣言] [0]:{相手キャラ1体}にSP-1する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

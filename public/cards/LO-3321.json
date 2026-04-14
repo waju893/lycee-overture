@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-3321",
+  "title": "演劇部部長",
+  "subName": "安場 琥珀",
+  "name": "演劇部部長 安場 琥珀",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "cosmos",
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star",
@@ -18,11 +20,63 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。\n構築制限:『SHUFFLE! エピソード2』",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。\n構築制限:『SHUFFLE! エピソード2』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3321",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ1体}にAP+3またはDP+3する。[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを3枚までデッキの下に置きシャッフルする。構築制限:『SHUFFLE! エピソード2』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋３またはＤＰ＋３する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。\n構築制限:『SHUFFLE! エピソード2』",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ1体}にAP+3またはDP+3する。[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを3枚までデッキの下に置きシャッフルする。構築制限:『SHUFFLE! エピソード2』",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ1体}にAP+3またはDP+3する。[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを3枚までデッキの下に置きシャッフルする。構築制限:『SHUFFLE! エピソード2』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

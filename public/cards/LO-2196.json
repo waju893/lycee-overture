@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。\n[手札宣言] [無無]:{味方キャラ１体}にＡＰ＋２・ＤＰ－２する。",
   "textKr": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。\n[手札宣言] [無無]:{味方キャラ１体}にＡＰ＋２・ＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2196"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2196",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラにAP+2・DP-2する。[手札宣言] [無無]:{味方キャラ1体}にAP+2・DP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。\n[手札宣言] [無無]:{味方キャラ１体}にＡＰ＋２・ＤＰ－２する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:このキャラにAP+2・DP-2する。[手札宣言] [無無]:{味方キャラ1体}にAP+2・DP-2する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [0]:このキャラにAP+2・DP-2する。[手札宣言] [無無]:{味方キャラ1体}にAP+2・DP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

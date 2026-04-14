@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[チャージ:１]\n[宣言] [C1][雪]:味方「斎野透花」が登場している場合、このキャラにＡＰ＋３・ＤＰ＋３・ＳＰ－２する。この能力値修正はターン終了時に失われない。",
   "textKr": "[チャージ:１]\n[宣言] [C1][雪]:味方「斎野透花」が登場している場合、このキャラにＡＰ＋３・ＤＰ＋３・ＳＰ－２する。この能力値修正はターン終了時に失われない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6432"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6432",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[チャージ:１]\n[宣言] [C1][雪]:味方「斎野透花」が登場している場合、このキャラにＡＰ＋３・ＤＰ＋３・ＳＰ－２する。この能力値修正はターン終了時に失われない。",
+    "normalizedText": "[チャージ:1]\n[宣言] [C1][雪]:味方「斎野透花」が登場している場合、このキャラにAP+3・DP+3・SP-2する。この能力値修正はターン終了時に失われない。",
+    "lines": [
+      "[チャージ:1]",
+      "[宣言] [C1][雪]:味方「斎野透花」が登場している場合、このキャラにAP+3・DP+3・SP-2する。この能力値修正はターン終了時に失われない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:1]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [C1][雪]:味方「斎野透花」が登場している場合、このキャラにAP+3・DP+3・SP-2する。この能力値修正はターン終了時に失われない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

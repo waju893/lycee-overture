@@ -23,7 +23,32 @@
   "costRaw": "月月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1994"
+  "text": "相手ターン中に使用する。{味方[月]キャラ１体}にＡＰ＋５・ＤＰ＋５する。そのキャラが「インデックス」の場合、そのキャラを味方フィールドに移動する。",
+  "textKr": "相手ターン中に使用する。{味方[月]キャラ１体}にＡＰ＋５・ＤＰ＋５する。そのキャラが「インデックス」の場合、そのキャラを味方フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1994",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "相手ターン中に使用する。{味方[月]キャラ1体}にAP+5・DP+5する。そのキャラが「インデックス」の場合、そのキャラを味方フィールドに移動する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "相手ターン中に使用する。{味方[月]キャラ１体}にＡＰ＋５・ＤＰ＋５する。そのキャラが「インデックス」の場合、そのキャラを味方フィールドに移動する。",
+    "normalizedText": "相手ターン中に使用する。{味方[月]キャラ1体}にAP+5・DP+5する。そのキャラが「インデックス」の場合、そのキャラを味方フィールドに移動する。",
+    "lines": [
+      "相手ターン中に使用する。{味方[月]キャラ1体}にAP+5・DP+5する。そのキャラが「インデックス」の場合、そのキャラを味方フィールドに移動する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

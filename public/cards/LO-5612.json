@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5612",
+  "title": "チュチュの有能マネージャー",
+  "subName": "ヒヨリ・ピクシー",
+  "name": "チュチュの有能マネージャー ヒヨリ・ピクシー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,68 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱またはデッキからＥＸが２で手札宣言能力を持つキャラ１体を探し公開して手札に入れる。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。\n構築制限:【[AMC]】【[日]】【禁止:コストが３～４点のキャラ】",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱またはデッキからＥＸが２で手札宣言能力を持つキャラ１体を探し公開して手札に入れる。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。\n構築制限:【[AMC]】【[日]】【禁止:コストが３～４点のキャラ】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5612",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱またはデッキからEXが2で手札宣言能力を持つキャラ1体を探し公開して手札に入れる。[宣言] [0]:{味方キャラ1体}にAP+2またはDP+2する。この能力は失われる。構築制限:【[AMC]】【[日]】【禁止:コストが3~4点のキャラ】",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck",
+                    "trash",
+                    "hand"
+                  ],
+                  "match": {},
+                  "min": 0,
+                  "max": 2,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱またはデッキからＥＸが２で手札宣言能力を持つキャラ１体を探し公開して手札に入れる。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。\n構築制限:【[AMC]】【[日]】【禁止:コストが３～４点のキャラ】",
+    "normalizedText": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱またはデッキからEXが2で手札宣言能力を持つキャラ1体を探し公開して手札に入れる。[宣言] [0]:{味方キャラ1体}にAP+2またはDP+2する。この能力は失われる。構築制限:【[AMC]】【[日]】【禁止:コストが3~4点のキャラ】",
+    "lines": [
+      "[誘発] このキャラが手札から登場したとき、自分のゴミ箱またはデッキからEXが2で手札宣言能力を持つキャラ1体を探し公開して手札に入れる。[宣言] [0]:{味方キャラ1体}にAP+2またはDP+2する。この能力は失われる。構築制限:【[AMC]】【[日]】【禁止:コストが3~4点のキャラ】"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

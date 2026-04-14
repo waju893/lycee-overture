@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方キャラ１体はターン終了時まで相手のイベント・能力の対象に指定できない。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体はターン終了時まで相手のイベント・能力の対象に指定できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0913"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0913",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ１体はターン終了時まで相手のイベント・能力の対象に指定できない。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ1体はターン終了時まで相手のイベント・能力の対象に指定できない。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ1体はターン終了時まで相手のイベント・能力の対象に指定できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体はターン終了時まで相手のイベント・能力の対象に指定できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

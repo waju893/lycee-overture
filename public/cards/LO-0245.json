@@ -22,7 +22,22 @@
   "costRaw": "無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0245"
+  "text": "自ターン中に使用する。{味方＜魔剣＞キャラ１体}を破棄する。ゴミ箱のそのキャラを無償で登場する。",
+  "textKr": "自ターン中に使用する。{味方＜魔剣＞キャラ１体}を破棄する。ゴミ箱のそのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0245",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。{味方＜魔剣＞キャラ１体}を破棄する。ゴミ箱のそのキャラを無償で登場する。",
+    "normalizedText": "自ターン中に使用する。{味方<魔剣>キャラ1体}を破棄する。ゴミ箱のそのキャラを無償で登場する。",
+    "lines": [
+      "自ターン中に使用する。{味方<魔剣>キャラ1体}を破棄する。ゴミ箱のそのキャラを無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自ターン中に使用する。{味方<魔剣>キャラ1体}を破棄する。ゴミ箱のそのキャラを無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

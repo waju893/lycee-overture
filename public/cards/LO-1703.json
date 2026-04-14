@@ -22,7 +22,53 @@
   "costRaw": "宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1703"
+  "text": "{相手キャラ１体}にＤＰ－２またはＳＰ－２する。",
+  "textKr": "{相手キャラ１体}にＤＰ－２またはＳＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1703",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{相手キャラ1体}にDP-2またはSP-2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "sp",
+                  "amount": -2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}にＤＰ－２またはＳＰ－２する。",
+    "normalizedText": "{相手キャラ1体}にDP-2またはSP-2する。",
+    "lines": [
+      "{相手キャラ1体}にDP-2またはSP-2する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

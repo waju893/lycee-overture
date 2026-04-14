@@ -24,5 +24,51 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラがバトルに参加したとき、このキャラと同列の相手ＡＦキャラ１体にＡＰ－１、またはこのキャラと同列の相手ＤＦキャラ１体にＤＰ－１する。",
   "textKr": "[誘発] このキャラがバトルに参加したとき、このキャラと同列の相手ＡＦキャラ１体にＡＰ－１、またはこのキャラと同列の相手ＤＦキャラ１体にＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1351"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1351",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラがバトルに参加したとき、このキャラと同列の相手AFキャラ1体にAP-1、またはこのキャラと同列の相手DFキャラ1体にDP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラがバトルに参加したとき、このキャラと同列の相手ＡＦキャラ１体にＡＰ－１、またはこのキャラと同列の相手ＤＦキャラ１体にＤＰ－１する。",
+    "normalizedText": "[誘発] このキャラがバトルに参加したとき、このキャラと同列の相手AFキャラ1体にAP-1、またはこのキャラと同列の相手DFキャラ1体にDP-1する。",
+    "lines": [
+      "[誘発] このキャラがバトルに参加したとき、このキャラと同列の相手AFキャラ1体にAP-1、またはこのキャラと同列の相手DFキャラ1体にDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0676",
+  "title": "異文化交流",
+  "subName": "レナ・リヒテナウアー",
+  "name": "異文化交流 レナ・リヒテナウアー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,27 @@
   "ap": 3,
   "dp": 0,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "-",
+  "text": "[誘発] このキャラがダウンしたとき、相手のデッキを２枚破棄する。\n構築制限:ゆずソフト",
+  "textKr": "[誘発] このキャラがダウンしたとき、相手のデッキを２枚破棄する。\n構築制限:ゆずソフト",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0676",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラがダウンしたとき、相手のデッキを２枚破棄する。\n構築制限:ゆずソフト",
+    "normalizedText": "[誘発] このキャラがダウンしたとき、相手のデッキを2枚破棄する。構築制限:ゆずソフト",
+    "lines": [
+      "[誘発] このキャラがダウンしたとき、相手のデッキを2枚破棄する。構築制限:ゆずソフト"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラがダウンしたとき、相手のデッキを2枚破棄する。構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

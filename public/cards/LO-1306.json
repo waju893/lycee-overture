@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン中、このキャラが登場したとき、このキャラを横に置く。次の相手ターン開始時、横のこのキャラを無償で登場する。",
   "textKr": "[誘発] 自ターン中、このキャラが登場したとき、このキャラを横に置く。次の相手ターン開始時、横のこのキャラを無償で登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1306"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1306",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、このキャラが登場したとき、このキャラを横に置く。次の相手ターン開始時、横のこのキャラを無償で登場する。",
+    "normalizedText": "[誘発] 自ターン中、このキャラが登場したとき、このキャラを横に置く。次の相手ターン開始時、横のこのキャラを無償で登場する。",
+    "lines": [
+      "[誘発] 自ターン中、このキャラが登場したとき、このキャラを横に置く。次の相手ターン開始時、横のこのキャラを無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、このキャラが登場したとき、このキャラを横に置く。次の相手ターン開始時、横のこのキャラを無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

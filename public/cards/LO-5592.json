@@ -25,5 +25,46 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探し{味方キャラ１体}に装備する。この能力は失われる。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探し{味方キャラ１体}に装備する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5592"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5592",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」1枚を探し{味方キャラ1体}に装備する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "霊式機巧刀「折紙"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探し{味方キャラ１体}に装備する。この能力は失われる。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」1枚を探し{味方キャラ1体}に装備する。この能力は失われる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」1枚を探し{味方キャラ1体}に装備する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

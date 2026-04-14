@@ -26,5 +26,57 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{エリアを持つ味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{エリアを持つ味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2735"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2735",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙宙]:{エリアを持つ味方キャラ1体}にAP+2またはDP+2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{エリアを持つ味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{エリアを持つ味方キャラ1体}にAP+2またはDP+2する。この能力は失われる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [宙宙]:{エリアを持つ味方キャラ1体}にAP+2またはDP+2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

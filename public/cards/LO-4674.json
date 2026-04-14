@@ -23,7 +23,22 @@
   "costRaw": "雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4674"
+  "text": "バトル中に使用できない。このターン中、自分のコストが１点以上のイベント・手札宣言能力を使用している場合、{相手キャラ１体}を破棄する。",
+  "textKr": "バトル中に使用できない。このターン中、自分のコストが１点以上のイベント・手札宣言能力を使用している場合、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4674",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。このターン中、自分のコストが１点以上のイベント・手札宣言能力を使用している場合、{相手キャラ１体}を破棄する。",
+    "normalizedText": "バトル中に使用できない。このターン中、自分のコストが1点以上のイベント・手札宣言能力を使用している場合、{相手キャラ1体}を破棄する。",
+    "lines": [
+      "バトル中に使用できない。このターン中、自分のコストが1点以上のイベント・手札宣言能力を使用している場合、{相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用できない。このターン中、自分のコストが1点以上のイベント・手札宣言能力を使用している場合、{相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

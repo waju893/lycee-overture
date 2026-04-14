@@ -27,5 +27,25 @@
   "typeTagsRaw": "英霊",
   "text": "[リーダー][サイドステップ:[0]]\n[誘発] 自分の効果によって相手キャラを破棄したとき、相手のデッキを１枚破棄する。",
   "textKr": "[リーダー][サイドステップ:[0]]\n[誘発] 自分の効果によって相手キャラを破棄したとき、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0738"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0738",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リーダー][サイドステップ:[0]]\n[誘発] 自分の効果によって相手キャラを破棄したとき、相手のデッキを１枚破棄する。",
+    "normalizedText": "[リーダー][サイドステップ:[0]]\n[誘発] 自分の効果によって相手キャラを破棄したとき、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[リーダー][サイドステップ:[0]]",
+      "[誘発] 自分の効果によって相手キャラを破棄したとき、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自分の効果によって相手キャラを破棄したとき、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

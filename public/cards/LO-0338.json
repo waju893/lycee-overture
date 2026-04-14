@@ -25,5 +25,36 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、味方「アズミ」と味方「メグミ」が登場している場合、１枚ドローする。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、味方「アズミ」と味方「メグミ」が登場している場合、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0338"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0338",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方「アズミ」と味方「メグミ」が登場している場合、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、味方「アズミ」と味方「メグミ」が登場している場合、１枚ドローする。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、味方「アズミ」と味方「メグミ」が登場している場合、1枚ドローする。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、味方「アズミ」と味方「メグミ」が登場している場合、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

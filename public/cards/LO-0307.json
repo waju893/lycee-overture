@@ -24,5 +24,37 @@
   "typeTagsRaw": "プラウダ",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、味方「カチューシャ」１体にＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、味方「カチューシャ」１体にＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0307"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0307",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方「カチューシャ」1体にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、味方「カチューシャ」１体にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、味方「カチューシャ」1体にAP+1・DP+1する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、味方「カチューシャ」1体にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

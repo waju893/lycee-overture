@@ -24,5 +24,33 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「美大和咲月」１体または「メイ」１体を手札に入れる。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「美大和咲月」１体または「メイ」１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2675"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2675",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱の「美大和咲月」1体または「メイ」1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱の「美大和咲月」１体または「メイ」１体を手札に入れる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱の「美大和咲月」1体または「メイ」1体を手札に入れる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の「美大和咲月」1体または「メイ」1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

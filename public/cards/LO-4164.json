@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4164",
+  "title": "かぐやの姉",
+  "subName": "有瀬 あてな",
+  "name": "かぐやの姉 有瀬 あてな",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,58 @@
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] 「怪盗衣装」を持つ味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[コスト] [月月]または[花花]を発生する。この能力は失われる。\n構築制限:【[SP]】【[月]または[花]】",
+  "textKr": "[常時] 「怪盗衣装」を持つ味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[コスト] [月月]または[花花]を発生する。この能力は失われる。\n構築制限:【[SP]】【[月]または[花]】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4164",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] 「怪盗衣装」を持つ味方キャラ全てにAP+1・DP+1・DMG+1する。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[コスト] [月月]または[花花]を発生する。この能力は失われる。構築制限:【[SP]】【[月]または[花]】",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] 「怪盗衣装」を持つ味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[コスト] [月月]または[花花]を発生する。この能力は失われる。\n構築制限:【[SP]】【[月]または[花]】",
+    "normalizedText": "[常時] 「怪盗衣装」を持つ味方キャラ全てにAP+1・DP+1・DMG+1する。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[コスト] [月月]または[花花]を発生する。この能力は失われる。構築制限:【[SP]】【[月]または[花]】",
+    "lines": [
+      "[常時] 「怪盗衣装」を持つ味方キャラ全てにAP+1・DP+1・DMG+1する。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[コスト] [月月]または[花花]を発生する。この能力は失われる。構築制限:【[SP]】【[月]または[花]】"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

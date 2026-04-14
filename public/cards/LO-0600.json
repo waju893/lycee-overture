@@ -26,5 +26,20 @@
   "typeTagsRaw": "-",
   "text": "[宣言] [雪]:このキャラのバトル中に使用する。{対戦キャラ}のＤＰを２にする。",
   "textKr": "[宣言] [雪]:このキャラのバトル中に使用する。{対戦キャラ}のＤＰを２にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0600"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0600",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪]:このキャラのバトル中に使用する。{対戦キャラ}のＤＰを２にする。",
+    "normalizedText": "[宣言] [雪]:このキャラのバトル中に使用する。{対戦キャラ}のDPを2にする。",
+    "lines": [
+      "[宣言] [雪]:このキャラのバトル中に使用する。{対戦キャラ}のDPを2にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪]:このキャラのバトル中に使用する。{対戦キャラ}のDPを2にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,7 +24,32 @@
   "costRaw": "月月月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2840"
+  "text": "コストが５点以上の味方[月]キャラのバトル中に使用する。対戦キャラにＡＰ－５・ＤＰ－５する。",
+  "textKr": "コストが５点以上の味方[月]キャラのバトル中に使用する。対戦キャラにＡＰ－５・ＤＰ－５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2840",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "コストが5点以上の味方[月]キャラのバトル中に使用する。対戦キャラにAP-5・DP-5する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -5
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "コストが５点以上の味方[月]キャラのバトル中に使用する。対戦キャラにＡＰ－５・ＤＰ－５する。",
+    "normalizedText": "コストが5点以上の味方[月]キャラのバトル中に使用する。対戦キャラにAP-5・DP-5する。",
+    "lines": [
+      "コストが5点以上の味方[月]キャラのバトル中に使用する。対戦キャラにAP-5・DP-5する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

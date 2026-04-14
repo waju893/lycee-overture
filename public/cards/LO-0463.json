@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを味方フィールドに移動できる。",
   "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを味方フィールドに移動できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0463"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0463",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを味方フィールドに移動できる。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを味方フィールドに移動できる。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[誘発] このキャラのバトル終了時、このキャラを味方フィールドに移動できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラのバトル終了時、このキャラを味方フィールドに移動できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

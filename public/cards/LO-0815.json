@@ -28,5 +28,36 @@
   "typeTagsRaw": "神姫",
   "text": "[サイドステップ:[0]]\n[宣言] [日日]:{味方ＤＦキャラ１体}にＡＰ＋２する。",
   "textKr": "[サイドステップ:[0]]\n[宣言] [日日]:{味方ＤＦキャラ１体}にＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0815"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0815",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日日]:{味方DFキャラ1体}にAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[宣言] [日日]:{味方ＤＦキャラ１体}にＡＰ＋２する。",
+    "normalizedText": "[サイドステップ:[0]]\n[宣言] [日日]:{味方DFキャラ1体}にAP+2する。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[宣言] [日日]:{味方DFキャラ1体}にAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

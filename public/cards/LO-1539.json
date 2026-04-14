@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラはサポートの対象に指定できない。",
   "textKr": "[常時] このキャラはサポートの対象に指定できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1539"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1539",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[常時] このキャラはサポートの対象に指定できない。",
+    "normalizedText": "[常時] このキャラはサポートの対象に指定できない。",
+    "lines": [
+      "[常時] このキャラはサポートの対象に指定できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] このキャラはサポートの対象に指定できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

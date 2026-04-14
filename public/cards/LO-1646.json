@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1646",
+  "title": "優しき妖狐",
+  "subName": "葛の葉",
+  "name": "優しき妖狐 葛の葉",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,46 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ１体または[月]アイテム１枚を探し公開して手札に入れる。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ１体または[月]アイテム１枚を探し公開して手札に入れる。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1646",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ1体または[月]アイテム1枚を探し公開して手札に入れる。構築制限:ゆずソフト([YUZ])",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ１体または[月]アイテム１枚を探し公開して手札に入れる。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ1体または[月]アイテム1枚を探し公開して手札に入れる。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ1体または[月]アイテム1枚を探し公開して手札に入れる。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

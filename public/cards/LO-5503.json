@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [D1]:{このキャラに隣接したキャラ１体}にＤＰ＋１・ＳＰ－１する。",
   "textKr": "[宣言] [D1]:{このキャラに隣接したキャラ１体}にＤＰ＋１・ＳＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5503"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5503",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{このキャラに隣接したキャラ1体}にDP+1・SP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:{このキャラに隣接したキャラ１体}にＤＰ＋１・ＳＰ－１する。",
+    "normalizedText": "[宣言] [D1]:{このキャラに隣接したキャラ1体}にDP+1・SP-1する。",
+    "lines": [
+      "[宣言] [D1]:{このキャラに隣接したキャラ1体}にDP+1・SP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

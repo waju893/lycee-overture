@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1663",
+  "title": "旃檀功徳仏",
+  "subName": "三蔵法師",
+  "name": "旃檀功徳仏 三蔵法師",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,31 @@
   "dp": 3,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "－●－－●－",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象の[花]キャラにＤＭＧ＋３する。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象の[花]キャラにＤＭＧ＋３する。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1663",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象の[花]キャラにＤＭＧ＋３する。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象の[花]キャラにDMG+3する。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[サポーター:[花花花]]",
+      "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象の[花]キャラにDMG+3する。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象の[花]キャラにDMG+3する。構築制限:ゆずソフト([YUZ])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

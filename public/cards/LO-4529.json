@@ -21,7 +21,22 @@
   "costRaw": "花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4529"
+  "text": "自分にシールド＋２する。",
+  "textKr": "自分にシールド＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4529",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自分にシールド＋２する。",
+    "normalizedText": "自分にシールド+2する。",
+    "lines": [
+      "自分にシールド+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自分にシールド+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

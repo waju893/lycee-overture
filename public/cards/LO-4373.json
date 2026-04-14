@@ -21,7 +21,32 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4373"
+  "text": "元の宣言型の基本能力を持つ元のＤＭＧが２以上の味方キャラが登場していない場合、{味方[日]キャラ１体}にＡＰ＋５・ＤＰ－５する。",
+  "textKr": "元の宣言型の基本能力を持つ元のＤＭＧが２以上の味方キャラが登場していない場合、{味方[日]キャラ１体}にＡＰ＋５・ＤＰ－５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4373",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "元の宣言型の基本能力を持つ元のDMGが2以上の味方キャラが登場していない場合、{味方[日]キャラ1体}にAP+5・DP-5する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "元の宣言型の基本能力を持つ元のＤＭＧが２以上の味方キャラが登場していない場合、{味方[日]キャラ１体}にＡＰ＋５・ＤＰ－５する。",
+    "normalizedText": "元の宣言型の基本能力を持つ元のDMGが2以上の味方キャラが登場していない場合、{味方[日]キャラ1体}にAP+5・DP-5する。",
+    "lines": [
+      "元の宣言型の基本能力を持つ元のDMGが2以上の味方キャラが登場していない場合、{味方[日]キャラ1体}にAP+5・DP-5する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2249",
+  "title": "日ノ池 月ノ池",
+  "subName": "新田金山城",
+  "name": "日ノ池 月ノ池 新田金山城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,85 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [月月]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[OSP]",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [月月]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2249",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [月月]:相手ターン中に使用する。{相手キャラ1体}にAP-1またはDP-1する。構築制限:[OSP]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [月月]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[OSP]",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [月月]:相手ターン中に使用する。{相手キャラ1体}にAP-1またはDP-1する。構築制限:[OSP]",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [月月]:相手ターン中に使用する。{相手キャラ1体}にAP-1またはDP-1する。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

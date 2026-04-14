@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[花]]\n[誘発] このキャラにサポートをしたとき、味方キャラ１体にＤＭＧ＋１する。",
   "textKr": "[オーダーチェンジ:[花]]\n[誘発] このキャラにサポートをしたとき、味方キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0496"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0496",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[花]]\n[誘発] このキャラにサポートをしたとき、味方キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[オーダーチェンジ:[花]]\n[誘発] このキャラにサポートをしたとき、味方キャラ1体にDMG+1する。",
+    "lines": [
+      "[オーダーチェンジ:[花]]",
+      "[誘発] このキャラにサポートをしたとき、味方キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラにサポートをしたとき、味方キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

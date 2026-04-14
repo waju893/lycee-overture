@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [花]:{味方キャラ１体}にＤＰ＋３する。この能力は失われる。",
   "textKr": "[宣言] [花]:{味方キャラ１体}にＤＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4324"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4324",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [花]:{味方キャラ1体}にDP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [花]:{味方キャラ１体}にＤＰ＋３する。この能力は失われる。",
+    "normalizedText": "[宣言] [花]:{味方キャラ1体}にDP+3する。この能力は失われる。",
+    "lines": [
+      "[宣言] [花]:{味方キャラ1体}にDP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

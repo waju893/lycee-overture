@@ -25,5 +25,43 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、{味方[AMC]キャラ１体}にＡＰ＋３する。この能力は失われる。",
   "textKr": "[ジャンプ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、{味方[AMC]キャラ１体}にＡＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5604"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5604",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ジャンプ:[0]][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方キャラ全てのコストが3~4点の場合、{味方[AMC]キャラ1体}にAP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、{味方[AMC]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+    "normalizedText": "[ジャンプ:[0]][ペナルティ:[1枚ドローする。]]\n[宣言] [0]:味方キャラ全てのコストが3~4点の場合、{味方[AMC]キャラ1体}にAP+3する。この能力は失われる。",
+    "lines": [
+      "[ジャンプ:[0]][ペナルティ:[1枚ドローする。]]",
+      "[宣言] [0]:味方キャラ全てのコストが3~4点の場合、{味方[AMC]キャラ1体}にAP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

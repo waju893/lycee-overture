@@ -25,5 +25,25 @@
   "typeTagsRaw": "聖グロリアーナ",
   "text": "[アシスト]\n[誘発] ＜聖グロリアーナ＞キャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋１する。",
   "textKr": "[アシスト]\n[誘発] ＜聖グロリアーナ＞キャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0397"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0397",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] ＜聖グロリアーナ＞キャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋１する。",
+    "normalizedText": "[アシスト]\n[誘発] <聖グロリアーナ>キャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までDMG+1する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] <聖グロリアーナ>キャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] <聖グロリアーナ>キャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

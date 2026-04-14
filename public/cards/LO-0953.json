@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0953",
+  "title": "いつもハイテンション",
+  "subName": "悠木 かなで",
+  "name": "いつもハイテンション 悠木 かなで",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,42 @@
   "dp": 1,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] 自分のデッキを破棄したとき、味方キャラ１体にＡＰ＋１する。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "[ステップ:[0]]\n[誘発] 自分のデッキを破棄したとき、味方キャラ１体にＡＰ＋１する。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0953",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のデッキを破棄したとき、味方キャラ1体にAP+1する。構築制限:オーガスト([AUG])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] 自分のデッキを破棄したとき、味方キャラ１体にＡＰ＋１する。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "[ステップ:[0]]\n[誘発] 自分のデッキを破棄したとき、味方キャラ1体にAP+1する。構築制限:オーガスト([AUG])",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] 自分のデッキを破棄したとき、味方キャラ1体にAP+1する。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

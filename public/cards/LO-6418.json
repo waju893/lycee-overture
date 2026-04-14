@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6418",
+  "title": "浄化隊の司令塔",
+  "subName": "文示宮 篤",
+  "name": "浄化隊の司令塔 文示宮 篤",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,42 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n構築制限:『DeepOne シリーズ』",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n構築制限:『DeepOne シリーズ』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6418",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。[誘発] このキャラが登場したとき、1枚ドローする。構築制限:『DeepOne シリーズ』",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n構築制限:『DeepOne シリーズ』",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。[誘発] このキャラが登場したとき、1枚ドローする。構築制限:『DeepOne シリーズ』",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。[誘発] このキャラが登場したとき、1枚ドローする。構築制限:『DeepOne シリーズ』"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

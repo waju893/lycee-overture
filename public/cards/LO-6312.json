@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6312",
+  "title": "幼稚園児のような神様",
+  "subName": "神様（幼女）",
+  "name": "幼稚園児のような神様 神様（幼女）",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,43 @@
   "ap": 0,
   "dp": 0,
   "sp": 0,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、このキャラを破棄する。したとき、２枚ドローする。自分にシールド＋２できる。（ゲーム中１回まで処理可能）\n構築制限:『スマガ シリーズ』",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラを破棄する。したとき、２枚ドローする。自分にシールド＋２できる。（ゲーム中１回まで処理可能）\n構築制限:『スマガ シリーズ』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6312",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、このキャラを破棄する。したとき、2枚ドローする。自分にシールド+2できる。(ゲーム中1回まで処理可能)",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、このキャラを破棄する。したとき、２枚ドローする。自分にシールド＋２できる。（ゲーム中１回まで処理可能）\n構築制限:『スマガ シリーズ』",
+    "normalizedText": "[誘発] このキャラが登場したとき、このキャラを破棄する。したとき、2枚ドローする。自分にシールド+2できる。(ゲーム中1回まで処理可能)\n構築制限:『スマガ シリーズ』",
+    "lines": [
+      "[誘発] このキャラが登場したとき、このキャラを破棄する。したとき、2枚ドローする。自分にシールド+2できる。(ゲーム中1回まで処理可能)",
+      "構築制限:『スマガ シリーズ』"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:『スマガ シリーズ』",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

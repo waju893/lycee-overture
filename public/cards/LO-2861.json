@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]\n[誘発] 自ターン中、味方キャラが場を離れたとき、味方キャラ１体にＡＰ＋１する。",
   "textKr": "[アグレッシブ]\n[誘発] 自ターン中、味方キャラが場を離れたとき、味方キャラ１体にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2861"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2861",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自ターン中、味方キャラが場を離れたとき、味方キャラ1体にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] 自ターン中、味方キャラが場を離れたとき、味方キャラ１体にＡＰ＋１する。",
+    "normalizedText": "[アグレッシブ]\n[誘発] 自ターン中、味方キャラが場を離れたとき、味方キャラ1体にAP+1する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] 自ターン中、味方キャラが場を離れたとき、味方キャラ1体にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

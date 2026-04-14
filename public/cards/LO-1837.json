@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-1837",
+  "title": "真の勝負",
+  "subName": "十波 由真",
+  "name": "真の勝負 十波 由真",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower",
     "sun"
   ],
-  "attributesList": [
-    "flower",
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "sun",
@@ -17,5 +19,27 @@
   "ap": 3,
   "dp": 2,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、味方キャラ１体を未行動にできる。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[誘発] このキャラが登場したとき、味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、味方キャラ１体を未行動にできる。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1837",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、味方キャラ１体を未行動にできる。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、味方キャラ1体を未行動にできる。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、味方キャラ1体を未行動にできる。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、味方キャラ1体を未行動にできる。構築制限:アクアプラス([AQP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

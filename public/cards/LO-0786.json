@@ -24,5 +24,30 @@
   "typeTagsRaw": "神姫",
   "text": "[宣言] [花花]:バトル中に使用できない。{味方ＤＦキャラ１体}にＤＰ＋１する。",
   "textKr": "[宣言] [花花]:バトル中に使用できない。{味方ＤＦキャラ１体}にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0786"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0786",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [花花]:バトル中に使用できない。{味方DFキャラ1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [花花]:バトル中に使用できない。{味方ＤＦキャラ１体}にＤＰ＋１する。",
+    "normalizedText": "[宣言] [花花]:バトル中に使用できない。{味方DFキャラ1体}にDP+1する。",
+    "lines": [
+      "[宣言] [花花]:バトル中に使用できない。{味方DFキャラ1体}にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

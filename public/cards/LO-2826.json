@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2826",
+  "title": "Girls Dead Monster",
+  "subName": "岩沢 雅美",
+  "name": "Girls Dead Monster 岩沢 雅美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,15 +19,41 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3,
-    8,
-    13
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[誘発] 自ターン終了時、自分のゴミ箱のカード１枚をこのキャラの下に置く。３枚以上置かれている場合、このキャラを自分の「卒業」置き場に置く。置いたとき、自分のゴミ箱のサブネームに「ガルデモ」または「Girls Dead Monster」を含むコストが２点以下のキャラ２体を無償で登場する。\n構築制限:『Angel Beats!』",
+  "textKr": "[アシスト][サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[誘発] 自ターン終了時、自分のゴミ箱のカード１枚をこのキャラの下に置く。３枚以上置かれている場合、このキャラを自分の「卒業」置き場に置く。置いたとき、自分のゴミ箱のサブネームに「ガルデモ」または「Girls Dead Monster」を含むコストが２点以下のキャラ２体を無償で登場する。\n構築制限:『Angel Beats!』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2826",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[アシスト][サイドステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3,
-    8,
-    13
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アシスト][サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[誘発] 自ターン終了時、自分のゴミ箱のカード１枚をこのキャラの下に置く。３枚以上置かれている場合、このキャラを自分の「卒業」置き場に置く。置いたとき、自分のゴミ箱のサブネームに「ガルデモ」または「Girls Dead Monster」を含むコストが２点以下のキャラ２体を無償で登場する。\n構築制限:『Angel Beats!』",
+    "normalizedText": "[アシスト][サイドステップ:[0]][ペナルティ:[1枚ドローする。]]\n[誘発] 自ターン終了時、自分のゴミ箱のカード1枚をこのキャラの下に置く。3枚以上置かれている場合、このキャラを自分の「卒業」置き場に置く。置いたとき、自分のゴミ箱のサブネームに「ガルデモ」または「Girls Dead Monster」を含むコストが2点以下のキャラ2体を無償で登場する。構築制限:『Angel Beats!』",
+    "lines": [
+      "[アシスト][サイドステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "[誘発] 自ターン終了時、自分のゴミ箱のカード1枚をこのキャラの下に置く。3枚以上置かれている場合、このキャラを自分の「卒業」置き場に置く。置いたとき、自分のゴミ箱のサブネームに「ガルデモ」または「Girls Dead Monster」を含むコストが2点以下のキャラ2体を無償で登場する。構築制限:『Angel Beats!』"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン終了時、自分のゴミ箱のカード1枚をこのキャラの下に置く。3枚以上置かれている場合、このキャラを自分の「卒業」置き場に置く。置いたとき、自分のゴミ箱のサブネームに「ガルデモ」または「Girls Dead Monster」を含むコストが2点以下のキャラ2体を無償で登場する。構築制限:『Angel Beats!』",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

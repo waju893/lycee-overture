@@ -24,5 +24,30 @@
   "typeTagsRaw": "神姫",
   "text": "[誘発] 相手キャラが登場したとき、そのキャラにＳＰ－２する。",
   "textKr": "[誘発] 相手キャラが登場したとき、そのキャラにＳＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0801"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0801",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 相手キャラが登場したとき、そのキャラにSP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 相手キャラが登場したとき、そのキャラにＳＰ－２する。",
+    "normalizedText": "[誘発] 相手キャラが登場したとき、そのキャラにSP-2する。",
+    "lines": [
+      "[誘発] 相手キャラが登場したとき、そのキャラにSP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

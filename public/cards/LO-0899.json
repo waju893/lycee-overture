@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0899",
+  "title": "総督の娘",
+  "subName": "エルザ・ヴァレンタイン",
+  "name": "総督の娘 エルザ・ヴァレンタイン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,27 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体をそのキャラと同オーダーのフィールドに移動する。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体をそのキャラと同オーダーのフィールドに移動する。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0899",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手キャラ１体をそのキャラと同オーダーのフィールドに移動する。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手キャラ1体をそのキャラと同オーダーのフィールドに移動する。構築制限:オーガスト([AUG])",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手キャラ1体をそのキャラと同オーダーのフィールドに移動する。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手キャラ1体をそのキャラと同オーダーのフィールドに移動する。構築制限:オーガスト([AUG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

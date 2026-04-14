@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-2900",
+  "title": "統合反対派",
+  "subName": "瀬名 愛理",
+  "name": "統合反対派 瀬名 愛理",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow",
     "cosmos"
   ],
-  "attributesList": [
-    "snow",
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "cosmos",
@@ -18,11 +20,72 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
+  "ex": 2,
+  "costRaw": "雪宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが３点以上の味方キャラ１体}を破棄する。破棄したとき、１枚ドローする。この能力は失われる。\n[宣言] [無]:自分のゴミ箱または自分のデッキから「統合反対」１枚を探し公開して手札に入れる。この能力は失われる。\n構築制限:『ましろ色シンフォニー』",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが３点以上の味方キャラ１体}を破棄する。破棄したとき、１枚ドローする。この能力は失われる。\n[宣言] [無]:自分のゴミ箱または自分のデッキから「統合反対」１枚を探し公開して手札に入れる。この能力は失われる。\n構築制限:『ましろ色シンフォニー』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2900",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{コストが3点以上の味方キャラ1体}を破棄する。破棄したとき、1枚ドローする。この能力は失われる。[宣言] [無]:自分のゴミ箱または自分のデッキから「統合反対」1枚を探し公開して手札に入れる。この能力は失われる。構築制限:『ましろ色シンフォニー』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck",
+                    "hand"
+                  ],
+                  "match": {
+                    "exactName": "統合反対"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが３点以上の味方キャラ１体}を破棄する。破棄したとき、１枚ドローする。この能力は失われる。\n[宣言] [無]:自分のゴミ箱または自分のデッキから「統合反対」１枚を探し公開して手札に入れる。この能力は失われる。\n構築制限:『ましろ色シンフォニー』",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが3点以上の味方キャラ1体}を破棄する。破棄したとき、1枚ドローする。この能力は失われる。[宣言] [無]:自分のゴミ箱または自分のデッキから「統合反対」1枚を探し公開して手札に入れる。この能力は失われる。構築制限:『ましろ色シンフォニー』",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:{コストが3点以上の味方キャラ1体}を破棄する。破棄したとき、1枚ドローする。この能力は失われる。[宣言] [無]:自分のゴミ箱または自分のデッキから「統合反対」1枚を探し公開して手札に入れる。この能力は失われる。構築制限:『ましろ色シンフォニー』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

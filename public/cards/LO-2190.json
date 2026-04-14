@@ -1,11 +1,58 @@
 {
+  "cardNo": "LO-2190",
+  "title": "WHITE ALBUMの季節",
+  "subName": "",
+  "name": "WHITE ALBUMの季節",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 0,
-  "useTarget": 0
+  "costRaw": "-",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ１体を探し公開して手札に入れる。\n構築制限:『WHITE ALBUM2』",
+  "textKr": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ１体を探し公開して手札に入れる。\n構築制限:『WHITE ALBUM2』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2190",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ1体を探し公開して手札に入れる。構築制限:『WHITE ALBUM2』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ１体を探し公開して手札に入れる。\n構築制限:『WHITE ALBUM2』",
+    "normalizedText": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ1体を探し公開して手札に入れる。構築制限:『WHITE ALBUM2』",
+    "lines": [
+      "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ1体を探し公開して手札に入れる。構築制限:『WHITE ALBUM2』"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

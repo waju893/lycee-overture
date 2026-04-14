@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0732",
+  "title": "鋒矢の陣",
+  "subName": "ソロモン",
+  "name": "鋒矢の陣 ソロモン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ER",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 0,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,43 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
+  "ex": 0,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー][オーダーステップ:[0]]\n[誘発] 相手ターン開始時、相手キャラ全てにＡＰ－１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[リーダー][オーダーステップ:[0]]\n[誘発] 相手ターン開始時、相手キャラ全てにＡＰ－１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0732",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] 相手ターン開始時、相手キャラ全てにAP-1する。構築制限:神姫PROJECT([KHP])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": true
+  "parseMeta": {
+    "originalText": "[リーダー][オーダーステップ:[0]]\n[誘発] 相手ターン開始時、相手キャラ全てにＡＰ－１する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[リーダー][オーダーステップ:[0]]\n[誘発] 相手ターン開始時、相手キャラ全てにAP-1する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[リーダー][オーダーステップ:[0]]",
+      "[誘発] 相手ターン開始時、相手キャラ全てにAP-1する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

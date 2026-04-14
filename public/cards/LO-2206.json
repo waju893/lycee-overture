@@ -24,5 +24,56 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [月月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。\n[誘発] このキャラをエンゲージ登場で破棄したとき、１枚ドローする。",
   "textKr": "[エンゲージ]\n[宣言] [月月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。\n[誘発] このキャラをエンゲージ登場で破棄したとき、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2206"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2206",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月月]:{相手キャラ1体}にAP-2またはDP-2する。この能力は失われる。[誘発] このキャラをエンゲージ登場で破棄したとき、1枚ドローする。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [月月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。\n[誘発] このキャラをエンゲージ登場で破棄したとき、１枚ドローする。",
+    "normalizedText": "[エンゲージ]\n[宣言] [月月]:{相手キャラ1体}にAP-2またはDP-2する。この能力は失われる。[誘発] このキャラをエンゲージ登場で破棄したとき、1枚ドローする。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [月月]:{相手キャラ1体}にAP-2またはDP-2する。この能力は失われる。[誘発] このキャラをエンゲージ登場で破棄したとき、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

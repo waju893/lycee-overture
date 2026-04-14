@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[ボーナス:[自分のデッキを１枚回復する。]]\n[宣言] [雪]:バトル中に使用できない。このキャラを未行動にする。このキャラはＤＭＧの能力値修正を失う。",
   "textKr": "[ボーナス:[自分のデッキを１枚回復する。]]\n[宣言] [雪]:バトル中に使用できない。このキャラを未行動にする。このキャラはＤＭＧの能力値修正を失う。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3712"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3712",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ボーナス:[自分のデッキを１枚回復する。]]\n[宣言] [雪]:バトル中に使用できない。このキャラを未行動にする。このキャラはＤＭＧの能力値修正を失う。",
+    "normalizedText": "[ボーナス:[自分のデッキを1枚回復する。]]\n[宣言] [雪]:バトル中に使用できない。このキャラを未行動にする。このキャラはDMGの能力値修正を失う。",
+    "lines": [
+      "[ボーナス:[自分のデッキを1枚回復する。]]",
+      "[宣言] [雪]:バトル中に使用できない。このキャラを未行動にする。このキャラはDMGの能力値修正を失う。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[自分のデッキを1枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [雪]:バトル中に使用できない。このキャラを未行動にする。このキャラはDMGの能力値修正を失う。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

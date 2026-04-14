@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2424",
+  "title": "白銀姫の大号令",
+  "subName": "馬超・翠",
+  "name": "白銀姫の大号令 馬超・翠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,42 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "蜀",
+  "text": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:[NEX]",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2424",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。{[ステップ]または[サイドステップ]を持つ味方[日]キャラ1体}にAP+1またはDP+1する。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:[NEX]",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{[ステップ]または[サイドステップ]を持つ味方[日]キャラ1体}にAP+1またはDP+1する。構築制限:[NEX]",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:バトル中に使用できない。{[ステップ]または[サイドステップ]を持つ味方[日]キャラ1体}にAP+1またはDP+1する。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

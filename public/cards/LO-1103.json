@@ -23,5 +23,25 @@
   "typeTagsRaw": "知波単",
   "text": "[サイドステップ:[0]]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、味方＜知波単＞キャラ１体にＤＭＧ＋１できる。",
   "textKr": "[サイドステップ:[0]]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、味方＜知波単＞キャラ１体にＤＭＧ＋１できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1103"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1103",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、味方＜知波単＞キャラ１体にＤＭＧ＋１できる。",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] 味方<知波単>キャラがダウンしたとき、味方<知波単>キャラ1体にDMG+1できる。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] 味方<知波単>キャラがダウンしたとき、味方<知波単>キャラ1体にDMG+1できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方<知波単>キャラがダウンしたとき、味方<知波単>キャラ1体にDMG+1できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

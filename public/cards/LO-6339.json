@@ -29,5 +29,73 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [宙]:このキャラにＡＰ－４・ＤＰ＋４する。この能力は失われる。\n[手札宣言] [0]:ゴミ箱のこのキャラをデッキの下に置く。自分のゴミ箱または自分のデッキから「アーカムシティ」１枚を探し無償で配置する。したとき、１枚ドローする。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [宙]:このキャラにＡＰ－４・ＤＰ＋４する。この能力は失われる。\n[手札宣言] [0]:ゴミ箱のこのキャラをデッキの下に置く。自分のゴミ箱または自分のデッキから「アーカムシティ」１枚を探し無償で配置する。したとき、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6339"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6339",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:このキャラにAP-4・DP+4する。この能力は失われる。[手札宣言] [0]:ゴミ箱のこのキャラをデッキの下に置く。自分のゴミ箱または自分のデッキから「アーカムシティ」1枚を探し無償で配置する。したとき、1枚ドローする。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -4
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck"
+                  ],
+                  "match": {
+                    "exactName": "アーカムシティ",
+                    "kind": "area"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                },
+                {
+                  "type": "freeUse",
+                  "sourceRef": "lastSearchResult",
+                  "useKind": "area",
+                  "ignoreCost": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [宙]:このキャラにＡＰ－４・ＤＰ＋４する。この能力は失われる。\n[手札宣言] [0]:ゴミ箱のこのキャラをデッキの下に置く。自分のゴミ箱または自分のデッキから「アーカムシティ」１枚を探し無償で配置する。したとき、１枚ドローする。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [宙]:このキャラにAP-4・DP+4する。この能力は失われる。[手札宣言] [0]:ゴミ箱のこのキャラをデッキの下に置く。自分のゴミ箱または自分のデッキから「アーカムシティ」1枚を探し無償で配置する。したとき、1枚ドローする。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [宙]:このキャラにAP-4・DP+4する。この能力は失われる。[手札宣言] [0]:ゴミ箱のこのキャラをデッキの下に置く。自分のゴミ箱または自分のデッキから「アーカムシティ」1枚を探し無償で配置する。したとき、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

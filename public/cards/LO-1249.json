@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1249",
+  "title": "６４ＨＩＴコンボ",
+  "subName": "坂上 智代",
+  "name": "６４ＨＩＴコンボ 坂上 智代",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,13 +21,49 @@
   "dp": 4,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4,
-    13
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:[オーダーステップ]を持つ味方[宙]キャラ全てにＤＰ＋１する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[オーダーステップ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:[オーダーステップ]を持つ味方[宙]キャラ全てにＤＰ＋１する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1249",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[オーダーステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:[オーダーステップ]を持つ味方[宙]キャラ全てにDP+1する。構築制限:ビジュアルアーツ([VA])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4,
-    13
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:[オーダーステップ]を持つ味方[宙]キャラ全てにＤＰ＋１する。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[オーダーステップ:[0]][ペナルティ:[1枚ドローする。]]\n[宣言] [0]:[オーダーステップ]を持つ味方[宙]キャラ全てにDP+1する。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[オーダーステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "[宣言] [0]:[オーダーステップ]を持つ味方[宙]キャラ全てにDP+1する。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

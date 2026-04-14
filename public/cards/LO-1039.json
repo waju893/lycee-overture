@@ -24,5 +24,38 @@
   "typeTagsRaw": "BC自由",
   "text": "[アシスト]\n[誘発] このキャラを＜BC自由＞キャラのエンゲージ登場によって破棄したとき、自分のゴミ箱の「安藤」１体を手札に入れる。",
   "textKr": "[アシスト]\n[誘発] このキャラを＜BC自由＞キャラのエンゲージ登場によって破棄したとき、自分のゴミ箱の「安藤」１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1039"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1039",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラを<BC自由>キャラのエンゲージ登場によって破棄したとき、自分のゴミ箱の「安藤」1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラを＜BC自由＞キャラのエンゲージ登場によって破棄したとき、自分のゴミ箱の「安藤」１体を手札に入れる。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラを<BC自由>キャラのエンゲージ登場によって破棄したとき、自分のゴミ箱の「安藤」1体を手札に入れる。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラを<BC自由>キャラのエンゲージ登場によって破棄したとき、自分のゴミ箱の「安藤」1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

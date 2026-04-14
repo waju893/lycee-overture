@@ -26,5 +26,36 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[宣言] [0]:味方キャラが「ボコ」を装備している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
   "textKr": "[アシスト]\n[宣言] [0]:味方キャラが「ボコ」を装備している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0434"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0434",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方キャラが「ボコ」を装備している場合、このキャラにAP+1・DP+1・SP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:味方キャラが「ボコ」を装備している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:味方キャラが「ボコ」を装備している場合、このキャラにAP+1・DP+1・SP+1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:味方キャラが「ボコ」を装備している場合、このキャラにAP+1・DP+1・SP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

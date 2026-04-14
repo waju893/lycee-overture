@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[無]]\n[宣言] [雪雪無]:このキャラの防御中に使用する。対戦キャラを破棄する。",
   "textKr": "[オーダーチェンジ:[無]]\n[宣言] [雪雪無]:このキャラの防御中に使用する。対戦キャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0465"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0465",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[無]]\n[宣言] [雪雪無]:このキャラの防御中に使用する。対戦キャラを破棄する。",
+    "normalizedText": "[オーダーチェンジ:[無]]\n[宣言] [雪雪無]:このキャラの防御中に使用する。対戦キャラを破棄する。",
+    "lines": [
+      "[オーダーチェンジ:[無]]",
+      "[宣言] [雪雪無]:このキャラの防御中に使用する。対戦キャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[無]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [雪雪無]:このキャラの防御中に使用する。対戦キャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

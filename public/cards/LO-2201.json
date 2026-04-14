@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2201",
+  "title": "不適合世界ワイズマン",
+  "subName": "魔研グラム=モッド",
+  "name": "不適合世界ワイズマン 魔研グラム=モッド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,41 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    7
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[誘発] 自ターン中、味方キャラを破棄したとき、１枚ドローする。\n[宣言] [T]:バトル中に使用できない。{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。{味方ＡＦキャラ１体}にＡＰ＋２・ＤＭＧ＋１する。\n構築制限:[BXB]かつ[雪]",
+  "textKr": "[エンゲージ]\n[誘発] 自ターン中、味方キャラを破棄したとき、１枚ドローする。\n[宣言] [T]:バトル中に使用できない。{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。{味方ＡＦキャラ１体}にＡＰ＋２・ＤＭＧ＋１する。\n構築制限:[BXB]かつ[雪]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2201",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自ターン中、味方キャラを破棄したとき、1枚ドローする。[宣言] [T]:バトル中に使用できない。{未行動の味方AFキャラ1体}にDMG-1する。{味方AFキャラ1体}にAP+2・DMG+1する。構築制限:[BXB]かつ[雪]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] 自ターン中、味方キャラを破棄したとき、１枚ドローする。\n[宣言] [T]:バトル中に使用できない。{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。{味方ＡＦキャラ１体}にＡＰ＋２・ＤＭＧ＋１する。\n構築制限:[BXB]かつ[雪]",
+    "normalizedText": "[エンゲージ]\n[誘発] 自ターン中、味方キャラを破棄したとき、1枚ドローする。[宣言] [T]:バトル中に使用できない。{未行動の味方AFキャラ1体}にDMG-1する。{味方AFキャラ1体}にAP+2・DMG+1する。構築制限:[BXB]かつ[雪]",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] 自ターン中、味方キャラを破棄したとき、1枚ドローする。[宣言] [T]:バトル中に使用できない。{未行動の味方AFキャラ1体}にDMG-1する。{味方AFキャラ1体}にAP+2・DMG+1する。構築制限:[BXB]かつ[雪]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

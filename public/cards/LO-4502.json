@@ -27,5 +27,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:味方「アキナ・ランドール」が登場している場合、そのキャラとこのキャラにＤＰ＋２する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:味方「アキナ・ランドール」が登場している場合、そのキャラとこのキャラにＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4502"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4502",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方「アキナ・ランドール」が登場している場合、そのキャラとこのキャラにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:味方「アキナ・ランドール」が登場している場合、そのキャラとこのキャラにＤＰ＋２する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:味方「アキナ・ランドール」が登場している場合、そのキャラとこのキャラにDP+2する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:味方「アキナ・ランドール」が登場している場合、そのキャラとこのキャラにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

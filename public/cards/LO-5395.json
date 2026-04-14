@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:バトル中を除く自ターン中に使用する。持ち主が自分の味方アイテムが１枚以上の場合、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[宣言] [0]:バトル中を除く自ターン中に使用する。持ち主が自分の味方アイテムが１枚以上の場合、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5395"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5395",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中を除く自ターン中に使用する。持ち主が自分の味方アイテムが1枚以上の場合、{味方キャラ1体}にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中を除く自ターン中に使用する。持ち主が自分の味方アイテムが１枚以上の場合、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[宣言] [0]:バトル中を除く自ターン中に使用する。持ち主が自分の味方アイテムが1枚以上の場合、{味方キャラ1体}にAP+2・DP+2する。",
+    "lines": [
+      "[宣言] [0]:バトル中を除く自ターン中に使用する。持ち主が自分の味方アイテムが1枚以上の場合、{味方キャラ1体}にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

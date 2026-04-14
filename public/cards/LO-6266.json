@@ -23,5 +23,57 @@
   "typeTagsRaw": "",
   "text": "[チャージ:１]\n[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
   "textKr": "[チャージ:１]\n[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6266"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6266",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ1体}にAP-2またはDP-2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:１]\n[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}にＡＰ－２またはＤＰ－２する。",
+    "normalizedText": "[チャージ:1]\n[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ1体}にAP-2またはDP-2する。",
+    "lines": [
+      "[チャージ:1]",
+      "[宣言] [C1]:味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ1体}にAP-2またはDP-2する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:1]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

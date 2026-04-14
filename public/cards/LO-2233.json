@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2233",
+  "title": "二十六夜神のお告げ",
+  "subName": "烏城",
+  "name": "二十六夜神のお告げ 烏城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,27 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力で相手キャラを破棄したとき、コストが２点以下の相手キャラ１体に相手ターン終了時までＤＭＧ－１する。\n構築制限:[OSP]",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力で相手キャラを破棄したとき、コストが２点以下の相手キャラ１体に相手ターン終了時までＤＭＧ－１する。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2233",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のイベントまたは手札宣言能力で相手キャラを破棄したとき、コストが２点以下の相手キャラ１体に相手ターン終了時までＤＭＧ－１する。\n構築制限:[OSP]",
+    "normalizedText": "[誘発] 自分のイベントまたは手札宣言能力で相手キャラを破棄したとき、コストが2点以下の相手キャラ1体に相手ターン終了時までDMG-1する。構築制限:[OSP]",
+    "lines": [
+      "[誘発] 自分のイベントまたは手札宣言能力で相手キャラを破棄したとき、コストが2点以下の相手キャラ1体に相手ターン終了時までDMG-1する。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分のイベントまたは手札宣言能力で相手キャラを破棄したとき、コストが2点以下の相手キャラ1体に相手ターン終了時までDMG-1する。構築制限:[OSP]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

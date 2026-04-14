@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2814",
+  "title": "クローン",
+  "subName": "此花 アカリ",
+  "name": "クローン 此花 アカリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,63 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [0]:味方「ひまわり畑」を配置している場合、このキャラにＤＭＧ＋１する。\n構築制限:[VA]かつ[宙]",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [0]:味方「ひまわり畑」を配置している場合、このキャラにＤＭＧ＋１する。\n構築制限:[VA]かつ[宙]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2814",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{コストが5点以上の味方キャラ1体}にAP+1またはDP+1する。[宣言] [0]:味方「ひまわり畑」を配置している場合、このキャラにDMG+1する。構築制限:[VA]かつ[宙]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [0]:味方「ひまわり畑」を配置している場合、このキャラにＤＭＧ＋１する。\n構築制限:[VA]かつ[宙]",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:{コストが5点以上の味方キャラ1体}にAP+1またはDP+1する。[宣言] [0]:味方「ひまわり畑」を配置している場合、このキャラにDMG+1する。構築制限:[VA]かつ[宙]",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:{コストが5点以上の味方キャラ1体}にAP+1またはDP+1する。[宣言] [0]:味方「ひまわり畑」を配置している場合、このキャラにDMG+1する。構築制限:[VA]かつ[宙]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

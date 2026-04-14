@@ -22,7 +22,22 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "アンツィオ",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0390"
+  "text": "-",
+  "textKr": "-",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0390",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "-",
+    "normalizedText": "-",
+    "lines": [
+      "-"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "-",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

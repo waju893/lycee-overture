@@ -27,5 +27,36 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [0]:{味方「打ち出の小鎚」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
   "textKr": "[エンゲージ]\n[宣言] [0]:{味方「打ち出の小鎚」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0166"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0166",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方「打ち出の小鎚」1体}にAP+1・DP+1・SP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [0]:{味方「打ち出の小鎚」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+    "normalizedText": "[エンゲージ]\n[宣言] [0]:{味方「打ち出の小鎚」1体}にAP+1・DP+1・SP+1する。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [0]:{味方「打ち出の小鎚」1体}にAP+1・DP+1・SP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

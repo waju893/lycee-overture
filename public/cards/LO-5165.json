@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5165",
+  "title": "前生徒会長",
+  "subName": "まーりゃん先輩",
+  "name": "前生徒会長 まーりゃん先輩",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,62 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
+  "ex": 2,
+  "costRaw": "日日無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[誘発] 味方キャラが相手の効果で場を離れたとき、１枚ドローできる。\n構築制限:『ToHeart2』",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[誘発] 味方キャラが相手の効果で場を離れたとき、１枚ドローできる。\n構築制限:『ToHeart2』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5165",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+2またはDP+2する。[誘発] 味方キャラが相手の効果で場を離れたとき、1枚ドローできる。構築制限:『ToHeart2』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[誘発] 味方キャラが相手の効果で場を離れたとき、１枚ドローできる。\n構築制限:『ToHeart2』",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+2またはDP+2する。[誘発] 味方キャラが相手の効果で場を離れたとき、1枚ドローできる。構築制限:『ToHeart2』",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+2またはDP+2する。[誘発] 味方キャラが相手の効果で場を離れたとき、1枚ドローできる。構築制限:『ToHeart2』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

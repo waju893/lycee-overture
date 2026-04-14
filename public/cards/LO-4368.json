@@ -27,7 +27,22 @@
   "costRaw": "雪雪雪雪無無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4368"
+  "text": "{相手キャラ１体}を除外する。",
+  "textKr": "{相手キャラ１体}を除外する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4368",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}を除外する。",
+    "normalizedText": "{相手キャラ1体}を除外する。",
+    "lines": [
+      "{相手キャラ1体}を除外する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{相手キャラ1体}を除外する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

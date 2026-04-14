@@ -24,7 +24,22 @@
   "costRaw": "花花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "サーヴァント",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0042"
+  "text": "-",
+  "textKr": "-",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0042",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "-",
+    "normalizedText": "-",
+    "lines": [
+      "-"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "-",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[相手キャラ１体に次の相手ターン終了時までＤＭＧ－２する。]]\n[誘発] このキャラが登場したとき、相手キャラ１体に次の相手ターン終了時までＤＭＧ－２する。",
   "textKr": "[リカバリー:[相手キャラ１体に次の相手ターン終了時までＤＭＧ－２する。]]\n[誘発] このキャラが登場したとき、相手キャラ１体に次の相手ターン終了時までＤＭＧ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2789"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2789",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[相手キャラ１体に次の相手ターン終了時までＤＭＧ－２する。]]\n[誘発] このキャラが登場したとき、相手キャラ１体に次の相手ターン終了時までＤＭＧ－２する。",
+    "normalizedText": "[リカバリー:[相手キャラ1体に次の相手ターン終了時までDMG-2する。]]\n[誘発] このキャラが登場したとき、相手キャラ1体に次の相手ターン終了時までDMG-2する。",
+    "lines": [
+      "[リカバリー:[相手キャラ1体に次の相手ターン終了時までDMG-2する。]]",
+      "[誘発] このキャラが登場したとき、相手キャラ1体に次の相手ターン終了時までDMG-2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[相手キャラ1体に次の相手ターン終了時までDMG-2する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、相手キャラ1体に次の相手ターン終了時までDMG-2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

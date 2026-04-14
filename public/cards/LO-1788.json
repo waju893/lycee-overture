@@ -25,5 +25,29 @@
   "typeTagsRaw": "ヤマト",
   "text": "[誘発] 味方「キウル」が登場したとき、１枚ドローできる。この能力は失われる。",
   "textKr": "[誘発] 味方「キウル」が登場したとき、１枚ドローできる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1788"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1788",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 味方「キウル」が登場したとき、1枚ドローできる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方「キウル」が登場したとき、１枚ドローできる。この能力は失われる。",
+    "normalizedText": "[誘発] 味方「キウル」が登場したとき、1枚ドローできる。この能力は失われる。",
+    "lines": [
+      "[誘発] 味方「キウル」が登場したとき、1枚ドローできる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

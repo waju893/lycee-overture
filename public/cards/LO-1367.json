@@ -26,5 +26,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラを対象にサポートを使用したとき、このキャラがアイテムを装備している場合、このキャラを未行動にする。",
   "textKr": "[誘発] このキャラを対象にサポートを使用したとき、このキャラがアイテムを装備している場合、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1367"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1367",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラを対象にサポートを使用したとき、このキャラがアイテムを装備している場合、このキャラを未行動にする。",
+    "normalizedText": "[誘発] このキャラを対象にサポートを使用したとき、このキャラがアイテムを装備している場合、このキャラを未行動にする。",
+    "lines": [
+      "[誘発] このキャラを対象にサポートを使用したとき、このキャラがアイテムを装備している場合、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラを対象にサポートを使用したとき、このキャラがアイテムを装備している場合、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

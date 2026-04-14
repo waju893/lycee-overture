@@ -25,5 +25,20 @@
   "typeTagsRaw": "エネミー",
   "text": "[誘発] このキャラが登場したとき、相手のデッキを１枚公開する。そのカードを破棄することができる。",
   "textKr": "[誘発] このキャラが登場したとき、相手のデッキを１枚公開する。そのカードを破棄することができる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0168"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0168",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手のデッキを１枚公開する。そのカードを破棄することができる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手のデッキを1枚公開する。そのカードを破棄することができる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手のデッキを1枚公開する。そのカードを破棄することができる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手のデッキを1枚公開する。そのカードを破棄することができる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

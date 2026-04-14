@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1816",
+  "title": "ヤマトの官女",
+  "subName": "エントゥア",
+  "name": "ヤマトの官女 エントゥア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,54 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
+  "ex": 1,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分の場と自分のゴミ箱のキャラ全てが＜ヤマト＞[宙]の場合、自分のデッキからサブネームに「アクルトゥルカ」を含むキャラ１体を探し公開して手札に入れる。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分の場と自分のゴミ箱のキャラ全てが＜ヤマト＞[宙]の場合、自分のデッキからサブネームに「アクルトゥルカ」を含むキャラ１体を探し公開して手札に入れる。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1816",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分の場と自分のゴミ箱のキャラ全てが<ヤマト>[宙]の場合、自分のデッキからサブネームに「アクルトゥルカ」を含むキャラ1体を探し公開して手札に入れる。構築制限:アクアプラス([AQP])",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "アクルトゥルカ"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分の場と自分のゴミ箱のキャラ全てが＜ヤマト＞[宙]の場合、自分のデッキからサブネームに「アクルトゥルカ」を含むキャラ１体を探し公開して手札に入れる。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分の場と自分のゴミ箱のキャラ全てが<ヤマト>[宙]の場合、自分のデッキからサブネームに「アクルトゥルカ」を含むキャラ1体を探し公開して手札に入れる。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分の場と自分のゴミ箱のキャラ全てが<ヤマト>[宙]の場合、自分のデッキからサブネームに「アクルトゥルカ」を含むキャラ1体を探し公開して手札に入れる。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

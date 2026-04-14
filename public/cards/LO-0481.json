@@ -24,5 +24,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[月]]\n[誘発] このキャラのバトル終了時、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
   "textKr": "[オーダーチェンジ:[月]]\n[誘発] このキャラのバトル終了時、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0481"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0481",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラのバトル終了時、相手キャラ1体にAP-2・DP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[月]]\n[誘発] このキャラのバトル終了時、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
+    "normalizedText": "[オーダーチェンジ:[月]]\n[誘発] このキャラのバトル終了時、相手キャラ1体にAP-2・DP-2する。",
+    "lines": [
+      "[オーダーチェンジ:[月]]",
+      "[誘発] このキャラのバトル終了時、相手キャラ1体にAP-2・DP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[月]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

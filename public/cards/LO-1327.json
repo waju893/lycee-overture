@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[誘発] 自分の能力で相手キャラを破棄したとき、このキャラにＤＭＧ＋１する。自分のデッキを１枚回復する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] 自分の能力で相手キャラを破棄したとき、このキャラにＤＭＧ＋１する。自分のデッキを１枚回復する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1327"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1327",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] 自分の能力で相手キャラを破棄したとき、このキャラにＤＭＧ＋１する。自分のデッキを１枚回復する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] 自分の能力で相手キャラを破棄したとき、このキャラにDMG+1する。自分のデッキを1枚回復する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] 自分の能力で相手キャラを破棄したとき、このキャラにDMG+1する。自分のデッキを1枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自分の能力で相手キャラを破棄したとき、このキャラにDMG+1する。自分のデッキを1枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,37 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分にシールド＋１する。味方ＡＦキャラ全てにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分にシールド＋１する。味方ＡＦキャラ全てにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4474"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4474",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分にシールド+1する。味方AFキャラ全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分にシールド＋１する。味方ＡＦキャラ全てにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分にシールド+1する。味方AFキャラ全てにAP+1・DP+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、自分にシールド+1する。味方AFキャラ全てにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

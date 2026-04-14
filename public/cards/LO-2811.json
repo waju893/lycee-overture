@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2811",
+  "title": "天然",
+  "subName": "立華 かなで",
+  "name": "天然 立華 かなで",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "cosmos",
@@ -16,13 +19,53 @@
   "dp": 2,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    2,
-    8
+  "ex": 2,
+  "costRaw": "雪宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから＜死んだ世界戦線＞キャラ１体を探し登場する。\n[誘発] 味方キャラを自分の「卒業」置き場に置いたとき、このキャラにＤＭＧ＋１する。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:『Angel Beats!』",
+  "textKr": "[アシスト][ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから＜死んだ世界戦線＞キャラ１体を探し登場する。\n[誘発] 味方キャラを自分の「卒業」置き場に置いたとき、このキャラにＤＭＧ＋１する。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:『Angel Beats!』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2811",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから<死んだ世界戦線>キャラ1体を探し登場する。[誘発] 味方キャラを自分の「卒業」置き場に置いたとき、このキャラにDMG+1する。[宣言] [0]:{味方キャラ1体}にAP+1またはDP+1する。構築制限:『Angel Beats!』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "卒業"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2,
-    8
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アシスト][ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから＜死んだ世界戦線＞キャラ１体を探し登場する。\n[誘発] 味方キャラを自分の「卒業」置き場に置いたとき、このキャラにＤＭＧ＋１する。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:『Angel Beats!』",
+    "normalizedText": "[アシスト][ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから<死んだ世界戦線>キャラ1体を探し登場する。[誘発] 味方キャラを自分の「卒業」置き場に置いたとき、このキャラにDMG+1する。[宣言] [0]:{味方キャラ1体}にAP+1またはDP+1する。構築制限:『Angel Beats!』",
+    "lines": [
+      "[アシスト][ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから<死んだ世界戦線>キャラ1体を探し登場する。[誘発] 味方キャラを自分の「卒業」置き場に置いたとき、このキャラにDMG+1する。[宣言] [0]:{味方キャラ1体}にAP+1またはDP+1する。構築制限:『Angel Beats!』"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

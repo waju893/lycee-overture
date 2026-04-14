@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:１]\n[宣言] [C1][雪雪雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}を破棄する。サブネームに「ファントム」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[チャージ:１]\n[宣言] [C1][雪雪雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}を破棄する。サブネームに「ファントム」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6267"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6267",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1][雪雪雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ1体}を破棄する。サブネームに「ファントム」を含む味方キャラ全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:１]\n[宣言] [C1][雪雪雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ１体}を破棄する。サブネームに「ファントム」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[チャージ:1]\n[宣言] [C1][雪雪雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ1体}を破棄する。サブネームに「ファントム」を含む味方キャラ全てにAP+1・DP+1する。",
+    "lines": [
+      "[チャージ:1]",
+      "[宣言] [C1][雪雪雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、{相手キャラ1体}を破棄する。サブネームに「ファントム」を含む味方キャラ全てにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:1]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

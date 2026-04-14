@@ -24,5 +24,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[宙]]\n[宣言] [D1]:{コストが３点以上の味方防御[宙]キャラ１体}にＡＰ＋１する。",
   "textKr": "[オーダーステップ:[宙]]\n[宣言] [D1]:{コストが３点以上の味方防御[宙]キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1384"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1384",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{コストが3点以上の味方防御[宙]キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[宙]]\n[宣言] [D1]:{コストが３点以上の味方防御[宙]キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[宙]]\n[宣言] [D1]:{コストが3点以上の味方防御[宙]キャラ1体}にAP+1する。",
+    "lines": [
+      "[オーダーステップ:[宙]]",
+      "[宣言] [D1]:{コストが3点以上の味方防御[宙]キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[宙]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

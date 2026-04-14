@@ -1,17 +1,52 @@
 {
+  "cardNo": "LO-0924",
+  "title": "汚名返上",
+  "subName": "鷹見沢 菜月",
+  "name": "汚名返上 鷹見沢 菜月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用できない。{味方キャラ１体}にＳＰ＋１する。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "[宣言] [0]:バトル中に使用できない。{味方キャラ１体}にＳＰ＋１する。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0924",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。{味方キャラ1体}にSP+1する。構築制限:オーガスト([AUG])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用できない。{味方キャラ１体}にＳＰ＋１する。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "[宣言] [0]:バトル中に使用できない。{味方キャラ1体}にSP+1する。構築制限:オーガスト([AUG])",
+    "lines": [
+      "[宣言] [0]:バトル中に使用できない。{味方キャラ1体}にSP+1する。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

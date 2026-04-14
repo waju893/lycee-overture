@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [D1]:このキャラの攻撃中に使用する。対戦キャラのＡＰが４以上の場合、このキャラにＡＰ＋３する。",
   "textKr": "[宣言] [D1]:このキャラの攻撃中に使用する。対戦キャラのＡＰが４以上の場合、このキャラにＡＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5479"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5479",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラの攻撃中に使用する。対戦キャラのAPが4以上の場合、このキャラにAP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:このキャラの攻撃中に使用する。対戦キャラのＡＰが４以上の場合、このキャラにＡＰ＋３する。",
+    "normalizedText": "[宣言] [D1]:このキャラの攻撃中に使用する。対戦キャラのAPが4以上の場合、このキャラにAP+3する。",
+    "lines": [
+      "[宣言] [D1]:このキャラの攻撃中に使用する。対戦キャラのAPが4以上の場合、このキャラにAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

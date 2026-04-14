@@ -24,5 +24,25 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト]\n[宣言] [0]:このキャラがＡＦに登場している場合、以下から１つを選び処理する。(同じ効果は２回選べない。)",
   "textKr": "[アシスト]\n[宣言] [0]:このキャラがＡＦに登場している場合、以下から１つを選び処理する。(同じ効果は２回選べない。)",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1158"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1158",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:このキャラがＡＦに登場している場合、以下から１つを選び処理する。(同じ効果は２回選べない。)",
+    "normalizedText": "[アシスト]\n[宣言] [0]:このキャラがAFに登場している場合、以下から1つを選び処理する。(同じ効果は2回選べない。)",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:このキャラがAFに登場している場合、以下から1つを選び処理する。(同じ効果は2回選べない。)"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラがAFに登場している場合、以下から1つを選び処理する。(同じ効果は2回選べない。)",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

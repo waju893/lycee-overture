@@ -25,5 +25,39 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のサブネームに「天草式」を含むキャラ１体を手札に入れる。",
   "textKr": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のサブネームに「天草式」を含むキャラ１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1948"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1948",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱のサブネームに「天草式」を含むキャラ1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のサブネームに「天草式」を含むキャラ１体を手札に入れる。",
+    "normalizedText": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のサブネームに「天草式」を含むキャラ1体を手札に入れる。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のサブネームに「天草式」を含むキャラ1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

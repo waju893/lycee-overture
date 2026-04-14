@@ -30,5 +30,36 @@
   "typeTagsRaw": "-",
   "text": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ－２・ＤＰ＋２する。",
   "textKr": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ－２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0231"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0231",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラにAP-2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ－２・ＤＰ＋２する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:このキャラにAP-2・DP+2する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [0]:このキャラにAP-2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

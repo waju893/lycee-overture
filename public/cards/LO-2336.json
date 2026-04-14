@@ -23,5 +23,30 @@
   "typeTagsRaw": "城娘",
   "text": "[誘発] このキャラが登場したとき、コストが２点以下の味方[日]キャラが４体以上登場している場合、１枚ドローできる。",
   "textKr": "[誘発] このキャラが登場したとき、コストが２点以下の味方[日]キャラが４体以上登場している場合、１枚ドローできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2336"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2336",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、コストが2点以下の味方[日]キャラが4体以上登場している場合、1枚ドローできる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、コストが２点以下の味方[日]キャラが４体以上登場している場合、１枚ドローできる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、コストが2点以下の味方[日]キャラが4体以上登場している場合、1枚ドローできる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、コストが2点以下の味方[日]キャラが4体以上登場している場合、1枚ドローできる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

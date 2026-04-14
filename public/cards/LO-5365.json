@@ -23,5 +23,39 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪雪]:自分のゴミ箱または自分のデッキからＥＸが２の[MAD][雪]イベント１枚を探し公開して手札に入れる。この能力は失われる。",
   "textKr": "[宣言] [雪雪]:自分のゴミ箱または自分のデッキからＥＸが２の[MAD][雪]イベント１枚を探し公開して手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5365"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5365",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [雪雪]:自分のゴミ箱または自分のデッキからEXが2の[MAD][雪]イベント1枚を探し公開して手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [雪雪]:自分のゴミ箱または自分のデッキからＥＸが２の[MAD][雪]イベント１枚を探し公開して手札に入れる。この能力は失われる。",
+    "normalizedText": "[宣言] [雪雪]:自分のゴミ箱または自分のデッキからEXが2の[MAD][雪]イベント1枚を探し公開して手札に入れる。この能力は失われる。",
+    "lines": [
+      "[宣言] [雪雪]:自分のゴミ箱または自分のデッキからEXが2の[MAD][雪]イベント1枚を探し公開して手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

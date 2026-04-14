@@ -26,5 +26,53 @@
   "typeTagsRaw": "",
   "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキから「神鳳杏」１体を探しこのキャラが登場していたフィールドに無償で登場する。１枚ドローする。",
   "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキから「神鳳杏」１体を探しこのキャラが登場していたフィールドに無償で登場する。１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2893"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2893",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラのバトル終了時、このキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキから「神鳳杏」1体を探しこのキャラが登場していたフィールドに無償で登場する。1枚ドローする。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "神鳳杏",
+            "kind": "character"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "character",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキから「神鳳杏」１体を探しこのキャラが登場していたフィールドに無償で登場する。１枚ドローする。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[誘発] このキャラのバトル終了時、このキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキから「神鳳杏」1体を探しこのキャラが登場していたフィールドに無償で登場する。1枚ドローする。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[誘発] このキャラのバトル終了時、このキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキから「神鳳杏」1体を探しこのキャラが登場していたフィールドに無償で登場する。1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

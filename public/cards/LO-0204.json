@@ -27,5 +27,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[常時] このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
   "textKr": "[エンゲージ]\n[常時] このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0204"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0204",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[常時] このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+    "normalizedText": "[エンゲージ]\n[常時] このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+    "lines": [
+      "[エンゲージ]",
+      "[常時] このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

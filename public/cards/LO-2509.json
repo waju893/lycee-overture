@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2509",
+  "title": "人格投射",
+  "subName": "フィアッカ・マルグリット",
+  "name": "人格投射 フィアッカ・マルグリット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,44 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    4
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [D1]:{味方[雪]キャラ１体}を手札に入れる。この能力は失われる。\n構築制限:[AUG]",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [D1]:{味方[雪]キャラ１体}を手札に入れる。この能力は失われる。\n構築制限:[AUG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2509",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{味方[雪]キャラ1体}を手札に入れる。この能力は失われる。構築制限:[AUG]",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [D1]:{味方[雪]キャラ１体}を手札に入れる。この能力は失われる。\n構築制限:[AUG]",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [D1]:{味方[雪]キャラ1体}を手札に入れる。この能力は失われる。構築制限:[AUG]",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [D1]:{味方[雪]キャラ1体}を手札に入れる。この能力は失われる。構築制限:[AUG]"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

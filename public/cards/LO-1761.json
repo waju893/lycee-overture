@@ -26,5 +26,39 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ１体を手札に入れることができる。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ１体を手札に入れることができる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1761"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1761",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ1体を手札に入れることができる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ１体を手札に入れることができる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ1体を手札に入れることができる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ1体を手札に入れることができる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

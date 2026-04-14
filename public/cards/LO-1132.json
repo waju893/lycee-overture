@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1132",
+  "title": "カモさんチームの車長兼副砲砲手兼副砲装填手",
+  "subName": "園 みどり子",
+  "name": "カモさんチームの車長兼副砲砲手兼副砲装填手 園 みどり子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,44 @@
   "dp": 3,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    8
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[アシスト]\n[宣言] [T][無]:{コストが味方キャラの属性の種類数以下の相手キャラ１体}を手札に入れる。このキャラを破棄する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "[アシスト]\n[宣言] [T][無]:{コストが味方キャラの属性の種類数以下の相手キャラ１体}を手札に入れる。このキャラを破棄する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1132",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T][無]:{コストが味方キャラの属性の種類数以下の相手キャラ1体}を手札に入れる。このキャラを破棄する。構築制限:ガールズ&パンツァー([GUP])",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "opponent",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T][無]:{コストが味方キャラの属性の種類数以下の相手キャラ１体}を手札に入れる。このキャラを破棄する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "[アシスト]\n[宣言] [T][無]:{コストが味方キャラの属性の種類数以下の相手キャラ1体}を手札に入れる。このキャラを破棄する。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T][無]:{コストが味方キャラの属性の種類数以下の相手キャラ1体}を手札に入れる。このキャラを破棄する。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

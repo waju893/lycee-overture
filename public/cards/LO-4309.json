@@ -1,17 +1,73 @@
 {
+  "cardNo": "LO-4309",
+  "title": "ツンデレな幼馴染",
+  "subName": "西渓 静流",
+  "name": "ツンデレな幼馴染 西渓 静流",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のコストが２点以下の[月]キャラ１体を無償で登場する。この能力は失われる。\n[手札宣言] [月]:{相手キャラ１体}にＡＰ－４またはＤＰ－４する。\n構築制限:[HOK]",
+  "textKr": "[宣言] [月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のコストが２点以下の[月]キャラ１体を無償で登場する。この能力は失われる。\n[手札宣言] [月]:{相手キャラ１体}にＡＰ－４またはＤＰ－４する。\n構築制限:[HOK]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4309",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のコストが2点以下の[月]キャラ1体を無償で登場する。この能力は失われる。[手札宣言] [月]:{相手キャラ1体}にAP-4またはDP-4する。構築制限:[HOK]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -4
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のコストが２点以下の[月]キャラ１体を無償で登場する。この能力は失われる。\n[手札宣言] [月]:{相手キャラ１体}にＡＰ－４またはＤＰ－４する。\n構築制限:[HOK]",
+    "normalizedText": "[宣言] [月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のコストが2点以下の[月]キャラ1体を無償で登場する。この能力は失われる。[手札宣言] [月]:{相手キャラ1体}にAP-4またはDP-4する。構築制限:[HOK]",
+    "lines": [
+      "[宣言] [月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のコストが2点以下の[月]キャラ1体を無償で登場する。この能力は失われる。[手札宣言] [月]:{相手キャラ1体}にAP-4またはDP-4する。構築制限:[HOK]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

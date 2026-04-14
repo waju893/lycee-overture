@@ -26,5 +26,35 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、２枚ドローする。",
   "textKr": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、２枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0263"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0263",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラをエンゲージ登場によって破棄したとき、2枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、２枚ドローする。",
+    "normalizedText": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、2枚ドローする。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] このキャラをエンゲージ登場によって破棄したとき、2枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

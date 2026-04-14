@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2279",
+  "title": "肥後の虎",
+  "subName": "熊本城",
+  "name": "肥後の虎 熊本城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,42 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    10
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "城娘",
+  "text": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [宙宙宙]:自ターン中に使用する。{未行動の味方キャラ１体}を行動済みにする。{味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[宣言] [宙宙宙宙宙]:このキャラを未行動にする。\n構築制限:[OSP]",
+  "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [宙宙宙]:自ターン中に使用する。{未行動の味方キャラ１体}を行動済みにする。{味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[宣言] [宙宙宙宙宙]:このキャラを未行動にする。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2279",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙宙宙]:自ターン中に使用する。{未行動の味方キャラ1体}を行動済みにする。{味方[宙]キャラ1体}にAP+2・DP+2する。[宣言] [宙宙宙宙宙]:このキャラを未行動にする。構築制限:[OSP]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [宙宙宙]:自ターン中に使用する。{未行動の味方キャラ１体}を行動済みにする。{味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[宣言] [宙宙宙宙宙]:このキャラを未行動にする。\n構築制限:[OSP]",
+    "normalizedText": "[リカバリー:[相手のデッキを2枚破棄する。]]\n[宣言] [宙宙宙]:自ターン中に使用する。{未行動の味方キャラ1体}を行動済みにする。{味方[宙]キャラ1体}にAP+2・DP+2する。[宣言] [宙宙宙宙宙]:このキャラを未行動にする。構築制限:[OSP]",
+    "lines": [
+      "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "[宣言] [宙宙宙]:自ターン中に使用する。{未行動の味方キャラ1体}を行動済みにする。{味方[宙]キャラ1体}にAP+2・DP+2する。[宣言] [宙宙宙宙宙]:このキャラを未行動にする。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

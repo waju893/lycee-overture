@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[宣言] [0]:{キャラ名に「秋姫」または「プリマ」を含む味方キャラ１体}にＤＰ＋２する。",
   "textKr": "[サポーター:[花]]\n[宣言] [0]:{キャラ名に「秋姫」または「プリマ」を含む味方キャラ１体}にＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5568"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5568",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{キャラ名に「秋姫」または「プリマ」を含む味方キャラ1体}にDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[宣言] [0]:{キャラ名に「秋姫」または「プリマ」を含む味方キャラ１体}にＤＰ＋２する。",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [0]:{キャラ名に「秋姫」または「プリマ」を含む味方キャラ1体}にDP+2する。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[宣言] [0]:{キャラ名に「秋姫」または「プリマ」を含む味方キャラ1体}にDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

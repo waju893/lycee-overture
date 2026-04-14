@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[オーダーチェンジ:[0]]\n[誘発] 相手ターン開始時、このキャラを未行動にする。",
   "textKr": "[オーダーチェンジ:[0]]\n[誘発] 相手ターン開始時、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1532"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1532",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[誘発] 相手ターン開始時、このキャラを未行動にする。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[誘発] 相手ターン開始時、このキャラを未行動にする。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[誘発] 相手ターン開始時、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [T]:相手の宣言に対応して使用できない。{自分のゴミ箱の「干しいも」１枚}を{キャラ１体}に装備する。",
   "textKr": "[アシスト]\n[宣言] [T]:相手の宣言に対応して使用できない。{自分のゴミ箱の「干しいも」１枚}を{キャラ１体}に装備する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0363"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0363",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T]:相手の宣言に対応して使用できない。{自分のゴミ箱の「干しいも」１枚}を{キャラ１体}に装備する。",
+    "normalizedText": "[アシスト]\n[宣言] [T]:相手の宣言に対応して使用できない。{自分のゴミ箱の「干しいも」1枚}を{キャラ1体}に装備する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T]:相手の宣言に対応して使用できない。{自分のゴミ箱の「干しいも」1枚}を{キャラ1体}に装備する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T]:相手の宣言に対応して使用できない。{自分のゴミ箱の「干しいも」1枚}を{キャラ1体}に装備する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

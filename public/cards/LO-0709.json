@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0709"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0709",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[常時] このキャラにAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[常時] このキャラにAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

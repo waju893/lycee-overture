@@ -26,5 +26,29 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[１枚ドローする。]][ステップ:[宙]]",
   "textKr": "[エンゲージ:[１枚ドローする。]][ステップ:[宙]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0200"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0200",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[1枚ドローする。]][ステップ:[宙]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[１枚ドローする。]][ステップ:[宙]]",
+    "normalizedText": "[エンゲージ:[1枚ドローする。]][ステップ:[宙]]",
+    "lines": [
+      "[エンゲージ:[1枚ドローする。]][ステップ:[宙]]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

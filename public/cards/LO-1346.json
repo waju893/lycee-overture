@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1346",
+  "title": "才知の祝福",
+  "subName": "セイバー／鈴鹿御前",
+  "name": "才知の祝福 セイバー／鈴鹿御前",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,59 @@
   "ap": 2,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[誘発] 自ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1346",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "自ターン開始時",
+      "originalLine": "[誘発] 自ターン開始時、相手キャラ1体にAP-1またはDP-1する。構築制限:Fate/Grand Order([TM])",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[誘発] 自ターン開始時、相手キャラ1体にAP-1またはDP-1する。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[誘発] 自ターン開始時、相手キャラ1体にAP-1またはDP-1する。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

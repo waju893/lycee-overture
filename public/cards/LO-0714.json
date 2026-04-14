@@ -25,5 +25,25 @@
   "typeTagsRaw": "-",
   "text": "[アグレッシブ]\n[誘発] 自ターン開始時、自分の手札が１枚以下の場合、このキャラにＤＭＧ＋２する。",
   "textKr": "[アグレッシブ]\n[誘発] 自ターン開始時、自分の手札が１枚以下の場合、このキャラにＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0714"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0714",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] 自ターン開始時、自分の手札が１枚以下の場合、このキャラにＤＭＧ＋２する。",
+    "normalizedText": "[アグレッシブ]\n[誘発] 自ターン開始時、自分の手札が1枚以下の場合、このキャラにDMG+2する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] 自ターン開始時、自分の手札が1枚以下の場合、このキャラにDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自ターン開始時、自分の手札が1枚以下の場合、このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

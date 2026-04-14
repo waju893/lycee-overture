@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、このキャラを破棄する。したとき、{相手キャラ１体}を破棄する。自分のゴミ箱の「藤枝美緒」１体をデッキの下に置ける。",
   "textKr": "[宣言] [雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、このキャラを破棄する。したとき、{相手キャラ１体}を破棄する。自分のゴミ箱の「藤枝美緒」１体をデッキの下に置ける。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6268"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6268",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、このキャラを破棄する。したとき、{相手キャラ１体}を破棄する。自分のゴミ箱の「藤枝美緒」１体をデッキの下に置ける。",
+    "normalizedText": "[宣言] [雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、このキャラを破棄する。したとき、{相手キャラ1体}を破棄する。自分のゴミ箱の「藤枝美緒」1体をデッキの下に置ける。",
+    "lines": [
+      "[宣言] [雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、このキャラを破棄する。したとき、{相手キャラ1体}を破棄する。自分のゴミ箱の「藤枝美緒」1体をデッキの下に置ける。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪]:対応・バトル中を除く自ターン中に使用する。味方キャラ全てが『Phantom INTEGRATION』キャラの場合、このキャラを破棄する。したとき、{相手キャラ1体}を破棄する。自分のゴミ箱の「藤枝美緒」1体をデッキの下に置ける。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,7 +24,27 @@
   "costRaw": "宙宙無無",
   "restrictionRaw": "",
   "typeTagsRaw": "大洗女子",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0726"
+  "text": "-\n初出 : ガールズ＆パンツァー最終章 劇場入場特典初出 : ガールズ＆パンツァー最終章 劇場入場特典",
+  "textKr": "-\n初出 : ガールズ＆パンツァー最終章 劇場入場特典初出 : ガールズ＆パンツァー最終章 劇場入場特典",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0726",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "-\n初出 : ガールズ＆パンツァー最終章 劇場入場特典初出 : ガールズ＆パンツァー最終章 劇場入場特典",
+    "normalizedText": "-\n初出 : ガールズ&パンツァー最終章 劇場入場特典初出 : ガールズ&パンツァー最終章 劇場入場特典",
+    "lines": [
+      "-",
+      "初出 : ガールズ&パンツァー最終章 劇場入場特典初出 : ガールズ&パンツァー最終章 劇場入場特典"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "-",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "初出 : ガールズ&パンツァー最終章 劇場入場特典初出 : ガールズ&パンツァー最終章 劇場入場特典",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

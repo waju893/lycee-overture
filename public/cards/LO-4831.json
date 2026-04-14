@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラを防御キャラに指定したとき、このキャラのＡＰを５にする。この能力値修正はターン終了時に失われない。",
   "textKr": "[誘発] このキャラを防御キャラに指定したとき、このキャラのＡＰを５にする。この能力値修正はターン終了時に失われない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4831"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4831",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラを防御キャラに指定したとき、このキャラのＡＰを５にする。この能力値修正はターン終了時に失われない。",
+    "normalizedText": "[誘発] このキャラを防御キャラに指定したとき、このキャラのAPを5にする。この能力値修正はターン終了時に失われない。",
+    "lines": [
+      "[誘発] このキャラを防御キャラに指定したとき、このキャラのAPを5にする。この能力値修正はターン終了時に失われない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラを防御キャラに指定したとき、このキャラのAPを5にする。この能力値修正はターン終了時に失われない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

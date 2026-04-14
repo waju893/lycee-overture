@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2266",
+  "title": "髑髏の槍",
+  "subName": "松江城",
+  "name": "髑髏の槍 松江城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,37 @@
   "ap": 3,
   "dp": 0,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＤＰ＋１する。\n[宣言] [花花]:ＤＰが４以上の味方[花]キャラの攻撃中に使用する。対戦キャラのＤＰを２にする。\n構築制限:[OSP]",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＤＰ＋１する。\n[宣言] [花花]:ＤＰが４以上の味方[花]キャラの攻撃中に使用する。対戦キャラのＤＰを２にする。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2266",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にDP+1する。[宣言] [花花]:DPが4以上の味方[花]キャラの攻撃中に使用する。対戦キャラのDPを2にする。構築制限:[OSP]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＤＰ＋１する。\n[宣言] [花花]:ＤＰが４以上の味方[花]キャラの攻撃中に使用する。対戦キャラのＤＰを２にする。\n構築制限:[OSP]",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にDP+1する。[宣言] [花花]:DPが4以上の味方[花]キャラの攻撃中に使用する。対戦キャラのDPを2にする。構築制限:[OSP]",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にDP+1する。[宣言] [花花]:DPが4以上の味方[花]キャラの攻撃中に使用する。対戦キャラのDPを2にする。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

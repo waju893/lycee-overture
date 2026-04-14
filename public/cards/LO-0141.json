@@ -25,5 +25,20 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[自分のゴミ箱のキャラ１体を登場できる。]]",
   "textKr": "[エンゲージ:[自分のゴミ箱のキャラ１体を登場できる。]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0141"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0141",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[自分のゴミ箱のキャラ１体を登場できる。]]",
+    "normalizedText": "[エンゲージ:[自分のゴミ箱のキャラ1体を登場できる。]]",
+    "lines": [
+      "[エンゲージ:[自分のゴミ箱のキャラ1体を登場できる。]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[自分のゴミ箱のキャラ1体を登場できる。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

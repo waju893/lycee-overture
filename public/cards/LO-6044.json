@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１する。このターン中、自分の効果で味方キャラを未行動にしている場合、そのキャラにＡＰ＋１する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１する。このターン中、自分の効果で味方キャラを未行動にしている場合、そのキャラにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6044"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6044",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方キャラ1体}にAP+1する。このターン中、自分の効果で味方キャラを未行動にしている場合、そのキャラにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１する。このターン中、自分の効果で味方キャラを未行動にしている場合、そのキャラにＡＰ＋１する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ1体}にAP+1する。このターン中、自分の効果で味方キャラを未行動にしている場合、そのキャラにAP+1する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{味方キャラ1体}にAP+1する。このターン中、自分の効果で味方キャラを未行動にしている場合、そのキャラにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

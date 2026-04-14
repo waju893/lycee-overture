@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [花]:{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [花]:{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2389"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2389",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [花]:{味方[花]キャラ1体}にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [花]:{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [花]:{味方[花]キャラ1体}にAP+1・DP+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [花]:{味方[花]キャラ1体}にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

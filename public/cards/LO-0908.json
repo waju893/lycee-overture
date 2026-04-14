@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0908"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0908",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 味方キャラが登場したとき、このキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] 味方キャラが登場したとき、このキャラにAP+1・DP+1する。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] 味方キャラが登場したとき、このキャラにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

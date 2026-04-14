@@ -1,16 +1,54 @@
 {
+  "cardNo": "LO-5626",
+  "title": "遺品封印",
+  "subName": "",
+  "name": "遺品封印",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "相手の切札でない宣言に対応して使用する。先攻後攻１ターン目でない場合、その宣言の解決は失敗する。その宣言のコストが２点以下の場合、１枚ドローできる。\n構築制限:【[AMC]】【[月]】",
+  "textKr": "相手の切札でない宣言に対応して使用する。先攻後攻１ターン目でない場合、その宣言の解決は失敗する。その宣言のコストが２点以下の場合、１枚ドローできる。\n構築制限:【[AMC]】【[月]】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5626",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "相手の切札でない宣言に対応して使用する。先攻後攻1ターン目でない場合、その宣言の解決は失敗する。その宣言のコストが2点以下の場合、1枚ドローできる。構築制限:【[AMC]】【[月]】",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "相手の切札でない宣言に対応して使用する。先攻後攻１ターン目でない場合、その宣言の解決は失敗する。その宣言のコストが２点以下の場合、１枚ドローできる。\n構築制限:【[AMC]】【[月]】",
+    "normalizedText": "相手の切札でない宣言に対応して使用する。先攻後攻1ターン目でない場合、その宣言の解決は失敗する。その宣言のコストが2点以下の場合、1枚ドローできる。構築制限:【[AMC]】【[月]】",
+    "lines": [
+      "相手の切札でない宣言に対応して使用する。先攻後攻1ターン目でない場合、その宣言の解決は失敗する。その宣言のコストが2点以下の場合、1枚ドローできる。構築制限:【[AMC]】【[月]】"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]\n[宣言] [日]:{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
   "textKr": "[アグレッシブ]\n[宣言] [日]:{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3658"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3658",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:{[アグレッシブ]を持つ味方キャラ1体}にAP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [日]:{[アグレッシブ]を持つ味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [日]:{[アグレッシブ]を持つ味方キャラ1体}にAP+3する。この能力は失われる。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [日]:{[アグレッシブ]を持つ味方キャラ1体}にAP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラの下にカードが置かれている場合、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２する。",
   "textKr": "[宣言] [0]:このキャラの下にカードが置かれている場合、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4781"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4781",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラの下にカードが置かれている場合、このキャラにAP+2・DP+2・DMG+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラの下にカードが置かれている場合、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋２する。",
+    "normalizedText": "[宣言] [0]:このキャラの下にカードが置かれている場合、このキャラにAP+2・DP+2・DMG+2する。",
+    "lines": [
+      "[宣言] [0]:このキャラの下にカードが置かれている場合、このキャラにAP+2・DP+2・DMG+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

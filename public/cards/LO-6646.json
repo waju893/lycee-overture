@@ -23,7 +23,32 @@
   "costRaw": "花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6646"
+  "text": "対応・バトル中を除く自ターン中に使用する。自分の「正義の魔法使い」置き場の枚数が１枚以上の場合、味方キャラ全てにＡＰ＋４・ＤＰ＋４する。",
+  "textKr": "対応・バトル中を除く自ターン中に使用する。自分の「正義の魔法使い」置き場の枚数が１枚以上の場合、味方キャラ全てにＡＰ＋４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6646",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "対応・バトル中を除く自ターン中に使用する。自分の「正義の魔法使い」置き場の枚数が1枚以上の場合、味方キャラ全てにAP+4・DP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "対応・バトル中を除く自ターン中に使用する。自分の「正義の魔法使い」置き場の枚数が１枚以上の場合、味方キャラ全てにＡＰ＋４・ＤＰ＋４する。",
+    "normalizedText": "対応・バトル中を除く自ターン中に使用する。自分の「正義の魔法使い」置き場の枚数が1枚以上の場合、味方キャラ全てにAP+4・DP+4する。",
+    "lines": [
+      "対応・バトル中を除く自ターン中に使用する。自分の「正義の魔法使い」置き場の枚数が1枚以上の場合、味方キャラ全てにAP+4・DP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -24,5 +24,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:{味方「婚后光子」または「泡浮万彬」１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:{味方「婚后光子」または「泡浮万彬」１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3150"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3150",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方「婚后光子」または「泡浮万彬」1体}にAP+1またはDP+1し、DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:{味方「婚后光子」または「泡浮万彬」１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:{味方「婚后光子」または「泡浮万彬」1体}にAP+1またはDP+1し、DMG+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:{味方「婚后光子」または「泡浮万彬」1体}にAP+1またはDP+1し、DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

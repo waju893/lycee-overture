@@ -23,7 +23,22 @@
   "costRaw": "月月無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0547"
+  "text": "バトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。",
+  "textKr": "バトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0547",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。",
+    "normalizedText": "バトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。",
+    "lines": [
+      "バトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。バトルを中断する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

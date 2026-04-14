@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]\n[誘発] このキャラが登場したとき、未行動の味方キャラ１体を行動済みにする。",
   "textKr": "[アグレッシブ]\n[誘発] このキャラが登場したとき、未行動の味方キャラ１体を行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4849"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4849",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] このキャラが登場したとき、未行動の味方キャラ１体を行動済みにする。",
+    "normalizedText": "[アグレッシブ]\n[誘発] このキャラが登場したとき、未行動の味方キャラ1体を行動済みにする。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] このキャラが登場したとき、未行動の味方キャラ1体を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、未行動の味方キャラ1体を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

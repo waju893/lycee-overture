@@ -26,5 +26,36 @@
   "typeTagsRaw": "サンダース",
   "text": "[アシスト]\n[誘発] このキャラを自分の＜サンダース＞キャラの能力の対象に指定したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[アシスト]\n[誘発] このキャラを自分の＜サンダース＞キャラの能力の対象に指定したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1080"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1080",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラを自分の<サンダース>キャラの能力の対象に指定したとき、このキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラを自分の＜サンダース＞キャラの能力の対象に指定したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラを自分の<サンダース>キャラの能力の対象に指定したとき、このキャラにAP+2・DP+2する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラを自分の<サンダース>キャラの能力の対象に指定したとき、このキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,7 +25,22 @@
   "costRaw": "宙宙宙宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0247"
+  "text": "最もＡＰが低いキャラ１体を行動済みにする。最もＡＰが高いキャラ１体を未行動にする。",
+  "textKr": "最もＡＰが低いキャラ１体を行動済みにする。最もＡＰが高いキャラ１体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0247",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "最もＡＰが低いキャラ１体を行動済みにする。最もＡＰが高いキャラ１体を未行動にする。",
+    "normalizedText": "最もAPが低いキャラ1体を行動済みにする。最もAPが高いキャラ1体を未行動にする。",
+    "lines": [
+      "最もAPが低いキャラ1体を行動済みにする。最もAPが高いキャラ1体を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "最もAPが低いキャラ1体を行動済みにする。最もAPが高いキャラ1体を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

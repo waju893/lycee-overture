@@ -24,7 +24,22 @@
   "costRaw": "雪雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0827"
+  "text": "バトル中に使用できない。味方[雪]キャラが４体以上登場している場合、{相手キャラ１体}を破棄する。",
+  "textKr": "バトル中に使用できない。味方[雪]キャラが４体以上登場している場合、{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0827",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。味方[雪]キャラが４体以上登場している場合、{相手キャラ１体}を破棄する。",
+    "normalizedText": "バトル中に使用できない。味方[雪]キャラが4体以上登場している場合、{相手キャラ1体}を破棄する。",
+    "lines": [
+      "バトル中に使用できない。味方[雪]キャラが4体以上登場している場合、{相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用できない。味方[雪]キャラが4体以上登場している場合、{相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

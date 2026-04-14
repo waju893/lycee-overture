@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。対戦キャラのＡＰを０にする。このターン終了時、このキャラを破棄する。",
   "textKr": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。対戦キャラのＡＰを０にする。このターン終了時、このキャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4262"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4262",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。対戦キャラのＡＰを０にする。このターン終了時、このキャラを破棄する。",
+    "normalizedText": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。対戦キャラのAPを0にする。このターン終了時、このキャラを破棄する。",
+    "lines": [
+      "[宣言] [雪雪雪]:このキャラのバトル中に使用する。対戦キャラのAPを0にする。このターン終了時、このキャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。対戦キャラのAPを0にする。このターン終了時、このキャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

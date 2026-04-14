@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5376"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5376",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:持ち主が自分の味方アイテムが1枚以上の場合、このキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[宣言] [0]:持ち主が自分の味方アイテムが1枚以上の場合、このキャラにAP+1・DP+1する。",
+    "lines": [
+      "[宣言] [0]:持ち主が自分の味方アイテムが1枚以上の場合、このキャラにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

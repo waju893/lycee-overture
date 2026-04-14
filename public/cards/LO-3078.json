@@ -23,5 +23,52 @@
   "typeTagsRaw": "",
   "text": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[誘発] 相手ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方ＤＦに移動できる。\n[宣言] [0]:このキャラにＡＰ＋１またはＤＰ＋１する。",
   "textKr": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[誘発] 相手ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方ＤＦに移動できる。\n[宣言] [0]:このキャラにＡＰ＋１またはＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3078"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3078",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] このアイテムを装備したとき、1枚ドローできる。[誘発] 相手ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方DFに移動できる。[宣言] [0]:このキャラにAP+1またはDP+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このアイテムを装備したとき、１枚ドローできる。\n[誘発] 相手ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方ＤＦに移動できる。\n[宣言] [0]:このキャラにＡＰ＋１またはＤＰ＋１する。",
+    "normalizedText": "[誘発] このアイテムを装備したとき、1枚ドローできる。[誘発] 相手ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方DFに移動できる。[宣言] [0]:このキャラにAP+1またはDP+1する。",
+    "lines": [
+      "[誘発] このアイテムを装備したとき、1枚ドローできる。[誘発] 相手ターン開始時、このキャラを未行動にし、このキャラをこのキャラと同列の味方DFに移動できる。[宣言] [0]:このキャラにAP+1またはDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

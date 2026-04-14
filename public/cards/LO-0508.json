@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0508",
+  "title": "鋼の看護",
+  "subName": "バーサーカー／ナイチンゲール",
+  "name": "鋼の看護 バーサーカー／ナイチンゲール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,42 @@
   "dp": 2,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    9
+  "ex": 1,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[宣言] [D1]:{味方キャラ１体}にＤＰ＋１する。\n構築制限:Fate/Grand Order",
+  "textKr": "[オーダーチェンジ:[0]]\n[宣言] [D1]:{味方キャラ１体}にＤＰ＋１する。\n構築制限:Fate/Grand Order",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0508",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{味方キャラ1体}にDP+1する。構築制限:Fate/Grand Order",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[宣言] [D1]:{味方キャラ１体}にＤＰ＋１する。\n構築制限:Fate/Grand Order",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[宣言] [D1]:{味方キャラ1体}にDP+1する。構築制限:Fate/Grand Order",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[宣言] [D1]:{味方キャラ1体}にDP+1する。構築制限:Fate/Grand Order"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

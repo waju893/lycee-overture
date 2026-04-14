@@ -28,5 +28,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] 味方キャラがダウンしたバトル終了時、対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
   "textKr": "[誘発] 味方キャラがダウンしたバトル終了時、対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0492"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0492",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラがダウンしたバトル終了時、対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[誘発] 味方キャラがダウンしたバトル終了時、対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[誘発] 味方キャラがダウンしたバトル終了時、対戦キャラは次の相手のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 味方キャラがダウンしたバトル終了時、対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

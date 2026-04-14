@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5049",
+  "title": "聖夜の音色",
+  "subName": "リネット",
+  "name": "聖夜の音色 リネット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,55 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霜天の聖痕」１枚を探し味方フィールドに無償で配置できる。配置しない場合、１枚ドローできる。\n[宣言] [T]:味方ＡＦ[雪]キャラ１体にＡＰ＋２または味方[雪]キャラ１体にＤＰ＋２する。\n構築制限:『うたわれるもの シリーズ』",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霜天の聖痕」１枚を探し味方フィールドに無償で配置できる。配置しない場合、１枚ドローできる。\n[宣言] [T]:味方ＡＦ[雪]キャラ１体にＡＰ＋２または味方[雪]キャラ１体にＤＰ＋２する。\n構築制限:『うたわれるもの シリーズ』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5049",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霜天の聖痕」1枚を探し味方フィールドに無償で配置できる。配置しない場合、1枚ドローできる。[宣言] [T]:味方AF[雪]キャラ1体にAP+2または味方[雪]キャラ1体にDP+2する。構築制限:『うたわれるもの シリーズ』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "霜天の聖痕",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霜天の聖痕」１枚を探し味方フィールドに無償で配置できる。配置しない場合、１枚ドローできる。\n[宣言] [T]:味方ＡＦ[雪]キャラ１体にＡＰ＋２または味方[雪]キャラ１体にＤＰ＋２する。\n構築制限:『うたわれるもの シリーズ』",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霜天の聖痕」1枚を探し味方フィールドに無償で配置できる。配置しない場合、1枚ドローできる。[宣言] [T]:味方AF[雪]キャラ1体にAP+2または味方[雪]キャラ1体にDP+2する。構築制限:『うたわれるもの シリーズ』",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「霜天の聖痕」1枚を探し味方フィールドに無償で配置できる。配置しない場合、1枚ドローできる。[宣言] [T]:味方AF[雪]キャラ1体にAP+2または味方[雪]キャラ1体にDP+2する。構築制限:『うたわれるもの シリーズ』"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

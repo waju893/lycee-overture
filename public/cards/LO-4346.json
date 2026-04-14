@@ -26,5 +26,37 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[誘発] ターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] ターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4346"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4346",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、コストが3点以上の味方キャラ1体にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、コストが3点以上の味方キャラ1体にAP+1・DP+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] ターン開始時、コストが3点以上の味方キャラ1体にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

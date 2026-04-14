@@ -24,5 +24,40 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園生徒会長 明石小牧」１体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
   "textKr": "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園生徒会長 明石小牧」１体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5714"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5714",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園生徒会長 明石小牧」1体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "弓張学園生徒会長 明石小牧"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園生徒会長 明石小牧」１体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
+    "normalizedText": "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園生徒会長 明石小牧」1体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
+    "lines": [
+      "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園生徒会長 明石小牧」1体を探し、そのキャラとゴミ箱のこのキャラを登場する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

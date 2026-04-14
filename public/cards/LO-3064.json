@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [日日]:{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。",
   "textKr": "[宣言] [日日]:{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3064"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3064",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日日]:{味方キャラ1体}にAP+3・DP-3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [日日]:{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。",
+    "normalizedText": "[宣言] [日日]:{味方キャラ1体}にAP+3・DP-3する。この能力は失われる。",
+    "lines": [
+      "[宣言] [日日]:{味方キャラ1体}にAP+3・DP-3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

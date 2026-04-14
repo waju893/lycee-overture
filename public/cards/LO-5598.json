@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:味方キャラ全てのコストが３～４点の場合、味方ＡＦキャラ全てにＡＰ＋１する。",
   "textKr": "[宣言] [0]:味方キャラ全てのコストが３～４点の場合、味方ＡＦキャラ全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5598"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5598",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方キャラ全てのコストが3~4点の場合、味方AFキャラ全てにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:味方キャラ全てのコストが３～４点の場合、味方ＡＦキャラ全てにＡＰ＋１する。",
+    "normalizedText": "[宣言] [0]:味方キャラ全てのコストが3~4点の場合、味方AFキャラ全てにAP+1する。",
+    "lines": [
+      "[宣言] [0]:味方キャラ全てのコストが3~4点の場合、味方AFキャラ全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

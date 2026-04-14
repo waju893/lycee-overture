@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3475",
+  "title": "ウィザード",
+  "subName": "西野 亜季",
+  "name": "ウィザード 西野 亜季",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,93 @@
   "dp": 0,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探し、味方「門倉甲」または「須藤雅」または「渚千夏」１体に無償で装備する。\n[宣言] [0]:{「シュミクラム」を装備している味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:[GIG]",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探し、味方「門倉甲」または「須藤雅」または「渚千夏」１体に無償で装備する。\n[宣言] [0]:{「シュミクラム」を装備している味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:[GIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3475",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探し、味方「門倉甲」または「須藤雅」または「渚千夏」1体に無償で装備する。[宣言] [0]:{「シュミクラム」を装備している味方キャラ1体}にAP+1またはDP+1する。構築制限:[GIG]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "searchCard",
+                          "owner": "self",
+                          "zones": [
+                            "deck"
+                          ],
+                          "match": {
+                            "exactName": "シュミクラム"
+                          },
+                          "min": 0,
+                          "max": 1,
+                          "storeAs": "lastSearchResult",
+                          "shuffleAfterSearch": true
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "ap",
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探し、味方「門倉甲」または「須藤雅」または「渚千夏」１体に無償で装備する。\n[宣言] [0]:{「シュミクラム」を装備している味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:[GIG]",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探し、味方「門倉甲」または「須藤雅」または「渚千夏」1体に無償で装備する。[宣言] [0]:{「シュミクラム」を装備している味方キャラ1体}にAP+1またはDP+1する。構築制限:[GIG]",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探し、味方「門倉甲」または「須藤雅」または「渚千夏」1体に無償で装備する。[宣言] [0]:{「シュミクラム」を装備している味方キャラ1体}にAP+1またはDP+1する。構築制限:[GIG]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

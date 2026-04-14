@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3743",
+  "title": "王宮守護騎士",
+  "subName": "アデライド",
+  "name": "王宮守護騎士 アデライド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,38 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n[宣言] [0]:味方ＡＦ[花]キャラ全てにＳＰ＋１する。\n構築制限:[AIG]",
+  "textKr": "[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n[宣言] [0]:味方ＡＦ[花]キャラ全てにＳＰ＋１する。\n構築制限:[AIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3743",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。[宣言] [0]:味方AF[花]キャラ全てにSP+1する。構築制限:[AIG]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n[宣言] [0]:味方ＡＦ[花]キャラ全てにＳＰ＋１する。\n構築制限:[AIG]",
+    "normalizedText": "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。[宣言] [0]:味方AF[花]キャラ全てにSP+1する。構築制限:[AIG]",
+    "lines": [
+      "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。[宣言] [0]:味方AF[花]キャラ全てにSP+1する。構築制限:[AIG]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1525",
+  "title": "鬼切の使い手",
+  "subName": "ヒバリ",
+  "name": "鬼切の使い手 ヒバリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -17,11 +20,31 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[宣言] [D1]:味方[花]キャラの防御中に使用する。バトルを中断する。そのキャラは次の自分のウェイクアップで未行動に戻らない。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "[サポーター:[花]]\n[宣言] [D1]:味方[花]キャラの防御中に使用する。バトルを中断する。そのキャラは次の自分のウェイクアップで未行動に戻らない。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1525",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[宣言] [D1]:味方[花]キャラの防御中に使用する。バトルを中断する。そのキャラは次の自分のウェイクアップで未行動に戻らない。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [D1]:味方[花]キャラの防御中に使用する。バトルを中断する。そのキャラは次の自分のウェイクアップで未行動に戻らない。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "[サポーター:[花]]",
+      "[宣言] [D1]:味方[花]キャラの防御中に使用する。バトルを中断する。そのキャラは次の自分のウェイクアップで未行動に戻らない。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D1]:味方[花]キャラの防御中に使用する。バトルを中断する。そのキャラは次の自分のウェイクアップで未行動に戻らない。構築制限:千年戦争アイギス([AIG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

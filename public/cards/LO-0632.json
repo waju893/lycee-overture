@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0632",
+  "title": "陰陽師",
+  "subName": "柊余白",
+  "name": "陰陽師 柊余白",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,31 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    10
-  ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月]:{味方キャラ１体}を行動済みにする。行動済みにしたとき、{相手キャラ１体}にＤＭＧ－１する。\n構築制限:ゆずソフト",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月]:{味方キャラ１体}を行動済みにする。行動済みにしたとき、{相手キャラ１体}にＤＭＧ－１する。\n構築制限:ゆずソフト",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0632",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月]:{味方キャラ１体}を行動済みにする。行動済みにしたとき、{相手キャラ１体}にＤＭＧ－１する。\n構築制限:ゆずソフト",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[宣言] [月]:{味方キャラ1体}を行動済みにする。行動済みにしたとき、{相手キャラ1体}にDMG-1する。構築制限:ゆずソフト",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[宣言] [月]:{味方キャラ1体}を行動済みにする。行動済みにしたとき、{相手キャラ1体}にDMG-1する。構築制限:ゆずソフト"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [月]:{味方キャラ1体}を行動済みにする。行動済みにしたとき、{相手キャラ1体}にDMG-1する。構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

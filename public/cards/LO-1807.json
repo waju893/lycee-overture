@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1807",
+  "title": "右近衛大将",
+  "subName": "オシュトル",
+  "name": "右近衛大将 オシュトル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,58 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキからコストが４点以下の「オシュトル」を除く＜ヤマト＞キャラ１体を探し、このキャラが登場していたフィールドに無償で登場する。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキからコストが４点以下の「オシュトル」を除く＜ヤマト＞キャラ１体を探し、このキャラが登場していたフィールドに無償で登場する。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1807",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキからコストが4点以下の「オシュトル」を除く<ヤマト>キャラ1体を探し、このキャラが登場していたフィールドに無償で登場する。構築制限:アクアプラス([AQP])",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck"
+          ],
+          "match": {
+            "exactName": "オシュトル",
+            "kind": "event"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "event",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキからコストが４点以下の「オシュトル」を除く＜ヤマト＞キャラ１体を探し、このキャラが登場していたフィールドに無償で登場する。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキからコストが4点以下の「オシュトル」を除く<ヤマト>キャラ1体を探し、このキャラが登場していたフィールドに無償で登場する。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキからコストが4点以下の「オシュトル」を除く<ヤマト>キャラ1体を探し、このキャラが登場していたフィールドに無償で登場する。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

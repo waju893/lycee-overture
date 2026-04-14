@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [花]:相手ターン中に使用する。{味方[花]キャラ１体}を未行動にする。この能力は失われる。",
   "textKr": "[サポーター:[花花]]\n[宣言] [花]:相手ターン中に使用する。{味方[花]キャラ１体}を未行動にする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4332"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4332",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [花]:相手ターン中に使用する。{味方[花]キャラ１体}を未行動にする。この能力は失われる。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [花]:相手ターン中に使用する。{味方[花]キャラ1体}を未行動にする。この能力は失われる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [花]:相手ターン中に使用する。{味方[花]キャラ1体}を未行動にする。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [花]:相手ターン中に使用する。{味方[花]キャラ1体}を未行動にする。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [雪雪雪]:味方キャラの防御中に使用する。対戦キャラのＡＰとＤＰを０にする。",
   "textKr": "[手札宣言] [雪雪雪]:味方キャラの防御中に使用する。対戦キャラのＡＰとＤＰを０にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1497"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1497",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [雪雪雪]:味方キャラの防御中に使用する。対戦キャラのＡＰとＤＰを０にする。",
+    "normalizedText": "[手札宣言] [雪雪雪]:味方キャラの防御中に使用する。対戦キャラのAPとDPを0にする。",
+    "lines": [
+      "[手札宣言] [雪雪雪]:味方キャラの防御中に使用する。対戦キャラのAPとDPを0にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [雪雪雪]:味方キャラの防御中に使用する。対戦キャラのAPとDPを0にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

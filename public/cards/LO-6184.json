@@ -21,7 +21,32 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6184"
+  "text": "{チャージまたはアイテムを持つ味方キャラ１体}にＡＰ＋４する。",
+  "textKr": "{チャージまたはアイテムを持つ味方キャラ１体}にＡＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6184",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{チャージまたはアイテムを持つ味方キャラ1体}にAP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{チャージまたはアイテムを持つ味方キャラ１体}にＡＰ＋４する。",
+    "normalizedText": "{チャージまたはアイテムを持つ味方キャラ1体}にAP+4する。",
+    "lines": [
+      "{チャージまたはアイテムを持つ味方キャラ1体}にAP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

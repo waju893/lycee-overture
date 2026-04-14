@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-1797",
+  "title": "教室のざしきわらし",
+  "subName": "羽根崎 美緒",
+  "name": "教室のざしきわらし 羽根崎 美緒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower",
     "sun"
   ],
-  "attributesList": [
-    "flower",
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "sun",
@@ -18,11 +20,31 @@
   "dp": 3,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無]]\n[宣言] [0]:味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、コストが３点以上の味方キャラ全てにＤＭＧ＋１する。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[サポーター:[無]]\n[宣言] [0]:味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、コストが３点以上の味方キャラ全てにＤＭＧ＋１する。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1797",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[無]]\n[宣言] [0]:味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、コストが３点以上の味方キャラ全てにＤＭＧ＋１する。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[サポーター:[無]]\n[宣言] [0]:味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、コストが3点以上の味方キャラ全てにDMG+1する。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[サポーター:[無]]",
+      "[宣言] [0]:味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、コストが3点以上の味方キャラ全てにDMG+1する。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、コストが3点以上の味方キャラ全てにDMG+1する。構築制限:アクアプラス([AQP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

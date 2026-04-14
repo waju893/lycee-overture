@@ -27,5 +27,88 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [宙宙宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「超電磁砲」１枚を探し公開して手札に入れる。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [宙宙宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「超電磁砲」１枚を探し公開して手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3226"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3226",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。[宣言] [宙宙宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「超電磁砲」1枚を探し公開して手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "searchCard",
+                          "owner": "self",
+                          "zones": [
+                            "deck",
+                            "hand"
+                          ],
+                          "match": {
+                            "exactName": "超電磁砲"
+                          },
+                          "min": 0,
+                          "max": 1,
+                          "storeAs": "lastSearchResult",
+                          "shuffleAfterSearch": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [宙宙宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「超電磁砲」１枚を探し公開して手札に入れる。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。[宣言] [宙宙宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「超電磁砲」1枚を探し公開して手札に入れる。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。[宣言] [宙宙宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「超電磁砲」1枚を探し公開して手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

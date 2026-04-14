@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [宙宙宙]:味方「間宮卓司」が登場している場合、このキャラにＡＰ＋６・ＤＰ＋６・ＤＭＧ＋６する。",
   "textKr": "[宣言] [宙宙宙]:味方「間宮卓司」が登場している場合、このキャラにＡＰ＋６・ＤＰ＋６・ＤＭＧ＋６する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5748"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5748",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙宙宙]:味方「間宮卓司」が登場している場合、このキャラにAP+6・DP+6・DMG+6する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 6
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [宙宙宙]:味方「間宮卓司」が登場している場合、このキャラにＡＰ＋６・ＤＰ＋６・ＤＭＧ＋６する。",
+    "normalizedText": "[宣言] [宙宙宙]:味方「間宮卓司」が登場している場合、このキャラにAP+6・DP+6・DMG+6する。",
+    "lines": [
+      "[宣言] [宙宙宙]:味方「間宮卓司」が登場している場合、このキャラにAP+6・DP+6・DMG+6する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

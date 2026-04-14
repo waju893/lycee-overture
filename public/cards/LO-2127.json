@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]\n[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにＤＭＧ＋１する。",
   "textKr": "[アグレッシブ]\n[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2127"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2127",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにDMG+1する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

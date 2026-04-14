@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:{相手キャラ１体}はターン終了時まで相手の効果でＤＭＧを＋する能力値修正を得ない。",
   "textKr": "[宣言] [0]:{相手キャラ１体}はターン終了時まで相手の効果でＤＭＧを＋する能力値修正を得ない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2086"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2086",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{相手キャラ１体}はターン終了時まで相手の効果でＤＭＧを＋する能力値修正を得ない。",
+    "normalizedText": "[宣言] [0]:{相手キャラ1体}はターン終了時まで相手の効果でDMGを+する能力値修正を得ない。",
+    "lines": [
+      "[宣言] [0]:{相手キャラ1体}はターン終了時まで相手の効果でDMGを+する能力値修正を得ない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:{相手キャラ1体}はターン終了時まで相手の効果でDMGを+する能力値修正を得ない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

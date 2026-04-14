@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1086",
+  "title": "黒森峰女学園チーム副隊長",
+  "subName": "逸見 エリカ",
+  "name": "黒森峰女学園チーム副隊長 逸見 エリカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,31 @@
   "dp": 2,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "黒森峰",
+  "text": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。ＡＰが５以上の味方＜黒森峰＞キャラまたはＡＰが５以上の味方「西住みほ」全てにＤＭＧ＋１する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。ＡＰが５以上の味方＜黒森峰＞キャラまたはＡＰが５以上の味方「西住みほ」全てにＤＭＧ＋１する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1086",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。ＡＰが５以上の味方＜黒森峰＞キャラまたはＡＰが５以上の味方「西住みほ」全てにＤＭＧ＋１する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。APが5以上の味方<黒森峰>キャラまたはAPが5以上の味方「西住みほ」全てにDMG+1する。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:バトル中に使用できない。APが5以上の味方<黒森峰>キャラまたはAPが5以上の味方「西住みほ」全てにDMG+1する。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:バトル中に使用できない。APが5以上の味方<黒森峰>キャラまたはAPが5以上の味方「西住みほ」全てにDMG+1する。構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

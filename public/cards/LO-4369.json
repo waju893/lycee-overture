@@ -21,7 +21,22 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4369"
+  "text": "{相手キャラ１体}のＤＰをに０する。そのキャラにＤＭＧ－５する。",
+  "textKr": "{相手キャラ１体}のＤＰをに０する。そのキャラにＤＭＧ－５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4369",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}のＤＰをに０する。そのキャラにＤＭＧ－５する。",
+    "normalizedText": "{相手キャラ1体}のDPをに0する。そのキャラにDMG-5する。",
+    "lines": [
+      "{相手キャラ1体}のDPをに0する。そのキャラにDMG-5する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{相手キャラ1体}のDPをに0する。そのキャラにDMG-5する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

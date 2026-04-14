@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2516",
+  "title": "厳しい家柄",
+  "subName": "桜庭 玉藻",
+  "name": "厳しい家柄 桜庭 玉藻",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,27 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、コストが２点以下の相手ＡＦキャラ１体を相手ＤＦに移動する。\n構築制限:[AUG]",
+  "textKr": "[誘発] このキャラが登場したとき、コストが２点以下の相手ＡＦキャラ１体を相手ＤＦに移動する。\n構築制限:[AUG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2516",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、コストが２点以下の相手ＡＦキャラ１体を相手ＤＦに移動する。\n構築制限:[AUG]",
+    "normalizedText": "[誘発] このキャラが登場したとき、コストが2点以下の相手AFキャラ1体を相手DFに移動する。構築制限:[AUG]",
+    "lines": [
+      "[誘発] このキャラが登場したとき、コストが2点以下の相手AFキャラ1体を相手DFに移動する。構築制限:[AUG]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、コストが2点以下の相手AFキャラ1体を相手DFに移動する。構築制限:[AUG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,15 +1,54 @@
 {
+  "cardNo": "LO-1289",
+  "title": "死んだ世界戦線",
+  "subName": "",
+  "name": "死んだ世界戦線",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "cosmos",
-    "sun"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[誘発] このキャラが場を離れたとき、自分のゴミ箱の＜死んだ世界戦線＞キャラ１体を手札に入れる。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[誘発] このキャラが場を離れたとき、自分のゴミ箱の＜死んだ世界戦線＞キャラ１体を手札に入れる。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1289",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラが場を離れたとき、自分のゴミ箱の<死んだ世界戦線>キャラ1体を手札に入れる。構築制限:ビジュアルアーツ([VA])",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが場を離れたとき、自分のゴミ箱の＜死んだ世界戦線＞キャラ１体を手札に入れる。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[誘発] このキャラが場を離れたとき、自分のゴミ箱の<死んだ世界戦線>キャラ1体を手札に入れる。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[誘発] このキャラが場を離れたとき、自分のゴミ箱の<死んだ世界戦線>キャラ1体を手札に入れる。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[誘発] 味方キャラがエンゲージ登場したとき、キャラ１体を行動済みにする。",
   "textKr": "[エンゲージ]\n[誘発] 味方キャラがエンゲージ登場したとき、キャラ１体を行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0155"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0155",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] 味方キャラがエンゲージ登場したとき、キャラ１体を行動済みにする。",
+    "normalizedText": "[エンゲージ]\n[誘発] 味方キャラがエンゲージ登場したとき、キャラ1体を行動済みにする。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] 味方キャラがエンゲージ登場したとき、キャラ1体を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方キャラがエンゲージ登場したとき、キャラ1体を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

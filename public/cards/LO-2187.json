@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2187",
+  "title": "軽音楽同好会",
+  "subName": "小木曽 雪菜",
+  "name": "軽音楽同好会 小木曽 雪菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "moon",
@@ -15,5 +18,38 @@
   "ap": 0,
   "dp": 1,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪月無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱のコストが２点以下のキャラ以外のカード１枚を無償で使用する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:『WHITE ALBUM2』",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱のコストが２点以下のキャラ以外のカード１枚を無償で使用する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:『WHITE ALBUM2』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2187",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱のコストが2点以下のキャラ以外のカード1枚を無償で使用する。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+1・DP+1する。構築制限:『WHITE ALBUM2』",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱のコストが２点以下のキャラ以外のカード１枚を無償で使用する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:『WHITE ALBUM2』",
+    "normalizedText": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱のコストが2点以下のキャラ以外のカード1枚を無償で使用する。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+1・DP+1する。構築制限:『WHITE ALBUM2』",
+    "lines": [
+      "[誘発] このキャラが手札から登場したとき、自分のゴミ箱のコストが2点以下のキャラ以外のカード1枚を無償で使用する。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+1・DP+1する。構築制限:『WHITE ALBUM2』"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

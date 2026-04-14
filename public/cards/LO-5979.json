@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5979",
+  "title": "麗しき大和撫子",
+  "subName": "川原 瑞音",
+  "name": "麗しき大和撫子 川原 瑞音",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,42 @@
   "dp": 1,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが効果で登場したとき、相手[花]キャラ１体にＡＰ－３・ＤＰ－３する。\n構築制限:【『それは舞い散る桜のように-Re:BIRTH-』】【このカードと同番号が１枚以下】",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが効果で登場したとき、相手[花]キャラ１体にＡＰ－３・ＤＰ－３する。\n構築制限:【『それは舞い散る桜のように-Re:BIRTH-』】【このカードと同番号が１枚以下】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5979",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] このキャラが効果で登場したとき、相手[花]キャラ1体にAP-3・DP-3する。構築制限:【『それは舞い散る桜のように-Re:BIRTH-』】【このカードと同番号が1枚以下】",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -3
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが効果で登場したとき、相手[花]キャラ１体にＡＰ－３・ＤＰ－３する。\n構築制限:【『それは舞い散る桜のように-Re:BIRTH-』】【このカードと同番号が１枚以下】",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが効果で登場したとき、相手[花]キャラ1体にAP-3・DP-3する。構築制限:【『それは舞い散る桜のように-Re:BIRTH-』】【このカードと同番号が1枚以下】",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが効果で登場したとき、相手[花]キャラ1体にAP-3・DP-3する。構築制限:【『それは舞い散る桜のように-Re:BIRTH-』】【このカードと同番号が1枚以下】"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

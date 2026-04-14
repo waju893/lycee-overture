@@ -22,7 +22,22 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1432"
+  "text": "自ターン中に使用する。{行動済みの味方キャラ１体}を{味方フィールド}に移動する。",
+  "textKr": "自ターン中に使用する。{行動済みの味方キャラ１体}を{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1432",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。{行動済みの味方キャラ１体}を{味方フィールド}に移動する。",
+    "normalizedText": "自ターン中に使用する。{行動済みの味方キャラ1体}を{味方フィールド}に移動する。",
+    "lines": [
+      "自ターン中に使用する。{行動済みの味方キャラ1体}を{味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自ターン中に使用する。{行動済みの味方キャラ1体}を{味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

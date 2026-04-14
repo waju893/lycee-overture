@@ -24,5 +24,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] ターン開始時、自分のデッキを１枚破棄できる。破棄したとき、キャラ１体にＳＰー１する。",
   "textKr": "[アシスト]\n[誘発] ターン開始時、自分のデッキを１枚破棄できる。破棄したとき、キャラ１体にＳＰー１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0318"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0318",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] ターン開始時、自分のデッキを１枚破棄できる。破棄したとき、キャラ１体にＳＰー１する。",
+    "normalizedText": "[アシスト]\n[誘発] ターン開始時、自分のデッキを1枚破棄できる。破棄したとき、キャラ1体にSPー1する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] ターン開始時、自分のデッキを1枚破棄できる。破棄したとき、キャラ1体にSPー1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] ターン開始時、自分のデッキを1枚破棄できる。破棄したとき、キャラ1体にSPー1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

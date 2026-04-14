@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [T][無無無]:自ターン中に使用する。{相手キャラ１体}を行動済みにする。この能力は失われる。",
   "textKr": "[宣言] [T][無無無]:自ターン中に使用する。{相手キャラ１体}を行動済みにする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3391"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3391",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [T][無無無]:自ターン中に使用する。{相手キャラ１体}を行動済みにする。この能力は失われる。",
+    "normalizedText": "[宣言] [T][無無無]:自ターン中に使用する。{相手キャラ1体}を行動済みにする。この能力は失われる。",
+    "lines": [
+      "[宣言] [T][無無無]:自ターン中に使用する。{相手キャラ1体}を行動済みにする。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [T][無無無]:自ターン中に使用する。{相手キャラ1体}を行動済みにする。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

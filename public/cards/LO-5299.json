@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [日]:このキャラにＡＰ＋２する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [日]:このキャラにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5299"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5299",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:このキャラにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [日]:このキャラにＡＰ＋２する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [日]:このキャラにAP+2する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [日]:このキャラにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

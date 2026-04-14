@@ -25,5 +25,35 @@
   "typeTagsRaw": "",
   "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。このバトル終了時、このキャラを未行動にする。",
   "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。このバトル終了時、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1612"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1612",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。このバトル終了時、このキャラを未行動にする。",
+    "normalizedText": "[エンゲージ:[1枚ドローする。]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+2する。このバトル終了時、このキャラを未行動にする。",
+    "lines": [
+      "[エンゲージ:[1枚ドローする。]]",
+      "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+2する。このバトル終了時、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+2する。このバトル終了時、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

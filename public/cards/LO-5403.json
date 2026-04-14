@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] 自分のイベントで味方キャラが能力値修正を得たとき、そのキャラはＡＰ＋２・ＤＰ＋２・[ボーナス:[相手のデッキを１枚破棄できる。]]を得る。",
   "textKr": "[ステップ:[0]]\n[誘発] 自分のイベントで味方キャラが能力値修正を得たとき、そのキャラはＡＰ＋２・ＤＰ＋２・[ボーナス:[相手のデッキを１枚破棄できる。]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5403"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5403",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のイベントで味方キャラが能力値修正を得たとき、そのキャラはAP+2・DP+2・[ボーナス:[相手のデッキを1枚破棄できる。]]を得る。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] 自分のイベントで味方キャラが能力値修正を得たとき、そのキャラはＡＰ＋２・ＤＰ＋２・[ボーナス:[相手のデッキを１枚破棄できる。]]を得る。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] 自分のイベントで味方キャラが能力値修正を得たとき、そのキャラはAP+2・DP+2・[ボーナス:[相手のデッキを1枚破棄できる。]]を得る。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] 自分のイベントで味方キャラが能力値修正を得たとき、そのキャラはAP+2・DP+2・[ボーナス:[相手のデッキを1枚破棄できる。]]を得る。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

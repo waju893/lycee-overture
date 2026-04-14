@@ -25,5 +25,36 @@
   "typeTagsRaw": "-",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:自ターン中に使用する。{相手ＡＦキャラ１体}にＤＰ－２する。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:自ターン中に使用する。{相手ＡＦキャラ１体}にＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0607"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0607",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。{相手AFキャラ1体}にDP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:自ターン中に使用する。{相手ＡＦキャラ１体}にＤＰ－２する。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[宣言] [0]:自ターン中に使用する。{相手AFキャラ1体}にDP-2する。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[宣言] [0]:自ターン中に使用する。{相手AFキャラ1体}にDP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

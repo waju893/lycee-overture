@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-3345",
+  "title": "感情表現は控え目",
+  "subName": "リムス",
+  "name": "感情表現は控え目 リムス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "cosmos",
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star",
@@ -18,11 +20,51 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:『SHUFFLE! エピソード2』",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:『SHUFFLE! エピソード2』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3345",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] このキャラが手札から登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:『SHUFFLE! エピソード2』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:『SHUFFLE! エピソード2』",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:『SHUFFLE! エピソード2』",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが手札から登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:『SHUFFLE! エピソード2』"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

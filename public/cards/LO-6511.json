@@ -23,7 +23,22 @@
   "costRaw": "月月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6511"
+  "text": "味方『アンラベル・トリガー』キャラのバトル中に使用する。バトルを中断する。相手のデッキを１枚破棄できる。",
+  "textKr": "味方『アンラベル・トリガー』キャラのバトル中に使用する。バトルを中断する。相手のデッキを１枚破棄できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6511",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "味方『アンラベル・トリガー』キャラのバトル中に使用する。バトルを中断する。相手のデッキを１枚破棄できる。",
+    "normalizedText": "味方『アンラベル・トリガー』キャラのバトル中に使用する。バトルを中断する。相手のデッキを1枚破棄できる。",
+    "lines": [
+      "味方『アンラベル・トリガー』キャラのバトル中に使用する。バトルを中断する。相手のデッキを1枚破棄できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "味方『アンラベル・トリガー』キャラのバトル中に使用する。バトルを中断する。相手のデッキを1枚破棄できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

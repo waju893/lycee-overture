@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方キャラ１体を味方ＤＦに移動できる。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を味方ＤＦに移動できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1620"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1620",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ１体を味方ＤＦに移動できる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ1体を味方DFに移動できる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ1体を味方DFに移動できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体を味方DFに移動できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

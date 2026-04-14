@@ -1,13 +1,58 @@
 {
+  "cardNo": "LO-2001",
+  "title": "聖人崩し",
+  "subName": "",
+  "name": "聖人崩し",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "装備制限:[花]キャラ\n[宣言] [0]:このキャラのＤＭＧが３以下の場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "textKr": "装備制限:[花]キャラ\n[宣言] [0]:このキャラのＤＭＧが３以下の場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2001",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラのDMGが3以下の場合、このキャラにAP+1・DP+1・DMG+1する。構築制限:とある魔術の禁書目録([TOA])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "装備制限:[花]キャラ\n[宣言] [0]:このキャラのＤＭＧが３以下の場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+    "normalizedText": "装備制限:[花]キャラ\n[宣言] [0]:このキャラのDMGが3以下の場合、このキャラにAP+1・DP+1・DMG+1する。構築制限:とある魔術の禁書目録([TOA])",
+    "lines": [
+      "装備制限:[花]キャラ",
+      "[宣言] [0]:このキャラのDMGが3以下の場合、このキャラにAP+1・DP+1・DMG+1する。構築制限:とある魔術の禁書目録([TOA])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "装備制限:[花]キャラ",
+      "reason": "no parser rule matched"
+    }
   ]
 }

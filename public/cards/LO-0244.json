@@ -21,7 +21,22 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0244"
+  "text": "{相手キャラ１体}は次の相手のウェイクアップで未行動に戻らない。",
+  "textKr": "{相手キャラ１体}は次の相手のウェイクアップで未行動に戻らない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0244",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}は次の相手のウェイクアップで未行動に戻らない。",
+    "normalizedText": "{相手キャラ1体}は次の相手のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "{相手キャラ1体}は次の相手のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{相手キャラ1体}は次の相手のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

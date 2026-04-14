@@ -27,5 +27,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:相手[GUP]キャラ全てにＡＰ－１する。",
   "textKr": "[宣言] [0]:相手[GUP]キャラ全てにＡＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1052"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1052",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:相手[GUP]キャラ全てにAP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:相手[GUP]キャラ全てにＡＰ－１する。",
+    "normalizedText": "[宣言] [0]:相手[GUP]キャラ全てにAP-1する。",
+    "lines": [
+      "[宣言] [0]:相手[GUP]キャラ全てにAP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

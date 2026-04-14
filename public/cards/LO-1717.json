@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1717",
+  "title": "普通の女の子への第一歩",
+  "subName": "ムラサメ",
+  "name": "普通の女の子への第一歩 ムラサメ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,31 @@
   "dp": 1,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    6
-  ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[誘発] このキャラにサポートをしたとき、このキャラにＤＭＧ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラにサポートをしたとき、このキャラにＤＭＧ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1717",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] このキャラにサポートをしたとき、このキャラにＤＭＧ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[アグレッシブ]\n[誘発] このキャラにサポートをしたとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] このキャラにサポートをしたとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラにサポートをしたとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

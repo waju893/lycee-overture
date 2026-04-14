@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4494",
+  "title": "高笑いの似合う好敵手",
+  "subName": "リリ・リル・リーリ・リンダ・リッテル・ローリア・リンドリア・ブリットアニア",
+  "name": "高笑いの似合う好敵手 リリ・リル・リーリ・リンダ・リッテル・ローリア・リンドリア・ブリットアニア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,73 @@
   "dp": 6,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] ターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ノノ」１体を探し登場する。この能力は失われる。\n構築制限:[DG]",
+  "textKr": "[ステップ:[0]]\n[誘発] ターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ノノ」１体を探し登場する。この能力は失われる。\n構築制限:[DG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4494",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、コストが5~6点の味方[宙]キャラ1体にAP+2・DP+2する。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ノノ」1体を探し登場する。この能力は失われる。構築制限:[DG]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck"
+                  ],
+                  "match": {
+                    "exactName": "ノノ"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] ターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ノノ」１体を探し登場する。この能力は失われる。\n構築制限:[DG]",
+    "normalizedText": "[ステップ:[0]]\n[誘発] ターン開始時、コストが5~6点の味方[宙]キャラ1体にAP+2・DP+2する。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ノノ」1体を探し登場する。この能力は失われる。構築制限:[DG]",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] ターン開始時、コストが5~6点の味方[宙]キャラ1体にAP+2・DP+2する。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ノノ」1体を探し登場する。この能力は失われる。構築制限:[DG]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

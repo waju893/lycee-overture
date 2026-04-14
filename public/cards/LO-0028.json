@@ -25,5 +25,30 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [月月月]:このキャラのバトル中に使用する。対戦キャラにＡＰ－２する。",
   "textKr": "[宣言] [月月月]:このキャラのバトル中に使用する。対戦キャラにＡＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0028"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0028",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月月月]:このキャラのバトル中に使用する。対戦キャラにAP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [月月月]:このキャラのバトル中に使用する。対戦キャラにＡＰ－２する。",
+    "normalizedText": "[宣言] [月月月]:このキャラのバトル中に使用する。対戦キャラにAP-2する。",
+    "lines": [
+      "[宣言] [月月月]:このキャラのバトル中に使用する。対戦キャラにAP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

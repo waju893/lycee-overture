@@ -23,5 +23,20 @@
   "typeTagsRaw": "神姫",
   "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。",
   "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0781"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0781",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+1する。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

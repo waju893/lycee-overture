@@ -1,25 +1,50 @@
 {
+  "cardNo": "LO-1119",
+  "title": "大洗の海賊のうた",
+  "subName": "",
+  "name": "大洗の海賊のうた",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star",
     "star",
     "star",
     "star",
     "star"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "無無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{味方キャラ１体}と同タイプの味方キャラが３体以上の場合、{相手キャラ１体}を破棄する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "{味方キャラ１体}と同タイプの味方キャラが３体以上の場合、{相手キャラ１体}を破棄する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1119",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}と同タイプの味方キャラが３体以上の場合、{相手キャラ１体}を破棄する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "{味方キャラ1体}と同タイプの味方キャラが3体以上の場合、{相手キャラ1体}を破棄する。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "{味方キャラ1体}と同タイプの味方キャラが3体以上の場合、{相手キャラ1体}を破棄する。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方キャラ1体}と同タイプの味方キャラが3体以上の場合、{相手キャラ1体}を破棄する。構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

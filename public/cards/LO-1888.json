@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラの参加バトル終了時、このキャラを持ち主の手札に入れる。入れたとき、キャラ全てにＳＰ＋１する。",
   "textKr": "[誘発] このキャラの参加バトル終了時、このキャラを持ち主の手札に入れる。入れたとき、キャラ全てにＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1888"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1888",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラの参加バトル終了時、このキャラを持ち主の手札に入れる。入れたとき、キャラ全てにSP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラの参加バトル終了時、このキャラを持ち主の手札に入れる。入れたとき、キャラ全てにＳＰ＋１する。",
+    "normalizedText": "[誘発] このキャラの参加バトル終了時、このキャラを持ち主の手札に入れる。入れたとき、キャラ全てにSP+1する。",
+    "lines": [
+      "[誘発] このキャラの参加バトル終了時、このキャラを持ち主の手札に入れる。入れたとき、キャラ全てにSP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

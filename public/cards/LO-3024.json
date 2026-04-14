@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [花花]:{味方キャラ１体}にＳＰ＋３する。",
   "textKr": "[手札宣言] [花花]:{味方キャラ１体}にＳＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3024"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3024",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [花花]:{味方キャラ1体}にSP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [花花]:{味方キャラ１体}にＳＰ＋３する。",
+    "normalizedText": "[手札宣言] [花花]:{味方キャラ1体}にSP+3する。",
+    "lines": [
+      "[手札宣言] [花花]:{味方キャラ1体}にSP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

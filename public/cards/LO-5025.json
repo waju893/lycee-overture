@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方キャラ１体のDＰを３にする。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体のDＰを３にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5025"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5025",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ１体のDＰを３にする。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ1体のDPを3にする。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ1体のDPを3にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体のDPを3にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラまたは味方「赤坂めぐ」が自分の効果で場を離れたとき、相手のデッキを１枚破棄できる。",
   "textKr": "[誘発] このキャラまたは味方「赤坂めぐ」が自分の効果で場を離れたとき、相手のデッキを１枚破棄できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5734"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5734",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラまたは味方「赤坂めぐ」が自分の効果で場を離れたとき、相手のデッキを１枚破棄できる。",
+    "normalizedText": "[誘発] このキャラまたは味方「赤坂めぐ」が自分の効果で場を離れたとき、相手のデッキを1枚破棄できる。",
+    "lines": [
+      "[誘発] このキャラまたは味方「赤坂めぐ」が自分の効果で場を離れたとき、相手のデッキを1枚破棄できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラまたは味方「赤坂めぐ」が自分の効果で場を離れたとき、相手のデッキを1枚破棄できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

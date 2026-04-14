@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＰ＋１する。",
   "textKr": "[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2986"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2986",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方キャラがダウンしたとき、味方キャラ1体にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＰ＋１する。",
+    "normalizedText": "[誘発] 味方キャラがダウンしたとき、味方キャラ1体にDP+1する。",
+    "lines": [
+      "[誘発] 味方キャラがダウンしたとき、味方キャラ1体にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

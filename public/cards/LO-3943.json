@@ -24,7 +24,22 @@
   "costRaw": "花花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3943"
+  "text": "{コストが２点以下の味方ＤＦキャラと同列の、コストが４点以下の味方ＡＦキャラ１体}を未行動にする。そのキャラはＤＭＧの能力値修正を失う。",
+  "textKr": "{コストが２点以下の味方ＤＦキャラと同列の、コストが４点以下の味方ＡＦキャラ１体}を未行動にする。そのキャラはＤＭＧの能力値修正を失う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3943",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{コストが２点以下の味方ＤＦキャラと同列の、コストが４点以下の味方ＡＦキャラ１体}を未行動にする。そのキャラはＤＭＧの能力値修正を失う。",
+    "normalizedText": "{コストが2点以下の味方DFキャラと同列の、コストが4点以下の味方AFキャラ1体}を未行動にする。そのキャラはDMGの能力値修正を失う。",
+    "lines": [
+      "{コストが2点以下の味方DFキャラと同列の、コストが4点以下の味方AFキャラ1体}を未行動にする。そのキャラはDMGの能力値修正を失う。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{コストが2点以下の味方DFキャラと同列の、コストが4点以下の味方AFキャラ1体}を未行動にする。そのキャラはDMGの能力値修正を失う。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

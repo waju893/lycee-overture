@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラにＡＰ－３・ＤＰ－３・ＳＰ＋３する。",
   "textKr": "[常時] このキャラにＡＰ－３・ＤＰ－３・ＳＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0556"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0556",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにAP-3・DP-3・SP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラにＡＰ－３・ＤＰ－３・ＳＰ＋３する。",
+    "normalizedText": "[常時] このキャラにAP-3・DP-3・SP+3する。",
+    "lines": [
+      "[常時] このキャラにAP-3・DP-3・SP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

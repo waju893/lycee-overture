@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0757",
+  "title": "ゴエティアハンド",
+  "subName": "エリゴス",
+  "name": "ゴエティアハンド エリゴス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,31 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
-  ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[エンゲージ]\n[宣言] [T][このキャラを破棄する]:味方キャラが５体以上登場している場合、{相手キャラ１体}を破棄する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[エンゲージ]\n[宣言] [T][このキャラを破棄する]:味方キャラが５体以上登場している場合、{相手キャラ１体}を破棄する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0757",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [T][このキャラを破棄する]:味方キャラが５体以上登場している場合、{相手キャラ１体}を破棄する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[エンゲージ]\n[宣言] [T][このキャラを破棄する]:味方キャラが5体以上登場している場合、{相手キャラ1体}を破棄する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [T][このキャラを破棄する]:味方キャラが5体以上登場している場合、{相手キャラ1体}を破棄する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T][このキャラを破棄する]:味方キャラが5体以上登場している場合、{相手キャラ1体}を破棄する。構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

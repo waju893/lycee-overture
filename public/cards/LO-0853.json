@@ -25,5 +25,36 @@
   "typeTagsRaw": "神姫",
   "text": "[アグレッシブ]\n[宣言] [D1]:このキャラにＡＰ＋３する。",
   "textKr": "[アグレッシブ]\n[宣言] [D1]:このキャラにＡＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0853"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0853",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラにAP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [D1]:このキャラにＡＰ＋３する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [D1]:このキャラにAP+3する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [D1]:このキャラにAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

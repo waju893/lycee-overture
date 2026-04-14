@@ -24,7 +24,22 @@
   "costRaw": "雪雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0237"
+  "text": "相手は相手の手札を２枚破棄することができる。破棄しないとき{相手キャラ１体}を破棄する。",
+  "textKr": "相手は相手の手札を２枚破棄することができる。破棄しないとき{相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0237",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手は相手の手札を２枚破棄することができる。破棄しないとき{相手キャラ１体}を破棄する。",
+    "normalizedText": "相手は相手の手札を2枚破棄することができる。破棄しないとき{相手キャラ1体}を破棄する。",
+    "lines": [
+      "相手は相手の手札を2枚破棄することができる。破棄しないとき{相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手は相手の手札を2枚破棄することができる。破棄しないとき{相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

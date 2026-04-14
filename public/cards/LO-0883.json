@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:バトル中に使用する。このキャラにＡＰ＋１・ＤＰ＋１する。このバトル終了時、このキャラを破棄する。",
   "textKr": "[宣言] [0]:バトル中に使用する。このキャラにＡＰ＋１・ＤＰ＋１する。このバトル終了時、このキャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0883"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0883",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用する。このキャラにAP+1・DP+1する。このバトル終了時、このキャラを破棄する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用する。このキャラにＡＰ＋１・ＤＰ＋１する。このバトル終了時、このキャラを破棄する。",
+    "normalizedText": "[宣言] [0]:バトル中に使用する。このキャラにAP+1・DP+1する。このバトル終了時、このキャラを破棄する。",
+    "lines": [
+      "[宣言] [0]:バトル中に使用する。このキャラにAP+1・DP+1する。このバトル終了時、このキャラを破棄する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

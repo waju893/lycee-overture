@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:味方キャラ１体にＡＰ＋１する。自分の「ニライカナイ」置き場の枚数が５枚以上の場合、このキャラにＡＰ＋３・ＤＭＧ＋３する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:味方キャラ１体にＡＰ＋１する。自分の「ニライカナイ」置き場の枚数が５枚以上の場合、このキャラにＡＰ＋３・ＤＭＧ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6029"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6029",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方キャラ1体にAP+1する。自分の「ニライカナイ」置き場の枚数が5枚以上の場合、このキャラにAP+3・DMG+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:味方キャラ１体にＡＰ＋１する。自分の「ニライカナイ」置き場の枚数が５枚以上の場合、このキャラにＡＰ＋３・ＤＭＧ＋３する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:味方キャラ1体にAP+1する。自分の「ニライカナイ」置き場の枚数が5枚以上の場合、このキャラにAP+3・DMG+3する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:味方キャラ1体にAP+1する。自分の「ニライカナイ」置き場の枚数が5枚以上の場合、このキャラにAP+3・DMG+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

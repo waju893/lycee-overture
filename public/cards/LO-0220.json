@@ -25,5 +25,36 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [0]:味方「神皇天叢雲=アマテラス」が登場している場合、このキャラにＡＰ＋４・ＤＰ＋４する。",
   "textKr": "[エンゲージ]\n[宣言] [0]:味方「神皇天叢雲=アマテラス」が登場している場合、このキャラにＡＰ＋４・ＤＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0220"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0220",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方「神皇天叢雲=アマテラス」が登場している場合、このキャラにAP+4・DP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [0]:味方「神皇天叢雲=アマテラス」が登場している場合、このキャラにＡＰ＋４・ＤＰ＋４する。",
+    "normalizedText": "[エンゲージ]\n[宣言] [0]:味方「神皇天叢雲=アマテラス」が登場している場合、このキャラにAP+4・DP+4する。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [0]:味方「神皇天叢雲=アマテラス」が登場している場合、このキャラにAP+4・DP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

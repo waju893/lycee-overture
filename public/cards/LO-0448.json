@@ -26,5 +26,36 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [宙宙宙宙]:このキャラにＤＰ＋２する。",
   "textKr": "[エンゲージ]\n[宣言] [宙宙宙宙]:このキャラにＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0448"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0448",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙宙宙宙]:このキャラにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [宙宙宙宙]:このキャラにＤＰ＋２する。",
+    "normalizedText": "[エンゲージ]\n[宣言] [宙宙宙宙]:このキャラにDP+2する。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [宙宙宙宙]:このキャラにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

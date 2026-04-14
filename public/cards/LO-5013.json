@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] ターン開始時、このキャラがエリアを持つ場合、このキャラにＤＭＧ＋３する。",
   "textKr": "[誘発] ターン開始時、このキャラがエリアを持つ場合、このキャラにＤＭＧ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5013"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5013",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] ターン開始時、このキャラがエリアを持つ場合、このキャラにＤＭＧ＋３する。",
+    "normalizedText": "[誘発] ターン開始時、このキャラがエリアを持つ場合、このキャラにDMG+3する。",
+    "lines": [
+      "[誘発] ターン開始時、このキャラがエリアを持つ場合、このキャラにDMG+3する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] ターン開始時、このキャラがエリアを持つ場合、このキャラにDMG+3する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

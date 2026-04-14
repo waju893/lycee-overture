@@ -24,5 +24,25 @@
   "typeTagsRaw": "城娘",
   "text": "[サポーター:[花花]]\n[手札宣言] [花花]:{相手キャラ１体}にＤＭＧ－２する。",
   "textKr": "[サポーター:[花花]]\n[手札宣言] [花花]:{相手キャラ１体}にＤＭＧ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2330"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2330",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[手札宣言] [花花]:{相手キャラ１体}にＤＭＧ－２する。",
+    "normalizedText": "[サポーター:[花花]]\n[手札宣言] [花花]:{相手キャラ1体}にDMG-2する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[手札宣言] [花花]:{相手キャラ1体}にDMG-2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[手札宣言] [花花]:{相手キャラ1体}にDMG-2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

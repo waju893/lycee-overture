@@ -24,5 +24,46 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園副生徒会長 明石小沙智」１体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
   "textKr": "[サポーター:[花花]]\n[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園副生徒会長 明石小沙智」１体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5713"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5713",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園副生徒会長 明石小沙智」1体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "弓張学園副生徒会長 明石小沙智"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園副生徒会長 明石小沙智」１体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
+    "normalizedText": "[サポーター:[花花]]\n[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園副生徒会長 明石小沙智」1体を探し、そのキャラとゴミ箱のこのキャラを登場する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[手札宣言] [花花]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「弓張学園副生徒会長 明石小沙智」1体を探し、そのキャラとゴミ箱のこのキャラを登場する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

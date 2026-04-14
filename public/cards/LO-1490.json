@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪]:このキャラにＤＭＧ＋２する。",
   "textKr": "[宣言] [雪]:このキャラにＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1490"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1490",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪]:このキャラにＤＭＧ＋２する。",
+    "normalizedText": "[宣言] [雪]:このキャラにDMG+2する。",
+    "lines": [
+      "[宣言] [雪]:このキャラにDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪]:このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

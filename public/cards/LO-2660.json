@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方キャラ１体}にＤＰ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方キャラ１体}にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2660"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2660",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方キャラ1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方キャラ１体}にＤＰ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方キャラ1体}にDP+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方キャラ1体}にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

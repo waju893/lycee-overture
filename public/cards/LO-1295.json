@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1295",
+  "title": "カゲナシ",
+  "subName": "西園 美魚",
+  "name": "カゲナシ 西園 美魚",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,45 @@
   "dp": 3,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    8
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の[雪]イベントまたは[雪]アイテム１枚を手札に入れる。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の[雪]イベントまたは[雪]アイテム１枚を手札に入れる。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1295",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱の[雪]イベントまたは[雪]アイテム1枚を手札に入れる。構築制限:ビジュアルアーツ([VA])",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の[雪]イベントまたは[雪]アイテム１枚を手札に入れる。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の[雪]イベントまたは[雪]アイテム1枚を手札に入れる。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の[雪]イベントまたは[雪]アイテム1枚を手札に入れる。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -27,5 +27,25 @@
   "typeTagsRaw": "",
   "text": "[ペナルティ:[自分のデッキを１枚破棄する。]]\n[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを登場できる。",
   "textKr": "[ペナルティ:[自分のデッキを１枚破棄する。]]\n[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1194"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1194",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ペナルティ:[自分のデッキを１枚破棄する。]]\n[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを登場できる。",
+    "normalizedText": "[ペナルティ:[自分のデッキを1枚破棄する。]]\n[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを登場できる。",
+    "lines": [
+      "[ペナルティ:[自分のデッキを1枚破棄する。]]",
+      "[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを登場できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[自分のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを登場できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,7 +24,32 @@
   "costRaw": "月月月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4956"
+  "text": "{相手キャラ１体}にＡＰ－５・ＤＰ－５する。",
+  "textKr": "{相手キャラ１体}にＡＰ－５・ＤＰ－５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4956",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{相手キャラ1体}にAP-5・DP-5する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -5
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}にＡＰ－５・ＤＰ－５する。",
+    "normalizedText": "{相手キャラ1体}にAP-5・DP-5する。",
+    "lines": [
+      "{相手キャラ1体}にAP-5・DP-5する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

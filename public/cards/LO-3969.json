@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが手札から登場したとき、相手は相手の手札のＥＸが１のカード１枚を破棄できる。破棄しない場合、相手のデッキを２枚破棄する。",
   "textKr": "[誘発] このキャラが手札から登場したとき、相手は相手の手札のＥＸが１のカード１枚を破棄できる。破棄しない場合、相手のデッキを２枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3969"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3969",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが手札から登場したとき、相手は相手の手札のＥＸが１のカード１枚を破棄できる。破棄しない場合、相手のデッキを２枚破棄する。",
+    "normalizedText": "[誘発] このキャラが手札から登場したとき、相手は相手の手札のEXが1のカード1枚を破棄できる。破棄しない場合、相手のデッキを2枚破棄する。",
+    "lines": [
+      "[誘発] このキャラが手札から登場したとき、相手は相手の手札のEXが1のカード1枚を破棄できる。破棄しない場合、相手のデッキを2枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが手札から登場したとき、相手は相手の手札のEXが1のカード1枚を破棄できる。破棄しない場合、相手のデッキを2枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

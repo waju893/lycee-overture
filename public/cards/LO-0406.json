@@ -25,5 +25,20 @@
   "typeTagsRaw": "知波単",
   "text": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが２体以上の場合、このキャラは[ステップ:[0]]を得る。",
   "textKr": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが２体以上の場合、このキャラは[ステップ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0406"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0406",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが２体以上の場合、このキャラは[ステップ:[0]]を得る。",
+    "normalizedText": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが2体以上の場合、このキャラは[ステップ:[0]]を得る。",
+    "lines": [
+      "[宣言] [0]:[アグレッシブ]を持つ味方キャラが2体以上の場合、このキャラは[ステップ:[0]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:[アグレッシブ]を持つ味方キャラが2体以上の場合、このキャラは[ステップ:[0]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

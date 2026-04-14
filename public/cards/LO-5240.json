@@ -24,5 +24,20 @@
   "typeTagsRaw": "呉",
   "text": "[手札宣言] [月月月月月]:相手の宣言に対応して使用する。味方「孫堅・炎蓮」が登場している場合、その宣言の解決は失敗する。",
   "textKr": "[手札宣言] [月月月月月]:相手の宣言に対応して使用する。味方「孫堅・炎蓮」が登場している場合、その宣言の解決は失敗する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5240"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5240",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [月月月月月]:相手の宣言に対応して使用する。味方「孫堅・炎蓮」が登場している場合、その宣言の解決は失敗する。",
+    "normalizedText": "[手札宣言] [月月月月月]:相手の宣言に対応して使用する。味方「孫堅・炎蓮」が登場している場合、その宣言の解決は失敗する。",
+    "lines": [
+      "[手札宣言] [月月月月月]:相手の宣言に対応して使用する。味方「孫堅・炎蓮」が登場している場合、その宣言の解決は失敗する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [月月月月月]:相手の宣言に対応して使用する。味方「孫堅・炎蓮」が登場している場合、その宣言の解決は失敗する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

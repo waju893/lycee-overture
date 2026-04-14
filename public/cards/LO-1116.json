@@ -21,7 +21,22 @@
   "costRaw": "宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1116"
+  "text": "{相手キャラ１体}のＳＰを０にする。",
+  "textKr": "{相手キャラ１体}のＳＰを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1116",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}のＳＰを０にする。",
+    "normalizedText": "{相手キャラ1体}のSPを0にする。",
+    "lines": [
+      "{相手キャラ1体}のSPを0にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{相手キャラ1体}のSPを0にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

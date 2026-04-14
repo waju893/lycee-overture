@@ -26,5 +26,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[味方キャラ１体にＤＭＧ＋２する。]]\n[宣言] [T]: バトル中に使用する。このバトルで対戦キャラがダウンしたとき、相手のデッキを２枚破棄する。",
   "textKr": "[エンゲージ:[味方キャラ１体にＤＭＧ＋２する。]]\n[宣言] [T]: バトル中に使用する。このバトルで対戦キャラがダウンしたとき、相手のデッキを２枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0202"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0202",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[味方キャラ１体にＤＭＧ＋２する。]]\n[宣言] [T]: バトル中に使用する。このバトルで対戦キャラがダウンしたとき、相手のデッキを２枚破棄する。",
+    "normalizedText": "[エンゲージ:[味方キャラ1体にDMG+2する。]]\n[宣言] [T]: バトル中に使用する。このバトルで対戦キャラがダウンしたとき、相手のデッキを2枚破棄する。",
+    "lines": [
+      "[エンゲージ:[味方キャラ1体にDMG+2する。]]",
+      "[宣言] [T]: バトル中に使用する。このバトルで対戦キャラがダウンしたとき、相手のデッキを2枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[味方キャラ1体にDMG+2する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T]: バトル中に使用する。このバトルで対戦キャラがダウンしたとき、相手のデッキを2枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

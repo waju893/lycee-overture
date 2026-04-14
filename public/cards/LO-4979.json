@@ -26,5 +26,47 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のデッキからサブネームに「新入生応援」を含むＥＸが２の[日]キャラ１体を探し公開して手札に入れる。",
   "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のデッキからサブネームに「新入生応援」を含むＥＸが２の[日]キャラ１体を探し公開して手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4979"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4979",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキからサブネームに「新入生応援」を含むEXが2の[日]キャラ1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {
+            "exactName": "新入生応援"
+          },
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のデッキからサブネームに「新入生応援」を含むＥＸが２の[日]キャラ１体を探し公開して手札に入れる。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のデッキからサブネームに「新入生応援」を含むEXが2の[日]キャラ1体を探し公開して手札に入れる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のデッキからサブネームに「新入生応援」を含むEXが2の[日]キャラ1体を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

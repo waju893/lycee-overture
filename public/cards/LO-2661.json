@@ -24,5 +24,88 @@
   "typeTagsRaw": "",
   "text": "[エンゲージ:[自分のゴミ箱のＥＸが２の[花]キャラ１体を手札に入れる。]]\n[誘発] このキャラが「鳥籠」の効果以外で登場したとき、このキャラを除外する。\n[宣言] [0]:バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１またはＤＭＧ＋１する。",
   "textKr": "[エンゲージ:[自分のゴミ箱のＥＸが２の[花]キャラ１体を手札に入れる。]]\n[誘発] このキャラが「鳥籠」の効果以外で登場したとき、このキャラを除外する。\n[宣言] [0]:バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１またはＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2661"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2661",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[自分のゴミ箱のEXが2の[花]キャラ1体を手札に入れる。]]",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] このキャラが「鳥籠」の効果以外で登場したとき、このキャラを除外する。[宣言] [0]:バトル中に使用できない。{味方[花]キャラ1体}にAP+1またはDP+1またはSP+1またはDMG+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "sp",
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[自分のゴミ箱のＥＸが２の[花]キャラ１体を手札に入れる。]]\n[誘発] このキャラが「鳥籠」の効果以外で登場したとき、このキャラを除外する。\n[宣言] [0]:バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１またはＤＭＧ＋１する。",
+    "normalizedText": "[エンゲージ:[自分のゴミ箱のEXが2の[花]キャラ1体を手札に入れる。]]\n[誘発] このキャラが「鳥籠」の効果以外で登場したとき、このキャラを除外する。[宣言] [0]:バトル中に使用できない。{味方[花]キャラ1体}にAP+1またはDP+1またはSP+1またはDMG+1する。",
+    "lines": [
+      "[エンゲージ:[自分のゴミ箱のEXが2の[花]キャラ1体を手札に入れる。]]",
+      "[誘発] このキャラが「鳥籠」の効果以外で登場したとき、このキャラを除外する。[宣言] [0]:バトル中に使用できない。{味方[花]キャラ1体}にAP+1またはDP+1またはSP+1またはDMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand",
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

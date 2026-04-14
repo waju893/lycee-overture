@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラで攻撃宣言をしたとき、このキャラは次の自分のウェイクアップで未行動に戻らない。",
   "textKr": "[誘発] このキャラで攻撃宣言をしたとき、このキャラは次の自分のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0475"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0475",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラで攻撃宣言をしたとき、このキャラは次の自分のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[誘発] このキャラで攻撃宣言をしたとき、このキャラは次の自分のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[誘発] このキャラで攻撃宣言をしたとき、このキャラは次の自分のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラで攻撃宣言をしたとき、このキャラは次の自分のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

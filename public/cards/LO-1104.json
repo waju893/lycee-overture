@@ -24,5 +24,20 @@
   "typeTagsRaw": "知波単",
   "text": "[誘発] このキャラが登場したとき、味方＜知波単＞キャラが３体以上の場合、このキャラは[アグレッシブ]を得る。",
   "textKr": "[誘発] このキャラが登場したとき、味方＜知波単＞キャラが３体以上の場合、このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1104"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1104",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方＜知波単＞キャラが３体以上の場合、このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方<知波単>キャラが3体以上の場合、このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方<知波単>キャラが3体以上の場合、このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方<知波単>キャラが3体以上の場合、このキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

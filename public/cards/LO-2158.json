@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[常時] このキャラはＡＰとＤＰに能力値修正を得ない。",
   "textKr": "[オーダーステップ:[0]]\n[常時] このキャラはＡＰとＤＰに能力値修正を得ない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2158"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2158",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[常時] このキャラはＡＰとＤＰに能力値修正を得ない。",
+    "normalizedText": "[オーダーステップ:[0]]\n[常時] このキャラはAPとDPに能力値修正を得ない。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[常時] このキャラはAPとDPに能力値修正を得ない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラはAPとDPに能力値修正を得ない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

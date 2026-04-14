@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2207",
+  "title": "讃えその瞼を閉じ穏やかな終焉を",
+  "subName": "ヒュプノス=レト",
+  "name": "讃えその瞼を閉じ穏やかな終焉を ヒュプノス=レト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,50 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    7
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ:[自分のデッキからキャラ１体を探し公開して手札に入れる。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手キャラ１体に次の相手ターン終了時までＤＭＧ－２する。\n[誘発] このキャラをエンゲージ登場で破棄したとき、相手キャラ１体を行動済みにする。\n構築制限:[BXB]かつ[月]",
+  "textKr": "[エンゲージ:[自分のデッキからキャラ１体を探し公開して手札に入れる。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手キャラ１体に次の相手ターン終了時までＤＭＧ－２する。\n[誘発] このキャラをエンゲージ登場で破棄したとき、相手キャラ１体を行動済みにする。\n構築制限:[BXB]かつ[月]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2207",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[自分のデッキからキャラ1体を探し公開して手札に入れる。]]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[エンゲージ:[自分のデッキからキャラ１体を探し公開して手札に入れる。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手キャラ１体に次の相手ターン終了時までＤＭＧ－２する。\n[誘発] このキャラをエンゲージ登場で破棄したとき、相手キャラ１体を行動済みにする。\n構築制限:[BXB]かつ[月]",
+    "normalizedText": "[エンゲージ:[自分のデッキからキャラ1体を探し公開して手札に入れる。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手キャラ1体に次の相手ターン終了時までDMG-2する。[誘発] このキャラをエンゲージ登場で破棄したとき、相手キャラ1体を行動済みにする。構築制限:[BXB]かつ[月]",
+    "lines": [
+      "[エンゲージ:[自分のデッキからキャラ1体を探し公開して手札に入れる。]]",
+      "[誘発] 味方キャラがエンゲージ登場したとき、相手キャラ1体に次の相手ターン終了時までDMG-2する。[誘発] このキャラをエンゲージ登場で破棄したとき、相手キャラ1体を行動済みにする。構築制限:[BXB]かつ[月]"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 味方キャラがエンゲージ登場したとき、相手キャラ1体に次の相手ターン終了時までDMG-2する。[誘発] このキャラをエンゲージ登場で破棄したとき、相手キャラ1体を行動済みにする。構築制限:[BXB]かつ[月]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,36 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト][ステップ:[0]]\n[宣言] [0]:{このターン中移動したキャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[アシスト][ステップ:[0]]\n[宣言] [0]:{このターン中移動したキャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0287"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0287",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{このターン中移動したキャラ1体}にAP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][ステップ:[0]]\n[宣言] [0]:{このターン中移動したキャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[アシスト][ステップ:[0]]\n[宣言] [0]:{このターン中移動したキャラ1体}にAP+1・DMG+1する。",
+    "lines": [
+      "[アシスト][ステップ:[0]]",
+      "[宣言] [0]:{このターン中移動したキャラ1体}にAP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,25 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト]\n[誘発] このキャラのバトル終了時、このキャラを自分の「卒業」置き場に置く。置いたとき、相手キャラ１体を破棄する。",
   "textKr": "[アシスト]\n[誘発] このキャラのバトル終了時、このキャラを自分の「卒業」置き場に置く。置いたとき、相手キャラ１体を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1181"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1181",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラのバトル終了時、このキャラを自分の「卒業」置き場に置く。置いたとき、相手キャラ１体を破棄する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラのバトル終了時、このキャラを自分の「卒業」置き場に置く。置いたとき、相手キャラ1体を破棄する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラのバトル終了時、このキャラを自分の「卒業」置き場に置く。置いたとき、相手キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラのバトル終了時、このキャラを自分の「卒業」置き場に置く。置いたとき、相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

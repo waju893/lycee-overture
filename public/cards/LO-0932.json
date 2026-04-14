@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [D1]:バトル中に使用できない。{自分のゴミ箱の「ベアトリーチェ」１体}を除外する。{相手キャラ１体}にＳＰ－２する。",
   "textKr": "[宣言] [D1]:バトル中に使用できない。{自分のゴミ箱の「ベアトリーチェ」１体}を除外する。{相手キャラ１体}にＳＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0932"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0932",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:バトル中に使用できない。{自分のゴミ箱の「ベアトリーチェ」1体}を除外する。{相手キャラ1体}にSP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:バトル中に使用できない。{自分のゴミ箱の「ベアトリーチェ」１体}を除外する。{相手キャラ１体}にＳＰ－２する。",
+    "normalizedText": "[宣言] [D1]:バトル中に使用できない。{自分のゴミ箱の「ベアトリーチェ」1体}を除外する。{相手キャラ1体}にSP-2する。",
+    "lines": [
+      "[宣言] [D1]:バトル中に使用できない。{自分のゴミ箱の「ベアトリーチェ」1体}を除外する。{相手キャラ1体}にSP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

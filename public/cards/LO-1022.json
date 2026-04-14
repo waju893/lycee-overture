@@ -24,5 +24,25 @@
   "typeTagsRaw": "プラウダ",
   "text": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「カチューシャ」１体｝を{味方フィールド}に移動する。",
   "textKr": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「カチューシャ」１体｝を{味方フィールド}に移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1022"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1022",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「カチューシャ」１体｝を{味方フィールド}に移動する。",
+    "normalizedText": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「カチューシャ」1体}を{味方フィールド}に移動する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [このキャラを破棄する]:{味方「カチューシャ」1体}を{味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [このキャラを破棄する]:{味方「カチューシャ」1体}を{味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

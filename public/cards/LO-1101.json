@@ -24,5 +24,36 @@
   "typeTagsRaw": "知波単",
   "text": "[アグレッシブ]\n[宣言] [T]:{味方＜知波単＞キャラ１体}にＡＰ＋１・ＤＰ－１する。",
   "textKr": "[アグレッシブ]\n[宣言] [T]:{味方＜知波単＞キャラ１体}にＡＰ＋１・ＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1101"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1101",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:{味方<知波単>キャラ1体}にAP+1・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [T]:{味方＜知波単＞キャラ１体}にＡＰ＋１・ＤＰ－１する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [T]:{味方<知波単>キャラ1体}にAP+1・DP-1する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [T]:{味方<知波単>キャラ1体}にAP+1・DP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

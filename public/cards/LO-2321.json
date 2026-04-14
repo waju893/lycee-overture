@@ -21,7 +21,32 @@
   "costRaw": "宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2321"
+  "text": "自ターン中に使用する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "自ターン中に使用する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2321",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。{味方キャラ1体}にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "自ターン中に使用する。{味方キャラ1体}にAP+1・DP+1する。",
+    "lines": [
+      "自ターン中に使用する。{味方キャラ1体}にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

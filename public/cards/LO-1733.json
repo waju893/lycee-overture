@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1733",
+  "title": "穢れ祓いの神様",
+  "subName": "市杵宍姫命",
+  "name": "穢れ祓いの神様 市杵宍姫命",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,64 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{アイテムを装備している味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:[YUZ]\n初出 : リセオーバーチュア３周年記念キャンペーン初出 : リセオーバーチュア３周年記念キャンペーン",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{アイテムを装備している味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:[YUZ]\n初出 : リセオーバーチュア３周年記念キャンペーン初出 : リセオーバーチュア３周年記念キャンペーン",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1733",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{アイテムを装備している味方キャラ1体}にAP+2またはDP+2する。構築制限:[YUZ]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{アイテムを装備している味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:[YUZ]\n初出 : リセオーバーチュア３周年記念キャンペーン初出 : リセオーバーチュア３周年記念キャンペーン",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{アイテムを装備している味方キャラ1体}にAP+2またはDP+2する。構築制限:[YUZ]\n初出 : リセオーバーチュア3周年記念キャンペーン初出 : リセオーバーチュア3周年記念キャンペーン",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{アイテムを装備している味方キャラ1体}にAP+2またはDP+2する。構築制限:[YUZ]",
+      "初出 : リセオーバーチュア3周年記念キャンペーン初出 : リセオーバーチュア3周年記念キャンペーン"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "初出 : リセオーバーチュア3周年記念キャンペーン初出 : リセオーバーチュア3周年記念キャンペーン",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

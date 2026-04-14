@@ -22,7 +22,22 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6647"
+  "text": "対応・バトル中を除く自ターン中に使用する。{味方キャラ１体}を味方「最後の神様が住む島」１枚の下に置く。",
+  "textKr": "対応・バトル中を除く自ターン中に使用する。{味方キャラ１体}を味方「最後の神様が住む島」１枚の下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6647",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "対応・バトル中を除く自ターン中に使用する。{味方キャラ１体}を味方「最後の神様が住む島」１枚の下に置く。",
+    "normalizedText": "対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}を味方「最後の神様が住む島」1枚の下に置く。",
+    "lines": [
+      "対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}を味方「最後の神様が住む島」1枚の下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}を味方「最後の神様が住む島」1枚の下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

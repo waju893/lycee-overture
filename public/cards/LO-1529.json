@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[宣言] [D1]:{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラは次の自分のウェイクアップで未行動に戻らない。",
   "textKr": "[サポーター:[花]]\n[宣言] [D1]:{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラは次の自分のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1529"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1529",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{味方キャラ1体}にAP+1・DP+1する。そのキャラは次の自分のウェイクアップで未行動に戻らない。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[宣言] [D1]:{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラは次の自分のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [D1]:{味方キャラ1体}にAP+1・DP+1する。そのキャラは次の自分のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[宣言] [D1]:{味方キャラ1体}にAP+1・DP+1する。そのキャラは次の自分のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

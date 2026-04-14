@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [月][このキャラを破棄する]:ターン終了時まで{コストが４点以下の味方キャラ１体}はダウンしない。",
   "textKr": "[宣言] [月][このキャラを破棄する]:ターン終了時まで{コストが４点以下の味方キャラ１体}はダウンしない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1924"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1924",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [月][このキャラを破棄する]:ターン終了時まで{コストが４点以下の味方キャラ１体}はダウンしない。",
+    "normalizedText": "[宣言] [月][このキャラを破棄する]:ターン終了時まで{コストが4点以下の味方キャラ1体}はダウンしない。",
+    "lines": [
+      "[宣言] [月][このキャラを破棄する]:ターン終了時まで{コストが4点以下の味方キャラ1体}はダウンしない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [月][このキャラを破棄する]:ターン終了時まで{コストが4点以下の味方キャラ1体}はダウンしない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

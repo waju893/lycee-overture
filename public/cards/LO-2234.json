@@ -1,17 +1,42 @@
 {
+  "cardNo": "LO-2234",
+  "title": "朕は国家なり",
+  "subName": "ヴェルサイユ宮殿",
+  "name": "朕は国家なり ヴェルサイユ宮殿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、相手のデッキを１枚破棄する。\n構築制限:[OSP]",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、相手のデッキを１枚破棄する。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2234",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、相手のデッキを１枚破棄する。\n構築制限:[OSP]",
+    "normalizedText": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、相手のデッキを1枚破棄する。構築制限:[OSP]",
+    "lines": [
+      "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、相手のデッキを1枚破棄する。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、相手のデッキを1枚破棄する。構築制限:[OSP]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

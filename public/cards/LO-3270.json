@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3270",
+  "title": "兄妹の絆",
+  "subName": "小倉 朝日",
+  "name": "兄妹の絆 小倉 朝日",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,79 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] このキャラを自分の効果で破棄したとき、自分のゴミ箱または自分のデッキから「大蔵遊星」１体を探し無償で登場できる。登場しない場合、１枚ドローできる。\n構築制限:[NAV]かつ[雪]",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] このキャラを自分の効果で破棄したとき、自分のゴミ箱または自分のデッキから「大蔵遊星」１体を探し無償で登場できる。登場しない場合、１枚ドローできる。\n構築制限:[NAV]かつ[雪]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3270",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。[誘発] このキャラを自分の効果で破棄したとき、自分のゴミ箱または自分のデッキから「大蔵遊星」1体を探し無償で登場できる。登場しない場合、1枚ドローできる。構築制限:[NAV]かつ[雪]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck"
+                  ],
+                  "match": {
+                    "exactName": "大蔵遊星",
+                    "kind": "character"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                },
+                {
+                  "type": "freeUse",
+                  "sourceRef": "lastSearchResult",
+                  "useKind": "character",
+                  "ignoreCost": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] このキャラを自分の効果で破棄したとき、自分のゴミ箱または自分のデッキから「大蔵遊星」１体を探し無償で登場できる。登場しない場合、１枚ドローできる。\n構築制限:[NAV]かつ[雪]",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、1枚ドローする。[誘発] このキャラを自分の効果で破棄したとき、自分のゴミ箱または自分のデッキから「大蔵遊星」1体を探し無償で登場できる。登場しない場合、1枚ドローできる。構築制限:[NAV]かつ[雪]",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] このキャラが登場したとき、1枚ドローする。[誘発] このキャラを自分の効果で破棄したとき、自分のゴミ箱または自分のデッキから「大蔵遊星」1体を探し無償で登場できる。登場しない場合、1枚ドローできる。構築制限:[NAV]かつ[雪]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

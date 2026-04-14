@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [月]:コストが３点以上の味方[月]キャラが５体以上登場している場合、{相手キャラ１体}にＡＰ－２・ＤＰ－２する。この能力は失われる。",
   "textKr": "[宣言] [月]:コストが３点以上の味方[月]キャラが５体以上登場している場合、{相手キャラ１体}にＡＰ－２・ＤＰ－２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3604"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3604",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月]:コストが3点以上の味方[月]キャラが5体以上登場している場合、{相手キャラ1体}にAP-2・DP-2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [月]:コストが３点以上の味方[月]キャラが５体以上登場している場合、{相手キャラ１体}にＡＰ－２・ＤＰ－２する。この能力は失われる。",
+    "normalizedText": "[宣言] [月]:コストが3点以上の味方[月]キャラが5体以上登場している場合、{相手キャラ1体}にAP-2・DP-2する。この能力は失われる。",
+    "lines": [
+      "[宣言] [月]:コストが3点以上の味方[月]キャラが5体以上登場している場合、{相手キャラ1体}にAP-2・DP-2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "プラウダ",
   "text": "[アシスト]\n[誘発] 自ターン中、能力の使用代償で味方キャラを破棄したとき、相手のデッキを１枚破棄する。",
   "textKr": "[アシスト]\n[誘発] 自ターン中、能力の使用代償で味方キャラを破棄したとき、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1019"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1019",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 自ターン中、能力の使用代償で味方キャラを破棄したとき、相手のデッキを１枚破棄する。",
+    "normalizedText": "[アシスト]\n[誘発] 自ターン中、能力の使用代償で味方キャラを破棄したとき、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 自ターン中、能力の使用代償で味方キャラを破棄したとき、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自ターン中、能力の使用代償で味方キャラを破棄したとき、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

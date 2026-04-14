@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [D1]:{味方キャラ１体}にＡＰ＋１する。コストが５点以上の味方キャラが登場している場合、そのキャラにＡＰ＋１する。（１回まで使用可能）",
   "textKr": "[宣言] [D1]:{味方キャラ１体}にＡＰ＋１する。コストが５点以上の味方キャラが登場している場合、そのキャラにＡＰ＋１する。（１回まで使用可能）",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3782"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3782",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{味方キャラ1体}にAP+1する。コストが5点以上の味方キャラが登場している場合、そのキャラにAP+1する。(1回まで使用可能)",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:{味方キャラ１体}にＡＰ＋１する。コストが５点以上の味方キャラが登場している場合、そのキャラにＡＰ＋１する。（１回まで使用可能）",
+    "normalizedText": "[宣言] [D1]:{味方キャラ1体}にAP+1する。コストが5点以上の味方キャラが登場している場合、そのキャラにAP+1する。(1回まで使用可能)",
+    "lines": [
+      "[宣言] [D1]:{味方キャラ1体}にAP+1する。コストが5点以上の味方キャラが登場している場合、そのキャラにAP+1する。(1回まで使用可能)"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

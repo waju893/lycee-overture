@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
   "textKr": "[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1720"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1720",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
+    "normalizedText": "[誘発] 相手DFキャラがダウンしたバトル終了時、相手のデッキを1枚破棄できる。",
+    "lines": [
+      "[誘発] 相手DFキャラがダウンしたバトル終了時、相手のデッキを1枚破棄できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 相手DFキャラがダウンしたバトル終了時、相手のデッキを1枚破棄できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

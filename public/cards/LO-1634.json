@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1634",
+  "title": "時代劇好き",
+  "subName": "二条院 羽月",
+  "name": "時代劇好き 二条院 羽月",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,27 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストは手札からのアイテムの装備にのみ支払える。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストは手札からのアイテムの装備にのみ支払える。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1634",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストは手札からのアイテムの装備にのみ支払える。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[月月]を発生する。このコストは手札からのアイテムの装備にのみ支払える。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[月月]を発生する。このコストは手札からのアイテムの装備にのみ支払える。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[月月]を発生する。このコストは手札からのアイテムの装備にのみ支払える。構築制限:ゆずソフト([YUZ])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

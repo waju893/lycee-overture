@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにＤＰ＋１・ＳＰ＋１する。",
   "textKr": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにＤＰ＋１・ＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5337"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5337",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDP+1・SP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにＤＰ＋１・ＳＰ＋１する。",
+    "normalizedText": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDP+1・SP+1する。",
+    "lines": [
+      "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDP+1・SP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

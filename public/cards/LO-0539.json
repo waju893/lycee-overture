@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[サイドステップ:[0]]\n[宣言] [日日]:このキャラの攻撃中に使用する。対戦キャラを{相手フィールド}に移動する。",
   "textKr": "[サイドステップ:[0]]\n[宣言] [日日]:このキャラの攻撃中に使用する。対戦キャラを{相手フィールド}に移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0539"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0539",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[宣言] [日日]:このキャラの攻撃中に使用する。対戦キャラを{相手フィールド}に移動する。",
+    "normalizedText": "[サイドステップ:[0]]\n[宣言] [日日]:このキャラの攻撃中に使用する。対戦キャラを{相手フィールド}に移動する。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[宣言] [日日]:このキャラの攻撃中に使用する。対戦キャラを{相手フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [日日]:このキャラの攻撃中に使用する。対戦キャラを{相手フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

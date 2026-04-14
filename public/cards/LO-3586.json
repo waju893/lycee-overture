@@ -24,5 +24,31 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}に相手ターン終了時までＡＰ－２・ＤＰ－２する。ゴミ箱のこのキャラを無償で登場できる。",
   "textKr": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}に相手ターン終了時までＡＰ－２・ＤＰ－２する。ゴミ箱のこのキャラを無償で登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3586"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3586",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}に相手ターン終了時までAP-2・DP-2する。ゴミ箱のこのキャラを無償で登場できる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}に相手ターン終了時までＡＰ－２・ＤＰ－２する。ゴミ箱のこのキャラを無償で登場できる。",
+    "normalizedText": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}に相手ターン終了時までAP-2・DP-2する。ゴミ箱のこのキャラを無償で登場できる。",
+    "lines": [
+      "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}に相手ターン終了時までAP-2・DP-2する。ゴミ箱のこのキャラを無償で登場できる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

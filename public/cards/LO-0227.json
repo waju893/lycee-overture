@@ -26,5 +26,35 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[１枚ドローする。]][ステップ:[0]]\n[誘発] 味方キャラがエンゲージ登場したとき、そのキャラは[アグレッシブ]を得る。",
   "textKr": "[エンゲージ:[１枚ドローする。]][ステップ:[0]]\n[誘発] 味方キャラがエンゲージ登場したとき、そのキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0227"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0227",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[1枚ドローする。]][ステップ:[0]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[１枚ドローする。]][ステップ:[0]]\n[誘発] 味方キャラがエンゲージ登場したとき、そのキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[エンゲージ:[1枚ドローする。]][ステップ:[0]]\n[誘発] 味方キャラがエンゲージ登場したとき、そのキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[エンゲージ:[1枚ドローする。]][ステップ:[0]]",
+      "[誘発] 味方キャラがエンゲージ登場したとき、そのキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 味方キャラがエンゲージ登場したとき、そのキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

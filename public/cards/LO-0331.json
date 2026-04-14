@@ -25,5 +25,25 @@
   "typeTagsRaw": "継続",
   "text": "[ステップ:[0]]\n[宣言] [D1]:{味方＜継続＞キャラ１体}は[サイドステップ:[0]]を得る。",
   "textKr": "[ステップ:[0]]\n[宣言] [D1]:{味方＜継続＞キャラ１体}は[サイドステップ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0331"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0331",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [D1]:{味方＜継続＞キャラ１体}は[サイドステップ:[0]]を得る。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [D1]:{味方<継続>キャラ1体}は[サイドステップ:[0]]を得る。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [D1]:{味方<継続>キャラ1体}は[サイドステップ:[0]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D1]:{味方<継続>キャラ1体}は[サイドステップ:[0]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

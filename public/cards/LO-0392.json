@@ -23,5 +23,36 @@
   "typeTagsRaw": "サンダース",
   "text": "[アシスト]\n[宣言] [0]: {味方＜サンダース＞キャラ１体}にＡＰ＋１する。",
   "textKr": "[アシスト]\n[宣言] [0]: {味方＜サンダース＞キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0392"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0392",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]: {味方<サンダース>キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]: {味方＜サンダース＞キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[アシスト]\n[宣言] [0]: {味方<サンダース>キャラ1体}にAP+1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]: {味方<サンダース>キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

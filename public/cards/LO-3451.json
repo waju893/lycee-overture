@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3451",
+  "title": "距離感ゼロの純情乙女",
+  "subName": "四ツ木 柑奈",
+  "name": "距離感ゼロの純情乙女 四ツ木 柑奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,58 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [花]:自ターン中に使用する。このキャラにＤＭＧ－１し、このキャラを未行動にする。\n構築制限:[GIG]",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [花]:自ターン中に使用する。このキャラにＤＭＧ－１し、このキャラを未行動にする。\n構築制限:[GIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3451",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+1またはDP+1する。[宣言] [花]:自ターン中に使用する。このキャラにDMG-1し、このキャラを未行動にする。構築制限:[GIG]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [花]:自ターン中に使用する。このキャラにＤＭＧ－１し、このキャラを未行動にする。\n構築制限:[GIG]",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+1またはDP+1する。[宣言] [花]:自ターン中に使用する。このキャラにDMG-1し、このキャラを未行動にする。構築制限:[GIG]",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+1またはDP+1する。[宣言] [花]:自ターン中に使用する。このキャラにDMG-1し、このキャラを未行動にする。構築制限:[GIG]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

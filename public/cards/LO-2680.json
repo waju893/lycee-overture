@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:このフィールドにエリアを配置している場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:このフィールドにエリアを配置している場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2680"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2680",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このフィールドにエリアを配置している場合、このキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:このフィールドにエリアを配置している場合、このキャラにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[ボーナス:[相手のデッキを1枚破棄する。]]\n[宣言] [0]:このフィールドにエリアを配置している場合、このキャラにAP+1・DP+1する。",
+    "lines": [
+      "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "[宣言] [0]:このフィールドにエリアを配置している場合、このキャラにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

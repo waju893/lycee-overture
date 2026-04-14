@@ -25,5 +25,51 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:コストが３点以上の味方[月]キャラが５体以上登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１し、このキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
   "textKr": "[宣言] [0]:コストが３点以上の味方[月]キャラが５体以上登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１し、このキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3599"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3599",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが3点以上の味方[月]キャラが5体以上登場している場合、{相手キャラ1体}にAP-1またはDP-1し、このキャラは[ボーナス:[自分のデッキを1枚回復する。]]を得る。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:コストが３点以上の味方[月]キャラが５体以上登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１し、このキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+    "normalizedText": "[宣言] [0]:コストが3点以上の味方[月]キャラが5体以上登場している場合、{相手キャラ1体}にAP-1またはDP-1し、このキャラは[ボーナス:[自分のデッキを1枚回復する。]]を得る。",
+    "lines": [
+      "[宣言] [0]:コストが3点以上の味方[月]キャラが5体以上登場している場合、{相手キャラ1体}にAP-1またはDP-1し、このキャラは[ボーナス:[自分のデッキを1枚回復する。]]を得る。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

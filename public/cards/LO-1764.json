@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分の効果で相手キャラを破棄したとき、このキャラにＤＭＧ＋２する。",
   "textKr": "[誘発] 自分の効果で相手キャラを破棄したとき、このキャラにＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1764"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1764",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果で相手キャラを破棄したとき、このキャラにＤＭＧ＋２する。",
+    "normalizedText": "[誘発] 自分の効果で相手キャラを破棄したとき、このキャラにDMG+2する。",
+    "lines": [
+      "[誘発] 自分の効果で相手キャラを破棄したとき、このキャラにDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分の効果で相手キャラを破棄したとき、このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

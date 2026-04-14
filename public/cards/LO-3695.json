@@ -25,5 +25,57 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[常時] このキャラはサポートの対象に指定できない。\n[宣言] [C1]:このキャラにＡＰ＋２またはＤＰ＋２する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
   "textKr": "[チャージ:２]\n[常時] このキャラはサポートの対象に指定できない。\n[宣言] [C1]:このキャラにＡＰ＋２またはＤＰ＋２する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3695"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3695",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラはサポートの対象に指定できない。[宣言] [C1]:このキャラにAP+2またはDP+2する。[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを3枚までデッキの下に置きシャッフルする。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[常時] このキャラはサポートの対象に指定できない。\n[宣言] [C1]:このキャラにＡＰ＋２またはＤＰ＋２する。\n[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを３枚までデッキの下に置きシャッフルする。",
+    "normalizedText": "[チャージ:2]\n[常時] このキャラはサポートの対象に指定できない。[宣言] [C1]:このキャラにAP+2またはDP+2する。[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを3枚までデッキの下に置きシャッフルする。",
+    "lines": [
+      "[チャージ:2]",
+      "[常時] このキャラはサポートの対象に指定できない。[宣言] [C1]:このキャラにAP+2またはDP+2する。[宣言][切札] [0]:自分のゴミ箱の切札効果を持つカードを3枚までデッキの下に置きシャッフルする。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,31 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手の手札が１枚以下の場合、このキャラにＤＭＧ＋１し、相手ターン終了時まで、{味方キャラ１体}にＡＰ＋１する。",
   "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手の手札が１枚以下の場合、このキャラにＤＭＧ＋１し、相手ターン終了時まで、{味方キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3399"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3399",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手の手札が1枚以下の場合、このキャラにDMG+1し、相手ターン終了時まで、{味方キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手の手札が１枚以下の場合、このキャラにＤＭＧ＋１し、相手ターン終了時まで、{味方キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手の手札が1枚以下の場合、このキャラにDMG+1し、相手ターン終了時まで、{味方キャラ1体}にAP+1する。",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。相手の手札が1枚以下の場合、このキャラにDMG+1し、相手ターン終了時まで、{味方キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。",
   "textKr": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5334"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5334",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。",
+    "normalizedText": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。",
+    "lines": [
+      "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

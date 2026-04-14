@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[宣言] [花花]:{このキャラと同列の味方キャラ１体}にＤＰ＋２する。",
   "textKr": "[サポーター:[花]]\n[宣言] [花花]:{このキャラと同列の味方キャラ１体}にＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2084"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2084",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [花花]:{このキャラと同列の味方キャラ1体}にDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[宣言] [花花]:{このキャラと同列の味方キャラ１体}にＤＰ＋２する。",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [花花]:{このキャラと同列の味方キャラ1体}にDP+2する。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[宣言] [花花]:{このキャラと同列の味方キャラ1体}にDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

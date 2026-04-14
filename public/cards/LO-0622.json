@@ -26,5 +26,20 @@
   "typeTagsRaw": "-",
   "text": "[宣言] [T]:{自分のゴミ箱のアイテム１枚}をこのキャラに装備する。",
   "textKr": "[宣言] [T]:{自分のゴミ箱のアイテム１枚}をこのキャラに装備する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0622"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0622",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:{自分のゴミ箱のアイテム１枚}をこのキャラに装備する。",
+    "normalizedText": "[宣言] [T]:{自分のゴミ箱のアイテム1枚}をこのキャラに装備する。",
+    "lines": [
+      "[宣言] [T]:{自分のゴミ箱のアイテム1枚}をこのキャラに装備する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [T]:{自分のゴミ箱のアイテム1枚}をこのキャラに装備する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

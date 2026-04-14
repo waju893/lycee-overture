@@ -24,5 +24,29 @@
   "typeTagsRaw": "",
   "text": "[宣言] [T][雪雪雪雪雪]:自ターン中に使用する。このキャラを除外する。キャラ全てをデッキの下に置く。お互いのデッキをシャッフルする。",
   "textKr": "[宣言] [T][雪雪雪雪雪]:自ターン中に使用する。このキャラを除外する。キャラ全てをデッキの下に置く。お互いのデッキをシャッフルする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2484"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2484",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T][雪雪雪雪雪]:自ターン中に使用する。このキャラを除外する。キャラ全てをデッキの下に置く。お互いのデッキをシャッフルする。",
+      "actions": [
+        {
+          "type": "shuffle",
+          "owner": "self"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [T][雪雪雪雪雪]:自ターン中に使用する。このキャラを除外する。キャラ全てをデッキの下に置く。お互いのデッキをシャッフルする。",
+    "normalizedText": "[宣言] [T][雪雪雪雪雪]:自ターン中に使用する。このキャラを除外する。キャラ全てをデッキの下に置く。お互いのデッキをシャッフルする。",
+    "lines": [
+      "[宣言] [T][雪雪雪雪雪]:自ターン中に使用する。このキャラを除外する。キャラ全てをデッキの下に置く。お互いのデッキをシャッフルする。"
+    ],
+    "matchedRuleIds": [
+      "shuffle"
+    ]
+  },
+  "unresolvedTextLines": []
 }

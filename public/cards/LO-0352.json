@@ -23,5 +23,20 @@
   "typeTagsRaw": "聖グロリアーナ",
   "text": "[アシスト]",
   "textKr": "[アシスト]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0352"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0352",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]",
+    "normalizedText": "[アシスト]",
+    "lines": [
+      "[アシスト]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

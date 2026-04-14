@@ -24,5 +24,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[味方キャラ１体にＤＭＧ＋１する。]]\n[誘発] このキャラを破棄したとき、味方キャラ１体にＤＭＧ＋１する。",
   "textKr": "[エンゲージ:[味方キャラ１体にＤＭＧ＋１する。]]\n[誘発] このキャラを破棄したとき、味方キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2209"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2209",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[味方キャラ１体にＤＭＧ＋１する。]]\n[誘発] このキャラを破棄したとき、味方キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[エンゲージ:[味方キャラ1体にDMG+1する。]]\n[誘発] このキャラを破棄したとき、味方キャラ1体にDMG+1する。",
+    "lines": [
+      "[エンゲージ:[味方キャラ1体にDMG+1する。]]",
+      "[誘発] このキャラを破棄したとき、味方キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[味方キャラ1体にDMG+1する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラを破棄したとき、味方キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

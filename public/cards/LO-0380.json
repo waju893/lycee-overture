@@ -27,5 +27,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが２点以下の味方キャラ１体}にＡＰ＋２する。",
   "textKr": "[アシスト][ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが２点以下の味方キャラ１体}にＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0380"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0380",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。{コストが2点以下の味方キャラ1体}にAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが２点以下の味方キャラ１体}にＡＰ＋２する。",
+    "normalizedText": "[アシスト][ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{コストが2点以下の味方キャラ1体}にAP+2する。",
+    "lines": [
+      "[アシスト][ステップ:[0]]",
+      "[宣言] [0]:自ターン中に使用する。{コストが2点以下の味方キャラ1体}にAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

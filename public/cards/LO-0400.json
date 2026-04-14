@@ -23,5 +23,25 @@
   "typeTagsRaw": "知波単",
   "text": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、味方＜知波単＞キャラ１体にＤＭＧ＋１する。",
   "textKr": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、味方＜知波単＞キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0400"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0400",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、味方＜知波単＞キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、味方<知波単>キャラ1体にDMG+1する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] このキャラがダウンしたとき、味方<知波単>キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラがダウンしたとき、味方<知波単>キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

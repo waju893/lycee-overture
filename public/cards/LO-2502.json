@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分の効果でこのキャラが場を離れたとき、相手のデッキを２枚破棄する。",
   "textKr": "[誘発] 自分の効果でこのキャラが場を離れたとき、相手のデッキを２枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2502"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2502",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果でこのキャラが場を離れたとき、相手のデッキを２枚破棄する。",
+    "normalizedText": "[誘発] 自分の効果でこのキャラが場を離れたとき、相手のデッキを2枚破棄する。",
+    "lines": [
+      "[誘発] 自分の効果でこのキャラが場を離れたとき、相手のデッキを2枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分の効果でこのキャラが場を離れたとき、相手のデッキを2枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

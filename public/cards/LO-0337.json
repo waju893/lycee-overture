@@ -25,5 +25,25 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方「島田愛里寿」１体}を味方フィールドに移動する。",
   "textKr": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方「島田愛里寿」１体}を味方フィールドに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0337"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0337",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方「島田愛里寿」１体}を味方フィールドに移動する。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方「島田愛里寿」1体}を味方フィールドに移動する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:自ターン中に使用する。{味方「島田愛里寿」1体}を味方フィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:自ターン中に使用する。{味方「島田愛里寿」1体}を味方フィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

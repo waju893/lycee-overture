@@ -25,5 +25,25 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト]\n[宣言] [日日無]:ターン終了時まで{コストが２点以下の味方キャラ１体}はダウンしない。この能力は失われる。",
   "textKr": "[アシスト]\n[宣言] [日日無]:ターン終了時まで{コストが２点以下の味方キャラ１体}はダウンしない。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0275"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0275",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [日日無]:ターン終了時まで{コストが２点以下の味方キャラ１体}はダウンしない。この能力は失われる。",
+    "normalizedText": "[アシスト]\n[宣言] [日日無]:ターン終了時まで{コストが2点以下の味方キャラ1体}はダウンしない。この能力は失われる。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [日日無]:ターン終了時まで{コストが2点以下の味方キャラ1体}はダウンしない。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [日日無]:ターン終了時まで{コストが2点以下の味方キャラ1体}はダウンしない。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

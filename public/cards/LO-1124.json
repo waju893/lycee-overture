@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1124",
+  "title": "あんこうチームの車長",
+  "subName": "西住 みほ",
+  "name": "あんこうチームの車長 西住 みほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 0,
   "useTarget": [
     "snow",
     "moon",
@@ -17,7 +20,31 @@
   "dp": 4,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [],
-  "keyEffects": [],
-  "leader": true
+  "ex": 0,
+  "costRaw": "雪月宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[リーダー]\n[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性１つにする。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "[リーダー]\n[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性１つにする。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1124",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リーダー]\n[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性１つにする。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "[リーダー]\n[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性1つにする。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "[リーダー]",
+      "[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性1つにする。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性1つにする。構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

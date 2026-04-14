@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方「河野貴明」または味方「柚原このみ」が登場している場合、１枚ドローできる。",
   "textKr": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方「河野貴明」または味方「柚原このみ」が登場している場合、１枚ドローできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1800"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1800",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方「河野貴明」または味方「柚原このみ」が登場している場合、1枚ドローできる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方「河野貴明」または味方「柚原このみ」が登場している場合、１枚ドローできる。",
+    "normalizedText": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、味方「河野貴明」または味方「柚原このみ」が登場している場合、1枚ドローできる。",
+    "lines": [
+      "[サポーター:[無無]]",
+      "[誘発] このキャラが登場したとき、味方「河野貴明」または味方「柚原このみ」が登場している場合、1枚ドローできる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

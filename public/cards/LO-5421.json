@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [日]:{キャラ名に「四月一日」を含む味方キャラ１体}にＡＰ＋３する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [日]:{キャラ名に「四月一日」を含む味方キャラ１体}にＡＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5421"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5421",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:{キャラ名に「四月一日」を含む味方キャラ1体}にAP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [日]:{キャラ名に「四月一日」を含む味方キャラ１体}にＡＰ＋３する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [日]:{キャラ名に「四月一日」を含む味方キャラ1体}にAP+3する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [日]:{キャラ名に「四月一日」を含む味方キャラ1体}にAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

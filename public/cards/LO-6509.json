@@ -21,7 +21,32 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6509"
+  "text": "{味方キャラ１体}にＤＰ＋６する。",
+  "textKr": "{味方キャラ１体}にＤＰ＋６する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6509",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方キャラ1体}にDP+6する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 6
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}にＤＰ＋６する。",
+    "normalizedText": "{味方キャラ1体}にDP+6する。",
+    "lines": [
+      "{味方キャラ1体}にDP+6する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

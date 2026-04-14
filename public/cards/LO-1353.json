@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1353",
+  "title": "軍師の指揮",
+  "subName": "キャスター／諸葛孔明〔エルメロイⅡ世〕",
+  "name": "軍師の指揮 キャスター／諸葛孔明〔エルメロイⅡ世〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,27 @@
   "ap": 1,
   "dp": 3,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言] [月月月]:自ターン中に使用する。ＡＰまたはＤＰが元の値より３以上低い相手キャラが登場している場合、{相手キャラ１体}を行動済みにする。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[宣言] [月月月]:自ターン中に使用する。ＡＰまたはＤＰが元の値より３以上低い相手キャラが登場している場合、{相手キャラ１体}を行動済みにする。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1353",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [月月月]:自ターン中に使用する。ＡＰまたはＤＰが元の値より３以上低い相手キャラが登場している場合、{相手キャラ１体}を行動済みにする。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[宣言] [月月月]:自ターン中に使用する。APまたはDPが元の値より3以上低い相手キャラが登場している場合、{相手キャラ1体}を行動済みにする。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[宣言] [月月月]:自ターン中に使用する。APまたはDPが元の値より3以上低い相手キャラが登場している場合、{相手キャラ1体}を行動済みにする。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [月月月]:自ターン中に使用する。APまたはDPが元の値より3以上低い相手キャラが登場している場合、{相手キャラ1体}を行動済みにする。構築制限:Fate/Grand Order([TM])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

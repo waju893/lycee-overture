@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] 自分のデッキがダメージを受けたバトル終了時、相手キャラ１体にＤＭＧ－１する。",
   "textKr": "[誘発] 自分のデッキがダメージを受けたバトル終了時、相手キャラ１体にＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0012"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0012",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のデッキがダメージを受けたバトル終了時、相手キャラ１体にＤＭＧ－１する。",
+    "normalizedText": "[誘発] 自分のデッキがダメージを受けたバトル終了時、相手キャラ1体にDMG-1する。",
+    "lines": [
+      "[誘発] 自分のデッキがダメージを受けたバトル終了時、相手キャラ1体にDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分のデッキがダメージを受けたバトル終了時、相手キャラ1体にDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

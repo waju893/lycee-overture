@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 相手キャラが登場したとき、このキャラを味方フィールドに移動できる。移動したとき、この能力は失われる。",
   "textKr": "[誘発] 相手キャラが登場したとき、このキャラを味方フィールドに移動できる。移動したとき、この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3690"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3690",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 相手キャラが登場したとき、このキャラを味方フィールドに移動できる。移動したとき、この能力は失われる。",
+    "normalizedText": "[誘発] 相手キャラが登場したとき、このキャラを味方フィールドに移動できる。移動したとき、この能力は失われる。",
+    "lines": [
+      "[誘発] 相手キャラが登場したとき、このキャラを味方フィールドに移動できる。移動したとき、この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 相手キャラが登場したとき、このキャラを味方フィールドに移動できる。移動したとき、この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

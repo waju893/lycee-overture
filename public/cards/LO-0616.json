@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0616",
+  "title": "妄想少女",
+  "subName": "シャーリィ・ウォリック",
+  "name": "妄想少女 シャーリィ・ウォリック",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,27 @@
   "ap": 4,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [月]:自ターン中に使用する。{自分のゴミ箱のアイテム１枚}を{キャラ１体}に装備する。\n構築制限:ゆずソフト",
+  "textKr": "[宣言] [月]:自ターン中に使用する。{自分のゴミ箱のアイテム１枚}を{キャラ１体}に装備する。\n構築制限:ゆずソフト",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0616",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [月]:自ターン中に使用する。{自分のゴミ箱のアイテム１枚}を{キャラ１体}に装備する。\n構築制限:ゆずソフト",
+    "normalizedText": "[宣言] [月]:自ターン中に使用する。{自分のゴミ箱のアイテム1枚}を{キャラ1体}に装備する。構築制限:ゆずソフト",
+    "lines": [
+      "[宣言] [月]:自ターン中に使用する。{自分のゴミ箱のアイテム1枚}を{キャラ1体}に装備する。構築制限:ゆずソフト"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [月]:自ターン中に使用する。{自分のゴミ箱のアイテム1枚}を{キャラ1体}に装備する。構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6124",
+  "title": "平行世界の観測者",
+  "subName": "アララギ",
+  "name": "平行世界の観測者 アララギ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -15,11 +18,44 @@
   "dp": 0,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが味方「歴史の歪み」の効果で登場したとき、相手キャラ１体を手札に入れる。\n構築制限:『さくらの雲＊スカアレットの恋』",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが味方「歴史の歪み」の効果で登場したとき、相手キャラ１体を手札に入れる。\n構築制限:『さくらの雲＊スカアレットの恋』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6124",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] このキャラが味方「歴史の歪み」の効果で登場したとき、相手キャラ1体を手札に入れる。構築制限:『さくらの雲*スカアレットの恋』",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "opponent",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが味方「歴史の歪み」の効果で登場したとき、相手キャラ１体を手札に入れる。\n構築制限:『さくらの雲＊スカアレットの恋』",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが味方「歴史の歪み」の効果で登場したとき、相手キャラ1体を手札に入れる。構築制限:『さくらの雲*スカアレットの恋』",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが味方「歴史の歪み」の効果で登場したとき、相手キャラ1体を手札に入れる。構築制限:『さくらの雲*スカアレットの恋』"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

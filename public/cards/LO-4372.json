@@ -23,7 +23,32 @@
   "costRaw": "宙宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4372"
+  "text": "{コストが３点以上の味方[宙]キャラ２体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "{コストが３点以上の味方[宙]キャラ２体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4372",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが3点以上の味方[宙]キャラ2体}にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが３点以上の味方[宙]キャラ２体}にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "{コストが3点以上の味方[宙]キャラ2体}にAP+2・DP+2する。",
+    "lines": [
+      "{コストが3点以上の味方[宙]キャラ2体}にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

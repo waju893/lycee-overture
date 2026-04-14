@@ -1,17 +1,61 @@
 {
+  "cardNo": "LO-3007",
+  "title": "純和風なお嬢様",
+  "subName": "島津 若菜",
+  "name": "純和風なお嬢様 島津 若菜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが手札から登場したとき、自分のデッキから手札宣言能力を持つ[月]キャラ１体を探し公開して手札に入れる。\n[宣言][切札] [月]:相手キャラ全てにＤＭＧ－３する。\n構築制限:[HOK]",
+  "textKr": "[誘発] このキャラが手札から登場したとき、自分のデッキから手札宣言能力を持つ[月]キャラ１体を探し公開して手札に入れる。\n[宣言][切札] [月]:相手キャラ全てにＤＭＧ－３する。\n構築制限:[HOK]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3007",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] このキャラが手札から登場したとき、自分のデッキから手札宣言能力を持つ[月]キャラ1体を探し公開して手札に入れる。[宣言][切札] [月]:相手キャラ全てにDMG-3する。構築制限:[HOK]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが手札から登場したとき、自分のデッキから手札宣言能力を持つ[月]キャラ１体を探し公開して手札に入れる。\n[宣言][切札] [月]:相手キャラ全てにＤＭＧ－３する。\n構築制限:[HOK]",
+    "normalizedText": "[誘発] このキャラが手札から登場したとき、自分のデッキから手札宣言能力を持つ[月]キャラ1体を探し公開して手札に入れる。[宣言][切札] [月]:相手キャラ全てにDMG-3する。構築制限:[HOK]",
+    "lines": [
+      "[誘発] このキャラが手札から登場したとき、自分のデッキから手札宣言能力を持つ[月]キャラ1体を探し公開して手札に入れる。[宣言][切札] [月]:相手キャラ全てにDMG-3する。構築制限:[HOK]"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

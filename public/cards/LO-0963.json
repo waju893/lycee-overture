@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0963",
+  "title": "リセットコマンド",
+  "subName": "",
+  "name": "リセットコマンド",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -14,5 +17,31 @@
     "snow",
     "snow",
     "snow"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "雪雪雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自ターン中に使用する。キャラが３体以上登場している場合、キャラ全てを破棄する。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "自ターン中に使用する。キャラが３体以上登場している場合、キャラ全てを破棄する。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0963",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。キャラが３体以上登場している場合、キャラ全てを破棄する。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "自ターン中に使用する。キャラが3体以上登場している場合、キャラ全てを破棄する。構築制限:オーガスト([AUG])",
+    "lines": [
+      "自ターン中に使用する。キャラが3体以上登場している場合、キャラ全てを破棄する。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自ターン中に使用する。キャラが3体以上登場している場合、キャラ全てを破棄する。構築制限:オーガスト([AUG])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

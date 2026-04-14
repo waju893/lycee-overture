@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2288",
+  "title": "大典太砲",
+  "subName": "前田金沢城",
+  "name": "大典太砲 前田金沢城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,63 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    10
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "城娘",
+  "text": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [宙宙宙]:自ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[宣言] [宙宙宙宙宙]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を相手ＤＦに移動する。この能力は失われる。\n構築制限:[OSP]",
+  "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [宙宙宙]:自ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[宣言] [宙宙宙宙宙]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を相手ＤＦに移動する。この能力は失われる。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2288",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙宙宙]:自ターン中に使用する。{相手キャラ1体}にAP-2またはDP-2する。[宣言] [宙宙宙宙宙]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}を相手DFに移動する。この能力は失われる。構築制限:[OSP]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [宙宙宙]:自ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[宣言] [宙宙宙宙宙]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を相手ＤＦに移動する。この能力は失われる。\n構築制限:[OSP]",
+    "normalizedText": "[リカバリー:[相手のデッキを2枚破棄する。]]\n[宣言] [宙宙宙]:自ターン中に使用する。{相手キャラ1体}にAP-2またはDP-2する。[宣言] [宙宙宙宙宙]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}を相手DFに移動する。この能力は失われる。構築制限:[OSP]",
+    "lines": [
+      "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "[宣言] [宙宙宙]:自ターン中に使用する。{相手キャラ1体}にAP-2またはDP-2する。[宣言] [宙宙宙宙宙]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}を相手DFに移動する。この能力は失われる。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

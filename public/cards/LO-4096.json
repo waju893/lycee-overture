@@ -23,5 +23,25 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[宣言] [C1]:{相手キャラ１体}にＤＭＧ－１する。",
   "textKr": "[チャージ:２]\n[宣言] [C1]:{相手キャラ１体}にＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4096"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4096",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [C1]:{相手キャラ１体}にＤＭＧ－１する。",
+    "normalizedText": "[チャージ:2]\n[宣言] [C1]:{相手キャラ1体}にDMG-1する。",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [C1]:{相手キャラ1体}にDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [C1]:{相手キャラ1体}にDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

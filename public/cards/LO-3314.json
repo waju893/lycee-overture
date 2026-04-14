@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3314",
+  "title": "ヨシカワさん",
+  "subName": "吉川 あきら",
+  "name": "ヨシカワさん 吉川 あきら",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,42 @@
   "dp": 3,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無無]]\n[宣言] [0]:味方キャラの属性が５種類以上の場合、{味方キャラ１体}にＤＰ＋１する。\n構築制限:『俺たちに翼はない』",
+  "textKr": "[サポーター:[無無]]\n[宣言] [0]:味方キャラの属性が５種類以上の場合、{味方キャラ１体}にＤＰ＋１する。\n構築制限:『俺たちに翼はない』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3314",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方キャラの属性が5種類以上の場合、{味方キャラ1体}にDP+1する。構築制限:『俺たちに翼はない』",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[無無]]\n[宣言] [0]:味方キャラの属性が５種類以上の場合、{味方キャラ１体}にＤＰ＋１する。\n構築制限:『俺たちに翼はない』",
+    "normalizedText": "[サポーター:[無無]]\n[宣言] [0]:味方キャラの属性が5種類以上の場合、{味方キャラ1体}にDP+1する。構築制限:『俺たちに翼はない』",
+    "lines": [
+      "[サポーター:[無無]]",
+      "[宣言] [0]:味方キャラの属性が5種類以上の場合、{味方キャラ1体}にDP+1する。構築制限:『俺たちに翼はない』"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

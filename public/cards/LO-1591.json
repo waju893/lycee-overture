@@ -24,5 +24,36 @@
   "typeTagsRaw": "",
   "text": "[ガッツ:[日日日]]\n[宣言] [0]:{味方ＡＦキャラ１体}にＡＰ＋１する。この能力は失われる。",
   "textKr": "[ガッツ:[日日日]]\n[宣言] [0]:{味方ＡＦキャラ１体}にＡＰ＋１する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1591"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1591",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方AFキャラ1体}にAP+1する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ガッツ:[日日日]]\n[宣言] [0]:{味方ＡＦキャラ１体}にＡＰ＋１する。この能力は失われる。",
+    "normalizedText": "[ガッツ:[日日日]]\n[宣言] [0]:{味方AFキャラ1体}にAP+1する。この能力は失われる。",
+    "lines": [
+      "[ガッツ:[日日日]]",
+      "[宣言] [0]:{味方AFキャラ1体}にAP+1する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ガッツ:[日日日]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -30,5 +30,25 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[宙宙]]\n[常時] このキャラは相手の効果の対象に指定できない。",
   "textKr": "[ジャンプ:[宙宙]]\n[常時] このキャラは相手の効果の対象に指定できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4071"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4071",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[宙宙]]\n[常時] このキャラは相手の効果の対象に指定できない。",
+    "normalizedText": "[ジャンプ:[宙宙]]\n[常時] このキャラは相手の効果の対象に指定できない。",
+    "lines": [
+      "[ジャンプ:[宙宙]]",
+      "[常時] このキャラは相手の効果の対象に指定できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[宙宙]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラは相手の効果の対象に指定できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

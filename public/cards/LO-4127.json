@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分の手札を全て破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
   "textKr": "[誘発] このキャラが登場したとき、自分の手札を全て破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4127"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4127",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分の手札を全て破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分の手札を全て破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分の手札を全て破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、自分の手札を全て破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

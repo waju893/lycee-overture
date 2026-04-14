@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[ガッツ:[宙宙宙宙]]\n[宣言] [宙宙宙]:このキャラのバトル中に使用する。このバトル終了時、対戦キャラを破棄する。",
   "textKr": "[ガッツ:[宙宙宙宙]]\n[宣言] [宙宙宙]:このキャラのバトル中に使用する。このバトル終了時、対戦キャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1387"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1387",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ガッツ:[宙宙宙宙]]\n[宣言] [宙宙宙]:このキャラのバトル中に使用する。このバトル終了時、対戦キャラを破棄する。",
+    "normalizedText": "[ガッツ:[宙宙宙宙]]\n[宣言] [宙宙宙]:このキャラのバトル中に使用する。このバトル終了時、対戦キャラを破棄する。",
+    "lines": [
+      "[ガッツ:[宙宙宙宙]]",
+      "[宣言] [宙宙宙]:このキャラのバトル中に使用する。このバトル終了時、対戦キャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ガッツ:[宙宙宙宙]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [宙宙宙]:このキャラのバトル中に使用する。このバトル終了時、対戦キャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

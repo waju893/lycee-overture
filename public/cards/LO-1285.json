@@ -22,7 +22,32 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1285"
+  "text": "{味方キャラ１体}にＡＰ＋３する。",
+  "textKr": "{味方キャラ１体}にＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1285",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方キャラ1体}にAP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}にＡＰ＋３する。",
+    "normalizedText": "{味方キャラ1体}にAP+3する。",
+    "lines": [
+      "{味方キャラ1体}にAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

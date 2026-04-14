@@ -25,5 +25,33 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「古河渚」１体または「古河早苗」１体または「岡崎汐」１体を手札に入れる。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「古河渚」１体または「古河早苗」１体または「岡崎汐」１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1224"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1224",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱の「古河渚」1体または「古河早苗」1体または「岡崎汐」1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱の「古河渚」１体または「古河早苗」１体または「岡崎汐」１体を手札に入れる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱の「古河渚」1体または「古河早苗」1体または「岡崎汐」1体を手札に入れる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の「古河渚」1体または「古河早苗」1体または「岡崎汐」1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -26,5 +26,54 @@
   "typeTagsRaw": "",
   "text": "[リーダー][プリンシパル][ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「ひなの笑顔」１枚を探し無償で配置できる。１枚ドローする。\n[宣言] [0]:自分の「復讐」置き場の枚数が１枚以上の場合、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋４する。",
   "textKr": "[リーダー][プリンシパル][ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「ひなの笑顔」１枚を探し無償で配置できる。１枚ドローする。\n[宣言] [0]:自分の「復讐」置き場の枚数が１枚以上の場合、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6616"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6616",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「ひなの笑顔」1枚を探し無償で配置できる。1枚ドローする。[宣言] [0]:自分の「復讐」置き場の枚数が1枚以上の場合、このキャラにAP+2・DP+2・DMG+4する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "ひなの笑顔",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リーダー][プリンシパル][ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「ひなの笑顔」１枚を探し無償で配置できる。１枚ドローする。\n[宣言] [0]:自分の「復讐」置き場の枚数が１枚以上の場合、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋４する。",
+    "normalizedText": "[リーダー][プリンシパル][ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「ひなの笑顔」1枚を探し無償で配置できる。1枚ドローする。[宣言] [0]:自分の「復讐」置き場の枚数が1枚以上の場合、このキャラにAP+2・DP+2・DMG+4する。",
+    "lines": [
+      "[リーダー][プリンシパル][ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱またはデッキから「ひなの笑顔」1枚を探し無償で配置できる。1枚ドローする。[宣言] [0]:自分の「復讐」置き場の枚数が1枚以上の場合、このキャラにAP+2・DP+2・DMG+4する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー][プリンシパル][ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

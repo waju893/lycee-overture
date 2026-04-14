@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-3267",
+  "title": "はんなり大和撫子",
+  "subName": "花之宮 瑞穂",
+  "name": "はんなり大和撫子 花之宮 瑞穂",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow",
     "flower"
   ],
-  "attributesList": [
-    "snow",
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star"
@@ -16,5 +18,46 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:『月に寄りそう乙女の作法』",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:『月に寄りそう乙女の作法』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3267",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:『月に寄りそう乙女の作法』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:『月に寄りそう乙女の作法』",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:『月に寄りそう乙女の作法』",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:『月に寄りそう乙女の作法』"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

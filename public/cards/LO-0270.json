@@ -26,5 +26,37 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[エンゲージ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0270"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0270",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ1体にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[エンゲージ]\n[誘発] このキャラが登場したとき、味方キャラ1体にAP+2・DP+2する。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] このキャラが登場したとき、味方キャラ1体にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

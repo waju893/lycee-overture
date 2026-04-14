@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。",
   "textKr": "[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3088"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3088",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [月]:{相手キャラ１体}のＤＰを０にする。",
+    "normalizedText": "[手札宣言] [月]:{相手キャラ1体}のDPを0にする。",
+    "lines": [
+      "[手札宣言] [月]:{相手キャラ1体}のDPを0にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [月]:{相手キャラ1体}のDPを0にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

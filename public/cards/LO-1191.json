@@ -27,5 +27,39 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を手札に入れる。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1191"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1191",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を手札に入れる。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を手札に入れる。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

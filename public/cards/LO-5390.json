@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラがアイテムを持つ場合、このキャラはＡＰ＋２・ＤＰ＋２を得る。",
   "textKr": "[常時] このキャラがアイテムを持つ場合、このキャラはＡＰ＋２・ＤＰ＋２を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5390"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5390",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラがアイテムを持つ場合、このキャラはAP+2・DP+2を得る。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラがアイテムを持つ場合、このキャラはＡＰ＋２・ＤＰ＋２を得る。",
+    "normalizedText": "[常時] このキャラがアイテムを持つ場合、このキャラはAP+2・DP+2を得る。",
+    "lines": [
+      "[常時] このキャラがアイテムを持つ場合、このキャラはAP+2・DP+2を得る。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

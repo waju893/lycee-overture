@@ -26,5 +26,46 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ロキ・ノ・クロック」１枚を探し味方フィールドに配置できる。この能力は失われる。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ロキ・ノ・クロック」１枚を探し味方フィールドに配置できる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2679"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2679",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ロキ・ノ・クロック」1枚を探し味方フィールドに配置できる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "ロキ・ノ・クロック"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ロキ・ノ・クロック」１枚を探し味方フィールドに配置できる。この能力は失われる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ロキ・ノ・クロック」1枚を探し味方フィールドに配置できる。この能力は失われる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:自ターン中に使用する。自分のゴミ箱または自分のデッキから「ロキ・ノ・クロック」1枚を探し味方フィールドに配置できる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

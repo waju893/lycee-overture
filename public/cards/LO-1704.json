@@ -21,7 +21,22 @@
   "costRaw": "宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1704"
+  "text": "{このターン中、相手の手札宣言能力で登場した相手キャラ１体}を破棄する。",
+  "textKr": "{このターン中、相手の手札宣言能力で登場した相手キャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1704",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{このターン中、相手の手札宣言能力で登場した相手キャラ１体}を破棄する。",
+    "normalizedText": "{このターン中、相手の手札宣言能力で登場した相手キャラ1体}を破棄する。",
+    "lines": [
+      "{このターン中、相手の手札宣言能力で登場した相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{このターン中、相手の手札宣言能力で登場した相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

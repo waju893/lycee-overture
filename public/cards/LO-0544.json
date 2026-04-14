@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[サイドステップ:[0]]\n[宣言] [0]:{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。このキャラにＤＭＧ＋１する。",
   "textKr": "[サイドステップ:[0]]\n[宣言] [0]:{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0544"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0544",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[宣言] [0]:{未行動の味方ＡＦキャラ１体}にＤＭＧ－１する。このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[サイドステップ:[0]]\n[宣言] [0]:{未行動の味方AFキャラ1体}にDMG-1する。このキャラにDMG+1する。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[宣言] [0]:{未行動の味方AFキャラ1体}にDMG-1する。このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{未行動の味方AFキャラ1体}にDMG-1する。このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

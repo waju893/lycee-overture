@@ -23,7 +23,22 @@
   "costRaw": "雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0694"
+  "text": "{ＤＰが０以下のキャラ１体}を破棄する。",
+  "textKr": "{ＤＰが０以下のキャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0694",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{ＤＰが０以下のキャラ１体}を破棄する。",
+    "normalizedText": "{DPが0以下のキャラ1体}を破棄する。",
+    "lines": [
+      "{DPが0以下のキャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{DPが0以下のキャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

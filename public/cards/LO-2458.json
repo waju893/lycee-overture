@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
   "textKr": "[サポーター:[花花]]\n[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2458"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2458",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを1枚回復する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを1枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手の能力で自分のデッキを破棄したとき、自分のデッキを1枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

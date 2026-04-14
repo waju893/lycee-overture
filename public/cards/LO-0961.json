@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分のデッキを破棄したとき、このキャラにＤＭＧ＋１する。",
   "textKr": "[誘発] 自分のデッキを破棄したとき、このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0961"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0961",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のデッキを破棄したとき、このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[誘発] 自分のデッキを破棄したとき、このキャラにDMG+1する。",
+    "lines": [
+      "[誘発] 自分のデッキを破棄したとき、このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分のデッキを破棄したとき、このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

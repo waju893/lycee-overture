@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [無]:{元のＤＰが１以上の味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
   "textKr": "[宣言] [無]:{元のＤＰが１以上の味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3516"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3516",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:{元のDPが1以上の味方キャラ1体}にAP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [無]:{元のＤＰが１以上の味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
+    "normalizedText": "[宣言] [無]:{元のDPが1以上の味方キャラ1体}にAP+3する。この能力は失われる。",
+    "lines": [
+      "[宣言] [無]:{元のDPが1以上の味方キャラ1体}にAP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

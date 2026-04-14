@@ -24,5 +24,35 @@
   "typeTagsRaw": "プラウダ",
   "text": "[アシスト]\n[宣言] [このキャラを破棄する]:１枚ドローする。",
   "textKr": "[アシスト]\n[宣言] [このキャラを破棄する]:１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1021"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1021",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [このキャラを破棄する]:1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [このキャラを破棄する]:１枚ドローする。",
+    "normalizedText": "[アシスト]\n[宣言] [このキャラを破棄する]:1枚ドローする。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [このキャラを破棄する]:1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

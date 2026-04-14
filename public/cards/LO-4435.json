@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラを除外する。このターン終了時、自分のゴミ箱の「シュバルト」１体を登場できる。",
   "textKr": "[宣言] [0]:このキャラを除外する。このターン終了時、自分のゴミ箱の「シュバルト」１体を登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4435"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4435",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラを除外する。このターン終了時、自分のゴミ箱の「シュバルト」１体を登場できる。",
+    "normalizedText": "[宣言] [0]:このキャラを除外する。このターン終了時、自分のゴミ箱の「シュバルト」1体を登場できる。",
+    "lines": [
+      "[宣言] [0]:このキャラを除外する。このターン終了時、自分のゴミ箱の「シュバルト」1体を登場できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:このキャラを除外する。このターン終了時、自分のゴミ箱の「シュバルト」1体を登場できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

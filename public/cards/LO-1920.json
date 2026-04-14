@@ -26,5 +26,32 @@
   "typeTagsRaw": "",
   "text": "[宣言] [T]:自分のゴミ箱の[雪]キャラ１体を手札に入れる。この能力は失われる。",
   "textKr": "[宣言] [T]:自分のゴミ箱の[雪]キャラ１体を手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1920"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1920",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:自分のゴミ箱の[雪]キャラ1体を手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:自分のゴミ箱の[雪]キャラ１体を手札に入れる。この能力は失われる。",
+    "normalizedText": "[宣言] [T]:自分のゴミ箱の[雪]キャラ1体を手札に入れる。この能力は失われる。",
+    "lines": [
+      "[宣言] [T]:自分のゴミ箱の[雪]キャラ1体を手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラを防御キャラに指定したとき、このキャラにＤＰ＋１する。",
   "textKr": "[誘発] このキャラを防御キャラに指定したとき、このキャラにＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4265"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4265",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラを防御キャラに指定したとき、このキャラにDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラを防御キャラに指定したとき、このキャラにＤＰ＋１する。",
+    "normalizedText": "[誘発] このキャラを防御キャラに指定したとき、このキャラにDP+1する。",
+    "lines": [
+      "[誘発] このキャラを防御キャラに指定したとき、このキャラにDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

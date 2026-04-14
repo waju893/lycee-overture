@@ -23,7 +23,32 @@
   "costRaw": "宙宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4102"
+  "text": "相手の攻撃宣言に対応して使用する。相手はこの宣言に対応して宣言できない。{コストが７点以上の味方ＡＦ[宙]キャラ１体}を未行動にし、{味方フィールド}に移動する。そのキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "相手の攻撃宣言に対応して使用する。相手はこの宣言に対応して宣言できない。{コストが７点以上の味方ＡＦ[宙]キャラ１体}を未行動にし、{味方フィールド}に移動する。そのキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4102",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "onAttackDeclare",
+      "originalLine": "相手の攻撃宣言に対応して使用する。相手はこの宣言に対応して宣言できない。{コストが7点以上の味方AF[宙]キャラ1体}を未行動にし、{味方フィールド}に移動する。そのキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "相手の攻撃宣言に対応して使用する。相手はこの宣言に対応して宣言できない。{コストが７点以上の味方ＡＦ[宙]キャラ１体}を未行動にし、{味方フィールド}に移動する。そのキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "相手の攻撃宣言に対応して使用する。相手はこの宣言に対応して宣言できない。{コストが7点以上の味方AF[宙]キャラ1体}を未行動にし、{味方フィールド}に移動する。そのキャラにAP+2・DP+2する。",
+    "lines": [
+      "相手の攻撃宣言に対応して使用する。相手はこの宣言に対応して宣言できない。{コストが7点以上の味方AF[宙]キャラ1体}を未行動にし、{味方フィールド}に移動する。そのキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

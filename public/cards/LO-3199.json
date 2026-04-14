@@ -19,7 +19,32 @@
   "costRaw": "",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3199"
+  "text": "{コストが３点以上の味方[日]キャラ１体}にＡＰ＋２する。",
+  "textKr": "{コストが３点以上の味方[日]キャラ１体}にＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3199",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが3点以上の味方[日]キャラ1体}にAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが３点以上の味方[日]キャラ１体}にＡＰ＋２する。",
+    "normalizedText": "{コストが3点以上の味方[日]キャラ1体}にAP+2する。",
+    "lines": [
+      "{コストが3点以上の味方[日]キャラ1体}にAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

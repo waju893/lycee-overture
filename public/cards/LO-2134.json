@@ -23,7 +23,22 @@
   "costRaw": "雪無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2134"
+  "text": "{相手キャラ１体}を行動済みにする。",
+  "textKr": "{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2134",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}を行動済みにする。",
+    "normalizedText": "{相手キャラ1体}を行動済みにする。",
+    "lines": [
+      "{相手キャラ1体}を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{相手キャラ1体}を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

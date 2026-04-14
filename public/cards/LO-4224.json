@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、[日]でない味方キャラが登場している場合、１枚ドローする。",
   "textKr": "[誘発] このキャラが登場したとき、[日]でない味方キャラが登場している場合、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4224"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4224",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、[日]でない味方キャラが登場している場合、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、[日]でない味方キャラが登場している場合、１枚ドローする。",
+    "normalizedText": "[誘発] このキャラが登場したとき、[日]でない味方キャラが登場している場合、1枚ドローする。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、[日]でない味方キャラが登場している場合、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

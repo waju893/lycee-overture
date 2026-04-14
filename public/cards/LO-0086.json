@@ -25,7 +25,22 @@
   "costRaw": "雪雪雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0086"
+  "text": "相手キャラ１体を破棄する。",
+  "textKr": "相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0086",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手キャラ１体を破棄する。",
+    "normalizedText": "相手キャラ1体を破棄する。",
+    "lines": [
+      "相手キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

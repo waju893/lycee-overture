@@ -24,5 +24,20 @@
   "typeTagsRaw": "継続",
   "text": "[誘発] このキャラを自分の効果で破棄したとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
   "textKr": "[誘発] このキャラを自分の効果で破棄したとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1050"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1050",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラを自分の効果で破棄したとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+    "normalizedText": "[誘発] このキャラを自分の効果で破棄したとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+    "lines": [
+      "[誘発] このキャラを自分の効果で破棄したとき、ゴミ箱のこのキャラを自分のデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラを自分の効果で破棄したとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

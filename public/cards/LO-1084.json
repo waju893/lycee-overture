@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1084",
+  "title": "西住流戦車道の後継者",
+  "subName": "西住 まほ",
+  "name": "西住流戦車道の後継者 西住 まほ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,5 +21,27 @@
   "ap": 6,
   "dp": 6,
   "sp": 0,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "黒森峰",
+  "text": "[誘発] ターン開始時、このキャラを未行動にする。このキャラを味方フィールドに移動できる。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "[誘発] ターン開始時、このキャラを未行動にする。このキャラを味方フィールドに移動できる。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1084",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] ターン開始時、このキャラを未行動にする。このキャラを味方フィールドに移動できる。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "[誘発] ターン開始時、このキャラを未行動にする。このキャラを味方フィールドに移動できる。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "[誘発] ターン開始時、このキャラを未行動にする。このキャラを味方フィールドに移動できる。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] ターン開始時、このキャラを未行動にする。このキャラを味方フィールドに移動できる。構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

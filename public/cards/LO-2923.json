@@ -1,15 +1,54 @@
 {
+  "cardNo": "LO-2923",
+  "title": "背中流し",
+  "subName": "",
+  "name": "背中流し",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{コストが３点以上の味方キャラ１体}にＡＰ＋４・ＤＰ＋４する。そのキャラは[ボーナス:[相手のデッキを２枚破棄する。]]を得る。\n構築制限:『ましろ色シンフォニー』",
+  "textKr": "{コストが３点以上の味方キャラ１体}にＡＰ＋４・ＤＰ＋４する。そのキャラは[ボーナス:[相手のデッキを２枚破棄する。]]を得る。\n構築制限:『ましろ色シンフォニー』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2923",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが3点以上の味方キャラ1体}にAP+4・DP+4する。そのキャラは[ボーナス:[相手のデッキを2枚破棄する。]]を得る。構築制限:『ましろ色シンフォニー』",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが３点以上の味方キャラ１体}にＡＰ＋４・ＤＰ＋４する。そのキャラは[ボーナス:[相手のデッキを２枚破棄する。]]を得る。\n構築制限:『ましろ色シンフォニー』",
+    "normalizedText": "{コストが3点以上の味方キャラ1体}にAP+4・DP+4する。そのキャラは[ボーナス:[相手のデッキを2枚破棄する。]]を得る。構築制限:『ましろ色シンフォニー』",
+    "lines": [
+      "{コストが3点以上の味方キャラ1体}にAP+4・DP+4する。そのキャラは[ボーナス:[相手のデッキを2枚破棄する。]]を得る。構築制限:『ましろ色シンフォニー』"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

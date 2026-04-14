@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0785",
+  "title": "桜花舞踊",
+  "subName": "コノハナサクヤ",
+  "name": "桜花舞踊 コノハナサクヤ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,36 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラにサポートをしたとき、１枚ドローできる。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[誘発] このキャラにサポートをしたとき、１枚ドローできる。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0785",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラにサポートをしたとき、1枚ドローできる。構築制限:神姫PROJECT([KHP])",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラにサポートをしたとき、１枚ドローできる。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[誘発] このキャラにサポートをしたとき、1枚ドローできる。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[誘発] このキャラにサポートをしたとき、1枚ドローできる。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

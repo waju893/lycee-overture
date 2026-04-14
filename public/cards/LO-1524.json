@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
   "textKr": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1524"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1524",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
+    "normalizedText": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
+    "lines": [
+      "[誘発] 相手ターン開始時、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

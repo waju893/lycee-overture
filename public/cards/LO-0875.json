@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ１体}のＤＰを[そのキャラのＳＰ]にする。",
   "textKr": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ１体}のＤＰを[そのキャラのＳＰ]にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0875"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0875",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ１体}のＤＰを[そのキャラのＳＰ]にする。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ1体}のDPを[そのキャラのSP]にする。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [花]:{味方キャラ1体}のDPを[そのキャラのSP]にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [花]:{味方キャラ1体}のDPを[そのキャラのSP]にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

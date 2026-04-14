@@ -1,17 +1,82 @@
 {
+  "cardNo": "LO-4015",
+  "title": "VILE/VAN",
+  "subName": "ミストレス",
+  "name": "VILE/VAN ミストレス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ１体を探し公開して手札に入れる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[AL]",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ１体を探し公開して手札に入れる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[AL]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4015",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ1体を探し公開して手札に入れる。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にAP-1またはDP-1する。構築制限:[AL]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "opponent",
+                  "zones": [
+                    "deck",
+                    "hand"
+                  ],
+                  "match": {},
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ１体を探し公開して手札に入れる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[AL]",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ1体を探し公開して手札に入れる。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にAP-1またはDP-1する。構築制限:[AL]",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のデッキから[月]キャラ1体を探し公開して手札に入れる。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にAP-1またはDP-1する。構築制限:[AL]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

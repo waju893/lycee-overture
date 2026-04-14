@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1058",
+  "title": "アヒルさんチームのキャプテン",
+  "subName": "磯辺 典子",
+  "name": "アヒルさんチームのキャプテン 磯辺 典子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,27 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[宣言] [0]:味方[花]＜大洗女子＞キャラ全てにＤＭＧ＋１する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "[宣言] [0]:味方[花]＜大洗女子＞キャラ全てにＤＭＧ＋１する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1058",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:味方[花]＜大洗女子＞キャラ全てにＤＭＧ＋１する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "[宣言] [0]:味方[花]<大洗女子>キャラ全てにDMG+1する。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "[宣言] [0]:味方[花]<大洗女子>キャラ全てにDMG+1する。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:味方[花]<大洗女子>キャラ全てにDMG+1する。構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

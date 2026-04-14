@@ -24,5 +24,20 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[ステップ:[0]]",
   "textKr": "[ステップ:[0]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0388"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0388",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]",
+    "normalizedText": "[ステップ:[0]]",
+    "lines": [
+      "[ステップ:[0]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

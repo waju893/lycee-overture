@@ -23,7 +23,53 @@
   "costRaw": "雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5426"
+  "text": "対応・バトル中を除く自ターン中に使用する。{相手キャラ１体}を破棄する。未行動の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+  "textKr": "対応・バトル中を除く自ターン中に使用する。{相手キャラ１体}を破棄する。未行動の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5426",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "対応・バトル中を除く自ターン中に使用する。{相手キャラ1体}を破棄する。未行動の味方キャラ1体にAP+2またはDP+2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "対応・バトル中を除く自ターン中に使用する。{相手キャラ１体}を破棄する。未行動の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+    "normalizedText": "対応・バトル中を除く自ターン中に使用する。{相手キャラ1体}を破棄する。未行動の味方キャラ1体にAP+2またはDP+2する。",
+    "lines": [
+      "対応・バトル中を除く自ターン中に使用する。{相手キャラ1体}を破棄する。未行動の味方キャラ1体にAP+2またはDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

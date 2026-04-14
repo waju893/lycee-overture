@@ -25,5 +25,25 @@
   "typeTagsRaw": "-",
   "text": "[オーダーステップ:[D1]]\n[宣言] [T雪雪雪]:{ＤＰが２以下の相手キャラ１体}を破棄する。この能力は失われる。",
   "textKr": "[オーダーステップ:[D1]]\n[宣言] [T雪雪雪]:{ＤＰが２以下の相手キャラ１体}を破棄する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0606"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0606",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[D1]]\n[宣言] [T雪雪雪]:{ＤＰが２以下の相手キャラ１体}を破棄する。この能力は失われる。",
+    "normalizedText": "[オーダーステップ:[D1]]\n[宣言] [T雪雪雪]:{DPが2以下の相手キャラ1体}を破棄する。この能力は失われる。",
+    "lines": [
+      "[オーダーステップ:[D1]]",
+      "[宣言] [T雪雪雪]:{DPが2以下の相手キャラ1体}を破棄する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[D1]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T雪雪雪]:{DPが2以下の相手キャラ1体}を破棄する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

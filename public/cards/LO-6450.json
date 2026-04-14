@@ -25,5 +25,47 @@
   "typeTagsRaw": "",
   "text": "[宣言] [月]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「正体不明の連続殺人犯 ディザスター」１体を探し無償で登場する。この能力は失われる。",
   "textKr": "[宣言] [月]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「正体不明の連続殺人犯 ディザスター」１体を探し無償で登場する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6450"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6450",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「正体不明の連続殺人犯 ディザスター」1体を探し無償で登場する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "正体不明の連続殺人犯 ディザスター",
+            "kind": "event"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "event",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [月]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「正体不明の連続殺人犯 ディザスター」１体を探し無償で登場する。この能力は失われる。",
+    "normalizedText": "[宣言] [月]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「正体不明の連続殺人犯 ディザスター」1体を探し無償で登場する。この能力は失われる。",
+    "lines": [
+      "[宣言] [月]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「正体不明の連続殺人犯 ディザスター」1体を探し無償で登場する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

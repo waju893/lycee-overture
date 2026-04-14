@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:味方「木下きらら」が登場している場合、このキャラは[アグレッシブ]を得る。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:味方「木下きらら」が登場している場合、このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3352"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3352",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:味方「木下きらら」が登場している場合、このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:味方「木下きらら」が登場している場合、このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:味方「木下きらら」が登場している場合、このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:味方「木下きらら」が登場している場合、このキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

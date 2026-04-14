@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。味方「波羽若奈」が登場している場合、自分にシールド＋２できる。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。味方「波羽若奈」が登場している場合、自分にシールド＋２できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6504"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6504",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] このキャラが手札から登場したとき、2枚ドローする。味方「波羽若奈」が登場している場合、自分にシールド+2できる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。味方「波羽若奈」が登場している場合、自分にシールド＋２できる。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、2枚ドローする。味方「波羽若奈」が登場している場合、自分にシールド+2できる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが手札から登場したとき、2枚ドローする。味方「波羽若奈」が登場している場合、自分にシールド+2できる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

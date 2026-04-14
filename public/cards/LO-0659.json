@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0659",
+  "title": "くのいち",
+  "subName": "常陸 茉子",
+  "name": "くのいち 常陸 茉子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,5 +19,37 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] 味方キャラが移動したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。\n構築制限:ゆずソフト",
+  "textKr": "[誘発] 味方キャラが移動したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。\n構築制限:ゆずソフト",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0659",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方キャラが移動したとき、そのキャラにAP+1・DP+1する。構築制限:ゆずソフト",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラが移動したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。\n構築制限:ゆずソフト",
+    "normalizedText": "[誘発] 味方キャラが移動したとき、そのキャラにAP+1・DP+1する。構築制限:ゆずソフト",
+    "lines": [
+      "[誘発] 味方キャラが移動したとき、そのキャラにAP+1・DP+1する。構築制限:ゆずソフト"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -25,5 +25,29 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[２枚ドローする。]]",
   "textKr": "[エンゲージ:[２枚ドローする。]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0217"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0217",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[2枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[２枚ドローする。]]",
+    "normalizedText": "[エンゲージ:[2枚ドローする。]]",
+    "lines": [
+      "[エンゲージ:[2枚ドローする。]]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

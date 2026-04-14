@@ -25,5 +25,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [D2]:このキャラの防御中に使用する。このキャラを{このキャラに隣接した味方フィールド}に移動する。",
   "textKr": "[宣言] [D2]:このキャラの防御中に使用する。このキャラを{このキャラに隣接した味方フィールド}に移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1451"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1451",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [D2]:このキャラの防御中に使用する。このキャラを{このキャラに隣接した味方フィールド}に移動する。",
+    "normalizedText": "[宣言] [D2]:このキャラの防御中に使用する。このキャラを{このキャラに隣接した味方フィールド}に移動する。",
+    "lines": [
+      "[宣言] [D2]:このキャラの防御中に使用する。このキャラを{このキャラに隣接した味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [D2]:このキャラの防御中に使用する。このキャラを{このキャラに隣接した味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

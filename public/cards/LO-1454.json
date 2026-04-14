@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体を破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体を破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1454"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1454",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体を破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ1体を破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、味方キャラ1体を破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体を破棄できる。破棄したとき、このキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

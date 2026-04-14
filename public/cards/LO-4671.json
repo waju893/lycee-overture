@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン中、[アグレッシブ]を持つ味方キャラがダウンしたとき、自分にシールド＋１する。",
   "textKr": "[誘発] 自ターン中、[アグレッシブ]を持つ味方キャラがダウンしたとき、自分にシールド＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4671"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4671",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、[アグレッシブ]を持つ味方キャラがダウンしたとき、自分にシールド＋１する。",
+    "normalizedText": "[誘発] 自ターン中、[アグレッシブ]を持つ味方キャラがダウンしたとき、自分にシールド+1する。",
+    "lines": [
+      "[誘発] 自ターン中、[アグレッシブ]を持つ味方キャラがダウンしたとき、自分にシールド+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、[アグレッシブ]を持つ味方キャラがダウンしたとき、自分にシールド+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

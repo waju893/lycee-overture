@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6217",
+  "title": "メモリアルガール",
+  "subName": "枝那森 千里",
+  "name": "メモリアルガール 枝那森 千里",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,32 @@
   "ap": 2,
   "dp": 5,
   "sp": 2,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] [月月]を発生する。この能力は失われる。\n構築制限:[HOK]\n初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典",
+  "textKr": "[コスト] [月月]を発生する。この能力は失われる。\n構築制限:[HOK]\n初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6217",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] [月月]を発生する。この能力は失われる。\n構築制限:[HOK]\n初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典",
+    "normalizedText": "[コスト] [月月]を発生する。この能力は失われる。構築制限:[HOK]\n初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典",
+    "lines": [
+      "[コスト] [月月]を発生する。この能力は失われる。構築制限:[HOK]",
+      "初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] [月月]を発生する。この能力は失われる。構築制限:[HOK]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

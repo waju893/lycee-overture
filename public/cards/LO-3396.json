@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [無無無]:{自分のゴミ箱の[HOK]キャラ１体}を登場する。",
   "textKr": "[手札宣言] [無無無]:{自分のゴミ箱の[HOK]キャラ１体}を登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3396"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3396",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [無無無]:{自分のゴミ箱の[HOK]キャラ１体}を登場する。",
+    "normalizedText": "[手札宣言] [無無無]:{自分のゴミ箱の[HOK]キャラ1体}を登場する。",
+    "lines": [
+      "[手札宣言] [無無無]:{自分のゴミ箱の[HOK]キャラ1体}を登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [無無無]:{自分のゴミ箱の[HOK]キャラ1体}を登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

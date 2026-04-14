@@ -27,5 +27,37 @@
   "typeTagsRaw": "幻獣",
   "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＳＰ－２する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＳＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0800"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0800",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、相手キャラ1体にSP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＳＰ－２する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ1体にSP-2する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、相手キャラ1体にSP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

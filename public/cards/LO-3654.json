@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3654",
+  "title": "知の塔 星の巫女",
+  "subName": "常葉 亜紀",
+  "name": "知の塔 星の巫女 常葉 亜紀",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,73 @@
   "dp": 2,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」１体を探し公開して手札に入れる。この能力は失われる。\n構築制限:[WP]",
+  "textKr": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」１体を探し公開して手札に入れる。この能力は失われる。\n構築制限:[WP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3654",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ1体}にAP+1・DP+1・DMG+1する。[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」1体を探し公開して手札に入れる。この能力は失われる。構築制限:[WP]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck",
+                    "hand"
+                  ],
+                  "match": {
+                    "exactName": "星庭宙"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」１体を探し公開して手札に入れる。この能力は失われる。\n構築制限:[WP]",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ1体}にAP+1・DP+1・DMG+1する。[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」1体を探し公開して手札に入れる。この能力は失われる。構築制限:[WP]",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ1体}にAP+1・DP+1・DMG+1する。[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」1体を探し公開して手札に入れる。この能力は失われる。構築制限:[WP]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -31,5 +31,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン中、このキャラが手札から登場したとき、相手「あいりすミスティリア！」キャラ１体を破棄する。",
   "textKr": "[誘発] 自ターン中、このキャラが手札から登場したとき、相手「あいりすミスティリア！」キャラ１体を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2553"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2553",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、このキャラが手札から登場したとき、相手「あいりすミスティリア！」キャラ１体を破棄する。",
+    "normalizedText": "[誘発] 自ターン中、このキャラが手札から登場したとき、相手「あいりすミスティリア!」キャラ1体を破棄する。",
+    "lines": [
+      "[誘発] 自ターン中、このキャラが手札から登場したとき、相手「あいりすミスティリア!」キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、このキャラが手札から登場したとき、相手「あいりすミスティリア!」キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

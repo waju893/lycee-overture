@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3295",
+  "title": "やりたい放題の自由人",
+  "subName": "日野 英里子",
+  "name": "やりたい放題の自由人 日野 英里子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,43 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n構築制限:[NAV]かつ[月]",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n構築制限:[NAV]かつ[月]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3295",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-1・DP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。構築制限:[NAV]かつ[月]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n構築制限:[NAV]かつ[月]",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ1体にAP-1・DP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。構築制限:[NAV]かつ[月]",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、相手キャラ1体にAP-1・DP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。構築制限:[NAV]かつ[月]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

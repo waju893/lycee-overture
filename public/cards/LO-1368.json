@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1368",
+  "title": "星者の贈り物",
+  "subName": "アーチャー／アルテラ・ザ・サン〔タ〕",
+  "name": "星者の贈り物 アーチャー／アルテラ・ザ・サン〔タ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,27 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] このキャラが登場したとき、味方[花]キャラ全てにＤＭＧ＋１する。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[誘発] このキャラが登場したとき、味方[花]キャラ全てにＤＭＧ＋１する。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1368",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方[花]キャラ全てにＤＭＧ＋１する。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方[花]キャラ全てにDMG+1する。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方[花]キャラ全てにDMG+1する。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方[花]キャラ全てにDMG+1する。構築制限:Fate/Grand Order([TM])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

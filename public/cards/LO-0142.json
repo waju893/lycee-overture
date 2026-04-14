@@ -26,5 +26,42 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[２枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。",
   "textKr": "[エンゲージ:[２枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0142"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0142",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[2枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラをエンゲージ登場によって破棄したとき、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[２枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。",
+    "normalizedText": "[エンゲージ:[2枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、1枚ドローする。",
+    "lines": [
+      "[エンゲージ:[2枚ドローする。]]",
+      "[誘発] このキャラをエンゲージ登場によって破棄したとき、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

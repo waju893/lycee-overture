@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:{味方キャラ１体}にＳＰ＋１する。\n[宣言] [0]:{ＳＰが３以上の味方キャラ１体}にＤＭＧ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:{味方キャラ１体}にＳＰ＋１する。\n[宣言] [0]:{ＳＰが３以上の味方キャラ１体}にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2539"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2539",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方キャラ1体}にSP+1する。[宣言] [0]:{SPが3以上の味方キャラ1体}にDMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:{味方キャラ１体}にＳＰ＋１する。\n[宣言] [0]:{ＳＰが３以上の味方キャラ１体}にＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:{味方キャラ1体}にSP+1する。[宣言] [0]:{SPが3以上の味方キャラ1体}にDMG+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:{味方キャラ1体}にSP+1する。[宣言] [0]:{SPが3以上の味方キャラ1体}にDMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

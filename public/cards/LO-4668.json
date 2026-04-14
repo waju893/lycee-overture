@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、相手は相手の手札を公開する。",
   "textKr": "[誘発] このキャラが登場したとき、相手は相手の手札を公開する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4668"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4668",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手は相手の手札を公開する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手は相手の手札を公開する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手は相手の手札を公開する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手は相手の手札を公開する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

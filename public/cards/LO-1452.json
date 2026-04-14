@@ -24,5 +24,30 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [日]:このキャラのバトル中に使用する。このキャラにＡＰ＋２する。このバトル終了時、このキャラを破棄する。",
   "textKr": "[宣言] [日]:このキャラのバトル中に使用する。このキャラにＡＰ＋２する。このバトル終了時、このキャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1452"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1452",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:このキャラのバトル中に使用する。このキャラにAP+2する。このバトル終了時、このキャラを破棄する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [日]:このキャラのバトル中に使用する。このキャラにＡＰ＋２する。このバトル終了時、このキャラを破棄する。",
+    "normalizedText": "[宣言] [日]:このキャラのバトル中に使用する。このキャラにAP+2する。このバトル終了時、このキャラを破棄する。",
+    "lines": [
+      "[宣言] [日]:このキャラのバトル中に使用する。このキャラにAP+2する。このバトル終了時、このキャラを破棄する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

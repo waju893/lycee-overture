@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1494",
+  "title": "天使長",
+  "subName": "ミルノ",
+  "name": "天使長 ミルノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,27 @@
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] [雪]を発生する。このコストは[雪]キャラの能力・手札宣言能力にのみ支払える。\n[宣言] [雪]:このキャラにＤＭＧ＋３する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "[コスト] [雪]を発生する。このコストは[雪]キャラの能力・手札宣言能力にのみ支払える。\n[宣言] [雪]:このキャラにＤＭＧ＋３する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1494",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] [雪]を発生する。このコストは[雪]キャラの能力・手札宣言能力にのみ支払える。\n[宣言] [雪]:このキャラにＤＭＧ＋３する。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "[コスト] [雪]を発生する。このコストは[雪]キャラの能力・手札宣言能力にのみ支払える。[宣言] [雪]:このキャラにDMG+3する。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "[コスト] [雪]を発生する。このコストは[雪]キャラの能力・手札宣言能力にのみ支払える。[宣言] [雪]:このキャラにDMG+3する。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] [雪]を発生する。このコストは[雪]キャラの能力・手札宣言能力にのみ支払える。[宣言] [雪]:このキャラにDMG+3する。構築制限:千年戦争アイギス([AIG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

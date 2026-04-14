@@ -26,5 +26,25 @@
   "typeTagsRaw": "継続",
   "text": "[ステップ:[0]]\n[宣言] [月月]:{味方キャラ１体}を破棄する。このキャラをそのキャラの登場していたフィールドに移動する。",
   "textKr": "[ステップ:[0]]\n[宣言] [月月]:{味方キャラ１体}を破棄する。このキャラをそのキャラの登場していたフィールドに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0332"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0332",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [月月]:{味方キャラ１体}を破棄する。このキャラをそのキャラの登場していたフィールドに移動する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [月月]:{味方キャラ1体}を破棄する。このキャラをそのキャラの登場していたフィールドに移動する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [月月]:{味方キャラ1体}を破棄する。このキャラをそのキャラの登場していたフィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [月月]:{味方キャラ1体}を破棄する。このキャラをそのキャラの登場していたフィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

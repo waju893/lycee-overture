@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[宣言] [自分の手札を全て破棄する]:このキャラのバトル中に使用する。対戦キャラを破棄する。このキャラを破棄する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [自分の手札を全て破棄する]:このキャラのバトル中に使用する。対戦キャラを破棄する。このキャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1439"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1439",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [自分の手札を全て破棄する]:このキャラのバトル中に使用する。対戦キャラを破棄する。このキャラを破棄する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [自分の手札を全て破棄する]:このキャラのバトル中に使用する。対戦キャラを破棄する。このキャラを破棄する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [自分の手札を全て破棄する]:このキャラのバトル中に使用する。対戦キャラを破棄する。このキャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [自分の手札を全て破棄する]:このキャラのバトル中に使用する。対戦キャラを破棄する。このキャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

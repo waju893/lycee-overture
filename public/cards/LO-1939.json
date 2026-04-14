@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[誘発] 相手の効果で相手キャラが登場したとき、自分のデッキを２枚回復できる。\n[宣言] [0]:{ＤＭＧが３以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
   "textKr": "[サポーター:[花]]\n[誘発] 相手の効果で相手キャラが登場したとき、自分のデッキを２枚回復できる。\n[宣言] [0]:{ＤＭＧが３以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1939"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1939",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[誘発] 相手の効果で相手キャラが登場したとき、自分のデッキを２枚回復できる。\n[宣言] [0]:{ＤＭＧが３以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花]]\n[誘発] 相手の効果で相手キャラが登場したとき、自分のデッキを2枚回復できる。[宣言] [0]:{DMGが3以下の味方[花]キャラ1体}にDMG+1する。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[誘発] 相手の効果で相手キャラが登場したとき、自分のデッキを2枚回復できる。[宣言] [0]:{DMGが3以下の味方[花]キャラ1体}にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手の効果で相手キャラが登場したとき、自分のデッキを2枚回復できる。[宣言] [0]:{DMGが3以下の味方[花]キャラ1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

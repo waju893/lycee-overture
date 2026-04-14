@@ -1,13 +1,59 @@
 {
+  "cardNo": "LO-0966",
+  "title": "時空転移",
+  "subName": "",
+  "name": "時空転移",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自分のデッキからキャラ１体を探しそのキャラを{味方フィールド}に登場する。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "自分のデッキからキャラ１体を探しそのキャラを{味方フィールド}に登場する。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0966",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自分のデッキからキャラ1体を探しそのキャラを{味方フィールド}に登場する。構築制限:オーガスト([AUG])",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自分のデッキからキャラ１体を探しそのキャラを{味方フィールド}に登場する。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "自分のデッキからキャラ1体を探しそのキャラを{味方フィールド}に登場する。構築制限:オーガスト([AUG])",
+    "lines": [
+      "自分のデッキからキャラ1体を探しそのキャラを{味方フィールド}に登場する。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

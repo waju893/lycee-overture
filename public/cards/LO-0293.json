@@ -24,5 +24,37 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [T]:自ターン終了時まで、このキャラにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[アシスト]\n[宣言] [T]:自ターン終了時まで、このキャラにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0293"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0293",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "[宣言] [T]:自ターン終了時まで、このキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T]:自ターン終了時まで、このキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[アシスト]\n[宣言] [T]:自ターン終了時まで、このキャラにAP+2・DP+2する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T]:自ターン終了時まで、このキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

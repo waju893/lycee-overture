@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1070",
+  "title": "聖グロリアーナ女学院1年生",
+  "subName": "オレンジペコ",
+  "name": "聖グロリアーナ女学院1年生 オレンジペコ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,36 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "聖グロリアーナ",
+  "text": "[誘発] 手札から元のＡＰが１の味方キャラが登場したとき、１枚ドローできる。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "[誘発] 手札から元のＡＰが１の味方キャラが登場したとき、１枚ドローできる。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1070",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 手札から元のAPが1の味方キャラが登場したとき、1枚ドローできる。構築制限:ガールズ&パンツァー([GUP])",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 手札から元のＡＰが１の味方キャラが登場したとき、１枚ドローできる。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "[誘発] 手札から元のAPが1の味方キャラが登場したとき、1枚ドローできる。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "[誘発] 手札から元のAPが1の味方キャラが登場したとき、1枚ドローできる。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

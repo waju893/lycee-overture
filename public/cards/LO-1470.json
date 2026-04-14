@@ -24,5 +24,39 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方[月]キャラ１体を手札に入れる。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方[月]キャラ１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1470"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1470",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方[月]キャラ1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方[月]キャラ１体を手札に入れる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方[月]キャラ1体を手札に入れる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、味方[月]キャラ1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

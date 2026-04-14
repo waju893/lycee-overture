@@ -24,5 +24,32 @@
   "typeTagsRaw": "",
   "text": "[宣言] [D1]:このキャラを手札に入れる。自分の手札の「フィアッカ・マルグリット」１体を行動済みで無償で登場する。",
   "textKr": "[宣言] [D1]:このキャラを手札に入れる。自分の手札の「フィアッカ・マルグリット」１体を行動済みで無償で登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0892"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0892",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラを手札に入れる。自分の手札の「フィアッカ・マルグリット」1体を行動済みで無償で登場する。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:このキャラを手札に入れる。自分の手札の「フィアッカ・マルグリット」１体を行動済みで無償で登場する。",
+    "normalizedText": "[宣言] [D1]:このキャラを手札に入れる。自分の手札の「フィアッカ・マルグリット」1体を行動済みで無償で登場する。",
+    "lines": [
+      "[宣言] [D1]:このキャラを手札に入れる。自分の手札の「フィアッカ・マルグリット」1体を行動済みで無償で登場する。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -26,5 +26,31 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、サブネームに「NEXTON LIVE」を含む味方キャラ１体にＤＰ＋２・ＳＰ＋２する。",
   "textKr": "[誘発] このキャラが登場したとき、サブネームに「NEXTON LIVE」を含む味方キャラ１体にＤＰ＋２・ＳＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4263"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4263",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、サブネームに「NEXTON LIVE」を含む味方キャラ1体にDP+2・SP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、サブネームに「NEXTON LIVE」を含む味方キャラ１体にＤＰ＋２・ＳＰ＋２する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、サブネームに「NEXTON LIVE」を含む味方キャラ1体にDP+2・SP+2する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、サブネームに「NEXTON LIVE」を含む味方キャラ1体にDP+2・SP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

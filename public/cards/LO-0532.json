@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:自分のデッキを１枚破棄する。破棄したカードのＥＸが１以下の場合、このキャラにＤＭＧ＋２する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:自分のデッキを１枚破棄する。破棄したカードのＥＸが１以下の場合、このキャラにＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0532"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0532",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:自分のデッキを１枚破棄する。破棄したカードのＥＸが１以下の場合、このキャラにＤＭＧ＋２する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:自分のデッキを1枚破棄する。破棄したカードのEXが1以下の場合、このキャラにDMG+2する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:自分のデッキを1枚破棄する。破棄したカードのEXが1以下の場合、このキャラにDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:自分のデッキを1枚破棄する。破棄したカードのEXが1以下の場合、このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

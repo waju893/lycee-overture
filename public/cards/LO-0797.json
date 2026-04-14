@@ -24,5 +24,20 @@
   "typeTagsRaw": "幻獣",
   "text": "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、相手のデッキを１枚破棄する。",
   "textKr": "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0797"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0797",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、相手のデッキを１枚破棄する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

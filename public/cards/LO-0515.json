@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0515",
+  "title": "人類神話・雷電降臨",
+  "subName": "アーチャー／ニコラ・テスラ",
+  "name": "人類神話・雷電降臨 アーチャー／ニコラ・テスラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,42 @@
   "dp": 3,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4
+  "ex": 1,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n構築制限:Fate/Grand Order",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n構築制限:Fate/Grand Order",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0515",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:相手ターン中に使用する。味方キャラ全てにAP+1・DP+1する。構築制限:Fate/Grand Order",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n構築制限:Fate/Grand Order",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。味方キャラ全てにAP+1・DP+1する。構築制限:Fate/Grand Order",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:相手ターン中に使用する。味方キャラ全てにAP+1・DP+1する。構築制限:Fate/Grand Order"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6331",
+  "title": "覇道家の執事",
+  "subName": "ウィンフィールド",
+  "name": "覇道家の執事 ウィンフィールド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -20,11 +23,60 @@
   "dp": 9,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] 相手ターン開始時、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [宙宙]:{味方キャラ１体}にＡＰ＋５またはＤＰ＋５する。\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「覇道財閥の若き総帥 覇道瑠璃」１体を探し無償で登場する。\n構築制限:『斬魔大聖デモンベイン』",
+  "textKr": "[ジャンプ:[0]]\n[誘発] 相手ターン開始時、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [宙宙]:{味方キャラ１体}にＡＰ＋５またはＤＰ＋５する。\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「覇道財閥の若き総帥 覇道瑠璃」１体を探し無償で登場する。\n構築制限:『斬魔大聖デモンベイン』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6331",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] 相手ターン開始時、味方キャラ全てにAP+1・DP+1する。[宣言] [宙宙]:{味方キャラ1体}にAP+5またはDP+5する。[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「覇道財閥の若き総帥 覇道瑠璃」1体を探し無償で登場する。構築制限:『斬魔大聖デモンベイン』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "覇道財閥の若き総帥 覇道瑠璃",
+            "kind": "character"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "character",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] 相手ターン開始時、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [宙宙]:{味方キャラ１体}にＡＰ＋５またはＤＰ＋５する。\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「覇道財閥の若き総帥 覇道瑠璃」１体を探し無償で登場する。\n構築制限:『斬魔大聖デモンベイン』",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] 相手ターン開始時、味方キャラ全てにAP+1・DP+1する。[宣言] [宙宙]:{味方キャラ1体}にAP+5またはDP+5する。[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「覇道財閥の若き総帥 覇道瑠璃」1体を探し無償で登場する。構築制限:『斬魔大聖デモンベイン』",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] 相手ターン開始時、味方キャラ全てにAP+1・DP+1する。[宣言] [宙宙]:{味方キャラ1体}にAP+5またはDP+5する。[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「覇道財閥の若き総帥 覇道瑠璃」1体を探し無償で登場する。構築制限:『斬魔大聖デモンベイン』"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

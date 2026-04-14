@@ -19,7 +19,22 @@
   "costRaw": "",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1113"
+  "text": "バトル中に使用する。{味方[花]キャラ１体}は、バトル終了時までそのキャラに隣接していないキャラにもサポートを使用できる。",
+  "textKr": "バトル中に使用する。{味方[花]キャラ１体}は、バトル終了時までそのキャラに隣接していないキャラにもサポートを使用できる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1113",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用する。{味方[花]キャラ１体}は、バトル終了時までそのキャラに隣接していないキャラにもサポートを使用できる。",
+    "normalizedText": "バトル中に使用する。{味方[花]キャラ1体}は、バトル終了時までそのキャラに隣接していないキャラにもサポートを使用できる。",
+    "lines": [
+      "バトル中に使用する。{味方[花]キャラ1体}は、バトル終了時までそのキャラに隣接していないキャラにもサポートを使用できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用する。{味方[花]キャラ1体}は、バトル終了時までそのキャラに隣接していないキャラにもサポートを使用できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

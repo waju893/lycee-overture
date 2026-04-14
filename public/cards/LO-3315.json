@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[無無]]\n[宣言] [D1]:味方キャラの属性が５種類以上の場合、このキャラを未行動にする。この能力は失われる。",
   "textKr": "[サポーター:[無無]]\n[宣言] [D1]:味方キャラの属性が５種類以上の場合、このキャラを未行動にする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3315"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3315",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[無無]]\n[宣言] [D1]:味方キャラの属性が５種類以上の場合、このキャラを未行動にする。この能力は失われる。",
+    "normalizedText": "[サポーター:[無無]]\n[宣言] [D1]:味方キャラの属性が5種類以上の場合、このキャラを未行動にする。この能力は失われる。",
+    "lines": [
+      "[サポーター:[無無]]",
+      "[宣言] [D1]:味方キャラの属性が5種類以上の場合、このキャラを未行動にする。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D1]:味方キャラの属性が5種類以上の場合、このキャラを未行動にする。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

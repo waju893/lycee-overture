@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[コスト] 自分のデッキを１枚破棄する。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。",
   "textKr": "[コスト] 自分のデッキを１枚破棄する。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1157"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1157",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] 自分のデッキを１枚破棄する。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。",
+    "normalizedText": "[コスト] 自分のデッキを1枚破棄する。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。",
+    "lines": [
+      "[コスト] 自分のデッキを1枚破棄する。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] 自分のデッキを1枚破棄する。このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

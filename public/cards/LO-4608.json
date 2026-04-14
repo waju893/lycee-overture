@@ -25,5 +25,51 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:{持ち主が自分のアイテムを持つキャラ１体}にＡＰ＋２・ＤＰ＋２またはＡＰ－２・ＤＰ－２する。この能力は失われる。",
   "textKr": "[宣言] [0]:{持ち主が自分のアイテムを持つキャラ１体}にＡＰ＋２・ＤＰ＋２またはＡＰ－２・ＤＰ－２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4608"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4608",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{持ち主が自分のアイテムを持つキャラ1体}にAP+2・DP+2またはAP-2・DP-2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{持ち主が自分のアイテムを持つキャラ１体}にＡＰ＋２・ＤＰ＋２またはＡＰ－２・ＤＰ－２する。この能力は失われる。",
+    "normalizedText": "[宣言] [0]:{持ち主が自分のアイテムを持つキャラ1体}にAP+2・DP+2またはAP-2・DP-2する。この能力は失われる。",
+    "lines": [
+      "[宣言] [0]:{持ち主が自分のアイテムを持つキャラ1体}にAP+2・DP+2またはAP-2・DP-2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

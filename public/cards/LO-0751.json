@@ -23,5 +23,29 @@
   "typeTagsRaw": "神姫",
   "text": "[宣言] [D1]:このキャラのバトル中に使用する。相手は１枚ドローできる。対戦キャラのコストが４点以下の場合、このキャラにＡＰ＋３する。",
   "textKr": "[宣言] [D1]:このキャラのバトル中に使用する。相手は１枚ドローできる。対戦キャラのコストが４点以下の場合、このキャラにＡＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0751"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0751",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラのバトル中に使用する。相手は1枚ドローできる。対戦キャラのコストが4点以下の場合、このキャラにAP+3する。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:このキャラのバトル中に使用する。相手は１枚ドローできる。対戦キャラのコストが４点以下の場合、このキャラにＡＰ＋３する。",
+    "normalizedText": "[宣言] [D1]:このキャラのバトル中に使用する。相手は1枚ドローできる。対戦キャラのコストが4点以下の場合、このキャラにAP+3する。",
+    "lines": [
+      "[宣言] [D1]:このキャラのバトル中に使用する。相手は1枚ドローできる。対戦キャラのコストが4点以下の場合、このキャラにAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

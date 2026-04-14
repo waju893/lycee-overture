@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3176",
+  "title": "鳥瞰把握",
+  "subName": "リーダー",
+  "name": "鳥瞰把握 リーダー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,60 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「鳥瞰把握」１枚を探し味方フィールドに無償で配置する。\n[誘発] 味方「リーダー」または「ナル」または「清ヶ」または「薬丸」を相手の効果で破棄したとき、１枚ドローできる。\n構築制限:[TOA]",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「鳥瞰把握」１枚を探し味方フィールドに無償で配置する。\n[誘発] 味方「リーダー」または「ナル」または「清ヶ」または「薬丸」を相手の効果で破棄したとき、１枚ドローできる。\n構築制限:[TOA]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3176",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「鳥瞰把握」1枚を探し味方フィールドに無償で配置する。[誘発] 味方「リーダー」または「ナル」または「清ヶ」または「薬丸」を相手の効果で破棄したとき、1枚ドローできる。構築制限:[TOA]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "鳥瞰把握",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「鳥瞰把握」１枚を探し味方フィールドに無償で配置する。\n[誘発] 味方「リーダー」または「ナル」または「清ヶ」または「薬丸」を相手の効果で破棄したとき、１枚ドローできる。\n構築制限:[TOA]",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「鳥瞰把握」1枚を探し味方フィールドに無償で配置する。[誘発] 味方「リーダー」または「ナル」または「清ヶ」または「薬丸」を相手の効果で破棄したとき、1枚ドローできる。構築制限:[TOA]",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「鳥瞰把握」1枚を探し味方フィールドに無償で配置する。[誘発] 味方「リーダー」または「ナル」または「清ヶ」または「薬丸」を相手の効果で破棄したとき、1枚ドローできる。構築制限:[TOA]"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

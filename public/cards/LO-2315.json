@@ -1,17 +1,46 @@
 {
+  "cardNo": "LO-2315",
+  "title": "龍神像",
+  "subName": "",
+  "name": "龍神像",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon",
     "moon",
     "moon"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自ターン中に使用する。バトル中に使用できない。ＤＰが０以下の相手キャラ全てを行動済みにする。\n構築制限:[OSP]",
+  "textKr": "自ターン中に使用する。バトル中に使用できない。ＤＰが０以下の相手キャラ全てを行動済みにする。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2315",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。バトル中に使用できない。ＤＰが０以下の相手キャラ全てを行動済みにする。\n構築制限:[OSP]",
+    "normalizedText": "自ターン中に使用する。バトル中に使用できない。DPが0以下の相手キャラ全てを行動済みにする。構築制限:[OSP]",
+    "lines": [
+      "自ターン中に使用する。バトル中に使用できない。DPが0以下の相手キャラ全てを行動済みにする。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自ターン中に使用する。バトル中に使用できない。DPが0以下の相手キャラ全てを行動済みにする。構築制限:[OSP]",
+      "reason": "no parser rule matched"
+    }
   ]
 }

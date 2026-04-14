@@ -24,5 +24,30 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [0]:味方「アサシン／ステンノ」と味方「アーチャー／エウリュアレ」が登場している場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[宣言] [0]:味方「アサシン／ステンノ」と味方「アーチャー／エウリュアレ」が登場している場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1372"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1372",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方「アサシン/ステンノ」と味方「アーチャー/エウリュアレ」が登場している場合、このキャラにAP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:味方「アサシン／ステンノ」と味方「アーチャー／エウリュアレ」が登場している場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [0]:味方「アサシン/ステンノ」と味方「アーチャー/エウリュアレ」が登場している場合、このキャラにAP+1・DMG+1する。",
+    "lines": [
+      "[宣言] [0]:味方「アサシン/ステンノ」と味方「アーチャー/エウリュアレ」が登場している場合、このキャラにAP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

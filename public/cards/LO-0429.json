@@ -25,5 +25,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][ステップ:[0]]\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ－１する。",
   "textKr": "[アシスト][ステップ:[0]]\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0429"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0429",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][ステップ:[0]]\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ－１する。",
+    "normalizedText": "[アシスト][ステップ:[0]]\n[誘発] このキャラが移動したとき、このキャラにDMG-1する。",
+    "lines": [
+      "[アシスト][ステップ:[0]]",
+      "[誘発] このキャラが移動したとき、このキャラにDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが移動したとき、このキャラにDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3898",
+  "title": "仲良くなりたい巫女姫さま",
+  "subName": "高社 紗雪",
+  "name": "仲良くなりたい巫女姫さま 高社 紗雪",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,42 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    7,
-    12
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、元のＳＰが１以下の味方キャラが登場していない場合、１枚ドローする。\n[宣言] [0]:{味方ＤＦ[花]キャラ１体}にＳＰ＋２する。この能力は失われる。\n構築制限:[NEX]",
+  "textKr": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、元のＳＰが１以下の味方キャラが登場していない場合、１枚ドローする。\n[宣言] [0]:{味方ＤＦ[花]キャラ１体}にＳＰ＋２する。この能力は失われる。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3898",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、元のSPが1以下の味方キャラが登場していない場合、1枚ドローする。[宣言] [0]:{味方DF[花]キャラ1体}にSP+2する。この能力は失われる。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    7,
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、元のＳＰが１以下の味方キャラが登場していない場合、１枚ドローする。\n[宣言] [0]:{味方ＤＦ[花]キャラ１体}にＳＰ＋２する。この能力は失われる。\n構築制限:[NEX]",
+    "normalizedText": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、元のSPが1以下の味方キャラが登場していない場合、1枚ドローする。[宣言] [0]:{味方DF[花]キャラ1体}にSP+2する。この能力は失われる。構築制限:[NEX]",
+    "lines": [
+      "[エンゲージ][サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、元のSPが1以下の味方キャラが登場していない場合、1枚ドローする。[宣言] [0]:{味方DF[花]キャラ1体}にSP+2する。この能力は失われる。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -27,5 +27,54 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:{味方「シェリー＝ラインスタッド」または「長井永羽」１体}にＡＰ＋１またはＤＰ＋１する。",
   "textKr": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:{味方「シェリー＝ラインスタッド」または「長井永羽」１体}にＡＰ＋１またはＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3442"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3442",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。[宣言] [0]:{味方「シェリー=ラインスタッド」または「長井永羽」1体}にAP+1またはDP+1する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "クラリアス",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:{味方「シェリー＝ラインスタッド」または「長井永羽」１体}にＡＰ＋１またはＤＰ＋１する。",
+    "normalizedText": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。[宣言] [0]:{味方「シェリー=ラインスタッド」または「長井永羽」1体}にAP+1またはDP+1する。",
+    "lines": [
+      "[ジャンプ:[月月月]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。[宣言] [0]:{味方「シェリー=ラインスタッド」または「長井永羽」1体}にAP+1またはDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[月月月]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

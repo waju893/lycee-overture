@@ -23,5 +23,36 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。{味方キャラ１体}にＡＰ＋３する。",
   "textKr": "[アシスト]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。{味方キャラ１体}にＡＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2825"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2825",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラを自分の「卒業」置き場に置く。{味方キャラ1体}にAP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。{味方キャラ１体}にＡＰ＋３する。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。{味方キャラ1体}にAP+3する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:このキャラを自分の「卒業」置き場に置く。{味方キャラ1体}にAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -31,5 +31,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪]:自分の手札を１枚自分の「プレイ済み」置き場に置く。置いたとき、このキャラのＡＰとＤＰに＋[その置き場の枚数]する。",
   "textKr": "[宣言] [雪]:自分の手札を１枚自分の「プレイ済み」置き場に置く。置いたとき、このキャラのＡＰとＤＰに＋[その置き場の枚数]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5813"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5813",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪]:自分の手札を１枚自分の「プレイ済み」置き場に置く。置いたとき、このキャラのＡＰとＤＰに＋[その置き場の枚数]する。",
+    "normalizedText": "[宣言] [雪]:自分の手札を1枚自分の「プレイ済み」置き場に置く。置いたとき、このキャラのAPとDPに+[その置き場の枚数]する。",
+    "lines": [
+      "[宣言] [雪]:自分の手札を1枚自分の「プレイ済み」置き場に置く。置いたとき、このキャラのAPとDPに+[その置き場の枚数]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪]:自分の手札を1枚自分の「プレイ済み」置き場に置く。置いたとき、このキャラのAPとDPに+[その置き場の枚数]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

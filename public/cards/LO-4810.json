@@ -21,7 +21,32 @@
   "costRaw": "宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4810"
+  "text": "{コストが３点の味方[宙]キャラ１体}はＡＰ＋２・ＤＰ＋２・[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+  "textKr": "{コストが３点の味方[宙]キャラ１体}はＡＰ＋２・ＤＰ＋２・[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4810",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが3点の味方[宙]キャラ1体}はAP+2・DP+2・[ボーナス:[自分のデッキを1枚回復する。]]を得る。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが３点の味方[宙]キャラ１体}はＡＰ＋２・ＤＰ＋２・[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+    "normalizedText": "{コストが3点の味方[宙]キャラ1体}はAP+2・DP+2・[ボーナス:[自分のデッキを1枚回復する。]]を得る。",
+    "lines": [
+      "{コストが3点の味方[宙]キャラ1体}はAP+2・DP+2・[ボーナス:[自分のデッキを1枚回復する。]]を得る。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

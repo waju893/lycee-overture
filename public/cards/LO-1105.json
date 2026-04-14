@@ -25,5 +25,36 @@
   "typeTagsRaw": "知波単",
   "text": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、相手キャラ１体にＤＰ－１できる。",
   "textKr": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、相手キャラ１体にＤＰ－１できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1105"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1105",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方<知波単>キャラがダウンしたとき、相手キャラ1体にDP-1できる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、相手キャラ１体にＤＰ－１できる。",
+    "normalizedText": "[アグレッシブ]\n[誘発] 味方<知波単>キャラがダウンしたとき、相手キャラ1体にDP-1できる。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] 味方<知波単>キャラがダウンしたとき、相手キャラ1体にDP-1できる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

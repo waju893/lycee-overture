@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 効果以外でこのキャラが登場したとき、このキャラに隣接した相手キャラ１体を行動済みにできる。",
   "textKr": "[誘発] 効果以外でこのキャラが登場したとき、このキャラに隣接した相手キャラ１体を行動済みにできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4401"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4401",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 効果以外でこのキャラが登場したとき、このキャラに隣接した相手キャラ１体を行動済みにできる。",
+    "normalizedText": "[誘発] 効果以外でこのキャラが登場したとき、このキャラに隣接した相手キャラ1体を行動済みにできる。",
+    "lines": [
+      "[誘発] 効果以外でこのキャラが登場したとき、このキャラに隣接した相手キャラ1体を行動済みにできる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 効果以外でこのキャラが登場したとき、このキャラに隣接した相手キャラ1体を行動済みにできる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

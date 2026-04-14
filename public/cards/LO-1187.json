@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1187",
+  "title": "名誉図書委員",
+  "subName": "一ノ瀬 ことみ",
+  "name": "名誉図書委員 一ノ瀬 ことみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,27 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自ターン中、自分の[雪]イベントを使用したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－２する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[誘発] 自ターン中、自分の[雪]イベントを使用したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－２する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1187",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、自分の[雪]イベントを使用したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－２する。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[誘発] 自ターン中、自分の[雪]イベントを使用したとき、相手キャラ1体に相手ターン終了時までDMG-2する。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[誘発] 自ターン中、自分の[雪]イベントを使用したとき、相手キャラ1体に相手ターン終了時までDMG-2する。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、自分の[雪]イベントを使用したとき、相手キャラ1体に相手ターン終了時までDMG-2する。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

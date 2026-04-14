@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5722",
+  "title": "強き意志の文学少女",
+  "subName": "高島 ざくろ",
+  "name": "強き意志の文学少女 高島 ざくろ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,121 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。自分にシールド＋２できる。\n[誘発] このキャラが登場したときまたはターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「スパイラルマタイ」１枚を探し味方ＡＦキャラ１体に無償で装備する。この能力は失われる。\n構築制限:【[QM]】【[宙]】",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。自分にシールド＋２できる。\n[誘発] このキャラが登場したときまたはターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「スパイラルマタイ」１枚を探し味方ＡＦキャラ１体に無償で装備する。この能力は失われる。\n構築制限:【[QM]】【[宙]】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5722",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] このキャラが手札から登場したとき、2枚ドローする。自分にシールド+2できる。[誘発] このキャラが登場したときまたはターン開始時、コストが3点以上の味方キャラ1体にAP+2またはDP+2する。[宣言] [0]:バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「スパイラルマタイ」1枚を探し味方AFキャラ1体に無償で装備する。この能力は失われる。構築制限:【[QM]】【[宙]】",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "ap",
+                          "amount": 2
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "chooseOne",
+                          "prompt": "하나를 선택한다",
+                          "choices": [
+                            {
+                              "label": "A",
+                              "actions": [
+                                {
+                                  "type": "modifyStat",
+                                  "stat": "dp",
+                                  "amount": 2
+                                }
+                              ]
+                            },
+                            {
+                              "label": "B",
+                              "actions": [
+                                {
+                                  "type": "searchCard",
+                                  "owner": "self",
+                                  "zones": [
+                                    "deck"
+                                  ],
+                                  "match": {
+                                    "exactName": "スパイラルマタイ",
+                                    "kind": "item"
+                                  },
+                                  "min": 0,
+                                  "max": 1,
+                                  "storeAs": "lastSearchResult",
+                                  "shuffleAfterSearch": true
+                                },
+                                {
+                                  "type": "freeUse",
+                                  "sourceRef": "lastSearchResult",
+                                  "useKind": "item",
+                                  "ignoreCost": true
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、２枚ドローする。自分にシールド＋２できる。\n[誘発] このキャラが登場したときまたはターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「スパイラルマタイ」１枚を探し味方ＡＦキャラ１体に無償で装備する。この能力は失われる。\n構築制限:【[QM]】【[宙]】",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、2枚ドローする。自分にシールド+2できる。[誘発] このキャラが登場したときまたはターン開始時、コストが3点以上の味方キャラ1体にAP+2またはDP+2する。[宣言] [0]:バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「スパイラルマタイ」1枚を探し味方AFキャラ1体に無償で装備する。この能力は失われる。構築制限:【[QM]】【[宙]】",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが手札から登場したとき、2枚ドローする。自分にシールド+2できる。[誘発] このキャラが登場したときまたはターン開始時、コストが3点以上の味方キャラ1体にAP+2またはDP+2する。[宣言] [0]:バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「スパイラルマタイ」1枚を探し味方AFキャラ1体に無償で装備する。この能力は失われる。構築制限:【[QM]】【[宙]】"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

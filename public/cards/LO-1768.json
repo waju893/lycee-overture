@@ -26,5 +26,37 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1768"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1768",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てにAP+1・DP+1する。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、味方キャラ全てにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,35 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、１枚ドローする。この能力は失われる。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、１枚ドローする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5416"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5416",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:持ち主が自分の味方アイテムが1枚以上の場合、1枚ドローする。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:持ち主が自分の味方アイテムが１枚以上の場合、１枚ドローする。この能力は失われる。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:持ち主が自分の味方アイテムが1枚以上の場合、1枚ドローする。この能力は失われる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:持ち主が自分の味方アイテムが1枚以上の場合、1枚ドローする。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

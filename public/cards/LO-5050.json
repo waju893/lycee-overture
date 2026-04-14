@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 使用代償に[T]を含む味方キャラの能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）",
   "textKr": "[誘発] 使用代償に[T]を含む味方キャラの能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5050"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5050",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 使用代償に[T]を含む味方キャラの能力を使用したとき、このキャラにAP+1・DP+1する。(1ターンに3回まで処理可能)",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 使用代償に[T]を含む味方キャラの能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）",
+    "normalizedText": "[誘発] 使用代償に[T]を含む味方キャラの能力を使用したとき、このキャラにAP+1・DP+1する。(1ターンに3回まで処理可能)",
+    "lines": [
+      "[誘発] 使用代償に[T]を含む味方キャラの能力を使用したとき、このキャラにAP+1・DP+1する。(1ターンに3回まで処理可能)"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

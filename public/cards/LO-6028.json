@@ -25,5 +25,67 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分にシールド＋１できる。１枚ドローできる。ドローしない場合、自分のゴミ箱または自分のデッキから「正体を隠す琉球国王 月代一渡」１体を探し公開して手札に入れる。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分にシールド＋１できる。１枚ドローできる。ドローしない場合、自分のゴミ箱または自分のデッキから「正体を隠す琉球国王 月代一渡」１体を探し公開して手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6028"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6028",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分にシールド+1できる。1枚ドローできる。ドローしない場合、自分のゴミ箱または自分のデッキから「正体を隠す琉球国王 月代一渡」1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck",
+                    "hand"
+                  ],
+                  "match": {
+                    "exactName": "正体を隠す琉球国王 月代一渡"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分にシールド＋１できる。１枚ドローできる。ドローしない場合、自分のゴミ箱または自分のデッキから「正体を隠す琉球国王 月代一渡」１体を探し公開して手札に入れる。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分にシールド+1できる。1枚ドローできる。ドローしない場合、自分のゴミ箱または自分のデッキから「正体を隠す琉球国王 月代一渡」1体を探し公開して手札に入れる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、自分にシールド+1できる。1枚ドローできる。ドローしない場合、自分のゴミ箱または自分のデッキから「正体を隠す琉球国王 月代一渡」1体を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

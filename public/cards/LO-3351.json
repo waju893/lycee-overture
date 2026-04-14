@@ -26,5 +26,35 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:味方「リシア」が登場している場合、１枚ドローする。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:味方「リシア」が登場している場合、１枚ドローする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3351"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3351",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方「リシア」が登場している場合、1枚ドローする。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:味方「リシア」が登場している場合、１枚ドローする。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:味方「リシア」が登場している場合、1枚ドローする。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:味方「リシア」が登場している場合、1枚ドローする。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

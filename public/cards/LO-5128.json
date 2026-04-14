@@ -28,5 +28,25 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [宙宙宙]:このキャラのＡＰとＤＰに＋[味方『うたわれるもの ロストフラグ』キャラの数]する。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [宙宙宙]:このキャラのＡＰとＤＰに＋[味方『うたわれるもの ロストフラグ』キャラの数]する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5128"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5128",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [宙宙宙]:このキャラのＡＰとＤＰに＋[味方『うたわれるもの ロストフラグ』キャラの数]する。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [宙宙宙]:このキャラのAPとDPに+[味方『うたわれるもの ロストフラグ』キャラの数]する。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [宙宙宙]:このキャラのAPとDPに+[味方『うたわれるもの ロストフラグ』キャラの数]する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [宙宙宙]:このキャラのAPとDPに+[味方『うたわれるもの ロストフラグ』キャラの数]する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

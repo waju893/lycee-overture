@@ -27,5 +27,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [T]:味方[NEX]キャラのバトル中に使用する。対戦キャラのＤＭＧを０にする。この能力は失われる。",
   "textKr": "[宣言] [T]:味方[NEX]キャラのバトル中に使用する。対戦キャラのＤＭＧを０にする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3249"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3249",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:味方[NEX]キャラのバトル中に使用する。対戦キャラのＤＭＧを０にする。この能力は失われる。",
+    "normalizedText": "[宣言] [T]:味方[NEX]キャラのバトル中に使用する。対戦キャラのDMGを0にする。この能力は失われる。",
+    "lines": [
+      "[宣言] [T]:味方[NEX]キャラのバトル中に使用する。対戦キャラのDMGを0にする。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [T]:味方[NEX]キャラのバトル中に使用する。対戦キャラのDMGを0にする。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

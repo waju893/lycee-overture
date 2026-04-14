@@ -27,5 +27,57 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方『BALDR SKY』キャラ１体}にＡＰ＋１またはＤＰ＋１する。そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方『BALDR SKY』キャラ１体}にＡＰ＋１またはＤＰ＋１する。そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3488"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3488",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{コストが5点以上の味方『BALDR SKY』キャラ1体}にAP+1またはDP+1する。そのキャラは[ボーナス:[相手のデッキを1枚破棄する。]]を得る。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方『BALDR SKY』キャラ１体}にＡＰ＋１またはＤＰ＋１する。そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:{コストが5点以上の味方『BALDR SKY』キャラ1体}にAP+1またはDP+1する。そのキャラは[ボーナス:[相手のデッキを1枚破棄する。]]を得る。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:{コストが5点以上の味方『BALDR SKY』キャラ1体}にAP+1またはDP+1する。そのキャラは[ボーナス:[相手のデッキを1枚破棄する。]]を得る。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

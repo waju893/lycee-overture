@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [T]:自分のデッキの上のカード２枚を見る。",
   "textKr": "[宣言] [T]:自分のデッキの上のカード２枚を見る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5336"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5336",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:自分のデッキの上のカード２枚を見る。",
+    "normalizedText": "[宣言] [T]:自分のデッキの上のカード2枚を見る。",
+    "lines": [
+      "[宣言] [T]:自分のデッキの上のカード2枚を見る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [T]:自分のデッキの上のカード2枚を見る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

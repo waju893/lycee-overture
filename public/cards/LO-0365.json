@@ -24,5 +24,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [0]: {「干しいも」１枚}を破棄する。このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
   "textKr": "[アシスト]\n[宣言] [0]: {「干しいも」１枚}を破棄する。このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0365"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0365",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]: {「干しいも」1枚}を破棄する。このキャラにAP+3・DP+3・DMG+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]: {「干しいも」１枚}を破棄する。このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
+    "normalizedText": "[アシスト]\n[宣言] [0]: {「干しいも」1枚}を破棄する。このキャラにAP+3・DP+3・DMG+3する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]: {「干しいも」1枚}を破棄する。このキャラにAP+3・DP+3・DMG+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

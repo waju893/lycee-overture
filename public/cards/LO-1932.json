@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにＤＰ－１する。",
   "textKr": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1932"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1932",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにDP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにＤＰ－１する。",
+    "normalizedText": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにDP-1する。",
+    "lines": [
+      "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

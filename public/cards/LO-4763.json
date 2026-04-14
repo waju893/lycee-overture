@@ -23,5 +23,37 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方キャラ１体にＳＰ＋２する。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方キャラ１体にＳＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4763"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4763",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ1体にSP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方キャラ１体にＳＰ＋２する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方キャラ1体にSP+2する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、味方キャラ1体にSP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

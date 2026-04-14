@@ -25,5 +25,36 @@
   "typeTagsRaw": "聖グロリアーナ",
   "text": "[アシスト]\n[宣言] [無]:味方＜聖グロリアーナ＞キャラが４体以上の場合、{キャラ１体}にＡＰ－１・ＤＰ－１する。",
   "textKr": "[アシスト]\n[宣言] [無]:味方＜聖グロリアーナ＞キャラが４体以上の場合、{キャラ１体}にＡＰ－１・ＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0431"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0431",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:味方<聖グロリアーナ>キャラが4体以上の場合、{キャラ1体}にAP-1・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [無]:味方＜聖グロリアーナ＞キャラが４体以上の場合、{キャラ１体}にＡＰ－１・ＤＰ－１する。",
+    "normalizedText": "[アシスト]\n[宣言] [無]:味方<聖グロリアーナ>キャラが4体以上の場合、{キャラ1体}にAP-1・DP-1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [無]:味方<聖グロリアーナ>キャラが4体以上の場合、{キャラ1体}にAP-1・DP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

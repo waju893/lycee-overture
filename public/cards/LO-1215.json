@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1215",
+  "title": "想いを歌に乗せる少女",
+  "subName": "シオナ",
+  "name": "想いを歌に乗せる少女 シオナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,27 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 味方キャラがダウンしたバトル終了時、味方[花]キャラ１体を未行動にし、そのキャラにＤＭＧ－２する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[誘発] 味方キャラがダウンしたバトル終了時、味方[花]キャラ１体を未行動にし、そのキャラにＤＭＧ－２する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1215",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラがダウンしたバトル終了時、味方[花]キャラ１体を未行動にし、そのキャラにＤＭＧ－２する。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[誘発] 味方キャラがダウンしたバトル終了時、味方[花]キャラ1体を未行動にし、そのキャラにDMG-2する。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[誘発] 味方キャラがダウンしたバトル終了時、味方[花]キャラ1体を未行動にし、そのキャラにDMG-2する。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 味方キャラがダウンしたバトル終了時、味方[花]キャラ1体を未行動にし、そのキャラにDMG-2する。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

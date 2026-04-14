@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラの防御中に使用する。自分の手札の「硯川・e・涙香」１枚を除外する。除外したとき、バトルを中断する。",
   "textKr": "[宣言] [0]:このキャラの防御中に使用する。自分の手札の「硯川・e・涙香」１枚を除外する。除外したとき、バトルを中断する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2475"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2475",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラの防御中に使用する。自分の手札の「硯川・e・涙香」１枚を除外する。除外したとき、バトルを中断する。",
+    "normalizedText": "[宣言] [0]:このキャラの防御中に使用する。自分の手札の「硯川・e・涙香」1枚を除外する。除外したとき、バトルを中断する。",
+    "lines": [
+      "[宣言] [0]:このキャラの防御中に使用する。自分の手札の「硯川・e・涙香」1枚を除外する。除外したとき、バトルを中断する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:このキャラの防御中に使用する。自分の手札の「硯川・e・涙香」1枚を除外する。除外したとき、バトルを中断する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -27,5 +27,25 @@
   "typeTagsRaw": "英霊",
   "text": "[リーダー][サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{味方キャラ１体}を破棄する。破棄したとき、相手のデッキを１枚破棄する。",
   "textKr": "[リーダー][サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{味方キャラ１体}を破棄する。破棄したとき、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0740"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0740",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リーダー][サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{味方キャラ１体}を破棄する。破棄したとき、相手のデッキを１枚破棄する。",
+    "normalizedText": "[リーダー][サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。{味方キャラ1体}を破棄する。破棄したとき、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[リーダー][サイドステップ:[0]]",
+      "[宣言] [0]:自ターン中に使用する。{味方キャラ1体}を破棄する。破棄したとき、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:自ターン中に使用する。{味方キャラ1体}を破棄する。破棄したとき、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -22,7 +22,31 @@
   "costRaw": "花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0696"
+  "text": "自分のデッキを２枚回復する。自分のデッキをシャッフルする。",
+  "textKr": "自分のデッキを２枚回復する。自分のデッキをシャッフルする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0696",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自分のデッキを2枚回復する。自分のデッキをシャッフルする。",
+      "actions": [
+        {
+          "type": "shuffle",
+          "owner": "self"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自分のデッキを２枚回復する。自分のデッキをシャッフルする。",
+    "normalizedText": "自分のデッキを2枚回復する。自分のデッキをシャッフルする。",
+    "lines": [
+      "自分のデッキを2枚回復する。自分のデッキをシャッフルする。"
+    ],
+    "matchedRuleIds": [
+      "shuffle"
+    ]
+  },
+  "unresolvedTextLines": []
 }

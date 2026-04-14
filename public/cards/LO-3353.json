@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3353",
+  "title": "コンドル",
+  "subName": "羽田 鷹志",
+  "name": "コンドル 羽田 鷹志",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 0,
   "useTarget": [
     "star",
     "star"
@@ -15,11 +18,60 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3
+  "ex": 0,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リーダー][サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「柳木原」１枚を探し味方フィールドに無償で配置する。１枚ドローする。\n[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性１つにする。\n構築制限:『俺たちに翼はない』",
+  "textKr": "[リーダー][サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「柳木原」１枚を探し味方フィールドに無償で配置する。１枚ドローする。\n[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性１つにする。\n構築制限:『俺たちに翼はない』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3353",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「柳木原」1枚を探し味方フィールドに無償で配置する。1枚ドローする。[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性1つにする。構築制限:『俺たちに翼はない』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "柳木原",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3
-  ],
-  "leader": true
+  "parseMeta": {
+    "originalText": "[リーダー][サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「柳木原」１枚を探し味方フィールドに無償で配置する。１枚ドローする。\n[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性１つにする。\n構築制限:『俺たちに翼はない』",
+    "normalizedText": "[リーダー][サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「柳木原」1枚を探し味方フィールドに無償で配置する。1枚ドローする。[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性1つにする。構築制限:『俺たちに翼はない』",
+    "lines": [
+      "[リーダー][サイドステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「柳木原」1枚を探し味方フィールドに無償で配置する。1枚ドローする。[宣言] [0]:ターン終了時まで、このキャラの属性を好きな属性1つにする。構築制限:『俺たちに翼はない』"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

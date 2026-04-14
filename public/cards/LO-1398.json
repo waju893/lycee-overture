@@ -25,5 +25,37 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＤＰ＋１する。",
   "textKr": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1398"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1398",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ1体にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＤＰ＋１する。",
+    "normalizedText": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ1体にDP+1する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] このキャラが登場したとき、味方キャラ1体にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

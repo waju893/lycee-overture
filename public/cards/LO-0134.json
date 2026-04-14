@@ -23,5 +23,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [このキャラを破棄する。]:バトル中に使用できない。相手のデッキを２枚破棄する。",
   "textKr": "[エンゲージ]\n[宣言] [このキャラを破棄する。]:バトル中に使用できない。相手のデッキを２枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0134"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0134",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [このキャラを破棄する。]:バトル中に使用できない。相手のデッキを２枚破棄する。",
+    "normalizedText": "[エンゲージ]\n[宣言] [このキャラを破棄する。]:バトル中に使用できない。相手のデッキを2枚破棄する。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [このキャラを破棄する。]:バトル中に使用できない。相手のデッキを2枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [このキャラを破棄する。]:バトル中に使用できない。相手のデッキを2枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

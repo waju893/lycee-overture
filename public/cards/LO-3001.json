@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [月月月]:相手のコストが４点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
   "textKr": "[手札宣言] [月月月]:相手のコストが４点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3001"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3001",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [月月月]:相手のコストが４点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+    "normalizedText": "[手札宣言] [月月月]:相手のコストが4点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+    "lines": [
+      "[手札宣言] [月月月]:相手のコストが4点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [月月月]:相手のコストが4点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

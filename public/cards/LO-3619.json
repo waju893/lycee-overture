@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:コストが３点以上の味方キャラが５体以上登場している場合、{味方キャラ１体}にＤＰ＋２する。この能力は失われる。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:コストが３点以上の味方キャラが５体以上登場している場合、{味方キャラ１体}にＤＰ＋２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3619"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3619",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが3点以上の味方キャラが5体以上登場している場合、{味方キャラ1体}にDP+2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:コストが３点以上の味方キャラが５体以上登場している場合、{味方キャラ１体}にＤＰ＋２する。この能力は失われる。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:コストが3点以上の味方キャラが5体以上登場している場合、{味方キャラ1体}にDP+2する。この能力は失われる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:コストが3点以上の味方キャラが5体以上登場している場合、{味方キャラ1体}にDP+2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

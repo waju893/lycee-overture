@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [花花]:バトル中に使用できない。{味方キャラ１体}にＳＰ＋２する。",
   "textKr": "[宣言] [花花]:バトル中に使用できない。{味方キャラ１体}にＳＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0930"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0930",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [花花]:バトル中に使用できない。{味方キャラ1体}にSP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [花花]:バトル中に使用できない。{味方キャラ１体}にＳＰ＋２する。",
+    "normalizedText": "[宣言] [花花]:バトル中に使用できない。{味方キャラ1体}にSP+2する。",
+    "lines": [
+      "[宣言] [花花]:バトル中に使用できない。{味方キャラ1体}にSP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

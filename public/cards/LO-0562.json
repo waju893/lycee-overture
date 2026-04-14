@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラと同列の味方キャラ全ては[オーダーチェンジ:[0]]を得る。",
   "textKr": "[常時] このキャラと同列の味方キャラ全ては[オーダーチェンジ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0562"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0562",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[常時] このキャラと同列の味方キャラ全ては[オーダーチェンジ:[0]]を得る。",
+    "normalizedText": "[常時] このキャラと同列の味方キャラ全ては[オーダーチェンジ:[0]]を得る。",
+    "lines": [
+      "[常時] このキャラと同列の味方キャラ全ては[オーダーチェンジ:[0]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] このキャラと同列の味方キャラ全ては[オーダーチェンジ:[0]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

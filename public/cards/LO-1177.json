@@ -24,5 +24,25 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、{相手キャラ１体}を破棄する。",
   "textKr": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、{相手キャラ１体}を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1177"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1177",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、{相手キャラ１体}を破棄する。",
+    "normalizedText": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、{相手キャラ1体}を破棄する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T][無無]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、{相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T][無無]:バトル中に使用できない。このキャラを自分の「卒業」置き場に置く。置いたとき、{相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

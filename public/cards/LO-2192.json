@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2192",
+  "title": "ハッピープレゼント",
+  "subName": "柚原 このみ",
+  "name": "ハッピープレゼント 柚原 このみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "sun",
@@ -16,11 +19,45 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "花日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無]]\n[誘発] このキャラが登場したとき、自分のデッキの上のカード４枚を見て、そのうち２枚を手札に入れる。デッキをシャッフルする。\n構築制限:『ToHeart2』",
+  "textKr": "[サポーター:[無]]\n[誘発] このキャラが登場したとき、自分のデッキの上のカード４枚を見て、そのうち２枚を手札に入れる。デッキをシャッフルする。\n構築制限:『ToHeart2』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2192",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキの上のカード4枚を見て、そのうち2枚を手札に入れる。デッキをシャッフルする。構築制限:『ToHeart2』",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "deck",
+          "to": "hand",
+          "count": 4
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[無]]\n[誘発] このキャラが登場したとき、自分のデッキの上のカード４枚を見て、そのうち２枚を手札に入れる。デッキをシャッフルする。\n構築制限:『ToHeart2』",
+    "normalizedText": "[サポーター:[無]]\n[誘発] このキャラが登場したとき、自分のデッキの上のカード4枚を見て、そのうち2枚を手札に入れる。デッキをシャッフルする。構築制限:『ToHeart2』",
+    "lines": [
+      "[サポーター:[無]]",
+      "[誘発] このキャラが登場したとき、自分のデッキの上のカード4枚を見て、そのうち2枚を手札に入れる。デッキをシャッフルする。構築制限:『ToHeart2』"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

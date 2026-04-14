@@ -25,5 +25,20 @@
   "typeTagsRaw": "-",
   "text": "[宣言] [0]:自ターン中に使用する。{ＤＰが２以下の相手キャラ１体}に相手ターン終了時までＤＭＧ－１する。",
   "textKr": "[宣言] [0]:自ターン中に使用する。{ＤＰが２以下の相手キャラ１体}に相手ターン終了時までＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0582"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0582",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。{ＤＰが２以下の相手キャラ１体}に相手ターン終了時までＤＭＧ－１する。",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。{DPが2以下の相手キャラ1体}に相手ターン終了時までDMG-1する。",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。{DPが2以下の相手キャラ1体}に相手ターン終了時までDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:自ターン中に使用する。{DPが2以下の相手キャラ1体}に相手ターン終了時までDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

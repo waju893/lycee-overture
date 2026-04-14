@@ -22,7 +22,22 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0249"
+  "text": "相手のデッキを[自分のゴミ箱の「キノコリオン」の数]枚破棄する。",
+  "textKr": "相手のデッキを[自分のゴミ箱の「キノコリオン」の数]枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0249",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手のデッキを[自分のゴミ箱の「キノコリオン」の数]枚破棄する。",
+    "normalizedText": "相手のデッキを[自分のゴミ箱の「キノコリオン」の数]枚破棄する。",
+    "lines": [
+      "相手のデッキを[自分のゴミ箱の「キノコリオン」の数]枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手のデッキを[自分のゴミ箱の「キノコリオン」の数]枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -27,5 +27,36 @@
   "typeTagsRaw": "-",
   "text": "[オーダーステップ:[0]][リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [0]:自ターン中に使用する。コストが５点以上の味方キャラ全てにＡＰ＋１する。",
   "textKr": "[オーダーステップ:[0]][リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [0]:自ターン中に使用する。コストが５点以上の味方キャラ全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0796"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0796",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。コストが5点以上の味方キャラ全てにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]][リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [0]:自ターン中に使用する。コストが５点以上の味方キャラ全てにＡＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]][リカバリー:[相手のデッキを2枚破棄する。]]\n[宣言] [0]:自ターン中に使用する。コストが5点以上の味方キャラ全てにAP+1する。",
+    "lines": [
+      "[オーダーステップ:[0]][リカバリー:[相手のデッキを2枚破棄する。]]",
+      "[宣言] [0]:自ターン中に使用する。コストが5点以上の味方キャラ全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]][リカバリー:[相手のデッキを2枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

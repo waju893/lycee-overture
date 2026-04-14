@@ -25,5 +25,25 @@
   "typeTagsRaw": "聖グロリアーナ",
   "text": "[アシスト]\n[宣言] [無]:このキャラにＡＰ＋[味方＜聖グロリアーナ＞キャラの数]する。",
   "textKr": "[アシスト]\n[宣言] [無]:このキャラにＡＰ＋[味方＜聖グロリアーナ＞キャラの数]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1094"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1094",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [無]:このキャラにＡＰ＋[味方＜聖グロリアーナ＞キャラの数]する。",
+    "normalizedText": "[アシスト]\n[宣言] [無]:このキャラにAP+[味方<聖グロリアーナ>キャラの数]する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [無]:このキャラにAP+[味方<聖グロリアーナ>キャラの数]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [無]:このキャラにAP+[味方<聖グロリアーナ>キャラの数]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

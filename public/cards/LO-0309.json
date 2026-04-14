@@ -25,5 +25,25 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「ボコ」１枚を無償でこのキャラに装備する。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「ボコ」１枚を無償でこのキャラに装備する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0309"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0309",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「ボコ」１枚を無償でこのキャラに装備する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「ボコ」1枚を無償でこのキャラに装備する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の「ボコ」1枚を無償でこのキャラに装備する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱の「ボコ」1枚を無償でこのキャラに装備する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

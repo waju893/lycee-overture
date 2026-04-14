@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、アイテム１枚を破棄できる。",
   "textKr": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、アイテム１枚を破棄できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4185"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4185",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、アイテム１枚を破棄できる。",
+    "normalizedText": "[サポーター:[無無]]\n[誘発] このキャラが登場したとき、アイテム1枚を破棄できる。",
+    "lines": [
+      "[サポーター:[無無]]",
+      "[誘発] このキャラが登場したとき、アイテム1枚を破棄できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、アイテム1枚を破棄できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

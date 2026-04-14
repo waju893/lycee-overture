@@ -24,5 +24,30 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [月月月月]:アイテムを装備している相手キャラ１体にＡＰ－１・ＤＰ－１する。",
   "textKr": "[宣言] [月月月月]:アイテムを装備している相手キャラ１体にＡＰ－１・ＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0025"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0025",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月月月月]:アイテムを装備している相手キャラ1体にAP-1・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [月月月月]:アイテムを装備している相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+    "normalizedText": "[宣言] [月月月月]:アイテムを装備している相手キャラ1体にAP-1・DP-1する。",
+    "lines": [
+      "[宣言] [月月月月]:アイテムを装備している相手キャラ1体にAP-1・DP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

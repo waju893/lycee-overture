@@ -23,5 +23,35 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[宣言] [C2]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラが３体以上登場している場合、１枚ドローする。",
   "textKr": "[チャージ:２]\n[宣言] [C2]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラが３体以上登場している場合、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4083"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4083",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C2]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラが3体以上登場している場合、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [C2]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラが３体以上登場している場合、１枚ドローする。",
+    "normalizedText": "[チャージ:2]\n[宣言] [C2]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラが3体以上登場している場合、1枚ドローする。",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [C2]:自ターン中に使用する。[チャージ]を持つ味方[日]キャラが3体以上登場している場合、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

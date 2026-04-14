@@ -23,7 +23,34 @@
   "costRaw": "",
   "restrictionRaw": "",
   "typeTagsRaw": "イベント",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0413"
+  "text": "{未行動の味方キャラ１体}を行動済みにする。そのキャラと同サブネームの自分のゴミ箱のキャラ１体を手札に入れる。",
+  "textKr": "{未行動の味方キャラ１体}を行動済みにする。そのキャラと同サブネームの自分のゴミ箱のキャラ１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0413",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{未行動の味方キャラ1体}を行動済みにする。そのキャラと同サブネームの自分のゴミ箱のキャラ1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{未行動の味方キャラ１体}を行動済みにする。そのキャラと同サブネームの自分のゴミ箱のキャラ１体を手札に入れる。",
+    "normalizedText": "{未行動の味方キャラ1体}を行動済みにする。そのキャラと同サブネームの自分のゴミ箱のキャラ1体を手札に入れる。",
+    "lines": [
+      "{未行動の味方キャラ1体}を行動済みにする。そのキャラと同サブネームの自分のゴミ箱のキャラ1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

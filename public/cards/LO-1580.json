@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1580",
+  "title": "癒し手",
+  "subName": "アリサ",
+  "name": "癒し手 アリサ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,49 @@
   "dp": 2,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    9
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーチェンジ:[0]]\n構築制限:千年戦争アイギス（[AIG]）\n[手札宣言] [0]:{味方[日]キャラ１体}は[ペナルティ:[ゴミ箱のこのキャラを手札に入れる]]を得る。",
+  "textKr": "[オーダーチェンジ:[0]]\n構築制限:千年戦争アイギス（[AIG]）\n[手札宣言] [0]:{味方[日]キャラ１体}は[ペナルティ:[ゴミ箱のこのキャラを手札に入れる]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1580",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:{味方[日]キャラ1体}は[ペナルティ:[ゴミ箱のこのキャラを手札に入れる]]を得る。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 0
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n構築制限:千年戦争アイギス（[AIG]）\n[手札宣言] [0]:{味方[日]キャラ１体}は[ペナルティ:[ゴミ箱のこのキャラを手札に入れる]]を得る。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n構築制限:千年戦争アイギス([AIG])\n[手札宣言] [0]:{味方[日]キャラ1体}は[ペナルティ:[ゴミ箱のこのキャラを手札に入れる]]を得る。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "構築制限:千年戦争アイギス([AIG])",
+      "[手札宣言] [0]:{味方[日]キャラ1体}は[ペナルティ:[ゴミ箱のこのキャラを手札に入れる]]を得る。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:千年戦争アイギス([AIG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

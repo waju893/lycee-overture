@@ -25,5 +25,25 @@
   "typeTagsRaw": "黒森峰",
   "text": "[オーダーステップ:[0]]\n[誘発] ＳＰが２以上のキャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] ＳＰが２以上のキャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0375"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0375",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] ＳＰが２以上のキャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] SPが2以上のキャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までDMG+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] SPが2以上のキャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] SPが2以上のキャラでこのキャラにサポートをしたとき、このキャラにバトル終了時までDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

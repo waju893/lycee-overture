@@ -25,5 +25,25 @@
   "typeTagsRaw": "黒森峰",
   "text": "[オーダーステップ:[0]]\n[常時] このキャラにＡＰ＋[味方＜黒森峰＞キャラの数]・ＤＰ＋[味方＜黒森峰＞キャラの数]する。",
   "textKr": "[オーダーステップ:[0]]\n[常時] このキャラにＡＰ＋[味方＜黒森峰＞キャラの数]・ＤＰ＋[味方＜黒森峰＞キャラの数]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0376"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0376",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[常時] このキャラにＡＰ＋[味方＜黒森峰＞キャラの数]・ＤＰ＋[味方＜黒森峰＞キャラの数]する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[常時] このキャラにAP+[味方<黒森峰>キャラの数]・DP+[味方<黒森峰>キャラの数]する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[常時] このキャラにAP+[味方<黒森峰>キャラの数]・DP+[味方<黒森峰>キャラの数]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラにAP+[味方<黒森峰>キャラの数]・DP+[味方<黒森峰>キャラの数]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

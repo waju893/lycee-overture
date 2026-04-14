@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラのサポートを使用したとき、対象のキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
   "textKr": "[誘発] このキャラのサポートを使用したとき、対象のキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5011"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5011",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラのサポートを使用したとき、対象のキャラにAP+2・DP+2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラのサポートを使用したとき、対象のキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+    "normalizedText": "[誘発] このキャラのサポートを使用したとき、対象のキャラにAP+2・DP+2する。この能力は失われる。",
+    "lines": [
+      "[誘発] このキャラのサポートを使用したとき、対象のキャラにAP+2・DP+2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

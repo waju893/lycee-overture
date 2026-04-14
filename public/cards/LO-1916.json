@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1916",
+  "title": "赤い戦闘修道女",
+  "subName": "サーシャ＝クロイツェフ",
+  "name": "赤い戦闘修道女 サーシャ＝クロイツェフ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,38 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 相手ターン開始時、味方ＤＦ[雪]キャラ１体を未行動にする。そのキャラにＤＰ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "textKr": "[誘発] 相手ターン開始時、味方ＤＦ[雪]キャラ１体を未行動にする。そのキャラにＤＰ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1916",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] 相手ターン開始時、味方DF[雪]キャラ1体を未行動にする。そのキャラにDP+1する。構築制限:とある魔術の禁書目録([TOA])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 相手ターン開始時、味方ＤＦ[雪]キャラ１体を未行動にする。そのキャラにＤＰ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+    "normalizedText": "[誘発] 相手ターン開始時、味方DF[雪]キャラ1体を未行動にする。そのキャラにDP+1する。構築制限:とある魔術の禁書目録([TOA])",
+    "lines": [
+      "[誘発] 相手ターン開始時、味方DF[雪]キャラ1体を未行動にする。そのキャラにDP+1する。構築制限:とある魔術の禁書目録([TOA])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

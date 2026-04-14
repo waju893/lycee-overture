@@ -1,11 +1,49 @@
 {
+  "cardNo": "LO-1572",
+  "title": "隠密",
+  "subName": "",
+  "name": "隠密",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "味方[花]キャラを好きな数だけ手札に入れる。１体以上入れたとき、１枚ドローする。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "味方[花]キャラを好きな数だけ手札に入れる。１体以上入れたとき、１枚ドローする。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1572",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方[花]キャラを好きな数だけ手札に入れる。1体以上入れたとき、1枚ドローする。構築制限:千年戦争アイギス([AIG])",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方[花]キャラを好きな数だけ手札に入れる。１体以上入れたとき、１枚ドローする。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "味方[花]キャラを好きな数だけ手札に入れる。1体以上入れたとき、1枚ドローする。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "味方[花]キャラを好きな数だけ手札に入れる。1体以上入れたとき、1枚ドローする。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

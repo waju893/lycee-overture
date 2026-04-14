@@ -25,5 +25,30 @@
   "typeTagsRaw": "城娘",
   "text": "[宣言] [宙宙宙]:自ターン中に使用する。味方キャラ全てにＡＰ＋２・ＤＰ＋１する。この能力は失われる。",
   "textKr": "[宣言] [宙宙宙]:自ターン中に使用する。味方キャラ全てにＡＰ＋２・ＤＰ＋１する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2287"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2287",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙宙宙]:自ターン中に使用する。味方キャラ全てにAP+2・DP+1する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [宙宙宙]:自ターン中に使用する。味方キャラ全てにＡＰ＋２・ＤＰ＋１する。この能力は失われる。",
+    "normalizedText": "[宣言] [宙宙宙]:自ターン中に使用する。味方キャラ全てにAP+2・DP+1する。この能力は失われる。",
+    "lines": [
+      "[宣言] [宙宙宙]:自ターン中に使用する。味方キャラ全てにAP+2・DP+1する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

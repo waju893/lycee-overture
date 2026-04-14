@@ -26,5 +26,37 @@
   "typeTagsRaw": "神姫",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] ターン開始時、相手キャラの数より味方キャラの数が少ない場合、このキャラにＡＰ＋２する。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] ターン開始時、相手キャラの数より味方キャラの数が少ない場合、このキャラにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0731"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0731",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、相手キャラの数より味方キャラの数が少ない場合、このキャラにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] ターン開始時、相手キャラの数より味方キャラの数が少ない場合、このキャラにＡＰ＋２する。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] ターン開始時、相手キャラの数より味方キャラの数が少ない場合、このキャラにAP+2する。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] ターン開始時、相手キャラの数より味方キャラの数が少ない場合、このキャラにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

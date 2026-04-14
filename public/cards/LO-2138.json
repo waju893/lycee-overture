@@ -22,7 +22,32 @@
   "costRaw": "花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2138"
+  "text": "自ターン中に使用する。味方キャラ全てにＡＰ＋２する。",
+  "textKr": "自ターン中に使用する。味方キャラ全てにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2138",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。味方キャラ全てにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。味方キャラ全てにＡＰ＋２する。",
+    "normalizedText": "自ターン中に使用する。味方キャラ全てにAP+2する。",
+    "lines": [
+      "自ターン中に使用する。味方キャラ全てにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

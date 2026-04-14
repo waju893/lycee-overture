@@ -1,11 +1,50 @@
 {
+  "cardNo": "LO-2587",
+  "title": "パルヴィンの光",
+  "subName": "",
+  "name": "パルヴィンの光",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "-",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自分の「世界樹の種」置き場の枚数が５枚以上の場合、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:『あいりすミスティリア！』",
+  "textKr": "自分の「世界樹の種」置き場の枚数が５枚以上の場合、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:『あいりすミスティリア！』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2587",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自分の「世界樹の種」置き場の枚数が5枚以上の場合、{味方キャラ1体}にAP+1・DP+1する。構築制限:『あいりすミスティリア!』",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自分の「世界樹の種」置き場の枚数が５枚以上の場合、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:『あいりすミスティリア！』",
+    "normalizedText": "自分の「世界樹の種」置き場の枚数が5枚以上の場合、{味方キャラ1体}にAP+1・DP+1する。構築制限:『あいりすミスティリア!』",
+    "lines": [
+      "自分の「世界樹の種」置き場の枚数が5枚以上の場合、{味方キャラ1体}にAP+1・DP+1する。構築制限:『あいりすミスティリア!』"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

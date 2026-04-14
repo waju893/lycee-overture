@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪]:このキャラを除外する。除外したとき、{味方「折原浩平」}１体はターン終了時までダウンしない。",
   "textKr": "[宣言] [雪]:このキャラを除外する。除外したとき、{味方「折原浩平」}１体はターン終了時までダウンしない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5227"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5227",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪]:このキャラを除外する。除外したとき、{味方「折原浩平」}１体はターン終了時までダウンしない。",
+    "normalizedText": "[宣言] [雪]:このキャラを除外する。除外したとき、{味方「折原浩平」}1体はターン終了時までダウンしない。",
+    "lines": [
+      "[宣言] [雪]:このキャラを除外する。除外したとき、{味方「折原浩平」}1体はターン終了時までダウンしない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪]:このキャラを除外する。除外したとき、{味方「折原浩平」}1体はターン終了時までダウンしない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

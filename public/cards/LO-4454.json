@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4454",
+  "title": "受信探偵",
+  "subName": "橘 一真",
+  "name": "受信探偵 橘 一真",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,55 @@
   "ap": 5,
   "dp": 6,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「受信探偵」１枚を探し味方フィールドに無償で配置する。\n[宣言] [0]:{元のＤＭＧが４以上の相手キャラ１体}にＤＭＧ－１する。\n構築制限:[DG]",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「受信探偵」１枚を探し味方フィールドに無償で配置する。\n[宣言] [0]:{元のＤＭＧが４以上の相手キャラ１体}にＤＭＧ－１する。\n構築制限:[DG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4454",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「受信探偵」1枚を探し味方フィールドに無償で配置する。[宣言] [0]:{元のDMGが4以上の相手キャラ1体}にDMG-1する。構築制限:[DG]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "受信探偵",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「受信探偵」１枚を探し味方フィールドに無償で配置する。\n[宣言] [0]:{元のＤＭＧが４以上の相手キャラ１体}にＤＭＧ－１する。\n構築制限:[DG]",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「受信探偵」1枚を探し味方フィールドに無償で配置する。[宣言] [0]:{元のDMGが4以上の相手キャラ1体}にDMG-1する。構築制限:[DG]",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「受信探偵」1枚を探し味方フィールドに無償で配置する。[宣言] [0]:{元のDMGが4以上の相手キャラ1体}にDMG-1する。構築制限:[DG]"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

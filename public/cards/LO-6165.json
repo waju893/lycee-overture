@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]][チャージ:２]\n[宣言] [C1][日]:{相手キャラ１体}にＤＰ－３する。このキャラにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[ジャンプ:[0]][チャージ:２]\n[宣言] [C1][日]:{相手キャラ１体}にＤＰ－３する。このキャラにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6165"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6165",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1][日]:{相手キャラ1体}にDP-3する。このキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]][チャージ:２]\n[宣言] [C1][日]:{相手キャラ１体}にＤＰ－３する。このキャラにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[ジャンプ:[0]][チャージ:2]\n[宣言] [C1][日]:{相手キャラ1体}にDP-3する。このキャラにAP+1・DP+1する。",
+    "lines": [
+      "[ジャンプ:[0]][チャージ:2]",
+      "[宣言] [C1][日]:{相手キャラ1体}にDP-3する。このキャラにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]][チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

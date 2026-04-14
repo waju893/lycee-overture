@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2522",
+  "title": "スフィア王国王女",
+  "subName": "フィーナ・ファム・アーシュライト",
+  "name": "スフィア王国王女 フィーナ・ファム・アーシュライト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -15,5 +18,58 @@
   "ap": 4,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分の効果で味方[月]キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。自分のデッキを１枚回復する。\n構築制限:[AUG]",
+  "textKr": "[誘発] 自分の効果で味方[月]キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。自分のデッキを１枚回復する。\n構築制限:[AUG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2522",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 自分の効果で味方[月]キャラが登場したとき、相手キャラ1体にAP-1またはDP-1する。自分のデッキを1枚回復する。構築制限:[AUG]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果で味方[月]キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。自分のデッキを１枚回復する。\n構築制限:[AUG]",
+    "normalizedText": "[誘発] 自分の効果で味方[月]キャラが登場したとき、相手キャラ1体にAP-1またはDP-1する。自分のデッキを1枚回復する。構築制限:[AUG]",
+    "lines": [
+      "[誘発] 自分の効果で味方[月]キャラが登場したとき、相手キャラ1体にAP-1またはDP-1する。自分のデッキを1枚回復する。構築制限:[AUG]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

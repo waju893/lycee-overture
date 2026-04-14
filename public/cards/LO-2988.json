@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2988",
+  "title": "擬人化された冷蔵庫",
+  "subName": "氷庫",
+  "name": "擬人化された冷蔵庫 氷庫",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,38 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ターン開始時、味方[雪]キャラ１体にＤＰ＋１する。\n[宣言] [T][雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を行動済みにする。\n構築制限:[HOK]",
+  "textKr": "[誘発] ターン開始時、味方[雪]キャラ１体にＤＰ＋１する。\n[宣言] [T][雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を行動済みにする。\n構築制限:[HOK]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2988",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、味方[雪]キャラ1体にDP+1する。[宣言] [T][雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}を行動済みにする。構築制限:[HOK]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] ターン開始時、味方[雪]キャラ１体にＤＰ＋１する。\n[宣言] [T][雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を行動済みにする。\n構築制限:[HOK]",
+    "normalizedText": "[誘発] ターン開始時、味方[雪]キャラ1体にDP+1する。[宣言] [T][雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}を行動済みにする。構築制限:[HOK]",
+    "lines": [
+      "[誘発] ターン開始時、味方[雪]キャラ1体にDP+1する。[宣言] [T][雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}を行動済みにする。構築制限:[HOK]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

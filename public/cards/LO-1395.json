@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
   "textKr": "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1395"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1395",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
+    "normalizedText": "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方DFに移動する。",
+    "lines": [
+      "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方DFに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方DFに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

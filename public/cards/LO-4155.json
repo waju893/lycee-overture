@@ -23,5 +23,29 @@
   "typeTagsRaw": "",
   "text": "[誘発] [雪]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
   "textKr": "[誘発] [雪]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4155"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4155",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] [雪]でない味方キャラが登場したとき、1枚ドローする。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] [雪]でない味方キャラが登場したとき、１枚ドローする。この能力は失われる。",
+    "normalizedText": "[誘発] [雪]でない味方キャラが登場したとき、1枚ドローする。この能力は失われる。",
+    "lines": [
+      "[誘発] [雪]でない味方キャラが登場したとき、1枚ドローする。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

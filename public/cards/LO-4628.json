@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[手札宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
   "textKr": "[サポーター:[花花]]\n[手札宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4628"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4628",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+5・DP+5する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[手札宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+    "normalizedText": "[サポーター:[花花]]\n[手札宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+5・DP+5する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[手札宣言] [花]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+5・DP+5する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

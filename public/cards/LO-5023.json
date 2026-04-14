@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方キャラ１体のSＰを３にする。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体のSＰを３にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5023"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5023",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ１体のSＰを３にする。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ1体のSPを3にする。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ1体のSPを3にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体のSPを3にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

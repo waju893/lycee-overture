@@ -21,7 +21,32 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3946"
+  "text": "{宣言型の基本能力を持つコストが３点以上の味方[日]キャラ１体}にＡＰ＋４する。味方「足利一葉義輝」が登場している場合、そのキャラにＡＰ＋２する。",
+  "textKr": "{宣言型の基本能力を持つコストが３点以上の味方[日]キャラ１体}にＡＰ＋４する。味方「足利一葉義輝」が登場している場合、そのキャラにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3946",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{宣言型の基本能力を持つコストが3点以上の味方[日]キャラ1体}にAP+4する。味方「足利一葉義輝」が登場している場合、そのキャラにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{宣言型の基本能力を持つコストが３点以上の味方[日]キャラ１体}にＡＰ＋４する。味方「足利一葉義輝」が登場している場合、そのキャラにＡＰ＋２する。",
+    "normalizedText": "{宣言型の基本能力を持つコストが3点以上の味方[日]キャラ1体}にAP+4する。味方「足利一葉義輝」が登場している場合、そのキャラにAP+2する。",
+    "lines": [
+      "{宣言型の基本能力を持つコストが3点以上の味方[日]キャラ1体}にAP+4する。味方「足利一葉義輝」が登場している場合、そのキャラにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

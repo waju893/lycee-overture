@@ -26,5 +26,42 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アシスト][サポーター:[D1]][ペナルティ:[１枚ドローする。]]\n[誘発] 手札から元のＤＰが４以上の味方[花]または＜ヤマト＞キャラが登場したとき、１枚ドローする。",
   "textKr": "[アシスト][サポーター:[D1]][ペナルティ:[１枚ドローする。]]\n[誘発] 手札から元のＤＰが４以上の味方[花]または＜ヤマト＞キャラが登場したとき、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1744"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1744",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[アシスト][サポーター:[D1]][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 手札から元のDPが4以上の味方[花]または<ヤマト>キャラが登場したとき、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][サポーター:[D1]][ペナルティ:[１枚ドローする。]]\n[誘発] 手札から元のＤＰが４以上の味方[花]または＜ヤマト＞キャラが登場したとき、１枚ドローする。",
+    "normalizedText": "[アシスト][サポーター:[D1]][ペナルティ:[1枚ドローする。]]\n[誘発] 手札から元のDPが4以上の味方[花]または<ヤマト>キャラが登場したとき、1枚ドローする。",
+    "lines": [
+      "[アシスト][サポーター:[D1]][ペナルティ:[1枚ドローする。]]",
+      "[誘発] 手札から元のDPが4以上の味方[花]または<ヤマト>キャラが登場したとき、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

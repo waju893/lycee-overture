@@ -23,5 +23,43 @@
   "typeTagsRaw": "",
   "text": "[サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[手札宣言] [月月月]:相手キャラ１体にＡＰ－６・ＤＰ－６する。",
   "textKr": "[サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[手札宣言] [月月月]:相手キャラ１体にＡＰ－６・ＤＰ－６する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5984"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5984",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[サイドステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [月月月]:相手キャラ1体にAP-6・DP-6する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -6
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[手札宣言] [月月月]:相手キャラ１体にＡＰ－６・ＤＰ－６する。",
+    "normalizedText": "[サイドステップ:[0]][ペナルティ:[1枚ドローする。]]\n[手札宣言] [月月月]:相手キャラ1体にAP-6・DP-6する。",
+    "lines": [
+      "[サイドステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "[手札宣言] [月月月]:相手キャラ1体にAP-6・DP-6する。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

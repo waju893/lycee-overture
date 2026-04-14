@@ -27,5 +27,57 @@
   "typeTagsRaw": "",
   "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [宙]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
   "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [宙]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3496"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3496",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:{味方『BALDR BRINGER』キャラ1体}にAP+3またはDP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [宙]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
+    "normalizedText": "[ボーナス:[相手のデッキを1枚破棄する。]]\n[宣言] [宙]:{味方『BALDR BRINGER』キャラ1体}にAP+3またはDP+3する。この能力は失われる。",
+    "lines": [
+      "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "[宣言] [宙]:{味方『BALDR BRINGER』キャラ1体}にAP+3またはDP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

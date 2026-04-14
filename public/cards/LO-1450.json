@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[宣言] [宙宙]:自ターン中に使用する。未行動のこのキャラを中央列の味方ＤＦに移動する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙]:自ターン中に使用する。未行動のこのキャラを中央列の味方ＤＦに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1450"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1450",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [宙宙]:自ターン中に使用する。未行動のこのキャラを中央列の味方ＤＦに移動する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [宙宙]:自ターン中に使用する。未行動のこのキャラを中央列の味方DFに移動する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [宙宙]:自ターン中に使用する。未行動のこのキャラを中央列の味方DFに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [宙宙]:自ターン中に使用する。未行動のこのキャラを中央列の味方DFに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

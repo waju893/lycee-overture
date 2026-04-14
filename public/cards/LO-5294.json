@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。そのキャラがキャラ名に「足利」を含む場合、そのキャラにＡＰ＋２する。（１回まで使用可能）",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。そのキャラがキャラ名に「足利」を含む場合、そのキャラにＡＰ＋２する。（１回まで使用可能）",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5294"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5294",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方キャラ1体}にAP+2する。そのキャラがキャラ名に「足利」を含む場合、そのキャラにAP+2する。(1回まで使用可能)",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。そのキャラがキャラ名に「足利」を含む場合、そのキャラにＡＰ＋２する。（１回まで使用可能）",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ1体}にAP+2する。そのキャラがキャラ名に「足利」を含む場合、そのキャラにAP+2する。(1回まで使用可能)",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{味方キャラ1体}にAP+2する。そのキャラがキャラ名に「足利」を含む場合、そのキャラにAP+2する。(1回まで使用可能)"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

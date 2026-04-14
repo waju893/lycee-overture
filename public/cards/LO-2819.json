@@ -24,5 +24,25 @@
   "typeTagsRaw": "リトルバスターズ",
   "text": "[アシスト]\n[宣言] [0]:{味方＜リトルバスターズ＞キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
   "textKr": "[アシスト]\n[宣言] [0]:{味方＜リトルバスターズ＞キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2819"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2819",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:{味方＜リトルバスターズ＞キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:{味方<リトルバスターズ>キャラ1体}は[ボーナス:[相手のデッキを1枚破棄する。]]を得る。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:{味方<リトルバスターズ>キャラ1体}は[ボーナス:[相手のデッキを1枚破棄する。]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{味方<リトルバスターズ>キャラ1体}は[ボーナス:[相手のデッキを1枚破棄する。]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

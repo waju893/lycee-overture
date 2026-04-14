@@ -25,5 +25,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] 自分のデッキがダメージを受けたバトル終了時、味方＜大洗女子＞キャラ１体を未行動にする。",
   "textKr": "[アシスト]\n[誘発] 自分のデッキがダメージを受けたバトル終了時、味方＜大洗女子＞キャラ１体を未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0289"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0289",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 自分のデッキがダメージを受けたバトル終了時、味方＜大洗女子＞キャラ１体を未行動にする。",
+    "normalizedText": "[アシスト]\n[誘発] 自分のデッキがダメージを受けたバトル終了時、味方<大洗女子>キャラ1体を未行動にする。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 自分のデッキがダメージを受けたバトル終了時、味方<大洗女子>キャラ1体を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自分のデッキがダメージを受けたバトル終了時、味方<大洗女子>キャラ1体を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

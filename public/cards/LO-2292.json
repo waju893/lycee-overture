@@ -24,5 +24,30 @@
   "typeTagsRaw": "城娘",
   "text": "[宣言] [D1]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋１する。この能力は失われる。",
   "textKr": "[宣言] [D1]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋１する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2292"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2292",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{コストが2点以下の味方[日]キャラ1体}にAP+1する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋１する。この能力は失われる。",
+    "normalizedText": "[宣言] [D1]:{コストが2点以下の味方[日]キャラ1体}にAP+1する。この能力は失われる。",
+    "lines": [
+      "[宣言] [D1]:{コストが2点以下の味方[日]キャラ1体}にAP+1する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

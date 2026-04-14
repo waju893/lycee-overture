@@ -27,5 +27,20 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[相手キャラ１体を破棄する。]]",
   "textKr": "[エンゲージ:[相手キャラ１体を破棄する。]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0145"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0145",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[相手キャラ１体を破棄する。]]",
+    "normalizedText": "[エンゲージ:[相手キャラ1体を破棄する。]]",
+    "lines": [
+      "[エンゲージ:[相手キャラ1体を破棄する。]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[相手キャラ1体を破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

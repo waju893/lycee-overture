@@ -27,5 +27,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[常時] 味方『セレクトオブリージュ』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[ステップ:[0]]\n[常時] 味方『セレクトオブリージュ』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5396"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5396",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] 味方『セレクトオブリージュ』キャラ全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[常時] 味方『セレクトオブリージュ』キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[ステップ:[0]]\n[常時] 味方『セレクトオブリージュ』キャラ全てにAP+1・DP+1する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[常時] 味方『セレクトオブリージュ』キャラ全てにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

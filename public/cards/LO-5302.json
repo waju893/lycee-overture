@@ -25,5 +25,47 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「朝倉圓義景」１体を探し登場できる。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「朝倉圓義景」１体を探し登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5302"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5302",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「朝倉圓義景」1体を探し登場できる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "朝倉圓義景"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「朝倉圓義景」１体を探し登場できる。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「朝倉圓義景」1体を探し登場できる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「朝倉圓義景」1体を探し登場できる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

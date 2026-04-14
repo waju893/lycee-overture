@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言][T無]:{味方キャラ１体}を破棄する。破棄したとき、自分のデッキを２枚回復する。",
   "textKr": "[宣言][T無]:{味方キャラ１体}を破棄する。破棄したとき、自分のデッキを２枚回復する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0567"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0567",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言][T無]:{味方キャラ１体}を破棄する。破棄したとき、自分のデッキを２枚回復する。",
+    "normalizedText": "[宣言][T無]:{味方キャラ1体}を破棄する。破棄したとき、自分のデッキを2枚回復する。",
+    "lines": [
+      "[宣言][T無]:{味方キャラ1体}を破棄する。破棄したとき、自分のデッキを2枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言][T無]:{味方キャラ1体}を破棄する。破棄したとき、自分のデッキを2枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

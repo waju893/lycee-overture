@@ -23,7 +23,32 @@
   "costRaw": "雪無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3521"
+  "text": "相手ターン中に使用する。味方キャラ全てにＤＰ＋３する。",
+  "textKr": "相手ターン中に使用する。味方キャラ全てにＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3521",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "相手ターン中に使用する。味方キャラ全てにDP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "相手ターン中に使用する。味方キャラ全てにＤＰ＋３する。",
+    "normalizedText": "相手ターン中に使用する。味方キャラ全てにDP+3する。",
+    "lines": [
+      "相手ターン中に使用する。味方キャラ全てにDP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4490",
+  "title": "姫風露にのみ心を開く少年",
+  "subName": "珠木 正伍",
+  "name": "姫風露にのみ心を開く少年 珠木 正伍",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,60 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「架橋」２枚を探し横に置く。１枚をこのキャラに無償で装備する。１枚を味方[宙]キャラ１体に装備する。自分にシールド＋２する。\n構築制限:[DG]",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「架橋」２枚を探し横に置く。１枚をこのキャラに無償で装備する。１枚を味方[宙]キャラ１体に装備する。自分にシールド＋２する。\n構築制限:[DG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4490",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「架橋」2枚を探し横に置く。1枚をこのキャラに無償で装備する。1枚を味方[宙]キャラ1体に装備する。自分にシールド+2する。構築制限:[DG]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "架橋",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「架橋」２枚を探し横に置く。１枚をこのキャラに無償で装備する。１枚を味方[宙]キャラ１体に装備する。自分にシールド＋２する。\n構築制限:[DG]",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「架橋」2枚を探し横に置く。1枚をこのキャラに無償で装備する。1枚を味方[宙]キャラ1体に装備する。自分にシールド+2する。構築制限:[DG]",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「架橋」2枚を探し横に置く。1枚をこのキャラに無償で装備する。1枚を味方[宙]キャラ1体に装備する。自分にシールド+2する。構築制限:[DG]"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

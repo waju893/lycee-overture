@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラを破棄する。破棄したとき、ゴミ箱のこのキャラを無償で登場できる。（ゲーム中１回まで使用可能）",
   "textKr": "[宣言] [0]:このキャラを破棄する。破棄したとき、ゴミ箱のこのキャラを無償で登場できる。（ゲーム中１回まで使用可能）",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3767"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3767",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラを破棄する。破棄したとき、ゴミ箱のこのキャラを無償で登場できる。（ゲーム中１回まで使用可能）",
+    "normalizedText": "[宣言] [0]:このキャラを破棄する。破棄したとき、ゴミ箱のこのキャラを無償で登場できる。(ゲーム中1回まで使用可能)",
+    "lines": [
+      "[宣言] [0]:このキャラを破棄する。破棄したとき、ゴミ箱のこのキャラを無償で登場できる。(ゲーム中1回まで使用可能)"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:このキャラを破棄する。破棄したとき、ゴミ箱のこのキャラを無償で登場できる。(ゲーム中1回まで使用可能)",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

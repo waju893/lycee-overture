@@ -1,17 +1,45 @@
 {
+  "cardNo": "LO-1852",
+  "title": "タマ姉の帰還",
+  "subName": "",
+  "name": "タマ姉の帰還",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower",
     "sun"
   ],
-  "attributesList": [
-    "flower",
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "sun",
     "star"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱のコストが４点以下の「ToHeart2」キャラ１体}を無償で登場する。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱のコストが４点以下の「ToHeart2」キャラ１体}を無償で登場する。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1852",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱のコストが４点以下の「ToHeart2」キャラ１体}を無償で登場する。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱のコストが4点以下の「ToHeart2」キャラ1体}を無償で登場する。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱のコストが4点以下の「ToHeart2」キャラ1体}を無償で登場する。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自ターン中に使用する。バトル中に使用できない。{自分のゴミ箱のコストが4点以下の「ToHeart2」キャラ1体}を無償で登場する。構築制限:アクアプラス([AQP])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

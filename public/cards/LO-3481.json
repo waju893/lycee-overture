@@ -27,5 +27,39 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、味方「門倉甲」が登場している場合、自分のデッキの上のカード３枚を見て、そのうち１枚を手札に入れる。",
   "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、味方「門倉甲」が登場している場合、自分のデッキの上のカード３枚を見て、そのうち１枚を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3481"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3481",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方「門倉甲」が登場している場合、自分のデッキの上のカード3枚を見て、そのうち1枚を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "deck",
+          "to": "hand",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、味方「門倉甲」が登場している場合、自分のデッキの上のカード３枚を見て、そのうち１枚を手札に入れる。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、味方「門倉甲」が登場している場合、自分のデッキの上のカード3枚を見て、そのうち1枚を手札に入れる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、味方「門倉甲」が登場している場合、自分のデッキの上のカード3枚を見て、そのうち1枚を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

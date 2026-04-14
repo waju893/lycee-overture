@@ -25,5 +25,48 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風紀委員」１枚を探し公開して手札に入れる。",
   "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風紀委員」１枚を探し公開して手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3217"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3217",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風紀委員」1枚を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "風紀委員"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風紀委員」１枚を探し公開して手札に入れる。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風紀委員」1枚を探し公開して手札に入れる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「風紀委員」1枚を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[宙]]\n[誘発] 自分のデッキを破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[オーダーチェンジ:[宙]]\n[誘発] 自分のデッキを破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0522"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0522",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のデッキを破棄したとき、このキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[宙]]\n[誘発] 自分のデッキを破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[オーダーチェンジ:[宙]]\n[誘発] 自分のデッキを破棄したとき、このキャラにAP+2・DP+2する。",
+    "lines": [
+      "[オーダーチェンジ:[宙]]",
+      "[誘発] 自分のデッキを破棄したとき、このキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[宙]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

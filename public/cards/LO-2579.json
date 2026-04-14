@@ -1,17 +1,52 @@
 {
+  "cardNo": "LO-2579",
+  "title": "食堂運営委員会",
+  "subName": "渋垣 茉理",
+  "name": "食堂運営委員会 渋垣 茉理",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [D1]:{味方[日]キャラ１体}にＡＰ＋２・ＤＰ－２する。\n構築制限:[AUG]",
+  "textKr": "[手札宣言] [D1]:{味方[日]キャラ１体}にＡＰ＋２・ＤＰ－２する。\n構築制限:[AUG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2579",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [D1]:{味方[日]キャラ1体}にAP+2・DP-2する。構築制限:[AUG]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [D1]:{味方[日]キャラ１体}にＡＰ＋２・ＤＰ－２する。\n構築制限:[AUG]",
+    "normalizedText": "[手札宣言] [D1]:{味方[日]キャラ1体}にAP+2・DP-2する。構築制限:[AUG]",
+    "lines": [
+      "[手札宣言] [D1]:{味方[日]キャラ1体}にAP+2・DP-2する。構築制限:[AUG]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

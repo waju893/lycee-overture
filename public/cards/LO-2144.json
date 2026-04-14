@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:バトル中に使用する。バトル終了時までこのキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１し、このキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
   "textKr": "[宣言] [0]:バトル中に使用する。バトル終了時までこのキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１し、このキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2144"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2144",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用する。バトル終了時までこのキャラにAP+2・DP+2・DMG+1し、このキャラは[ボーナス:[自分のデッキを1枚回復する。]]を得る。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用する。バトル終了時までこのキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１し、このキャラは[ボーナス:[自分のデッキを１枚回復する。]]を得る。",
+    "normalizedText": "[宣言] [0]:バトル中に使用する。バトル終了時までこのキャラにAP+2・DP+2・DMG+1し、このキャラは[ボーナス:[自分のデッキを1枚回復する。]]を得る。",
+    "lines": [
+      "[宣言] [0]:バトル中に使用する。バトル終了時までこのキャラにAP+2・DP+2・DMG+1し、このキャラは[ボーナス:[自分のデッキを1枚回復する。]]を得る。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

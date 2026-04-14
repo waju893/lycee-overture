@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] 相手キャラが相手の効果で移動したとき、相手キャラ１体にＤＭＧ－１する。",
   "textKr": "[サポーター:[花花]]\n[誘発] 相手キャラが相手の効果で移動したとき、相手キャラ１体にＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1310"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1310",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] 相手キャラが相手の効果で移動したとき、相手キャラ１体にＤＭＧ－１する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] 相手キャラが相手の効果で移動したとき、相手キャラ1体にDMG-1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] 相手キャラが相手の効果で移動したとき、相手キャラ1体にDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手キャラが相手の効果で移動したとき、相手キャラ1体にDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

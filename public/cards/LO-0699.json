@@ -23,7 +23,32 @@
   "costRaw": "宙宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0699"
+  "text": "相手の攻撃宣言に対応して使用する。{味方キャラ１体}を未行動にし、ＡＰ＋２・ＤＰ＋２し、{味方フィールド}に移動する。",
+  "textKr": "相手の攻撃宣言に対応して使用する。{味方キャラ１体}を未行動にし、ＡＰ＋２・ＤＰ＋２し、{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0699",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "onAttackDeclare",
+      "originalLine": "相手の攻撃宣言に対応して使用する。{味方キャラ1体}を未行動にし、AP+2・DP+2し、{味方フィールド}に移動する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "相手の攻撃宣言に対応して使用する。{味方キャラ１体}を未行動にし、ＡＰ＋２・ＤＰ＋２し、{味方フィールド}に移動する。",
+    "normalizedText": "相手の攻撃宣言に対応して使用する。{味方キャラ1体}を未行動にし、AP+2・DP+2し、{味方フィールド}に移動する。",
+    "lines": [
+      "相手の攻撃宣言に対応して使用する。{味方キャラ1体}を未行動にし、AP+2・DP+2し、{味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

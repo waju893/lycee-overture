@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:アイテムを持つこのキャラはＡＰ＋２・ＤＰ＋２・[ガッツ:[宙宙宙]]を得る。（ゲーム中１回まで使用可能）",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:アイテムを持つこのキャラはＡＰ＋２・ＤＰ＋２・[ガッツ:[宙宙宙]]を得る。（ゲーム中１回まで使用可能）",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5591"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5591",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:アイテムを持つこのキャラはAP+2・DP+2・[ガッツ:[宙宙宙]]を得る。(ゲーム中1回まで使用可能)",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:アイテムを持つこのキャラはＡＰ＋２・ＤＰ＋２・[ガッツ:[宙宙宙]]を得る。（ゲーム中１回まで使用可能）",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:アイテムを持つこのキャラはAP+2・DP+2・[ガッツ:[宙宙宙]]を得る。(ゲーム中1回まで使用可能)",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:アイテムを持つこのキャラはAP+2・DP+2・[ガッツ:[宙宙宙]]を得る。(ゲーム中1回まで使用可能)"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

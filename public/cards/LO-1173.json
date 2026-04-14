@@ -24,5 +24,32 @@
   "typeTagsRaw": "",
   "text": "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱の[雪]キャラ１体}を手札に入れる。",
   "textKr": "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱の[雪]キャラ１体}を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1173"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1173",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱の[雪]キャラ1体}を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱の[雪]キャラ１体}を手札に入れる。",
+    "normalizedText": "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱の[雪]キャラ1体}を手札に入れる。",
+    "lines": [
+      "[宣言] [T][このキャラを破棄する]:{自分のゴミ箱の[雪]キャラ1体}を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

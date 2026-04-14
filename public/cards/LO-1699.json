@@ -1,15 +1,54 @@
 {
+  "cardNo": "LO-1699",
+  "title": "相棒のサポート",
+  "subName": "",
+  "name": "相棒のサポート",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
     "flower"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "防御キャラの指定されているバトル中に使用する。味方バトル参加[花]キャラ１体にＡＰ＋５・ＤＰ＋５し、そのキャラを未行動にする。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "防御キャラの指定されているバトル中に使用する。味方バトル参加[花]キャラ１体にＡＰ＋５・ＤＰ＋５し、そのキャラを未行動にする。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1699",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "防御キャラの指定されているバトル中に使用する。味方バトル参加[花]キャラ1体にAP+5・DP+5し、そのキャラを未行動にする。構築制限:ゆずソフト([YUZ])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "防御キャラの指定されているバトル中に使用する。味方バトル参加[花]キャラ１体にＡＰ＋５・ＤＰ＋５し、そのキャラを未行動にする。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "防御キャラの指定されているバトル中に使用する。味方バトル参加[花]キャラ1体にAP+5・DP+5し、そのキャラを未行動にする。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "防御キャラの指定されているバトル中に使用する。味方バトル参加[花]キャラ1体にAP+5・DP+5し、そのキャラを未行動にする。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

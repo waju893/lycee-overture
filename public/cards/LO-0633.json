@@ -27,5 +27,45 @@
   "typeTagsRaw": "-",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のデッキからアイテム１枚を探し公開して手札に入れる。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のデッキからアイテム１枚を探し公開して手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0633"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0633",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキからアイテム1枚を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のデッキからアイテム１枚を探し公開して手札に入れる。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] このキャラが登場したとき、自分のデッキからアイテム1枚を探し公開して手札に入れる。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] このキャラが登場したとき、自分のデッキからアイテム1枚を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

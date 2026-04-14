@@ -24,5 +24,38 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [T]:味方＜大洗女子＞キャラの属性が４種類以上の場合、{味方キャラ１体}を{味方フィールド}に移動する。このキャラを手札に入れる。",
   "textKr": "[アシスト]\n[宣言] [T]:味方＜大洗女子＞キャラの属性が４種類以上の場合、{味方キャラ１体}を{味方フィールド}に移動する。このキャラを手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1141"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1141",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:味方<大洗女子>キャラの属性が4種類以上の場合、{味方キャラ1体}を{味方フィールド}に移動する。このキャラを手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T]:味方＜大洗女子＞キャラの属性が４種類以上の場合、{味方キャラ１体}を{味方フィールド}に移動する。このキャラを手札に入れる。",
+    "normalizedText": "[アシスト]\n[宣言] [T]:味方<大洗女子>キャラの属性が4種類以上の場合、{味方キャラ1体}を{味方フィールド}に移動する。このキャラを手札に入れる。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T]:味方<大洗女子>キャラの属性が4種類以上の場合、{味方キャラ1体}を{味方フィールド}に移動する。このキャラを手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

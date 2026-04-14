@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1265",
+  "title": "お気楽 極楽 騒がし乙女",
+  "subName": "三枝 葉留佳",
+  "name": "お気楽 極楽 騒がし乙女 三枝 葉留佳",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,41 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    8,
-    13
+  "ex": 1,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト][ペナルティ:[相手は１枚ドローする。]]\n[誘発] このキャラが登場したとき、相手は相手の手札を１枚デッキの下に置く。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[アシスト][ペナルティ:[相手は１枚ドローする。]]\n[誘発] このキャラが登場したとき、相手は相手の手札を１枚デッキの下に置く。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1265",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[アシスト][ペナルティ:[相手は1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    8,
-    13
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アシスト][ペナルティ:[相手は１枚ドローする。]]\n[誘発] このキャラが登場したとき、相手は相手の手札を１枚デッキの下に置く。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[アシスト][ペナルティ:[相手は1枚ドローする。]]\n[誘発] このキャラが登場したとき、相手は相手の手札を1枚デッキの下に置く。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[アシスト][ペナルティ:[相手は1枚ドローする。]]",
+      "[誘発] このキャラが登場したとき、相手は相手の手札を1枚デッキの下に置く。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手は相手の手札を1枚デッキの下に置く。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

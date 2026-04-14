@@ -24,5 +24,20 @@
   "typeTagsRaw": "サンダース",
   "text": "[誘発] このキャラを自分の能力の対象に指定したとき、相手キャラ１体にＤＭＧ－１する。",
   "textKr": "[誘発] このキャラを自分の能力の対象に指定したとき、相手キャラ１体にＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0321"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0321",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラを自分の能力の対象に指定したとき、相手キャラ１体にＤＭＧ－１する。",
+    "normalizedText": "[誘発] このキャラを自分の能力の対象に指定したとき、相手キャラ1体にDMG-1する。",
+    "lines": [
+      "[誘発] このキャラを自分の能力の対象に指定したとき、相手キャラ1体にDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラを自分の能力の対象に指定したとき、相手キャラ1体にDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

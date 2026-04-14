@@ -27,5 +27,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン中、このキャラが手札から登場したとき、味方[NEX]キャラが６体以上の場合、相手キャラ１体を行動済みにする。（ゲーム中１回まで処理可能）",
   "textKr": "[誘発] 自ターン中、このキャラが手札から登場したとき、味方[NEX]キャラが６体以上の場合、相手キャラ１体を行動済みにする。（ゲーム中１回まで処理可能）",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4264"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4264",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、このキャラが手札から登場したとき、味方[NEX]キャラが６体以上の場合、相手キャラ１体を行動済みにする。（ゲーム中１回まで処理可能）",
+    "normalizedText": "[誘発] 自ターン中、このキャラが手札から登場したとき、味方[NEX]キャラが6体以上の場合、相手キャラ1体を行動済みにする。(ゲーム中1回まで処理可能)",
+    "lines": [
+      "[誘発] 自ターン中、このキャラが手札から登場したとき、味方[NEX]キャラが6体以上の場合、相手キャラ1体を行動済みにする。(ゲーム中1回まで処理可能)"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、このキャラが手札から登場したとき、味方[NEX]キャラが6体以上の場合、相手キャラ1体を行動済みにする。(ゲーム中1回まで処理可能)",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

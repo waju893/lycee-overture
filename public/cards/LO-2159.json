@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方キャラを破棄したとき、このキャラにＡＰ＋１する。",
   "textKr": "[誘発] 味方キャラを破棄したとき、このキャラにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2159"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2159",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方キャラを破棄したとき、このキャラにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラを破棄したとき、このキャラにＡＰ＋１する。",
+    "normalizedText": "[誘発] 味方キャラを破棄したとき、このキャラにAP+1する。",
+    "lines": [
+      "[誘発] 味方キャラを破棄したとき、このキャラにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

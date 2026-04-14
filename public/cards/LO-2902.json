@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-2902",
+  "title": "ぬこ部",
+  "subName": "天羽 みう",
+  "name": "ぬこ部 天羽 みう",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow",
     "cosmos"
   ],
-  "attributesList": [
-    "snow",
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "cosmos",
@@ -18,11 +20,64 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
+  "ex": 2,
+  "costRaw": "雪宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分の手札のコストが４点以下のキャラ１体を無償で登場できる。\n[誘発] ターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋１またはＤＰ＋１する。\n構築制限:『ましろ色シンフォニー』",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分の手札のコストが４点以下のキャラ１体を無償で登場できる。\n[誘発] ターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋１またはＤＰ＋１する。\n構築制限:『ましろ色シンフォニー』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2902",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] このキャラが手札から登場したとき、自分の手札のコストが4点以下のキャラ1体を無償で登場できる。[誘発] ターン開始時、コストが3点以上の味方キャラ1体にAP+1またはDP+1する。構築制限:『ましろ色シンフォニー』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分の手札のコストが４点以下のキャラ１体を無償で登場できる。\n[誘発] ターン開始時、コストが３点以上の味方キャラ１体にＡＰ＋１またはＤＰ＋１する。\n構築制限:『ましろ色シンフォニー』",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分の手札のコストが4点以下のキャラ1体を無償で登場できる。[誘発] ターン開始時、コストが3点以上の味方キャラ1体にAP+1またはDP+1する。構築制限:『ましろ色シンフォニー』",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] このキャラが手札から登場したとき、自分の手札のコストが4点以下のキャラ1体を無償で登場できる。[誘発] ターン開始時、コストが3点以上の味方キャラ1体にAP+1またはDP+1する。構築制限:『ましろ色シンフォニー』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

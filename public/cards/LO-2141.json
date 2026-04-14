@@ -22,7 +22,32 @@
   "costRaw": "宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2141"
+  "text": "{コストが３点以上の味方キャラ１体}にＡＰ＋４する。",
+  "textKr": "{コストが３点以上の味方キャラ１体}にＡＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2141",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが3点以上の味方キャラ1体}にAP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが３点以上の味方キャラ１体}にＡＰ＋４する。",
+    "normalizedText": "{コストが3点以上の味方キャラ1体}にAP+4する。",
+    "lines": [
+      "{コストが3点以上の味方キャラ1体}にAP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

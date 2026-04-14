@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4321"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4321",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

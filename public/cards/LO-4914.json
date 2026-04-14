@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] 味方ＡＦキャラを破棄したとき、味方ＡＦキャラ１体にＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[サポーター:[花花]]\n[誘発] 味方ＡＦキャラを破棄したとき、味方ＡＦキャラ１体にＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4914"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4914",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方AFキャラを破棄したとき、味方AFキャラ1体にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] 味方ＡＦキャラを破棄したとき、味方ＡＦキャラ１体にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] 味方AFキャラを破棄したとき、味方AFキャラ1体にAP+2・DP+2する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] 味方AFキャラを破棄したとき、味方AFキャラ1体にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

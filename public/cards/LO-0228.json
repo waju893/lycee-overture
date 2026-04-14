@@ -26,5 +26,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ][サイドステップ:[0]]\n[宣言] [日日日]:このキャラにＤＭＧ＋２する。",
   "textKr": "[エンゲージ][サイドステップ:[0]]\n[宣言] [日日日]:このキャラにＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0228"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0228",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ][サイドステップ:[0]]\n[宣言] [日日日]:このキャラにＤＭＧ＋２する。",
+    "normalizedText": "[エンゲージ][サイドステップ:[0]]\n[宣言] [日日日]:このキャラにDMG+2する。",
+    "lines": [
+      "[エンゲージ][サイドステップ:[0]]",
+      "[宣言] [日日日]:このキャラにDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [日日日]:このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

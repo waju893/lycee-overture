@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [無無無]:{味方ＤＦキャラ１体}を未行動にする。この能力は失われる。",
   "textKr": "[サポーター:[花花]]\n[宣言] [無無無]:{味方ＤＦキャラ１体}を未行動にする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2077"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2077",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [無無無]:{味方ＤＦキャラ１体}を未行動にする。この能力は失われる。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [無無無]:{味方DFキャラ1体}を未行動にする。この能力は失われる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [無無無]:{味方DFキャラ1体}を未行動にする。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [無無無]:{味方DFキャラ1体}を未行動にする。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

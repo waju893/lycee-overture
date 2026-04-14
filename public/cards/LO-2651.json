@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]エリア１枚を味方フィールドに配置する。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]エリア１枚を味方フィールドに配置する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2651"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2651",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]エリア１枚を味方フィールドに配置する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]エリア1枚を味方フィールドに配置する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]エリア1枚を味方フィールドに配置する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]エリア1枚を味方フィールドに配置する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

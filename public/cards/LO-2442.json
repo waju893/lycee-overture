@@ -1,14 +1,52 @@
 {
+  "cardNo": "LO-2442",
+  "title": "告白",
+  "subName": "",
+  "name": "告白",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は１枚ドローできる。\n構築制限:[NEX]",
+  "textKr": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は１枚ドローできる。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2442",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は1枚ドローできる。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は１枚ドローできる。\n構築制限:[NEX]",
+    "normalizedText": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は1枚ドローできる。構築制限:[NEX]",
+    "lines": [
+      "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は1枚ドローできる。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

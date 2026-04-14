@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:コストが７点以上の味方キャラが登場している場合、このキャラにＡＰ＋１し、このキャラは[ジャンプ:[0]]を得る。",
   "textKr": "[宣言] [0]:コストが７点以上の味方キャラが登場している場合、このキャラにＡＰ＋１し、このキャラは[ジャンプ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4117"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4117",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが7点以上の味方キャラが登場している場合、このキャラにAP+1し、このキャラは[ジャンプ:[0]]を得る。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:コストが７点以上の味方キャラが登場している場合、このキャラにＡＰ＋１し、このキャラは[ジャンプ:[0]]を得る。",
+    "normalizedText": "[宣言] [0]:コストが7点以上の味方キャラが登場している場合、このキャラにAP+1し、このキャラは[ジャンプ:[0]]を得る。",
+    "lines": [
+      "[宣言] [0]:コストが7点以上の味方キャラが登場している場合、このキャラにAP+1し、このキャラは[ジャンプ:[0]]を得る。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

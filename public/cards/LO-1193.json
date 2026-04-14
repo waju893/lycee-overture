@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1193",
+  "title": "最強の能力者",
+  "subName": "乙坂 有宇",
+  "name": "最強の能力者 乙坂 有宇",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -17,5 +20,27 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラ１体は元の能力１つを失う。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体は元の能力１つを失う。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1193",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手キャラ１体は元の能力１つを失う。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手キャラ1体は元の能力1つを失う。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手キャラ1体は元の能力1つを失う。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手キャラ1体は元の能力1つを失う。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

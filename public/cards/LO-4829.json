@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、相手ターン終了時までこのキャラのＤＰを５、ＳＰを４にする。",
   "textKr": "[誘発] このキャラが登場したとき、相手ターン終了時までこのキャラのＤＰを５、ＳＰを４にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4829"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4829",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手ターン終了時までこのキャラのＤＰを５、ＳＰを４にする。",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手ターン終了時までこのキャラのDPを5、SPを4にする。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手ターン終了時までこのキャラのDPを5、SPを4にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手ターン終了時までこのキャラのDPを5、SPを4にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

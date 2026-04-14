@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。このキャラと{味方「リシア」１体}にＡＰ＋１する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。このキャラと{味方「リシア」１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3346"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3346",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。このキャラと{味方「リシア」1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。このキャラと{味方「リシア」１体}にＡＰ＋１する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。このキャラと{味方「リシア」1体}にAP+1する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:自ターン中に使用する。このキャラと{味方「リシア」1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

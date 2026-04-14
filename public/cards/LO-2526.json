@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [月][このキャラを破棄する]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
   "textKr": "[宣言] [月][このキャラを破棄する]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2526"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2526",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [月][このキャラを破棄する]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+    "normalizedText": "[宣言] [月][このキャラを破棄する]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+    "lines": [
+      "[宣言] [月][このキャラを破棄する]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [月][このキャラを破棄する]:相手のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

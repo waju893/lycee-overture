@@ -23,5 +23,31 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方「天庭より来たる幼馴染 フリッカ」１体に１枚チャージできる。",
   "textKr": "[誘発] このキャラが登場したとき、味方「天庭より来たる幼馴染 フリッカ」１体に１枚チャージできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4723"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4723",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方「天庭より来たる幼馴染 フリッカ」1体に1枚チャージできる。",
+      "actions": [
+        {
+          "type": "charge",
+          "amount": 1,
+          "target": "self"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方「天庭より来たる幼馴染 フリッカ」１体に１枚チャージできる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方「天庭より来たる幼馴染 フリッカ」1体に1枚チャージできる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方「天庭より来たる幼馴染 フリッカ」1体に1枚チャージできる。"
+    ],
+    "matchedRuleIds": [
+      "charge"
+    ]
+  },
+  "unresolvedTextLines": []
 }

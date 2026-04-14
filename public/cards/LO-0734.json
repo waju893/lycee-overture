@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0734",
+  "title": "呪詠の鎖",
+  "subName": "アンドロメダ",
+  "name": "呪詠の鎖 アンドロメダ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ER",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 0,
   "useTarget": [
     "flower",
     "flower",
@@ -17,7 +20,31 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [],
-  "keyEffects": [],
-  "leader": true
+  "ex": 0,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー]\n[誘発] このキャラにサポートをしたとき、味方キャラ全てにＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[リーダー]\n[誘発] このキャラにサポートをしたとき、味方キャラ全てにＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0734",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リーダー]\n[誘発] このキャラにサポートをしたとき、味方キャラ全てにＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[リーダー]\n[誘発] このキャラにサポートをしたとき、味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[リーダー]",
+      "[誘発] このキャラにサポートをしたとき、味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

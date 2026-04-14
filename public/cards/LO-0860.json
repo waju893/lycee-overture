@@ -26,5 +26,35 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを２枚破棄する。",
   "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを２枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0860"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0860",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを２枚破棄する。",
+    "normalizedText": "[エンゲージ:[1枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを2枚破棄する。",
+    "lines": [
+      "[エンゲージ:[1枚ドローする。]]",
+      "[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを2枚破棄する。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 味方キャラがエンゲージ登場したとき、相手のデッキを2枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

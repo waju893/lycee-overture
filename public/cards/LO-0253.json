@@ -28,7 +28,22 @@
   "costRaw": "無無無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0253"
+  "text": "{未行動の味方＜魔剣＞キャラ１体}を行動済みにする。相手のデッキを[そのキャラのＤＭＧ]枚破棄する。",
+  "textKr": "{未行動の味方＜魔剣＞キャラ１体}を行動済みにする。相手のデッキを[そのキャラのＤＭＧ]枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0253",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{未行動の味方＜魔剣＞キャラ１体}を行動済みにする。相手のデッキを[そのキャラのＤＭＧ]枚破棄する。",
+    "normalizedText": "{未行動の味方<魔剣>キャラ1体}を行動済みにする。相手のデッキを[そのキャラのDMG]枚破棄する。",
+    "lines": [
+      "{未行動の味方<魔剣>キャラ1体}を行動済みにする。相手のデッキを[そのキャラのDMG]枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{未行動の味方<魔剣>キャラ1体}を行動済みにする。相手のデッキを[そのキャラのDMG]枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

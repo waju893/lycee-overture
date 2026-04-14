@@ -23,7 +23,22 @@
   "costRaw": "日無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1118"
+  "text": "{アイテム１枚}を破棄する。",
+  "textKr": "{アイテム１枚}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1118",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{アイテム１枚}を破棄する。",
+    "normalizedText": "{アイテム1枚}を破棄する。",
+    "lines": [
+      "{アイテム1枚}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{アイテム1枚}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

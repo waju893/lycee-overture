@@ -1,11 +1,55 @@
 {
+  "cardNo": "LO-2450",
+  "title": "脱衣所での遭遇",
+  "subName": "",
+  "name": "脱衣所での遭遇",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "-",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "装備制限:[花]キャラ\n[常時] このキャラにＡＰ＋１する。\n[宣言] [0]:このアイテムを破棄する。１枚ドローする。\n構築制限:[NEX]",
+  "textKr": "装備制限:[花]キャラ\n[常時] このキャラにＡＰ＋１する。\n[宣言] [0]:このアイテムを破棄する。１枚ドローする。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2450",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにAP+1する。[宣言] [0]:このアイテムを破棄する。1枚ドローする。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "装備制限:[花]キャラ\n[常時] このキャラにＡＰ＋１する。\n[宣言] [0]:このアイテムを破棄する。１枚ドローする。\n構築制限:[NEX]",
+    "normalizedText": "装備制限:[花]キャラ\n[常時] このキャラにAP+1する。[宣言] [0]:このアイテムを破棄する。1枚ドローする。構築制限:[NEX]",
+    "lines": [
+      "装備制限:[花]キャラ",
+      "[常時] このキャラにAP+1する。[宣言] [0]:このアイテムを破棄する。1枚ドローする。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "装備制限:[花]キャラ",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

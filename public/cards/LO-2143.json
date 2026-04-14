@@ -21,7 +21,22 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2143"
+  "text": "{味方キャラ１体}は[ガッツ:[このキャラの使用代償]]を得る。",
+  "textKr": "{味方キャラ１体}は[ガッツ:[このキャラの使用代償]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2143",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}は[ガッツ:[このキャラの使用代償]]を得る。",
+    "normalizedText": "{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。",
+    "lines": [
+      "{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

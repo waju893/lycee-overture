@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2204",
+  "title": "レッドカードフラワー",
+  "subName": "アマリリス",
+  "name": "レッドカードフラワー アマリリス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,13 +17,31 @@
   "dp": 1,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    3,
-    7
-  ],
-  "keyEffects": [
-    3,
-    7
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ][サイドステップ:[0]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストは味方ＡＦキャラの登場にのみ支払える。\n構築制限:[BXB]かつ[月]",
+  "textKr": "[エンゲージ][サイドステップ:[0]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストは味方ＡＦキャラの登場にのみ支払える。\n構築制限:[BXB]かつ[月]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2204",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ][サイドステップ:[0]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストは味方ＡＦキャラの登場にのみ支払える。\n構築制限:[BXB]かつ[月]",
+    "normalizedText": "[エンゲージ][サイドステップ:[0]]\n[コスト] 自分のデッキを1枚破棄する。破棄したとき、[月月]を発生する。このコストは味方AFキャラの登場にのみ支払える。構築制限:[BXB]かつ[月]",
+    "lines": [
+      "[エンゲージ][サイドステップ:[0]]",
+      "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[月月]を発生する。このコストは味方AFキャラの登場にのみ支払える。構築制限:[BXB]かつ[月]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[月月]を発生する。このコストは味方AFキャラの登場にのみ支払える。構築制限:[BXB]かつ[月]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

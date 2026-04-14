@@ -23,7 +23,32 @@
   "costRaw": "宙宙無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2586"
+  "text": "{味方「あいりすミスティリア！」キャラ１体}にＡＰ＋３・ＤＰ＋３し、そのキャラの下にゴミ箱のこのカードを置く。",
+  "textKr": "{味方「あいりすミスティリア！」キャラ１体}にＡＰ＋３・ＤＰ＋３し、そのキャラの下にゴミ箱のこのカードを置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2586",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方「あいりすミスティリア!」キャラ1体}にAP+3・DP+3し、そのキャラの下にゴミ箱のこのカードを置く。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方「あいりすミスティリア！」キャラ１体}にＡＰ＋３・ＤＰ＋３し、そのキャラの下にゴミ箱のこのカードを置く。",
+    "normalizedText": "{味方「あいりすミスティリア!」キャラ1体}にAP+3・DP+3し、そのキャラの下にゴミ箱のこのカードを置く。",
+    "lines": [
+      "{味方「あいりすミスティリア!」キャラ1体}にAP+3・DP+3し、そのキャラの下にゴミ箱のこのカードを置く。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

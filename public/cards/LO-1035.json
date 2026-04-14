@@ -24,5 +24,36 @@
   "typeTagsRaw": "BC自由",
   "text": "[アシスト][ステップ:[0]]\n[誘発] 味方＜BC自由＞キャラがエンゲージ登場したとき、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
   "textKr": "[アシスト][ステップ:[0]]\n[誘発] 味方＜BC自由＞キャラがエンゲージ登場したとき、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1035"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1035",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、相手キャラ1体にAP-2・DP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][ステップ:[0]]\n[誘発] 味方＜BC自由＞キャラがエンゲージ登場したとき、相手キャラ１体にＡＰ－２・ＤＰ－２する。",
+    "normalizedText": "[アシスト][ステップ:[0]]\n[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、相手キャラ1体にAP-2・DP-2する。",
+    "lines": [
+      "[アシスト][ステップ:[0]]",
+      "[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、相手キャラ1体にAP-2・DP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

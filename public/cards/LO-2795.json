@@ -27,5 +27,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン中、このキャラが登場したとき、相手キャラ１体を相手ＤＦに移動する。",
   "textKr": "[誘発] 自ターン中、このキャラが登場したとき、相手キャラ１体を相手ＤＦに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2795"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2795",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、このキャラが登場したとき、相手キャラ１体を相手ＤＦに移動する。",
+    "normalizedText": "[誘発] 自ターン中、このキャラが登場したとき、相手キャラ1体を相手DFに移動する。",
+    "lines": [
+      "[誘発] 自ターン中、このキャラが登場したとき、相手キャラ1体を相手DFに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、このキャラが登場したとき、相手キャラ1体を相手DFに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

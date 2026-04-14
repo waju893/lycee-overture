@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2823",
+  "title": "記憶の還る場所",
+  "subName": "空門 蒼",
+  "name": "記憶の還る場所 空門 蒼",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,55 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「七影蝶」１枚を探し味方フィールドに無償で配置できる。\n[宣言] [0]:自ターン中に使用する。このキャラを破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋２する。\n構築制限:[VA]かつ[日]",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「七影蝶」１枚を探し味方フィールドに無償で配置できる。\n[宣言] [0]:自ターン中に使用する。このキャラを破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋２する。\n構築制限:[VA]かつ[日]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2823",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「七影蝶」1枚を探し味方フィールドに無償で配置できる。[宣言] [0]:自ターン中に使用する。このキャラを破棄する。破棄したとき、{味方キャラ1体}にAP+2する。構築制限:[VA]かつ[日]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "七影蝶",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「七影蝶」１枚を探し味方フィールドに無償で配置できる。\n[宣言] [0]:自ターン中に使用する。このキャラを破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋２する。\n構築制限:[VA]かつ[日]",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「七影蝶」1枚を探し味方フィールドに無償で配置できる。[宣言] [0]:自ターン中に使用する。このキャラを破棄する。破棄したとき、{味方キャラ1体}にAP+2する。構築制限:[VA]かつ[日]",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「七影蝶」1枚を探し味方フィールドに無償で配置できる。[宣言] [0]:自ターン中に使用する。このキャラを破棄する。破棄したとき、{味方キャラ1体}にAP+2する。構築制限:[VA]かつ[日]"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

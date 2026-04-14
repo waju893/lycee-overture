@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方キャラ１体にＤＭＧ＋１する。",
   "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2768"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2768",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方キャラ1体にDMG+1する。",
+    "lines": [
+      "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

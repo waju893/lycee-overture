@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [このキャラを破棄する]:{相手キャラ１体}にＡＰ－２・ＤＰ－２する。",
   "textKr": "[宣言] [このキャラを破棄する]:{相手キャラ１体}にＡＰ－２・ＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1543"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1543",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [このキャラを破棄する]:{相手キャラ1体}にAP-2・DP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [このキャラを破棄する]:{相手キャラ１体}にＡＰ－２・ＤＰ－２する。",
+    "normalizedText": "[宣言] [このキャラを破棄する]:{相手キャラ1体}にAP-2・DP-2する。",
+    "lines": [
+      "[宣言] [このキャラを破棄する]:{相手キャラ1体}にAP-2・DP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

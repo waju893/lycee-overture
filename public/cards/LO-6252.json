@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラを味方『吸血殲鬼ヴェドゴニア』キャラの能力で破棄したとき、相手キャラ１体を破棄する。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラを味方『吸血殲鬼ヴェドゴニア』キャラの能力で破棄したとき、相手キャラ１体を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6252"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6252",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラを味方『吸血殲鬼ヴェドゴニア』キャラの能力で破棄したとき、相手キャラ１体を破棄する。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラを味方『吸血殲鬼ヴェドゴニア』キャラの能力で破棄したとき、相手キャラ1体を破棄する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラを味方『吸血殲鬼ヴェドゴニア』キャラの能力で破棄したとき、相手キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラを味方『吸血殲鬼ヴェドゴニア』キャラの能力で破棄したとき、相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3187",
+  "title": "ゲコラー",
+  "subName": "帆風 潤子",
+  "name": "ゲコラー 帆風 潤子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,53 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「食蜂操祈」１体を探し登場できる。\n[宣言] [0]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}にＡＰ＋１する。\n構築制限:『とある科学の超電磁砲』",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「食蜂操祈」１体を探し登場できる。\n[宣言] [0]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}にＡＰ＋１する。\n構築制限:『とある科学の超電磁砲』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3187",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「食蜂操祈」1体を探し登場できる。[宣言] [0]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ1体}にAP+1する。構築制限:『とある科学の超電磁砲』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "食蜂操祈"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「食蜂操祈」１体を探し登場できる。\n[宣言] [0]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}にＡＰ＋１する。\n構築制限:『とある科学の超電磁砲』",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「食蜂操祈」1体を探し登場できる。[宣言] [0]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ1体}にAP+1する。構築制限:『とある科学の超電磁砲』",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「食蜂操祈」1体を探し登場できる。[宣言] [0]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ1体}にAP+1する。構築制限:『とある科学の超電磁砲』"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "神姫",
   "text": "[エンゲージ]\n[宣言] [T][雪雪無無]:{相手キャラ１体}を行動済みにする。",
   "textKr": "[エンゲージ]\n[宣言] [T][雪雪無無]:{相手キャラ１体}を行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0764"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0764",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [T][雪雪無無]:{相手キャラ１体}を行動済みにする。",
+    "normalizedText": "[エンゲージ]\n[宣言] [T][雪雪無無]:{相手キャラ1体}を行動済みにする。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [T][雪雪無無]:{相手キャラ1体}を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T][雪雪無無]:{相手キャラ1体}を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

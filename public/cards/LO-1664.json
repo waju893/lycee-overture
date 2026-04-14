@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1664",
+  "title": "猫かぶり",
+  "subName": "三司 あやせ",
+  "name": "猫かぶり 三司 あやせ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,53 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキから「三司あやせ」１体を探しこのキャラが登場していたフィールドに無償で登場する。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキから「三司あやせ」１体を探しこのキャラが登場していたフィールドに無償で登場する。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1664",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキから「三司あやせ」1体を探しこのキャラが登場していたフィールドに無償で登場する。構築制限:ゆずソフト([YUZ])",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck"
+          ],
+          "match": {
+            "exactName": "三司あやせ",
+            "kind": "event"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "event",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキから「三司あやせ」１体を探しこのキャラが登場していたフィールドに無償で登場する。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキから「三司あやせ」1体を探しこのキャラが登場していたフィールドに無償で登場する。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のデッキから「三司あやせ」1体を探しこのキャラが登場していたフィールドに無償で登場する。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

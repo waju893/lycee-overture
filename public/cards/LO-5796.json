@@ -25,5 +25,51 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:味方[SME]キャラ１体にＳＰ＋１する。サブネームに「姫」または「プリンセス」を含む味方キャラ全てにＤＰ＋１する。",
   "textKr": "[宣言] [0]:味方[SME]キャラ１体にＳＰ＋１する。サブネームに「姫」または「プリンセス」を含む味方キャラ全てにＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5796"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5796",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方[SME]キャラ1体にSP+1する。サブネームに「姫」または「プリンセス」を含む味方キャラ全てにDP+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "sp",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:味方[SME]キャラ１体にＳＰ＋１する。サブネームに「姫」または「プリンセス」を含む味方キャラ全てにＤＰ＋１する。",
+    "normalizedText": "[宣言] [0]:味方[SME]キャラ1体にSP+1する。サブネームに「姫」または「プリンセス」を含む味方キャラ全てにDP+1する。",
+    "lines": [
+      "[宣言] [0]:味方[SME]キャラ1体にSP+1する。サブネームに「姫」または「プリンセス」を含む味方キャラ全てにDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

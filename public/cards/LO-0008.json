@@ -26,5 +26,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋４する。",
   "textKr": "[誘発] このキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0008"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0008",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラにサポートをしたとき、このキャラにバトル終了時までＤＭＧ＋４する。",
+    "normalizedText": "[誘発] このキャラにサポートをしたとき、このキャラにバトル終了時までDMG+4する。",
+    "lines": [
+      "[誘発] このキャラにサポートをしたとき、このキャラにバトル終了時までDMG+4する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラにサポートをしたとき、このキャラにバトル終了時までDMG+4する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

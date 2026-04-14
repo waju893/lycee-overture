@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1906",
+  "title": "アイテム",
+  "subName": "滝壺 理后",
+  "name": "アイテム 滝壺 理后",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,47 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:自ターン中に使用する。味方キャラ全てが[雪]の場合、自分のデッキから「体晶」１枚を探し公開して手札に入れる。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "textKr": "[宣言] [T]:自ターン中に使用する。味方キャラ全てが[雪]の場合、自分のデッキから「体晶」１枚を探し公開して手札に入れる。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1906",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:自ターン中に使用する。味方キャラ全てが[雪]の場合、自分のデッキから「体晶」1枚を探し公開して手札に入れる。構築制限:とある魔術の禁書目録([TOA])",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {
+            "exactName": "体晶"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:自ターン中に使用する。味方キャラ全てが[雪]の場合、自分のデッキから「体晶」１枚を探し公開して手札に入れる。\n構築制限:とある魔術の禁書目録（[TOA]）",
+    "normalizedText": "[宣言] [T]:自ターン中に使用する。味方キャラ全てが[雪]の場合、自分のデッキから「体晶」1枚を探し公開して手札に入れる。構築制限:とある魔術の禁書目録([TOA])",
+    "lines": [
+      "[宣言] [T]:自ターン中に使用する。味方キャラ全てが[雪]の場合、自分のデッキから「体晶」1枚を探し公開して手札に入れる。構築制限:とある魔術の禁書目録([TOA])"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

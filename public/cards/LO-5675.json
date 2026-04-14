@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[コスト] キャラの登場に支払えない[雪雪]を発生する。この効果は失われる。",
   "textKr": "[コスト] キャラの登場に支払えない[雪雪]を発生する。この効果は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5675"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5675",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] キャラの登場に支払えない[雪雪]を発生する。この効果は失われる。",
+    "normalizedText": "[コスト] キャラの登場に支払えない[雪雪]を発生する。この効果は失われる。",
+    "lines": [
+      "[コスト] キャラの登場に支払えない[雪雪]を発生する。この効果は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] キャラの登場に支払えない[雪雪]を発生する。この効果は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

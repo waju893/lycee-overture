@@ -1,13 +1,58 @@
 {
+  "cardNo": "LO-2325",
+  "title": "招き猫像",
+  "subName": "",
+  "name": "招き猫像",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "装備制限:[日]キャラ\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにＡＰ＋２・ＤＭＧ＋１し、このキャラは[ガッツ:[0]]を得る。\n構築制限:[OSP]",
+  "textKr": "装備制限:[日]キャラ\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにＡＰ＋２・ＤＭＧ＋１し、このキャラは[ガッツ:[0]]を得る。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2325",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラのバトル中に使用する。このキャラにAP+2・DMG+1し、このキャラは[ガッツ:[0]]を得る。構築制限:[OSP]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "装備制限:[日]キャラ\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにＡＰ＋２・ＤＭＧ＋１し、このキャラは[ガッツ:[0]]を得る。\n構築制限:[OSP]",
+    "normalizedText": "装備制限:[日]キャラ\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにAP+2・DMG+1し、このキャラは[ガッツ:[0]]を得る。構築制限:[OSP]",
+    "lines": [
+      "装備制限:[日]キャラ",
+      "[宣言] [0]:このキャラのバトル中に使用する。このキャラにAP+2・DMG+1し、このキャラは[ガッツ:[0]]を得る。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "装備制限:[日]キャラ",
+      "reason": "no parser rule matched"
+    }
   ]
 }

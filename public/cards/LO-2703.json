@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
   "textKr": "※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2703"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2703",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+    "normalizedText": "※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+    "lines": [
+      "※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "※このカードは大会における禁止・制限の対象となっています。全てのデッキに入れることができません。(2026/01/09施行)",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -22,7 +22,22 @@
   "costRaw": "宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0698"
+  "text": "相手のサポートの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "相手のサポートの宣言に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0698",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手のサポートの宣言に対応して使用する。その宣言の解決は失敗する。",
+    "normalizedText": "相手のサポートの宣言に対応して使用する。その宣言の解決は失敗する。",
+    "lines": [
+      "相手のサポートの宣言に対応して使用する。その宣言の解決は失敗する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手のサポートの宣言に対応して使用する。その宣言の解決は失敗する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

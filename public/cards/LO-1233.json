@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラのサポートはコストが４点以上のキャラのみを対象に指定できる。",
   "textKr": "[常時] このキャラのサポートはコストが４点以上のキャラのみを対象に指定できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1233"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1233",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[常時] このキャラのサポートはコストが４点以上のキャラのみを対象に指定できる。",
+    "normalizedText": "[常時] このキャラのサポートはコストが4点以上のキャラのみを対象に指定できる。",
+    "lines": [
+      "[常時] このキャラのサポートはコストが4点以上のキャラのみを対象に指定できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] このキャラのサポートはコストが4点以上のキャラのみを対象に指定できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

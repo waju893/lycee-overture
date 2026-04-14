@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラ１体を味方フィールドに移動する。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラ１体を味方フィールドに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5143"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5143",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラ１体を味方フィールドに移動する。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラ1体を味方フィールドに移動する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラ1体を味方フィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、味方『うたわれるもの シリーズ』キャラ1体を味方フィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

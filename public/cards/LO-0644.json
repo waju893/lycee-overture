@@ -24,5 +24,20 @@
   "typeTagsRaw": "-",
   "text": "[宣言] [D1]:{このキャラと同列のキャラ１体}はターン終了時まで基本能力１つを失う。",
   "textKr": "[宣言] [D1]:{このキャラと同列のキャラ１体}はターン終了時まで基本能力１つを失う。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0644"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0644",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:{このキャラと同列のキャラ１体}はターン終了時まで基本能力１つを失う。",
+    "normalizedText": "[宣言] [D1]:{このキャラと同列のキャラ1体}はターン終了時まで基本能力1つを失う。",
+    "lines": [
+      "[宣言] [D1]:{このキャラと同列のキャラ1体}はターン終了時まで基本能力1つを失う。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [D1]:{このキャラと同列のキャラ1体}はターン終了時まで基本能力1つを失う。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

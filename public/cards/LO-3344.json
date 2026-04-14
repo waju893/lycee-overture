@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3344",
+  "title": "姉弟同然",
+  "subName": "安場 琥珀",
+  "name": "姉弟同然 安場 琥珀",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,60 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「演劇部」１枚を探し味方フィールドに無償で配置できる。配置しない場合、１枚ドローする。\n構築制限:[NAV]かつ[日]",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「演劇部」１枚を探し味方フィールドに無償で配置できる。配置しない場合、１枚ドローする。\n構築制限:[NAV]かつ[日]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3344",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「演劇部」1枚を探し味方フィールドに無償で配置できる。配置しない場合、1枚ドローする。構築制限:[NAV]かつ[日]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "演劇部",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「演劇部」１枚を探し味方フィールドに無償で配置できる。配置しない場合、１枚ドローする。\n構築制限:[NAV]かつ[日]",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「演劇部」1枚を探し味方フィールドに無償で配置できる。配置しない場合、1枚ドローする。構築制限:[NAV]かつ[日]",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「演劇部」1枚を探し味方フィールドに無償で配置できる。配置しない場合、1枚ドローする。構築制限:[NAV]かつ[日]"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

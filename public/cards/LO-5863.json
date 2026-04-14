@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラのＡＰとＤＰに＋[味方＜月華会＞または＜天道会＞キャラの数]する。",
   "textKr": "[宣言] [0]:このキャラのＡＰとＤＰに＋[味方＜月華会＞または＜天道会＞キャラの数]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5863"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5863",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラのＡＰとＤＰに＋[味方＜月華会＞または＜天道会＞キャラの数]する。",
+    "normalizedText": "[宣言] [0]:このキャラのAPとDPに+[味方<月華会>または<天道会>キャラの数]する。",
+    "lines": [
+      "[宣言] [0]:このキャラのAPとDPに+[味方<月華会>または<天道会>キャラの数]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:このキャラのAPとDPに+[味方<月華会>または<天道会>キャラの数]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

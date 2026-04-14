@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場した時、元のＤＭＧが４以上の味方キャラが登場していない場合、相手ＡＦキャラ１体を相手ＡＦに移動する。",
   "textKr": "[誘発] このキャラが登場した時、元のＤＭＧが４以上の味方キャラが登場していない場合、相手ＡＦキャラ１体を相手ＡＦに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2513"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2513",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場した時、元のＤＭＧが４以上の味方キャラが登場していない場合、相手ＡＦキャラ１体を相手ＡＦに移動する。",
+    "normalizedText": "[誘発] このキャラが登場した時、元のDMGが4以上の味方キャラが登場していない場合、相手AFキャラ1体を相手AFに移動する。",
+    "lines": [
+      "[誘発] このキャラが登場した時、元のDMGが4以上の味方キャラが登場していない場合、相手AFキャラ1体を相手AFに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場した時、元のDMGが4以上の味方キャラが登場していない場合、相手AFキャラ1体を相手AFに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

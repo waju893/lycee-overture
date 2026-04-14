@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[ガッツ:[宙宙宙宙宙]]\n[誘発] このキャラがダウンしたとき、相手のデッキを１枚破棄する。",
   "textKr": "[ガッツ:[宙宙宙宙宙]]\n[誘発] このキャラがダウンしたとき、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1545"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1545",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ガッツ:[宙宙宙宙宙]]\n[誘発] このキャラがダウンしたとき、相手のデッキを１枚破棄する。",
+    "normalizedText": "[ガッツ:[宙宙宙宙宙]]\n[誘発] このキャラがダウンしたとき、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[ガッツ:[宙宙宙宙宙]]",
+      "[誘発] このキャラがダウンしたとき、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ガッツ:[宙宙宙宙宙]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラがダウンしたとき、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

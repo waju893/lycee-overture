@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[手札宣言] [花花無]:{味方ＡＦキャラ１体}にＡＰ＋４・ＤＰ＋４する。",
   "textKr": "[サポーター:[花花]]\n[手札宣言] [花花無]:{味方ＡＦキャラ１体}にＡＰ＋４・ＤＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4635"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4635",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [花花無]:{味方AFキャラ1体}にAP+4・DP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[手札宣言] [花花無]:{味方ＡＦキャラ１体}にＡＰ＋４・ＤＰ＋４する。",
+    "normalizedText": "[サポーター:[花花]]\n[手札宣言] [花花無]:{味方AFキャラ1体}にAP+4・DP+4する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[手札宣言] [花花無]:{味方AFキャラ1体}にAP+4・DP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

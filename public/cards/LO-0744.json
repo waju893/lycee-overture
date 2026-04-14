@@ -26,5 +26,38 @@
   "typeTagsRaw": "幻獣",
   "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てに相手ターン終了時までＤＰ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てに相手ターン終了時までＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0744"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0744",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ全てに相手ターン終了時までDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1,
+          "duration": "endOfTurn"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てに相手ターン終了時までＤＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ全てに相手ターン終了時までDP+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、味方キャラ全てに相手ターン終了時までDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat:endOfTurn"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

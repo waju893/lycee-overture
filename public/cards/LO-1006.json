@@ -23,5 +23,45 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから[花]または＜大洗女子＞のＥＸが２のキャラ１体を探し公開して手札に入れる。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから[花]または＜大洗女子＞のＥＸが２のキャラ１体を探し公開して手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1006"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1006",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから[花]または<大洗女子>のEXが2のキャラ1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから[花]または＜大洗女子＞のＥＸが２のキャラ１体を探し公開して手札に入れる。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから[花]または<大洗女子>のEXが2のキャラ1体を探し公開して手札に入れる。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、自分のデッキから[花]または<大洗女子>のEXが2のキャラ1体を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

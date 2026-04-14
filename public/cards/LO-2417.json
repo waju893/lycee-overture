@@ -24,5 +24,30 @@
   "typeTagsRaw": "魏",
   "text": "[手札宣言] [宙]:味方防御[宙]キャラ１体にＤＰ＋３する。",
   "textKr": "[手札宣言] [宙]:味方防御[宙]キャラ１体にＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2417"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2417",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [宙]:味方防御[宙]キャラ1体にDP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [宙]:味方防御[宙]キャラ１体にＤＰ＋３する。",
+    "normalizedText": "[手札宣言] [宙]:味方防御[宙]キャラ1体にDP+3する。",
+    "lines": [
+      "[手札宣言] [宙]:味方防御[宙]キャラ1体にDP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

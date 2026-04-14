@@ -22,7 +22,22 @@
   "costRaw": "月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3072"
+  "text": "コストが２点以下の相手のイベントまたはアイテムまたはエリアまたは手札宣言能力の使用に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "コストが２点以下の相手のイベントまたはアイテムまたはエリアまたは手札宣言能力の使用に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3072",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "コストが２点以下の相手のイベントまたはアイテムまたはエリアまたは手札宣言能力の使用に対応して使用する。その宣言の解決は失敗する。",
+    "normalizedText": "コストが2点以下の相手のイベントまたはアイテムまたはエリアまたは手札宣言能力の使用に対応して使用する。その宣言の解決は失敗する。",
+    "lines": [
+      "コストが2点以下の相手のイベントまたはアイテムまたはエリアまたは手札宣言能力の使用に対応して使用する。その宣言の解決は失敗する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "コストが2点以下の相手のイベントまたはアイテムまたはエリアまたは手札宣言能力の使用に対応して使用する。その宣言の解決は失敗する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

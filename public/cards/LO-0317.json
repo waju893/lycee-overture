@@ -24,5 +24,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [T]:自ターン中に使用する。{自分のゴミ箱の「冷泉麻子」１体}をデッキの下に置く。",
   "textKr": "[アシスト]\n[宣言] [T]:自ターン中に使用する。{自分のゴミ箱の「冷泉麻子」１体}をデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0317"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0317",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T]:自ターン中に使用する。{自分のゴミ箱の「冷泉麻子」１体}をデッキの下に置く。",
+    "normalizedText": "[アシスト]\n[宣言] [T]:自ターン中に使用する。{自分のゴミ箱の「冷泉麻子」1体}をデッキの下に置く。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T]:自ターン中に使用する。{自分のゴミ箱の「冷泉麻子」1体}をデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T]:自ターン中に使用する。{自分のゴミ箱の「冷泉麻子」1体}をデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1648",
+  "title": "ブラコン",
+  "subName": "在原 七海",
+  "name": "ブラコン 在原 七海",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,31 @@
   "dp": 1,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[D1]]\n[誘発] 自ターン中、味方キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置く。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[サポーター:[D1]]\n[誘発] 自ターン中、味方キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置く。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1648",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[D1]]\n[誘発] 自ターン中、味方キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置く。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[サポーター:[D1]]\n[誘発] 自ターン中、味方キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置く。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[サポーター:[D1]]",
+      "[誘発] 自ターン中、味方キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置く。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[D1]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自ターン中、味方キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置く。構築制限:ゆずソフト([YUZ])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

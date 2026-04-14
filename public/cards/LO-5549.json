@@ -23,5 +23,48 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「夜の世界の学生 七番雛＆射場久美子＆春日真由美」１体を探し無償で登場できる。登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。",
   "textKr": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「夜の世界の学生 七番雛＆射場久美子＆春日真由美」１体を探し無償で登場できる。登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5549"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5549",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "自ターン開始時",
+      "originalLine": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「夜の世界の学生 七番雛&射場久美子&春日真由美」1体を探し無償で登場できる。登場したとき、相手キャラ1体にAP-2またはDP-2する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "夜の世界の学生 七番雛&射場久美子&春日真由美",
+            "kind": "character"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "character",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「夜の世界の学生 七番雛＆射場久美子＆春日真由美」１体を探し無償で登場できる。登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。",
+    "normalizedText": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「夜の世界の学生 七番雛&射場久美子&春日真由美」1体を探し無償で登場できる。登場したとき、相手キャラ1体にAP-2またはDP-2する。",
+    "lines": [
+      "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「夜の世界の学生 七番雛&射場久美子&春日真由美」1体を探し無償で登場できる。登場したとき、相手キャラ1体にAP-2またはDP-2する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

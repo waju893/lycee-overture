@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２][アグレッシブ]\n[宣言] [C1]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋１する。",
   "textKr": "[チャージ:２][アグレッシブ]\n[宣言] [C1]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4097"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4097",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1]:自ターン中に使用する。{味方キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２][アグレッシブ]\n[宣言] [C1]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[チャージ:2][アグレッシブ]\n[宣言] [C1]:自ターン中に使用する。{味方キャラ1体}にAP+1する。",
+    "lines": [
+      "[チャージ:2][アグレッシブ]",
+      "[宣言] [C1]:自ターン中に使用する。{味方キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2][アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

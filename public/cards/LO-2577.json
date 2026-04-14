@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [D1]:相手ターン中に使用する。{味方[日]キャラ１体}にＡＰ＋１する。この能力は失われる。\n[宣言] [日]:このキャラは[アグレッシブ]を得る。",
   "textKr": "[宣言] [D1]:相手ターン中に使用する。{味方[日]キャラ１体}にＡＰ＋１する。この能力は失われる。\n[宣言] [日]:このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2577"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2577",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:相手ターン中に使用する。{味方[日]キャラ1体}にAP+1する。この能力は失われる。[宣言] [日]:このキャラは[アグレッシブ]を得る。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:相手ターン中に使用する。{味方[日]キャラ１体}にＡＰ＋１する。この能力は失われる。\n[宣言] [日]:このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[宣言] [D1]:相手ターン中に使用する。{味方[日]キャラ1体}にAP+1する。この能力は失われる。[宣言] [日]:このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[宣言] [D1]:相手ターン中に使用する。{味方[日]キャラ1体}にAP+1する。この能力は失われる。[宣言] [日]:このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

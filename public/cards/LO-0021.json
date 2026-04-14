@@ -26,5 +26,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[雪]]",
   "textKr": "[オーダーステップ:[雪]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0021"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0021",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[雪]]",
+    "normalizedText": "[オーダーステップ:[雪]]",
+    "lines": [
+      "[オーダーステップ:[雪]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[雪]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

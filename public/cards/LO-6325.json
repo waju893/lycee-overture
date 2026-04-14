@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方「吐有馬」が登場している場合、自分にシールド＋１できる。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方「吐有馬」が登場している場合、自分にシールド＋１できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6325"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6325",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。味方「吐有馬」が登場している場合、自分にシールド+1できる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、１枚ドローする。味方「吐有馬」が登場している場合、自分にシールド＋１できる。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、1枚ドローする。味方「吐有馬」が登場している場合、自分にシールド+1できる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、1枚ドローする。味方「吐有馬」が登場している場合、自分にシールド+1できる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

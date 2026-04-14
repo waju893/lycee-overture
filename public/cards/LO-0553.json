@@ -22,7 +22,22 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0553"
+  "text": "{キャラ１体}は能力値修正を失う。",
+  "textKr": "{キャラ１体}は能力値修正を失う。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0553",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{キャラ１体}は能力値修正を失う。",
+    "normalizedText": "{キャラ1体}は能力値修正を失う。",
+    "lines": [
+      "{キャラ1体}は能力値修正を失う。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{キャラ1体}は能力値修正を失う。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

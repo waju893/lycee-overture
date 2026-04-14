@@ -21,7 +21,32 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4100"
+  "text": "自ターン中に使用する。バトル中に使用できない。コストが２点以下の味方[雪]キャラ全てにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "textKr": "自ターン中に使用する。バトル中に使用できない。コストが２点以下の味方[雪]キャラ全てにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4100",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。バトル中に使用できない。コストが2点以下の味方[雪]キャラ全てにAP+2・DP+2・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。バトル中に使用できない。コストが２点以下の味方[雪]キャラ全てにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+    "normalizedText": "自ターン中に使用する。バトル中に使用できない。コストが2点以下の味方[雪]キャラ全てにAP+2・DP+2・DMG+1する。",
+    "lines": [
+      "自ターン中に使用する。バトル中に使用できない。コストが2点以下の味方[雪]キャラ全てにAP+2・DP+2・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

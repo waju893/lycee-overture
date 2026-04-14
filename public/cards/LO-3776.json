@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが手札から登場したとき、自分の手札の「帝国魔神団長 メフィスト」１体を無償で登場する。",
   "textKr": "[誘発] このキャラが手札から登場したとき、自分の手札の「帝国魔神団長 メフィスト」１体を無償で登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3776"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3776",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが手札から登場したとき、自分の手札の「帝国魔神団長 メフィスト」１体を無償で登場する。",
+    "normalizedText": "[誘発] このキャラが手札から登場したとき、自分の手札の「帝国魔神団長 メフィスト」1体を無償で登場する。",
+    "lines": [
+      "[誘発] このキャラが手札から登場したとき、自分の手札の「帝国魔神団長 メフィスト」1体を無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが手札から登場したとき、自分の手札の「帝国魔神団長 メフィスト」1体を無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

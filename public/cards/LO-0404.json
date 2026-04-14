@@ -26,5 +26,20 @@
   "typeTagsRaw": "知波単",
   "text": "[誘発] このキャラを除く味方＜知波単＞キャラが登場したとき、このキャラは[アグレッシブ]を得る。",
   "textKr": "[誘発] このキャラを除く味方＜知波単＞キャラが登場したとき、このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0404"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0404",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラを除く味方＜知波単＞キャラが登場したとき、このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[誘発] このキャラを除く味方<知波単>キャラが登場したとき、このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[誘発] このキャラを除く味方<知波単>キャラが登場したとき、このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラを除く味方<知波単>キャラが登場したとき、このキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

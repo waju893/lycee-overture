@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[0]]\n[常時] このキャラは行動済みでも防御キャラに指定できる。",
   "textKr": "[オーダーチェンジ:[0]]\n[常時] このキャラは行動済みでも防御キャラに指定できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0571"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0571",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[常時] このキャラは行動済みでも防御キャラに指定できる。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[常時] このキャラは行動済みでも防御キャラに指定できる。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[常時] このキャラは行動済みでも防御キャラに指定できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラは行動済みでも防御キャラに指定できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

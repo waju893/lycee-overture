@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2596",
+  "title": "水を司る天使",
+  "subName": "リディア",
+  "name": "水を司る天使 リディア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,42 @@
   "dp": 3,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    15
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方[宙]キャラ１体}の下のカード１枚を破棄する。破棄したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:『あいりすミスティリア！』",
+  "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方[宙]キャラ１体}の下のカード１枚を破棄する。破棄したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:『あいりすミスティリア！』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2596",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方[宙]キャラ1体}の下のカード1枚を破棄する。破棄したとき、このキャラにAP+1・DP+1・DMG+1する。構築制限:『あいりすミスティリア!』",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方[宙]キャラ１体}の下のカード１枚を破棄する。破棄したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:『あいりすミスティリア！』",
+    "normalizedText": "[ボーナス:[相手のデッキを1枚破棄する。]]\n[宣言] [0]:{味方[宙]キャラ1体}の下のカード1枚を破棄する。破棄したとき、このキャラにAP+1・DP+1・DMG+1する。構築制限:『あいりすミスティリア!』",
+    "lines": [
+      "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "[宣言] [0]:{味方[宙]キャラ1体}の下のカード1枚を破棄する。破棄したとき、このキャラにAP+1・DP+1・DMG+1する。構築制限:『あいりすミスティリア!』"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

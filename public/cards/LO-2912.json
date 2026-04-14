@@ -21,7 +21,22 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2912"
+  "text": "自ターン中に使用する。{コストが４点以下の味方キャラ１体}を未行動にする。そのキャラにＤＭＧ－４する。",
+  "textKr": "自ターン中に使用する。{コストが４点以下の味方キャラ１体}を未行動にする。そのキャラにＤＭＧ－４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2912",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。{コストが４点以下の味方キャラ１体}を未行動にする。そのキャラにＤＭＧ－４する。",
+    "normalizedText": "自ターン中に使用する。{コストが4点以下の味方キャラ1体}を未行動にする。そのキャラにDMG-4する。",
+    "lines": [
+      "自ターン中に使用する。{コストが4点以下の味方キャラ1体}を未行動にする。そのキャラにDMG-4する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自ターン中に使用する。{コストが4点以下の味方キャラ1体}を未行動にする。そのキャラにDMG-4する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

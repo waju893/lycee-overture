@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [花花花]:このキャラに[ＳＰ＋味方エリアの枚数]する。",
   "textKr": "[宣言] [花花花]:このキャラに[ＳＰ＋味方エリアの枚数]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5807"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5807",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [花花花]:このキャラに[ＳＰ＋味方エリアの枚数]する。",
+    "normalizedText": "[宣言] [花花花]:このキャラに[SP+味方エリアの枚数]する。",
+    "lines": [
+      "[宣言] [花花花]:このキャラに[SP+味方エリアの枚数]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [花花花]:このキャラに[SP+味方エリアの枚数]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

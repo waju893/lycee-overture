@@ -23,5 +23,30 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] キャラがダウンしたバトル終了時、キャラ１体にＡＰ－３・ＤＰ－３する。",
   "textKr": "[誘発] キャラがダウンしたバトル終了時、キャラ１体にＡＰ－３・ＤＰ－３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0005"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0005",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] キャラがダウンしたバトル終了時、キャラ1体にAP-3・DP-3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] キャラがダウンしたバトル終了時、キャラ１体にＡＰ－３・ＤＰ－３する。",
+    "normalizedText": "[誘発] キャラがダウンしたバトル終了時、キャラ1体にAP-3・DP-3する。",
+    "lines": [
+      "[誘発] キャラがダウンしたバトル終了時、キャラ1体にAP-3・DP-3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

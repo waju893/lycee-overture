@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [花花]:このキャラにＳＰ＋２する。",
   "textKr": "[宣言] [花花]:このキャラにＳＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0998"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0998",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [花花]:このキャラにSP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [花花]:このキャラにＳＰ＋２する。",
+    "normalizedText": "[宣言] [花花]:このキャラにSP+2する。",
+    "lines": [
+      "[宣言] [花花]:このキャラにSP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

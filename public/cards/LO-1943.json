@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1943",
+  "title": "人工天使",
+  "subName": "風斬 氷華",
+  "name": "人工天使 風斬 氷華",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,27 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラにＤＭＧ＋[味方ＤＦキャラの数]する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "textKr": "[宣言] [0]:このキャラにＤＭＧ＋[味方ＤＦキャラの数]する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1943",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラにＤＭＧ＋[味方ＤＦキャラの数]する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+    "normalizedText": "[宣言] [0]:このキャラにDMG+[味方DFキャラの数]する。構築制限:とある魔術の禁書目録([TOA])",
+    "lines": [
+      "[宣言] [0]:このキャラにDMG+[味方DFキャラの数]する。構築制限:とある魔術の禁書目録([TOA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:このキャラにDMG+[味方DFキャラの数]する。構築制限:とある魔術の禁書目録([TOA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

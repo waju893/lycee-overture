@@ -1,17 +1,73 @@
 {
+  "cardNo": "LO-4305",
+  "title": "泣き虫だった幼馴染",
+  "subName": "栗山 兎鞠",
+  "name": "泣き虫だった幼馴染 栗山 兎鞠",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。\n[手札宣言] [月]:{相手キャラ１体}にＡＰ－４またはＤＰ－４する。\n構築制限:[HOK]",
+  "textKr": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。\n[手札宣言] [月]:{相手キャラ１体}にＡＰ－４またはＤＰ－４する。\n構築制限:[HOK]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4305",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。[手札宣言] [月]:{相手キャラ1体}にAP-4またはDP-4する。構築制限:[HOK]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -4
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[コスト] 自分のデッキを１枚破棄する。破棄したとき、[月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。\n[手札宣言] [月]:{相手キャラ１体}にＡＰ－４またはＤＰ－４する。\n構築制限:[HOK]",
+    "normalizedText": "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。[手札宣言] [月]:{相手キャラ1体}にAP-4またはDP-4する。構築制限:[HOK]",
+    "lines": [
+      "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。[手札宣言] [月]:{相手キャラ1体}にAP-4またはDP-4する。構築制限:[HOK]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

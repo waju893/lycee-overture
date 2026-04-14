@@ -22,7 +22,22 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2924"
+  "text": "{アイテムを装備しているコストが２点以下の味方キャラ１体}はターン終了時までダウンしない。",
+  "textKr": "{アイテムを装備しているコストが２点以下の味方キャラ１体}はターン終了時までダウンしない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2924",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{アイテムを装備しているコストが２点以下の味方キャラ１体}はターン終了時までダウンしない。",
+    "normalizedText": "{アイテムを装備しているコストが2点以下の味方キャラ1体}はターン終了時までダウンしない。",
+    "lines": [
+      "{アイテムを装備しているコストが2点以下の味方キャラ1体}はターン終了時までダウンしない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{アイテムを装備しているコストが2点以下の味方キャラ1体}はターン終了時までダウンしない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにＤＭＧ＋１する。",
   "textKr": "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5559"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5559",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにＤＭＧ＋１する。",
+    "normalizedText": "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにDMG+1する。",
+    "lines": [
+      "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,25 @@
   "typeTagsRaw": "-",
   "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、味方ＤＦキャラ１体を未行動にする。",
   "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、味方ＤＦキャラ１体を未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0657"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0657",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、味方ＤＦキャラ１体を未行動にする。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[誘発] このキャラが登場したとき、味方DFキャラ1体を未行動にする。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[誘発] このキャラが登場したとき、味方DFキャラ1体を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、味方DFキャラ1体を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

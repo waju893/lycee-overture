@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方キャラがダウンしたとき、自分のゴミ箱のキャラ１体を自分の「願いが叶う場所」置き場に置くことができる。",
   "textKr": "[誘発] 味方キャラがダウンしたとき、自分のゴミ箱のキャラ１体を自分の「願いが叶う場所」置き場に置くことができる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1222"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1222",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラがダウンしたとき、自分のゴミ箱のキャラ１体を自分の「願いが叶う場所」置き場に置くことができる。",
+    "normalizedText": "[誘発] 味方キャラがダウンしたとき、自分のゴミ箱のキャラ1体を自分の「願いが叶う場所」置き場に置くことができる。",
+    "lines": [
+      "[誘発] 味方キャラがダウンしたとき、自分のゴミ箱のキャラ1体を自分の「願いが叶う場所」置き場に置くことができる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 味方キャラがダウンしたとき、自分のゴミ箱のキャラ1体を自分の「願いが叶う場所」置き場に置くことができる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n※「言霊」は持ち主の場にのみ１枚まで配置可能",
   "textKr": "[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n※「言霊」は持ち主の場にのみ１枚まで配置可能",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6651"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6651",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにAP+1・DP+1する。(1ターンに3回まで処理可能)",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n※「言霊」は持ち主の場にのみ１枚まで配置可能",
+    "normalizedText": "[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにAP+1・DP+1する。(1ターンに3回まで処理可能)\n※「言霊」は持ち主の場にのみ1枚まで配置可能",
+    "lines": [
+      "[誘発] 自分の能力で味方キャラを破棄または除外またはデッキに置いたとき、味方キャラ全てにAP+1・DP+1する。(1ターンに3回まで処理可能)",
+      "※「言霊」は持ち主の場にのみ1枚まで配置可能"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "※「言霊」は持ち主の場にのみ1枚まで配置可能",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

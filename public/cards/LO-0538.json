@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[ステップ:[日]]\n[誘発]このキャラが移動したとき、このキャラにＤＭＧ＋１する。",
   "textKr": "[ステップ:[日]]\n[誘発]このキャラが移動したとき、このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0538"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0538",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[日]]\n[誘発]このキャラが移動したとき、このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[ステップ:[日]]\n[誘発]このキャラが移動したとき、このキャラにDMG+1する。",
+    "lines": [
+      "[ステップ:[日]]",
+      "[誘発]このキャラが移動したとき、このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[日]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発]このキャラが移動したとき、このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

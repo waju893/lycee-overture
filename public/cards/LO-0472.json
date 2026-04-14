@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[雪]]\n[誘発] このキャラのバトル終了時、対戦キャラを破棄する。",
   "textKr": "[オーダーチェンジ:[雪]]\n[誘発] このキャラのバトル終了時、対戦キャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0472"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0472",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[雪]]\n[誘発] このキャラのバトル終了時、対戦キャラを破棄する。",
+    "normalizedText": "[オーダーチェンジ:[雪]]\n[誘発] このキャラのバトル終了時、対戦キャラを破棄する。",
+    "lines": [
+      "[オーダーチェンジ:[雪]]",
+      "[誘発] このキャラのバトル終了時、対戦キャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[雪]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラのバトル終了時、対戦キャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

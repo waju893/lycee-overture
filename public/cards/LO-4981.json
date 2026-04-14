@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２][ステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ１体}にＡＰ＋２する。",
   "textKr": "[チャージ:２][ステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ１体}にＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4981"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4981",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ1体}にAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２][ステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ１体}にＡＰ＋２する。",
+    "normalizedText": "[チャージ:2][ステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ1体}にAP+2する。",
+    "lines": [
+      "[チャージ:2][ステップ:[0]]",
+      "[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ1体}にAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2][ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

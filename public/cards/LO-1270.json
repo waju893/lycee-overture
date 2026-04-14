@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [日日]:このキャラにＡＰ＋２する。",
   "textKr": "[宣言] [日日]:このキャラにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1270"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1270",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日日]:このキャラにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [日日]:このキャラにＡＰ＋２する。",
+    "normalizedText": "[宣言] [日日]:このキャラにAP+2する。",
+    "lines": [
+      "[宣言] [日日]:このキャラにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

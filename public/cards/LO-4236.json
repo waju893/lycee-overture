@@ -22,7 +22,52 @@
   "costRaw": "花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4236"
+  "text": "自ターン中に使用する。{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。１枚ドローする。",
+  "textKr": "自ターン中に使用する。{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4236",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。{味方キャラ1体}にAP+2またはDP+2する。1枚ドローする。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。１枚ドローする。",
+    "normalizedText": "自ターン中に使用する。{味方キャラ1体}にAP+2またはDP+2する。1枚ドローする。",
+    "lines": [
+      "自ターン中に使用する。{味方キャラ1体}にAP+2またはDP+2する。1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "※このカードは元号が「令和」の間にのみ使用可能",
   "textKr": "※このカードは元号が「令和」の間にのみ使用可能",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2019"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2019",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "※このカードは元号が「令和」の間にのみ使用可能",
+    "normalizedText": "※このカードは元号が「令和」の間にのみ使用可能",
+    "lines": [
+      "※このカードは元号が「令和」の間にのみ使用可能"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "※このカードは元号が「令和」の間にのみ使用可能",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,14 +1,95 @@
 {
+  "cardNo": "LO-2925",
+  "title": "エデン",
+  "subName": "",
+  "name": "エデン",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この効果は失われる。\n[宣言] [このアイテムを破棄する]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n構築制限:『9-nine-』",
+  "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この効果は失われる。\n[宣言] [このアイテムを破棄する]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n構築制限:『9-nine-』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2925",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにAP+1・DP+1・DMG+1する。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。この効果は失われる。[宣言] [このアイテムを破棄する]:相手ターン中に使用する。{相手キャラ1体}にAP-2またはDP-2する。構築制限:『9-nine-』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。この効果は失われる。\n[宣言] [このアイテムを破棄する]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n構築制限:『9-nine-』",
+    "normalizedText": "[常時] このキャラにAP+1・DP+1・DMG+1する。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。この効果は失われる。[宣言] [このアイテムを破棄する]:相手ターン中に使用する。{相手キャラ1体}にAP-2またはDP-2する。構築制限:『9-nine-』",
+    "lines": [
+      "[常時] このキャラにAP+1・DP+1・DMG+1する。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。この効果は失われる。[宣言] [このアイテムを破棄する]:相手ターン中に使用する。{相手キャラ1体}にAP-2またはDP-2する。構築制限:『9-nine-』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[エンゲージ]\n[手札宣言] [無無無]:味方[HOK]キャラのバトル中に使用する。対戦キャラにＡＰ－２・ＤＰ－２する。",
   "textKr": "[エンゲージ]\n[手札宣言] [無無無]:味方[HOK]キャラのバトル中に使用する。対戦キャラにＡＰ－２・ＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3389"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3389",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [無無無]:味方[HOK]キャラのバトル中に使用する。対戦キャラにAP-2・DP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[手札宣言] [無無無]:味方[HOK]キャラのバトル中に使用する。対戦キャラにＡＰ－２・ＤＰ－２する。",
+    "normalizedText": "[エンゲージ]\n[手札宣言] [無無無]:味方[HOK]キャラのバトル中に使用する。対戦キャラにAP-2・DP-2する。",
+    "lines": [
+      "[エンゲージ]",
+      "[手札宣言] [無無無]:味方[HOK]キャラのバトル中に使用する。対戦キャラにAP-2・DP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

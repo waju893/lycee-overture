@@ -26,5 +26,30 @@
   "typeTagsRaw": "神姫",
   "text": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにＡＰ＋１する。",
   "textKr": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0856"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0856",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにＡＰ＋１する。",
+    "normalizedText": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにAP+1する。",
+    "lines": [
+      "[誘発] このキャラにサポートをしたとき、味方キャラ全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

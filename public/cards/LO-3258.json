@@ -24,5 +24,41 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、元のＤＰが３以下の味方キャラが４体以上登場している場合、自分のゴミ箱または自分のデッキから「主と従者」１枚を探し無償で味方フィールドに配置する。１枚ドローする。",
   "textKr": "[誘発] このキャラが登場したとき、元のＤＰが３以下の味方キャラが４体以上登場している場合、自分のゴミ箱または自分のデッキから「主と従者」１枚を探し無償で味方フィールドに配置する。１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3258"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3258",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、元のDPが3以下の味方キャラが4体以上登場している場合、自分のゴミ箱または自分のデッキから「主と従者」1枚を探し無償で味方フィールドに配置する。1枚ドローする。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "主と従者"
+          },
+          "min": 0,
+          "max": 3,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、元のＤＰが３以下の味方キャラが４体以上登場している場合、自分のゴミ箱または自分のデッキから「主と従者」１枚を探し無償で味方フィールドに配置する。１枚ドローする。",
+    "normalizedText": "[誘発] このキャラが登場したとき、元のDPが3以下の味方キャラが4体以上登場している場合、自分のゴミ箱または自分のデッキから「主と従者」1枚を探し無償で味方フィールドに配置する。1枚ドローする。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、元のDPが3以下の味方キャラが4体以上登場している場合、自分のゴミ箱または自分のデッキから「主と従者」1枚を探し無償で味方フィールドに配置する。1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

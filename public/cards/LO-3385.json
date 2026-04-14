@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。味方キャラの属性が２種類以上の場合、{味方キャラ１体}にＤＰ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。味方キャラの属性が２種類以上の場合、{味方キャラ１体}にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3385"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3385",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。味方キャラの属性が2種類以上の場合、{味方キャラ1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。味方キャラの属性が２種類以上の場合、{味方キャラ１体}にＤＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。味方キャラの属性が2種類以上の場合、{味方キャラ1体}にDP+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:バトル中に使用できない。味方キャラの属性が2種類以上の場合、{味方キャラ1体}にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

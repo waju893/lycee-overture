@@ -25,5 +25,36 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト][サイドステップ:[0]]\n[誘発] 味方キャラが移動したとき、そのキャラにＡＰ＋１する。",
   "textKr": "[アシスト][サイドステップ:[0]]\n[誘発] 味方キャラが移動したとき、そのキャラにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1097"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1097",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方キャラが移動したとき、そのキャラにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][サイドステップ:[0]]\n[誘発] 味方キャラが移動したとき、そのキャラにＡＰ＋１する。",
+    "normalizedText": "[アシスト][サイドステップ:[0]]\n[誘発] 味方キャラが移動したとき、そのキャラにAP+1する。",
+    "lines": [
+      "[アシスト][サイドステップ:[0]]",
+      "[誘発] 味方キャラが移動したとき、そのキャラにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

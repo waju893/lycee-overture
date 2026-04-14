@@ -24,7 +24,32 @@
   "costRaw": "宙宙日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2140"
+  "text": "自ターン中に使用する。味方キャラ全てにＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "自ターン中に使用する。味方キャラ全てにＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2140",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。味方キャラ全てにAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。味方キャラ全てにＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "自ターン中に使用する。味方キャラ全てにAP+3・DP+3する。",
+    "lines": [
+      "自ターン中に使用する。味方キャラ全てにAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

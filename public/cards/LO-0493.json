@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [T花花][このキャラを破棄する]:{味方＜サーヴァント＞キャラ１体}を未行動にする。",
   "textKr": "[宣言] [T花花][このキャラを破棄する]:{味方＜サーヴァント＞キャラ１体}を未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0493"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0493",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [T花花][このキャラを破棄する]:{味方＜サーヴァント＞キャラ１体}を未行動にする。",
+    "normalizedText": "[宣言] [T花花][このキャラを破棄する]:{味方<サーヴァント>キャラ1体}を未行動にする。",
+    "lines": [
+      "[宣言] [T花花][このキャラを破棄する]:{味方<サーヴァント>キャラ1体}を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [T花花][このキャラを破棄する]:{味方<サーヴァント>キャラ1体}を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

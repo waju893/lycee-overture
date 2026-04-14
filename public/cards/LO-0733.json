@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0733",
+  "title": "アウトレイジ",
+  "subName": "モルドレッド",
+  "name": "アウトレイジ モルドレッド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ER",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 0,
   "useTarget": [
     "moon",
     "moon",
@@ -18,7 +21,31 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [],
-  "keyEffects": [],
-  "leader": true
+  "ex": 0,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー]\n[宣言] [0]:相手キャラの数より味方キャラの数が少ない場合、{相手キャラ１体}にＤＭＧ－２する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[リーダー]\n[宣言] [0]:相手キャラの数より味方キャラの数が少ない場合、{相手キャラ１体}にＤＭＧ－２する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0733",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リーダー]\n[宣言] [0]:相手キャラの数より味方キャラの数が少ない場合、{相手キャラ１体}にＤＭＧ－２する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[リーダー]\n[宣言] [0]:相手キャラの数より味方キャラの数が少ない場合、{相手キャラ1体}にDMG-2する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[リーダー]",
+      "[宣言] [0]:相手キャラの数より味方キャラの数が少ない場合、{相手キャラ1体}にDMG-2する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:相手キャラの数より味方キャラの数が少ない場合、{相手キャラ1体}にDMG-2する。構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

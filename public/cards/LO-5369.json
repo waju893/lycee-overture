@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5369",
+  "title": "圧倒的な財力",
+  "subName": "夜刀 くくる",
+  "name": "圧倒的な財力 夜刀 くくる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,91 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    16
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [C1]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからＥＸが２の[月]アイテム１枚を探しキャラ１体に装備する。\n[宣言][切札] [0]:持ち主が自分のアイテムの数（６枚まで）だけ自分のデッキを１枚回復しシャッフルする。\n構築制限:[MAD]",
+  "textKr": "[チャージ:２]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [C1]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからＥＸが２の[月]アイテム１枚を探しキャラ１体に装備する。\n[宣言][切札] [0]:持ち主が自分のアイテムの数（６枚まで）だけ自分のデッキを１枚回復しシャッフルする。\n構築制限:[MAD]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5369",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [C1]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからEXが2の[月]アイテム1枚を探しキャラ1体に装備する。[宣言][切札] [0]:持ち主が自分のアイテムの数(6枚まで)だけ自分のデッキを1枚回復しシャッフルする。構築制限:[MAD]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "searchCard",
+                          "owner": "self",
+                          "zones": [
+                            "deck"
+                          ],
+                          "match": {},
+                          "min": 0,
+                          "max": 2,
+                          "storeAs": "lastSearchResult",
+                          "shuffleAfterSearch": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [C1]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからＥＸが２の[月]アイテム１枚を探しキャラ１体に装備する。\n[宣言][切札] [0]:持ち主が自分のアイテムの数（６枚まで）だけ自分のデッキを１枚回復しシャッフルする。\n構築制限:[MAD]",
+    "normalizedText": "[チャージ:2]\n[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [C1]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからEXが2の[月]アイテム1枚を探しキャラ1体に装備する。[宣言][切札] [0]:持ち主が自分のアイテムの数(6枚まで)だけ自分のデッキを1枚回復しシャッフルする。構築制限:[MAD]",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [C1]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからEXが2の[月]アイテム1枚を探しキャラ1体に装備する。[宣言][切札] [0]:持ち主が自分のアイテムの数(6枚まで)だけ自分のデッキを1枚回復しシャッフルする。構築制限:[MAD]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

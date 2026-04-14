@@ -24,7 +24,22 @@
   "costRaw": "雪雪花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0826"
+  "text": "{自分のゴミ箱のコストが４点以下の[KHP]キャラ１体}を行動済みで無償で登場する。",
+  "textKr": "{自分のゴミ箱のコストが４点以下の[KHP]キャラ１体}を行動済みで無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0826",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{自分のゴミ箱のコストが４点以下の[KHP]キャラ１体}を行動済みで無償で登場する。",
+    "normalizedText": "{自分のゴミ箱のコストが4点以下の[KHP]キャラ1体}を行動済みで無償で登場する。",
+    "lines": [
+      "{自分のゴミ箱のコストが4点以下の[KHP]キャラ1体}を行動済みで無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{自分のゴミ箱のコストが4点以下の[KHP]キャラ1体}を行動済みで無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]\n[宣言] [T]:{キャラ１体}にＤＭＧ＋１する。",
   "textKr": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]\n[宣言] [T]:{キャラ１体}にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0207"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0207",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]\n[宣言] [T]:{キャラ１体}にＤＭＧ＋１する。",
+    "normalizedText": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]\n[宣言] [T]:{キャラ1体}にDMG+1する。",
+    "lines": [
+      "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]",
+      "[宣言] [T]:{キャラ1体}にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T]:{キャラ1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

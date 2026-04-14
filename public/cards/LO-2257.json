@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2257",
+  "title": "修道誓願",
+  "subName": "マルボルク城",
+  "name": "修道誓願 マルボルク城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,64 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    4
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＤＰ－１する。\n構築制限:[OSP]",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＤＰ－１する。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2257",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にDP-1する。構築制限:[OSP]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＤＰ－１する。\n構築制限:[OSP]",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にDP-1する。構築制限:[OSP]",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にDP-1する。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

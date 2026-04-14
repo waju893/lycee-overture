@@ -22,7 +22,22 @@
   "costRaw": "月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1428"
+  "text": "{自分のゴミ箱の[宙]キャラ１体}を登場する。",
+  "textKr": "{自分のゴミ箱の[宙]キャラ１体}を登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1428",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{自分のゴミ箱の[宙]キャラ１体}を登場する。",
+    "normalizedText": "{自分のゴミ箱の[宙]キャラ1体}を登場する。",
+    "lines": [
+      "{自分のゴミ箱の[宙]キャラ1体}を登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{自分のゴミ箱の[宙]キャラ1体}を登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

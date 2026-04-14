@@ -24,5 +24,29 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:味方『みらろま』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
   "textKr": "[宣言] [0]:味方『みらろま』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5905"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5905",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方『みらろま』キャラが3体以上の場合、1枚ドローする。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:味方『みらろま』キャラが３体以上の場合、１枚ドローする。この能力は失われる。",
+    "normalizedText": "[宣言] [0]:味方『みらろま』キャラが3体以上の場合、1枚ドローする。この能力は失われる。",
+    "lines": [
+      "[宣言] [0]:味方『みらろま』キャラが3体以上の場合、1枚ドローする。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

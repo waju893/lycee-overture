@@ -25,5 +25,50 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[誘発] 自分のコストが１点以上の能力・エリアの効果を使用したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n[宣言] [C1][雪]:味方『星恋＊ティンクル』キャラ全てにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[チャージ:２]\n[誘発] 自分のコストが１点以上の能力・エリアの効果を使用したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n[宣言] [C1][雪]:味方『星恋＊ティンクル』キャラ全てにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6205"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6205",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のコストが1点以上の能力・エリアの効果を使用したとき、味方キャラ1体にAP+1・DP+1する。(1ターンに3回まで処理可能)",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1][雪]:味方『星恋*ティンクル』キャラ全てにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[誘発] 自分のコストが１点以上の能力・エリアの効果を使用したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。（１ターンに３回まで処理可能）\n[宣言] [C1][雪]:味方『星恋＊ティンクル』キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[チャージ:2]\n[誘発] 自分のコストが1点以上の能力・エリアの効果を使用したとき、味方キャラ1体にAP+1・DP+1する。(1ターンに3回まで処理可能)\n[宣言] [C1][雪]:味方『星恋*ティンクル』キャラ全てにAP+2・DP+2する。",
+    "lines": [
+      "[チャージ:2]",
+      "[誘発] 自分のコストが1点以上の能力・エリアの効果を使用したとき、味方キャラ1体にAP+1・DP+1する。(1ターンに3回まで処理可能)",
+      "[宣言] [C1][雪]:味方『星恋*ティンクル』キャラ全てにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

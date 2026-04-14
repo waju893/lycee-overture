@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3891",
+  "title": "引っ込み思案な目隠れ幼馴染",
+  "subName": "御空 朔",
+  "name": "引っ込み思案な目隠れ幼馴染 御空 朔",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,13 +18,42 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    7,
-    12
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、元のＳＰが１以下の味方キャラが登場していない場合、１枚ドローする。味方[花]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n構築制限:[NEX]",
+  "textKr": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、元のＳＰが１以下の味方キャラが登場していない場合、１枚ドローする。味方[花]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3891",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、元のSPが1以下の味方キャラが登場していない場合、1枚ドローする。味方[花]キャラ1体にAP+2・DP+2する。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    7,
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、元のＳＰが１以下の味方キャラが登場していない場合、１枚ドローする。味方[花]キャラ１体にＡＰ＋２・ＤＰ＋２する。\n構築制限:[NEX]",
+    "normalizedText": "[エンゲージ][サポーター:[花花]]\n[誘発] このキャラが登場したとき、元のSPが1以下の味方キャラが登場していない場合、1枚ドローする。味方[花]キャラ1体にAP+2・DP+2する。構築制限:[NEX]",
+    "lines": [
+      "[エンゲージ][サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、元のSPが1以下の味方キャラが登場していない場合、1枚ドローする。味方[花]キャラ1体にAP+2・DP+2する。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

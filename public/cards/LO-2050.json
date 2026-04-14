@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラのバトル終了時、このキャラを破棄する。破棄したとき、相手キャラ１体を破棄する。",
   "textKr": "[誘発] このキャラのバトル終了時、このキャラを破棄する。破棄したとき、相手キャラ１体を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2050"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2050",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラのバトル終了時、このキャラを破棄する。破棄したとき、相手キャラ１体を破棄する。",
+    "normalizedText": "[誘発] このキャラのバトル終了時、このキャラを破棄する。破棄したとき、相手キャラ1体を破棄する。",
+    "lines": [
+      "[誘発] このキャラのバトル終了時、このキャラを破棄する。破棄したとき、相手キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラのバトル終了時、このキャラを破棄する。破棄したとき、相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

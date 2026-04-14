@@ -19,7 +19,32 @@
   "costRaw": "-",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2318"
+  "text": "{コストが２点以下の味方[花]キャラ１体}にＤＰ＋１する。",
+  "textKr": "{コストが２点以下の味方[花]キャラ１体}にＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2318",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが2点以下の味方[花]キャラ1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが２点以下の味方[花]キャラ１体}にＤＰ＋１する。",
+    "normalizedText": "{コストが2点以下の味方[花]キャラ1体}にDP+1する。",
+    "lines": [
+      "{コストが2点以下の味方[花]キャラ1体}にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

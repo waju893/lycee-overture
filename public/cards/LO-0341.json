@@ -26,5 +26,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [月]:このキャラにＤＰ＋３する。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [月]:このキャラにＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0341"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0341",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月]:このキャラにDP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[宣言] [月]:このキャラにＤＰ＋３する。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[宣言] [月]:このキャラにDP+3する。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[宣言] [月]:このキャラにDP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

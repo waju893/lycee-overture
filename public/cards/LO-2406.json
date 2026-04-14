@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2406",
+  "title": "魏武の大剣",
+  "subName": "夏侯惇・春蘭",
+  "name": "魏武の大剣 夏侯惇・春蘭",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,41 @@
   "dp": 4,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魏",
+  "text": "[オーダーステップ:[0]]\n[誘発] 味方「曹操・華琳」と同列の相手キャラがバトルに参加したとき、相手のデッキを１枚破棄する。\n[誘発] 味方「曹操・華琳」を相手の効果で破棄したとき、１枚ドローできる。\n構築制限:[NEX]",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] 味方「曹操・華琳」と同列の相手キャラがバトルに参加したとき、相手のデッキを１枚破棄する。\n[誘発] 味方「曹操・華琳」を相手の効果で破棄したとき、１枚ドローできる。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2406",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方「曹操・華琳」と同列の相手キャラがバトルに参加したとき、相手のデッキを1枚破棄する。[誘発] 味方「曹操・華琳」を相手の効果で破棄したとき、1枚ドローできる。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] 味方「曹操・華琳」と同列の相手キャラがバトルに参加したとき、相手のデッキを１枚破棄する。\n[誘発] 味方「曹操・華琳」を相手の効果で破棄したとき、１枚ドローできる。\n構築制限:[NEX]",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] 味方「曹操・華琳」と同列の相手キャラがバトルに参加したとき、相手のデッキを1枚破棄する。[誘発] 味方「曹操・華琳」を相手の効果で破棄したとき、1枚ドローできる。構築制限:[NEX]",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] 味方「曹操・華琳」と同列の相手キャラがバトルに参加したとき、相手のデッキを1枚破棄する。[誘発] 味方「曹操・華琳」を相手の効果で破棄したとき、1枚ドローできる。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

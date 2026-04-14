@@ -24,5 +24,30 @@
   "typeTagsRaw": "-",
   "text": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにＤＰ＋２・ＤＭＧ＋１する。",
   "textKr": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにＤＰ＋２・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0626"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0626",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにDP+2・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにＤＰ＋２・ＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにDP+2・DMG+1する。",
+    "lines": [
+      "[宣言] [0]:味方キャラがアイテムを装備している場合、このキャラにDP+2・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

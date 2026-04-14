@@ -24,5 +24,58 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方＜サーヴァント＞キャラ１体にＡＰ＋１またはＤＰ＋１する。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方＜サーヴァント＞キャラ１体にＡＰ＋１またはＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1363"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1363",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方<サーヴァント>キャラ1体にAP+1またはDP+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方＜サーヴァント＞キャラ１体にＡＰ＋１またはＤＰ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方<サーヴァント>キャラ1体にAP+1またはDP+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、味方<サーヴァント>キャラ1体にAP+1またはDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

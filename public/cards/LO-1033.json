@@ -24,5 +24,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、相手ターン終了時まで相手キャラ１体にＤＭＧ－１する。",
   "textKr": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、相手ターン終了時まで相手キャラ１体にＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1033"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1033",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、相手ターン終了時まで相手キャラ１体にＤＭＧ－１する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、相手ターン終了時まで相手キャラ1体にDMG-1する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが相手のデッキにダメージを与えたとき、相手ターン終了時まで相手キャラ1体にDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが相手のデッキにダメージを与えたとき、相手ターン終了時まで相手キャラ1体にDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

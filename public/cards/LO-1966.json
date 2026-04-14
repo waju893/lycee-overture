@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [宙]:アイテムを装備している味方キャラの防御中に使用する。バトルを中断する。",
   "textKr": "[手札宣言] [宙]:アイテムを装備している味方キャラの防御中に使用する。バトルを中断する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1966"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1966",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [宙]:アイテムを装備している味方キャラの防御中に使用する。バトルを中断する。",
+    "normalizedText": "[手札宣言] [宙]:アイテムを装備している味方キャラの防御中に使用する。バトルを中断する。",
+    "lines": [
+      "[手札宣言] [宙]:アイテムを装備している味方キャラの防御中に使用する。バトルを中断する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [宙]:アイテムを装備している味方キャラの防御中に使用する。バトルを中断する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -27,5 +27,25 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト]\n[宣言] [0]:味方＜アンツィオ＞キャラが３体の場合、このキャラは[ステップ:[0]]を得る。",
   "textKr": "[アシスト]\n[宣言] [0]:味方＜アンツィオ＞キャラが３体の場合、このキャラは[ステップ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0432"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0432",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:味方＜アンツィオ＞キャラが３体の場合、このキャラは[ステップ:[0]]を得る。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:味方<アンツィオ>キャラが3体の場合、このキャラは[ステップ:[0]]を得る。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:味方<アンツィオ>キャラが3体の場合、このキャラは[ステップ:[0]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:味方<アンツィオ>キャラが3体の場合、このキャラは[ステップ:[0]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -22,7 +22,32 @@
   "costRaw": "宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3945"
+  "text": "{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。味方「織田久遠信長」１体にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。味方「織田久遠信長」１体にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3945",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが3~4点の味方[宙]キャラ1体}にAP+2・DP+2する。味方「織田久遠信長」1体にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋２・ＤＰ＋２する。味方「織田久遠信長」１体にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "{コストが3~4点の味方[宙]キャラ1体}にAP+2・DP+2する。味方「織田久遠信長」1体にAP+1・DP+1する。",
+    "lines": [
+      "{コストが3~4点の味方[宙]キャラ1体}にAP+2・DP+2する。味方「織田久遠信長」1体にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

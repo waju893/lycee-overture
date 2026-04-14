@@ -27,5 +27,30 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0051"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0051",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラにサポートをしたとき、このキャラにAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラにサポートをしたとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[誘発] このキャラにサポートをしたとき、このキャラにAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[誘発] このキャラにサポートをしたとき、このキャラにAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

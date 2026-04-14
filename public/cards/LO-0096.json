@@ -22,7 +22,32 @@
   "costRaw": "無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0096"
+  "text": "バトル参加キャラ全てにＡＰ＋４する。",
+  "textKr": "バトル参加キャラ全てにＡＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0096",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "バトル参加キャラ全てにAP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "バトル参加キャラ全てにＡＰ＋４する。",
+    "normalizedText": "バトル参加キャラ全てにAP+4する。",
+    "lines": [
+      "バトル参加キャラ全てにAP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

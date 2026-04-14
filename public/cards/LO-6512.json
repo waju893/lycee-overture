@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6512",
+  "title": "DeepOne",
+  "subName": "",
+  "name": "DeepOne",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -14,5 +17,41 @@
     "snow",
     "snow",
     "snow"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "装備制限:「斎野尚哉」\n[宣言] [0]:このキャラはＡＰ＋３・ＤＰ＋２・ＤＭＧ＋３・[オーダーチェンジ:[0]]を得る。\n[誘発] 相手ターン開始時、このキャラを未行動にできる。\n※「DeepOne」は持ち主の場にのみ１枚まで配置可能\n構築制限:『DeepOne シリーズ』",
+  "textKr": "装備制限:「斎野尚哉」\n[宣言] [0]:このキャラはＡＰ＋３・ＤＰ＋２・ＤＭＧ＋３・[オーダーチェンジ:[0]]を得る。\n[誘発] 相手ターン開始時、このキャラを未行動にできる。\n※「DeepOne」は持ち主の場にのみ１枚まで配置可能\n構築制限:『DeepOne シリーズ』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6512",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "装備制限:「斎野尚哉」\n[宣言] [0]:このキャラはＡＰ＋３・ＤＰ＋２・ＤＭＧ＋３・[オーダーチェンジ:[0]]を得る。\n[誘発] 相手ターン開始時、このキャラを未行動にできる。\n※「DeepOne」は持ち主の場にのみ１枚まで配置可能\n構築制限:『DeepOne シリーズ』",
+    "normalizedText": "装備制限:「斎野尚哉」\n[宣言] [0]:このキャラはAP+3・DP+2・DMG+3・[オーダーチェンジ:[0]]を得る。[誘発] 相手ターン開始時、このキャラを未行動にできる。※「DeepOne」は持ち主の場にのみ1枚まで配置可能\n構築制限:『DeepOne シリーズ』",
+    "lines": [
+      "装備制限:「斎野尚哉」",
+      "[宣言] [0]:このキャラはAP+3・DP+2・DMG+3・[オーダーチェンジ:[0]]を得る。[誘発] 相手ターン開始時、このキャラを未行動にできる。※「DeepOne」は持ち主の場にのみ1枚まで配置可能",
+      "構築制限:『DeepOne シリーズ』"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "装備制限:「斎野尚哉」",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラはAP+3・DP+2・DMG+3・[オーダーチェンジ:[0]]を得る。[誘発] 相手ターン開始時、このキャラを未行動にできる。※「DeepOne」は持ち主の場にのみ1枚まで配置可能",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『DeepOne シリーズ』",
+      "reason": "no parser rule matched"
+    }
   ]
 }

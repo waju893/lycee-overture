@@ -25,5 +25,31 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4843"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4843",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ1体にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ1体にAP+1・DP+1する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ1体にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

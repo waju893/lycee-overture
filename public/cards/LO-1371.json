@@ -25,5 +25,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[サポーター:[D1]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[サポーター:[D1]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1371"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1371",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[D1]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[サポーター:[D1]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1する。",
+    "lines": [
+      "[サポーター:[D1]]",
+      "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[D1]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,25 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト][アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
   "textKr": "[アシスト][アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1260"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1260",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+    "normalizedText": "[アシスト][アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+    "lines": [
+      "[アシスト][アグレッシブ]",
+      "[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

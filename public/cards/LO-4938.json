@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:{コストが３点以上で元のＤＭＧが３以上の味方[日]キャラ１体}にＡＰ＋１する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{コストが３点以上で元のＤＭＧが３以上の味方[日]キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4938"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4938",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{コストが3点以上で元のDMGが3以上の味方[日]キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{コストが３点以上で元のＤＭＧが３以上の味方[日]キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{コストが3点以上で元のDMGが3以上の味方[日]キャラ1体}にAP+1する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{コストが3点以上で元のDMGが3以上の味方[日]キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

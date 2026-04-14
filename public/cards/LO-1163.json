@@ -24,5 +24,57 @@
   "typeTagsRaw": "",
   "text": "[ペナルティ:[自分のデッキを１枚回復する。]]\n[宣言] [このキャラを破棄する]:バトル中に使用する。{コストが２点以下の味方キャラ１体}にバトル終了時までＡＰ＋２またはＤＰ＋２またはＤＭＧ＋２する。",
   "textKr": "[ペナルティ:[自分のデッキを１枚回復する。]]\n[宣言] [このキャラを破棄する]:バトル中に使用する。{コストが２点以下の味方キャラ１体}にバトル終了時までＡＰ＋２またはＤＰ＋２またはＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1163"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1163",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [このキャラを破棄する]:バトル中に使用する。{コストが2点以下の味方キャラ1体}にバトル終了時までAP+2またはDP+2またはDMG+2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ペナルティ:[自分のデッキを１枚回復する。]]\n[宣言] [このキャラを破棄する]:バトル中に使用する。{コストが２点以下の味方キャラ１体}にバトル終了時までＡＰ＋２またはＤＰ＋２またはＤＭＧ＋２する。",
+    "normalizedText": "[ペナルティ:[自分のデッキを1枚回復する。]]\n[宣言] [このキャラを破棄する]:バトル中に使用する。{コストが2点以下の味方キャラ1体}にバトル終了時までAP+2またはDP+2またはDMG+2する。",
+    "lines": [
+      "[ペナルティ:[自分のデッキを1枚回復する。]]",
+      "[宣言] [このキャラを破棄する]:バトル中に使用する。{コストが2点以下の味方キャラ1体}にバトル終了時までAP+2またはDP+2またはDMG+2する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[自分のデッキを1枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1342",
+  "title": "待て、しかして希望せよ",
+  "subName": "アヴェンジャー／巌窟王 エドモン・ダンテス",
+  "name": "待て、しかして希望せよ アヴェンジャー／巌窟王 エドモン・ダンテス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,36 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、１枚ドローできる。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、１枚ドローできる。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1342",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、1枚ドローできる。構築制限:Fate/Grand Order([TM])",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、１枚ドローできる。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、1枚ドローできる。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、1枚ドローできる。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

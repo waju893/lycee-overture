@@ -25,5 +25,25 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト][ステップ:[0]]\n[常時] 味方＜アンツィオ＞キャラが１体以下の場合、このキャラはバトル参加キャラに指定できない。",
   "textKr": "[アシスト][ステップ:[0]]\n[常時] 味方＜アンツィオ＞キャラが１体以下の場合、このキャラはバトル参加キャラに指定できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0387"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0387",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][ステップ:[0]]\n[常時] 味方＜アンツィオ＞キャラが１体以下の場合、このキャラはバトル参加キャラに指定できない。",
+    "normalizedText": "[アシスト][ステップ:[0]]\n[常時] 味方<アンツィオ>キャラが1体以下の場合、このキャラはバトル参加キャラに指定できない。",
+    "lines": [
+      "[アシスト][ステップ:[0]]",
+      "[常時] 味方<アンツィオ>キャラが1体以下の場合、このキャラはバトル参加キャラに指定できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] 味方<アンツィオ>キャラが1体以下の場合、このキャラはバトル参加キャラに指定できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

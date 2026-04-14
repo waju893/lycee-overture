@@ -24,7 +24,32 @@
   "costRaw": "花花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0246"
+  "text": "味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0246",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方キャラ全てにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "味方キャラ全てにAP+2・DP+2する。",
+    "lines": [
+      "味方キャラ全てにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -24,7 +24,22 @@
   "costRaw": "月月月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0828"
+  "text": "{キャラ１体}はターン終了時まで相手のイベント・能力の対象に指定できない。",
+  "textKr": "{キャラ１体}はターン終了時まで相手のイベント・能力の対象に指定できない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0828",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{キャラ１体}はターン終了時まで相手のイベント・能力の対象に指定できない。",
+    "normalizedText": "{キャラ1体}はターン終了時まで相手のイベント・能力の対象に指定できない。",
+    "lines": [
+      "{キャラ1体}はターン終了時まで相手のイベント・能力の対象に指定できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{キャラ1体}はターン終了時まで相手のイベント・能力の対象に指定できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

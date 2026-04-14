@@ -23,5 +23,35 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２][サイドステップ:[0]]\n[宣言] [C1]:自ターン中に使用する。自分のデッキを１枚回復しシャッフルする。",
   "textKr": "[チャージ:２][サイドステップ:[0]]\n[宣言] [C1]:自ターン中に使用する。自分のデッキを１枚回復しシャッフルする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4099"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4099",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1]:自ターン中に使用する。自分のデッキを1枚回復しシャッフルする。",
+      "actions": [
+        {
+          "type": "shuffle",
+          "owner": "self"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２][サイドステップ:[0]]\n[宣言] [C1]:自ターン中に使用する。自分のデッキを１枚回復しシャッフルする。",
+    "normalizedText": "[チャージ:2][サイドステップ:[0]]\n[宣言] [C1]:自ターン中に使用する。自分のデッキを1枚回復しシャッフルする。",
+    "lines": [
+      "[チャージ:2][サイドステップ:[0]]",
+      "[宣言] [C1]:自ターン中に使用する。自分のデッキを1枚回復しシャッフルする。"
+    ],
+    "matchedRuleIds": [
+      "shuffle"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

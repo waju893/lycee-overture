@@ -21,7 +21,31 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3795"
+  "text": "自分のデッキの上のカード１枚を公開する。そのカードのコストが偶数の場合、２枚ドローする。（同番号のイベントは１ターンに１回まで使用可能）",
+  "textKr": "自分のデッキの上のカード１枚を公開する。そのカードのコストが偶数の場合、２枚ドローする。（同番号のイベントは１ターンに１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3795",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自分のデッキの上のカード1枚を公開する。そのカードのコストが偶数の場合、2枚ドローする。(同番号のイベントは1ターンに1回まで使用可能)",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自分のデッキの上のカード１枚を公開する。そのカードのコストが偶数の場合、２枚ドローする。（同番号のイベントは１ターンに１回まで使用可能）",
+    "normalizedText": "自分のデッキの上のカード1枚を公開する。そのカードのコストが偶数の場合、2枚ドローする。(同番号のイベントは1ターンに1回まで使用可能)",
+    "lines": [
+      "自分のデッキの上のカード1枚を公開する。そのカードのコストが偶数の場合、2枚ドローする。(同番号のイベントは1ターンに1回まで使用可能)"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[宣言] [D1]:バトル中に使用する。コストが３点以上の味方攻撃キャラ１体にＡＰ＋[対戦キャラのＡＰ]する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [D1]:バトル中に使用する。コストが３点以上の味方攻撃キャラ１体にＡＰ＋[対戦キャラのＡＰ]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0858"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0858",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [D1]:バトル中に使用する。コストが３点以上の味方攻撃キャラ１体にＡＰ＋[対戦キャラのＡＰ]する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [D1]:バトル中に使用する。コストが3点以上の味方攻撃キャラ1体にAP+[対戦キャラのAP]する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [D1]:バトル中に使用する。コストが3点以上の味方攻撃キャラ1体にAP+[対戦キャラのAP]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D1]:バトル中に使用する。コストが3点以上の味方攻撃キャラ1体にAP+[対戦キャラのAP]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

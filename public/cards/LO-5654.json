@@ -27,5 +27,25 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、手札の「曹操・華琳」を好きな枚数破棄する。このキャラにＳＰ＋[破棄した枚数]する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、手札の「曹操・華琳」を好きな枚数破棄する。このキャラにＳＰ＋[破棄した枚数]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5654"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5654",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、手札の「曹操・華琳」を好きな枚数破棄する。このキャラにＳＰ＋[破棄した枚数]する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、手札の「曹操・華琳」を好きな枚数破棄する。このキャラにSP+[破棄した枚数]する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、手札の「曹操・華琳」を好きな枚数破棄する。このキャラにSP+[破棄した枚数]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、手札の「曹操・華琳」を好きな枚数破棄する。このキャラにSP+[破棄した枚数]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

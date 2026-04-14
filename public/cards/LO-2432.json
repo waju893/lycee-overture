@@ -25,5 +25,36 @@
   "typeTagsRaw": "蜀",
   "text": "[ステップ:[0]]\n[宣言] [日]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}にＡＰ＋２する。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [日]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}にＡＰ＋２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2432"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2432",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ1体}にAP+2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [日]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ１体}にＡＰ＋２する。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [日]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ1体}にAP+2する。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [日]:{[ステップ]または[サイドステップ]を持つ味方[日]キャラ1体}にAP+2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

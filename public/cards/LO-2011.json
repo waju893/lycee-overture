@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分のコストが１点以上の能力を使用したとき、自分のデッキを２枚回復する。この能力は失われる。",
   "textKr": "[誘発] 自分のコストが１点以上の能力を使用したとき、自分のデッキを２枚回復する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2011"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2011",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のコストが１点以上の能力を使用したとき、自分のデッキを２枚回復する。この能力は失われる。",
+    "normalizedText": "[誘発] 自分のコストが1点以上の能力を使用したとき、自分のデッキを2枚回復する。この能力は失われる。",
+    "lines": [
+      "[誘発] 自分のコストが1点以上の能力を使用したとき、自分のデッキを2枚回復する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分のコストが1点以上の能力を使用したとき、自分のデッキを2枚回復する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

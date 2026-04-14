@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:味方『キスと魔王と紅茶』キャラが４体以上の場合、味方キャラ全てにＡＰ＋１する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:味方『キスと魔王と紅茶』キャラが４体以上の場合、味方キャラ全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5894"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5894",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方『キスと魔王と紅茶』キャラが4体以上の場合、味方キャラ全てにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:味方『キスと魔王と紅茶』キャラが４体以上の場合、味方キャラ全てにＡＰ＋１する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:味方『キスと魔王と紅茶』キャラが4体以上の場合、味方キャラ全てにAP+1する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:味方『キスと魔王と紅茶』キャラが4体以上の場合、味方キャラ全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

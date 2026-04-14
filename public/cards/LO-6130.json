@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:味方「雪村千絵莉」または「天宮みくり」全てにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:味方「雪村千絵莉」または「天宮みくり」全てにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6130"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6130",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方「雪村千絵莉」または「天宮みくり」全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:味方「雪村千絵莉」または「天宮みくり」全てにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:味方「雪村千絵莉」または「天宮みくり」全てにAP+1・DP+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:味方「雪村千絵莉」または「天宮みくり」全てにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

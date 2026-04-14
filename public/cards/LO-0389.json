@@ -24,5 +24,25 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト][サイドステップ:[0]]\n[宣言] [T]:{キャラ１体}にＤＭＧ＋１する。",
   "textKr": "[アシスト][サイドステップ:[0]]\n[宣言] [T]:{キャラ１体}にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0389"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0389",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][サイドステップ:[0]]\n[宣言] [T]:{キャラ１体}にＤＭＧ＋１する。",
+    "normalizedText": "[アシスト][サイドステップ:[0]]\n[宣言] [T]:{キャラ1体}にDMG+1する。",
+    "lines": [
+      "[アシスト][サイドステップ:[0]]",
+      "[宣言] [T]:{キャラ1体}にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T]:{キャラ1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [宙宙]:バトル中に使用する。バトル終了時まで、{味方『双天†恋姫』キャラ１体}にＤＭＧ＋１する。",
   "textKr": "[宣言] [宙宙]:バトル中に使用する。バトル終了時まで、{味方『双天†恋姫』キャラ１体}にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5475"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5475",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [宙宙]:バトル中に使用する。バトル終了時まで、{味方『双天†恋姫』キャラ１体}にＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [宙宙]:バトル中に使用する。バトル終了時まで、{味方『双天†恋姫』キャラ1体}にDMG+1する。",
+    "lines": [
+      "[宣言] [宙宙]:バトル中に使用する。バトル終了時まで、{味方『双天†恋姫』キャラ1体}にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [宙宙]:バトル中に使用する。バトル終了時まで、{味方『双天†恋姫』キャラ1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

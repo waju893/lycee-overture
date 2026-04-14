@@ -23,5 +23,30 @@
   "typeTagsRaw": "ヤマト",
   "text": "[宣言] [日日]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにＡＰ＋３する。",
   "textKr": "[宣言] [日日]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにＡＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1830"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1830",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日日]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにAP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [日日]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにＡＰ＋３する。",
+    "normalizedText": "[宣言] [日日]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにAP+3する。",
+    "lines": [
+      "[宣言] [日日]:[アグレッシブ]を持つ味方キャラが登場している場合、このキャラにAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

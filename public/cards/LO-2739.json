@@ -23,5 +23,72 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
   "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2739"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2739",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、{相手キャラ1体}にAP-1またはDP-1またはSP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "sp",
+                          "amount": -1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、{相手キャラ1体}にAP-1またはDP-1またはSP-1する。",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。味方エリアを配置している場合、{相手キャラ1体}にAP-1またはDP-1またはSP-1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

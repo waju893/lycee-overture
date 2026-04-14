@@ -21,7 +21,22 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1696"
+  "text": "{ＤＰが０以下の相手キャラ１体}を行動済みにする。",
+  "textKr": "{ＤＰが０以下の相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1696",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{ＤＰが０以下の相手キャラ１体}を行動済みにする。",
+    "normalizedText": "{DPが0以下の相手キャラ1体}を行動済みにする。",
+    "lines": [
+      "{DPが0以下の相手キャラ1体}を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{DPが0以下の相手キャラ1体}を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,40 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方『終ノ空remake』キャラが３体以上の場合、自分のゴミ箱または自分のデッキから「やす子の兄 横山きよし」１体を探し登場する。この能力は失われる。",
   "textKr": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方『終ノ空remake』キャラが３体以上の場合、自分のゴミ箱または自分のデッキから「やす子の兄 横山きよし」１体を探し登場する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5746"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5746",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方『終ノ空remake』キャラが3体以上の場合、自分のゴミ箱または自分のデッキから「やす子の兄 横山きよし」1体を探し登場する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "やす子の兄 横山きよし"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方『終ノ空remake』キャラが３体以上の場合、自分のゴミ箱または自分のデッキから「やす子の兄 横山きよし」１体を探し登場する。この能力は失われる。",
+    "normalizedText": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方『終ノ空remake』キャラが3体以上の場合、自分のゴミ箱または自分のデッキから「やす子の兄 横山きよし」1体を探し登場する。この能力は失われる。",
+    "lines": [
+      "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。味方『終ノ空remake』キャラが3体以上の場合、自分のゴミ箱または自分のデッキから「やす子の兄 横山きよし」1体を探し登場する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

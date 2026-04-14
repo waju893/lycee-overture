@@ -27,5 +27,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方『あくまで、これは～の物語』キャラが登場したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[誘発] 味方『あくまで、これは～の物語』キャラが登場したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4453"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4453",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 味方『あくまで、これは~の物語』キャラが登場したとき、このキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方『あくまで、これは～の物語』キャラが登場したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[誘発] 味方『あくまで、これは~の物語』キャラが登場したとき、このキャラにAP+2・DP+2する。",
+    "lines": [
+      "[誘発] 味方『あくまで、これは~の物語』キャラが登場したとき、このキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

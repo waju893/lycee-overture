@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分の効果で相手キャラを破棄したとき、コストが２点以下の味方[雪]キャラが３体以上登場している場合、味方ＡＦ[雪]キャラ全てにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[誘発] 自分の効果で相手キャラを破棄したとき、コストが２点以下の味方[雪]キャラが３体以上登場している場合、味方ＡＦ[雪]キャラ全てにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4002"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4002",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の効果で相手キャラを破棄したとき、コストが2点以下の味方[雪]キャラが3体以上登場している場合、味方AF[雪]キャラ全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果で相手キャラを破棄したとき、コストが２点以下の味方[雪]キャラが３体以上登場している場合、味方ＡＦ[雪]キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[誘発] 自分の効果で相手キャラを破棄したとき、コストが2点以下の味方[雪]キャラが3体以上登場している場合、味方AF[雪]キャラ全てにAP+1・DP+1する。",
+    "lines": [
+      "[誘発] 自分の効果で相手キャラを破棄したとき、コストが2点以下の味方[雪]キャラが3体以上登場している場合、味方AF[雪]キャラ全てにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

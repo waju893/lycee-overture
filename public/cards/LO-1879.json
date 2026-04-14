@@ -24,5 +24,36 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、１枚ドローする。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1879"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1879",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、１枚ドローする。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、1枚ドローする。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

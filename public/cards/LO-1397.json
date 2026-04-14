@@ -26,5 +26,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [0]:バトル中に使用できない。このキャラを未行動にし、{ＡＰが５以上の相手キャラと同列の味方ＤＦ}に移動する。",
   "textKr": "[宣言] [0]:バトル中に使用できない。このキャラを未行動にし、{ＡＰが５以上の相手キャラと同列の味方ＤＦ}に移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1397"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1397",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用できない。このキャラを未行動にし、{ＡＰが５以上の相手キャラと同列の味方ＤＦ}に移動する。",
+    "normalizedText": "[宣言] [0]:バトル中に使用できない。このキャラを未行動にし、{APが5以上の相手キャラと同列の味方DF}に移動する。",
+    "lines": [
+      "[宣言] [0]:バトル中に使用できない。このキャラを未行動にし、{APが5以上の相手キャラと同列の味方DF}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:バトル中に使用できない。このキャラを未行動にし、{APが5以上の相手キャラと同列の味方DF}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,51 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n[宣言] [無]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。",
   "textKr": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n[宣言] [無]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3379"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3379",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ1体にAP-1・DP-1する。[宣言] [無]:相手ターン中に使用する。{相手キャラ1体}にAP-2またはDP-2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n[宣言] [無]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この能力は失われる。",
+    "normalizedText": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ1体にAP-1・DP-1する。[宣言] [無]:相手ターン中に使用する。{相手キャラ1体}にAP-2またはDP-2する。この能力は失われる。",
+    "lines": [
+      "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ1体にAP-1・DP-1する。[宣言] [無]:相手ターン中に使用する。{相手キャラ1体}にAP-2またはDP-2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

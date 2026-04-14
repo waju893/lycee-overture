@@ -23,5 +23,25 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[コスト] [宙宙]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。",
   "textKr": "[ジャンプ:[0]]\n[コスト] [宙宙]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5402"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5402",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[コスト] [宙宙]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。",
+    "normalizedText": "[ジャンプ:[0]]\n[コスト] [宙宙]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[コスト] [宙宙]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[コスト] [宙宙]を発生する。このコストはイベントの使用にのみ支払える。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

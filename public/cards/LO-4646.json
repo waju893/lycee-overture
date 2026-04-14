@@ -1,17 +1,63 @@
 {
+  "cardNo": "LO-4646",
+  "title": "本当の聖女",
+  "subName": "聖女アナ",
+  "name": "本当の聖女 聖女アナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
   "ap": 0,
   "dp": 0,
   "sp": 0,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「明智久司朗」または「メフィスト」または「明智光理」１体を探し公開して手札に入れる。\n構築制限:[WM]",
+  "textKr": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「明智久司朗」または「メフィスト」または「明智光理」１体を探し公開して手札に入れる。\n構築制限:[WM]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4646",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「明智久司朗」または「メフィスト」または「明智光理」1体を探し公開して手札に入れる。構築制限:[WM]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "明智久司朗"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「明智久司朗」または「メフィスト」または「明智光理」１体を探し公開して手札に入れる。\n構築制限:[WM]",
+    "normalizedText": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「明智久司朗」または「メフィスト」または「明智光理」1体を探し公開して手札に入れる。構築制限:[WM]",
+    "lines": [
+      "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「明智久司朗」または「メフィスト」または「明智光理」1体を探し公開して手札に入れる。構築制限:[WM]"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

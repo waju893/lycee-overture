@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1915",
+  "title": "神の右席",
+  "subName": "左方のテッラ",
+  "name": "神の右席 左方のテッラ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,38 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:バトル中に使用できない。相手ターン終了時まで、{列１つ}の味方キャラ全てにＤＰ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "textKr": "[宣言] [T]:バトル中に使用できない。相手ターン終了時まで、{列１つ}の味方キャラ全てにＤＰ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1915",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "[宣言] [T]:バトル中に使用できない。相手ターン終了時まで、{列1つ}の味方キャラ全てにDP+1する。構築制限:とある魔術の禁書目録([TOA])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:バトル中に使用できない。相手ターン終了時まで、{列１つ}の味方キャラ全てにＤＰ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+    "normalizedText": "[宣言] [T]:バトル中に使用できない。相手ターン終了時まで、{列1つ}の味方キャラ全てにDP+1する。構築制限:とある魔術の禁書目録([TOA])",
+    "lines": [
+      "[宣言] [T]:バトル中に使用できない。相手ターン終了時まで、{列1つ}の味方キャラ全てにDP+1する。構築制限:とある魔術の禁書目録([TOA])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

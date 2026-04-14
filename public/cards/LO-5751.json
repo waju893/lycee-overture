@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[常時] 味方『向日葵の教会と長い夏休み』キャラ全てにＡＰ＋１する。",
   "textKr": "[ジャンプ:[0]]\n[常時] 味方『向日葵の教会と長い夏休み』キャラ全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5751"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5751",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] 味方『向日葵の教会と長い夏休み』キャラ全てにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[常時] 味方『向日葵の教会と長い夏休み』キャラ全てにＡＰ＋１する。",
+    "normalizedText": "[ジャンプ:[0]]\n[常時] 味方『向日葵の教会と長い夏休み』キャラ全てにAP+1する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[常時] 味方『向日葵の教会と長い夏休み』キャラ全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

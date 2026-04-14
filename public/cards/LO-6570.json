@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
   "textKr": "[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6570"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6570",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+    "normalizedText": "[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+    "lines": [
+      "[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,11 +1,71 @@
 {
+  "cardNo": "LO-2837",
+  "title": "オーロラ",
+  "subName": "",
+  "name": "オーロラ",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "-",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{味方[雪]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:[TW]",
+  "textKr": "{味方[雪]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:[TW]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2837",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方[雪]キャラ1体}にAP+2またはDP+2する。構築制限:[TW]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方[雪]キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:[TW]",
+    "normalizedText": "{味方[雪]キャラ1体}にAP+2またはDP+2する。構築制限:[TW]",
+    "lines": [
+      "{味方[雪]キャラ1体}にAP+2またはDP+2する。構築制限:[TW]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

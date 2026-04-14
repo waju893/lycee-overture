@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:味方「相生頼斗」が登場している場合、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:味方「相生頼斗」が登場している場合、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6008"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6008",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方「相生頼斗」が登場している場合、{味方キャラ1体}にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:味方「相生頼斗」が登場している場合、{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:味方「相生頼斗」が登場している場合、{味方キャラ1体}にAP+2・DP+2する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:味方「相生頼斗」が登場している場合、{味方キャラ1体}にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

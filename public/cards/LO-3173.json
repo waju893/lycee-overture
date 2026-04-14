@@ -27,5 +27,78 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:コストが５点以上の味方[宙]キャラが２体以上登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:コストが５点以上の味方[宙]キャラが２体以上登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3173"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3173",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが5点以上の味方[宙]キャラが2体以上登場している場合、{相手キャラ1体}にAP-1またはDP-1またはSP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "sp",
+                          "amount": -1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:コストが５点以上の味方[宙]キャラが２体以上登場している場合、{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＳＰ－１する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:コストが5点以上の味方[宙]キャラが2体以上登場している場合、{相手キャラ1体}にAP-1またはDP-1またはSP-1する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:コストが5点以上の味方[宙]キャラが2体以上登場している場合、{相手キャラ1体}にAP-1またはDP-1またはSP-1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

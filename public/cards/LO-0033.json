@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[月]]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
   "textKr": "[オーダーステップ:[月]]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0033"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0033",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[月]]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[オーダーステップ:[月]]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[オーダーステップ:[月]]",
+      "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[月]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,37 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、キャラ１体にＡＰ－２する。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、キャラ１体にＡＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0319"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0319",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、キャラ1体にAP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、キャラ１体にＡＰ－２する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、キャラ1体にAP-2する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、このキャラを行動済みにできる。行動済みにしたとき、キャラ1体にAP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

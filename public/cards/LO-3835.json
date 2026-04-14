@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [花花]:このキャラにＳＰ＋２する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [花花]:このキャラにＳＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3835"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3835",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [花花]:このキャラにSP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [花花]:このキャラにＳＰ＋２する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [花花]:このキャラにSP+2する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [花花]:このキャラにSP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

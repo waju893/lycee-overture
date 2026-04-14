@@ -24,5 +24,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[ガッツ:[月月月月]]\n[誘発] バトルに参加していない味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
   "textKr": "[ガッツ:[月月月月]]\n[誘発] バトルに参加していない味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1354"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1354",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ガッツ:[月月月月]]\n[誘発] バトルに参加していない味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+    "normalizedText": "[ガッツ:[月月月月]]\n[誘発] バトルに参加していない味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+    "lines": [
+      "[ガッツ:[月月月月]]",
+      "[誘発] バトルに参加していない味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ガッツ:[月月月月]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] バトルに参加していない味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

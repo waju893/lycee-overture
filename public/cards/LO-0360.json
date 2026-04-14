@@ -25,5 +25,39 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「カルパッチョ」１体を手札に入れる。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「カルパッチョ」１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0360"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0360",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱の「カルパッチョ」1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「カルパッチョ」１体を手札に入れる。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「カルパッチョ」1体を手札に入れる。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の「カルパッチョ」1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

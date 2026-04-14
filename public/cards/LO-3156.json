@@ -24,5 +24,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{味方「白井黒子」または「初春飾利」または「固法美偉」１体}にＤＰ＋１・ＳＰ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{味方「白井黒子」または「初春飾利」または「固法美偉」１体}にＤＰ＋１・ＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3156"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3156",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。{味方「白井黒子」または「初春飾利」または「固法美偉」1体}にDP+1・SP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{味方「白井黒子」または「初春飾利」または「固法美偉」１体}にＤＰ＋１・ＳＰ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:バトル中に使用できない。{味方「白井黒子」または「初春飾利」または「固法美偉」1体}にDP+1・SP+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:バトル中に使用できない。{味方「白井黒子」または「初春飾利」または「固法美偉」1体}にDP+1・SP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

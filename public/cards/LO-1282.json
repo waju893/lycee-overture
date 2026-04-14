@@ -1,14 +1,43 @@
 {
+  "cardNo": "LO-1282",
+  "title": "託された夢",
+  "subName": "",
+  "name": "託された夢",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{味方キャラ１体}にＡＰ＋[自分の「願いが叶う場所」置き場の枚数]・ＤＰ＋[自分の「願いが叶う場所」置き場の枚数]する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "{味方キャラ１体}にＡＰ＋[自分の「願いが叶う場所」置き場の枚数]・ＤＰ＋[自分の「願いが叶う場所」置き場の枚数]する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1282",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}にＡＰ＋[自分の「願いが叶う場所」置き場の枚数]・ＤＰ＋[自分の「願いが叶う場所」置き場の枚数]する。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "{味方キャラ1体}にAP+[自分の「願いが叶う場所」置き場の枚数]・DP+[自分の「願いが叶う場所」置き場の枚数]する。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "{味方キャラ1体}にAP+[自分の「願いが叶う場所」置き場の枚数]・DP+[自分の「願いが叶う場所」置き場の枚数]する。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方キャラ1体}にAP+[自分の「願いが叶う場所」置き場の枚数]・DP+[自分の「願いが叶う場所」置き場の枚数]する。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

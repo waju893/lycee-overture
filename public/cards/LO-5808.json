@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分のイベントを使用したとき、このキャラにＳＰ＋２する。",
   "textKr": "[誘発] 自分のイベントを使用したとき、このキャラにＳＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5808"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5808",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のイベントを使用したとき、このキャラにSP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のイベントを使用したとき、このキャラにＳＰ＋２する。",
+    "normalizedText": "[誘発] 自分のイベントを使用したとき、このキャラにSP+2する。",
+    "lines": [
+      "[誘発] 自分のイベントを使用したとき、このキャラにSP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

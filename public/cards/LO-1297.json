@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[ペナルティ:[自分のデッキを２枚回復する。]]\n[誘発] 自分の効果で相手キャラを破棄したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－１する。",
   "textKr": "[ペナルティ:[自分のデッキを２枚回復する。]]\n[誘発] 自分の効果で相手キャラを破棄したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1297"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1297",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ペナルティ:[自分のデッキを２枚回復する。]]\n[誘発] 自分の効果で相手キャラを破棄したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－１する。",
+    "normalizedText": "[ペナルティ:[自分のデッキを2枚回復する。]]\n[誘発] 自分の効果で相手キャラを破棄したとき、相手キャラ1体に相手ターン終了時までDMG-1する。",
+    "lines": [
+      "[ペナルティ:[自分のデッキを2枚回復する。]]",
+      "[誘発] 自分の効果で相手キャラを破棄したとき、相手キャラ1体に相手ターン終了時までDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自分の効果で相手キャラを破棄したとき、相手キャラ1体に相手ターン終了時までDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

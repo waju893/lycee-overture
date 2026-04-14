@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[コスト] このキャラのチャージ１枚を破棄する。したとき、『星恋＊ティンクル』キャラの能力にのみ支払える[雪雪]を発生する。",
   "textKr": "[チャージ:２]\n[コスト] このキャラのチャージ１枚を破棄する。したとき、『星恋＊ティンクル』キャラの能力にのみ支払える[雪雪]を発生する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6109"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6109",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[コスト] このキャラのチャージ１枚を破棄する。したとき、『星恋＊ティンクル』キャラの能力にのみ支払える[雪雪]を発生する。",
+    "normalizedText": "[チャージ:2]\n[コスト] このキャラのチャージ1枚を破棄する。したとき、『星恋*ティンクル』キャラの能力にのみ支払える[雪雪]を発生する。",
+    "lines": [
+      "[チャージ:2]",
+      "[コスト] このキャラのチャージ1枚を破棄する。したとき、『星恋*ティンクル』キャラの能力にのみ支払える[雪雪]を発生する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[コスト] このキャラのチャージ1枚を破棄する。したとき、『星恋*ティンクル』キャラの能力にのみ支払える[雪雪]を発生する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

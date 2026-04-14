@@ -26,7 +26,22 @@
   "costRaw": "無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0252"
+  "text": "自分の手札の＜魔剣＞キャラ１体を登場する。",
+  "textKr": "自分の手札の＜魔剣＞キャラ１体を登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0252",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自分の手札の＜魔剣＞キャラ１体を登場する。",
+    "normalizedText": "自分の手札の<魔剣>キャラ1体を登場する。",
+    "lines": [
+      "自分の手札の<魔剣>キャラ1体を登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自分の手札の<魔剣>キャラ1体を登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

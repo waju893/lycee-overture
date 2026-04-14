@@ -26,5 +26,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ][ステップ:[0]]\n[宣言] [D3]: バトル中に使用する。味方キャラ１体にバトル終了時までＤＭＧ＋３する。",
   "textKr": "[エンゲージ][ステップ:[0]]\n[宣言] [D3]: バトル中に使用する。味方キャラ１体にバトル終了時までＤＭＧ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0131"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0131",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ][ステップ:[0]]\n[宣言] [D3]: バトル中に使用する。味方キャラ１体にバトル終了時までＤＭＧ＋３する。",
+    "normalizedText": "[エンゲージ][ステップ:[0]]\n[宣言] [D3]: バトル中に使用する。味方キャラ1体にバトル終了時までDMG+3する。",
+    "lines": [
+      "[エンゲージ][ステップ:[0]]",
+      "[宣言] [D3]: バトル中に使用する。味方キャラ1体にバトル終了時までDMG+3する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D3]: バトル中に使用する。味方キャラ1体にバトル終了時までDMG+3する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

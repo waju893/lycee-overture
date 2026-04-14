@@ -1,17 +1,42 @@
 {
+  "cardNo": "LO-2508",
+  "title": "神出鬼没",
+  "subName": "リースリット・ノエル",
+  "name": "神出鬼没 リースリット・ノエル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。\n構築制限:[AUG]",
+  "textKr": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。\n構築制限:[AUG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2508",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。\n構築制限:[AUG]",
+    "normalizedText": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。構築制限:[AUG]",
+    "lines": [
+      "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。構築制限:[AUG]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] このキャラを破棄する。破棄したとき、[雪雪]を発生する。構築制限:[AUG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[宣言] [C2][日日]:{[チャージ]を持つ味方[日]キャラ１体}にＡＰ＋４する。",
   "textKr": "[チャージ:２]\n[宣言] [C2][日日]:{[チャージ]を持つ味方[日]キャラ１体}にＡＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4086"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4086",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C2][日日]:{[チャージ]を持つ味方[日]キャラ1体}にAP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [C2][日日]:{[チャージ]を持つ味方[日]キャラ１体}にＡＰ＋４する。",
+    "normalizedText": "[チャージ:2]\n[宣言] [C2][日日]:{[チャージ]を持つ味方[日]キャラ1体}にAP+4する。",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [C2][日日]:{[チャージ]を持つ味方[日]キャラ1体}にAP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

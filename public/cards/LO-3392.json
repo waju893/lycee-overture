@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[エンゲージ]\n[宣言] [無]:相手ターン中に使用する。{味方[HOK]キャラ１体}にＤＰ＋１する。",
   "textKr": "[エンゲージ]\n[宣言] [無]:相手ターン中に使用する。{味方[HOK]キャラ１体}にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3392"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3392",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:相手ターン中に使用する。{味方[HOK]キャラ1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [無]:相手ターン中に使用する。{味方[HOK]キャラ１体}にＤＰ＋１する。",
+    "normalizedText": "[エンゲージ]\n[宣言] [無]:相手ターン中に使用する。{味方[HOK]キャラ1体}にDP+1する。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [無]:相手ターン中に使用する。{味方[HOK]キャラ1体}にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

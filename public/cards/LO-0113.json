@@ -26,5 +26,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[サイドステップ:[日日]]\n[宣言] [日]:味方キャラ１体にＡＰ＋１する。",
   "textKr": "[サイドステップ:[日日]]\n[宣言] [日]:味方キャラ１体にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0113"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0113",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:味方キャラ1体にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[日日]]\n[宣言] [日]:味方キャラ１体にＡＰ＋１する。",
+    "normalizedText": "[サイドステップ:[日日]]\n[宣言] [日]:味方キャラ1体にAP+1する。",
+    "lines": [
+      "[サイドステップ:[日日]]",
+      "[宣言] [日]:味方キャラ1体にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[日日]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

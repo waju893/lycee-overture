@@ -27,5 +27,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが手札から登場したとき、自分と相手にシールド＋３する。",
   "textKr": "[誘発] このキャラが手札から登場したとき、自分と相手にシールド＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4448"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4448",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが手札から登場したとき、自分と相手にシールド＋３する。",
+    "normalizedText": "[誘発] このキャラが手札から登場したとき、自分と相手にシールド+3する。",
+    "lines": [
+      "[誘発] このキャラが手札から登場したとき、自分と相手にシールド+3する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが手札から登場したとき、自分と相手にシールド+3する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

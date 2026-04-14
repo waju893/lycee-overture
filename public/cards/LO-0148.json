@@ -27,5 +27,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラを破棄する。この能力は失われる。",
   "textKr": "[エンゲージ]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラを破棄する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0148"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0148",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラを破棄する。この能力は失われる。",
+    "normalizedText": "[エンゲージ]\n[宣言] [0]:このキャラのバトル中に使用する。対戦キャラを破棄する。この能力は失われる。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラを破棄する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラを破棄する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,19 +1,55 @@
 {
+  "cardNo": "LO-2451",
+  "title": "三国鼎立",
+  "subName": "",
+  "name": "三国鼎立",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "moon",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "cosmos",
     "sun"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "月宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] 味方キャラ全ては＜魏＞と＜呉＞と＜蜀＞を得る。\n[誘発] このアイテムを手札から装備したとき、３枚ドローする。\n構築制限:[NEX]",
+  "textKr": "[常時] 味方キャラ全ては＜魏＞と＜呉＞と＜蜀＞を得る。\n[誘発] このアイテムを手札から装備したとき、３枚ドローする。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2451",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] 味方キャラ全ては<魏>と<呉>と<蜀>を得る。[誘発] このアイテムを手札から装備したとき、3枚ドローする。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] 味方キャラ全ては＜魏＞と＜呉＞と＜蜀＞を得る。\n[誘発] このアイテムを手札から装備したとき、３枚ドローする。\n構築制限:[NEX]",
+    "normalizedText": "[常時] 味方キャラ全ては<魏>と<呉>と<蜀>を得る。[誘発] このアイテムを手札から装備したとき、3枚ドローする。構築制限:[NEX]",
+    "lines": [
+      "[常時] 味方キャラ全ては<魏>と<呉>と<蜀>を得る。[誘発] このアイテムを手札から装備したとき、3枚ドローする。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

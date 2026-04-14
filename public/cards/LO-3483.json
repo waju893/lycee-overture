@@ -27,5 +27,53 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が５枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。味方『BALDR SKY』キャラ全てにＡＰ＋１・ＤＰ＋１し、味方「門倉甲」１体にＤＭＧ＋１する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が５枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。味方『BALDR SKY』キャラ全てにＡＰ＋１・ＤＰ＋１し、味方「門倉甲」１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3483"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3483",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自分の「記憶遡行」置き場の枚数が5枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。味方『BALDR SKY』キャラ全てにAP+1・DP+1し、味方「門倉甲」1体にDMG+1する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "記憶遡行",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が５枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。味方『BALDR SKY』キャラ全てにＡＰ＋１・ＤＰ＋１し、味方「門倉甲」１体にＤＭＧ＋１する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が5枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。味方『BALDR SKY』キャラ全てにAP+1・DP+1し、味方「門倉甲」1体にDMG+1する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:自分の「記憶遡行」置き場の枚数が5枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。味方『BALDR SKY』キャラ全てにAP+1・DP+1し、味方「門倉甲」1体にDMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

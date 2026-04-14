@@ -26,5 +26,25 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[誘発] 相手キャラが登場したとき、自分のデッキを１枚破棄する。",
   "textKr": "[アシスト]\n[誘発] 相手キャラが登場したとき、自分のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0311"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0311",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 相手キャラが登場したとき、自分のデッキを１枚破棄する。",
+    "normalizedText": "[アシスト]\n[誘発] 相手キャラが登場したとき、自分のデッキを1枚破棄する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 相手キャラが登場したとき、自分のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手キャラが登場したとき、自分のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

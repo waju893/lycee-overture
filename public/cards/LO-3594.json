@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]キャラ１体を登場できる。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]キャラ１体を登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3594"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3594",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]キャラ１体を登場できる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]キャラ1体を登場できる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]キャラ1体を登場できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]キャラ1体を登場できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

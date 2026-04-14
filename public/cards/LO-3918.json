@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[誘発] 自分のイベント・手札宣言能力を使用したとき、このキャラと味方「本多綾那忠勝」１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] 自分のイベント・手札宣言能力を使用したとき、このキャラと味方「本多綾那忠勝」１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3918"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3918",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のイベント・手札宣言能力を使用したとき、このキャラと味方「本多綾那忠勝」1体にAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] 自分のイベント・手札宣言能力を使用したとき、このキャラと味方「本多綾那忠勝」１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] 自分のイベント・手札宣言能力を使用したとき、このキャラと味方「本多綾那忠勝」1体にAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] 自分のイベント・手札宣言能力を使用したとき、このキャラと味方「本多綾那忠勝」1体にAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

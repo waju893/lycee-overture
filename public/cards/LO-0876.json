@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーチェンジ:[0]]\n[宣言] [宙]:{自分のゴミ箱の「稲生滸」１体}を除外する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[オーダーチェンジ:[0]]\n[宣言] [宙]:{自分のゴミ箱の「稲生滸」１体}を除外する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0876"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0876",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:{自分のゴミ箱の「稲生滸」1体}を除外する。{味方キャラ1体}にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[宣言] [宙]:{自分のゴミ箱の「稲生滸」１体}を除外する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[宣言] [宙]:{自分のゴミ箱の「稲生滸」1体}を除外する。{味方キャラ1体}にAP+1・DP+1する。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[宣言] [宙]:{自分のゴミ箱の「稲生滸」1体}を除外する。{味方キャラ1体}にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

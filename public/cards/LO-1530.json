@@ -24,5 +24,32 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラがダウンしたとき、「ユーノ」を除く自分のゴミ箱の[花]キャラ１体を手札に入れる。",
   "textKr": "[誘発] このキャラがダウンしたとき、「ユーノ」を除く自分のゴミ箱の[花]キャラ１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1530"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1530",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラがダウンしたとき、「ユーノ」を除く自分のゴミ箱の[花]キャラ1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラがダウンしたとき、「ユーノ」を除く自分のゴミ箱の[花]キャラ１体を手札に入れる。",
+    "normalizedText": "[誘発] このキャラがダウンしたとき、「ユーノ」を除く自分のゴミ箱の[花]キャラ1体を手札に入れる。",
+    "lines": [
+      "[誘発] このキャラがダウンしたとき、「ユーノ」を除く自分のゴミ箱の[花]キャラ1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

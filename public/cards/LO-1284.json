@@ -21,7 +21,22 @@
   "costRaw": "宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1284"
+  "text": "ターン終了時まで、次に味方キャラが相手の能力によって破棄されたとき、ゴミ箱のそのキャラを無償で登場する。",
+  "textKr": "ターン終了時まで、次に味方キャラが相手の能力によって破棄されたとき、ゴミ箱のそのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1284",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "ターン終了時まで、次に味方キャラが相手の能力によって破棄されたとき、ゴミ箱のそのキャラを無償で登場する。",
+    "normalizedText": "ターン終了時まで、次に味方キャラが相手の能力によって破棄されたとき、ゴミ箱のそのキャラを無償で登場する。",
+    "lines": [
+      "ターン終了時まで、次に味方キャラが相手の能力によって破棄されたとき、ゴミ箱のそのキャラを無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "ターン終了時まで、次に味方キャラが相手の能力によって破棄されたとき、ゴミ箱のそのキャラを無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

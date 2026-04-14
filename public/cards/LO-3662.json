@@ -21,7 +21,32 @@
   "costRaw": "花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3662"
+  "text": "{元のＤＰが４以上の味方キャラ１体}にＤＰ＋４する。",
+  "textKr": "{元のＤＰが４以上の味方キャラ１体}にＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3662",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{元のDPが4以上の味方キャラ1体}にDP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{元のＤＰが４以上の味方キャラ１体}にＤＰ＋４する。",
+    "normalizedText": "{元のDPが4以上の味方キャラ1体}にDP+4する。",
+    "lines": [
+      "{元のDPが4以上の味方キャラ1体}にDP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -23,5 +23,49 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。",
   "textKr": "[誘発] このキャラが登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5525"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5525",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分の手札を1枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」1枚を探しこのキャラに無償で装備できる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "霊式機巧刀「折紙",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分の手札を１枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」１枚を探しこのキャラに無償で装備できる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分の手札を1枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」1枚を探しこのキャラに無償で装備できる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分の手札を1枚破棄できる。破棄したとき、自分のゴミ箱または自分のデッキから「霊式機巧刀「折紙」」1枚を探しこのキャラに無償で装備できる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

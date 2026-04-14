@@ -23,7 +23,22 @@
   "costRaw": "月日無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0829"
+  "text": "防御キャラの指定されているバトル中に使用する。バトル参加キャラ全てを持ち主の手札に入れる。",
+  "textKr": "防御キャラの指定されているバトル中に使用する。バトル参加キャラ全てを持ち主の手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0829",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "防御キャラの指定されているバトル中に使用する。バトル参加キャラ全てを持ち主の手札に入れる。",
+    "normalizedText": "防御キャラの指定されているバトル中に使用する。バトル参加キャラ全てを持ち主の手札に入れる。",
+    "lines": [
+      "防御キャラの指定されているバトル中に使用する。バトル参加キャラ全てを持ち主の手札に入れる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "防御キャラの指定されているバトル中に使用する。バトル参加キャラ全てを持ち主の手札に入れる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

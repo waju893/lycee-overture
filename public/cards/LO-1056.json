@@ -24,5 +24,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][サポーター:[D1]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
   "textKr": "[アシスト][サポーター:[D1]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1056"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1056",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][サポーター:[D1]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄できる。",
+    "normalizedText": "[アシスト][サポーター:[D1]]\n[誘発] 相手DFキャラがダウンしたバトル終了時、相手のデッキを1枚破棄できる。",
+    "lines": [
+      "[アシスト][サポーター:[D1]]",
+      "[誘発] 相手DFキャラがダウンしたバトル終了時、相手のデッキを1枚破棄できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サポーター:[D1]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手DFキャラがダウンしたバトル終了時、相手のデッキを1枚破棄できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

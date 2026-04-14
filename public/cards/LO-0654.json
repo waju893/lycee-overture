@@ -24,5 +24,25 @@
   "typeTagsRaw": "-",
   "text": "[アグレッシブ]\n[誘発] このキャラが場を離れたとき、自分のデッキを１枚回復する。",
   "textKr": "[アグレッシブ]\n[誘発] このキャラが場を離れたとき、自分のデッキを１枚回復する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0654"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0654",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] このキャラが場を離れたとき、自分のデッキを１枚回復する。",
+    "normalizedText": "[アグレッシブ]\n[誘発] このキャラが場を離れたとき、自分のデッキを1枚回復する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] このキャラが場を離れたとき、自分のデッキを1枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが場を離れたとき、自分のデッキを1枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

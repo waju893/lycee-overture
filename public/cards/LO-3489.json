@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3489",
+  "title": "ヒト素体モザイク実験体",
+  "subName": "フリスチーナ・コクリー",
+  "name": "ヒト素体モザイク実験体 フリスチーナ・コクリー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,11 +22,48 @@
   "dp": 5,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    13
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] コストが５点以上の味方『BALDR BRINGER』キャラが手札から登場したとき、１枚ドローできる。\n[宣言][切札] [宙]:自ターン中に使用する。バトル中に使用できない。コストが５点以上の味方キャラが６体以上登場している場合、相手キャラ１体を破棄する。\n構築制限:[GIG]",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] コストが５点以上の味方『BALDR BRINGER』キャラが手札から登場したとき、１枚ドローできる。\n[宣言][切札] [宙]:自ターン中に使用する。バトル中に使用できない。コストが５点以上の味方キャラが６体以上登場している場合、相手キャラ１体を破棄する。\n構築制限:[GIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3489",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "originalLine": "[誘発] コストが5点以上の味方『BALDR BRINGER』キャラが手札から登場したとき、1枚ドローできる。[宣言][切札] [宙]:自ターン中に使用する。バトル中に使用できない。コストが5点以上の味方キャラが6体以上登場している場合、相手キャラ1体を破棄する。構築制限:[GIG]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ペナルティ:[１枚ドローする。]]\n[誘発] コストが５点以上の味方『BALDR BRINGER』キャラが手札から登場したとき、１枚ドローできる。\n[宣言][切札] [宙]:自ターン中に使用する。バトル中に使用できない。コストが５点以上の味方キャラが６体以上登場している場合、相手キャラ１体を破棄する。\n構築制限:[GIG]",
+    "normalizedText": "[ペナルティ:[1枚ドローする。]]\n[誘発] コストが5点以上の味方『BALDR BRINGER』キャラが手札から登場したとき、1枚ドローできる。[宣言][切札] [宙]:自ターン中に使用する。バトル中に使用できない。コストが5点以上の味方キャラが6体以上登場している場合、相手キャラ1体を破棄する。構築制限:[GIG]",
+    "lines": [
+      "[ペナルティ:[1枚ドローする。]]",
+      "[誘発] コストが5点以上の味方『BALDR BRINGER』キャラが手札から登場したとき、1枚ドローできる。[宣言][切札] [宙]:自ターン中に使用する。バトル中に使用できない。コストが5点以上の味方キャラが6体以上登場している場合、相手キャラ1体を破棄する。構築制限:[GIG]"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

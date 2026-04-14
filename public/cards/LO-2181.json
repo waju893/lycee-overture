@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2181",
+  "title": "何で狙われるんですか～",
+  "subName": "イズン",
+  "name": "何で狙われるんですか～ イズン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
   ],
@@ -14,11 +17,31 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[サイドステップ:[0]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[宙宙]を発生する。このコストはコストが５点以上のキャラの登場にのみ支払える。\n構築制限:[KHP]かつ[宙]",
+  "textKr": "[サイドステップ:[0]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[宙宙]を発生する。このコストはコストが５点以上のキャラの登場にのみ支払える。\n構築制限:[KHP]かつ[宙]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2181",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、[宙宙]を発生する。このコストはコストが５点以上のキャラの登場にのみ支払える。\n構築制限:[KHP]かつ[宙]",
+    "normalizedText": "[サイドステップ:[0]]\n[コスト] 自分のデッキを1枚破棄する。破棄したとき、[宙宙]を発生する。このコストはコストが5点以上のキャラの登場にのみ支払える。構築制限:[KHP]かつ[宙]",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[宙宙]を発生する。このコストはコストが5点以上のキャラの登場にのみ支払える。構築制限:[KHP]かつ[宙]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[コスト] 自分のデッキを1枚破棄する。破棄したとき、[宙宙]を発生する。このコストはコストが5点以上のキャラの登場にのみ支払える。構築制限:[KHP]かつ[宙]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

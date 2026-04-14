@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サイドステップ:[0]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
   "textKr": "[サイドステップ:[0]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5608"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5608",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方キャラ全てのコストが3~4点の場合、このキャラにAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[宣言] [0]:味方キャラ全てのコストが３～４点の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "[サイドステップ:[0]]\n[宣言] [0]:味方キャラ全てのコストが3~4点の場合、このキャラにAP+3・DP+3する。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[宣言] [0]:味方キャラ全てのコストが3~4点の場合、このキャラにAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

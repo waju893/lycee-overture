@@ -27,5 +27,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが手札から登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、相手キャラ１体を破棄する。",
   "textKr": "[誘発] このキャラが手札から登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、相手キャラ１体を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2495"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2495",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが手札から登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、相手キャラ１体を破棄する。",
+    "normalizedText": "[誘発] このキャラが手札から登場したとき、味方[雪]キャラ1体を破棄する。破棄したとき、相手キャラ1体を破棄する。",
+    "lines": [
+      "[誘発] このキャラが手札から登場したとき、味方[雪]キャラ1体を破棄する。破棄したとき、相手キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが手札から登場したとき、味方[雪]キャラ1体を破棄する。破棄したとき、相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

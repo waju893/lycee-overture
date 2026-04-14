@@ -1,15 +1,54 @@
 {
+  "cardNo": "LO-1702",
+  "title": "捕食者の目",
+  "subName": "",
+  "name": "捕食者の目",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
     "cosmos"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自ターン中に使用する。コストが３点の味方[宙]キャラ全てにＡＰ＋４・ＤＰ＋４する。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "自ターン中に使用する。コストが３点の味方[宙]キャラ全てにＡＰ＋４・ＤＰ＋４する。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1702",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。コストが3点の味方[宙]キャラ全てにAP+4・DP+4する。構築制限:ゆずソフト([YUZ])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。コストが３点の味方[宙]キャラ全てにＡＰ＋４・ＤＰ＋４する。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "自ターン中に使用する。コストが3点の味方[宙]キャラ全てにAP+4・DP+4する。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "自ターン中に使用する。コストが3点の味方[宙]キャラ全てにAP+4・DP+4する。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

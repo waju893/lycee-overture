@@ -27,5 +27,25 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札のコストが２点以下の『うたわれるもの シリーズ』キャラ１体を無償で登場できる。",
   "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札のコストが２点以下の『うたわれるもの シリーズ』キャラ１体を無償で登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5145"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5145",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札のコストが２点以下の『うたわれるもの シリーズ』キャラ１体を無償で登場できる。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分の手札のコストが2点以下の『うたわれるもの シリーズ』キャラ1体を無償で登場できる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分の手札のコストが2点以下の『うたわれるもの シリーズ』キャラ1体を無償で登場できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分の手札のコストが2点以下の『うたわれるもの シリーズ』キャラ1体を無償で登場できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

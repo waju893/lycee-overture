@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1823",
+  "title": "シャッホロの皇女",
+  "subName": "アトゥイ",
+  "name": "シャッホロの皇女 アトゥイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,13 +18,45 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6,
-    8
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アシスト][アグレッシブ]\n[誘発] このキャラが登場したとき、味方[日]または＜ヤマト＞キャラ１体を手札に入れる。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[アシスト][アグレッシブ]\n[誘発] このキャラが登場したとき、味方[日]または＜ヤマト＞キャラ１体を手札に入れる。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1823",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方[日]または<ヤマト>キャラ1体を手札に入れる。構築制限:アクアプラス([AQP])",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    6,
-    8
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アシスト][アグレッシブ]\n[誘発] このキャラが登場したとき、味方[日]または＜ヤマト＞キャラ１体を手札に入れる。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[アシスト][アグレッシブ]\n[誘発] このキャラが登場したとき、味方[日]または<ヤマト>キャラ1体を手札に入れる。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[アシスト][アグレッシブ]",
+      "[誘発] このキャラが登場したとき、味方[日]または<ヤマト>キャラ1体を手札に入れる。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

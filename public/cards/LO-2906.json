@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-2906",
+  "title": "異世界人",
+  "subName": "ソフィーティア",
+  "name": "異世界人 ソフィーティア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon",
     "sun"
   ],
-  "attributesList": [
-    "moon",
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -16,5 +18,40 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚を手札に入れる。\n[宣言] [0]:{アイテムを装備している味方キャラ１体}にＤＭＧ＋１する。\n構築制限:『9-nine-』",
+  "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚を手札に入れる。\n[宣言] [0]:{アイテムを装備している味方キャラ１体}にＤＭＧ＋１する。\n構築制限:『9-nine-』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2906",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム1枚を手札に入れる。[宣言] [0]:{アイテムを装備している味方キャラ1体}にDMG+1する。構築制限:『9-nine-』",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚を手札に入れる。\n[宣言] [0]:{アイテムを装備している味方キャラ１体}にＤＭＧ＋１する。\n構築制限:『9-nine-』",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム1枚を手札に入れる。[宣言] [0]:{アイテムを装備している味方キャラ1体}にDMG+1する。構築制限:『9-nine-』",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム1枚を手札に入れる。[宣言] [0]:{アイテムを装備している味方キャラ1体}にDMG+1する。構築制限:『9-nine-』"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

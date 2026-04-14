@@ -28,7 +28,22 @@
   "costRaw": "無無無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0099"
+  "text": "味方＜サーヴァント＞キャラ１体を未行動にする。（ゲーム中「令呪」は３回まで使用可能）",
+  "textKr": "味方＜サーヴァント＞キャラ１体を未行動にする。（ゲーム中「令呪」は３回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0099",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "味方＜サーヴァント＞キャラ１体を未行動にする。（ゲーム中「令呪」は３回まで使用可能）",
+    "normalizedText": "味方<サーヴァント>キャラ1体を未行動にする。(ゲーム中「令呪」は3回まで使用可能)",
+    "lines": [
+      "味方<サーヴァント>キャラ1体を未行動にする。(ゲーム中「令呪」は3回まで使用可能)"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "味方<サーヴァント>キャラ1体を未行動にする。(ゲーム中「令呪」は3回まで使用可能)",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

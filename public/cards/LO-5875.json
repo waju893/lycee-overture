@@ -27,5 +27,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:{味方『星ノ音サンクチュアリ』キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「アルマドライブ」を持つ場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:{味方『星ノ音サンクチュアリ』キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「アルマドライブ」を持つ場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5875"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5875",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方『星ノ音サンクチュアリ』キャラ1体}にAP+1・DP+1する。そのキャラが「アルマドライブ」を持つ場合、そのキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:{味方『星ノ音サンクチュアリ』キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「アルマドライブ」を持つ場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:{味方『星ノ音サンクチュアリ』キャラ1体}にAP+1・DP+1する。そのキャラが「アルマドライブ」を持つ場合、そのキャラにAP+1・DP+1する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:{味方『星ノ音サンクチュアリ』キャラ1体}にAP+1・DP+1する。そのキャラが「アルマドライブ」を持つ場合、そのキャラにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

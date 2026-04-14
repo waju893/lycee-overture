@@ -26,5 +26,32 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「清宮千津」または「コレット・カルリーニ」１体を手札に入れることができる。",
   "textKr": "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「清宮千津」または「コレット・カルリーニ」１体を手札に入れることができる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3693"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3693",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「清宮千津」または「コレット・カルリーニ」1体を手札に入れることができる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「清宮千津」または「コレット・カルリーニ」１体を手札に入れることができる。",
+    "normalizedText": "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「清宮千津」または「コレット・カルリーニ」1体を手札に入れることができる。",
+    "lines": [
+      "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「清宮千津」または「コレット・カルリーニ」1体を手札に入れることができる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

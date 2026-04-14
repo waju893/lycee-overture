@@ -24,5 +24,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] このキャラで「あんこうチーム」キャラにサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
   "textKr": "[アシスト]\n[誘発] このキャラで「あんこうチーム」キャラにサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0418"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0418",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラで「あんこうチーム」キャラにサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラで「あんこうチーム」キャラにサポートをしたとき、対象のキャラにバトル終了時までDMG+2する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラで「あんこうチーム」キャラにサポートをしたとき、対象のキャラにバトル終了時までDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラで「あんこうチーム」キャラにサポートをしたとき、対象のキャラにバトル終了時までDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

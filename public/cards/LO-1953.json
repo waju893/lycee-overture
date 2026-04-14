@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:{ＤＭＧが２以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:{ＤＭＧが２以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1953"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1953",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:{ＤＭＧが２以下の味方[花]キャラ１体}にＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:{DMGが2以下の味方[花]キャラ1体}にDMG+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:{DMGが2以下の味方[花]キャラ1体}にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{DMGが2以下の味方[花]キャラ1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

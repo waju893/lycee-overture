@@ -29,5 +29,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[雪月花日]]\n[宣言] [0]:このキャラを除くサブネームに「メイド」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
   "textKr": "[サポーター:[雪月花日]]\n[宣言] [0]:このキャラを除くサブネームに「メイド」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5804"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5804",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラを除くサブネームに「メイド」を含む味方キャラ全てにAP+1・DP+1・SP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[雪月花日]]\n[宣言] [0]:このキャラを除くサブネームに「メイド」を含む味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+    "normalizedText": "[サポーター:[雪月花日]]\n[宣言] [0]:このキャラを除くサブネームに「メイド」を含む味方キャラ全てにAP+1・DP+1・SP+1する。",
+    "lines": [
+      "[サポーター:[雪月花日]]",
+      "[宣言] [0]:このキャラを除くサブネームに「メイド」を含む味方キャラ全てにAP+1・DP+1・SP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[雪月花日]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

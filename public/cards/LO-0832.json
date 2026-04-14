@@ -25,7 +25,22 @@
   "costRaw": "月月宙宙無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0832"
+  "text": "{自分のゴミ箱のコストが４点以下のキャラ１体}を無償で登場する。",
+  "textKr": "{自分のゴミ箱のコストが４点以下のキャラ１体}を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0832",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{自分のゴミ箱のコストが４点以下のキャラ１体}を無償で登場する。",
+    "normalizedText": "{自分のゴミ箱のコストが4点以下のキャラ1体}を無償で登場する。",
+    "lines": [
+      "{自分のゴミ箱のコストが4点以下のキャラ1体}を無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{自分のゴミ箱のコストが4点以下のキャラ1体}を無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

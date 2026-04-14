@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2358",
+  "title": "闇の魔法使い",
+  "subName": "ケイファ",
+  "name": "闇の魔法使い ケイファ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,49 @@
   "ap": 0,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキから「ケイファ」を除く「巣作りカリンちゃん」キャラ１体を探し公開して手札に入れる。\n[誘発] 味方[雪]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを自分の「迷宮」置き場に置ける。\n構築制限:[NEX]",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキから「ケイファ」を除く「巣作りカリンちゃん」キャラ１体を探し公開して手札に入れる。\n[誘発] 味方[雪]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを自分の「迷宮」置き場に置ける。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2358",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから「ケイファ」を除く「巣作りカリンちゃん」キャラ1体を探し公開して手札に入れる。[誘発] 味方[雪]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを自分の「迷宮」置き場に置ける。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "ケイファ"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のデッキから「ケイファ」を除く「巣作りカリンちゃん」キャラ１体を探し公開して手札に入れる。\n[誘発] 味方[雪]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを自分の「迷宮」置き場に置ける。\n構築制限:[NEX]",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のデッキから「ケイファ」を除く「巣作りカリンちゃん」キャラ1体を探し公開して手札に入れる。[誘発] 味方[雪]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを自分の「迷宮」置き場に置ける。構築制限:[NEX]",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のデッキから「ケイファ」を除く「巣作りカリンちゃん」キャラ1体を探し公開して手札に入れる。[誘発] 味方[雪]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを自分の「迷宮」置き場に置ける。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

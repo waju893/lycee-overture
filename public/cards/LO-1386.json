@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1386",
+  "title": "血脈励起",
+  "subName": "アーチャー・インフェルノ",
+  "name": "血脈励起 アーチャー・インフェルノ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,31 @@
   "dp": 3,
   "sp": 0,
   "dmg": 2,
-  "keyeffects": [
-    14
-  ],
-  "keyEffects": [
-    14
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[ガッツ:[D2][宙宙宙]]\n[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[ガッツ:[D2][宙宙宙]]\n[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1386",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ガッツ:[D2][宙宙宙]]\n[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[ガッツ:[D2][宙宙宙]]\n[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[ガッツ:[D2][宙宙宙]]",
+      "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ガッツ:[D2][宙宙宙]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。構築制限:Fate/Grand Order([TM])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

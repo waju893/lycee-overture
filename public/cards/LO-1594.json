@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [宙宙]:防御中の相手キャラ１体にＤＰ－２する。",
   "textKr": "[手札宣言] [宙宙]:防御中の相手キャラ１体にＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1594"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1594",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [宙宙]:防御中の相手キャラ1体にDP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [宙宙]:防御中の相手キャラ１体にＤＰ－２する。",
+    "normalizedText": "[手札宣言] [宙宙]:防御中の相手キャラ1体にDP-2する。",
+    "lines": [
+      "[手札宣言] [宙宙]:防御中の相手キャラ1体にDP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -26,5 +26,51 @@
   "typeTagsRaw": "",
   "text": "[宣言] [T]:味方ＡＦ[雪]キャラ１体にＡＰ＋４または味方[雪]キャラ１体にＤＰ＋４する。味方「斎野九花」または「斎野透花」が登場している場合、その能力値に＋２する。",
   "textKr": "[宣言] [T]:味方ＡＦ[雪]キャラ１体にＡＰ＋４または味方[雪]キャラ１体にＤＰ＋４する。味方「斎野九花」または「斎野透花」が登場している場合、その能力値に＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6426"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6426",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:味方AF[雪]キャラ1体にAP+4または味方[雪]キャラ1体にDP+4する。味方「斎野九花」または「斎野透花」が登場している場合、その能力値に+2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 4
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:味方ＡＦ[雪]キャラ１体にＡＰ＋４または味方[雪]キャラ１体にＤＰ＋４する。味方「斎野九花」または「斎野透花」が登場している場合、その能力値に＋２する。",
+    "normalizedText": "[宣言] [T]:味方AF[雪]キャラ1体にAP+4または味方[雪]キャラ1体にDP+4する。味方「斎野九花」または「斎野透花」が登場している場合、その能力値に+2する。",
+    "lines": [
+      "[宣言] [T]:味方AF[雪]キャラ1体にAP+4または味方[雪]キャラ1体にDP+4する。味方「斎野九花」または「斎野透花」が登場している場合、その能力値に+2する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

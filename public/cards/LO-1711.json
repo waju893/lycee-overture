@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ＋２する。このアイテムを破棄する。",
   "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ＋２する。このアイテムを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1711"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1711",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにAP+1・DP+1する。[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ＋２する。このアイテムを破棄する。",
+    "normalizedText": "[常時] このキャラにAP+1・DP+1する。[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。",
+    "lines": [
+      "[常時] このキャラにAP+1・DP+1する。[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

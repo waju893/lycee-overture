@@ -25,5 +25,72 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。このキャラが持ち主が自分のアイテムを持つ場合、その相手キャラにＡＰ－１またはＤＰ－１する。このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
   "textKr": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。このキャラが持ち主が自分のアイテムを持つ場合、その相手キャラにＡＰ－１またはＤＰ－１する。このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4691"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4691",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。このキャラが持ち主が自分のアイテムを持つ場合、その相手キャラにAP-1またはDP-1する。このキャラは[ボーナス:[相手のデッキを1枚破棄する。]]を得る。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。このキャラが持ち主が自分のアイテムを持つ場合、その相手キャラにＡＰ－１またはＤＰ－１する。このキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。",
+    "normalizedText": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。このキャラが持ち主が自分のアイテムを持つ場合、その相手キャラにAP-1またはDP-1する。このキャラは[ボーナス:[相手のデッキを1枚破棄する。]]を得る。",
+    "lines": [
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。このキャラが持ち主が自分のアイテムを持つ場合、その相手キャラにAP-1またはDP-1する。このキャラは[ボーナス:[相手のデッキを1枚破棄する。]]を得る。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

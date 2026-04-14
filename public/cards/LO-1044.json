@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1044",
+  "title": "プラウダ高校チーム副隊長",
+  "subName": "ノンナ",
+  "name": "プラウダ高校チーム副隊長 ノンナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,31 @@
   "dp": 3,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    8
-  ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "プラウダ",
+  "text": "[アシスト]\n[宣言] [T][このキャラを破棄する]:自ターン中に使用する。{自分のゴミ箱の「カチューシャ」１体}を行動済みで無償で登場する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "[アシスト]\n[宣言] [T][このキャラを破棄する]:自ターン中に使用する。{自分のゴミ箱の「カチューシャ」１体}を行動済みで無償で登場する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1044",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T][このキャラを破棄する]:自ターン中に使用する。{自分のゴミ箱の「カチューシャ」１体}を行動済みで無償で登場する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "[アシスト]\n[宣言] [T][このキャラを破棄する]:自ターン中に使用する。{自分のゴミ箱の「カチューシャ」1体}を行動済みで無償で登場する。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T][このキャラを破棄する]:自ターン中に使用する。{自分のゴミ箱の「カチューシャ」1体}を行動済みで無償で登場する。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T][このキャラを破棄する]:自ターン中に使用する。{自分のゴミ箱の「カチューシャ」1体}を行動済みで無償で登場する。構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:バトル中に使用する。このキャラのＳＰが５以上の場合、このキャラにバトル終了時までＤＭＧ＋２する。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:バトル中に使用する。このキャラのＳＰが５以上の場合、このキャラにバトル終了時までＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0929"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0929",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:バトル中に使用する。このキャラのＳＰが５以上の場合、このキャラにバトル終了時までＤＭＧ＋２する。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[宣言] [0]:バトル中に使用する。このキャラのSPが5以上の場合、このキャラにバトル終了時までDMG+2する。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[宣言] [0]:バトル中に使用する。このキャラのSPが5以上の場合、このキャラにバトル終了時までDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:バトル中に使用する。このキャラのSPが5以上の場合、このキャラにバトル終了時までDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

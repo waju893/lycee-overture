@@ -21,7 +21,32 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2913"
+  "text": "ターン終了時まで、次にコストが４点以下の味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。登場したとき、相手は１枚ドローできる。",
+  "textKr": "ターン終了時まで、次にコストが４点以下の味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。登場したとき、相手は１枚ドローできる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2913",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "onEnter",
+      "triggerText": "ターン終了時",
+      "originalLine": "ターン終了時まで、次にコストが4点以下の味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。登場したとき、相手は1枚ドローできる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "ターン終了時まで、次にコストが４点以下の味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。登場したとき、相手は１枚ドローできる。",
+    "normalizedText": "ターン終了時まで、次にコストが4点以下の味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。登場したとき、相手は1枚ドローできる。",
+    "lines": [
+      "ターン終了時まで、次にコストが4点以下の味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。登場したとき、相手は1枚ドローできる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -22,7 +22,32 @@
   "costRaw": "花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2319"
+  "text": "コストが２点以下の味方キャラ全てにＤＰ＋２する。",
+  "textKr": "コストが２点以下の味方キャラ全てにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2319",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "コストが2点以下の味方キャラ全てにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "コストが２点以下の味方キャラ全てにＤＰ＋２する。",
+    "normalizedText": "コストが2点以下の味方キャラ全てにDP+2する。",
+    "lines": [
+      "コストが2点以下の味方キャラ全てにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

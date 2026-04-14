@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラにＡＰ＋２する。",
   "textKr": "[常時] このキャラにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0106"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0106",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラにＡＰ＋２する。",
+    "normalizedText": "[常時] このキャラにAP+2する。",
+    "lines": [
+      "[常時] このキャラにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

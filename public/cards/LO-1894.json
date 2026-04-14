@@ -26,5 +26,58 @@
   "typeTagsRaw": "",
   "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [月]:{相手キャラ１体}は元の能力１つを失う。この能力は失われる。\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
   "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [月]:{相手キャラ１体}は元の能力１つを失う。この能力は失われる。\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1894"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1894",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[宣言] [月]:{相手キャラ1体}は元の能力1つを失う。この能力は失われる。[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [月]:{相手キャラ１体}は元の能力１つを失う。この能力は失われる。\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+    "normalizedText": "[ボーナス:[相手のデッキを1枚破棄する。]]\n[宣言] [月]:{相手キャラ1体}は元の能力1つを失う。この能力は失われる。[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
+    "lines": [
+      "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "[宣言] [月]:{相手キャラ1体}は元の能力1つを失う。この能力は失われる。[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

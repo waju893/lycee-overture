@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0917",
+  "title": "図書部の中心",
+  "subName": "白崎 つぐみ",
+  "name": "図書部の中心 白崎 つぐみ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,31 @@
   "dp": 3,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ１体}のＡＰを[そのキャラのＳＰ]にする。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ１体}のＡＰを[そのキャラのＳＰ]にする。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0917",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ１体}のＡＰを[そのキャラのＳＰ]にする。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ1体}のAPを[そのキャラのSP]にする。構築制限:オーガスト([AUG])",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [花]:{味方キャラ1体}のAPを[そのキャラのSP]にする。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [花]:{味方キャラ1体}のAPを[そのキャラのSP]にする。構築制限:オーガスト([AUG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

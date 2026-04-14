@@ -26,5 +26,47 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [無]:自分のゴミ箱または自分のデッキから「リシア」または「ネリア」１体を探し公開して手札に入れる。この能力は失われる。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [無]:自分のゴミ箱または自分のデッキから「リシア」または「ネリア」１体を探し公開して手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3326"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3326",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:自分のゴミ箱または自分のデッキから「リシア」または「ネリア」1体を探し公開して手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "リシア"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [無]:自分のゴミ箱または自分のデッキから「リシア」または「ネリア」１体を探し公開して手札に入れる。この能力は失われる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [無]:自分のゴミ箱または自分のデッキから「リシア」または「ネリア」1体を探し公開して手札に入れる。この能力は失われる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [無]:自分のゴミ箱または自分のデッキから「リシア」または「ネリア」1体を探し公開して手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

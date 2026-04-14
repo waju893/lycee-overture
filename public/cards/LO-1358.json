@@ -26,5 +26,57 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[月月]]\n[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
   "textKr": "[オーダーチェンジ:[月月]]\n[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1358"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1358",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手キャラ1体にAP-1またはDP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[月月]]\n[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+    "normalizedText": "[オーダーチェンジ:[月月]]\n[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手キャラ1体にAP-1またはDP-1する。",
+    "lines": [
+      "[オーダーチェンジ:[月月]]",
+      "[誘発] このキャラと同列の味方キャラがバトルに参加したとき、相手キャラ1体にAP-1またはDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[月月]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

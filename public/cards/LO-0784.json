@@ -23,5 +23,30 @@
   "typeTagsRaw": "神姫",
   "text": "[誘発] このキャラがサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラにＤＰ＋１する。",
   "textKr": "[誘発] このキャラがサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラにＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0784"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0784",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラがサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラにDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラがサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラにＤＰ＋１する。",
+    "normalizedText": "[誘発] このキャラがサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラにDP+1する。",
+    "lines": [
+      "[誘発] このキャラがサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラにDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

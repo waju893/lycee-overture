@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0951",
+  "title": "伝説の羊飼い",
+  "subName": "一之江 金魚",
+  "name": "伝説の羊飼い 一之江 金魚",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,41 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "日日日日",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[D1]]\n[宣言] [0]:自ターン中に使用する。２枚ドローする。自分の手札を１枚デッキの上に置く。自分の手札を１枚デッキの下に置く。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "[サポーター:[D1]]\n[宣言] [0]:自ターン中に使用する。２枚ドローする。自分の手札を１枚デッキの上に置く。自分の手札を１枚デッキの下に置く。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0951",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。2枚ドローする。自分の手札を1枚デッキの上に置く。自分の手札を1枚デッキの下に置く。構築制限:オーガスト([AUG])",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 2
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[D1]]\n[宣言] [0]:自ターン中に使用する。２枚ドローする。自分の手札を１枚デッキの上に置く。自分の手札を１枚デッキの下に置く。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "[サポーター:[D1]]\n[宣言] [0]:自ターン中に使用する。2枚ドローする。自分の手札を1枚デッキの上に置く。自分の手札を1枚デッキの下に置く。構築制限:オーガスト([AUG])",
+    "lines": [
+      "[サポーター:[D1]]",
+      "[宣言] [0]:自ターン中に使用する。2枚ドローする。自分の手札を1枚デッキの上に置く。自分の手札を1枚デッキの下に置く。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[D1]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

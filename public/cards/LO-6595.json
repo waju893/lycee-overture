@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方「蝶舞翠」が自分の効果で場を離れたとき、自分にシールド＋１できる。",
   "textKr": "[誘発] 味方「蝶舞翠」が自分の効果で場を離れたとき、自分にシールド＋１できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6595"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6595",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 味方「蝶舞翠」が自分の効果で場を離れたとき、自分にシールド＋１できる。",
+    "normalizedText": "[誘発] 味方「蝶舞翠」が自分の効果で場を離れたとき、自分にシールド+1できる。",
+    "lines": [
+      "[誘発] 味方「蝶舞翠」が自分の効果で場を離れたとき、自分にシールド+1できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 味方「蝶舞翠」が自分の効果で場を離れたとき、自分にシールド+1できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,31 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、ＤＰが０の味方キャラ１体にＡＰ＋１する。",
   "textKr": "[誘発] このキャラが登場したとき、ＤＰが０の味方キャラ１体にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1254"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1254",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、DPが0の味方キャラ1体にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、ＤＰが０の味方キャラ１体にＡＰ＋１する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、DPが0の味方キャラ1体にAP+1する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、DPが0の味方キャラ1体にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -22,7 +22,22 @@
   "costRaw": "無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0837"
+  "text": "{未行動の味方[KHP]キャラ１体}を行動済みにする。相手のデッキを２枚破棄する。このターン中に自分が使用した「バースト」の枚数だけ、相手のデッキを２枚破棄する。",
+  "textKr": "{未行動の味方[KHP]キャラ１体}を行動済みにする。相手のデッキを２枚破棄する。このターン中に自分が使用した「バースト」の枚数だけ、相手のデッキを２枚破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0837",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{未行動の味方[KHP]キャラ１体}を行動済みにする。相手のデッキを２枚破棄する。このターン中に自分が使用した「バースト」の枚数だけ、相手のデッキを２枚破棄する。",
+    "normalizedText": "{未行動の味方[KHP]キャラ1体}を行動済みにする。相手のデッキを2枚破棄する。このターン中に自分が使用した「バースト」の枚数だけ、相手のデッキを2枚破棄する。",
+    "lines": [
+      "{未行動の味方[KHP]キャラ1体}を行動済みにする。相手のデッキを2枚破棄する。このターン中に自分が使用した「バースト」の枚数だけ、相手のデッキを2枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{未行動の味方[KHP]キャラ1体}を行動済みにする。相手のデッキを2枚破棄する。このターン中に自分が使用した「バースト」の枚数だけ、相手のデッキを2枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

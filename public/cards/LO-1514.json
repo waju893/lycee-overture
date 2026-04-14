@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「テティス」１体を登場できる。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「テティス」１体を登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1514"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1514",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱の「テティス」１体を登場できる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱の「テティス」1体を登場できる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の「テティス」1体を登場できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱の「テティス」1体を登場できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2534",
+  "title": "小さな召使い",
+  "subName": "リシア・ド・ノーヴァス・ユーリィ",
+  "name": "小さな召使い リシア・ド・ノーヴァス・ユーリィ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,37 @@
   "ap": 3,
   "dp": 3,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:ＳＰが４以上の味方[花]キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:[AUG]",
+  "textKr": "[宣言] [0]:ＳＰが４以上の味方[花]キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:[AUG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2534",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:SPが4以上の味方[花]キャラ全てにAP+1・DP+1・DMG+1する。構築制限:[AUG]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:ＳＰが４以上の味方[花]キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:[AUG]",
+    "normalizedText": "[宣言] [0]:SPが4以上の味方[花]キャラ全てにAP+1・DP+1・DMG+1する。構築制限:[AUG]",
+    "lines": [
+      "[宣言] [0]:SPが4以上の味方[花]キャラ全てにAP+1・DP+1・DMG+1する。構築制限:[AUG]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

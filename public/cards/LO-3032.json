@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[手札宣言] [宙宙]:{防御中の味方キャラ１体}を味方フィールドに移動する。",
   "textKr": "[オーダーステップ:[0]]\n[手札宣言] [宙宙]:{防御中の味方キャラ１体}を味方フィールドに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3032"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3032",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[手札宣言] [宙宙]:{防御中の味方キャラ１体}を味方フィールドに移動する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[手札宣言] [宙宙]:{防御中の味方キャラ1体}を味方フィールドに移動する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[手札宣言] [宙宙]:{防御中の味方キャラ1体}を味方フィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[手札宣言] [宙宙]:{防御中の味方キャラ1体}を味方フィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

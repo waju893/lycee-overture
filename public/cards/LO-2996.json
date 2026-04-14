@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [月]:{相手キャラ１体}にＤＭＧ－３する。",
   "textKr": "[手札宣言] [月]:{相手キャラ１体}にＤＭＧ－３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2996"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2996",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [月]:{相手キャラ１体}にＤＭＧ－３する。",
+    "normalizedText": "[手札宣言] [月]:{相手キャラ1体}にDMG-3する。",
+    "lines": [
+      "[手札宣言] [月]:{相手キャラ1体}にDMG-3する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [月]:{相手キャラ1体}にDMG-3する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

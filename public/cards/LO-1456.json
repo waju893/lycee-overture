@@ -23,5 +23,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] 自ターン中、このキャラを行動済みにしたとき、自分のゴミ箱のカード全てが[花]の場合、このキャラを未行動にする。",
   "textKr": "[誘発] 自ターン中、このキャラを行動済みにしたとき、自分のゴミ箱のカード全てが[花]の場合、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1456"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1456",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、このキャラを行動済みにしたとき、自分のゴミ箱のカード全てが[花]の場合、このキャラを未行動にする。",
+    "normalizedText": "[誘発] 自ターン中、このキャラを行動済みにしたとき、自分のゴミ箱のカード全てが[花]の場合、このキャラを未行動にする。",
+    "lines": [
+      "[誘発] 自ターン中、このキャラを行動済みにしたとき、自分のゴミ箱のカード全てが[花]の場合、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、このキャラを行動済みにしたとき、自分のゴミ箱のカード全てが[花]の場合、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

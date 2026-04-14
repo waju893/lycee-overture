@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1677",
+  "title": "憑依する",
+  "subName": "犬神",
+  "name": "憑依する 犬神",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,27 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:コストが３点の味方ＡＦ[宙]キャラ全てにＤＭＧ＋１する。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[宣言] [0]:コストが３点の味方ＡＦ[宙]キャラ全てにＤＭＧ＋１する。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1677",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:コストが３点の味方ＡＦ[宙]キャラ全てにＤＭＧ＋１する。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[宣言] [0]:コストが3点の味方AF[宙]キャラ全てにDMG+1する。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[宣言] [0]:コストが3点の味方AF[宙]キャラ全てにDMG+1する。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:コストが3点の味方AF[宙]キャラ全てにDMG+1する。構築制限:ゆずソフト([YUZ])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

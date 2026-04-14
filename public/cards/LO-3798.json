@@ -21,7 +21,32 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3798"
+  "text": "コストが５点以上の味方[日]キャラが登場している場合、味方[日]キャラ全てにＡＰ＋２する。",
+  "textKr": "コストが５点以上の味方[日]キャラが登場している場合、味方[日]キャラ全てにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3798",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "コストが5点以上の味方[日]キャラが登場している場合、味方[日]キャラ全てにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "コストが５点以上の味方[日]キャラが登場している場合、味方[日]キャラ全てにＡＰ＋２する。",
+    "normalizedText": "コストが5点以上の味方[日]キャラが登場している場合、味方[日]キャラ全てにAP+2する。",
+    "lines": [
+      "コストが5点以上の味方[日]キャラが登場している場合、味方[日]キャラ全てにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

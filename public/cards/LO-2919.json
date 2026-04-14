@@ -21,7 +21,35 @@
   "costRaw": "花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2919"
+  "text": "ターン終了時まで、{味方キャラ１体}を破棄したとき、ゴミ箱のそのキャラを手札に入れる。",
+  "textKr": "ターン終了時まで、{味方キャラ１体}を破棄したとき、ゴミ箱のそのキャラを手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2919",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "ターン終了時まで、{味方キャラ1体}を破棄したとき、ゴミ箱のそのキャラを手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "ターン終了時まで、{味方キャラ１体}を破棄したとき、ゴミ箱のそのキャラを手札に入れる。",
+    "normalizedText": "ターン終了時まで、{味方キャラ1体}を破棄したとき、ゴミ箱のそのキャラを手札に入れる。",
+    "lines": [
+      "ターン終了時まで、{味方キャラ1体}を破棄したとき、ゴミ箱のそのキャラを手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

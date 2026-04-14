@@ -25,5 +25,48 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」１枚を探しこのキャラに無償で装備できる。しない場合、１枚ドローする。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」１枚を探しこのキャラに無償で装備できる。しない場合、１枚ドローする。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4694"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4694",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」1枚を探しこのキャラに無償で装備できる。しない場合、1枚ドローする。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "オートマタ",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」１枚を探しこのキャラに無償で装備できる。しない場合、１枚ドローする。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」1枚を探しこのキャラに無償で装備できる。しない場合、1枚ドローする。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」1枚を探しこのキャラに無償で装備できる。しない場合、1枚ドローする。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

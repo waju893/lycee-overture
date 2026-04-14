@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラをバトル参加キャラに指定したとき、相手キャラ１体にＤＰ－１する。",
   "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラをバトル参加キャラに指定したとき、相手キャラ１体にＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3770"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3770",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラをバトル参加キャラに指定したとき、相手キャラ1体にDP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラをバトル参加キャラに指定したとき、相手キャラ１体にＤＰ－１する。",
+    "normalizedText": "[ボーナス:[相手のデッキを1枚破棄する。]]\n[誘発] このキャラをバトル参加キャラに指定したとき、相手キャラ1体にDP-1する。",
+    "lines": [
+      "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "[誘発] このキャラをバトル参加キャラに指定したとき、相手キャラ1体にDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

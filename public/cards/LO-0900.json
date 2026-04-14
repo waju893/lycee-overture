@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [月]:相手の宣言に対応して使用できない。{自分のゴミ箱の「多岐川葵」１体}を登場する。この能力は失われる。",
   "textKr": "[宣言] [月]:相手の宣言に対応して使用できない。{自分のゴミ箱の「多岐川葵」１体}を登場する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0900"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0900",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [月]:相手の宣言に対応して使用できない。{自分のゴミ箱の「多岐川葵」１体}を登場する。この能力は失われる。",
+    "normalizedText": "[宣言] [月]:相手の宣言に対応して使用できない。{自分のゴミ箱の「多岐川葵」1体}を登場する。この能力は失われる。",
+    "lines": [
+      "[宣言] [月]:相手の宣言に対応して使用できない。{自分のゴミ箱の「多岐川葵」1体}を登場する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [月]:相手の宣言に対応して使用できない。{自分のゴミ箱の「多岐川葵」1体}を登場する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

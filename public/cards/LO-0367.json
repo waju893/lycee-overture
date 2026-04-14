@@ -24,5 +24,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキを２枚破棄する。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキを２枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0367"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0367",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキを２枚破棄する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキを2枚破棄する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、自分のデッキを2枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のデッキを2枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

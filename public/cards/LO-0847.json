@@ -26,5 +26,25 @@
   "typeTagsRaw": "神姫",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを１枚回復する。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを１枚回復する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0847"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0847",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを１枚回復する。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを1枚回復する。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを1枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを1枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [D2][無無無無]:相手ターン中に使用する。{コストが２点以下の相手キャラ１体}を破棄する。この能力は失われる。",
   "textKr": "[アシスト]\n[宣言] [D2][無無無無]:相手ターン中に使用する。{コストが２点以下の相手キャラ１体}を破棄する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1014"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1014",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [D2][無無無無]:相手ターン中に使用する。{コストが２点以下の相手キャラ１体}を破棄する。この能力は失われる。",
+    "normalizedText": "[アシスト]\n[宣言] [D2][無無無無]:相手ターン中に使用する。{コストが2点以下の相手キャラ1体}を破棄する。この能力は失われる。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [D2][無無無無]:相手ターン中に使用する。{コストが2点以下の相手キャラ1体}を破棄する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D2][無無無無]:相手ターン中に使用する。{コストが2点以下の相手キャラ1体}を破棄する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] 自分のコストが１点以上のイベントを使用したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
   "textKr": "[ステップ:[0]]\n[誘発] 自分のコストが１点以上のイベントを使用したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5406"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5406",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のコストが1点以上のイベントを使用したとき、このキャラにAP+2・DP+2・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] 自分のコストが１点以上のイベントを使用したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] 自分のコストが1点以上のイベントを使用したとき、このキャラにAP+2・DP+2・DMG+1する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] 自分のコストが1点以上のイベントを使用したとき、このキャラにAP+2・DP+2・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

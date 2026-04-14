@@ -24,5 +24,36 @@
   "typeTagsRaw": "城娘",
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが２点以下の味方[花]キャラが４体以上登場している場合、１枚ドローできる。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが２点以下の味方[花]キャラが４体以上登場している場合、１枚ドローできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2273"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2273",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、コストが2点以下の味方[花]キャラが4体以上登場している場合、1枚ドローできる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが２点以下の味方[花]キャラが４体以上登場している場合、１枚ドローできる。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが2点以下の味方[花]キャラが4体以上登場している場合、1枚ドローできる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、コストが2点以下の味方[花]キャラが4体以上登場している場合、1枚ドローできる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

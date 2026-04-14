@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラが登場したとき、相手は相手の手札を１枚破棄する。",
   "textKr": "[誘発] このキャラが登場したとき、相手は相手の手札を１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0569"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0569",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手は相手の手札を１枚破棄する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手は相手の手札を1枚破棄する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手は相手の手札を1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手は相手の手札を1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

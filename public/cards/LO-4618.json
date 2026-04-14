@@ -24,5 +24,48 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」１枚を探しこのキャラに無償で装備する。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」１枚を探しこのキャラに無償で装備する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4618"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4618",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」1枚を探しこのキャラに無償で装備する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "オートマタ",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」１枚を探しこのキャラに無償で装備する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」1枚を探しこのキャラに無償で装備する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「オートマタ」1枚を探しこのキャラに無償で装備する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

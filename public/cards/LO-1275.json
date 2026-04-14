@@ -24,7 +24,22 @@
   "costRaw": "雪雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "死んだ世界戦線",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1275"
+  "text": "バトル中に使用できない。{相手キャラ１体}を破棄する。味方「立華かなで」が登場していない場合、相手は相手のデッキを４枚回復する。",
+  "textKr": "バトル中に使用できない。{相手キャラ１体}を破棄する。味方「立華かなで」が登場していない場合、相手は相手のデッキを４枚回復する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1275",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。{相手キャラ１体}を破棄する。味方「立華かなで」が登場していない場合、相手は相手のデッキを４枚回復する。",
+    "normalizedText": "バトル中に使用できない。{相手キャラ1体}を破棄する。味方「立華かなで」が登場していない場合、相手は相手のデッキを4枚回復する。",
+    "lines": [
+      "バトル中に使用できない。{相手キャラ1体}を破棄する。味方「立華かなで」が登場していない場合、相手は相手のデッキを4枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用できない。{相手キャラ1体}を破棄する。味方「立華かなで」が登場していない場合、相手は相手のデッキを4枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

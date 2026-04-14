@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2644",
+  "title": "アライブ",
+  "subName": "朝霧 一羽",
+  "name": "アライブ 朝霧 一羽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,48 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」１枚を探し味方フィールドに配置できる。\n構築制限:[PUR]",
+  "textKr": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」１枚を探し味方フィールドに配置できる。\n構築制限:[PUR]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2644",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」1枚を探し味方フィールドに配置できる。構築制限:[PUR]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "理想郷"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」１枚を探し味方フィールドに配置できる。\n構築制限:[PUR]",
+    "normalizedText": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」1枚を探し味方フィールドに配置できる。構築制限:[PUR]",
+    "lines": [
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」1枚を探し味方フィールドに配置できる。構築制限:[PUR]"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

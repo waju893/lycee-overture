@@ -24,5 +24,30 @@
   "typeTagsRaw": "城娘",
   "text": "[手札宣言] [雪雪]:味方キャラの攻撃中に使用する。そのキャラにＡＰ＋２する。",
   "textKr": "[手札宣言] [雪雪]:味方キャラの攻撃中に使用する。そのキャラにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2243"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2243",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [雪雪]:味方キャラの攻撃中に使用する。そのキャラにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [雪雪]:味方キャラの攻撃中に使用する。そのキャラにＡＰ＋２する。",
+    "normalizedText": "[手札宣言] [雪雪]:味方キャラの攻撃中に使用する。そのキャラにAP+2する。",
+    "lines": [
+      "[手札宣言] [雪雪]:味方キャラの攻撃中に使用する。そのキャラにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

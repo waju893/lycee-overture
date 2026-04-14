@@ -25,5 +25,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][サイドステップ:[0]]\n[宣言] [無]:このキャラにＡＰ＋２する。",
   "textKr": "[アシスト][サイドステップ:[0]]\n[宣言] [無]:このキャラにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0384"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0384",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:このキャラにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][サイドステップ:[0]]\n[宣言] [無]:このキャラにＡＰ＋２する。",
+    "normalizedText": "[アシスト][サイドステップ:[0]]\n[宣言] [無]:このキャラにAP+2する。",
+    "lines": [
+      "[アシスト][サイドステップ:[0]]",
+      "[宣言] [無]:このキャラにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

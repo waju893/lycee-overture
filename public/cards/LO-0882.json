@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[エンゲージ]\n[誘発] このキャラが登場したとき、自分のデッキを１枚回復する。",
   "textKr": "[エンゲージ]\n[誘発] このキャラが登場したとき、自分のデッキを１枚回復する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0882"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0882",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] このキャラが登場したとき、自分のデッキを１枚回復する。",
+    "normalizedText": "[エンゲージ]\n[誘発] このキャラが登場したとき、自分のデッキを1枚回復する。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] このキャラが登場したとき、自分のデッキを1枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のデッキを1枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

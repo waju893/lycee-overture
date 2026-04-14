@@ -26,5 +26,36 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:{味方「カエサル」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:{味方「カエサル」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0368"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0368",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方「カエサル」1体}にAP+1・DP+1・SP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:{味方「カエサル」１体}にＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:{味方「カエサル」1体}にAP+1・DP+1・SP+1する。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[宣言] [0]:{味方「カエサル」1体}にAP+1・DP+1・SP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

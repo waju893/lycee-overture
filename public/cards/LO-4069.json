@@ -29,5 +29,43 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]][ボーナス:[相手のデッキを２枚破棄する。]][ペナルティ:[１枚ドローする。]]\n[宣言] [宙]:味方キャラが３体以下の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
   "textKr": "[ジャンプ:[0]][ボーナス:[相手のデッキを２枚破棄する。]][ペナルティ:[１枚ドローする。]]\n[宣言] [宙]:味方キャラが３体以下の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4069"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4069",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ジャンプ:[0]][ボーナス:[相手のデッキを2枚破棄する。]][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:味方キャラが3体以下の場合、このキャラにAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]][ボーナス:[相手のデッキを２枚破棄する。]][ペナルティ:[１枚ドローする。]]\n[宣言] [宙]:味方キャラが３体以下の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "[ジャンプ:[0]][ボーナス:[相手のデッキを2枚破棄する。]][ペナルティ:[1枚ドローする。]]\n[宣言] [宙]:味方キャラが3体以下の場合、このキャラにAP+3・DP+3する。",
+    "lines": [
+      "[ジャンプ:[0]][ボーナス:[相手のデッキを2枚破棄する。]][ペナルティ:[1枚ドローする。]]",
+      "[宣言] [宙]:味方キャラが3体以下の場合、このキャラにAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

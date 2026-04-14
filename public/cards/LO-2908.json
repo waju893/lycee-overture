@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-2908",
+  "title": "未亡人な体育教師",
+  "subName": "浅葉 葵",
+  "name": "未亡人な体育教師 浅葉 葵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower",
     "cosmos"
   ],
-  "attributesList": [
-    "flower",
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "cosmos",
@@ -18,11 +20,64 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "花宙無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[無]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を手札に入れる。\n[宣言] [0]:バトル中に使用できない。{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:『恋がさくころ桜どき』",
+  "textKr": "[サポーター:[無]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を手札に入れる。\n[宣言] [0]:バトル中に使用できない。{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:『恋がさくころ桜どき』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2908",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を手札に入れる。[宣言] [0]:バトル中に使用できない。{コストが3点以上の味方キャラ1体}にAP+1またはDP+1する。構築制限:『恋がさくころ桜どき』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[無]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を手札に入れる。\n[宣言] [0]:バトル中に使用できない。{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n構築制限:『恋がさくころ桜どき』",
+    "normalizedText": "[サポーター:[無]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を手札に入れる。[宣言] [0]:バトル中に使用できない。{コストが3点以上の味方キャラ1体}にAP+1またはDP+1する。構築制限:『恋がさくころ桜どき』",
+    "lines": [
+      "[サポーター:[無]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を手札に入れる。[宣言] [0]:バトル中に使用できない。{コストが3点以上の味方キャラ1体}にAP+1またはDP+1する。構築制限:『恋がさくころ桜どき』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

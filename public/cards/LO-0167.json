@@ -27,5 +27,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[誘発] 対戦キャラがダウンしたこのキャラのバトル終了時、相手は相手の手札を１枚破棄する。",
   "textKr": "[エンゲージ]\n[誘発] 対戦キャラがダウンしたこのキャラのバトル終了時、相手は相手の手札を１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0167"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0167",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] 対戦キャラがダウンしたこのキャラのバトル終了時、相手は相手の手札を１枚破棄する。",
+    "normalizedText": "[エンゲージ]\n[誘発] 対戦キャラがダウンしたこのキャラのバトル終了時、相手は相手の手札を1枚破棄する。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] 対戦キャラがダウンしたこのキャラのバトル終了時、相手は相手の手札を1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 対戦キャラがダウンしたこのキャラのバトル終了時、相手は相手の手札を1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

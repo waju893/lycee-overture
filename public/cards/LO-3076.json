@@ -21,7 +21,32 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3076"
+  "text": "{コストが２点以下の味方キャラ１体}にＡＰ＋３する。",
+  "textKr": "{コストが２点以下の味方キャラ１体}にＡＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3076",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが2点以下の味方キャラ1体}にAP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが２点以下の味方キャラ１体}にＡＰ＋３する。",
+    "normalizedText": "{コストが2点以下の味方キャラ1体}にAP+3する。",
+    "lines": [
+      "{コストが2点以下の味方キャラ1体}にAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

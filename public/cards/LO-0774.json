@@ -25,5 +25,20 @@
   "typeTagsRaw": "幻獣",
   "text": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄できる。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0774"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0774",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ１体を破棄できる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ1体を破棄できる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ1体を破棄できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体を破棄できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -22,7 +22,22 @@
   "costRaw": "月月",
   "restrictionRaw": "",
   "typeTagsRaw": "イベント",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0410"
+  "text": "相手の攻撃宣言に対応して使用する。その宣言の解決は失敗する。",
+  "textKr": "相手の攻撃宣言に対応して使用する。その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0410",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手の攻撃宣言に対応して使用する。その宣言の解決は失敗する。",
+    "normalizedText": "相手の攻撃宣言に対応して使用する。その宣言の解決は失敗する。",
+    "lines": [
+      "相手の攻撃宣言に対応して使用する。その宣言の解決は失敗する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手の攻撃宣言に対応して使用する。その宣言の解決は失敗する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

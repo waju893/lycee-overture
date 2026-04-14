@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0859",
+  "title": "蛇皇空鎖凪ノ絶刀",
+  "subName": "神劍クサナギノツルギ",
+  "name": "蛇皇空鎖凪ノ絶刀 神劍クサナギノツルギ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
@@ -14,11 +17,49 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    7
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "魔剣",
+  "text": "[エンゲージ]\n[宣言] [T][このキャラを破棄する]:{相手ＡＦキャラ１体}を手札に入れる。\n構築制限:ブレイブソード×ブレイズソウル（[BXB]）\n初出 : リセオーバーチュア１周年記念キャンペーン初出 : リセオーバーチュア１周年記念キャンペーン",
+  "textKr": "[エンゲージ]\n[宣言] [T][このキャラを破棄する]:{相手ＡＦキャラ１体}を手札に入れる。\n構築制限:ブレイブソード×ブレイズソウル（[BXB]）\n初出 : リセオーバーチュア１周年記念キャンペーン初出 : リセオーバーチュア１周年記念キャンペーン",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0859",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T][このキャラを破棄する]:{相手AFキャラ1体}を手札に入れる。構築制限:ブレイブソード×ブレイズソウル([BXB])",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "opponent",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [T][このキャラを破棄する]:{相手ＡＦキャラ１体}を手札に入れる。\n構築制限:ブレイブソード×ブレイズソウル（[BXB]）\n初出 : リセオーバーチュア１周年記念キャンペーン初出 : リセオーバーチュア１周年記念キャンペーン",
+    "normalizedText": "[エンゲージ]\n[宣言] [T][このキャラを破棄する]:{相手AFキャラ1体}を手札に入れる。構築制限:ブレイブソード×ブレイズソウル([BXB])\n初出 : リセオーバーチュア1周年記念キャンペーン初出 : リセオーバーチュア1周年記念キャンペーン",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [T][このキャラを破棄する]:{相手AFキャラ1体}を手札に入れる。構築制限:ブレイブソード×ブレイズソウル([BXB])",
+      "初出 : リセオーバーチュア1周年記念キャンペーン初出 : リセオーバーチュア1周年記念キャンペーン"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "初出 : リセオーバーチュア1周年記念キャンペーン初出 : リセオーバーチュア1周年記念キャンペーン",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,20 @@
   "typeTagsRaw": "-",
   "text": "[誘発] 自ターン開始時、キャラ１体にＤＭＧ＋１できる。",
   "textKr": "[誘発] 自ターン開始時、キャラ１体にＤＭＧ＋１できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0624"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0624",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン開始時、キャラ１体にＤＭＧ＋１できる。",
+    "normalizedText": "[誘発] 自ターン開始時、キャラ1体にDMG+1できる。",
+    "lines": [
+      "[誘発] 自ターン開始時、キャラ1体にDMG+1できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン開始時、キャラ1体にDMG+1できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

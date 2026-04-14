@@ -24,5 +24,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[サポーター:[花花]]\n[宣言] [D1]:味方[花]＜大洗女子＞キャラ全てにＳＰ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [D1]:味方[花]＜大洗女子＞キャラ全てにＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1059"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1059",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:味方[花]<大洗女子>キャラ全てにSP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [D1]:味方[花]＜大洗女子＞キャラ全てにＳＰ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [D1]:味方[花]<大洗女子>キャラ全てにSP+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [D1]:味方[花]<大洗女子>キャラ全てにSP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

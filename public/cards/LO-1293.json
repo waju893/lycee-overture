@@ -25,5 +25,32 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:自ターン中に使用する。自分の手札を１枚デッキの下に置く。置いたとき、自分のデッキの上のカード２枚を見て、そのうち１枚を手札に入れる。",
   "textKr": "[宣言] [0]:自ターン中に使用する。自分の手札を１枚デッキの下に置く。置いたとき、自分のデッキの上のカード２枚を見て、そのうち１枚を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1293"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1293",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。自分の手札を1枚デッキの下に置く。置いたとき、自分のデッキの上のカード2枚を見て、そのうち1枚を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "deck",
+          "to": "hand",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。自分の手札を１枚デッキの下に置く。置いたとき、自分のデッキの上のカード２枚を見て、そのうち１枚を手札に入れる。",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。自分の手札を1枚デッキの下に置く。置いたとき、自分のデッキの上のカード2枚を見て、そのうち1枚を手札に入れる。",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。自分の手札を1枚デッキの下に置く。置いたとき、自分のデッキの上のカード2枚を見て、そのうち1枚を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

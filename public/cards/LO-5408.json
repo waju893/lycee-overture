@@ -26,5 +26,38 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [宙]:バトル中を除く自ターン中に使用する。自分のゴミ箱のＥＸが２の[MAD]イベント１枚を手札に入れる。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [宙]:バトル中を除く自ターン中に使用する。自分のゴミ箱のＥＸが２の[MAD]イベント１枚を手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5408"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5408",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:バトル中を除く自ターン中に使用する。自分のゴミ箱のEXが2の[MAD]イベント1枚を手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [宙]:バトル中を除く自ターン中に使用する。自分のゴミ箱のＥＸが２の[MAD]イベント１枚を手札に入れる。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [宙]:バトル中を除く自ターン中に使用する。自分のゴミ箱のEXが2の[MAD]イベント1枚を手札に入れる。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [宙]:バトル中を除く自ターン中に使用する。自分のゴミ箱のEXが2の[MAD]イベント1枚を手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ１体にＤＭＧ－３する。",
   "textKr": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ１体にＤＭＧ－３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0277"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0277",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ１体にＤＭＧ－３する。",
+    "normalizedText": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体にDMG-3する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体にDMG-3する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体にDMG-3する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

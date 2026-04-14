@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。",
   "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1686"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1686",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。",
+    "normalizedText": "[リカバリー:[相手のデッキを2枚破棄する。]]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。",
+    "lines": [
+      "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

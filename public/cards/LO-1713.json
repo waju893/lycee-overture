@@ -1,13 +1,47 @@
 {
+  "cardNo": "LO-1713",
+  "title": "家庭教師",
+  "subName": "",
+  "name": "家庭教師",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "装備制限:[日]キャラ\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "装備制限:[日]キャラ\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1713",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "装備制限:[日]キャラ\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "装備制限:[日]キャラ\n[誘発] このキャラが移動したとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "装備制限:[日]キャラ",
+      "[誘発] このキャラが移動したとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "装備制限:[日]キャラ",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが移動したとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、自分のゴミ箱の[雪]キャラ１体を登場する。",
   "textKr": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、自分のゴミ箱の[雪]キャラ１体を登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2504"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2504",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体を破棄する。破棄したとき、自分のゴミ箱の[雪]キャラ１体を登場する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体を破棄する。破棄したとき、自分のゴミ箱の[雪]キャラ1体を登場する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方[雪]キャラ1体を破棄する。破棄したとき、自分のゴミ箱の[雪]キャラ1体を登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体を破棄する。破棄したとき、自分のゴミ箱の[雪]キャラ1体を登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

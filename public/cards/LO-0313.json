@@ -27,5 +27,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト][ステップ:[月]]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
   "textKr": "[アシスト][ステップ:[月]]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0313"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0313",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][ステップ:[月]]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[アシスト][ステップ:[月]]\n[誘発] このキャラが登場したとき、相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[アシスト][ステップ:[月]]",
+      "[誘発] このキャラが登場したとき、相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ステップ:[月]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

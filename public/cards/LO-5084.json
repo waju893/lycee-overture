@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5084",
+  "title": "薄幸なアザラシ妖精",
+  "subName": "スィール",
+  "name": "薄幸なアザラシ妖精 スィール",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,81 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。\n[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」１枚を探し味方フィールドに無償で配置する。\n構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。\n[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」１枚を探し味方フィールドに無償で配置する。\n構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5084",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1・DP-1する。[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」1枚を探し味方フィールドに無償で配置する。構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck",
+                    "trash",
+                    "hand"
+                  ],
+                  "match": {
+                    "exactName": "花冠の大地",
+                    "kind": "area"
+                  },
+                  "min": 0,
+                  "max": 0,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                },
+                {
+                  "type": "freeUse",
+                  "sourceRef": "lastSearchResult",
+                  "useKind": "area",
+                  "ignoreCost": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。\n[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」１枚を探し味方フィールドに無償で配置する。\n構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ1体}にAP-1・DP-1する。[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」1枚を探し味方フィールドに無償で配置する。構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{相手キャラ1体}にAP-1・DP-1する。[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」1枚を探し味方フィールドに無償で配置する。構築制限:『ティアーズ・トゥ・ティアラ シリーズ』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

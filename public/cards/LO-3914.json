@@ -23,5 +23,50 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋３またはＤＰ＋３する。そのキャラが「浅井眞琴長政」の場合、１枚ドローする。",
   "textKr": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋３またはＤＰ＋３する。そのキャラが「浅井眞琴長政」の場合、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3914"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3914",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [宙宙]:{コストが3~4点の味方[宙]キャラ1体}にAP+3またはDP+3する。そのキャラが「浅井眞琴長政」の場合、1枚ドローする。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋３またはＤＰ＋３する。そのキャラが「浅井眞琴長政」の場合、１枚ドローする。",
+    "normalizedText": "[手札宣言] [宙宙]:{コストが3~4点の味方[宙]キャラ1体}にAP+3またはDP+3する。そのキャラが「浅井眞琴長政」の場合、1枚ドローする。",
+    "lines": [
+      "[手札宣言] [宙宙]:{コストが3~4点の味方[宙]キャラ1体}にAP+3またはDP+3する。そのキャラが「浅井眞琴長政」の場合、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

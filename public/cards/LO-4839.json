@@ -1,15 +1,59 @@
 {
+  "cardNo": "LO-4839",
+  "title": "WINDMILL 20th ANNIVERSARY",
+  "subName": "",
+  "name": "WINDMILL 20th ANNIVERSARY",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
     "flower"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "味方キャラが６体以上登場している場合、自分のデッキを３枚回復しシャッフルする。\n構築制限:[WM]\n初出 : ういんどみる20周年記念通販特典初出 : ういんどみる20周年記念通販特典",
+  "textKr": "味方キャラが６体以上登場している場合、自分のデッキを３枚回復しシャッフルする。\n構築制限:[WM]\n初出 : ういんどみる20周年記念通販特典初出 : ういんどみる20周年記念通販特典",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4839",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方キャラが6体以上登場している場合、自分のデッキを3枚回復しシャッフルする。構築制限:[WM]",
+      "actions": [
+        {
+          "type": "shuffle",
+          "owner": "self"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方キャラが６体以上登場している場合、自分のデッキを３枚回復しシャッフルする。\n構築制限:[WM]\n初出 : ういんどみる20周年記念通販特典初出 : ういんどみる20周年記念通販特典",
+    "normalizedText": "味方キャラが6体以上登場している場合、自分のデッキを3枚回復しシャッフルする。構築制限:[WM]\n初出 : ういんどみる20周年記念通販特典初出 : ういんどみる20周年記念通販特典",
+    "lines": [
+      "味方キャラが6体以上登場している場合、自分のデッキを3枚回復しシャッフルする。構築制限:[WM]",
+      "初出 : ういんどみる20周年記念通販特典初出 : ういんどみる20周年記念通販特典"
+    ],
+    "matchedRuleIds": [
+      "shuffle"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "初出 : ういんどみる20周年記念通販特典初出 : ういんどみる20周年記念通販特典",
+      "reason": "no parser rule matched"
+    }
   ]
 }

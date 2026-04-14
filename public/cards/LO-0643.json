@@ -26,5 +26,20 @@
   "typeTagsRaw": "-",
   "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
   "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0643"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0643",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋２する。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+2する。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

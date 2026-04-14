@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "※デッキ構築時、このカードは「LO-0965」と同番号として扱う。",
   "textKr": "※デッキ構築時、このカードは「LO-0965」と同番号として扱う。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3210"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3210",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "※デッキ構築時、このカードは「LO-0965」と同番号として扱う。",
+    "normalizedText": "※デッキ構築時、このカードは「LO-0965」と同番号として扱う。",
+    "lines": [
+      "※デッキ構築時、このカードは「LO-0965」と同番号として扱う。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "※デッキ構築時、このカードは「LO-0965」と同番号として扱う。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

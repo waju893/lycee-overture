@@ -24,5 +24,30 @@
   "typeTagsRaw": "城娘",
   "text": "[宣言] [このキャラを破棄する]:コストが２点以下の味方キャラ全てにＡＰ＋１する。",
   "textKr": "[宣言] [このキャラを破棄する]:コストが２点以下の味方キャラ全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2337"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2337",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [このキャラを破棄する]:コストが2点以下の味方キャラ全てにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [このキャラを破棄する]:コストが２点以下の味方キャラ全てにＡＰ＋１する。",
+    "normalizedText": "[宣言] [このキャラを破棄する]:コストが2点以下の味方キャラ全てにAP+1する。",
+    "lines": [
+      "[宣言] [このキャラを破棄する]:コストが2点以下の味方キャラ全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

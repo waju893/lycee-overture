@@ -25,5 +25,45 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、手札のキャラ１体を破棄できる。破棄したとき、自分のデッキからそのキャラとコストの数が同じキャラ１体を探し公開して手札に入れる。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、手札のキャラ１体を破棄できる。破棄したとき、自分のデッキからそのキャラとコストの数が同じキャラ１体を探し公開して手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1145"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1145",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、手札のキャラ1体を破棄できる。破棄したとき、自分のデッキからそのキャラとコストの数が同じキャラ1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、手札のキャラ１体を破棄できる。破棄したとき、自分のデッキからそのキャラとコストの数が同じキャラ１体を探し公開して手札に入れる。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、手札のキャラ1体を破棄できる。破棄したとき、自分のデッキからそのキャラとコストの数が同じキャラ1体を探し公開して手札に入れる。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、手札のキャラ1体を破棄できる。破棄したとき、自分のデッキからそのキャラとコストの数が同じキャラ1体を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

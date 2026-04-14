@@ -25,5 +25,36 @@
   "typeTagsRaw": "サンダース",
   "text": "[アシスト]\n[宣言] [自分の手札の＜サンダース＞キャラ１体を破棄する。]:{味方キャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[アシスト]\n[宣言] [自分の手札の＜サンダース＞キャラ１体を破棄する。]:{味方キャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0422"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0422",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [自分の手札の<サンダース>キャラ1体を破棄する。]:{味方キャラ1体}にAP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [自分の手札の＜サンダース＞キャラ１体を破棄する。]:{味方キャラ１体}にＡＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[アシスト]\n[宣言] [自分の手札の<サンダース>キャラ1体を破棄する。]:{味方キャラ1体}にAP+1・DMG+1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [自分の手札の<サンダース>キャラ1体を破棄する。]:{味方キャラ1体}にAP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

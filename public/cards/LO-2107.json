@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[誘発] 相手の効果でこのキャラを除く味方キャラを破棄したとき、相手キャラ１体を破棄できる。この能力は失われる。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] 相手の効果でこのキャラを除く味方キャラを破棄したとき、相手キャラ１体を破棄できる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2107"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2107",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] 相手の効果でこのキャラを除く味方キャラを破棄したとき、相手キャラ１体を破棄できる。この能力は失われる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] 相手の効果でこのキャラを除く味方キャラを破棄したとき、相手キャラ1体を破棄できる。この能力は失われる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] 相手の効果でこのキャラを除く味方キャラを破棄したとき、相手キャラ1体を破棄できる。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手の効果でこのキャラを除く味方キャラを破棄したとき、相手キャラ1体を破棄できる。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

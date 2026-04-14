@@ -23,7 +23,32 @@
   "costRaw": "雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6182"
+  "text": "{コストが３点以上の味方[雪]キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "textKr": "{コストが３点以上の味方[雪]キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6182",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが3点以上の味方[雪]キャラ1体}にAP+5・DP+5する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが３点以上の味方[雪]キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+    "normalizedText": "{コストが3点以上の味方[雪]キャラ1体}にAP+5・DP+5する。",
+    "lines": [
+      "{コストが3点以上の味方[雪]キャラ1体}にAP+5・DP+5する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

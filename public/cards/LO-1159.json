@@ -26,5 +26,44 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ][ペナルティ:[自分のデッキからカード１枚を探し手札に入れる。]]\n[宣言] [無無無][このキャラを破棄する]:バトル中に使用できない。{相手キャラ１体}を破棄する。",
   "textKr": "[アグレッシブ][ペナルティ:[自分のデッキからカード１枚を探し手札に入れる。]]\n[宣言] [無無無][このキャラを破棄する]:バトル中に使用できない。{相手キャラ１体}を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1159"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1159",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[アグレッシブ][ペナルティ:[自分のデッキからカード1枚を探し手札に入れる。]]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ][ペナルティ:[自分のデッキからカード１枚を探し手札に入れる。]]\n[宣言] [無無無][このキャラを破棄する]:バトル中に使用できない。{相手キャラ１体}を破棄する。",
+    "normalizedText": "[アグレッシブ][ペナルティ:[自分のデッキからカード1枚を探し手札に入れる。]]\n[宣言] [無無無][このキャラを破棄する]:バトル中に使用できない。{相手キャラ1体}を破棄する。",
+    "lines": [
+      "[アグレッシブ][ペナルティ:[自分のデッキからカード1枚を探し手札に入れる。]]",
+      "[宣言] [無無無][このキャラを破棄する]:バトル中に使用できない。{相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [無無無][このキャラを破棄する]:バトル中に使用できない。{相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

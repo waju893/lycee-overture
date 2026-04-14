@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[宣言] [宙][C1]:{コストが３点以上の味方キャラ１体}にＤＰ＋３する。",
   "textKr": "[チャージ:２]\n[宣言] [宙][C1]:{コストが３点以上の味方キャラ１体}にＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3810"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3810",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙][C1]:{コストが3点以上の味方キャラ1体}にDP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [宙][C1]:{コストが３点以上の味方キャラ１体}にＤＰ＋３する。",
+    "normalizedText": "[チャージ:2]\n[宣言] [宙][C1]:{コストが3点以上の味方キャラ1体}にDP+3する。",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [宙][C1]:{コストが3点以上の味方キャラ1体}にDP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

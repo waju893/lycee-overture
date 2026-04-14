@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [宙]:{味方[宙]アイテム１枚}を破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
   "textKr": "[手札宣言] [宙]:{味方[宙]アイテム１枚}を破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1962"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1962",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [宙]:{味方[宙]アイテム1枚}を破棄する。破棄したとき、{味方キャラ1体}にAP+4・DP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [宙]:{味方[宙]アイテム１枚}を破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
+    "normalizedText": "[手札宣言] [宙]:{味方[宙]アイテム1枚}を破棄する。破棄したとき、{味方キャラ1体}にAP+4・DP+4する。",
+    "lines": [
+      "[手札宣言] [宙]:{味方[宙]アイテム1枚}を破棄する。破棄したとき、{味方キャラ1体}にAP+4・DP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

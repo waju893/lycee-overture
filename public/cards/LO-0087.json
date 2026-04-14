@@ -23,7 +23,22 @@
   "costRaw": "月月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0087"
+  "text": "相手キャラ１体とそのキャラと同オーダーの相手キャラ１体を入れ替える。",
+  "textKr": "相手キャラ１体とそのキャラと同オーダーの相手キャラ１体を入れ替える。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0087",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手キャラ１体とそのキャラと同オーダーの相手キャラ１体を入れ替える。",
+    "normalizedText": "相手キャラ1体とそのキャラと同オーダーの相手キャラ1体を入れ替える。",
+    "lines": [
+      "相手キャラ1体とそのキャラと同オーダーの相手キャラ1体を入れ替える。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手キャラ1体とそのキャラと同オーダーの相手キャラ1体を入れ替える。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

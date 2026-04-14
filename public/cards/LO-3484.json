@@ -27,5 +27,72 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が３枚以上の場合、１枚ドローできる。自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が３枚以上の場合、１枚ドローできる。自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3484"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3484",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自分の「記憶遡行」置き場の枚数が3枚以上の場合、1枚ドローできる。自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck"
+                  ],
+                  "match": {
+                    "exactName": "シュミクラム",
+                    "kind": "item"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                },
+                {
+                  "type": "freeUse",
+                  "sourceRef": "lastSearchResult",
+                  "useKind": "item",
+                  "ignoreCost": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が３枚以上の場合、１枚ドローできる。自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が3枚以上の場合、1枚ドローできる。自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:自分の「記憶遡行」置き場の枚数が3枚以上の場合、1枚ドローできる。自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

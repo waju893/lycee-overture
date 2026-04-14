@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4506",
+  "title": "『大図書館』の司書",
+  "subName": "琴葉 詩織",
+  "name": "『大図書館』の司書 琴葉 詩織",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,77 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋２する。この能力は失われる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからサブネームに「大図書館」を含む[日]キャラ１体を探し登場する。（ゲーム中１回まで使用可能）\n構築制限:[DG]",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋２する。この能力は失われる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからサブネームに「大図書館」を含む[日]キャラ１体を探し登場する。（ゲーム中１回まで使用可能）\n構築制限:[DG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4506",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方[日]キャラ1体}にAP+2する。この能力は失われる。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからサブネームに「大図書館」を含む[日]キャラ1体を探し登場する。(ゲーム中1回まで使用可能)",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck"
+                  ],
+                  "match": {
+                    "exactName": "大図書館"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋２する。この能力は失われる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからサブネームに「大図書館」を含む[日]キャラ１体を探し登場する。（ゲーム中１回まで使用可能）\n構築制限:[DG]",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{味方[日]キャラ1体}にAP+2する。この能力は失われる。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからサブネームに「大図書館」を含む[日]キャラ1体を探し登場する。(ゲーム中1回まで使用可能)\n構築制限:[DG]",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{味方[日]キャラ1体}にAP+2する。この能力は失われる。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからサブネームに「大図書館」を含む[日]キャラ1体を探し登場する。(ゲーム中1回まで使用可能)",
+      "構築制限:[DG]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[DG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[宣言] [自分の手札を全て破棄する]:このキャラにＡＰ＋３・ＤＰ＋３する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [自分の手札を全て破棄する]:このキャラにＡＰ＋３・ＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0009"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0009",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [自分の手札を全て破棄する]:このキャラにAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [自分の手札を全て破棄する]:このキャラにＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [自分の手札を全て破棄する]:このキャラにAP+3・DP+3する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [自分の手札を全て破棄する]:このキャラにAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

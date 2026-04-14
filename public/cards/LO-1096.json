@@ -25,5 +25,20 @@
   "typeTagsRaw": "サンダース",
   "text": "[誘発] このキャラを味方＜サンダース＞キャラの能力の対象に指定したとき、相手キャラ２体にＤＭＧ－１する。",
   "textKr": "[誘発] このキャラを味方＜サンダース＞キャラの能力の対象に指定したとき、相手キャラ２体にＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1096"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1096",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラを味方＜サンダース＞キャラの能力の対象に指定したとき、相手キャラ２体にＤＭＧ－１する。",
+    "normalizedText": "[誘発] このキャラを味方<サンダース>キャラの能力の対象に指定したとき、相手キャラ2体にDMG-1する。",
+    "lines": [
+      "[誘発] このキャラを味方<サンダース>キャラの能力の対象に指定したとき、相手キャラ2体にDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラを味方<サンダース>キャラの能力の対象に指定したとき、相手キャラ2体にDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

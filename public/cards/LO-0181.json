@@ -24,5 +24,43 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、このキャラにＡＰ＋４・ＤＰ＋４する。",
   "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、このキャラにＡＰ＋４・ＤＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0181"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0181",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 味方キャラがエンゲージ登場したとき、このキャラにAP+4・DP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、このキャラにＡＰ＋４・ＤＰ＋４する。",
+    "normalizedText": "[エンゲージ:[1枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、このキャラにAP+4・DP+4する。",
+    "lines": [
+      "[エンゲージ:[1枚ドローする。]]",
+      "[誘発] 味方キャラがエンゲージ登場したとき、このキャラにAP+4・DP+4する。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -27,5 +27,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚までを味方「受信探偵」の下に置ける。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚までを味方「受信探偵」の下に置ける。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4459"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4459",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱のカード２枚までを味方「受信探偵」の下に置ける。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱のカード2枚までを味方「受信探偵」の下に置ける。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のカード2枚までを味方「受信探偵」の下に置ける。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のカード2枚までを味方「受信探偵」の下に置ける。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

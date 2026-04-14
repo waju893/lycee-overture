@@ -25,5 +25,30 @@
   "typeTagsRaw": "-",
   "text": "[誘発] このキャラでサポートをしたとき、自分の手札を１枚破棄できる。破棄したとき、対象のキャラにＤＰ＋２し、このキャラを未行動にする。",
   "textKr": "[誘発] このキャラでサポートをしたとき、自分の手札を１枚破棄できる。破棄したとき、対象のキャラにＤＰ＋２し、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0864"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0864",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、自分の手札を1枚破棄できる。破棄したとき、対象のキャラにDP+2し、このキャラを未行動にする。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、自分の手札を１枚破棄できる。破棄したとき、対象のキャラにＤＰ＋２し、このキャラを未行動にする。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、自分の手札を1枚破棄できる。破棄したとき、対象のキャラにDP+2し、このキャラを未行動にする。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、自分の手札を1枚破棄できる。破棄したとき、対象のキャラにDP+2し、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

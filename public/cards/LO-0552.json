@@ -25,7 +25,22 @@
   "costRaw": "宙宙宙宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0552"
+  "text": "{列１つ}のキャラ全てを破棄する。",
+  "textKr": "{列１つ}のキャラ全てを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0552",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{列１つ}のキャラ全てを破棄する。",
+    "normalizedText": "{列1つ}のキャラ全てを破棄する。",
+    "lines": [
+      "{列1つ}のキャラ全てを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{列1つ}のキャラ全てを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

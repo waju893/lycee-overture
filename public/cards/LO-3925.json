@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [D1]:味方「武田光璃晴信」または「武田薫信廉」１体にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [D1]:味方「武田光璃晴信」または「武田薫信廉」１体にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3925"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3925",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:味方「武田光璃晴信」または「武田薫信廉」1体にAP+3またはDP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [D1]:味方「武田光璃晴信」または「武田薫信廉」１体にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [D1]:味方「武田光璃晴信」または「武田薫信廉」1体にAP+3またはDP+3する。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [D1]:味方「武田光璃晴信」または「武田薫信廉」1体にAP+3またはDP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

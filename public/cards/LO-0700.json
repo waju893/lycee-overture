@@ -21,7 +21,32 @@
   "costRaw": "宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0700"
+  "text": "{相手キャラ１体}にＳＰ－２する。",
+  "textKr": "{相手キャラ１体}にＳＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0700",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{相手キャラ1体}にSP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}にＳＰ－２する。",
+    "normalizedText": "{相手キャラ1体}にSP-2する。",
+    "lines": [
+      "{相手キャラ1体}にSP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

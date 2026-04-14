@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[手札宣言] [0]:味方キャラの防御中に使用する。ゴミ箱のこのアイテムを装備する。",
   "textKr": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[手札宣言] [0]:味方キャラの防御中に使用する。ゴミ箱のこのアイテムを装備する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2000"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2000",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにAP+1・DP+1する。[手札宣言] [0]:味方キャラの防御中に使用する。ゴミ箱のこのアイテムを装備する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[手札宣言] [0]:味方キャラの防御中に使用する。ゴミ箱のこのアイテムを装備する。",
+    "normalizedText": "[常時] このキャラにAP+1・DP+1する。[手札宣言] [0]:味方キャラの防御中に使用する。ゴミ箱のこのアイテムを装備する。",
+    "lines": [
+      "[常時] このキャラにAP+1・DP+1する。[手札宣言] [0]:味方キャラの防御中に使用する。ゴミ箱のこのアイテムを装備する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

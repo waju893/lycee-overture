@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3461",
+  "title": "恥ずかしがり屋な奈々の親友",
+  "subName": "御影 しずく",
+  "name": "恥ずかしがり屋な奈々の親友 御影 しずく",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,52 @@
   "dp": 4,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから[花]キャラ１体を探し公開して手札に入れる。\n[宣言] [0]:バトル中に使用できない。{コストが２点以下の味方[花]キャラと同列の味方キャラ１体}にＤＰ＋１する。\n構築制限:[GIG]",
+  "textKr": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから[花]キャラ１体を探し公開して手札に入れる。\n[宣言] [0]:バトル中に使用できない。{コストが２点以下の味方[花]キャラと同列の味方キャラ１体}にＤＰ＋１する。\n構築制限:[GIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3461",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから[花]キャラ1体を探し公開して手札に入れる。[宣言] [0]:バトル中に使用できない。{コストが2点以下の味方[花]キャラと同列の味方キャラ1体}にDP+1する。構築制限:[GIG]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから[花]キャラ１体を探し公開して手札に入れる。\n[宣言] [0]:バトル中に使用できない。{コストが２点以下の味方[花]キャラと同列の味方キャラ１体}にＤＰ＋１する。\n構築制限:[GIG]",
+    "normalizedText": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから[花]キャラ1体を探し公開して手札に入れる。[宣言] [0]:バトル中に使用できない。{コストが2点以下の味方[花]キャラと同列の味方キャラ1体}にDP+1する。構築制限:[GIG]",
+    "lines": [
+      "[サポーター:[花]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから[花]キャラ1体を探し公開して手札に入れる。[宣言] [0]:バトル中に使用できない。{コストが2点以下の味方[花]キャラと同列の味方キャラ1体}にDP+1する。構築制限:[GIG]"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

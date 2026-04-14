@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]][オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＭＧ－１する。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]][オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1468"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1468",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:相手ターン中に使用する。{相手キャラ1体}にAP-1またはDMG-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]][オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＭＧ－１する。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]][オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{相手キャラ1体}にAP-1またはDMG-1する。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]][オーダーステップ:[0]]",
+      "[宣言] [0]:相手ターン中に使用する。{相手キャラ1体}にAP-1またはDMG-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

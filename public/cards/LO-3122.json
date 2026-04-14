@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3122",
+  "title": "超高圧ウォーターカッター",
+  "subName": "鷹田 杳子",
+  "name": "超高圧ウォーターカッター 鷹田 杳子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,27 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [T]:バトル中に使用できない。味方「木寺実莉」と「名荷原弘見」が登場している場合、{相手キャラ１体}を破棄する。この能力は失われる。\n構築制限:[TOA]",
+  "textKr": "[宣言] [T]:バトル中に使用できない。味方「木寺実莉」と「名荷原弘見」が登場している場合、{相手キャラ１体}を破棄する。この能力は失われる。\n構築制限:[TOA]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3122",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:バトル中に使用できない。味方「木寺実莉」と「名荷原弘見」が登場している場合、{相手キャラ１体}を破棄する。この能力は失われる。\n構築制限:[TOA]",
+    "normalizedText": "[宣言] [T]:バトル中に使用できない。味方「木寺実莉」と「名荷原弘見」が登場している場合、{相手キャラ1体}を破棄する。この能力は失われる。構築制限:[TOA]",
+    "lines": [
+      "[宣言] [T]:バトル中に使用できない。味方「木寺実莉」と「名荷原弘見」が登場している場合、{相手キャラ1体}を破棄する。この能力は失われる。構築制限:[TOA]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [T]:バトル中に使用できない。味方「木寺実莉」と「名荷原弘見」が登場している場合、{相手キャラ1体}を破棄する。この能力は失われる。構築制限:[TOA]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

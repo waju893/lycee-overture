@@ -27,5 +27,57 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D1]:このキャラのバトル中に使用する。バトルを中断する。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D1]:このキャラのバトル中に使用する。バトルを中断する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3170"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3170",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。[宣言] [D1]:このキャラのバトル中に使用する。バトルを中断する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D1]:このキャラのバトル中に使用する。バトルを中断する。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。[宣言] [D1]:このキャラのバトル中に使用する。バトルを中断する。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。[宣言] [D1]:このキャラのバトル中に使用する。バトルを中断する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

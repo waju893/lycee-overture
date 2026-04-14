@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラを除くサブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[宣言] [0]:このキャラを除くサブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3337"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3337",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラを除くサブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」が登場している場合、このキャラにAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラを除くサブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」が登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [0]:このキャラを除くサブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」が登場している場合、このキャラにAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[宣言] [0]:このキャラを除くサブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」が登場している場合、このキャラにAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

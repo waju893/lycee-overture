@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6016",
+  "title": "元ヤンキーの副担任",
+  "subName": "竹野 里子",
+  "name": "元ヤンキーの副担任 竹野 里子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,60 @@
   "dp": 7,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「生徒に慕われる担任教師 山野希乃子」１体を探し無償で登場できる。しない場合、１枚ドローする。\n構築制限:『世界征服彼女』",
+  "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「生徒に慕われる担任教師 山野希乃子」１体を探し無償で登場できる。しない場合、１枚ドローする。\n構築制限:『世界征服彼女』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6016",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] このキャラが登場したときまたはターン開始時、味方キャラ1体にAP+1・DP+1する。[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「生徒に慕われる担任教師 山野希乃子」1体を探し無償で登場できる。しない場合、1枚ドローする。構築制限:『世界征服彼女』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "生徒に慕われる担任教師 山野希乃子",
+            "kind": "character"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "character",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「生徒に慕われる担任教師 山野希乃子」１体を探し無償で登場できる。しない場合、１枚ドローする。\n構築制限:『世界征服彼女』",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、味方キャラ1体にAP+1・DP+1する。[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「生徒に慕われる担任教師 山野希乃子」1体を探し無償で登場できる。しない場合、1枚ドローする。構築制限:『世界征服彼女』",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したときまたはターン開始時、味方キャラ1体にAP+1・DP+1する。[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「生徒に慕われる担任教師 山野希乃子」1体を探し無償で登場できる。しない場合、1枚ドローする。構築制限:『世界征服彼女』"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

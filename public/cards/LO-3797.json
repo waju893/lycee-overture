@@ -23,7 +23,32 @@
   "costRaw": "宙宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3797"
+  "text": "{味方ＡＦ[宙]キャラ２体}にＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "{味方ＡＦ[宙]キャラ２体}にＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3797",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方AF[宙]キャラ2体}にAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方ＡＦ[宙]キャラ２体}にＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "{味方AF[宙]キャラ2体}にAP+3・DP+3する。",
+    "lines": [
+      "{味方AF[宙]キャラ2体}にAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

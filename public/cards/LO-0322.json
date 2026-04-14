@@ -24,5 +24,25 @@
   "typeTagsRaw": "サンダース",
   "text": "[アシスト]\n[宣言] [T無無無無]:このターン中、このキャラを自分の能力の対象に指定している場合、{キャラ１体}を行動済みにする。",
   "textKr": "[アシスト]\n[宣言] [T無無無無]:このターン中、このキャラを自分の能力の対象に指定している場合、{キャラ１体}を行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0322"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0322",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T無無無無]:このターン中、このキャラを自分の能力の対象に指定している場合、{キャラ１体}を行動済みにする。",
+    "normalizedText": "[アシスト]\n[宣言] [T無無無無]:このターン中、このキャラを自分の能力の対象に指定している場合、{キャラ1体}を行動済みにする。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T無無無無]:このターン中、このキャラを自分の能力の対象に指定している場合、{キャラ1体}を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T無無無無]:このターン中、このキャラを自分の能力の対象に指定している場合、{キャラ1体}を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,31 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方[月]キャラがこのキャラの前後に登場している場合、相手キャラ１体にＤＰ－２する。",
   "textKr": "[誘発] このキャラが登場したとき、味方[月]キャラがこのキャラの前後に登場している場合、相手キャラ１体にＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2999"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2999",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方[月]キャラがこのキャラの前後に登場している場合、相手キャラ1体にDP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方[月]キャラがこのキャラの前後に登場している場合、相手キャラ１体にＤＰ－２する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方[月]キャラがこのキャラの前後に登場している場合、相手キャラ1体にDP-2する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方[月]キャラがこのキャラの前後に登場している場合、相手キャラ1体にDP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

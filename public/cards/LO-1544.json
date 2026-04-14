@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[ガッツ:[宙宙宙宙宙]]\n[誘発] サブネームに「帝国」を含む味方キャラを防御キャラに指定したとき、そのキャラにＤＰ＋１する。",
   "textKr": "[ガッツ:[宙宙宙宙宙]]\n[誘発] サブネームに「帝国」を含む味方キャラを防御キャラに指定したとき、そのキャラにＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1544"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1544",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] サブネームに「帝国」を含む味方キャラを防御キャラに指定したとき、そのキャラにDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ガッツ:[宙宙宙宙宙]]\n[誘発] サブネームに「帝国」を含む味方キャラを防御キャラに指定したとき、そのキャラにＤＰ＋１する。",
+    "normalizedText": "[ガッツ:[宙宙宙宙宙]]\n[誘発] サブネームに「帝国」を含む味方キャラを防御キャラに指定したとき、そのキャラにDP+1する。",
+    "lines": [
+      "[ガッツ:[宙宙宙宙宙]]",
+      "[誘発] サブネームに「帝国」を含む味方キャラを防御キャラに指定したとき、そのキャラにDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ガッツ:[宙宙宙宙宙]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

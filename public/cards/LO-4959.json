@@ -1,13 +1,57 @@
 {
+  "cardNo": "LO-4959",
+  "title": "魔族の加護",
+  "subName": "",
+  "name": "魔族の加護",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "装備制限:コストが４点以下の[宙]キャラ\n[常時] このキャラにＡＰ＋１・ＤＰ＋２する。\n[誘発] このアイテムを装備したとき、１枚ドローできる。\n構築制限:『天使☆騒々 RE-BOOT!』",
+  "textKr": "装備制限:コストが４点以下の[宙]キャラ\n[常時] このキャラにＡＰ＋１・ＤＰ＋２する。\n[誘発] このアイテムを装備したとき、１枚ドローできる。\n構築制限:『天使☆騒々 RE-BOOT!』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4959",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにAP+1・DP+2する。[誘発] このアイテムを装備したとき、1枚ドローできる。構築制限:『天使☆騒々 RE-BOOT!』",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "装備制限:コストが４点以下の[宙]キャラ\n[常時] このキャラにＡＰ＋１・ＤＰ＋２する。\n[誘発] このアイテムを装備したとき、１枚ドローできる。\n構築制限:『天使☆騒々 RE-BOOT!』",
+    "normalizedText": "装備制限:コストが4点以下の[宙]キャラ\n[常時] このキャラにAP+1・DP+2する。[誘発] このアイテムを装備したとき、1枚ドローできる。構築制限:『天使☆騒々 RE-BOOT!』",
+    "lines": [
+      "装備制限:コストが4点以下の[宙]キャラ",
+      "[常時] このキャラにAP+1・DP+2する。[誘発] このアイテムを装備したとき、1枚ドローできる。構築制限:『天使☆騒々 RE-BOOT!』"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "装備制限:コストが4点以下の[宙]キャラ",
+      "reason": "no parser rule matched"
+    }
   ]
 }

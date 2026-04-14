@@ -25,5 +25,37 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方[NAV]キャラ全てにＡＰ＋２する。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方[NAV]キャラ全てにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6036"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6036",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方[NAV]キャラ全てにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方[NAV]キャラ全てにＡＰ＋２する。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、味方[NAV]キャラ全てにAP+2する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、味方[NAV]キャラ全てにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

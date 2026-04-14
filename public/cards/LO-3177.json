@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{味方「リーダー」または「ナル」または「清ヶ」または「薬丸」１体}にＡＰ＋１またはＤＰ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{味方「リーダー」または「ナル」または「清ヶ」または「薬丸」１体}にＡＰ＋１またはＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3177"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3177",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。{味方「リーダー」または「ナル」または「清ヶ」または「薬丸」1体}にAP+1またはDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{味方「リーダー」または「ナル」または「清ヶ」または「薬丸」１体}にＡＰ＋１またはＤＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{味方「リーダー」または「ナル」または「清ヶ」または「薬丸」1体}にAP+1またはDP+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:バトル中に使用できない。{味方「リーダー」または「ナル」または「清ヶ」または「薬丸」1体}にAP+1またはDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [月]:このキャラにＡＰ＋３・ＤＭＧ＋３する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [月]:このキャラにＡＰ＋３・ＤＭＧ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1513"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1513",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月]:このキャラにAP+3・DMG+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [月]:このキャラにＡＰ＋３・ＤＭＧ＋３する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [月]:このキャラにAP+3・DMG+3する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [月]:このキャラにAP+3・DMG+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

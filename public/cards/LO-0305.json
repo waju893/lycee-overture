@@ -24,5 +24,25 @@
   "typeTagsRaw": "プラウダ",
   "text": "[アシスト]\n[宣言] [無無][このキャラを破棄する。]:ターン終了時まで{味方「カチューシャ」１体}はダウンしない。",
   "textKr": "[アシスト]\n[宣言] [無無][このキャラを破棄する。]:ターン終了時まで{味方「カチューシャ」１体}はダウンしない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0305"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0305",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [無無][このキャラを破棄する。]:ターン終了時まで{味方「カチューシャ」１体}はダウンしない。",
+    "normalizedText": "[アシスト]\n[宣言] [無無][このキャラを破棄する。]:ターン終了時まで{味方「カチューシャ」1体}はダウンしない。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [無無][このキャラを破棄する。]:ターン終了時まで{味方「カチューシャ」1体}はダウンしない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [無無][このキャラを破棄する。]:ターン終了時まで{味方「カチューシャ」1体}はダウンしない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,7 +23,22 @@
   "costRaw": "花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0967"
+  "text": "{ＳＰが４以上のキャラ１体}を未行動にする。",
+  "textKr": "{ＳＰが４以上のキャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0967",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{ＳＰが４以上のキャラ１体}を未行動にする。",
+    "normalizedText": "{SPが4以上のキャラ1体}を未行動にする。",
+    "lines": [
+      "{SPが4以上のキャラ1体}を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{SPが4以上のキャラ1体}を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1618",
+  "title": "大人の魅力",
+  "subName": "式部 茉優",
+  "name": "大人の魅力 式部 茉優",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,43 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    10
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] ターン開始時、相手キャラ１体にＤＰ－１する。そのキャラのＤＰが１以下の場合、そのキャラにＤＭＧ－１する。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] ターン開始時、相手キャラ１体にＤＰ－１する。そのキャラのＤＰが１以下の場合、そのキャラにＤＭＧ－１する。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1618",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にDP-1する。そのキャラのDPが1以下の場合、そのキャラにDMG-1する。構築制限:ゆずソフト([YUZ])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] ターン開始時、相手キャラ１体にＤＰ－１する。そのキャラのＤＰが１以下の場合、そのキャラにＤＭＧ－１する。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] ターン開始時、相手キャラ1体にDP-1する。そのキャラのDPが1以下の場合、そのキャラにDMG-1する。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] ターン開始時、相手キャラ1体にDP-1する。そのキャラのDPが1以下の場合、そのキャラにDMG-1する。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1929",
+  "title": "魔道書図書館",
+  "subName": "インデックス",
+  "name": "魔道書図書館 インデックス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,27 @@
   "ap": 0,
   "dp": 1,
   "sp": 3,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 味方キャラ全てが[月]の場合、自分のデッキを１枚破棄する。破棄したとき、[月]を発生する。このコストはキャラの登場には支払えない。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "textKr": "[コスト] 味方キャラ全てが[月]の場合、自分のデッキを１枚破棄する。破棄したとき、[月]を発生する。このコストはキャラの登場には支払えない。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1929",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] 味方キャラ全てが[月]の場合、自分のデッキを１枚破棄する。破棄したとき、[月]を発生する。このコストはキャラの登場には支払えない。\n構築制限:とある魔術の禁書目録（[TOA]）",
+    "normalizedText": "[コスト] 味方キャラ全てが[月]の場合、自分のデッキを1枚破棄する。破棄したとき、[月]を発生する。このコストはキャラの登場には支払えない。構築制限:とある魔術の禁書目録([TOA])",
+    "lines": [
+      "[コスト] 味方キャラ全てが[月]の場合、自分のデッキを1枚破棄する。破棄したとき、[月]を発生する。このコストはキャラの登場には支払えない。構築制限:とある魔術の禁書目録([TOA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] 味方キャラ全てが[月]の場合、自分のデッキを1枚破棄する。破棄したとき、[月]を発生する。このコストはキャラの登場には支払えない。構築制限:とある魔術の禁書目録([TOA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

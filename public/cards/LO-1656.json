@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラでサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラを未行動にし、バトルを中断する。",
   "textKr": "[誘発] このキャラでサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラを未行動にし、バトルを中断する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1656"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1656",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラを未行動にし、バトルを中断する。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラを未行動にし、バトルを中断する。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラを未行動にし、バトルを中断する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、このキャラを破棄できる。破棄したとき、対象のキャラを未行動にし、バトルを中断する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

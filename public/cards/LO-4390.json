@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[コスト] [月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。",
   "textKr": "[コスト] [月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4390"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4390",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] [月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。",
+    "normalizedText": "[コスト] [月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。",
+    "lines": [
+      "[コスト] [月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] [月月]を発生する。このコストはキャラ・アイテム・エリアの使用には支払えない。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,29 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分の効果で相手キャラが場を離れたとき、１枚ドローできる。この能力は失われる。",
   "textKr": "[誘発] 自分の効果で相手キャラが場を離れたとき、１枚ドローできる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4871"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4871",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の効果で相手キャラが場を離れたとき、1枚ドローできる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果で相手キャラが場を離れたとき、１枚ドローできる。この能力は失われる。",
+    "normalizedText": "[誘発] 自分の効果で相手キャラが場を離れたとき、1枚ドローできる。この能力は失われる。",
+    "lines": [
+      "[誘発] 自分の効果で相手キャラが場を離れたとき、1枚ドローできる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

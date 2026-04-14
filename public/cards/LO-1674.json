@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1674",
+  "title": "お姉さんからの忠告",
+  "subName": "貴船 未緒",
+  "name": "お姉さんからの忠告 貴船 未緒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -15,5 +18,37 @@
   "ap": 4,
   "dp": 3,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{コストが３点の味方[宙]キャラ１体}にＡＰ＋１する。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[宣言] [0]:{コストが３点の味方[宙]キャラ１体}にＡＰ＋１する。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1674",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{コストが3点の味方[宙]キャラ1体}にAP+1する。構築制限:ゆずソフト([YUZ])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{コストが３点の味方[宙]キャラ１体}にＡＰ＋１する。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[宣言] [0]:{コストが3点の味方[宙]キャラ1体}にAP+1する。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[宣言] [0]:{コストが3点の味方[宙]キャラ1体}にAP+1する。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0777",
+  "title": "ヴォルティカルシー",
+  "subName": "ポセイドン",
+  "name": "ヴォルティカルシー ポセイドン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,5 +21,27 @@
   "ap": 4,
   "dp": 4,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラが登場したとき、相手ＡＦキャラ１体を相手フィールドに移動する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[誘発] このキャラが登場したとき、相手ＡＦキャラ１体を相手フィールドに移動する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0777",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手ＡＦキャラ１体を相手フィールドに移動する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手AFキャラ1体を相手フィールドに移動する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手AFキャラ1体を相手フィールドに移動する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手AFキャラ1体を相手フィールドに移動する。構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,25 @@
   "typeTagsRaw": "BC自由",
   "text": "[アシスト][エンゲージ]\n[宣言] [0]:バトル中に使用できない。相手のデッキを２枚破棄する。このターン終了時、このキャラを破棄する。",
   "textKr": "[アシスト][エンゲージ]\n[宣言] [0]:バトル中に使用できない。相手のデッキを２枚破棄する。このターン終了時、このキャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1012"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1012",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][エンゲージ]\n[宣言] [0]:バトル中に使用できない。相手のデッキを２枚破棄する。このターン終了時、このキャラを破棄する。",
+    "normalizedText": "[アシスト][エンゲージ]\n[宣言] [0]:バトル中に使用できない。相手のデッキを2枚破棄する。このターン終了時、このキャラを破棄する。",
+    "lines": [
+      "[アシスト][エンゲージ]",
+      "[宣言] [0]:バトル中に使用できない。相手のデッキを2枚破棄する。このターン終了時、このキャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:バトル中に使用できない。相手のデッキを2枚破棄する。このターン終了時、このキャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

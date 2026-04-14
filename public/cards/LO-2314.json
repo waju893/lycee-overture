@@ -23,7 +23,22 @@
   "costRaw": "雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2314"
+  "text": "バトル中に使用できない。相手キャラ１体を指定できる。相手は指定したキャラを除く相手キャラ１体を破棄する。",
+  "textKr": "バトル中に使用できない。相手キャラ１体を指定できる。相手は指定したキャラを除く相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2314",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。相手キャラ１体を指定できる。相手は指定したキャラを除く相手キャラ１体を破棄する。",
+    "normalizedText": "バトル中に使用できない。相手キャラ1体を指定できる。相手は指定したキャラを除く相手キャラ1体を破棄する。",
+    "lines": [
+      "バトル中に使用できない。相手キャラ1体を指定できる。相手は指定したキャラを除く相手キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用できない。相手キャラ1体を指定できる。相手は指定したキャラを除く相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

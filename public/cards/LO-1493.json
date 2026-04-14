@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1493",
+  "title": "陰陽師",
+  "subName": "ミコト",
+  "name": "陰陽師 ミコト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,37 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "[宣言] [0]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1493",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:相手ターン中に使用する。{相手キャラ1体}にAP-1する。構築制限:千年戦争アイギス([AIG])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:相手ターン中に使用する。{相手キャラ１体}にＡＰ－１する。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "[宣言] [0]:相手ターン中に使用する。{相手キャラ1体}にAP-1する。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "[宣言] [0]:相手ターン中に使用する。{相手キャラ1体}にAP-1する。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

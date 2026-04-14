@@ -24,5 +24,20 @@
   "typeTagsRaw": "知波単",
   "text": "[アグレッシブ]",
   "textKr": "[アグレッシブ]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0408"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0408",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]",
+    "normalizedText": "[アグレッシブ]",
+    "lines": [
+      "[アグレッシブ]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

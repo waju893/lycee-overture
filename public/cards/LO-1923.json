@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分のコストが１点以上の能力を使用したとき、このキャラと同列の相手キャラ１体にＡＰ－１・ＤＰ－１する。",
   "textKr": "[誘発] 自分のコストが１点以上の能力を使用したとき、このキャラと同列の相手キャラ１体にＡＰ－１・ＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1923"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1923",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のコストが1点以上の能力を使用したとき、このキャラと同列の相手キャラ1体にAP-1・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のコストが１点以上の能力を使用したとき、このキャラと同列の相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+    "normalizedText": "[誘発] 自分のコストが1点以上の能力を使用したとき、このキャラと同列の相手キャラ1体にAP-1・DP-1する。",
+    "lines": [
+      "[誘発] 自分のコストが1点以上の能力を使用したとき、このキャラと同列の相手キャラ1体にAP-1・DP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

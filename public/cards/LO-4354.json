@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、以下から１つを選び処理する。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、以下から１つを選び処理する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4354"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4354",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、以下から１つを選び処理する。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、以下から1つを選び処理する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、以下から1つを選び処理する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

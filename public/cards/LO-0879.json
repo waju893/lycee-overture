@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
   "textKr": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0879"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0879",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。（同番号の能力は１ターンに１回まで処理可能）",
+    "normalizedText": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。(同番号の能力は1ターンに1回まで処理可能)",
+    "lines": [
+      "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。(同番号の能力は1ターンに1回まで処理可能)"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、このキャラを登場できる。(同番号の能力は1ターンに1回まで処理可能)",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

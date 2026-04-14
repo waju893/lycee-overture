@@ -26,5 +26,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] このキャラがバトルに参加したとき、相手キャラ全てにＤＰ＋１する。",
   "textKr": "[アシスト]\n[誘発] このキャラがバトルに参加したとき、相手キャラ全てにＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0359"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0359",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラがバトルに参加したとき、相手キャラ全てにDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラがバトルに参加したとき、相手キャラ全てにＤＰ＋１する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラがバトルに参加したとき、相手キャラ全てにDP+1する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラがバトルに参加したとき、相手キャラ全てにDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

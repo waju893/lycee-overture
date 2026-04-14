@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0736",
+  "title": "オールフォーワン",
+  "subName": "ダルタニアン",
+  "name": "オールフォーワン ダルタニアン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ER",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 0,
   "useTarget": [
     "sun",
     "sun",
@@ -17,11 +20,31 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    3
-  ],
-  "keyEffects": [
-    3
-  ],
-  "leader": true
+  "ex": 0,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー][サイドステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く、コストが３点以上の味方キャラ１体}を{味方フィールド}に移動する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[リーダー][サイドステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く、コストが３点以上の味方キャラ１体}を{味方フィールド}に移動する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0736",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リーダー][サイドステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く、コストが３点以上の味方キャラ１体}を{味方フィールド}に移動する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[リーダー][サイドステップ:[0]]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く、コストが3点以上の味方キャラ1体}を{味方フィールド}に移動する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[リーダー][サイドステップ:[0]]",
+      "[宣言] [D1]:自ターン中に使用する。{このキャラを除く、コストが3点以上の味方キャラ1体}を{味方フィールド}に移動する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D1]:自ターン中に使用する。{このキャラを除く、コストが3点以上の味方キャラ1体}を{味方フィールド}に移動する。構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

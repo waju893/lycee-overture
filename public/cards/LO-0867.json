@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラを行動済みにしたとき、このキャラを除く味方キャラ１体にＳＰ＋１する。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラを行動済みにしたとき、このキャラを除く味方キャラ１体にＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0867"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0867",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラを行動済みにしたとき、このキャラを除く味方キャラ1体にSP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラを行動済みにしたとき、このキャラを除く味方キャラ１体にＳＰ＋１する。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] このキャラを行動済みにしたとき、このキャラを除く味方キャラ1体にSP+1する。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] このキャラを行動済みにしたとき、このキャラを除く味方キャラ1体にSP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   "typeTagsRaw": "蜀",
   "text": "[ステップ:[0]]\n[宣言] [D1]:{味方＜蜀＞キャラ１体}にＡＰ＋１する。",
   "textKr": "[ステップ:[0]]\n[宣言] [D1]:{味方＜蜀＞キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2456"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2456",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{味方<蜀>キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [D1]:{味方＜蜀＞キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [D1]:{味方<蜀>キャラ1体}にAP+1する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [D1]:{味方<蜀>キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

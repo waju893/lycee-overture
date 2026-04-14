@@ -23,5 +23,51 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [D1]:{「シュミクラム」を装備している味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。",
   "textKr": "[手札宣言] [D1]:{「シュミクラム」を装備している味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3482"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3482",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [D1]:{「シュミクラム」を装備している味方キャラ1体}にAP+2またはDP+2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [D1]:{「シュミクラム」を装備している味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。",
+    "normalizedText": "[手札宣言] [D1]:{「シュミクラム」を装備している味方キャラ1体}にAP+2またはDP+2する。",
+    "lines": [
+      "[手札宣言] [D1]:{「シュミクラム」を装備している味方キャラ1体}にAP+2またはDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

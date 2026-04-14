@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラにＤＭＧ＋１する。",
   "textKr": "[常時] このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0107"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0107",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[常時] このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[常時] このキャラにDMG+1する。",
+    "lines": [
+      "[常時] このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

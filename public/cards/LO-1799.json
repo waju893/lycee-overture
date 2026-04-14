@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方ＤＦ「ToHeart2」キャラ１体を未行動にする。",
   "textKr": "[誘発] このキャラが登場したとき、味方ＤＦ「ToHeart2」キャラ１体を未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1799"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1799",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方ＤＦ「ToHeart2」キャラ１体を未行動にする。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方DF「ToHeart2」キャラ1体を未行動にする。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方DF「ToHeart2」キャラ1体を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方DF「ToHeart2」キャラ1体を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

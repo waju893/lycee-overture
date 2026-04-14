@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1073",
+  "title": "竜巻のお銀",
+  "subName": "お銀",
+  "name": "竜巻のお銀 お銀",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,5 +20,27 @@
   "ap": 5,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "大洗女子",
+  "text": "[コスト] 自分のデッキを２枚破棄する。破棄したとき、[宙]を発生する。このコストはＥＸが１の[宙]キャラの登場にのみ支払える。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "[コスト] 自分のデッキを２枚破棄する。破棄したとき、[宙]を発生する。このコストはＥＸが１の[宙]キャラの登場にのみ支払える。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1073",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] 自分のデッキを２枚破棄する。破棄したとき、[宙]を発生する。このコストはＥＸが１の[宙]キャラの登場にのみ支払える。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "[コスト] 自分のデッキを2枚破棄する。破棄したとき、[宙]を発生する。このコストはEXが1の[宙]キャラの登場にのみ支払える。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "[コスト] 自分のデッキを2枚破棄する。破棄したとき、[宙]を発生する。このコストはEXが1の[宙]キャラの登場にのみ支払える。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] 自分のデッキを2枚破棄する。破棄したとき、[宙]を発生する。このコストはEXが1の[宙]キャラの登場にのみ支払える。構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

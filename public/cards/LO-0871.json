@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにＤＰ－２する。（１ターンに３回まで使用可能）",
   "textKr": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにＤＰ－２する。（１ターンに３回まで使用可能）",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0871"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0871",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにDP-2する。(1ターンに3回まで使用可能)",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにＤＰ－２する。（１ターンに３回まで使用可能）",
+    "normalizedText": "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにDP-2する。(1ターンに3回まで使用可能)",
+    "lines": [
+      "[宣言] [月]:このキャラのバトル中に使用する。対戦キャラにDP-2する。(1ターンに3回まで使用可能)"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

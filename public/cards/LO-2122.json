@@ -25,5 +25,37 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋２する。",
   "textKr": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2122"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2122",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ1体にAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋２する。",
+    "normalizedText": "[アグレッシブ]\n[誘発] このキャラが登場したとき、味方キャラ1体にAP+2する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] このキャラが登場したとき、味方キャラ1体にAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

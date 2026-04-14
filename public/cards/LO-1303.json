@@ -27,5 +27,25 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月月月]:{自分のゴミ箱のキャラ１体}を{味方フィールド}に登場する。この能力は失われる。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月月月]:{自分のゴミ箱のキャラ１体}を{味方フィールド}に登場する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1303"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1303",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [月月月]:{自分のゴミ箱のキャラ１体}を{味方フィールド}に登場する。この能力は失われる。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[宣言] [月月月]:{自分のゴミ箱のキャラ1体}を{味方フィールド}に登場する。この能力は失われる。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[宣言] [月月月]:{自分のゴミ箱のキャラ1体}を{味方フィールド}に登場する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [月月月]:{自分のゴミ箱のキャラ1体}を{味方フィールド}に登場する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

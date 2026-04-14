@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1376",
+  "title": "対英雄（譚）",
+  "subName": "不夜城のキャスター",
+  "name": "対英雄（譚） 不夜城のキャスター",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,31 @@
   "dp": 2,
   "sp": 3,
   "dmg": 1,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[サポーター:[花]]\n[宣言] [花]:{味方キャラ１体}は[ガッツ:[このキャラの使用代償]]を得る。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[サポーター:[花]]\n[宣言] [花]:{味方キャラ１体}は[ガッツ:[このキャラの使用代償]]を得る。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1376",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[宣言] [花]:{味方キャラ１体}は[ガッツ:[このキャラの使用代償]]を得る。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [花]:{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[サポーター:[花]]",
+      "[宣言] [花]:{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [花]:{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。構築制限:Fate/Grand Order([TM])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[コスト] このアイテムを除外する。除外したとき、[花花花花]または[日日日日]または[花花日日]を発生する。",
   "textKr": "[コスト] このアイテムを除外する。除外したとき、[花花花花]または[日日日日]または[花花日日]を発生する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1856"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1856",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] このアイテムを除外する。除外したとき、[花花花花]または[日日日日]または[花花日日]を発生する。",
+    "normalizedText": "[コスト] このアイテムを除外する。除外したとき、[花花花花]または[日日日日]または[花花日日]を発生する。",
+    "lines": [
+      "[コスト] このアイテムを除外する。除外したとき、[花花花花]または[日日日日]または[花花日日]を発生する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] このアイテムを除外する。除外したとき、[花花花花]または[日日日日]または[花花日日]を発生する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

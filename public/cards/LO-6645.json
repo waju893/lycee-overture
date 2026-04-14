@@ -24,7 +24,22 @@
   "costRaw": "花花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6645"
+  "text": "{異なるキャラ名を持つ味方キャラ２体}と同キャラ名の自分のゴミ箱のキャラをそれぞれ１体までデッキの下に置く。",
+  "textKr": "{異なるキャラ名を持つ味方キャラ２体}と同キャラ名の自分のゴミ箱のキャラをそれぞれ１体までデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6645",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{異なるキャラ名を持つ味方キャラ２体}と同キャラ名の自分のゴミ箱のキャラをそれぞれ１体までデッキの下に置く。",
+    "normalizedText": "{異なるキャラ名を持つ味方キャラ2体}と同キャラ名の自分のゴミ箱のキャラをそれぞれ1体までデッキの下に置く。",
+    "lines": [
+      "{異なるキャラ名を持つ味方キャラ2体}と同キャラ名の自分のゴミ箱のキャラをそれぞれ1体までデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{異なるキャラ名を持つ味方キャラ2体}と同キャラ名の自分のゴミ箱のキャラをそれぞれ1体までデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

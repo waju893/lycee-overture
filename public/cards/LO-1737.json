@@ -27,5 +27,39 @@
   "typeTagsRaw": "ヤマト／トゥスクル",
   "text": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の＜ヤマト＞または＜トゥスクル＞キャラ１体を手札に入れる。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の＜ヤマト＞または＜トゥスクル＞キャラ１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1737"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1737",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱の<ヤマト>または<トゥスクル>キャラ1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の＜ヤマト＞または＜トゥスクル＞キャラ１体を手札に入れる。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の<ヤマト>または<トゥスクル>キャラ1体を手札に入れる。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の<ヤマト>または<トゥスクル>キャラ1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

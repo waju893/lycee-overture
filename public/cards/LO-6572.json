@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
   "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6572"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6572",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+    "normalizedText": "[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [0]:対応で使用できない。このキャラをデッキの下に置く。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:{味方キャラ１体}を破棄する。破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＳＰ＋２する。",
   "textKr": "[宣言] [0]:{味方キャラ１体}を破棄する。破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＳＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2048"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2048",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方キャラ1体}を破棄する。破棄したとき、このキャラにAP+2・DP+2・SP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{味方キャラ１体}を破棄する。破棄したとき、このキャラにＡＰ＋２・ＤＰ＋２・ＳＰ＋２する。",
+    "normalizedText": "[宣言] [0]:{味方キャラ1体}を破棄する。破棄したとき、このキャラにAP+2・DP+2・SP+2する。",
+    "lines": [
+      "[宣言] [0]:{味方キャラ1体}を破棄する。破棄したとき、このキャラにAP+2・DP+2・SP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

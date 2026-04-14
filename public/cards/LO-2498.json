@@ -26,5 +26,29 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分の効果でこのキャラが場を離れたとき、自分のデッキを２枚回復し、自分のデッキをシャッフルする。",
   "textKr": "[誘発] 自分の効果でこのキャラが場を離れたとき、自分のデッキを２枚回復し、自分のデッキをシャッフルする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2498"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2498",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の効果でこのキャラが場を離れたとき、自分のデッキを2枚回復し、自分のデッキをシャッフルする。",
+      "actions": [
+        {
+          "type": "shuffle",
+          "owner": "self"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果でこのキャラが場を離れたとき、自分のデッキを２枚回復し、自分のデッキをシャッフルする。",
+    "normalizedText": "[誘発] 自分の効果でこのキャラが場を離れたとき、自分のデッキを2枚回復し、自分のデッキをシャッフルする。",
+    "lines": [
+      "[誘発] 自分の効果でこのキャラが場を離れたとき、自分のデッキを2枚回復し、自分のデッキをシャッフルする。"
+    ],
+    "matchedRuleIds": [
+      "shuffle"
+    ]
+  },
+  "unresolvedTextLines": []
 }

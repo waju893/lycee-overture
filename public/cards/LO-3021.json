@@ -24,5 +24,32 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [花花無]:{自分のゴミ箱のＥＸが２の手札宣言能力を持つキャラ１体}を手札に入れる。",
   "textKr": "[手札宣言] [花花無]:{自分のゴミ箱のＥＸが２の手札宣言能力を持つキャラ１体}を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3021"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3021",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [花花無]:{自分のゴミ箱のEXが2の手札宣言能力を持つキャラ1体}を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [花花無]:{自分のゴミ箱のＥＸが２の手札宣言能力を持つキャラ１体}を手札に入れる。",
+    "normalizedText": "[手札宣言] [花花無]:{自分のゴミ箱のEXが2の手札宣言能力を持つキャラ1体}を手札に入れる。",
+    "lines": [
+      "[手札宣言] [花花無]:{自分のゴミ箱のEXが2の手札宣言能力を持つキャラ1体}を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

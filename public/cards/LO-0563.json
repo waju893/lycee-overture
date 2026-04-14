@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラにＡＰ＋２・ＤＰ＋２する。このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
   "textKr": "[常時] このキャラにＡＰ＋２・ＤＰ＋２する。このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0563"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0563",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラにAP+2・DP+2する。このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラにＡＰ＋２・ＤＰ＋２する。このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+    "normalizedText": "[常時] このキャラにAP+2・DP+2する。このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。",
+    "lines": [
+      "[常時] このキャラにAP+2・DP+2する。このキャラのバトル中、お互いのプレイヤーはサポートを宣言できない。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

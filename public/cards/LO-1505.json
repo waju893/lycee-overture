@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[コスト] このキャラが登場したターン中に使用する。[月月]を発生する。",
   "textKr": "[コスト] このキャラが登場したターン中に使用する。[月月]を発生する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1505"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1505",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] このキャラが登場したターン中に使用する。[月月]を発生する。",
+    "normalizedText": "[コスト] このキャラが登場したターン中に使用する。[月月]を発生する。",
+    "lines": [
+      "[コスト] このキャラが登場したターン中に使用する。[月月]を発生する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] このキャラが登場したターン中に使用する。[月月]を発生する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -27,5 +27,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[0]]",
   "textKr": "[オーダーチェンジ:[0]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0484"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0484",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]",
+    "normalizedText": "[オーダーチェンジ:[0]]",
+    "lines": [
+      "[オーダーチェンジ:[0]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

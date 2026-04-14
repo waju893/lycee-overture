@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1359",
+  "title": "天賦の見識",
+  "subName": "ルーラー／シャーロック・ホームズ",
+  "name": "天賦の見識 ルーラー／シャーロック・ホームズ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,63 @@
   "dp": 3,
   "sp": 3,
   "dmg": 2,
-  "keyeffects": [
-    9
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーチェンジ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＤＭＧ－１する。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[オーダーチェンジ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＤＭＧ－１する。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1359",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。構築制限:Fate/Grand Order([TM])",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    9
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＤＭＧ－１する。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

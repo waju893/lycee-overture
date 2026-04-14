@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [D1]:バトル中に使用できない。このキャラを除外する。{自分のゴミ箱の「持田しおり」１体}を登場する。",
   "textKr": "[宣言] [D1]:バトル中に使用できない。このキャラを除外する。{自分のゴミ箱の「持田しおり」１体}を登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2073"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2073",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:バトル中に使用できない。このキャラを除外する。{自分のゴミ箱の「持田しおり」１体}を登場する。",
+    "normalizedText": "[宣言] [D1]:バトル中に使用できない。このキャラを除外する。{自分のゴミ箱の「持田しおり」1体}を登場する。",
+    "lines": [
+      "[宣言] [D1]:バトル中に使用できない。このキャラを除外する。{自分のゴミ箱の「持田しおり」1体}を登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [D1]:バトル中に使用できない。このキャラを除外する。{自分のゴミ箱の「持田しおり」1体}を登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

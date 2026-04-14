@@ -25,5 +25,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [0]:バトル中に使用する。このキャラを行動済みにする。バトル終了時まで味方攻撃キャラ１体にＤＭＧ＋１する。",
   "textKr": "[宣言] [0]:バトル中に使用する。このキャラを行動済みにする。バトル終了時まで味方攻撃キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1415"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1415",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用する。このキャラを行動済みにする。バトル終了時まで味方攻撃キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [0]:バトル中に使用する。このキャラを行動済みにする。バトル終了時まで味方攻撃キャラ1体にDMG+1する。",
+    "lines": [
+      "[宣言] [0]:バトル中に使用する。このキャラを行動済みにする。バトル終了時まで味方攻撃キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:バトル中に使用する。このキャラを行動済みにする。バトル終了時まで味方攻撃キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

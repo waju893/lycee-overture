@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [無]: {このキャラと同列の相手キャラ１体}にＤＰ－２する。",
   "textKr": "[宣言] [無]: {このキャラと同列の相手キャラ１体}にＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5476"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5476",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]: {このキャラと同列の相手キャラ1体}にDP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [無]: {このキャラと同列の相手キャラ１体}にＤＰ－２する。",
+    "normalizedText": "[宣言] [無]: {このキャラと同列の相手キャラ1体}にDP-2する。",
+    "lines": [
+      "[宣言] [無]: {このキャラと同列の相手キャラ1体}にDP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

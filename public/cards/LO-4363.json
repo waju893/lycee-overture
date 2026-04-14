@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[宣言] [C1]:このキャラを除くキャラ名に「木ノ本」を含む味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２・ＤＰ－２する。",
   "textKr": "[チャージ:２]\n[宣言] [C1]:このキャラを除くキャラ名に「木ノ本」を含む味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２・ＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4363"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4363",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1]:このキャラを除くキャラ名に「木ノ本」を含む味方キャラが登場している場合、{味方キャラ1体}にAP+2・DP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [C1]:このキャラを除くキャラ名に「木ノ本」を含む味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２・ＤＰ－２する。",
+    "normalizedText": "[チャージ:2]\n[宣言] [C1]:このキャラを除くキャラ名に「木ノ本」を含む味方キャラが登場している場合、{味方キャラ1体}にAP+2・DP-2する。",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [C1]:このキャラを除くキャラ名に「木ノ本」を含む味方キャラが登場している場合、{味方キャラ1体}にAP+2・DP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

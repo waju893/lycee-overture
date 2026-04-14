@@ -23,7 +23,32 @@
   "costRaw": "花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1995"
+  "text": "{味方[花]キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
+  "textKr": "{味方[花]キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1995",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方[花]キャラ1体}にAP+4・DP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方[花]キャラ１体}にＡＰ＋４・ＤＰ＋４する。",
+    "normalizedText": "{味方[花]キャラ1体}にAP+4・DP+4する。",
+    "lines": [
+      "{味方[花]キャラ1体}にAP+4・DP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

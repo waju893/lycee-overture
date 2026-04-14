@@ -25,5 +25,36 @@
   "typeTagsRaw": "黒森峰",
   "text": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{味方＜黒森峰＞キャラ１体}にＡＰ＋２する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{味方＜黒森峰＞キャラ１体}にＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1085"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1085",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙宙]:{味方<黒森峰>キャラ1体}にAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{味方＜黒森峰＞キャラ１体}にＡＰ＋２する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [宙宙]:{味方<黒森峰>キャラ1体}にAP+2する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [宙宙]:{味方<黒森峰>キャラ1体}にAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

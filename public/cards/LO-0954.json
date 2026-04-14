@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[D1]]\n[宣言] [日日]:このキャラにＡＰ＋４する。",
   "textKr": "[オーダーステップ:[D1]]\n[宣言] [日日]:このキャラにＡＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0954"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0954",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日日]:このキャラにAP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[D1]]\n[宣言] [日日]:このキャラにＡＰ＋４する。",
+    "normalizedText": "[オーダーステップ:[D1]]\n[宣言] [日日]:このキャラにAP+4する。",
+    "lines": [
+      "[オーダーステップ:[D1]]",
+      "[宣言] [日日]:このキャラにAP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[D1]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

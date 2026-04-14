@@ -24,5 +24,47 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキから「四季ナツメ」を除くＥＸが２の[花]キャラ１体を探し公開して手札に入れる。\n[誘発] 味方ＤＦ[花]キャラがダウンしたとき、味方ＤＦ[花]キャラ１体にＤＰ＋２する。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキから「四季ナツメ」を除くＥＸが２の[花]キャラ１体を探し公開して手札に入れる。\n[誘発] 味方ＤＦ[花]キャラがダウンしたとき、味方ＤＦ[花]キャラ１体にＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4858"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4858",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから「四季ナツメ」を除くEXが2の[花]キャラ1体を探し公開して手札に入れる。[誘発] 味方DF[花]キャラがダウンしたとき、味方DF[花]キャラ1体にDP+2する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {
+            "exactName": "四季ナツメ"
+          },
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキから「四季ナツメ」を除くＥＸが２の[花]キャラ１体を探し公開して手札に入れる。\n[誘発] 味方ＤＦ[花]キャラがダウンしたとき、味方ＤＦ[花]キャラ１体にＤＰ＋２する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキから「四季ナツメ」を除くEXが2の[花]キャラ1体を探し公開して手札に入れる。[誘発] 味方DF[花]キャラがダウンしたとき、味方DF[花]キャラ1体にDP+2する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、自分のデッキから「四季ナツメ」を除くEXが2の[花]キャラ1体を探し公開して手札に入れる。[誘発] 味方DF[花]キャラがダウンしたとき、味方DF[花]キャラ1体にDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

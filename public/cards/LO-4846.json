@@ -24,7 +24,32 @@
   "costRaw": "月月無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4846"
+  "text": "味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
+  "textKr": "味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4846",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方キャラ全てにAP+1・DP+1・DMG+1する。初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
+    "normalizedText": "味方キャラ全てにAP+1・DP+1・DMG+1する。初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
+    "lines": [
+      "味方キャラ全てにAP+1・DP+1・DMG+1する。初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

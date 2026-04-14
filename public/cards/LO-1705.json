@@ -22,7 +22,22 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1705"
+  "text": "{味方キャラ１体}を{味方フィールド}に移動する。",
+  "textKr": "{味方キャラ１体}を{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1705",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}を{味方フィールド}に移動する。",
+    "normalizedText": "{味方キャラ1体}を{味方フィールド}に移動する。",
+    "lines": [
+      "{味方キャラ1体}を{味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方キャラ1体}を{味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

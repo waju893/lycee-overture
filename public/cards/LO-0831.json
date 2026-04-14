@@ -24,7 +24,32 @@
   "costRaw": "花花宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0831"
+  "text": "味方キャラ全てにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "textKr": "味方キャラ全てにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0831",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方キャラ全てにAP+2・DP+2・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方キャラ全てにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+    "normalizedText": "味方キャラ全てにAP+2・DP+2・DMG+1する。",
+    "lines": [
+      "味方キャラ全てにAP+2・DP+2・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

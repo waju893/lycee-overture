@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:味方エリアを配置している場合、このキャラは[オーダーステップ:[0]]を得る。",
   "textKr": "[宣言] [0]:味方エリアを配置している場合、このキャラは[オーダーステップ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2683"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2683",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:味方エリアを配置している場合、このキャラは[オーダーステップ:[0]]を得る。",
+    "normalizedText": "[宣言] [0]:味方エリアを配置している場合、このキャラは[オーダーステップ:[0]]を得る。",
+    "lines": [
+      "[宣言] [0]:味方エリアを配置している場合、このキャラは[オーダーステップ:[0]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:味方エリアを配置している場合、このキャラは[オーダーステップ:[0]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

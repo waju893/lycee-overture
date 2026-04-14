@@ -1,0 +1,20 @@
+{
+  "mode": "validate_lycee_card_jsons",
+  "totalCards": 6541,
+  "invalidCards": 1504,
+  "invalidByReason": {
+    "empty_text": 306,
+    "empty_textKr": 306,
+    "missing_cardNo": 1198,
+    "missing_name": 1198,
+    "missing_text_key": 1198,
+    "missing_textKr_key": 1198,
+    "missing_sourceUrl": 1198
+  },
+  "invalidByType": {
+    "character": 1083,
+    "event": 318,
+    "item": 38,
+    "area": 65
+  }
+}

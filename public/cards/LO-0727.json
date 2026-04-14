@@ -23,5 +23,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [無無無無無]:{相手キャラ１体}のＡＰまたはＤＰまたはＳＰを０にする。",
   "textKr": "[エンゲージ]\n[宣言] [無無無無無]:{相手キャラ１体}のＡＰまたはＤＰまたはＳＰを０にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0727"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0727",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [無無無無無]:{相手キャラ１体}のＡＰまたはＤＰまたはＳＰを０にする。",
+    "normalizedText": "[エンゲージ]\n[宣言] [無無無無無]:{相手キャラ1体}のAPまたはDPまたはSPを0にする。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [無無無無無]:{相手キャラ1体}のAPまたはDPまたはSPを0にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [無無無無無]:{相手キャラ1体}のAPまたはDPまたはSPを0にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

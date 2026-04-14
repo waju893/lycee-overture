@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0944",
+  "title": "母の務め",
+  "subName": "千堂 伽耶",
+  "name": "母の務め 千堂 伽耶",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -16,11 +19,31 @@
   "dp": 4,
   "sp": 0,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [T]:バトル中に使用する。{自分のゴミ箱の「千堂伽耶」１体}を除外する。ゲーム中、除外された自分のキャラが５体以上の場合、バトルを中断する。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [T]:バトル中に使用する。{自分のゴミ箱の「千堂伽耶」１体}を除外する。ゲーム中、除外された自分のキャラが５体以上の場合、バトルを中断する。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0944",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [T]:バトル中に使用する。{自分のゴミ箱の「千堂伽耶」１体}を除外する。ゲーム中、除外された自分のキャラが５体以上の場合、バトルを中断する。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [T]:バトル中に使用する。{自分のゴミ箱の「千堂伽耶」1体}を除外する。ゲーム中、除外された自分のキャラが5体以上の場合、バトルを中断する。構築制限:オーガスト([AUG])",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [T]:バトル中に使用する。{自分のゴミ箱の「千堂伽耶」1体}を除外する。ゲーム中、除外された自分のキャラが5体以上の場合、バトルを中断する。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T]:バトル中に使用する。{自分のゴミ箱の「千堂伽耶」1体}を除外する。ゲーム中、除外された自分のキャラが5体以上の場合、バトルを中断する。構築制限:オーガスト([AUG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

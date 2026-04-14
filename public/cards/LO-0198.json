@@ -25,5 +25,20 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]",
   "textKr": "[エンゲージ]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0198"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0198",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]",
+    "normalizedText": "[エンゲージ]",
+    "lines": [
+      "[エンゲージ]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

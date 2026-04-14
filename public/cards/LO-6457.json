@@ -25,5 +25,39 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが場を離れたとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し公開して手札に入れることができる。",
   "textKr": "[誘発] このキャラが場を離れたとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し公開して手札に入れることができる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6457"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6457",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラが場を離れたとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し公開して手札に入れることができる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが場を離れたとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し公開して手札に入れることができる。",
+    "normalizedText": "[誘発] このキャラが場を離れたとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し公開して手札に入れることができる。",
+    "lines": [
+      "[誘発] このキャラが場を離れたとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し公開して手札に入れることができる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

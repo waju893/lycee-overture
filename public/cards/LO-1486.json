@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1486",
+  "title": "星天の魔導鎧",
+  "subName": "シルセス",
+  "name": "星天の魔導鎧 シルセス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,37 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1486",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにDP+1する。構築制限:千年戦争アイギス([AIG])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにDP+1する。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにDP+1する。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -24,5 +24,35 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] コストが３点以上の味方[花]キャラを相手のイベントで破棄したとき、１枚ドローできる。",
   "textKr": "[サポーター:[花花]]\n[誘発] コストが３点以上の味方[花]キャラを相手のイベントで破棄したとき、１枚ドローできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1528"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1528",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] コストが3点以上の味方[花]キャラを相手のイベントで破棄したとき、1枚ドローできる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] コストが３点以上の味方[花]キャラを相手のイベントで破棄したとき、１枚ドローできる。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] コストが3点以上の味方[花]キャラを相手のイベントで破棄したとき、1枚ドローできる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] コストが3点以上の味方[花]キャラを相手のイベントで破棄したとき、1枚ドローできる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

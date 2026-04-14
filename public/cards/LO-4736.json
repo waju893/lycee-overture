@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4736",
+  "title": "夢に耽溺する乙女",
+  "subName": "セシル",
+  "name": "夢に耽溺する乙女 セシル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,46 @@
   "ap": 1,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:【『あいりすミスティリア！』】【[月]】",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:【『あいりすミスティリア！』】【[月]】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4736",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:【『あいりすミスティリア!』】【[月]】",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:【『あいりすミスティリア！』】【[月]】",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:【『あいりすミスティリア!』】【[月]】",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:【『あいりすミスティリア!』】【[月]】"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

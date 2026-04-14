@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。",
   "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3938"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3938",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、コストが3点以上の味方キャラが3体以上登場している場合、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方キャラが３体以上登場している場合、１枚ドローする。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、コストが3点以上の味方キャラが3体以上登場している場合、1枚ドローする。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、コストが3点以上の味方キャラが3体以上登場している場合、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

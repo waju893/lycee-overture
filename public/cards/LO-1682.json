@@ -25,5 +25,38 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[相手のデッキを１枚破棄する。]]\n[宣言] [このキャラを破棄する]:{自分のゴミ箱のアイテム１枚}を手札に入れる。",
   "textKr": "[リカバリー:[相手のデッキを１枚破棄する。]]\n[宣言] [このキャラを破棄する]:{自分のゴミ箱のアイテム１枚}を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1682"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1682",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [このキャラを破棄する]:{自分のゴミ箱のアイテム1枚}を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[相手のデッキを１枚破棄する。]]\n[宣言] [このキャラを破棄する]:{自分のゴミ箱のアイテム１枚}を手札に入れる。",
+    "normalizedText": "[リカバリー:[相手のデッキを1枚破棄する。]]\n[宣言] [このキャラを破棄する]:{自分のゴミ箱のアイテム1枚}を手札に入れる。",
+    "lines": [
+      "[リカバリー:[相手のデッキを1枚破棄する。]]",
+      "[宣言] [このキャラを破棄する]:{自分のゴミ箱のアイテム1枚}を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

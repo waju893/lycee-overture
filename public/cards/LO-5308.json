@@ -25,5 +25,44 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し登場できる。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5308"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5308",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し登場できる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し登場できる。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し登場できる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラを破棄したとき、ゴミ箱のこのキャラを除外する。除外したとき、自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し登場できる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

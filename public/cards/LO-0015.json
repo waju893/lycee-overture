@@ -24,5 +24,33 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体をデッキの一番下に置くことができる。",
   "textKr": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体をデッキの一番下に置くことができる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0015"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0015",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体をデッキの一番下に置くことができる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "deckBottom",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体をデッキの一番下に置くことができる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体をデッキの一番下に置くことができる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方[雪]キャラ1体をデッキの一番下に置くことができる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toDeckBottom"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -21,7 +21,22 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3200"
+  "text": "{[ステップ]または[サイドステップ]を持つ味方キャラ１体}を{味方フィールド}に移動する。",
+  "textKr": "{[ステップ]または[サイドステップ]を持つ味方キャラ１体}を{味方フィールド}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3200",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{[ステップ]または[サイドステップ]を持つ味方キャラ１体}を{味方フィールド}に移動する。",
+    "normalizedText": "{[ステップ]または[サイドステップ]を持つ味方キャラ1体}を{味方フィールド}に移動する。",
+    "lines": [
+      "{[ステップ]または[サイドステップ]を持つ味方キャラ1体}を{味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{[ステップ]または[サイドステップ]を持つ味方キャラ1体}を{味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

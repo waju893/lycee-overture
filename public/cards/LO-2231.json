@@ -23,5 +23,20 @@
   "typeTagsRaw": "城娘",
   "text": "[コスト] このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。",
   "textKr": "[コスト] このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2231"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2231",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。",
+    "normalizedText": "[コスト] このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。",
+    "lines": [
+      "[コスト] このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] このキャラを破棄する。破棄したとき、[雪雪雪雪]を発生する。このコストはイベントまたは手札宣言能力の使用にのみ支払える。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

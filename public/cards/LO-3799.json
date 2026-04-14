@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラにＡＰ＋４・ＤＰ－２する。",
   "textKr": "[宣言] [0]:このキャラにＡＰ＋４・ＤＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3799"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3799",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラにAP+4・DP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラにＡＰ＋４・ＤＰ－２する。",
+    "normalizedText": "[宣言] [0]:このキャラにAP+4・DP-2する。",
+    "lines": [
+      "[宣言] [0]:このキャラにAP+4・DP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

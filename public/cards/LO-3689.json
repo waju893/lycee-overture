@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが手札から登場したとき、このキャラと同列の相手ＡＦキャラ１体を行動済みにする。",
   "textKr": "[誘発] このキャラが手札から登場したとき、このキャラと同列の相手ＡＦキャラ１体を行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3689"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3689",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが手札から登場したとき、このキャラと同列の相手ＡＦキャラ１体を行動済みにする。",
+    "normalizedText": "[誘発] このキャラが手札から登場したとき、このキャラと同列の相手AFキャラ1体を行動済みにする。",
+    "lines": [
+      "[誘発] このキャラが手札から登場したとき、このキャラと同列の相手AFキャラ1体を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが手札から登場したとき、このキャラと同列の相手AFキャラ1体を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

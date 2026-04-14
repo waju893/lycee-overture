@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1519",
+  "title": "魔導司祭",
+  "subName": "エターナー",
+  "name": "魔導司祭 エターナー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 1,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,31 @@
   "dp": 3,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [
-    12
-  ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "ex": 1,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "[サポーター:[花]]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1519",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "[サポーター:[花]]\n[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "[サポーター:[花]]",
+      "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。構築制限:千年戦争アイギス([AIG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

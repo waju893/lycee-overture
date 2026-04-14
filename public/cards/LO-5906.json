@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋[味方『みらろま』キャラの数]する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋[味方『みらろま』キャラの数]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5906"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5906",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ１体}にＡＰ＋[味方『みらろま』キャラの数]する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{味方キャラ1体}にAP+[味方『みらろま』キャラの数]する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{味方キャラ1体}にAP+[味方『みらろま』キャラの数]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{味方キャラ1体}にAP+[味方『みらろま』キャラの数]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

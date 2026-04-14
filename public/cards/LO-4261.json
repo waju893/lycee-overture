@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] サブネームに「ネクフェス」を含む味方キャラが登場したとき、このキャラにＤＭＧ＋１する。",
   "textKr": "[誘発] サブネームに「ネクフェス」を含む味方キャラが登場したとき、このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4261"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4261",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] サブネームに「ネクフェス」を含む味方キャラが登場したとき、このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[誘発] サブネームに「ネクフェス」を含む味方キャラが登場したとき、このキャラにDMG+1する。",
+    "lines": [
+      "[誘発] サブネームに「ネクフェス」を含む味方キャラが登場したとき、このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] サブネームに「ネクフェス」を含む味方キャラが登場したとき、このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

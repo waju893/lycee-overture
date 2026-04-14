@@ -26,5 +26,25 @@
   "typeTagsRaw": "-",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラが場を離れたとき、相手キャラ１体にＤＭＧ－１できる。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラが場を離れたとき、相手キャラ１体にＤＭＧ－１できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0598"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0598",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラが場を離れたとき、相手キャラ１体にＤＭＧ－１できる。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] 味方キャラが場を離れたとき、相手キャラ1体にDMG-1できる。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] 味方キャラが場を離れたとき、相手キャラ1体にDMG-1できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方キャラが場を離れたとき、相手キャラ1体にDMG-1できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

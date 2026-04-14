@@ -22,7 +22,53 @@
   "costRaw": "月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4955"
+  "text": "味方[月]キャラが４体以上登場している場合、{相手キャラ１体}にＡＰ－３またはＤＰ－３する。そのキャラのＤＭＧを０にする。",
+  "textKr": "味方[月]キャラが４体以上登場している場合、{相手キャラ１体}にＡＰ－３またはＤＰ－３する。そのキャラのＤＭＧを０にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4955",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方[月]キャラが4体以上登場している場合、{相手キャラ1体}にAP-3またはDP-3する。そのキャラのDMGを0にする。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方[月]キャラが４体以上登場している場合、{相手キャラ１体}にＡＰ－３またはＤＰ－３する。そのキャラのＤＭＧを０にする。",
+    "normalizedText": "味方[月]キャラが4体以上登場している場合、{相手キャラ1体}にAP-3またはDP-3する。そのキャラのDMGを0にする。",
+    "lines": [
+      "味方[月]キャラが4体以上登場している場合、{相手キャラ1体}にAP-3またはDP-3する。そのキャラのDMGを0にする。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "リトルバスターズ",
   "text": "[アシスト]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く味方＜リトルバスターズ＞キャラ１体}を未行動にし、そのキャラにＤＭＧ－３する。",
   "textKr": "[アシスト]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く味方＜リトルバスターズ＞キャラ１体}を未行動にし、そのキャラにＤＭＧ－３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1244"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1244",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く味方＜リトルバスターズ＞キャラ１体}を未行動にし、そのキャラにＤＭＧ－３する。",
+    "normalizedText": "[アシスト]\n[宣言] [D1]:自ターン中に使用する。{このキャラを除く味方<リトルバスターズ>キャラ1体}を未行動にし、そのキャラにDMG-3する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [D1]:自ターン中に使用する。{このキャラを除く味方<リトルバスターズ>キャラ1体}を未行動にし、そのキャラにDMG-3する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D1]:自ターン中に使用する。{このキャラを除く味方<リトルバスターズ>キャラ1体}を未行動にし、そのキャラにDMG-3する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

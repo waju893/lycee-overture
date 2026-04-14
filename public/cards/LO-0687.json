@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0687",
+  "title": "はりきりイヌミミ",
+  "subName": "山吹 葵",
+  "name": "はりきりイヌミミ 山吹 葵",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -16,5 +19,27 @@
   "ap": 4,
   "dp": 2,
   "sp": 0,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 1,
+  "costRaw": "日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[誘発] 味方キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。\n構築制限:ゆずソフト",
+  "textKr": "[誘発] 味方キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。\n構築制限:ゆずソフト",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0687",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。\n構築制限:ゆずソフト",
+    "normalizedText": "[誘発] 味方キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。構築制限:ゆずソフト",
+    "lines": [
+      "[誘発] 味方キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。構築制限:ゆずソフト"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 味方キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

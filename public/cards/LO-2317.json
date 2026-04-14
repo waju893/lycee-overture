@@ -1,14 +1,43 @@
 {
+  "cardNo": "LO-2317",
+  "title": "千狐珠",
+  "subName": "",
+  "name": "千狐珠",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{コストが２点以下の味方[花]キャラ１体}を未行動にする。\n構築制限:[OSP]",
+  "textKr": "{コストが２点以下の味方[花]キャラ１体}を未行動にする。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2317",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{コストが２点以下の味方[花]キャラ１体}を未行動にする。\n構築制限:[OSP]",
+    "normalizedText": "{コストが2点以下の味方[花]キャラ1体}を未行動にする。構築制限:[OSP]",
+    "lines": [
+      "{コストが2点以下の味方[花]キャラ1体}を未行動にする。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{コストが2点以下の味方[花]キャラ1体}を未行動にする。構築制限:[OSP]",
+      "reason": "no parser rule matched"
+    }
   ]
 }

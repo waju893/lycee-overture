@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の[花]キャラ１体をデッキの下に置く。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の[花]キャラ１体をデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1369"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1369",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱の[花]キャラ１体をデッキの下に置く。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱の[花]キャラ1体をデッキの下に置く。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の[花]キャラ1体をデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱の[花]キャラ1体をデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

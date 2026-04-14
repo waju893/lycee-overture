@@ -21,7 +21,22 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1110"
+  "text": "バトル中に使用できない。{ＡＰが０以下のキャラ１体}を破棄する。",
+  "textKr": "バトル中に使用できない。{ＡＰが０以下のキャラ１体}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1110",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。{ＡＰが０以下のキャラ１体}を破棄する。",
+    "normalizedText": "バトル中に使用できない。{APが0以下のキャラ1体}を破棄する。",
+    "lines": [
+      "バトル中に使用できない。{APが0以下のキャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用できない。{APが0以下のキャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

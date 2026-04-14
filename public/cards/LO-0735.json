@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0735",
+  "title": "アヴァロンの導き",
+  "subName": "アーサー",
+  "name": "アヴァロンの導き アーサー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ER",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 0,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -18,11 +21,31 @@
   "dp": 5,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": true
+  "ex": 0,
+  "costRaw": "宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "英霊",
+  "text": "[リーダー][オーダーステップ:[0]]\n[宣言] [0]:コストが５点以上の味方キャラ全てにＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[リーダー][オーダーステップ:[0]]\n[宣言] [0]:コストが５点以上の味方キャラ全てにＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0735",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リーダー][オーダーステップ:[0]]\n[宣言] [0]:コストが５点以上の味方キャラ全てにＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[リーダー][オーダーステップ:[0]]\n[宣言] [0]:コストが5点以上の味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[リーダー][オーダーステップ:[0]]",
+      "[宣言] [0]:コストが5点以上の味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:コストが5点以上の味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

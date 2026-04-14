@@ -21,7 +21,22 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2582"
+  "text": "{味方キャラ１体}を自分のデッキの下に置く。",
+  "textKr": "{味方キャラ１体}を自分のデッキの下に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2582",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}を自分のデッキの下に置く。",
+    "normalizedText": "{味方キャラ1体}を自分のデッキの下に置く。",
+    "lines": [
+      "{味方キャラ1体}を自分のデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方キャラ1体}を自分のデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

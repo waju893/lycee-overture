@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－３する。",
   "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2500"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2500",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手キャラ１体に相手ターン終了時までＤＭＧ－３する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手キャラ1体に相手ターン終了時までDMG-3する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手キャラ1体に相手ターン終了時までDMG-3する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手キャラ1体に相手ターン終了時までDMG-3する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

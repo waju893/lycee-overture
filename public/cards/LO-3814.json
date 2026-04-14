@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにＤＰ＋２する。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3814"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3814",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにＤＰ＋２する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにDP+2する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラで[花]キャラにサポートをしたとき、対象のキャラにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

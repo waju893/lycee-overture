@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラをバトル参加キャラに指定したとき、中央列のキャラ全てにＤＰ－１する。",
   "textKr": "[誘発] このキャラをバトル参加キャラに指定したとき、中央列のキャラ全てにＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5028"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5028",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラをバトル参加キャラに指定したとき、中央列のキャラ全てにDP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラをバトル参加キャラに指定したとき、中央列のキャラ全てにＤＰ－１する。",
+    "normalizedText": "[誘発] このキャラをバトル参加キャラに指定したとき、中央列のキャラ全てにDP-1する。",
+    "lines": [
+      "[誘発] このキャラをバトル参加キャラに指定したとき、中央列のキャラ全てにDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

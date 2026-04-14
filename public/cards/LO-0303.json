@@ -25,5 +25,30 @@
   "typeTagsRaw": "プラウダ",
   "text": "[誘発] 味方＜プラウダ＞キャラが場を離れたとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
   "textKr": "[誘発] 味方＜プラウダ＞キャラが場を離れたとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0303"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0303",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方<プラウダ>キャラが場を離れたとき、相手キャラ1体にAP-1・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方＜プラウダ＞キャラが場を離れたとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。",
+    "normalizedText": "[誘発] 味方<プラウダ>キャラが場を離れたとき、相手キャラ1体にAP-1・DP-1する。",
+    "lines": [
+      "[誘発] 味方<プラウダ>キャラが場を離れたとき、相手キャラ1体にAP-1・DP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2682",
+  "title": "舞台装置",
+  "subName": "内藤 舞亜",
+  "name": "舞台装置 内藤 舞亜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -15,11 +18,53 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「夢の世界」１枚または「悪夢の花」１枚を探し味方フィールドに配置できる。\n[宣言] [0]:{エリアを持つ味方[宙]キャラ１体}にＡＰ＋１する。\n構築制限:[PUR]",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「夢の世界」１枚または「悪夢の花」１枚を探し味方フィールドに配置できる。\n[宣言] [0]:{エリアを持つ味方[宙]キャラ１体}にＡＰ＋１する。\n構築制限:[PUR]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2682",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「夢の世界」1枚または「悪夢の花」1枚を探し味方フィールドに配置できる。[宣言] [0]:{エリアを持つ味方[宙]キャラ1体}にAP+1する。構築制限:[PUR]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "夢の世界"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「夢の世界」１枚または「悪夢の花」１枚を探し味方フィールドに配置できる。\n[宣言] [0]:{エリアを持つ味方[宙]キャラ１体}にＡＰ＋１する。\n構築制限:[PUR]",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「夢の世界」1枚または「悪夢の花」1枚を探し味方フィールドに配置できる。[宣言] [0]:{エリアを持つ味方[宙]キャラ1体}にAP+1する。構築制限:[PUR]",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「夢の世界」1枚または「悪夢の花」1枚を探し味方フィールドに配置できる。[宣言] [0]:{エリアを持つ味方[宙]キャラ1体}にAP+1する。構築制限:[PUR]"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

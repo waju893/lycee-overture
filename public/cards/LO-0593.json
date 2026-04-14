@@ -25,5 +25,25 @@
   "typeTagsRaw": "-",
   "text": "[ステップ:[0]]\n[宣言] [0]:{未行動の味方キャラ２体}を行動済みにする。行動済みにしたとき、{相手キャラ１体}にＤＭＧ－２する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:{未行動の味方キャラ２体}を行動済みにする。行動済みにしたとき、{相手キャラ１体}にＤＭＧ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0593"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0593",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:{未行動の味方キャラ２体}を行動済みにする。行動済みにしたとき、{相手キャラ１体}にＤＭＧ－２する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:{未行動の味方キャラ2体}を行動済みにする。行動済みにしたとき、{相手キャラ1体}にDMG-2する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:{未行動の味方キャラ2体}を行動済みにする。行動済みにしたとき、{相手キャラ1体}にDMG-2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{未行動の味方キャラ2体}を行動済みにする。行動済みにしたとき、{相手キャラ1体}にDMG-2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

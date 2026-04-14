@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2632",
+  "title": "双子の妹",
+  "subName": "黒崎 小夜",
+  "name": "双子の妹 黒崎 小夜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,27 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、相手のデッキを１枚破棄する。\n[宣言] [0]:{味方ＤＦ[雪]キャラ１体}は[アグレッシブ]を得る。この能力は失われる。\n構築制限:[PUR]",
+  "textKr": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、相手のデッキを１枚破棄する。\n[宣言] [0]:{味方ＤＦ[雪]キャラ１体}は[アグレッシブ]を得る。この能力は失われる。\n構築制限:[PUR]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2632",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、相手のデッキを１枚破棄する。\n[宣言] [0]:{味方ＤＦ[雪]キャラ１体}は[アグレッシブ]を得る。この能力は失われる。\n構築制限:[PUR]",
+    "normalizedText": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、相手のデッキを1枚破棄する。[宣言] [0]:{味方DF[雪]キャラ1体}は[アグレッシブ]を得る。この能力は失われる。構築制限:[PUR]",
+    "lines": [
+      "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、相手のデッキを1枚破棄する。[宣言] [0]:{味方DF[雪]キャラ1体}は[アグレッシブ]を得る。この能力は失われる。構築制限:[PUR]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] ダウン以外で味方[雪]キャラが場を離れたとき、相手のデッキを1枚破棄する。[宣言] [0]:{味方DF[雪]キャラ1体}は[アグレッシブ]を得る。この能力は失われる。構築制限:[PUR]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

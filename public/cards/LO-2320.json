@@ -1,14 +1,48 @@
 {
+  "cardNo": "LO-2320",
+  "title": "戦神像",
+  "subName": "",
+  "name": "戦神像",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "cosmos"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "味方キャラ全てを行動済みにする。相手キャラ全てにＤＭＧ－２する。（ゲーム中１回まで使用可能）\n構築制限:[OSP]",
+  "textKr": "味方キャラ全てを行動済みにする。相手キャラ全てにＤＭＧ－２する。（ゲーム中１回まで使用可能）\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2320",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "味方キャラ全てを行動済みにする。相手キャラ全てにＤＭＧ－２する。（ゲーム中１回まで使用可能）\n構築制限:[OSP]",
+    "normalizedText": "味方キャラ全てを行動済みにする。相手キャラ全てにDMG-2する。(ゲーム中1回まで使用可能)\n構築制限:[OSP]",
+    "lines": [
+      "味方キャラ全てを行動済みにする。相手キャラ全てにDMG-2する。(ゲーム中1回まで使用可能)",
+      "構築制限:[OSP]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "味方キャラ全てを行動済みにする。相手キャラ全てにDMG-2する。(ゲーム中1回まで使用可能)",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[OSP]",
+      "reason": "no parser rule matched"
+    }
   ]
 }

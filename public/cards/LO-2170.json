@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＭＧ＋１する。",
   "textKr": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2170"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2170",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ1体}にDMG+1する。",
+    "lines": [
+      "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ1体}にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

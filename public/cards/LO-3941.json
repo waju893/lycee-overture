@@ -22,7 +22,32 @@
   "costRaw": "雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3941"
+  "text": "{味方[雪]キャラ１体}にＤＰ＋２する。自分の「迷宮」置き場のカード２枚を破棄できる。破棄したとき、そのキャラにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "{味方[雪]キャラ１体}にＤＰ＋２する。自分の「迷宮」置き場のカード２枚を破棄できる。破棄したとき、そのキャラにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3941",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方[雪]キャラ1体}にDP+2する。自分の「迷宮」置き場のカード2枚を破棄できる。破棄したとき、そのキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方[雪]キャラ１体}にＤＰ＋２する。自分の「迷宮」置き場のカード２枚を破棄できる。破棄したとき、そのキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "{味方[雪]キャラ1体}にDP+2する。自分の「迷宮」置き場のカード2枚を破棄できる。破棄したとき、そのキャラにAP+2・DP+2する。",
+    "lines": [
+      "{味方[雪]キャラ1体}にDP+2する。自分の「迷宮」置き場のカード2枚を破棄できる。破棄したとき、そのキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

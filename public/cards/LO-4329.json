@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:コストが３点以上の味方キャラが３体以上登場している場合、このキャラにＤＰ＋１・ＳＰ＋１する。",
   "textKr": "[宣言] [0]:コストが３点以上の味方キャラが３体以上登場している場合、このキャラにＤＰ＋１・ＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4329"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4329",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが3点以上の味方キャラが3体以上登場している場合、このキャラにDP+1・SP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:コストが３点以上の味方キャラが３体以上登場している場合、このキャラにＤＰ＋１・ＳＰ＋１する。",
+    "normalizedText": "[宣言] [0]:コストが3点以上の味方キャラが3体以上登場している場合、このキャラにDP+1・SP+1する。",
+    "lines": [
+      "[宣言] [0]:コストが3点以上の味方キャラが3体以上登場している場合、このキャラにDP+1・SP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

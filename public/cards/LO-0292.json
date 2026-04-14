@@ -26,5 +26,37 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [T]:次の自ターン開始時、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[アシスト]\n[宣言] [T]:次の自ターン開始時、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0292"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0292",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onTurnStart",
+      "triggerText": "自ターン開始時",
+      "originalLine": "[宣言] [T]:次の自ターン開始時、{味方キャラ1体}にAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T]:次の自ターン開始時、{味方キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[アシスト]\n[宣言] [T]:次の自ターン開始時、{味方キャラ1体}にAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T]:次の自ターン開始時、{味方キャラ1体}にAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,38 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分の効果で味方キャラを未行動にしたとき、自分のデッキから[AIG]キャラ１体を探し公開して手札に入れる。この能力は失われる。",
   "textKr": "[誘発] 自分の効果で味方キャラを未行動にしたとき、自分のデッキから[AIG]キャラ１体を探し公開して手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1523"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1523",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の効果で味方キャラを未行動にしたとき、自分のデッキから[AIG]キャラ1体を探し公開して手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果で味方キャラを未行動にしたとき、自分のデッキから[AIG]キャラ１体を探し公開して手札に入れる。この能力は失われる。",
+    "normalizedText": "[誘発] 自分の効果で味方キャラを未行動にしたとき、自分のデッキから[AIG]キャラ1体を探し公開して手札に入れる。この能力は失われる。",
+    "lines": [
+      "[誘発] 自分の効果で味方キャラを未行動にしたとき、自分のデッキから[AIG]キャラ1体を探し公開して手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1037",
+  "title": "エスカレーター組",
+  "subName": "押田",
+  "name": "エスカレーター組 押田",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,44 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    7
+  "ex": 2,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "BC自由",
+  "text": "[エンゲージ:[このキャラと同列の相手キャラ１体を手札に入れる。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は相手の手札を１枚破棄する。自分のデッキを２枚回復する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "textKr": "[エンゲージ:[このキャラと同列の相手キャラ１体を手札に入れる。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は相手の手札を１枚破棄する。自分のデッキを２枚回復する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1037",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[このキャラと同列の相手キャラ1体を手札に入れる。]]",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "opponent",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    7
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[エンゲージ:[このキャラと同列の相手キャラ１体を手札に入れる。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は相手の手札を１枚破棄する。自分のデッキを２枚回復する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
+    "normalizedText": "[エンゲージ:[このキャラと同列の相手キャラ1体を手札に入れる。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は相手の手札を1枚破棄する。自分のデッキを2枚回復する。構築制限:ガールズ&パンツァー([GUP])",
+    "lines": [
+      "[エンゲージ:[このキャラと同列の相手キャラ1体を手札に入れる。]]",
+      "[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は相手の手札を1枚破棄する。自分のデッキを2枚回復する。構築制限:ガールズ&パンツァー([GUP])"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は相手の手札を1枚破棄する。自分のデッキを2枚回復する。構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

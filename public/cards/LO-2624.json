@@ -26,5 +26,54 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「アライブ」１枚を探し味方フィールドに無償で配置できる。\n[宣言] [0]:{味方ＤＦキャラ１体}を行動済みにする。行動済みにしたとき、{相手キャラ１体}にＤＭＧ－１する。",
   "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「アライブ」１枚を探し味方フィールドに無償で配置できる。\n[宣言] [0]:{味方ＤＦキャラ１体}を行動済みにする。行動済みにしたとき、{相手キャラ１体}にＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2624"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2624",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「アライブ」1枚を探し味方フィールドに無償で配置できる。[宣言] [0]:{味方DFキャラ1体}を行動済みにする。行動済みにしたとき、{相手キャラ1体}にDMG-1する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "アライブ",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「アライブ」１枚を探し味方フィールドに無償で配置できる。\n[宣言] [0]:{味方ＤＦキャラ１体}を行動済みにする。行動済みにしたとき、{相手キャラ１体}にＤＭＧ－１する。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「アライブ」1枚を探し味方フィールドに無償で配置できる。[宣言] [0]:{味方DFキャラ1体}を行動済みにする。行動済みにしたとき、{相手キャラ1体}にDMG-1する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「アライブ」1枚を探し味方フィールドに無償で配置できる。[宣言] [0]:{味方DFキャラ1体}を行動済みにする。行動済みにしたとき、{相手キャラ1体}にDMG-1する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [無][このキャラを破棄する]:{味方ＡＦキャラ１体}にＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[アシスト]\n[宣言] [無][このキャラを破棄する]:{味方ＡＦキャラ１体}にＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1072"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1072",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無][このキャラを破棄する]:{味方AFキャラ1体}にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [無][このキャラを破棄する]:{味方ＡＦキャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[アシスト]\n[宣言] [無][このキャラを破棄する]:{味方AFキャラ1体}にAP+2・DP+2する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [無][このキャラを破棄する]:{味方AFキャラ1体}にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,20 @@
   "typeTagsRaw": "蜀",
   "text": "[誘発] このキャラが登場したとき、味方キャラ１体を味方フィールドに移動する。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を味方フィールドに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2435"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2435",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ１体を味方フィールドに移動する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ1体を味方フィールドに移動する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ1体を味方フィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体を味方フィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

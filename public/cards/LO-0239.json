@@ -22,7 +22,22 @@
   "costRaw": "月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0239"
+  "text": "{キャラ１体}にＤＭＧ－３する。",
+  "textKr": "{キャラ１体}にＤＭＧ－３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0239",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{キャラ１体}にＤＭＧ－３する。",
+    "normalizedText": "{キャラ1体}にDMG-3する。",
+    "lines": [
+      "{キャラ1体}にDMG-3する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{キャラ1体}にDMG-3する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

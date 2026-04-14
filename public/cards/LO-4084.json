@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２][ステップ:[0]]\n[宣言] [C1][日]:相手キャラ全てにＡＰ－１・ＤＰ－１する。",
   "textKr": "[チャージ:２][ステップ:[0]]\n[宣言] [C1][日]:相手キャラ全てにＡＰ－１・ＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4084"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4084",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1][日]:相手キャラ全てにAP-1・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２][ステップ:[0]]\n[宣言] [C1][日]:相手キャラ全てにＡＰ－１・ＤＰ－１する。",
+    "normalizedText": "[チャージ:2][ステップ:[0]]\n[宣言] [C1][日]:相手キャラ全てにAP-1・DP-1する。",
+    "lines": [
+      "[チャージ:2][ステップ:[0]]",
+      "[宣言] [C1][日]:相手キャラ全てにAP-1・DP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2][ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

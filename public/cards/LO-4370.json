@@ -23,7 +23,32 @@
   "costRaw": "花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4370"
+  "text": "自ターン中に使用する。以下から１つを選び処理する。\n・味方[花]キャラ１体にＡＰ＋４・ＤＰ＋４する。\n・相手キャラ１体を行動済みにする。",
+  "textKr": "自ターン中に使用する。以下から１つを選び処理する。\n・味方[花]キャラ１体にＡＰ＋４・ＤＰ＋４する。\n・相手キャラ１体を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4370",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。以下から1つを選び処理する。・味方[花]キャラ1体にAP+4・DP+4する。・相手キャラ1体を行動済みにする。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。以下から１つを選び処理する。\n・味方[花]キャラ１体にＡＰ＋４・ＤＰ＋４する。\n・相手キャラ１体を行動済みにする。",
+    "normalizedText": "自ターン中に使用する。以下から1つを選び処理する。・味方[花]キャラ1体にAP+4・DP+4する。・相手キャラ1体を行動済みにする。",
+    "lines": [
+      "自ターン中に使用する。以下から1つを選び処理する。・味方[花]キャラ1体にAP+4・DP+4する。・相手キャラ1体を行動済みにする。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

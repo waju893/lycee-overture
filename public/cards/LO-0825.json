@@ -26,5 +26,25 @@
   "typeTagsRaw": "神姫",
   "text": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、味方ＡＦキャラ１体をそのキャラと同列の味方ＤＦに移動できる。移動したとき、そのキャラを未行動にする。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、味方ＡＦキャラ１体をそのキャラと同列の味方ＤＦに移動できる。移動したとき、そのキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0825"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0825",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、味方ＡＦキャラ１体をそのキャラと同列の味方ＤＦに移動できる。移動したとき、そのキャラを未行動にする。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、味方AFキャラ1体をそのキャラと同列の味方DFに移動できる。移動したとき、そのキャラを未行動にする。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] 相手ターン開始時、味方AFキャラ1体をそのキャラと同列の味方DFに移動できる。移動したとき、そのキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手ターン開始時、味方AFキャラ1体をそのキャラと同列の味方DFに移動できる。移動したとき、そのキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

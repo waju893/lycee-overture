@@ -27,5 +27,35 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[１枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
   "textKr": "[エンゲージ:[１枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0129"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0129",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[1枚ドローする。]][アグレッシブ]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[１枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
+    "normalizedText": "[エンゲージ:[1枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
+    "lines": [
+      "[エンゲージ:[1枚ドローする。]][アグレッシブ]",
+      "[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

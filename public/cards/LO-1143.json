@@ -24,5 +24,25 @@
   "typeTagsRaw": "聖グロリアーナ",
   "text": "[アシスト][サポーター:[花花]]\n[誘発] 相手ターン中、相手の効果で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
   "textKr": "[アシスト][サポーター:[花花]]\n[誘発] 相手ターン中、相手の効果で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1143"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1143",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][サポーター:[花花]]\n[誘発] 相手ターン中、相手の効果で自分のデッキを破棄したとき、自分のデッキを１枚回復する。",
+    "normalizedText": "[アシスト][サポーター:[花花]]\n[誘発] 相手ターン中、相手の効果で自分のデッキを破棄したとき、自分のデッキを1枚回復する。",
+    "lines": [
+      "[アシスト][サポーター:[花花]]",
+      "[誘発] 相手ターン中、相手の効果で自分のデッキを破棄したとき、自分のデッキを1枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手ターン中、相手の効果で自分のデッキを破棄したとき、自分のデッキを1枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

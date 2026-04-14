@@ -29,5 +29,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[雪雪]]\n[誘発] このキャラが登場したとき、相手キャラ１体を破棄する。",
   "textKr": "[オーダーチェンジ:[雪雪]]\n[誘発] このキャラが登場したとき、相手キャラ１体を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0474"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0474",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[雪雪]]\n[誘発] このキャラが登場したとき、相手キャラ１体を破棄する。",
+    "normalizedText": "[オーダーチェンジ:[雪雪]]\n[誘発] このキャラが登場したとき、相手キャラ1体を破棄する。",
+    "lines": [
+      "[オーダーチェンジ:[雪雪]]",
+      "[誘発] このキャラが登場したとき、相手キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[雪雪]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

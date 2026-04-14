@@ -25,5 +25,35 @@
   "typeTagsRaw": "知波単",
   "text": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、１枚ドローできる。この能力は失われる。",
   "textKr": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、１枚ドローできる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1100"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1100",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方<知波単>キャラがダウンしたとき、1枚ドローできる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたとき、１枚ドローできる。この能力は失われる。",
+    "normalizedText": "[アグレッシブ]\n[誘発] 味方<知波単>キャラがダウンしたとき、1枚ドローできる。この能力は失われる。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] 味方<知波単>キャラがダウンしたとき、1枚ドローできる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

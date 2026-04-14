@@ -23,7 +23,22 @@
   "costRaw": "雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3794"
+  "text": "{味方バトル参加[雪]キャラ１体}を未行動にする。バトルを中断する。",
+  "textKr": "{味方バトル参加[雪]キャラ１体}を未行動にする。バトルを中断する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3794",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方バトル参加[雪]キャラ１体}を未行動にする。バトルを中断する。",
+    "normalizedText": "{味方バトル参加[雪]キャラ1体}を未行動にする。バトルを中断する。",
+    "lines": [
+      "{味方バトル参加[雪]キャラ1体}を未行動にする。バトルを中断する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方バトル参加[雪]キャラ1体}を未行動にする。バトルを中断する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

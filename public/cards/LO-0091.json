@@ -24,7 +24,32 @@
   "costRaw": "花花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0091"
+  "text": "味方ＡＦキャラ全てにＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "味方ＡＦキャラ全てにＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0091",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方AFキャラ全てにAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方ＡＦキャラ全てにＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "味方AFキャラ全てにAP+3・DP+3する。",
+    "lines": [
+      "味方AFキャラ全てにAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

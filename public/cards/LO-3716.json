@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3716",
+  "title": "主天使",
+  "subName": "セフィーレ",
+  "name": "主天使 セフィーレ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,37 @@
   "ap": 4,
   "dp": 4,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。\n[宣言] [雪]:このキャラにＤＭＧ＋３する。\n[宣言] [雪][D1]:{味方[雪]キャラ１体}にＤＰ＋２する。\n構築制限:[AIG]",
+  "textKr": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。\n[宣言] [雪]:このキャラにＤＭＧ＋３する。\n[宣言] [雪][D1]:{味方[雪]キャラ１体}にＤＰ＋２する。\n構築制限:[AIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3716",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにAP+1・DP+1・DMG+2する。[宣言] [雪]:このキャラにDMG+3する。[宣言] [雪][D1]:{味方[雪]キャラ1体}にDP+2する。構築制限:[AIG]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。\n[宣言] [雪]:このキャラにＤＭＧ＋３する。\n[宣言] [雪][D1]:{味方[雪]キャラ１体}にＤＰ＋２する。\n構築制限:[AIG]",
+    "normalizedText": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにAP+1・DP+1・DMG+2する。[宣言] [雪]:このキャラにDMG+3する。[宣言] [雪][D1]:{味方[雪]キャラ1体}にDP+2する。構築制限:[AIG]",
+    "lines": [
+      "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにAP+1・DP+1・DMG+2する。[宣言] [雪]:このキャラにDMG+3する。[宣言] [雪][D1]:{味方[雪]キャラ1体}にDP+2する。構築制限:[AIG]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

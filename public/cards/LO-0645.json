@@ -24,5 +24,20 @@
   "typeTagsRaw": "-",
   "text": "[宣言] [花花]:自ターン中に使用する。{ＤＭＧが１以下の味方ＤＦキャラ１体}を未行動にする。",
   "textKr": "[宣言] [花花]:自ターン中に使用する。{ＤＭＧが１以下の味方ＤＦキャラ１体}を未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0645"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0645",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [花花]:自ターン中に使用する。{ＤＭＧが１以下の味方ＤＦキャラ１体}を未行動にする。",
+    "normalizedText": "[宣言] [花花]:自ターン中に使用する。{DMGが1以下の味方DFキャラ1体}を未行動にする。",
+    "lines": [
+      "[宣言] [花花]:自ターン中に使用する。{DMGが1以下の味方DFキャラ1体}を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [花花]:自ターン中に使用する。{DMGが1以下の味方DFキャラ1体}を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

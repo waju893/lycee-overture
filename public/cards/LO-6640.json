@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:{味方「新山葵」１体}にＡＰ＋２する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{味方「新山葵」１体}にＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6640"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6640",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方「新山葵」1体}にAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{味方「新山葵」１体}にＡＰ＋２する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{味方「新山葵」1体}にAP+2する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{味方「新山葵」1体}にAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

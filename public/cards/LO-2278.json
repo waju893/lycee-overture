@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2278",
+  "title": "龍頭龍尾",
+  "subName": "万里の長城",
+  "name": "龍頭龍尾 万里の長城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,37 @@
   "ap": 0,
   "dp": 2,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] このキャラが登場したとき、１枚ドローする。\n[コスト] 自ターン中に使用する。自分のデッキを１枚破棄する。破棄したとき、[宙宙]を発生する。このコストは能力の使用にのみ支払える。\n構築制限:[OSP]",
+  "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。\n[コスト] 自ターン中に使用する。自分のデッキを１枚破棄する。破棄したとき、[宙宙]を発生する。このコストは能力の使用にのみ支払える。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2278",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。[コスト] 自ターン中に使用する。自分のデッキを1枚破棄する。破棄したとき、[宙宙]を発生する。このコストは能力の使用にのみ支払える。構築制限:[OSP]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、１枚ドローする。\n[コスト] 自ターン中に使用する。自分のデッキを１枚破棄する。破棄したとき、[宙宙]を発生する。このコストは能力の使用にのみ支払える。\n構築制限:[OSP]",
+    "normalizedText": "[誘発] このキャラが登場したとき、1枚ドローする。[コスト] 自ターン中に使用する。自分のデッキを1枚破棄する。破棄したとき、[宙宙]を発生する。このコストは能力の使用にのみ支払える。構築制限:[OSP]",
+    "lines": [
+      "[誘発] このキャラが登場したとき、1枚ドローする。[コスト] 自ターン中に使用する。自分のデッキを1枚破棄する。破棄したとき、[宙宙]を発生する。このコストは能力の使用にのみ支払える。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

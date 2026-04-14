@@ -25,5 +25,25 @@
   "typeTagsRaw": "リトルバスターズ",
   "text": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体を味方フィールドに移動する。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体を味方フィールドに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1267"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1267",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ１体を味方フィールドに移動する。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方キャラ1体を味方フィールドに移動する。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、味方キャラ1体を味方フィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体を味方フィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

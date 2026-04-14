@@ -24,7 +24,31 @@
   "costRaw": "雪雪日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2142"
+  "text": "味方キャラのバトル中に使用する。バトルに参加していない味方キャラ１体を破棄する。破棄したとき、対戦キャラを破棄する。１枚ドローする。",
+  "textKr": "味方キャラのバトル中に使用する。バトルに参加していない味方キャラ１体を破棄する。破棄したとき、対戦キャラを破棄する。１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2142",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方キャラのバトル中に使用する。バトルに参加していない味方キャラ1体を破棄する。破棄したとき、対戦キャラを破棄する。1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方キャラのバトル中に使用する。バトルに参加していない味方キャラ１体を破棄する。破棄したとき、対戦キャラを破棄する。１枚ドローする。",
+    "normalizedText": "味方キャラのバトル中に使用する。バトルに参加していない味方キャラ1体を破棄する。破棄したとき、対戦キャラを破棄する。1枚ドローする。",
+    "lines": [
+      "味方キャラのバトル中に使用する。バトルに参加していない味方キャラ1体を破棄する。破棄したとき、対戦キャラを破棄する。1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

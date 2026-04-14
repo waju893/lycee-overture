@@ -25,5 +25,45 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから＜大学選抜＞キャラ１体を探し公開して手札に入れる。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから＜大学選抜＞キャラ１体を探し公開して手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1026"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1026",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから<大学選抜>キャラ1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから＜大学選抜＞キャラ１体を探し公開して手札に入れる。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のデッキから<大学選抜>キャラ1体を探し公開して手札に入れる。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、自分のデッキから<大学選抜>キャラ1体を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

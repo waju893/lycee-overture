@@ -27,5 +27,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[ガッツ:[宙宙宙宙宙]]\n[宣言] [0]:このキャラのバトル中に使用する。相手は未行動の相手キャラ１体を行動済みにする。",
   "textKr": "[ガッツ:[宙宙宙宙宙]]\n[宣言] [0]:このキャラのバトル中に使用する。相手は未行動の相手キャラ１体を行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1392"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1392",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ガッツ:[宙宙宙宙宙]]\n[宣言] [0]:このキャラのバトル中に使用する。相手は未行動の相手キャラ１体を行動済みにする。",
+    "normalizedText": "[ガッツ:[宙宙宙宙宙]]\n[宣言] [0]:このキャラのバトル中に使用する。相手は未行動の相手キャラ1体を行動済みにする。",
+    "lines": [
+      "[ガッツ:[宙宙宙宙宙]]",
+      "[宣言] [0]:このキャラのバトル中に使用する。相手は未行動の相手キャラ1体を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ガッツ:[宙宙宙宙宙]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラのバトル中に使用する。相手は未行動の相手キャラ1体を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

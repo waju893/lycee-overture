@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1974",
+  "title": "第三次製造計画",
+  "subName": "ミサカワースト",
+  "name": "第三次製造計画 ミサカワースト",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,13 +19,49 @@
   "dp": 1,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2,
-    13
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。\n[宣言] [日]:{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "textKr": "[ステップ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。\n[宣言] [日]:{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1974",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{このターン中移動した味方キャラ1体}にAP+1する。[宣言] [日]:{味方キャラ1体}にAP+3・DP-3する。この能力は失われる。構築制限:とある魔術の禁書目録([TOA])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2,
-    13
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [0]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。\n[宣言] [日]:{味方キャラ１体}にＡＰ＋３・ＤＰ－３する。この能力は失われる。\n構築制限:とある魔術の禁書目録（[TOA]）",
+    "normalizedText": "[ステップ:[0]][ペナルティ:[1枚ドローする。]]\n[宣言] [0]:{このターン中移動した味方キャラ1体}にAP+1する。[宣言] [日]:{味方キャラ1体}にAP+3・DP-3する。この能力は失われる。構築制限:とある魔術の禁書目録([TOA])",
+    "lines": [
+      "[ステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "[宣言] [0]:{このターン中移動した味方キャラ1体}にAP+1する。[宣言] [日]:{味方キャラ1体}にAP+3・DP-3する。この能力は失われる。構築制限:とある魔術の禁書目録([TOA])"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

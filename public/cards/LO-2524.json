@@ -25,5 +25,58 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－３またはＤＰ－３する。",
   "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－３またはＤＰ－３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2524"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2524",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-3またはDP-3する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－３またはＤＰ－３する。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ1体にAP-3またはDP-3する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したとき、相手キャラ1体にAP-3またはDP-3する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

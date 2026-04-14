@@ -26,5 +26,20 @@
   "typeTagsRaw": "幻獣",
   "text": "[誘発] このキャラが登場したとき、相手のアイテム１枚を破棄する。",
   "textKr": "[誘発] このキャラが登場したとき、相手のアイテム１枚を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0789"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0789",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手のアイテム１枚を破棄する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手のアイテム1枚を破棄する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手のアイテム1枚を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手のアイテム1枚を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

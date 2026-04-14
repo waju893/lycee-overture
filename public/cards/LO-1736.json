@@ -24,5 +24,31 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方「ガールズ・ブック・メイカー」キャラ１体にＡＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[誘発] このキャラが登場したとき、味方「ガールズ・ブック・メイカー」キャラ１体にＡＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1736"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1736",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方「ガールズ・ブック・メイカー」キャラ1体にAP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方「ガールズ・ブック・メイカー」キャラ１体にＡＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方「ガールズ・ブック・メイカー」キャラ1体にAP+1・DMG+1する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方「ガールズ・ブック・メイカー」キャラ1体にAP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

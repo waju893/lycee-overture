@@ -25,5 +25,20 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト][サイドステップ:[0]]",
   "textKr": "[アシスト][サイドステップ:[0]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0385"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0385",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][サイドステップ:[0]]",
+    "normalizedText": "[アシスト][サイドステップ:[0]]",
+    "lines": [
+      "[アシスト][サイドステップ:[0]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

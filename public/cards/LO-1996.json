@@ -1,11 +1,40 @@
 {
+  "cardNo": "LO-1996",
+  "title": "記念撮影",
+  "subName": "",
+  "name": "記念撮影",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "-",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "相手ターン中に使用する。バトル中に使用できない。{ＤＰが１以下の味方[日]キャラ１体}を未行動にする。そのキャラを{味方フィールド}に移動する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "textKr": "相手ターン中に使用する。バトル中に使用できない。{ＤＰが１以下の味方[日]キャラ１体}を未行動にする。そのキャラを{味方フィールド}に移動する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1996",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手ターン中に使用する。バトル中に使用できない。{ＤＰが１以下の味方[日]キャラ１体}を未行動にする。そのキャラを{味方フィールド}に移動する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+    "normalizedText": "相手ターン中に使用する。バトル中に使用できない。{DPが1以下の味方[日]キャラ1体}を未行動にする。そのキャラを{味方フィールド}に移動する。構築制限:とある魔術の禁書目録([TOA])",
+    "lines": [
+      "相手ターン中に使用する。バトル中に使用できない。{DPが1以下の味方[日]キャラ1体}を未行動にする。そのキャラを{味方フィールド}に移動する。構築制限:とある魔術の禁書目録([TOA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手ターン中に使用する。バトル中に使用できない。{DPが1以下の味方[日]キャラ1体}を未行動にする。そのキャラを{味方フィールド}に移動する。構築制限:とある魔術の禁書目録([TOA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

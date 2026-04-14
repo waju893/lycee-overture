@@ -23,5 +23,36 @@
   "typeTagsRaw": "サンダース",
   "text": "[アシスト]\n[誘発] 味方＜サンダース＞キャラを自分の能力の対象に指定したとき、そのキャラにＤＰ＋１する。",
   "textKr": "[アシスト]\n[誘発] 味方＜サンダース＞キャラを自分の能力の対象に指定したとき、そのキャラにＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1043"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1043",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方<サンダース>キャラを自分の能力の対象に指定したとき、そのキャラにDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 味方＜サンダース＞キャラを自分の能力の対象に指定したとき、そのキャラにＤＰ＋１する。",
+    "normalizedText": "[アシスト]\n[誘発] 味方<サンダース>キャラを自分の能力の対象に指定したとき、そのキャラにDP+1する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 味方<サンダース>キャラを自分の能力の対象に指定したとき、そのキャラにDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

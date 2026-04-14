@@ -24,5 +24,36 @@
   "typeTagsRaw": "城娘",
   "text": "[アグレッシブ]\n[宣言] [日]:このキャラにＡＰ＋３・ＤＰ－１する。",
   "textKr": "[アグレッシブ]\n[宣言] [日]:このキャラにＡＰ＋３・ＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2229"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2229",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:このキャラにAP+3・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [日]:このキャラにＡＰ＋３・ＤＰ－１する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [日]:このキャラにAP+3・DP-1する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [日]:このキャラにAP+3・DP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

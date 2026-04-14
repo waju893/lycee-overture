@@ -19,7 +19,22 @@
   "costRaw": "-",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2838"
+  "text": "相手ターン中に使用する。{コストが２点以下の味方[雪]キャラ１体}を未行動にする。",
+  "textKr": "相手ターン中に使用する。{コストが２点以下の味方[雪]キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2838",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手ターン中に使用する。{コストが２点以下の味方[雪]キャラ１体}を未行動にする。",
+    "normalizedText": "相手ターン中に使用する。{コストが2点以下の味方[雪]キャラ1体}を未行動にする。",
+    "lines": [
+      "相手ターン中に使用する。{コストが2点以下の味方[雪]キャラ1体}を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手ターン中に使用する。{コストが2点以下の味方[雪]キャラ1体}を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

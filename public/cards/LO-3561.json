@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラでサポートをしたとき、味方キャラ１体にＳＰ＋１する。",
   "textKr": "[誘発] このキャラでサポートをしたとき、味方キャラ１体にＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3561"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3561",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、味方キャラ1体にSP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、味方キャラ１体にＳＰ＋１する。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、味方キャラ1体にSP+1する。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、味方キャラ1体にSP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

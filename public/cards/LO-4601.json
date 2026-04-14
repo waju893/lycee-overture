@@ -23,5 +23,31 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン中、自分のコストが１点以上のイベント・手札宣言能力を使用したとき、味方キャラ１体に相手ターン終了時までＤＰ＋１する。",
   "textKr": "[誘発] 自ターン中、自分のコストが１点以上のイベント・手札宣言能力を使用したとき、味方キャラ１体に相手ターン終了時までＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4601"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4601",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "[誘発] 自ターン中、自分のコストが1点以上のイベント・手札宣言能力を使用したとき、味方キャラ1体に相手ターン終了時までDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、自分のコストが１点以上のイベント・手札宣言能力を使用したとき、味方キャラ１体に相手ターン終了時までＤＰ＋１する。",
+    "normalizedText": "[誘発] 自ターン中、自分のコストが1点以上のイベント・手札宣言能力を使用したとき、味方キャラ1体に相手ターン終了時までDP+1する。",
+    "lines": [
+      "[誘発] 自ターン中、自分のコストが1点以上のイベント・手札宣言能力を使用したとき、味方キャラ1体に相手ターン終了時までDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

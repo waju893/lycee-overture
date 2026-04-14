@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。このバトル終了時、このキャラを未行動にする。",
   "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。このバトル終了時、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1716"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1716",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。このバトル終了時、このキャラを未行動にする。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+1する。このバトル終了時、このキャラを未行動にする。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+1する。このバトル終了時、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+1する。このバトル終了時、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

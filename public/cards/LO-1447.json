@@ -24,5 +24,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[サポーター:[花花]]\n[誘発] このキャラにサポートをしたとき、このキャラにＤＭＧ＋３する。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラにサポートをしたとき、このキャラにＤＭＧ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1447"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1447",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラにサポートをしたとき、このキャラにＤＭＧ＋３する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラにサポートをしたとき、このキャラにDMG+3する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラにサポートをしたとき、このキャラにDMG+3する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラにサポートをしたとき、このキャラにDMG+3する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

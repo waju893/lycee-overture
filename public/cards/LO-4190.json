@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] [花]でない味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[誘発] [花]でない味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4190"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4190",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] [花]でない味方キャラが登場したとき、このキャラにAP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] [花]でない味方キャラが登場したとき、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[誘発] [花]でない味方キャラが登場したとき、このキャラにAP+1・DMG+1する。",
+    "lines": [
+      "[誘発] [花]でない味方キャラが登場したとき、このキャラにAP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

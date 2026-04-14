@@ -23,7 +23,32 @@
   "costRaw": "花花無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3197"
+  "text": "{元のＤＰが４以上の味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "textKr": "{元のＤＰが４以上の味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3197",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{元のDPが4以上の味方キャラ1体}にAP+5・DP+5する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{元のＤＰが４以上の味方キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+    "normalizedText": "{元のDPが4以上の味方キャラ1体}にAP+5・DP+5する。",
+    "lines": [
+      "{元のDPが4以上の味方キャラ1体}にAP+5・DP+5する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

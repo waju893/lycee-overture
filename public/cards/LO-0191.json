@@ -23,5 +23,20 @@
   "typeTagsRaw": "-",
   "text": "[オーダーステップ:[0]]",
   "textKr": "[オーダーステップ:[0]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0191"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0191",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]",
+    "normalizedText": "[オーダーステップ:[0]]",
+    "lines": [
+      "[オーダーステップ:[0]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

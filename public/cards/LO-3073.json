@@ -21,7 +21,32 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3073"
+  "text": "相手ターン中に使用する。{相手キャラ１体}にＤＰ－４する。",
+  "textKr": "相手ターン中に使用する。{相手キャラ１体}にＤＰ－４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3073",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "相手ターン中に使用する。{相手キャラ1体}にDP-4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "相手ターン中に使用する。{相手キャラ１体}にＤＰ－４する。",
+    "normalizedText": "相手ターン中に使用する。{相手キャラ1体}にDP-4する。",
+    "lines": [
+      "相手ターン中に使用する。{相手キャラ1体}にDP-4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

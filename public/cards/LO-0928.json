@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [D2]:このキャラと同列の味方キャラのバトル中に使用する。このキャラのＳＰが５以上の場合、バトルを中断する。",
   "textKr": "[宣言] [D2]:このキャラと同列の味方キャラのバトル中に使用する。このキャラのＳＰが５以上の場合、バトルを中断する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0928"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0928",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [D2]:このキャラと同列の味方キャラのバトル中に使用する。このキャラのＳＰが５以上の場合、バトルを中断する。",
+    "normalizedText": "[宣言] [D2]:このキャラと同列の味方キャラのバトル中に使用する。このキャラのSPが5以上の場合、バトルを中断する。",
+    "lines": [
+      "[宣言] [D2]:このキャラと同列の味方キャラのバトル中に使用する。このキャラのSPが5以上の場合、バトルを中断する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [D2]:このキャラと同列の味方キャラのバトル中に使用する。このキャラのSPが5以上の場合、バトルを中断する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

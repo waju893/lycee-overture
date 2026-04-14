@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1658",
+  "title": "妹特権",
+  "subName": "千歳 佐奈",
+  "name": "妹特権 千歳 佐奈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,42 @@
   "dp": 1,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    6
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[アグレッシブ]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1658",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラが相手のデッキにダメージを与えたとき、味方キャラ1体にAP+2・DP+2する。構築制限:ゆずソフト([YUZ])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[アグレッシブ]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、味方キャラ1体にAP+2・DP+2する。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] このキャラが相手のデッキにダメージを与えたとき、味方キャラ1体にAP+2・DP+2する。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

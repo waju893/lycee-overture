@@ -26,5 +26,57 @@
   "typeTagsRaw": "リトルバスターズ",
   "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2818"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2818",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。{味方<リトルバスターズ>キャラ1体}にAP+1またはDP+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:バトル中に使用できない。{味方<リトルバスターズ>キャラ1体}にAP+1またはDP+1する。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[宣言] [0]:バトル中に使用できない。{味方<リトルバスターズ>キャラ1体}にAP+1またはDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

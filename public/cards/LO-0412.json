@@ -21,7 +21,32 @@
   "costRaw": "宙",
   "restrictionRaw": "",
   "typeTagsRaw": "イベント",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0412"
+  "text": "{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0412",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方キャラ1体}にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "{味方キャラ1体}にAP+1・DP+1する。",
+    "lines": [
+      "{味方キャラ1体}にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

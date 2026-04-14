@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
   "textKr": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4885"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4885",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+    "normalizedText": "[ボーナス:[自分のデッキを1枚回復できる。]]\n[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+    "lines": [
+      "[ボーナス:[自分のデッキを1枚回復できる。]]",
+      "[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[自分のデッキを1枚回復できる。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[コスト] [雪雪]を発生する。このコストはキャラの登場には支払えない。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

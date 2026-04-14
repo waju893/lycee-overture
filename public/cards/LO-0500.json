@@ -25,5 +25,32 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルで味方キャラがダウンしたとき、ゴミ箱のそのキャラを手札に入れる。",
   "textKr": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルで味方キャラがダウンしたとき、ゴミ箱のそのキャラを手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0500"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0500",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルで味方キャラがダウンしたとき、ゴミ箱のそのキャラを手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルで味方キャラがダウンしたとき、ゴミ箱のそのキャラを手札に入れる。",
+    "normalizedText": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルで味方キャラがダウンしたとき、ゴミ箱のそのキャラを手札に入れる。",
+    "lines": [
+      "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルで味方キャラがダウンしたとき、ゴミ箱のそのキャラを手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

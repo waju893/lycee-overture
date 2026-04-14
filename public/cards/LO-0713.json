@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0713",
+  "title": "ハロウィンコスプレ",
+  "subName": "因幡 めぐる",
+  "name": "ハロウィンコスプレ 因幡 めぐる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,27 @@
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [D1]:自分の手札が１枚以下の場合、このキャラを{味方フィールド}に移動する。\n構築制限:ゆずソフト",
+  "textKr": "[宣言] [D1]:自分の手札が１枚以下の場合、このキャラを{味方フィールド}に移動する。\n構築制限:ゆずソフト",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0713",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:自分の手札が１枚以下の場合、このキャラを{味方フィールド}に移動する。\n構築制限:ゆずソフト",
+    "normalizedText": "[宣言] [D1]:自分の手札が1枚以下の場合、このキャラを{味方フィールド}に移動する。構築制限:ゆずソフト",
+    "lines": [
+      "[宣言] [D1]:自分の手札が1枚以下の場合、このキャラを{味方フィールド}に移動する。構築制限:ゆずソフト"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [D1]:自分の手札が1枚以下の場合、このキャラを{味方フィールド}に移動する。構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

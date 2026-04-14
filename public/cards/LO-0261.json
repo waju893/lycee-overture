@@ -23,5 +23,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [T]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}は次の相手のウェイクアップで未行動に戻らない。",
   "textKr": "[エンゲージ]\n[宣言] [T]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}は次の相手のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0261"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0261",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [T]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}は次の相手のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[エンゲージ]\n[宣言] [T]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ1体}は次の相手のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [T]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ1体}は次の相手のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ1体}は次の相手のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

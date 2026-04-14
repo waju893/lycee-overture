@@ -27,5 +27,36 @@
   "typeTagsRaw": "英霊",
   "text": "[リーダー][サイドステップ:[0]]\n[誘発] キャラが登場したとき、キャラ１体にＳＰ－１する。",
   "textKr": "[リーダー][サイドステップ:[0]]\n[誘発] キャラが登場したとき、キャラ１体にＳＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0739"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0739",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] キャラが登場したとき、キャラ1体にSP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リーダー][サイドステップ:[0]]\n[誘発] キャラが登場したとき、キャラ１体にＳＰ－１する。",
+    "normalizedText": "[リーダー][サイドステップ:[0]]\n[誘発] キャラが登場したとき、キャラ1体にSP-1する。",
+    "lines": [
+      "[リーダー][サイドステップ:[0]]",
+      "[誘発] キャラが登場したとき、キャラ1体にSP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

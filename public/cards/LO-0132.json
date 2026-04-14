@@ -25,5 +25,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [0]: 味方「ミストルテイン」が登場している場合、このキャラは[アグレッシブ][ステップ:[無]]を得る。",
   "textKr": "[エンゲージ]\n[宣言] [0]: 味方「ミストルテイン」が登場している場合、このキャラは[アグレッシブ][ステップ:[無]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0132"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0132",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [0]: 味方「ミストルテイン」が登場している場合、このキャラは[アグレッシブ][ステップ:[無]]を得る。",
+    "normalizedText": "[エンゲージ]\n[宣言] [0]: 味方「ミストルテイン」が登場している場合、このキャラは[アグレッシブ][ステップ:[無]]を得る。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [0]: 味方「ミストルテイン」が登場している場合、このキャラは[アグレッシブ][ステップ:[無]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]: 味方「ミストルテイン」が登場している場合、このキャラは[アグレッシブ][ステップ:[無]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

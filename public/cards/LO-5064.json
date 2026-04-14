@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5064",
+  "title": "慎ましく控えめな先輩",
+  "subName": "澤倉 美咲",
+  "name": "慎ましく控えめな先輩 澤倉 美咲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -15,11 +18,80 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    6
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。以下から１つを選び処理する。この能力は失われる。\n・１枚ドローする。このキャラを未行動にする。\n・このキャラを除外する。したとき、１枚ドローする。自分のデッキからＥＸが２のキャラ１体を探しこのキャラが登場していたフィールドに登場する。（ゲーム中１回まで選択可能）\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」１枚を探し味方フィールドに無償で配置する。\n構築制限:『WHITE ALBUM シリーズ』",
+  "textKr": "[アグレッシブ]\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。以下から１つを選び処理する。この能力は失われる。\n・１枚ドローする。このキャラを未行動にする。\n・このキャラを除外する。したとき、１枚ドローする。自分のデッキからＥＸが２のキャラ１体を探しこのキャラが登場していたフィールドに登場する。（ゲーム中１回まで選択可能）\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」１枚を探し味方フィールドに無償で配置する。\n構築制限:『WHITE ALBUM シリーズ』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5064",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:自ターン中に使用する。バトル中に使用できない。以下から1つを選び処理する。この能力は失われる。・1枚ドローする。このキャラを未行動にする。・このキャラを除外する。したとき、1枚ドローする。自分のデッキからEXが2のキャラ1体を探しこのキャラが登場していたフィールドに登場する。(ゲーム中1回まで選択可能)",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」1枚を探し味方フィールドに無償で配置する。構築制限:『WHITE ALBUM シリーズ』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "WHITE ALBUM",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。以下から１つを選び処理する。この能力は失われる。\n・１枚ドローする。このキャラを未行動にする。\n・このキャラを除外する。したとき、１枚ドローする。自分のデッキからＥＸが２のキャラ１体を探しこのキャラが登場していたフィールドに登場する。（ゲーム中１回まで選択可能）\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」１枚を探し味方フィールドに無償で配置する。\n構築制限:『WHITE ALBUM シリーズ』",
+    "normalizedText": "[アグレッシブ]\n[宣言] [T]:自ターン中に使用する。バトル中に使用できない。以下から1つを選び処理する。この能力は失われる。・1枚ドローする。このキャラを未行動にする。・このキャラを除外する。したとき、1枚ドローする。自分のデッキからEXが2のキャラ1体を探しこのキャラが登場していたフィールドに登場する。(ゲーム中1回まで選択可能)\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」1枚を探し味方フィールドに無償で配置する。構築制限:『WHITE ALBUM シリーズ』",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [T]:自ターン中に使用する。バトル中に使用できない。以下から1つを選び処理する。この能力は失われる。・1枚ドローする。このキャラを未行動にする。・このキャラを除外する。したとき、1枚ドローする。自分のデッキからEXが2のキャラ1体を探しこのキャラが登場していたフィールドに登場する。(ゲーム中1回まで選択可能)",
+      "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」1枚を探し味方フィールドに無償で配置する。構築制限:『WHITE ALBUM シリーズ』"
+    ],
+    "matchedRuleIds": [
+      "searchCard",
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

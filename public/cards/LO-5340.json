@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5340",
+  "title": "スーパーキョンシー",
+  "subName": "樋上 いたる",
+  "name": "スーパーキョンシー 樋上 いたる",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "P",
+  "attributes": [
     "star"
   ],
-  "attributesList": [
-    "star"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star"
@@ -14,5 +17,32 @@
   "ap": 1,
   "dp": 2,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、自分の手札を１枚破棄できる。破棄したとき、このキャラを登場する。（同番号の能力は１ターンに１回まで処理可能）\n構築制限:[NEX]",
+  "textKr": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、自分の手札を１枚破棄できる。破棄したとき、このキャラを登場する。（同番号の能力は１ターンに１回まで処理可能）\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5340",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、自分の手札を１枚破棄できる。破棄したとき、このキャラを登場する。（同番号の能力は１ターンに１回まで処理可能）\n構築制限:[NEX]",
+    "normalizedText": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、自分の手札を1枚破棄できる。破棄したとき、このキャラを登場する。(同番号の能力は1ターンに1回まで処理可能)\n構築制限:[NEX]",
+    "lines": [
+      "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、自分の手札を1枚破棄できる。破棄したとき、このキャラを登場する。(同番号の能力は1ターンに1回まで処理可能)",
+      "構築制限:[NEX]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] バトル中、このキャラが自分のデッキから破棄されたとき、自分の手札を1枚破棄できる。破棄したとき、このキャラを登場する。(同番号の能力は1ターンに1回まで処理可能)",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[NEX]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,31 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分にシールド＋１する。１枚ドローする。{味方[WM][雪]キャラ１体}に相手ターン終了時までＡＰ＋３・ＤＰ＋３する。",
   "textKr": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分にシールド＋１する。１枚ドローする。{味方[WM][雪]キャラ１体}に相手ターン終了時までＡＰ＋３・ＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4582"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4582",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分にシールド+1する。1枚ドローする。{味方[WM][雪]キャラ1体}に相手ターン終了時までAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分にシールド＋１する。１枚ドローする。{味方[WM][雪]キャラ１体}に相手ターン終了時までＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分にシールド+1する。1枚ドローする。{味方[WM][雪]キャラ1体}に相手ターン終了時までAP+3・DP+3する。",
+    "lines": [
+      "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分にシールド+1する。1枚ドローする。{味方[WM][雪]キャラ1体}に相手ターン終了時までAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

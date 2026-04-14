@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[宣言] [無無無]:自ターン中に使用する。このキャラを味方フィールドに移動する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [無無無]:自ターン中に使用する。このキャラを味方フィールドに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0114"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0114",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [無無無]:自ターン中に使用する。このキャラを味方フィールドに移動する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [無無無]:自ターン中に使用する。このキャラを味方フィールドに移動する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [無無無]:自ターン中に使用する。このキャラを味方フィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [無無無]:自ターン中に使用する。このキャラを味方フィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

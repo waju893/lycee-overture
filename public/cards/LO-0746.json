@@ -26,5 +26,20 @@
   "typeTagsRaw": "神姫",
   "text": "[宣言] [このキャラを破棄する]:{相手キャラ１体}のＡＰとＤＰを０にする。",
   "textKr": "[宣言] [このキャラを破棄する]:{相手キャラ１体}のＡＰとＤＰを０にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0746"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0746",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [このキャラを破棄する]:{相手キャラ１体}のＡＰとＤＰを０にする。",
+    "normalizedText": "[宣言] [このキャラを破棄する]:{相手キャラ1体}のAPとDPを0にする。",
+    "lines": [
+      "[宣言] [このキャラを破棄する]:{相手キャラ1体}のAPとDPを0にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [このキャラを破棄する]:{相手キャラ1体}のAPとDPを0にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

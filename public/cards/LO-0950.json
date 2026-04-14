@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サイドステップ:[0]]\n[誘発] このキャラが自分のデッキから破棄されたとき、味方キャラ１体にＤＭＧ＋１する。（同番号の能力は１ターンに１回まで処理可能）",
   "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが自分のデッキから破棄されたとき、味方キャラ１体にＤＭＧ＋１する。（同番号の能力は１ターンに１回まで処理可能）",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0950"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0950",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが自分のデッキから破棄されたとき、味方キャラ１体にＤＭＧ＋１する。（同番号の能力は１ターンに１回まで処理可能）",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが自分のデッキから破棄されたとき、味方キャラ1体にDMG+1する。(同番号の能力は1ターンに1回まで処理可能)",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] このキャラが自分のデッキから破棄されたとき、味方キャラ1体にDMG+1する。(同番号の能力は1ターンに1回まで処理可能)"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが自分のデッキから破棄されたとき、味方キャラ1体にDMG+1する。(同番号の能力は1ターンに1回まで処理可能)",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

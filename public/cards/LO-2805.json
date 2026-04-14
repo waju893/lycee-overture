@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2805",
+  "title": "願い星",
+  "subName": "神北 小毬",
+  "name": "願い星 神北 小毬",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,63 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    8
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "リトルバスターズ",
+  "text": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。\n[宣言] [無]:このキャラを未行動にする。\n構築制限:『リトルバスターズ！』",
+  "textKr": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。\n[宣言] [無]:このキャラを未行動にする。\n構築制限:『リトルバスターズ！』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2805",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+1またはDP+1またはDMG+1する。[宣言] [無]:このキャラを未行動にする。構築制限:『リトルバスターズ!』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    8
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。\n[宣言] [無]:このキャラを未行動にする。\n構築制限:『リトルバスターズ！』",
+    "normalizedText": "[アシスト]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+1またはDP+1またはDMG+1する。[宣言] [無]:このキャラを未行動にする。構築制限:『リトルバスターズ!』",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にAP+1またはDP+1またはDMG+1する。[宣言] [無]:このキャラを未行動にする。構築制限:『リトルバスターズ!』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [0]:{[オーダーステップ]を持つ味方キャラ１体}にＤＭＧ＋１する。",
   "textKr": "[アシスト]\n[宣言] [0]:{[オーダーステップ]を持つ味方キャラ１体}にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0339"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0339",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:{[オーダーステップ]を持つ味方キャラ１体}にＤＭＧ＋１する。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:{[オーダーステップ]を持つ味方キャラ1体}にDMG+1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:{[オーダーステップ]を持つ味方キャラ1体}にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{[オーダーステップ]を持つ味方キャラ1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

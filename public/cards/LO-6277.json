@@ -23,5 +23,48 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「大鳥香奈枝」１体を探し公開して手札に入れる。",
   "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「大鳥香奈枝」１体を探し公開して手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6277"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6277",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnterFromHand",
+      "triggerText": "このキャラが手札から登場したとき",
+      "originalLine": "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「大鳥香奈枝」1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "大鳥香奈枝"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「大鳥香奈枝」１体を探し公開して手札に入れる。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「大鳥香奈枝」1体を探し公開して手札に入れる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが手札から登場したとき、自分のゴミ箱または自分のデッキから「大鳥香奈枝」1体を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を登場できる。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1875"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1875",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を登場できる。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を登場できる。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を登場できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を登場できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

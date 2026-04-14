@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[誘発] 自分の効果で相手キャラが場を離れたとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
   "textKr": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[誘発] 自分の効果で相手キャラが場を離れたとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4883"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4883",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の効果で相手キャラが場を離れたとき、このキャラにAP+2・DP+2・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ボーナス:[自分のデッキを１枚回復できる。]]\n[誘発] 自分の効果で相手キャラが場を離れたとき、このキャラにＡＰ＋２・ＤＰ＋２・ＤＭＧ＋１する。",
+    "normalizedText": "[ボーナス:[自分のデッキを1枚回復できる。]]\n[誘発] 自分の効果で相手キャラが場を離れたとき、このキャラにAP+2・DP+2・DMG+1する。",
+    "lines": [
+      "[ボーナス:[自分のデッキを1枚回復できる。]]",
+      "[誘発] 自分の効果で相手キャラが場を離れたとき、このキャラにAP+2・DP+2・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[自分のデッキを1枚回復できる。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

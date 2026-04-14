@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「ティンクの女王」を配置している場合、自分にシールド＋１する。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「ティンクの女王」を配置している場合、自分にシールド＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4466"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4466",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「ティンクの女王」を配置している場合、自分にシールド＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、味方「ティンクの女王」を配置している場合、自分にシールド+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、味方「ティンクの女王」を配置している場合、自分にシールド+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、味方「ティンクの女王」を配置している場合、自分にシールド+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

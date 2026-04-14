@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＭＧ＋１する。",
   "textKr": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2803"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2803",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたとき、味方キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたとき、味方キャラ1体にDMG+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] 味方キャラがダウンしたとき、味方キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方キャラがダウンしたとき、味方キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

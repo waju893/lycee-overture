@@ -24,7 +24,22 @@
   "costRaw": "花花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "エネミー",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0179"
+  "text": "-",
+  "textKr": "-",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0179",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "-",
+    "normalizedText": "-",
+    "lines": [
+      "-"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "-",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

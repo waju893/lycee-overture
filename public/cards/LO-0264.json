@@ -25,5 +25,20 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]",
   "textKr": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0264"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0264",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]",
+    "normalizedText": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]",
+    "lines": [
+      "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[このキャラは[アグレッシブ]を得る。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

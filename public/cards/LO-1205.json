@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:バトル中に使用する。{コストが５点以上の味方キャラ１体}にバトル終了時までＤＭＧ＋１する。",
   "textKr": "[宣言] [0]:バトル中に使用する。{コストが５点以上の味方キャラ１体}にバトル終了時までＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1205"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1205",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用する。{コストが５点以上の味方キャラ１体}にバトル終了時までＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [0]:バトル中に使用する。{コストが5点以上の味方キャラ1体}にバトル終了時までDMG+1する。",
+    "lines": [
+      "[宣言] [0]:バトル中に使用する。{コストが5点以上の味方キャラ1体}にバトル終了時までDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:バトル中に使用する。{コストが5点以上の味方キャラ1体}にバトル終了時までDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

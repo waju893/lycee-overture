@@ -1,13 +1,42 @@
 {
+  "cardNo": "LO-1574",
+  "title": "解き放たれし封印",
+  "subName": "",
+  "name": "解き放たれし封印",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "ターン終了時まで、次に味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "ターン終了時まで、次に味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1574",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "ターン終了時まで、次に味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "ターン終了時まで、次に味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "ターン終了時まで、次に味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "ターン終了時まで、次に味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。構築制限:千年戦争アイギス([AIG])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

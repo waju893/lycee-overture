@@ -26,5 +26,25 @@
   "typeTagsRaw": "-",
   "text": "[オーダーステップ:[0]]\n[宣言] [D2]:バトル中に使用できない。このキャラを未行動にし、ＤＭＧ－２し、{空き味方フィールド}に移動する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [D2]:バトル中に使用できない。このキャラを未行動にし、ＤＭＧ－２し、{空き味方フィールド}に移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0666"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0666",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [D2]:バトル中に使用できない。このキャラを未行動にし、ＤＭＧ－２し、{空き味方フィールド}に移動する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [D2]:バトル中に使用できない。このキャラを未行動にし、DMG-2し、{空き味方フィールド}に移動する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [D2]:バトル中に使用できない。このキャラを未行動にし、DMG-2し、{空き味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D2]:バトル中に使用できない。このキャラを未行動にし、DMG-2し、{空き味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

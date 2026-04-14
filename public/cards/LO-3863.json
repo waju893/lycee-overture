@@ -25,5 +25,47 @@
   "typeTagsRaw": "",
   "text": "[宣言] [自分の「迷宮」置き場のカード２枚を破棄する]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「リリ」１体を探し無償で登場する。この能力は失われる。",
   "textKr": "[宣言] [自分の「迷宮」置き場のカード２枚を破棄する]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「リリ」１体を探し無償で登場する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3863"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3863",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [自分の「迷宮」置き場のカード2枚を破棄する]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「リリ」1体を探し無償で登場する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "迷宮",
+            "kind": "event"
+          },
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "event",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [自分の「迷宮」置き場のカード２枚を破棄する]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「リリ」１体を探し無償で登場する。この能力は失われる。",
+    "normalizedText": "[宣言] [自分の「迷宮」置き場のカード2枚を破棄する]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「リリ」1体を探し無償で登場する。この能力は失われる。",
+    "lines": [
+      "[宣言] [自分の「迷宮」置き場のカード2枚を破棄する]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「リリ」1体を探し無償で登場する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

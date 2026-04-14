@@ -26,5 +26,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[コスト] [花花]を発生する。このコストは「あんこうチーム」キャラの登場にのみ支払える。",
   "textKr": "[アシスト]\n[コスト] [花花]を発生する。このコストは「あんこうチーム」キャラの登場にのみ支払える。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0420"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0420",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[コスト] [花花]を発生する。このコストは「あんこうチーム」キャラの登場にのみ支払える。",
+    "normalizedText": "[アシスト]\n[コスト] [花花]を発生する。このコストは「あんこうチーム」キャラの登場にのみ支払える。",
+    "lines": [
+      "[アシスト]",
+      "[コスト] [花花]を発生する。このコストは「あんこうチーム」キャラの登場にのみ支払える。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[コスト] [花花]を発生する。このコストは「あんこうチーム」キャラの登場にのみ支払える。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

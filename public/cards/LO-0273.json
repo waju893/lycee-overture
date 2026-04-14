@@ -24,5 +24,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、このキャラを味方フィールドに移動できる。",
   "textKr": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、このキャラを味方フィールドに移動できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0273"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0273",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、このキャラを味方フィールドに移動できる。",
+    "normalizedText": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、このキャラを味方フィールドに移動できる。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] このキャラでサポートをしたとき、このキャラを味方フィールドに移動できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、このキャラを味方フィールドに移動できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

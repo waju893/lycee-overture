@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]\n[宣言] [0]:{[アグレッシブ]を持つ味方キャラ１体}にＤＰ＋１する。",
   "textKr": "[アグレッシブ]\n[宣言] [0]:{[アグレッシブ]を持つ味方キャラ１体}にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3647"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3647",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{[アグレッシブ]を持つ味方キャラ1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [0]:{[アグレッシブ]を持つ味方キャラ１体}にＤＰ＋１する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:{[アグレッシブ]を持つ味方キャラ1体}にDP+1する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [0]:{[アグレッシブ]を持つ味方キャラ1体}にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

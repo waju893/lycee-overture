@@ -27,5 +27,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[常時] このキャラはイベント・能力の対象に指定できない。",
   "textKr": "[オーダーステップ:[0]]\n[常時] このキャラはイベント・能力の対象に指定できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0526"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0526",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[常時] このキャラはイベント・能力の対象に指定できない。",
+    "normalizedText": "[オーダーステップ:[0]]\n[常時] このキャラはイベント・能力の対象に指定できない。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[常時] このキャラはイベント・能力の対象に指定できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラはイベント・能力の対象に指定できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

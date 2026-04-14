@@ -24,5 +24,25 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[宣言] [0]:{味方「島田愛里寿」１体}にＤＭＧ＋１する。",
   "textKr": "[アシスト]\n[宣言] [0]:{味方「島田愛里寿」１体}にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1089"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1089",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:{味方「島田愛里寿」１体}にＤＭＧ＋１する。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:{味方「島田愛里寿」1体}にDMG+1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:{味方「島田愛里寿」1体}にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{味方「島田愛里寿」1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

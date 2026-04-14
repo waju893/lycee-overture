@@ -27,5 +27,54 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:サブネームに「聖竜騎士団」を含む味方キャラ全てにＡＰ＋１する。",
   "textKr": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:サブネームに「聖竜騎士団」を含む味方キャラ全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3436"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3436",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。[宣言] [0]:サブネームに「聖竜騎士団」を含む味方キャラ全てにAP+1する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "クラリアス",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:サブネームに「聖竜騎士団」を含む味方キャラ全てにＡＰ＋１する。",
+    "normalizedText": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。[宣言] [0]:サブネームに「聖竜騎士団」を含む味方キャラ全てにAP+1する。",
+    "lines": [
+      "[ジャンプ:[月月月]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。[宣言] [0]:サブネームに「聖竜騎士団」を含む味方キャラ全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[月月月]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

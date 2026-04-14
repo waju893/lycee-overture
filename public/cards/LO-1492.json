@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1492",
+  "title": "輝弓士",
+  "subName": "マーガレット",
+  "name": "輝弓士 マーガレット",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,46 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、自分のデッキから[雪]キャラ１体を探し公開して手札に入れる。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "[誘発] このキャラが登場したとき、自分のデッキから[雪]キャラ１体を探し公開して手札に入れる。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1492",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから[雪]キャラ1体を探し公開して手札に入れる。構築制限:千年戦争アイギス([AIG])",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のデッキから[雪]キャラ１体を探し公開して手札に入れる。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のデッキから[雪]キャラ1体を探し公開して手札に入れる。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のデッキから[雪]キャラ1体を探し公開して手札に入れる。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

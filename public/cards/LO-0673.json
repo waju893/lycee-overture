@@ -25,5 +25,36 @@
   "typeTagsRaw": "-",
   "text": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [無無]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [無無]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0673"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0673",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無無]:このキャラにAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [無無]:このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[リカバリー:[相手のデッキを2枚破棄する。]]\n[宣言] [無無]:このキャラにAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "[宣言] [無無]:このキャラにAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "-",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[常時] 味方キャラ全ては相手の効果によってＤＭＧに能力値修正を得ない。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[常時] 味方キャラ全ては相手の効果によってＤＭＧに能力値修正を得ない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0648"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0648",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[常時] 味方キャラ全ては相手の効果によってＤＭＧに能力値修正を得ない。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[常時] 味方キャラ全ては相手の効果によってDMGに能力値修正を得ない。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[常時] 味方キャラ全ては相手の効果によってDMGに能力値修正を得ない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] 味方キャラ全ては相手の効果によってDMGに能力値修正を得ない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

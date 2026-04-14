@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＰ＋１する。",
   "textKr": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2171"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2171",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ１体}にＤＰ＋１する。",
+    "normalizedText": "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ1体}にDP+1する。",
+    "lines": [
+      "[宣言] [無]:{サブネームに「恋姫†礼舞」を含むキャラ1体}にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,11 +1,57 @@
 {
+  "cardNo": "LO-1276",
+  "title": "翼の少女",
+  "subName": "",
+  "name": "翼の少女",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自ターン中に使用する。バトル中に使用できない。自分のデッキから[雪]キャラ１体を探し登場する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "自ターン中に使用する。バトル中に使用できない。自分のデッキから[雪]キャラ１体を探し登場する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1276",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。バトル中に使用できない。自分のデッキから[雪]キャラ1体を探し登場する。構築制限:ビジュアルアーツ([VA])",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。バトル中に使用できない。自分のデッキから[雪]キャラ１体を探し登場する。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "自ターン中に使用する。バトル中に使用できない。自分のデッキから[雪]キャラ1体を探し登場する。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "自ターン中に使用する。バトル中に使用できない。自分のデッキから[雪]キャラ1体を探し登場する。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

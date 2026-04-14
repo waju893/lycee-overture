@@ -25,5 +25,57 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。",
   "textKr": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2891"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2891",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが3点以上の味方キャラ1体}にAP+1またはDP+1またはDMG+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが３点以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが3点以上の味方キャラ1体}にAP+1またはDP+1またはDMG+1する。",
+    "lines": [
+      "[サポーター:[無無]]",
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{コストが3点以上の味方キャラ1体}にAP+1またはDP+1またはDMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

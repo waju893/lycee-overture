@@ -27,5 +27,57 @@
   "typeTagsRaw": "",
   "text": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
   "textKr": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3493"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3493",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方『BALDR BRINGER』キャラ1体}にAP+1またはDP+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [0]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋１またはＤＰ＋１する。",
+    "normalizedText": "[ボーナス:[相手のデッキを1枚破棄する。]]\n[宣言] [0]:{味方『BALDR BRINGER』キャラ1体}にAP+1またはDP+1する。",
+    "lines": [
+      "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "[宣言] [0]:{味方『BALDR BRINGER』キャラ1体}にAP+1またはDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

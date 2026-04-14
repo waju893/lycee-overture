@@ -24,5 +24,25 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト]\n[誘発] 自分の[雪]イベントを使用したとき、自分のゴミ箱の「立華かなで」１体をデッキの下に置く。",
   "textKr": "[アシスト]\n[誘発] 自分の[雪]イベントを使用したとき、自分のゴミ箱の「立華かなで」１体をデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1294"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1294",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 自分の[雪]イベントを使用したとき、自分のゴミ箱の「立華かなで」１体をデッキの下に置く。",
+    "normalizedText": "[アシスト]\n[誘発] 自分の[雪]イベントを使用したとき、自分のゴミ箱の「立華かなで」1体をデッキの下に置く。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 自分の[雪]イベントを使用したとき、自分のゴミ箱の「立華かなで」1体をデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自分の[雪]イベントを使用したとき、自分のゴミ箱の「立華かなで」1体をデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -21,7 +21,22 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1423"
+  "text": "バトル中に使用できない。{自分のゴミ箱の[雪]キャラ１体}を行動済みで登場する。",
+  "textKr": "バトル中に使用できない。{自分のゴミ箱の[雪]キャラ１体}を行動済みで登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1423",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。{自分のゴミ箱の[雪]キャラ１体}を行動済みで登場する。",
+    "normalizedText": "バトル中に使用できない。{自分のゴミ箱の[雪]キャラ1体}を行動済みで登場する。",
+    "lines": [
+      "バトル中に使用できない。{自分のゴミ箱の[雪]キャラ1体}を行動済みで登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用できない。{自分のゴミ箱の[雪]キャラ1体}を行動済みで登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

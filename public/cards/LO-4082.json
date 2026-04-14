@@ -23,5 +23,25 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[宣言] [C1][日]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
   "textKr": "[チャージ:２]\n[宣言] [C1][日]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4082"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4082",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [C1][日]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+    "normalizedText": "[チャージ:2]\n[宣言] [C1][日]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [C1][日]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [C1][日]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

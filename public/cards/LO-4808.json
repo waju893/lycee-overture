@@ -23,7 +23,40 @@
   "costRaw": "月月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4808"
+  "text": "自分のゴミ箱または自分のデッキから[月]キャラ１体を探し{味方フィールド}に登場する。",
+  "textKr": "自分のゴミ箱または自分のデッキから[月]キャラ１体を探し{味方フィールド}に登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4808",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自分のゴミ箱または自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自分のゴミ箱または自分のデッキから[月]キャラ１体を探し{味方フィールド}に登場する。",
+    "normalizedText": "自分のゴミ箱または自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。",
+    "lines": [
+      "自分のゴミ箱または自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

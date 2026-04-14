@@ -26,5 +26,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[宙]]\n[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[オーダーチェンジ:[宙]]\n[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0514"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0514",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ1体にAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[宙]]\n[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ１体にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[オーダーチェンジ:[宙]]\n[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ1体にAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[オーダーチェンジ:[宙]]",
+      "[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ1体にAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[宙]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

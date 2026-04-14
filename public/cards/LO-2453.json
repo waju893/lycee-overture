@@ -35,5 +35,20 @@
   "typeTagsRaw": "",
   "text": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。",
   "textKr": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2453"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2453",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。",
+    "normalizedText": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。",
+    "lines": [
+      "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "※このカードは「ラッキーカードキャンペーン」の当たりカードです。キャンペーンの詳細は以下をご確認ください。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

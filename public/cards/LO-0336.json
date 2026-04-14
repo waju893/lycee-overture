@@ -26,5 +26,25 @@
   "typeTagsRaw": "聖グロリアーナ",
   "text": "[アシスト]\n[宣言] [月月][自分のゴミ箱の「格言」１枚を除外する。]:{キャラ１体}にＤＭＧ－２する。",
   "textKr": "[アシスト]\n[宣言] [月月][自分のゴミ箱の「格言」１枚を除外する。]:{キャラ１体}にＤＭＧ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0336"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0336",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [月月][自分のゴミ箱の「格言」１枚を除外する。]:{キャラ１体}にＤＭＧ－２する。",
+    "normalizedText": "[アシスト]\n[宣言] [月月][自分のゴミ箱の「格言」1枚を除外する。]:{キャラ1体}にDMG-2する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [月月][自分のゴミ箱の「格言」1枚を除外する。]:{キャラ1体}にDMG-2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [月月][自分のゴミ箱の「格言」1枚を除外する。]:{キャラ1体}にDMG-2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のＡＰまたは元のＤＰが４以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１し、そのキャラにＤＭＧ＋１する。",
   "textKr": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のＡＰまたは元のＤＰが４以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１し、そのキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3097"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3097",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のAPまたは元のDPが4以上の味方キャラ1体}にAP+1またはDP+1し、そのキャラにDMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のＡＰまたは元のＤＰが４以上の味方キャラ１体}にＡＰ＋１またはＤＰ＋１し、そのキャラにＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[無無]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のAPまたは元のDPが4以上の味方キャラ1体}にAP+1またはDP+1し、そのキャラにDMG+1する。",
+    "lines": [
+      "[サポーター:[無無]]",
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{元のAPまたは元のDPが4以上の味方キャラ1体}にAP+1またはDP+1し、そのキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

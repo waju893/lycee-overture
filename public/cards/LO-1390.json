@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1390",
+  "title": "星の開拓者",
+  "subName": "ライダー／フランシス・ドレイク",
+  "name": "星の開拓者 ライダー／フランシス・ドレイク",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,31 @@
   "dp": 3,
   "sp": 1,
   "dmg": 4,
-  "keyeffects": [
-    4
-  ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ１体}は[ガッツ:[宙宙宙宙]]を得る。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ１体}は[ガッツ:[宙宙宙宙]]を得る。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1390",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ１体}は[ガッツ:[宙宙宙宙]]を得る。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ1体}は[ガッツ:[宙宙宙宙]]を得る。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ1体}は[ガッツ:[宙宙宙宙]]を得る。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ1体}は[ガッツ:[宙宙宙宙]]を得る。構築制限:Fate/Grand Order([TM])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

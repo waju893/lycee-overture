@@ -23,5 +23,29 @@
   "typeTagsRaw": "",
   "text": "[誘発] 相手の効果で味方[AIG][花]キャラを破棄したとき、１枚ドローできる。\n※「王国軍の慰安旅行」は自分の場に１枚まで配置可能",
   "textKr": "[誘発] 相手の効果で味方[AIG][花]キャラを破棄したとき、１枚ドローできる。\n※「王国軍の慰安旅行」は自分の場に１枚まで配置可能",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3803"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3803",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 相手の効果で味方[AIG][花]キャラを破棄したとき、1枚ドローできる。※「王国軍の慰安旅行」は自分の場に1枚まで配置可能",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 相手の効果で味方[AIG][花]キャラを破棄したとき、１枚ドローできる。\n※「王国軍の慰安旅行」は自分の場に１枚まで配置可能",
+    "normalizedText": "[誘発] 相手の効果で味方[AIG][花]キャラを破棄したとき、1枚ドローできる。※「王国軍の慰安旅行」は自分の場に1枚まで配置可能",
+    "lines": [
+      "[誘発] 相手の効果で味方[AIG][花]キャラを破棄したとき、1枚ドローできる。※「王国軍の慰安旅行」は自分の場に1枚まで配置可能"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

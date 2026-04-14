@@ -26,5 +26,36 @@
   "typeTagsRaw": "神姫",
   "text": "[オーダーステップ:[0]]\n[宣言] [D3]:このキャラにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [D3]:このキャラにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0850"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0850",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D3]:このキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [D3]:このキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [D3]:このキャラにAP+2・DP+2する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [D3]:このキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [日日無]:このキャラの攻撃中に使用する。このキャラにバトル終了時までＡＰ＋３・ＤＭＧ＋３する。",
   "textKr": "[宣言] [日日無]:このキャラの攻撃中に使用する。このキャラにバトル終了時までＡＰ＋３・ＤＭＧ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0260"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0260",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日日無]:このキャラの攻撃中に使用する。このキャラにバトル終了時までAP+3・DMG+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [日日無]:このキャラの攻撃中に使用する。このキャラにバトル終了時までＡＰ＋３・ＤＭＧ＋３する。",
+    "normalizedText": "[宣言] [日日無]:このキャラの攻撃中に使用する。このキャラにバトル終了時までAP+3・DMG+3する。",
+    "lines": [
+      "[宣言] [日日無]:このキャラの攻撃中に使用する。このキャラにバトル終了時までAP+3・DMG+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

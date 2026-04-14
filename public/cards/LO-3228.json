@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方キャラ全てにＤＭＧ＋１する。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ全てにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3228"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3228",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ全てにＤＭＧ＋１する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ全てにDMG+1する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ全てにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ全てにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

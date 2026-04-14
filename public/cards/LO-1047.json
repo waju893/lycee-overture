@@ -24,5 +24,20 @@
   "typeTagsRaw": "継続",
   "text": "[誘発] このキャラで攻撃宣言をしたとき、このキャラを除く味方＜継続＞キャラ１体にＤＭＧ＋１する。",
   "textKr": "[誘発] このキャラで攻撃宣言をしたとき、このキャラを除く味方＜継続＞キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1047"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1047",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラで攻撃宣言をしたとき、このキャラを除く味方＜継続＞キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[誘発] このキャラで攻撃宣言をしたとき、このキャラを除く味方<継続>キャラ1体にDMG+1する。",
+    "lines": [
+      "[誘発] このキャラで攻撃宣言をしたとき、このキャラを除く味方<継続>キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラで攻撃宣言をしたとき、このキャラを除く味方<継続>キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[ステップ:[0]]\n[宣言] [0]:味方「アサシン／ステンノ」１体にＤＭＧ＋１する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:味方「アサシン／ステンノ」１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0050"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0050",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:味方「アサシン／ステンノ」１体にＤＭＧ＋１する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:味方「アサシン/ステンノ」1体にDMG+1する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:味方「アサシン/ステンノ」1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:味方「アサシン/ステンノ」1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -27,5 +27,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[ステップ:[月]]\n[誘発] このキャラが登場したとき、相手キャラ１体を行動済みにする。",
   "textKr": "[ステップ:[月]]\n[誘発] このキャラが登場したとき、相手キャラ１体を行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0038"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0038",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[月]]\n[誘発] このキャラが登場したとき、相手キャラ１体を行動済みにする。",
+    "normalizedText": "[ステップ:[月]]\n[誘発] このキャラが登場したとき、相手キャラ1体を行動済みにする。",
+    "lines": [
+      "[ステップ:[月]]",
+      "[誘発] このキャラが登場したとき、相手キャラ1体を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[月]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、相手キャラ1体を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

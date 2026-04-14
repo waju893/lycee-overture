@@ -24,5 +24,20 @@
   "typeTagsRaw": "-",
   "text": "[宣言] [月][このキャラを破棄する]:バトル中に使用できない。相手は相手の手札を２枚破棄する。",
   "textKr": "[宣言] [月][このキャラを破棄する]:バトル中に使用できない。相手は相手の手札を２枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0617"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0617",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [月][このキャラを破棄する]:バトル中に使用できない。相手は相手の手札を２枚破棄する。",
+    "normalizedText": "[宣言] [月][このキャラを破棄する]:バトル中に使用できない。相手は相手の手札を2枚破棄する。",
+    "lines": [
+      "[宣言] [月][このキャラを破棄する]:バトル中に使用できない。相手は相手の手札を2枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [月][このキャラを破棄する]:バトル中に使用できない。相手は相手の手札を2枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

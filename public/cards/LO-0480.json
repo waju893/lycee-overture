@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[0]]\n[誘発] 相手が能力を使用したとき、相手のデッキを１枚破棄する。",
   "textKr": "[オーダーチェンジ:[0]]\n[誘発] 相手が能力を使用したとき、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0480"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0480",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[誘発] 相手が能力を使用したとき、相手のデッキを１枚破棄する。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[誘発] 相手が能力を使用したとき、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[誘発] 相手が能力を使用したとき、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手が能力を使用したとき、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

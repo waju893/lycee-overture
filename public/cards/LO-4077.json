@@ -23,5 +23,43 @@
   "typeTagsRaw": "",
   "text": "[チャージ:１][ペナルティ:[１枚ドローする。]]\n[宣言] [C1]:{味方[日]キャラ１体}にＡＰ＋１する。",
   "textKr": "[チャージ:１][ペナルティ:[１枚ドローする。]]\n[宣言] [C1]:{味方[日]キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4077"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4077",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[チャージ:1][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1]:{味方[日]キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:１][ペナルティ:[１枚ドローする。]]\n[宣言] [C1]:{味方[日]キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[チャージ:1][ペナルティ:[1枚ドローする。]]\n[宣言] [C1]:{味方[日]キャラ1体}にAP+1する。",
+    "lines": [
+      "[チャージ:1][ペナルティ:[1枚ドローする。]]",
+      "[宣言] [C1]:{味方[日]キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

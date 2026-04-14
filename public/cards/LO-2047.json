@@ -24,5 +24,29 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラがＡＦに登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、１枚ドローする。",
   "textKr": "[誘発] このキャラがＡＦに登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2047"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2047",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] このキャラがAFに登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラがＡＦに登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、１枚ドローする。",
+    "normalizedText": "[誘発] このキャラがAFに登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、1枚ドローする。",
+    "lines": [
+      "[誘発] このキャラがAFに登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

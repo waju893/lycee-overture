@@ -26,5 +26,20 @@
   "typeTagsRaw": "神姫",
   "text": "[コスト] このキャラにサポートをしたバトル中に使用する。[雪花]を発生する。このコストはイベントの使用にのみ支払える。",
   "textKr": "[コスト] このキャラにサポートをしたバトル中に使用する。[雪花]を発生する。このコストはイベントの使用にのみ支払える。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0821"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0821",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] このキャラにサポートをしたバトル中に使用する。[雪花]を発生する。このコストはイベントの使用にのみ支払える。",
+    "normalizedText": "[コスト] このキャラにサポートをしたバトル中に使用する。[雪花]を発生する。このコストはイベントの使用にのみ支払える。",
+    "lines": [
+      "[コスト] このキャラにサポートをしたバトル中に使用する。[雪花]を発生する。このコストはイベントの使用にのみ支払える。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] このキャラにサポートをしたバトル中に使用する。[雪花]を発生する。このコストはイベントの使用にのみ支払える。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

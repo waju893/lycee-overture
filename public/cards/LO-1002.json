@@ -25,5 +25,20 @@
   "typeTagsRaw": "大洗女子",
   "text": "[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ１体}は[アグレッシブ]を得る。",
   "textKr": "[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ１体}は[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1002"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1002",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ１体}は[アグレッシブ]を得る。",
+    "normalizedText": "[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ1体}は[アグレッシブ]を得る。",
+    "lines": [
+      "[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ1体}は[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:相手ターン中に使用する。{味方[雪]キャラ1体}は[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

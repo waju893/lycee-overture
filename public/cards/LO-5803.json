@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[宣言] [0]:サブネームに「兄」または「妹」または「ブラコン」を含む味方キャラ全てにＤＰ＋１する。",
   "textKr": "[サポーター:[花]]\n[宣言] [0]:サブネームに「兄」または「妹」または「ブラコン」を含む味方キャラ全てにＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5803"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5803",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:サブネームに「兄」または「妹」または「ブラコン」を含む味方キャラ全てにDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[宣言] [0]:サブネームに「兄」または「妹」または「ブラコン」を含む味方キャラ全てにＤＰ＋１する。",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [0]:サブネームに「兄」または「妹」または「ブラコン」を含む味方キャラ全てにDP+1する。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[宣言] [0]:サブネームに「兄」または「妹」または「ブラコン」を含む味方キャラ全てにDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

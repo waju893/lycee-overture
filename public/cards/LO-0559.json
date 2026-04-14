@@ -21,5 +21,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが移動したとき、このキャラを行動済みにする。",
   "textKr": "[誘発] このキャラが移動したとき、このキャラを行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0559"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0559",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが移動したとき、このキャラを行動済みにする。",
+    "normalizedText": "[誘発] このキャラが移動したとき、このキャラを行動済みにする。",
+    "lines": [
+      "[誘発] このキャラが移動したとき、このキャラを行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが移動したとき、このキャラを行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

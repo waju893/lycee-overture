@@ -22,7 +22,22 @@
   "costRaw": "宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "黒森峰",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0372"
+  "text": "-",
+  "textKr": "-",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0372",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "-",
+    "normalizedText": "-",
+    "lines": [
+      "-"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "-",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

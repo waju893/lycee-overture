@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サイドステップ:[日]]\n[宣言] [0]:{コストが３点以上の味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
   "textKr": "[サイドステップ:[日]]\n[宣言] [0]:{コストが３点以上の味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3934"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3934",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{コストが3点以上の味方[日]キャラ1体}にAP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[日]]\n[宣言] [0]:{コストが３点以上の味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+    "normalizedText": "[サイドステップ:[日]]\n[宣言] [0]:{コストが3点以上の味方[日]キャラ1体}にAP+3する。この能力は失われる。",
+    "lines": [
+      "[サイドステップ:[日]]",
+      "[宣言] [0]:{コストが3点以上の味方[日]キャラ1体}にAP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[日]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

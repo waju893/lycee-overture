@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象のキャラにＤＭＧ＋１する。",
   "textKr": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象のキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1320"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1320",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象のキャラにＤＭＧ＋１する。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象のキャラにDMG+1する。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象のキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にできる。しないとき、対象のキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

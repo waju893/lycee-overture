@@ -24,5 +24,36 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [D2]:このキャラにＡＰ＋３・ＤＰー３する。",
   "textKr": "[エンゲージ]\n[宣言] [D2]:このキャラにＡＰ＋３・ＤＰー３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0268"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0268",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D2]:このキャラにAP+3・DPー3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [D2]:このキャラにＡＰ＋３・ＤＰー３する。",
+    "normalizedText": "[エンゲージ]\n[宣言] [D2]:このキャラにAP+3・DPー3する。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [D2]:このキャラにAP+3・DPー3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

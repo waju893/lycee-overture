@@ -26,5 +26,36 @@
   "typeTagsRaw": "サンダース",
   "text": "[オーダーステップ:[0]]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0371"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0371",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラを自分の能力の対象に指定したとき、このキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラにAP+2・DP+2する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] このキャラを自分の能力の対象に指定したとき、このキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

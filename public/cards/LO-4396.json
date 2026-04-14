@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [花]:味方[NEX]キャラ全てにＳＰ＋１する。",
   "textKr": "[宣言] [花]:味方[NEX]キャラ全てにＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4396"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4396",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [花]:味方[NEX]キャラ全てにSP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [花]:味方[NEX]キャラ全てにＳＰ＋１する。",
+    "normalizedText": "[宣言] [花]:味方[NEX]キャラ全てにSP+1する。",
+    "lines": [
+      "[宣言] [花]:味方[NEX]キャラ全てにSP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

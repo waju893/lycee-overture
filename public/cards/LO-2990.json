@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪]:このキャラにＤＰ＋２する。",
   "textKr": "[宣言] [雪]:このキャラにＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2990"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2990",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [雪]:このキャラにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [雪]:このキャラにＤＰ＋２する。",
+    "normalizedText": "[宣言] [雪]:このキャラにDP+2する。",
+    "lines": [
+      "[宣言] [雪]:このキャラにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

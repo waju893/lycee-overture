@@ -24,5 +24,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:{味方[花]キャラ１体}にＳＰ＋１する。\n[宣言] [0]:バトル中に使用する。バトル終了時まで、{ＳＰが４以上の味方[花]キャラ１体}にＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:{味方[花]キャラ１体}にＳＰ＋１する。\n[宣言] [0]:バトル中に使用する。バトル終了時まで、{ＳＰが４以上の味方[花]キャラ１体}にＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2488"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2488",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方[花]キャラ1体}にSP+1する。[宣言] [0]:バトル中に使用する。バトル終了時まで、{SPが4以上の味方[花]キャラ1体}にDP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:{味方[花]キャラ１体}にＳＰ＋１する。\n[宣言] [0]:バトル中に使用する。バトル終了時まで、{ＳＰが４以上の味方[花]キャラ１体}にＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:{味方[花]キャラ1体}にSP+1する。[宣言] [0]:バトル中に使用する。バトル終了時まで、{SPが4以上の味方[花]キャラ1体}にDP+1・DMG+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:{味方[花]キャラ1体}にSP+1する。[宣言] [0]:バトル中に使用する。バトル終了時まで、{SPが4以上の味方[花]キャラ1体}にDP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

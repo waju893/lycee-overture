@@ -23,7 +23,32 @@
   "costRaw": "宙宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4809"
+  "text": "下にカードが置かれている味方『あいりすミスティリア！』[宙]キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "下にカードが置かれている味方『あいりすミスティリア！』[宙]キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4809",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "下にカードが置かれている味方『あいりすミスティリア!』[宙]キャラ全てにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "下にカードが置かれている味方『あいりすミスティリア！』[宙]キャラ全てにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "下にカードが置かれている味方『あいりすミスティリア!』[宙]キャラ全てにAP+2・DP+2する。",
+    "lines": [
+      "下にカードが置かれている味方『あいりすミスティリア!』[宙]キャラ全てにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -24,7 +24,22 @@
   "costRaw": "雪雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0546"
+  "text": "相手は相手キャラ１体を指定する。自分はそのキャラを除く相手キャラ１体を破棄する。",
+  "textKr": "相手は相手キャラ１体を指定する。自分はそのキャラを除く相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0546",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手は相手キャラ１体を指定する。自分はそのキャラを除く相手キャラ１体を破棄する。",
+    "normalizedText": "相手は相手キャラ1体を指定する。自分はそのキャラを除く相手キャラ1体を破棄する。",
+    "lines": [
+      "相手は相手キャラ1体を指定する。自分はそのキャラを除く相手キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手は相手キャラ1体を指定する。自分はそのキャラを除く相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

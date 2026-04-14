@@ -26,5 +26,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[コスト] 自分のデッキを１枚破棄する。このキャラを行動済みにする。行動済みにしたとき、[月月]を発生する。",
   "textKr": "[コスト] 自分のデッキを１枚破棄する。このキャラを行動済みにする。行動済みにしたとき、[月月]を発生する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0456"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0456",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] 自分のデッキを１枚破棄する。このキャラを行動済みにする。行動済みにしたとき、[月月]を発生する。",
+    "normalizedText": "[コスト] 自分のデッキを1枚破棄する。このキャラを行動済みにする。行動済みにしたとき、[月月]を発生する。",
+    "lines": [
+      "[コスト] 自分のデッキを1枚破棄する。このキャラを行動済みにする。行動済みにしたとき、[月月]を発生する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] 自分のデッキを1枚破棄する。このキャラを行動済みにする。行動済みにしたとき、[月月]を発生する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

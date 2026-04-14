@@ -24,5 +24,31 @@
   "typeTagsRaw": "大洗女子",
   "text": "[誘発] 相手ターン開始時、このキャラにＤＰ＋１・ＳＰ－２する。",
   "textKr": "[誘発] 相手ターン開始時、このキャラにＤＰ＋１・ＳＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0348"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0348",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] 相手ターン開始時、このキャラにDP+1・SP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 相手ターン開始時、このキャラにＤＰ＋１・ＳＰ－２する。",
+    "normalizedText": "[誘発] 相手ターン開始時、このキャラにDP+1・SP-2する。",
+    "lines": [
+      "[誘発] 相手ターン開始時、このキャラにDP+1・SP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

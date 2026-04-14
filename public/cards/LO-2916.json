@@ -21,7 +21,22 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2916"
+  "text": "{コストが４点以下のアイテム１枚}を破棄する。",
+  "textKr": "{コストが４点以下のアイテム１枚}を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2916",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{コストが４点以下のアイテム１枚}を破棄する。",
+    "normalizedText": "{コストが4点以下のアイテム1枚}を破棄する。",
+    "lines": [
+      "{コストが4点以下のアイテム1枚}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{コストが4点以下のアイテム1枚}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

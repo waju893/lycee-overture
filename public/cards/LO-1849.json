@@ -1,19 +1,56 @@
 {
+  "cardNo": "LO-1849",
+  "title": "突然の抱擁",
+  "subName": "",
+  "name": "突然の抱擁",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 1,
-  "useTarget": 0
+  "costRaw": "-",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自分の「経験値」置き場のカード２枚を破棄する。破棄したとき、自分のゴミ箱の＜王立図書館＞キャラ１体を手札に入れる。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "自分の「経験値」置き場のカード２枚を破棄する。破棄したとき、自分のゴミ箱の＜王立図書館＞キャラ１体を手札に入れる。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1849",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自分の「経験値」置き場のカード2枚を破棄する。破棄したとき、自分のゴミ箱の<王立図書館>キャラ1体を手札に入れる。構築制限:アクアプラス([AQP])",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自分の「経験値」置き場のカード２枚を破棄する。破棄したとき、自分のゴミ箱の＜王立図書館＞キャラ１体を手札に入れる。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "自分の「経験値」置き場のカード2枚を破棄する。破棄したとき、自分のゴミ箱の<王立図書館>キャラ1体を手札に入れる。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "自分の「経験値」置き場のカード2枚を破棄する。破棄したとき、自分のゴミ箱の<王立図書館>キャラ1体を手札に入れる。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

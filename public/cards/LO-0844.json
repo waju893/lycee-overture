@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0844",
+  "title": "アサルトシールド",
+  "subName": "フレイヤ",
+  "name": "アサルトシールド フレイヤ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,5 +19,37 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0844",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1・DMG+1する。構築制限:神姫PROJECT([KHP])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1・DMG+1する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1・DMG+1する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

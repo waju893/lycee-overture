@@ -21,7 +21,53 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5774"
+  "text": "コストが１点以上の手札宣言能力を持つ味方キャラが２体以上の場合、{相手キャラ１体}にＡＰ－３またはＤＰ－３またはＤＭＧ－３する。",
+  "textKr": "コストが１点以上の手札宣言能力を持つ味方キャラが２体以上の場合、{相手キャラ１体}にＡＰ－３またはＤＰ－３またはＤＭＧ－３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5774",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "コストが1点以上の手札宣言能力を持つ味方キャラが2体以上の場合、{相手キャラ1体}にAP-3またはDP-3またはDMG-3する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "コストが１点以上の手札宣言能力を持つ味方キャラが２体以上の場合、{相手キャラ１体}にＡＰ－３またはＤＰ－３またはＤＭＧ－３する。",
+    "normalizedText": "コストが1点以上の手札宣言能力を持つ味方キャラが2体以上の場合、{相手キャラ1体}にAP-3またはDP-3またはDMG-3する。",
+    "lines": [
+      "コストが1点以上の手札宣言能力を持つ味方キャラが2体以上の場合、{相手キャラ1体}にAP-3またはDP-3またはDMG-3する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

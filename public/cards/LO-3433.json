@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3433",
+  "title": "異世界に迷い込んでしまった少年",
+  "subName": "長井 永羽",
+  "name": "異世界に迷い込んでしまった少年 長井 永羽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,60 @@
   "dp": 3,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:「クラリアス」を装備している味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n構築制限:[GIG]",
+  "textKr": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:「クラリアス」を装備している味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n構築制限:[GIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3433",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。[宣言] [0]:「クラリアス」を装備している味方キャラ全てにAP+1・DP+1する。構築制限:[GIG]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "クラリアス",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。\n[宣言] [0]:「クラリアス」を装備している味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n構築制限:[GIG]",
+    "normalizedText": "[ジャンプ:[月月月]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。[宣言] [0]:「クラリアス」を装備している味方キャラ全てにAP+1・DP+1する。構築制限:[GIG]",
+    "lines": [
+      "[ジャンプ:[月月月]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。[宣言] [0]:「クラリアス」を装備している味方キャラ全てにAP+1・DP+1する。構築制限:[GIG]"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[月月月]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

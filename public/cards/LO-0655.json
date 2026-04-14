@@ -26,5 +26,37 @@
   "typeTagsRaw": "-",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:{味方キャラ１体}を行動済みにする。行動済みにしたとき、そのキャラに自ターン終了時までＤＰ＋２する。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:{味方キャラ１体}を行動済みにする。行動済みにしたとき、そのキャラに自ターン終了時までＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0655"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0655",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "[宣言] [0]:{味方キャラ1体}を行動済みにする。行動済みにしたとき、そのキャラに自ターン終了時までDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[宣言] [0]:{味方キャラ１体}を行動済みにする。行動済みにしたとき、そのキャラに自ターン終了時までＤＰ＋２する。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[宣言] [0]:{味方キャラ1体}を行動済みにする。行動済みにしたとき、そのキャラに自ターン終了時までDP+2する。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[宣言] [0]:{味方キャラ1体}を行動済みにする。行動済みにしたとき、そのキャラに自ターン終了時までDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。{アイテムを持たない相手キャラ１体}を破棄する。",
   "textKr": "[オーダーステップ:[0]]\n[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。{アイテムを持たない相手キャラ１体}を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4995"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4995",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。{アイテムを持たない相手キャラ１体}を破棄する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。{アイテムを持たない相手キャラ1体}を破棄する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。{アイテムを持たない相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[手札宣言] [雪雪雪雪]:自ターン中に使用する。バトル中に使用できない。{アイテムを持たない相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

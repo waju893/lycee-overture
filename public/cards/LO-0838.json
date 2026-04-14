@@ -1,14 +1,59 @@
 {
+  "cardNo": "LO-0838",
+  "title": "ティータイム",
+  "subName": "",
+  "name": "ティータイム",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] 味方キャラ全てにＤＰ＋１する。\n※「ティータイム」は自分の場に１枚まで配置可能\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[常時] 味方キャラ全てにＤＰ＋１する。\n※「ティータイム」は自分の場に１枚まで配置可能\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0838",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] 味方キャラ全てにDP+1する。※「ティータイム」は自分の場に1枚まで配置可能",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] 味方キャラ全てにＤＰ＋１する。\n※「ティータイム」は自分の場に１枚まで配置可能\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[常時] 味方キャラ全てにDP+1する。※「ティータイム」は自分の場に1枚まで配置可能\n構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[常時] 味方キャラ全てにDP+1する。※「ティータイム」は自分の場に1枚まで配置可能",
+      "構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

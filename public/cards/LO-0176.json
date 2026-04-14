@@ -23,5 +23,36 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0176"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0176",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ全てにAP+1・DP+1する。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ全てにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

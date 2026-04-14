@@ -24,5 +24,30 @@
   "typeTagsRaw": "-",
   "text": "[宣言] [D1]:味方キャラの攻撃中に使用する。バトル参加キャラ全てにＡＰ＋１する。",
   "textKr": "[宣言] [D1]:味方キャラの攻撃中に使用する。バトル参加キャラ全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0636"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0636",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:味方キャラの攻撃中に使用する。バトル参加キャラ全てにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:味方キャラの攻撃中に使用する。バトル参加キャラ全てにＡＰ＋１する。",
+    "normalizedText": "[宣言] [D1]:味方キャラの攻撃中に使用する。バトル参加キャラ全てにAP+1する。",
+    "lines": [
+      "[宣言] [D1]:味方キャラの攻撃中に使用する。バトル参加キャラ全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

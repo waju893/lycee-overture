@@ -26,5 +26,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ１体にＤＭＧ－１する。",
   "textKr": "[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ１体にＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0489"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0489",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ１体にＤＭＧ－１する。",
+    "normalizedText": "[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ1体にDMG-1する。",
+    "lines": [
+      "[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ1体にDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ1体にDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[サイドステップ:[0]]\n[常時] このキャラは相手の効果によって能力値修正を得ない。",
   "textKr": "[サイドステップ:[0]]\n[常時] このキャラは相手の効果によって能力値修正を得ない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1721"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1721",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[常時] このキャラは相手の効果によって能力値修正を得ない。",
+    "normalizedText": "[サイドステップ:[0]]\n[常時] このキャラは相手の効果によって能力値修正を得ない。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[常時] このキャラは相手の効果によって能力値修正を得ない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラは相手の効果によって能力値修正を得ない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

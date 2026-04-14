@@ -23,5 +23,57 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
   "textKr": "[ジャンプ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3387"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3387",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ1体にAP-1またはDP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ1体にAP-1またはDP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] 自分の効果で味方キャラが登場したとき、相手キャラ1体にAP-1またはDP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

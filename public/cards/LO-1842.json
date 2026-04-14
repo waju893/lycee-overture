@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-1842",
+  "title": "ゴッデス・オブ・卑怯",
+  "subName": "まーりゃん先輩",
+  "name": "ゴッデス・オブ・卑怯 まーりゃん先輩",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower",
     "sun"
   ],
-  "attributesList": [
-    "flower",
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -19,11 +21,42 @@
   "dp": 2,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    6
+  "ex": 2,
+  "costRaw": "花花日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[アグレッシブ]\n[宣言] [無]:{味方「ToHeart2」キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[アグレッシブ]\n[宣言] [無]:{味方「ToHeart2」キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1842",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:{味方「ToHeart2」キャラ1体}にAP+1・DP+1する。構築制限:アクアプラス([AQP])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    6
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [無]:{味方「ToHeart2」キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[アグレッシブ]\n[宣言] [無]:{味方「ToHeart2」キャラ1体}にAP+1・DP+1する。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [無]:{味方「ToHeart2」キャラ1体}にAP+1・DP+1する。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

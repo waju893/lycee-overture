@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5766",
+  "title": "光を取り戻した青年",
+  "subName": "弘瀬 琢磨",
+  "name": "光を取り戻した青年 弘瀬 琢磨",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,60 @@
   "dp": 2,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「約束の丘と大事な宝物」１枚を探し無償で配置できる。自分のゴミ箱のカード２枚をそのエリアの下に置ける。１枚ドローできる。\n構築制限:【[QM]】【[日]】",
+  "textKr": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「約束の丘と大事な宝物」１枚を探し無償で配置できる。自分のゴミ箱のカード２枚をそのエリアの下に置ける。１枚ドローできる。\n構築制限:【[QM]】【[日]】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5766",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「約束の丘と大事な宝物」1枚を探し無償で配置できる。自分のゴミ箱のカード2枚をそのエリアの下に置ける。1枚ドローできる。構築制限:【[QM]】【[日]】",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "約束の丘と大事な宝物",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「約束の丘と大事な宝物」１枚を探し無償で配置できる。自分のゴミ箱のカード２枚をそのエリアの下に置ける。１枚ドローできる。\n構築制限:【[QM]】【[日]】",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「約束の丘と大事な宝物」1枚を探し無償で配置できる。自分のゴミ箱のカード2枚をそのエリアの下に置ける。1枚ドローできる。構築制限:【[QM]】【[日]】",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「約束の丘と大事な宝物」1枚を探し無償で配置できる。自分のゴミ箱のカード2枚をそのエリアの下に置ける。1枚ドローできる。構築制限:【[QM]】【[日]】"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

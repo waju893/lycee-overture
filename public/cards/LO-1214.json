@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚をデッキの下に置く。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚をデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1214"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1214",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚をデッキの下に置く。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム1枚をデッキの下に置く。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム1枚をデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム1枚をデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

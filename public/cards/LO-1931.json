@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [月]:このキャラを手札に入れる。",
   "textKr": "[宣言] [月]:このキャラを手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1931"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1931",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [月]:このキャラを手札に入れる。",
+    "normalizedText": "[宣言] [月]:このキャラを手札に入れる。",
+    "lines": [
+      "[宣言] [月]:このキャラを手札に入れる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [月]:このキャラを手札に入れる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

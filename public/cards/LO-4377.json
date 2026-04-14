@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。\n※「インタビュー」は自分の場に１枚まで配置可能",
   "textKr": "[誘発] 味方キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。\n※「インタビュー」は自分の場に１枚まで配置可能",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4377"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4377",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにAP+1・DP+1する。※「インタビュー」は自分の場に1枚まで配置可能",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。\n※「インタビュー」は自分の場に１枚まで配置可能",
+    "normalizedText": "[誘発] 味方キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにAP+1・DP+1する。※「インタビュー」は自分の場に1枚まで配置可能",
+    "lines": [
+      "[誘発] 味方キャラを対象に自分のイベント・手札宣言能力を使用したとき、そのキャラにAP+1・DP+1する。※「インタビュー」は自分の場に1枚まで配置可能"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

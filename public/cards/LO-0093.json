@@ -24,7 +24,32 @@
   "costRaw": "宙宙宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0093"
+  "text": "味方キャラ１体にＡＰ＋４・ＤＰ＋４する。",
+  "textKr": "味方キャラ１体にＡＰ＋４・ＤＰ＋４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0093",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方キャラ1体にAP+4・DP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方キャラ１体にＡＰ＋４・ＤＰ＋４する。",
+    "normalizedText": "味方キャラ1体にAP+4・DP+4する。",
+    "lines": [
+      "味方キャラ1体にAP+4・DP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

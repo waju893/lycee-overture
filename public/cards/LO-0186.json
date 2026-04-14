@@ -25,5 +25,36 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、対象の＜魔剣＞キャラ１体にＤＰ＋１する。",
   "textKr": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、対象の＜魔剣＞キャラ１体にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0186"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0186",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、対象の<魔剣>キャラ1体にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、対象の＜魔剣＞キャラ１体にＤＰ＋１する。",
+    "normalizedText": "[エンゲージ]\n[誘発] このキャラでサポートをしたとき、対象の<魔剣>キャラ1体にDP+1する。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] このキャラでサポートをしたとき、対象の<魔剣>キャラ1体にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

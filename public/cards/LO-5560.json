@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
   "textKr": "[サポーター:[花]]\n[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5560"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5560",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにAP+1・DP+1・SP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにＡＰ＋１・ＤＰ＋１・ＳＰ＋１する。",
+    "normalizedText": "[サポーター:[花]]\n[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにAP+1・DP+1・SP+1する。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[常時] このキャラを除く味方『Flyable Heart シリーズ』キャラ全てにAP+1・DP+1・SP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

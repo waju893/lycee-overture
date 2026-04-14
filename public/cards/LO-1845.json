@@ -21,7 +21,22 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1845"
+  "text": "ターン終了時まで、{味方キャラ１体}の攻撃で相手は可能なら防御キャラを指定する。",
+  "textKr": "ターン終了時まで、{味方キャラ１体}の攻撃で相手は可能なら防御キャラを指定する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1845",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "ターン終了時まで、{味方キャラ１体}の攻撃で相手は可能なら防御キャラを指定する。",
+    "normalizedText": "ターン終了時まで、{味方キャラ1体}の攻撃で相手は可能なら防御キャラを指定する。",
+    "lines": [
+      "ターン終了時まで、{味方キャラ1体}の攻撃で相手は可能なら防御キャラを指定する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "ターン終了時まで、{味方キャラ1体}の攻撃で相手は可能なら防御キャラを指定する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

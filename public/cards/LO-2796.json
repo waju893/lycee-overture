@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2796",
+  "title": "ネコのおねーちゃん",
+  "subName": "紬 ヴェンダース",
+  "name": "ネコのおねーちゃん 紬 ヴェンダース",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,63 @@
   "dp": 2,
   "sp": 3,
   "dmg": 0,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[誘発] 味方キャラがダウンしたとき、味方ＡＦキャラ１体にＡＰ＋２または味方ＤＦキャラ１体にＤＰ＋２する。\n[宣言] [花]:相手ターン中に使用する。バトル中に使用できない。{コストが２点以下の味方キャラ１体}を未行動にする。\n構築制限:[VA]かつ[花]",
+  "textKr": "[サポーター:[花]]\n[誘発] 味方キャラがダウンしたとき、味方ＡＦキャラ１体にＡＰ＋２または味方ＤＦキャラ１体にＤＰ＋２する。\n[宣言] [花]:相手ターン中に使用する。バトル中に使用できない。{コストが２点以下の味方キャラ１体}を未行動にする。\n構築制限:[VA]かつ[花]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2796",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方キャラがダウンしたとき、味方AFキャラ1体にAP+2または味方DFキャラ1体にDP+2する。[宣言] [花]:相手ターン中に使用する。バトル中に使用できない。{コストが2点以下の味方キャラ1体}を未行動にする。構築制限:[VA]かつ[花]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[誘発] 味方キャラがダウンしたとき、味方ＡＦキャラ１体にＡＰ＋２または味方ＤＦキャラ１体にＤＰ＋２する。\n[宣言] [花]:相手ターン中に使用する。バトル中に使用できない。{コストが２点以下の味方キャラ１体}を未行動にする。\n構築制限:[VA]かつ[花]",
+    "normalizedText": "[サポーター:[花]]\n[誘発] 味方キャラがダウンしたとき、味方AFキャラ1体にAP+2または味方DFキャラ1体にDP+2する。[宣言] [花]:相手ターン中に使用する。バトル中に使用できない。{コストが2点以下の味方キャラ1体}を未行動にする。構築制限:[VA]かつ[花]",
+    "lines": [
+      "[サポーター:[花]]",
+      "[誘発] 味方キャラがダウンしたとき、味方AFキャラ1体にAP+2または味方DFキャラ1体にDP+2する。[宣言] [花]:相手ターン中に使用する。バトル中に使用できない。{コストが2点以下の味方キャラ1体}を未行動にする。構築制限:[VA]かつ[花]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

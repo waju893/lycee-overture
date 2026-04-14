@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:{アイテムを装備している味方キャラ１体}にＤＰ＋１する。そのキャラが「花之宮瑞穂」の場合、そのキャラにＤＰ＋１する。",
   "textKr": "[宣言] [0]:{アイテムを装備している味方キャラ１体}にＤＰ＋１する。そのキャラが「花之宮瑞穂」の場合、そのキャラにＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3307"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3307",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{アイテムを装備している味方キャラ1体}にDP+1する。そのキャラが「花之宮瑞穂」の場合、そのキャラにDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{アイテムを装備している味方キャラ１体}にＤＰ＋１する。そのキャラが「花之宮瑞穂」の場合、そのキャラにＤＰ＋１する。",
+    "normalizedText": "[宣言] [0]:{アイテムを装備している味方キャラ1体}にDP+1する。そのキャラが「花之宮瑞穂」の場合、そのキャラにDP+1する。",
+    "lines": [
+      "[宣言] [0]:{アイテムを装備している味方キャラ1体}にDP+1する。そのキャラが「花之宮瑞穂」の場合、そのキャラにDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

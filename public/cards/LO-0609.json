@@ -27,5 +27,20 @@
   "typeTagsRaw": "-",
   "text": "[誘発] このキャラが破棄されたとき、ゴミ箱のこのキャラを手札に入れる。",
   "textKr": "[誘発] このキャラが破棄されたとき、ゴミ箱のこのキャラを手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0609"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0609",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが破棄されたとき、ゴミ箱のこのキャラを手札に入れる。",
+    "normalizedText": "[誘発] このキャラが破棄されたとき、ゴミ箱のこのキャラを手札に入れる。",
+    "lines": [
+      "[誘発] このキャラが破棄されたとき、ゴミ箱のこのキャラを手札に入れる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが破棄されたとき、ゴミ箱のこのキャラを手札に入れる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

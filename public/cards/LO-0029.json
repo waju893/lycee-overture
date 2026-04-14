@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[サイドステップ:[月]]\n[宣言] [T月月月]:相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
   "textKr": "[サイドステップ:[月]]\n[宣言] [T月月月]:相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0029"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0029",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[月]]\n[宣言] [T月月月]:相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[サイドステップ:[月]]\n[宣言] [T月月月]:相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[サイドステップ:[月]]",
+      "[宣言] [T月月月]:相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[月]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T月月月]:相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

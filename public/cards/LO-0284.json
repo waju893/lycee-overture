@@ -26,5 +26,20 @@
   "typeTagsRaw": "大洗女子",
   "text": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラの同列の味方フィールドに移動できる。",
   "textKr": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラの同列の味方フィールドに移動できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0284"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0284",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラの同列の味方フィールドに移動できる。",
+    "normalizedText": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラの同列の味方フィールドに移動できる。",
+    "lines": [
+      "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラの同列の味方フィールドに移動できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラの同列の味方フィールドに移動できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

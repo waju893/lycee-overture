@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、１枚ドローする。自分の手札を１枚デッキの上に置く。",
   "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。自分の手札を１枚デッキの上に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0949"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0949",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。自分の手札を1枚デッキの上に置く。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、１枚ドローする。自分の手札を１枚デッキの上に置く。",
+    "normalizedText": "[誘発] このキャラが登場したとき、1枚ドローする。自分の手札を1枚デッキの上に置く。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、1枚ドローする。自分の手札を1枚デッキの上に置く。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

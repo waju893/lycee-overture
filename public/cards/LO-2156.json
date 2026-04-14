@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [無]:{味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [無]:{味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2156"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2156",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:{味方キャラ1体}にAP+2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [無]:{味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [無]:{味方キャラ1体}にAP+2する。この能力は失われる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [無]:{味方キャラ1体}にAP+2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1268",
+  "title": "面白いこと大好きな元寮長",
+  "subName": "あーちゃん先輩",
+  "name": "面白いこと大好きな元寮長 あーちゃん先輩",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,31 @@
   "dp": 2,
   "sp": 3,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[日]キャラ１体}をデッキの下に置く。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[日]キャラ１体}をデッキの下に置く。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1268",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[日]キャラ１体}をデッキの下に置く。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[日]キャラ1体}をデッキの下に置く。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[日]キャラ1体}をデッキの下に置く。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[日]キャラ1体}をデッキの下に置く。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

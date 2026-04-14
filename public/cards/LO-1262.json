@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラのコストが２点以下の場合、このキャラにＡＰ＋２する。",
   "textKr": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラのコストが２点以下の場合、このキャラにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1262"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1262",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラのコストが2点以下の場合、このキャラにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラのコストが２点以下の場合、このキャラにＡＰ＋２する。",
+    "normalizedText": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラのコストが2点以下の場合、このキャラにAP+2する。",
+    "lines": [
+      "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラのコストが2点以下の場合、このキャラにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

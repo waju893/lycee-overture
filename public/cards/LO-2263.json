@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2263",
+  "title": "会議は踊る",
+  "subName": "シェーンブルン宮殿",
+  "name": "会議は踊る シェーンブルン宮殿",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,43 @@
   "dp": 2,
   "sp": 4,
   "dmg": 0,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－●－－●－",
+  "typeTagsRaw": "城娘",
+  "text": "[サポーター:[花]]\n[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード１枚を置く。２枚以上置かれている場合、このキャラの下のカード全てを破棄し、味方[花]キャラ全てにＤＰ＋１する。\n構築制限:[OSP]",
+  "textKr": "[サポーター:[花]]\n[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード１枚を置く。２枚以上置かれている場合、このキャラの下のカード全てを破棄し、味方[花]キャラ全てにＤＰ＋１する。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2263",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "自ターン開始時",
+      "originalLine": "[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード1枚を置く。2枚以上置かれている場合、このキャラの下のカード全てを破棄し、味方[花]キャラ全てにDP+1する。構築制限:[OSP]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード１枚を置く。２枚以上置かれている場合、このキャラの下のカード全てを破棄し、味方[花]キャラ全てにＤＰ＋１する。\n構築制限:[OSP]",
+    "normalizedText": "[サポーター:[花]]\n[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード1枚を置く。2枚以上置かれている場合、このキャラの下のカード全てを破棄し、味方[花]キャラ全てにDP+1する。構築制限:[OSP]",
+    "lines": [
+      "[サポーター:[花]]",
+      "[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード1枚を置く。2枚以上置かれている場合、このキャラの下のカード全てを破棄し、味方[花]キャラ全てにDP+1する。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方ＡＦキャラが登場している場合、１枚ドローする。コストが３点以上の味方ＡＦキャラ１体にＤＭＧ＋１する。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方ＡＦキャラが登場している場合、１枚ドローする。コストが３点以上の味方ＡＦキャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4382"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4382",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、コストが3点以上の味方AFキャラが登場している場合、1枚ドローする。コストが3点以上の味方AFキャラ1体にDMG+1する。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが３点以上の味方ＡＦキャラが登場している場合、１枚ドローする。コストが３点以上の味方ＡＦキャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、コストが3点以上の味方AFキャラが登場している場合、1枚ドローする。コストが3点以上の味方AFキャラ1体にDMG+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、コストが3点以上の味方AFキャラが登場している場合、1枚ドローする。コストが3点以上の味方AFキャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

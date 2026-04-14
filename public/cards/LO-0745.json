@@ -25,5 +25,25 @@
   "typeTagsRaw": "神姫",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0745"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0745",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] 味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] 味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方キャラを破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,52 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、コストが２点以下の味方[雪]キャラ１体にＡＰ＋２またはＤＰ＋２する。",
   "textKr": "[誘発] このキャラが登場したとき、コストが２点以下の味方[雪]キャラ１体にＡＰ＋２またはＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2976"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2976",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、コストが2点以下の味方[雪]キャラ1体にAP+2またはDP+2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、コストが２点以下の味方[雪]キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、コストが2点以下の味方[雪]キャラ1体にAP+2またはDP+2する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、コストが2点以下の味方[雪]キャラ1体にAP+2またはDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

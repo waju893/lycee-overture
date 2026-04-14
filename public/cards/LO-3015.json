@@ -24,5 +24,51 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:{このターン中相手キャラの能力の対象に指定された味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[手札宣言] [花花]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[宣言] [0]:{このターン中相手キャラの能力の対象に指定された味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[手札宣言] [花花]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3015"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3015",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{このターン中相手キャラの能力の対象に指定された味方キャラ1体}にAP+1またはDP+1する。[手札宣言] [花花]:自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{このターン中相手キャラの能力の対象に指定された味方キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[手札宣言] [花花]:自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[宣言] [0]:{このターン中相手キャラの能力の対象に指定された味方キャラ1体}にAP+1またはDP+1する。[手札宣言] [花花]:自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。",
+    "lines": [
+      "[宣言] [0]:{このターン中相手キャラの能力の対象に指定された味方キャラ1体}にAP+1またはDP+1する。[手札宣言] [花花]:自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪]:相手ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－２する。",
   "textKr": "[宣言] [雪]:相手ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1484"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1484",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [雪]:相手ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にAP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [雪]:相手ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＡＰ－２する。",
+    "normalizedText": "[宣言] [雪]:相手ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にAP-2する。",
+    "lines": [
+      "[宣言] [雪]:相手ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にAP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

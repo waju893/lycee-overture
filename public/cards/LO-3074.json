@@ -21,7 +21,32 @@
   "costRaw": "花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3074"
+  "text": "味方ＤＦキャラ全てにＤＰ＋２する。",
+  "textKr": "味方ＤＦキャラ全てにＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3074",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方DFキャラ全てにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方ＤＦキャラ全てにＤＰ＋２する。",
+    "normalizedText": "味方DFキャラ全てにDP+2する。",
+    "lines": [
+      "味方DFキャラ全てにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

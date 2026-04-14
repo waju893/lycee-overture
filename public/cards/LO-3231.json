@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[宣言][花花]:味方『悠久のカンパネラ』キャラ全てにＤＰ＋１・ＤＭＧ＋１する。この能力は失われる。",
   "textKr": "[宣言][花花]:味方『悠久のカンパネラ』キャラ全てにＤＰ＋１・ＤＭＧ＋１する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3231"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3231",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言][花花]:味方『悠久のカンパネラ』キャラ全てにDP+1・DMG+1する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言][花花]:味方『悠久のカンパネラ』キャラ全てにＤＰ＋１・ＤＭＧ＋１する。この能力は失われる。",
+    "normalizedText": "[宣言][花花]:味方『悠久のカンパネラ』キャラ全てにDP+1・DMG+1する。この能力は失われる。",
+    "lines": [
+      "[宣言][花花]:味方『悠久のカンパネラ』キャラ全てにDP+1・DMG+1する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

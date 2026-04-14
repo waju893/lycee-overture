@@ -26,5 +26,29 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:コストが３点以上の味方キャラが５体以上登場している場合、１枚ドローする。この能力は失われる。",
   "textKr": "[宣言] [0]:コストが３点以上の味方キャラが５体以上登場している場合、１枚ドローする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3613"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3613",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが3点以上の味方キャラが5体以上登場している場合、1枚ドローする。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:コストが３点以上の味方キャラが５体以上登場している場合、１枚ドローする。この能力は失われる。",
+    "normalizedText": "[宣言] [0]:コストが3点以上の味方キャラが5体以上登場している場合、1枚ドローする。この能力は失われる。",
+    "lines": [
+      "[宣言] [0]:コストが3点以上の味方キャラが5体以上登場している場合、1枚ドローする。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

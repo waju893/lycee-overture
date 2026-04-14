@@ -24,5 +24,25 @@
   "typeTagsRaw": "リトルバスターズ",
   "text": "[アシスト]\n[誘発] 相手ターン開始時、このキャラを未行動にする。",
   "textKr": "[アシスト]\n[誘発] 相手ターン開始時、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1299"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1299",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 相手ターン開始時、このキャラを未行動にする。",
+    "normalizedText": "[アシスト]\n[誘発] 相手ターン開始時、このキャラを未行動にする。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 相手ターン開始時、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手ターン開始時、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

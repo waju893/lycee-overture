@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [月]:{自分のゴミ箱のＥＸが２の[月]キャラ１体}を登場する。",
   "textKr": "[手札宣言] [月]:{自分のゴミ箱のＥＸが２の[月]キャラ１体}を登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3002"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3002",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [月]:{自分のゴミ箱のＥＸが２の[月]キャラ１体}を登場する。",
+    "normalizedText": "[手札宣言] [月]:{自分のゴミ箱のEXが2の[月]キャラ1体}を登場する。",
+    "lines": [
+      "[手札宣言] [月]:{自分のゴミ箱のEXが2の[月]キャラ1体}を登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [月]:{自分のゴミ箱のEXが2の[月]キャラ1体}を登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,7 +23,22 @@
   "costRaw": "月月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1571"
+  "text": "相手のイベントの宣言に対応して使用する。自分のゴミ箱のカード全てが[月]の場合、その宣言の解決は失敗する。",
+  "textKr": "相手のイベントの宣言に対応して使用する。自分のゴミ箱のカード全てが[月]の場合、その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1571",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手のイベントの宣言に対応して使用する。自分のゴミ箱のカード全てが[月]の場合、その宣言の解決は失敗する。",
+    "normalizedText": "相手のイベントの宣言に対応して使用する。自分のゴミ箱のカード全てが[月]の場合、その宣言の解決は失敗する。",
+    "lines": [
+      "相手のイベントの宣言に対応して使用する。自分のゴミ箱のカード全てが[月]の場合、その宣言の解決は失敗する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手のイベントの宣言に対応して使用する。自分のゴミ箱のカード全てが[月]の場合、その宣言の解決は失敗する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

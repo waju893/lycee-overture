@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分のコストが１点以上のイベント・手札宣言能力を使用したとき、相手のデッキを１枚破棄する。",
   "textKr": "[誘発] 自分のコストが１点以上のイベント・手札宣言能力を使用したとき、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4585"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4585",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のコストが１点以上のイベント・手札宣言能力を使用したとき、相手のデッキを１枚破棄する。",
+    "normalizedText": "[誘発] 自分のコストが1点以上のイベント・手札宣言能力を使用したとき、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[誘発] 自分のコストが1点以上のイベント・手札宣言能力を使用したとき、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分のコストが1点以上のイベント・手札宣言能力を使用したとき、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

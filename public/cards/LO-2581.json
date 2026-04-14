@@ -22,7 +22,22 @@
   "costRaw": "雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2581"
+  "text": "味方キャラが２体以下の場合、{相手キャラ１体}を行動済みにする。",
+  "textKr": "味方キャラが２体以下の場合、{相手キャラ１体}を行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2581",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "味方キャラが２体以下の場合、{相手キャラ１体}を行動済みにする。",
+    "normalizedText": "味方キャラが2体以下の場合、{相手キャラ1体}を行動済みにする。",
+    "lines": [
+      "味方キャラが2体以下の場合、{相手キャラ1体}を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "味方キャラが2体以下の場合、{相手キャラ1体}を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

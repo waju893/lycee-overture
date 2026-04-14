@@ -23,7 +23,22 @@
   "costRaw": "雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3071"
+  "text": "自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を行動済みにする。{味方ＤＦ[雪]キャラ１体}を未行動にする。",
+  "textKr": "自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を行動済みにする。{味方ＤＦ[雪]キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3071",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}を行動済みにする。{味方ＤＦ[雪]キャラ１体}を未行動にする。",
+    "normalizedText": "自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}を行動済みにする。{味方DF[雪]キャラ1体}を未行動にする。",
+    "lines": [
+      "自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}を行動済みにする。{味方DF[雪]キャラ1体}を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}を行動済みにする。{味方DF[雪]キャラ1体}を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

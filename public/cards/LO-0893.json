@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:バトル中に使用できない。このキャラをデッキの下に置く。{自分のゴミ箱の「リースリット・ノエル」１体}を無償で登場する。",
   "textKr": "[宣言] [0]:バトル中に使用できない。このキャラをデッキの下に置く。{自分のゴミ箱の「リースリット・ノエル」１体}を無償で登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0893"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0893",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用できない。このキャラをデッキの下に置く。{自分のゴミ箱の「リースリット・ノエル」１体}を無償で登場する。",
+    "normalizedText": "[宣言] [0]:バトル中に使用できない。このキャラをデッキの下に置く。{自分のゴミ箱の「リースリット・ノエル」1体}を無償で登場する。",
+    "lines": [
+      "[宣言] [0]:バトル中に使用できない。このキャラをデッキの下に置く。{自分のゴミ箱の「リースリット・ノエル」1体}を無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:バトル中に使用できない。このキャラをデッキの下に置く。{自分のゴミ箱の「リースリット・ノエル」1体}を無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

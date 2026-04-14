@@ -1,25 +1,65 @@
 {
+  "cardNo": "LO-1420",
+  "title": "最後のマスター",
+  "subName": "主人公（男）",
+  "name": "最後のマスター 主人公（男）",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow",
     "moon",
     "flower",
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "snow",
-    "moon",
-    "flower",
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "star"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 1,
+  "costRaw": "無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、このキャラを破棄できる。破棄したとき、１枚ドローし、自分のデッキから＜サーヴァント＞キャラ１体を探し公開して手札に入れる。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[誘発] このキャラが登場したとき、このキャラを破棄できる。破棄したとき、１枚ドローし、自分のデッキから＜サーヴァント＞キャラ１体を探し公開して手札に入れる。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1420",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、このキャラを破棄できる。破棄したとき、1枚ドローし、自分のデッキから<サーヴァント>キャラ1体を探し公開して手札に入れる。構築制限:Fate/Grand Order([TM])",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、このキャラを破棄できる。破棄したとき、１枚ドローし、自分のデッキから＜サーヴァント＞キャラ１体を探し公開して手札に入れる。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[誘発] このキャラが登場したとき、このキャラを破棄できる。破棄したとき、1枚ドローし、自分のデッキから<サーヴァント>キャラ1体を探し公開して手札に入れる。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[誘発] このキャラが登場したとき、このキャラを破棄できる。破棄したとき、1枚ドローし、自分のデッキから<サーヴァント>キャラ1体を探し公開して手札に入れる。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

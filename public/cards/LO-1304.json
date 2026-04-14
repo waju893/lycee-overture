@@ -24,5 +24,35 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたバトル終了時、１枚ドローできる。ドローしたとき、自分の手札を１枚デッキの下に置く。",
   "textKr": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたバトル終了時、１枚ドローできる。ドローしたとき、自分の手札を１枚デッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1304"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1304",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方キャラがダウンしたバトル終了時、1枚ドローできる。ドローしたとき、自分の手札を1枚デッキの下に置く。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたバトル終了時、１枚ドローできる。ドローしたとき、自分の手札を１枚デッキの下に置く。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] 味方キャラがダウンしたバトル終了時、1枚ドローできる。ドローしたとき、自分の手札を1枚デッキの下に置く。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] 味方キャラがダウンしたバトル終了時、1枚ドローできる。ドローしたとき、自分の手札を1枚デッキの下に置く。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

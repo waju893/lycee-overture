@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2148",
+  "title": "精神的には犬科",
+  "subName": "僧間 理亜",
+  "name": "精神的には犬科 僧間 理亜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,31 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:{味方キャラ１体}を破棄する。破棄したとき、相手のデッキを１枚破棄する。\n構築制限:[SP]かつ [雪]",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:{味方キャラ１体}を破棄する。破棄したとき、相手のデッキを１枚破棄する。\n構築制限:[SP]かつ [雪]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2148",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:{味方キャラ１体}を破棄する。破棄したとき、相手のデッキを１枚破棄する。\n構築制限:[SP]かつ [雪]",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:{味方キャラ1体}を破棄する。破棄したとき、相手のデッキを1枚破棄する。構築制限:[SP]かつ [雪]",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:{味方キャラ1体}を破棄する。破棄したとき、相手のデッキを1枚破棄する。構築制限:[SP]かつ [雪]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{味方キャラ1体}を破棄する。破棄したとき、相手のデッキを1枚破棄する。構築制限:[SP]かつ [雪]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

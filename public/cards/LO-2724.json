@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2724",
+  "title": "常識外れ",
+  "subName": "リズ・メイサース",
+  "name": "常識外れ リズ・メイサース",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,79 @@
   "ap": 3,
   "dp": 3,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[PUR]",
+  "textKr": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[PUR]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2724",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ1体}にAP-1またはDP-1する。構築制限:[PUR]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": -1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[PUR]",
+    "normalizedText": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ1体}にAP-1またはDP-1する。構築制限:[PUR]",
+    "lines": [
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ1体}にAP-1またはDP-1する。構築制限:[PUR]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

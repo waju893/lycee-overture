@@ -24,5 +24,25 @@
   "typeTagsRaw": "リトルバスターズ",
   "text": "[アシスト]\n[宣言] [無]:このキャラと隣接した味方キャラが２体以上の場合、このキャラを未行動にする。",
   "textKr": "[アシスト]\n[宣言] [無]:このキャラと隣接した味方キャラが２体以上の場合、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1219"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1219",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [無]:このキャラと隣接した味方キャラが２体以上の場合、このキャラを未行動にする。",
+    "normalizedText": "[アシスト]\n[宣言] [無]:このキャラと隣接した味方キャラが2体以上の場合、このキャラを未行動にする。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [無]:このキャラと隣接した味方キャラが2体以上の場合、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [無]:このキャラと隣接した味方キャラが2体以上の場合、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

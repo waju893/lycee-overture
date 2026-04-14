@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]][チャージ:１]\n[宣言] [C1][日]:{コストが３点以上の味方キャラ１体}にＡＰ＋４する。",
   "textKr": "[ジャンプ:[0]][チャージ:１]\n[宣言] [C1][日]:{コストが３点以上の味方キャラ１体}にＡＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6642"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6642",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1][日]:{コストが3点以上の味方キャラ1体}にAP+4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]][チャージ:１]\n[宣言] [C1][日]:{コストが３点以上の味方キャラ１体}にＡＰ＋４する。",
+    "normalizedText": "[ジャンプ:[0]][チャージ:1]\n[宣言] [C1][日]:{コストが3点以上の味方キャラ1体}にAP+4する。",
+    "lines": [
+      "[ジャンプ:[0]][チャージ:1]",
+      "[宣言] [C1][日]:{コストが3点以上の味方キャラ1体}にAP+4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]][チャージ:1]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

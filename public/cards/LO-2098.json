@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2098",
+  "title": "似た者同士",
+  "subName": "朱鷺坂 七緒",
+  "name": "似た者同士 朱鷺坂 七緒",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,36 @@
   "ap": 4,
   "dp": 3,
   "sp": 1,
-  "dmg": 5
+  "dmg": 5,
+  "ex": 2,
+  "costRaw": "月月宙宙",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。{味方キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。１枚ドローする。]]を得る。\n構築制限:【[SP]】かつ【[月]または[宙]】",
+  "textKr": "[宣言] [0]:自ターン中に使用する。{味方キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。１枚ドローする。]]を得る。\n構築制限:【[SP]】かつ【[月]または[宙]】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2098",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。{味方キャラ1体}は[ボーナス:[相手のデッキを1枚破棄する。1枚ドローする。]]を得る。構築制限:【[SP]】かつ【[月]または[宙]】",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。{味方キャラ１体}は[ボーナス:[相手のデッキを１枚破棄する。１枚ドローする。]]を得る。\n構築制限:【[SP]】かつ【[月]または[宙]】",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。{味方キャラ1体}は[ボーナス:[相手のデッキを1枚破棄する。1枚ドローする。]]を得る。構築制限:【[SP]】かつ【[月]または[宙]】",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。{味方キャラ1体}は[ボーナス:[相手のデッキを1枚破棄する。1枚ドローする。]]を得る。構築制限:【[SP]】かつ【[月]または[宙]】"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

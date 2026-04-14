@@ -23,5 +23,25 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[コスト] 能力の使用にのみ支払える[雪雪]を発生する。この能力は失われる。",
   "textKr": "[ジャンプ:[0]]\n[コスト] 能力の使用にのみ支払える[雪雪]を発生する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6425"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6425",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[コスト] 能力の使用にのみ支払える[雪雪]を発生する。この能力は失われる。",
+    "normalizedText": "[ジャンプ:[0]]\n[コスト] 能力の使用にのみ支払える[雪雪]を発生する。この能力は失われる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[コスト] 能力の使用にのみ支払える[雪雪]を発生する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[コスト] 能力の使用にのみ支払える[雪雪]を発生する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

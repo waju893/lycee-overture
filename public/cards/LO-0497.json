@@ -25,5 +25,30 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラでサポートをしたとき、対象の＜サーヴァント＞キャラ１体にＤＰ＋１する。",
   "textKr": "[誘発] このキャラでサポートをしたとき、対象の＜サーヴァント＞キャラ１体にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0497"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0497",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、対象の<サーヴァント>キャラ1体にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、対象の＜サーヴァント＞キャラ１体にＤＰ＋１する。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、対象の<サーヴァント>キャラ1体にDP+1する。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、対象の<サーヴァント>キャラ1体にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

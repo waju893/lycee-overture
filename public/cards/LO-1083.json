@@ -25,5 +25,25 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラを除く味方＜アンツィオ＞キャラが移動したとき、このキャラにＤＭＧ＋２する。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラを除く味方＜アンツィオ＞キャラが移動したとき、このキャラにＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1083"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1083",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラを除く味方＜アンツィオ＞キャラが移動したとき、このキャラにＤＭＧ＋２する。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラを除く味方<アンツィオ>キャラが移動したとき、このキャラにDMG+2する。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[誘発] このキャラを除く味方<アンツィオ>キャラが移動したとき、このキャラにDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラを除く味方<アンツィオ>キャラが移動したとき、このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

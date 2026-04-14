@@ -25,5 +25,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体は[アグレッシブ]を得る。",
   "textKr": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体は[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0267"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0267",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体は[アグレッシブ]を得る。",
+    "normalizedText": "[エンゲージ]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ1体は[アグレッシブ]を得る。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ1体は[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ1体は[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

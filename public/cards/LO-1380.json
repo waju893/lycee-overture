@@ -23,5 +23,25 @@
   "typeTagsRaw": "",
   "text": "[ペナルティ:[自分のデッキを２枚回復する。]]\n[常時] このキャラはバトル参加キャラに指定できない。このキャラは能力の対象に指定できない。",
   "textKr": "[ペナルティ:[自分のデッキを２枚回復する。]]\n[常時] このキャラはバトル参加キャラに指定できない。このキャラは能力の対象に指定できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1380"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1380",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ペナルティ:[自分のデッキを２枚回復する。]]\n[常時] このキャラはバトル参加キャラに指定できない。このキャラは能力の対象に指定できない。",
+    "normalizedText": "[ペナルティ:[自分のデッキを2枚回復する。]]\n[常時] このキャラはバトル参加キャラに指定できない。このキャラは能力の対象に指定できない。",
+    "lines": [
+      "[ペナルティ:[自分のデッキを2枚回復する。]]",
+      "[常時] このキャラはバトル参加キャラに指定できない。このキャラは能力の対象に指定できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラはバトル参加キャラに指定できない。このキャラは能力の対象に指定できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

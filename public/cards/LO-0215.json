@@ -24,5 +24,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[味方キャラ１体にＤＭＧ＋２する。]]\n[宣言] [日日]:バトル中に使用できない。このキャラを{このキャラと同列の味方フィールド}に移動する。",
   "textKr": "[エンゲージ:[味方キャラ１体にＤＭＧ＋２する。]]\n[宣言] [日日]:バトル中に使用できない。このキャラを{このキャラと同列の味方フィールド}に移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0215"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0215",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[味方キャラ１体にＤＭＧ＋２する。]]\n[宣言] [日日]:バトル中に使用できない。このキャラを{このキャラと同列の味方フィールド}に移動する。",
+    "normalizedText": "[エンゲージ:[味方キャラ1体にDMG+2する。]]\n[宣言] [日日]:バトル中に使用できない。このキャラを{このキャラと同列の味方フィールド}に移動する。",
+    "lines": [
+      "[エンゲージ:[味方キャラ1体にDMG+2する。]]",
+      "[宣言] [日日]:バトル中に使用できない。このキャラを{このキャラと同列の味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[味方キャラ1体にDMG+2する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [日日]:バトル中に使用できない。このキャラを{このキャラと同列の味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

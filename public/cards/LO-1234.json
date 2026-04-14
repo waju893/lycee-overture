@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1234",
+  "title": "運命と神に抗い続ける少女",
+  "subName": "仲村 ゆり",
+  "name": "運命と神に抗い続ける少女 仲村 ゆり",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "cosmos",
@@ -16,13 +19,31 @@
   "dp": 3,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    3,
-    8
-  ],
-  "keyEffects": [
-    3,
-    8
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "雪宙日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "死んだ世界戦線",
+  "text": "[アシスト][サイドステップ:[0]]\n[誘発] 味方＜死んだ世界戦線＞キャラが場を離れたとき、相手のデッキを１枚破棄する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[アシスト][サイドステップ:[0]]\n[誘発] 味方＜死んだ世界戦線＞キャラが場を離れたとき、相手のデッキを１枚破棄する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1234",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][サイドステップ:[0]]\n[誘発] 味方＜死んだ世界戦線＞キャラが場を離れたとき、相手のデッキを１枚破棄する。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[アシスト][サイドステップ:[0]]\n[誘発] 味方<死んだ世界戦線>キャラが場を離れたとき、相手のデッキを1枚破棄する。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[アシスト][サイドステップ:[0]]",
+      "[誘発] 味方<死んだ世界戦線>キャラが場を離れたとき、相手のデッキを1枚破棄する。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方<死んだ世界戦線>キャラが場を離れたとき、相手のデッキを1枚破棄する。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

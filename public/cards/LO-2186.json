@@ -25,5 +25,20 @@
   "typeTagsRaw": "神姫",
   "text": "[宣言] [雪雪雪]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
   "textKr": "[宣言] [雪雪雪]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2186"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2186",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪雪雪]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+    "normalizedText": "[宣言] [雪雪雪]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+    "lines": [
+      "[宣言] [雪雪雪]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪雪雪]:自ターン中に使用する。ターン終了時まで、このキャラの攻撃で相手は防御キャラを指定できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

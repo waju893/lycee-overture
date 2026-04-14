@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-1791",
+  "title": "新しい季節",
+  "subName": "河野 貴明",
+  "name": "新しい季節 河野 貴明",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower",
     "sun"
   ],
-  "attributesList": [
-    "flower",
-    "sun"
-  ],
-  "ex": 0,
   "useTarget": [
     "flower",
     "sun",
@@ -18,11 +20,41 @@
   "dp": 2,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    10
+  "ex": 0,
+  "costRaw": "花日無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リーダー][リカバリー:[１枚ドローする。]]\n[コスト] 味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、自分のデッキを１枚破棄する。破棄したとき、[花花]または[日日]を発生する。このコストは「ToHeart2」キャラの登場にのみ支払える。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[リーダー][リカバリー:[１枚ドローする。]]\n[コスト] 味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、自分のデッキを１枚破棄する。破棄したとき、[花花]または[日日]を発生する。このコストは「ToHeart2」キャラの登場にのみ支払える。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1791",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[リーダー][リカバリー:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    10
-  ],
-  "leader": true
+  "parseMeta": {
+    "originalText": "[リーダー][リカバリー:[１枚ドローする。]]\n[コスト] 味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、自分のデッキを１枚破棄する。破棄したとき、[花花]または[日日]を発生する。このコストは「ToHeart2」キャラの登場にのみ支払える。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[リーダー][リカバリー:[1枚ドローする。]]\n[コスト] 味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、自分のデッキを1枚破棄する。破棄したとき、[花花]または[日日]を発生する。このコストは「ToHeart2」キャラの登場にのみ支払える。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[リーダー][リカバリー:[1枚ドローする。]]",
+      "[コスト] 味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、自分のデッキを1枚破棄する。破棄したとき、[花花]または[日日]を発生する。このコストは「ToHeart2」キャラの登場にのみ支払える。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] 味方キャラ全てと自分のゴミ箱のカード全てが「ToHeart2」の場合、自分のデッキを1枚破棄する。破棄したとき、[花花]または[日日]を発生する。このコストは「ToHeart2」キャラの登場にのみ支払える。構築制限:アクアプラス([AQP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

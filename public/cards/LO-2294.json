@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2294",
+  "title": "国姓爺合戦",
+  "subName": "安平城",
+  "name": "国姓爺合戦 安平城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -14,5 +17,58 @@
   "ap": 3,
   "dp": 0,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[誘発] 味方ＡＦキャラがダウンしたとき、味方[日]キャラ１体にＡＰ＋２またはＤＰ＋２する。\n構築制限:[OSP]",
+  "textKr": "[誘発] 味方ＡＦキャラがダウンしたとき、味方[日]キャラ１体にＡＰ＋２またはＤＰ＋２する。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2294",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方AFキャラがダウンしたとき、味方[日]キャラ1体にAP+2またはDP+2する。構築制限:[OSP]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方ＡＦキャラがダウンしたとき、味方[日]キャラ１体にＡＰ＋２またはＤＰ＋２する。\n構築制限:[OSP]",
+    "normalizedText": "[誘発] 味方AFキャラがダウンしたとき、味方[日]キャラ1体にAP+2またはDP+2する。構築制限:[OSP]",
+    "lines": [
+      "[誘発] 味方AFキャラがダウンしたとき、味方[日]キャラ1体にAP+2またはDP+2する。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

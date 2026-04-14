@@ -25,5 +25,43 @@
   "typeTagsRaw": "",
   "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、コストが２点以下の味方キャラが２体以上登場している場合、１枚ドローする。",
   "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、コストが２点以下の味方キャラが２体以上登場している場合、１枚ドローする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3534"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3534",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、コストが2点以下の味方キャラが2体以上登場している場合、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、コストが２点以下の味方キャラが２体以上登場している場合、１枚ドローする。",
+    "normalizedText": "[ペナルティ:[1枚ドローする。]]\n[誘発] このキャラが登場したとき、コストが2点以下の味方キャラが2体以上登場している場合、1枚ドローする。",
+    "lines": [
+      "[ペナルティ:[1枚ドローする。]]",
+      "[誘発] このキャラが登場したとき、コストが2点以下の味方キャラが2体以上登場している場合、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

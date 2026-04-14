@@ -29,5 +29,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ][ステップ:[日日]]\n[誘発] このキャラが登場したとき、味方キャラ全てを並べ替える。",
   "textKr": "[エンゲージ][ステップ:[日日]]\n[誘発] このキャラが登場したとき、味方キャラ全てを並べ替える。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0226"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0226",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ][ステップ:[日日]]\n[誘発] このキャラが登場したとき、味方キャラ全てを並べ替える。",
+    "normalizedText": "[エンゲージ][ステップ:[日日]]\n[誘発] このキャラが登場したとき、味方キャラ全てを並べ替える。",
+    "lines": [
+      "[エンゲージ][ステップ:[日日]]",
+      "[誘発] このキャラが登場したとき、味方キャラ全てを並べ替える。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][ステップ:[日日]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ全てを並べ替える。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

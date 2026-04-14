@@ -23,5 +23,30 @@
   "typeTagsRaw": "魏",
   "text": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
   "textKr": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5276"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5276",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [宙宙]:{コストが3~4点の味方[宙]キャラ1体}にAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [宙宙]:{コストが３～４点の味方[宙]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "[手札宣言] [宙宙]:{コストが3~4点の味方[宙]キャラ1体}にAP+3・DP+3する。",
+    "lines": [
+      "[手札宣言] [宙宙]:{コストが3~4点の味方[宙]キャラ1体}にAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

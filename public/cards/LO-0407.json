@@ -24,5 +24,25 @@
   "typeTagsRaw": "知波単",
   "text": "[アグレッシブ]\n[宣言] [T]: バトル中に使用できない。{味方＜知波単＞キャラ１体}にＤＭＧ＋２する。",
   "textKr": "[アグレッシブ]\n[宣言] [T]: バトル中に使用できない。{味方＜知波単＞キャラ１体}にＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0407"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0407",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [T]: バトル中に使用できない。{味方＜知波単＞キャラ１体}にＤＭＧ＋２する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [T]: バトル中に使用できない。{味方<知波単>キャラ1体}にDMG+2する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [T]: バトル中に使用できない。{味方<知波単>キャラ1体}にDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T]: バトル中に使用できない。{味方<知波単>キャラ1体}にDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

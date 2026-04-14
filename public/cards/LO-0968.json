@@ -1,14 +1,43 @@
 {
+  "cardNo": "LO-0968",
+  "title": "天使の力",
+  "subName": "",
+  "name": "天使の力",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{味方キャラ１体}にＡＰ＋[そのキャラのＳＰ]またはＤＰ＋[そのキャラのＳＰ]する。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "{味方キャラ１体}にＡＰ＋[そのキャラのＳＰ]またはＤＰ＋[そのキャラのＳＰ]する。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0968",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}にＡＰ＋[そのキャラのＳＰ]またはＤＰ＋[そのキャラのＳＰ]する。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "{味方キャラ1体}にAP+[そのキャラのSP]またはDP+[そのキャラのSP]する。構築制限:オーガスト([AUG])",
+    "lines": [
+      "{味方キャラ1体}にAP+[そのキャラのSP]またはDP+[そのキャラのSP]する。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方キャラ1体}にAP+[そのキャラのSP]またはDP+[そのキャラのSP]する。構築制限:オーガスト([AUG])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

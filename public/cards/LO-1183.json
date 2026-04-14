@@ -24,5 +24,35 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト]\n[誘発] このキャラがダウンしたとき、１枚ドローする。ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
   "textKr": "[アシスト]\n[誘発] このキャラがダウンしたとき、１枚ドローする。ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1183"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1183",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラがダウンしたとき、1枚ドローする。ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラがダウンしたとき、１枚ドローする。ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラがダウンしたとき、1枚ドローする。ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラがダウンしたとき、1枚ドローする。ゴミ箱のこのキャラを自分の「卒業」置き場に置く。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,25 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚を装備できる。",
   "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚を装備できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2188"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2188",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム１枚を装備できる。",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム1枚を装備できる。",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム1枚を装備できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のアイテム1枚を装備できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

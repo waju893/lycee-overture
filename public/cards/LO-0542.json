@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[0]]\n[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ１体にＤＭＧ＋１する。",
   "textKr": "[オーダーチェンジ:[0]]\n[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0542"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0542",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ1体にDMG+1する。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手キャラがダウンしたバトル終了時、味方キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

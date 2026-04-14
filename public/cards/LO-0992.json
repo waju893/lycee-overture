@@ -23,7 +23,27 @@
   "costRaw": "日日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0992"
+  "text": "-\n初出 : 「ＵＮＩＴＩＡ」（テクロス様）リリース記念配布初出 : 「ＵＮＩＴＩＡ」（テクロス様）リリース記念配布",
+  "textKr": "-\n初出 : 「ＵＮＩＴＩＡ」（テクロス様）リリース記念配布初出 : 「ＵＮＩＴＩＡ」（テクロス様）リリース記念配布",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0992",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "-\n初出 : 「ＵＮＩＴＩＡ」（テクロス様）リリース記念配布初出 : 「ＵＮＩＴＩＡ」（テクロス様）リリース記念配布",
+    "normalizedText": "-\n初出 : 「UNITIA」(テクロス様)リリース記念配布初出 : 「UNITIA」(テクロス様)リリース記念配布",
+    "lines": [
+      "-",
+      "初出 : 「UNITIA」(テクロス様)リリース記念配布初出 : 「UNITIA」(テクロス様)リリース記念配布"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "-",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "初出 : 「UNITIA」(テクロス様)リリース記念配布初出 : 「UNITIA」(テクロス様)リリース記念配布",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

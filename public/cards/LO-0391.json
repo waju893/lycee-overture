@@ -23,5 +23,25 @@
   "typeTagsRaw": "アンツィオ",
   "text": "[アシスト]\n[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
   "textKr": "[アシスト]\n[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0391"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0391",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方ＤＦに移動する。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方DFに移動する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方DFに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:相手キャラの攻撃宣言に対応して使用する。このキャラをそのキャラと同列の味方DFに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

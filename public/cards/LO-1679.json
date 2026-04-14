@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1679",
+  "title": "活発な後輩",
+  "subName": "壬生 千咲",
+  "name": "活発な後輩 壬生 千咲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "sun",
     "sun",
@@ -15,5 +18,27 @@
   "ap": 3,
   "dp": 2,
   "sp": 0,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:このキャラの防御中に使用できない。このキャラを{味方フィールド}に移動する。移動したとき、このキャラを未行動にする。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[宣言] [0]:このキャラの防御中に使用できない。このキャラを{味方フィールド}に移動する。移動したとき、このキャラを未行動にする。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1679",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラの防御中に使用できない。このキャラを{味方フィールド}に移動する。移動したとき、このキャラを未行動にする。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[宣言] [0]:このキャラの防御中に使用できない。このキャラを{味方フィールド}に移動する。移動したとき、このキャラを未行動にする。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[宣言] [0]:このキャラの防御中に使用できない。このキャラを{味方フィールド}に移動する。移動したとき、このキャラを未行動にする。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:このキャラの防御中に使用できない。このキャラを{味方フィールド}に移動する。移動したとき、このキャラを未行動にする。構築制限:ゆずソフト([YUZ])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

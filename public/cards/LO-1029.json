@@ -24,5 +24,20 @@
   "typeTagsRaw": "日本戦車道連盟",
   "text": "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを１枚回復する。",
   "textKr": "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを１枚回復する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1029"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1029",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを１枚回復する。",
+    "normalizedText": "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを1枚回復する。",
+    "lines": [
+      "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを1枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分の効果で相手キャラを破棄したとき、自分のデッキを1枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

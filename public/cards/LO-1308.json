@@ -24,5 +24,25 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト]\n[宣言] [0]:{相手キャラ１体}は[ペナルティ:[自分のデッキを１枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。",
   "textKr": "[アシスト]\n[宣言] [0]:{相手キャラ１体}は[ペナルティ:[自分のデッキを１枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1308"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1308",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:{相手キャラ１体}は[ペナルティ:[自分のデッキを１枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:{相手キャラ1体}は[ペナルティ:[自分のデッキを1枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:{相手キャラ1体}は[ペナルティ:[自分のデッキを1枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{相手キャラ1体}は[ペナルティ:[自分のデッキを1枚破棄する。]]を得る。この能力は相手ターン終了時まで失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

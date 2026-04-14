@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、１枚ドローする。味方『お家に帰るまでがましまろです』キャラ１体にＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。味方『お家に帰るまでがましまろです』キャラ１体にＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5835"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5835",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。味方『お家に帰るまでがましまろです』キャラ1体にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、１枚ドローする。味方『お家に帰るまでがましまろです』キャラ１体にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、1枚ドローする。味方『お家に帰るまでがましまろです』キャラ1体にAP+1・DP+1する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、1枚ドローする。味方『お家に帰るまでがましまろです』キャラ1体にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

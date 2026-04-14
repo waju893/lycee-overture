@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『らぶ2Quad』キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『らぶ2Quad』キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5884"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5884",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『らぶ2Quad』キャラ1体}にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『らぶ2Quad』キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『らぶ2Quad』キャラ1体}にAP+1・DP+1する。",
+    "lines": [
+      "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方『らぶ2Quad』キャラ1体}にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

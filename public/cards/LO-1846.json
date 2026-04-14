@@ -22,7 +22,22 @@
   "costRaw": "月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1846"
+  "text": "自ターン中に使用する。バトル中に使用できない。{相手ＡＦキャラ１体}を相手フィールドに移動する。",
+  "textKr": "自ターン中に使用する。バトル中に使用できない。{相手ＡＦキャラ１体}を相手フィールドに移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1846",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。バトル中に使用できない。{相手ＡＦキャラ１体}を相手フィールドに移動する。",
+    "normalizedText": "自ターン中に使用する。バトル中に使用できない。{相手AFキャラ1体}を相手フィールドに移動する。",
+    "lines": [
+      "自ターン中に使用する。バトル中に使用できない。{相手AFキャラ1体}を相手フィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自ターン中に使用する。バトル中に使用できない。{相手AFキャラ1体}を相手フィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

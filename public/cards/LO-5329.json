@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:{カード名に「毛利」を含む味方キャラ１体}にＡＰ＋１する。\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{カード名に「毛利」を含む味方キャラ１体}にＡＰ＋１する。\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5329"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5329",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{カード名に「毛利」を含む味方キャラ1体}にAP+1する。[宣言] [0]:{味方[日]キャラ1体}にAP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{カード名に「毛利」を含む味方キャラ１体}にＡＰ＋１する。\n[宣言] [0]:{味方[日]キャラ１体}にＡＰ＋３する。この能力は失われる。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{カード名に「毛利」を含む味方キャラ1体}にAP+1する。[宣言] [0]:{味方[日]キャラ1体}にAP+3する。この能力は失われる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{カード名に「毛利」を含む味方キャラ1体}にAP+1する。[宣言] [0]:{味方[日]キャラ1体}にAP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

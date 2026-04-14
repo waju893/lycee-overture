@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1340",
+  "title": "二重召喚",
+  "subName": "アサシン／セミラミス",
+  "name": "二重召喚 アサシン／セミラミス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,5 +20,27 @@
   "ap": 4,
   "dp": 5,
   "sp": 2,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "雪雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自分の効果でコストが２点以下の相手キャラを破棄したとき、このキャラにＤＭＧ＋２する。\n[宣言] [このキャラを破棄する]:{相手キャラ１体}を破棄する。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "[誘発] 自分の効果でコストが２点以下の相手キャラを破棄したとき、このキャラにＤＭＧ＋２する。\n[宣言] [このキャラを破棄する]:{相手キャラ１体}を破棄する。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1340",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果でコストが２点以下の相手キャラを破棄したとき、このキャラにＤＭＧ＋２する。\n[宣言] [このキャラを破棄する]:{相手キャラ１体}を破棄する。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "[誘発] 自分の効果でコストが2点以下の相手キャラを破棄したとき、このキャラにDMG+2する。[宣言] [このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "[誘発] 自分の効果でコストが2点以下の相手キャラを破棄したとき、このキャラにDMG+2する。[宣言] [このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分の効果でコストが2点以下の相手キャラを破棄したとき、このキャラにDMG+2する。[宣言] [このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order([TM])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:バトル中に使用する。ＤＰが５以上の攻撃キャラ１体にＤＰ－１する。",
   "textKr": "[宣言] [0]:バトル中に使用する。ＤＰが５以上の攻撃キャラ１体にＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1564"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1564",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用する。DPが5以上の攻撃キャラ1体にDP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用する。ＤＰが５以上の攻撃キャラ１体にＤＰ－１する。",
+    "normalizedText": "[宣言] [0]:バトル中に使用する。DPが5以上の攻撃キャラ1体にDP-1する。",
+    "lines": [
+      "[宣言] [0]:バトル中に使用する。DPが5以上の攻撃キャラ1体にDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

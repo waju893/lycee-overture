@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
   "textKr": "[誘発] 味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2083"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2083",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+    "normalizedText": "[誘発] 味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+    "lines": [
+      "[誘発] 味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラをデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

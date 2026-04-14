@@ -26,5 +26,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] 味方キャラがダウンしたバトル終了時、相手は未行動の相手キャラ１体を行動済みにする。",
   "textKr": "[アシスト]\n[誘発] 味方キャラがダウンしたバトル終了時、相手は未行動の相手キャラ１体を行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0279"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0279",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 味方キャラがダウンしたバトル終了時、相手は未行動の相手キャラ１体を行動済みにする。",
+    "normalizedText": "[アシスト]\n[誘発] 味方キャラがダウンしたバトル終了時、相手は未行動の相手キャラ1体を行動済みにする。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 味方キャラがダウンしたバトル終了時、相手は未行動の相手キャラ1体を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方キャラがダウンしたバトル終了時、相手は未行動の相手キャラ1体を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

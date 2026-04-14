@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0535",
+  "title": "王の軍勢",
+  "subName": "ライダー／イスカンダル",
+  "name": "王の軍勢 ライダー／イスカンダル",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -18,5 +21,27 @@
   "ap": 6,
   "dp": 4,
   "sp": 1,
-  "dmg": 4
+  "dmg": 4,
+  "ex": 2,
+  "costRaw": "日日無無無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ１体は[アグレッシブ]を得る。\n構築制限:Fate/Grand Order",
+  "textKr": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ１体は[アグレッシブ]を得る。\n構築制限:Fate/Grand Order",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0535",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ１体は[アグレッシブ]を得る。\n構築制限:Fate/Grand Order",
+    "normalizedText": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ1体は[アグレッシブ]を得る。構築制限:Fate/Grand Order",
+    "lines": [
+      "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ1体は[アグレッシブ]を得る。構築制限:Fate/Grand Order"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ1体は[アグレッシブ]を得る。構築制限:Fate/Grand Order",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

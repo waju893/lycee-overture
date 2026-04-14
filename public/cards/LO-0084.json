@@ -24,7 +24,34 @@
   "costRaw": "無無無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0084"
+  "text": "バトル中に使用できない。＜サーヴァント＞キャラ１体を手札に入れる。",
+  "textKr": "バトル中に使用できない。＜サーヴァント＞キャラ１体を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0084",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "バトル中に使用できない。<サーヴァント>キャラ1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。＜サーヴァント＞キャラ１体を手札に入れる。",
+    "normalizedText": "バトル中に使用できない。<サーヴァント>キャラ1体を手札に入れる。",
+    "lines": [
+      "バトル中に使用できない。<サーヴァント>キャラ1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

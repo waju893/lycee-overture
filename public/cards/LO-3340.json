@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:サブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」全てにＡＰ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:サブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3340"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3340",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:サブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」全てにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:サブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」全てにＡＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:サブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」全てにAP+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:サブネームに「R-ウィング」を含む味方キャラまたは味方「針生蔵人」全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

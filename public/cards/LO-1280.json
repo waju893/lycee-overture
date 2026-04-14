@@ -1,14 +1,43 @@
 {
+  "cardNo": "LO-1280",
+  "title": "逃避行の果てに",
+  "subName": "",
+  "name": "逃避行の果てに",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "相手の宣言に対応して使用できない。{相手ＡＦキャラ１体}を相手フィールドに移動する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "相手の宣言に対応して使用できない。{相手ＡＦキャラ１体}を相手フィールドに移動する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1280",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手の宣言に対応して使用できない。{相手ＡＦキャラ１体}を相手フィールドに移動する。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "相手の宣言に対応して使用できない。{相手AFキャラ1体}を相手フィールドに移動する。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "相手の宣言に対応して使用できない。{相手AFキャラ1体}を相手フィールドに移動する。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手の宣言に対応して使用できない。{相手AFキャラ1体}を相手フィールドに移動する。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

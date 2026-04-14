@@ -21,7 +21,31 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3660"
+  "text": "コストが３点以上の味方[月]キャラが５体以上登場している場合、自分のデッキを３枚回復しシャッフルする。（ゲーム中１回まで使用可能）",
+  "textKr": "コストが３点以上の味方[月]キャラが５体以上登場している場合、自分のデッキを３枚回復しシャッフルする。（ゲーム中１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3660",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "コストが3点以上の味方[月]キャラが5体以上登場している場合、自分のデッキを3枚回復しシャッフルする。(ゲーム中1回まで使用可能)",
+      "actions": [
+        {
+          "type": "shuffle",
+          "owner": "self"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "コストが３点以上の味方[月]キャラが５体以上登場している場合、自分のデッキを３枚回復しシャッフルする。（ゲーム中１回まで使用可能）",
+    "normalizedText": "コストが3点以上の味方[月]キャラが5体以上登場している場合、自分のデッキを3枚回復しシャッフルする。(ゲーム中1回まで使用可能)",
+    "lines": [
+      "コストが3点以上の味方[月]キャラが5体以上登場している場合、自分のデッキを3枚回復しシャッフルする。(ゲーム中1回まで使用可能)"
+    ],
+    "matchedRuleIds": [
+      "shuffle"
+    ]
+  },
+  "unresolvedTextLines": []
 }

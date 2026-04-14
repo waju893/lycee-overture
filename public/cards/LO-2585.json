@@ -21,7 +21,22 @@
   "costRaw": "花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2585"
+  "text": "バトル中に使用できない。{味方キャラ１体}を破棄する。そのキャラが登場していたフィールドに自分の手札のキャラ１体を登場する。",
+  "textKr": "バトル中に使用できない。{味方キャラ１体}を破棄する。そのキャラが登場していたフィールドに自分の手札のキャラ１体を登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2585",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。{味方キャラ１体}を破棄する。そのキャラが登場していたフィールドに自分の手札のキャラ１体を登場する。",
+    "normalizedText": "バトル中に使用できない。{味方キャラ1体}を破棄する。そのキャラが登場していたフィールドに自分の手札のキャラ1体を登場する。",
+    "lines": [
+      "バトル中に使用できない。{味方キャラ1体}を破棄する。そのキャラが登場していたフィールドに自分の手札のキャラ1体を登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用できない。{味方キャラ1体}を破棄する。そのキャラが登場していたフィールドに自分の手札のキャラ1体を登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

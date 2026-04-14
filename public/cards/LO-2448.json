@@ -1,11 +1,52 @@
 {
+  "cardNo": "LO-2448",
+  "title": "桃園の誓い",
+  "subName": "",
+  "name": "桃園の誓い",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "-",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{コストが３点以上の味方＜蜀＞キャラ１体}を手札に入れる。\n構築制限:[NEX]",
+  "textKr": "{コストが３点以上の味方＜蜀＞キャラ１体}を手札に入れる。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2448",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが3点以上の味方<蜀>キャラ1体}を手札に入れる。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが３点以上の味方＜蜀＞キャラ１体}を手札に入れる。\n構築制限:[NEX]",
+    "normalizedText": "{コストが3点以上の味方<蜀>キャラ1体}を手札に入れる。構築制限:[NEX]",
+    "lines": [
+      "{コストが3点以上の味方<蜀>キャラ1体}を手札に入れる。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

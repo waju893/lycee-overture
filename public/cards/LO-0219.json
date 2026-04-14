@@ -25,5 +25,20 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ][アグレッシブ]",
   "textKr": "[エンゲージ][アグレッシブ]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0219"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0219",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ][アグレッシブ]",
+    "normalizedText": "[エンゲージ][アグレッシブ]",
+    "lines": [
+      "[エンゲージ][アグレッシブ]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

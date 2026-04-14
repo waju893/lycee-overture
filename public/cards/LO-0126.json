@@ -26,5 +26,44 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[相手キャラ全てにＤＰ－２する。]]\n[誘発] このキャラが攻撃したとき、相手キャラ全てにＤＰ－１する。",
   "textKr": "[エンゲージ:[相手キャラ全てにＤＰ－２する。]]\n[誘発] このキャラが攻撃したとき、相手キャラ全てにＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0126"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0126",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[エンゲージ:[相手キャラ全てにDP-2する。]]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -2
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラが攻撃したとき、相手キャラ全てにDP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[相手キャラ全てにＤＰ－２する。]]\n[誘発] このキャラが攻撃したとき、相手キャラ全てにＤＰ－１する。",
+    "normalizedText": "[エンゲージ:[相手キャラ全てにDP-2する。]]\n[誘発] このキャラが攻撃したとき、相手キャラ全てにDP-1する。",
+    "lines": [
+      "[エンゲージ:[相手キャラ全てにDP-2する。]]",
+      "[誘発] このキャラが攻撃したとき、相手キャラ全てにDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

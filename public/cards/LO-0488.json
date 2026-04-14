@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0488",
+  "title": "万能の人",
+  "subName": "キャスター／レオナルド・ダ・ヴィンチ",
+  "name": "万能の人 キャスター／レオナルド・ダ・ヴィンチ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon",
@@ -16,5 +19,59 @@
   "ap": 2,
   "dp": 3,
   "sp": 3,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "月月無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n構築制限:Fate/Grand Order",
+  "textKr": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n構築制限:Fate/Grand Order",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0488",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。構築制限:Fate/Grand Order",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n構築制限:Fate/Grand Order",
+    "normalizedText": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。構築制限:Fate/Grand Order",
+    "lines": [
+      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。構築制限:Fate/Grand Order"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

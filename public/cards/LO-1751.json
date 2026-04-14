@@ -26,5 +26,25 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1751"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1751",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、相手ＡＦキャラ１体は次の相手のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 手札以外から味方キャラが登場したとき、自分のデッキを１枚回復する。",
   "textKr": "[誘発] 手札以外から味方キャラが登場したとき、自分のデッキを１枚回復する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0904"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0904",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 手札以外から味方キャラが登場したとき、自分のデッキを１枚回復する。",
+    "normalizedText": "[誘発] 手札以外から味方キャラが登場したとき、自分のデッキを1枚回復する。",
+    "lines": [
+      "[誘発] 手札以外から味方キャラが登場したとき、自分のデッキを1枚回復する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 手札以外から味方キャラが登場したとき、自分のデッキを1枚回復する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

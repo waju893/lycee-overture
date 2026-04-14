@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１・ＤＭＧ＋２する。",
   "textKr": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１・ＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0874"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0874",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにAP+1・DP+1・SP+1・DMG+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＳＰ＋１・ＤＭＧ＋２する。",
+    "normalizedText": "[サポーター:[花花花]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにAP+1・DP+1・SP+1・DMG+2する。",
+    "lines": [
+      "[サポーター:[花花花]]",
+      "[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにAP+1・DP+1・SP+1・DMG+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,51 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方キャラ全てが『WHITE ALBUM シリーズ』キャラの場合、１枚ドローする。\n[宣言] [T]:味方『WHITE ALBUM シリーズ』キャラが３体以上の場合、味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ全てが『WHITE ALBUM シリーズ』キャラの場合、１枚ドローする。\n[宣言] [T]:味方『WHITE ALBUM シリーズ』キャラが３体以上の場合、味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5187"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5187",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ全てが『WHITE ALBUM シリーズ』キャラの場合、1枚ドローする。[宣言] [T]:味方『WHITE ALBUM シリーズ』キャラが3体以上の場合、味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "draw",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ全てが『WHITE ALBUM シリーズ』キャラの場合、１枚ドローする。\n[宣言] [T]:味方『WHITE ALBUM シリーズ』キャラが３体以上の場合、味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ全てが『WHITE ALBUM シリーズ』キャラの場合、1枚ドローする。[宣言] [T]:味方『WHITE ALBUM シリーズ』キャラが3体以上の場合、味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ全てが『WHITE ALBUM シリーズ』キャラの場合、1枚ドローする。[宣言] [T]:味方『WHITE ALBUM シリーズ』キャラが3体以上の場合、味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

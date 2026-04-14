@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[日]]",
   "textKr": "[オーダーチェンジ:[日]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0531"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0531",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[日]]",
+    "normalizedText": "[オーダーチェンジ:[日]]",
+    "lines": [
+      "[オーダーチェンジ:[日]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[日]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

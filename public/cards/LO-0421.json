@@ -26,5 +26,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [無無無]:バトル中に使用できない。{味方「あんこうチーム」キャラ１体}を{味方フィールド}に移動する。",
   "textKr": "[アシスト]\n[宣言] [無無無]:バトル中に使用できない。{味方「あんこうチーム」キャラ１体}を{味方フィールド}に移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0421"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0421",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [無無無]:バトル中に使用できない。{味方「あんこうチーム」キャラ１体}を{味方フィールド}に移動する。",
+    "normalizedText": "[アシスト]\n[宣言] [無無無]:バトル中に使用できない。{味方「あんこうチーム」キャラ1体}を{味方フィールド}に移動する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [無無無]:バトル中に使用できない。{味方「あんこうチーム」キャラ1体}を{味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [無無無]:バトル中に使用できない。{味方「あんこうチーム」キャラ1体}を{味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

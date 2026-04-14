@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方[花]キャラ１体にＤＭＧ＋１する。",
   "textKr": "[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方[花]キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1944"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1944",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方[花]キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、DMGが3以下の味方[花]キャラ1体にDMG+1する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、DMGが3以下の味方[花]キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、DMGが3以下の味方[花]キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

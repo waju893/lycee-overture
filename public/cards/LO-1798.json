@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[無]]\n[宣言] [0]:バトル中に使用できない。{味方「ToHeart2」キャラ１体}にＤＰ＋１する。",
   "textKr": "[サポーター:[無]]\n[宣言] [0]:バトル中に使用できない。{味方「ToHeart2」キャラ１体}にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1798"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1798",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。{味方「ToHeart2」キャラ1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[無]]\n[宣言] [0]:バトル中に使用できない。{味方「ToHeart2」キャラ１体}にＤＰ＋１する。",
+    "normalizedText": "[サポーター:[無]]\n[宣言] [0]:バトル中に使用できない。{味方「ToHeart2」キャラ1体}にDP+1する。",
+    "lines": [
+      "[サポーター:[無]]",
+      "[宣言] [0]:バトル中に使用できない。{味方「ToHeart2」キャラ1体}にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

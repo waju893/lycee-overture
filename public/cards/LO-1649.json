@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラは[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]を得る。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラは[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1649"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1649",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラは[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]を得る。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラは[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]を得る。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラでサポートをしたとき、対象のキャラは[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、対象のキャラは[ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

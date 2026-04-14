@@ -25,5 +25,25 @@
   "typeTagsRaw": "神姫",
   "text": "[アグレッシブ]\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにＤＭＧ＋１する。このバトル終了時、このキャラを破棄する。",
   "textKr": "[アグレッシブ]\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにＤＭＧ＋１する。このバトル終了時、このキャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0819"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0819",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにＤＭＧ＋１する。このバトル終了時、このキャラを破棄する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:このキャラのバトル中に使用する。このキャラにDMG+1する。このバトル終了時、このキャラを破棄する。",
+    "lines": [
+      "[アグレッシブ]",
+      "[宣言] [0]:このキャラのバトル中に使用する。このキャラにDMG+1する。このバトル終了時、このキャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラのバトル中に使用する。このキャラにDMG+1する。このバトル終了時、このキャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

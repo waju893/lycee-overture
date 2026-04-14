@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2835",
+  "title": "かんしゃく",
+  "subName": "神尾 観鈴",
+  "name": "かんしゃく 神尾 観鈴",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,31 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    2
-  ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[誘発] 味方キャラが場を離れたとき、相手のデッキを１枚破棄する。\n構築制限:[VA]かつ[日]",
+  "textKr": "[ステップ:[0]]\n[誘発] 味方キャラが場を離れたとき、相手のデッキを１枚破棄する。\n構築制限:[VA]かつ[日]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2835",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] 味方キャラが場を離れたとき、相手のデッキを１枚破棄する。\n構築制限:[VA]かつ[日]",
+    "normalizedText": "[ステップ:[0]]\n[誘発] 味方キャラが場を離れたとき、相手のデッキを1枚破棄する。構築制限:[VA]かつ[日]",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] 味方キャラが場を離れたとき、相手のデッキを1枚破棄する。構築制限:[VA]かつ[日]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方キャラが場を離れたとき、相手のデッキを1枚破棄する。構築制限:[VA]かつ[日]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

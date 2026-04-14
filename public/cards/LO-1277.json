@@ -1,11 +1,40 @@
 {
+  "cardNo": "LO-1277",
+  "title": "ゴール",
+  "subName": "",
+  "name": "ゴール",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 1,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ１体}を破棄する。破棄したとき、{コストがそのキャラのコストの数以下の相手キャラ１体}を破棄する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ１体}を破棄する。破棄したとき、{コストがそのキャラのコストの数以下の相手キャラ１体}を破棄する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1277",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ１体}を破棄する。破棄したとき、{コストがそのキャラのコストの数以下の相手キャラ１体}を破棄する。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ1体}を破棄する。破棄したとき、{コストがそのキャラのコストの数以下の相手キャラ1体}を破棄する。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ1体}を破棄する。破棄したとき、{コストがそのキャラのコストの数以下の相手キャラ1体}を破棄する。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "自ターン中に使用する。バトル中に使用できない。{味方[雪]キャラ1体}を破棄する。破棄したとき、{コストがそのキャラのコストの数以下の相手キャラ1体}を破棄する。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

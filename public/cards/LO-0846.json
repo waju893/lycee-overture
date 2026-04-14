@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0846",
+  "title": "ホワイトリカバリー",
+  "subName": "べロボーグ",
+  "name": "ホワイトリカバリー べロボーグ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,27 @@
   "ap": 1,
   "dp": 4,
   "sp": 2,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0846",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

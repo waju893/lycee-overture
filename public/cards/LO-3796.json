@@ -21,7 +21,32 @@
   "costRaw": "宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3796"
+  "text": "コストが１点の味方[宙]キャラが登場している場合、{相手キャラ１体}にＤＰ－２・ＳＰ－２する。",
+  "textKr": "コストが１点の味方[宙]キャラが登場している場合、{相手キャラ１体}にＤＰ－２・ＳＰ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3796",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "コストが1点の味方[宙]キャラが登場している場合、{相手キャラ1体}にDP-2・SP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "コストが１点の味方[宙]キャラが登場している場合、{相手キャラ１体}にＤＰ－２・ＳＰ－２する。",
+    "normalizedText": "コストが1点の味方[宙]キャラが登場している場合、{相手キャラ1体}にDP-2・SP-2する。",
+    "lines": [
+      "コストが1点の味方[宙]キャラが登場している場合、{相手キャラ1体}にDP-2・SP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

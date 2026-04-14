@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラの前後の味方[花]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを手札に入れる。この能力は失われる。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラの前後の味方[花]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1942"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1942",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラの前後の味方[花]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを手札に入れる。この能力は失われる。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラの前後の味方[花]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを手札に入れる。この能力は失われる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラの前後の味方[花]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラの前後の味方[花]キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを手札に入れる。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

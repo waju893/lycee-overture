@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン中、味方『うたわれるもの ロストフラグ』キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置ける。",
   "textKr": "[誘発] 自ターン中、味方『うたわれるもの ロストフラグ』キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置ける。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5149"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5149",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、味方『うたわれるもの ロストフラグ』キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置ける。",
+    "normalizedText": "[誘発] 自ターン中、味方『うたわれるもの ロストフラグ』キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置ける。",
+    "lines": [
+      "[誘発] 自ターン中、味方『うたわれるもの ロストフラグ』キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置ける。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、味方『うたわれるもの ロストフラグ』キャラがダウンしたとき、ゴミ箱のそのキャラをデッキの下に置ける。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

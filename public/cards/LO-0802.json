@@ -26,5 +26,20 @@
   "typeTagsRaw": "神姫",
   "text": "[宣言] [0]:コストが５点以上の味方キャラが登場している場合、このキャラにＤＭＧ＋１する。",
   "textKr": "[宣言] [0]:コストが５点以上の味方キャラが登場している場合、このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0802"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0802",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:コストが５点以上の味方キャラが登場している場合、このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [0]:コストが5点以上の味方キャラが登場している場合、このキャラにDMG+1する。",
+    "lines": [
+      "[宣言] [0]:コストが5点以上の味方キャラが登場している場合、このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:コストが5点以上の味方キャラが登場している場合、このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

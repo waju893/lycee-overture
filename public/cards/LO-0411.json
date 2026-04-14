@@ -22,7 +22,22 @@
   "costRaw": "花花",
   "restrictionRaw": "",
   "typeTagsRaw": "イベント",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0411"
+  "text": "相手ターン中に使用する。{味方キャラ１体}を未行動にする。",
+  "textKr": "相手ターン中に使用する。{味方キャラ１体}を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0411",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手ターン中に使用する。{味方キャラ１体}を未行動にする。",
+    "normalizedText": "相手ターン中に使用する。{味方キャラ1体}を未行動にする。",
+    "lines": [
+      "相手ターン中に使用する。{味方キャラ1体}を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手ターン中に使用する。{味方キャラ1体}を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

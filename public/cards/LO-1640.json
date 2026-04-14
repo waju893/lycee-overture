@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1640",
+  "title": "中二病",
+  "subName": "ニコラ・ケフェウス",
+  "name": "中二病 ニコラ・ケフェウス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,39 @@
   "ap": 3,
   "dp": 1,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:自ターン中に使用する。{味方[月]アイテム１枚}を破棄する。破棄したとき、{自分のゴミ箱の[月]アイテム１枚}を手札に入れる。\n構築制限:ゆずソフト（[YUZ]）",
+  "textKr": "[宣言] [0]:自ターン中に使用する。{味方[月]アイテム１枚}を破棄する。破棄したとき、{自分のゴミ箱の[月]アイテム１枚}を手札に入れる。\n構築制限:ゆずソフト（[YUZ]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1640",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。{味方[月]アイテム1枚}を破棄する。破棄したとき、{自分のゴミ箱の[月]アイテム1枚}を手札に入れる。構築制限:ゆずソフト([YUZ])",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。{味方[月]アイテム１枚}を破棄する。破棄したとき、{自分のゴミ箱の[月]アイテム１枚}を手札に入れる。\n構築制限:ゆずソフト（[YUZ]）",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。{味方[月]アイテム1枚}を破棄する。破棄したとき、{自分のゴミ箱の[月]アイテム1枚}を手札に入れる。構築制限:ゆずソフト([YUZ])",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。{味方[月]アイテム1枚}を破棄する。破棄したとき、{自分のゴミ箱の[月]アイテム1枚}を手札に入れる。構築制限:ゆずソフト([YUZ])"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

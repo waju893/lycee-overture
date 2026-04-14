@@ -23,5 +23,29 @@
   "typeTagsRaw": "城娘",
   "text": "[宣言] [0]:{このキャラを除く味方キャラ１体}は[ペナルティ:[１枚ドローする。]]を得る。この能力は失われる。",
   "textKr": "[宣言] [0]:{このキャラを除く味方キャラ１体}は[ペナルティ:[１枚ドローする。]]を得る。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2301"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2301",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{このキャラを除く味方キャラ1体}は[ペナルティ:[1枚ドローする。]]を得る。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{このキャラを除く味方キャラ１体}は[ペナルティ:[１枚ドローする。]]を得る。この能力は失われる。",
+    "normalizedText": "[宣言] [0]:{このキャラを除く味方キャラ1体}は[ペナルティ:[1枚ドローする。]]を得る。この能力は失われる。",
+    "lines": [
+      "[宣言] [0]:{このキャラを除く味方キャラ1体}は[ペナルティ:[1枚ドローする。]]を得る。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

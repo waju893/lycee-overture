@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-2905",
+  "title": "重度の厨二病患者",
+  "subName": "結城 希亜",
+  "name": "重度の厨二病患者 結城 希亜",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon",
     "sun"
   ],
-  "attributesList": [
-    "moon",
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -16,5 +18,36 @@
   "ap": 2,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラがアイテムを装備したとき、１枚ドローする。この能力は失われる。\n[誘発] 味方キャラがアイテムを装備したとき、自分のデッキを１枚回復する。\n構築制限:『9-nine-』",
+  "textKr": "[誘発] このキャラがアイテムを装備したとき、１枚ドローする。この能力は失われる。\n[誘発] 味方キャラがアイテムを装備したとき、自分のデッキを１枚回復する。\n構築制限:『9-nine-』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2905",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラがアイテムを装備したとき、1枚ドローする。この能力は失われる。[誘発] 味方キャラがアイテムを装備したとき、自分のデッキを1枚回復する。構築制限:『9-nine-』",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラがアイテムを装備したとき、１枚ドローする。この能力は失われる。\n[誘発] 味方キャラがアイテムを装備したとき、自分のデッキを１枚回復する。\n構築制限:『9-nine-』",
+    "normalizedText": "[誘発] このキャラがアイテムを装備したとき、1枚ドローする。この能力は失われる。[誘発] 味方キャラがアイテムを装備したとき、自分のデッキを1枚回復する。構築制限:『9-nine-』",
+    "lines": [
+      "[誘発] このキャラがアイテムを装備したとき、1枚ドローする。この能力は失われる。[誘発] 味方キャラがアイテムを装備したとき、自分のデッキを1枚回復する。構築制限:『9-nine-』"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -23,7 +23,22 @@
   "costRaw": "雪雪雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0085"
+  "text": "コストが２点以下の相手キャラ１体を破棄する。",
+  "textKr": "コストが２点以下の相手キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0085",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "コストが２点以下の相手キャラ１体を破棄する。",
+    "normalizedText": "コストが2点以下の相手キャラ1体を破棄する。",
+    "lines": [
+      "コストが2点以下の相手キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "コストが2点以下の相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

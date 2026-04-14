@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラがアイテムを持つ場合、このキャラにＤＰ＋１する。\n[宣言] [0]:{持ち主が自分のアイテムを持つキャラ１体}のＡＰまたはＤＰに＋１または－１する。",
   "textKr": "[常時] このキャラがアイテムを持つ場合、このキャラにＤＰ＋１する。\n[宣言] [0]:{持ち主が自分のアイテムを持つキャラ１体}のＡＰまたはＤＰに＋１または－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5465"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5465",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] このキャラがアイテムを持つ場合、このキャラにDP+1する。[宣言] [0]:{持ち主が自分のアイテムを持つキャラ1体}のAPまたはDPに+1または-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] このキャラがアイテムを持つ場合、このキャラにＤＰ＋１する。\n[宣言] [0]:{持ち主が自分のアイテムを持つキャラ１体}のＡＰまたはＤＰに＋１または－１する。",
+    "normalizedText": "[常時] このキャラがアイテムを持つ場合、このキャラにDP+1する。[宣言] [0]:{持ち主が自分のアイテムを持つキャラ1体}のAPまたはDPに+1または-1する。",
+    "lines": [
+      "[常時] このキャラがアイテムを持つ場合、このキャラにDP+1する。[宣言] [0]:{持ち主が自分のアイテムを持つキャラ1体}のAPまたはDPに+1または-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

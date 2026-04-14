@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2395",
+  "title": "王者の大行進",
+  "subName": "袁紹・麗羽",
+  "name": "王者の大行進 袁紹・麗羽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -15,5 +18,37 @@
   "ap": 3,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、相手キャラが登場していない場合、相手ターン終了時まで、このキャラは元の能力全てを失う。\n[宣言] [0]:自分の手札が０枚の場合、１枚ドローする。\n構築制限:[NEX]",
+  "textKr": "[誘発] このキャラが登場したとき、相手キャラが登場していない場合、相手ターン終了時まで、このキャラは元の能力全てを失う。\n[宣言] [0]:自分の手札が０枚の場合、１枚ドローする。\n構築制限:[NEX]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2395",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、相手キャラが登場していない場合、相手ターン終了時まで、このキャラは元の能力全てを失う。[宣言] [0]:自分の手札が0枚の場合、1枚ドローする。構築制限:[NEX]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手キャラが登場していない場合、相手ターン終了時まで、このキャラは元の能力全てを失う。\n[宣言] [0]:自分の手札が０枚の場合、１枚ドローする。\n構築制限:[NEX]",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手キャラが登場していない場合、相手ターン終了時まで、このキャラは元の能力全てを失う。[宣言] [0]:自分の手札が0枚の場合、1枚ドローする。構築制限:[NEX]",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手キャラが登場していない場合、相手ターン終了時まで、このキャラは元の能力全てを失う。[宣言] [0]:自分の手札が0枚の場合、1枚ドローする。構築制限:[NEX]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

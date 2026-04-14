@@ -24,5 +24,72 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [無]:このキャラにＡＰ＋１またはＤＰ＋１またはＳＰ＋１またはＤＭＧ＋１する。",
   "textKr": "[宣言] [無]:このキャラにＡＰ＋１またはＤＰ＋１またはＳＰ＋１またはＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0487"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0487",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:このキャラにAP+1またはDP+1またはSP+1またはDMG+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "sp",
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [無]:このキャラにＡＰ＋１またはＤＰ＋１またはＳＰ＋１またはＤＭＧ＋１する。",
+    "normalizedText": "[宣言] [無]:このキャラにAP+1またはDP+1またはSP+1またはDMG+1する。",
+    "lines": [
+      "[宣言] [無]:このキャラにAP+1またはDP+1またはSP+1またはDMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

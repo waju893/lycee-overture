@@ -27,5 +27,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:味方「ユズリハ・サーバル」が登場している場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:味方「ユズリハ・サーバル」が登場している場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4500"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4500",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方「ユズリハ・サーバル」が登場している場合、このキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:味方「ユズリハ・サーバル」が登場している場合、このキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:味方「ユズリハ・サーバル」が登場している場合、このキャラにAP+2・DP+2する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:味方「ユズリハ・サーバル」が登場している場合、このキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

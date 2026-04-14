@@ -23,7 +23,22 @@
   "costRaw": "宙宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0554"
+  "text": "相手キャラ全てにＤＭＧ－２する。",
+  "textKr": "相手キャラ全てにＤＭＧ－２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0554",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手キャラ全てにＤＭＧ－２する。",
+    "normalizedText": "相手キャラ全てにDMG-2する。",
+    "lines": [
+      "相手キャラ全てにDMG-2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手キャラ全てにDMG-2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

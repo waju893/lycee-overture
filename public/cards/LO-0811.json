@@ -24,5 +24,30 @@
   "typeTagsRaw": "神姫",
   "text": "[宣言] [日]:このキャラにＡＰ＋３・ＤＰ－３する。",
   "textKr": "[宣言] [日]:このキャラにＡＰ＋３・ＤＰ－３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0811"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0811",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:このキャラにAP+3・DP-3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [日]:このキャラにＡＰ＋３・ＤＰ－３する。",
+    "normalizedText": "[宣言] [日]:このキャラにAP+3・DP-3する。",
+    "lines": [
+      "[宣言] [日]:このキャラにAP+3・DP-3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

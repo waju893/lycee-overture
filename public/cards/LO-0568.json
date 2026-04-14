@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0568",
+  "title": "解体聖母",
+  "subName": "アサシン／ジャック・ザ・リッパー",
+  "name": "解体聖母 アサシン／ジャック・ザ・リッパー",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,27 @@
   "ap": 2,
   "dp": 2,
   "sp": 0,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[宣言][T無無][このキャラを破棄する]:{相手キャラ１体}を破棄する。\n構築制限:Fate/Grand Order",
+  "textKr": "[宣言][T無無][このキャラを破棄する]:{相手キャラ１体}を破棄する。\n構築制限:Fate/Grand Order",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0568",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言][T無無][このキャラを破棄する]:{相手キャラ１体}を破棄する。\n構築制限:Fate/Grand Order",
+    "normalizedText": "[宣言][T無無][このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order",
+    "lines": [
+      "[宣言][T無無][このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言][T無無][このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

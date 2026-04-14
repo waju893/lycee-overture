@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにＡＰ＋１する。",
   "textKr": "[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2118"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2118",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにＡＰ＋１する。",
+    "normalizedText": "[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにAP+1する。",
+    "lines": [
+      "[宣言] [0]:自分のゴミ箱に[日]でないカードが置かれている場合、このキャラにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

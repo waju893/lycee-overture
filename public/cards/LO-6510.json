@@ -1,11 +1,50 @@
 {
+  "cardNo": "LO-6510",
+  "title": "レガシー",
+  "subName": "",
+  "name": "レガシー",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 2,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "ゴミ箱のこのイベントを除外する。{味方キャラ１体}に１枚チャージできる。自分のゴミ箱のキャラ１体を味方「フロスト中立特区」１枚の下に置ける。\n構築制限:『アンラベル・トリガー』",
+  "textKr": "ゴミ箱のこのイベントを除外する。{味方キャラ１体}に１枚チャージできる。自分のゴミ箱のキャラ１体を味方「フロスト中立特区」１枚の下に置ける。\n構築制限:『アンラベル・トリガー』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6510",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "ゴミ箱のこのイベントを除外する。{味方キャラ1体}に1枚チャージできる。自分のゴミ箱のキャラ1体を味方「フロスト中立特区」1枚の下に置ける。構築制限:『アンラベル・トリガー』",
+      "actions": [
+        {
+          "type": "charge",
+          "amount": 1,
+          "target": "self"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "ゴミ箱のこのイベントを除外する。{味方キャラ１体}に１枚チャージできる。自分のゴミ箱のキャラ１体を味方「フロスト中立特区」１枚の下に置ける。\n構築制限:『アンラベル・トリガー』",
+    "normalizedText": "ゴミ箱のこのイベントを除外する。{味方キャラ1体}に1枚チャージできる。自分のゴミ箱のキャラ1体を味方「フロスト中立特区」1枚の下に置ける。構築制限:『アンラベル・トリガー』",
+    "lines": [
+      "ゴミ箱のこのイベントを除外する。{味方キャラ1体}に1枚チャージできる。自分のゴミ箱のキャラ1体を味方「フロスト中立特区」1枚の下に置ける。構築制限:『アンラベル・トリガー』"
+    ],
+    "matchedRuleIds": [
+      "charge"
+    ]
+  },
+  "unresolvedTextLines": []
 }

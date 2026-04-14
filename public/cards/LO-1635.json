@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方[月]アイテム１枚を味方キャラ１体に無償で装備する。",
   "textKr": "[誘発] このキャラが登場したとき、味方[月]アイテム１枚を味方キャラ１体に無償で装備する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1635"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1635",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方[月]アイテム１枚を味方キャラ１体に無償で装備する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方[月]アイテム1枚を味方キャラ1体に無償で装備する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方[月]アイテム1枚を味方キャラ1体に無償で装備する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方[月]アイテム1枚を味方キャラ1体に無償で装備する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

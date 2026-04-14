@@ -27,5 +27,37 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋３・ＤＰ＋３する。味方「古奈菜子」または「咲上参式」１体にＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋３・ＤＰ＋３する。味方「古奈菜子」または「咲上参式」１体にＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6019"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6019",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したときまたはターン開始時、コストが5~6点の味方[宙]キャラ1体にAP+3・DP+3する。味方「古奈菜子」または「咲上参式」1体にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、コストが５～６点の味方[宙]キャラ１体にＡＰ＋３・ＤＰ＋３する。味方「古奈菜子」または「咲上参式」１体にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが登場したときまたはターン開始時、コストが5~6点の味方[宙]キャラ1体にAP+3・DP+3する。味方「古奈菜子」または「咲上参式」1体にAP+2・DP+2する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] このキャラが登場したときまたはターン開始時、コストが5~6点の味方[宙]キャラ1体にAP+3・DP+3する。味方「古奈菜子」または「咲上参式」1体にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

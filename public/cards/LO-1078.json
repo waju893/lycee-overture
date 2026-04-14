@@ -25,5 +25,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[オーダーステップ:[0]]\n[誘発] ＥＸが１の味方[宙]キャラが登場したとき、このキャラにＤＭＧ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] ＥＸが１の味方[宙]キャラが登場したとき、このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1078"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1078",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] ＥＸが１の味方[宙]キャラが登場したとき、このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] EXが1の味方[宙]キャラが登場したとき、このキャラにDMG+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] EXが1の味方[宙]キャラが登場したとき、このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] EXが1の味方[宙]キャラが登場したとき、このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

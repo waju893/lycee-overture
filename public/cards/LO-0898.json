@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0898",
+  "title": "冥王を虜にしたい希代の踊り子",
+  "subName": "フランチェスカ",
+  "name": "冥王を虜にしたい希代の踊り子 フランチェスカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,27 @@
   "ap": 2,
   "dp": 3,
   "sp": 2,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [月][このキャラを破棄する]:{「フランチェスカ」を除く、自分のゴミ箱のコストが２点以下のキャラ１体}を無償で登場する。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "[宣言] [月][このキャラを破棄する]:{「フランチェスカ」を除く、自分のゴミ箱のコストが２点以下のキャラ１体}を無償で登場する。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0898",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [月][このキャラを破棄する]:{「フランチェスカ」を除く、自分のゴミ箱のコストが２点以下のキャラ１体}を無償で登場する。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "[宣言] [月][このキャラを破棄する]:{「フランチェスカ」を除く、自分のゴミ箱のコストが2点以下のキャラ1体}を無償で登場する。構築制限:オーガスト([AUG])",
+    "lines": [
+      "[宣言] [月][このキャラを破棄する]:{「フランチェスカ」を除く、自分のゴミ箱のコストが2点以下のキャラ1体}を無償で登場する。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [月][このキャラを破棄する]:{「フランチェスカ」を除く、自分のゴミ箱のコストが2点以下のキャラ1体}を無償で登場する。構築制限:オーガスト([AUG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

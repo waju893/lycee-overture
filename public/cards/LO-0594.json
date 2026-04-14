@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0594",
+  "title": "巫女姫",
+  "subName": "朝武 芳乃",
+  "name": "巫女姫 朝武 芳乃",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow",
     "snow",
@@ -15,5 +18,37 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [D1]:{相手キャラ１体}にＤＰ－１する。\n構築制限:ゆずソフト",
+  "textKr": "[宣言] [D1]:{相手キャラ１体}にＤＰ－１する。\n構築制限:ゆずソフト",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0594",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:{相手キャラ1体}にDP-1する。構築制限:ゆずソフト",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:{相手キャラ１体}にＤＰ－１する。\n構築制限:ゆずソフト",
+    "normalizedText": "[宣言] [D1]:{相手キャラ1体}にDP-1する。構築制限:ゆずソフト",
+    "lines": [
+      "[宣言] [D1]:{相手キャラ1体}にDP-1する。構築制限:ゆずソフト"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

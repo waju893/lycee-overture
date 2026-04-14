@@ -27,5 +27,25 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ１体にＤＭＧ－２する。",
   "textKr": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ１体にＤＭＧ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0861"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0861",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ１体にＤＭＧ－２する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ1体にDMG-2する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ1体にDMG-2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが相手のデッキにダメージを与えたとき、次の相手ターン終了時まで相手キャラ1体にDMG-2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

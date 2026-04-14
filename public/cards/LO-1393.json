@@ -27,5 +27,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[リカバリー:[相手のデッキを２枚破棄する。]][オーダーステップ:[0]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄する。",
   "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]][オーダーステップ:[0]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1393"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1393",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[相手のデッキを２枚破棄する。]][オーダーステップ:[0]]\n[誘発] 相手ＤＦキャラがダウンしたバトル終了時、相手のデッキを１枚破棄する。",
+    "normalizedText": "[リカバリー:[相手のデッキを2枚破棄する。]][オーダーステップ:[0]]\n[誘発] 相手DFキャラがダウンしたバトル終了時、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[リカバリー:[相手のデッキを2枚破棄する。]][オーダーステップ:[0]]",
+      "[誘発] 相手DFキャラがダウンしたバトル終了時、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[相手のデッキを2枚破棄する。]][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手DFキャラがダウンしたバトル終了時、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

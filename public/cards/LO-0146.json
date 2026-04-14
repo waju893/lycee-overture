@@ -26,5 +26,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにＤＭＧ＋１する。",
   "textKr": "[エンゲージ]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0146"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0146",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[エンゲージ]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにDMG+1する。",
+    "lines": [
+      "[エンゲージ]",
+      "[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,20 @@
   "typeTagsRaw": "-",
   "text": "[誘発] 相手の効果によって味方キャラを行動済みにしたとき、そのキャラを未行動にできる。",
   "textKr": "[誘発] 相手の効果によって味方キャラを行動済みにしたとき、そのキャラを未行動にできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0723"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0723",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 相手の効果によって味方キャラを行動済みにしたとき、そのキャラを未行動にできる。",
+    "normalizedText": "[誘発] 相手の効果によって味方キャラを行動済みにしたとき、そのキャラを未行動にできる。",
+    "lines": [
+      "[誘発] 相手の効果によって味方キャラを行動済みにしたとき、そのキャラを未行動にできる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 相手の効果によって味方キャラを行動済みにしたとき、そのキャラを未行動にできる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

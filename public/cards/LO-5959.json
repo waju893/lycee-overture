@@ -25,5 +25,64 @@
   "typeTagsRaw": "",
   "text": "[サイドステップ:[0]][エンゲージ:[１枚ドローできる。]]\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。そのキャラが「ジャスティーヌ・アメリ・ラグランジェ」の場合、その能力値に＋１する。",
   "textKr": "[サイドステップ:[0]][エンゲージ:[１枚ドローできる。]]\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。そのキャラが「ジャスティーヌ・アメリ・ラグランジェ」の場合、その能力値に＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5959"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5959",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[サイドステップ:[0]][エンゲージ:[1枚ドローできる。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。そのキャラが「ジャスティーヌ・アメリ・ラグランジェ」の場合、その能力値に+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]][エンゲージ:[１枚ドローできる。]]\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。そのキャラが「ジャスティーヌ・アメリ・ラグランジェ」の場合、その能力値に＋１する。",
+    "normalizedText": "[サイドステップ:[0]][エンゲージ:[1枚ドローできる。]]\n[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。そのキャラが「ジャスティーヌ・アメリ・ラグランジェ」の場合、その能力値に+1する。",
+    "lines": [
+      "[サイドステップ:[0]][エンゲージ:[1枚ドローできる。]]",
+      "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。そのキャラが「ジャスティーヌ・アメリ・ラグランジェ」の場合、その能力値に+1する。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

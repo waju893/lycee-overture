@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラはＡＰとＤＰの能力値修正を失う。",
   "textKr": "[宣言] [0]:このキャラはＡＰとＤＰの能力値修正を失う。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3745"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3745",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラはＡＰとＤＰの能力値修正を失う。",
+    "normalizedText": "[宣言] [0]:このキャラはAPとDPの能力値修正を失う。",
+    "lines": [
+      "[宣言] [0]:このキャラはAPとDPの能力値修正を失う。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:このキャラはAPとDPの能力値修正を失う。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

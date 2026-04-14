@@ -23,5 +23,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[宣言] [D1]:味方エリアを配置している場合、このキャラを未行動にする。この能力は失われる。",
   "textKr": "[サポーター:[花]]\n[宣言] [D1]:味方エリアを配置している場合、このキャラを未行動にする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2665"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2665",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[宣言] [D1]:味方エリアを配置している場合、このキャラを未行動にする。この能力は失われる。",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [D1]:味方エリアを配置している場合、このキャラを未行動にする。この能力は失われる。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[宣言] [D1]:味方エリアを配置している場合、このキャラを未行動にする。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D1]:味方エリアを配置している場合、このキャラを未行動にする。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

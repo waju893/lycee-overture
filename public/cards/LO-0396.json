@@ -26,5 +26,25 @@
   "typeTagsRaw": "聖グロリアーナ",
   "text": "[アシスト]\n[宣言] [0]:味方「ダージリン」が登場している場合、このキャラは[アグレッシブ]を得る。",
   "textKr": "[アシスト]\n[宣言] [0]:味方「ダージリン」が登場している場合、このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0396"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0396",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:味方「ダージリン」が登場している場合、このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:味方「ダージリン」が登場している場合、このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:味方「ダージリン」が登場している場合、このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:味方「ダージリン」が登場している場合、このキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

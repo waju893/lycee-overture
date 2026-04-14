@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2521",
+  "title": "自ら選んだ道",
+  "subName": "フィオネ・シルヴァリア",
+  "name": "自ら選んだ道 フィオネ・シルヴァリア",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
@@ -14,5 +17,27 @@
   "ap": 3,
   "dp": 2,
   "sp": 1,
-  "dmg": 2
+  "dmg": 2,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。\n構築制限:[AUG]",
+  "textKr": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。\n構築制限:[AUG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2521",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。\n構築制限:[AUG]",
+    "normalizedText": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。構築制限:[AUG]",
+    "lines": [
+      "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。構築制限:[AUG]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。構築制限:[AUG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

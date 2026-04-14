@@ -25,5 +25,25 @@
   "typeTagsRaw": "プラウダ",
   "text": "[アシスト]\n[誘発] 味方＜プラウダ＞キャラが場を離れたとき、このキャラにＤＭＧ＋２する。",
   "textKr": "[アシスト]\n[誘発] 味方＜プラウダ＞キャラが場を離れたとき、このキャラにＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0302"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0302",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 味方＜プラウダ＞キャラが場を離れたとき、このキャラにＤＭＧ＋２する。",
+    "normalizedText": "[アシスト]\n[誘発] 味方<プラウダ>キャラが場を離れたとき、このキャラにDMG+2する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 味方<プラウダ>キャラが場を離れたとき、このキャラにDMG+2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方<プラウダ>キャラが場を離れたとき、このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

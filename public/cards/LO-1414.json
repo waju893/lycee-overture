@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[0]]\n[誘発] このキャラが移動したとき、このキャラは[アグレッシブ]を得る。このキャラにＤＭＧ－１する。",
   "textKr": "[オーダーチェンジ:[0]]\n[誘発] このキャラが移動したとき、このキャラは[アグレッシブ]を得る。このキャラにＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1414"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1414",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[誘発] このキャラが移動したとき、このキャラは[アグレッシブ]を得る。このキャラにＤＭＧ－１する。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[誘発] このキャラが移動したとき、このキャラは[アグレッシブ]を得る。このキャラにDMG-1する。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[誘発] このキャラが移動したとき、このキャラは[アグレッシブ]を得る。このキャラにDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが移動したとき、このキャラは[アグレッシブ]を得る。このキャラにDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

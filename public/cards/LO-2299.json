@@ -23,5 +23,20 @@
   "typeTagsRaw": "城娘",
   "text": "[誘発] このキャラが登場したとき、コストが２点以下の味方[日]キャラ１体にＤＭＧ＋１する。",
   "textKr": "[誘発] このキャラが登場したとき、コストが２点以下の味方[日]キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2299"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2299",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、コストが２点以下の味方[日]キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、コストが2点以下の味方[日]キャラ1体にDMG+1する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、コストが2点以下の味方[日]キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、コストが2点以下の味方[日]キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

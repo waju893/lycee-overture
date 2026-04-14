@@ -22,7 +22,22 @@
   "costRaw": "月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1698"
+  "text": "相手の宣言に対応して使用する。コストが１点以上の味方[月]アイテム１枚を破棄する。破棄したとき、その宣言の解決は失敗する。",
+  "textKr": "相手の宣言に対応して使用する。コストが１点以上の味方[月]アイテム１枚を破棄する。破棄したとき、その宣言の解決は失敗する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1698",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手の宣言に対応して使用する。コストが１点以上の味方[月]アイテム１枚を破棄する。破棄したとき、その宣言の解決は失敗する。",
+    "normalizedText": "相手の宣言に対応して使用する。コストが1点以上の味方[月]アイテム1枚を破棄する。破棄したとき、その宣言の解決は失敗する。",
+    "lines": [
+      "相手の宣言に対応して使用する。コストが1点以上の味方[月]アイテム1枚を破棄する。破棄したとき、その宣言の解決は失敗する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手の宣言に対応して使用する。コストが1点以上の味方[月]アイテム1枚を破棄する。破棄したとき、その宣言の解決は失敗する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

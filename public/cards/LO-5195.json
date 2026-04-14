@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDＰ＋２する。",
   "textKr": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5195"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5195",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDＰ＋２する。",
+    "normalizedText": "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDP+2する。",
+    "lines": [
+      "[宣言] [0]:このキャラがアイテムを持つ場合、このキャラにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

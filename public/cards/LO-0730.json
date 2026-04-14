@@ -25,5 +25,20 @@
   "typeTagsRaw": "神姫",
   "text": "[誘発] 相手ターン中、味方キャラのダウンしていないバトル終了時、相手のデッキを１枚破棄する。",
   "textKr": "[誘発] 相手ターン中、味方キャラのダウンしていないバトル終了時、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0730"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0730",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 相手ターン中、味方キャラのダウンしていないバトル終了時、相手のデッキを１枚破棄する。",
+    "normalizedText": "[誘発] 相手ターン中、味方キャラのダウンしていないバトル終了時、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[誘発] 相手ターン中、味方キャラのダウンしていないバトル終了時、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 相手ターン中、味方キャラのダウンしていないバトル終了時、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

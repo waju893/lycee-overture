@@ -23,5 +23,32 @@
   "typeTagsRaw": "",
   "text": "[宣言] [宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のＥＸが２の手札宣言能力を持つ[宙]キャラ１体を手札に入れる。この能力は失われる。",
   "textKr": "[宣言] [宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のＥＸが２の手札宣言能力を持つ[宙]キャラ１体を手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3909"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3909",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のEXが2の手札宣言能力を持つ[宙]キャラ1体を手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のＥＸが２の手札宣言能力を持つ[宙]キャラ１体を手札に入れる。この能力は失われる。",
+    "normalizedText": "[宣言] [宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のEXが2の手札宣言能力を持つ[宙]キャラ1体を手札に入れる。この能力は失われる。",
+    "lines": [
+      "[宣言] [宙]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱のEXが2の手札宣言能力を持つ[宙]キャラ1体を手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

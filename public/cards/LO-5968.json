@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。このキャラを未行動にできる。",
   "textKr": "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。このキャラを未行動にできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5968"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5968",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。このキャラを未行動にできる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。このキャラを未行動にできる。",
+    "normalizedText": "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。このキャラを未行動にできる。",
+    "lines": [
+      "[宣言] [T]:バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。このキャラを未行動にできる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

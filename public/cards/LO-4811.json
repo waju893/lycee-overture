@@ -22,7 +22,32 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4811"
+  "text": "{コストが２点以下の味方[日]キャラ１体}と{コストが５点以上の味方[日]キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "textKr": "{コストが２点以下の味方[日]キャラ１体}と{コストが５点以上の味方[日]キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4811",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{コストが2点以下の味方[日]キャラ1体}と{コストが5点以上の味方[日]キャラ1体}にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{コストが２点以下の味方[日]キャラ１体}と{コストが５点以上の味方[日]キャラ１体}にＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "{コストが2点以下の味方[日]キャラ1体}と{コストが5点以上の味方[日]キャラ1体}にAP+2・DP+2する。",
+    "lines": [
+      "{コストが2点以下の味方[日]キャラ1体}と{コストが5点以上の味方[日]キャラ1体}にAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

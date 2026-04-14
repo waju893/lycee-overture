@@ -24,7 +24,22 @@
   "costRaw": "月月宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2137"
+  "text": "{自分のゴミ箱のコストが２点以下の[月]または[宙]キャラ１体}を無償で登場する。",
+  "textKr": "{自分のゴミ箱のコストが２点以下の[月]または[宙]キャラ１体}を無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2137",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{自分のゴミ箱のコストが２点以下の[月]または[宙]キャラ１体}を無償で登場する。",
+    "normalizedText": "{自分のゴミ箱のコストが2点以下の[月]または[宙]キャラ1体}を無償で登場する。",
+    "lines": [
+      "{自分のゴミ箱のコストが2点以下の[月]または[宙]キャラ1体}を無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{自分のゴミ箱のコストが2点以下の[月]または[宙]キャラ1体}を無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

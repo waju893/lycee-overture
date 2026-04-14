@@ -26,5 +26,36 @@
   "typeTagsRaw": "黒森峰",
   "text": "[オーダーステップ:[0]]\n[宣言] [D2]:味方＜黒森峰＞キャラ全てにＳＰ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [D2]:味方＜黒森峰＞キャラ全てにＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0427"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0427",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D2]:味方<黒森峰>キャラ全てにSP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [D2]:味方＜黒森峰＞キャラ全てにＳＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [D2]:味方<黒森峰>キャラ全てにSP+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [D2]:味方<黒森峰>キャラ全てにSP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

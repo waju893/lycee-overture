@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1518",
+  "title": "神官戦士団長",
+  "subName": "エクス",
+  "name": "神官戦士団長 エクス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -14,5 +17,27 @@
   "ap": 0,
   "dp": 3,
   "sp": 3,
-  "dmg": 1
+  "dmg": 1,
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [花]:このキャラを行動済みにする。行動済みにしたとき、{味方[花]キャラ１体}を未行動にする。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "[宣言] [花]:このキャラを行動済みにする。行動済みにしたとき、{味方[花]キャラ１体}を未行動にする。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1518",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [花]:このキャラを行動済みにする。行動済みにしたとき、{味方[花]キャラ１体}を未行動にする。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "[宣言] [花]:このキャラを行動済みにする。行動済みにしたとき、{味方[花]キャラ1体}を未行動にする。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "[宣言] [花]:このキャラを行動済みにする。行動済みにしたとき、{味方[花]キャラ1体}を未行動にする。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [花]:このキャラを行動済みにする。行動済みにしたとき、{味方[花]キャラ1体}を未行動にする。構築制限:千年戦争アイギス([AIG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

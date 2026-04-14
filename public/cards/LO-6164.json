@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]][チャージ:２]\n[宣言] [C1][日]:{味方キャラ１体}にＡＰ＋３する。このキャラのバトル中の場合、自分にシールド＋１できる。",
   "textKr": "[ジャンプ:[0]][チャージ:２]\n[宣言] [C1][日]:{味方キャラ１体}にＡＰ＋３する。このキャラのバトル中の場合、自分にシールド＋１できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6164"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6164",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1][日]:{味方キャラ1体}にAP+3する。このキャラのバトル中の場合、自分にシールド+1できる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]][チャージ:２]\n[宣言] [C1][日]:{味方キャラ１体}にＡＰ＋３する。このキャラのバトル中の場合、自分にシールド＋１できる。",
+    "normalizedText": "[ジャンプ:[0]][チャージ:2]\n[宣言] [C1][日]:{味方キャラ1体}にAP+3する。このキャラのバトル中の場合、自分にシールド+1できる。",
+    "lines": [
+      "[ジャンプ:[0]][チャージ:2]",
+      "[宣言] [C1][日]:{味方キャラ1体}にAP+3する。このキャラのバトル中の場合、自分にシールド+1できる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]][チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

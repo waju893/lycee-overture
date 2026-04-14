@@ -24,5 +24,25 @@
   "typeTagsRaw": "知波単",
   "text": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。",
   "textKr": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0405"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0405",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] 味方＜知波単＞キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。",
+    "normalizedText": "[アグレッシブ]\n[誘発] 味方<知波単>キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] 味方<知波単>キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 味方<知波単>キャラがダウンしたバトル終了時、このキャラを味方フィールドに移動できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

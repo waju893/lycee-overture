@@ -25,5 +25,44 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]][ペナルティ:[１枚ドローする。]]\n[誘発] ターン開始時、このキャラと味方キャラ１体を入れ替えることができる。\n[宣言] [D1]:このキャラを除く味方キャラ全てにＡＰ＋１する。",
   "textKr": "[ステップ:[0]][ペナルティ:[１枚ドローする。]]\n[誘発] ターン開始時、このキャラと味方キャラ１体を入れ替えることができる。\n[宣言] [D1]:このキャラを除く味方キャラ全てにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1479"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1479",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、このキャラと味方キャラ1体を入れ替えることができる。[宣言] [D1]:このキャラを除く味方キャラ全てにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]][ペナルティ:[１枚ドローする。]]\n[誘発] ターン開始時、このキャラと味方キャラ１体を入れ替えることができる。\n[宣言] [D1]:このキャラを除く味方キャラ全てにＡＰ＋１する。",
+    "normalizedText": "[ステップ:[0]][ペナルティ:[1枚ドローする。]]\n[誘発] ターン開始時、このキャラと味方キャラ1体を入れ替えることができる。[宣言] [D1]:このキャラを除く味方キャラ全てにAP+1する。",
+    "lines": [
+      "[ステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "[誘発] ターン開始時、このキャラと味方キャラ1体を入れ替えることができる。[宣言] [D1]:このキャラを除く味方キャラ全てにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

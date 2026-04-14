@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[無無]]\n[宣言] [0]:コストが３点以上の味方ＤＦキャラが３体以上登場している場合、このキャラにＤＰ＋２する。",
   "textKr": "[サポーター:[無無]]\n[宣言] [0]:コストが３点以上の味方ＤＦキャラが３体以上登場している場合、このキャラにＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3453"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3453",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが3点以上の味方DFキャラが3体以上登場している場合、このキャラにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[無無]]\n[宣言] [0]:コストが３点以上の味方ＤＦキャラが３体以上登場している場合、このキャラにＤＰ＋２する。",
+    "normalizedText": "[サポーター:[無無]]\n[宣言] [0]:コストが3点以上の味方DFキャラが3体以上登場している場合、このキャラにDP+2する。",
+    "lines": [
+      "[サポーター:[無無]]",
+      "[宣言] [0]:コストが3点以上の味方DFキャラが3体以上登場している場合、このキャラにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

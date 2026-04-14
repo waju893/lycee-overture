@@ -26,5 +26,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラで攻撃宣言をしたとき、自分のゴミ箱のキャラ１体を除外する。ゲーム中、除外された自分のキャラが３体以上の場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[誘発] このキャラで攻撃宣言をしたとき、自分のゴミ箱のキャラ１体を除外する。ゲーム中、除外された自分のキャラが３体以上の場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0877"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0877",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onAttackDeclare",
+      "originalLine": "[誘発] このキャラで攻撃宣言をしたとき、自分のゴミ箱のキャラ1体を除外する。ゲーム中、除外された自分のキャラが3体以上の場合、このキャラにAP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラで攻撃宣言をしたとき、自分のゴミ箱のキャラ１体を除外する。ゲーム中、除外された自分のキャラが３体以上の場合、このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[誘発] このキャラで攻撃宣言をしたとき、自分のゴミ箱のキャラ1体を除外する。ゲーム中、除外された自分のキャラが3体以上の場合、このキャラにAP+1・DMG+1する。",
+    "lines": [
+      "[誘発] このキャラで攻撃宣言をしたとき、自分のゴミ箱のキャラ1体を除外する。ゲーム中、除外された自分のキャラが3体以上の場合、このキャラにAP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

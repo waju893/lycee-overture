@@ -26,5 +26,25 @@
   "typeTagsRaw": "プラウダ",
   "text": "[アシスト]\n[宣言] [このキャラを破棄する。]:味方「カチューシャ」のバトル中に使用する。対戦キャラを破棄する。",
   "textKr": "[アシスト]\n[宣言] [このキャラを破棄する。]:味方「カチューシャ」のバトル中に使用する。対戦キャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0439"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0439",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [このキャラを破棄する。]:味方「カチューシャ」のバトル中に使用する。対戦キャラを破棄する。",
+    "normalizedText": "[アシスト]\n[宣言] [このキャラを破棄する。]:味方「カチューシャ」のバトル中に使用する。対戦キャラを破棄する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [このキャラを破棄する。]:味方「カチューシャ」のバトル中に使用する。対戦キャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [このキャラを破棄する。]:味方「カチューシャ」のバトル中に使用する。対戦キャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

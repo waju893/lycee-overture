@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]イベント１枚をデッキの下に置ける。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]イベント１枚をデッキの下に置ける。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4898"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4898",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[月]イベント１枚をデッキの下に置ける。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]イベント1枚をデッキの下に置ける。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]イベント1枚をデッキの下に置ける。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[月]イベント1枚をデッキの下に置ける。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

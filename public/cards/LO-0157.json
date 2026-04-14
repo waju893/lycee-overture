@@ -26,5 +26,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[味方キャラ１体にＤＭＧ＋１する。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は未行動の相手ＤＦキャラ１体を行動済みにする。",
   "textKr": "[エンゲージ:[味方キャラ１体にＤＭＧ＋１する。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は未行動の相手ＤＦキャラ１体を行動済みにする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0157"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0157",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[味方キャラ１体にＤＭＧ＋１する。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は未行動の相手ＤＦキャラ１体を行動済みにする。",
+    "normalizedText": "[エンゲージ:[味方キャラ1体にDMG+1する。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は未行動の相手DFキャラ1体を行動済みにする。",
+    "lines": [
+      "[エンゲージ:[味方キャラ1体にDMG+1する。]]",
+      "[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は未行動の相手DFキャラ1体を行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[味方キャラ1体にDMG+1する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラをエンゲージ登場によって破棄したとき、相手は未行動の相手DFキャラ1体を行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

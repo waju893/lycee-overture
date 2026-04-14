@@ -24,5 +24,25 @@
   "typeTagsRaw": "ヤマト／トゥスクル",
   "text": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、コストが１点以下のアイテム１枚を破棄できる。",
   "textKr": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、コストが１点以下のアイテム１枚を破棄できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1785"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1785",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、コストが１点以下のアイテム１枚を破棄できる。",
+    "normalizedText": "[アシスト][サポーター:[無無]]\n[誘発] このキャラが登場したとき、コストが1点以下のアイテム1枚を破棄できる。",
+    "lines": [
+      "[アシスト][サポーター:[無無]]",
+      "[誘発] このキャラが登場したとき、コストが1点以下のアイテム1枚を破棄できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、コストが1点以下のアイテム1枚を破棄できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

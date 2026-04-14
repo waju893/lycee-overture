@@ -21,7 +21,32 @@
   "costRaw": "花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3944"
+  "text": "味方ＤＦ[花]キャラ１体を破棄する。破棄したとき、{味方ＡＦ[花]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+  "textKr": "味方ＤＦ[花]キャラ１体を破棄する。破棄したとき、{味方ＡＦ[花]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3944",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方DF[花]キャラ1体を破棄する。破棄したとき、{味方AF[花]キャラ1体}にAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方ＤＦ[花]キャラ１体を破棄する。破棄したとき、{味方ＡＦ[花]キャラ１体}にＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "味方DF[花]キャラ1体を破棄する。破棄したとき、{味方AF[花]キャラ1体}にAP+3・DP+3する。",
+    "lines": [
+      "味方DF[花]キャラ1体を破棄する。破棄したとき、{味方AF[花]キャラ1体}にAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

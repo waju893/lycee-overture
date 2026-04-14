@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:コストが５点以上の味方[日]キャラが登場している場合、{味方[日]キャラ１体}にＡＰ＋１する。",
   "textKr": "[宣言] [0]:コストが５点以上の味方[日]キャラが登場している場合、{味方[日]キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4794"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4794",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが5点以上の味方[日]キャラが登場している場合、{味方[日]キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:コストが５点以上の味方[日]キャラが登場している場合、{味方[日]キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[宣言] [0]:コストが5点以上の味方[日]キャラが登場している場合、{味方[日]キャラ1体}にAP+1する。",
+    "lines": [
+      "[宣言] [0]:コストが5点以上の味方[日]キャラが登場している場合、{味方[日]キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

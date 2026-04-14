@@ -22,7 +22,32 @@
   "costRaw": "花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2918"
+  "text": "以下から１つを選び処理する。\n・コストが３点以上の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n・コストが３点以上の味方ＤＦキャラ１体を未行動にする。",
+  "textKr": "以下から１つを選び処理する。\n・コストが３点以上の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n・コストが３点以上の味方ＤＦキャラ１体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2918",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "以下から1つを選び処理する。・コストが3点以上の味方キャラ1体にAP+2・DP+2する。・コストが3点以上の味方DFキャラ1体を未行動にする。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "以下から１つを選び処理する。\n・コストが３点以上の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n・コストが３点以上の味方ＤＦキャラ１体を未行動にする。",
+    "normalizedText": "以下から1つを選び処理する。・コストが3点以上の味方キャラ1体にAP+2・DP+2する。・コストが3点以上の味方DFキャラ1体を未行動にする。",
+    "lines": [
+      "以下から1つを選び処理する。・コストが3点以上の味方キャラ1体にAP+2・DP+2する。・コストが3点以上の味方DFキャラ1体を未行動にする。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

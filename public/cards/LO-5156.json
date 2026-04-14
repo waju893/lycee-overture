@@ -26,5 +26,57 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:味方キャラ１体にＡＰ＋３または味方『うたわれるもの シリーズ』キャラ１体にＤＰ＋３する。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:味方キャラ１体にＡＰ＋３または味方『うたわれるもの シリーズ』キャラ１体にＤＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5156"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5156",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方キャラ1体にAP+3または味方『うたわれるもの シリーズ』キャラ1体にDP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:味方キャラ１体にＡＰ＋３または味方『うたわれるもの シリーズ』キャラ１体にＤＰ＋３する。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:味方キャラ1体にAP+3または味方『うたわれるもの シリーズ』キャラ1体にDP+3する。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:味方キャラ1体にAP+3または味方『うたわれるもの シリーズ』キャラ1体にDP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

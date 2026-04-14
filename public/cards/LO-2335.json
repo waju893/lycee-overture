@@ -24,5 +24,36 @@
   "typeTagsRaw": "城娘",
   "text": "[サポーター:[花花]]\n[宣言] [花]:{このキャラと同列のコストが２点以下の味方[花]キャラ１体}にＤＰ＋２する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [花]:{このキャラと同列のコストが２点以下の味方[花]キャラ１体}にＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2335"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2335",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [花]:{このキャラと同列のコストが2点以下の味方[花]キャラ1体}にDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [花]:{このキャラと同列のコストが２点以下の味方[花]キャラ１体}にＤＰ＋２する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [花]:{このキャラと同列のコストが2点以下の味方[花]キャラ1体}にDP+2する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [花]:{このキャラと同列のコストが2点以下の味方[花]キャラ1体}にDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

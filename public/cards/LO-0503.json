@@ -27,5 +27,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルでキャラがダウンしたとき、このキャラを未行動にする。",
   "textKr": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルでキャラがダウンしたとき、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0503"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0503",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルでキャラがダウンしたとき、このキャラを未行動にする。",
+    "normalizedText": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルでキャラがダウンしたとき、このキャラを未行動にする。",
+    "lines": [
+      "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルでキャラがダウンしたとき、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:このキャラでサポートをしたバトル中に使用する。このバトルでキャラがダウンしたとき、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

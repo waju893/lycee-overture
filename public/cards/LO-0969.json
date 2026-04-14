@@ -22,7 +22,22 @@
   "costRaw": "宙宙",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0969"
+  "text": "ゲーム中、除外された自分のキャラが１２体以上の場合、相手キャラ全てにＤＭＧ－２する。（ゲーム中１回まで使用可能）",
+  "textKr": "ゲーム中、除外された自分のキャラが１２体以上の場合、相手キャラ全てにＤＭＧ－２する。（ゲーム中１回まで使用可能）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0969",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "ゲーム中、除外された自分のキャラが１２体以上の場合、相手キャラ全てにＤＭＧ－２する。（ゲーム中１回まで使用可能）",
+    "normalizedText": "ゲーム中、除外された自分のキャラが12体以上の場合、相手キャラ全てにDMG-2する。(ゲーム中1回まで使用可能)",
+    "lines": [
+      "ゲーム中、除外された自分のキャラが12体以上の場合、相手キャラ全てにDMG-2する。(ゲーム中1回まで使用可能)"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "ゲーム中、除外された自分のキャラが12体以上の場合、相手キャラ全てにDMG-2する。(ゲーム中1回まで使用可能)",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方キャラ１体を未行動にする。そのキャラのＤＭＧを０にする。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ１体を未行動にする。そのキャラのＤＭＧを０にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5335"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5335",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ１体を未行動にする。そのキャラのＤＭＧを０にする。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ1体を未行動にする。そのキャラのDMGを0にする。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ1体を未行動にする。そのキャラのDMGを0にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体を未行動にする。そのキャラのDMGを0にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

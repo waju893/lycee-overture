@@ -23,5 +23,25 @@
   "typeTagsRaw": "エネミー",
   "text": "[サイドステップ:[0]]\n[宣言] [T日]:{味方キャラ１体}は[ステップ:[0]]を得る。",
   "textKr": "[サイドステップ:[0]]\n[宣言] [T日]:{味方キャラ１体}は[ステップ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0206"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0206",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[宣言] [T日]:{味方キャラ１体}は[ステップ:[0]]を得る。",
+    "normalizedText": "[サイドステップ:[0]]\n[宣言] [T日]:{味方キャラ1体}は[ステップ:[0]]を得る。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[宣言] [T日]:{味方キャラ1体}は[ステップ:[0]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T日]:{味方キャラ1体}は[ステップ:[0]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

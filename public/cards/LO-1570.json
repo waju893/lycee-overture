@@ -1,16 +1,55 @@
 {
+  "cardNo": "LO-1570",
+  "title": "王都脱出",
+  "subName": "",
+  "name": "王都脱出",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon",
     "moon"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{味方[月]キャラ１体}を横に置く。横のそのキャラを無償で登場する。そのキャラにＡＰ＋１・ＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "{味方[月]キャラ１体}を横に置く。横のそのキャラを無償で登場する。そのキャラにＡＰ＋１・ＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1570",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方[月]キャラ1体}を横に置く。横のそのキャラを無償で登場する。そのキャラにAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方[月]キャラ１体}を横に置く。横のそのキャラを無償で登場する。そのキャラにＡＰ＋１・ＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "{味方[月]キャラ1体}を横に置く。横のそのキャラを無償で登場する。そのキャラにAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "{味方[月]キャラ1体}を横に置く。横のそのキャラを無償で登場する。そのキャラにAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

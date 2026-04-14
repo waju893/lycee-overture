@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方キャラがダウンしたとき、このキャラにＡＰ＋１する。",
   "textKr": "[誘発] 味方キャラがダウンしたとき、このキャラにＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3063"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3063",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方キャラがダウンしたとき、このキャラにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラがダウンしたとき、このキャラにＡＰ＋１する。",
+    "normalizedText": "[誘発] 味方キャラがダウンしたとき、このキャラにAP+1する。",
+    "lines": [
+      "[誘発] 味方キャラがダウンしたとき、このキャラにAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

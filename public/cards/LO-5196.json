@@ -27,5 +27,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:味方[NEX]キャラ全てにＳＰ＋１する。この能力は失われる。",
   "textKr": "[宣言] [0]:味方[NEX]キャラ全てにＳＰ＋１する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5196"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5196",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方[NEX]キャラ全てにSP+1する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:味方[NEX]キャラ全てにＳＰ＋１する。この能力は失われる。",
+    "normalizedText": "[宣言] [0]:味方[NEX]キャラ全てにSP+1する。この能力は失われる。",
+    "lines": [
+      "[宣言] [0]:味方[NEX]キャラ全てにSP+1する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

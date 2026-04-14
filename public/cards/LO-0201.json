@@ -26,5 +26,20 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ][オーダーステップ:[0]]",
   "textKr": "[エンゲージ][オーダーステップ:[0]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0201"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0201",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ][オーダーステップ:[0]]",
+    "normalizedText": "[エンゲージ][オーダーステップ:[0]]",
+    "lines": [
+      "[エンゲージ][オーダーステップ:[0]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

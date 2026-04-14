@@ -24,5 +24,29 @@
   "typeTagsRaw": "",
   "text": "[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを４枚までデッキの下に置きシャッフルする。",
   "textKr": "[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを４枚までデッキの下に置きシャッフルする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4986"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4986",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを4枚までデッキの下に置きシャッフルする。",
+      "actions": [
+        {
+          "type": "shuffle",
+          "owner": "self"
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを４枚までデッキの下に置きシャッフルする。",
+    "normalizedText": "[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを4枚までデッキの下に置きシャッフルする。",
+    "lines": [
+      "[宣言][切札] [0]:自分のゴミ箱の切札効果を持つ[日]カードを4枚までデッキの下に置きシャッフルする。"
+    ],
+    "matchedRuleIds": [
+      "shuffle"
+    ]
+  },
+  "unresolvedTextLines": []
 }

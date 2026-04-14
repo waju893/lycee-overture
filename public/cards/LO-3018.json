@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [花花花]:{手札宣言能力を持つ味方キャラ１体}を未行動にする。",
   "textKr": "[手札宣言] [花花花]:{手札宣言能力を持つ味方キャラ１体}を未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3018"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3018",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [花花花]:{手札宣言能力を持つ味方キャラ１体}を未行動にする。",
+    "normalizedText": "[手札宣言] [花花花]:{手札宣言能力を持つ味方キャラ1体}を未行動にする。",
+    "lines": [
+      "[手札宣言] [花花花]:{手札宣言能力を持つ味方キャラ1体}を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [花花花]:{手札宣言能力を持つ味方キャラ1体}を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

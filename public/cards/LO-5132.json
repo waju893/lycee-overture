@@ -27,5 +27,37 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[誘発] ターン開始時、味方『ティアーズ・トゥ・ティアラ シリーズ』キャラ１体にＡＰ＋３・ＤＰ＋３する。",
   "textKr": "[ステップ:[0]]\n[誘発] ターン開始時、味方『ティアーズ・トゥ・ティアラ シリーズ』キャラ１体にＡＰ＋３・ＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5132"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5132",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、味方『ティアーズ・トゥ・ティアラ シリーズ』キャラ1体にAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] ターン開始時、味方『ティアーズ・トゥ・ティアラ シリーズ』キャラ１体にＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] ターン開始時、味方『ティアーズ・トゥ・ティアラ シリーズ』キャラ1体にAP+3・DP+3する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] ターン開始時、味方『ティアーズ・トゥ・ティアラ シリーズ』キャラ1体にAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

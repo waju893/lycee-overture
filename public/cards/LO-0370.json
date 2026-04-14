@@ -25,5 +25,25 @@
   "typeTagsRaw": "サンダース",
   "text": "[アシスト]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラは[オーダーステップ:[0]]を得る。",
   "textKr": "[アシスト]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラは[オーダーステップ:[0]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0370"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0370",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラは[オーダーステップ:[0]]を得る。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラを自分の能力の対象に指定したとき、このキャラは[オーダーステップ:[0]]を得る。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラを自分の能力の対象に指定したとき、このキャラは[オーダーステップ:[0]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラを自分の能力の対象に指定したとき、このキャラは[オーダーステップ:[0]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

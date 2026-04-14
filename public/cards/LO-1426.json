@@ -1,13 +1,42 @@
 {
+  "cardNo": "LO-1426",
+  "title": "初歩的なことだ、友よ",
+  "subName": "",
+  "name": "初歩的なことだ、友よ",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{ＡＰまたはＤＰが元の値より低いキャラ１体}を行動済みにする。\n構築制限:Fate/Grand Order（[TM]）",
+  "textKr": "{ＡＰまたはＤＰが元の値より低いキャラ１体}を行動済みにする。\n構築制限:Fate/Grand Order（[TM]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1426",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{ＡＰまたはＤＰが元の値より低いキャラ１体}を行動済みにする。\n構築制限:Fate/Grand Order（[TM]）",
+    "normalizedText": "{APまたはDPが元の値より低いキャラ1体}を行動済みにする。構築制限:Fate/Grand Order([TM])",
+    "lines": [
+      "{APまたはDPが元の値より低いキャラ1体}を行動済みにする。構築制限:Fate/Grand Order([TM])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{APまたはDPが元の値より低いキャラ1体}を行動済みにする。構築制限:Fate/Grand Order([TM])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

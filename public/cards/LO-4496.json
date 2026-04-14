@@ -27,5 +27,25 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:このキャラのＡＰとＤＰとＤＭＧに＋[味方『ソーサレス＊アライヴ！』キャラの数]する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:このキャラのＡＰとＤＰとＤＭＧに＋[味方『ソーサレス＊アライヴ！』キャラの数]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4496"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4496",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:このキャラのＡＰとＤＰとＤＭＧに＋[味方『ソーサレス＊アライヴ！』キャラの数]する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:このキャラのAPとDPとDMGに+[味方『ソーサレス*アライヴ!』キャラの数]する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:このキャラのAPとDPとDMGに+[味方『ソーサレス*アライヴ!』キャラの数]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラのAPとDPとDMGに+[味方『ソーサレス*アライヴ!』キャラの数]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

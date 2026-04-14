@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 手札以外から味方キャラが登場したとき、このキャラを味方フィールドに移動する。",
   "textKr": "[誘発] 手札以外から味方キャラが登場したとき、このキャラを味方フィールドに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0897"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0897",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 手札以外から味方キャラが登場したとき、このキャラを味方フィールドに移動する。",
+    "normalizedText": "[誘発] 手札以外から味方キャラが登場したとき、このキャラを味方フィールドに移動する。",
+    "lines": [
+      "[誘発] 手札以外から味方キャラが登場したとき、このキャラを味方フィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 手札以外から味方キャラが登場したとき、このキャラを味方フィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

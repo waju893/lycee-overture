@@ -25,5 +25,25 @@
   "typeTagsRaw": "-",
   "text": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [T無無無]:自ターン中に使用する。[自分のゴミ箱のキャラ１体]を 登場する。",
   "textKr": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [T無無無]:自ターン中に使用する。[自分のゴミ箱のキャラ１体]を 登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0689"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0689",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リカバリー:[相手のデッキを２枚破棄する。]]\n[宣言] [T無無無]:自ターン中に使用する。[自分のゴミ箱のキャラ１体]を 登場する。",
+    "normalizedText": "[リカバリー:[相手のデッキを2枚破棄する。]]\n[宣言] [T無無無]:自ターン中に使用する。[自分のゴミ箱のキャラ1体]を 登場する。",
+    "lines": [
+      "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "[宣言] [T無無無]:自ターン中に使用する。[自分のゴミ箱のキャラ1体]を 登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[相手のデッキを2枚破棄する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T無無無]:自ターン中に使用する。[自分のゴミ箱のキャラ1体]を 登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

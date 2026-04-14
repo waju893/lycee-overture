@@ -21,7 +21,22 @@
   "costRaw": "花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2841"
+  "text": "{味方[花]キャラ１体}は[ペナルティ:[コストが２点以下の味方[花]キャラ１体を未行動にする。]]を得る。",
+  "textKr": "{味方[花]キャラ１体}は[ペナルティ:[コストが２点以下の味方[花]キャラ１体を未行動にする。]]を得る。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2841",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方[花]キャラ１体}は[ペナルティ:[コストが２点以下の味方[花]キャラ１体を未行動にする。]]を得る。",
+    "normalizedText": "{味方[花]キャラ1体}は[ペナルティ:[コストが2点以下の味方[花]キャラ1体を未行動にする。]]を得る。",
+    "lines": [
+      "{味方[花]キャラ1体}は[ペナルティ:[コストが2点以下の味方[花]キャラ1体を未行動にする。]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方[花]キャラ1体}は[ペナルティ:[コストが2点以下の味方[花]キャラ1体を未行動にする。]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

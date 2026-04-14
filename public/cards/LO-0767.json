@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0767",
+  "title": "ウォッシュデトックス",
+  "subName": "アプロディーテ",
+  "name": "ウォッシュデトックス アプロディーテ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,11 +21,41 @@
   "dp": 4,
   "sp": 3,
   "dmg": 4,
-  "keyeffects": [
-    10
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "神姫",
+  "text": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 能力の使用代償で味方キャラを破棄したとき、１枚ドローできる。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 能力の使用代償で味方キャラを破棄したとき、１枚ドローできる。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0767",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 能力の使用代償で味方キャラを破棄したとき、1枚ドローできる。構築制限:神姫PROJECT([KHP])",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    10
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] 能力の使用代償で味方キャラを破棄したとき、１枚ドローできる。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] 能力の使用代償で味方キャラを破棄したとき、1枚ドローできる。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "[誘発] 能力の使用代償で味方キャラを破棄したとき、1枚ドローできる。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

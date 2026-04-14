@@ -22,7 +22,22 @@
   "costRaw": "月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1427"
+  "text": "相手の宣言に対応して使用できない。ＡＰまたはＤＰが元の値より３以上低い相手キャラが登場している場合、{相手キャラ１体}を{相手ＤＦ}に移動する。",
+  "textKr": "相手の宣言に対応して使用できない。ＡＰまたはＤＰが元の値より３以上低い相手キャラが登場している場合、{相手キャラ１体}を{相手ＤＦ}に移動する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1427",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手の宣言に対応して使用できない。ＡＰまたはＤＰが元の値より３以上低い相手キャラが登場している場合、{相手キャラ１体}を{相手ＤＦ}に移動する。",
+    "normalizedText": "相手の宣言に対応して使用できない。APまたはDPが元の値より3以上低い相手キャラが登場している場合、{相手キャラ1体}を{相手DF}に移動する。",
+    "lines": [
+      "相手の宣言に対応して使用できない。APまたはDPが元の値より3以上低い相手キャラが登場している場合、{相手キャラ1体}を{相手DF}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手の宣言に対応して使用できない。APまたはDPが元の値より3以上低い相手キャラが登場している場合、{相手キャラ1体}を{相手DF}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

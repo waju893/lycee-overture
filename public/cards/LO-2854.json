@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラを破棄する。破棄したとき、相手は相手の手札を１枚破棄する。",
   "textKr": "[宣言] [0]:このキャラを破棄する。破棄したとき、相手は相手の手札を１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2854"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2854",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラを破棄する。破棄したとき、相手は相手の手札を１枚破棄する。",
+    "normalizedText": "[宣言] [0]:このキャラを破棄する。破棄したとき、相手は相手の手札を1枚破棄する。",
+    "lines": [
+      "[宣言] [0]:このキャラを破棄する。破棄したとき、相手は相手の手札を1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:このキャラを破棄する。破棄したとき、相手は相手の手札を1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

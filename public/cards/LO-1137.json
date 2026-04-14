@@ -25,5 +25,36 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [無]:味方＜大洗女子＞キャラの属性が４種類以上の場合、{相手キャラ１体}にＤＰ－１・ＤＭＧ－１する。",
   "textKr": "[アシスト]\n[宣言] [無]:味方＜大洗女子＞キャラの属性が４種類以上の場合、{相手キャラ１体}にＤＰ－１・ＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1137"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1137",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:味方<大洗女子>キャラの属性が4種類以上の場合、{相手キャラ1体}にDP-1・DMG-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [無]:味方＜大洗女子＞キャラの属性が４種類以上の場合、{相手キャラ１体}にＤＰ－１・ＤＭＧ－１する。",
+    "normalizedText": "[アシスト]\n[宣言] [無]:味方<大洗女子>キャラの属性が4種類以上の場合、{相手キャラ1体}にDP-1・DMG-1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [無]:味方<大洗女子>キャラの属性が4種類以上の場合、{相手キャラ1体}にDP-1・DMG-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,14 +1,43 @@
 {
+  "cardNo": "LO-0839",
+  "title": "神龍眼",
+  "subName": "",
+  "name": "神龍眼",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:バトル中に使用する。このキャラのコストが５点以上の場合、バトル終了時まで、このキャラにＤＭＧ＋２する。\n構築制限:神姫PROJECT（[KHP]）",
+  "textKr": "[宣言] [0]:バトル中に使用する。このキャラのコストが５点以上の場合、バトル終了時まで、このキャラにＤＭＧ＋２する。\n構築制限:神姫PROJECT（[KHP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0839",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用する。このキャラのコストが５点以上の場合、バトル終了時まで、このキャラにＤＭＧ＋２する。\n構築制限:神姫PROJECT（[KHP]）",
+    "normalizedText": "[宣言] [0]:バトル中に使用する。このキャラのコストが5点以上の場合、バトル終了時まで、このキャラにDMG+2する。構築制限:神姫PROJECT([KHP])",
+    "lines": [
+      "[宣言] [0]:バトル中に使用する。このキャラのコストが5点以上の場合、バトル終了時まで、このキャラにDMG+2する。構築制限:神姫PROJECT([KHP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:バトル中に使用する。このキャラのコストが5点以上の場合、バトル終了時まで、このキャラにDMG+2する。構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

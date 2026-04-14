@@ -24,5 +24,57 @@
   "typeTagsRaw": "",
   "text": "[チャージ:１]\n[宣言] [C1][月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。",
   "textKr": "[チャージ:１]\n[宣言] [C1][月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4827"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4827",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1][月]:{相手キャラ1体}にAP-2またはDP-2する。[コスト] このキャラのチャージ1枚を破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:１]\n[宣言] [C1][月]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[コスト] このキャラのチャージ１枚を破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。",
+    "normalizedText": "[チャージ:1]\n[宣言] [C1][月]:{相手キャラ1体}にAP-2またはDP-2する。[コスト] このキャラのチャージ1枚を破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。",
+    "lines": [
+      "[チャージ:1]",
+      "[宣言] [C1][月]:{相手キャラ1体}にAP-2またはDP-2する。[コスト] このキャラのチャージ1枚を破棄する。破棄したとき、[月月]を発生する。このコストはキャラの登場には支払えない。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:1]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

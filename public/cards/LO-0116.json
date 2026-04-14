@@ -22,7 +22,32 @@
   "costRaw": "月月",
   "restrictionRaw": "",
   "typeTagsRaw": "なし",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0116"
+  "text": "キャラ全てにＡＰ＋１・ＤＰ＋１する。\n初出 : Special Sleeve Selection（メロンブックス様）特典初出 : Special Sleeve Selection（メロンブックス様）特典",
+  "textKr": "キャラ全てにＡＰ＋１・ＤＰ＋１する。\n初出 : Special Sleeve Selection（メロンブックス様）特典初出 : Special Sleeve Selection（メロンブックス様）特典",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0116",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "キャラ全てにAP+1・DP+1する。初出 : Special Sleeve Selection(メロンブックス様)特典初出 : Special Sleeve Selection(メロンブックス様)特典",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "キャラ全てにＡＰ＋１・ＤＰ＋１する。\n初出 : Special Sleeve Selection（メロンブックス様）特典初出 : Special Sleeve Selection（メロンブックス様）特典",
+    "normalizedText": "キャラ全てにAP+1・DP+1する。初出 : Special Sleeve Selection(メロンブックス様)特典初出 : Special Sleeve Selection(メロンブックス様)特典",
+    "lines": [
+      "キャラ全てにAP+1・DP+1する。初出 : Special Sleeve Selection(メロンブックス様)特典初出 : Special Sleeve Selection(メロンブックス様)特典"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

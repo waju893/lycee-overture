@@ -24,5 +24,29 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。１枚ドローする。自分の手札を１枚デッキの上に置く。",
   "textKr": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。１枚ドローする。自分の手札を１枚デッキの上に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4147"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4147",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。1枚ドローする。自分の手札を1枚デッキの上に置く。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。１枚ドローする。自分の手札を１枚デッキの上に置く。",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。1枚ドローする。自分の手札を1枚デッキの上に置く。",
+    "lines": [
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。1枚ドローする。自分の手札を1枚デッキの上に置く。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

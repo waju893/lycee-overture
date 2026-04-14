@@ -25,5 +25,20 @@
   "typeTagsRaw": "蜀",
   "text": "[宣言] [D1]:味方キャラの防御中に使用する。バトルを中断する。この能力は失われる。",
   "textKr": "[宣言] [D1]:味方キャラの防御中に使用する。バトルを中断する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2425"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2425",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:味方キャラの防御中に使用する。バトルを中断する。この能力は失われる。",
+    "normalizedText": "[宣言] [D1]:味方キャラの防御中に使用する。バトルを中断する。この能力は失われる。",
+    "lines": [
+      "[宣言] [D1]:味方キャラの防御中に使用する。バトルを中断する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [D1]:味方キャラの防御中に使用する。バトルを中断する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   "typeTagsRaw": "プラウダ",
   "text": "[アシスト]\n[宣言] [このキャラを手札に入れる。]:{味方「カチューシャ」１体}にＤＰ＋１する。",
   "textKr": "[アシスト]\n[宣言] [このキャラを手札に入れる。]:{味方「カチューシャ」１体}にＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0324"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0324",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [このキャラを手札に入れる。]:{味方「カチューシャ」1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [このキャラを手札に入れる。]:{味方「カチューシャ」１体}にＤＰ＋１する。",
+    "normalizedText": "[アシスト]\n[宣言] [このキャラを手札に入れる。]:{味方「カチューシャ」1体}にDP+1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [このキャラを手札に入れる。]:{味方「カチューシャ」1体}にDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

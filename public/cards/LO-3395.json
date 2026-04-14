@@ -24,5 +24,36 @@
   "typeTagsRaw": "",
   "text": "[エンゲージ]\n[宣言] [無]:{味方[HOK]キャラ１体}にＡＰ＋２する。この能力は失われる。",
   "textKr": "[エンゲージ]\n[宣言] [無]:{味方[HOK]キャラ１体}にＡＰ＋２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3395"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3395",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:{味方[HOK]キャラ1体}にAP+2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [無]:{味方[HOK]キャラ１体}にＡＰ＋２する。この能力は失われる。",
+    "normalizedText": "[エンゲージ]\n[宣言] [無]:{味方[HOK]キャラ1体}にAP+2する。この能力は失われる。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [無]:{味方[HOK]キャラ1体}にAP+2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

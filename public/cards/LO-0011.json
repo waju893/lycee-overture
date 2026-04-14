@@ -24,5 +24,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。バトルを中断する。",
   "textKr": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。バトルを中断する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0011"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0011",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。バトルを中断する。",
+    "normalizedText": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。バトルを中断する。",
+    "lines": [
+      "[宣言] [雪雪雪]:このキャラのバトル中に使用する。バトルを中断する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪雪雪]:このキャラのバトル中に使用する。バトルを中断する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

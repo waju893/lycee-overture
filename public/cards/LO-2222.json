@@ -26,5 +26,52 @@
   "typeTagsRaw": "城娘",
   "text": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] 相手ターン中、味方キャラがダウンしたとき、そのキャラをデッキの下に置く。",
   "textKr": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] 相手ターン中、味方キャラがダウンしたとき、そのキャラをデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2222"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2222",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[誘発] 相手ターン中、味方キャラがダウンしたとき、そのキャラをデッキの下に置く。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] 相手ターン中、味方キャラがダウンしたとき、そのキャラをデッキの下に置く。",
+    "normalizedText": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[誘発] 相手ターン中、味方キャラがダウンしたとき、そのキャラをデッキの下に置く。",
+    "lines": [
+      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[誘発] 相手ターン中、味方キャラがダウンしたとき、そのキャラをデッキの下に置く。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

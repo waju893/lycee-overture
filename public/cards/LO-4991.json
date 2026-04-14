@@ -23,7 +23,32 @@
   "costRaw": "日日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4991"
+  "text": "{味方[YUZ]キャラ１体}にＡＰ＋４・ＤＰ＋４する。\n初出 : ゆずソフト3.0 新入生応援デッキ【日】初出 : ゆずソフト3.0 新入生応援デッキ【日】",
+  "textKr": "{味方[YUZ]キャラ１体}にＡＰ＋４・ＤＰ＋４する。\n初出 : ゆずソフト3.0 新入生応援デッキ【日】初出 : ゆずソフト3.0 新入生応援デッキ【日】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4991",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方[YUZ]キャラ1体}にAP+4・DP+4する。初出 : ゆずソフト3.0 新入生応援デッキ【日】初出 : ゆずソフト3.0 新入生応援デッキ【日】",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方[YUZ]キャラ１体}にＡＰ＋４・ＤＰ＋４する。\n初出 : ゆずソフト3.0 新入生応援デッキ【日】初出 : ゆずソフト3.0 新入生応援デッキ【日】",
+    "normalizedText": "{味方[YUZ]キャラ1体}にAP+4・DP+4する。初出 : ゆずソフト3.0 新入生応援デッキ【日】初出 : ゆずソフト3.0 新入生応援デッキ【日】",
+    "lines": [
+      "{味方[YUZ]キャラ1体}にAP+4・DP+4する。初出 : ゆずソフト3.0 新入生応援デッキ【日】初出 : ゆずソフト3.0 新入生応援デッキ【日】"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -23,5 +23,36 @@
   "typeTagsRaw": "プラウダ",
   "text": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「カチューシャ」１体}にＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「カチューシャ」１体}にＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1023"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1023",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [このキャラを破棄する]:{味方「カチューシャ」1体}にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「カチューシャ」１体}にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[アシスト]\n[宣言] [このキャラを破棄する]:{味方「カチューシャ」1体}にAP+1・DP+1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [このキャラを破棄する]:{味方「カチューシャ」1体}にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

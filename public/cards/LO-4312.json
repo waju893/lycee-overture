@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4312",
+  "title": "つくし尽くし",
+  "subName": "築島 つくし",
+  "name": "つくし尽くし 築島 つくし",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon"
   ],
@@ -14,11 +17,42 @@
   "dp": 2,
   "sp": 1,
   "dmg": 1,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:このターン中に登場していない味方キャラの防御中、または自ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[手札宣言] [月]:{相手キャラ１体}にＡＰ－４またはＤＰ－４する。\n構築制限:[HOK]",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:このターン中に登場していない味方キャラの防御中、または自ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[手札宣言] [月]:{相手キャラ１体}にＡＰ－４またはＤＰ－４する。\n構築制限:[HOK]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4312",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このターン中に登場していない味方キャラの防御中、または自ターン中に使用する。{相手キャラ1体}にAP-1またはDP-1する。[手札宣言] [月]:{相手キャラ1体}にAP-4またはDP-4する。構築制限:[HOK]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:このターン中に登場していない味方キャラの防御中、または自ターン中に使用する。{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[手札宣言] [月]:{相手キャラ１体}にＡＰ－４またはＤＰ－４する。\n構築制限:[HOK]",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:このターン中に登場していない味方キャラの防御中、または自ターン中に使用する。{相手キャラ1体}にAP-1またはDP-1する。[手札宣言] [月]:{相手キャラ1体}にAP-4またはDP-4する。構築制限:[HOK]",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:このターン中に登場していない味方キャラの防御中、または自ターン中に使用する。{相手キャラ1体}にAP-1またはDP-1する。[手札宣言] [月]:{相手キャラ1体}にAP-4またはDP-4する。構築制限:[HOK]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,33 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、自分のゴミ箱の「皇歌夜」１体または「カヤカヤ」１体を手札に入れる。",
   "textKr": "[誘発] このキャラが登場したとき、自分のゴミ箱の「皇歌夜」１体または「カヤカヤ」１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2631"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2631",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱の「皇歌夜」1体または「カヤカヤ」1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、自分のゴミ箱の「皇歌夜」１体または「カヤカヤ」１体を手札に入れる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のゴミ箱の「皇歌夜」1体または「カヤカヤ」1体を手札に入れる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の「皇歌夜」1体または「カヤカヤ」1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

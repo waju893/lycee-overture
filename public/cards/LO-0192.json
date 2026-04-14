@@ -26,5 +26,36 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ][オーダーステップ:[0]]\n[宣言] [宙]:{キャラ１体}にＳＰ－１する。",
   "textKr": "[エンゲージ][オーダーステップ:[0]]\n[宣言] [宙]:{キャラ１体}にＳＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0192"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0192",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:{キャラ1体}にSP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[エンゲージ][オーダーステップ:[0]]\n[宣言] [宙]:{キャラ１体}にＳＰ－１する。",
+    "normalizedText": "[エンゲージ][オーダーステップ:[0]]\n[宣言] [宙]:{キャラ1体}にSP-1する。",
+    "lines": [
+      "[エンゲージ][オーダーステップ:[0]]",
+      "[宣言] [宙]:{キャラ1体}にSP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -21,7 +21,32 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0965"
+  "text": "{自分のゴミ箱の[月]キャラ１体}を登場する。このターン終了時、そのキャラを破棄する。破棄したとき、１枚ドローする。",
+  "textKr": "{自分のゴミ箱の[月]キャラ１体}を登場する。このターン終了時、そのキャラを破棄する。破棄したとき、１枚ドローする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0965",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "{自分のゴミ箱の[月]キャラ1体}を登場する。このターン終了時、そのキャラを破棄する。破棄したとき、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{自分のゴミ箱の[月]キャラ１体}を登場する。このターン終了時、そのキャラを破棄する。破棄したとき、１枚ドローする。",
+    "normalizedText": "{自分のゴミ箱の[月]キャラ1体}を登場する。このターン終了時、そのキャラを破棄する。破棄したとき、1枚ドローする。",
+    "lines": [
+      "{自分のゴミ箱の[月]キャラ1体}を登場する。このターン終了時、そのキャラを破棄する。破棄したとき、1枚ドローする。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

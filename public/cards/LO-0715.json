@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-0715",
+  "title": "憑依",
+  "subName": "矢来 美羽",
+  "name": "憑依 矢来 美羽",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "cosmos",
     "sun"
   ],
-  "attributesList": [
-    "cosmos",
-    "sun"
-  ],
-  "ex": 1,
   "useTarget": [
     "cosmos",
     "sun",
@@ -17,5 +19,58 @@
   "ap": 5,
   "dp": 4,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "宙日無",
+  "restrictionRaw": "●●●－－－",
+  "typeTagsRaw": "-",
+  "text": "[宣言] [無]:{味方ＡＦキャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。\n構築制限:ゆずソフト",
+  "textKr": "[宣言] [無]:{味方ＡＦキャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。\n構築制限:ゆずソフト",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0715",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:{味方AFキャラ1体}にAP+1またはDP+1またはDMG+1する。構築制限:ゆずソフト",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [無]:{味方ＡＦキャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。\n構築制限:ゆずソフト",
+    "normalizedText": "[宣言] [無]:{味方AFキャラ1体}にAP+1またはDP+1またはDMG+1する。構築制限:ゆずソフト",
+    "lines": [
+      "[宣言] [無]:{味方AFキャラ1体}にAP+1またはDP+1またはDMG+1する。構築制限:ゆずソフト"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -23,5 +23,60 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。\n[手札宣言] [月]:元のＤＭＧが４以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ１体を探し{味方フィールド}に登場する。",
   "textKr": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。\n[手札宣言] [月]:元のＤＭＧが４以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ１体を探し{味方フィールド}に登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2486"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2486",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-2またはDP-2する。[手札宣言] [月]:元のDMGが4以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck",
+                    "hand"
+                  ],
+                  "match": {},
+                  "min": 0,
+                  "max": 2,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。\n[手札宣言] [月]:元のＤＭＧが４以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ１体を探し{味方フィールド}に登場する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-2またはDP-2する。[手札宣言] [月]:元のDMGが4以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手キャラ1体にAP-2またはDP-2する。[手札宣言] [月]:元のDMGが4以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

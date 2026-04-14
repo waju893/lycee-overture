@@ -27,5 +27,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ]\n[宣言] [T]:{キャラ１体}にＤＭＧ－２する。",
   "textKr": "[エンゲージ]\n[宣言] [T]:{キャラ１体}にＤＭＧ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0266"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0266",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ]\n[宣言] [T]:{キャラ１体}にＤＭＧ－２する。",
+    "normalizedText": "[エンゲージ]\n[宣言] [T]:{キャラ1体}にDMG-2する。",
+    "lines": [
+      "[エンゲージ]",
+      "[宣言] [T]:{キャラ1体}にDMG-2する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T]:{キャラ1体}にDMG-2する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

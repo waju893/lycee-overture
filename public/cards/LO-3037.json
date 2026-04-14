@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3037"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3037",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラにAP+1・DP+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、このキャラにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

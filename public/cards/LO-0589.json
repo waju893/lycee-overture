@@ -26,5 +26,25 @@
   "typeTagsRaw": "-",
   "text": "[オーダーチェンジ:[宙]]\n[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを未行動にし、{空き味方フィールド}に移動する。",
   "textKr": "[オーダーチェンジ:[宙]]\n[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを未行動にし、{空き味方フィールド}に移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0589"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0589",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[宙]]\n[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを未行動にし、{空き味方フィールド}に移動する。",
+    "normalizedText": "[オーダーチェンジ:[宙]]\n[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを未行動にし、{空き味方フィールド}に移動する。",
+    "lines": [
+      "[オーダーチェンジ:[宙]]",
+      "[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを未行動にし、{空き味方フィールド}に移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[宙]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:相手の攻撃宣言に対応して使用する。このキャラを未行動にし、{空き味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

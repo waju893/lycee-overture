@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[宣言] [C1]:このキャラにＡＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[チャージ:２]\n[宣言] [C1]:このキャラにＡＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4080"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4080",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1]:このキャラにAP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [C1]:このキャラにＡＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[チャージ:2]\n[宣言] [C1]:このキャラにAP+1・DMG+1する。",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [C1]:このキャラにAP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

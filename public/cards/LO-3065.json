@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [日]:このキャラにＡＰ＋１する。このキャラは[アグレッシブ]を得る。",
   "textKr": "[宣言] [日]:このキャラにＡＰ＋１する。このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3065"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3065",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:このキャラにAP+1する。このキャラは[アグレッシブ]を得る。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [日]:このキャラにＡＰ＋１する。このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[宣言] [日]:このキャラにAP+1する。このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[宣言] [日]:このキャラにAP+1する。このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

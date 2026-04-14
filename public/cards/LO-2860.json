@@ -26,5 +26,38 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のアイテム「死んだ世界戦線」１枚}を手札に入れる。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のアイテム「死んだ世界戦線」１枚}を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2860"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2860",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のアイテム「死んだ世界戦線」1枚}を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のアイテム「死んだ世界戦線」１枚}を手札に入れる。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のアイテム「死んだ世界戦線」1枚}を手札に入れる。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[宣言] [0]:このキャラを自分の「卒業」置き場に置く。置いたとき、{自分のゴミ箱のアイテム「死んだ世界戦線」1枚}を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ＋２する。このアイテムを破棄する。",
   "textKr": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ＋２する。このアイテムを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0258"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0258",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ＋２する。このアイテムを破棄する。",
+    "normalizedText": "[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。",
+    "lines": [
+      "[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

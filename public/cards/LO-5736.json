@@ -25,5 +25,29 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが自分の効果で場を離れたとき、１枚ドローする。自分のゴミ箱の「築川宇佐美」１体をデッキの下に置ける。",
   "textKr": "[誘発] このキャラが自分の効果で場を離れたとき、１枚ドローする。自分のゴミ箱の「築川宇佐美」１体をデッキの下に置ける。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5736"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5736",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラが自分の効果で場を離れたとき、1枚ドローする。自分のゴミ箱の「築川宇佐美」1体をデッキの下に置ける。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが自分の効果で場を離れたとき、１枚ドローする。自分のゴミ箱の「築川宇佐美」１体をデッキの下に置ける。",
+    "normalizedText": "[誘発] このキャラが自分の効果で場を離れたとき、1枚ドローする。自分のゴミ箱の「築川宇佐美」1体をデッキの下に置ける。",
+    "lines": [
+      "[誘発] このキャラが自分の効果で場を離れたとき、1枚ドローする。自分のゴミ箱の「築川宇佐美」1体をデッキの下に置ける。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

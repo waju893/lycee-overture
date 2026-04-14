@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3790",
+  "title": "竜姫",
+  "subName": "メリュジアナ",
+  "name": "竜姫 メリュジアナ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -19,11 +22,41 @@
   "dp": 5,
   "sp": 1,
   "dmg": 5,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "日日日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋２する。\n[誘発] このキャラが相手の効果で場を離れたとき、２枚ドローできる。自分のデッキを２枚回復しシャッフルする。\n構築制限:[AIG]",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋２する。\n[誘発] このキャラが相手の効果で場を離れたとき、２枚ドローできる。自分のデッキを２枚回復しシャッフルする。\n構築制限:[AIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3790",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{コストが2点以下の味方[日]キャラ1体}にAP+2する。[誘発] このキャラが相手の効果で場を離れたとき、2枚ドローできる。自分のデッキを2枚回復しシャッフルする。構築制限:[AIG]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 2
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋２する。\n[誘発] このキャラが相手の効果で場を離れたとき、２枚ドローできる。自分のデッキを２枚回復しシャッフルする。\n構築制限:[AIG]",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{コストが2点以下の味方[日]キャラ1体}にAP+2する。[誘発] このキャラが相手の効果で場を離れたとき、2枚ドローできる。自分のデッキを2枚回復しシャッフルする。構築制限:[AIG]",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{コストが2点以下の味方[日]キャラ1体}にAP+2する。[誘発] このキャラが相手の効果で場を離れたとき、2枚ドローできる。自分のデッキを2枚回復しシャッフルする。構築制限:[AIG]"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

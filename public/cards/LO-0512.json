@@ -27,5 +27,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [宙無無]:このキャラのバトル中に使用する。このキャラにＤＭＧ－１する。このキャラを未行動にする。",
   "textKr": "[宣言] [宙無無]:このキャラのバトル中に使用する。このキャラにＤＭＧ－１する。このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0512"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0512",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [宙無無]:このキャラのバトル中に使用する。このキャラにＤＭＧ－１する。このキャラを未行動にする。",
+    "normalizedText": "[宣言] [宙無無]:このキャラのバトル中に使用する。このキャラにDMG-1する。このキャラを未行動にする。",
+    "lines": [
+      "[宣言] [宙無無]:このキャラのバトル中に使用する。このキャラにDMG-1する。このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [宙無無]:このキャラのバトル中に使用する。このキャラにDMG-1する。このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

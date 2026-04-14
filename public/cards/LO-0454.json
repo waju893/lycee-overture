@@ -25,5 +25,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [T]:{相手キャラ１体}にＤＭＧ－３する。このキャラは次の自分のウェイクアップで未行動に戻らない。",
   "textKr": "[宣言] [T]:{相手キャラ１体}にＤＭＧ－３する。このキャラは次の自分のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0454"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0454",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:{相手キャラ１体}にＤＭＧ－３する。このキャラは次の自分のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[宣言] [T]:{相手キャラ1体}にDMG-3する。このキャラは次の自分のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[宣言] [T]:{相手キャラ1体}にDMG-3する。このキャラは次の自分のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [T]:{相手キャラ1体}にDMG-3する。このキャラは次の自分のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

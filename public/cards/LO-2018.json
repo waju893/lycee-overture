@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方[花]キャラ２体までにＤＭＧ＋１する。",
   "textKr": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方[花]キャラ２体までにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2018"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2018",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方[花]キャラ２体までにＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花]]\n[誘発] このキャラが登場したとき、DMGが3以下の味方[花]キャラ2体までにDMG+1する。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[誘発] このキャラが登場したとき、DMGが3以下の味方[花]キャラ2体までにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、DMGが3以下の味方[花]キャラ2体までにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

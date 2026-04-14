@@ -24,5 +24,38 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラがダウンしたとき、自分のゴミ箱の「紬ヴェンダース」１体を手札に入れる。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラがダウンしたとき、自分のゴミ箱の「紬ヴェンダース」１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2800"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2800",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「紬ヴェンダース」1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラがダウンしたとき、自分のゴミ箱の「紬ヴェンダース」１体を手札に入れる。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラがダウンしたとき、自分のゴミ箱の「紬ヴェンダース」1体を手札に入れる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラがダウンしたとき、自分のゴミ箱の「紬ヴェンダース」1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

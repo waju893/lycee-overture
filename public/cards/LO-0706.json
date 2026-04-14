@@ -1,14 +1,43 @@
 {
+  "cardNo": "LO-0706",
+  "title": "スケッチブック",
+  "subName": "",
+  "name": "スケッチブック",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon",
     "moon"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 1,
+  "costRaw": "月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[コスト] [月]を発生する。このコストは能力の使用にのみ支払える。\n構築制限:ゆずソフト",
+  "textKr": "[コスト] [月]を発生する。このコストは能力の使用にのみ支払える。\n構築制限:ゆずソフト",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0706",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[コスト] [月]を発生する。このコストは能力の使用にのみ支払える。\n構築制限:ゆずソフト",
+    "normalizedText": "[コスト] [月]を発生する。このコストは能力の使用にのみ支払える。構築制限:ゆずソフト",
+    "lines": [
+      "[コスト] [月]を発生する。このコストは能力の使用にのみ支払える。構築制限:ゆずソフト"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[コスト] [月]を発生する。このコストは能力の使用にのみ支払える。構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
   ]
 }

@@ -27,5 +27,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[サイドステップ:[0]]",
   "textKr": "[サイドステップ:[0]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0072"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0072",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]",
+    "normalizedText": "[サイドステップ:[0]]",
+    "lines": [
+      "[サイドステップ:[0]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

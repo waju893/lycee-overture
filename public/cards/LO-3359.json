@@ -21,7 +21,22 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3359"
+  "text": "味方キャラの防御中に使用する。バトル参加キャラ全てを破棄する。",
+  "textKr": "味方キャラの防御中に使用する。バトル参加キャラ全てを破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3359",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "味方キャラの防御中に使用する。バトル参加キャラ全てを破棄する。",
+    "normalizedText": "味方キャラの防御中に使用する。バトル参加キャラ全てを破棄する。",
+    "lines": [
+      "味方キャラの防御中に使用する。バトル参加キャラ全てを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "味方キャラの防御中に使用する。バトル参加キャラ全てを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,40 @@
   "typeTagsRaw": "",
   "text": "[宣言] [日]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「年の離れた双子の妹 四月一日奏音」１体を探し元の能力全てを失い登場する。この能力は失われる。",
   "textKr": "[宣言] [日]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「年の離れた双子の妹 四月一日奏音」１体を探し元の能力全てを失い登場する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5423"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5423",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「年の離れた双子の妹 四月一日奏音」1体を探し元の能力全てを失い登場する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "年の離れた双子の妹 四月一日奏音"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [日]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「年の離れた双子の妹 四月一日奏音」１体を探し元の能力全てを失い登場する。この能力は失われる。",
+    "normalizedText": "[宣言] [日]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「年の離れた双子の妹 四月一日奏音」1体を探し元の能力全てを失い登場する。この能力は失われる。",
+    "lines": [
+      "[宣言] [日]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキから「年の離れた双子の妹 四月一日奏音」1体を探し元の能力全てを失い登場する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

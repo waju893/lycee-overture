@@ -23,5 +23,25 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]\n[誘発] 自ターン開始時、自分のデッキの上のカード４枚までを見ることができる。見たとき、そのカードを好きな順番に並び替える。",
   "textKr": "[アグレッシブ]\n[誘発] 自ターン開始時、自分のデッキの上のカード４枚までを見ることができる。見たとき、そのカードを好きな順番に並び替える。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4667"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4667",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] 自ターン開始時、自分のデッキの上のカード４枚までを見ることができる。見たとき、そのカードを好きな順番に並び替える。",
+    "normalizedText": "[アグレッシブ]\n[誘発] 自ターン開始時、自分のデッキの上のカード4枚までを見ることができる。見たとき、そのカードを好きな順番に並び替える。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] 自ターン開始時、自分のデッキの上のカード4枚までを見ることができる。見たとき、そのカードを好きな順番に並び替える。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自ターン開始時、自分のデッキの上のカード4枚までを見ることができる。見たとき、そのカードを好きな順番に並び替える。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

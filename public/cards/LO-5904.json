@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-5904",
+  "title": "嫁ワン",
+  "subName": "月宮 楓",
+  "name": "嫁ワン 月宮 楓",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun"
   ],
@@ -14,11 +17,60 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
+  "ex": 2,
+  "costRaw": "日",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「除霊」１枚を探し無償で配置できる。配置しない場合、１枚ドローできる。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。この能力は失われる。\n構築制限:【[MML]】【[日]】",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「除霊」１枚を探し無償で配置できる。配置しない場合、１枚ドローできる。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。この能力は失われる。\n構築制限:【[MML]】【[日]】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5904",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「除霊」1枚を探し無償で配置できる。配置しない場合、1枚ドローできる。[宣言] [0]:{味方キャラ1体}にAP+2する。この能力は失われる。構築制限:【[MML]】【[日]】",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "除霊",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「除霊」１枚を探し無償で配置できる。配置しない場合、１枚ドローできる。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋２する。この能力は失われる。\n構築制限:【[MML]】【[日]】",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「除霊」1枚を探し無償で配置できる。配置しない場合、1枚ドローできる。[宣言] [0]:{味方キャラ1体}にAP+2する。この能力は失われる。構築制限:【[MML]】【[日]】",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「除霊」1枚を探し無償で配置できる。配置しない場合、1枚ドローできる。[宣言] [0]:{味方キャラ1体}にAP+2する。この能力は失われる。構築制限:【[MML]】【[日]】"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

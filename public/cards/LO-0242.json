@@ -21,7 +21,34 @@
   "costRaw": "無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0242"
+  "text": "{自分のゴミ箱の＜魔剣＞キャラ１体}を手札に入れる。",
+  "textKr": "{自分のゴミ箱の＜魔剣＞キャラ１体}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0242",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{自分のゴミ箱の<魔剣>キャラ1体}を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{自分のゴミ箱の＜魔剣＞キャラ１体}を手札に入れる。",
+    "normalizedText": "{自分のゴミ箱の<魔剣>キャラ1体}を手札に入れる。",
+    "lines": [
+      "{自分のゴミ箱の<魔剣>キャラ1体}を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

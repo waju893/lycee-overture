@@ -1,17 +1,74 @@
 {
+  "cardNo": "LO-4428",
+  "title": "元刑事の警備会社社長",
+  "subName": "ストライコス",
+  "name": "元刑事の警備会社社長 ストライコス",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow"
   ],
   "ap": 2,
   "dp": 2,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D1]:このキャラを手札に入れる。\n構築制限:[DG]",
+  "textKr": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D1]:このキャラを手札に入れる。\n構築制限:[DG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4428",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体にAP+1またはDP+1する。[宣言] [D1]:このキャラを手札に入れる。構築制限:[DG]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D1]:このキャラを手札に入れる。\n構築制限:[DG]",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体にAP+1またはDP+1する。[宣言] [D1]:このキャラを手札に入れる。構築制限:[DG]",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方[雪]キャラ1体にAP+1またはDP+1する。[宣言] [D1]:このキャラを手札に入れる。構築制限:[DG]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

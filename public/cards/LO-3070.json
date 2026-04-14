@@ -21,7 +21,32 @@
   "costRaw": "雪",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3070"
+  "text": "相手ターン中に使用する。{相手キャラ１体}にＡＰ－４する。",
+  "textKr": "相手ターン中に使用する。{相手キャラ１体}にＡＰ－４する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3070",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "相手ターン中に使用する。{相手キャラ1体}にAP-4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "相手ターン中に使用する。{相手キャラ１体}にＡＰ－４する。",
+    "normalizedText": "相手ターン中に使用する。{相手キャラ1体}にAP-4する。",
+    "lines": [
+      "相手ターン中に使用する。{相手キャラ1体}にAP-4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

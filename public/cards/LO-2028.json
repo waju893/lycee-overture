@@ -24,5 +24,31 @@
   "typeTagsRaw": "",
   "text": "[誘発] ターン開始時、このキャラがＡＦに登場している場合、このキャラにＡＰ＋３する。ＤＦに登場している場合、このキャラにＤＰ＋３する。",
   "textKr": "[誘発] ターン開始時、このキャラがＡＦに登場している場合、このキャラにＡＰ＋３する。ＤＦに登場している場合、このキャラにＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2028"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2028",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、このキャラがAFに登場している場合、このキャラにAP+3する。DFに登場している場合、このキャラにDP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] ターン開始時、このキャラがＡＦに登場している場合、このキャラにＡＰ＋３する。ＤＦに登場している場合、このキャラにＤＰ＋３する。",
+    "normalizedText": "[誘発] ターン開始時、このキャラがAFに登場している場合、このキャラにAP+3する。DFに登場している場合、このキャラにDP+3する。",
+    "lines": [
+      "[誘発] ターン開始時、このキャラがAFに登場している場合、このキャラにAP+3する。DFに登場している場合、このキャラにDP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

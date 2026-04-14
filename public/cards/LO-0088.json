@@ -21,7 +21,22 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0088"
+  "text": "相手キャラの登場の宣言に対応して使用する。そのキャラが登場したとき、そのキャラを行動済みにする。",
+  "textKr": "相手キャラの登場の宣言に対応して使用する。そのキャラが登場したとき、そのキャラを行動済みにする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0088",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手キャラの登場の宣言に対応して使用する。そのキャラが登場したとき、そのキャラを行動済みにする。",
+    "normalizedText": "相手キャラの登場の宣言に対応して使用する。そのキャラが登場したとき、そのキャラを行動済みにする。",
+    "lines": [
+      "相手キャラの登場の宣言に対応して使用する。そのキャラが登場したとき、そのキャラを行動済みにする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手キャラの登場の宣言に対応して使用する。そのキャラが登場したとき、そのキャラを行動済みにする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２]\n[宣言] [C1][雪]:このキャラを除く味方『星恋＊ティンクル』キャラが登場している場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
   "textKr": "[チャージ:２]\n[宣言] [C1][雪]:このキャラを除く味方『星恋＊ティンクル』キャラが登場している場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6108"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6108",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1][雪]:このキャラを除く味方『星恋*ティンクル』キャラが登場している場合、このキャラにAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [C1][雪]:このキャラを除く味方『星恋＊ティンクル』キャラが登場している場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "[チャージ:2]\n[宣言] [C1][雪]:このキャラを除く味方『星恋*ティンクル』キャラが登場している場合、このキャラにAP+3・DP+3する。",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [C1][雪]:このキャラを除く味方『星恋*ティンクル』キャラが登場している場合、このキャラにAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

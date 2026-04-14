@@ -25,5 +25,67 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:{味方ＤＦキャラ１体}にＤＰ＋１する。\n[宣言] [雪]:自分のゴミ箱または自分のデッキから「守護の楯」１枚を探し公開して手札に入れる。この能力は失われる。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:{味方ＤＦキャラ１体}にＤＰ＋１する。\n[宣言] [雪]:自分のゴミ箱または自分のデッキから「守護の楯」１枚を探し公開して手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3531"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3531",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方DFキャラ1体}にDP+1する。[宣言] [雪]:自分のゴミ箱または自分のデッキから「守護の楯」1枚を探し公開して手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck",
+                    "hand"
+                  ],
+                  "match": {
+                    "exactName": "守護の楯"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:{味方ＤＦキャラ１体}にＤＰ＋１する。\n[宣言] [雪]:自分のゴミ箱または自分のデッキから「守護の楯」１枚を探し公開して手札に入れる。この能力は失われる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:{味方DFキャラ1体}にDP+1する。[宣言] [雪]:自分のゴミ箱または自分のデッキから「守護の楯」1枚を探し公開して手札に入れる。この能力は失われる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:{味方DFキャラ1体}にDP+1する。[宣言] [雪]:自分のゴミ箱または自分のデッキから「守護の楯」1枚を探し公開して手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

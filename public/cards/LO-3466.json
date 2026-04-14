@@ -25,5 +25,35 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:コストが２点以下の味方ＡＦキャラが２体以上登場している場合、１枚ドローする。この能力は失われる。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:コストが２点以下の味方ＡＦキャラが２体以上登場している場合、１枚ドローする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3466"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3466",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが2点以下の味方AFキャラが2体以上登場している場合、1枚ドローする。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:コストが２点以下の味方ＡＦキャラが２体以上登場している場合、１枚ドローする。この能力は失われる。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:コストが2点以下の味方AFキャラが2体以上登場している場合、1枚ドローする。この能力は失われる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:コストが2点以下の味方AFキャラが2体以上登場している場合、1枚ドローする。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

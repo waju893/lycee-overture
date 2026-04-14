@@ -24,5 +24,25 @@
   "typeTagsRaw": "BC自由",
   "text": "[アシスト]\n[宣言] [D1]:相手は相手の手札を１枚破棄する。このターン終了時、このキャラを破棄する。",
   "textKr": "[アシスト]\n[宣言] [D1]:相手は相手の手札を１枚破棄する。このターン終了時、このキャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1147"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1147",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [D1]:相手は相手の手札を１枚破棄する。このターン終了時、このキャラを破棄する。",
+    "normalizedText": "[アシスト]\n[宣言] [D1]:相手は相手の手札を1枚破棄する。このターン終了時、このキャラを破棄する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [D1]:相手は相手の手札を1枚破棄する。このターン終了時、このキャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [D1]:相手は相手の手札を1枚破棄する。このターン終了時、このキャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

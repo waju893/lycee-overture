@@ -26,5 +26,38 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[宣言] [このキャラを除外する]:バトル中に使用できない。{自分のゴミ箱の＜大学選抜＞キャラ２体}を手札に入れる。",
   "textKr": "[アシスト]\n[宣言] [このキャラを除外する]:バトル中に使用できない。{自分のゴミ箱の＜大学選抜＞キャラ２体}を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1025"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1025",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [このキャラを除外する]:バトル中に使用できない。{自分のゴミ箱の<大学選抜>キャラ2体}を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [このキャラを除外する]:バトル中に使用できない。{自分のゴミ箱の＜大学選抜＞キャラ２体}を手札に入れる。",
+    "normalizedText": "[アシスト]\n[宣言] [このキャラを除外する]:バトル中に使用できない。{自分のゴミ箱の<大学選抜>キャラ2体}を手札に入れる。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [このキャラを除外する]:バトル中に使用できない。{自分のゴミ箱の<大学選抜>キャラ2体}を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

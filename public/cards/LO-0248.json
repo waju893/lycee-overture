@@ -23,7 +23,32 @@
   "costRaw": "宙無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0248"
+  "text": "{相手キャラ１体}にＡＰ－１・ＤＰ－１する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "textKr": "{相手キャラ１体}にＡＰ－１・ＤＰ－１する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0248",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{相手キャラ1体}にAP-1・DP-1する。{味方キャラ1体}にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}にＡＰ－１・ＤＰ－１する。{味方キャラ１体}にＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "{相手キャラ1体}にAP-1・DP-1する。{味方キャラ1体}にAP+1・DP+1する。",
+    "lines": [
+      "{相手キャラ1体}にAP-1・DP-1する。{味方キャラ1体}にAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。",
   "textKr": "[サポーター:[花花]]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3754"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3754",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,31 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] 相手ターン開始時、相手キャラ１体にＡＰ－１する。",
   "textKr": "[誘発] 相手ターン開始時、相手キャラ１体にＡＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1345"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1345",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] 相手ターン開始時、相手キャラ1体にAP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 相手ターン開始時、相手キャラ１体にＡＰ－１する。",
+    "normalizedText": "[誘発] 相手ターン開始時、相手キャラ1体にAP-1する。",
+    "lines": [
+      "[誘発] 相手ターン開始時、相手キャラ1体にAP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のＥＸが１のカード１枚}を除外する。",
   "textKr": "[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のＥＸが１のカード１枚}を除外する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2464"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2464",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のＥＸが１のカード１枚}を除外する。",
+    "normalizedText": "[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のEXが1のカード1枚}を除外する。",
+    "lines": [
+      "[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のEXが1のカード1枚}を除外する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:相手ターン中に使用する。{相手のゴミ箱のEXが1のカード1枚}を除外する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

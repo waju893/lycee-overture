@@ -27,5 +27,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[0]]\n[常時] このキャラのサポートはＡＰとＤＰに足す。",
   "textKr": "[オーダーチェンジ:[0]]\n[常時] このキャラのサポートはＡＰとＤＰに足す。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0505"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0505",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[0]]\n[常時] このキャラのサポートはＡＰとＤＰに足す。",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[常時] このキャラのサポートはAPとDPに足す。",
+    "lines": [
+      "[オーダーチェンジ:[0]]",
+      "[常時] このキャラのサポートはAPとDPに足す。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラのサポートはAPとDPに足す。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

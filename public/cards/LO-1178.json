@@ -23,5 +23,25 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト][ペナルティ:[自分のデッキを１枚回復する。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
   "textKr": "[アシスト][ペナルティ:[自分のデッキを１枚回復する。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1178"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1178",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][ペナルティ:[自分のデッキを１枚回復する。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+    "normalizedText": "[アシスト][ペナルティ:[自分のデッキを1枚回復する。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+    "lines": [
+      "[アシスト][ペナルティ:[自分のデッキを1枚回復する。]]",
+      "[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ペナルティ:[自分のデッキを1枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

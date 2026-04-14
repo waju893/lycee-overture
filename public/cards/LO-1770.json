@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1770",
+  "title": "ヤマトの大宮司",
+  "subName": "ホノカ",
+  "name": "ヤマトの大宮司 ホノカ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -17,11 +20,41 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    15
+  "ex": 2,
+  "costRaw": "月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[ボーナス:[自分のデッキを１枚回復する。]]\n[誘発] 自分の効果で相手キャラを移動したとき、味方キャラ全てが[月]の場合、１枚ドローする。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[ボーナス:[自分のデッキを１枚回復する。]]\n[誘発] 自分の効果で相手キャラを移動したとき、味方キャラ全てが[月]の場合、１枚ドローする。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1770",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の効果で相手キャラを移動したとき、味方キャラ全てが[月]の場合、1枚ドローする。構築制限:アクアプラス([AQP])",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    15
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ボーナス:[自分のデッキを１枚回復する。]]\n[誘発] 自分の効果で相手キャラを移動したとき、味方キャラ全てが[月]の場合、１枚ドローする。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[ボーナス:[自分のデッキを1枚回復する。]]\n[誘発] 自分の効果で相手キャラを移動したとき、味方キャラ全てが[月]の場合、1枚ドローする。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[ボーナス:[自分のデッキを1枚回復する。]]",
+      "[誘発] 自分の効果で相手キャラを移動したとき、味方キャラ全てが[月]の場合、1枚ドローする。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ボーナス:[自分のデッキを1枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

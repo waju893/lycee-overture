@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[サイドステップ:[0]]\n[宣言] [0]:コストが５点以上の味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
   "textKr": "[サイドステップ:[0]]\n[宣言] [0]:コストが５点以上の味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4788"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4788",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが5点以上の味方キャラが登場している場合、{味方キャラ1体}にAP+2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[宣言] [0]:コストが５点以上の味方キャラが登場している場合、{味方キャラ１体}にＡＰ＋２する。この能力は失われる。",
+    "normalizedText": "[サイドステップ:[0]]\n[宣言] [0]:コストが5点以上の味方キャラが登場している場合、{味方キャラ1体}にAP+2する。この能力は失われる。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[宣言] [0]:コストが5点以上の味方キャラが登場している場合、{味方キャラ1体}にAP+2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

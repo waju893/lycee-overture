@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3416",
+  "title": "秘密を抱える憂国の貴公子？",
+  "subName": "アンリ＝フランシス・ラ・ベルナールド",
+  "name": "秘密を抱える憂国の貴公子？ アンリ＝フランシス・ラ・ベルナールド",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,42 @@
   "dp": 3,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[宣言] [0]:味方[雪]キャラ全てにＤＰ＋１する。ＤＰが５以上の味方ＡＦ[雪]キャラ全てにＡＰ＋１する。\n構築制限:[GIG]",
+  "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:味方[雪]キャラ全てにＤＰ＋１する。ＤＰが５以上の味方ＡＦ[雪]キャラ全てにＡＰ＋１する。\n構築制限:[GIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3416",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方[雪]キャラ全てにDP+1する。DPが5以上の味方AF[雪]キャラ全てにAP+1する。構築制限:[GIG]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:味方[雪]キャラ全てにＤＰ＋１する。ＤＰが５以上の味方ＡＦ[雪]キャラ全てにＡＰ＋１する。\n構築制限:[GIG]",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:味方[雪]キャラ全てにDP+1する。DPが5以上の味方AF[雪]キャラ全てにAP+1する。構築制限:[GIG]",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:味方[雪]キャラ全てにDP+1する。DPが5以上の味方AF[雪]キャラ全てにAP+1する。構築制限:[GIG]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

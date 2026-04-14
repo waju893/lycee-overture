@@ -1,18 +1,46 @@
 {
+  "cardNo": "LO-1851",
+  "title": "思い出の写真",
+  "subName": "",
+  "name": "思い出の写真",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow",
     "moon"
   ],
-  "attributesList": [
-    "snow",
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
     "moon",
     "moon"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "雪雪月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "バトル中に使用できない。自分のゴミ箱に「小木曽雪菜」と「冬馬かずさ」が置かれている場合、{相手キャラ１体}を破棄する。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "バトル中に使用できない。自分のゴミ箱に「小木曽雪菜」と「冬馬かずさ」が置かれている場合、{相手キャラ１体}を破棄する。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1851",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "バトル中に使用できない。自分のゴミ箱に「小木曽雪菜」と「冬馬かずさ」が置かれている場合、{相手キャラ１体}を破棄する。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "バトル中に使用できない。自分のゴミ箱に「小木曽雪菜」と「冬馬かずさ」が置かれている場合、{相手キャラ1体}を破棄する。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "バトル中に使用できない。自分のゴミ箱に「小木曽雪菜」と「冬馬かずさ」が置かれている場合、{相手キャラ1体}を破棄する。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "バトル中に使用できない。自分のゴミ箱に「小木曽雪菜」と「冬馬かずさ」が置かれている場合、{相手キャラ1体}を破棄する。構築制限:アクアプラス([AQP])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

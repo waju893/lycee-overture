@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
   "textKr": "[宣言] [雪]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1483"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1483",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+    "normalizedText": "[宣言] [雪]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+    "lines": [
+      "[宣言] [雪]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪]:このキャラの攻撃中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -22,7 +22,32 @@
   "costRaw": "日日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0250"
+  "text": "自ターン中に使用する。コストが２点以下の味方キャラ全てにＡＰ＋２・ＤＰ＋２・ＳＰ＋２する。",
+  "textKr": "自ターン中に使用する。コストが２点以下の味方キャラ全てにＡＰ＋２・ＤＰ＋２・ＳＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0250",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。コストが2点以下の味方キャラ全てにAP+2・DP+2・SP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。コストが２点以下の味方キャラ全てにＡＰ＋２・ＤＰ＋２・ＳＰ＋２する。",
+    "normalizedText": "自ターン中に使用する。コストが2点以下の味方キャラ全てにAP+2・DP+2・SP+2する。",
+    "lines": [
+      "自ターン中に使用する。コストが2点以下の味方キャラ全てにAP+2・DP+2・SP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

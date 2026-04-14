@@ -24,5 +24,20 @@
   "typeTagsRaw": "大洗女子",
   "text": "[宣言] [T]:{自分のゴミ箱のサブネームに「カバさんチーム」を含むキャラ１体}を行動済みで登場する。この能力は失われる。",
   "textKr": "[宣言] [T]:{自分のゴミ箱のサブネームに「カバさんチーム」を含むキャラ１体}を行動済みで登場する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1018"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1018",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [T]:{自分のゴミ箱のサブネームに「カバさんチーム」を含むキャラ１体}を行動済みで登場する。この能力は失われる。",
+    "normalizedText": "[宣言] [T]:{自分のゴミ箱のサブネームに「カバさんチーム」を含むキャラ1体}を行動済みで登場する。この能力は失われる。",
+    "lines": [
+      "[宣言] [T]:{自分のゴミ箱のサブネームに「カバさんチーム」を含むキャラ1体}を行動済みで登場する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [T]:{自分のゴミ箱のサブネームに「カバさんチーム」を含むキャラ1体}を行動済みで登場する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:２][オーダーステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ１体}にＤＰ＋２する。",
   "textKr": "[チャージ:２][オーダーステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ１体}にＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4998"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4998",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ1体}にDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:２][オーダーステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ１体}にＤＰ＋２する。",
+    "normalizedText": "[チャージ:2][オーダーステップ:[0]]\n[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ1体}にDP+2する。",
+    "lines": [
+      "[チャージ:2][オーダーステップ:[0]]",
+      "[宣言] [D1][C1]:{サブネームに「新入生応援」を含む味方キャラ1体}にDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2756",
+  "title": "永遠の夢追い人",
+  "subName": "蒼井 雛多",
+  "name": "永遠の夢追い人 蒼井 雛多",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow"
@@ -14,5 +17,37 @@
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方ＡＦキャラ１体にＡＰ＋１・ＤＭＧ＋１または味方ＤＦキャラ１体にＤＰ＋２する。\n[手札宣言] [0]:{味方[雪]キャラ１体}にＤＰ＋２する。\n構築制限:[TW]",
+  "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方ＡＦキャラ１体にＡＰ＋１・ＤＭＧ＋１または味方ＤＦキャラ１体にＤＰ＋２する。\n[手札宣言] [0]:{味方[雪]キャラ１体}にＤＰ＋２する。\n構築制限:[TW]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2756",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方AFキャラ1体にAP+1・DMG+1または味方DFキャラ1体にDP+2する。[手札宣言] [0]:{味方[雪]キャラ1体}にDP+2する。構築制限:[TW]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方ＡＦキャラ１体にＡＰ＋１・ＤＭＧ＋１または味方ＤＦキャラ１体にＤＰ＋２する。\n[手札宣言] [0]:{味方[雪]キャラ１体}にＤＰ＋２する。\n構築制限:[TW]",
+    "normalizedText": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方AFキャラ1体にAP+1・DMG+1または味方DFキャラ1体にDP+2する。[手札宣言] [0]:{味方[雪]キャラ1体}にDP+2する。構築制限:[TW]",
+    "lines": [
+      "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、味方AFキャラ1体にAP+1・DMG+1または味方DFキャラ1体にDP+2する。[手札宣言] [0]:{味方[雪]キャラ1体}にDP+2する。構築制限:[TW]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

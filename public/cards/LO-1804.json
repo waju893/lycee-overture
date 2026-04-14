@@ -27,5 +27,58 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アシスト][オーダーステップ:[0]][ボーナス:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体にＡＰ＋２またはＤＰ＋２する。",
   "textKr": "[アシスト][オーダーステップ:[0]][ボーナス:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体にＡＰ＋２またはＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1804"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1804",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体にAP+2またはDP+2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]][ボーナス:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体にＡＰ＋２またはＤＰ＋２する。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]][ボーナス:[相手のデッキを1枚破棄する。]]\n[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体にAP+2またはDP+2する。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]][ボーナス:[相手のデッキを1枚破棄する。]]",
+      "[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体にAP+2またはDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]][ボーナス:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

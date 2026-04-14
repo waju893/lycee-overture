@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにＳＰ＋２する。",
   "textKr": "[サポーター:[花]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにＳＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5561"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5561",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] カード名に「白鷺」を含む味方キャラ全てにSP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにＳＰ＋２する。",
+    "normalizedText": "[サポーター:[花]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにSP+2する。",
+    "lines": [
+      "[サポーター:[花]]",
+      "[常時] カード名に「白鷺」を含む味方キャラ全てにSP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

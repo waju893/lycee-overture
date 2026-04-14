@@ -1,14 +1,43 @@
 {
+  "cardNo": "LO-2920",
+  "title": "もう一人の私",
+  "subName": "",
+  "name": "もう一人の私",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "star",
     "star"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "味方キャラの攻撃中に使用する。そのキャラを未行動にする。バトルを中断する。\n構築制限:『恋がさくころ桜どき』",
+  "textKr": "味方キャラの攻撃中に使用する。そのキャラを未行動にする。バトルを中断する。\n構築制限:『恋がさくころ桜どき』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2920",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "味方キャラの攻撃中に使用する。そのキャラを未行動にする。バトルを中断する。\n構築制限:『恋がさくころ桜どき』",
+    "normalizedText": "味方キャラの攻撃中に使用する。そのキャラを未行動にする。バトルを中断する。構築制限:『恋がさくころ桜どき』",
+    "lines": [
+      "味方キャラの攻撃中に使用する。そのキャラを未行動にする。バトルを中断する。構築制限:『恋がさくころ桜どき』"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "味方キャラの攻撃中に使用する。そのキャラを未行動にする。バトルを中断する。構築制限:『恋がさくころ桜どき』",
+      "reason": "no parser rule matched"
+    }
   ]
 }

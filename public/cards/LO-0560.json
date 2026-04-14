@@ -1,15 +1,54 @@
 {
+  "cardNo": "LO-0560",
+  "title": "女神の加護",
+  "subName": "",
+  "name": "女神の加護",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
     "star"
-  ]
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[常時] 味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n構築制限:Fate/Grand Order",
+  "textKr": "[常時] 味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n構築制限:Fate/Grand Order",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0560",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] 味方キャラ全てにAP+1・DP+1する。構築制限:Fate/Grand Order",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] 味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n構築制限:Fate/Grand Order",
+    "normalizedText": "[常時] 味方キャラ全てにAP+1・DP+1する。構築制限:Fate/Grand Order",
+    "lines": [
+      "[常時] 味方キャラ全てにAP+1・DP+1する。構築制限:Fate/Grand Order"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

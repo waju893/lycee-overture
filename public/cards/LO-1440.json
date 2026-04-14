@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[ガッツ:[宙宙宙宙宙]]\n[誘発] このキャラがゴミ箱から登場したとき、相手のデッキを２枚破棄する。",
   "textKr": "[ガッツ:[宙宙宙宙宙]]\n[誘発] このキャラがゴミ箱から登場したとき、相手のデッキを２枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1440"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1440",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ガッツ:[宙宙宙宙宙]]\n[誘発] このキャラがゴミ箱から登場したとき、相手のデッキを２枚破棄する。",
+    "normalizedText": "[ガッツ:[宙宙宙宙宙]]\n[誘発] このキャラがゴミ箱から登場したとき、相手のデッキを2枚破棄する。",
+    "lines": [
+      "[ガッツ:[宙宙宙宙宙]]",
+      "[誘発] このキャラがゴミ箱から登場したとき、相手のデッキを2枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ガッツ:[宙宙宙宙宙]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラがゴミ箱から登場したとき、相手のデッキを2枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

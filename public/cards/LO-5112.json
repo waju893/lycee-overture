@@ -26,5 +26,57 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:{味方『うたわれるもの ロストフラグ』[宙]キャラ１体}にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:{味方『うたわれるもの ロストフラグ』[宙]キャラ１体}にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5112"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5112",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方『うたわれるもの ロストフラグ』[宙]キャラ1体}にAP+3またはDP+3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:{味方『うたわれるもの ロストフラグ』[宙]キャラ１体}にＡＰ＋３またはＤＰ＋３する。この能力は失われる。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:{味方『うたわれるもの ロストフラグ』[宙]キャラ1体}にAP+3またはDP+3する。この能力は失われる。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:{味方『うたわれるもの ロストフラグ』[宙]キャラ1体}にAP+3またはDP+3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

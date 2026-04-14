@@ -1,17 +1,52 @@
 {
+  "cardNo": "LO-3005",
+  "title": "だだっ子で泣き虫な妹",
+  "subName": "緒方 未央",
+  "name": "だだっ子で泣き虫な妹 緒方 未央",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 1,
   "useTarget": [
     "moon"
   ],
   "ap": 2,
   "dp": 0,
   "sp": 1,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 1,
+  "costRaw": "月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言] [D1]:味方[月]キャラが登場している場合、{相手キャラ１体}にＤＰ－２する。\n構築制限:[HOK]",
+  "textKr": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言] [D1]:味方[月]キャラが登場している場合、{相手キャラ１体}にＤＰ－２する。\n構築制限:[HOK]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3005",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。[手札宣言] [D1]:味方[月]キャラが登場している場合、{相手キャラ1体}にDP-2する。構築制限:[HOK]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言] [D1]:味方[月]キャラが登場している場合、{相手キャラ１体}にＤＰ－２する。\n構築制限:[HOK]",
+    "normalizedText": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。[手札宣言] [D1]:味方[月]キャラが登場している場合、{相手キャラ1体}にDP-2する。構築制限:[HOK]",
+    "lines": [
+      "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。[手札宣言] [D1]:味方[月]キャラが登場している場合、{相手キャラ1体}にDP-2する。構築制限:[HOK]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

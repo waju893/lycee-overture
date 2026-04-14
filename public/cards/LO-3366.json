@@ -23,5 +23,51 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n※「黄金色の時間」は自分の場に１枚まで配置可能",
   "textKr": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n※「黄金色の時間」は自分の場に１枚まで配置可能",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3366"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3366",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ1体にAP-1またはDP-1する。※「黄金色の時間」は自分の場に1枚まで配置可能",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n※「黄金色の時間」は自分の場に１枚まで配置可能",
+    "normalizedText": "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ1体にAP-1またはDP-1する。※「黄金色の時間」は自分の場に1枚まで配置可能",
+    "lines": [
+      "[誘発] 味方キャラが自分の効果で登場したとき、相手キャラ1体にAP-1またはDP-1する。※「黄金色の時間」は自分の場に1枚まで配置可能"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

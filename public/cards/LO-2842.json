@@ -21,7 +21,22 @@
   "costRaw": "宙",
   "restrictionRaw": "",
   "typeTagsRaw": "リトルバスターズ",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2842"
+  "text": "味方キャラのバトル中に使用する。バトルを中断する。",
+  "textKr": "味方キャラのバトル中に使用する。バトルを中断する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2842",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "味方キャラのバトル中に使用する。バトルを中断する。",
+    "normalizedText": "味方キャラのバトル中に使用する。バトルを中断する。",
+    "lines": [
+      "味方キャラのバトル中に使用する。バトルを中断する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "味方キャラのバトル中に使用する。バトルを中断する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

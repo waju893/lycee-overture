@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [無無無]:自ターン中に使用する。バトル中に使用できない。{アイテム１枚}をこのキャラに無償で装備する。この能力は失われる。",
   "textKr": "[宣言] [無無無]:自ターン中に使用する。バトル中に使用できない。{アイテム１枚}をこのキャラに無償で装備する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2939"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2939",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [無無無]:自ターン中に使用する。バトル中に使用できない。{アイテム１枚}をこのキャラに無償で装備する。この能力は失われる。",
+    "normalizedText": "[宣言] [無無無]:自ターン中に使用する。バトル中に使用できない。{アイテム1枚}をこのキャラに無償で装備する。この能力は失われる。",
+    "lines": [
+      "[宣言] [無無無]:自ターン中に使用する。バトル中に使用できない。{アイテム1枚}をこのキャラに無償で装備する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [無無無]:自ターン中に使用する。バトル中に使用できない。{アイテム1枚}をこのキャラに無償で装備する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

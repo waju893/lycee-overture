@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:元のＳＰが１以下の味方キャラが登場していない場合、このキャラにＤＭＧ＋１する。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:元のＳＰが１以下の味方キャラが登場していない場合、このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5022"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5022",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:元のＳＰが１以下の味方キャラが登場していない場合、このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:元のSPが1以下の味方キャラが登場していない場合、このキャラにDMG+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:元のSPが1以下の味方キャラが登場していない場合、このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:元のSPが1以下の味方キャラが登場していない場合、このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

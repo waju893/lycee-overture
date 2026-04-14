@@ -25,5 +25,30 @@
   "typeTagsRaw": "城娘",
   "text": "[手札宣言] [雪雪]:味方キャラの防御中に使用する。そのキャラにＤＰ＋２する。",
   "textKr": "[手札宣言] [雪雪]:味方キャラの防御中に使用する。そのキャラにＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2245"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2245",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [雪雪]:味方キャラの防御中に使用する。そのキャラにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [雪雪]:味方キャラの防御中に使用する。そのキャラにＤＰ＋２する。",
+    "normalizedText": "[手札宣言] [雪雪]:味方キャラの防御中に使用する。そのキャラにDP+2する。",
+    "lines": [
+      "[手札宣言] [雪雪]:味方キャラの防御中に使用する。そのキャラにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

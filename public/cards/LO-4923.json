@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:{持ち主が自分の[宙]アイテムを持つ味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「星河かぐ耶」の場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{持ち主が自分の[宙]アイテムを持つ味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「星河かぐ耶」の場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4923"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4923",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{持ち主が自分の[宙]アイテムを持つ味方[宙]キャラ1体}にAP+1・DP+1する。そのキャラが「星河かぐ耶」の場合、そのキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{持ち主が自分の[宙]アイテムを持つ味方[宙]キャラ１体}にＡＰ＋１・ＤＰ＋１する。そのキャラが「星河かぐ耶」の場合、そのキャラにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{持ち主が自分の[宙]アイテムを持つ味方[宙]キャラ1体}にAP+1・DP+1する。そのキャラが「星河かぐ耶」の場合、そのキャラにAP+1・DP+1する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{持ち主が自分の[宙]アイテムを持つ味方[宙]キャラ1体}にAP+1・DP+1する。そのキャラが「星河かぐ耶」の場合、そのキャラにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

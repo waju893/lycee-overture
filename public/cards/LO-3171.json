@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3171",
+  "title": "『アイテム』の癒し系",
+  "subName": "滝壺 理后",
+  "name": "『アイテム』の癒し系 滝壺 理后",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos"
@@ -14,5 +17,45 @@
   "ap": 0,
   "dp": 3,
   "sp": 2,
-  "dmg": 0
+  "dmg": 0,
+  "ex": 2,
+  "costRaw": "宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[手札宣言] [0]:自分のデッキからコストが５点以上の[宙]キャラ１体を探し公開して手札に入れる。\n構築制限:『とある科学の超電磁砲』",
+  "textKr": "[手札宣言] [0]:自分のデッキからコストが５点以上の[宙]キャラ１体を探し公開して手札に入れる。\n構築制限:『とある科学の超電磁砲』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3171",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のデッキからコストが5点以上の[宙]キャラ1体を探し公開して手札に入れる。構築制限:『とある科学の超電磁砲』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [0]:自分のデッキからコストが５点以上の[宙]キャラ１体を探し公開して手札に入れる。\n構築制限:『とある科学の超電磁砲』",
+    "normalizedText": "[手札宣言] [0]:自分のデッキからコストが5点以上の[宙]キャラ1体を探し公開して手札に入れる。構築制限:『とある科学の超電磁砲』",
+    "lines": [
+      "[手札宣言] [0]:自分のデッキからコストが5点以上の[宙]キャラ1体を探し公開して手札に入れる。構築制限:『とある科学の超電磁砲』"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

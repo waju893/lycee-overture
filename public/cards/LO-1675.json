@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[サイドステップ:[0]]\n[宣言] [0]:バトル中に使用する。{コストが３点以上の味方[宙]キャラ１体}にバトル終了時までＤＭＧ＋１する。",
   "textKr": "[サイドステップ:[0]]\n[宣言] [0]:バトル中に使用する。{コストが３点以上の味方[宙]キャラ１体}にバトル終了時までＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1675"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1675",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[宣言] [0]:バトル中に使用する。{コストが３点以上の味方[宙]キャラ１体}にバトル終了時までＤＭＧ＋１する。",
+    "normalizedText": "[サイドステップ:[0]]\n[宣言] [0]:バトル中に使用する。{コストが3点以上の味方[宙]キャラ1体}にバトル終了時までDMG+1する。",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[宣言] [0]:バトル中に使用する。{コストが3点以上の味方[宙]キャラ1体}にバトル終了時までDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:バトル中に使用する。{コストが3点以上の味方[宙]キャラ1体}にバトル終了時までDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

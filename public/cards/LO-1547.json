@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラのサポートは「ラピス」またはサブネームに「帝国」を含むキャラのみを対象に指定できる。",
   "textKr": "[常時] このキャラのサポートは「ラピス」またはサブネームに「帝国」を含むキャラのみを対象に指定できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1547"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1547",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[常時] このキャラのサポートは「ラピス」またはサブネームに「帝国」を含むキャラのみを対象に指定できる。",
+    "normalizedText": "[常時] このキャラのサポートは「ラピス」またはサブネームに「帝国」を含むキャラのみを対象に指定できる。",
+    "lines": [
+      "[常時] このキャラのサポートは「ラピス」またはサブネームに「帝国」を含むキャラのみを対象に指定できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] このキャラのサポートは「ラピス」またはサブネームに「帝国」を含むキャラのみを対象に指定できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

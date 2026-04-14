@@ -26,5 +26,25 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体を味方フィールドに移動する。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体を味方フィールドに移動する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1824"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1824",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体を味方フィールドに移動する。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体を味方フィールドに移動する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体を味方フィールドに移動する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体を味方フィールドに移動する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

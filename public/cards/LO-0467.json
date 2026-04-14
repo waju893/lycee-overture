@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0467",
+  "title": "約束された勝利の剣",
+  "subName": "ライダー／アルトリア・ペンドラゴン〔サンタオルタ〕",
+  "name": "約束された勝利の剣 ライダー／アルトリア・ペンドラゴン〔サンタオルタ〕",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,5 +19,27 @@
   "ap": 3,
   "dp": 3,
   "sp": 2,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 2,
+  "costRaw": "雪雪無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "サーヴァント",
+  "text": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ１体は次の相手のウェイクアップで未行動に戻らない。\n構築制限:Fate/Grand Order",
+  "textKr": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ１体は次の相手のウェイクアップで未行動に戻らない。\n構築制限:Fate/Grand Order",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0467",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ１体は次の相手のウェイクアップで未行動に戻らない。\n構築制限:Fate/Grand Order",
+    "normalizedText": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体は次の相手のウェイクアップで未行動に戻らない。構築制限:Fate/Grand Order",
+    "lines": [
+      "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体は次の相手のウェイクアップで未行動に戻らない。構築制限:Fate/Grand Order"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体は次の相手のウェイクアップで未行動に戻らない。構築制限:Fate/Grand Order",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

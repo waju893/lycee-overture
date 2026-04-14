@@ -1,11 +1,40 @@
 {
+  "cardNo": "LO-1568",
+  "title": "暗黒騎士団の最期",
+  "subName": "",
+  "name": "暗黒騎士団の最期",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
+  "useTarget": [],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
   "ex": 1,
-  "useTarget": 0
+  "costRaw": "",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "{コストが３点以上の味方[雪]キャラ１体}を破棄する。破棄したとき、{相手キャラ１体}を破棄する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "textKr": "{コストが３点以上の味方[雪]キャラ１体}を破棄する。破棄したとき、{相手キャラ１体}を破棄する。\n構築制限:千年戦争アイギス（[AIG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1568",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{コストが３点以上の味方[雪]キャラ１体}を破棄する。破棄したとき、{相手キャラ１体}を破棄する。\n構築制限:千年戦争アイギス（[AIG]）",
+    "normalizedText": "{コストが3点以上の味方[雪]キャラ1体}を破棄する。破棄したとき、{相手キャラ1体}を破棄する。構築制限:千年戦争アイギス([AIG])",
+    "lines": [
+      "{コストが3点以上の味方[雪]キャラ1体}を破棄する。破棄したとき、{相手キャラ1体}を破棄する。構築制限:千年戦争アイギス([AIG])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{コストが3点以上の味方[雪]キャラ1体}を破棄する。破棄したとき、{相手キャラ1体}を破棄する。構築制限:千年戦争アイギス([AIG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

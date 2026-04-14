@@ -25,5 +25,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラは[アグレッシブ]を得る。",
   "textKr": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0301"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0301",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[アシスト]\n[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自分の効果によって相手キャラを破棄したとき、このキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

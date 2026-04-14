@@ -23,7 +23,22 @@
   "costRaw": "花花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0090"
+  "text": "ターン終了時まで味方キャラ１体はダウンしない。",
+  "textKr": "ターン終了時まで味方キャラ１体はダウンしない。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0090",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "ターン終了時まで味方キャラ１体はダウンしない。",
+    "normalizedText": "ターン終了時まで味方キャラ1体はダウンしない。",
+    "lines": [
+      "ターン終了時まで味方キャラ1体はダウンしない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "ターン終了時まで味方キャラ1体はダウンしない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

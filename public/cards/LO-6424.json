@@ -23,5 +23,36 @@
   "typeTagsRaw": "",
   "text": "[チャージ:１][ジャンプ:[0]]\n[宣言][C1][雪雪雪]:このキャラにＡＰ＋８・ＤＰ＋８する。",
   "textKr": "[チャージ:１][ジャンプ:[0]]\n[宣言][C1][雪雪雪]:このキャラにＡＰ＋８・ＤＰ＋８する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6424"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6424",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言][C1][雪雪雪]:このキャラにAP+8・DP+8する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 8
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[チャージ:１][ジャンプ:[0]]\n[宣言][C1][雪雪雪]:このキャラにＡＰ＋８・ＤＰ＋８する。",
+    "normalizedText": "[チャージ:1][ジャンプ:[0]]\n[宣言][C1][雪雪雪]:このキャラにAP+8・DP+8する。",
+    "lines": [
+      "[チャージ:1][ジャンプ:[0]]",
+      "[宣言][C1][雪雪雪]:このキャラにAP+8・DP+8する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:1][ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

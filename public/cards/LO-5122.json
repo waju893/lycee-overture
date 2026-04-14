@@ -28,5 +28,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [宙]:味方『うたわれるもの ロストフラグ』[宙]キャラが３体以上の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
   "textKr": "[ステップ:[0]]\n[宣言] [宙]:味方『うたわれるもの ロストフラグ』[宙]キャラが３体以上の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5122"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5122",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:味方『うたわれるもの ロストフラグ』[宙]キャラが3体以上の場合、このキャラにAP+3・DP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [宙]:味方『うたわれるもの ロストフラグ』[宙]キャラが３体以上の場合、このキャラにＡＰ＋３・ＤＰ＋３する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [宙]:味方『うたわれるもの ロストフラグ』[宙]キャラが3体以上の場合、このキャラにAP+3・DP+3する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [宙]:味方『うたわれるもの ロストフラグ』[宙]キャラが3体以上の場合、このキャラにAP+3・DP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

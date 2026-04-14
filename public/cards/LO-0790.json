@@ -24,5 +24,20 @@
   "typeTagsRaw": "神姫",
   "text": "[誘発] このキャラでサポートをしたとき、自分の手札を１枚破棄できる。破棄したとき、このキャラを未行動にする。",
   "textKr": "[誘発] このキャラでサポートをしたとき、自分の手札を１枚破棄できる。破棄したとき、このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0790"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0790",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、自分の手札を１枚破棄できる。破棄したとき、このキャラを未行動にする。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、自分の手札を1枚破棄できる。破棄したとき、このキャラを未行動にする。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、自分の手札を1枚破棄できる。破棄したとき、このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、自分の手札を1枚破棄できる。破棄したとき、このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [D1][雪雪雪雪]:相手の宣言に対応して使用できない。{行動済みの相手キャラ１体}を破棄する。",
   "textKr": "[手札宣言] [D1][雪雪雪雪]:相手の宣言に対応して使用できない。{行動済みの相手キャラ１体}を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1469"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1469",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [D1][雪雪雪雪]:相手の宣言に対応して使用できない。{行動済みの相手キャラ１体}を破棄する。",
+    "normalizedText": "[手札宣言] [D1][雪雪雪雪]:相手の宣言に対応して使用できない。{行動済みの相手キャラ1体}を破棄する。",
+    "lines": [
+      "[手札宣言] [D1][雪雪雪雪]:相手の宣言に対応して使用できない。{行動済みの相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [D1][雪雪雪雪]:相手の宣言に対応して使用できない。{行動済みの相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

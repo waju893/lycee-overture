@@ -26,5 +26,52 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [日日日]:自ターン中に使用する。バトル中に使用できない。自分のデッキから「空から来た少女 トウカ」１体を探し、無償で登場する。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [日日日]:自ターン中に使用する。バトル中に使用できない。自分のデッキから「空から来た少女 トウカ」１体を探し、無償で登場する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3230"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3230",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日日日]:自ターン中に使用する。バトル中に使用できない。自分のデッキから「空から来た少女 トウカ」1体を探し、無償で登場する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck"
+          ],
+          "match": {
+            "exactName": "空から来た少女 トウカ",
+            "kind": "event"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "event",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [日日日]:自ターン中に使用する。バトル中に使用できない。自分のデッキから「空から来た少女 トウカ」１体を探し、無償で登場する。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [日日日]:自ターン中に使用する。バトル中に使用できない。自分のデッキから「空から来た少女 トウカ」1体を探し、無償で登場する。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [日日日]:自ターン中に使用する。バトル中に使用できない。自分のデッキから「空から来た少女 トウカ」1体を探し、無償で登場する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

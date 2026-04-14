@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3437",
+  "title": "聖竜騎士団副団長『ウィングドラゴン』",
+  "subName": "クリス＝レイ",
+  "name": "聖竜騎士団副団長『ウィングドラゴン』 クリス＝レイ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,13 +21,67 @@
   "dp": 4,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3,
-    13
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。１枚ドローできる。\n[宣言] [0]:「クラリアス」を装備している味方キャラ全てにＡＰ＋１・ＤＭＧ＋１する。\n構築制限:[GIG]",
+  "textKr": "[サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。１枚ドローできる。\n[宣言] [0]:「クラリアス」を装備している味方キャラ全てにＡＰ＋１・ＤＭＧ＋１する。\n構築制限:[GIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3437",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[サイドステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。1枚ドローできる。[宣言] [0]:「クラリアス」を装備している味方キャラ全てにAP+1・DMG+1する。構築制限:[GIG]",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "クラリアス",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3,
-    13
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」１枚を探しこのキャラに無償で装備できる。１枚ドローできる。\n[宣言] [0]:「クラリアス」を装備している味方キャラ全てにＡＰ＋１・ＤＭＧ＋１する。\n構築制限:[GIG]",
+    "normalizedText": "[サイドステップ:[0]][ペナルティ:[1枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。1枚ドローできる。[宣言] [0]:「クラリアス」を装備している味方キャラ全てにAP+1・DMG+1する。構築制限:[GIG]",
+    "lines": [
+      "[サイドステップ:[0]][ペナルティ:[1枚ドローする。]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「クラリアス」1枚を探しこのキャラに無償で装備できる。1枚ドローできる。[宣言] [0]:「クラリアス」を装備している味方キャラ全てにAP+1・DMG+1する。構築制限:[GIG]"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": []
 }

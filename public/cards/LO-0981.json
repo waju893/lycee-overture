@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 手札以外から味方キャラが登場したとき、自ターン終了時までこのキャラのＤＭＧを４にする。",
   "textKr": "[誘発] 手札以外から味方キャラが登場したとき、自ターン終了時までこのキャラのＤＭＧを４にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0981"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0981",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 手札以外から味方キャラが登場したとき、自ターン終了時までこのキャラのＤＭＧを４にする。",
+    "normalizedText": "[誘発] 手札以外から味方キャラが登場したとき、自ターン終了時までこのキャラのDMGを4にする。",
+    "lines": [
+      "[誘発] 手札以外から味方キャラが登場したとき、自ターン終了時までこのキャラのDMGを4にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 手札以外から味方キャラが登場したとき、自ターン終了時までこのキャラのDMGを4にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

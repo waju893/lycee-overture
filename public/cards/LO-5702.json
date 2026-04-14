@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [月]:相手攻撃キャラ１体にＤＭＧ－４または相手防御キャラ１体にＡＰ－４またはＤＰ－４する。",
   "textKr": "[手札宣言] [月]:相手攻撃キャラ１体にＤＭＧ－４または相手防御キャラ１体にＡＰ－４またはＤＰ－４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5702"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5702",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [月]:相手攻撃キャラ1体にDMG-4または相手防御キャラ1体にAP-4またはDP-4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [月]:相手攻撃キャラ１体にＤＭＧ－４または相手防御キャラ１体にＡＰ－４またはＤＰ－４する。",
+    "normalizedText": "[手札宣言] [月]:相手攻撃キャラ1体にDMG-4または相手防御キャラ1体にAP-4またはDP-4する。",
+    "lines": [
+      "[手札宣言] [月]:相手攻撃キャラ1体にDMG-4または相手防御キャラ1体にAP-4またはDP-4する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

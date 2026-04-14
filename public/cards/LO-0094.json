@@ -28,7 +28,22 @@
   "costRaw": "宙宙宙宙無無無無",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0094"
+  "text": "味方キャラ２体を未行動にする。",
+  "textKr": "味方キャラ２体を未行動にする。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0094",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "味方キャラ２体を未行動にする。",
+    "normalizedText": "味方キャラ2体を未行動にする。",
+    "lines": [
+      "味方キャラ2体を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "味方キャラ2体を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

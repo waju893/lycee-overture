@@ -26,5 +26,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[誘発] 自ターン開始時、相手キャラの数より味方キャラの数が少ない場合、相手のデッキを１枚破棄する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] 自ターン開始時、相手キャラの数より味方キャラの数が少ない場合、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0462"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0462",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] 自ターン開始時、相手キャラの数より味方キャラの数が少ない場合、相手のデッキを１枚破棄する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] 自ターン開始時、相手キャラの数より味方キャラの数が少ない場合、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] 自ターン開始時、相手キャラの数より味方キャラの数が少ない場合、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 自ターン開始時、相手キャラの数より味方キャラの数が少ない場合、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

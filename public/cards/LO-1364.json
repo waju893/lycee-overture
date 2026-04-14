@@ -24,5 +24,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[エンゲージ:[自分のデッキを１枚回復する。]]\n[誘発] このキャラが登場したとき、味方キャラ１体にＤＭＧ＋１する。",
   "textKr": "[エンゲージ:[自分のデッキを１枚回復する。]]\n[誘発] このキャラが登場したとき、味方キャラ１体にＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1364"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1364",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[自分のデッキを１枚回復する。]]\n[誘発] このキャラが登場したとき、味方キャラ１体にＤＭＧ＋１する。",
+    "normalizedText": "[エンゲージ:[自分のデッキを1枚回復する。]]\n[誘発] このキャラが登場したとき、味方キャラ1体にDMG+1する。",
+    "lines": [
+      "[エンゲージ:[自分のデッキを1枚回復する。]]",
+      "[誘発] このキャラが登場したとき、味方キャラ1体にDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[自分のデッキを1枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、味方キャラ1体にDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

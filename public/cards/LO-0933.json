@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:ゲーム中、除外された自分のキャラが５体以上の場合、このキャラは[アグレッシブ]を得る。",
   "textKr": "[宣言] [0]:ゲーム中、除外された自分のキャラが５体以上の場合、このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0933"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0933",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:ゲーム中、除外された自分のキャラが５体以上の場合、このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[宣言] [0]:ゲーム中、除外された自分のキャラが5体以上の場合、このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[宣言] [0]:ゲーム中、除外された自分のキャラが5体以上の場合、このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:ゲーム中、除外された自分のキャラが5体以上の場合、このキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

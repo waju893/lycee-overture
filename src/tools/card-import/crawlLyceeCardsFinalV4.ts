@@ -5,6 +5,7 @@
  * - Parses card detail pages with cheerio
  * - Decodes response by charset, with mojibake fallback
  * - Saves textKr as the original Japanese text initially
+ * - Keeps general effect text lines instead of only "[" / "※" lines
  * - Use translateLyceeTextKrWithPapago.ts later to replace textKr with Korean
  *
  * Requirements:
@@ -19,12 +20,13 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 import iconv from "iconv-lite";
 import * as cheerio from "cheerio";
 
-type CardType = "character" | "item" | "event" | "area" | "unknown";
+export type CardType = "character" | "item" | "event" | "area" | "unknown";
 
-type ParsedCardDetail = {
+export type ParsedCardDetail = {
   cardNo: string;
   title: string;
   subName: string;
@@ -48,7 +50,7 @@ type ParsedCardDetail = {
   sourceUrl: string;
 };
 
-type FailedCard = {
+export type FailedCard = {
   cardNo: string;
   reason: string;
 };
@@ -80,11 +82,11 @@ function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function normalizeInputCardNo(cardNo: string): string {
+export function normalizeInputCardNo(cardNo: string): string {
   return cardNo.trim().replace(/-([a-z])$/, (_, s: string) => `-${s.toUpperCase()}`);
 }
 
-function normalizeText(value: string): string {
+export function normalizeText(value: string): string {
   return value.replace(/\s+/g, " ").trim();
 }
 
@@ -123,7 +125,7 @@ function extractTypeInfo(rawTypeJa: string): {
   };
 }
 
-function isAllowedCardNo(cardNo: string): boolean {
+export function isAllowedCardNo(cardNo: string): boolean {
   const match = cardNo.match(/^(LO-\d{4})(?:-([A-Za-z]))?$/);
   if (!match) return false;
   const suffix = match[2] ? `-${match[2].toUpperCase()}` : "";
@@ -135,7 +137,7 @@ function maybeLooksLikeMojibake(text: string): boolean {
   return badMarkers.some((marker) => text.includes(marker));
 }
 
-async function fetchDecodedHtml(url: string): Promise<string> {
+export async function fetchDecodedHtml(url: string): Promise<string> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
@@ -183,7 +185,7 @@ async function fetchDecodedHtml(url: string): Promise<string> {
   }
 }
 
-async function fetchHtmlWithRetry(url: string, attempts: number, backoffMs: number): Promise<string> {
+export async function fetchHtmlWithRetry(url: string, attempts: number, backoffMs: number): Promise<string> {
   let lastError: unknown = null;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
@@ -207,7 +209,24 @@ function decodeCellHtmlToLines(cellHtml: string): string[] {
     .filter(Boolean);
 }
 
-function parseDetailHtml(html: string, requestedCardNo: string, sourceUrl: string): ParsedCardDetail | null {
+function cleanEffectLine(line: string): string {
+  return line
+    .replace(/\[このカードを使用したデッキを検索する\]/g, "")
+    .replace(/\[このカードを使用したデッキを探す\]/g, "")
+    .replace(/このカードを使用したデッキを検索する/g, "")
+    .replace(/このカードを使用したデッキを探す/g, "")
+    .trim();
+}
+
+function extractEffectText(effectCellHtml: string): string {
+  const effectLines = decodeCellHtmlToLines(effectCellHtml)
+    .map(cleanEffectLine)
+    .filter(Boolean);
+
+  return effectLines.join("\n").trim();
+}
+
+export function parseDetailHtml(html: string, requestedCardNo: string, sourceUrl: string): ParsedCardDetail | null {
   if (html.includes("カードが見つかりません")) {
     return null;
   }
@@ -268,11 +287,7 @@ function parseDetailHtml(html: string, requestedCardNo: string, sourceUrl: strin
   let text = "";
   if (row4.length > 0) {
     const effectCell = row4[row4.length - 1];
-    const effectLines = decodeCellHtmlToLines(effectCell.html)
-      .map((line) => line.replace(/\[このカードを使用したデッキを検索する\]/g, "").trim())
-      .filter(Boolean)
-      .filter((line) => line.startsWith("[") || line.startsWith("※"));
-    text = effectLines.join("\n").trim();
+    text = extractEffectText(effectCell.html);
   }
 
   const typeInfo = extractTypeInfo(rawTypeJa);
@@ -342,12 +357,12 @@ async function discoverAllCardNos(startPage: number, delayMs: number): Promise<s
   return Array.from(found).sort();
 }
 
-async function saveCard(saveDir: string, card: ParsedCardDetail): Promise<void> {
+export async function saveCard(saveDir: string, card: ParsedCardDetail): Promise<void> {
   const filePath = path.join(saveDir, `${card.cardNo}.json`);
   await fs.writeFile(filePath, `${JSON.stringify(card, null, 2)}\n`, "utf-8");
 }
 
-async function writeJson(saveDir: string, filename: string, value: unknown): Promise<void> {
+export async function writeJson(saveDir: string, filename: string, value: unknown): Promise<void> {
   const filePath = path.join(saveDir, filename);
   await fs.writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, "utf-8");
 }
@@ -424,4 +439,12 @@ async function main(): Promise<void> {
   console.log(`DONE discovered=${discovered.length} saved=${saved} failed=${failed}`);
 }
 
-void main();
+function isMainModule(metaUrl: string): boolean {
+  const entry = process.argv[1];
+  if (!entry) return false;
+  return pathToFileURL(entry).href === metaUrl;
+}
+
+if (isMainModule(import.meta.url)) {
+  void main();
+}

@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[常時] 味方[花]キャラ全てにＳＰ＋１する。",
   "textKr": "[常時] 味方[花]キャラ全てにＳＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0103"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0103",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] 味方[花]キャラ全てにSP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] 味方[花]キャラ全てにＳＰ＋１する。",
+    "normalizedText": "[常時] 味方[花]キャラ全てにSP+1する。",
+    "lines": [
+      "[常時] 味方[花]キャラ全てにSP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

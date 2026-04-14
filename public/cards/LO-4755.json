@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4755",
+  "title": "虹待ちの雨宿り",
+  "subName": "ポリン",
+  "name": "虹待ちの雨宿り ポリン",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower"
@@ -15,11 +18,51 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "花花",
+  "restrictionRaw": "－－－●●●",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:【[AUG]】【[花]】",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:【[AUG]】【[花]】",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4755",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:【[AUG]】【[花]】",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:【[AUG]】【[花]】",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:【[AUG]】【[花]】",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:【[AUG]】【[花]】"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

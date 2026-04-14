@@ -23,5 +23,36 @@
   "typeTagsRaw": "リトルバスターズ",
   "text": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１する。",
   "textKr": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2834"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2834",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。{味方<リトルバスターズ>キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方＜リトルバスターズ＞キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[アシスト]\n[宣言] [0]:自ターン中に使用する。{味方<リトルバスターズ>キャラ1体}にAP+1する。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [0]:自ターン中に使用する。{味方<リトルバスターズ>キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

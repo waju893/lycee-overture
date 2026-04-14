@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [雪]:このキャラを横に置く。次のターン開始時、横のこのキャラを無償で登場する。",
   "textKr": "[宣言] [雪]:このキャラを横に置く。次のターン開始時、横のこのキャラを無償で登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0869"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0869",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [雪]:このキャラを横に置く。次のターン開始時、横のこのキャラを無償で登場する。",
+    "normalizedText": "[宣言] [雪]:このキャラを横に置く。次のターン開始時、横のこのキャラを無償で登場する。",
+    "lines": [
+      "[宣言] [雪]:このキャラを横に置く。次のターン開始時、横のこのキャラを無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪]:このキャラを横に置く。次のターン開始時、横のこのキャラを無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

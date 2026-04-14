@@ -25,5 +25,35 @@
   "typeTagsRaw": "継続",
   "text": "[ステップ:[0]]\n[誘発] 自ターン中、このキャラを除く味方＜継続＞キャラを破棄したとき、１枚ドローできる。",
   "textKr": "[ステップ:[0]]\n[誘発] 自ターン中、このキャラを除く味方＜継続＞キャラを破棄したとき、１枚ドローできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1048"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1048",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自ターン中、このキャラを除く味方<継続>キャラを破棄したとき、1枚ドローできる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[誘発] 自ターン中、このキャラを除く味方＜継続＞キャラを破棄したとき、１枚ドローできる。",
+    "normalizedText": "[ステップ:[0]]\n[誘発] 自ターン中、このキャラを除く味方<継続>キャラを破棄したとき、1枚ドローできる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[誘発] 自ターン中、このキャラを除く味方<継続>キャラを破棄したとき、1枚ドローできる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

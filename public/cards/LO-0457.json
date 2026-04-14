@@ -26,5 +26,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] 相手ターン開始時、自分の手札が３枚以上の場合、相手キャラ全てにＤＭＧ－１する。",
   "textKr": "[誘発] 相手ターン開始時、自分の手札が３枚以上の場合、相手キャラ全てにＤＭＧ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0457"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0457",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 相手ターン開始時、自分の手札が３枚以上の場合、相手キャラ全てにＤＭＧ－１する。",
+    "normalizedText": "[誘発] 相手ターン開始時、自分の手札が3枚以上の場合、相手キャラ全てにDMG-1する。",
+    "lines": [
+      "[誘発] 相手ターン開始時、自分の手札が3枚以上の場合、相手キャラ全てにDMG-1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 相手ターン開始時、自分の手札が3枚以上の場合、相手キャラ全てにDMG-1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

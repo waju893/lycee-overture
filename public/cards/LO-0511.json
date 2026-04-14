@@ -26,5 +26,37 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[D1]]\n[誘発] 自ターン開始時、このキャラにＡＰ＋２・ＤＰ＋２する。",
   "textKr": "[オーダーチェンジ:[D1]]\n[誘発] 自ターン開始時、このキャラにＡＰ＋２・ＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0511"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0511",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "自ターン開始時",
+      "originalLine": "[誘発] 自ターン開始時、このキャラにAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[D1]]\n[誘発] 自ターン開始時、このキャラにＡＰ＋２・ＤＰ＋２する。",
+    "normalizedText": "[オーダーチェンジ:[D1]]\n[誘発] 自ターン開始時、このキャラにAP+2・DP+2する。",
+    "lines": [
+      "[オーダーチェンジ:[D1]]",
+      "[誘発] 自ターン開始時、このキャラにAP+2・DP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[D1]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

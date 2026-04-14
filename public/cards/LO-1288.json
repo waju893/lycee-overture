@@ -1,14 +1,48 @@
 {
+  "cardNo": "LO-1288",
+  "title": "春原コンボ",
+  "subName": "",
+  "name": "春原コンボ",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "装備制限:[日]キャラ\n[誘発] このキャラが相手のデッキにダメージを与えたとき、このキャラを破棄する。破棄したとき、コストが４点以下の相手キャラ１体を破棄する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "装備制限:[日]キャラ\n[誘発] このキャラが相手のデッキにダメージを与えたとき、このキャラを破棄する。破棄したとき、コストが４点以下の相手キャラ１体を破棄する。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1288",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "装備制限:[日]キャラ\n[誘発] このキャラが相手のデッキにダメージを与えたとき、このキャラを破棄する。破棄したとき、コストが４点以下の相手キャラ１体を破棄する。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "装備制限:[日]キャラ\n[誘発] このキャラが相手のデッキにダメージを与えたとき、このキャラを破棄する。破棄したとき、コストが4点以下の相手キャラ1体を破棄する。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "装備制限:[日]キャラ",
+      "[誘発] このキャラが相手のデッキにダメージを与えたとき、このキャラを破棄する。破棄したとき、コストが4点以下の相手キャラ1体を破棄する。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "装備制限:[日]キャラ",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが相手のデッキにダメージを与えたとき、このキャラを破棄する。破棄したとき、コストが4点以下の相手キャラ1体を破棄する。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

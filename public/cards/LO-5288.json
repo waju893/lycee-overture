@@ -25,5 +25,57 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[手札宣言] [宙宙]:{コストが３～４点の味方キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
   "textKr": "[オーダーステップ:[0]]\n[手札宣言] [宙宙]:{コストが３～４点の味方キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5288"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5288",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [宙宙]:{コストが3~4点の味方キャラ1体}にAP+4またはDP+4する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 4
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[手札宣言] [宙宙]:{コストが３～４点の味方キャラ１体}にＡＰ＋４またはＤＰ＋４する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[手札宣言] [宙宙]:{コストが3~4点の味方キャラ1体}にAP+4またはDP+4する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[手札宣言] [宙宙]:{コストが3~4点の味方キャラ1体}にAP+4またはDP+4する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

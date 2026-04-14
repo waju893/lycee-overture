@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、１枚ドローする。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
   "textKr": "[誘発] このキャラが登場したとき、１枚ドローする。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3298"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3298",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、１枚ドローする。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、1枚ドローする。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、1枚ドローする。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

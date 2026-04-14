@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3054",
+  "title": "ポジティブな超大胆幼馴染",
+  "subName": "長嶺 美栗",
+  "name": "ポジティブな超大胆幼馴染 長嶺 美栗",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
@@ -15,11 +18,49 @@
   "dp": 0,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    13
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] 味方[日]キャラがダウンしたとき、味方[日]キャラ１体にＡＰ＋１する。\n[宣言][切札] [日日日日日]:自ターン中に使用する。バトル中に使用できない。相手キャラ全てを行動済みにする。\n構築制限:[HOK]",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] 味方[日]キャラがダウンしたとき、味方[日]キャラ１体にＡＰ＋１する。\n[宣言][切札] [日日日日日]:自ターン中に使用する。バトル中に使用できない。相手キャラ全てを行動済みにする。\n構築制限:[HOK]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3054",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方[日]キャラがダウンしたとき、味方[日]キャラ1体にAP+1する。[宣言][切札] [日日日日日]:自ターン中に使用する。バトル中に使用できない。相手キャラ全てを行動済みにする。構築制限:[HOK]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ペナルティ:[１枚ドローする。]]\n[誘発] 味方[日]キャラがダウンしたとき、味方[日]キャラ１体にＡＰ＋１する。\n[宣言][切札] [日日日日日]:自ターン中に使用する。バトル中に使用できない。相手キャラ全てを行動済みにする。\n構築制限:[HOK]",
+    "normalizedText": "[ペナルティ:[1枚ドローする。]]\n[誘発] 味方[日]キャラがダウンしたとき、味方[日]キャラ1体にAP+1する。[宣言][切札] [日日日日日]:自ターン中に使用する。バトル中に使用できない。相手キャラ全てを行動済みにする。構築制限:[HOK]",
+    "lines": [
+      "[ペナルティ:[1枚ドローする。]]",
+      "[誘発] 味方[日]キャラがダウンしたとき、味方[日]キャラ1体にAP+1する。[宣言][切札] [日日日日日]:自ターン中に使用する。バトル中に使用できない。相手キャラ全てを行動済みにする。構築制限:[HOK]"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

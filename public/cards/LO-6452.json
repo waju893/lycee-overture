@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6452",
+  "title": "カージ合衆国全権大使",
+  "subName": "佐藤 和成",
+  "name": "カージ合衆国全権大使 佐藤 和成",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -16,11 +19,60 @@
   "dp": 5,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    5
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[誘発] 相手ターン終了時、このキャラを破棄する。したとき、自分のゴミ箱または自分のデッキから「トリガー探偵事務所の所長 エステル・リンドバーグ」１体を探し元の[チャージ]１つを失い無償で登場する。\n構築制限:『アンラベル・トリガー』",
+  "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[誘発] 相手ターン終了時、このキャラを破棄する。したとき、自分のゴミ箱または自分のデッキから「トリガー探偵事務所の所長 エステル・リンドバーグ」１体を探し元の[チャージ]１つを失い無償で登場する。\n構築制限:『アンラベル・トリガー』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6452",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onTurnEnd",
+      "triggerText": "ターン終了時",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。[誘発] 相手ターン終了時、このキャラを破棄する。したとき、自分のゴミ箱または自分のデッキから「トリガー探偵事務所の所長 エステル・リンドバーグ」1体を探し元の[チャージ]1つを失い無償で登場する。構築制限:『アンラベル・トリガー』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "トリガー探偵事務所の所長 エステル・リンドバーグ",
+            "kind": "character"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "character",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[誘発] 相手ターン終了時、このキャラを破棄する。したとき、自分のゴミ箱または自分のデッキから「トリガー探偵事務所の所長 エステル・リンドバーグ」１体を探し元の[チャージ]１つを失い無償で登場する。\n構築制限:『アンラベル・トリガー』",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。[誘発] 相手ターン終了時、このキャラを破棄する。したとき、自分のゴミ箱または自分のデッキから「トリガー探偵事務所の所長 エステル・リンドバーグ」1体を探し元の[チャージ]1つを失い無償で登場する。構築制限:『アンラベル・トリガー』",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。[誘発] 相手ターン終了時、このキャラを破棄する。したとき、自分のゴミ箱または自分のデッキから「トリガー探偵事務所の所長 エステル・リンドバーグ」1体を探し元の[チャージ]1つを失い無償で登場する。構築制限:『アンラベル・トリガー』"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

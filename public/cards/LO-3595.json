@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラの防御中に使用する。コストが３点以上の味方[月]キャラが５体以上登場している場合、対戦キャラにＡＰ－２する。",
   "textKr": "[宣言] [0]:このキャラの防御中に使用する。コストが３点以上の味方[月]キャラが５体以上登場している場合、対戦キャラにＡＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3595"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3595",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラの防御中に使用する。コストが3点以上の味方[月]キャラが5体以上登場している場合、対戦キャラにAP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラの防御中に使用する。コストが３点以上の味方[月]キャラが５体以上登場している場合、対戦キャラにＡＰ－２する。",
+    "normalizedText": "[宣言] [0]:このキャラの防御中に使用する。コストが3点以上の味方[月]キャラが5体以上登場している場合、対戦キャラにAP-2する。",
+    "lines": [
+      "[宣言] [0]:このキャラの防御中に使用する。コストが3点以上の味方[月]キャラが5体以上登場している場合、対戦キャラにAP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

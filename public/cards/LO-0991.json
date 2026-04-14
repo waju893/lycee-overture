@@ -26,5 +26,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分の効果でキャラが場を離れたとき、このキャラにＤＭＧ＋１する。",
   "textKr": "[誘発] 自分の効果でキャラが場を離れたとき、このキャラにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0991"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0991",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果でキャラが場を離れたとき、このキャラにＤＭＧ＋１する。",
+    "normalizedText": "[誘発] 自分の効果でキャラが場を離れたとき、このキャラにDMG+1する。",
+    "lines": [
+      "[誘発] 自分の効果でキャラが場を離れたとき、このキャラにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分の効果でキャラが場を離れたとき、このキャラにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

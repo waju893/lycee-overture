@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [無]:バトル中に使用する。対戦キャラは[ペナルティ:[自分のデッキを２枚破棄する。]]を得る。",
   "textKr": "[宣言] [無]:バトル中に使用する。対戦キャラは[ペナルティ:[自分のデッキを２枚破棄する。]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5027"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5027",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [無]:バトル中に使用する。対戦キャラは[ペナルティ:[自分のデッキを２枚破棄する。]]を得る。",
+    "normalizedText": "[宣言] [無]:バトル中に使用する。対戦キャラは[ペナルティ:[自分のデッキを2枚破棄する。]]を得る。",
+    "lines": [
+      "[宣言] [無]:バトル中に使用する。対戦キャラは[ペナルティ:[自分のデッキを2枚破棄する。]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [無]:バトル中に使用する。対戦キャラは[ペナルティ:[自分のデッキを2枚破棄する。]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

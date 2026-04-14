@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [D1]:ゴミ箱のこのキャラを登場する。",
   "textKr": "[手札宣言] [D1]:ゴミ箱のこのキャラを登場する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1500"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1500",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [D1]:ゴミ箱のこのキャラを登場する。",
+    "normalizedText": "[手札宣言] [D1]:ゴミ箱のこのキャラを登場する。",
+    "lines": [
+      "[手札宣言] [D1]:ゴミ箱のこのキャラを登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [D1]:ゴミ箱のこのキャラを登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

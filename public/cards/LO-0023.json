@@ -23,5 +23,32 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [D1]:このキャラを手札に入れる。",
   "textKr": "[宣言] [D1]:このキャラを手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0023"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0023",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラを手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [D1]:このキャラを手札に入れる。",
+    "normalizedText": "[宣言] [D1]:このキャラを手札に入れる。",
+    "lines": [
+      "[宣言] [D1]:このキャラを手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

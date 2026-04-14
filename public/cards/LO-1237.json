@@ -25,5 +25,25 @@
   "typeTagsRaw": "死んだ世界戦線",
   "text": "[アシスト][ペナルティ:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
   "textKr": "[アシスト][ペナルティ:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1237"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1237",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト][ペナルティ:[相手のデッキを１枚破棄する。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+    "normalizedText": "[アシスト][ペナルティ:[相手のデッキを1枚破棄する。]]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+    "lines": [
+      "[アシスト][ペナルティ:[相手のデッキを1枚破棄する。]]",
+      "[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ペナルティ:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分の「卒業」置き場に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

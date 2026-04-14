@@ -26,5 +26,51 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラを除く味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
   "textKr": "[誘発] このキャラを除く味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0870"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0870",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] このキャラを除く味方キャラが登場したとき、相手キャラ1体にAP-1またはDP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラを除く味方キャラが登場したとき、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
+    "normalizedText": "[誘発] このキャラを除く味方キャラが登場したとき、相手キャラ1体にAP-1またはDP-1する。",
+    "lines": [
+      "[誘発] このキャラを除く味方キャラが登場したとき、相手キャラ1体にAP-1またはDP-1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

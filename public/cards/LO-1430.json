@@ -22,7 +22,22 @@
   "costRaw": "花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1430"
+  "text": "味方攻撃キャラ１体にＡＰ＋[{そのキャラを除く味方キャラ１体}のＤＰとＳＰの合計]する。",
+  "textKr": "味方攻撃キャラ１体にＡＰ＋[{そのキャラを除く味方キャラ１体}のＤＰとＳＰの合計]する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1430",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "味方攻撃キャラ１体にＡＰ＋[{そのキャラを除く味方キャラ１体}のＤＰとＳＰの合計]する。",
+    "normalizedText": "味方攻撃キャラ1体にAP+[{そのキャラを除く味方キャラ1体}のDPとSPの合計]する。",
+    "lines": [
+      "味方攻撃キャラ1体にAP+[{そのキャラを除く味方キャラ1体}のDPとSPの合計]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "味方攻撃キャラ1体にAP+[{そのキャラを除く味方キャラ1体}のDPとSPの合計]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

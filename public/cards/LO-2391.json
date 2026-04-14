@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[花]キャラ１体を自分のデッキの上に置く。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[花]キャラ１体を自分のデッキの上に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2391"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2391",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[花]キャラ１体を自分のデッキの上に置く。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[花]キャラ1体を自分のデッキの上に置く。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[花]キャラ1体を自分のデッキの上に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[花]キャラ1体を自分のデッキの上に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

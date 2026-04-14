@@ -25,5 +25,20 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラは自分のウェイクアップで未行動に戻らない。\n[宣言] [雪]:相手ターン中に使用する。このキャラを未行動にする。",
   "textKr": "[常時] このキャラは自分のウェイクアップで未行動に戻らない。\n[宣言] [雪]:相手ターン中に使用する。このキャラを未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1919"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1919",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[常時] このキャラは自分のウェイクアップで未行動に戻らない。\n[宣言] [雪]:相手ターン中に使用する。このキャラを未行動にする。",
+    "normalizedText": "[常時] このキャラは自分のウェイクアップで未行動に戻らない。[宣言] [雪]:相手ターン中に使用する。このキャラを未行動にする。",
+    "lines": [
+      "[常時] このキャラは自分のウェイクアップで未行動に戻らない。[宣言] [雪]:相手ターン中に使用する。このキャラを未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] このキャラは自分のウェイクアップで未行動に戻らない。[宣言] [雪]:相手ターン中に使用する。このキャラを未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

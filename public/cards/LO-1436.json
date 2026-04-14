@@ -1,14 +1,48 @@
 {
+  "cardNo": "LO-1436",
+  "title": "露天風呂",
+  "subName": "",
+  "name": "露天風呂",
+  "rawTypeJa": "アイテム",
+  "rawTypeKr": "아이템",
   "type": "item",
-  "attributes_list": [
+  "rarity": "C",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[宣言] [0]:{味方キャラ１体}をデッキの下に置く。\n構築制限:[TM]\n※このカードは大会における禁止・制限の対象となっています。(2025/12/29現在)",
+  "textKr": "[宣言] [0]:{味方キャラ１体}をデッキの下に置く。\n構築制限:[TM]\n※このカードは大会における禁止・制限の対象となっています。(2025/12/29現在)",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1436",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{味方キャラ１体}をデッキの下に置く。\n構築制限:[TM]\n※このカードは大会における禁止・制限の対象となっています。(2025/12/29現在)",
+    "normalizedText": "[宣言] [0]:{味方キャラ1体}をデッキの下に置く。構築制限:[TM]\n※このカードは大会における禁止・制限の対象となっています。(2025/12/29現在)",
+    "lines": [
+      "[宣言] [0]:{味方キャラ1体}をデッキの下に置く。構築制限:[TM]",
+      "※このカードは大会における禁止・制限の対象となっています。(2025/12/29現在)"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:{味方キャラ1体}をデッキの下に置く。構築制限:[TM]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "※このカードは大会における禁止・制限の対象となっています。(2025/12/29現在)",
+      "reason": "no parser rule matched"
+    }
   ]
 }

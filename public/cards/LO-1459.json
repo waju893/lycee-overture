@@ -26,5 +26,57 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[宣言] [0]:このキャラにＡＰ＋１またはＤＰ＋１する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [0]:このキャラにＡＰ＋１またはＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1459"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1459",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラにAP+1またはDP+1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:このキャラにＡＰ＋１またはＤＰ＋１する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:このキャラにAP+1またはDP+1する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [0]:このキャラにAP+1またはDP+1する。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

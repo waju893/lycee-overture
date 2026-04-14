@@ -27,5 +27,20 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方キャラ１体を未行動にする。",
   "textKr": "[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方キャラ１体を未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0111"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0111",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、ＤＭＧが３以下の味方キャラ１体を未行動にする。",
+    "normalizedText": "[誘発] このキャラが登場したとき、DMGが3以下の味方キャラ1体を未行動にする。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、DMGが3以下の味方キャラ1体を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、DMGが3以下の味方キャラ1体を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -26,5 +26,36 @@
   "typeTagsRaw": "",
   "text": "[オーダーステップ:[0]]\n[手札宣言] [宙]:防御中の味方キャラ１体にＤＰ＋２する。",
   "textKr": "[オーダーステップ:[0]]\n[手札宣言] [宙]:防御中の味方キャラ１体にＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1537"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1537",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [宙]:防御中の味方キャラ1体にDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[手札宣言] [宙]:防御中の味方キャラ１体にＤＰ＋２する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[手札宣言] [宙]:防御中の味方キャラ1体にDP+2する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[手札宣言] [宙]:防御中の味方キャラ1体にDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

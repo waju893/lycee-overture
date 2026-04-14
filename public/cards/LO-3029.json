@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラは[サポーター:[花花]]を得る。",
   "textKr": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラは[サポーター:[花花]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3029"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3029",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラは[サポーター:[花花]]を得る。",
+    "normalizedText": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラは[サポーター:[花花]]を得る。",
+    "lines": [
+      "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラは[サポーター:[花花]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [0]:手札宣言能力を持つ味方キャラが登場している場合、このキャラは[サポーター:[花花]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

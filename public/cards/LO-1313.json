@@ -24,5 +24,40 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[宣言] [0]:自分のデッキから「魔女裁判」１枚を探し公開して手札に入れる。この能力は失われる。",
   "textKr": "[宣言] [0]:自分のデッキから「魔女裁判」１枚を探し公開して手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1313"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1313",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自分のデッキから「魔女裁判」1枚を探し公開して手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {
+            "exactName": "魔女裁判"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:自分のデッキから「魔女裁判」１枚を探し公開して手札に入れる。この能力は失われる。",
+    "normalizedText": "[宣言] [0]:自分のデッキから「魔女裁判」1枚を探し公開して手札に入れる。この能力は失われる。",
+    "lines": [
+      "[宣言] [0]:自分のデッキから「魔女裁判」1枚を探し公開して手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

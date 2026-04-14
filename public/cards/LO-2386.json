@@ -24,5 +24,20 @@
   "typeTagsRaw": "呉",
   "text": "[手札宣言] [月月]:相手のコストが２点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
   "textKr": "[手札宣言] [月月]:相手のコストが２点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2386"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2386",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [月月]:相手のコストが２点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+    "normalizedText": "[手札宣言] [月月]:相手のコストが2点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+    "lines": [
+      "[手札宣言] [月月]:相手のコストが2点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [月月]:相手のコストが2点以下のイベントの宣言に対応して使用する。その宣言の解決は失敗する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

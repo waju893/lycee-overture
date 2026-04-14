@@ -24,5 +24,37 @@
   "typeTagsRaw": "聖グロリアーナ",
   "text": "[アシスト][サポーター:[D1]]\n[誘発] ターン開始時、味方キャラが６体以上の場合、味方キャラ１体にＡＰ＋１できる。",
   "textKr": "[アシスト][サポーター:[D1]]\n[誘発] ターン開始時、味方キャラが６体以上の場合、味方キャラ１体にＡＰ＋１できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1007"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1007",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、味方キャラが6体以上の場合、味方キャラ1体にAP+1できる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][サポーター:[D1]]\n[誘発] ターン開始時、味方キャラが６体以上の場合、味方キャラ１体にＡＰ＋１できる。",
+    "normalizedText": "[アシスト][サポーター:[D1]]\n[誘発] ターン開始時、味方キャラが6体以上の場合、味方キャラ1体にAP+1できる。",
+    "lines": [
+      "[アシスト][サポーター:[D1]]",
+      "[誘発] ターン開始時、味方キャラが6体以上の場合、味方キャラ1体にAP+1できる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][サポーター:[D1]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

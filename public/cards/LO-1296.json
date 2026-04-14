@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1296",
+  "title": "ひとつめのお願い",
+  "subName": "月宮 あゆ",
+  "name": "ひとつめのお願い 月宮 あゆ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "ST",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -17,11 +20,41 @@
   "dp": 2,
   "sp": 2,
   "dmg": 2,
-  "keyeffects": [
-    13
+  "ex": 2,
+  "costRaw": "雪雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ペナルティ:[１枚ドローする。]]\n[誘発] 自分の[雪]イベントを使用したとき、このキャラを未行動にする。\n構築制限:ビジュアルアーツ（[VA]）",
+  "textKr": "[ペナルティ:[１枚ドローする。]]\n[誘発] 自分の[雪]イベントを使用したとき、このキャラを未行動にする。\n構築制限:ビジュアルアーツ（[VA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1296",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ペナルティ:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    13
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ペナルティ:[１枚ドローする。]]\n[誘発] 自分の[雪]イベントを使用したとき、このキャラを未行動にする。\n構築制限:ビジュアルアーツ（[VA]）",
+    "normalizedText": "[ペナルティ:[1枚ドローする。]]\n[誘発] 自分の[雪]イベントを使用したとき、このキャラを未行動にする。構築制限:ビジュアルアーツ([VA])",
+    "lines": [
+      "[ペナルティ:[1枚ドローする。]]",
+      "[誘発] 自分の[雪]イベントを使用したとき、このキャラを未行動にする。構築制限:ビジュアルアーツ([VA])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自分の[雪]イベントを使用したとき、このキャラを未行動にする。構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

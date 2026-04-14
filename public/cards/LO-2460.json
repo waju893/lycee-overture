@@ -25,5 +25,25 @@
   "typeTagsRaw": "蜀",
   "text": "[サイドステップ:[0]\n[誘発] 相手の効果で相手キャラが登場したとき、相手のデッキを１枚破棄する。",
   "textKr": "[サイドステップ:[0]\n[誘発] 相手の効果で相手キャラが登場したとき、相手のデッキを１枚破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2460"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2460",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]\n[誘発] 相手の効果で相手キャラが登場したとき、相手のデッキを１枚破棄する。",
+    "normalizedText": "[サイドステップ:[0]\n[誘発] 相手の効果で相手キャラが登場したとき、相手のデッキを1枚破棄する。",
+    "lines": [
+      "[サイドステップ:[0]",
+      "[誘発] 相手の効果で相手キャラが登場したとき、相手のデッキを1枚破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手の効果で相手キャラが登場したとき、相手のデッキを1枚破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

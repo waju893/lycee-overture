@@ -26,5 +26,20 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ:[自分のデッキを２枚回復する。]]",
   "textKr": "[エンゲージ:[自分のデッキを２枚回復する。]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0159"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0159",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ:[自分のデッキを２枚回復する。]]",
+    "normalizedText": "[エンゲージ:[自分のデッキを2枚回復する。]]",
+    "lines": [
+      "[エンゲージ:[自分のデッキを2枚回復する。]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

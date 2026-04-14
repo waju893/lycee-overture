@@ -24,7 +24,22 @@
   "costRaw": "月月月月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1281"
+  "text": "{味方[月]キャラ１体}を横に置く。そのキャラを無償で登場する。",
+  "textKr": "{味方[月]キャラ１体}を横に置く。そのキャラを無償で登場する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1281",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "{味方[月]キャラ１体}を横に置く。そのキャラを無償で登場する。",
+    "normalizedText": "{味方[月]キャラ1体}を横に置く。そのキャラを無償で登場する。",
+    "lines": [
+      "{味方[月]キャラ1体}を横に置く。そのキャラを無償で登場する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "{味方[月]キャラ1体}を横に置く。そのキャラを無償で登場する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

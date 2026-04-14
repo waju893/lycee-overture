@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[無無]]\n[宣言] [0]:{味方「葛城七瀬」または「漆原莉子」１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[サポーター:[無無]]\n[宣言] [0]:{味方「葛城七瀬」または「漆原莉子」１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3457"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3457",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方「葛城七瀬」または「漆原莉子」1体}にAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[無無]]\n[宣言] [0]:{味方「葛城七瀬」または「漆原莉子」１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[無無]]\n[宣言] [0]:{味方「葛城七瀬」または「漆原莉子」1体}にAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[サポーター:[無無]]",
+      "[宣言] [0]:{味方「葛城七瀬」または「漆原莉子」1体}にAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

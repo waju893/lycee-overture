@@ -25,5 +25,36 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーステップ:[0]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1365"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1365",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにAP+1・DP+1・DMG+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにAP+1・DP+1・DMG+2する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] このキャラでサポートをしたとき、バトル終了時まで対象のキャラにAP+1・DP+1・DMG+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

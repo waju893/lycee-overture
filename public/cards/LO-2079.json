@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン中、自分のイベントまたはアイテムを使用したとき、このキャラは[サポーター:[D1]]を得る。",
   "textKr": "[誘発] 自ターン中、自分のイベントまたはアイテムを使用したとき、このキャラは[サポーター:[D1]]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2079"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2079",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、自分のイベントまたはアイテムを使用したとき、このキャラは[サポーター:[D1]]を得る。",
+    "normalizedText": "[誘発] 自ターン中、自分のイベントまたはアイテムを使用したとき、このキャラは[サポーター:[D1]]を得る。",
+    "lines": [
+      "[誘発] 自ターン中、自分のイベントまたはアイテムを使用したとき、このキャラは[サポーター:[D1]]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、自分のイベントまたはアイテムを使用したとき、このキャラは[サポーター:[D1]]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

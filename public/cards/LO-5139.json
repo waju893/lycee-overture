@@ -27,5 +27,36 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－３・ＤＰ－３する。この能力は失われる。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－３・ＤＰ－３する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5139"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5139",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-3・DP-3する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－３・ＤＰ－３する。この能力は失われる。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ1体}にAP-3・DP-3する。この能力は失われる。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:{相手キャラ1体}にAP-3・DP-3する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

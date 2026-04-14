@@ -23,5 +23,31 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ１体にＡＰ＋２する。",
   "textKr": "[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ１体にＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1783"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1783",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ1体にAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ１体にＡＰ＋２する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ1体にAP+2する。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方「WHITE ALBUM2」キャラ1体にAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-1802",
+  "title": "姉御肌",
+  "subName": "ノスリ",
+  "name": "姉御肌 ノスリ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,13 +20,42 @@
   "dp": 4,
   "sp": 1,
   "dmg": 3,
-  "keyeffects": [
-    4,
-    8
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "ヤマト",
+  "text": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体にＤＭＧ＋２する。\n[誘発] コストが３点以上の味方＜ヤマト＞キャラを相手の効果で破棄したとき、１枚ドローできる。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体にＤＭＧ＋２する。\n[誘発] コストが３点以上の味方＜ヤマト＞キャラを相手の効果で破棄したとき、１枚ドローできる。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1802",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体にDMG+2する。[誘発] コストが3点以上の味方<ヤマト>キャラを相手の効果で破棄したとき、1枚ドローできる。構築制限:アクアプラス([AQP])",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4,
-    8
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方＜ヤマト＞キャラ１体にＤＭＧ＋２する。\n[誘発] コストが３点以上の味方＜ヤマト＞キャラを相手の効果で破棄したとき、１枚ドローできる。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体にDMG+2する。[誘発] コストが3点以上の味方<ヤマト>キャラを相手の効果で破棄したとき、1枚ドローできる。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[誘発] このキャラが登場したとき、味方<ヤマト>キャラ1体にDMG+2する。[誘発] コストが3点以上の味方<ヤマト>キャラを相手の効果で破棄したとき、1枚ドローできる。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

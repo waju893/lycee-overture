@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-0925",
+  "title": "スーパー幼なじみ",
+  "subName": "藤枝 保奈美",
+  "name": "スーパー幼なじみ 藤枝 保奈美",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,42 @@
   "dp": 4,
   "sp": 2,
   "dmg": 1,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "花花無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花]]\n[宣言] [0]:味方キャラ全てにＳＰ＋１する。\n構築制限:オーガスト（[AUG]）",
+  "textKr": "[サポーター:[花]]\n[宣言] [0]:味方キャラ全てにＳＰ＋１する。\n構築制限:オーガスト（[AUG]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0925",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方キャラ全てにSP+1する。構築制限:オーガスト([AUG])",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[花]]\n[宣言] [0]:味方キャラ全てにＳＰ＋１する。\n構築制限:オーガスト（[AUG]）",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [0]:味方キャラ全てにSP+1する。構築制限:オーガスト([AUG])",
+    "lines": [
+      "[サポーター:[花]]",
+      "[宣言] [0]:味方キャラ全てにSP+1する。構築制限:オーガスト([AUG])"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

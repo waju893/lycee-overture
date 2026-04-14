@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3726",
+  "title": "万刃を担う者",
+  "subName": "アルヴァ",
+  "name": "万刃を担う者 アルヴァ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
@@ -18,13 +21,73 @@
   "dp": 4,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    13
+  "ex": 2,
+  "costRaw": "月月月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][ペナルティ:自分の手札を１枚破棄できる。破棄したとき、ゴミ箱のこのキャラを手札に入れる。]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言][切札] [月]:ゴミ箱のこのキャラを無償で登場する。\n構築制限:[AIG]",
+  "textKr": "[ジャンプ:[0]][ペナルティ:自分の手札を１枚破棄できる。破棄したとき、ゴミ箱のこのキャラを手札に入れる。]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言][切札] [月]:ゴミ箱のこのキャラを無償で登場する。\n構築制限:[AIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3726",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[ジャンプ:[0]][ペナルティ:自分の手札を1枚破棄できる。破棄したとき、ゴミ箱のこのキャラを手札に入れる。]",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。[手札宣言][切札] [月]:ゴミ箱のこのキャラを無償で登場する。構築制限:[AIG]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5,
-    13
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]][ペナルティ:自分の手札を１枚破棄できる。破棄したとき、ゴミ箱のこのキャラを手札に入れる。]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n[手札宣言][切札] [月]:ゴミ箱のこのキャラを無償で登場する。\n構築制限:[AIG]",
+    "normalizedText": "[ジャンプ:[0]][ペナルティ:自分の手札を1枚破棄できる。破棄したとき、ゴミ箱のこのキャラを手札に入れる。]\n[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。[手札宣言][切札] [月]:ゴミ箱のこのキャラを無償で登場する。構築制限:[AIG]",
+    "lines": [
+      "[ジャンプ:[0]][ペナルティ:自分の手札を1枚破棄できる。破棄したとき、ゴミ箱のこのキャラを手札に入れる。]",
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。[手札宣言][切札] [月]:ゴミ箱のこのキャラを無償で登場する。構築制限:[AIG]"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand",
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": []
 }

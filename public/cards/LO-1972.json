@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。\n[宣言] [0]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。",
   "textKr": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。\n[宣言] [0]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1972"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1972",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。[宣言] [0]:{このターン中移動した味方キャラ1体}にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。\n[宣言] [0]:{このターン中移動した味方キャラ１体}にＡＰ＋１する。",
+    "normalizedText": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。[宣言] [0]:{このターン中移動した味方キャラ1体}にAP+1する。",
+    "lines": [
+      "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。[宣言] [0]:{このターン中移動した味方キャラ1体}にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

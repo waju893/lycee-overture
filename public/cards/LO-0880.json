@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[常時] このキャラのバトル中、お互いのプレイヤーは能力を使用できない。",
   "textKr": "[常時] このキャラのバトル中、お互いのプレイヤーは能力を使用できない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0880"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0880",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[常時] このキャラのバトル中、お互いのプレイヤーは能力を使用できない。",
+    "normalizedText": "[常時] このキャラのバトル中、お互いのプレイヤーは能力を使用できない。",
+    "lines": [
+      "[常時] このキャラのバトル中、お互いのプレイヤーは能力を使用できない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[常時] このキャラのバトル中、お互いのプレイヤーは能力を使用できない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

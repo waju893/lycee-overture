@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが相手のデッキにダメージを与えたとき、自分のゴミ箱の「アイリス」１体をデッキの下に置くことができる。",
   "textKr": "[誘発] このキャラが相手のデッキにダメージを与えたとき、自分のゴミ箱の「アイリス」１体をデッキの下に置くことができる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0890"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0890",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが相手のデッキにダメージを与えたとき、自分のゴミ箱の「アイリス」１体をデッキの下に置くことができる。",
+    "normalizedText": "[誘発] このキャラが相手のデッキにダメージを与えたとき、自分のゴミ箱の「アイリス」1体をデッキの下に置くことができる。",
+    "lines": [
+      "[誘発] このキャラが相手のデッキにダメージを与えたとき、自分のゴミ箱の「アイリス」1体をデッキの下に置くことができる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが相手のデッキにダメージを与えたとき、自分のゴミ箱の「アイリス」1体をデッキの下に置くことができる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

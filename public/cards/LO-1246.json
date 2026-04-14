@@ -26,5 +26,35 @@
   "typeTagsRaw": "リトルバスターズ",
   "text": "[アシスト][オーダーステップ:[0]]\n[誘発] コストが４点以上の味方[宙]キャラが相手の能力で破棄されたとき、１枚ドローできる。",
   "textKr": "[アシスト][オーダーステップ:[0]]\n[誘発] コストが４点以上の味方[宙]キャラが相手の能力で破棄されたとき、１枚ドローできる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1246"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1246",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] コストが4点以上の味方[宙]キャラが相手の能力で破棄されたとき、1枚ドローできる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][オーダーステップ:[0]]\n[誘発] コストが４点以上の味方[宙]キャラが相手の能力で破棄されたとき、１枚ドローできる。",
+    "normalizedText": "[アシスト][オーダーステップ:[0]]\n[誘発] コストが4点以上の味方[宙]キャラが相手の能力で破棄されたとき、1枚ドローできる。",
+    "lines": [
+      "[アシスト][オーダーステップ:[0]]",
+      "[誘発] コストが4点以上の味方[宙]キャラが相手の能力で破棄されたとき、1枚ドローできる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

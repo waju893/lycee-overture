@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]",
   "textKr": "[アグレッシブ]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0952"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0952",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]",
+    "normalizedText": "[アグレッシブ]",
+    "lines": [
+      "[アグレッシブ]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

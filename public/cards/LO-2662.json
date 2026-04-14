@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-2662",
+  "title": "サボり魔",
+  "subName": "赤錆 理沙",
+  "name": "サボり魔 赤錆 理沙",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,42 @@
   "dp": 4,
   "sp": 2,
   "dmg": 3,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方[花]キャラ１体}にＤＰ＋１する。\n構築制限:[PUR]",
+  "textKr": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方[花]キャラ１体}にＤＰ＋１する。\n構築制限:[PUR]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2662",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方[花]キャラ1体}にDP+1する。構築制限:[PUR]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方[花]キャラ１体}にＤＰ＋１する。\n構築制限:[PUR]",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方[花]キャラ1体}にDP+1する。構築制限:[PUR]",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:バトル中に使用できない。味方エリアを配置している場合、{味方[花]キャラ1体}にDP+1する。構築制限:[PUR]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

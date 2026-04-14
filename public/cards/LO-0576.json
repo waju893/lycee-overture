@@ -25,5 +25,37 @@
   "typeTagsRaw": "ライダー",
   "text": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、このキャラにＡＰ＋３する。",
   "textKr": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、このキャラにＡＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0576"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0576",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] 相手ターン開始時、このキャラにAP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、このキャラにＡＰ＋３する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] 相手ターン開始時、このキャラにAP+3する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] 相手ターン開始時、このキャラにAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

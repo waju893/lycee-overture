@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [D1][宙宙宙]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
   "textKr": "[手札宣言] [D1][宙宙宙]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2815"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2815",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [D1][宙宙宙]:{コストが5点以上の味方[宙]キャラ1体}にAP+5・DP+5する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [D1][宙宙宙]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋５・ＤＰ＋５する。",
+    "normalizedText": "[手札宣言] [D1][宙宙宙]:{コストが5点以上の味方[宙]キャラ1体}にAP+5・DP+5する。",
+    "lines": [
+      "[手札宣言] [D1][宙宙宙]:{コストが5点以上の味方[宙]キャラ1体}にAP+5・DP+5する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

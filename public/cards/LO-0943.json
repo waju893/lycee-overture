@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:{自分のゴミ箱の「ジークフリード・グラード」１体}を除外する。このキャラにＡＰ＋１・ＤＰ＋１する。",
   "textKr": "[宣言] [0]:{自分のゴミ箱の「ジークフリード・グラード」１体}を除外する。このキャラにＡＰ＋１・ＤＰ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0943"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0943",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{自分のゴミ箱の「ジークフリード・グラード」1体}を除外する。このキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:{自分のゴミ箱の「ジークフリード・グラード」１体}を除外する。このキャラにＡＰ＋１・ＤＰ＋１する。",
+    "normalizedText": "[宣言] [0]:{自分のゴミ箱の「ジークフリード・グラード」1体}を除外する。このキャラにAP+1・DP+1する。",
+    "lines": [
+      "[宣言] [0]:{自分のゴミ箱の「ジークフリード・グラード」1体}を除外する。このキャラにAP+1・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

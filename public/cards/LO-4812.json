@@ -21,7 +21,31 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4812"
+  "text": "自ターン中に使用する。{味方[日]キャラ１体}にＡＰ＋３する。１枚ドローする。自分の手札を１枚デッキの上に置く。",
+  "textKr": "自ターン中に使用する。{味方[日]キャラ１体}にＡＰ＋３する。１枚ドローする。自分の手札を１枚デッキの上に置く。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4812",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。{味方[日]キャラ1体}にAP+3する。1枚ドローする。自分の手札を1枚デッキの上に置く。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。{味方[日]キャラ１体}にＡＰ＋３する。１枚ドローする。自分の手札を１枚デッキの上に置く。",
+    "normalizedText": "自ターン中に使用する。{味方[日]キャラ1体}にAP+3する。1枚ドローする。自分の手札を1枚デッキの上に置く。",
+    "lines": [
+      "自ターン中に使用する。{味方[日]キャラ1体}にAP+3する。1枚ドローする。自分の手札を1枚デッキの上に置く。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

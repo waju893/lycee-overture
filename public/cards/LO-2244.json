@@ -24,5 +24,20 @@
   "typeTagsRaw": "城娘",
   "text": "[手札宣言] [D1][雪雪雪無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。",
   "textKr": "[手札宣言] [D1][雪雪雪無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2244"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2244",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [D1][雪雪雪無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。",
+    "normalizedText": "[手札宣言] [D1][雪雪雪無無]:バトル中に使用できない。{相手キャラ1体}を破棄する。",
+    "lines": [
+      "[手札宣言] [D1][雪雪雪無無]:バトル中に使用できない。{相手キャラ1体}を破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [D1][雪雪雪無無]:バトル中に使用できない。{相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

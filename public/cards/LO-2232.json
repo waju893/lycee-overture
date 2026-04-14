@@ -1,17 +1,42 @@
 {
+  "cardNo": "LO-2232",
+  "title": "平蜘蛛焙烙玉",
+  "subName": "信貴山城",
+  "name": "平蜘蛛焙烙玉 信貴山城",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "R",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 1,
   "useTarget": [
     "snow"
   ],
   "ap": 3,
   "dp": 1,
   "sp": 1,
-  "dmg": 3
+  "dmg": 3,
+  "ex": 1,
+  "costRaw": "雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "城娘",
+  "text": "[手札宣言] [D1][雪雪雪雪]:バトル中に使用できない。{相手キャラ１体}を破棄する。\n構築制限:[OSP]",
+  "textKr": "[手札宣言] [D1][雪雪雪雪]:バトル中に使用できない。{相手キャラ１体}を破棄する。\n構築制限:[OSP]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2232",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[手札宣言] [D1][雪雪雪雪]:バトル中に使用できない。{相手キャラ１体}を破棄する。\n構築制限:[OSP]",
+    "normalizedText": "[手札宣言] [D1][雪雪雪雪]:バトル中に使用できない。{相手キャラ1体}を破棄する。構築制限:[OSP]",
+    "lines": [
+      "[手札宣言] [D1][雪雪雪雪]:バトル中に使用できない。{相手キャラ1体}を破棄する。構築制限:[OSP]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [D1][雪雪雪雪]:バトル中に使用できない。{相手キャラ1体}を破棄する。構築制限:[OSP]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

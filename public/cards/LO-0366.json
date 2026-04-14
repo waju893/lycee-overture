@@ -26,5 +26,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[宣言] [花花無無無無]:{味方＜大洗女子＞キャラ１体}を未行動にする。",
   "textKr": "[アシスト]\n[宣言] [花花無無無無]:{味方＜大洗女子＞キャラ１体}を未行動にする。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0366"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0366",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [花花無無無無]:{味方＜大洗女子＞キャラ１体}を未行動にする。",
+    "normalizedText": "[アシスト]\n[宣言] [花花無無無無]:{味方<大洗女子>キャラ1体}を未行動にする。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [花花無無無無]:{味方<大洗女子>キャラ1体}を未行動にする。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [花花無無無無]:{味方<大洗女子>キャラ1体}を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

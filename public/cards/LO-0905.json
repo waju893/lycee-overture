@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 味方キャラが登場したとき、相手キャラ１体にＳＰ－１する。",
   "textKr": "[誘発] 味方キャラが登場したとき、相手キャラ１体にＳＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0905"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0905",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] 味方キャラが登場したとき、相手キャラ1体にSP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 味方キャラが登場したとき、相手キャラ１体にＳＰ－１する。",
+    "normalizedText": "[誘発] 味方キャラが登場したとき、相手キャラ1体にSP-1する。",
+    "lines": [
+      "[誘発] 味方キャラが登場したとき、相手キャラ1体にSP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

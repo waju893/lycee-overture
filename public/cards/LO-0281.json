@@ -26,5 +26,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[アシスト]\n[常時] このキャラへのサポートはＡＰとＤＰに足す。",
   "textKr": "[アシスト]\n[常時] このキャラへのサポートはＡＰとＤＰに足す。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0281"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0281",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[常時] このキャラへのサポートはＡＰとＤＰに足す。",
+    "normalizedText": "[アシスト]\n[常時] このキャラへのサポートはAPとDPに足す。",
+    "lines": [
+      "[アシスト]",
+      "[常時] このキャラへのサポートはAPとDPに足す。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラへのサポートはAPとDPに足す。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

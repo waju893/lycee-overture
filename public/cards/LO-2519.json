@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[花]キャラの場合、このキャラにＤＰ＋２する。",
   "textKr": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[花]キャラの場合、このキャラにＤＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2519"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2519",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[花]キャラの場合、このキャラにDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[花]キャラの場合、このキャラにＤＰ＋２する。",
+    "normalizedText": "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[花]キャラの場合、このキャラにDP+2する。",
+    "lines": [
+      "[宣言] [0]:このキャラのバトル中に使用する。対戦キャラが[花]キャラの場合、このキャラにDP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

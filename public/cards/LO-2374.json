@@ -27,5 +27,43 @@
   "typeTagsRaw": "",
   "text": "[リカバリー:[１枚ドローする。]]\n[宣言] [月月月]:相手防御キャラ１体にＡＰ－４・ＤＰ－４する。この能力は失われる。",
   "textKr": "[リカバリー:[１枚ドローする。]]\n[宣言] [月月月]:相手防御キャラ１体にＡＰ－４・ＤＰ－４する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2374"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2374",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[リカバリー:[1枚ドローする。]]",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月月月]:相手防御キャラ1体にAP-4・DP-4する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[リカバリー:[１枚ドローする。]]\n[宣言] [月月月]:相手防御キャラ１体にＡＰ－４・ＤＰ－４する。この能力は失われる。",
+    "normalizedText": "[リカバリー:[1枚ドローする。]]\n[宣言] [月月月]:相手防御キャラ1体にAP-4・DP-4する。この能力は失われる。",
+    "lines": [
+      "[リカバリー:[1枚ドローする。]]",
+      "[宣言] [月月月]:相手防御キャラ1体にAP-4・DP-4する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw",
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -25,5 +25,40 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [0]:自分のデッキから「深淵を纏いし女王 ギゼリック」１体を探し公開して手札に入れる。",
   "textKr": "[手札宣言] [0]:自分のデッキから「深淵を纏いし女王 ギゼリック」１体を探し公開して手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4780"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4780",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のデッキから「深淵を纏いし女王 ギゼリック」1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {
+            "exactName": "深淵を纏いし女王 ギゼリック"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [0]:自分のデッキから「深淵を纏いし女王 ギゼリック」１体を探し公開して手札に入れる。",
+    "normalizedText": "[手札宣言] [0]:自分のデッキから「深淵を纏いし女王 ギゼリック」1体を探し公開して手札に入れる。",
+    "lines": [
+      "[手札宣言] [0]:自分のデッキから「深淵を纏いし女王 ギゼリック」1体を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

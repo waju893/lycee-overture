@@ -25,5 +25,57 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋２またはＤＰ＋２する。自分にシールド＋１する。この能力は失われる。",
   "textKr": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋２またはＤＰ＋２する。自分にシールド＋１する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4481"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4481",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+2またはDP+2する。自分にシールド+1する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋２またはＤＰ＋２する。自分にシールド＋１する。この能力は失われる。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+2またはDP+2する。自分にシールド+1する。この能力は失われる。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+2またはDP+2する。自分にシールド+1する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

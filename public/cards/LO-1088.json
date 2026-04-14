@@ -25,5 +25,36 @@
   "typeTagsRaw": "黒森峰",
   "text": "[オーダーステップ:[0]]\n[宣言] [宙]:このキャラにＤＰ＋３する。",
   "textKr": "[オーダーステップ:[0]]\n[宣言] [宙]:このキャラにＤＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1088"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1088",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙]:このキャラにDP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[宣言] [宙]:このキャラにＤＰ＋３する。",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [宙]:このキャラにDP+3する。",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[宣言] [宙]:このキャラにDP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-4345",
+  "title": "不真面目で下品",
+  "subName": "神宮 藍咲",
+  "name": "不真面目で下品 神宮 藍咲",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -17,11 +20,85 @@
   "dp": 4,
   "sp": 0,
   "dmg": 4,
-  "keyeffects": [
-    4
+  "ex": 2,
+  "costRaw": "宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[オーダーステップ:[0]]\n[誘発] ターン開始時、味方[宙]キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:コストが５点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。\n構築制限:[ASA]",
+  "textKr": "[オーダーステップ:[0]]\n[誘発] ターン開始時、味方[宙]キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:コストが５点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。\n構築制限:[ASA]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4345",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、味方[宙]キャラ1体にAP+2またはDP+2する。[宣言] [0]:コストが5点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ1体}にAP+2またはDP+2する。この能力は失われる。構築制限:[ASA]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseOne",
+                  "prompt": "하나를 선택한다",
+                  "choices": [
+                    {
+                      "label": "A",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": 2
+                        }
+                      ]
+                    },
+                    {
+                      "label": "B",
+                      "actions": [
+                        {
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    4
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、味方[宙]キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:コストが５点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。\n構築制限:[ASA]",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、味方[宙]キャラ1体にAP+2またはDP+2する。[宣言] [0]:コストが5点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ1体}にAP+2またはDP+2する。この能力は失われる。構築制限:[ASA]",
+    "lines": [
+      "[オーダーステップ:[0]]",
+      "[誘発] ターン開始時、味方[宙]キャラ1体にAP+2またはDP+2する。[宣言] [0]:コストが5点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ1体}にAP+2またはDP+2する。この能力は失われる。構築制限:[ASA]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

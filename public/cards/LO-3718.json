@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3718",
+  "title": "孤独な迷宮守",
+  "subName": "ニミュエ",
+  "name": "孤独な迷宮守 ニミュエ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow"
   ],
-  "attributesList": [
-    "snow"
-  ],
-  "ex": 2,
   "useTarget": [
     "snow",
     "snow",
@@ -16,11 +19,42 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    16
+  "ex": 2,
+  "costRaw": "雪雪雪",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[チャージ:２]\n[宣言] [0]:相手キャラ全てにＡＰ－１する。\n[宣言] [C1]:味方[雪]キャラの防御中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。味方防御キャラ１体を破棄する。\n構築制限:[AIG]",
+  "textKr": "[チャージ:２]\n[宣言] [0]:相手キャラ全てにＡＰ－１する。\n[宣言] [C1]:味方[雪]キャラの防御中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。味方防御キャラ１体を破棄する。\n構築制限:[AIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3718",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:相手キャラ全てにAP-1する。[宣言] [C1]:味方[雪]キャラの防御中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。味方防御キャラ1体を破棄する。構築制限:[AIG]",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    16
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[チャージ:２]\n[宣言] [0]:相手キャラ全てにＡＰ－１する。\n[宣言] [C1]:味方[雪]キャラの防御中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。味方防御キャラ１体を破棄する。\n構築制限:[AIG]",
+    "normalizedText": "[チャージ:2]\n[宣言] [0]:相手キャラ全てにAP-1する。[宣言] [C1]:味方[雪]キャラの防御中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。味方防御キャラ1体を破棄する。構築制限:[AIG]",
+    "lines": [
+      "[チャージ:2]",
+      "[宣言] [0]:相手キャラ全てにAP-1する。[宣言] [C1]:味方[雪]キャラの防御中に使用する。対戦キャラは次の相手のウェイクアップで未行動に戻らない。味方防御キャラ1体を破棄する。構築制限:[AIG]"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[チャージ:2]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

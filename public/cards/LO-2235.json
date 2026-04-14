@@ -25,5 +25,29 @@
   "typeTagsRaw": "城娘",
   "text": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
   "textKr": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2235"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2235",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、1枚ドローする。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、１枚ドローする。この能力は失われる。",
+    "normalizedText": "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、1枚ドローする。この能力は失われる。",
+    "lines": [
+      "[誘発] 自分のイベントまたは手札宣言能力を使用したとき、1枚ドローする。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }

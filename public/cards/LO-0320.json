@@ -23,5 +23,36 @@
   "typeTagsRaw": "サンダース",
   "text": "[アシスト]\n[誘発] 味方＜サンダース＞キャラを自分の能力の対象に指定したとき、キャラ１体にＳＰ－１する。",
   "textKr": "[アシスト]\n[誘発] 味方＜サンダース＞キャラを自分の能力の対象に指定したとき、キャラ１体にＳＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0320"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0320",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方<サンダース>キャラを自分の能力の対象に指定したとき、キャラ1体にSP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "sp",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] 味方＜サンダース＞キャラを自分の能力の対象に指定したとき、キャラ１体にＳＰ－１する。",
+    "normalizedText": "[アシスト]\n[誘発] 味方<サンダース>キャラを自分の能力の対象に指定したとき、キャラ1体にSP-1する。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] 味方<サンダース>キャラを自分の能力の対象に指定したとき、キャラ1体にSP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

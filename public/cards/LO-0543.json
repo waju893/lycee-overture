@@ -25,5 +25,25 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[オーダーチェンジ:[日]]\n[誘発] このキャラが登場したとき、相手キャラが４体以上の場合、このキャラは[アグレッシブ]を得る。",
   "textKr": "[オーダーチェンジ:[日]]\n[誘発] このキャラが登場したとき、相手キャラが４体以上の場合、このキャラは[アグレッシブ]を得る。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0543"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0543",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[オーダーチェンジ:[日]]\n[誘発] このキャラが登場したとき、相手キャラが４体以上の場合、このキャラは[アグレッシブ]を得る。",
+    "normalizedText": "[オーダーチェンジ:[日]]\n[誘発] このキャラが登場したとき、相手キャラが4体以上の場合、このキャラは[アグレッシブ]を得る。",
+    "lines": [
+      "[オーダーチェンジ:[日]]",
+      "[誘発] このキャラが登場したとき、相手キャラが4体以上の場合、このキャラは[アグレッシブ]を得る。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[オーダーチェンジ:[日]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、相手キャラが4体以上の場合、このキャラは[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

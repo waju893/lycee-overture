@@ -19,7 +19,32 @@
   "costRaw": "",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0095"
+  "text": "味方[日]キャラ１体にＡＰ＋１する。",
+  "textKr": "味方[日]キャラ１体にＡＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0095",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "味方[日]キャラ1体にAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "味方[日]キャラ１体にＡＰ＋１する。",
+    "normalizedText": "味方[日]キャラ1体にAP+1する。",
+    "lines": [
+      "味方[日]キャラ1体にAP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

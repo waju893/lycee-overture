@@ -26,5 +26,30 @@
   "typeTagsRaw": "神姫",
   "text": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にし、ＡＰ＋１・ＤＰ＋１・ＳＰ－２する。",
   "textKr": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にし、ＡＰ＋１・ＤＰ＋１・ＳＰ－２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0849"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0849",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にし、AP+1・DP+1・SP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にし、ＡＰ＋１・ＤＰ＋１・ＳＰ－２する。",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、このキャラを未行動にし、AP+1・DP+1・SP-2する。",
+    "lines": [
+      "[誘発] このキャラでサポートをしたとき、このキャラを未行動にし、AP+1・DP+1・SP-2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

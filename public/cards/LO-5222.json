@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自分の効果で味方キャラを破棄したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
   "textKr": "[誘発] 自分の効果で味方キャラを破棄したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5222"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5222",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の効果で味方キャラを破棄したとき、このキャラにAP+1・DP+1・DMG+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] 自分の効果で味方キャラを破棄したとき、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。",
+    "normalizedText": "[誘発] 自分の効果で味方キャラを破棄したとき、このキャラにAP+1・DP+1・DMG+1する。",
+    "lines": [
+      "[誘発] 自分の効果で味方キャラを破棄したとき、このキャラにAP+1・DP+1・DMG+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

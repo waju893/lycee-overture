@@ -23,5 +23,25 @@
   "typeTagsRaw": "大洗女子",
   "text": "[ステップ:[0]]\n[常時] このキャラのサポートは[GUP]キャラのみを対象に指定できる。",
   "textKr": "[ステップ:[0]]\n[常時] このキャラのサポートは[GUP]キャラのみを対象に指定できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1074"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1074",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[常時] このキャラのサポートは[GUP]キャラのみを対象に指定できる。",
+    "normalizedText": "[ステップ:[0]]\n[常時] このキャラのサポートは[GUP]キャラのみを対象に指定できる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[常時] このキャラのサポートは[GUP]キャラのみを対象に指定できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] このキャラのサポートは[GUP]キャラのみを対象に指定できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

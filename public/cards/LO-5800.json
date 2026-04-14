@@ -25,5 +25,44 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[無無]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからＥＸが２のアイテム１枚を探し味方[HOK]キャラ１体に装備する。この能力は失われる。",
   "textKr": "[サポーター:[無無]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからＥＸが２のアイテム１枚を探し味方[HOK]キャラ１体に装備する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5800"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5800",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからEXが2のアイテム1枚を探し味方[HOK]キャラ1体に装備する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[サポーター:[無無]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからＥＸが２のアイテム１枚を探し味方[HOK]キャラ１体に装備する。この能力は失われる。",
+    "normalizedText": "[サポーター:[無無]]\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからEXが2のアイテム1枚を探し味方[HOK]キャラ1体に装備する。この能力は失われる。",
+    "lines": [
+      "[サポーター:[無無]]",
+      "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。自分のゴミ箱または自分のデッキからEXが2のアイテム1枚を探し味方[HOK]キャラ1体に装備する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[無無]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

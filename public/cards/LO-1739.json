@@ -24,5 +24,25 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
   "textKr": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1739"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1739",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。{相手キャラ１体}を破棄する。この能力は失われる。",
+    "normalizedText": "[アシスト]\n[宣言] [T][無無]:バトル中に使用できない。{相手キャラ1体}を破棄する。この能力は失われる。",
+    "lines": [
+      "[アシスト]",
+      "[宣言] [T][無無]:バトル中に使用できない。{相手キャラ1体}を破棄する。この能力は失われる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [T][無無]:バトル中に使用できない。{相手キャラ1体}を破棄する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

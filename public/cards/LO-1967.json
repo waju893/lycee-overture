@@ -24,5 +24,30 @@
   "typeTagsRaw": "",
   "text": "[手札宣言] [宙]:{アイテムを装備している味方キャラ１体}にＡＰ＋２する。",
   "textKr": "[手札宣言] [宙]:{アイテムを装備している味方キャラ１体}にＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1967"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1967",
+  "parsedEffectsDraft": [
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [宙]:{アイテムを装備している味方キャラ1体}にAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[手札宣言] [宙]:{アイテムを装備している味方キャラ１体}にＡＰ＋２する。",
+    "normalizedText": "[手札宣言] [宙]:{アイテムを装備している味方キャラ1体}にAP+2する。",
+    "lines": [
+      "[手札宣言] [宙]:{アイテムを装備している味方キャラ1体}にAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

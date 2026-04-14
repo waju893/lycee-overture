@@ -25,5 +25,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋３する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3188"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3188",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ1体}にAP+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ１体}にＡＰ＋３する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ1体}にAP+3する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:このキャラを破棄する。破棄したとき、{味方キャラ1体}にAP+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

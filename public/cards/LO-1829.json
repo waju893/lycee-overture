@@ -25,5 +25,25 @@
   "typeTagsRaw": "ヤマト",
   "text": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
   "textKr": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1829"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1829",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+    "normalizedText": "[アグレッシブ]\n[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+    "lines": [
+      "[アグレッシブ]",
+      "[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分のデッキの下に置く。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラがダウンしたとき、ゴミ箱のこのキャラを自分のデッキの下に置く。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

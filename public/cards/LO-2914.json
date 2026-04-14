@@ -21,7 +21,34 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2914"
+  "text": "{自分のゴミ箱のアイテム１枚}を手札に入れる。",
+  "textKr": "{自分のゴミ箱のアイテム１枚}を手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2914",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{自分のゴミ箱のアイテム1枚}を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{自分のゴミ箱のアイテム１枚}を手札に入れる。",
+    "normalizedText": "{自分のゴミ箱のアイテム1枚}を手札に入れる。",
+    "lines": [
+      "{自分のゴミ箱のアイテム1枚}を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -23,5 +23,25 @@
   "typeTagsRaw": "魔剣",
   "text": "[エンゲージ][オーダーステップ:[0]]\n[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。",
   "textKr": "[エンゲージ][オーダーステップ:[0]]\n[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0177"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0177",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[エンゲージ][オーダーステップ:[0]]\n[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。",
+    "normalizedText": "[エンゲージ][オーダーステップ:[0]]\n[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。",
+    "lines": [
+      "[エンゲージ][オーダーステップ:[0]]",
+      "[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラがエンゲージ登場以外で登場したとき、このキャラを破棄する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

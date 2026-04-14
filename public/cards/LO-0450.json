@@ -36,5 +36,32 @@
   "typeTagsRaw": "",
   "text": "[宣言] [無無無]:自分のゴミ箱の「ブキダスさん」１枚を手札に入れる。",
   "textKr": "[宣言] [無無無]:自分のゴミ箱の「ブキダスさん」１枚を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0450"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0450",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無無無]:自分のゴミ箱の「ブキダスさん」1枚を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [無無無]:自分のゴミ箱の「ブキダスさん」１枚を手札に入れる。",
+    "normalizedText": "[宣言] [無無無]:自分のゴミ箱の「ブキダスさん」1枚を手札に入れる。",
+    "lines": [
+      "[宣言] [無無無]:自分のゴミ箱の「ブキダスさん」1枚を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": []
 }

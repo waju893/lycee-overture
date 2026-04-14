@@ -1,14 +1,16 @@
 {
+  "cardNo": "LO-1756",
+  "title": "完璧主義でおせっかい焼き",
+  "subName": "北原 春希",
+  "name": "完璧主義でおせっかい焼き 北原 春希",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "snow",
     "moon"
   ],
-  "attributesList": [
-    "snow",
-    "moon"
-  ],
-  "ex": 0,
   "useTarget": [
     "star",
     "star"
@@ -17,7 +19,31 @@
   "dp": 0,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [],
-  "keyEffects": [],
-  "leader": true
+  "ex": 0,
+  "costRaw": "無無",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[リーダー]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、味方キャラ全てと自分のゴミ箱のカード全てが「WHITE ALBUM2」の場合、[雪雪]または[月月]を発生する。この能力は相手ターン終了時まで失われる。\n構築制限:アクアプラス（[AQP]）",
+  "textKr": "[リーダー]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、味方キャラ全てと自分のゴミ箱のカード全てが「WHITE ALBUM2」の場合、[雪雪]または[月月]を発生する。この能力は相手ターン終了時まで失われる。\n構築制限:アクアプラス（[AQP]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1756",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[リーダー]\n[コスト] 自分のデッキを１枚破棄する。破棄したとき、味方キャラ全てと自分のゴミ箱のカード全てが「WHITE ALBUM2」の場合、[雪雪]または[月月]を発生する。この能力は相手ターン終了時まで失われる。\n構築制限:アクアプラス（[AQP]）",
+    "normalizedText": "[リーダー]\n[コスト] 自分のデッキを1枚破棄する。破棄したとき、味方キャラ全てと自分のゴミ箱のカード全てが「WHITE ALBUM2」の場合、[雪雪]または[月月]を発生する。この能力は相手ターン終了時まで失われる。構築制限:アクアプラス([AQP])",
+    "lines": [
+      "[リーダー]",
+      "[コスト] 自分のデッキを1枚破棄する。破棄したとき、味方キャラ全てと自分のゴミ箱のカード全てが「WHITE ALBUM2」の場合、[雪雪]または[月月]を発生する。この能力は相手ターン終了時まで失われる。構築制限:アクアプラス([AQP])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[リーダー]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[コスト] 自分のデッキを1枚破棄する。破棄したとき、味方キャラ全てと自分のゴミ箱のカード全てが「WHITE ALBUM2」の場合、[雪雪]または[月月]を発生する。この能力は相手ターン終了時まで失われる。構築制限:アクアプラス([AQP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

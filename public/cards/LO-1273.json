@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]",
   "textKr": "[アグレッシブ][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1273"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1273",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[アグレッシブ][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]",
+    "normalizedText": "[アグレッシブ][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]",
+    "lines": [
+      "[アグレッシブ][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アグレッシブ][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

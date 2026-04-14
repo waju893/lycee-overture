@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[D1]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにＤＭＧ＋１する。",
   "textKr": "[サポーター:[D1]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5564"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5564",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[D1]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[D1]]\n[常時] カード名に「白鷺」を含む味方キャラ全てにDMG+1する。",
+    "lines": [
+      "[サポーター:[D1]]",
+      "[常時] カード名に「白鷺」を含む味方キャラ全てにDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[D1]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] カード名に「白鷺」を含む味方キャラ全てにDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

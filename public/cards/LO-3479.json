@@ -27,5 +27,53 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [0]:味方「門倉甲」が登場している場合、自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。",
   "textKr": "[ステップ:[0]]\n[宣言] [0]:味方「門倉甲」が登場している場合、自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3479"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3479",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方「門倉甲」が登場している場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "門倉甲",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [0]:味方「門倉甲」が登場している場合、自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:味方「門倉甲」が登場している場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [0]:味方「門倉甲」が登場している場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

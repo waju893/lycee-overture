@@ -23,5 +23,30 @@
   "typeTagsRaw": "城娘",
   "text": "[宣言] [0]:このキャラにＡＰ＋１・ＤＰ－１する。\n[手札宣言] [D1]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋１・ＤＰ－１する。",
   "textKr": "[宣言] [0]:このキャラにＡＰ＋１・ＤＰ－１する。\n[手札宣言] [D1]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋１・ＤＰ－１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2296"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2296",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラにAP+1・DP-1する。[手札宣言] [D1]:{コストが2点以下の味方[日]キャラ1体}にAP+1・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:このキャラにＡＰ＋１・ＤＰ－１する。\n[手札宣言] [D1]:{コストが２点以下の味方[日]キャラ１体}にＡＰ＋１・ＤＰ－１する。",
+    "normalizedText": "[宣言] [0]:このキャラにAP+1・DP-1する。[手札宣言] [D1]:{コストが2点以下の味方[日]キャラ1体}にAP+1・DP-1する。",
+    "lines": [
+      "[宣言] [0]:このキャラにAP+1・DP-1する。[手札宣言] [D1]:{コストが2点以下の味方[日]キャラ1体}にAP+1・DP-1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

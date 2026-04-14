@@ -1,15 +1,44 @@
 {
+  "cardNo": "LO-1993",
+  "title": "幻想殺し",
+  "subName": "",
+  "name": "幻想殺し",
+  "rawTypeJa": "イベント",
+  "rawTypeKr": "이벤트",
   "type": "event",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "moon"
   ],
-  "attributesList": [
-    "moon"
-  ],
-  "ex": 2,
   "useTarget": [
     "moon",
     "moon",
     "moon"
+  ],
+  "ap": null,
+  "dp": null,
+  "sp": null,
+  "dmg": null,
+  "ex": 2,
+  "costRaw": "月月月",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "相手の宣言に対応して使用する。相手はこの宣言に対応して宣言できない。味方「上条当麻」が登場している場合、その宣言の解決は失敗する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "textKr": "相手の宣言に対応して使用する。相手はこの宣言に対応して宣言できない。味方「上条当麻」が登場している場合、その宣言の解決は失敗する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1993",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "相手の宣言に対応して使用する。相手はこの宣言に対応して宣言できない。味方「上条当麻」が登場している場合、その宣言の解決は失敗する。\n構築制限:とある魔術の禁書目録（[TOA]）",
+    "normalizedText": "相手の宣言に対応して使用する。相手はこの宣言に対応して宣言できない。味方「上条当麻」が登場している場合、その宣言の解決は失敗する。構築制限:とある魔術の禁書目録([TOA])",
+    "lines": [
+      "相手の宣言に対応して使用する。相手はこの宣言に対応して宣言できない。味方「上条当麻」が登場している場合、その宣言の解決は失敗する。構築制限:とある魔術の禁書目録([TOA])"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "相手の宣言に対応して使用する。相手はこの宣言に対応して宣言できない。味方「上条当麻」が登場している場合、その宣言の解決は失敗する。構築制限:とある魔術の禁書目録([TOA])",
+      "reason": "no parser rule matched"
+    }
   ]
 }

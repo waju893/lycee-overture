@@ -24,5 +24,38 @@
   "typeTagsRaw": "リトルバスターズ",
   "text": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [無]:自分のゴミ箱のＥＸが０または２の＜リトルバスターズ＞キャラ１体を手札に入れる。この能力は失われる。",
   "textKr": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [無]:自分のゴミ箱のＥＸが０または２の＜リトルバスターズ＞キャラ１体を手札に入れる。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2857"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2857",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [無]:自分のゴミ箱のEXが0または2の<リトルバスターズ>キャラ1体を手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [無]:自分のゴミ箱のＥＸが０または２の＜リトルバスターズ＞キャラ１体を手札に入れる。この能力は失われる。",
+    "normalizedText": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]\n[宣言] [無]:自分のゴミ箱のEXが0または2の<リトルバスターズ>キャラ1体を手札に入れる。この能力は失われる。",
+    "lines": [
+      "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]",
+      "[宣言] [無]:自分のゴミ箱のEXが0または2の<リトルバスターズ>キャラ1体を手札に入れる。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト][ペナルティ:[ゴミ箱のこのキャラをデッキの下に置く。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

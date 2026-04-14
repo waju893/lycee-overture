@@ -24,5 +24,25 @@
   "typeTagsRaw": "",
   "text": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1652"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1652",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までＤＭＧ＋１する。",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+1する。",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+1する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラでサポートをしたとき、対象のキャラにバトル終了時までDMG+1する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

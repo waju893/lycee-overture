@@ -24,5 +24,41 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、味方キャラ全てが『うたわれるもの シリーズ』キャラの場合、自分のゴミ箱または自分のデッキから「ノスリ」１体を探し登場できる。",
   "textKr": "[誘発] このキャラが登場したとき、味方キャラ全てが『うたわれるもの シリーズ』キャラの場合、自分のゴミ箱または自分のデッキから「ノスリ」１体を探し登場できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5144"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5144",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ全てが『うたわれるもの シリーズ』キャラの場合、自分のゴミ箱または自分のデッキから「ノスリ」1体を探し登場できる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "ノスリ"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、味方キャラ全てが『うたわれるもの シリーズ』キャラの場合、自分のゴミ箱または自分のデッキから「ノスリ」１体を探し登場できる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方キャラ全てが『うたわれるもの シリーズ』キャラの場合、自分のゴミ箱または自分のデッキから「ノスリ」1体を探し登場できる。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、味方キャラ全てが『うたわれるもの シリーズ』キャラの場合、自分のゴミ箱または自分のデッキから「ノスリ」1体を探し登場できる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -27,5 +27,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [日]:このキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [日]:このキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5146"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5146",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:このキャラにAP+2・DP+2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [日]:このキャラにＡＰ＋２・ＤＰ＋２する。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [日]:このキャラにAP+2・DP+2する。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [日]:このキャラにAP+2・DP+2する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -21,7 +21,32 @@
   "costRaw": "日",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2588"
+  "text": "{味方キャラ１体}と元のＤＰが同じ味方キャラ全てにＡＰ＋２する。",
+  "textKr": "{味方キャラ１体}と元のＤＰが同じ味方キャラ全てにＡＰ＋２する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2588",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{味方キャラ1体}と元のDPが同じ味方キャラ全てにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{味方キャラ１体}と元のＤＰが同じ味方キャラ全てにＡＰ＋２する。",
+    "normalizedText": "{味方キャラ1体}と元のDPが同じ味方キャラ全てにAP+2する。",
+    "lines": [
+      "{味方キャラ1体}と元のDPが同じ味方キャラ全てにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

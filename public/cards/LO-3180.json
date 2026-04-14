@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3180",
+  "title": "天真爛漫",
+  "subName": "佐天 涙子",
+  "name": "天真爛漫 佐天 涙子",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -16,11 +19,59 @@
   "dp": 0,
   "sp": 1,
   "dmg": 2,
-  "keyeffects": [
-    2
+  "ex": 2,
+  "costRaw": "日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ステップ:[0]]\n[宣言] [日]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからコストが４点以下で[日]の「御坂美琴」または「上条当麻」１体を探し無償で登場する。この能力は失われる。\n構築制限:『とある科学の超電磁砲』",
+  "textKr": "[ステップ:[0]]\n[宣言] [日]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからコストが４点以下で[日]の「御坂美琴」または「上条当麻」１体を探し無償で登場する。この能力は失われる。\n構築制限:『とある科学の超電磁砲』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3180",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからコストが4点以下で[日]の「御坂美琴」または「上条当麻」1体を探し無償で登場する。この能力は失われる。構築制限:『とある科学の超電磁砲』",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "御坂美琴",
+            "kind": "event"
+          },
+          "min": 0,
+          "max": 4,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "event",
+          "ignoreCost": true
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    2
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [日]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからコストが４点以下で[日]の「御坂美琴」または「上条当麻」１体を探し無償で登場する。この能力は失われる。\n構築制限:『とある科学の超電磁砲』",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [日]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからコストが4点以下で[日]の「御坂美琴」または「上条当麻」1体を探し無償で登場する。この能力は失われる。構築制限:『とある科学の超電磁砲』",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [日]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキからコストが4点以下で[日]の「御坂美琴」または「上条当麻」1体を探し無償で登場する。この能力は失われる。構築制限:『とある科学の超電磁砲』"
+    ],
+    "matchedRuleIds": [
+      "searchCard+freeUse"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

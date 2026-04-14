@@ -25,5 +25,30 @@
   "typeTagsRaw": "",
   "text": "[常時] カード名に「白鷺」を含む味方キャラ全てにＡＰ＋２する。",
   "textKr": "[常時] カード名に「白鷺」を含む味方キャラ全てにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5562"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5562",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] カード名に「白鷺」を含む味方キャラ全てにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] カード名に「白鷺」を含む味方キャラ全てにＡＰ＋２する。",
+    "normalizedText": "[常時] カード名に「白鷺」を含む味方キャラ全てにAP+2する。",
+    "lines": [
+      "[常時] カード名に「白鷺」を含む味方キャラ全てにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -27,5 +27,30 @@
   "typeTagsRaw": "",
   "text": "[宣言] [0]:味方「夜羽睦季」が登場している場合、このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
   "textKr": "[宣言] [0]:味方「夜羽睦季」が登場している場合、このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4447"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4447",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方「夜羽睦季」が登場している場合、このキャラにAP+3・DP+3・DMG+3する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[宣言] [0]:味方「夜羽睦季」が登場している場合、このキャラにＡＰ＋３・ＤＰ＋３・ＤＭＧ＋３する。",
+    "normalizedText": "[宣言] [0]:味方「夜羽睦季」が登場している場合、このキャラにAP+3・DP+3・DMG+3する。",
+    "lines": [
+      "[宣言] [0]:味方「夜羽睦季」が登場している場合、このキャラにAP+3・DP+3・DMG+3する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

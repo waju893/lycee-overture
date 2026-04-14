@@ -27,5 +27,36 @@
   "typeTagsRaw": "",
   "text": "[ステップ:[0]]\n[宣言] [宙宙宙無無]:このキャラにＡＰ＋６・ＤＰ＋６する。この能力は失われる。",
   "textKr": "[ステップ:[0]]\n[宣言] [宙宙宙無無]:このキャラにＡＰ＋６・ＤＰ＋６する。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5136"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5136",
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [宙宙宙無無]:このキャラにAP+6・DP+6する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 6
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[ステップ:[0]]\n[宣言] [宙宙宙無無]:このキャラにＡＰ＋６・ＤＰ＋６する。この能力は失われる。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [宙宙宙無無]:このキャラにAP+6・DP+6する。この能力は失われる。",
+    "lines": [
+      "[ステップ:[0]]",
+      "[宣言] [宙宙宙無無]:このキャラにAP+6・DP+6する。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

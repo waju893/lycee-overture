@@ -24,5 +24,20 @@
   "typeTagsRaw": "minako",
   "text": "[誘発] このキャラのバトル終了時、このキャラを除外する。",
   "textKr": "[誘発] このキャラのバトル終了時、このキャラを除外する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4129"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4129",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラのバトル終了時、このキャラを除外する。",
+    "normalizedText": "[誘発] このキャラのバトル終了時、このキャラを除外する。",
+    "lines": [
+      "[誘発] このキャラのバトル終了時、このキャラを除外する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラのバトル終了時、このキャラを除外する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

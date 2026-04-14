@@ -24,5 +24,39 @@
   "typeTagsRaw": "大学選抜",
   "text": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「アズミ」または「ルミ」１体を手札に入れる。",
   "textKr": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「アズミ」または「ルミ」１体を手札に入れる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1107"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1107",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱の「アズミ」または「ルミ」1体を手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "hand",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「アズミ」または「ルミ」１体を手札に入れる。",
+    "normalizedText": "[アシスト]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「アズミ」または「ルミ」1体を手札に入れる。",
+    "lines": [
+      "[アシスト]",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱の「アズミ」または「ルミ」1体を手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "moveCard:toHand"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

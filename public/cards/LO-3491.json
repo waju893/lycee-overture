@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3491",
+  "title": "自称特級プログラマー",
+  "subName": "キャロル・シェーヌ",
+  "name": "自称特級プログラマー キャロル・シェーヌ",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "cosmos"
   ],
-  "attributesList": [
-    "cosmos"
-  ],
-  "ex": 2,
   "useTarget": [
     "cosmos",
     "cosmos",
@@ -19,11 +22,63 @@
   "dp": 3,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    3
+  "ex": 2,
+  "costRaw": "宙宙宙宙宙宙",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サイドステップ:[0]]\n[誘発] このキャラが効果以外で登場したとき、味方『BALDR BRINGER』キャラが２体以上登場している場合、自分の手札からコストが６点以下の『BALDR BRINGER』キャラ１体を無償で登場する。\n[宣言] [0]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋１またはＤＰ＋１し、そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。\n構築制限:[GIG]",
+  "textKr": "[サイドステップ:[0]]\n[誘発] このキャラが効果以外で登場したとき、味方『BALDR BRINGER』キャラが２体以上登場している場合、自分の手札からコストが６点以下の『BALDR BRINGER』キャラ１体を無償で登場する。\n[宣言] [0]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋１またはＤＰ＋１し、そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。\n構築制限:[GIG]",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3491",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "originalLine": "[誘発] このキャラが効果以外で登場したとき、味方『BALDR BRINGER』キャラが2体以上登場している場合、自分の手札からコストが6点以下の『BALDR BRINGER』キャラ1体を無償で登場する。[宣言] [0]:{味方『BALDR BRINGER』キャラ1体}にAP+1またはDP+1し、そのキャラは[ボーナス:[相手のデッキを1枚破棄する。]]を得る。構築制限:[GIG]",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    3
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが効果以外で登場したとき、味方『BALDR BRINGER』キャラが２体以上登場している場合、自分の手札からコストが６点以下の『BALDR BRINGER』キャラ１体を無償で登場する。\n[宣言] [0]:{味方『BALDR BRINGER』キャラ１体}にＡＰ＋１またはＤＰ＋１し、そのキャラは[ボーナス:[相手のデッキを１枚破棄する。]]を得る。\n構築制限:[GIG]",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが効果以外で登場したとき、味方『BALDR BRINGER』キャラが2体以上登場している場合、自分の手札からコストが6点以下の『BALDR BRINGER』キャラ1体を無償で登場する。[宣言] [0]:{味方『BALDR BRINGER』キャラ1体}にAP+1またはDP+1し、そのキャラは[ボーナス:[相手のデッキを1枚破棄する。]]を得る。構築制限:[GIG]",
+    "lines": [
+      "[サイドステップ:[0]]",
+      "[誘発] このキャラが効果以外で登場したとき、味方『BALDR BRINGER』キャラが2体以上登場している場合、自分の手札からコストが6点以下の『BALDR BRINGER』キャラ1体を無償で登場する。[宣言] [0]:{味方『BALDR BRINGER』キャラ1体}にAP+1またはDP+1し、そのキャラは[ボーナス:[相手のデッキを1枚破棄する。]]を得る。構築制限:[GIG]"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

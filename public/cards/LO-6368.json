@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-6368",
+  "title": "わだつみの民の女王",
+  "subName": "奇綿津見玄比賣命",
+  "name": "わだつみの民の女王 奇綿津見玄比賣命",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "sun"
   ],
-  "attributesList": [
-    "sun"
-  ],
-  "ex": 2,
   "useTarget": [
     "sun",
     "sun",
@@ -18,13 +21,63 @@
   "dp": 4,
   "sp": 1,
   "dmg": 0,
-  "keyeffects": [
-    5,
-    16
+  "ex": 2,
+  "costRaw": "日日日日日",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[ジャンプ:[0]][チャージ:１]\n[常時] コストが２点以下の味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:『塵骸魔京』",
+  "textKr": "[ジャンプ:[0]][チャージ:１]\n[常時] コストが２点以下の味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:『塵骸魔京』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-6368",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] コストが2点以下の味方キャラ全てにAP+1・DP+1する。[宣言] [C1]:{味方キャラ1体}にAP+2またはDP+2する。構築制限:『塵骸魔京』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    5,
-    16
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]][チャージ:１]\n[常時] コストが２点以下の味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:『塵骸魔京』",
+    "normalizedText": "[ジャンプ:[0]][チャージ:1]\n[常時] コストが2点以下の味方キャラ全てにAP+1・DP+1する。[宣言] [C1]:{味方キャラ1体}にAP+2またはDP+2する。構築制限:『塵骸魔京』",
+    "lines": [
+      "[ジャンプ:[0]][チャージ:1]",
+      "[常時] コストが2点以下の味方キャラ全てにAP+1・DP+1する。[宣言] [C1]:{味方キャラ1体}にAP+2またはDP+2する。構築制限:『塵骸魔京』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]][チャージ:1]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

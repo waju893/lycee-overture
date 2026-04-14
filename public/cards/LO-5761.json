@@ -25,5 +25,25 @@
   "typeTagsRaw": "",
   "text": "[ジャンプ:[0]]\n[宣言] [0]:このキャラにＡＰ＋[味方『しゅぷれ〜むキャンディ』キャラの数]する。",
   "textKr": "[ジャンプ:[0]]\n[宣言] [0]:このキャラにＡＰ＋[味方『しゅぷれ〜むキャンディ』キャラの数]する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5761"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5761",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[ジャンプ:[0]]\n[宣言] [0]:このキャラにＡＰ＋[味方『しゅぷれ〜むキャンディ』キャラの数]する。",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:このキャラにAP+[味方『しゅぷれ〜むキャンディ』キャラの数]する。",
+    "lines": [
+      "[ジャンプ:[0]]",
+      "[宣言] [0]:このキャラにAP+[味方『しゅぷれ〜むキャンディ』キャラの数]する。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラにAP+[味方『しゅぷれ〜むキャンディ』キャラの数]する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

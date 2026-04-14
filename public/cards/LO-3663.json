@@ -23,5 +23,30 @@
   "typeTagsRaw": "",
   "text": "[アグレッシブ]を持つ味方キャラ全てにＡＰ＋２する。",
   "textKr": "[アグレッシブ]を持つ味方キャラ全てにＡＰ＋２する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3663"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3663",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "[アグレッシブ]を持つ味方キャラ全てにAP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[アグレッシブ]を持つ味方キャラ全てにＡＰ＋２する。",
+    "normalizedText": "[アグレッシブ]を持つ味方キャラ全てにAP+2する。",
+    "lines": [
+      "[アグレッシブ]を持つ味方キャラ全てにAP+2する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

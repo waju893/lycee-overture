@@ -21,7 +21,32 @@
   "costRaw": "月",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1425"
+  "text": "{相手キャラ１体}にＡＰ－４・ＤＰ－４する。自分の手札を１枚破棄できる。破棄しない場合、味方キャラ１体を破棄する。",
+  "textKr": "{相手キャラ１体}にＡＰ－４・ＤＰ－４する。自分の手札を１枚破棄できる。破棄しない場合、味方キャラ１体を破棄する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1425",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "{相手キャラ1体}にAP-4・DP-4する。自分の手札を1枚破棄できる。破棄しない場合、味方キャラ1体を破棄する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -4
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "{相手キャラ１体}にＡＰ－４・ＤＰ－４する。自分の手札を１枚破棄できる。破棄しない場合、味方キャラ１体を破棄する。",
+    "normalizedText": "{相手キャラ1体}にAP-4・DP-4する。自分の手札を1枚破棄できる。破棄しない場合、味方キャラ1体を破棄する。",
+    "lines": [
+      "{相手キャラ1体}にAP-4・DP-4する。自分の手札を1枚破棄できる。破棄しない場合、味方キャラ1体を破棄する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -21,5 +21,30 @@
   "typeTagsRaw": "",
   "text": "[常時] 相手ターン中、このキャラにＤＰ＋１する。\n[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
   "textKr": "[常時] 相手ターン中、このキャラにＤＰ＋１する。\n[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1998"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1998",
+  "parsedEffectsDraft": [
+    {
+      "header": "常時",
+      "timing": "continuous",
+      "originalLine": "[常時] 相手ターン中、このキャラにDP+1する。[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[常時] 相手ターン中、このキャラにＤＰ＋１する。\n[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
+    "normalizedText": "[常時] 相手ターン中、このキャラにDP+1する。[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
+    "lines": [
+      "[常時] 相手ターン中、このキャラにDP+1する。[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

@@ -1,12 +1,15 @@
 {
+  "cardNo": "LO-3148",
+  "title": "抜群のプロポーション",
+  "subName": "食蜂 操祈",
+  "name": "抜群のプロポーション 食蜂 操祈",
+  "rawTypeJa": "キャラクター",
+  "rawTypeKr": "캐릭터",
   "type": "character",
-  "attributes_list": [
+  "rarity": "U",
+  "attributes": [
     "flower"
   ],
-  "attributesList": [
-    "flower"
-  ],
-  "ex": 2,
   "useTarget": [
     "flower",
     "flower",
@@ -16,11 +19,72 @@
   "dp": 3,
   "sp": 2,
   "dmg": 0,
-  "keyeffects": [
-    12
+  "ex": 2,
+  "costRaw": "花花花",
+  "restrictionRaw": "",
+  "typeTagsRaw": "",
+  "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキから[花]キャラ１体を探し公開して手札に入れる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。\n構築制限:『とある科学の超電磁砲』",
+  "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキから[花]キャラ１体を探し公開して手札に入れる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。\n構築制限:『とある科学の超電磁砲』",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3148",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから[花]キャラ1体を探し公開して手札に入れる。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+1またはDP+1し、DMG+1する。構築制限:『とある科学の超電磁砲』",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck",
+                    "hand"
+                  ],
+                  "match": {},
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "keyEffects": [
-    12
-  ],
-  "leader": false
+  "parseMeta": {
+    "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキから[花]キャラ１体を探し公開して手札に入れる。\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１し、ＤＭＧ＋１する。\n構築制限:『とある科学の超電磁砲』",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のデッキから[花]キャラ1体を探し公開して手札に入れる。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+1またはDP+1し、DMG+1する。構築制限:『とある科学の超電磁砲』",
+    "lines": [
+      "[サポーター:[花花]]",
+      "[誘発] このキャラが登場したとき、自分のデッキから[花]キャラ1体を探し公開して手札に入れる。[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方[花]キャラ1体}にAP+1またはDP+1し、DMG+1する。構築制限:『とある科学の超電磁砲』"
+    ],
+    "matchedRuleIds": [
+      "chooseOne"
+    ]
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -19,7 +19,42 @@
   "costRaw": "",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1573"
+  "text": "自分のデッキからサブネームに「帝国」を含むキャラ１体を探し公開して手札に入れる。",
+  "textKr": "自分のデッキからサブネームに「帝国」を含むキャラ１体を探し公開して手札に入れる。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1573",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自分のデッキからサブネームに「帝国」を含むキャラ1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {
+            "exactName": "帝国"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自分のデッキからサブネームに「帝国」を含むキャラ１体を探し公開して手札に入れる。",
+    "normalizedText": "自分のデッキからサブネームに「帝国」を含むキャラ1体を探し公開して手札に入れる。",
+    "lines": [
+      "自分のデッキからサブネームに「帝国」を含むキャラ1体を探し公開して手札に入れる。"
+    ],
+    "matchedRuleIds": [
+      "searchCard"
+    ]
+  },
+  "unresolvedTextLines": []
 }

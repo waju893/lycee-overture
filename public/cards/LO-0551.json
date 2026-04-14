@@ -22,7 +22,32 @@
   "costRaw": "花花",
   "restrictionRaw": "",
   "typeTagsRaw": "",
-  "text": "",
-  "textKr": "",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0551"
+  "text": "自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋１する。",
+  "textKr": "自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋１する。",
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0551",
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "自ターン中に使用する。{味方キャラ1体}にAP+2・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋１する。",
+    "normalizedText": "自ターン中に使用する。{味方キャラ1体}にAP+2・DP+1する。",
+    "lines": [
+      "自ターン中に使用する。{味方キャラ1体}にAP+2・DP+1する。"
+    ],
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
+  },
+  "unresolvedTextLines": []
 }

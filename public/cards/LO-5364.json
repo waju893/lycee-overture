@@ -23,5 +23,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] 自ターン中、自分のイベントを使用したとき、自分にシールド＋１できる。",
   "textKr": "[誘発] 自ターン中、自分のイベントを使用したとき、自分にシールド＋１できる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5364"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5364",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] 自ターン中、自分のイベントを使用したとき、自分にシールド＋１できる。",
+    "normalizedText": "[誘発] 自ターン中、自分のイベントを使用したとき、自分にシールド+1できる。",
+    "lines": [
+      "[誘発] 自ターン中、自分のイベントを使用したとき、自分にシールド+1できる。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 自ターン中、自分のイベントを使用したとき、自分にシールド+1できる。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

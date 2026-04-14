@@ -24,5 +24,20 @@
   "typeTagsRaw": "",
   "text": "[誘発] このキャラが登場したとき、相手キャラが０体の場合、このキャラのＤＰとＳＰを２にする。この能力値修正はターン終了時に失われない。",
   "textKr": "[誘発] このキャラが登場したとき、相手キャラが０体の場合、このキャラのＤＰとＳＰを２にする。この能力値修正はターン終了時に失われない。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4836"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-4836",
+  "parsedEffectsDraft": [],
+  "parseMeta": {
+    "originalText": "[誘発] このキャラが登場したとき、相手キャラが０体の場合、このキャラのＤＰとＳＰを２にする。この能力値修正はターン終了時に失われない。",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手キャラが0体の場合、このキャラのDPとSPを2にする。この能力値修正はターン終了時に失われない。",
+    "lines": [
+      "[誘発] このキャラが登場したとき、相手キャラが0体の場合、このキャラのDPとSPを2にする。この能力値修正はターン終了時に失われない。"
+    ],
+    "matchedRuleIds": []
+  },
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、相手キャラが0体の場合、このキャラのDPとSPを2にする。この能力値修正はターン終了時に失われない。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

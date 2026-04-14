@@ -25,5 +25,29 @@
   "typeTagsRaw": "サーヴァント",
   "text": "[誘発] ダウン以外で味方キャラを破棄したとき、１枚ドローする。この能力は失われる。",
   "textKr": "[誘発] ダウン以外で味方キャラを破棄したとき、１枚ドローする。この能力は失われる。",
-  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1334"
+  "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1334",
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] ダウン以外で味方キャラを破棄したとき、1枚ドローする。この能力は失われる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "parseMeta": {
+    "originalText": "[誘発] ダウン以外で味方キャラを破棄したとき、１枚ドローする。この能力は失われる。",
+    "normalizedText": "[誘発] ダウン以外で味方キャラを破棄したとき、1枚ドローする。この能力は失われる。",
+    "lines": [
+      "[誘発] ダウン以外で味方キャラを破棄したとき、1枚ドローする。この能力は失われる。"
+    ],
+    "matchedRuleIds": [
+      "draw"
+    ]
+  },
+  "unresolvedTextLines": []
 }
