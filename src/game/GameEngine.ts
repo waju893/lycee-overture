@@ -693,6 +693,129 @@ function findCardOwnerOnField(state: GameState, cardId: string): { playerId: Pla
   return null;
 }
 
+
+function moveFieldCardBetweenSlots(
+  state: GameState,
+  playerId: PlayerID,
+  sourceSlot: FieldSlot,
+  destinationSlot: FieldSlot,
+): boolean {
+  const sourceCell = state.players[playerId].field[sourceSlot];
+  const destinationCell = state.players[playerId].field[destinationSlot];
+  if (!sourceCell?.card || destinationCell?.card) return false;
+  destinationCell.card = { ...sourceCell.card, location: 'field' };
+  sourceCell.card = null;
+  return true;
+}
+
+function swapFieldCardsBetweenSlots(
+  state: GameState,
+  playerId: PlayerID,
+  sourceSlot: FieldSlot,
+  targetSlot: FieldSlot,
+): boolean {
+  const sourceCell = state.players[playerId].field[sourceSlot];
+  const targetCell = state.players[playerId].field[targetSlot];
+  if (!sourceCell?.card || !targetCell?.card) return false;
+  const sourceCard = { ...sourceCell.card, location: 'field' };
+  const targetCard = { ...targetCell.card, location: 'field' };
+  sourceCell.card = targetCard;
+  targetCell.card = sourceCard;
+  return true;
+}
+
+function resolveKeywordMovementAbility(state: GameState, declaration: any): boolean {
+  const found = findCardOwnerOnField(state, declaration.sourceCardId);
+  if (!found || found.playerId !== declaration.playerId) return false;
+
+  const payload = declaration.payload ?? {};
+  const keyword = typeof payload.keyword === 'string' ? payload.keyword : undefined;
+  if (!keyword) return false;
+
+  const sourceSlot = (payload.sourceSlot as FieldSlot | undefined) ?? found.slot;
+  const primaryTargetSlot =
+    (declaration.targetSlots?.[0] as FieldSlot | undefined) ??
+    (payload.selectedSlot as FieldSlot | undefined) ??
+    (Array.isArray(payload.destinationSlots) ? (payload.destinationSlots[0] as FieldSlot | undefined) : undefined);
+
+  if (['step', 'sidestep', 'orderstep', 'jump', 'engage'].includes(keyword)) {
+    if (!primaryTargetSlot) {
+      appendLog(state, 'ABILITY_MOVE_INVALID');
+      return true;
+    }
+
+    const moved = moveFieldCardBetweenSlots(state, declaration.playerId, sourceSlot, primaryTargetSlot);
+    if (!moved) {
+      appendLog(state, 'ABILITY_MOVE_INVALID');
+      return true;
+    }
+
+    pushEngineEvent(state, {
+      type: 'CARD_MOVED_ON_FIELD',
+      playerId: declaration.playerId,
+      affectedPlayerId: declaration.playerId,
+      cardId: declaration.sourceCardId,
+      cause: makeCharacterAbilityCause(declaration.playerId, declaration.sourceCardId, declaration.sourceEffectId),
+      operation: {
+        kind: 'other',
+        cardId: declaration.sourceCardId,
+        playerId: declaration.playerId,
+        fromZone: sourceSlot,
+        toZone: primaryTargetSlot,
+      },
+      metadata: {
+        keyword,
+        sourceSlot,
+        destinationSlot: primaryTargetSlot,
+      },
+    });
+    appendLog(state, `이동 능력 해결: ${keyword} ${sourceSlot} -> ${primaryTargetSlot}`);
+    return true;
+  }
+
+  if (keyword === 'orderchange') {
+    const swapTargetSlot =
+      (declaration.targetSlots?.[0] as FieldSlot | undefined) ??
+      (payload.swapTargetSlot as FieldSlot | undefined) ??
+      (Array.isArray(payload.swapTargetSlots) ? (payload.swapTargetSlots[0] as FieldSlot | undefined) : undefined);
+
+    if (!swapTargetSlot) {
+      appendLog(state, 'ABILITY_SWAP_INVALID');
+      return true;
+    }
+
+    const swapped = swapFieldCardsBetweenSlots(state, declaration.playerId, sourceSlot, swapTargetSlot);
+    if (!swapped) {
+      appendLog(state, 'ABILITY_SWAP_INVALID');
+      return true;
+    }
+
+    pushEngineEvent(state, {
+      type: 'CARD_SWAPPED_ON_FIELD',
+      playerId: declaration.playerId,
+      affectedPlayerId: declaration.playerId,
+      cardId: declaration.sourceCardId,
+      cause: makeCharacterAbilityCause(declaration.playerId, declaration.sourceCardId, declaration.sourceEffectId),
+      operation: {
+        kind: 'other',
+        cardId: declaration.sourceCardId,
+        playerId: declaration.playerId,
+        fromZone: sourceSlot,
+        toZone: swapTargetSlot,
+      },
+      metadata: {
+        keyword,
+        sourceSlot,
+        swapTargetSlot,
+      },
+    });
+    appendLog(state, `이동 능력 해결: ${keyword} ${sourceSlot} <-> ${swapTargetSlot}`);
+    return true;
+  }
+
+  return false;
+}
+
 function clearBattleState(state: GameState): void {
   (state as any).battle = {
     isActive: false,
@@ -1014,8 +1137,13 @@ function resolveUseAbility(state: GameState, declaration: any): void {
     cardId: declaration.sourceCardId,
     cause: makeCharacterAbilityCause(declaration.playerId, declaration.sourceCardId, declaration.sourceEffectId),
   });
-  appendLog(state, '능력 사용 해결');
+
+  const handledKeywordMovement = resolveKeywordMovementAbility(state, declaration);
+  if (!handledKeywordMovement) {
+    appendLog(state, '능력 사용 해결');
+  }
 }
+
 
 function resolveChargeCharacter(state: GameState, declaration: any): void {
   const owner = declaration.playerId as PlayerID;
