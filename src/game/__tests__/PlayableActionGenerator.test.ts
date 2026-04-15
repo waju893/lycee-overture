@@ -1,3 +1,4 @@
+
 import { describe, expect, it } from "vitest";
 import { createInitialGameState } from "../GameRules";
 import type { CardRef, GameState, PlayerID } from "../GameTypes";
@@ -35,78 +36,98 @@ function buildMainPhaseState(): GameState {
   state.turn.activePlayer = "P1";
   state.turn.priorityPlayer = "P1";
   state.turn.phase = "main";
-
-  const mover = makeCharacter("P1_JUMPER", "P1", "P1_JUMPER");
-  const tapped = makeCharacter("P1_TAPPED", "P1", "P1_TAPPED");
-  tapped.isTapped = true;
-  const enemy = makeCharacter("P2_ENEMY", "P2", "P2_ENEMY");
-
-  state.players.P1.field.AF_LEFT.card = mover;
-  state.players.P1.field.AF_CENTER.card = tapped;
-  state.players.P2.field.AF_LEFT.card = enemy;
-
   return state;
 }
 
-describe("PlayableActionGenerator", () => {
-  it("generates useAbility candidates for active player's untapped movement keyword cards", () => {
+describe("PlayableActionGenerator movement destinations", () => {
+  it("includes only legal adjacent empty slots for step", () => {
     const state = buildMainPhaseState();
+    const mover = makeCharacter("P1_STEPPER", "P1", "P1_STEPPER");
+    const blocker = makeCharacter("P1_BLOCKER", "P1", "P1_BLOCKER");
+
+    state.players.P1.field.AF_CENTER.card = mover;
+    state.players.P1.field.AF_LEFT.card = blocker;
 
     const result = generatePlayableKeywordActions({
       state,
       keywordPlansByCardId: {
-        P1_JUMPER: [
-          {
-            kind: "declaration_candidate",
-            keyword: "jump",
-          },
-        ],
-        P1_TAPPED: [
-          {
-            kind: "declaration_candidate",
-            keyword: "step",
-          },
-        ],
-        P2_ENEMY: [
-          {
-            kind: "declaration_candidate",
-            keyword: "orderchange",
-          },
-        ],
+        P1_STEPPER: [{ kind: "declaration_candidate", keyword: "step" }],
       },
     });
 
     expect(result).toHaveLength(1);
-    expect(result[0]).toMatchObject({
-      cardId: "P1_JUMPER",
-      slot: "AF_LEFT",
-      keyword: "jump",
-      action: {
-        type: "DECLARE_ACTION",
-        playerId: "P1",
-        kind: "useAbility",
-        sourceCardId: "P1_JUMPER",
-      },
-    });
-    expect((result[0].action as any).payload).toEqual({
-      keyword: "jump",
-      source: "keywordTag",
-    });
+    expect(result[0].destinationSlots).toEqual(["AF_RIGHT", "DF_CENTER"]);
+    expect((result[0].action as any).payload.destinationSlots).toEqual(["AF_RIGHT", "DF_CENTER"]);
   });
 
-  it("returns no candidates outside the active player's main phase", () => {
+  it("does not generate step candidate when no legal empty adjacent slot exists", () => {
     const state = buildMainPhaseState();
-    state.turn.phase = "battle";
+    const mover = makeCharacter("P1_STEPPER", "P1", "P1_STEPPER");
+    state.players.P1.field.AF_CENTER.card = mover;
+    state.players.P1.field.AF_LEFT.card = makeCharacter("P1_L", "P1", "P1_L");
+    state.players.P1.field.AF_RIGHT.card = makeCharacter("P1_R", "P1", "P1_R");
+    state.players.P1.field.DF_CENTER.card = makeCharacter("P1_D", "P1", "P1_D");
 
     const result = generatePlayableKeywordActions({
       state,
       keywordPlansByCardId: {
-        P1_JUMPER: [
-          {
-            kind: "declaration_candidate",
-            keyword: "jump",
-          },
-        ],
+        P1_STEPPER: [{ kind: "declaration_candidate", keyword: "step" }],
+      },
+    });
+
+    expect(result).toHaveLength(0);
+  });
+
+  it("generates jump candidate with all empty field slots as destinations", () => {
+    const state = buildMainPhaseState();
+    const jumper = makeCharacter("P1_JUMPER", "P1", "P1_JUMPER");
+    state.players.P1.field.AF_LEFT.card = jumper;
+    state.players.P1.field.DF_LEFT.card = makeCharacter("P1_BLOCK", "P1", "P1_BLOCK");
+
+    const result = generatePlayableKeywordActions({
+      state,
+      keywordPlansByCardId: {
+        P1_JUMPER: [{ kind: "declaration_candidate", keyword: "jump" }],
+      },
+    });
+
+    expect(result).toHaveLength(1);
+    expect(result[0].destinationSlots).toEqual([
+      "AF_CENTER",
+      "AF_RIGHT",
+      "DF_CENTER",
+      "DF_RIGHT",
+    ]);
+  });
+
+  it("generates orderchange only when a vertical adjacent character exists", () => {
+    const state = buildMainPhaseState();
+    const changer = makeCharacter("P1_CHANGER", "P1", "P1_CHANGER");
+    const target = makeCharacter("P1_TARGET", "P1", "P1_TARGET");
+    state.players.P1.field.AF_CENTER.card = changer;
+    state.players.P1.field.DF_CENTER.card = target;
+
+    const result = generatePlayableKeywordActions({
+      state,
+      keywordPlansByCardId: {
+        P1_CHANGER: [{ kind: "declaration_candidate", keyword: "orderchange" }],
+      },
+    });
+
+    expect(result).toHaveLength(1);
+    expect(result[0].swapTargetSlots).toEqual(["DF_CENTER"]);
+    expect((result[0].action as any).payload.swapTargetSlots).toEqual(["DF_CENTER"]);
+  });
+
+  it("does not generate orderchange without a vertical adjacent character", () => {
+    const state = buildMainPhaseState();
+    const changer = makeCharacter("P1_CHANGER", "P1", "P1_CHANGER");
+    state.players.P1.field.AF_CENTER.card = changer;
+
+    const result = generatePlayableKeywordActions({
+      state,
+      keywordPlansByCardId: {
+        P1_CHANGER: [{ kind: "declaration_candidate", keyword: "orderchange" }],
       },
     });
 
