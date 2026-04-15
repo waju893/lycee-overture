@@ -30,70 +30,68 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3843",
   "parsedEffectsDraft": [
     {
-      "header": "誘発",
-      "timing": "onTurnStart",
-      "triggerText": "ターン開始時",
-      "originalLine": "[誘発] 相手ターン開始時、味方AFキャラ全てがコストが5点以上の[月]キャラの場合、相手キャラ1体にDMG-1する。[宣言] [0]:自ターン中に使用する。相手キャラ1体にAP-1・DP-1する。このキャラに1枚チャージできる。[宣言] [C3][月月月]:自分のゴミ箱または自分のデッキから「独眼黒覇龍」1枚を探し横に置く。ターン終了時まで、自分は横のそのイベントを無償で使用を宣言できる。",
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。相手キャラ1体にAP-1・DP-1する。このキャラに1枚チャージできる。",
       "actions": [
         {
-          "type": "chooseOne",
-          "prompt": "하나를 선택한다",
-          "choices": [
-            {
-              "label": "A",
-              "actions": [
-                {
-                  "type": "modifyStat",
-                  "stat": "ap",
-                  "amount": -1
-                }
-              ]
-            },
-            {
-              "label": "B",
-              "actions": [
-                {
-                  "type": "searchCard",
-                  "owner": "self",
-                  "zones": [
-                    "deck"
-                  ],
-                  "match": {
-                    "exactName": "独眼黒覇龍",
-                    "kind": "event"
-                  },
-                  "min": 0,
-                  "max": 1,
-                  "storeAs": "lastSearchResult",
-                  "shuffleAfterSearch": true
-                },
-                {
-                  "type": "freeUse",
-                  "sourceRef": "lastSearchResult",
-                  "useKind": "event",
-                  "ignoreCost": true
-                }
-              ]
-            }
-          ]
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onTurnEnd",
+      "originalLine": "[宣言] [C3][月月月]:自分のゴミ箱または自分のデッキから「独眼黒覇龍」1枚を探し横に置く。ターン終了時まで、自分は横のそのイベントを無償で使用を宣言できる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "独眼黒覇龍",
+            "kind": "event"
+          },
+          "min": 0,
+          "max": 3,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "event",
+          "ignoreCost": true
         }
       ]
     }
   ],
   "parseMeta": {
     "originalText": "[チャージ:１][ボーナス:[相手のデッキを１枚破棄する。]]\n[誘発] 相手ターン開始時、味方ＡＦキャラ全てがコストが５点以上の[月]キャラの場合、相手キャラ１体にＤＭＧ－１する。\n[宣言] [0]:自ターン中に使用する。相手キャラ１体にＡＰ－１・ＤＰ－１する。このキャラに１枚チャージできる。\n[宣言] [C3][月月月]:自分のゴミ箱または自分のデッキから「独眼黒覇龍」１枚を探し横に置く。ターン終了時まで、自分は横のそのイベントを無償で使用を宣言できる。",
-    "normalizedText": "[チャージ:1][ボーナス:[相手のデッキを1枚破棄する。]]\n[誘発] 相手ターン開始時、味方AFキャラ全てがコストが5点以上の[月]キャラの場合、相手キャラ1体にDMG-1する。[宣言] [0]:自ターン中に使用する。相手キャラ1体にAP-1・DP-1する。このキャラに1枚チャージできる。[宣言] [C3][月月月]:自分のゴミ箱または自分のデッキから「独眼黒覇龍」1枚を探し横に置く。ターン終了時まで、自分は横のそのイベントを無償で使用を宣言できる。",
+    "normalizedText": "[チャージ:1][ボーナス:[相手のデッキを1枚破棄する。]]\n[誘発] 相手ターン開始時、味方AFキャラ全てがコストが5点以上の[月]キャラの場合、相手キャラ1体にDMG-1する。\n[宣言] [0]:自ターン中に使用する。相手キャラ1体にAP-1・DP-1する。このキャラに1枚チャージできる。\n[宣言] [C3][月月月]:自分のゴミ箱または自分のデッキから「独眼黒覇龍」1枚を探し横に置く。ターン終了時まで、自分は横のそのイベントを無償で使用を宣言できる。",
     "lines": [
       "[チャージ:1][ボーナス:[相手のデッキを1枚破棄する。]]",
-      "[誘発] 相手ターン開始時、味方AFキャラ全てがコストが5点以上の[月]キャラの場合、相手キャラ1体にDMG-1する。[宣言] [0]:自ターン中に使用する。相手キャラ1体にAP-1・DP-1する。このキャラに1枚チャージできる。[宣言] [C3][月月月]:自分のゴミ箱または自分のデッキから「独眼黒覇龍」1枚を探し横に置く。ターン終了時まで、自分は横のそのイベントを無償で使用を宣言できる。"
+      "[誘発] 相手ターン開始時、味方AFキャラ全てがコストが5点以上の[月]キャラの場合、相手キャラ1体にDMG-1する。",
+      "[宣言] [0]:自ターン中に使用する。相手キャラ1体にAP-1・DP-1する。このキャラに1枚チャージできる。",
+      "[宣言] [C3][月月月]:自分のゴミ箱または自分のデッキから「独眼黒覇龍」1枚を探し横に置く。ターン終了時まで、自分は横のそのイベントを無償で使用を宣言できる。"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "modifyStat",
+      "searchCard+freeUse"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[チャージ:1][ボーナス:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手ターン開始時、味方AFキャラ全てがコストが5点以上の[月]キャラの場合、相手キャラ1体にDMG-1する。",
       "reason": "no parser rule matched"
     }
   ]

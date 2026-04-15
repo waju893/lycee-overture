@@ -29,18 +29,6 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0126",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[相手キャラ全てにDP-2する。]]",
-      "actions": [
-        {
-          "type": "modifyStat",
-          "stat": "dp",
-          "amount": -2
-        }
-      ]
-    },
-    {
       "header": "誘発",
       "timing": "unknown",
       "originalLine": "[誘発] このキャラが攻撃したとき、相手キャラ全てにDP-1する。",
@@ -61,9 +49,13 @@
       "[誘発] このキャラが攻撃したとき、相手キャラ全てにDP-1する。"
     ],
     "matchedRuleIds": [
-      "modifyStat",
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[相手キャラ全てにDP-2する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

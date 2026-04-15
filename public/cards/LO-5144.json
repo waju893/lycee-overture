@@ -40,7 +40,7 @@
             "trash"
           ],
           "match": {
-            "exactName": "ノスリ"
+            "exactName": "うたわれるもの シリーズ"
           },
           "min": 0,
           "max": 1,

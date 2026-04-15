@@ -30,7 +30,6 @@
     {
       "header": "誘発",
       "timing": "onEnterFromHand",
-      "triggerText": "このキャラが手札から登場したとき",
       "originalLine": "[誘発] このキャラが手札から登場したときまたはターン開始時、コストが3点以上の味方キャラ1体にAP+2またはDP+2する。",
       "actions": [
         {

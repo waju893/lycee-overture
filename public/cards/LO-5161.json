@@ -31,7 +31,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "[リカバリー:[味方キャラが1体の場合、1枚ドローする。]]",
+      "originalLine": "・1枚ドローする。自分にシールド+2する。",
       "actions": [
         {
           "type": "draw",
@@ -40,10 +40,37 @@
       ]
     },
     {
-      "header": "誘発",
-      "timing": "onEnter",
-      "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。・1枚ドローする。自分にシールド+2する。・自分のデッキからコストが2点以下の[日]または<ヤマト>キャラ1体を探し味方AFに登場する。自分の手札のコストが2点以下の[日]または<ヤマト>キャラ1体を無償で登場する。[宣言] [0]:{味方キャラ1体}にAP+1またはDP+1またはSP+1する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「わが道しるべとなりて」または「記憶喪失の青年 ハク」1枚を探し公開して手札に入れる。構築制限:『うたわれるもの シリーズ』",
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "・自分のデッキからコストが2点以下の[日]または<ヤマト>キャラ1体を探し味方AFに登場する。自分の手札のコストが2点以下の[日]または<ヤマト>キャラ1体を無償で登場する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {
+            "kind": "character"
+          },
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "character",
+          "ignoreCost": true
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方キャラ1体}にAP+1またはDP+1またはSP+1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -53,7 +80,8 @@
               "label": "A",
               "actions": [
                 {
-                  "type": "draw",
+                  "type": "modifyStat",
+                  "stat": "ap",
                   "amount": 1
                 }
               ]
@@ -69,16 +97,9 @@
                       "label": "A",
                       "actions": [
                         {
-                          "type": "searchCard",
-                          "owner": "self",
-                          "zones": [
-                            "hand"
-                          ],
-                          "match": {},
-                          "min": 0,
-                          "max": 1,
-                          "storeAs": "lastSearchResult",
-                          "shuffleAfterSearch": false
+                          "type": "modifyStat",
+                          "stat": "dp",
+                          "amount": 1
                         }
                       ]
                     },
@@ -86,82 +107,9 @@
                       "label": "B",
                       "actions": [
                         {
-                          "type": "chooseOne",
-                          "prompt": "하나를 선택한다",
-                          "choices": [
-                            {
-                              "label": "A",
-                              "actions": [
-                                {
-                                  "type": "modifyStat",
-                                  "stat": "ap",
-                                  "amount": 1
-                                }
-                              ]
-                            },
-                            {
-                              "label": "B",
-                              "actions": [
-                                {
-                                  "type": "chooseOne",
-                                  "prompt": "하나를 선택한다",
-                                  "choices": [
-                                    {
-                                      "label": "A",
-                                      "actions": [
-                                        {
-                                          "type": "modifyStat",
-                                          "stat": "dp",
-                                          "amount": 1
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "label": "B",
-                                      "actions": [
-                                        {
-                                          "type": "chooseOne",
-                                          "prompt": "하나를 선택한다",
-                                          "choices": [
-                                            {
-                                              "label": "A",
-                                              "actions": [
-                                                {
-                                                  "type": "modifyStat",
-                                                  "stat": "sp",
-                                                  "amount": 1
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "label": "B",
-                                              "actions": [
-                                                {
-                                                  "type": "searchCard",
-                                                  "owner": "self",
-                                                  "zones": [
-                                                    "deck",
-                                                    "hand"
-                                                  ],
-                                                  "match": {
-                                                    "exactName": "わが道しるべとなりて"
-                                                  },
-                                                  "min": 0,
-                                                  "max": 1,
-                                                  "storeAs": "lastSearchResult",
-                                                  "shuffleAfterSearch": true
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
+                          "type": "modifyStat",
+                          "stat": "sp",
+                          "amount": 1
                         }
                       ]
                     }
@@ -172,19 +120,62 @@
           ]
         }
       ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「わが道しるべとなりて」または「記憶喪失の青年 ハク」1枚を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "わが道しるべとなりて"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[リカバリー:[味方キャラが１体の場合、１枚ドローする。]]\n[誘発] このキャラが登場したとき、以下から１つを選び処理する。\n・１枚ドローする。自分にシールド＋２する。\n・自分のデッキからコストが２点以下の[日]または＜ヤマト＞キャラ１体を探し味方ＡＦに登場する。自分の手札のコストが２点以下の[日]または＜ヤマト＞キャラ１体を無償で登場する。\n[宣言] [0]:{味方キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「わが道しるべとなりて」または「記憶喪失の青年 ハク」１枚を探し公開して手札に入れる。\n構築制限:『うたわれるもの シリーズ』",
-    "normalizedText": "[リカバリー:[味方キャラが1体の場合、1枚ドローする。]]\n[誘発] このキャラが登場したとき、以下から1つを選び処理する。・1枚ドローする。自分にシールド+2する。・自分のデッキからコストが2点以下の[日]または<ヤマト>キャラ1体を探し味方AFに登場する。自分の手札のコストが2点以下の[日]または<ヤマト>キャラ1体を無償で登場する。[宣言] [0]:{味方キャラ1体}にAP+1またはDP+1またはSP+1する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「わが道しるべとなりて」または「記憶喪失の青年 ハク」1枚を探し公開して手札に入れる。構築制限:『うたわれるもの シリーズ』",
+    "normalizedText": "[リカバリー:[味方キャラが1体の場合、1枚ドローする。]]\n[誘発] このキャラが登場したとき、以下から1つを選び処理する。\n・1枚ドローする。自分にシールド+2する。\n・自分のデッキからコストが2点以下の[日]または<ヤマト>キャラ1体を探し味方AFに登場する。自分の手札のコストが2点以下の[日]または<ヤマト>キャラ1体を無償で登場する。\n[宣言] [0]:{味方キャラ1体}にAP+1またはDP+1またはSP+1する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「わが道しるべとなりて」または「記憶喪失の青年 ハク」1枚を探し公開して手札に入れる。\n構築制限:『うたわれるもの シリーズ』",
     "lines": [
       "[リカバリー:[味方キャラが1体の場合、1枚ドローする。]]",
-      "[誘発] このキャラが登場したとき、以下から1つを選び処理する。・1枚ドローする。自分にシールド+2する。・自分のデッキからコストが2点以下の[日]または<ヤマト>キャラ1体を探し味方AFに登場する。自分の手札のコストが2点以下の[日]または<ヤマト>キャラ1体を無償で登場する。[宣言] [0]:{味方キャラ1体}にAP+1またはDP+1またはSP+1する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「わが道しるべとなりて」または「記憶喪失の青年 ハク」1枚を探し公開して手札に入れる。構築制限:『うたわれるもの シリーズ』"
+      "[誘発] このキャラが登場したとき、以下から1つを選び処理する。",
+      "・1枚ドローする。自分にシールド+2する。",
+      "・自分のデッキからコストが2点以下の[日]または<ヤマト>キャラ1体を探し味方AFに登場する。自分の手札のコストが2点以下の[日]または<ヤマト>キャラ1体を無償で登場する。",
+      "[宣言] [0]:{味方キャラ1体}にAP+1またはDP+1またはSP+1する。",
+      "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「わが道しるべとなりて」または「記憶喪失の青年 ハク」1枚を探し公開して手札に入れる。",
+      "構築制限:『うたわれるもの シリーズ』"
     ],
     "matchedRuleIds": [
       "draw",
-      "chooseOne"
+      "searchCard+freeUse",
+      "chooseOne",
+      "searchCard"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[味方キャラが1体の場合、1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『うたわれるもの シリーズ』",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

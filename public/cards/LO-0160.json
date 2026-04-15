@@ -27,20 +27,7 @@
   "text": "[エンゲージ:[相手キャラ１体にＤＰ－２する。]]\n[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}を行動済みにする。",
   "textKr": "[エンゲージ:[相手キャラ１体にＤＰ－２する。]]\n[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}を行動済みにする。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0160",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[相手キャラ1体にDP-2する。]]",
-      "actions": [
-        {
-          "type": "modifyStat",
-          "stat": "dp",
-          "amount": -2
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[相手キャラ１体にＤＰ－２する。]]\n[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ１体}を行動済みにする。",
     "normalizedText": "[エンゲージ:[相手キャラ1体にDP-2する。]]\n[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ1体}を行動済みにする。",
@@ -48,11 +35,13 @@
       "[エンゲージ:[相手キャラ1体にDP-2する。]]",
       "[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ1体}を行動済みにする。"
     ],
-    "matchedRuleIds": [
-      "modifyStat"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[相手キャラ1体にDP-2する。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[宣言] [このキャラを破棄する。]:このターン中、味方キャラがエンゲージ登場している場合、{キャラ1体}を行動済みにする。",
       "reason": "no parser rule matched"

@@ -28,7 +28,14 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnterFromHand",
+      "timing": "unknown",
+      "conditionText": "自ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "self"
+        }
+      ],
       "originalLine": "[誘発] 自ターン中、コストが3点以上の味方[月]キャラが手札から登場したとき、1枚ドローする。",
       "actions": [
         {

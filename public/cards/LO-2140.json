@@ -48,7 +48,7 @@
       "自ターン中に使用する。味方キャラ全てにAP+3・DP+3する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "condition:selfTurn"
     ]
   },
   "unresolvedTextLines": []

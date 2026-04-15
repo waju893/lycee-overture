@@ -26,7 +26,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ1体を探し公開して手札に入れる。構築制限:『WHITE ALBUM2』",
+      "originalLine": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ1体を探し公開して手札に入れる。",
       "actions": [
         {
           "type": "searchCard",
@@ -46,13 +46,19 @@
   ],
   "parseMeta": {
     "originalText": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ１体を探し公開して手札に入れる。\n構築制限:『WHITE ALBUM2』",
-    "normalizedText": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ1体を探し公開して手札に入れる。構築制限:『WHITE ALBUM2』",
+    "normalizedText": "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ1体を探し公開して手札に入れる。\n構築制限:『WHITE ALBUM2』",
     "lines": [
-      "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ1体を探し公開して手札に入れる。構築制限:『WHITE ALBUM2』"
+      "自ターン中に使用する。バトル中に使用できない。自分のデッキからキャラ1体を探し公開して手札に入れる。",
+      "構築制限:『WHITE ALBUM2』"
     ],
     "matchedRuleIds": [
-      "searchCard"
+      "condition:selfTurn"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:『WHITE ALBUM2』",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

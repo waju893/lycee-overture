@@ -27,8 +27,7 @@
   "parsedEffectsDraft": [
     {
       "header": "unknown",
-      "timing": "onEnter",
-      "triggerText": "ターン終了時",
+      "timing": "onTurnEnd",
       "originalLine": "ターン終了時まで、次にコストが4点以下の味方キャラを相手の効果で破棄したとき、ゴミ箱のそのキャラを無償で登場する。登場したとき、相手は1枚ドローできる。",
       "actions": [
         {

@@ -28,7 +28,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] このキャラが味方[AL][花]キャラの能力で登場したとき、自分のデッキの上のカード5枚を見て、そのうち1枚を手札に入れる。デッキをシャッフルする。",
       "actions": [
         {

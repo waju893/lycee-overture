@@ -29,7 +29,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnterFromHand",
+      "timing": "unknown",
       "originalLine": "[誘発] コストが3点以上の味方[日]キャラが手札から登場したとき、このキャラにAP+1・DP+1・DMG+1する。",
       "actions": [
         {

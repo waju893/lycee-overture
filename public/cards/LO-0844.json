@@ -31,7 +31,7 @@
     {
       "header": "誘発",
       "timing": "unknown",
-      "originalLine": "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1・DMG+1する。構築制限:神姫PROJECT([KHP])",
+      "originalLine": "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1・DMG+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,13 +43,19 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] このキャラでサポートをしたとき、対象のキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
-    "normalizedText": "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1・DMG+1する。構築制限:神姫PROJECT([KHP])",
+    "normalizedText": "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1・DMG+1する。\n構築制限:神姫PROJECT([KHP])",
     "lines": [
-      "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1・DMG+1する。構築制限:神姫PROJECT([KHP])"
+      "[誘発] このキャラでサポートをしたとき、対象のキャラにAP+1・DP+1・DMG+1する。",
+      "構築制限:神姫PROJECT([KHP])"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:神姫PROJECT([KHP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

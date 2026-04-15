@@ -31,7 +31,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] 味方『あくまで、これは~の物語』キャラが登場したとき、このキャラにAP+2・DP+2する。",
       "actions": [
         {

@@ -30,7 +30,19 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:このキャラにAP+2・DP-2する。[手札宣言] [無無]:{味方キャラ1体}にAP+2・DP-2する。",
+      "originalLine": "[宣言] [0]:このキャラにAP+2・DP-2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [無無]:{味方キャラ1体}にAP+2・DP-2する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -42,12 +54,14 @@
   ],
   "parseMeta": {
     "originalText": "[アグレッシブ]\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。\n[手札宣言] [無無]:{味方キャラ１体}にＡＰ＋２・ＤＰ－２する。",
-    "normalizedText": "[アグレッシブ]\n[宣言] [0]:このキャラにAP+2・DP-2する。[手札宣言] [無無]:{味方キャラ1体}にAP+2・DP-2する。",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:このキャラにAP+2・DP-2する。\n[手札宣言] [無無]:{味方キャラ1体}にAP+2・DP-2する。",
     "lines": [
       "[アグレッシブ]",
-      "[宣言] [0]:このキャラにAP+2・DP-2する。[手札宣言] [無無]:{味方キャラ1体}にAP+2・DP-2する。"
+      "[宣言] [0]:このキャラにAP+2・DP-2する。",
+      "[手札宣言] [無無]:{味方キャラ1体}にAP+2・DP-2する。"
     ],
     "matchedRuleIds": [
+      "modifyStat",
       "modifyStat"
     ]
   },

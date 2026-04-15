@@ -32,7 +32,7 @@
       "header": "誘発",
       "timing": "onEnterFromHand",
       "triggerText": "このキャラが手札から登場したとき",
-      "originalLine": "[誘発] このキャラが手札から登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:『SHUFFLE! エピソード2』",
+      "originalLine": "[誘発] このキャラが手札から登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。",
       "actions": [
         {
           "type": "searchCard",
@@ -52,10 +52,11 @@
   ],
   "parseMeta": {
     "originalText": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のデッキからＥＸが２のキャラ１体を探し公開して手札に入れる。\n構築制限:『SHUFFLE! エピソード2』",
-    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:『SHUFFLE! エピソード2』",
+    "normalizedText": "[ステップ:[0]]\n[誘発] このキャラが手札から登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。\n構築制限:『SHUFFLE! エピソード2』",
     "lines": [
       "[ステップ:[0]]",
-      "[誘発] このキャラが手札から登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。構築制限:『SHUFFLE! エピソード2』"
+      "[誘発] このキャラが手札から登場したとき、自分のデッキからEXが2のキャラ1体を探し公開して手札に入れる。",
+      "構築制限:『SHUFFLE! エピソード2』"
     ],
     "matchedRuleIds": [
       "searchCard"
@@ -64,6 +65,10 @@
   "unresolvedTextLines": [
     {
       "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『SHUFFLE! エピソード2』",
       "reason": "no parser rule matched"
     }
   ]

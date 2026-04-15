@@ -28,15 +28,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[宣言] [0]:自ターン中に使用する。{相手キャラ１体}はターン終了時まで[ペナルティ:[自分のデッキを２枚破棄する。]]を得る。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[宣言] [0]:自ターン中に使用する。{相手キャラ1体}はターン終了時まで[ペナルティ:[自分のデッキを2枚破棄する。]]を得る。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。{相手キャラ1体}はターン終了時まで[ペナルティ:[自分のデッキを2枚破棄する。]]を得る。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
-      "[宣言] [0]:自ターン中に使用する。{相手キャラ1体}はターン終了時まで[ペナルティ:[自分のデッキを2枚破棄する。]]を得る。構築制限:Fate/Grand Order([TM])"
+      "[宣言] [0]:自ターン中に使用する。{相手キャラ1体}はターン終了時まで[ペナルティ:[自分のデッキを2枚破棄する。]]を得る。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[宣言] [0]:自ターン中に使用する。{相手キャラ1体}はターン終了時まで[ペナルティ:[自分のデッキを2枚破棄する。]]を得る。構築制限:Fate/Grand Order([TM])",
+      "line": "[宣言] [0]:自ターン中に使用する。{相手キャラ1体}はターン終了時まで[ペナルティ:[自分のデッキを2枚破棄する。]]を得る。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

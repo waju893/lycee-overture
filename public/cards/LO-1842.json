@@ -32,7 +32,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [無]:{味方「ToHeart2」キャラ1体}にAP+1・DP+1する。構築制限:アクアプラス([AQP])",
+      "originalLine": "[宣言] [無]:{味方「ToHeart2」キャラ1体}にAP+1・DP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -44,10 +44,11 @@
   ],
   "parseMeta": {
     "originalText": "[アグレッシブ]\n[宣言] [無]:{味方「ToHeart2」キャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:アクアプラス（[AQP]）",
-    "normalizedText": "[アグレッシブ]\n[宣言] [無]:{味方「ToHeart2」キャラ1体}にAP+1・DP+1する。構築制限:アクアプラス([AQP])",
+    "normalizedText": "[アグレッシブ]\n[宣言] [無]:{味方「ToHeart2」キャラ1体}にAP+1・DP+1する。\n構築制限:アクアプラス([AQP])",
     "lines": [
       "[アグレッシブ]",
-      "[宣言] [無]:{味方「ToHeart2」キャラ1体}にAP+1・DP+1する。構築制限:アクアプラス([AQP])"
+      "[宣言] [無]:{味方「ToHeart2」キャラ1体}にAP+1・DP+1する。",
+      "構築制限:アクアプラス([AQP])"
     ],
     "matchedRuleIds": [
       "modifyStat"
@@ -56,6 +57,10 @@
   "unresolvedTextLines": [
     {
       "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:アクアプラス([AQP])",
       "reason": "no parser rule matched"
     }
   ]

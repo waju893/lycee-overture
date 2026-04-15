@@ -29,10 +29,10 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1894",
   "parsedEffectsDraft": [
     {
-      "header": "宣言",
+      "header": "誘発",
       "timing": "onTurnStart",
       "triggerText": "ターン開始時",
-      "originalLine": "[宣言] [月]:{相手キャラ1体}は元の能力1つを失う。この能力は失われる。[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -42,9 +42,20 @@
               "label": "A",
               "actions": [
                 {
+                  "type": "chooseTarget",
+                  "selector": {
+                    "owner": "opponent",
+                    "kind": "character",
+                    "count": 1
+                  },
+                  "storeAs": "selectedTarget",
+                  "prompt": "상대 캐릭터 1체를 선택한다"
+                },
+                {
                   "type": "modifyStat",
                   "stat": "ap",
-                  "amount": -1
+                  "amount": -1,
+                  "targetRef": "selectedTarget"
                 }
               ]
             },
@@ -65,10 +76,11 @@
   ],
   "parseMeta": {
     "originalText": "[ボーナス:[相手のデッキを１枚破棄する。]]\n[宣言] [月]:{相手キャラ１体}は元の能力１つを失う。この能力は失われる。\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。",
-    "normalizedText": "[ボーナス:[相手のデッキを1枚破棄する。]]\n[宣言] [月]:{相手キャラ1体}は元の能力1つを失う。この能力は失われる。[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
+    "normalizedText": "[ボーナス:[相手のデッキを1枚破棄する。]]\n[宣言] [月]:{相手キャラ1体}は元の能力1つを失う。この能力は失われる。\n[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
     "lines": [
       "[ボーナス:[相手のデッキを1枚破棄する。]]",
-      "[宣言] [月]:{相手キャラ1体}は元の能力1つを失う。この能力は失われる。[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。"
+      "[宣言] [月]:{相手キャラ1体}は元の能力1つを失う。この能力は失われる。",
+      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。"
     ],
     "matchedRuleIds": [
       "chooseOne"
@@ -77,6 +89,10 @@
   "unresolvedTextLines": [
     {
       "line": "[ボーナス:[相手のデッキを1枚破棄する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [月]:{相手キャラ1体}は元の能力1つを失う。この能力は失われる。",
       "reason": "no parser rule matched"
     }
   ]

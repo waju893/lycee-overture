@@ -27,20 +27,7 @@
   "text": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[誘発] このキャラがダウンしたとき、対戦キャラを破棄する。",
   "textKr": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[誘発] このキャラがダウンしたとき、対戦キャラを破棄する。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0143",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[味方キャラ1体にDP+2する。]]",
-      "actions": [
-        {
-          "type": "modifyStat",
-          "stat": "dp",
-          "amount": 2
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[味方キャラ１体にＤＰ＋２する。]]\n[誘発] このキャラがダウンしたとき、対戦キャラを破棄する。",
     "normalizedText": "[エンゲージ:[味方キャラ1体にDP+2する。]]\n[誘発] このキャラがダウンしたとき、対戦キャラを破棄する。",
@@ -48,11 +35,13 @@
       "[エンゲージ:[味方キャラ1体にDP+2する。]]",
       "[誘発] このキャラがダウンしたとき、対戦キャラを破棄する。"
     ],
-    "matchedRuleIds": [
-      "modifyStat"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[味方キャラ1体にDP+2する。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[誘発] このキャラがダウンしたとき、対戦キャラを破棄する。",
       "reason": "no parser rule matched"

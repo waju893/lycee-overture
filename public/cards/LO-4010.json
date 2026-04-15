@@ -29,7 +29,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] このキャラが効果以外で登場したとき、自分のゴミ箱のカード1枚を自分の「わるいこと」置き場に置ける。自分の「わるいこと」置き場の枚数が3枚以上の場合、1枚ドローする。",
       "actions": [
         {

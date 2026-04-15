@@ -27,15 +27,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "{ＡＰまたはＤＰが元の値より低いキャラ１体}を行動済みにする。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "{APまたはDPが元の値より低いキャラ1体}を行動済みにする。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "{APまたはDPが元の値より低いキャラ1体}を行動済みにする。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
-      "{APまたはDPが元の値より低いキャラ1体}を行動済みにする。構築制限:Fate/Grand Order([TM])"
+      "{APまたはDPが元の値より低いキャラ1体}を行動済みにする。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "{APまたはDPが元の値より低いキャラ1体}を行動済みにする。構築制限:Fate/Grand Order([TM])",
+      "line": "{APまたはDPが元の値より低いキャラ1体}を行動済みにする。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

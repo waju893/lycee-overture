@@ -32,7 +32,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。[宣言] [0]:自分の「記憶遡行」置き場の枚数が5枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。",
+      "originalLine": "[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -52,63 +52,57 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "chooseOne",
-                  "prompt": "하나를 선택한다",
-                  "choices": [
-                    {
-                      "label": "A",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": 1
-                        }
-                      ]
-                    },
-                    {
-                      "label": "B",
-                      "actions": [
-                        {
-                          "type": "searchCard",
-                          "owner": "self",
-                          "zones": [
-                            "deck"
-                          ],
-                          "match": {
-                            "exactName": "シュミクラム",
-                            "kind": "item"
-                          },
-                          "min": 0,
-                          "max": 1,
-                          "storeAs": "lastSearchResult",
-                          "shuffleAfterSearch": true
-                        },
-                        {
-                          "type": "freeUse",
-                          "sourceRef": "lastSearchResult",
-                          "useKind": "item",
-                          "ignoreCost": true
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 1
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自分の「記憶遡行」置き場の枚数が5枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "記憶遡行",
+            "kind": "item"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "item",
+          "ignoreCost": true
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[ステップ:[0]]\n[宣言] [0]:{コストが５点以上の味方[宙]キャラ１体}にＡＰ＋１またはＤＰ＋１する。\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が５枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」１枚を探しこのキャラに無償で装備する。",
-    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。[宣言] [0]:自分の「記憶遡行」置き場の枚数が5枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。\n[宣言] [0]:自分の「記憶遡行」置き場の枚数が5枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。",
     "lines": [
       "[ステップ:[0]]",
-      "[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。[宣言] [0]:自分の「記憶遡行」置き場の枚数が5枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。"
+      "[宣言] [0]:{コストが5点以上の味方[宙]キャラ1体}にAP+1またはDP+1する。",
+      "[宣言] [0]:自分の「記憶遡行」置き場の枚数が5枚以上の場合、自分のゴミ箱または自分のデッキから「シュミクラム」1枚を探しこのキャラに無償で装備する。"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "chooseOne",
+      "searchCard+freeUse"
     ]
   },
   "unresolvedTextLines": [

@@ -28,19 +28,7 @@
   "text": "[エンゲージ:[１枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
   "textKr": "[エンゲージ:[１枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0129",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[1枚ドローする。]][アグレッシブ]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[１枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
     "normalizedText": "[エンゲージ:[1枚ドローする。]][アグレッシブ]\n[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
@@ -48,11 +36,13 @@
       "[エンゲージ:[1枚ドローする。]][アグレッシブ]",
       "[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。"
     ],
-    "matchedRuleIds": [
-      "draw"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[1枚ドローする。]][アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[常時] このキャラの攻撃で相手は可能なら防御キャラを指定する。",
       "reason": "no parser rule matched"

@@ -30,10 +30,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[ガッツ:[D2][宙宙宙]]\n[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[ガッツ:[D2][宙宙宙]]\n[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[ガッツ:[D2][宙宙宙]]\n[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
       "[ガッツ:[D2][宙宙宙]]",
-      "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。構築制限:Fate/Grand Order([TM])"
+      "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": []
   },
@@ -43,7 +44,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。構築制限:Fate/Grand Order([TM])",
+      "line": "[誘発] ターン開始時、このキャラを未行動にする。このキャラをこのキャラと同列の味方フィールドに移動できる。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

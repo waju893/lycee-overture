@@ -26,19 +26,7 @@
   "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、自分のゴミ箱の「ザ・実験」１枚を無償で味方キャラ１体に装備する。",
   "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、自分のゴミ箱の「ザ・実験」１枚を無償で味方キャラ１体に装備する。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0197",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[１枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、自分のゴミ箱の「ザ・実験」１枚を無償で味方キャラ１体に装備する。",
     "normalizedText": "[エンゲージ:[1枚ドローする。]]\n[誘発] 味方キャラがエンゲージ登場したとき、自分のゴミ箱の「ザ・実験」1枚を無償で味方キャラ1体に装備する。",
@@ -46,11 +34,13 @@
       "[エンゲージ:[1枚ドローする。]]",
       "[誘発] 味方キャラがエンゲージ登場したとき、自分のゴミ箱の「ザ・実験」1枚を無償で味方キャラ1体に装備する。"
     ],
-    "matchedRuleIds": [
-      "draw"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[誘発] 味方キャラがエンゲージ登場したとき、自分のゴミ箱の「ザ・実験」1枚を無償で味方キャラ1体に装備する。",
       "reason": "no parser rule matched"

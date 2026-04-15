@@ -31,7 +31,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにAP+1・DP+1・DMG+2する。[宣言] [雪]:このキャラにDMG+3する。[宣言] [雪][D1]:{味方[雪]キャラ1体}にDP+2する。構築制限:[AIG]",
+      "originalLine": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにAP+1・DP+1・DMG+2する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -39,17 +39,42 @@
           "amount": 1
         }
       ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [雪][D1]:{味方[雪]キャラ1体}にDP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 2
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋２する。\n[宣言] [雪]:このキャラにＤＭＧ＋３する。\n[宣言] [雪][D1]:{味方[雪]キャラ１体}にＤＰ＋２する。\n構築制限:[AIG]",
-    "normalizedText": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにAP+1・DP+1・DMG+2する。[宣言] [雪]:このキャラにDMG+3する。[宣言] [雪][D1]:{味方[雪]キャラ1体}にDP+2する。構築制限:[AIG]",
+    "normalizedText": "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにAP+1・DP+1・DMG+2する。\n[宣言] [雪]:このキャラにDMG+3する。\n[宣言] [雪][D1]:{味方[雪]キャラ1体}にDP+2する。\n構築制限:[AIG]",
     "lines": [
-      "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにAP+1・DP+1・DMG+2する。[宣言] [雪]:このキャラにDMG+3する。[宣言] [雪][D1]:{味方[雪]キャラ1体}にDP+2する。構築制限:[AIG]"
+      "[宣言] [0]:サブネームに「天使」を含む味方[雪]キャラ全てにAP+1・DP+1・DMG+2する。",
+      "[宣言] [雪]:このキャラにDMG+3する。",
+      "[宣言] [雪][D1]:{味方[雪]キャラ1体}にDP+2する。",
+      "構築制限:[AIG]"
     ],
     "matchedRuleIds": [
+      "modifyStat",
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[宣言] [雪]:このキャラにDMG+3する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[AIG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

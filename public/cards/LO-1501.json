@@ -30,8 +30,8 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
-      "originalLine": "[誘発] このキャラを除く味方キャラが登場したとき、味方キャラ1体にAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラを除く味方キャラが登場したとき、味方キャラ1体にAP+1・DP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,10 +43,11 @@
   ],
   "parseMeta": {
     "originalText": "[サイドステップ:[0]]\n[誘発] このキャラを除く味方キャラが登場したとき、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
-    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラを除く味方キャラが登場したとき、味方キャラ1体にAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラを除く味方キャラが登場したとき、味方キャラ1体にAP+1・DP+1する。\n構築制限:千年戦争アイギス([AIG])",
     "lines": [
       "[サイドステップ:[0]]",
-      "[誘発] このキャラを除く味方キャラが登場したとき、味方キャラ1体にAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])"
+      "[誘発] このキャラを除く味方キャラが登場したとき、味方キャラ1体にAP+1・DP+1する。",
+      "構築制限:千年戦争アイギス([AIG])"
     ],
     "matchedRuleIds": [
       "modifyStat"
@@ -55,6 +56,10 @@
   "unresolvedTextLines": [
     {
       "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:千年戦争アイギス([AIG])",
       "reason": "no parser rule matched"
     }
   ]

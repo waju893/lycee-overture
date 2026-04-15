@@ -27,10 +27,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[サポーター:[D1]]\n[宣言] [0]:{ＤＭＧが２以下の味方[花]キャラ１体}にＤＭＧ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
-    "normalizedText": "[サポーター:[D1]]\n[宣言] [0]:{DMGが2以下の味方[花]キャラ1体}にDMG+1する。構築制限:とある魔術の禁書目録([TOA])",
+    "normalizedText": "[サポーター:[D1]]\n[宣言] [0]:{DMGが2以下の味方[花]キャラ1体}にDMG+1する。\n構築制限:とある魔術の禁書目録([TOA])",
     "lines": [
       "[サポーター:[D1]]",
-      "[宣言] [0]:{DMGが2以下の味方[花]キャラ1体}にDMG+1する。構築制限:とある魔術の禁書目録([TOA])"
+      "[宣言] [0]:{DMGが2以下の味方[花]キャラ1体}にDMG+1する。",
+      "構築制限:とある魔術の禁書目録([TOA])"
     ],
     "matchedRuleIds": []
   },
@@ -40,7 +41,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[宣言] [0]:{DMGが2以下の味方[花]キャラ1体}にDMG+1する。構築制限:とある魔術の禁書目録([TOA])",
+      "line": "[宣言] [0]:{DMGが2以下の味方[花]キャラ1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:とある魔術の禁書目録([TOA])",
       "reason": "no parser rule matched"
     }
   ]

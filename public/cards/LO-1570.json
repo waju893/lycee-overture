@@ -31,7 +31,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "{味方[月]キャラ1体}を横に置く。横のそのキャラを無償で登場する。そのキャラにAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])",
+      "originalLine": "{味方[月]キャラ1体}を横に置く。横のそのキャラを無償で登場する。そのキャラにAP+1・DP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,13 +43,19 @@
   ],
   "parseMeta": {
     "originalText": "{味方[月]キャラ１体}を横に置く。横のそのキャラを無償で登場する。そのキャラにＡＰ＋１・ＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
-    "normalizedText": "{味方[月]キャラ1体}を横に置く。横のそのキャラを無償で登場する。そのキャラにAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])",
+    "normalizedText": "{味方[月]キャラ1体}を横に置く。横のそのキャラを無償で登場する。そのキャラにAP+1・DP+1する。\n構築制限:千年戦争アイギス([AIG])",
     "lines": [
-      "{味方[月]キャラ1体}を横に置く。横のそのキャラを無償で登場する。そのキャラにAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])"
+      "{味方[月]キャラ1体}を横に置く。横のそのキャラを無償で登場する。そのキャラにAP+1・DP+1する。",
+      "構築制限:千年戦争アイギス([AIG])"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:千年戦争アイギス([AIG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -45,7 +45,7 @@
       "自ターン中に使用する。バトル中に使用できない。コストが2点以下の味方[雪]キャラ全てにAP+2・DP+2・DMG+1する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "condition:selfTurn"
     ]
   },
   "unresolvedTextLines": []

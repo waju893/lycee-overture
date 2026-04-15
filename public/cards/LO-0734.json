@@ -30,10 +30,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[リーダー]\n[誘発] このキャラにサポートをしたとき、味方キャラ全てにＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
-    "normalizedText": "[リーダー]\n[誘発] このキャラにサポートをしたとき、味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])",
+    "normalizedText": "[リーダー]\n[誘発] このキャラにサポートをしたとき、味方キャラ全てにDMG+1する。\n構築制限:神姫PROJECT([KHP])",
     "lines": [
       "[リーダー]",
-      "[誘発] このキャラにサポートをしたとき、味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])"
+      "[誘発] このキャラにサポートをしたとき、味方キャラ全てにDMG+1する。",
+      "構築制限:神姫PROJECT([KHP])"
     ],
     "matchedRuleIds": []
   },
@@ -43,7 +44,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])",
+      "line": "[誘発] このキャラにサポートをしたとき、味方キャラ全てにDMG+1する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:神姫PROJECT([KHP])",
       "reason": "no parser rule matched"
     }
   ]

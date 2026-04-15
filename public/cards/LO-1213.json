@@ -28,7 +28,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:{DPが0以下の味方キャラ1体}にDP+1する。構築制限:ビジュアルアーツ([VA])",
+      "originalLine": "[宣言] [0]:{DPが0以下の味方キャラ1体}にDP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -40,13 +40,19 @@
   ],
   "parseMeta": {
     "originalText": "[宣言] [0]:{ＤＰが０以下の味方キャラ１体}にＤＰ＋１する。\n構築制限:ビジュアルアーツ（[VA]）",
-    "normalizedText": "[宣言] [0]:{DPが0以下の味方キャラ1体}にDP+1する。構築制限:ビジュアルアーツ([VA])",
+    "normalizedText": "[宣言] [0]:{DPが0以下の味方キャラ1体}にDP+1する。\n構築制限:ビジュアルアーツ([VA])",
     "lines": [
-      "[宣言] [0]:{DPが0以下の味方キャラ1体}にDP+1する。構築制限:ビジュアルアーツ([VA])"
+      "[宣言] [0]:{DPが0以下の味方キャラ1体}にDP+1する。",
+      "構築制限:ビジュアルアーツ([VA])"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:ビジュアルアーツ([VA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

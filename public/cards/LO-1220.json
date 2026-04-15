@@ -28,7 +28,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [D1]:{味方<リトルバスターズ>キャラ1体}にDP+1する。構築制限:ビジュアルアーツ([VA])",
+      "originalLine": "[宣言] [D1]:{味方<リトルバスターズ>キャラ1体}にDP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -40,10 +40,11 @@
   ],
   "parseMeta": {
     "originalText": "[アシスト]\n[宣言] [D1]:{味方＜リトルバスターズ＞キャラ１体}にＤＰ＋１する。\n構築制限:ビジュアルアーツ（[VA]）",
-    "normalizedText": "[アシスト]\n[宣言] [D1]:{味方<リトルバスターズ>キャラ1体}にDP+1する。構築制限:ビジュアルアーツ([VA])",
+    "normalizedText": "[アシスト]\n[宣言] [D1]:{味方<リトルバスターズ>キャラ1体}にDP+1する。\n構築制限:ビジュアルアーツ([VA])",
     "lines": [
       "[アシスト]",
-      "[宣言] [D1]:{味方<リトルバスターズ>キャラ1体}にDP+1する。構築制限:ビジュアルアーツ([VA])"
+      "[宣言] [D1]:{味方<リトルバスターズ>キャラ1体}にDP+1する。",
+      "構築制限:ビジュアルアーツ([VA])"
     ],
     "matchedRuleIds": [
       "modifyStat"
@@ -52,6 +53,10 @@
   "unresolvedTextLines": [
     {
       "line": "[アシスト]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:ビジュアルアーツ([VA])",
       "reason": "no parser rule matched"
     }
   ]

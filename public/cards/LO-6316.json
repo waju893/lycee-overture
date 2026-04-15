@@ -27,7 +27,14 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
+      "conditionText": "自ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "self"
+        }
+      ],
       "originalLine": "[誘発] 自ターン中、味方キャラが自分の効果で登場したとき、味方キャラ1体にAP+2・DP+2する。",
       "actions": [
         {

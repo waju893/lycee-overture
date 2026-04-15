@@ -33,9 +33,20 @@
       "originalLine": "[誘発] このキャラが登場したとき、相手キャラ1体にSP-1する。",
       "actions": [
         {
+          "type": "chooseTarget",
+          "selector": {
+            "owner": "opponent",
+            "kind": "character",
+            "count": 1
+          },
+          "storeAs": "selectedTarget",
+          "prompt": "상대 캐릭터 1체를 선택한다"
+        },
+        {
           "type": "modifyStat",
           "stat": "sp",
-          "amount": -1
+          "amount": -1,
+          "targetRef": "selectedTarget"
         }
       ]
     }
@@ -47,7 +58,7 @@
       "[誘発] このキャラが登場したとき、相手キャラ1体にSP-1する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "selector:opponentCharacterOne"
     ]
   },
   "unresolvedTextLines": []

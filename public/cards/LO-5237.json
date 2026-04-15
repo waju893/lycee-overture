@@ -31,7 +31,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [月月]:このキャラが未行動の場合、自分のゴミ箱または自分のデッキから「孫呉の血脈」1枚を探し味方フィールドに無償で配置する。[宣言] [月月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「鉄弓党の首領 黄蓋・祭」または「呉の役人 程普・粋怜」1体を探し登場する。この能力は失われる。[手札宣言] [月月月]:{相手キャラ1体}にAP-4・DP-4する。構築制限:【[月]】【『真・恋姫†夢想』】",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -51,95 +51,101 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "chooseOne",
-                  "prompt": "하나를 선택한다",
-                  "choices": [
-                    {
-                      "label": "A",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": -1
-                        }
-                      ]
-                    },
-                    {
-                      "label": "B",
-                      "actions": [
-                        {
-                          "type": "chooseOne",
-                          "prompt": "하나를 선택한다",
-                          "choices": [
-                            {
-                              "label": "A",
-                              "actions": [
-                                {
-                                  "type": "searchCard",
-                                  "owner": "self",
-                                  "zones": [
-                                    "deck",
-                                    "trash"
-                                  ],
-                                  "match": {
-                                    "exactName": "孫呉の血脈",
-                                    "kind": "area"
-                                  },
-                                  "min": 0,
-                                  "max": 1,
-                                  "storeAs": "lastSearchResult",
-                                  "shuffleAfterSearch": true
-                                },
-                                {
-                                  "type": "freeUse",
-                                  "sourceRef": "lastSearchResult",
-                                  "useKind": "area",
-                                  "ignoreCost": true
-                                }
-                              ]
-                            },
-                            {
-                              "label": "B",
-                              "actions": [
-                                {
-                                  "type": "searchCard",
-                                  "owner": "opponent",
-                                  "zones": [
-                                    "deck",
-                                    "hand"
-                                  ],
-                                  "match": {
-                                    "exactName": "鉄弓党の首領 黄蓋・祭"
-                                  },
-                                  "min": 0,
-                                  "max": 1,
-                                  "storeAs": "lastSearchResult",
-                                  "shuffleAfterSearch": true
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月月]:このキャラが未行動の場合、自分のゴミ箱または自分のデッキから「孫呉の血脈」1枚を探し味方フィールドに無償で配置する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "孫呉の血脈",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [月月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「鉄弓党の首領 黄蓋・祭」または「呉の役人 程普・粋怜」1体を探し登場する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "鉄弓党の首領 黄蓋・祭"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [月月月]:{相手キャラ1体}にAP-4・DP-4する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -4
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [月月]:このキャラが未行動の場合、自分のゴミ箱または自分のデッキから「孫呉の血脈」１枚を探し味方フィールドに無償で配置する。\n[宣言] [月月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「鉄弓党の首領 黄蓋・祭」または「呉の役人 程普・粋怜」１体を探し登場する。この能力は失われる。\n[手札宣言] [月月月]:{相手キャラ１体}にＡＰ－４・ＤＰ－４する。\n構築制限:【[月]】【『真・恋姫†夢想』】",
-    "normalizedText": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [月月]:このキャラが未行動の場合、自分のゴミ箱または自分のデッキから「孫呉の血脈」1枚を探し味方フィールドに無償で配置する。[宣言] [月月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「鉄弓党の首領 黄蓋・祭」または「呉の役人 程普・粋怜」1体を探し登場する。この能力は失われる。[手札宣言] [月月月]:{相手キャラ1体}にAP-4・DP-4する。構築制限:【[月]】【『真・恋姫†夢想』】",
+    "normalizedText": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。\n[宣言] [月月]:このキャラが未行動の場合、自分のゴミ箱または自分のデッキから「孫呉の血脈」1枚を探し味方フィールドに無償で配置する。\n[宣言] [月月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「鉄弓党の首領 黄蓋・祭」または「呉の役人 程普・粋怜」1体を探し登場する。この能力は失われる。\n[手札宣言] [月月月]:{相手キャラ1体}にAP-4・DP-4する。\n構築制限:【[月]】【『真・恋姫†夢想』】",
     "lines": [
-      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [月月]:このキャラが未行動の場合、自分のゴミ箱または自分のデッキから「孫呉の血脈」1枚を探し味方フィールドに無償で配置する。[宣言] [月月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「鉄弓党の首領 黄蓋・祭」または「呉の役人 程普・粋怜」1体を探し登場する。この能力は失われる。[手札宣言] [月月月]:{相手キャラ1体}にAP-4・DP-4する。構築制限:【[月]】【『真・恋姫†夢想』】"
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
+      "[宣言] [月月]:このキャラが未行動の場合、自分のゴミ箱または自分のデッキから「孫呉の血脈」1枚を探し味方フィールドに無償で配置する。",
+      "[宣言] [月月]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「鉄弓党の首領 黄蓋・祭」または「呉の役人 程普・粋怜」1体を探し登場する。この能力は失われる。",
+      "[手札宣言] [月月月]:{相手キャラ1体}にAP-4・DP-4する。",
+      "構築制限:【[月]】【『真・恋姫†夢想』】"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "chooseOne",
+      "searchCard+freeUse",
+      "searchCard",
+      "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:【[月]】【『真・恋姫†夢想』】",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

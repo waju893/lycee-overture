@@ -29,20 +29,8 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0156",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[相手キャラ1体にAP-2する。]]",
-      "actions": [
-        {
-          "type": "modifyStat",
-          "stat": "ap",
-          "amount": -2
-        }
-      ]
-    },
-    {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] 味方キャラがエンゲージ登場したとき、相手キャラ1体にAP-2する。",
       "actions": [
         {
@@ -61,9 +49,13 @@
       "[誘発] 味方キャラがエンゲージ登場したとき、相手キャラ1体にAP-2する。"
     ],
     "matchedRuleIds": [
-      "modifyStat",
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[相手キャラ1体にAP-2する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

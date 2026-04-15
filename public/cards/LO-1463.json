@@ -28,19 +28,7 @@
   "text": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:相手キャラの数が味方キャラの数より少ない場合、このキャラにＤＭＧ＋１する。",
   "textKr": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:相手キャラの数が味方キャラの数より少ない場合、このキャラにＤＭＧ＋１する。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1463",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[ペナルティ:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:相手キャラの数が味方キャラの数より少ない場合、このキャラにＤＭＧ＋１する。",
     "normalizedText": "[ペナルティ:[1枚ドローする。]]\n[宣言] [0]:相手キャラの数が味方キャラの数より少ない場合、このキャラにDMG+1する。",
@@ -48,11 +36,13 @@
       "[ペナルティ:[1枚ドローする。]]",
       "[宣言] [0]:相手キャラの数が味方キャラの数より少ない場合、このキャラにDMG+1する。"
     ],
-    "matchedRuleIds": [
-      "draw"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[宣言] [0]:相手キャラの数が味方キャラの数より少ない場合、このキャラにDMG+1する。",
       "reason": "no parser rule matched"

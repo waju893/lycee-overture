@@ -30,7 +30,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [無]:{相手キャラ1体}にSP-1する。構築制限:ゆずソフト",
+      "originalLine": "[宣言] [無]:{相手キャラ1体}にSP-1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -42,13 +42,19 @@
   ],
   "parseMeta": {
     "originalText": "[宣言] [無]:{相手キャラ１体}にＳＰ－１する。\n構築制限:ゆずソフト",
-    "normalizedText": "[宣言] [無]:{相手キャラ1体}にSP-1する。構築制限:ゆずソフト",
+    "normalizedText": "[宣言] [無]:{相手キャラ1体}にSP-1する。\n構築制限:ゆずソフト",
     "lines": [
-      "[宣言] [無]:{相手キャラ1体}にSP-1する。構築制限:ゆずソフト"
+      "[宣言] [無]:{相手キャラ1体}にSP-1する。",
+      "構築制限:ゆずソフト"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

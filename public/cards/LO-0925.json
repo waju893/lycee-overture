@@ -30,7 +30,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:味方キャラ全てにSP+1する。構築制限:オーガスト([AUG])",
+      "originalLine": "[宣言] [0]:味方キャラ全てにSP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -42,10 +42,11 @@
   ],
   "parseMeta": {
     "originalText": "[サポーター:[花]]\n[宣言] [0]:味方キャラ全てにＳＰ＋１する。\n構築制限:オーガスト（[AUG]）",
-    "normalizedText": "[サポーター:[花]]\n[宣言] [0]:味方キャラ全てにSP+1する。構築制限:オーガスト([AUG])",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [0]:味方キャラ全てにSP+1する。\n構築制限:オーガスト([AUG])",
     "lines": [
       "[サポーター:[花]]",
-      "[宣言] [0]:味方キャラ全てにSP+1する。構築制限:オーガスト([AUG])"
+      "[宣言] [0]:味方キャラ全てにSP+1する。",
+      "構築制限:オーガスト([AUG])"
     ],
     "matchedRuleIds": [
       "modifyStat"
@@ -54,6 +55,10 @@
   "unresolvedTextLines": [
     {
       "line": "[サポーター:[花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:オーガスト([AUG])",
       "reason": "no parser rule matched"
     }
   ]

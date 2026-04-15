@@ -47,7 +47,7 @@
       "自ターン中に使用する。{味方キャラ1体}にAP+5・DP+3する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "condition:selfTurn"
     ]
   },
   "unresolvedTextLines": []

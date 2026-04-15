@@ -30,7 +30,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] 味方[花]キャラが登場したとき、コストが3点以上の味方DFキャラが登場していない場合、コストが3点以上の味方[花]キャラ1体にAP+2またはDP+2する。(1ターンに2回まで処理可能)",
       "actions": [
         {

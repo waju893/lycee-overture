@@ -25,28 +25,19 @@
   "text": "[エンゲージ:[１枚ドローする。]]",
   "textKr": "[エンゲージ:[１枚ドローする。]]",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0174",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[１枚ドローする。]]",
     "normalizedText": "[エンゲージ:[1枚ドローする。]]",
     "lines": [
       "[エンゲージ:[1枚ドローする。]]"
     ],
-    "matchedRuleIds": [
-      "draw"
-    ]
+    "matchedRuleIds": []
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -28,19 +28,7 @@
   "text": "[リカバリー:[１枚ドローする。]]\n[宣言] [D1]:自ターン中に使用する。相手キャラの属性が３種類以上の場合、{相手キャラ１体}は元の能力１つを失う。",
   "textKr": "[リカバリー:[１枚ドローする。]]\n[宣言] [D1]:自ターン中に使用する。相手キャラの属性が３種類以上の場合、{相手キャラ１体}は元の能力１つを失う。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2382",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[リカバリー:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[リカバリー:[１枚ドローする。]]\n[宣言] [D1]:自ターン中に使用する。相手キャラの属性が３種類以上の場合、{相手キャラ１体}は元の能力１つを失う。",
     "normalizedText": "[リカバリー:[1枚ドローする。]]\n[宣言] [D1]:自ターン中に使用する。相手キャラの属性が3種類以上の場合、{相手キャラ1体}は元の能力1つを失う。",
@@ -48,11 +36,13 @@
       "[リカバリー:[1枚ドローする。]]",
       "[宣言] [D1]:自ターン中に使用する。相手キャラの属性が3種類以上の場合、{相手キャラ1体}は元の能力1つを失う。"
     ],
-    "matchedRuleIds": [
-      "draw"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[宣言] [D1]:自ターン中に使用する。相手キャラの属性が3種類以上の場合、{相手キャラ1体}は元の能力1つを失う。",
       "reason": "no parser rule matched"

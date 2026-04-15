@@ -25,19 +25,29 @@
   "text": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。ターン終了時まで、このキャラの属性を[宙]にする。",
   "textKr": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。ターン終了時まで、このキャラの属性を[宙]にする。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3283",
-  "parsedEffectsDraft": [],
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onTurnEnd",
+      "originalLine": "[宣言] [0]:このキャラにAP+2・DP-2する。ターン終了時まで、このキャラの属性を[宙]にする。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
   "parseMeta": {
     "originalText": "[宣言] [0]:このキャラにＡＰ＋２・ＤＰ－２する。ターン終了時まで、このキャラの属性を[宙]にする。",
     "normalizedText": "[宣言] [0]:このキャラにAP+2・DP-2する。ターン終了時まで、このキャラの属性を[宙]にする。",
     "lines": [
       "[宣言] [0]:このキャラにAP+2・DP-2する。ターン終了時まで、このキャラの属性を[宙]にする。"
     ],
-    "matchedRuleIds": []
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
   },
-  "unresolvedTextLines": [
-    {
-      "line": "[宣言] [0]:このキャラにAP+2・DP-2する。ターン終了時まで、このキャラの属性を[宙]にする。",
-      "reason": "no parser rule matched"
-    }
-  ]
+  "unresolvedTextLines": []
 }

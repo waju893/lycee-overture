@@ -29,23 +29,9 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1091",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[このキャラと同列の相手キャラ1体を手札に入れる。]]",
-      "actions": [
-        {
-          "type": "moveCard",
-          "owner": "opponent",
-          "from": "field",
-          "to": "hand",
-          "count": 1
-        }
-      ]
-    },
-    {
       "header": "誘発",
       "timing": "unknown",
-      "originalLine": "[誘発] このキャラをエンゲージ登場によって破棄したとき、1枚ドローする。相手のデッキを2枚破棄する。構築制限:ガールズ&パンツァー([GUP])",
+      "originalLine": "[誘発] このキャラをエンゲージ登場によって破棄したとき、1枚ドローする。相手のデッキを2枚破棄する。",
       "actions": [
         {
           "type": "draw",
@@ -56,15 +42,24 @@
   ],
   "parseMeta": {
     "originalText": "[エンゲージ:[このキャラと同列の相手キャラ１体を手札に入れる。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、１枚ドローする。相手のデッキを２枚破棄する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
-    "normalizedText": "[エンゲージ:[このキャラと同列の相手キャラ1体を手札に入れる。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、1枚ドローする。相手のデッキを2枚破棄する。構築制限:ガールズ&パンツァー([GUP])",
+    "normalizedText": "[エンゲージ:[このキャラと同列の相手キャラ1体を手札に入れる。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、1枚ドローする。相手のデッキを2枚破棄する。\n構築制限:ガールズ&パンツァー([GUP])",
     "lines": [
       "[エンゲージ:[このキャラと同列の相手キャラ1体を手札に入れる。]]",
-      "[誘発] このキャラをエンゲージ登場によって破棄したとき、1枚ドローする。相手のデッキを2枚破棄する。構築制限:ガールズ&パンツァー([GUP])"
+      "[誘発] このキャラをエンゲージ登場によって破棄したとき、1枚ドローする。相手のデッキを2枚破棄する。",
+      "構築制限:ガールズ&パンツァー([GUP])"
     ],
     "matchedRuleIds": [
-      "moveCard:toHand",
       "draw"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[このキャラと同列の相手キャラ1体を手札に入れる。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

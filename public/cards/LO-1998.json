@@ -26,7 +26,14 @@
     {
       "header": "常時",
       "timing": "continuous",
-      "originalLine": "[常時] 相手ターン中、このキャラにDP+1する。[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
+      "conditionText": "相手ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "opponent"
+        }
+      ],
+      "originalLine": "[常時] 相手ターン中、このキャラにDP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -38,13 +45,19 @@
   ],
   "parseMeta": {
     "originalText": "[常時] 相手ターン中、このキャラにＤＰ＋１する。\n[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
-    "normalizedText": "[常時] 相手ターン中、このキャラにDP+1する。[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
+    "normalizedText": "[常時] 相手ターン中、このキャラにDP+1する。\n[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
     "lines": [
-      "[常時] 相手ターン中、このキャラにDP+1する。[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。"
+      "[常時] 相手ターン中、このキャラにDP+1する。",
+      "[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[手札宣言] [0]:バトル中に使用する。ゴミ箱のこのアイテムを装備する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -28,7 +28,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] このキャラの前後に手札から味方キャラが登場したとき、1枚ドローする。",
       "actions": [
         {

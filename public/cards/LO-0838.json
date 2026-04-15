@@ -29,7 +29,7 @@
     {
       "header": "常時",
       "timing": "continuous",
-      "originalLine": "[常時] 味方キャラ全てにDP+1する。※「ティータイム」は自分の場に1枚まで配置可能",
+      "originalLine": "[常時] 味方キャラ全てにDP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -41,9 +41,10 @@
   ],
   "parseMeta": {
     "originalText": "[常時] 味方キャラ全てにＤＰ＋１する。\n※「ティータイム」は自分の場に１枚まで配置可能\n構築制限:神姫PROJECT（[KHP]）",
-    "normalizedText": "[常時] 味方キャラ全てにDP+1する。※「ティータイム」は自分の場に1枚まで配置可能\n構築制限:神姫PROJECT([KHP])",
+    "normalizedText": "[常時] 味方キャラ全てにDP+1する。\n※「ティータイム」は自分の場に1枚まで配置可能\n構築制限:神姫PROJECT([KHP])",
     "lines": [
-      "[常時] 味方キャラ全てにDP+1する。※「ティータイム」は自分の場に1枚まで配置可能",
+      "[常時] 味方キャラ全てにDP+1する。",
+      "※「ティータイム」は自分の場に1枚まで配置可能",
       "構築制限:神姫PROJECT([KHP])"
     ],
     "matchedRuleIds": [
@@ -51,6 +52,10 @@
     ]
   },
   "unresolvedTextLines": [
+    {
+      "line": "※「ティータイム」は自分の場に1枚まで配置可能",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "構築制限:神姫PROJECT([KHP])",
       "reason": "no parser rule matched"

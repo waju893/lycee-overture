@@ -28,7 +28,7 @@
     {
       "header": "手札宣言",
       "timing": "onUse",
-      "originalLine": "[手札宣言] [D1]:{味方[日]キャラ1体}にAP+2・DP-2する。構築制限:[AUG]",
+      "originalLine": "[手札宣言] [D1]:{味方[日]キャラ1体}にAP+2・DP-2する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -40,13 +40,19 @@
   ],
   "parseMeta": {
     "originalText": "[手札宣言] [D1]:{味方[日]キャラ１体}にＡＰ＋２・ＤＰ－２する。\n構築制限:[AUG]",
-    "normalizedText": "[手札宣言] [D1]:{味方[日]キャラ1体}にAP+2・DP-2する。構築制限:[AUG]",
+    "normalizedText": "[手札宣言] [D1]:{味方[日]キャラ1体}にAP+2・DP-2する。\n構築制限:[AUG]",
     "lines": [
-      "[手札宣言] [D1]:{味方[日]キャラ1体}にAP+2・DP-2する。構築制限:[AUG]"
+      "[手札宣言] [D1]:{味方[日]キャラ1体}にAP+2・DP-2する。",
+      "構築制限:[AUG]"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:[AUG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

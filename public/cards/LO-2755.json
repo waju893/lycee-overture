@@ -30,73 +30,72 @@
       "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから「ベスリー・ローズ・ディズリー」を除く[雪]キャラ1体を探し公開して手札に入れる。[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ベスリー・ローズ・ディズリー」を除くコストが2点以下の[雪]キャラ1体を探し無償で登場する。構築制限:[TW]",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のデッキから「ベスリー・ローズ・ディズリー」を除く[雪]キャラ1体を探し公開して手札に入れる。",
       "actions": [
         {
-          "type": "chooseOne",
-          "prompt": "하나를 선택한다",
-          "choices": [
-            {
-              "label": "A",
-              "actions": [
-                {
-                  "type": "searchCard",
-                  "owner": "self",
-                  "zones": [
-                    "deck",
-                    "trash",
-                    "hand"
-                  ],
-                  "match": {
-                    "exactName": "ベスリー・ローズ・ディズリー"
-                  },
-                  "min": 0,
-                  "max": 1,
-                  "storeAs": "lastSearchResult",
-                  "shuffleAfterSearch": true
-                }
-              ]
-            },
-            {
-              "label": "B",
-              "actions": [
-                {
-                  "type": "searchCard",
-                  "owner": "self",
-                  "zones": [
-                    "deck"
-                  ],
-                  "match": {
-                    "exactName": "ベスリー・ローズ・ディズリー",
-                    "kind": "character"
-                  },
-                  "min": 0,
-                  "max": 2,
-                  "storeAs": "lastSearchResult",
-                  "shuffleAfterSearch": true
-                },
-                {
-                  "type": "freeUse",
-                  "sourceRef": "lastSearchResult",
-                  "useKind": "character",
-                  "ignoreCost": true
-                }
-              ]
-            }
-          ]
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "hand"
+          ],
+          "match": {
+            "exactName": "ベスリー・ローズ・ディズリー"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ベスリー・ローズ・ディズリー」を除くコストが2点以下の[雪]キャラ1体を探し無償で登場する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "ベスリー・ローズ・ディズリー",
+            "kind": "event"
+          },
+          "min": 0,
+          "max": 2,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "event",
+          "ignoreCost": true
         }
       ]
     }
   ],
   "parseMeta": {
     "originalText": "[誘発] このキャラが登場したとき、自分のデッキから「ベスリー・ローズ・ディズリー」を除く[雪]キャラ１体を探し公開して手札に入れる。\n[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ベスリー・ローズ・ディズリー」を除くコストが２点以下の[雪]キャラ１体を探し無償で登場する。\n構築制限:[TW]",
-    "normalizedText": "[誘発] このキャラが登場したとき、自分のデッキから「ベスリー・ローズ・ディズリー」を除く[雪]キャラ1体を探し公開して手札に入れる。[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ベスリー・ローズ・ディズリー」を除くコストが2点以下の[雪]キャラ1体を探し無償で登場する。構築制限:[TW]",
+    "normalizedText": "[誘発] このキャラが登場したとき、自分のデッキから「ベスリー・ローズ・ディズリー」を除く[雪]キャラ1体を探し公開して手札に入れる。\n[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ベスリー・ローズ・ディズリー」を除くコストが2点以下の[雪]キャラ1体を探し無償で登場する。\n構築制限:[TW]",
     "lines": [
-      "[誘発] このキャラが登場したとき、自分のデッキから「ベスリー・ローズ・ディズリー」を除く[雪]キャラ1体を探し公開して手札に入れる。[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ベスリー・ローズ・ディズリー」を除くコストが2点以下の[雪]キャラ1体を探し無償で登場する。構築制限:[TW]"
+      "[誘発] このキャラが登場したとき、自分のデッキから「ベスリー・ローズ・ディズリー」を除く[雪]キャラ1体を探し公開して手札に入れる。",
+      "[手札宣言] [雪]:自ターン中に使用する。バトル中に使用できない。自分のゴミ箱または自分のデッキから「ベスリー・ローズ・ディズリー」を除くコストが2点以下の[雪]キャラ1体を探し無償で登場する。",
+      "構築制限:[TW]"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "searchCard",
+      "searchCard+freeUse"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:[TW]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

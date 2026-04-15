@@ -31,7 +31,7 @@
     {
       "header": "誘発",
       "timing": "onAttackDeclare",
-      "originalLine": "[誘発] このキャラで攻撃宣言をしたとき、相手キャラ1体にDP-2する。構築制限:ゆずソフト",
+      "originalLine": "[誘発] このキャラで攻撃宣言をしたとき、相手キャラ1体にDP-2する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,13 +43,19 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] このキャラで攻撃宣言をしたとき、相手キャラ１体にＤＰ－２する。\n構築制限:ゆずソフト",
-    "normalizedText": "[誘発] このキャラで攻撃宣言をしたとき、相手キャラ1体にDP-2する。構築制限:ゆずソフト",
+    "normalizedText": "[誘発] このキャラで攻撃宣言をしたとき、相手キャラ1体にDP-2する。\n構築制限:ゆずソフト",
     "lines": [
-      "[誘発] このキャラで攻撃宣言をしたとき、相手キャラ1体にDP-2する。構築制限:ゆずソフト"
+      "[誘発] このキャラで攻撃宣言をしたとき、相手キャラ1体にDP-2する。",
+      "構築制限:ゆずソフト"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

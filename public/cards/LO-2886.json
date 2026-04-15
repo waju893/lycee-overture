@@ -27,9 +27,9 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2886",
   "parsedEffectsDraft": [
     {
-      "header": "誘発",
-      "timing": "onEnter",
-      "originalLine": "[誘発] このキャラが「香坂春風」の能力以外で登場したとき、このキャラを除外する。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。",
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -62,10 +62,11 @@
   ],
   "parseMeta": {
     "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが「香坂春風」の能力以外で登場したとき、このキャラを除外する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＤＭＧ－１する。",
-    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが「香坂春風」の能力以外で登場したとき、このキャラを除外する。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが「香坂春風」の能力以外で登場したとき、このキャラを除外する。\n[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。",
     "lines": [
       "[サイドステップ:[0]]",
-      "[誘発] このキャラが「香坂春風」の能力以外で登場したとき、このキャラを除外する。[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。"
+      "[誘発] このキャラが「香坂春風」の能力以外で登場したとき、このキャラを除外する。",
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。"
     ],
     "matchedRuleIds": [
       "chooseOne"
@@ -74,6 +75,10 @@
   "unresolvedTextLines": [
     {
       "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが「香坂春風」の能力以外で登場したとき、このキャラを除外する。",
       "reason": "no parser rule matched"
     }
   ]

@@ -31,62 +31,76 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "以下から1つを選び処理する。・味方[宙]キャラ1体にAP+5・DP+5する。・バトル中を除く相手ターン中の場合、味方[宙]キャラ1体を未行動にし、AP+2・DP+2し、味方フィールドに移動する。・相手の1ターン目でない場合、自分のゴミ箱または自分のデッキから「ぱっと見ギャルのサバゲーエリート 結月悠」1体を探し無償で登場する。相手ターン中の場合、そのキャラを行動済みにする。",
+      "originalLine": "・味方[宙]キャラ1体にAP+5・DP+5する。",
       "actions": [
         {
-          "type": "chooseOne",
-          "prompt": "하나를 선택한다",
-          "choices": [
-            {
-              "label": "A",
-              "actions": [
-                {
-                  "type": "modifyStat",
-                  "stat": "ap",
-                  "amount": 5
-                }
-              ]
-            },
-            {
-              "label": "B",
-              "actions": [
-                {
-                  "type": "searchCard",
-                  "owner": "opponent",
-                  "zones": [
-                    "deck"
-                  ],
-                  "match": {
-                    "exactName": "ぱっと見ギャルのサバゲーエリート 結月悠",
-                    "kind": "character"
-                  },
-                  "min": 0,
-                  "max": 1,
-                  "storeAs": "lastSearchResult",
-                  "shuffleAfterSearch": true
-                },
-                {
-                  "type": "freeUse",
-                  "sourceRef": "lastSearchResult",
-                  "useKind": "character",
-                  "ignoreCost": true
-                }
-              ]
-            }
-          ]
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "・バトル中を除く相手ターン中の場合、味方[宙]キャラ1体を未行動にし、AP+2・DP+2し、味方フィールドに移動する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "・相手の1ターン目でない場合、自分のゴミ箱または自分のデッキから「ぱっと見ギャルのサバゲーエリート 結月悠」1体を探し無償で登場する。相手ターン中の場合、そのキャラを行動済みにする。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "ぱっと見ギャルのサバゲーエリート 結月悠",
+            "kind": "character"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "character",
+          "ignoreCost": true
         }
       ]
     }
   ],
   "parseMeta": {
     "originalText": "以下から１つを選び処理する。\n・味方[宙]キャラ１体にＡＰ＋５・ＤＰ＋５する。\n・バトル中を除く相手ターン中の場合、味方[宙]キャラ１体を未行動にし、ＡＰ＋２・ＤＰ＋２し、味方フィールドに移動する。\n・相手の１ターン目でない場合、自分のゴミ箱または自分のデッキから「ぱっと見ギャルのサバゲーエリート 結月悠」１体を探し無償で登場する。相手ターン中の場合、そのキャラを行動済みにする。",
-    "normalizedText": "以下から1つを選び処理する。・味方[宙]キャラ1体にAP+5・DP+5する。・バトル中を除く相手ターン中の場合、味方[宙]キャラ1体を未行動にし、AP+2・DP+2し、味方フィールドに移動する。・相手の1ターン目でない場合、自分のゴミ箱または自分のデッキから「ぱっと見ギャルのサバゲーエリート 結月悠」1体を探し無償で登場する。相手ターン中の場合、そのキャラを行動済みにする。",
+    "normalizedText": "以下から1つを選び処理する。\n・味方[宙]キャラ1体にAP+5・DP+5する。\n・バトル中を除く相手ターン中の場合、味方[宙]キャラ1体を未行動にし、AP+2・DP+2し、味方フィールドに移動する。\n・相手の1ターン目でない場合、自分のゴミ箱または自分のデッキから「ぱっと見ギャルのサバゲーエリート 結月悠」1体を探し無償で登場する。相手ターン中の場合、そのキャラを行動済みにする。",
     "lines": [
-      "以下から1つを選び処理する。・味方[宙]キャラ1体にAP+5・DP+5する。・バトル中を除く相手ターン中の場合、味方[宙]キャラ1体を未行動にし、AP+2・DP+2し、味方フィールドに移動する。・相手の1ターン目でない場合、自分のゴミ箱または自分のデッキから「ぱっと見ギャルのサバゲーエリート 結月悠」1体を探し無償で登場する。相手ターン中の場合、そのキャラを行動済みにする。"
+      "以下から1つを選び処理する。",
+      "・味方[宙]キャラ1体にAP+5・DP+5する。",
+      "・バトル中を除く相手ターン中の場合、味方[宙]キャラ1体を未行動にし、AP+2・DP+2し、味方フィールドに移動する。",
+      "・相手の1ターン目でない場合、自分のゴミ箱または自分のデッキから「ぱっと見ギャルのサバゲーエリート 結月悠」1体を探し無償で登場する。相手ターン中の場合、そのキャラを行動済みにする。"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "modifyStat",
+      "modifyStat",
+      "searchCard+freeUse"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "以下から1つを選び処理する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -28,15 +28,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。\n構築制限:[AUG]",
-    "normalizedText": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。構築制限:[AUG]",
+    "normalizedText": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。\n構築制限:[AUG]",
     "lines": [
-      "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。構築制限:[AUG]"
+      "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。",
+      "構築制限:[AUG]"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。構築制限:[AUG]",
+      "line": "[コスト] 相手ターン中に使用する。[月月]を発生する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[AUG]",
       "reason": "no parser rule matched"
     }
   ]

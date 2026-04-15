@@ -27,10 +27,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "装備制限:[日]キャラ\n[誘発] このキャラが移動したとき、このキャラにＤＭＧ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
-    "normalizedText": "装備制限:[日]キャラ\n[誘発] このキャラが移動したとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])",
+    "normalizedText": "装備制限:[日]キャラ\n[誘発] このキャラが移動したとき、このキャラにDMG+2する。\n構築制限:ゆずソフト([YUZ])",
     "lines": [
       "装備制限:[日]キャラ",
-      "[誘発] このキャラが移動したとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])"
+      "[誘発] このキャラが移動したとき、このキャラにDMG+2する。",
+      "構築制限:ゆずソフト([YUZ])"
     ],
     "matchedRuleIds": []
   },
@@ -40,7 +41,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[誘発] このキャラが移動したとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])",
+      "line": "[誘発] このキャラが移動したとき、このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:ゆずソフト([YUZ])",
       "reason": "no parser rule matched"
     }
   ]

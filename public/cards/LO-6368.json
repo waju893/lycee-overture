@@ -32,7 +32,19 @@
     {
       "header": "常時",
       "timing": "continuous",
-      "originalLine": "[常時] コストが2点以下の味方キャラ全てにAP+1・DP+1する。[宣言] [C1]:{味方キャラ1体}にAP+2またはDP+2する。構築制限:『塵骸魔京』",
+      "originalLine": "[常時] コストが2点以下の味方キャラ全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1]:{味方キャラ1体}にAP+2またはDP+2する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -44,7 +56,7 @@
                 {
                   "type": "modifyStat",
                   "stat": "ap",
-                  "amount": 1
+                  "amount": 2
                 }
               ]
             },
@@ -65,18 +77,25 @@
   ],
   "parseMeta": {
     "originalText": "[ジャンプ:[0]][チャージ:１]\n[常時] コストが２点以下の味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [C1]:{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n構築制限:『塵骸魔京』",
-    "normalizedText": "[ジャンプ:[0]][チャージ:1]\n[常時] コストが2点以下の味方キャラ全てにAP+1・DP+1する。[宣言] [C1]:{味方キャラ1体}にAP+2またはDP+2する。構築制限:『塵骸魔京』",
+    "normalizedText": "[ジャンプ:[0]][チャージ:1]\n[常時] コストが2点以下の味方キャラ全てにAP+1・DP+1する。\n[宣言] [C1]:{味方キャラ1体}にAP+2またはDP+2する。\n構築制限:『塵骸魔京』",
     "lines": [
       "[ジャンプ:[0]][チャージ:1]",
-      "[常時] コストが2点以下の味方キャラ全てにAP+1・DP+1する。[宣言] [C1]:{味方キャラ1体}にAP+2またはDP+2する。構築制限:『塵骸魔京』"
+      "[常時] コストが2点以下の味方キャラ全てにAP+1・DP+1する。",
+      "[宣言] [C1]:{味方キャラ1体}にAP+2またはDP+2する。",
+      "構築制限:『塵骸魔京』"
     ],
     "matchedRuleIds": [
+      "modifyStat",
       "chooseOne"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[ジャンプ:[0]][チャージ:1]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『塵骸魔京』",
       "reason": "no parser rule matched"
     }
   ]

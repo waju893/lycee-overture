@@ -29,7 +29,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "自分のゴミ箱の『DeepOne』キャラ1体をデッキの一番下に置く。新本格バトルビジュアルノベル ―― 始動。初出 : 『DeepOne』初回特典初出 : 『DeepOne』初回特典",
+      "originalLine": "自分のゴミ箱の『DeepOne』キャラ1体をデッキの一番下に置く。",
       "actions": [
         {
           "type": "moveCard",
@@ -43,13 +43,24 @@
   ],
   "parseMeta": {
     "originalText": "自分のゴミ箱の『DeepOne』キャラ１体をデッキの一番下に置く。\n新本格バトルビジュアルノベル ―― 始動。\n初出 : 『DeepOne』初回特典初出 : 『DeepOne』初回特典",
-    "normalizedText": "自分のゴミ箱の『DeepOne』キャラ1体をデッキの一番下に置く。新本格バトルビジュアルノベル ―― 始動。初出 : 『DeepOne』初回特典初出 : 『DeepOne』初回特典",
+    "normalizedText": "自分のゴミ箱の『DeepOne』キャラ1体をデッキの一番下に置く。\n新本格バトルビジュアルノベル ―― 始動。\n初出 : 『DeepOne』初回特典初出 : 『DeepOne』初回特典",
     "lines": [
-      "自分のゴミ箱の『DeepOne』キャラ1体をデッキの一番下に置く。新本格バトルビジュアルノベル ―― 始動。初出 : 『DeepOne』初回特典初出 : 『DeepOne』初回特典"
+      "自分のゴミ箱の『DeepOne』キャラ1体をデッキの一番下に置く。",
+      "新本格バトルビジュアルノベル ―― 始動。",
+      "初出 : 『DeepOne』初回特典初出 : 『DeepOne』初回特典"
     ],
     "matchedRuleIds": [
       "moveCard:toDeckBottom"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "新本格バトルビジュアルノベル ―― 始動。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "初出 : 『DeepOne』初回特典初出 : 『DeepOne』初回特典",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

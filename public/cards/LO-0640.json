@@ -30,7 +30,7 @@
     {
       "header": "誘発",
       "timing": "unknown",
-      "originalLine": "[誘発] 味方キャラがダウンしたとき、1枚ドローできる。構築制限:ゆずソフト",
+      "originalLine": "[誘発] 味方キャラがダウンしたとき、1枚ドローできる。",
       "actions": [
         {
           "type": "draw",
@@ -41,13 +41,19 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] 味方キャラがダウンしたとき、１枚ドローできる。\n構築制限:ゆずソフト",
-    "normalizedText": "[誘発] 味方キャラがダウンしたとき、1枚ドローできる。構築制限:ゆずソフト",
+    "normalizedText": "[誘発] 味方キャラがダウンしたとき、1枚ドローできる。\n構築制限:ゆずソフト",
     "lines": [
-      "[誘発] 味方キャラがダウンしたとき、1枚ドローできる。構築制限:ゆずソフト"
+      "[誘発] 味方キャラがダウンしたとき、1枚ドローできる。",
+      "構築制限:ゆずソフト"
     ],
     "matchedRuleIds": [
       "draw"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

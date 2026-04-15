@@ -32,7 +32,7 @@
       "header": "誘発",
       "timing": "onTurnStart",
       "triggerText": "ターン開始時",
-      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にDP-1する。構築制限:[OSP]",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -42,9 +42,20 @@
               "label": "A",
               "actions": [
                 {
+                  "type": "chooseTarget",
+                  "selector": {
+                    "owner": "opponent",
+                    "kind": "character",
+                    "count": 1
+                  },
+                  "storeAs": "selectedTarget",
+                  "prompt": "상대 캐릭터 1체를 선택한다"
+                },
+                {
                   "type": "modifyStat",
                   "stat": "ap",
-                  "amount": -1
+                  "amount": -1,
+                  "targetRef": "selectedTarget"
                 }
               ]
             },
@@ -61,22 +72,41 @@
           ]
         }
       ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にDP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": -1
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ１体}にＤＰ－１する。\n構築制限:[OSP]",
-    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にDP-1する。構築制限:[OSP]",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。\n[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にDP-1する。\n構築制限:[OSP]",
     "lines": [
       "[オーダーステップ:[0]]",
-      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にDP-1する。構築制限:[OSP]"
+      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
+      "[宣言] [D1]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}にDP-1する。",
+      "構築制限:[OSP]"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "chooseOne",
+      "modifyStat"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[OSP]",
       "reason": "no parser rule matched"
     }
   ]

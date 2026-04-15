@@ -29,10 +29,9 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3743",
   "parsedEffectsDraft": [
     {
-      "header": "誘発",
-      "timing": "onTurnStart",
-      "triggerText": "ターン開始時",
-      "originalLine": "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。[宣言] [0]:味方AF[花]キャラ全てにSP+1する。構築制限:[AIG]",
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方AF[花]キャラ全てにSP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -44,13 +43,24 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] 相手ターン開始時、味方[花]キャラ１体を未行動にする。\n[宣言] [0]:味方ＡＦ[花]キャラ全てにＳＰ＋１する。\n構築制限:[AIG]",
-    "normalizedText": "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。[宣言] [0]:味方AF[花]キャラ全てにSP+1する。構築制限:[AIG]",
+    "normalizedText": "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。\n[宣言] [0]:味方AF[花]キャラ全てにSP+1する。\n構築制限:[AIG]",
     "lines": [
-      "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。[宣言] [0]:味方AF[花]キャラ全てにSP+1する。構築制限:[AIG]"
+      "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。",
+      "[宣言] [0]:味方AF[花]キャラ全てにSP+1する。",
+      "構築制限:[AIG]"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] 相手ターン開始時、味方[花]キャラ1体を未行動にする。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[AIG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -30,7 +30,7 @@
     {
       "header": "誘発",
       "timing": "unknown",
-      "originalLine": "[誘発] 自分のデッキを破棄したとき、味方キャラ1体にAP+1する。構築制限:オーガスト([AUG])",
+      "originalLine": "[誘発] 自分のデッキを破棄したとき、味方キャラ1体にAP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -42,10 +42,11 @@
   ],
   "parseMeta": {
     "originalText": "[ステップ:[0]]\n[誘発] 自分のデッキを破棄したとき、味方キャラ１体にＡＰ＋１する。\n構築制限:オーガスト（[AUG]）",
-    "normalizedText": "[ステップ:[0]]\n[誘発] 自分のデッキを破棄したとき、味方キャラ1体にAP+1する。構築制限:オーガスト([AUG])",
+    "normalizedText": "[ステップ:[0]]\n[誘発] 自分のデッキを破棄したとき、味方キャラ1体にAP+1する。\n構築制限:オーガスト([AUG])",
     "lines": [
       "[ステップ:[0]]",
-      "[誘発] 自分のデッキを破棄したとき、味方キャラ1体にAP+1する。構築制限:オーガスト([AUG])"
+      "[誘発] 自分のデッキを破棄したとき、味方キャラ1体にAP+1する。",
+      "構築制限:オーガスト([AUG])"
     ],
     "matchedRuleIds": [
       "modifyStat"
@@ -54,6 +55,10 @@
   "unresolvedTextLines": [
     {
       "line": "[ステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:オーガスト([AUG])",
       "reason": "no parser rule matched"
     }
   ]

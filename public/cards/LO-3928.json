@@ -30,7 +30,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnterFromHand",
+      "timing": "unknown",
       "originalLine": "[誘発] 宣言型の基本能力を持つコストが3点以上の味方[日]キャラが手札から登場したとき、このキャラにDMG+1し、宣言型の基本能力を持つコストが3点以上の味方[日]キャラ全てにAP+1する。",
       "actions": [
         {

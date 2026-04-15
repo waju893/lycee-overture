@@ -29,23 +29,9 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2194",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[ペナルティ:[自分のゴミ箱のキャラ1体を手札に入れる。]]",
-      "actions": [
-        {
-          "type": "moveCard",
-          "owner": "self",
-          "from": "trash",
-          "to": "hand",
-          "count": 1
-        }
-      ]
-    },
-    {
       "header": "宣言",
-      "timing": "onEnter",
-      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にDP+3する。[誘発] 相手の能力で相手キャラが登場したとき、相手のデッキを2枚破棄する。構築制限:『ToHeart2』",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にDP+3する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -57,15 +43,29 @@
   ],
   "parseMeta": {
     "originalText": "[ペナルティ:[自分のゴミ箱のキャラ１体を手札に入れる。]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ１体}にＤＰ＋３する。\n[誘発] 相手の能力で相手キャラが登場したとき、相手のデッキを２枚破棄する。\n構築制限:『ToHeart2』",
-    "normalizedText": "[ペナルティ:[自分のゴミ箱のキャラ1体を手札に入れる。]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にDP+3する。[誘発] 相手の能力で相手キャラが登場したとき、相手のデッキを2枚破棄する。構築制限:『ToHeart2』",
+    "normalizedText": "[ペナルティ:[自分のゴミ箱のキャラ1体を手札に入れる。]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にDP+3する。\n[誘発] 相手の能力で相手キャラが登場したとき、相手のデッキを2枚破棄する。\n構築制限:『ToHeart2』",
     "lines": [
       "[ペナルティ:[自分のゴミ箱のキャラ1体を手札に入れる。]]",
-      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にDP+3する。[誘発] 相手の能力で相手キャラが登場したとき、相手のデッキを2枚破棄する。構築制限:『ToHeart2』"
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{味方キャラ1体}にDP+3する。",
+      "[誘発] 相手の能力で相手キャラが登場したとき、相手のデッキを2枚破棄する。",
+      "構築制限:『ToHeart2』"
     ],
     "matchedRuleIds": [
-      "moveCard:toHand",
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[自分のゴミ箱のキャラ1体を手札に入れる。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] 相手の能力で相手キャラが登場したとき、相手のデッキを2枚破棄する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『ToHeart2』",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

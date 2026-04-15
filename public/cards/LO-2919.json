@@ -28,7 +28,6 @@
     {
       "header": "unknown",
       "timing": "onTurnEnd",
-      "triggerText": "ターン終了時",
       "originalLine": "ターン終了時まで、{味方キャラ1体}を破棄したとき、ゴミ箱のそのキャラを手札に入れる。",
       "actions": [
         {

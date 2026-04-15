@@ -31,7 +31,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「レガシー」1枚を探し使用できる。しない場合、対応・バトル中を除く自ターン中の場合、ゴミ箱のこのキャラを無償で登場できる。構築制限:『アンラベル・トリガー』",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -51,69 +51,67 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "chooseOne",
-                  "prompt": "하나를 선택한다",
-                  "choices": [
-                    {
-                      "label": "A",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": -1
-                        }
-                      ]
-                    },
-                    {
-                      "label": "B",
-                      "actions": [
-                        {
-                          "type": "searchCard",
-                          "owner": "self",
-                          "zones": [
-                            "deck",
-                            "trash"
-                          ],
-                          "match": {
-                            "exactName": "レガシー",
-                            "kind": "event"
-                          },
-                          "min": 0,
-                          "max": 1,
-                          "storeAs": "lastSearchResult",
-                          "shuffleAfterSearch": true
-                        },
-                        {
-                          "type": "freeUse",
-                          "sourceRef": "lastSearchResult",
-                          "useKind": "event",
-                          "ignoreCost": true
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「レガシー」1枚を探し使用できる。しない場合、対応・バトル中を除く自ターン中の場合、ゴミ箱のこのキャラを無償で登場できる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "レガシー",
+            "kind": "event"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "event",
+          "ignoreCost": true
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[ジャンプ:[0]][チャージ:１][コンバート:[C1]:→「カージ合衆国全権大使 佐藤和成」]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「レガシー」１枚を探し使用できる。しない場合、対応・バトル中を除く自ターン中の場合、ゴミ箱のこのキャラを無償で登場できる。\n構築制限:『アンラベル・トリガー』",
-    "normalizedText": "[ジャンプ:[0]][チャージ:1][コンバート:[C1]:→「カージ合衆国全権大使 佐藤和成」]\n[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「レガシー」1枚を探し使用できる。しない場合、対応・バトル中を除く自ターン中の場合、ゴミ箱のこのキャラを無償で登場できる。構築制限:『アンラベル・トリガー』",
+    "normalizedText": "[ジャンプ:[0]][チャージ:1][コンバート:[C1]:→「カージ合衆国全権大使 佐藤和成」]\n[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「レガシー」1枚を探し使用できる。しない場合、対応・バトル中を除く自ターン中の場合、ゴミ箱のこのキャラを無償で登場できる。\n構築制限:『アンラベル・トリガー』",
     "lines": [
       "[ジャンプ:[0]][チャージ:1][コンバート:[C1]:→「カージ合衆国全権大使 佐藤和成」]",
-      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「レガシー」1枚を探し使用できる。しない場合、対応・バトル中を除く自ターン中の場合、ゴミ箱のこのキャラを無償で登場できる。構築制限:『アンラベル・トリガー』"
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
+      "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「レガシー」1枚を探し使用できる。しない場合、対応・バトル中を除く自ターン中の場合、ゴミ箱のこのキャラを無償で登場できる。",
+      "構築制限:『アンラベル・トリガー』"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "chooseOne",
+      "searchCard+freeUse"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[ジャンプ:[0]][チャージ:1][コンバート:[C1]:→「カージ合衆国全権大使 佐藤和成」]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『アンラベル・トリガー』",
       "reason": "no parser rule matched"
     }
   ]

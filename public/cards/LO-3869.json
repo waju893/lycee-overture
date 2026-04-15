@@ -30,17 +30,6 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3869",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[ペナルティ:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    },
-    {
       "header": "宣言",
       "timing": "onUse",
       "originalLine": "[宣言] [0]:味方「長尾美空景虎」または「柿崎柘榴景家」が登場している場合、{相手キャラ1体}にAP-2する。",
@@ -61,9 +50,13 @@
       "[宣言] [0]:味方「長尾美空景虎」または「柿崎柘榴景家」が登場している場合、{相手キャラ1体}にAP-2する。"
     ],
     "matchedRuleIds": [
-      "draw",
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

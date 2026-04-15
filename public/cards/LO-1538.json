@@ -31,7 +31,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [D1]:{味方AFキャラ1体}にAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])",
+      "originalLine": "[宣言] [D1]:{味方AFキャラ1体}にAP+1・DP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,10 +43,11 @@
   ],
   "parseMeta": {
     "originalText": "[オーダーステップ:[0]]\n[宣言] [D1]:{味方ＡＦキャラ１体}にＡＰ＋１・ＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
-    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [D1]:{味方AFキャラ1体}にAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [D1]:{味方AFキャラ1体}にAP+1・DP+1する。\n構築制限:千年戦争アイギス([AIG])",
     "lines": [
       "[オーダーステップ:[0]]",
-      "[宣言] [D1]:{味方AFキャラ1体}にAP+1・DP+1する。構築制限:千年戦争アイギス([AIG])"
+      "[宣言] [D1]:{味方AFキャラ1体}にAP+1・DP+1する。",
+      "構築制限:千年戦争アイギス([AIG])"
     ],
     "matchedRuleIds": [
       "modifyStat"
@@ -55,6 +56,10 @@
   "unresolvedTextLines": [
     {
       "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:千年戦争アイギス([AIG])",
       "reason": "no parser rule matched"
     }
   ]

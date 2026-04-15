@@ -33,10 +33,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、ＥＸが１以上の相手キャラ１体を破棄する。\n構築制限:神姫PROJECT（[KHP]）",
-    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、EXが1以上の相手キャラ1体を破棄する。構築制限:神姫PROJECT([KHP])",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] このキャラが登場したとき、EXが1以上の相手キャラ1体を破棄する。\n構築制限:神姫PROJECT([KHP])",
     "lines": [
       "[オーダーステップ:[0]]",
-      "[誘発] このキャラが登場したとき、EXが1以上の相手キャラ1体を破棄する。構築制限:神姫PROJECT([KHP])"
+      "[誘発] このキャラが登場したとき、EXが1以上の相手キャラ1体を破棄する。",
+      "構築制限:神姫PROJECT([KHP])"
     ],
     "matchedRuleIds": []
   },
@@ -46,7 +47,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[誘発] このキャラが登場したとき、EXが1以上の相手キャラ1体を破棄する。構築制限:神姫PROJECT([KHP])",
+      "line": "[誘発] このキャラが登場したとき、EXが1以上の相手キャラ1体を破棄する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:神姫PROJECT([KHP])",
       "reason": "no parser rule matched"
     }
   ]

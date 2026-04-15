@@ -30,7 +30,18 @@
       "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローできる。[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、味方キャラ1体にAP+2またはDP+2する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「マリー」1体を探し公開して手札に入れる。構築制限:[GUP]",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローできる。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、味方キャラ1体にAP+2またはDP+2する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -40,8 +51,9 @@
               "label": "A",
               "actions": [
                 {
-                  "type": "draw",
-                  "amount": 1
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
                 }
               ]
             },
@@ -49,62 +61,63 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "chooseOne",
-                  "prompt": "하나를 선택한다",
-                  "choices": [
-                    {
-                      "label": "A",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": 2
-                        }
-                      ]
-                    },
-                    {
-                      "label": "B",
-                      "actions": [
-                        {
-                          "type": "searchCard",
-                          "owner": "self",
-                          "zones": [
-                            "deck",
-                            "hand"
-                          ],
-                          "match": {
-                            "exactName": "マリー"
-                          },
-                          "min": 0,
-                          "max": 1,
-                          "storeAs": "lastSearchResult",
-                          "shuffleAfterSearch": true
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「マリー」1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "マリー"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[アシスト][サイドステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローできる。\n[誘発] 味方＜BC自由＞キャラがエンゲージ登場したとき、味方キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「マリー」１体を探し公開して手札に入れる。\n構築制限:[GUP]",
-    "normalizedText": "[アシスト][サイドステップ:[0]]\n[誘発] このキャラが登場したとき、1枚ドローできる。[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、味方キャラ1体にAP+2またはDP+2する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「マリー」1体を探し公開して手札に入れる。構築制限:[GUP]",
+    "normalizedText": "[アシスト][サイドステップ:[0]]\n[誘発] このキャラが登場したとき、1枚ドローできる。\n[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、味方キャラ1体にAP+2またはDP+2する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「マリー」1体を探し公開して手札に入れる。\n構築制限:[GUP]",
     "lines": [
       "[アシスト][サイドステップ:[0]]",
-      "[誘発] このキャラが登場したとき、1枚ドローできる。[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、味方キャラ1体にAP+2またはDP+2する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「マリー」1体を探し公開して手札に入れる。構築制限:[GUP]"
+      "[誘発] このキャラが登場したとき、1枚ドローできる。",
+      "[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、味方キャラ1体にAP+2またはDP+2する。",
+      "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「マリー」1体を探し公開して手札に入れる。",
+      "構築制限:[GUP]"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "draw",
+      "chooseOne",
+      "searchCard"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[アシスト][サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[GUP]",
       "reason": "no parser rule matched"
     }
   ]

@@ -61,9 +61,20 @@
               "label": "B",
               "actions": [
                 {
+                  "type": "chooseTarget",
+                  "selector": {
+                    "owner": "self",
+                    "kind": "character",
+                    "count": 1
+                  },
+                  "storeAs": "selectedTarget",
+                  "prompt": "자기 캐릭터 1체를 선택한다"
+                },
+                {
                   "type": "modifyStat",
                   "stat": "dp",
-                  "amount": 3
+                  "amount": 3,
+                  "targetRef": "selectedTarget"
                 }
               ]
             }

@@ -28,16 +28,21 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[常時] 味方キャラ全てにＤＭＧ＋１する。\n※「ネロ祭」は自分の場に１枚まで配置可能\n構築制限:Fate/Grand Order",
-    "normalizedText": "[常時] 味方キャラ全てにDMG+1する。※「ネロ祭」は自分の場に1枚まで配置可能\n構築制限:Fate/Grand Order",
+    "normalizedText": "[常時] 味方キャラ全てにDMG+1する。\n※「ネロ祭」は自分の場に1枚まで配置可能\n構築制限:Fate/Grand Order",
     "lines": [
-      "[常時] 味方キャラ全てにDMG+1する。※「ネロ祭」は自分の場に1枚まで配置可能",
+      "[常時] 味方キャラ全てにDMG+1する。",
+      "※「ネロ祭」は自分の場に1枚まで配置可能",
       "構築制限:Fate/Grand Order"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[常時] 味方キャラ全てにDMG+1する。※「ネロ祭」は自分の場に1枚まで配置可能",
+      "line": "[常時] 味方キャラ全てにDMG+1する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "※「ネロ祭」は自分の場に1枚まで配置可能",
       "reason": "no parser rule matched"
     },
     {

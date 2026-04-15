@@ -30,6 +30,13 @@
     {
       "header": "誘発",
       "timing": "unknown",
+      "conditionText": "自ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "self"
+        }
+      ],
       "originalLine": "[誘発] 自ターン中、このキャラを除く味方<継続>キャラを破棄したとき、1枚ドローできる。",
       "actions": [
         {

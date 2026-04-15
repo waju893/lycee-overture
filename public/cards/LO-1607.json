@@ -28,20 +28,7 @@
   "text": "[エンゲージ:[相手キャラ１体にＤＰ－３する。]]\n[誘発] このキャラが登場したとき、ＤＰが１以下の相手キャラ１体を破棄する。",
   "textKr": "[エンゲージ:[相手キャラ１体にＤＰ－３する。]]\n[誘発] このキャラが登場したとき、ＤＰが１以下の相手キャラ１体を破棄する。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1607",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[相手キャラ1体にDP-3する。]]",
-      "actions": [
-        {
-          "type": "modifyStat",
-          "stat": "dp",
-          "amount": -3
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[相手キャラ１体にＤＰ－３する。]]\n[誘発] このキャラが登場したとき、ＤＰが１以下の相手キャラ１体を破棄する。",
     "normalizedText": "[エンゲージ:[相手キャラ1体にDP-3する。]]\n[誘発] このキャラが登場したとき、DPが1以下の相手キャラ1体を破棄する。",
@@ -49,11 +36,13 @@
       "[エンゲージ:[相手キャラ1体にDP-3する。]]",
       "[誘発] このキャラが登場したとき、DPが1以下の相手キャラ1体を破棄する。"
     ],
-    "matchedRuleIds": [
-      "modifyStat"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[相手キャラ1体にDP-3する。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[誘発] このキャラが登場したとき、DPが1以下の相手キャラ1体を破棄する。",
       "reason": "no parser rule matched"

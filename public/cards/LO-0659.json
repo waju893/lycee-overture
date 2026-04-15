@@ -31,7 +31,7 @@
     {
       "header": "誘発",
       "timing": "unknown",
-      "originalLine": "[誘発] 味方キャラが移動したとき、そのキャラにAP+1・DP+1する。構築制限:ゆずソフト",
+      "originalLine": "[誘発] 味方キャラが移動したとき、そのキャラにAP+1・DP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,13 +43,19 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] 味方キャラが移動したとき、そのキャラにＡＰ＋１・ＤＰ＋１する。\n構築制限:ゆずソフト",
-    "normalizedText": "[誘発] 味方キャラが移動したとき、そのキャラにAP+1・DP+1する。構築制限:ゆずソフト",
+    "normalizedText": "[誘発] 味方キャラが移動したとき、そのキャラにAP+1・DP+1する。\n構築制限:ゆずソフト",
     "lines": [
-      "[誘発] 味方キャラが移動したとき、そのキャラにAP+1・DP+1する。構築制限:ゆずソフト"
+      "[誘発] 味方キャラが移動したとき、そのキャラにAP+1・DP+1する。",
+      "構築制限:ゆずソフト"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

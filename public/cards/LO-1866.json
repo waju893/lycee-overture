@@ -27,15 +27,14 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1866",
   "parsedEffectsDraft": [
     {
-      "header": "誘発",
-      "timing": "onEnter",
-      "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を自分の「契約」置き場に置ける。[宣言] [D1]:このキャラを手札に入れる。",
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラを手札に入れる。",
       "actions": [
         {
           "type": "moveCard",
           "owner": "self",
-          "from": "trash",
+          "from": "field",
           "to": "hand",
           "count": 1
         }
@@ -44,10 +43,11 @@
   ],
   "parseMeta": {
     "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ１体を自分の「契約」置き場に置ける。\n[宣言] [D1]:このキャラを手札に入れる。",
-    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を自分の「契約」置き場に置ける。[宣言] [D1]:このキャラを手札に入れる。",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を自分の「契約」置き場に置ける。\n[宣言] [D1]:このキャラを手札に入れる。",
     "lines": [
       "[サイドステップ:[0]]",
-      "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を自分の「契約」置き場に置ける。[宣言] [D1]:このキャラを手札に入れる。"
+      "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を自分の「契約」置き場に置ける。",
+      "[宣言] [D1]:このキャラを手札に入れる。"
     ],
     "matchedRuleIds": [
       "moveCard:toHand"
@@ -56,6 +56,10 @@
   "unresolvedTextLines": [
     {
       "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のキャラ1体を自分の「契約」置き場に置ける。",
       "reason": "no parser rule matched"
     }
   ]

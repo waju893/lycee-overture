@@ -44,7 +44,7 @@
       "自ターン中に使用する。バトル中に使用できない。1枚ドローする。味方キャラ全てにAP+2・DP+2する。"
     ],
     "matchedRuleIds": [
-      "draw"
+      "condition:selfTurn"
     ]
   },
   "unresolvedTextLines": []

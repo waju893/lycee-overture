@@ -29,7 +29,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "以下から1つを選び処理する。・コストが3点以上の味方キャラ1体にAP+2・DP+2する。・コストが3点以上の味方DFキャラ1体を未行動にする。",
+      "originalLine": "・コストが3点以上の味方キャラ1体にAP+2・DP+2する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -41,13 +41,24 @@
   ],
   "parseMeta": {
     "originalText": "以下から１つを選び処理する。\n・コストが３点以上の味方キャラ１体にＡＰ＋２・ＤＰ＋２する。\n・コストが３点以上の味方ＤＦキャラ１体を未行動にする。",
-    "normalizedText": "以下から1つを選び処理する。・コストが3点以上の味方キャラ1体にAP+2・DP+2する。・コストが3点以上の味方DFキャラ1体を未行動にする。",
+    "normalizedText": "以下から1つを選び処理する。\n・コストが3点以上の味方キャラ1体にAP+2・DP+2する。\n・コストが3点以上の味方DFキャラ1体を未行動にする。",
     "lines": [
-      "以下から1つを選び処理する。・コストが3点以上の味方キャラ1体にAP+2・DP+2する。・コストが3点以上の味方DFキャラ1体を未行動にする。"
+      "以下から1つを選び処理する。",
+      "・コストが3点以上の味方キャラ1体にAP+2・DP+2する。",
+      "・コストが3点以上の味方DFキャラ1体を未行動にする。"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "以下から1つを選び処理する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "・コストが3点以上の味方DFキャラ1体を未行動にする。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

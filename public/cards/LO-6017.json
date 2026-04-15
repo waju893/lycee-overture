@@ -32,7 +32,6 @@
     {
       "header": "誘発",
       "timing": "onEnter",
-      "triggerText": "このキャラが登場したとき",
       "originalLine": "[誘発] このキャラが登場したときまたはターン開始時、味方『世界征服彼女』キャラ全てにAP+1・DP+1する。",
       "actions": [
         {

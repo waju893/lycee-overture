@@ -28,9 +28,65 @@
   "parsedEffectsDraft": [
     {
       "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseTarget",
+                  "selector": {
+                    "owner": "self",
+                    "kind": "character",
+                    "count": 1
+                  },
+                  "storeAs": "selectedTarget",
+                  "prompt": "자기 캐릭터 1체를 선택한다"
+                },
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 3,
+                  "targetRef": "selectedTarget"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。[誘発] このキャラが登場したとき、1枚ドローする。構築制限:『DeepOne シリーズ』",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。",
       "actions": [
         {
           "type": "draw",
@@ -41,18 +97,27 @@
   ],
   "parseMeta": {
     "originalText": "[ジャンプ:[0]]\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２・ＤＰ＋２する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n構築制限:『DeepOne シリーズ』",
-    "normalizedText": "[ジャンプ:[0]]\n[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。[誘発] このキャラが登場したとき、1枚ドローする。構築制限:『DeepOne シリーズ』",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。\n[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。\n[誘発] このキャラが登場したとき、1枚ドローする。\n構築制限:『DeepOne シリーズ』",
     "lines": [
       "[ジャンプ:[0]]",
-      "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。[誘発] このキャラが登場したとき、1枚ドローする。構築制限:『DeepOne シリーズ』"
+      "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。",
+      "[宣言] [0]:対応・バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2・DP+2する。",
+      "[誘発] このキャラが登場したとき、1枚ドローする。",
+      "構築制限:『DeepOne シリーズ』"
     ],
     "matchedRuleIds": [
+      "chooseOne",
+      "modifyStat",
       "draw"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『DeepOne シリーズ』",
       "reason": "no parser rule matched"
     }
   ]

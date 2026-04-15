@@ -32,7 +32,18 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:自ターン中に使用する。自分のゴミ箱のカード1枚を自分の「マネージャー」置き場に置く。置いたとき、その置き場の枚数が3枚以下の場合、2枚ドローする。[宣言] [T]:{相手キャラ1体}にAP-3またはDP-3する。[誘発] このキャラが相手の効果で場を離れたまたは元の能力を失ったとき、このキャラを破棄できる。自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し無償で登場できる。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」1枚を探し味方フィールドに無償で配置する。構築制限:『WHITE ALBUM シリーズ』",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。自分のゴミ箱のカード1枚を自分の「マネージャー」置き場に置く。置いたとき、その置き場の枚数が3枚以下の場合、2枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:{相手キャラ1体}にAP-3またはDP-3する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -42,8 +53,9 @@
               "label": "A",
               "actions": [
                 {
-                  "type": "draw",
-                  "amount": 2
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -3
                 }
               ]
             },
@@ -51,70 +63,99 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "chooseOne",
-                  "prompt": "하나를 선택한다",
-                  "choices": [
-                    {
-                      "label": "A",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": -3
-                        }
-                      ]
-                    },
-                    {
-                      "label": "B",
-                      "actions": [
-                        {
-                          "type": "searchCard",
-                          "owner": "self",
-                          "zones": [
-                            "deck",
-                            "trash",
-                            "hand"
-                          ],
-                          "match": {
-                            "exactName": "WHITE ALBUM",
-                            "kind": "area"
-                          },
-                          "min": 0,
-                          "max": 1,
-                          "storeAs": "lastSearchResult",
-                          "shuffleAfterSearch": true
-                        },
-                        {
-                          "type": "freeUse",
-                          "sourceRef": "lastSearchResult",
-                          "useKind": "area",
-                          "ignoreCost": true
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -3
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラが相手の効果で場を離れたまたは元の能力を失ったとき、このキャラを破棄できる。自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し無償で登場できる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "kind": "character"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "character",
+          "ignoreCost": true
+        }
+      ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」1枚を探し味方フィールドに無償で配置する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "WHITE ALBUM",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱のカード１枚を自分の「マネージャー」置き場に置く。置いたとき、その置き場の枚数が３枚以下の場合、２枚ドローする。\n[宣言] [T]:{相手キャラ１体}にＡＰ－３またはＤＰ－３する。\n[誘発] このキャラが相手の効果で場を離れたまたは元の能力を失ったとき、このキャラを破棄できる。自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ１体を探し無償で登場できる。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」１枚を探し味方フィールドに無償で配置する。\n構築制限:『WHITE ALBUM シリーズ』",
-    "normalizedText": "[サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱のカード1枚を自分の「マネージャー」置き場に置く。置いたとき、その置き場の枚数が3枚以下の場合、2枚ドローする。[宣言] [T]:{相手キャラ1体}にAP-3またはDP-3する。[誘発] このキャラが相手の効果で場を離れたまたは元の能力を失ったとき、このキャラを破棄できる。自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し無償で登場できる。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」1枚を探し味方フィールドに無償で配置する。構築制限:『WHITE ALBUM シリーズ』",
+    "normalizedText": "[サイドステップ:[0]]\n[宣言] [0]:自ターン中に使用する。自分のゴミ箱のカード1枚を自分の「マネージャー」置き場に置く。置いたとき、その置き場の枚数が3枚以下の場合、2枚ドローする。\n[宣言] [T]:{相手キャラ1体}にAP-3またはDP-3する。\n[誘発] このキャラが相手の効果で場を離れたまたは元の能力を失ったとき、このキャラを破棄できる。自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し無償で登場できる。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」1枚を探し味方フィールドに無償で配置する。\n構築制限:『WHITE ALBUM シリーズ』",
     "lines": [
       "[サイドステップ:[0]]",
-      "[宣言] [0]:自ターン中に使用する。自分のゴミ箱のカード1枚を自分の「マネージャー」置き場に置く。置いたとき、その置き場の枚数が3枚以下の場合、2枚ドローする。[宣言] [T]:{相手キャラ1体}にAP-3またはDP-3する。[誘発] このキャラが相手の効果で場を離れたまたは元の能力を失ったとき、このキャラを破棄できる。自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し無償で登場できる。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」1枚を探し味方フィールドに無償で配置する。構築制限:『WHITE ALBUM シリーズ』"
+      "[宣言] [0]:自ターン中に使用する。自分のゴミ箱のカード1枚を自分の「マネージャー」置き場に置く。置いたとき、その置き場の枚数が3枚以下の場合、2枚ドローする。",
+      "[宣言] [T]:{相手キャラ1体}にAP-3またはDP-3する。",
+      "[誘発] このキャラが相手の効果で場を離れたまたは元の能力を失ったとき、このキャラを破棄できる。自分のゴミ箱または自分のデッキからこのキャラと同番号のキャラ1体を探し無償で登場できる。",
+      "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「WHITE ALBUM」1枚を探し味方フィールドに無償で配置する。",
+      "構築制限:『WHITE ALBUM シリーズ』"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "draw",
+      "chooseOne",
+      "searchCard+freeUse",
+      "searchCard+freeUse"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『WHITE ALBUM シリーズ』",
       "reason": "no parser rule matched"
     }
   ]

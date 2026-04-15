@@ -31,6 +31,13 @@
     {
       "header": "誘発",
       "timing": "unknown",
+      "conditionText": "自ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "self"
+        }
+      ],
       "originalLine": "[誘発] 自ターン中、自分のイベントまたは手札宣言能力を使用したとき、このキャラにAP+1・DP+1・DMG+2する。",
       "actions": [
         {

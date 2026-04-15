@@ -40,7 +40,7 @@
             "trash"
           ],
           "match": {
-            "exactName": "『雨紋会』の幹部 東雲"
+            "exactName": "『雨紋会"
           },
           "min": 0,
           "max": 1,

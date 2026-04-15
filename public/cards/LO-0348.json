@@ -29,7 +29,7 @@
     {
       "header": "誘発",
       "timing": "onTurnStart",
-      "triggerText": "ターン開始時",
+      "triggerText": "相手ターン開始時",
       "originalLine": "[誘発] 相手ターン開始時、このキャラにDP+1・SP-2する。",
       "actions": [
         {

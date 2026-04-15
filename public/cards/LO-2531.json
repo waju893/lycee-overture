@@ -29,7 +29,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:自ターン中に使用する。{SPが3以上の味方[花]キャラ1体}にAP+1またはDP+1またはSP+1する。構築制限:[AUG]",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。{SPが3以上の味方[花]キャラ1体}にAP+1またはDP+1またはSP+1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -83,13 +83,19 @@
   ],
   "parseMeta": {
     "originalText": "[宣言] [0]:自ターン中に使用する。{ＳＰが３以上の味方[花]キャラ１体}にＡＰ＋１またはＤＰ＋１またはＳＰ＋１する。\n構築制限:[AUG]",
-    "normalizedText": "[宣言] [0]:自ターン中に使用する。{SPが3以上の味方[花]キャラ1体}にAP+1またはDP+1またはSP+1する。構築制限:[AUG]",
+    "normalizedText": "[宣言] [0]:自ターン中に使用する。{SPが3以上の味方[花]キャラ1体}にAP+1またはDP+1またはSP+1する。\n構築制限:[AUG]",
     "lines": [
-      "[宣言] [0]:自ターン中に使用する。{SPが3以上の味方[花]キャラ1体}にAP+1またはDP+1またはSP+1する。構築制限:[AUG]"
+      "[宣言] [0]:自ターン中に使用する。{SPが3以上の味方[花]キャラ1体}にAP+1またはDP+1またはSP+1する。",
+      "構築制限:[AUG]"
     ],
     "matchedRuleIds": [
       "chooseOne"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:[AUG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

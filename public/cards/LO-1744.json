@@ -41,7 +41,7 @@
     },
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] 手札から元のDPが4以上の味方[花]または<ヤマト>キャラが登場したとき、1枚ドローする。",
       "actions": [
         {

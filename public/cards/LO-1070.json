@@ -28,8 +28,8 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
-      "originalLine": "[誘発] 手札から元のAPが1の味方キャラが登場したとき、1枚ドローできる。構築制限:ガールズ&パンツァー([GUP])",
+      "timing": "unknown",
+      "originalLine": "[誘発] 手札から元のAPが1の味方キャラが登場したとき、1枚ドローできる。",
       "actions": [
         {
           "type": "draw",
@@ -40,13 +40,19 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] 手札から元のＡＰが１の味方キャラが登場したとき、１枚ドローできる。\n構築制限:ガールズ＆パンツァー（[GUP]）",
-    "normalizedText": "[誘発] 手札から元のAPが1の味方キャラが登場したとき、1枚ドローできる。構築制限:ガールズ&パンツァー([GUP])",
+    "normalizedText": "[誘発] 手札から元のAPが1の味方キャラが登場したとき、1枚ドローできる。\n構築制限:ガールズ&パンツァー([GUP])",
     "lines": [
-      "[誘発] 手札から元のAPが1の味方キャラが登場したとき、1枚ドローできる。構築制限:ガールズ&パンツァー([GUP])"
+      "[誘発] 手札から元のAPが1の味方キャラが登場したとき、1枚ドローできる。",
+      "構築制限:ガールズ&パンツァー([GUP])"
     ],
     "matchedRuleIds": [
       "draw"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:ガールズ&パンツァー([GUP])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -28,15 +28,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[宣言] [0]:バトル中に使用する。このキャラのコストが５点以上の場合、バトル終了時まで、このキャラにＤＭＧ＋２する。\n構築制限:神姫PROJECT（[KHP]）",
-    "normalizedText": "[宣言] [0]:バトル中に使用する。このキャラのコストが5点以上の場合、バトル終了時まで、このキャラにDMG+2する。構築制限:神姫PROJECT([KHP])",
+    "normalizedText": "[宣言] [0]:バトル中に使用する。このキャラのコストが5点以上の場合、バトル終了時まで、このキャラにDMG+2する。\n構築制限:神姫PROJECT([KHP])",
     "lines": [
-      "[宣言] [0]:バトル中に使用する。このキャラのコストが5点以上の場合、バトル終了時まで、このキャラにDMG+2する。構築制限:神姫PROJECT([KHP])"
+      "[宣言] [0]:バトル中に使用する。このキャラのコストが5点以上の場合、バトル終了時まで、このキャラにDMG+2する。",
+      "構築制限:神姫PROJECT([KHP])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[宣言] [0]:バトル中に使用する。このキャラのコストが5点以上の場合、バトル終了時まで、このキャラにDMG+2する。構築制限:神姫PROJECT([KHP])",
+      "line": "[宣言] [0]:バトル中に使用する。このキャラのコストが5点以上の場合、バトル終了時まで、このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:神姫PROJECT([KHP])",
       "reason": "no parser rule matched"
     }
   ]

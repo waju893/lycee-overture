@@ -30,15 +30,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ１体は次の相手のウェイクアップで未行動に戻らない。\n構築制限:Fate/Grand Order",
-    "normalizedText": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体は次の相手のウェイクアップで未行動に戻らない。構築制限:Fate/Grand Order",
+    "normalizedText": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体は次の相手のウェイクアップで未行動に戻らない。\n構築制限:Fate/Grand Order",
     "lines": [
-      "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体は次の相手のウェイクアップで未行動に戻らない。構築制限:Fate/Grand Order"
+      "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体は次の相手のウェイクアップで未行動に戻らない。",
+      "構築制限:Fate/Grand Order"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体は次の相手のウェイクアップで未行動に戻らない。構築制限:Fate/Grand Order",
+      "line": "[誘発] 自分の効果によって相手キャラを破棄したとき、キャラ1体は次の相手のウェイクアップで未行動に戻らない。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order",
       "reason": "no parser rule matched"
     }
   ]

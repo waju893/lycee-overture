@@ -28,10 +28,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[サポーター:[花]]\n[宣言] [花]:{味方キャラ１体}は[ガッツ:[このキャラの使用代償]]を得る。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[サポーター:[花]]\n[宣言] [花]:{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[サポーター:[花]]\n[宣言] [花]:{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
       "[サポーター:[花]]",
-      "[宣言] [花]:{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。構築制限:Fate/Grand Order([TM])"
+      "[宣言] [花]:{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": []
   },
@@ -41,7 +42,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[宣言] [花]:{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。構築制限:Fate/Grand Order([TM])",
+      "line": "[宣言] [花]:{味方キャラ1体}は[ガッツ:[このキャラの使用代償]]を得る。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

@@ -27,19 +27,29 @@
   "text": "味方攻撃キャラ１体にＡＰ＋５する。そのキャラはターン終了時までダウンしない。",
   "textKr": "味方攻撃キャラ１体にＡＰ＋５する。そのキャラはターン終了時までダウンしない。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0973",
-  "parsedEffectsDraft": [],
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "onTurnEnd",
+      "originalLine": "味方攻撃キャラ1体にAP+5する。そのキャラはターン終了時までダウンしない。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 5
+        }
+      ]
+    }
+  ],
   "parseMeta": {
     "originalText": "味方攻撃キャラ１体にＡＰ＋５する。そのキャラはターン終了時までダウンしない。",
     "normalizedText": "味方攻撃キャラ1体にAP+5する。そのキャラはターン終了時までダウンしない。",
     "lines": [
       "味方攻撃キャラ1体にAP+5する。そのキャラはターン終了時までダウンしない。"
     ],
-    "matchedRuleIds": []
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
   },
-  "unresolvedTextLines": [
-    {
-      "line": "味方攻撃キャラ1体にAP+5する。そのキャラはターン終了時までダウンしない。",
-      "reason": "no parser rule matched"
-    }
-  ]
+  "unresolvedTextLines": []
 }

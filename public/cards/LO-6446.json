@@ -41,29 +41,81 @@
     },
     {
       "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。[誘発] このキャラが登場したとき、味方キャラ1体にAP+3・DP+3する。構築制限:『アンラベル・トリガー』",
+      "originalLine": "[誘発] このキャラが登場したとき、味方キャラ1体にAP+3・DP+3する。",
       "actions": [
+        {
+          "type": "chooseTarget",
+          "selector": {
+            "owner": "self",
+            "kind": "character",
+            "count": 1
+          },
+          "storeAs": "selectedTarget",
+          "prompt": "자기 캐릭터 1체를 선택한다"
+        },
         {
           "type": "modifyStat",
           "stat": "ap",
-          "amount": 3
+          "amount": 3,
+          "targetRef": "selectedTarget"
         }
       ]
     }
   ],
   "parseMeta": {
     "originalText": "[サプライズ][ジャンプ:[0]][エンゲージ:[破棄キャラを回復し１枚ドローする。]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。\n[誘発] このキャラが登場したとき、味方キャラ１体にＡＰ＋３・ＤＰ＋３する。\n構築制限:『アンラベル・トリガー』",
-    "normalizedText": "[サプライズ][ジャンプ:[0]][エンゲージ:[破棄キャラを回復し1枚ドローする。]]\n[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。[誘発] このキャラが登場したとき、味方キャラ1体にAP+3・DP+3する。構築制限:『アンラベル・トリガー』",
+    "normalizedText": "[サプライズ][ジャンプ:[0]][エンゲージ:[破棄キャラを回復し1枚ドローする。]]\n[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。\n[誘発] このキャラが登場したとき、味方キャラ1体にAP+3・DP+3する。\n構築制限:『アンラベル・トリガー』",
     "lines": [
       "[サプライズ][ジャンプ:[0]][エンゲージ:[破棄キャラを回復し1枚ドローする。]]",
-      "[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。[誘発] このキャラが登場したとき、味方キャラ1体にAP+3・DP+3する。構築制限:『アンラベル・トリガー』"
+      "[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。",
+      "[誘発] このキャラが登場したとき、味方キャラ1体にAP+3・DP+3する。",
+      "構築制限:『アンラベル・トリガー』"
     ],
     "matchedRuleIds": [
       "draw",
-      "modifyStat"
+      "chooseOne",
+      "selector:selfCharacterOne"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:『アンラベル・トリガー』",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

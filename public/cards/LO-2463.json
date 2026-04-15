@@ -30,20 +30,9 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2463",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[リカバリー:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    },
-    {
       "header": "誘発",
       "timing": "onTurnStart",
-      "triggerText": "ターン開始時",
+      "triggerText": "相手ターン開始時",
       "originalLine": "[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、相手キャラ1体にAP-1・DP-1する。",
       "actions": [
         {
@@ -62,9 +51,13 @@
       "[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、相手キャラ1体にAP-1・DP-1する。"
     ],
     "matchedRuleIds": [
-      "draw",
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

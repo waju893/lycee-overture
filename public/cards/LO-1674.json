@@ -30,7 +30,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:{コストが3点の味方[宙]キャラ1体}にAP+1する。構築制限:ゆずソフト([YUZ])",
+      "originalLine": "[宣言] [0]:{コストが3点の味方[宙]キャラ1体}にAP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -42,13 +42,19 @@
   ],
   "parseMeta": {
     "originalText": "[宣言] [0]:{コストが３点の味方[宙]キャラ１体}にＡＰ＋１する。\n構築制限:ゆずソフト（[YUZ]）",
-    "normalizedText": "[宣言] [0]:{コストが3点の味方[宙]キャラ1体}にAP+1する。構築制限:ゆずソフト([YUZ])",
+    "normalizedText": "[宣言] [0]:{コストが3点の味方[宙]キャラ1体}にAP+1する。\n構築制限:ゆずソフト([YUZ])",
     "lines": [
-      "[宣言] [0]:{コストが3点の味方[宙]キャラ1体}にAP+1する。構築制限:ゆずソフト([YUZ])"
+      "[宣言] [0]:{コストが3点の味方[宙]キャラ1体}にAP+1する。",
+      "構築制限:ゆずソフト([YUZ])"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:ゆずソフト([YUZ])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

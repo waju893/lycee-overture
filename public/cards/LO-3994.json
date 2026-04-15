@@ -29,7 +29,6 @@
     {
       "header": "誘発",
       "timing": "onTurnEnd",
-      "triggerText": "ターン終了時",
       "originalLine": "[誘発] 自分の効果で相手キャラを破棄したとき、相手ターン終了時までこのキャラにDP+2する。",
       "actions": [
         {

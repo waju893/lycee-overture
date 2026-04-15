@@ -31,30 +31,51 @@
       "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-1・DP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。構築制限:[NAV]かつ[月]",
+      "originalLine": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-1・DP-1する。",
       "actions": [
+        {
+          "type": "chooseTarget",
+          "selector": {
+            "owner": "opponent",
+            "kind": "character",
+            "count": 1
+          },
+          "storeAs": "selectedTarget",
+          "prompt": "상대 캐릭터 1체를 선택한다"
+        },
         {
           "type": "modifyStat",
           "stat": "ap",
-          "amount": -1
+          "amount": -1,
+          "targetRef": "selectedTarget"
         }
       ]
     }
   ],
   "parseMeta": {
     "originalText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n構築制限:[NAV]かつ[月]",
-    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ1体にAP-1・DP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。構築制限:[NAV]かつ[月]",
+    "normalizedText": "[ジャンプ:[0]]\n[誘発] このキャラが登場したとき、相手キャラ1体にAP-1・DP-1する。\n[手札宣言] [0]:ゴミ箱のこのキャラを登場する。\n構築制限:[NAV]かつ[月]",
     "lines": [
       "[ジャンプ:[0]]",
-      "[誘発] このキャラが登場したとき、相手キャラ1体にAP-1・DP-1する。[手札宣言] [0]:ゴミ箱のこのキャラを登場する。構築制限:[NAV]かつ[月]"
+      "[誘発] このキャラが登場したとき、相手キャラ1体にAP-1・DP-1する。",
+      "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+      "構築制限:[NAV]かつ[月]"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "selector:opponentCharacterOne"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[NAV]かつ[月]",
       "reason": "no parser rule matched"
     }
   ]

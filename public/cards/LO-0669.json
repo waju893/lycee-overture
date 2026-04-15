@@ -29,7 +29,6 @@
     {
       "header": "宣言",
       "timing": "onTurnEnd",
-      "triggerText": "ターン終了時",
       "originalLine": "[宣言] [自分の手札を1枚デッキの上に置く]:このターン終了時、1枚ドローする。",
       "actions": [
         {

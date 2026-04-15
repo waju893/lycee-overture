@@ -30,7 +30,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] [宙]でない味方キャラが登場したとき、1枚ドローする。この能力は失われる。",
       "actions": [
         {

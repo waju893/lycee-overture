@@ -30,17 +30,6 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1198",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[リカバリー:[1枚ドローする。]][オーダーステップ:[0]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    },
-    {
       "header": "誘発",
       "timing": "unknown",
       "originalLine": "[誘発] このキャラが相手の効果によって破棄されたとき、1枚ドローできる。",
@@ -60,9 +49,13 @@
       "[誘発] このキャラが相手の効果によって破棄されたとき、1枚ドローできる。"
     ],
     "matchedRuleIds": [
-      "draw",
       "draw"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[1枚ドローする。]][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

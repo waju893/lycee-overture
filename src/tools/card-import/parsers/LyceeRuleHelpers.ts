@@ -30,12 +30,17 @@ export function splitNormalizedLines(text: string): string[] {
 }
 
 export function extractHeader(line: string): { header: LyceeHeader; body: string } {
-  const match = line.match(/^\[([^\]]+)\]\s*(.*)$/);
+  const trimmed = line.trim();
+  const match = trimmed.match(/^\[([^\]]+)\]\s*(.*)$/);
   if (!match) {
-    return { header: "unknown", body: line.trim() };
+    return { header: "unknown", body: trimmed };
   }
 
   const raw = (match[1] ?? "").trim();
+  if (raw.includes(":")) {
+    return { header: "unknown", body: trimmed };
+  }
+
   const body = (match[2] ?? "").trim();
 
   const header: LyceeHeader =
@@ -43,11 +48,14 @@ export function extractHeader(line: string): { header: LyceeHeader; body: string
     raw === "宣言" ||
     raw === "常時" ||
     raw === "手札宣言" ||
-    raw === "使用代償"
+    raw === "使用代償" ||
+    raw === "コスト"
       ? raw
       : "unknown";
 
-  return { header, body };
+  return header === "unknown"
+    ? { header, body: trimmed }
+    : { header, body };
 }
 
 export function inferTiming(header: LyceeHeader | undefined, body: string): LyceeTiming {
@@ -70,11 +78,17 @@ export function stripLeadingTriggerClause(body: string): {
   const patterns = [
     /^(このキャラが手札から登場したとき)[、,]\s*(.+)$/,
     /^(このキャラが登場したとき)[、,]\s*(.+)$/,
+    /^(このキャラがエンゲージ登場以外で登場したとき)[、,]\s*(.+)$/,
     /^(自ターン開始時)[、,]\s*(.+)$/,
     /^(相手ターン開始時)[、,]\s*(.+)$/,
     /^(ターン開始時)[、,]\s*(.+)$/,
     /^(ターン終了時)[、,]\s*(.+)$/,
     /^(このキャラが破棄されたとき)[、,]\s*(.+)$/,
+    /^(このキャラを相手の効果で破棄したとき)[、,]\s*(.+)$/,
+    /^(このエリアを相手の効果で破棄したとき)[、,]\s*(.+)$/,
+    /^(このキャラの登場の宣言が相手の効果で失敗したとき)[、,]\s*(.+)$/,
+    /^(このキャラがダウンしたとき)[、,]\s*(.+)$/,
+    /^(このキャラでサポートをしたとき)[、,]\s*(.+)$/,
   ];
 
   for (const pattern of patterns) {

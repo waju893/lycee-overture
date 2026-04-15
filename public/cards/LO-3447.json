@@ -30,17 +30,6 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3447",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[ペナルティ:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    },
-    {
       "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
@@ -79,9 +68,13 @@
       "[誘発] このキャラが登場したとき、コストが5点以上の味方AFキャラが2体以上登場している場合、自分のゴミ箱または自分のデッキから「人機」1枚を探しこのキャラに無償で装備できる。1枚ドローできる。"
     ],
     "matchedRuleIds": [
-      "draw",
       "searchCard+freeUse"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

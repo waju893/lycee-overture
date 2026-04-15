@@ -31,8 +31,8 @@
     {
       "header": "誘発",
       "timing": "onTurnStart",
-      "triggerText": "ターン開始時",
-      "originalLine": "[誘発] 相手ターン開始時、相手キャラ全てにAP-1する。構築制限:神姫PROJECT([KHP])",
+      "triggerText": "相手ターン開始時",
+      "originalLine": "[誘発] 相手ターン開始時、相手キャラ全てにAP-1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -44,10 +44,11 @@
   ],
   "parseMeta": {
     "originalText": "[リーダー][オーダーステップ:[0]]\n[誘発] 相手ターン開始時、相手キャラ全てにＡＰ－１する。\n構築制限:神姫PROJECT（[KHP]）",
-    "normalizedText": "[リーダー][オーダーステップ:[0]]\n[誘発] 相手ターン開始時、相手キャラ全てにAP-1する。構築制限:神姫PROJECT([KHP])",
+    "normalizedText": "[リーダー][オーダーステップ:[0]]\n[誘発] 相手ターン開始時、相手キャラ全てにAP-1する。\n構築制限:神姫PROJECT([KHP])",
     "lines": [
       "[リーダー][オーダーステップ:[0]]",
-      "[誘発] 相手ターン開始時、相手キャラ全てにAP-1する。構築制限:神姫PROJECT([KHP])"
+      "[誘発] 相手ターン開始時、相手キャラ全てにAP-1する。",
+      "構築制限:神姫PROJECT([KHP])"
     ],
     "matchedRuleIds": [
       "modifyStat"
@@ -56,6 +57,10 @@
   "unresolvedTextLines": [
     {
       "line": "[リーダー][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:神姫PROJECT([KHP])",
       "reason": "no parser rule matched"
     }
   ]

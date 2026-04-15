@@ -31,30 +31,46 @@
       "header": "誘発",
       "timing": "onTurnStart",
       "triggerText": "ターン開始時",
-      "originalLine": "[誘発] ターン開始時、相手キャラ1体にDP-1する。そのキャラのDPが1以下の場合、そのキャラにDMG-1する。構築制限:ゆずソフト([YUZ])",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にDP-1する。そのキャラのDPが1以下の場合、そのキャラにDMG-1する。",
       "actions": [
+        {
+          "type": "chooseTarget",
+          "selector": {
+            "owner": "opponent",
+            "kind": "character",
+            "count": 1
+          },
+          "storeAs": "selectedTarget",
+          "prompt": "상대 캐릭터 1체를 선택한다"
+        },
         {
           "type": "modifyStat",
           "stat": "dp",
-          "amount": -1
+          "amount": -1,
+          "targetRef": "selectedTarget"
         }
       ]
     }
   ],
   "parseMeta": {
     "originalText": "[リカバリー:[自分のデッキを２枚回復する。]]\n[誘発] ターン開始時、相手キャラ１体にＤＰ－１する。そのキャラのＤＰが１以下の場合、そのキャラにＤＭＧ－１する。\n構築制限:ゆずソフト（[YUZ]）",
-    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] ターン開始時、相手キャラ1体にDP-1する。そのキャラのDPが1以下の場合、そのキャラにDMG-1する。構築制限:ゆずソフト([YUZ])",
+    "normalizedText": "[リカバリー:[自分のデッキを2枚回復する。]]\n[誘発] ターン開始時、相手キャラ1体にDP-1する。そのキャラのDPが1以下の場合、そのキャラにDMG-1する。\n構築制限:ゆずソフト([YUZ])",
     "lines": [
       "[リカバリー:[自分のデッキを2枚回復する。]]",
-      "[誘発] ターン開始時、相手キャラ1体にDP-1する。そのキャラのDPが1以下の場合、そのキャラにDMG-1する。構築制限:ゆずソフト([YUZ])"
+      "[誘発] ターン開始時、相手キャラ1体にDP-1する。そのキャラのDPが1以下の場合、そのキャラにDMG-1する。",
+      "構築制限:ゆずソフト([YUZ])"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "selector:opponentCharacterOne"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[リカバリー:[自分のデッキを2枚回復する。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:ゆずソフト([YUZ])",
       "reason": "no parser rule matched"
     }
   ]

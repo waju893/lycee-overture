@@ -29,18 +29,6 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0199",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[味方キャラ1体にDP+2する。]]",
-      "actions": [
-        {
-          "type": "modifyStat",
-          "stat": "dp",
-          "amount": 2
-        }
-      ]
-    },
-    {
       "header": "宣言",
       "timing": "onUse",
       "originalLine": "[宣言] [D4]:このキャラにAP+4する。",
@@ -61,9 +49,13 @@
       "[宣言] [D4]:このキャラにAP+4する。"
     ],
     "matchedRuleIds": [
-      "modifyStat",
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[味方キャラ1体にDP+2する。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

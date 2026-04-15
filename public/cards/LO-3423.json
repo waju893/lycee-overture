@@ -31,7 +31,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:{味方[雪]キャラ1体}にDP+1する。[宣言] [0]:{DPが5以上の味方[雪]キャラ1体}にDMG+1する。構築制限:[GIG]",
+      "originalLine": "[宣言] [0]:{味方[雪]キャラ1体}にDP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,10 +43,12 @@
   ],
   "parseMeta": {
     "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:{味方[雪]キャラ１体}にＤＰ＋１する。\n[宣言] [0]:{ＤＰが５以上の味方[雪]キャラ１体}にＤＭＧ＋１する。\n構築制限:[GIG]",
-    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:{味方[雪]キャラ1体}にDP+1する。[宣言] [0]:{DPが5以上の味方[雪]キャラ1体}にDMG+1する。構築制限:[GIG]",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:{味方[雪]キャラ1体}にDP+1する。\n[宣言] [0]:{DPが5以上の味方[雪]キャラ1体}にDMG+1する。\n構築制限:[GIG]",
     "lines": [
       "[オーダーステップ:[0]]",
-      "[宣言] [0]:{味方[雪]キャラ1体}にDP+1する。[宣言] [0]:{DPが5以上の味方[雪]キャラ1体}にDMG+1する。構築制限:[GIG]"
+      "[宣言] [0]:{味方[雪]キャラ1体}にDP+1する。",
+      "[宣言] [0]:{DPが5以上の味方[雪]キャラ1体}にDMG+1する。",
+      "構築制限:[GIG]"
     ],
     "matchedRuleIds": [
       "modifyStat"
@@ -55,6 +57,14 @@
   "unresolvedTextLines": [
     {
       "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:{DPが5以上の味方[雪]キャラ1体}にDMG+1する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[GIG]",
       "reason": "no parser rule matched"
     }
   ]

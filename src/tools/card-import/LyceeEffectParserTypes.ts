@@ -4,6 +4,7 @@ export type LyceeHeader =
   | "常時"
   | "手札宣言"
   | "使用代償"
+  | "コスト"
   | "unknown";
 
 export type LyceeTiming =
@@ -76,6 +77,8 @@ export interface FreeUseAction {
   sourceRef: string;
   useKind: "character" | "event" | "item" | "area";
   ignoreCost: true;
+  sourceZone?: "trash" | "deck" | "hand";
+  sourceSubject?: "thisCard" | "searchedCard";
 }
 
 export interface ChargeAction {
@@ -87,7 +90,7 @@ export interface ChargeAction {
 export interface MoveCardAction {
   type: "moveCard";
   owner: "self" | "opponent";
-  from: "hand" | "deck" | "trash" | "field";
+  from: "hand" | "deck" | "deckTop" | "trash" | "field";
   to: "hand" | "deckTop" | "deckBottom" | "trash";
   count: number;
 }
@@ -135,6 +138,59 @@ export interface CostBlockAction {
   actions: ParsedAction[];
 }
 
+export interface MetaIgnoreAction {
+  type: "metaIgnore";
+  text: string;
+}
+
+export interface ChoiceIntroAction {
+  type: "choiceIntro";
+  prompt: "selectOneAndResolve";
+}
+
+export interface PlaceCardAction {
+  type: "placeCard";
+  owner: "self" | "opponent";
+  from: "hand" | "deckTop" | "trash" | "field";
+  to: "underThisCard" | "namedPlace" | "besideThisCard" | "chargeOnThisCard";
+  count: number;
+  placeName?: string;
+}
+
+export interface KeywordTagAction {
+  type: "keywordTag";
+  keyword:
+    | "assist"
+    | "aggressive"
+    | "engage"
+    | "step"
+    | "sidestep"
+    | "jump"
+    | "orderstep"
+    | "orderchange"
+    | "charge"
+    | "supporter"
+    | "penalty"
+    | "recovery"
+    | "bonus"
+    | "turnRecovery"
+    | "leader"
+    | "principal";
+  value?: string | number;
+  nestedActions?: ParsedAction[];
+}
+
+export interface UsageLimitAction {
+  type: "usageLimit";
+  scope: "game" | "turn";
+  count: number;
+  appliesTo: "use" | "choose" | "process" | "unknown";
+}
+
+export interface LoseThisAbilityAction {
+  type: "loseThisAbility";
+}
+
 export type ParsedAction =
   | DrawAction
   | ModifyStatAction
@@ -148,7 +204,13 @@ export type ParsedAction =
   | ChooseOneAction
   | ChooseTargetAction
   | OptionalElseAction
-  | CostBlockAction;
+  | CostBlockAction
+  | MetaIgnoreAction
+  | ChoiceIntroAction
+  | PlaceCardAction
+  | KeywordTagAction
+  | UsageLimitAction
+  | LoseThisAbilityAction;
 
 export interface ParsedChoice {
   label?: string;

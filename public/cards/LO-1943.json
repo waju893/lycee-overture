@@ -30,15 +30,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[宣言] [0]:このキャラにＤＭＧ＋[味方ＤＦキャラの数]する。\n構築制限:とある魔術の禁書目録（[TOA]）",
-    "normalizedText": "[宣言] [0]:このキャラにDMG+[味方DFキャラの数]する。構築制限:とある魔術の禁書目録([TOA])",
+    "normalizedText": "[宣言] [0]:このキャラにDMG+[味方DFキャラの数]する。\n構築制限:とある魔術の禁書目録([TOA])",
     "lines": [
-      "[宣言] [0]:このキャラにDMG+[味方DFキャラの数]する。構築制限:とある魔術の禁書目録([TOA])"
+      "[宣言] [0]:このキャラにDMG+[味方DFキャラの数]する。",
+      "構築制限:とある魔術の禁書目録([TOA])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[宣言] [0]:このキャラにDMG+[味方DFキャラの数]する。構築制限:とある魔術の禁書目録([TOA])",
+      "line": "[宣言] [0]:このキャラにDMG+[味方DFキャラの数]する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:とある魔術の禁書目録([TOA])",
       "reason": "no parser rule matched"
     }
   ]

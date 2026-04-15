@@ -29,15 +29,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[誘発] このキャラが登場したとき、コストが２点以下の相手ＡＦキャラ１体を相手ＤＦに移動する。\n構築制限:[AUG]",
-    "normalizedText": "[誘発] このキャラが登場したとき、コストが2点以下の相手AFキャラ1体を相手DFに移動する。構築制限:[AUG]",
+    "normalizedText": "[誘発] このキャラが登場したとき、コストが2点以下の相手AFキャラ1体を相手DFに移動する。\n構築制限:[AUG]",
     "lines": [
-      "[誘発] このキャラが登場したとき、コストが2点以下の相手AFキャラ1体を相手DFに移動する。構築制限:[AUG]"
+      "[誘発] このキャラが登場したとき、コストが2点以下の相手AFキャラ1体を相手DFに移動する。",
+      "構築制限:[AUG]"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[誘発] このキャラが登場したとき、コストが2点以下の相手AFキャラ1体を相手DFに移動する。構築制限:[AUG]",
+      "line": "[誘発] このキャラが登場したとき、コストが2点以下の相手AFキャラ1体を相手DFに移動する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[AUG]",
       "reason": "no parser rule matched"
     }
   ]

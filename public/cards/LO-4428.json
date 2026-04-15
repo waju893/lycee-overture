@@ -29,7 +29,7 @@
       "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体にAP+1またはDP+1する。[宣言] [D1]:このキャラを手札に入れる。構築制限:[DG]",
+      "originalLine": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体にAP+1またはDP+1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -58,17 +58,39 @@
           ]
         }
       ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラを手札に入れる。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "field",
+          "to": "hand",
+          "count": 1
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[誘発] このキャラが登場したとき、味方[雪]キャラ１体にＡＰ＋１またはＤＰ＋１する。\n[宣言] [D1]:このキャラを手札に入れる。\n構築制限:[DG]",
-    "normalizedText": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体にAP+1またはDP+1する。[宣言] [D1]:このキャラを手札に入れる。構築制限:[DG]",
+    "normalizedText": "[誘発] このキャラが登場したとき、味方[雪]キャラ1体にAP+1またはDP+1する。\n[宣言] [D1]:このキャラを手札に入れる。\n構築制限:[DG]",
     "lines": [
-      "[誘発] このキャラが登場したとき、味方[雪]キャラ1体にAP+1またはDP+1する。[宣言] [D1]:このキャラを手札に入れる。構築制限:[DG]"
+      "[誘発] このキャラが登場したとき、味方[雪]キャラ1体にAP+1またはDP+1する。",
+      "[宣言] [D1]:このキャラを手札に入れる。",
+      "構築制限:[DG]"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "chooseOne",
+      "moveCard:toHand"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:[DG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

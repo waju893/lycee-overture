@@ -26,19 +26,7 @@
   "text": "[リカバリー:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「家庭教師」１枚を味方キャラ１体に装備できる。",
   "textKr": "[リカバリー:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「家庭教師」１枚を味方キャラ１体に装備できる。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1690",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[リカバリー:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[リカバリー:[１枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「家庭教師」１枚を味方キャラ１体に装備できる。",
     "normalizedText": "[リカバリー:[1枚ドローする。]]\n[誘発] このキャラが登場したとき、自分のゴミ箱の「家庭教師」1枚を味方キャラ1体に装備できる。",
@@ -46,11 +34,13 @@
       "[リカバリー:[1枚ドローする。]]",
       "[誘発] このキャラが登場したとき、自分のゴミ箱の「家庭教師」1枚を味方キャラ1体に装備できる。"
     ],
-    "matchedRuleIds": [
-      "draw"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[リカバリー:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[誘発] このキャラが登場したとき、自分のゴミ箱の「家庭教師」1枚を味方キャラ1体に装備できる。",
       "reason": "no parser rule matched"

@@ -28,15 +28,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "{コストが２点以下の味方[花]キャラ１体}を未行動にする。\n構築制限:[OSP]",
-    "normalizedText": "{コストが2点以下の味方[花]キャラ1体}を未行動にする。構築制限:[OSP]",
+    "normalizedText": "{コストが2点以下の味方[花]キャラ1体}を未行動にする。\n構築制限:[OSP]",
     "lines": [
-      "{コストが2点以下の味方[花]キャラ1体}を未行動にする。構築制限:[OSP]"
+      "{コストが2点以下の味方[花]キャラ1体}を未行動にする。",
+      "構築制限:[OSP]"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "{コストが2点以下の味方[花]キャラ1体}を未行動にする。構築制限:[OSP]",
+      "line": "{コストが2点以下の味方[花]キャラ1体}を未行動にする。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[OSP]",
       "reason": "no parser rule matched"
     }
   ]

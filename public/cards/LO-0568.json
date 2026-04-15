@@ -28,15 +28,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[宣言][T無無][このキャラを破棄する]:{相手キャラ１体}を破棄する。\n構築制限:Fate/Grand Order",
-    "normalizedText": "[宣言][T無無][このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order",
+    "normalizedText": "[宣言][T無無][このキャラを破棄する]:{相手キャラ1体}を破棄する。\n構築制限:Fate/Grand Order",
     "lines": [
-      "[宣言][T無無][このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order"
+      "[宣言][T無無][このキャラを破棄する]:{相手キャラ1体}を破棄する。",
+      "構築制限:Fate/Grand Order"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[宣言][T無無][このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order",
+      "line": "[宣言][T無無][このキャラを破棄する]:{相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order",
       "reason": "no parser rule matched"
     }
   ]

@@ -26,7 +26,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "{コストが3点以上の味方<蜀>キャラ1体}を手札に入れる。構築制限:[NEX]",
+      "originalLine": "{コストが3点以上の味方<蜀>キャラ1体}を手札に入れる。",
       "actions": [
         {
           "type": "moveCard",
@@ -40,13 +40,19 @@
   ],
   "parseMeta": {
     "originalText": "{コストが３点以上の味方＜蜀＞キャラ１体}を手札に入れる。\n構築制限:[NEX]",
-    "normalizedText": "{コストが3点以上の味方<蜀>キャラ1体}を手札に入れる。構築制限:[NEX]",
+    "normalizedText": "{コストが3点以上の味方<蜀>キャラ1体}を手札に入れる。\n構築制限:[NEX]",
     "lines": [
-      "{コストが3点以上の味方<蜀>キャラ1体}を手札に入れる。構築制限:[NEX]"
+      "{コストが3点以上の味方<蜀>キャラ1体}を手札に入れる。",
+      "構築制限:[NEX]"
     ],
     "matchedRuleIds": [
       "moveCard:toHand"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:[NEX]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

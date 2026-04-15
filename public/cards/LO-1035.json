@@ -28,7 +28,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] 味方<BC自由>キャラがエンゲージ登場したとき、相手キャラ1体にAP-2・DP-2する。",
       "actions": [
         {

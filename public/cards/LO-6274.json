@@ -43,7 +43,26 @@
     {
       "header": "常時",
       "timing": "continuous",
-      "originalLine": "[常時] 相手ターン中、味方キャラ全てにAP+1・DP+1する。[宣言] [0]:{相手キャラ1体}にAP-3またはDP-3する。[宣言] [0]:このキャラがAFキャラの場合、{相手キャラ1体}にDMG-1する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「二世村正」1体を探し公開して手札に入れる。",
+      "conditionText": "相手ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "opponent"
+        }
+      ],
+      "originalLine": "[常時] 相手ターン中、味方キャラ全てにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-3またはDP-3する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -55,7 +74,7 @@
                 {
                   "type": "modifyStat",
                   "stat": "ap",
-                  "amount": 1
+                  "amount": -3
                 }
               ]
             },
@@ -63,64 +82,65 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "chooseOne",
-                  "prompt": "하나를 선택한다",
-                  "choices": [
-                    {
-                      "label": "A",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": -3
-                        }
-                      ]
-                    },
-                    {
-                      "label": "B",
-                      "actions": [
-                        {
-                          "type": "searchCard",
-                          "owner": "self",
-                          "zones": [
-                            "deck",
-                            "hand"
-                          ],
-                          "match": {
-                            "exactName": "二世村正"
-                          },
-                          "min": 0,
-                          "max": 1,
-                          "storeAs": "lastSearchResult",
-                          "shuffleAfterSearch": true
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -3
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「二世村正」1体を探し公開して手札に入れる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "二世村正"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[プリンシパル][ターンリカバリー:[１枚ドローする。]]\n[コンバート:[0]:「二世村正」→「銀星号」]\n[常時] 相手ターン中、味方キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－３またはＤＰ－３する。\n[宣言] [0]:このキャラがＡＦキャラの場合、{相手キャラ１体}にＤＭＧ－１する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「二世村正」１体を探し公開して手札に入れる。",
-    "normalizedText": "[プリンシパル][ターンリカバリー:[1枚ドローする。]]\n[コンバート:[0]:「二世村正」→「銀星号」]\n[常時] 相手ターン中、味方キャラ全てにAP+1・DP+1する。[宣言] [0]:{相手キャラ1体}にAP-3またはDP-3する。[宣言] [0]:このキャラがAFキャラの場合、{相手キャラ1体}にDMG-1する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「二世村正」1体を探し公開して手札に入れる。",
+    "normalizedText": "[プリンシパル][ターンリカバリー:[1枚ドローする。]]\n[コンバート:[0]:「二世村正」→「銀星号」]\n[常時] 相手ターン中、味方キャラ全てにAP+1・DP+1する。\n[宣言] [0]:{相手キャラ1体}にAP-3またはDP-3する。\n[宣言] [0]:このキャラがAFキャラの場合、{相手キャラ1体}にDMG-1する。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「二世村正」1体を探し公開して手札に入れる。",
     "lines": [
       "[プリンシパル][ターンリカバリー:[1枚ドローする。]]",
       "[コンバート:[0]:「二世村正」→「銀星号」]",
-      "[常時] 相手ターン中、味方キャラ全てにAP+1・DP+1する。[宣言] [0]:{相手キャラ1体}にAP-3またはDP-3する。[宣言] [0]:このキャラがAFキャラの場合、{相手キャラ1体}にDMG-1する。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「二世村正」1体を探し公開して手札に入れる。"
+      "[常時] 相手ターン中、味方キャラ全てにAP+1・DP+1する。",
+      "[宣言] [0]:{相手キャラ1体}にAP-3またはDP-3する。",
+      "[宣言] [0]:このキャラがAFキャラの場合、{相手キャラ1体}にDMG-1する。",
+      "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「二世村正」1体を探し公開して手札に入れる。"
     ],
     "matchedRuleIds": [
       "draw",
-      "chooseOne"
+      "modifyStat",
+      "chooseOne",
+      "searchCard"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[コンバート:[0]:「二世村正」→「銀星号」]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [0]:このキャラがAFキャラの場合、{相手キャラ1体}にDMG-1する。",
       "reason": "no parser rule matched"
     }
   ]

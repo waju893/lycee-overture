@@ -31,7 +31,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにDP+1する。構築制限:千年戦争アイギス([AIG])",
+      "originalLine": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにDP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,13 +43,19 @@
   ],
   "parseMeta": {
     "originalText": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにＤＰ＋１する。\n構築制限:千年戦争アイギス（[AIG]）",
-    "normalizedText": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにDP+1する。構築制限:千年戦争アイギス([AIG])",
+    "normalizedText": "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにDP+1する。\n構築制限:千年戦争アイギス([AIG])",
     "lines": [
-      "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにDP+1する。構築制限:千年戦争アイギス([AIG])"
+      "[宣言] [0]:相手ターン中に使用する。味方[雪]キャラ全てにDP+1する。",
+      "構築制限:千年戦争アイギス([AIG])"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:千年戦争アイギス([AIG])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

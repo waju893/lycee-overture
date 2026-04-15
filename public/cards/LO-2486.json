@@ -29,7 +29,7 @@
       "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-2またはDP-2する。[手札宣言] [月]:元のDMGが4以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。",
+      "originalLine": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-2またはDP-2する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -39,9 +39,20 @@
               "label": "A",
               "actions": [
                 {
+                  "type": "chooseTarget",
+                  "selector": {
+                    "owner": "opponent",
+                    "kind": "character",
+                    "count": 1
+                  },
+                  "storeAs": "selectedTarget",
+                  "prompt": "상대 캐릭터 1체를 선택한다"
+                },
+                {
                   "type": "modifyStat",
                   "stat": "ap",
-                  "amount": -2
+                  "amount": -2,
+                  "targetRef": "selectedTarget"
                 }
               ]
             },
@@ -49,33 +60,46 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "searchCard",
-                  "owner": "self",
-                  "zones": [
-                    "deck",
-                    "hand"
-                  ],
-                  "match": {},
-                  "min": 0,
-                  "max": 2,
-                  "storeAs": "lastSearchResult",
-                  "shuffleAfterSearch": true
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -2
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [月]:元のDMGが4以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck"
+          ],
+          "match": {},
+          "min": 0,
+          "max": 4,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[誘発] このキャラが登場したとき、相手キャラ１体にＡＰ－２またはＤＰ－２する。\n[手札宣言] [月]:元のＤＭＧが４以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ１体を探し{味方フィールド}に登場する。",
-    "normalizedText": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-2またはDP-2する。[手札宣言] [月]:元のDMGが4以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。",
+    "normalizedText": "[誘発] このキャラが登場したとき、相手キャラ1体にAP-2またはDP-2する。\n[手札宣言] [月]:元のDMGが4以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。",
     "lines": [
-      "[誘発] このキャラが登場したとき、相手キャラ1体にAP-2またはDP-2する。[手札宣言] [月]:元のDMGが4以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。"
+      "[誘発] このキャラが登場したとき、相手キャラ1体にAP-2またはDP-2する。",
+      "[手札宣言] [月]:元のDMGが4以上の味方キャラが登場していない場合、自分のデッキから[月]キャラ1体を探し{味方フィールド}に登場する。"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "chooseOne",
+      "searchCard"
     ]
   },
   "unresolvedTextLines": []

@@ -32,7 +32,7 @@
       "header": "誘発",
       "timing": "onTurnStart",
       "triggerText": "ターン開始時",
-      "originalLine": "[誘発] ターン開始時、味方[宙]キャラ1体にAP+2またはDP+2する。[宣言] [0]:コストが5点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ1体}にAP+2またはDP+2する。この能力は失われる。構築制限:[ASA]",
+      "originalLine": "[誘発] ターン開始時、味方[宙]キャラ1体にAP+2またはDP+2する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -52,30 +52,42 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "chooseOne",
-                  "prompt": "하나를 선택한다",
-                  "choices": [
-                    {
-                      "label": "A",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": 2
-                        }
-                      ]
-                    },
-                    {
-                      "label": "B",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": 2
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:コストが5点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ1体}にAP+2またはDP+2する。この能力は失われる。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
                 }
               ]
             }
@@ -86,18 +98,25 @@
   ],
   "parseMeta": {
     "originalText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、味方[宙]キャラ１体にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:コストが５点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ１体}にＡＰ＋２またはＤＰ＋２する。この能力は失われる。\n構築制限:[ASA]",
-    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、味方[宙]キャラ1体にAP+2またはDP+2する。[宣言] [0]:コストが5点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ1体}にAP+2またはDP+2する。この能力は失われる。構築制限:[ASA]",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、味方[宙]キャラ1体にAP+2またはDP+2する。\n[宣言] [0]:コストが5点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ1体}にAP+2またはDP+2する。この能力は失われる。\n構築制限:[ASA]",
     "lines": [
       "[オーダーステップ:[0]]",
-      "[誘発] ターン開始時、味方[宙]キャラ1体にAP+2またはDP+2する。[宣言] [0]:コストが5点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ1体}にAP+2またはDP+2する。この能力は失われる。構築制限:[ASA]"
+      "[誘発] ターン開始時、味方[宙]キャラ1体にAP+2またはDP+2する。",
+      "[宣言] [0]:コストが5点以上の味方[宙]キャラが登場している場合、{味方[宙]キャラ1体}にAP+2またはDP+2する。この能力は失われる。",
+      "構築制限:[ASA]"
     ],
     "matchedRuleIds": [
+      "chooseOne",
       "chooseOne"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[ASA]",
       "reason": "no parser rule matched"
     }
   ]

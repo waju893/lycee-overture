@@ -44,7 +44,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [D1]:相手キャラ全てにDP-1する。構築制限:千年戦争アイギス([AIG]",
+      "originalLine": "[宣言] [D1]:相手キャラ全てにDP-1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -56,15 +56,21 @@
   ],
   "parseMeta": {
     "originalText": "[サイドステップ:[0]][ペナルティ:[１枚ドローする。]]\n[宣言] [D1]:相手キャラ全てにＤＰ－１する。\n構築制限:千年戦争アイギス（[AIG]",
-    "normalizedText": "[サイドステップ:[0]][ペナルティ:[1枚ドローする。]]\n[宣言] [D1]:相手キャラ全てにDP-1する。構築制限:千年戦争アイギス([AIG]",
+    "normalizedText": "[サイドステップ:[0]][ペナルティ:[1枚ドローする。]]\n[宣言] [D1]:相手キャラ全てにDP-1する。\n構築制限:千年戦争アイギス([AIG]",
     "lines": [
       "[サイドステップ:[0]][ペナルティ:[1枚ドローする。]]",
-      "[宣言] [D1]:相手キャラ全てにDP-1する。構築制限:千年戦争アイギス([AIG]"
+      "[宣言] [D1]:相手キャラ全てにDP-1する。",
+      "構築制限:千年戦争アイギス([AIG]"
     ],
     "matchedRuleIds": [
       "draw",
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:千年戦争アイギス([AIG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -29,9 +29,9 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2189",
   "parsedEffectsDraft": [
     {
-      "header": "常時",
-      "timing": "continuous",
-      "originalLine": "[常時] 相手の効果で相手DFキャラが移動する場合、移動しない。[誘発] 自分の効果でコストが3点以上の相手キャラを移動したとき、1枚ドローできる。構築制限:『WHITE ALBUM2』",
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の効果でコストが3点以上の相手キャラを移動したとき、1枚ドローできる。",
       "actions": [
         {
           "type": "draw",
@@ -42,10 +42,12 @@
   ],
   "parseMeta": {
     "originalText": "[サイドステップ:[0]]\n[常時] 相手の効果で相手ＤＦキャラが移動する場合、移動しない。\n[誘発] 自分の効果でコストが３点以上の相手キャラを移動したとき、１枚ドローできる。\n構築制限:『WHITE ALBUM2』",
-    "normalizedText": "[サイドステップ:[0]]\n[常時] 相手の効果で相手DFキャラが移動する場合、移動しない。[誘発] 自分の効果でコストが3点以上の相手キャラを移動したとき、1枚ドローできる。構築制限:『WHITE ALBUM2』",
+    "normalizedText": "[サイドステップ:[0]]\n[常時] 相手の効果で相手DFキャラが移動する場合、移動しない。\n[誘発] 自分の効果でコストが3点以上の相手キャラを移動したとき、1枚ドローできる。\n構築制限:『WHITE ALBUM2』",
     "lines": [
       "[サイドステップ:[0]]",
-      "[常時] 相手の効果で相手DFキャラが移動する場合、移動しない。[誘発] 自分の効果でコストが3点以上の相手キャラを移動したとき、1枚ドローできる。構築制限:『WHITE ALBUM2』"
+      "[常時] 相手の効果で相手DFキャラが移動する場合、移動しない。",
+      "[誘発] 自分の効果でコストが3点以上の相手キャラを移動したとき、1枚ドローできる。",
+      "構築制限:『WHITE ALBUM2』"
     ],
     "matchedRuleIds": [
       "draw"
@@ -54,6 +56,14 @@
   "unresolvedTextLines": [
     {
       "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[常時] 相手の効果で相手DFキャラが移動する場合、移動しない。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『WHITE ALBUM2』",
       "reason": "no parser rule matched"
     }
   ]

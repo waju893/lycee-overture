@@ -28,7 +28,6 @@
     {
       "header": "unknown",
       "timing": "onTurnEnd",
-      "triggerText": "ターン終了時",
       "originalLine": "{自分のゴミ箱の[月]キャラ1体}を登場する。このターン終了時、そのキャラを破棄する。破棄したとき、1枚ドローする。",
       "actions": [
         {

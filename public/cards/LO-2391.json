@@ -26,7 +26,23 @@
   "text": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[花]キャラ１体を自分のデッキの上に置く。",
   "textKr": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[花]キャラ１体を自分のデッキの上に置く。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-2391",
-  "parsedEffectsDraft": [],
+  "parsedEffectsDraft": [
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[花]キャラ1体を自分のデッキの上に置く。",
+      "actions": [
+        {
+          "type": "moveCard",
+          "owner": "self",
+          "from": "trash",
+          "to": "deckTop",
+          "count": 2
+        }
+      ]
+    }
+  ],
   "parseMeta": {
     "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のＥＸが２の[花]キャラ１体を自分のデッキの上に置く。",
     "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[花]キャラ1体を自分のデッキの上に置く。",
@@ -34,15 +50,13 @@
       "[サポーター:[花花]]",
       "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[花]キャラ1体を自分のデッキの上に置く。"
     ],
-    "matchedRuleIds": []
+    "matchedRuleIds": [
+      "moveCard:toDeckTop"
+    ]
   },
   "unresolvedTextLines": [
     {
       "line": "[サポーター:[花花]]",
-      "reason": "no parser rule matched"
-    },
-    {
-      "line": "[誘発] このキャラが登場したとき、自分のゴミ箱のEXが2の[花]キャラ1体を自分のデッキの上に置く。",
       "reason": "no parser rule matched"
     }
   ]

@@ -35,9 +35,20 @@
       "originalLine": "[誘発] このキャラが登場したとき、味方キャラ1体にAP+2・DP+2する。",
       "actions": [
         {
+          "type": "chooseTarget",
+          "selector": {
+            "owner": "self",
+            "kind": "character",
+            "count": 1
+          },
+          "storeAs": "selectedTarget",
+          "prompt": "자기 캐릭터 1체를 선택한다"
+        },
+        {
           "type": "modifyStat",
           "stat": "ap",
-          "amount": 2
+          "amount": 2,
+          "targetRef": "selectedTarget"
         }
       ]
     }
@@ -50,7 +61,7 @@
       "[誘発] このキャラが登場したとき、味方キャラ1体にAP+2・DP+2する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "selector:selfCharacterOne"
     ]
   },
   "unresolvedTextLines": [

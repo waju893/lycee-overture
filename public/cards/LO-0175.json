@@ -27,20 +27,7 @@
   "text": "[エンゲージ:[味方キャラ全てにＳＰ＋１する。]]\n[宣言] [0]:このターン中、味方キャラがエンゲージ登場している場合、このキャラを未行動にする。",
   "textKr": "[エンゲージ:[味方キャラ全てにＳＰ＋１する。]]\n[宣言] [0]:このターン中、味方キャラがエンゲージ登場している場合、このキャラを未行動にする。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0175",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[味方キャラ全てにSP+1する。]]",
-      "actions": [
-        {
-          "type": "modifyStat",
-          "stat": "sp",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[味方キャラ全てにＳＰ＋１する。]]\n[宣言] [0]:このターン中、味方キャラがエンゲージ登場している場合、このキャラを未行動にする。",
     "normalizedText": "[エンゲージ:[味方キャラ全てにSP+1する。]]\n[宣言] [0]:このターン中、味方キャラがエンゲージ登場している場合、このキャラを未行動にする。",
@@ -48,11 +35,13 @@
       "[エンゲージ:[味方キャラ全てにSP+1する。]]",
       "[宣言] [0]:このターン中、味方キャラがエンゲージ登場している場合、このキャラを未行動にする。"
     ],
-    "matchedRuleIds": [
-      "modifyStat"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[味方キャラ全てにSP+1する。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[宣言] [0]:このターン中、味方キャラがエンゲージ登場している場合、このキャラを未行動にする。",
       "reason": "no parser rule matched"

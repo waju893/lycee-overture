@@ -28,7 +28,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] このキャラがAFに登場したとき、自分のゴミ箱に[雪]でないカードが置かれている場合、1枚ドローする。",
       "actions": [
         {

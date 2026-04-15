@@ -30,7 +30,7 @@
       "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローできる。しない場合、自分のゴミ箱または自分のデッキから「アリデッド」1体を探し登場できる。[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2またはDP+2する。[宣言] [0]:{味方防御キャラ1体}にDP+1する。構築制限:『スマガ シリーズ』",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローできる。しない場合、自分のゴミ箱または自分のデッキから「アリデッド」1体を探し登場できる。",
       "actions": [
         {
           "type": "chooseOne",
@@ -49,61 +49,94 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "chooseOne",
-                  "prompt": "하나를 선택한다",
-                  "choices": [
-                    {
-                      "label": "A",
-                      "actions": [
-                        {
-                          "type": "searchCard",
-                          "owner": "self",
-                          "zones": [
-                            "deck"
-                          ],
-                          "match": {
-                            "exactName": "アリデッド"
-                          },
-                          "min": 0,
-                          "max": 1,
-                          "storeAs": "lastSearchResult",
-                          "shuffleAfterSearch": true
-                        }
-                      ]
-                    },
-                    {
-                      "label": "B",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": 2
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "searchCard",
+                  "owner": "self",
+                  "zones": [
+                    "deck"
+                  ],
+                  "match": {
+                    "exactName": "アリデッド"
+                  },
+                  "min": 0,
+                  "max": 1,
+                  "storeAs": "lastSearchResult",
+                  "shuffleAfterSearch": true
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2またはDP+2する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{味方防御キャラ1体}にDP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、１枚ドローできる。しない場合、自分のゴミ箱または自分のデッキから「アリデッド」１体を探し登場できる。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ１体}にＡＰ＋２またはＤＰ＋２する。\n[宣言] [0]:{味方防御キャラ１体}にＤＰ＋１する。\n構築制限:『スマガ シリーズ』",
-    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、1枚ドローできる。しない場合、自分のゴミ箱または自分のデッキから「アリデッド」1体を探し登場できる。[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2またはDP+2する。[宣言] [0]:{味方防御キャラ1体}にDP+1する。構築制限:『スマガ シリーズ』",
+    "normalizedText": "[サポーター:[花花]]\n[誘発] このキャラが登場したとき、1枚ドローできる。しない場合、自分のゴミ箱または自分のデッキから「アリデッド」1体を探し登場できる。\n[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2またはDP+2する。\n[宣言] [0]:{味方防御キャラ1体}にDP+1する。\n構築制限:『スマガ シリーズ』",
     "lines": [
       "[サポーター:[花花]]",
-      "[誘発] このキャラが登場したとき、1枚ドローできる。しない場合、自分のゴミ箱または自分のデッキから「アリデッド」1体を探し登場できる。[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2またはDP+2する。[宣言] [0]:{味方防御キャラ1体}にDP+1する。構築制限:『スマガ シリーズ』"
+      "[誘発] このキャラが登場したとき、1枚ドローできる。しない場合、自分のゴミ箱または自分のデッキから「アリデッド」1体を探し登場できる。",
+      "[宣言] [0]:バトル中を除く自ターン中に使用する。{味方キャラ1体}にAP+2またはDP+2する。",
+      "[宣言] [0]:{味方防御キャラ1体}にDP+1する。",
+      "構築制限:『スマガ シリーズ』"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "chooseOne",
+      "chooseOne",
+      "modifyStat"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[サポーター:[花花]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『スマガ シリーズ』",
       "reason": "no parser rule matched"
     }
   ]

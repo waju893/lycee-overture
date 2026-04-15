@@ -26,7 +26,19 @@
     {
       "header": "常時",
       "timing": "continuous",
-      "originalLine": "[常時] このキャラにAP+1する。[宣言] [0]:このアイテムを破棄する。1枚ドローする。構築制限:[NEX]",
+      "originalLine": "[常時] このキャラにAP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このアイテムを破棄する。1枚ドローする。",
       "actions": [
         {
           "type": "draw",
@@ -37,18 +49,25 @@
   ],
   "parseMeta": {
     "originalText": "装備制限:[花]キャラ\n[常時] このキャラにＡＰ＋１する。\n[宣言] [0]:このアイテムを破棄する。１枚ドローする。\n構築制限:[NEX]",
-    "normalizedText": "装備制限:[花]キャラ\n[常時] このキャラにAP+1する。[宣言] [0]:このアイテムを破棄する。1枚ドローする。構築制限:[NEX]",
+    "normalizedText": "装備制限:[花]キャラ\n[常時] このキャラにAP+1する。\n[宣言] [0]:このアイテムを破棄する。1枚ドローする。\n構築制限:[NEX]",
     "lines": [
       "装備制限:[花]キャラ",
-      "[常時] このキャラにAP+1する。[宣言] [0]:このアイテムを破棄する。1枚ドローする。構築制限:[NEX]"
+      "[常時] このキャラにAP+1する。",
+      "[宣言] [0]:このアイテムを破棄する。1枚ドローする。",
+      "構築制限:[NEX]"
     ],
     "matchedRuleIds": [
+      "modifyStat",
       "draw"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "装備制限:[花]キャラ",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[NEX]",
       "reason": "no parser rule matched"
     }
   ]

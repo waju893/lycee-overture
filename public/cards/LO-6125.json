@@ -28,6 +28,13 @@
     {
       "header": "誘発",
       "timing": "unknown",
+      "conditionText": "自ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "self"
+        }
+      ],
       "originalLine": "[誘発] 自ターン中、相手の手札の枚数が増減した自分の効果を処理したとき、相手キャラ1体にAP-1・DP-1する。",
       "actions": [
         {

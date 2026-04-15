@@ -30,7 +30,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [D1]:{味方キャラ1体}にDP+1する。構築制限:Fate/Grand Order",
+      "originalLine": "[宣言] [D1]:{味方キャラ1体}にDP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -42,10 +42,11 @@
   ],
   "parseMeta": {
     "originalText": "[オーダーチェンジ:[0]]\n[宣言] [D1]:{味方キャラ１体}にＤＰ＋１する。\n構築制限:Fate/Grand Order",
-    "normalizedText": "[オーダーチェンジ:[0]]\n[宣言] [D1]:{味方キャラ1体}にDP+1する。構築制限:Fate/Grand Order",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[宣言] [D1]:{味方キャラ1体}にDP+1する。\n構築制限:Fate/Grand Order",
     "lines": [
       "[オーダーチェンジ:[0]]",
-      "[宣言] [D1]:{味方キャラ1体}にDP+1する。構築制限:Fate/Grand Order"
+      "[宣言] [D1]:{味方キャラ1体}にDP+1する。",
+      "構築制限:Fate/Grand Order"
     ],
     "matchedRuleIds": [
       "modifyStat"
@@ -54,6 +55,10 @@
   "unresolvedTextLines": [
     {
       "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order",
       "reason": "no parser rule matched"
     }
   ]

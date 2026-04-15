@@ -30,61 +30,60 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ1体}にAP+1・DP+1・DMG+1する。[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」1体を探し公開して手札に入れる。この能力は失われる。構築制限:[WP]",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ1体}にAP+1・DP+1・DMG+1する。",
       "actions": [
         {
-          "type": "chooseOne",
-          "prompt": "하나를 선택한다",
-          "choices": [
-            {
-              "label": "A",
-              "actions": [
-                {
-                  "type": "modifyStat",
-                  "stat": "ap",
-                  "amount": 1
-                }
-              ]
-            },
-            {
-              "label": "B",
-              "actions": [
-                {
-                  "type": "searchCard",
-                  "owner": "self",
-                  "zones": [
-                    "deck",
-                    "hand"
-                  ],
-                  "match": {
-                    "exactName": "星庭宙"
-                  },
-                  "min": 0,
-                  "max": 1,
-                  "storeAs": "lastSearchResult",
-                  "shuffleAfterSearch": true
-                }
-              ]
-            }
-          ]
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」1体を探し公開して手札に入れる。この能力は失われる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "exactName": "星庭宙"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
         }
       ]
     }
   ],
   "parseMeta": {
     "originalText": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ１体}にＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」１体を探し公開して手札に入れる。この能力は失われる。\n構築制限:[WP]",
-    "normalizedText": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ1体}にAP+1・DP+1・DMG+1する。[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」1体を探し公開して手札に入れる。この能力は失われる。構築制限:[WP]",
+    "normalizedText": "[アグレッシブ]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ1体}にAP+1・DP+1・DMG+1する。\n[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」1体を探し公開して手札に入れる。この能力は失われる。\n構築制限:[WP]",
     "lines": [
       "[アグレッシブ]",
-      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ1体}にAP+1・DP+1・DMG+1する。[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」1体を探し公開して手札に入れる。この能力は失われる。構築制限:[WP]"
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{[アグレッシブ]を持つ味方[日]キャラ1体}にAP+1・DP+1・DMG+1する。",
+      "[宣言] [日]:自分のゴミ箱または自分のデッキから「星庭宙」または「常葉美紀」1体を探し公開して手札に入れる。この能力は失われる。",
+      "構築制限:[WP]"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "modifyStat",
+      "searchCard"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[アグレッシブ]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[WP]",
       "reason": "no parser rule matched"
     }
   ]

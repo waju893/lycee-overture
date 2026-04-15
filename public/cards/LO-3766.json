@@ -30,12 +30,13 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3766",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[ペナルティ:[1枚ドローする。]]",
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:味方AF[宙]キャラ全てにAP+1・DP+1する。",
       "actions": [
         {
-          "type": "draw",
+          "type": "modifyStat",
+          "stat": "ap",
           "amount": 1
         }
       ]
@@ -43,18 +44,28 @@
   ],
   "parseMeta": {
     "originalText": "[ペナルティ:[１枚ドローする。]]\n[宣言] [0]:味方ＡＦ[宙]キャラ全てにＡＰ＋１・ＤＰ＋１する。\n[宣言] [宙]:{コストが３点以上の味方ＡＦ[宙]キャラ１体}はターン終了時までダウンしない。この能力は失われる。\n構築制限:[AIG]",
-    "normalizedText": "[ペナルティ:[1枚ドローする。]]\n[宣言] [0]:味方AF[宙]キャラ全てにAP+1・DP+1する。[宣言] [宙]:{コストが3点以上の味方AF[宙]キャラ1体}はターン終了時までダウンしない。この能力は失われる。構築制限:[AIG]",
+    "normalizedText": "[ペナルティ:[1枚ドローする。]]\n[宣言] [0]:味方AF[宙]キャラ全てにAP+1・DP+1する。\n[宣言] [宙]:{コストが3点以上の味方AF[宙]キャラ1体}はターン終了時までダウンしない。この能力は失われる。\n構築制限:[AIG]",
     "lines": [
       "[ペナルティ:[1枚ドローする。]]",
-      "[宣言] [0]:味方AF[宙]キャラ全てにAP+1・DP+1する。[宣言] [宙]:{コストが3点以上の味方AF[宙]キャラ1体}はターン終了時までダウンしない。この能力は失われる。構築制限:[AIG]"
+      "[宣言] [0]:味方AF[宙]キャラ全てにAP+1・DP+1する。",
+      "[宣言] [宙]:{コストが3点以上の味方AF[宙]キャラ1体}はターン終了時までダウンしない。この能力は失われる。",
+      "構築制限:[AIG]"
     ],
     "matchedRuleIds": [
-      "draw"
+      "modifyStat"
     ]
   },
   "unresolvedTextLines": [
     {
-      "line": "[宣言] [0]:味方AF[宙]キャラ全てにAP+1・DP+1する。[宣言] [宙]:{コストが3点以上の味方AF[宙]キャラ1体}はターン終了時までダウンしない。この能力は失われる。構築制限:[AIG]",
+      "line": "[ペナルティ:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [宙]:{コストが3点以上の味方AF[宙]キャラ1体}はターン終了時までダウンしない。この能力は失われる。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[AIG]",
       "reason": "no parser rule matched"
     }
   ]

@@ -29,7 +29,7 @@
   "parsedEffectsDraft": [
     {
       "header": "手札宣言",
-      "timing": "onEnter",
+      "timing": "onUse",
       "originalLine": "[手札宣言] [0]:ゴミ箱のこのキャラを登場する。登場したとき、相手のゴミ箱のEXが2で2つ以上の属性を持つカード1枚を除外できる。除外したとき、2枚ドローする。",
       "actions": [
         {

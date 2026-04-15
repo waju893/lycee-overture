@@ -46,7 +46,7 @@
       "自ターン中に使用する。コストが2点以下の味方キャラ全てにAP+2・DP+2・SP+2する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "condition:selfTurn"
     ]
   },
   "unresolvedTextLines": []

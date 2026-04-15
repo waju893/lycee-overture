@@ -32,69 +32,71 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1・DP-1する。[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」1枚を探し味方フィールドに無償で配置する。構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1・DP-1する。",
       "actions": [
         {
-          "type": "chooseOne",
-          "prompt": "하나를 선택한다",
-          "choices": [
-            {
-              "label": "A",
-              "actions": [
-                {
-                  "type": "modifyStat",
-                  "stat": "ap",
-                  "amount": -1
-                }
-              ]
-            },
-            {
-              "label": "B",
-              "actions": [
-                {
-                  "type": "searchCard",
-                  "owner": "self",
-                  "zones": [
-                    "deck",
-                    "trash",
-                    "hand"
-                  ],
-                  "match": {
-                    "exactName": "花冠の大地",
-                    "kind": "area"
-                  },
-                  "min": 0,
-                  "max": 0,
-                  "storeAs": "lastSearchResult",
-                  "shuffleAfterSearch": true
-                },
-                {
-                  "type": "freeUse",
-                  "sourceRef": "lastSearchResult",
-                  "useKind": "area",
-                  "ignoreCost": true
-                }
-              ]
-            }
-          ]
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」1枚を探し味方フィールドに無償で配置する。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "self",
+          "zones": [
+            "deck",
+            "trash"
+          ],
+          "match": {
+            "exactName": "花冠の大地",
+            "kind": "area"
+          },
+          "min": 0,
+          "max": 0,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "area",
+          "ignoreCost": true
         }
       ]
     }
   ],
   "parseMeta": {
     "originalText": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１・ＤＰ－１する。\n[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」１枚を探し味方フィールドに無償で配置する。\n構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
-    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ1体}にAP-1・DP-1する。[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」1枚を探し味方フィールドに無償で配置する。構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
+    "normalizedText": "[ジャンプ:[0]]\n[宣言] [0]:{相手キャラ1体}にAP-1・DP-1する。\n[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。\n[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」1枚を探し味方フィールドに無償で配置する。\n構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
     "lines": [
       "[ジャンプ:[0]]",
-      "[宣言] [0]:{相手キャラ1体}にAP-1・DP-1する。[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」1枚を探し味方フィールドに無償で配置する。構築制限:『ティアーズ・トゥ・ティアラ シリーズ』"
+      "[宣言] [0]:{相手キャラ1体}にAP-1・DP-1する。",
+      "[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。",
+      "[手札宣言] [0]:自分のゴミ箱または自分のデッキから「花冠の大地」1枚を探し味方フィールドに無償で配置する。",
+      "構築制限:『ティアーズ・トゥ・ティアラ シリーズ』"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "modifyStat",
+      "searchCard+freeUse"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[ジャンプ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[コスト] [月月月月]または[宙宙宙宙]を発生する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『ティアーズ・トゥ・ティアラ シリーズ』",
       "reason": "no parser rule matched"
     }
   ]

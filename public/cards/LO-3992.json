@@ -26,14 +26,13 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3992",
   "parsedEffectsDraft": [
     {
-      "header": "誘発",
-      "timing": "onEnter",
-      "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。・自分のゴミ箱または自分のデッキから元のDMGが1の[雪]キャラ1体を探し登場する。・元のDMGが1の味方[雪]キャラが登場している場合、1枚ドローする。[誘発] 自分の効果で相手AFキャラを破棄したとき、味方AF[雪]キャラ1体にAP+1・DP+1する。構築制限:[AL]",
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "・自分のゴミ箱または自分のデッキから元のDMGが1の[雪]キャラ1体を探し登場する。",
       "actions": [
         {
           "type": "searchCard",
-          "owner": "opponent",
+          "owner": "self",
           "zones": [
             "deck",
             "trash"
@@ -45,17 +44,55 @@
           "shuffleAfterSearch": true
         }
       ]
+    },
+    {
+      "header": "unknown",
+      "timing": "unknown",
+      "originalLine": "・元のDMGが1の味方[雪]キャラが登場している場合、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 自分の効果で相手AFキャラを破棄したとき、味方AF[雪]キャラ1体にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[誘発] このキャラが登場したとき、以下から１つを選び処理する。\n・自分のゴミ箱または自分のデッキから元のＤＭＧが１の[雪]キャラ１体を探し登場する。\n・元のＤＭＧが１の味方[雪]キャラが登場している場合、１枚ドローする。\n[誘発] 自分の効果で相手ＡＦキャラを破棄したとき、味方ＡＦ[雪]キャラ１体にＡＰ＋１・ＤＰ＋１する。\n構築制限:[AL]",
-    "normalizedText": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。・自分のゴミ箱または自分のデッキから元のDMGが1の[雪]キャラ1体を探し登場する。・元のDMGが1の味方[雪]キャラが登場している場合、1枚ドローする。[誘発] 自分の効果で相手AFキャラを破棄したとき、味方AF[雪]キャラ1体にAP+1・DP+1する。構築制限:[AL]",
+    "normalizedText": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。\n・自分のゴミ箱または自分のデッキから元のDMGが1の[雪]キャラ1体を探し登場する。\n・元のDMGが1の味方[雪]キャラが登場している場合、1枚ドローする。\n[誘発] 自分の効果で相手AFキャラを破棄したとき、味方AF[雪]キャラ1体にAP+1・DP+1する。\n構築制限:[AL]",
     "lines": [
-      "[誘発] このキャラが登場したとき、以下から1つを選び処理する。・自分のゴミ箱または自分のデッキから元のDMGが1の[雪]キャラ1体を探し登場する。・元のDMGが1の味方[雪]キャラが登場している場合、1枚ドローする。[誘発] 自分の効果で相手AFキャラを破棄したとき、味方AF[雪]キャラ1体にAP+1・DP+1する。構築制限:[AL]"
+      "[誘発] このキャラが登場したとき、以下から1つを選び処理する。",
+      "・自分のゴミ箱または自分のデッキから元のDMGが1の[雪]キャラ1体を探し登場する。",
+      "・元のDMGが1の味方[雪]キャラが登場している場合、1枚ドローする。",
+      "[誘発] 自分の効果で相手AFキャラを破棄したとき、味方AF[雪]キャラ1体にAP+1・DP+1する。",
+      "構築制限:[AL]"
     ],
     "matchedRuleIds": [
-      "searchCard"
+      "searchCard",
+      "draw",
+      "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[AL]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

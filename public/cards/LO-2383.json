@@ -29,7 +29,7 @@
     {
       "header": "誘発",
       "timing": "onTurnStart",
-      "triggerText": "ターン開始時",
+      "triggerText": "相手ターン開始時",
       "originalLine": "[誘発] 相手ターン開始時、味方キャラの数が相手キャラの数より少ない場合、このキャラにAP+3する。",
       "actions": [
         {

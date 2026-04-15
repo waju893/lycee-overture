@@ -24,19 +24,7 @@
   "text": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体にＤＭＧ＋２する。",
   "textKr": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体にＤＭＧ＋２する。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0173",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[１枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ１体にＤＭＧ＋２する。",
     "normalizedText": "[エンゲージ:[1枚ドローする。]]\n[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ1体にDMG+2する。",
@@ -44,11 +32,13 @@
       "[エンゲージ:[1枚ドローする。]]",
       "[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ1体にDMG+2する。"
     ],
-    "matchedRuleIds": [
-      "draw"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[誘発] このキャラをエンゲージ登場によって破棄したとき、味方キャラ1体にDMG+2する。",
       "reason": "no parser rule matched"

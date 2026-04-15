@@ -28,15 +28,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "{味方キャラ１体}にＡＰ＋[そのキャラのＳＰ]またはＤＰ＋[そのキャラのＳＰ]する。\n構築制限:オーガスト（[AUG]）",
-    "normalizedText": "{味方キャラ1体}にAP+[そのキャラのSP]またはDP+[そのキャラのSP]する。構築制限:オーガスト([AUG])",
+    "normalizedText": "{味方キャラ1体}にAP+[そのキャラのSP]またはDP+[そのキャラのSP]する。\n構築制限:オーガスト([AUG])",
     "lines": [
-      "{味方キャラ1体}にAP+[そのキャラのSP]またはDP+[そのキャラのSP]する。構築制限:オーガスト([AUG])"
+      "{味方キャラ1体}にAP+[そのキャラのSP]またはDP+[そのキャラのSP]する。",
+      "構築制限:オーガスト([AUG])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "{味方キャラ1体}にAP+[そのキャラのSP]またはDP+[そのキャラのSP]する。構築制限:オーガスト([AUG])",
+      "line": "{味方キャラ1体}にAP+[そのキャラのSP]またはDP+[そのキャラのSP]する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:オーガスト([AUG])",
       "reason": "no parser rule matched"
     }
   ]

@@ -29,10 +29,29 @@
     {
       "header": "誘発",
       "timing": "unknown",
-      "originalLine": "[誘発] 自ターン中、このキャラがダウンしたとき、1枚ドローできる。[宣言] [D1]:このキャラにAP+1・DP-1する。",
+      "conditionText": "自ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "self"
+        }
+      ],
+      "originalLine": "[誘発] 自ターン中、このキャラがダウンしたとき、1枚ドローできる。",
       "actions": [
         {
           "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [D1]:このキャラにAP+1・DP-1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
           "amount": 1
         }
       ]
@@ -40,12 +59,14 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] 自ターン中、このキャラがダウンしたとき、１枚ドローできる。\n[宣言] [D1]:このキャラにＡＰ＋１・ＤＰ－１する。",
-    "normalizedText": "[誘発] 自ターン中、このキャラがダウンしたとき、1枚ドローできる。[宣言] [D1]:このキャラにAP+1・DP-1する。",
+    "normalizedText": "[誘発] 自ターン中、このキャラがダウンしたとき、1枚ドローできる。\n[宣言] [D1]:このキャラにAP+1・DP-1する。",
     "lines": [
-      "[誘発] 自ターン中、このキャラがダウンしたとき、1枚ドローできる。[宣言] [D1]:このキャラにAP+1・DP-1する。"
+      "[誘発] 自ターン中、このキャラがダウンしたとき、1枚ドローできる。",
+      "[宣言] [D1]:このキャラにAP+1・DP-1する。"
     ],
     "matchedRuleIds": [
-      "draw"
+      "draw",
+      "modifyStat"
     ]
   },
   "unresolvedTextLines": []

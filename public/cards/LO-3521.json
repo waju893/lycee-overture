@@ -47,7 +47,7 @@
       "相手ターン中に使用する。味方キャラ全てにDP+3する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "condition:opponentTurn"
     ]
   },
   "unresolvedTextLines": []

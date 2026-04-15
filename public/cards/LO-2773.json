@@ -29,6 +29,13 @@
     {
       "header": "誘発",
       "timing": "unknown",
+      "conditionText": "相手ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "opponent"
+        }
+      ],
       "originalLine": "[誘発] 相手ターン中、自分のイベントまたは手札宣言能力を使用したとき、味方キャラ1体にDP+1する。",
       "actions": [
         {

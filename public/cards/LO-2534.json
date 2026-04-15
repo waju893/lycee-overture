@@ -30,7 +30,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:SPが4以上の味方[花]キャラ全てにAP+1・DP+1・DMG+1する。構築制限:[AUG]",
+      "originalLine": "[宣言] [0]:SPが4以上の味方[花]キャラ全てにAP+1・DP+1・DMG+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -42,13 +42,19 @@
   ],
   "parseMeta": {
     "originalText": "[宣言] [0]:ＳＰが４以上の味方[花]キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n構築制限:[AUG]",
-    "normalizedText": "[宣言] [0]:SPが4以上の味方[花]キャラ全てにAP+1・DP+1・DMG+1する。構築制限:[AUG]",
+    "normalizedText": "[宣言] [0]:SPが4以上の味方[花]キャラ全てにAP+1・DP+1・DMG+1する。\n構築制限:[AUG]",
     "lines": [
-      "[宣言] [0]:SPが4以上の味方[花]キャラ全てにAP+1・DP+1・DMG+1する。構築制限:[AUG]"
+      "[宣言] [0]:SPが4以上の味方[花]キャラ全てにAP+1・DP+1・DMG+1する。",
+      "構築制限:[AUG]"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:[AUG]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

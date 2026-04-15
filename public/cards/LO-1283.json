@@ -25,19 +25,29 @@
   "text": "{味方ＡＦキャラ１体}にＡＰ＋２する。ターン終了時まで、そのキャラの攻撃で相手は可能なら防御キャラを指定する。",
   "textKr": "{味方ＡＦキャラ１体}にＡＰ＋２する。ターン終了時まで、そのキャラの攻撃で相手は可能なら防御キャラを指定する。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-1283",
-  "parsedEffectsDraft": [],
+  "parsedEffectsDraft": [
+    {
+      "header": "unknown",
+      "timing": "onTurnEnd",
+      "originalLine": "{味方AFキャラ1体}にAP+2する。ターン終了時まで、そのキャラの攻撃で相手は可能なら防御キャラを指定する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
+    }
+  ],
   "parseMeta": {
     "originalText": "{味方ＡＦキャラ１体}にＡＰ＋２する。ターン終了時まで、そのキャラの攻撃で相手は可能なら防御キャラを指定する。",
     "normalizedText": "{味方AFキャラ1体}にAP+2する。ターン終了時まで、そのキャラの攻撃で相手は可能なら防御キャラを指定する。",
     "lines": [
       "{味方AFキャラ1体}にAP+2する。ターン終了時まで、そのキャラの攻撃で相手は可能なら防御キャラを指定する。"
     ],
-    "matchedRuleIds": []
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
   },
-  "unresolvedTextLines": [
-    {
-      "line": "{味方AFキャラ1体}にAP+2する。ターン終了時まで、そのキャラの攻撃で相手は可能なら防御キャラを指定する。",
-      "reason": "no parser rule matched"
-    }
-  ]
+  "unresolvedTextLines": []
 }

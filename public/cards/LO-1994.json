@@ -47,7 +47,7 @@
       "相手ターン中に使用する。{味方[月]キャラ1体}にAP+5・DP+5する。そのキャラが「インデックス」の場合、そのキャラを味方フィールドに移動する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "condition:opponentTurn"
     ]
   },
   "unresolvedTextLines": []

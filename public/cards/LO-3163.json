@@ -27,17 +27,6 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3163",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[ペナルティ:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    },
-    {
       "header": "宣言",
       "timing": "onUse",
       "originalLine": "[宣言] [0]:バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のゴミ箱の「ドッペルゲンガー」1体を手札に入れる。(同番号の能力は1ターンに1回まで使用可能)",
@@ -60,9 +49,13 @@
       "[宣言] [0]:バトル中に使用できない。このキャラを破棄する。破棄したとき、自分のゴミ箱の「ドッペルゲンガー」1体を手札に入れる。(同番号の能力は1ターンに1回まで使用可能)"
     ],
     "matchedRuleIds": [
-      "draw",
       "moveCard:toHand"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

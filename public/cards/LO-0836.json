@@ -29,15 +29,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "自ターン中に使用する。{自分のゴミ箱の＜幻獣＞キャラ１体}を登場する。\n構築制限:神姫PROJECT（[KHP]）",
-    "normalizedText": "自ターン中に使用する。{自分のゴミ箱の<幻獣>キャラ1体}を登場する。構築制限:神姫PROJECT([KHP])",
+    "normalizedText": "自ターン中に使用する。{自分のゴミ箱の<幻獣>キャラ1体}を登場する。\n構築制限:神姫PROJECT([KHP])",
     "lines": [
-      "自ターン中に使用する。{自分のゴミ箱の<幻獣>キャラ1体}を登場する。構築制限:神姫PROJECT([KHP])"
+      "自ターン中に使用する。{自分のゴミ箱の<幻獣>キャラ1体}を登場する。",
+      "構築制限:神姫PROJECT([KHP])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "自ターン中に使用する。{自分のゴミ箱の<幻獣>キャラ1体}を登場する。構築制限:神姫PROJECT([KHP])",
+      "line": "自ターン中に使用する。{自分のゴミ箱の<幻獣>キャラ1体}を登場する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:神姫PROJECT([KHP])",
       "reason": "no parser rule matched"
     }
   ]

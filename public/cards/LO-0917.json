@@ -29,10 +29,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ１体}のＡＰを[そのキャラのＳＰ]にする。\n構築制限:オーガスト（[AUG]）",
-    "normalizedText": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ1体}のAPを[そのキャラのSP]にする。構築制限:オーガスト([AUG])",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [花]:{味方キャラ1体}のAPを[そのキャラのSP]にする。\n構築制限:オーガスト([AUG])",
     "lines": [
       "[サポーター:[花花]]",
-      "[宣言] [花]:{味方キャラ1体}のAPを[そのキャラのSP]にする。構築制限:オーガスト([AUG])"
+      "[宣言] [花]:{味方キャラ1体}のAPを[そのキャラのSP]にする。",
+      "構築制限:オーガスト([AUG])"
     ],
     "matchedRuleIds": []
   },
@@ -42,7 +43,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[宣言] [花]:{味方キャラ1体}のAPを[そのキャラのSP]にする。構築制限:オーガスト([AUG])",
+      "line": "[宣言] [花]:{味方キャラ1体}のAPを[そのキャラのSP]にする。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:オーガスト([AUG])",
       "reason": "no parser rule matched"
     }
   ]

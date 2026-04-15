@@ -31,16 +31,21 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[コスト] [花花]を発生する。この能力は失われる。\n構築制限:[HOK]\n初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典",
-    "normalizedText": "[コスト] [花花]を発生する。この能力は失われる。構築制限:[HOK]\n初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典",
+    "normalizedText": "[コスト] [花花]を発生する。この能力は失われる。\n構築制限:[HOK]\n初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典",
     "lines": [
-      "[コスト] [花花]を発生する。この能力は失われる。構築制限:[HOK]",
+      "[コスト] [花花]を発生する。この能力は失われる。",
+      "構築制限:[HOK]",
       "初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典初出 : HOOKSOFT 25th Discovery Box 2002-2022 初回限定特典"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[コスト] [花花]を発生する。この能力は失われる。構築制限:[HOK]",
+      "line": "[コスト] [花花]を発生する。この能力は失われる。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[HOK]",
       "reason": "no parser rule matched"
     },
     {

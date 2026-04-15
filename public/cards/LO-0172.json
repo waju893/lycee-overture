@@ -25,20 +25,7 @@
   "text": "[エンゲージ:[味方キャラ１体にＤＰ＋１する。]]\n[誘発] ターン終了時、このターン中、味方キャラがエンゲージ登場している場合、味方＜魔剣＞キャラ２体を未行動にする。",
   "textKr": "[エンゲージ:[味方キャラ１体にＤＰ＋１する。]]\n[誘発] ターン終了時、このターン中、味方キャラがエンゲージ登場している場合、味方＜魔剣＞キャラ２体を未行動にする。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0172",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[味方キャラ1体にDP+1する。]]",
-      "actions": [
-        {
-          "type": "modifyStat",
-          "stat": "dp",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[味方キャラ１体にＤＰ＋１する。]]\n[誘発] ターン終了時、このターン中、味方キャラがエンゲージ登場している場合、味方＜魔剣＞キャラ２体を未行動にする。",
     "normalizedText": "[エンゲージ:[味方キャラ1体にDP+1する。]]\n[誘発] ターン終了時、このターン中、味方キャラがエンゲージ登場している場合、味方<魔剣>キャラ2体を未行動にする。",
@@ -46,11 +33,13 @@
       "[エンゲージ:[味方キャラ1体にDP+1する。]]",
       "[誘発] ターン終了時、このターン中、味方キャラがエンゲージ登場している場合、味方<魔剣>キャラ2体を未行動にする。"
     ],
-    "matchedRuleIds": [
-      "modifyStat"
-    ]
+    "matchedRuleIds": []
   },
   "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[味方キャラ1体にDP+1する。]]",
+      "reason": "no parser rule matched"
+    },
     {
       "line": "[誘発] ターン終了時、このターン中、味方キャラがエンゲージ登場している場合、味方<魔剣>キャラ2体を未行動にする。",
       "reason": "no parser rule matched"

@@ -29,7 +29,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "キャラ全てにAP+1・DP+1する。初出 : Special Sleeve Selection(メロンブックス様)特典初出 : Special Sleeve Selection(メロンブックス様)特典",
+      "originalLine": "キャラ全てにAP+1・DP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -41,13 +41,19 @@
   ],
   "parseMeta": {
     "originalText": "キャラ全てにＡＰ＋１・ＤＰ＋１する。\n初出 : Special Sleeve Selection（メロンブックス様）特典初出 : Special Sleeve Selection（メロンブックス様）特典",
-    "normalizedText": "キャラ全てにAP+1・DP+1する。初出 : Special Sleeve Selection(メロンブックス様)特典初出 : Special Sleeve Selection(メロンブックス様)特典",
+    "normalizedText": "キャラ全てにAP+1・DP+1する。\n初出 : Special Sleeve Selection(メロンブックス様)特典初出 : Special Sleeve Selection(メロンブックス様)特典",
     "lines": [
-      "キャラ全てにAP+1・DP+1する。初出 : Special Sleeve Selection(メロンブックス様)特典初出 : Special Sleeve Selection(メロンブックス様)特典"
+      "キャラ全てにAP+1・DP+1する。",
+      "初出 : Special Sleeve Selection(メロンブックス様)特典初出 : Special Sleeve Selection(メロンブックス様)特典"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "初出 : Special Sleeve Selection(メロンブックス様)特典初出 : Special Sleeve Selection(メロンブックス様)特典",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

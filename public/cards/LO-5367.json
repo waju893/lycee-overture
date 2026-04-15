@@ -28,6 +28,13 @@
     {
       "header": "誘発",
       "timing": "unknown",
+      "conditionText": "自ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "self"
+        }
+      ],
       "originalLine": "[誘発] 自ターン中、自分のイベントを使用したとき、未行動の味方キャラ1体にAP+1・DP+1する。",
       "actions": [
         {

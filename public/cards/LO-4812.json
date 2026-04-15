@@ -44,7 +44,7 @@
       "自ターン中に使用する。{味方[日]キャラ1体}にAP+3する。1枚ドローする。自分の手札を1枚デッキの上に置く。"
     ],
     "matchedRuleIds": [
-      "draw"
+      "condition:selfTurn"
     ]
   },
   "unresolvedTextLines": []

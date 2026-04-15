@@ -29,7 +29,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "unknown",
       "originalLine": "[誘発] このキャラを除く味方キャラが登場したとき、相手キャラ1体にSP-1する。",
       "actions": [
         {

@@ -30,20 +30,15 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3445",
   "parsedEffectsDraft": [
     {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[ペナルティ:[1枚ドローする。]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    },
-    {
       "header": "誘発",
       "timing": "onEnterFromHand",
-      "triggerText": "このキャラが手札から登場したとき",
+      "conditionText": "自ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "self"
+        }
+      ],
       "originalLine": "[誘発] 自ターン中、このキャラが手札から登場したとき、コストが5点以上の味方AFキャラが2体以上登場している場合、自分のゴミ箱または自分のデッキから「人機」1枚を探しこのキャラに無償で装備できる。相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。",
       "actions": [
         {
@@ -51,7 +46,8 @@
           "owner": "opponent",
           "zones": [
             "deck",
-            "trash"
+            "trash",
+            "hand"
           ],
           "match": {
             "exactName": "人機",
@@ -79,9 +75,13 @@
       "[誘発] 自ターン中、このキャラが手札から登場したとき、コストが5点以上の味方AFキャラが2体以上登場している場合、自分のゴミ箱または自分のデッキから「人機」1枚を探しこのキャラに無償で装備できる。相手AFキャラ1体は次の相手のウェイクアップで未行動に戻らない。"
     ],
     "matchedRuleIds": [
-      "draw",
       "searchCard+freeUse"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[ペナルティ:[1枚ドローする。]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

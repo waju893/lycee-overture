@@ -30,7 +30,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "自ターン中に使用する。コストが3点の味方[宙]キャラ全てにAP+4・DP+4する。構築制限:ゆずソフト([YUZ])",
+      "originalLine": "自ターン中に使用する。コストが3点の味方[宙]キャラ全てにAP+4・DP+4する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -42,13 +42,19 @@
   ],
   "parseMeta": {
     "originalText": "自ターン中に使用する。コストが３点の味方[宙]キャラ全てにＡＰ＋４・ＤＰ＋４する。\n構築制限:ゆずソフト（[YUZ]）",
-    "normalizedText": "自ターン中に使用する。コストが3点の味方[宙]キャラ全てにAP+4・DP+4する。構築制限:ゆずソフト([YUZ])",
+    "normalizedText": "自ターン中に使用する。コストが3点の味方[宙]キャラ全てにAP+4・DP+4する。\n構築制限:ゆずソフト([YUZ])",
     "lines": [
-      "自ターン中に使用する。コストが3点の味方[宙]キャラ全てにAP+4・DP+4する。構築制限:ゆずソフト([YUZ])"
+      "自ターン中に使用する。コストが3点の味方[宙]キャラ全てにAP+4・DP+4する。",
+      "構築制限:ゆずソフト([YUZ])"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "condition:selfTurn"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:ゆずソフト([YUZ])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

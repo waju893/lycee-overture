@@ -29,7 +29,42 @@
       "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。[誘発] ターン開始時、味方キャラ1体にAP+1・DP+1する。[手札宣言] [雪雪]:相手キャラ1体にAP-3またはDP-3する。1枚ドローする。構築制限:【[QM]】【[雪]】",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、味方キャラ1体にAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "chooseTarget",
+          "selector": {
+            "owner": "self",
+            "kind": "character",
+            "count": 1
+          },
+          "storeAs": "selectedTarget",
+          "prompt": "자기 캐릭터 1체를 선택한다"
+        },
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1,
+          "targetRef": "selectedTarget"
+        }
+      ]
+    },
+    {
+      "header": "手札宣言",
+      "timing": "onUse",
+      "originalLine": "[手札宣言] [雪雪]:相手キャラ1体にAP-3またはDP-3する。1枚ドローする。",
       "actions": [
         {
           "type": "chooseOne",
@@ -39,8 +74,9 @@
               "label": "A",
               "actions": [
                 {
-                  "type": "draw",
-                  "amount": 1
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -3
                 }
               ]
             },
@@ -60,18 +96,27 @@
   ],
   "parseMeta": {
     "originalText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、１枚ドローする。\n[誘発] ターン開始時、味方キャラ１体にＡＰ＋１・ＤＰ＋１する。\n[手札宣言] [雪雪]:相手キャラ１体にＡＰ－３またはＤＰ－３する。１枚ドローする。\n構築制限:【[QM]】【[雪]】",
-    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、1枚ドローする。[誘発] ターン開始時、味方キャラ1体にAP+1・DP+1する。[手札宣言] [雪雪]:相手キャラ1体にAP-3またはDP-3する。1枚ドローする。構築制限:【[QM]】【[雪]】",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラが登場したとき、1枚ドローする。\n[誘発] ターン開始時、味方キャラ1体にAP+1・DP+1する。\n[手札宣言] [雪雪]:相手キャラ1体にAP-3またはDP-3する。1枚ドローする。\n構築制限:【[QM]】【[雪]】",
     "lines": [
       "[サイドステップ:[0]]",
-      "[誘発] このキャラが登場したとき、1枚ドローする。[誘発] ターン開始時、味方キャラ1体にAP+1・DP+1する。[手札宣言] [雪雪]:相手キャラ1体にAP-3またはDP-3する。1枚ドローする。構築制限:【[QM]】【[雪]】"
+      "[誘発] このキャラが登場したとき、1枚ドローする。",
+      "[誘発] ターン開始時、味方キャラ1体にAP+1・DP+1する。",
+      "[手札宣言] [雪雪]:相手キャラ1体にAP-3またはDP-3する。1枚ドローする。",
+      "構築制限:【[QM]】【[雪]】"
     ],
     "matchedRuleIds": [
+      "draw",
+      "selector:selfCharacterOne",
       "chooseOne"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:【[QM]】【[雪]】",
       "reason": "no parser rule matched"
     }
   ]

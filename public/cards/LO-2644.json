@@ -30,9 +30,42 @@
   "parsedEffectsDraft": [
     {
       "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "誘発",
       "timing": "onEnter",
       "triggerText": "このキャラが登場したとき",
-      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」1枚を探し味方フィールドに配置できる。構築制限:[PUR]",
+      "originalLine": "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」1枚を探し味方フィールドに配置できる。",
       "actions": [
         {
           "type": "searchCard",
@@ -54,13 +87,21 @@
   ],
   "parseMeta": {
     "originalText": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」１枚を探し味方フィールドに配置できる。\n構築制限:[PUR]",
-    "normalizedText": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」1枚を探し味方フィールドに配置できる。構築制限:[PUR]",
+    "normalizedText": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。\n[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」1枚を探し味方フィールドに配置できる。\n構築制限:[PUR]",
     "lines": [
-      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」1枚を探し味方フィールドに配置できる。構築制限:[PUR]"
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
+      "[誘発] このキャラが登場したとき、自分のゴミ箱または自分のデッキから「理想郷」1枚を探し味方フィールドに配置できる。",
+      "構築制限:[PUR]"
     ],
     "matchedRuleIds": [
+      "chooseOne",
       "searchCard"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:[PUR]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

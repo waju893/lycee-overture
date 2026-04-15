@@ -30,10 +30,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ１体}は[ガッツ:[宙宙宙宙]]を得る。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ1体}は[ガッツ:[宙宙宙宙]]を得る。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[オーダーステップ:[0]]\n[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ1体}は[ガッツ:[宙宙宙宙]]を得る。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
       "[オーダーステップ:[0]]",
-      "[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ1体}は[ガッツ:[宙宙宙宙]]を得る。構築制限:Fate/Grand Order([TM])"
+      "[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ1体}は[ガッツ:[宙宙宙宙]]を得る。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": []
   },
@@ -43,7 +44,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ1体}は[ガッツ:[宙宙宙宙]]を得る。構築制限:Fate/Grand Order([TM])",
+      "line": "[宣言] [0]:相手ターン中に使用する。{味方[宙]キャラ1体}は[ガッツ:[宙宙宙宙]]を得る。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

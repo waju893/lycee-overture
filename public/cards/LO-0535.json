@@ -32,15 +32,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ１体は[アグレッシブ]を得る。\n構築制限:Fate/Grand Order",
-    "normalizedText": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ1体は[アグレッシブ]を得る。構築制限:Fate/Grand Order",
+    "normalizedText": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ1体は[アグレッシブ]を得る。\n構築制限:Fate/Grand Order",
     "lines": [
-      "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ1体は[アグレッシブ]を得る。構築制限:Fate/Grand Order"
+      "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ1体は[アグレッシブ]を得る。",
+      "構築制限:Fate/Grand Order"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ1体は[アグレッシブ]を得る。構築制限:Fate/Grand Order",
+      "line": "[誘発]このキャラで攻撃宣言をしたとき、味方キャラ1体は[アグレッシブ]を得る。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order",
       "reason": "no parser rule matched"
     }
   ]

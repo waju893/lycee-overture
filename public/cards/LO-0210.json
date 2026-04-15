@@ -25,28 +25,19 @@
   "text": "[エンゲージ:[１枚ドローする。]][アグレッシブ]",
   "textKr": "[エンゲージ:[１枚ドローする。]][アグレッシブ]",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0210",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[1枚ドローする。]][アグレッシブ]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 1
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[１枚ドローする。]][アグレッシブ]",
     "normalizedText": "[エンゲージ:[1枚ドローする。]][アグレッシブ]",
     "lines": [
       "[エンゲージ:[1枚ドローする。]][アグレッシブ]"
     ],
-    "matchedRuleIds": [
-      "draw"
-    ]
+    "matchedRuleIds": []
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[1枚ドローする。]][アグレッシブ]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

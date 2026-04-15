@@ -29,7 +29,6 @@
     {
       "header": "宣言",
       "timing": "onTurnEnd",
-      "triggerText": "ターン終了時",
       "originalLine": "[宣言] [T]:自ターン終了時まで、このキャラにAP+2・DP+2する。",
       "actions": [
         {

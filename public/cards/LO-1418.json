@@ -37,15 +37,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[誘発] このキャラが登場したとき、このキャラを除くキャラ全てを破棄する。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[誘発] このキャラが登場したとき、このキャラを除くキャラ全てを破棄する。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[誘発] このキャラが登場したとき、このキャラを除くキャラ全てを破棄する。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
-      "[誘発] このキャラが登場したとき、このキャラを除くキャラ全てを破棄する。構築制限:Fate/Grand Order([TM])"
+      "[誘発] このキャラが登場したとき、このキャラを除くキャラ全てを破棄する。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[誘発] このキャラが登場したとき、このキャラを除くキャラ全てを破棄する。構築制限:Fate/Grand Order([TM])",
+      "line": "[誘発] このキャラが登場したとき、このキャラを除くキャラ全てを破棄する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

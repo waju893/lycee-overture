@@ -45,7 +45,7 @@
       "相手ターン中に使用する。{相手キャラ1体}にDP-4する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "condition:opponentTurn"
     ]
   },
   "unresolvedTextLines": []

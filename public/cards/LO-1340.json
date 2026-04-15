@@ -31,15 +31,25 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[誘発] 自分の効果でコストが２点以下の相手キャラを破棄したとき、このキャラにＤＭＧ＋２する。\n[宣言] [このキャラを破棄する]:{相手キャラ１体}を破棄する。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[誘発] 自分の効果でコストが2点以下の相手キャラを破棄したとき、このキャラにDMG+2する。[宣言] [このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[誘発] 自分の効果でコストが2点以下の相手キャラを破棄したとき、このキャラにDMG+2する。\n[宣言] [このキャラを破棄する]:{相手キャラ1体}を破棄する。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
-      "[誘発] 自分の効果でコストが2点以下の相手キャラを破棄したとき、このキャラにDMG+2する。[宣言] [このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order([TM])"
+      "[誘発] 自分の効果でコストが2点以下の相手キャラを破棄したとき、このキャラにDMG+2する。",
+      "[宣言] [このキャラを破棄する]:{相手キャラ1体}を破棄する。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[誘発] 自分の効果でコストが2点以下の相手キャラを破棄したとき、このキャラにDMG+2する。[宣言] [このキャラを破棄する]:{相手キャラ1体}を破棄する。構築制限:Fate/Grand Order([TM])",
+      "line": "[誘発] 自分の効果でコストが2点以下の相手キャラを破棄したとき、このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [このキャラを破棄する]:{相手キャラ1体}を破棄する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

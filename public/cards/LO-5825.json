@@ -27,10 +27,9 @@
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-5825",
   "parsedEffectsDraft": [
     {
-      "header": "誘発",
-      "timing": "onEnter",
-      "triggerText": "このキャラが登場したとき",
-      "originalLine": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。[宣言] [日]:{味方キャラ1体}にAP+3する。この能力は失われる。",
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [日]:{味方キャラ1体}にAP+3する。この能力は失われる。",
       "actions": [
         {
           "type": "modifyStat",
@@ -42,13 +41,19 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] このキャラが登場したとき、以下から１つを選び処理する。\n[宣言] [日]:{味方キャラ１体}にＡＰ＋３する。この能力は失われる。",
-    "normalizedText": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。[宣言] [日]:{味方キャラ1体}にAP+3する。この能力は失われる。",
+    "normalizedText": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。\n[宣言] [日]:{味方キャラ1体}にAP+3する。この能力は失われる。",
     "lines": [
-      "[誘発] このキャラが登場したとき、以下から1つを選び処理する。[宣言] [日]:{味方キャラ1体}にAP+3する。この能力は失われる。"
+      "[誘発] このキャラが登場したとき、以下から1つを選び処理する。",
+      "[宣言] [日]:{味方キャラ1体}にAP+3する。この能力は失われる。"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[誘発] このキャラが登場したとき、以下から1つを選び処理する。",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

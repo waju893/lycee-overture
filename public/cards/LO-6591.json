@@ -28,61 +28,70 @@
   "parsedEffectsDraft": [
     {
       "header": "宣言",
-      "timing": "onEnter",
-      "originalLine": "[宣言] [0]:このキャラに自分の「ループ」置き場の枚数だけDP+1・SP+1する。[誘発] 味方「雨のち、ふたり 蝶舞翠」が登場したとき、このキャラを除外する。したとき、1枚ドローする。[誘発] このキャラが相手の効果で場を離れたとき、自分のゴミ箱またはデッキまたは手札からこのキャラと同番号のキャラ1体を探し無償で登場できる。",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラに自分の「ループ」置き場の枚数だけDP+1・SP+1する。",
       "actions": [
         {
-          "type": "chooseOne",
-          "prompt": "하나를 선택한다",
-          "choices": [
-            {
-              "label": "A",
-              "actions": [
-                {
-                  "type": "draw",
-                  "amount": 1
-                }
-              ]
-            },
-            {
-              "label": "B",
-              "actions": [
-                {
-                  "type": "searchCard",
-                  "owner": "self",
-                  "zones": [
-                    "hand"
-                  ],
-                  "match": {
-                    "kind": "character"
-                  },
-                  "min": 0,
-                  "max": 1,
-                  "storeAs": "lastSearchResult",
-                  "shuffleAfterSearch": false
-                },
-                {
-                  "type": "freeUse",
-                  "sourceRef": "lastSearchResult",
-                  "useKind": "character",
-                  "ignoreCost": true
-                }
-              ]
-            }
-          ]
+          "type": "modifyStat",
+          "stat": "dp",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] 味方「雨のち、ふたり 蝶舞翠」が登場したとき、このキャラを除外する。したとき、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラが相手の効果で場を離れたとき、自分のゴミ箱またはデッキまたは手札からこのキャラと同番号のキャラ1体を探し無償で登場できる。",
+      "actions": [
+        {
+          "type": "searchCard",
+          "owner": "opponent",
+          "zones": [
+            "deck",
+            "trash",
+            "hand"
+          ],
+          "match": {
+            "kind": "character"
+          },
+          "min": 0,
+          "max": 1,
+          "storeAs": "lastSearchResult",
+          "shuffleAfterSearch": true
+        },
+        {
+          "type": "freeUse",
+          "sourceRef": "lastSearchResult",
+          "useKind": "character",
+          "ignoreCost": true
         }
       ]
     }
   ],
   "parseMeta": {
     "originalText": "[サポーター:[花花]]\n[宣言] [0]:このキャラに自分の「ループ」置き場の枚数だけＤＰ＋１・ＳＰ＋１する。\n[誘発] 味方「雨のち、ふたり 蝶舞翠」が登場したとき、このキャラを除外する。したとき、１枚ドローする。\n[誘発] このキャラが相手の効果で場を離れたとき、自分のゴミ箱またはデッキまたは手札からこのキャラと同番号のキャラ１体を探し無償で登場できる。",
-    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:このキャラに自分の「ループ」置き場の枚数だけDP+1・SP+1する。[誘発] 味方「雨のち、ふたり 蝶舞翠」が登場したとき、このキャラを除外する。したとき、1枚ドローする。[誘発] このキャラが相手の効果で場を離れたとき、自分のゴミ箱またはデッキまたは手札からこのキャラと同番号のキャラ1体を探し無償で登場できる。",
+    "normalizedText": "[サポーター:[花花]]\n[宣言] [0]:このキャラに自分の「ループ」置き場の枚数だけDP+1・SP+1する。\n[誘発] 味方「雨のち、ふたり 蝶舞翠」が登場したとき、このキャラを除外する。したとき、1枚ドローする。\n[誘発] このキャラが相手の効果で場を離れたとき、自分のゴミ箱またはデッキまたは手札からこのキャラと同番号のキャラ1体を探し無償で登場できる。",
     "lines": [
       "[サポーター:[花花]]",
-      "[宣言] [0]:このキャラに自分の「ループ」置き場の枚数だけDP+1・SP+1する。[誘発] 味方「雨のち、ふたり 蝶舞翠」が登場したとき、このキャラを除外する。したとき、1枚ドローする。[誘発] このキャラが相手の効果で場を離れたとき、自分のゴミ箱またはデッキまたは手札からこのキャラと同番号のキャラ1体を探し無償で登場できる。"
+      "[宣言] [0]:このキャラに自分の「ループ」置き場の枚数だけDP+1・SP+1する。",
+      "[誘発] 味方「雨のち、ふたり 蝶舞翠」が登場したとき、このキャラを除外する。したとき、1枚ドローする。",
+      "[誘発] このキャラが相手の効果で場を離れたとき、自分のゴミ箱またはデッキまたは手札からこのキャラと同番号のキャラ1体を探し無償で登場できる。"
     ],
     "matchedRuleIds": [
-      "chooseOne"
+      "modifyStat",
+      "draw",
+      "searchCard+freeUse"
     ]
   },
   "unresolvedTextLines": [

@@ -31,7 +31,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [無]:{味方AFキャラ1体}にAP+1またはDP+1またはDMG+1する。構築制限:ゆずソフト",
+      "originalLine": "[宣言] [無]:{味方AFキャラ1体}にAP+1またはDP+1またはDMG+1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -64,13 +64,19 @@
   ],
   "parseMeta": {
     "originalText": "[宣言] [無]:{味方ＡＦキャラ１体}にＡＰ＋１またはＤＰ＋１またはＤＭＧ＋１する。\n構築制限:ゆずソフト",
-    "normalizedText": "[宣言] [無]:{味方AFキャラ1体}にAP+1またはDP+1またはDMG+1する。構築制限:ゆずソフト",
+    "normalizedText": "[宣言] [無]:{味方AFキャラ1体}にAP+1またはDP+1またはDMG+1する。\n構築制限:ゆずソフト",
     "lines": [
-      "[宣言] [無]:{味方AFキャラ1体}にAP+1またはDP+1またはDMG+1する。構築制限:ゆずソフト"
+      "[宣言] [無]:{味方AFキャラ1体}にAP+1またはDP+1またはDMG+1する。",
+      "構築制限:ゆずソフト"
     ],
     "matchedRuleIds": [
       "chooseOne"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:ゆずソフト",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

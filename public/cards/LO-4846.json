@@ -31,7 +31,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "味方キャラ全てにAP+1・DP+1・DMG+1する。初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
+      "originalLine": "味方キャラ全てにAP+1・DP+1・DMG+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,13 +43,19 @@
   ],
   "parseMeta": {
     "originalText": "味方キャラ全てにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。\n初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
-    "normalizedText": "味方キャラ全てにAP+1・DP+1・DMG+1する。初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
+    "normalizedText": "味方キャラ全てにAP+1・DP+1・DMG+1する。\n初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
     "lines": [
-      "味方キャラ全てにAP+1・DP+1・DMG+1する。初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典"
+      "味方キャラ全てにAP+1・DP+1・DMG+1する。",
+      "初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "初出 : 『Melodic Happiness』初回特典初出 : 『Melodic Happiness』初回特典",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

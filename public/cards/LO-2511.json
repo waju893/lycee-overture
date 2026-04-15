@@ -28,7 +28,6 @@
     {
       "header": "誘発",
       "timing": "onEnter",
-      "triggerText": "このキャラが登場したとき",
       "originalLine": "[誘発] 自分の効果でこのキャラが登場したとき、1枚ドローできる。",
       "actions": [
         {

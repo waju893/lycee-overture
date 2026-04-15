@@ -31,10 +31,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[リーダー][オーダーステップ:[0]]\n[宣言] [0]:コストが５点以上の味方キャラ全てにＤＭＧ＋１する。\n構築制限:神姫PROJECT（[KHP]）",
-    "normalizedText": "[リーダー][オーダーステップ:[0]]\n[宣言] [0]:コストが5点以上の味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])",
+    "normalizedText": "[リーダー][オーダーステップ:[0]]\n[宣言] [0]:コストが5点以上の味方キャラ全てにDMG+1する。\n構築制限:神姫PROJECT([KHP])",
     "lines": [
       "[リーダー][オーダーステップ:[0]]",
-      "[宣言] [0]:コストが5点以上の味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])"
+      "[宣言] [0]:コストが5点以上の味方キャラ全てにDMG+1する。",
+      "構築制限:神姫PROJECT([KHP])"
     ],
     "matchedRuleIds": []
   },
@@ -44,7 +45,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[宣言] [0]:コストが5点以上の味方キャラ全てにDMG+1する。構築制限:神姫PROJECT([KHP])",
+      "line": "[宣言] [0]:コストが5点以上の味方キャラ全てにDMG+1する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:神姫PROJECT([KHP])",
       "reason": "no parser rule matched"
     }
   ]

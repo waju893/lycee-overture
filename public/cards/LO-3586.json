@@ -29,13 +29,13 @@
     {
       "header": "手札宣言",
       "timing": "onTurnEnd",
-      "triggerText": "ターン終了時",
       "originalLine": "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}に相手ターン終了時までAP-2・DP-2する。ゴミ箱のこのキャラを無償で登場できる。",
       "actions": [
         {
           "type": "modifyStat",
           "stat": "ap",
-          "amount": -2
+          "amount": -2,
+          "duration": "endOfTurn"
         }
       ]
     }
@@ -47,7 +47,7 @@
       "[手札宣言] [雪雪雪]:自ターン中に使用する。バトル中に使用できない。{相手キャラ1体}に相手ターン終了時までAP-2・DP-2する。ゴミ箱のこのキャラを無償で登場できる。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "modifyStat:endOfTurn"
     ]
   },
   "unresolvedTextLines": []

@@ -30,7 +30,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。構築制限:Fate/Grand Order([TM])",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -63,10 +63,11 @@
   ],
   "parseMeta": {
     "originalText": "[オーダーチェンジ:[0]]\n[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１またはＤＭＧ－１する。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[オーダーチェンジ:[0]]\n[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[オーダーチェンジ:[0]]\n[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
       "[オーダーチェンジ:[0]]",
-      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。構築制限:Fate/Grand Order([TM])"
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1またはDMG-1する。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": [
       "chooseOne"
@@ -75,6 +76,10 @@
   "unresolvedTextLines": [
     {
       "line": "[オーダーチェンジ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

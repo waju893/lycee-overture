@@ -30,8 +30,8 @@
     {
       "header": "誘発",
       "timing": "onTurnStart",
-      "triggerText": "ターン開始時",
-      "originalLine": "[誘発] 相手ターン開始時、味方DF[雪]キャラ1体を未行動にする。そのキャラにDP+1する。構築制限:とある魔術の禁書目録([TOA])",
+      "triggerText": "相手ターン開始時",
+      "originalLine": "[誘発] 相手ターン開始時、味方DF[雪]キャラ1体を未行動にする。そのキャラにDP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -43,13 +43,19 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] 相手ターン開始時、味方ＤＦ[雪]キャラ１体を未行動にする。そのキャラにＤＰ＋１する。\n構築制限:とある魔術の禁書目録（[TOA]）",
-    "normalizedText": "[誘発] 相手ターン開始時、味方DF[雪]キャラ1体を未行動にする。そのキャラにDP+1する。構築制限:とある魔術の禁書目録([TOA])",
+    "normalizedText": "[誘発] 相手ターン開始時、味方DF[雪]キャラ1体を未行動にする。そのキャラにDP+1する。\n構築制限:とある魔術の禁書目録([TOA])",
     "lines": [
-      "[誘発] 相手ターン開始時、味方DF[雪]キャラ1体を未行動にする。そのキャラにDP+1する。構築制限:とある魔術の禁書目録([TOA])"
+      "[誘発] 相手ターン開始時、味方DF[雪]キャラ1体を未行動にする。そのキャラにDP+1する。",
+      "構築制限:とある魔術の禁書目録([TOA])"
     ],
     "matchedRuleIds": [
       "modifyStat"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:とある魔術の禁書目録([TOA])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

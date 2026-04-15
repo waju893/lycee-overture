@@ -30,15 +30,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[宣言] [0]:味方[花]＜大洗女子＞キャラ全てにＤＭＧ＋１する。\n構築制限:ガールズ＆パンツァー（[GUP]）",
-    "normalizedText": "[宣言] [0]:味方[花]<大洗女子>キャラ全てにDMG+1する。構築制限:ガールズ&パンツァー([GUP])",
+    "normalizedText": "[宣言] [0]:味方[花]<大洗女子>キャラ全てにDMG+1する。\n構築制限:ガールズ&パンツァー([GUP])",
     "lines": [
-      "[宣言] [0]:味方[花]<大洗女子>キャラ全てにDMG+1する。構築制限:ガールズ&パンツァー([GUP])"
+      "[宣言] [0]:味方[花]<大洗女子>キャラ全てにDMG+1する。",
+      "構築制限:ガールズ&パンツァー([GUP])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[宣言] [0]:味方[花]<大洗女子>キャラ全てにDMG+1する。構築制限:ガールズ&パンツァー([GUP])",
+      "line": "[宣言] [0]:味方[花]<大洗女子>キャラ全てにDMG+1する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:ガールズ&パンツァー([GUP])",
       "reason": "no parser rule matched"
     }
   ]

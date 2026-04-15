@@ -29,7 +29,7 @@
     {
       "header": "常時",
       "timing": "continuous",
-      "originalLine": "[常時] このキャラにAP+1・DP+1する。[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。",
+      "originalLine": "[常時] このキャラにAP+1・DP+1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -37,15 +37,29 @@
           "amount": 1
         }
       ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 2
+        }
+      ]
     }
   ],
   "parseMeta": {
     "originalText": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:このキャラにＡＰ＋２・ＤＰ＋２する。このアイテムを破棄する。",
-    "normalizedText": "[常時] このキャラにAP+1・DP+1する。[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。",
+    "normalizedText": "[常時] このキャラにAP+1・DP+1する。\n[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。",
     "lines": [
-      "[常時] このキャラにAP+1・DP+1する。[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。"
+      "[常時] このキャラにAP+1・DP+1する。",
+      "[宣言] [0]:このキャラにAP+2・DP+2する。このアイテムを破棄する。"
     ],
     "matchedRuleIds": [
+      "modifyStat",
       "modifyStat"
     ]
   },

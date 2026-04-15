@@ -26,28 +26,19 @@
   "text": "[エンゲージ:[２枚ドローする。]][オーダーステップ:[0]]",
   "textKr": "[エンゲージ:[２枚ドローする。]][オーダーステップ:[0]]",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-0272",
-  "parsedEffectsDraft": [
-    {
-      "header": "unknown",
-      "timing": "unknown",
-      "originalLine": "[エンゲージ:[2枚ドローする。]][オーダーステップ:[0]]",
-      "actions": [
-        {
-          "type": "draw",
-          "amount": 2
-        }
-      ]
-    }
-  ],
+  "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[エンゲージ:[２枚ドローする。]][オーダーステップ:[0]]",
     "normalizedText": "[エンゲージ:[2枚ドローする。]][オーダーステップ:[0]]",
     "lines": [
       "[エンゲージ:[2枚ドローする。]][オーダーステップ:[0]]"
     ],
-    "matchedRuleIds": [
-      "draw"
-    ]
+    "matchedRuleIds": []
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "[エンゲージ:[2枚ドローする。]][オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

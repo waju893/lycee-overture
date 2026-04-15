@@ -29,10 +29,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[オーダーチェンジ:[日]]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[オーダーチェンジ:[日]]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[オーダーチェンジ:[日]]\n[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
       "[オーダーチェンジ:[日]]",
-      "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。構築制限:Fate/Grand Order([TM])"
+      "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": []
   },
@@ -42,7 +43,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。構築制限:Fate/Grand Order([TM])",
+      "line": "[宣言] [0]:バトル中に使用できない。このキャラを{味方フィールド}に移動する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

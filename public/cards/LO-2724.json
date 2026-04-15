@@ -31,7 +31,7 @@
     {
       "header": "宣言",
       "timing": "onUse",
-      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ1体}にAP-1またはDP-1する。構築制限:[PUR]",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -51,30 +51,42 @@
               "label": "B",
               "actions": [
                 {
-                  "type": "chooseOne",
-                  "prompt": "하나를 선택한다",
-                  "choices": [
-                    {
-                      "label": "A",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": -1
-                        }
-                      ]
-                    },
-                    {
-                      "label": "B",
-                      "actions": [
-                        {
-                          "type": "modifyStat",
-                          "stat": "dp",
-                          "amount": -1
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ1体}にAP-1またはDP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
                 }
               ]
             }
@@ -85,13 +97,21 @@
   ],
   "parseMeta": {
     "originalText": "[宣言] [0]:{相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ１体}にＡＰ－１またはＤＰ－１する。\n構築制限:[PUR]",
-    "normalizedText": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ1体}にAP-1またはDP-1する。構築制限:[PUR]",
+    "normalizedText": "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。\n[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ1体}にAP-1またはDP-1する。\n構築制限:[PUR]",
     "lines": [
-      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ1体}にAP-1またはDP-1する。構築制限:[PUR]"
+      "[宣言] [0]:{相手キャラ1体}にAP-1またはDP-1する。",
+      "[宣言] [0]:自ターン中に使用する。{味方エリアと同列の相手キャラ1体}にAP-1またはDP-1する。",
+      "構築制限:[PUR]"
     ],
     "matchedRuleIds": [
+      "chooseOne",
       "chooseOne"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:[PUR]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

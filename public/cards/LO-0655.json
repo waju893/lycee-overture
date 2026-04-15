@@ -31,13 +31,13 @@
     {
       "header": "宣言",
       "timing": "onTurnEnd",
-      "triggerText": "ターン終了時",
       "originalLine": "[宣言] [0]:{味方キャラ1体}を行動済みにする。行動済みにしたとき、そのキャラに自ターン終了時までDP+2する。",
       "actions": [
         {
           "type": "modifyStat",
           "stat": "dp",
-          "amount": 2
+          "amount": 2,
+          "duration": "endOfTurn"
         }
       ]
     }
@@ -50,7 +50,7 @@
       "[宣言] [0]:{味方キャラ1体}を行動済みにする。行動済みにしたとき、そのキャラに自ターン終了時までDP+2する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "modifyStat:endOfTurn"
     ]
   },
   "unresolvedTextLines": [

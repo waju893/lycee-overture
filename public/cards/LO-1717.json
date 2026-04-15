@@ -28,10 +28,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[アグレッシブ]\n[誘発] このキャラにサポートをしたとき、このキャラにＤＭＧ＋２する。\n構築制限:ゆずソフト（[YUZ]）",
-    "normalizedText": "[アグレッシブ]\n[誘発] このキャラにサポートをしたとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])",
+    "normalizedText": "[アグレッシブ]\n[誘発] このキャラにサポートをしたとき、このキャラにDMG+2する。\n構築制限:ゆずソフト([YUZ])",
     "lines": [
       "[アグレッシブ]",
-      "[誘発] このキャラにサポートをしたとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])"
+      "[誘発] このキャラにサポートをしたとき、このキャラにDMG+2する。",
+      "構築制限:ゆずソフト([YUZ])"
     ],
     "matchedRuleIds": []
   },
@@ -41,7 +42,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[誘発] このキャラにサポートをしたとき、このキャラにDMG+2する。構築制限:ゆずソフト([YUZ])",
+      "line": "[誘発] このキャラにサポートをしたとき、このキャラにDMG+2する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:ゆずソフト([YUZ])",
       "reason": "no parser rule matched"
     }
   ]

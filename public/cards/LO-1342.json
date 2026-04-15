@@ -31,7 +31,14 @@
     {
       "header": "誘発",
       "timing": "unknown",
-      "originalLine": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、1枚ドローできる。構築制限:Fate/Grand Order([TM])",
+      "conditionText": "自ターン中",
+      "conditions": [
+        {
+          "type": "turn",
+          "side": "self"
+        }
+      ],
+      "originalLine": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、1枚ドローできる。",
       "actions": [
         {
           "type": "draw",
@@ -42,13 +49,19 @@
   ],
   "parseMeta": {
     "originalText": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、１枚ドローできる。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、1枚ドローできる。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、1枚ドローできる。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
-      "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、1枚ドローできる。構築制限:Fate/Grand Order([TM])"
+      "[誘発] 自ターン中、味方キャラの能力で相手キャラを破棄したとき、1枚ドローできる。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": [
       "draw"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

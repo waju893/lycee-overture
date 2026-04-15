@@ -25,19 +25,29 @@
   "text": "[宣言] [0]:味方[宙]キャラが２体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。ターン終了時まで、このキャラの属性を[宙]にする。",
   "textKr": "[宣言] [0]:味方[宙]キャラが２体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。ターン終了時まで、このキャラの属性を[宙]にする。",
   "sourceUrl": "https://lycee-tcg.com/card/card_detail.pl?cardno=LO-3293",
-  "parsedEffectsDraft": [],
+  "parsedEffectsDraft": [
+    {
+      "header": "宣言",
+      "timing": "onTurnEnd",
+      "originalLine": "[宣言] [0]:味方[宙]キャラが2体以上登場している場合、このキャラにAP+1・DP+1・DMG+1する。ターン終了時まで、このキャラの属性を[宙]にする。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    }
+  ],
   "parseMeta": {
     "originalText": "[宣言] [0]:味方[宙]キャラが２体以上登場している場合、このキャラにＡＰ＋１・ＤＰ＋１・ＤＭＧ＋１する。ターン終了時まで、このキャラの属性を[宙]にする。",
     "normalizedText": "[宣言] [0]:味方[宙]キャラが2体以上登場している場合、このキャラにAP+1・DP+1・DMG+1する。ターン終了時まで、このキャラの属性を[宙]にする。",
     "lines": [
       "[宣言] [0]:味方[宙]キャラが2体以上登場している場合、このキャラにAP+1・DP+1・DMG+1する。ターン終了時まで、このキャラの属性を[宙]にする。"
     ],
-    "matchedRuleIds": []
+    "matchedRuleIds": [
+      "modifyStat"
+    ]
   },
-  "unresolvedTextLines": [
-    {
-      "line": "[宣言] [0]:味方[宙]キャラが2体以上登場している場合、このキャラにAP+1・DP+1・DMG+1する。ターン終了時まで、このキャラの属性を[宙]にする。",
-      "reason": "no parser rule matched"
-    }
-  ]
+  "unresolvedTextLines": []
 }

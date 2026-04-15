@@ -29,7 +29,19 @@
     {
       "header": "常時",
       "timing": "continuous",
-      "originalLine": "[常時] このキャラにAP+1・DP+1する。[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。この効果は失われる。",
+      "originalLine": "[常時] このキャラにAP+1・DP+1する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。この効果は失われる。",
       "actions": [
         {
           "type": "chooseOne",
@@ -41,7 +53,7 @@
                 {
                   "type": "modifyStat",
                   "stat": "ap",
-                  "amount": 1
+                  "amount": -2
                 }
               ]
             },
@@ -62,11 +74,13 @@
   ],
   "parseMeta": {
     "originalText": "[常時] このキャラにＡＰ＋１・ＤＰ＋１する。\n[宣言] [0]:{相手キャラ１体}にＡＰ－２またはＤＰ－２する。この効果は失われる。",
-    "normalizedText": "[常時] このキャラにAP+1・DP+1する。[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。この効果は失われる。",
+    "normalizedText": "[常時] このキャラにAP+1・DP+1する。\n[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。この効果は失われる。",
     "lines": [
-      "[常時] このキャラにAP+1・DP+1する。[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。この効果は失われる。"
+      "[常時] このキャラにAP+1・DP+1する。",
+      "[宣言] [0]:{相手キャラ1体}にAP-2またはDP-2する。この効果は失われる。"
     ],
     "matchedRuleIds": [
+      "modifyStat",
       "chooseOne"
     ]
   },

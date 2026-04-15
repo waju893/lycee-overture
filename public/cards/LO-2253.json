@@ -31,8 +31,53 @@
     {
       "header": "誘発",
       "timing": "onTurnStart",
+      "triggerText": "ターン開始時",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "chooseTarget",
+                  "selector": {
+                    "owner": "opponent",
+                    "kind": "character",
+                    "count": 1
+                  },
+                  "storeAs": "selectedTarget",
+                  "prompt": "상대 캐릭터 1체를 선택한다"
+                },
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -1,
+                  "targetRef": "selectedTarget"
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onTurnStart",
       "triggerText": "自ターン開始時",
-      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード1枚を置く。2枚以上置かれている場合、このキャラの下のカード全てを破棄し、相手キャラ1体にAP-1・DP-1する。構築制限:[OSP]",
+      "originalLine": "[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード1枚を置く。2枚以上置かれている場合、このキャラの下のカード全てを破棄し、相手キャラ1体にAP-1・DP-1する。",
       "actions": [
         {
           "type": "modifyStat",
@@ -44,18 +89,25 @@
   ],
   "parseMeta": {
     "originalText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード１枚を置く。２枚以上置かれている場合、このキャラの下のカード全てを破棄し、相手キャラ１体にＡＰ－１・ＤＰ－１する。\n構築制限:[OSP]",
-    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード1枚を置く。2枚以上置かれている場合、このキャラの下のカード全てを破棄し、相手キャラ1体にAP-1・DP-1する。構築制限:[OSP]",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。\n[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード1枚を置く。2枚以上置かれている場合、このキャラの下のカード全てを破棄し、相手キャラ1体にAP-1・DP-1する。\n構築制限:[OSP]",
     "lines": [
       "[オーダーステップ:[0]]",
-      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード1枚を置く。2枚以上置かれている場合、このキャラの下のカード全てを破棄し、相手キャラ1体にAP-1・DP-1する。構築制限:[OSP]"
+      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
+      "[誘発] 自ターン開始時、このキャラの下に自分のゴミ箱のカード1枚を置く。2枚以上置かれている場合、このキャラの下のカード全てを破棄し、相手キャラ1体にAP-1・DP-1する。",
+      "構築制限:[OSP]"
     ],
     "matchedRuleIds": [
+      "chooseOne",
       "modifyStat"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[OSP]",
       "reason": "no parser rule matched"
     }
   ]

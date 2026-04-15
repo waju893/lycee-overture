@@ -34,9 +34,20 @@
       "originalLine": "味方キャラ1体にAP+4・DP+4する。",
       "actions": [
         {
+          "type": "chooseTarget",
+          "selector": {
+            "owner": "self",
+            "kind": "character",
+            "count": 1
+          },
+          "storeAs": "selectedTarget",
+          "prompt": "자기 캐릭터 1체를 선택한다"
+        },
+        {
           "type": "modifyStat",
           "stat": "ap",
-          "amount": 4
+          "amount": 4,
+          "targetRef": "selectedTarget"
         }
       ]
     }
@@ -48,7 +59,7 @@
       "味方キャラ1体にAP+4・DP+4する。"
     ],
     "matchedRuleIds": [
-      "modifyStat"
+      "selector:selfCharacterOne"
     ]
   },
   "unresolvedTextLines": []

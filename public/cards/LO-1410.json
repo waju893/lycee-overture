@@ -31,8 +31,8 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
-      "originalLine": "[誘発] このキャラの前後に手札からコストが3点以上の味方[日]キャラが登場したとき、1枚ドローする。構築制限:Fate/Grand Order([TM])",
+      "timing": "unknown",
+      "originalLine": "[誘発] このキャラの前後に手札からコストが3点以上の味方[日]キャラが登場したとき、1枚ドローする。",
       "actions": [
         {
           "type": "draw",
@@ -43,10 +43,11 @@
   ],
   "parseMeta": {
     "originalText": "[サイドステップ:[0]]\n[誘発] このキャラの前後に手札からコストが３点以上の味方[日]キャラが登場したとき、１枚ドローする。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラの前後に手札からコストが3点以上の味方[日]キャラが登場したとき、1枚ドローする。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[サイドステップ:[0]]\n[誘発] このキャラの前後に手札からコストが3点以上の味方[日]キャラが登場したとき、1枚ドローする。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
       "[サイドステップ:[0]]",
-      "[誘発] このキャラの前後に手札からコストが3点以上の味方[日]キャラが登場したとき、1枚ドローする。構築制限:Fate/Grand Order([TM])"
+      "[誘発] このキャラの前後に手札からコストが3点以上の味方[日]キャラが登場したとき、1枚ドローする。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": [
       "draw"
@@ -55,6 +56,10 @@
   "unresolvedTextLines": [
     {
       "line": "[サイドステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]

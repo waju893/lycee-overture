@@ -28,7 +28,19 @@
     {
       "header": "常時",
       "timing": "continuous",
-      "originalLine": "[常時] このキャラにAP+1・DP+2する。[誘発] このアイテムを装備したとき、1枚ドローできる。構築制限:『天使☆騒々 RE-BOOT!』",
+      "originalLine": "[常時] このキャラにAP+1・DP+2する。",
+      "actions": [
+        {
+          "type": "modifyStat",
+          "stat": "ap",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "unknown",
+      "originalLine": "[誘発] このアイテムを装備したとき、1枚ドローできる。",
       "actions": [
         {
           "type": "draw",
@@ -39,18 +51,25 @@
   ],
   "parseMeta": {
     "originalText": "装備制限:コストが４点以下の[宙]キャラ\n[常時] このキャラにＡＰ＋１・ＤＰ＋２する。\n[誘発] このアイテムを装備したとき、１枚ドローできる。\n構築制限:『天使☆騒々 RE-BOOT!』",
-    "normalizedText": "装備制限:コストが4点以下の[宙]キャラ\n[常時] このキャラにAP+1・DP+2する。[誘発] このアイテムを装備したとき、1枚ドローできる。構築制限:『天使☆騒々 RE-BOOT!』",
+    "normalizedText": "装備制限:コストが4点以下の[宙]キャラ\n[常時] このキャラにAP+1・DP+2する。\n[誘発] このアイテムを装備したとき、1枚ドローできる。\n構築制限:『天使☆騒々 RE-BOOT!』",
     "lines": [
       "装備制限:コストが4点以下の[宙]キャラ",
-      "[常時] このキャラにAP+1・DP+2する。[誘発] このアイテムを装備したとき、1枚ドローできる。構築制限:『天使☆騒々 RE-BOOT!』"
+      "[常時] このキャラにAP+1・DP+2する。",
+      "[誘発] このアイテムを装備したとき、1枚ドローできる。",
+      "構築制限:『天使☆騒々 RE-BOOT!』"
     ],
     "matchedRuleIds": [
+      "modifyStat",
       "draw"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "装備制限:コストが4点以下の[宙]キャラ",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『天使☆騒々 RE-BOOT!』",
       "reason": "no parser rule matched"
     }
   ]

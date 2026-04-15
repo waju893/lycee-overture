@@ -31,7 +31,6 @@
     {
       "header": "宣言",
       "timing": "onTurnStart",
-      "triggerText": "自ターン開始時",
       "originalLine": "[宣言] [T]:次の自ターン開始時、{味方キャラ1体}にAP+1・DP+1・DMG+1する。",
       "actions": [
         {

@@ -32,7 +32,7 @@
       "header": "誘発",
       "timing": "onTurnStart",
       "triggerText": "ターン開始時",
-      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [月月月]:自ターン中に使用する。{DPが0以下の相手キャラ1体}を行動済みにする。この能力は失われる。構築制限:[OSP]",
+      "originalLine": "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -42,9 +42,20 @@
               "label": "A",
               "actions": [
                 {
+                  "type": "chooseTarget",
+                  "selector": {
+                    "owner": "opponent",
+                    "kind": "character",
+                    "count": 1
+                  },
+                  "storeAs": "selectedTarget",
+                  "prompt": "상대 캐릭터 1체를 선택한다"
+                },
+                {
                   "type": "modifyStat",
                   "stat": "ap",
-                  "amount": -1
+                  "amount": -1,
+                  "targetRef": "selectedTarget"
                 }
               ]
             },
@@ -65,10 +76,12 @@
   ],
   "parseMeta": {
     "originalText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ１体にＡＰ－１またはＤＰ－１する。\n[宣言] [月月月]:自ターン中に使用する。{ＤＰが０以下の相手キャラ１体}を行動済みにする。この能力は失われる。\n構築制限:[OSP]",
-    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [月月月]:自ターン中に使用する。{DPが0以下の相手キャラ1体}を行動済みにする。この能力は失われる。構築制限:[OSP]",
+    "normalizedText": "[オーダーステップ:[0]]\n[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。\n[宣言] [月月月]:自ターン中に使用する。{DPが0以下の相手キャラ1体}を行動済みにする。この能力は失われる。\n構築制限:[OSP]",
     "lines": [
       "[オーダーステップ:[0]]",
-      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。[宣言] [月月月]:自ターン中に使用する。{DPが0以下の相手キャラ1体}を行動済みにする。この能力は失われる。構築制限:[OSP]"
+      "[誘発] ターン開始時、相手キャラ1体にAP-1またはDP-1する。",
+      "[宣言] [月月月]:自ターン中に使用する。{DPが0以下の相手キャラ1体}を行動済みにする。この能力は失われる。",
+      "構築制限:[OSP]"
     ],
     "matchedRuleIds": [
       "chooseOne"
@@ -77,6 +90,14 @@
   "unresolvedTextLines": [
     {
       "line": "[オーダーステップ:[0]]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "[宣言] [月月月]:自ターン中に使用する。{DPが0以下の相手キャラ1体}を行動済みにする。この能力は失われる。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:[OSP]",
       "reason": "no parser rule matched"
     }
   ]

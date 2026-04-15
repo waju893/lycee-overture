@@ -29,15 +29,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[宣言] [0]:コストが３点の味方ＡＦ[宙]キャラ全てにＤＭＧ＋１する。\n構築制限:ゆずソフト（[YUZ]）",
-    "normalizedText": "[宣言] [0]:コストが3点の味方AF[宙]キャラ全てにDMG+1する。構築制限:ゆずソフト([YUZ])",
+    "normalizedText": "[宣言] [0]:コストが3点の味方AF[宙]キャラ全てにDMG+1する。\n構築制限:ゆずソフト([YUZ])",
     "lines": [
-      "[宣言] [0]:コストが3点の味方AF[宙]キャラ全てにDMG+1する。構築制限:ゆずソフト([YUZ])"
+      "[宣言] [0]:コストが3点の味方AF[宙]キャラ全てにDMG+1する。",
+      "構築制限:ゆずソフト([YUZ])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[宣言] [0]:コストが3点の味方AF[宙]キャラ全てにDMG+1する。構築制限:ゆずソフト([YUZ])",
+      "line": "[宣言] [0]:コストが3点の味方AF[宙]キャラ全てにDMG+1する。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:ゆずソフト([YUZ])",
       "reason": "no parser rule matched"
     }
   ]

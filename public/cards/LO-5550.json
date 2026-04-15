@@ -27,7 +27,7 @@
   "parsedEffectsDraft": [
     {
       "header": "誘発",
-      "timing": "onEnter",
+      "timing": "onTurnStart",
       "triggerText": "自ターン開始時",
       "originalLine": "[誘発] 自ターン開始時、このキャラを破棄する。破棄したとき、自分のゴミ箱または自分のデッキから「昼の世界の学生 黒谷真弥&吉田そあら」1体を探し無償で登場できる。登場したとき、自分にシールド+1できる。",
       "actions": [

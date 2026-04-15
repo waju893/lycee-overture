@@ -29,7 +29,7 @@
     {
       "header": "unknown",
       "timing": "unknown",
-      "originalLine": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は1枚ドローできる。構築制限:[NEX]",
+      "originalLine": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は1枚ドローできる。",
       "actions": [
         {
           "type": "draw",
@@ -40,13 +40,19 @@
   ],
   "parseMeta": {
     "originalText": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は１枚ドローできる。\n構築制限:[NEX]",
-    "normalizedText": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は1枚ドローできる。構築制限:[NEX]",
+    "normalizedText": "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は1枚ドローできる。\n構築制限:[NEX]",
     "lines": [
-      "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は1枚ドローできる。構築制限:[NEX]"
+      "味方[雪]キャラの防御中に使用する。対戦キャラを破棄する。相手は1枚ドローできる。",
+      "構築制限:[NEX]"
     ],
     "matchedRuleIds": [
       "draw"
     ]
   },
-  "unresolvedTextLines": []
+  "unresolvedTextLines": [
+    {
+      "line": "構築制限:[NEX]",
+      "reason": "no parser rule matched"
+    }
+  ]
 }

@@ -29,15 +29,20 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。\n構築制限:神姫PROJECT（[KHP]）",
-    "normalizedText": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。構築制限:神姫PROJECT([KHP])",
+    "normalizedText": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。\n構築制限:神姫PROJECT([KHP])",
     "lines": [
-      "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。構築制限:神姫PROJECT([KHP])"
+      "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。",
+      "構築制限:神姫PROJECT([KHP])"
     ],
     "matchedRuleIds": []
   },
   "unresolvedTextLines": [
     {
-      "line": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。構築制限:神姫PROJECT([KHP])",
+      "line": "[常時] 味方[花]キャラ全ては、行動済みでも防御キャラに指定できる。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:神姫PROJECT([KHP])",
       "reason": "no parser rule matched"
     }
   ]

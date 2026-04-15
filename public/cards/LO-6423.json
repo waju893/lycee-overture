@@ -30,9 +30,8 @@
   "parsedEffectsDraft": [
     {
       "header": "宣言",
-      "timing": "onEnter",
-      "triggerText": "このキャラが登場したとき",
-      "originalLine": "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [C1][雪雪]:相手の宣言に対応して使用できない。{相手キャラ1体}にAP-6またはDP-6またはAP-4・DP-4できる。しない場合、自分の手札を1枚破棄できる。したとき、そのキャラを破棄する。構築制限:『DeepOne シリーズ』",
+      "timing": "onUse",
+      "originalLine": "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。",
       "actions": [
         {
           "type": "chooseOne",
@@ -42,8 +41,65 @@
               "label": "A",
               "actions": [
                 {
-                  "type": "draw",
-                  "amount": 1
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "actions": [
+                {
+                  "type": "chooseTarget",
+                  "selector": {
+                    "owner": "self",
+                    "kind": "character",
+                    "count": 1
+                  },
+                  "storeAs": "selectedTarget",
+                  "prompt": "자기 캐릭터 1체를 선택한다"
+                },
+                {
+                  "type": "modifyStat",
+                  "stat": "dp",
+                  "amount": 3,
+                  "targetRef": "selectedTarget"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "誘発",
+      "timing": "onEnter",
+      "triggerText": "このキャラが登場したとき",
+      "originalLine": "[誘発] このキャラが登場したとき、1枚ドローする。",
+      "actions": [
+        {
+          "type": "draw",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "header": "宣言",
+      "timing": "onUse",
+      "originalLine": "[宣言] [C1][雪雪]:相手の宣言に対応して使用できない。{相手キャラ1体}にAP-6またはDP-6またはAP-4・DP-4できる。しない場合、自分の手札を1枚破棄できる。したとき、そのキャラを破棄する。",
+      "actions": [
+        {
+          "type": "chooseOne",
+          "prompt": "하나를 선택한다",
+          "choices": [
+            {
+              "label": "A",
+              "actions": [
+                {
+                  "type": "modifyStat",
+                  "stat": "ap",
+                  "amount": -6
                 }
               ]
             },
@@ -85,18 +141,27 @@
   ],
   "parseMeta": {
     "originalText": "[ジャンプ:[0]][チャージ:１]\n[宣言] [T]:味方ＡＦキャラ１体にＡＰ＋３または味方キャラ１体にＤＰ＋３する。\n[誘発] このキャラが登場したとき、１枚ドローする。\n[宣言] [C1][雪雪]:相手の宣言に対応して使用できない。{相手キャラ１体}にＡＰ－６またはＤＰ－６またはＡＰ－４・ＤＰ－４できる。しない場合、自分の手札を１枚破棄できる。したとき、そのキャラを破棄する。\n構築制限:『DeepOne シリーズ』",
-    "normalizedText": "[ジャンプ:[0]][チャージ:1]\n[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [C1][雪雪]:相手の宣言に対応して使用できない。{相手キャラ1体}にAP-6またはDP-6またはAP-4・DP-4できる。しない場合、自分の手札を1枚破棄できる。したとき、そのキャラを破棄する。構築制限:『DeepOne シリーズ』",
+    "normalizedText": "[ジャンプ:[0]][チャージ:1]\n[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。\n[誘発] このキャラが登場したとき、1枚ドローする。\n[宣言] [C1][雪雪]:相手の宣言に対応して使用できない。{相手キャラ1体}にAP-6またはDP-6またはAP-4・DP-4できる。しない場合、自分の手札を1枚破棄できる。したとき、そのキャラを破棄する。\n構築制限:『DeepOne シリーズ』",
     "lines": [
       "[ジャンプ:[0]][チャージ:1]",
-      "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。[誘発] このキャラが登場したとき、1枚ドローする。[宣言] [C1][雪雪]:相手の宣言に対応して使用できない。{相手キャラ1体}にAP-6またはDP-6またはAP-4・DP-4できる。しない場合、自分の手札を1枚破棄できる。したとき、そのキャラを破棄する。構築制限:『DeepOne シリーズ』"
+      "[宣言] [T]:味方AFキャラ1体にAP+3または味方キャラ1体にDP+3する。",
+      "[誘発] このキャラが登場したとき、1枚ドローする。",
+      "[宣言] [C1][雪雪]:相手の宣言に対応して使用できない。{相手キャラ1体}にAP-6またはDP-6またはAP-4・DP-4できる。しない場合、自分の手札を1枚破棄できる。したとき、そのキャラを破棄する。",
+      "構築制限:『DeepOne シリーズ』"
     ],
     "matchedRuleIds": [
+      "chooseOne",
+      "draw",
       "chooseOne"
     ]
   },
   "unresolvedTextLines": [
     {
       "line": "[ジャンプ:[0]][チャージ:1]",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:『DeepOne シリーズ』",
       "reason": "no parser rule matched"
     }
   ]

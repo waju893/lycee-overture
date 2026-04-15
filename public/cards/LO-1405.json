@@ -29,10 +29,11 @@
   "parsedEffectsDraft": [],
   "parseMeta": {
     "originalText": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{未行動の味方キャラ２体}を入れ替える。\n構築制限:Fate/Grand Order（[TM]）",
-    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{未行動の味方キャラ2体}を入れ替える。構築制限:Fate/Grand Order([TM])",
+    "normalizedText": "[ステップ:[0]]\n[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{未行動の味方キャラ2体}を入れ替える。\n構築制限:Fate/Grand Order([TM])",
     "lines": [
       "[ステップ:[0]]",
-      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{未行動の味方キャラ2体}を入れ替える。構築制限:Fate/Grand Order([TM])"
+      "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{未行動の味方キャラ2体}を入れ替える。",
+      "構築制限:Fate/Grand Order([TM])"
     ],
     "matchedRuleIds": []
   },
@@ -42,7 +43,11 @@
       "reason": "no parser rule matched"
     },
     {
-      "line": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{未行動の味方キャラ2体}を入れ替える。構築制限:Fate/Grand Order([TM])",
+      "line": "[宣言] [0]:自ターン中に使用する。バトル中に使用できない。{未行動の味方キャラ2体}を入れ替える。",
+      "reason": "no parser rule matched"
+    },
+    {
+      "line": "構築制限:Fate/Grand Order([TM])",
       "reason": "no parser rule matched"
     }
   ]
